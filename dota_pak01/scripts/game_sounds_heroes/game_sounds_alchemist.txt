@@ -1,0 +1,383 @@
+"Hero_Alchemist.PreAttack" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/earthshaker/fist_swing1.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing2.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_Alchemist.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact1.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact2.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Alchemist.AcidSpray"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/alchemist/acid_spray.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			
+			"source_info"
+			{
+				"source"   "emitter"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+			
+			"usat_stop_time"
+			{
+				"input2" "16.0"
+			}
+
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Alchemist.AcidSpray.Damage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/alchemist/acid_spray_damage01.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage02.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage03.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage04.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage05.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage06.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "6.000000" //A sound will not stop itself from playing.
+				"match_substring" "true"
+				"match_entry" "Spray.Damage"
+			}
+		}
+	}
+}
+
+"Hero_Alchemist.UnstableConcoction.Fuse"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/alchemist/unstable_concoction_fuse.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}
+
+"Hero_Alchemist.UnstableConcoction.Throw"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/alchemist/unstable_concoction_throw.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Alchemist.UnstableConcoction.Stun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/alchemist/unstable_concoction_stun01.wav"
+		"wave"		"weapons/hero/alchemist/unstable_concoction_stun02.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Alchemist.ChemicalRage.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/alchemist/chemical_rage_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Alchemist.ChemicalRage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			"weapons/hero/alchemist/chemical_rage_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+ 			"volume_falloff_linear"
+ 			{
+ 				"input_max" "1200.0"
+ 			}
+ 			"volume_fade_out"
+ 			{
+ 				"input_Max" "0.8"
+ 			}
+			"usat_stop_time"
+			{
+				"input2" "25.0"
+			}
+		}
+	}
+}
+
+"Hero_Alchemist.ChemicalRage.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/large_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/large_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/large_blade/whoosh03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.0"
+			}
+		}
+	}
+}
+
+"Hero_Alchemist.ChemicalRage.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/shared/impacts/sword_impact1.wav"
+		"wave"			"weapons/hero/shared/impacts/sword_impact2.wav"
+		"wave"			"weapons/hero/shared/impacts/sword_impact3.wav"
+		"wave"			"weapons/hero/shared/impacts/sword_impact4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+	}
+}
+
+
+"Hero_Alchemist.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.4, 0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"		"80, 90"
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/shared/general01.wav"
+		"wave"		"physics/footsteps/hero/shared/general02.wav"
+		"wave"		"physics/footsteps/hero/shared/general03.wav"
+		"wave"		"physics/footsteps/hero/shared/general04.wav"
+		"wave"		"physics/footsteps/hero/shared/general05.wav"
+		"wave"		"physics/footsteps/hero/shared/general06.wav"
+		"wave"		"physics/footsteps/hero/shared/general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Alchemist.Foley"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.0, 0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"		"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics/movement/hero/alchemist/slosh01.wav"
+		"wave"		"physics/movement/hero/alchemist/slosh02.wav"
+		"wave"		"physics/movement/hero/alchemist/slosh03.wav"
+		"wave"		"physics/movement/hero/alchemist/slosh04.wav"
+		"wave"		"physics/movement/hero/alchemist/slosh05.wav"
+		"wave"		"physics/movement/hero/alchemist/rattle01.wav"
+		"wave"		"physics/movement/hero/alchemist/rattle02.wav"
+		"wave"		"physics/movement/hero/alchemist/rattle03.wav"
+		"wave"		"physics/movement/hero/alchemist/rattle04.wav"
+		"wave"		"physics/movement/hero/alchemist/rattle05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+"Hero_Alchemist.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

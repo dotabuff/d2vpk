@@ -1,0 +1,387 @@
+"Hero_Sven.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/large_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/large_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/large_blade/whoosh03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.15"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+"Hero_Sven.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/sven/attack01.wav"
+		"wave"	")weapons/hero/sven/attack02.wav"
+		"wave"	")weapons/hero/sven/attack03.wav"
+		"wave"	")weapons/hero/sven/attack04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Sven.Attack.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Sven.Attack.Ring"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Sven.Attack.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/shared/large_blade/thump01.wav"
+		"wave"			"weapons/hero/shared/large_blade/thump02.wav"
+		"wave"			"weapons/hero/shared/large_blade/thump03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			 //"import_stack" "sfx_random_delay_start"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+ 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Sven.Attack.Ring"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.0, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/ring01.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring02.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring03.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring04.wav"
+		"wave"	"null.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.01"
+			"input_max" "0.08"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Sven.GodsStrength.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/large_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/large_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/large_blade/whoosh03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.15"
+			}
+		}
+	}
+}
+
+"Hero_Sven.GodsStrength.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/sven/attack01.wav"
+		"wave"	")weapons/hero/sven/attack02.wav"
+		"wave"	")weapons/hero/sven/attack03.wav"
+		"wave"	")weapons/hero/sven/attack04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Sven.Layer.GodsStrength"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Sven.Attack.Impact"
+			}
+		}
+	}
+}
+
+"Hero_Sven.Layer.GodsStrength"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/sven/gods_strength_heavy_sword_impact1.wav"
+		"wave"			")weapons/hero/sven/gods_strength_heavy_sword_impact2.wav"
+		"wave"			")weapons/hero/sven/gods_strength_heavy_sword_impact3.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+
+"Hero_Sven.StormBolt"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/sven/storm_bolt.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Sven.StormBoltImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/sven/storm_bolt_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Sven.WarCry"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/sven/warcry.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"Hero_Sven.GodsStrength"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/sven/gods_strength.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Sven.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+"Hero_Sven.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	"$baseTexture"  "models/heroes/broodmother/broodmother_color.vtf"
+	"$normalmap" "models/heroes/broodmother/broodmother_normal.vtf"
+	"$maskmap1" "models/heroes/broodmother/broodmother_mask1"
+	"$maskmap2" "models/heroes/broodmother/broodmother_mask2"
+//	"$diffusewarp" "models/heroes/vengeful/vengeful_diffusewarp"
+//	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+	//$ENVMAP "models/heroes/broodmother/softboxEnv"
+	//$IgnoreBudgetCheck 1  
+	
+	$ENVMAP "models/cubemaps/glossy.vtf"
+	$ENVMAPINTENSITY 9
+	$ENVMAPBLENTOFULL 1
+	$MASKENVBYMETALNESS 1
+	$SPECULAR_BLOOM_SCALE 0.1
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 0
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTEXPONENT 10
+	$SPECULARCOLOR "[1 0.869 0.803]"
+	$RIMLIGHTCOLOR "[.528 0.869 0.803]"
+	$ambientscale 0.2
+	$alphatest 1
+
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+
+	"$detail1"  "models/heroes/broodmother/broodmother_glow"
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 4
+	$DETAIL1BLENDFACTOR 0.0  //Leave this off by default - God's Strength modulates it via particle fx
+	
+	$cloakintensity 0.65
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

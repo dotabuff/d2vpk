@@ -1,0 +1,47 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/enigma/eidelon_color"
+	"$detail1"  "models/heroes/enigma/enigma_motion"
+	"$normalmap" "models/heroes/enigma/eidelon_normals"
+//	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/heroes/enigma/eidelon_masks1"
+	"$maskmap2" "models/heroes/enigma/eidelon_masks2"
+//	"$diffusewarp" "models/heroes/enigma/razor_lightwarp"
+
+	$RIMLIGHTSCALE	11
+	$RIMLIGHTCOLOR	"[1 1 1]"
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 3
+
+
+	
+	$FRESNELWARP "models/heroes/enigma/enigma_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	-.2
+			"texturescrollangle"	45
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/centaur/weapon_color"
+	"$normalmap" "models\heroes\centaur\weapon_normal"
+	"$maskmap1" "models\heroes\centaur\weapon_masks1"
+	"$maskmap2" "models\heroes\centaur\weapon_masks2"
+	
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 8	
+	$SPECULARSCALE 1
+	//$SPECULARCOLOR "[0.7 0.9 1]"
+	//$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 1
+	$IgnoreBudgetCheck 1
+
+	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

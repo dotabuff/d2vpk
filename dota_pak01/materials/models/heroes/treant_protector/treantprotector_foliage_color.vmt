@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	$baseTexture "models\heroes\treant_protector/treantprotector_foliage_color"
+	"$normalmap" "models\heroes\treant_protector/treantprotector_foliage_normal"
+
+	"$maskmap1" "models\heroes\treant_protector/treantprotector_foliage_mask1"
+	"$maskmap2" "models\heroes\treant_protector/treantprotector_foliage_mask2"
+
+//	$FRESNELWARP "models\heroes\treant_protector/treant_fresnelranges"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	$SPECULAR_BLOOM_SCALE      0.3
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 2
+	$SPECULARCOLOR "[.65 .75 1]"
+	$alphatest 1	
+//	"$envmap" "env_cubemap"
+//	"$envmapintensity" "1"
+
+	$RIMLIGHTSCALE 6
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,48 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/elder_titan/elder_titan_color.vtf"
+	"$normalmap" "models/heroes/elder_titan/elder_titan_normal"	
+	"$maskmap1" "models/heroes/elder_titan/elder_titan_mask1"
+	"$maskmap2" "models/heroes/elder_titan/elder_titan_mask2"
+	
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+//	"$alphatest" "1"
+	
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 3
+	$ENVMAPBLENTOFULL 1
+	
+	$MASKENVBYMETALNESS 1
+
+	$SPECULAR_BLOOM_SCALE 10
+	$SPECULAREXPONENT 15	
+	$SPECULARSCALE 7
+  $SPECULARCOLOR "[0.7 0.9 1]"	
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	
+	$AMBIENTSCALE 1
+	$RIMLIGHTSCALE 6
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	$DETAIL1BLENDTOFULL 0
+
+	
+
+
+
+  	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

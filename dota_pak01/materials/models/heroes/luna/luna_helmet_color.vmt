@@ -1,0 +1,51 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\luna\luna_helmet_color"
+	"$normalmap" "models\heroes\luna\luna_helmet_normal"
+	"$maskmap1" "models\heroes\luna\luna_helmet_masks1"
+	"$maskmap2" "models\heroes\luna\luna_helmet_masks2"
+
+	"$alphatest" "1"
+
+
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	"$FRESNELWARP" "models/heroes/dragon_knight/knight_fresnelranges"
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 3
+	$SPECULARCOLOR "[.8 1 1]"
+	$RIMLIGHTCOLOR "[.8 1 1]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 1
+
+//	$AMBIENTSCALE 1
+	$ENVMAP "models/cubemaps/glossy"
+//	$MASKENVBYMETALNESS 0
+
+//	$ENVMAPINTENSITY 0.5
+
+	$IgnoreBudgetCheck 1	
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.5"
+			"texturescrollangle"	 "83"
+		}
+
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

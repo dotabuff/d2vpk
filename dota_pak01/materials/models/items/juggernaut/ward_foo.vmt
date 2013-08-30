@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/juggernaut/ward_foo_color"
+	"$normalmap" "models/items/juggernaut/ward_foo_normals"
+//	"$maskmap1" "models/items/juggernaut/riki_diffusal_masks1"
+//	"$maskmap2" "dev/reflectivity_10"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+
+	$SPECULAREXPONENT 80
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 3
+
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	1.0
+	$RIMLIGHTCOLOR	"[.85 1 1]"
+
+
+
+
+	$cloakintensity 0.85
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

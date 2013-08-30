@@ -1,0 +1,32 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/puck/puckwings_color"
+	"$normalmap" "models/development/flatnormal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/axe/masks1"
+	"$maskmap2" "models/heroes/axe/masks2"
+	"$translucent" "1"
+	"$additive" "1"
+	
+//	"$envmap" "env_cubemap"
+//	"$envmapintensity" "50"
+
+
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 0
+	$SPECULARCOLOR "0 0 0"
+	$RIMLIGHTSCALE 0
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

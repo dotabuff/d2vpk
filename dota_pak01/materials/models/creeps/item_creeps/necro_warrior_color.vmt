@@ -1,0 +1,55 @@
+"CustomHero"
+{
+	"$baseTexture" "models\creeps\item_creeps\necro_warrior_color"
+	"$normalmap" "models\creeps\item_creeps\necro_warrior_normal"
+	"$maskmap1" "models\heroes\bane\bane_body_mask1"
+	"$maskmap2" "models\heroes\bane\bane_body_mask2"
+	
+	$SPECULAREXPONENT 5		
+
+	$SPECULARSCALE 4
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTBLENDTOFULL	1
+	$SELFILLUMBLENDTOFULL	.2
+	$SPECULAR_BLOOM_SCALE      0
+	
+	$AMBIENTSCALE 1
+	
+	$REFLECTIONSTINTBYBASEBLENDTONONE 0
+	
+	//$SPECULARCOLOR "[1 0 0]"
+	$RIMLIGHTCOLOR "[1 .20 .20]"
+
+// Status Effects
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

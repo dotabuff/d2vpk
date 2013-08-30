@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/omniknight/wings_color"
+	$additive 1
+	"$normalmap" "models/development/flatnormal"
+	//$nocull 1
+
+	
+	//$SPECULAREXPONENT 20
+	$SPECULARSCALE 10
+      $SPECULARBLENDTOFULL 1
+	//$SPECULARCOLOR "[.7 1 1]"
+	//$RIMLIGHTCOLOR "[.8 1 1]"
+	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 1
+
+//	$DETAIL1BLENDMODE 3
+//	$DETAIL1SCALE 1
+//	$DETAIL1BLENDFACTOR 0
+//	$DETAIL1BLENDTOFULL 0
+
+	$IgnoreBudgetCheck 1
+
+
+}

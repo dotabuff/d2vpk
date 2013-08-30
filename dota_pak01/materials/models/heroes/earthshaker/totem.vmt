@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/earthshaker/totem_color"
+	$normalmap "models/heroes/earthshaker/totem_normal"
+	$maskmap1 "models/heroes/earthshaker/totem_mask1"
+	$maskmap2 "models/heroes/earthshaker/totem_mask2"
+	$diffusewarp "models/heroes/earthshaker/earthshaker_lightwarp"
+//	$FRESNELWARP "models/heroes/earthshaker/earthshaker_fresnelranges"
+
+	$SPECULAREXPONENT 30
+
+	$SPECULARSCALE 4
+
+	"$detail1" "models/heroes/earthshaker/totem_glow"
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1
+
+	$RIMLIGHTSCALE	1
+	$AMBIENTSCALE 1
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

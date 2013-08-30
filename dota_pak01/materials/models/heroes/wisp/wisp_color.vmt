@@ -1,0 +1,25 @@
+"customhero"
+{
+	"$basetexture" "models\heroes\wisp\wisp_color"
+	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/heroes/venomancer/masks1"
+	"$maskmap2" "models/heroes/venomancer/masks2"
+	
+	//$translucent 1
+	//$additive 1
+
+	$selfillumblendtofull .5
+	//$nodraw 1
+
+	$CLOAKFACTOR 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/warlock_demon/warlock_demon_color"
+	"$normalmap" "models/heroes/warlock_demon/warlock_demon_normal"
+	"$maskmap1" "models/heroes/warlock_demon/masks1"
+	"$maskmap2" "models/heroes/warlock_demon/masks2"
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$detail1" "models/heroes/invoker/forge_spirit_motion"
+	
+	$DETAIL1BLENDMODE 4
+	$DETAIL1SCALE 5
+		
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 1
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 1 .8]"
+
+	$RIMLIGHTCOLOR "[1 1 .6]"
+	$RIMLIGHTSCALE .8
+	$AMBIENTSCALE 1.2
+
+	$SPECULAR_BLOOM_SCALE     .3
+	$SPECULAR_BLOOM_COLOR      "[1 0 0]"
+	$SPECULAR_BLOOM_SHIFT 1
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.25
+			"texturescrollangle"	87
+		}
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

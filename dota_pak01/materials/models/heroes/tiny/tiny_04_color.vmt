@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/tiny/tiny_04_color"
+	"$normalmap" "models/development/flatnormal"
+	"$alphatest" "1"
+	//"$transluscent" "1"
+
+	//"$diffusewarp" "models/heroes/drow/diffusewarp"
+	//"$maskmap1" "models/heroes/tiny/masks1"
+	//"$maskmap2" "models/heroes/tiny/masks2"
+
+	
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULAREXPONENT 8
+	//$SPECULARSCALE 5
+	//$SPECULARCOLOR "[1 1 1]"
+	//$RIMLIGHTSCALE .6
+	//$RIMLIGHTCOLOR "[.3 .6 1]"
+
+
+
+// Status Effects
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

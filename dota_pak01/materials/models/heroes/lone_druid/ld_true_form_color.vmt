@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/lone_druid/ld_true_form_color"
+	"$normalmap" "models/development/flatnormal"
+	
+	"$detail1"  "models/heroes/lone_druid/ld_body_glow"
+	"$maskmap1" "models/heroes/lone_druid/ld_true_form_mask1"
+	"$maskmap2" "models/heroes/lone_druid/ld_true_form_mask2"
+
+	$SPECULAR_BLOOM_SCALE .25
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 1.5
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1.5
+	$RIMLIGHTCOLOR "[.75 1 1]"
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 5
+	$DETAIL1BLENDFACTOR 0  //Leave this off by default - modulates it via particle fx
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

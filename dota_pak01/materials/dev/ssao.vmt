@@ -1,0 +1,9 @@
+"ssao"
+{
+	$DEPTH_TEXTURE	"_rt_SSAO_depth"
+	$RANDOM_TEXTURE "dev/ssao_random"
+	$bias 			0.03
+	$strength 		1.00
+	$radius 		200.0
+	"$fow" 			"_rt_fog_of_war"
+}

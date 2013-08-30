@@ -1,0 +1,905 @@
+criterion "Isnevermore" "classname" "npc_dota_hero_Nevermore" weight 5 required
+criterion "IsEnemynevermore" "targetclassname" "npc_dota_hero_Nevermore" weight 5 required
+criterion "IsAllynevermore" "nearby_ally" "npc_dota_hero_Nevermore" weight 5 required
+criterion "IsPresenceOfDarkLord" "abilityname" "nevermore_dark_lord" weight 5 required
+criterion "IsNecromastery" "abilityname" "nevermore_necromastery" weight 5 required
+criterion "IsShortShadowRaze" "shadowraze" "1" weight 5 required
+criterion "IsMediumShadowRaze" "shadowraze" "2" weight 5 required
+criterion "IsLongShadowRaze" "shadowraze" "3" weight 5 required
+criterion "IsShadowRaze" "abilityname" "nevermore_shadowraze" weight 5 required
+criterion "IsRequiem" "abilityname" "nevermore_requiem" weight 5 required
+
+Response nevermore_Spawn
+{
+	scene "scenes/nevermore/nevermore_nev_spawn_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_spawn_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_spawn_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_spawn_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_spawn_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_spawn_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_spawn_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_spawn_11.vcd" nodelay noscene 
+}
+
+Rule nevermore_Spawn_Rule
+{
+	criteria Spawn Isnevermore 
+	response nevermore_Spawn
+}
+
+Response nevermore_CustomIsGameStart
+{
+	scene "scenes/nevermore/nevermore_nev_spawn_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_battlebegins_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_CustomIsGameStart_Rule
+{
+	criteria Custom Isnevermore IsGameStart
+	response nevermore_CustomIsGameStart
+}
+
+Response nevermore_Move
+{
+	scene "scenes/nevermore/nevermore_nev_move_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_14.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_move_15.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_acknow_09.vcd" nodelay noscene 
+}
+
+Rule nevermore_Move_Rule
+{
+	criteria Move Isnevermore 
+	response nevermore_Move
+}
+
+Response nevermore_Attack
+{
+	scene "scenes/nevermore/nevermore_nev_attack_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_15.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_16.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_attack_12.vcd" nodelay noscene 
+}
+
+Rule nevermore_Attack_Rule
+{
+	criteria Attack Isnevermore 
+	response nevermore_Attack
+}
+
+Response nevermore_CastOrder
+{
+	scene "scenes/nevermore/nevermore_nev_cast_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_cast_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_cast_03.vcd" nodelay noscene 
+}
+
+Rule nevermore_CastOrder_Rule
+{
+	criteria CastOrder Isnevermore 
+	response nevermore_CastOrder
+}
+
+Response nevermore_LearnIsPresenceOfDarkLord
+{
+	scene "scenes/nevermore/nevermore_nev_ability_presence_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_presence_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_presence_03.vcd" nodelay noscene 
+}
+
+Rule nevermore_LearnIsPresenceOfDarkLord_Rule
+{
+	criteria Learn Isnevermore IsPresenceOfDarkLord
+	response nevermore_LearnIsPresenceOfDarkLord
+}
+
+Response nevermore_LearnIsNecromastery
+{
+	scene "scenes/nevermore/nevermore_nev_ability_mastery_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_LearnIsNecromastery_Rule
+{
+	criteria Learn Isnevermore IsNecromastery
+	response nevermore_LearnIsNecromastery
+}
+
+Response nevermore_CastExecuteIsRequiem
+{
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_14.vcd" nodelay noscene 
+}
+
+Rule nevermore_CastExecuteIsRequiem_Rule
+{
+	criteria CastExecute Isnevermore IsRequiem
+	response nevermore_CastExecuteIsRequiem
+}
+
+Response nevermore_CastExecuteIsShadowRazeIsShortShadowRaze
+{
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_18.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_21.vcd" nodelay noscene 
+}
+
+Rule nevermore_CastExecuteIsShadowRazeIsShortShadowRaze_Rule
+{
+	criteria CastExecute Isnevermore IsShadowRaze IsShortShadowRaze
+	response nevermore_CastExecuteIsShadowRazeIsShortShadowRaze
+}
+
+Response nevermore_CastExecuteIsShadowRazeIsMediumShadowRaze
+{
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_20.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_22.vcd" nodelay noscene 
+}
+
+Rule nevermore_CastExecuteIsShadowRazeIsMediumShadowRaze_Rule
+{
+	criteria CastExecute Isnevermore IsShadowRaze IsMediumShadowRaze
+	response nevermore_CastExecuteIsShadowRazeIsMediumShadowRaze
+}
+
+Response nevermore_CastExecuteIsShadowRazeIsLongShadowRaze
+{
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_19.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_23.vcd" nodelay noscene 
+}
+
+Rule nevermore_CastExecuteIsShadowRazeIsLongShadowRaze_Rule
+{
+	criteria CastExecute Isnevermore IsShadowRaze IsLongShadowRaze
+	response nevermore_CastExecuteIsShadowRazeIsLongShadowRaze
+}
+
+Response nevermore_CastExecuteIsShadowRazeIsShortShadowRazeChance_5%
+{
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_24.vcd" nodelay noscene 
+}
+
+Rule nevermore_CastExecuteIsShadowRazeIsShortShadowRazeChance_5%_Rule
+{
+	criteria CastExecute Isnevermore IsShadowRaze IsShortShadowRaze Chance_5%
+	response nevermore_CastExecuteIsShadowRazeIsShortShadowRazeChance_5%
+}
+
+Response nevermore_CastExecuteIsShadowRazeIsLongShadowRazeChance_5%
+{
+	scene "scenes/nevermore/nevermore_nev_ability_shadow_25.vcd" nodelay noscene 
+}
+
+Rule nevermore_CastExecuteIsShadowRazeIsLongShadowRazeChance_5%_Rule
+{
+	criteria CastExecute Isnevermore IsShadowRaze IsLongShadowRaze Chance_5%
+	response nevermore_CastExecuteIsShadowRazeIsLongShadowRazeChance_5%
+}
+
+Response nevermore_Death
+{
+	scene "scenes/nevermore/nevermore_nev_death_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_15.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_16.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_17.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_18.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_death_19.vcd" nodelay noscene 
+}
+
+Rule nevermore_Death_Rule
+{
+	criteria Death Isnevermore 
+	response nevermore_Death
+}
+
+Response nevermore_DeathIsReincarnating
+{
+	scene "scenes/nevermore/nevermore_nev_laugh_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_fastres_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_DeathIsReincarnating_Rule
+{
+	criteria Death Isnevermore IsReincarnating
+	response nevermore_DeathIsReincarnating
+}
+
+Response nevermore_Kill
+{
+	scene "scenes/nevermore/nevermore_nev_kill_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_Kill_Rule
+{
+	criteria Kill Isnevermore 
+	response nevermore_Kill
+}
+
+Response nevermore_KillIsFirstBlood
+{
+	scene "scenes/nevermore/nevermore_nev_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_firstblood_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_firstblood_03.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsFirstBlood_Rule
+{
+	criteria Kill Isnevermore IsFirstBlood
+	response nevermore_KillIsFirstBlood
+}
+
+Response nevermore_KillIsEnemyLeshracChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_rival_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsEnemyLeshracChance_20%_Rule
+{
+	criteria Kill Isnevermore IsEnemyLeshrac Chance_20%
+	response nevermore_KillIsEnemyLeshracChance_20%
+}
+
+Response nevermore_KillIsEnemyDoom_BringerChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_rival_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_07.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsEnemyDoom_BringerChance_20%_Rule
+{
+	criteria Kill Isnevermore IsEnemyDoom_Bringer Chance_20%
+	response nevermore_KillIsEnemyDoom_BringerChance_20%
+}
+
+Response nevermore_KillIsEnemyShadow_DemonChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_rival_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_10.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsEnemyShadow_DemonChance_20%_Rule
+{
+	criteria Kill Isnevermore IsEnemyShadow_Demon Chance_20%
+	response nevermore_KillIsEnemyShadow_DemonChance_20%
+}
+
+Response nevermore_KillIsEnemyWindrunnerChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_rival_13.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsEnemyWindrunnerChance_20%_Rule
+{
+	criteria Kill Isnevermore IsEnemyWindrunner Chance_20%
+	response nevermore_KillIsEnemyWindrunnerChance_20%
+}
+
+Response nevermore_Respawn
+{
+	scene "scenes/nevermore/nevermore_nev_respawn_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_respawn_10.vcd" nodelay noscene 
+}
+
+Rule nevermore_Respawn_Rule
+{
+	criteria Respawn Isnevermore 
+	response nevermore_Respawn
+}
+
+Response nevermore_Select
+{
+	scene "scenes/nevermore/nevermore_nev_rare_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rare_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rare_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rare_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rare_05.vcd" nodelay noscene 
+}
+
+Rule nevermore_Select_Rule
+{
+	criteria Select Isnevermore 
+	response nevermore_Select
+}
+
+Response nevermore_PurchaseIsExpensiveItem
+{
+	scene "scenes/nevermore/nevermore_nev_purch_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_purch_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_purch_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_purch_04.vcd" nodelay noscene 
+}
+
+Rule nevermore_PurchaseIsExpensiveItem_Rule
+{
+	criteria Purchase Isnevermore IsExpensiveItem
+	response nevermore_PurchaseIsExpensiveItem
+}
+
+Response nevermore_PurchaseIsBlinkDagger
+{
+	scene "scenes/nevermore/nevermore_nev_blink_01.vcd" nodelay noscene speakonce
+	scene "scenes/nevermore/nevermore_nev_blink_02.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsBlinkDagger_Rule
+{
+	criteria Purchase Isnevermore IsBlinkDagger
+	response nevermore_PurchaseIsBlinkDagger
+}
+
+Response nevermore_PurchaseIsBlackKingBar
+{
+	scene "scenes/nevermore/nevermore_nev_item_01.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsBlackKingBar_Rule
+{
+	criteria Purchase Isnevermore IsBlackKingBar
+	response nevermore_PurchaseIsBlackKingBar
+}
+
+Response nevermore_PurchaseIsInvisSword
+{
+	scene "scenes/nevermore/nevermore_nev_item_02.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsInvisSword_Rule
+{
+	criteria Purchase Isnevermore IsInvisSword
+	response nevermore_PurchaseIsInvisSword
+}
+
+Response nevermore_PurchaseIsManta
+{
+	scene "scenes/nevermore/nevermore_nev_item_03.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsManta_Rule
+{
+	criteria Purchase Isnevermore IsManta
+	response nevermore_PurchaseIsManta
+}
+
+Response nevermore_PurchaseIsButterfly
+{
+	scene "scenes/nevermore/nevermore_nev_item_04.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsButterfly_Rule
+{
+	criteria Purchase Isnevermore IsButterfly
+	response nevermore_PurchaseIsButterfly
+}
+
+Response nevermore_PurchaseIsSkadi
+{
+	scene "scenes/nevermore/nevermore_nev_item_05.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsSkadi_Rule
+{
+	criteria Purchase Isnevermore IsSkadi
+	response nevermore_PurchaseIsSkadi
+}
+
+Response nevermore_PurchaseIsDesolator
+{
+	scene "scenes/nevermore/nevermore_nev_item_06.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsDesolator_Rule
+{
+	criteria Purchase Isnevermore IsDesolator
+	response nevermore_PurchaseIsDesolator
+}
+
+Response nevermore_PurchaseIsSatanic
+{
+	scene "scenes/nevermore/nevermore_nev_item_07.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsSatanic_Rule
+{
+	criteria Purchase Isnevermore IsSatanic
+	response nevermore_PurchaseIsSatanic
+}
+
+Response nevermore_PurchaseIsAssaultCuirass
+{
+	scene "scenes/nevermore/nevermore_nev_item_08.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsAssaultCuirass_Rule
+{
+	criteria Purchase Isnevermore IsAssaultCuirass
+	response nevermore_PurchaseIsAssaultCuirass
+}
+
+Response nevermore_PurchaseIsUltimateScepter
+{
+	scene "scenes/nevermore/nevermore_nev_scepter_01.vcd" nodelay noscene speakonce
+	scene "scenes/nevermore/nevermore_nev_scepter_02.vcd" nodelay noscene speakonce
+}
+
+Rule nevermore_PurchaseIsUltimateScepter_Rule
+{
+	criteria Purchase Isnevermore IsUltimateScepter
+	response nevermore_PurchaseIsUltimateScepter
+}
+
+Response nevermore_Immortality
+{
+	scene "scenes/nevermore/nevermore_nev_immort_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_immort_03.vcd" nodelay noscene 
+}
+
+Rule nevermore_Immortality_Rule
+{
+	criteria Immortality Isnevermore 
+	response nevermore_Immortality
+}
+
+Response nevermore_MissingIsLaneTop
+{
+	scene "scenes/nevermore/nevermore_nev_lane_missing_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_MissingIsLaneTop_Rule
+{
+	criteria Missing Isnevermore IsLaneTop
+	response nevermore_MissingIsLaneTop
+}
+
+Response nevermore_MissingIsLaneMid
+{
+	scene "scenes/nevermore/nevermore_nev_lane_missing_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_MissingIsLaneMid_Rule
+{
+	criteria Missing Isnevermore IsLaneMid
+	response nevermore_MissingIsLaneMid
+}
+
+Response nevermore_MissingIsLaneBot
+{
+	scene "scenes/nevermore/nevermore_nev_lane_missing_03.vcd" nodelay noscene 
+}
+
+Rule nevermore_MissingIsLaneBot_Rule
+{
+	criteria Missing Isnevermore IsLaneBot
+	response nevermore_MissingIsLaneBot
+}
+
+Response nevermore_Deny
+{
+	scene "scenes/nevermore/nevermore_nev_deny_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_Deny_Rule
+{
+	criteria Deny Isnevermore 
+	response nevermore_Deny
+}
+
+Response nevermore_LastHit
+{
+	scene "scenes/nevermore/nevermore_nev_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_12.vcd" nodelay noscene 
+}
+
+Rule nevermore_LastHit_Rule
+{
+	criteria LastHit Isnevermore 
+	response nevermore_LastHit
+}
+
+Response nevermore_ItemDropIsUltraRareDrop
+{
+	scene "scenes/nevermore/nevermore_nev_lasthit_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsUltraRareDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsUltraRareDrop
+	response nevermore_ItemDropIsUltraRareDrop
+}
+
+Response nevermore_ItemDropIsRareDrop
+{
+	scene "scenes/nevermore/nevermore_nev_laugh_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsRareDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsRareDrop
+	response nevermore_ItemDropIsRareDrop
+}
+
+Response nevermore_ItemDropIsCommonDrop
+{
+	scene "scenes/nevermore/nevermore_nev_laugh_06.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsCommonDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsCommonDrop
+	response nevermore_ItemDropIsCommonDrop
+}
+
+Response nevermore_Defeat
+{
+	scene "scenes/nevermore/nevermore_nev_lose_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_Defeat_Rule
+{
+	criteria Defeat Isnevermore 
+	response nevermore_Defeat
+}
+
+Response nevermore_Victory
+{
+	scene "scenes/nevermore/nevermore_nev_win_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_win_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_win_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_win_07.vcd" nodelay noscene 
+}
+
+Rule nevermore_Victory_Rule
+{
+	criteria Victory Isnevermore 
+	response nevermore_Victory
+}
+
+Response nevermore_Bottling
+{
+	scene "scenes/nevermore/nevermore_nev_bottle_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_bottle_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_bottle_03.vcd" nodelay noscene 
+}
+
+Rule nevermore_Bottling_Rule
+{
+	criteria Bottling Isnevermore 
+	response nevermore_Bottling
+}
+
+Response nevermore_PowerupIsPowerupHaste
+{
+	scene "scenes/nevermore/nevermore_nev_haste_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_PowerupIsPowerupHaste_Rule
+{
+	criteria Powerup Isnevermore IsPowerupHaste
+	response nevermore_PowerupIsPowerupHaste
+}
+
+Response nevermore_PowerupIsPowerupDoubleDamage
+{
+	scene "scenes/nevermore/nevermore_nev_doubdam_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_PowerupIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Isnevermore IsPowerupDoubleDamage
+	response nevermore_PowerupIsPowerupDoubleDamage
+}
+
+Response nevermore_PowerupIsPowerupRegeneration
+{
+	scene "scenes/nevermore/nevermore_nev_regen_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_PowerupIsPowerupRegeneration_Rule
+{
+	criteria Powerup Isnevermore IsPowerupRegeneration
+	response nevermore_PowerupIsPowerupRegeneration
+}
+
+Response nevermore_PowerupIsPowerupIllusion
+{
+	scene "scenes/nevermore/nevermore_nev_illus_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_PowerupIsPowerupIllusion_Rule
+{
+	criteria Powerup Isnevermore IsPowerupIllusion
+	response nevermore_PowerupIsPowerupIllusion
+}
+
+Response nevermore_PowerupIsPowerupInvisibility
+{
+	scene "scenes/nevermore/nevermore_nev_invis_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_PowerupIsPowerupInvisibility_Rule
+{
+	criteria Powerup Isnevermore IsPowerupInvisibility
+	response nevermore_PowerupIsPowerupInvisibility
+}
+
+Response nevermore_PowerupIsPowerupInvisibilityChance_25%
+{
+	scene "scenes/nevermore/nevermore_nev_invis_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_PowerupIsPowerupInvisibilityChance_25%_Rule
+{
+	criteria Powerup Isnevermore IsPowerupInvisibility Chance_25%
+	response nevermore_PowerupIsPowerupInvisibilityChance_25%
+}
+
+Response nevermore_LevelUp
+{
+	scene "scenes/nevermore/nevermore_nev_level_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_level_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_level_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_level_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_level_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_level_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_level_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_level_10.vcd" nodelay noscene 
+}
+
+Rule nevermore_LevelUp_Rule
+{
+	criteria LevelUp Isnevermore 
+	response nevermore_LevelUp
+}
+
+Response nevermore_Pain
+{
+	scene "scenes/nevermore/nevermore_nev_pain_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_09.vcd" nodelay noscene 
+}
+
+Rule nevermore_Pain_Rule
+{
+	criteria Pain Isnevermore 
+	response nevermore_Pain
+}
+
+Response nevermore_PainChance_25%
+{
+	scene "scenes/nevermore/nevermore_nev_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule nevermore_PainChance_25%_Rule
+{
+	criteria Pain Isnevermore Chance_25%
+	response nevermore_PainChance_25%
+}
+
+Response nevermore_CooldownLittleNag
+{
+	scene "scenes/nevermore/nevermore_nev_notyet_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_notyet_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_CooldownLittleNag_Rule
+{
+	criteria Cooldown Isnevermore LittleNag
+	response nevermore_CooldownLittleNag
+}
+
+Response nevermore_CooldownMediumNag
+{
+	scene "scenes/nevermore/nevermore_nev_notyet_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_notyet_04.vcd" nodelay noscene 
+}
+
+Rule nevermore_CooldownMediumNag_Rule
+{
+	criteria Cooldown Isnevermore MediumNag
+	response nevermore_CooldownMediumNag
+}
+
+Response nevermore_CooldownSuperNag
+{
+	scene "scenes/nevermore/nevermore_nev_notyet_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_notyet_06.vcd" nodelay noscene 
+}
+
+Rule nevermore_CooldownSuperNag_Rule
+{
+	criteria Cooldown Isnevermore SuperNag
+	response nevermore_CooldownSuperNag
+}
+
+Response nevermore_NoManaLittleNag
+{
+	scene "scenes/nevermore/nevermore_nev_nomana_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_nomana_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_NoManaLittleNag_Rule
+{
+	criteria NoMana Isnevermore LittleNag
+	response nevermore_NoManaLittleNag
+}
+
+Response nevermore_NoManaMediumNag
+{
+	scene "scenes/nevermore/nevermore_nev_nomana_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_nomana_04.vcd" nodelay noscene 
+}
+
+Rule nevermore_NoManaMediumNag_Rule
+{
+	criteria NoMana Isnevermore MediumNag
+	response nevermore_NoManaMediumNag
+}
+
+Response nevermore_NoManaSuperNag
+{
+	scene "scenes/nevermore/nevermore_nev_nomana_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_nomana_06.vcd" nodelay noscene 
+}
+
+Rule nevermore_NoManaSuperNag_Rule
+{
+	criteria NoMana Isnevermore SuperNag
+	response nevermore_NoManaSuperNag
+}
+
+Response nevermore_InTheBag
+{
+	scene "scenes/nevermore/nevermore_nev_inthebag_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_InTheBag_Rule
+{
+	criteria InTheBag Isnevermore 
+	response nevermore_InTheBag
+}
+
+Response nevermore_EmoteIsEmoteLaugh
+{
+	scene "scenes/nevermore/nevermore_nev_laugh_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_EmoteIsEmoteLaugh_Rule
+{
+	criteria Emote Isnevermore IsEmoteLaugh
+	response nevermore_EmoteIsEmoteLaugh
+}
+
+Response nevermore_Thanks
+{
+	scene "scenes/nevermore/nevermore_nev_thanks_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_thanks_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_Thanks_Rule
+{
+	criteria Thanks Isnevermore 
+	response nevermore_Thanks
+}
+

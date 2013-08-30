@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/batrider/batrider_body"
+	"$normalmap" "models/heroes/batrider/batrider_body_normal"
+	"$detail1"  "models/heroes/batrider/batrider_body_glow" 
+ 	"$maskmap1" "models/heroes/batrider/batrider_body_masks1"
+	"$maskmap2" "models/heroes/batrider/batrider_body_masks2"
+
+//	"$alphatest" "1"
+
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	//$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+	
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 4
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	
+	$RIMLIGHTSCALE 1
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+
+	
+//	$SPECULAR_BLOOM_SCALE .25
+//	$SPECULAR_BLOOM_COLOR "[2 .050 0]"
+//	$SPECULAR_BLOOM_SHIFT 0
+	
+//	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

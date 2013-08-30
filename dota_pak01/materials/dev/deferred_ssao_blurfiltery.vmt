@@ -1,0 +1,11 @@
+"BlurFilterY"
+{
+//	"$kernel" "4" // Gaussian kernel 25 pixels wide, 13 texture fetches
+//	"$BLOOMAMOUNT" "1"
+	"$basetexture" "_rt_SSAO_result"
+	$DEPTH_TEXTURE	"_rt_deferred_depth"
+	$OCCLUSION_EXP "1.25"
+	$BLUR_Z_THRESHOLD "0.05"
+	"$ignorez" 1
+	"%noToolTexture" 1
+}

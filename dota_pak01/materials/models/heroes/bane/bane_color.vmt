@@ -1,0 +1,44 @@
+"CustomHero"
+{
+	"$baseTexture" "models\heroes\bane\bane_color"
+	"$normalmap" "models\heroes\bane\bane_normal"
+//	"$detail1"  "models/heroes/bane/bane_glow"
+	"$maskmap1" "models/heroes/bane/bane_mask1"
+	"$maskmap2" "models/heroes/bane/bane_mask2"
+	"$diffusewarp" "models/heroes/bane/bane_lightwarp"
+//	"$envmap" "env_cubemap"
+
+//	"$specularwarp" "models/heroes/bane/bane_specularwarp"
+
+
+	$SPECULAREXPONENT 8
+
+	$SPECULARSCALE 1.2
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	2
+	$AMBIENTSCALE 2
+	
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+//	$rimlightcolor "[1 .4 .7]"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
+
+

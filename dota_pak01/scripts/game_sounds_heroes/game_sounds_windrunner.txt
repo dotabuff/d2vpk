@@ -1,0 +1,357 @@
+
+"Hero_Windrunner.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_Windrunner.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/windrunner/attack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Windrunner.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_1.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_2.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+ "Hero_Windrunner.ShackleshotCast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/windrunner/shackleshot_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+ "Hero_Windrunner.ShackleshotStun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave" 			")weapons/hero/windrunner/shackleshot_stun.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+ "Hero_Windrunner.ShackleshotBind"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave" 			")weapons/hero/windrunner/shackleshot_bind.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Ability.PowershotPull"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			")weapons/hero/windrunner/windrunner_powershot_pull.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Ability.Powershot"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/windrunner/windrunner_powershot.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Windrunner.PowershotDamage"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100,110"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/windrunner/powershot_damage01.wav"
+		"wave"	"weapons/hero/windrunner/powershot_damage02.wav"
+		"wave"	"weapons/hero/windrunner/powershot_damage03.wav"
+		"wave"	"weapons/hero/windrunner/powershot_damage04.wav"
+		"wave"	"weapons/hero/windrunner/powershot_damage05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Ability.Windrunner"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90, 110"
+	"wave"			")weapons/hero/weaver/shukuchi.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Ability.Focusfire"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/windrunner/focus_fire.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Windrunner.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"110, 120"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+"Hero_Windrunner.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Ability.PowershotPull.Lyralei"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/windrunner/powershot_channel_alt03.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+"Ability.PowershotPull.Sparrowhawk"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/windrunner/powershot_channel_alt02.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+"Ability.PowershotPull.Stinger"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/windrunner/powershot_channel_alt01.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+"Ability.Powershot.Alt"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90, 110"
+	"wave"			")weapons/hero/windrunner/powershot_alt01.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}

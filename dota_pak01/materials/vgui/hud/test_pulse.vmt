@@ -1,0 +1,19 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui\hud\test_pulse"
+	"$vertexcolor" 0
+	"$vertexalpha" 1
+	"$no_fullbright" 1
+	"$ignorez" 1
+	"$translucent" 1
+
+	"Proxies"
+	{
+		"AnimatedTexture"
+		{
+			"animatedTextureVar" "$basetexture"
+			"animatedTextureFrameNumVar" "$frame"
+			"animatedTextureFrameRate" "3" // This is speed in frames per second
+		}
+	}
+}

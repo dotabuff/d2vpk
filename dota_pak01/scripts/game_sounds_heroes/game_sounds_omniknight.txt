@@ -1,0 +1,305 @@
+"Hero_Omniknight.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"85, 95"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/axe/preattack01.wav"
+		"wave"	")weapons/hero/axe/preattack02.wav"
+		"wave"	")weapons/hero/axe/preattack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.2"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Omniknight.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/omniknight/attack01.wav"
+		"wave"	")weapons/hero/omniknight/attack02.wav"
+		"wave"	")weapons/hero/omniknight/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Omniknight.Attack.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Omniknight.Attack.Post"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Omniknight.Attack.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1, 0.3"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"80, 90"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/ring01.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring04.wav"
+		"wave"	"null.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			 //"import_stack" "sfx_random_delay_start"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+ 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Omniknight.Attack.Post"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/shared/large_blade/follow_thru01.wav"
+		"wave"		")weapons/hero/shared/large_blade/follow_thru02.wav"
+		"wave"		")weapons/hero/shared/large_blade/follow_thru03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Omniknight.Purification"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/omniknight/purification.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_Omniknight.Repel"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"100"
+	"wave"			"weapons/hero/omniknight/repel.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}
+
+"Hero_Omniknight.GuardianAngel.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/omniknight/guardian_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Omniknight.GuardianAngel"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_78dB"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/omniknight/guardian01.wav"
+		"wave"			")weapons/hero/omniknight/guardian02.wav"
+		"wave"			")weapons/hero/omniknight/guardian03.wav"
+		"wave"			")weapons/hero/omniknight/guardian04.wav"
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Omniknight.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Omniknight.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

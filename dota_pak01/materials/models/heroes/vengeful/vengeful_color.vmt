@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture"  "models/heroes/vengeful/vengeful_color.vtf"
+	"$normalmap" "models/heroes/vengeful/vengeful_normal.vtf"
+	"$maskmap1" "models/heroes/vengeful/vengeful_mask1"
+	"$maskmap2" "models/heroes/vengeful/vengeful_mask2"
+	"$diffusewarp" "models/heroes/vengeful/vengeful_diffusewarp"
+	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+//	$FRESNELWARP "models/heroes/juggernaut/juggernaut_fresnelranges"
+
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 1.2
+	$RIMLIGHTSCALE	2
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+
+	$ambientscale 1
+
+	$rimlightcolor "[.6 .5 1]"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

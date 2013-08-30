@@ -1,0 +1,46 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/huskar/huskar_spear"
+	"$normalmap" "models/heroes/huskar/huskar_spear_normal"
+//	"$detail1"  "models/heroes/huskar/huskar_glow"
+ 	"$maskmap1" "models/heroes/huskar/huskar_spear_masks1"
+	"$maskmap2" "models/heroes/huskar/huskar_spear_masks2"
+
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1
+
+//	$DETAIL1BLENDMODE 3
+//	$DETAIL1SCALE 1
+//	$DETAIL1BLENDFACTOR 0
+//	$DETAIL1BLENDTOFULL 0
+	$alphatest 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+//		"TextureScroll"		
+//		{
+//			"texturescrollvar"	"$detail1texturetransform"
+//			"texturescrollrate"	"1"
+//			"texturescrollangle"	"90"
+//		}
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

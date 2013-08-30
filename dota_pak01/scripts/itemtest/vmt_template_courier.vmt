@@ -1,0 +1,24 @@
+CustomHero
+{
+	$baseTexture "modelname"
+	$normalmap "models/development/flatnormal"
+	$maskmap1 "models/development/blankmasks1"
+	$maskmap2 "models/development/blankmasks2"
+
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE 1
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+	$cloakPassEnabled 1
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

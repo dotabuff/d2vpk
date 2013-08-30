@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models/items/wards/disruptor_ward/disruptor_sentry_color"
+	"$normalmap" "models/development/flatnormal"
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 4
+	$SPECULARCOLOR "1 1 1"
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULAREXPONENTBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFULL 1
+
+	"$cloakPassEnabled" "1"
+	$cloakintensity .55
+	$RIMLIGHTSCALE	1
+	$refractamount .1
+	"cloakfactor" ".2"
+//	$RIMLIGHTCOLOR [ 0 0 0 ]
+	
+//	$FRESNELWARP "models/heroes/drow/drow_fresnelwarp"	
+
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

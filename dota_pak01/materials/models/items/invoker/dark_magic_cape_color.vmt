@@ -1,0 +1,43 @@
+"CustomHero"
+{
+	$baseTexture "models/items/invoker/Dark_magic_cape_color.vtf"
+	"$normalmap" "models/items/invoker/Dark_magic_cape_normal"
+//	"$normalmap" "models/development/flatnormal"
+        "$maskmap2"  "models/items/invoker/Dark_magic_cape_masks2"
+	"$maskmap1"  "models/items/invoker/Dark_magic_cape_masks1"
+	"$alphatest" "1"
+
+	
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+
+
+	"$alphatest" "1"
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 3
+	$RIMLIGHTSCALE 2
+	$specularcolor "[2 .8 .7]"
+	$RIMLIGHTCOLOR "[1 1 .75]"
+
+	
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

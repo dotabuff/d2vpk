@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$baseTexture" "models\creeps\neutral_creeps\neutral_ogre_med_color"
+	"$normalmap"   "models\creeps\neutral_creeps\neutral_ogre_med_normal"
+	"$maskmap1"    "models\creeps\neutral_creeps\neutral_creep_ogre_med_masks1"
+	"$maskmap2"    "models\creeps\neutral_creeps\neutral_creep_ogre_med_masks2"
+//	"$diffusewarp" "models\creeps\neutral_creeps\n_creep_lightwarp"
+
+	
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 4
+	$SPECULARCOLOR "[.8 .7 1]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTEXPONENT 10
+	$AMBIENTSCALE 1
+
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULAREXPONENTBLENDTOFULL 1 
+	
+// Status Effects
+
+	$cloakintensity 0.85
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

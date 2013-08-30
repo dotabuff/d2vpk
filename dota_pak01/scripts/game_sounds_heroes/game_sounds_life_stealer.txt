@@ -1,0 +1,247 @@
+
+
+"Hero_LifeStealer.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons\hero\bloodseeker\preattack01.wav"
+		"wave"			"weapons\hero\bloodseeker\preattack02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_LifeStealer.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/lifestealer/attack01.wav"
+		"wave"			"weapons/hero/lifestealer/attack02.wav"
+		"wave"			"weapons/hero/lifestealer/attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_LifeStealer.Rage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100, 115"
+	"wave"			"weapons/hero/lifestealer/rage.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_LifeStealer.OpenWounds.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/lifestealer/open_wounds_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_LifeStealer.OpenWounds"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/lifestealer/open_wounds.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_LifeStealer.Infest"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons\hero\lifestealer\infest.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_LifeStealer.Consume"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\lifestealer\consume.wav"
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "450"
+			}
+		}
+	}
+}
+
+"Hero_LifeStealer.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+		
+	}
+}
+
+
+"Hero_LifeStealer.Foley"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1, 0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\lifestealer\chains01.wav"
+		"wave"		"physics\movement\hero\lifestealer\chains02.wav"
+		"wave"		"physics\movement\hero\lifestealer\chains03.wav"
+		"wave"		"physics\movement\hero\lifestealer\chains04.wav"
+		"wave"		"physics\movement\hero\lifestealer\chains05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_LifeStealer.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+

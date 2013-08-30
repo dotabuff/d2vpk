@@ -1,0 +1,586 @@
+
+
+"Hero_Undying.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/axe/preattack01.wav"
+		"wave"	")weapons/hero/axe/preattack02.wav"
+		"wave"	")weapons/hero/axe/preattack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Undying.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"105,115"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/lifestealer/attack01.wav"
+		"wave"	"weapons/hero/lifestealer/attack02.wav"
+		"wave"	"weapons/hero/lifestealer/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Undying.Attack.Post"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Undying.Attack.Post"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/shared/large_blade/follow_thru01.wav"
+		"wave"		")weapons/hero/shared/large_blade/follow_thru02.wav"
+		"wave"		")weapons/hero/shared/large_blade/follow_thru03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Undying.Decay.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/decay_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Undying.Decay.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100, 110"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/undying/decay_target01.wav"
+		"wave"		")weapons/hero/undying/decay_target02.wav"
+		"wave"		")weapons/hero/undying/decay_target03.wav"
+		"wave"		")weapons/hero/undying/decay_target04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Undying.Decay.Transfer"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/undying/decay_transfer01.wav"
+		"wave"		")weapons/hero/undying/decay_transfer02.wav"
+		"wave"		")weapons/hero/undying/decay_transfer03.wav"
+		"wave"		")weapons/hero/undying/decay_transfer04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.5"
+			}
+		}
+	}
+}
+
+
+"Hero_Undying.SoulRip.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/soul_rip_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Undying.SoulRip.Ally"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"120"
+	"wave"			")weapons/hero/bane/enfeeble_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Undying.SoulRip.Enemy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"120"
+	"wave"			")weapons/hero/bane/enfeeble_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_Undying.Tombstone.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	//"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/tombstone.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "Tombstone"
+				"match_channel" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Undying.FleshGolem.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/flesh_golem_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Undying.FleshGolem.Aura"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/soul_rip_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Undying.FleshGolem.End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"120"
+	"wave"			")weapons/hero/undying/soul_rip_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Undying.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35, 0.45"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+				"input_execute"	"1"
+				"entry_name" "Hero_Undying.Foley"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Undying.Foley"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\undying\foley01.wav"
+		"wave"		"physics\footsteps\hero\undying\foley02.wav"
+		"wave"		"physics\footsteps\hero\undying\foley03.wav"
+		"wave"		"physics\footsteps\hero\undying\foley04.wav"
+		"wave"		"physics\footsteps\hero\undying\foley05.wav"
+		"wave"		"physics\footsteps\hero\undying\foley06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Undying_Golem.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90,100"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/lifestealer/attack01.wav"
+		"wave"	"weapons/hero/lifestealer/attack02.wav"
+		"wave"	"weapons/hero/lifestealer/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Undying.Attack.Post"
+			}
+		}
+	}
+}
+
+"Hero_Undying_Golem.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"90,100"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\pudge\step01.wav"
+		"wave"		"physics\footsteps\hero\pudge\step02.wav"
+		"wave"		"physics\footsteps\hero\pudge\step03.wav"
+		"wave"		"physics\footsteps\hero\pudge\step04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+				"input_execute"	"1"
+				"entry_name" "Hero_Undying.Foley"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Undying.Foley"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Undying.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_Undying.IdleLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"physics\movement\hero\pudge\idle_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.2"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+"Undying_Zombie.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons\hero\bloodseeker\preattack01.wav"
+		"wave"			"weapons\hero\bloodseeker\preattack02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"play_second_layer"
+			{
+				"input_execute"	"1"
+				"entry_name" "Hero_Undying.Foley"
+			}
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+		}
+	}
+}
+
+"Undying_Zombie.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/lifestealer/attack01.wav"
+		"wave"		"weapons/hero/lifestealer/attack02.wav"
+		"wave"		"weapons/hero/lifestealer/attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+		}
+	}
+}
+
+"Undying_Zombie.Spawn"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/undying/zombie_spawn01.wav"
+		"wave"		"weapons/hero/undying/zombie_spawn02.wav"
+		"wave"		"weapons/hero/undying/zombie_spawn03.wav"
+		"wave"		"weapons/hero/undying/zombie_spawn04.wav"
+		"wave"		"weapons/hero/undying/zombie_spawn05.wav"
+		"wave"		"weapons/hero/undying/zombie_spawn06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+		}
+	}
+}

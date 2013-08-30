@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/meepo/meepo_color"
+	"$normalmap" "models/heroes/meepo/meepo_normal"
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	"$maskmap1" "models/heroes/meepo/meepo_masks1"
+	"$maskmap2" "models/heroes/meepo/meepo_masks2"
+
+	$SPECULAR_BLOOM_SCALE    .6
+	$SPECULAR_BLOOM_COLOR "[0 0 1]"
+	$SPECULAR_BLOOM_SHIFT 1
+	
+	
+	$SPECULAREXPONENT 5	
+	$SPECULARSCALE 15	
+//	$SPECULARCOLOR "[1 .6 .25]"
+	$SPECULARCOLOR "[0 1 1.5]"
+	$RIMLIGHTCOLOR "[0.25 0.48 0.9]"
+	//$SPECULARBLENDTOFULL .1
+	$alphatest 1
+
+	$AMBIENTSCALE 1
+
+	$RIMLIGHTSCALE 12
+        $IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

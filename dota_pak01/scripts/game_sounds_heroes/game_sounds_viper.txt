@@ -1,0 +1,236 @@
+
+
+"hero_viper.preAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons\hero\viper\preattack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"hero_viper.attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons\hero\viper\attack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"hero_viper.projectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"wave"	"weapons\hero\viper\impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"hero_viper.poisonAttack.Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\viper\poison_attack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"hero_viper.PoisonAttack.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"110, 120"
+	"wave"			"weapons\hero\viper\viper_strike_impact.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_substring" "false"
+				"match_entry" "hero_viper.PoisonAttack.Target"
+				"match_channel" "false"
+			}
+		}
+	}
+}
+
+"hero_viper.CorrosiveSkin" //plays on attacker
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"wave"			"weapons\hero\viper\corrosive_skin.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"hero_viper.viperStrike"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons\hero\viper\viper_strike.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"hero_viper.viperStrikeImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"80"
+	"wave"			"weapons\hero\viper\viper_strike_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"hero_viper.run"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"physics\movement\hero\viper\flap01.wav"
+		"wave"	"physics\movement\hero\viper\flap02.wav"
+		"wave"	"physics\movement\hero\viper\flap03.wav"
+		"wave"	"physics\movement\hero\viper\flap04.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.3"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"hero_viper.idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1, 0.2"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"physics\movement\hero\viper\flap01.wav"
+		"wave"	"physics\movement\hero\viper\flap02.wav"
+		"wave"	"physics\movement\hero\viper\flap03.wav"
+		"wave"	"physics\movement\hero\viper\flap04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_Viper.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

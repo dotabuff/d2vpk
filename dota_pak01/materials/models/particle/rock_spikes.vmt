@@ -1,0 +1,43 @@
+"CustomHero"
+{
+	"$baseTexture" "models/particle/rock_spikes_color"
+	"$normalmap" "models/particle/meteor_normal"
+//	"$detail1"  "models/particle/meteor_glow"
+//	"$maskmap1" "models/particle/meteor_mask1"
+//	"$maskmap2" "models/particle/meteor_mask2"
+
+//	"$diffusewarp" "models/particle/meteor_diffusewarp"
+//	$FRESNELWARP "models/particle/meteor_fresnelranges"
+
+//	"$ENVMAP" "models/creeps/lane_creeps/creep_good_siege/creep_good_siege_envmap"
+//	$ENVMAPINTENSITY 2
+
+//	$SPECULAREXPONENT 1
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 0.8 0.7]"
+//	$SPECULARSCALE 1
+//	$SPECULAR_BLOOM_SCALE	1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 1
+//	$DETAIL1BLENDFACTOR 1
+
+//	"$cloakPassEnabled" "1"
+//	$CLOAK_BLUR_AMOUNT        0.001
+
+	//$cloakintensity 0.001   //blend % with original base color
+	//$cloakfactor 0.001      //
+	//$refractamount 0.00     //level of refraction
+	"Proxies"
+	{
+		//"invis_proxy"
+		//{
+		//}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

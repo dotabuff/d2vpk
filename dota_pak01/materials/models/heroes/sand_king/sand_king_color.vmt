@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/sand_king/sand_king_color"
+	"$normalmap" "models/heroes/sand_king/sand_king_normal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/sand_king/sand_king_masks1"
+	"$maskmap2" "models/heroes/sand_king/sand_king_masks2"
+//	"$detail1"  "models/heroes/sand_king/detail_color"
+	
+	$SPECULAR_BLOOM_SCALE      0
+	$AMBIENTSCALE 1
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 5
+	$SPECULARBLENDTOFULL .04
+	$SPECULARCOLOR "[1 .45 0]"
+
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 1 .8]"
+	$alphatest 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,46 @@
+// ### This basic VMT was written based on the U:\dev\tools\python\templateStrings.pyc script ###
+
+"CustomHero"
+{
+	$baseTexture "models\creeps\neutral_creeps\neutral_thunder_lizard_small_color"
+	"$normalmap" "models\creeps\neutral_creeps\neutral_thunder_lizard_small_normal"
+
+	"$maskmap1" "models\creeps\neutral_creeps\neutral_thunder_lizard_small_masks1" 
+	"$maskmap2" "models\creeps\neutral_creeps\neutral_thunder_lizard_small_masks2" 
+
+
+
+
+	//$ambientscale .5
+	$specularscale 3
+	$RIMLIGHTSCALE .57
+	$specularexponent 25
+
+	$SPECULAR_BLOOM_SCALE      .7
+
+	$rimlightcolor "[1 .6 .5]"
+
+	$IgnoreBudgetCheck 1
+
+//	$SPECULARBLENDTOFULL 0
+	$SPECULARCOLOR "[.5 1 1]"
+
+
+	$rimambience 1
+
+// Status Effects
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}

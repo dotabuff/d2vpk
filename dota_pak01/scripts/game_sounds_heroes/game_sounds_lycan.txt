@@ -1,0 +1,356 @@
+
+
+"Hero_Lycan.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{	
+		"wave"			")weapons/hero/shared/small_blade/whoosh01.wav"
+		"wave"			")weapons/hero/shared/small_blade/whoosh02.wav"
+		"wave"			")weapons/hero/shared/small_blade/whoosh03.wav"
+		"wave"			")weapons/hero/shared/small_blade/whoosh04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.18"
+			}
+		}
+	}
+}
+
+"Hero_Lycan.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.6, 0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/lycan/attack01.wav"
+		"wave"	")weapons/hero/lycan/attack02.wav"
+		"wave"	")weapons/hero/lycan/attack03.wav"
+	}
+		"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Lycan.Attack.Post"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+
+"Hero_Lycan.Attack.Post"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/npc/rip01.wav"
+		"wave"			"physics/damage/npc/rip02.wav"
+		"wave"			"physics/damage/npc/rip03.wav"
+		"wave"			"physics/damage/npc/rip04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			
+			"get_random_delay"
+			{
+			"input_min" "0.05"
+			"input_max" "0.12"
+			}
+		}
+	}
+}
+
+"Hero_Lycan.SummonWolves"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/lycan/summon_wolves.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Lycan.Howl"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/lycan/howl.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Lycan.Howl.Team"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/lycan/howl_distant.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_falloff_linear"
+			{
+			"input_max" "25000.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Lycan.Shapeshift.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/lycan/shape_shift.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Lycan.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90,95"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Lycan.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+
+
+"Lycan_Wolf.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons\hero\lycan\wolf_preattack01.wav"
+		"wave"			"weapons\hero\lycan\wolf_preattack02.wav"
+		"wave"			"weapons\hero\lycan\wolf_preattack03.wav"
+		"wave"			"weapons\hero\lycan\wolf_preattack04.wav"
+		"wave"			"weapons\hero\lycan\wolf_preattack05.wav"
+		"wave"			"weapons\hero\lycan\wolf_preattack06.wav"		
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+
+"Lycan_Wolf.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/lifestealer/attack01.wav"
+		"wave"			"weapons/hero/lifestealer/attack02.wav"
+		"wave"			"weapons/hero/lifestealer/attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+
+"Hero_Lycan.Wolf_Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+

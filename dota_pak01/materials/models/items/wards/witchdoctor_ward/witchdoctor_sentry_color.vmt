@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	$baseTexture "models/items/wards/witchdoctor_ward/witchdoctor_sentry_color"
+	"$normalmap" "models/development/flatnormal"
+
+
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 11
+	$SPECULARCOLOR "1 1 1"
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$RIMLIGHTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE	2
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

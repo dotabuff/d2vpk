@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/twin_headed_dragon/twin_headed_dragon_color"
+	"$normalmap" "models/development/flatnormal"
+
+	$IgnoreBudgetCheck 1	
+	
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 10
+	$SPECULARBLENDTOFULL 1
+	
+	$RIMLIGHTSCALE	1
+	//$specularcolor "[1 2 1.5]"
+	//$RIMLIGHTCOLOR "[1 1 .75]"
+	
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

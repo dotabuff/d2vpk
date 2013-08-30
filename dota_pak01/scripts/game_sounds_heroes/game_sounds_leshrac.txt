@@ -1,0 +1,289 @@
+
+"Hero_Leshrac.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_Leshrac.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 100"
+	"wave"			"weapons/hero/leshrac/attack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Leshrac.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/lion/lion_attack_impact1.wav"
+		"wave"		"weapons/hero/lion/lion_attack_impact2.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Hero_Leshrac.Split_Earth"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90, 100"
+	"wave"			")weapons/hero/leshrac/split_earth.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+   		}
+	}
+}
+
+"Hero_Leshrac.Diabolic_Edict_lp"
+{	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/leshrac/diabolic_edict_lp.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "500"
+			}
+   			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Leshrac.Diabolic_Edict"
+{	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 110"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/leshrac/diabolic_edict01.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict02.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict03.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict04.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict05.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+   		}
+	}
+}
+
+"Hero_Leshrac.Lightning_Storm"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+		{
+			"wave"	"weapons/hero/leshrac/lightning_storm01.wav"
+			"wave"	"weapons/hero/leshrac/lightning_storm02.wav"
+			"wave"	"weapons/hero/leshrac/lightning_storm03.wav"
+		}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "75"
+			}
+		}
+	}
+}
+
+"Hero_Leshrac.Pulse_Nova"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/leshrac/pulse_nova.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "450"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "0.25"
+			}
+		}
+	}
+}
+
+"Hero_Leshrac.Pulse_Nova_Strike"
+{	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"115, 125"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/leshrac/diabolic_edict01.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict02.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict03.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict04.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict05.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "sfx_random_delay_start"
+			"import_stack" "dota_poly_limiting_start"
+			"get_random_delay"
+			{
+			"input_min" "0.00"
+			"input_max" "0.15"
+			}
+			
+			"limit_sound"
+			{
+				"input_max_entries" "6.000000" //A sound will not stop itself from playing.
+				"match_substring" "true"
+				"match_entry" "Nova_Strike"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+   		}
+	}
+}
+
+"Hero_Leshrac.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\enchantress\footstep01.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep02.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep03.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep04.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+		
+	}
+}
+
+"Hero_Leshrac.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

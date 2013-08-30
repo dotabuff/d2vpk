@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/beastmaster/Beastmaster_ArmsHornsArmor_Diffuse"
+	"$normalmap" "models/heroes/beastmaster/Beastmaster_ArmsHornsArmor_normal"
+	"$maskmap1" "models/heroes/beastmaster/Beastmaster_ArmsHornsArmor_masks1"
+	"$maskmap2" "models/heroes/beastmaster/Beastmaster_ArmsHornsArmor_masks2"
+	//"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 1
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+
+	
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+	
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

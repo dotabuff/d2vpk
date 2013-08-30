@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/shopkeeper/shopkeeper_weapon_color"
+	"$normalmap" "models/heroes/shopkeeper/shopkeeper_weapon_normal"
+	"$maskmap1" "models/heroes/shopkeeper/shopkeeper_weapon_masks1"
+	"$maskmap2" "models/heroes/shopkeeper/shopkeeper_weapon_masks2"
+	"$alphatest" "1"
+	"$nocull" "1"
+
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 2
+	$RIMLIGHTSCALE	1
+	//$specularcolor "[2 .8 .7]"
+	$RIMLIGHTCOLOR "[1 1 .75]"
+
+//	$COLORWARP 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

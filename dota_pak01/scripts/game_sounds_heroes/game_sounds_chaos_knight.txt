@@ -1,0 +1,367 @@
+
+"Hero_ChaosKnight.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/spirit_breaker/preattack01.wav"
+		"wave"			")weapons/hero/spirit_breaker/preattack02.wav"
+	}
+	"operator_stacks"
+	{		
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.1"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/omniknight/attack01.wav"
+		"wave"	")weapons/hero/omniknight/attack02.wav"
+		"wave"	")weapons/hero/omniknight/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_ChaosKnight.Attack.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.5" // this adds to local player volume only, 0.0 = mult x 1.
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.Attack.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1, 0.3"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"80, 90"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/ring01.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring04.wav"
+		"wave"	"null.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+ 	}
+}
+
+"Hero_ChaosKnight.ChaosBolt.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/chaos_knight/chaos_bolt_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.ChaosBolt.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/chaos_knight/chaos_bolt_target.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.RealityRift"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{	
+		"wave"	")weapons/hero/chaos_knight/reality_rift_cast01.wav"
+		"wave"	")weapons/hero/chaos_knight/reality_rift_cast02.wav"
+		"wave"	")weapons/hero/chaos_knight/reality_rift_cast03.wav"
+		"wave"	")weapons/hero/chaos_knight/reality_rift_cast04.wav"
+		"wave"	")weapons/hero/chaos_knight/reality_rift_cast05.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.RealityRift.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/chaos_knight/reality_rift_target.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.ChaosStrike"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/chaos_knight/chaos_strike.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.Phantasm"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/chaos_knight/phantasm.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"85,90"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\enchantress\footstep01.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep02.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep03.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep04.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_ChaosKnight.Foley"
+			}
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+
+"Hero_ChaosKnight.Foley"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\axe\foley01.wav"
+		"wave"		"physics\footsteps\hero\axe\foley02.wav"
+		"wave"		"physics\footsteps\hero\axe\foley03.wav"
+		"wave"		"physics\footsteps\hero\axe\foley04.wav"
+	}	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.idle_throw"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"misc/idles/idle_ck_throw_01.wav"
+		"wave"		"misc/idles/idle_ck_throw_02.wav"
+	}	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_ChaosKnight.idle_catch"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"100"
+	"wave"		"misc/idles/idle_ck_grab.wav"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

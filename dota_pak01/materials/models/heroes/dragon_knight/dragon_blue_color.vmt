@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/dragon_knight/dragon_blue_color"
+	"$normalmap" "models/heroes/dragon_knight/dragon_normal"
+	"$maskmap1" "models/heroes/dragon_knight/dragon_mask1"	
+	"$maskmap2" "models/heroes/dragon_knight/dragon_mask2"	
+	
+	$SPECULAREXPONENT 4
+	$SPECULARSCALE 16
+	$SPECULARCOLOR "[.31 .8 1]"
+
+	$RIMLIGHTSCALE 1
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

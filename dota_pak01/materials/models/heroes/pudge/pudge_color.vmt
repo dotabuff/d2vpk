@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/pudge/pudge_color"
+	"$normalmap" "models/heroes/pudge/pudge_normal"
+	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+	"$maskmap1" "models/heroes/pudge/masks1"
+	"$maskmap2" "models/heroes/pudge/masks2"
+
+
+	$SPECULAREXPONENT 20
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 1
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR	"[1 1 1]"
+	
+	$FRESNELWARP "models/heroes/pudge/pudge_fresnelranges"
+
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

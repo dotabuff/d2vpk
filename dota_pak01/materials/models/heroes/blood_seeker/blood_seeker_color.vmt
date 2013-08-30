@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/blood_seeker/blood_seeker_color"
+	"$normalmap" "models/heroes/blood_seeker/blood_seeker_normal"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/blood_seeker/blood_seeker_mask1"
+	"$maskmap2" "models/heroes/blood_seeker/blood_seeker_mask2"
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+	$alphatest 1
+	
+	$SPECULAR_BLOOM_SCALE      0	
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 1
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

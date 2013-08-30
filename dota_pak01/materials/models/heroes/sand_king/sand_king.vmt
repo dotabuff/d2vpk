@@ -1,0 +1,30 @@
+"CustomHero"
+
+{
+	"$baseTexture" "models/heroes/sand_king/sand_king_color"
+	"$normalmap" "models/heroes/sand_king/sand_king_normal"
+//	"$diffusewarp" "models/heroes/juggernaut/juggernaut_lightwarp"
+
+	$SPECULAREXPONENT 2
+	$SPECULARSCALE 11
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1 
+
+	$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTSCALE	1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

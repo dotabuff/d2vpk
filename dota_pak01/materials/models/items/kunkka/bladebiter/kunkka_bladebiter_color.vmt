@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/kunkka/bladebiter/kunkka_bladebiter_color"
+	"$normalmap" "models/items/kunkka/bladebiter/kunkka_bladebiter_normal"
+	"$maskmap1" "models/items/kunkka/bladebiter/kunkka_bladebiter_mask1"
+	"$maskmap2" "models/items/kunkka/bladebiter/kunkka_bladebiter_mask2"
+
+//	"$detail1" "models/heroes/kunkka/kunkka_waves"
+	"$diffusewarp" "models/heroes/juggernaut/juggernaut_lightwarp"
+
+
+	$alphatest 1
+	$SPECULAREXPONENT 23	
+	$SPECULARSCALE 1.6	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 3
+
+	
+	$FRESNELWARP "models/heroes/pudge/pudge_fresnelranges"
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

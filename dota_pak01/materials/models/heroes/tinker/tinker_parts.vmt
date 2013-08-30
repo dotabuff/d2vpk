@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/tinker/tinker_parts"
+	"$normalmap" "models/heroes/tinker/tinker_parts_normal"
+//	"$diffusewarp" "models/heroes/juggernaut/juggernaut_lightwarp"
+//	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+	"$envmap" "env_cubemap"
+	"$maskmap1" "models/heroes/tinker/tinker_parts_masks1.vtf"
+	"$maskmap2" "models/heroes/tinker/tinker_parts_masks2.vtf"
+	
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 10
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE .1
+	$RIMLIGHTCOLOR "[.25 .25 .25]"
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

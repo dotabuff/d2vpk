@@ -1,0 +1,316 @@
+
+"Hero_DeathProphet.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"90,100"
+	"wave"			"weapons/hero/pugna/preattack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_DeathProphet.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/death_prophet/attack1.wav"
+		"wave"		"weapons/hero/death_prophet/attack2.wav"
+		"wave"		"weapons/hero/death_prophet/attack3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_DeathProphet.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/pugna/projectile_impact01.wav"
+		"wave"		"weapons/hero/pugna/projectile_impact02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Hero_DeathProphet.CarrionSwarm"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/death_prophet/carrionswarm.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "800"
+			}
+		}
+	}
+}
+
+"Hero_DeathProphet.CarrionSwarm.Damage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 110"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/death_prophet/swarm_impact01.wav"
+		"wave"		"weapons/hero/death_prophet/swarm_impact02.wav"
+		"wave"		"weapons/hero/death_prophet/swarm_impact03.wav"
+		"wave"		"weapons/hero/death_prophet/swarm_impact04.wav"
+		"wave"		"weapons/hero/death_prophet/swarm_impact05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+
+"Hero_DeathProphet.Silence"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/death_prophet/silence.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_DeathProphet.Exorcism.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"  		")weapons/hero/death_prophet/exorcism_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_DeathProphet.Exorcism"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/death_prophet/exorcism_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_in"
+			{
+				"input_max" "1.0"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "2.0"
+			}
+		}
+	}
+}
+
+"Hero_DeathProphet.Exorcism.Damage"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"80, 100"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/death_prophet/exorcism_impact01.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact02.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact03.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact04.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact05.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact06.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact07.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact08.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact09.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact10.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "6.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Hero_DeathProphet.Exorcism.Damage"
+				"match_channel" "false"
+			}
+		}
+	}
+}
+
+"Hero_DeathProphet.Exorcism.Heal"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"110, 140"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/death_prophet/exorcism_impact01.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact02.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact03.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact04.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact05.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact06.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact07.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact08.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact09.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact10.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_substring" "false"
+				"match_entry" "Hero_DeathProphet.Exorcism.Heal"
+				"match_channel" "false"
+			}
+		}
+	}
+}
+
+"Hero_DeathProphet.IdleLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_69dB"
+	"wave"			"physics/movement/hero/death_prophet/idle_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.2"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_DeathProphet.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"physics\deaths\specials\deathprophet_death.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/courier/shagbark/shagbark_color"
+	"$normalmap"		"models/items/courier/shagbark/shagbark_normal"
+	"$maskmap2"		"models/items/courier/shagbark/shagbark_mask2"
+	"$SPECULAREXPONENT"		"2"
+	"$SPECULARSCALE"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$specularcolor" "[.05 .05 .05]"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$rimlightblendtofull"		"1"
+	"$specularblendtofull"		"1"
+	"$specularexponentblendtofull"		"1"
+	"$cloakPassEnabled"		"1"
+	"$alphatest" "1" 
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+	"$maskmap1"		"models/items/courier/shagbark/shagbark_mask1"
+}

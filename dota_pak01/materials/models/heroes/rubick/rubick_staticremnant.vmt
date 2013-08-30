@@ -1,0 +1,25 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/rubick/rubick_base_color_static_remnant"
+	$normalmap "models/heroes/storm_spirit/storm_spirit_normal"
+//	$detail1  "models/heroes/storm_spirit/storm_spirit_glow"
+	$maskmap1 "models/heroes/storm_spirit/rubick_base_color_static_remnant_masks1"
+//	$maskmap2 "models/heroes/storm_spirit/rubick_base_color_static_remnant_masks2"
+	$diffusewarp "models/heroes/storm_spirit/storm_spirit_staticremnant_diffusewarp"
+	$FRESNELWARP "models/heroes/storm_spirit/storm_spirit_staticremnant_fresnelranges"
+
+	$SPECULAREXPONENT 50
+
+	$SPECULARSCALE 0
+	$RIMLIGHTBLENDTOFULL 1
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+	$RIMLIGHTSCALE 2
+	$additive 1
+
+	
+
+	$rimlightcolor "[0 .4 1]"
+
+}

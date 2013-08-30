@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	"$baseTexture" "models/particle/frozensigil"
+	"$normalmap" "models/particle/meteor_normal"
+	"$maskmap1" "models/particle/snowball_mask1"
+	"$maskmap2" "models/particle/snowball_mask2"
+
+//	"$diffusewarp" "models/particle/snowball_diffusewarp"
+//	$FRESNELWARP "models/particle/meteor_fresnelranges"
+
+//	"$ENVMAP" "models/creeps/lane_creeps/creep_good_siege/creep_good_siege_envmap"
+//	$ENVMAPINTENSITY 2
+
+	$SPECULAREXPONENT 20
+	$SPECULARBLENDTOFULL 1
+	$SPECULARCOLOR "[.8 .8 1]"
+	$SPECULARSCALE 2
+	
+	$RIMLIGHTCOLOR "[.5 .5 1]"
+	$RIMLIGHTSCALE 5
+	$SPECULAR_BLOOM_SCALE	.1
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1
+
+	"$cloakPassEnabled" "1"
+	$CLOAK_BLUR_AMOUNT        0.001
+
+	//$cloakintensity 0.001   //blend % with original base color
+	//$cloakfactor 0.001        //
+	//$refractamount 0.00     //level of refraction
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+		}
+
+		//"invis_proxy"
+		//{
+		//}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

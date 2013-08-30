@@ -1,0 +1,34 @@
+
+"CustomHero"
+{
+	$baseTexture "models/items/furion/treant_stump_color"
+	"$normalmap" "models/items/furion/treant_stump_normal"
+	"$maskmap2" "models/items/furion/treant_stump_mask2"
+	"$maskmap1" "models/items/furion/treant_stump_mask1"
+
+//	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+//	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" ".5"
+
+	$SPECULAREXPONENT 3
+	$SPECULARSCALE  1
+	$SPECULARCOLOR "[1 1 1]"
+//	$SPECULARBLENDTOFULL 1
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

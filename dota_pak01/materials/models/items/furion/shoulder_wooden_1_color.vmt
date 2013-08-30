@@ -1,0 +1,35 @@
+// ### This basic VMT was written based on the E:\dota\tools\python\templateStrings.py script ###
+"CustomHero"
+{
+	$baseTexture "models/items/furion/shoulder_wooden_1_color.vtf"
+
+	
+	"$normalmap" "models/items/furion/shoulder_wooden_1_normal.vtf"
+//	"$maskmap2" "dev/reflectivity_10"
+
+
+
+	$SPECULAREXPONENT 8
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 1
+	$RIMLIGHTSCALE	1.0
+	$RIMLIGHTCOLOR	"[.85 1 1]"
+
+
+
+
+	$cloakintensity 0.85
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

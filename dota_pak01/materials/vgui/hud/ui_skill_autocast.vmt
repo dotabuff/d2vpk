@@ -1,0 +1,108 @@
+//"UnlitGeneric"
+"UnlitTwoTexture"
+{
+	"$basetexture" "vgui\hud\ui_skill_autocast"
+	"$texture2" "vgui\hud\ui_skill_autocast_border"
+	"$vertexcolor" 0
+	"$vertexalpha" 0
+	"$no_fullbright" 1
+	"$ignorez" 1
+
+	"$sin_alpha" 0
+	"$sin_scale" 0
+	"$sin_ofs" 0
+	"$sin_rotate" 0
+
+	"$scale" 0.9
+	"$scale2" 1.0
+	"$scale_ofs" 0
+	"$texoffset"	"[0 0]"
+	"$midofs" 0.0
+
+	"$additive" "1"
+
+	"Proxies"
+	{
+		// Alpha wave
+		"Sine"
+		{
+			"resultVar"	"$sin_alpha" 
+			"sineperiod"	.3
+			"sinemin"	0
+			"sinemax"	11
+		}
+
+		// Scale wave
+		"Sine"
+		{
+			"resultVar"	"$sin_scale"
+			"sineperiod"	2
+			"sinemin"	.7
+			"sinemax"	.7
+		}
+
+		// Translate wave		
+		"Sine"
+		{
+			"resultVar"	"$sin_ofs"
+			"sineperiod"	1
+			"sinemin"	0
+			"sinemax"	0
+		}
+
+		// Rotate wave		
+//		"Sine"
+//		{
+//			"resultVar"	"$sin_rotate"
+//			"sineperiod"	11
+//			"sinemin"	0
+//			"sinemax"	360
+//		}
+
+		"LinearRamp"	
+		{
+			"rate"		"80"
+			"initialValue"	"0"
+			"resultVar"	"$sin_rotate"
+		}
+		
+		"Add"
+		{
+			"srcVar1"	"$sin_alpha"
+			"srcVar2"	"$scale"
+			"resultVar" "$alpha"
+		}
+		
+		"Multiply"
+		{
+			"srcVar1"	"$sin_scale"
+			"srcVar2"	"$scale2"
+			"resultVar"	"$scale_ofs"
+		}
+
+		"Add"
+		{
+			"srcVar1"	"$sin_ofs"
+			"srcVar2"	"$midofs"
+			"resultVar"	"$texoffset[0]"
+		}
+
+		"Add"
+		{
+			"srcVar1"	"$sin_ofs"
+			"srcVar2"	"$midofs"
+			"resultVar"	"$texoffset[1]"
+		}
+
+
+		"TextureTransform"
+		{
+			"rotateVar" "$sin_rotate"
+			"scaleVar" "$scale_ofs"
+			"translateVar" "$texoffset"
+			"resultVar" "$basetexturetransform"
+		}
+	}
+
+
+}

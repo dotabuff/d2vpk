@@ -1,0 +1,393 @@
+
+"Hero_Abaddon.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/abaddon/attack_01.wav"
+		"wave"	")weapons/hero/abaddon/attack_02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.15"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90,100"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/abaddon/impact_01.wav"
+		"wave"	")weapons/hero/abaddon/impact_02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Abaddon.Attack.Ring"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Abaddon.Attack.Rip"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.Attack.Ring"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.25, 0.3"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/ring01.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring02.wav"
+		"wave"	"null.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+ 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.Attack.Rip"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/npc/rip01.wav"
+		"wave"			"physics/damage/npc/rip02.wav"
+		"wave"			"physics/damage/npc/rip03.wav"
+		"wave"			"physics/damage/npc/rip04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.05"
+			"input_max" "0.12"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.DeathCoil.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/abaddon/death_coil_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.DeathCoil.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.85"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/abaddon/death_coil_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_Abaddon.AphoticShield.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/abaddon/shield_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.AphoticShield.Destroy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.75"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/abaddon/shield_detonate.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.AphoticShield.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			")weapons/hero/abaddon/shield_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"usat_stop_time"
+			{
+				"input2" "15.0"
+			}
+
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.BorrowedTime"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/abaddon/borrowed_time.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/abaddon/footstep_01.wav"
+		"wave"		"physics/footsteps/hero/abaddon/footstep_02.wav"
+		"wave"		"physics/footsteps/hero/abaddon/footstep_03.wav"
+		"wave"		"physics/footsteps/hero/abaddon/footstep_04.wav"
+		"wave"		"physics/footsteps/hero/abaddon/footstep_05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Abaddon.Foley"
+			}
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+
+"Hero_Abaddon.Foley"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2, 0.5"
+	"soundlevel"  	"SNDLVL_65dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/abaddon/foley_01.wav"
+		"wave"		"weapons/hero/abaddon/foley_02.wav"
+		"wave"		"weapons/hero/abaddon/foley_03.wav"
+		"wave"		"weapons/hero/abaddon/foley_04.wav"
+		"wave"		"weapons/hero/abaddon/foley_05.wav"
+	}	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Hero_Abaddon.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"weapons/hero/abaddon/death.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

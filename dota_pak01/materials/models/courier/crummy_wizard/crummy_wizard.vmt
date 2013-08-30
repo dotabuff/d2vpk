@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/crummy_wizard/crummy_wizard_color"
+	"$normalmap" "models/courier/crummy_wizard/crummy_wizard_normal"
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	"$maskmap1" "models/courier/crummy_wizard/crummy_wizard_mask1"
+	"$maskmap2" "models/courier/crummy_wizard/crummy_wizard_mask2"
+
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 10
+	$RIMLIGHTSCALE	0
+	$specularcolor "[1 1 1]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+//	"$rimlightblendtofull" "1"
+
+
+	$AMBIENTSCALE 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

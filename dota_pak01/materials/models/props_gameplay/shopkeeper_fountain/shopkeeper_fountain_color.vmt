@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/props_gameplay/shopkeeper_fountain/shopkeeper_fountain_color.vtf"
+	"$normalmap" "models/props_gameplay/shopkeeper_fountain/shopkeeper_fountain_normal.vtf"
+	"$maskmap1" "models/props_gameplay/shopkeeper_fountain/shopkeeper_fountain_masks1.vtf"
+	"$maskmap2" "models/props_gameplay/shopkeeper_fountain/shopkeeper_fountain_masks2.vtf"
+//	"$detail1"  "models/heroes/sven/sven_glow" 
+
+//	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+
+	"$alphatest" "1"
+	"$nocull" "1"
+	
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE 10
+	$SPECULARCOLOR "[1 .85 .75]"
+	$RIMLIGHTCOLOR "[.1 1 .7]"
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULAREXPONENTBLENDTOFULL .5
+
+	$RIMLIGHTSCALE 3
+
+//	$DETAIL1BLENDMODE 3
+//	$DETAIL1SCALE 1
+//	$DETAIL1BLENDFACTOR 0
+//	$DETAIL1BLENDTOFULL 0
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+
+}

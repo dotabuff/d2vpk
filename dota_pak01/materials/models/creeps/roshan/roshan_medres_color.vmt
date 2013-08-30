@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$baseTexture" "models/creeps/roshan/roshan_medres_color"
+	"$normalmap" "models/creeps/roshan/roshan_medres_normal"
+	"$maskmap1" "models/creeps/roshan/roshan_medres_mask1"
+	"$maskmap2" "models/creeps/roshan/roshan_medres_mask2"
+	"$fresnelwarp" "models/creeps/roshan/roshan_fresnelranges"
+
+//	$ambientscale .5
+	$specularscale 1
+	$RIMLIGHTSCALE 1
+	$specularexponent 8
+
+
+//	$rimlightcolor "[.3 .08 .01]"
+
+	$IgnoreBudgetCheck 1
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[.2 1 .5]"
+
+
+//	$rimambience .2
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

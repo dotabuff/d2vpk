@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	$baseTexture "models/items/wards/venomancer_ward/venomancer_sentry_color"
+	"$normalmap" "models/development/flatnormal"
+
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 21
+	$SPECULARCOLOR "1 1 1"
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$RIMLIGHTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE	2
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

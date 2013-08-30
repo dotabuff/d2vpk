@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/silencer/silencer_weapon"
+	"$normalmap" "models/heroes/silencer/silencer_weapon_normal"
+	"$maskmap1" "models/heroes/silencer/silencer_weapon_masks1"
+	"$maskmap2" "models/heroes/silencer/silencer_weapon_masks2"
+
+	$FRESNELWARP "models/heroes/silencer/silencer_fresnelranges"
+
+	$SPECULAR_BLOOM_SCALE 0
+	$alphatest 1
+
+	
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 2
+	$SPECULARCOLOR "[.7 1 1]"
+	$RIMLIGHTCOLOR "[.5 1 1]"
+	$SPECULARBLENDTOFULL 0
+	$SPECULAREXPONENTBLENDTOFULL 0
+
+	$RIMLIGHTSCALE 1
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	$DETAIL1BLENDTOFULL 0
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

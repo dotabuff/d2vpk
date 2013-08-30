@@ -1,0 +1,753 @@
+"Hero_Brewmaster.PreAttack" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/brewmaster/preattack01.wav"
+		"wave"	")weapons/hero/brewmaster/preattack02.wav"
+		"wave"	")weapons/hero/brewmaster/preattack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+// 			"delay_output"
+// 			{
+// 			"input_float" "0.1"
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/brewmaster/attack01.wav"
+		"wave"	")weapons/hero/brewmaster/attack02.wav"
+		"wave"	")weapons/hero/brewmaster/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Brewmaster.Attack.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.Attack.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/shared/large_blade/thump01.wav"
+		"wave"			"weapons/hero/shared/large_blade/thump02.wav"
+		"wave"			"weapons/hero/shared/large_blade/thump03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+ 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.ThunderClap"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/brewmaster/thunder_clap.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.ThunderClap.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/brewmaster/thunder_clap_target01.wav"
+		"wave"		"weapons/hero/brewmaster/thunder_clap_target02.wav"
+		"wave"		"weapons/hero/brewmaster/thunder_clap_target03.wav"
+		"wave"		"weapons/hero/brewmaster/thunder_clap_target04.wav"
+		"wave"		"weapons/hero/brewmaster/thunder_clap_target05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.2"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.DrunkenHaze.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/brewmaster/drunken_haze_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_Brewmaster.DrunkenHaze.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/brewmaster/drunken_haze_target.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.2"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.Brawler.Crit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"wave"		"weapons/hero/brewmaster/brawl_crit.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.PrimalSplit.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/brewmaster/primal_split_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.PrimalSplit.Spawn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/brewmaster/primal_split_spawn.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Brewmaster.PrimalSplit.Return"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/brewmaster/primal_split_return.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_Brewmaster.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.4, 0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"		"80, 90"
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/shared/general01.wav"
+		"wave"		"physics/footsteps/hero/shared/general02.wav"
+		"wave"		"physics/footsteps/hero/shared/general03.wav"
+		"wave"		"physics/footsteps/hero/shared/general04.wav"
+		"wave"		"physics/footsteps/hero/shared/general05.wav"
+		"wave"		"physics/footsteps/hero/shared/general06.wav"
+		"wave"		"physics/footsteps/hero/shared/general07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Brewmaster.Foley"
+			}
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+"Hero_Brewmaster.Foley"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.6, 0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"		"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics/movement/hero/brewmaster/slosh01.wav"
+		"wave"		"physics/movement/hero/brewmaster/slosh02.wav"
+		"wave"		"physics/movement/hero/brewmaster/slosh03.wav"
+		"wave"		"physics/movement/hero/brewmaster/slosh04.wav"
+		"wave"		"physics/movement/hero/brewmaster/slosh05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "sfx_random_delay_start"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.15"
+			"input_max" "0.25"
+			}
+		}
+	}
+}
+
+
+"Hero_Brewmaster.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.85"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"physics\deaths\specials\brewmaster_death_barrel.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
+"Brewmaster_Earth.PreAttack" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/earthshaker/fist_swing1.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing2.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Earth.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact1.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact2.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Earth.Boulder.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/tiny/tiny_toss_throw.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Earth.Boulder.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/tiny/tiny_toss_impact.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Storm.PreAttack" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/obsidian_destroyer/preattack01.wav"
+		"wave"	"weapons/hero/obsidian_destroyer/preattack02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Storm.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/storm_spirit/attack1.wav"
+		"wave"	"weapons/hero/storm_spirit/attack2.wav"
+		"wave"	"weapons/hero/storm_spirit/attack3.wav"
+		"wave"	"weapons/hero/storm_spirit/attack4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Storm.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/zuus/general_attack1.wav"
+		"wave"	"weapons/hero/zuus/general_attack2.wav"
+		"wave"	"weapons/hero/zuus/general_attack3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Storm.DispelMagic"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/brewmaster/dispel_magic.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Brewmaster_Storm.Cyclone"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/brewmaster/cyclone_lp.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Brewmaster_Storm.WindWalk"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90, 110"
+	"wave"			")weapons/hero/clinkz/windwalk.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Brewmaster_Storm.Move_Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"85"
+	"wave"			"physics\movement\hero\lich\idle_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.2"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"Brewmaster_Fire.PreAttack" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"wave"			")weapons\hero\lina\attack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Fire.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"wave"			"weapons\hero\lina\projectile_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Brewmaster_Fire.Move_Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			")weapons/hero/doom_bringer/idle_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.6"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "2000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"Brewmaster_Spirit.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.4, 0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"		"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/shared/general01.wav"
+		"wave"		"physics/footsteps/hero/shared/general02.wav"
+		"wave"		"physics/footsteps/hero/shared/general03.wav"
+		"wave"		"physics/footsteps/hero/shared/general04.wav"
+		"wave"		"physics/footsteps/hero/shared/general05.wav"
+		"wave"		"physics/footsteps/hero/shared/general06.wav"
+		"wave"		"physics/footsteps/hero/shared/general07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

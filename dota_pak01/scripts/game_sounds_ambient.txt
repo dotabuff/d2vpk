@@ -1,0 +1,337 @@
+// Channels
+//	CHAN_AUTO		= 0,
+//	CHAN_WEAPON		= 1,
+//	CHAN_VOICE		= 2,
+//	CHAN_ITEM		= 3,
+//	CHAN_BODY		= 4,
+//	CHAN_STREAM		= 5,		// allocate stream channel from the static or dynamic area
+//	CHAN_STATIC		= 6,		// allocate channel from the static area 
+// these can be set with "channel" "2" or "channel" "chan_voice"
+
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	// 3.9
+//	SNDLVL_55dB		= 55,	// 3.0
+//	SNDLVL_IDLE		= 60,	// 2.0
+//	SNDLVL_TALKING	= 60,	// 2.0
+//	SNDLVL_60dB		= 60,	// 2.0
+//	SNDLVL_65dB		= 65,	// 1.5
+//	SNDLVL_STATIC	= 66,	// 1.25
+//	SNDLVL_70dB		= 70,	// 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	// 0.8
+//	SNDLVL_80dB		= 80,	// 0.7
+//	SNDLVL_85dB		= 85,	// 0.6
+//	SNDLVL_90dB		= 90,	// 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	// 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140,	// 0.27
+//	SNDLVL_140dB	= 140,	// 0.2
+//	SNDLVL_150dB	= 150,	// 0.2
+
+"Ambient.TreeFall"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"		 	")ambient/tree_fall.wav" 
+}
+
+"Tower.Fire.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_81dB"
+	"pitch"			"95,110"
+	"wave"			")weapons/towers/attack_dire.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Tower.Fire.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"			"95,110"
+	"wave"			"physics/damage/npc/tower_projectile.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Tower.Water.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_81dB"
+	"pitch"			"95,110"
+	"wave"			"weapons/towers/attack_radiant.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Tower.Water.ProjectileImpact"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"			"95,110"
+	"wave"			"physics/damage/npc/tower_projectile.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.Morning"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.5"
+	"soundlevel"  		"SNDLVL_NONE"
+	
+	"wave"			"#ambient/morning.wav"
+}
+
+"General.Night"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  		"SNDLVL_NONE"
+	
+	"wave"			"#ambient/night.wav"
+}
+
+"dota_fountain.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_81dB"
+	"pitch"			"95,110"
+	"wave"			")weapons/towers/attack_dire.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"dota_fountain.ProjectileImpact"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"			"95,110"
+	"wave"			"physics/damage/npc/tower_projectile.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//diretide
+///////////////////////////////////////////////////////////////////////////////
+
+"Ambient.hwn_coffin_burst_a"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_78dB"
+	"wave"		 	"ambient/diretide/hwn_coffin_burst_a.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	} 
+}
+
+"Ambient.hwn_coffin_burst_b"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_78dB"
+	"wave"		 	"ambient/diretide/hwn_coffin_burst_b.wav" 
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Ambient.hwn_coffin_knocks"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_78dB"
+	"wave"		 	"ambient/diretide/hwn_coffin_knocks.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	} 
+}
+
+"Ambient.hwn_coffin_skeleton"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_78dB"
+	"wave"		 	"ambient/diretide/hwn_coffin_skeleton.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	} 
+}
+
+"Ambient.hwn_coffin_slow_a"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_81dB"
+	"wave"		 	"ambient/diretide/hwn_coffin_slow_a.wav" 
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Ambient.hwn_coffin_slow_b"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_81dB"
+	"wave"		 	"ambient/diretide/hwn_coffin_slow_b.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	} 
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//New Player Experience
+///////////////////////////////////////////////////////////////////////////////
+
+"tutorial_fence_smash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_81dB"
+	"wave"		 	"ambient/tut_fencesmash.wav"
+}
+
+"tutorial_smallfence_smash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"	"SNDLVL_81dB"
+	"wave"		 	"ambient/tut_fencesmash_small.wav"
+}
+
+"tutorial_bridge_fall"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_105dB"
+	"wave"			")ambient/tut_bridge_collapse.wav"
+}
+
+"tutorial_rockslide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_105dB"
+	"wave"			")ambient/tut_rockfall.wav"
+}
+
+"tutorial_cage_open"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.35"
+	"soundlevel"	"SNDLVL_81dB"
+	"wave"		 	"ambient/tut_cage_open.wav"
+}
+
+"tutorial_gate_open_metal"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_81dB"
+	"rndwave"
+	{
+		"wave"	"ambient/tut_gate_metal_open01.wav"
+		"wave"	"ambient/tut_gate_metal_open02.wav"
+	}
+}
+
+

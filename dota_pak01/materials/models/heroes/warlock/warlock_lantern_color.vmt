@@ -1,0 +1,36 @@
+
+"CustomHero"
+{
+	$baseTexture "models/heroes/warlock/warlock_lantern_color"
+	"$normalmap" "models/heroes/warlock/warlock_lantern_normal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/warlock/warlock_lantern_masks1"
+	"$maskmap2" "models/heroes/warlock/warlock_lantern_masks2"
+
+
+	"$envmap" "env_cubemap"
+	"$envmapintensity" "1"
+
+
+	$SPECULAREXPONENT 6
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "0.15 0.15 1"
+	$RIMLIGHTCOLOR ".6 7 1"
+	$RIMLIGHTSCALE 1.5
+	$alphatest 1	
+
+	$ambientSCALE 2
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

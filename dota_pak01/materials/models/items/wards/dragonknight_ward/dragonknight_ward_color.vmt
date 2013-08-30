@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	$baseTexture "models/items/wards/dragonknight_ward/dragonknight_ward_color"
+	$normalmap "models/items/wards/dragonknight_ward/dragonknight_ward_normal"
+	
+	"$maskmap1" "models/items/wards/dragonknight_ward/dragonknight_ward_masks1"
+	"$maskmap2" "models/items/wards/dragonknight_ward/dragonknight_ward_masks2"
+
+
+	$SPECULAREXPONENT 11
+	$SPECULARSCALE 6
+	$SPECULARCOLOR "1 1 1"
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULAREXPONENTBLENDTOFULL 1
+//	$RIMLIGHTBLENDTOFULL .5
+
+	$RIMLIGHTSCALE	1
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

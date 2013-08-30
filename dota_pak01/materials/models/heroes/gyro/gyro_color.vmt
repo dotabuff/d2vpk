@@ -1,0 +1,61 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/gyro/gyro_color"
+	"$normalmap" "models/heroes/gyro/gyro_normal"
+	
+//  "$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	
+	"$maskmap1" "models/heroes/gyro/gyro_mask1"
+	"$maskmap2" "models/heroes/gyro/gyro_mask2"
+	
+		"$detail1" "models/heroes/gyro/gyro_bottlebubbles"
+
+
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 1
+	$MASKENVBYMETALNESS 1
+
+	$SPECULAR_BLOOM_SCALE 1
+	$SPECULAREXPONENT 5	
+	$SPECULARSCALE 9	
+	$SPECULARCOLOR "[0.9 .8 .5]"
+
+//  $SPECULARCOLOR "[.2 .3 .5]"
+	$RIMLIGHTCOLOR "[.3 .4 .5]"
+	
+	$AMBIENTSCALE 2
+
+
+	$RIMLIGHTSCALE 7
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+
+	"$alphatest" "1"
+
+
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"55"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

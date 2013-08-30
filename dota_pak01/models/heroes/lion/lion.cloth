@@ -1,0 +1,40 @@
+// file    : lion.cloth
+// author  : jameso
+// date    : 19 Aug 2013, 12:02PM
+// 
+// cloth data generated via TweakCloth (0.3.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.8"
+        AnimationVertexAttraction        "0.1"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "cape0_"
+        columns                          "1"
+        Damping                          "20.0"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.15"
+        gravity                          "0 0 -1"
+        gravity_scale                    "9.8"
+        LocalForce                       "1.0"
+        LocalRotation                    "0.25"
+        name                             "Cape"
+        R0                               "fixed"
+        R1                               "mass 1"
+        R2                               "mass 3"
+        R3                               "mass 6"
+        rows                             "4"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.05"
+        StretchForce                     "0.5"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+}
+
+// eof

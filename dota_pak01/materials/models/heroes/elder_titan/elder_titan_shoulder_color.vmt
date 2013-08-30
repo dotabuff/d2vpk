@@ -1,0 +1,63 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/elder_titan/elder_titan_shoulder_color.vtf"
+	"$normalmap" "models/heroes/elder_titan/elder_titan_shoulder_normal"	
+	"$maskmap1" "models/heroes/elder_titan/elder_titan_shoulder_mask1"
+	"$maskmap2" "models/heroes/elder_titan/elder_titan_shoulder_mask2"
+	
+//	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+//	"$alphatest" "1"
+
+	"$detail1" "models/heroes/elder_titan/elder_titan_motion"
+	
+	//$ENVMAP "models/cubemaps/glossy"
+	//$ENVMAPINTENSITY 3
+	//$ENVMAPBLENTOFULL 1
+	
+	//$MASKENVBYMETALNESS 1
+
+	$SPECULAR_BLOOM_SCALE 0
+	$SPECULAREXPONENT 20	
+	$SPECULARSCALE 10
+        //$SPECULARCOLOR "[0.7 0.9 1]"	
+	//$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	
+	//$AMBIENTSCALE 1
+	$RIMLIGHTSCALE 1
+
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR 1
+
+	
+
+
+
+  	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	130
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	0
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

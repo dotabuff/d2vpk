@@ -1,0 +1,46 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/brewmaster/firespirit_top_color"
+	"$detail1"  "models/heroes/brewmaster/firespirit_body_fire.vtf"
+	"$normalmap" "models/heroes/brewmaster/firespirit_top_normal"
+	"$maskmap1" "models/heroes/brewmaster/firespirit_top_mask1"
+	"$maskmap2" "models/heroes/brewmaster/firespirit_top_mask2"
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 1 1]"
+
+	$AMBIENTSCALE 1
+	$alphatest 1
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDTOFULL 0
+
+	$RIMLIGHTSCALE	10
+	$RIMLIGHTCOLOR "[1 .5 .5]"
+	$IgnoreBudgetCheck 0	
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+			"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	-.2
+			"texturescrollangle"	70
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

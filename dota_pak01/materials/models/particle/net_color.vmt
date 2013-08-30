@@ -1,0 +1,21 @@
+"CustomHero"
+{
+	$baseTexture "models/particle/net_color"
+	"$normalmap" "models/particle/net_normal"	
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	//"$maskmap1" "models/heroes/meepo/meepo_pack_masks1"
+	//"$maskmap2" "models/heroes/meepo/meepo_pack_masks2"
+	"$maskmap2" 	"models/particle/net_color"
+
+//	$detail1  "models/heroes/storm_spirit/storm_spirit_glow"
+//	$diffusewarp "models/heroes/storm_spirit/storm_spirit_staticremnant_diffusewarp"
+//	$FRESNELWARP "models/heroes/storm_spirit/storm_spirit_staticremnant_fresnelranges"
+
+	$SPECULAR_BLOOM_SCALE      1
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 5
+
+	$RIMLIGHTCOLOR "[1 .4 0]"	
+	$RIMLIGHTSCALE 2
+
+}

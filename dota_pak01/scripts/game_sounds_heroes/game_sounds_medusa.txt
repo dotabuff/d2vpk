@@ -1,0 +1,333 @@
+
+"Hero_Medusa.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_Medusa.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"			"1.0"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/medusa/arrow_01.wav"
+		"wave"		"weapons/hero/medusa/arrow_02.wav"
+		"wave"		"weapons/hero/medusa/arrow_03.wav"
+		"wave"		"weapons/hero/medusa/arrow_04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Medusa.AttackSplit"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"			"0.7"
+	"pitch"			"90, 110"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/medusa/arrow_01.wav"
+		"wave"		"weapons/hero/medusa/arrow_02.wav"
+		"wave"		"weapons/hero/medusa/arrow_03.wav"
+		"wave"		"weapons/hero/medusa/arrow_04.wav"
+		"wave"		"weapons/hero/medusa/arrow_split_01.wav"
+		"wave"		"weapons/hero/medusa/arrow_split_02.wav"
+		"wave"		"weapons/hero/medusa/arrow_split_03.wav"
+		"wave"		"weapons/hero/medusa/arrow_split_04.wav"
+		"wave"		"weapons/hero/medusa/arrow_split_05.wav"
+		"wave"		"weapons/hero/medusa/arrow_split_06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Medusa.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_1.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_2.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+
+"Hero_Medusa.MysticSnake.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.75"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/medusa/snake_shoot.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Medusa.MysticSnake.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.45"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_81dB"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/medusa/snake_impact_01.wav"
+		"wave"	"weapons/hero/medusa/snake_impact_02.wav"
+		"wave"	"weapons/hero/medusa/snake_impact_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Medusa.MysticSnake.Return"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"pitch"			"100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"weapons/hero/medusa/snake_return.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Medusa.ManaShield.On" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100"
+	"wave"			"weapons/hero/medusa/orb_on.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Medusa.ManaShield.Off" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100"
+	"wave"			"weapons/hero/medusa/orb_off.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Medusa.ManaShield.Proc"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"		"weapons/hero/medusa/orb_absorb_01.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"limit_orb_absorb_sounds"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "4.00000"
+				"match_entity" "false"             
+				"match_substring" "false"
+				"match_entry" "Hero_Medusa.ManaShield.Proc"                         
+			}                  
+			"orb_absorb_num_compare"
+			{
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"       
+				"input1" "@limit_orb_absorb_sounds.output_entries_matching" // This is the percentage chance to play a null
+				"input2" "4" //match the max number of played sounds ( = input_max_entries + 1 )
+			}
+			"orb_absorb_block_me"
+			{
+				"input_execute" "@orb_absorb_num_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+	}
+}
+
+"Hero_Medusa.StoneGaze.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			"weapons/hero/medusa/stonegaze.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+ 			{
+ 				"input_Max" "0.5"
+ 			}
+		}
+	}
+}
+
+"Hero_Medusa.StoneGaze.Target" //last 5 seconds
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/medusa/turntostone_01.wav"
+		"wave"	"weapons/hero/medusa/turntostone_02.wav"
+		"wave"	"weapons/hero/medusa/turntostone_03.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Medusa.Movement"
+{
+	"channel"		"CHAN_BODY"
+	"volume"			"0.25, 0.45"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\medusa\move_01.wav"
+		"wave"		"physics\movement\hero\medusa\move_02.wav"
+		"wave"		"physics\movement\hero\medusa\move_03.wav"
+		"wave"		"physics\movement\hero\medusa\move_04.wav"
+		"wave"		"physics\movement\hero\medusa\move_05.wav"
+	}
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Medusa.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

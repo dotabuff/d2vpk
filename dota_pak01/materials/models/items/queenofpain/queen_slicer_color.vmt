@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/queenofpain/queen_slicer_color"
+	"$normalmap" "models/items/queenofpain/queen_slicer_normal"
+	"$maskmap2" "models/items/queenofpain/queen_slicer_mask2"
+	
+	$ENVMAP "env_cubemap"
+	$ENVMAPINTENSITY 2
+	$ENVMAPBLENTOFULL 1
+
+	$FRESNELWARP "models/heroes/QueenOfPain/QueenOfPain_fresnelranges"
+	
+
+
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 8
+	$SPECULARCOLOR "[1 .65 .30]"
+
+	$RIMLIGHTSCALE	.5
+	$RIMLIGHTCOLOR "[.8 1 1]"
+	
+	
+
+
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

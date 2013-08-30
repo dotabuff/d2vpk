@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$basetexture"	"models/props_gameplay/roquelaire/roq"
+	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/props_gameplay/roquelaire/roq_masks1"
+	"$maskmap2" "models/props_gameplay/roquelaire/roq_masks2"
+
+//	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+
+//	$SPECULAREXPONENT .1
+	$SPECULARSCALE 1
+	$RIMLIGHTSCALE	1
+//	$specularcolor "[1 1 1]"
+//	$RIMLIGHTCOLOR "[1 1 1]"
+//	"$rimlightblendtofull" "1"
+//	"$specularblendtofull" "1"
+//	"$specularexponentblendtofull" "1"
+
+
+//	"$nocull" "1"
+
+
+	$AMBIENTSCALE 1
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

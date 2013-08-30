@@ -1,0 +1,46 @@
+"CustomHero"
+{
+	$baseTexture "models/items/ursa/ravager_belt_sash_color"
+	"$normalmap" "models/items/ursa/ravager_belt_sash_normal"
+	
+	"$maskmap1" "models/items/ursa/ravager_belt_sash_mask1"
+	"$maskmap2" "models/items/ursa/ravager_belt_sash_mask2"
+	
+	"$alphatest" "1"
+//	"$AlphaTestReference" ".5"
+	
+	
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 5
+	$AmbientScale 0.2
+	$RIMLIGHTSCALE 1
+
+	$IgnoreBudgetCheck 1
+
+	$DETAIL1  "models/heroes/sven/sven_glow"
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 15
+	$DETAIL1BLENDFACTOR 0  //Leave this off by default - modulates it via particle fx
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.5"
+			"texturescrollangle"	 "83"
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+// ### This basic VMT was written based on the E:\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_nature/lily_pad001.vtf"
+	$specTexture "models/props_nature/lily_pad001_spec.vtf"
+	$specular_bloom   .5
+	"$alphatest" "1"
+	"$nocull" 1
+  "$fow"                          "_rt_fog_of_war"
+}

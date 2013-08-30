@@ -1,0 +1,98 @@
+"matchgroups"
+{
+	"uswest" // North America - US West
+	{
+		"channel"	"US West"
+		"group" "0"
+		"display_name" "#dota_matchgroup_uswest"
+	}
+
+	"useast" // North America - US East
+	{
+		"channel"	"US East"
+		"group" "1"
+		"display_name" "#dota_matchgroup_useast"
+	}
+
+	"eu"
+	{
+		"channel"	"Europe West"
+		"group" "2"
+		"display_name" "#dota_matchgroup_eu"
+	}
+
+	"vie"
+	{
+		"channel"	"Europe East"
+		"group" "8"
+		"display_name" "#dota_matchgroup_vie"
+	}
+
+	"ru"
+	{
+		"channel"	"Russia"
+		"group" "7"
+		"display_name" "#dota_matchgroup_ru"
+	}
+
+	"icn"
+	{
+		"channel"	"South Korea"
+		"group"	"6"
+		"display_name"	"#dota_matchgroup_icn"
+		"partner"	"Nexon"
+	}
+
+	"sa" // South America
+	{
+		"channel"	"South America"
+		"group" "5"
+		"display_name" "#dota_matchgroup_sa"
+	}
+
+	"sea"
+	{
+		"channel"	"Southeast Asia"
+		"group" "3"
+		"display_name" "#dota_matchgroup_sea"
+	}
+
+	"cn"
+	{
+		"channel"	"China"
+		"group" "4"
+		"display_name" "#dota_matchgroup_cn"
+		// Don't set partner type on test/rel unless you're ok with China being locked out to everyone else
+
+	}
+	
+	"pwt"
+	{
+		"channel"	"Perfect World Telecom"
+		"group" "11"
+		"display_name" "#dota_matchgroup_pw_telecom"
+		"partner"	"PerfectWorld"
+	}
+
+	"pwu"
+	{
+		"channel"	"Perfect World Unicom"
+		"group" "12"
+		"display_name" "#dota_matchgroup_pw_unicom"
+		"partner"	"PerfectWorld"
+	}
+
+	"au"
+	{
+		"channel"	"Australia"
+		"group" "9"
+		"display_name" "#dota_matchgroup_au"
+	}
+	"cpt"
+	{
+		"channel"	"South Africa"
+		"group" "10"
+		"display_name"	"#dota_matchgroup_cpt"
+	}
+}
+

@@ -1,0 +1,17 @@
+"SpriteCard"
+{
+	$basetexture "particle/vistaSmokeV1/vistasmokev1"
+	//$basetexture2 "particle/vistaSmokeV1/vistasmokev1"
+	$DUALSEQUENCE 1
+	$SEQUENCE_BLEND_MODE 1 //2
+	$MAXLUMFRAMEBLEND1 0
+	$MAXLUMFRAMEBLEND2 1
+	$ZOOMANIMATESEQ2 2
+	$addself 1
+	$overbrightfactor 1.75
+	//$EXTRACTGREENALPHA 1
+	$depthblend 0
+	$ignorez 1
+	//"!srgb?$overbrightfactor" "1.5"
+	"GPU<2?$BLENDFRAMES" "0"
+}

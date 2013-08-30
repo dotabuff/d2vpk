@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/slardar/slardar_back_color"
+	"$normalmap" "models/heroes/slardar/slardar_back_normal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$FRESNELWARP" "models/heroes/slardar/slardar_fresnelranges"
+	
+
+	"$maskmap1" "models/heroes/slardar/slardar_back_masks1"
+	"$maskmap2" "models/heroes/slardar/slardar_back_masks2"
+	$SPECULAR_BLOOM_SCALE      .3
+	
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" "15"
+	$IgnoreBudgetCheck 1
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 1
+	
+	$RIMLIGHTSCALE	1
+	$specularcolor "[1 1 2]"
+	//$RIMLIGHTCOLOR "[1 1 .75]"
+	$alphatest 1
+	
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/queenofpain/ripper_dagger_color"
+	"$normalmap" "models/items/queenofpain/ripper_dagger_normal"
+	"$maskmap2" "models/items/queenofpain/ripper_dagger_mask2"
+	
+	$ENVMAP "models/cubemaps/default_gray"
+	$ENVMAPINTENSITY 5
+	$ENVMAPBLENTOFULL 1
+
+	$FRESNELWARP "models/heroes/drow/diffusewarp"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 8
+	$SPECULARCOLOR "[1 .65 .30]"
+
+	$RIMLIGHTSCALE	0.2
+	$RIMLIGHTCOLOR "[.8 1 1]"
+	
+	
+
+
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

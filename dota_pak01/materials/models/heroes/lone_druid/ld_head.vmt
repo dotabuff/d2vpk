@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/lone_druid/ld_head_color"
+	"$normalmap" "models/development/flatnormal"
+	//"$alphatest" "1"
+
+	//"$diffusewarp" "models/heroes/tiny_04/tiny_04_lightwarp"
+	//"$maskmap1" "models/heroes/lone_druid/ld_head_masks1"
+	//"$maskmap2" "models/heroes/lone_druid/ld_head_masks2"
+
+	
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 1.5
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1.5
+	$RIMLIGHTCOLOR "[.75 1 1]"
+
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

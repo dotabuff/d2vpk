@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/skeleton_king/skeleton_king_cloak"
+	"$normalmap" "models/heroes/skeleton_king/skeleton_king_cape_normals"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/skeleton_king/skeleton_king_cloak_masks1"
+	"$maskmap2" "models/heroes/skeleton_king/skeleton_king_cloak_masks2"
+	//$nocull 1
+	$alphatest 1
+
+	$SPECULAREXPONENT 4
+	$SPECULARSCALE .4
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$RIMLIGHTSCALE .5
+	$AMBIENTSCALE 1
+
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

@@ -1,0 +1,39 @@
+
+"CustomHero"
+{
+	$baseTexture "models/heroes/shadowshaman/helmet_color"
+	"$normalmap" "models/heroes/shadowshaman/helmet_normal"
+	//"$nocull" "1"
+	//"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/shadowshaman/helmet_masks1"
+	"$maskmap2" "models/heroes/shadowshaman/helmet_masks2"
+
+
+	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+
+	//$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENT 7
+	$SPECULARSCALE 8
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[.1 1 1]"
+	$RIMLIGHTSCALE .5
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$alphatest 1
+
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

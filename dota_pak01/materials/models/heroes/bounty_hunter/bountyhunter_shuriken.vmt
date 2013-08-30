@@ -1,0 +1,52 @@
+
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/bounty_hunter/bountyhunter_shuriken_color"
+	"$normalmap" "models/heroes/bounty_hunter/bountyhunter_shuriken_normal"
+	"$maskmap1" "models/heroes/bounty_hunter/bountyhunter_shuriken_masks1"
+	"$maskmap2" "models/heroes/bounty_hunter/bountyhunter_shuriken_masks2"
+
+	$SPECULAR_BLOOM_SCALE     0
+	
+
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 2
+	$SPECULARCOLOR "[.7 1 1]"
+	$RIMLIGHTCOLOR "[.8 1 1]"
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULAREXPONENTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 1
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	$DETAIL1BLENDTOFULL 0
+	$alphatest 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

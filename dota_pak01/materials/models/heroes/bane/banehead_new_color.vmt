@@ -1,0 +1,48 @@
+"CustomHero"
+{
+	"$baseTexture" "models\heroes\bane\banehead_new_color"
+	"$normalmap" "models/development/flatnormal"
+//	"$detail1" "models/heroes/doom/doom_burninating"
+//	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	//$FRESNELWARP "models/heroes/dragon_knight/dragon_knight_fresnelranges"
+	"$maskmap1" "models\heroes\bane\banehead_new_mask1"
+	"$maskmap2" "models\heroes\bane\banehead_new_mask2"
+
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 14	
+	$SPECULARSCALE 12	
+	$SPECULARCOLOR "[0.7 0.9 0.7]"
+	$RIMLIGHTCOLOR "[0.1 0.1 0.1]"
+	//$SPECULARBLENDTOFULL 1
+
+	$ADDITIVE 0
+	$RIMLIGHTSCALE 22
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"55"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

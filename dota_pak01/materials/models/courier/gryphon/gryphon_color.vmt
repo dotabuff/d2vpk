@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/gryphon/gryphon_color"
+	"$normalmap" "models/courier/gryphon/gryphon_normal"
+	"$maskmap2" "models/courier/gryphon/gryphon_mask2"
+
+
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 6
+	$AMBIENTSCALE 0.1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1.5
+	$RIMLIGHTCOLOR "[.75 .8 .9]"
+
+	$SPECULAR_BLOOM_SCALE .1
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 5
+	$DETAIL1BLENDFACTOR 0   
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

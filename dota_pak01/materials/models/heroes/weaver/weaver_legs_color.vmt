@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/weaver/weaver_legs_color"
+	"$normalmap" "models/heroes/weaver/weaver_legs_normal"
+	"$maskmap1" "models/heroes/weaver/weaver_legs_masks1"
+	"$maskmap2" "models/heroes/weaver/weaver_legs_masks2"
+   	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+
+
+	$SPECULAREXPONENT 50
+	$SPECULARSCALE 6
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULARCOLOR "[.4 .9 .2]"
+	$SPECULAREXPONENTBLENDTOFULL 1
+	
+	//$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTCOLOR "[1 .8 .9]"
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$alphatest 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

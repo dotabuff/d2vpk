@@ -1,0 +1,55 @@
+"Resource/UI/DOTAJoinChatItemHeader.res"
+{
+	"Header"
+	{
+		"ControlName"		"EditablePanel"
+		"fieldName" 		"Header"
+		"visible" 		"1"
+		"enabled" 		"1"
+		"wide"	 		"250"
+		"tall"	 		"25"
+		"zpos"			"20"
+		"PaintBackground"	"1"
+		"PaintBackgroundType"	"0"
+		"bgcolor_override" "0 0 0 128"
+	}
+	"NameLabel"
+	{
+		"ControlName"			"Label"
+		"fieldName"			"NameLabel"
+		"xpos"				"5"
+		"ypos"				"5"
+		"zpos"				"3"
+		"wide"				"150"
+		"tall"				"16"
+		"textAlignment"		"west"
+		"paintbackground"	"0"
+		"font"	"Arial12Thick"
+		"labelText"			"#dota_join_chat_channel_name_header"
+	}
+	"JoinOnStartupLabel"
+	{
+		"ControlName"			"Label"
+		"fieldName"			"JoinOnStartupLabel"
+		"xpos"				"160"
+		"ypos"				"5"
+		"zpos"				"3"
+		"wide"				"80"
+		"tall"				"16"
+		"textAlignment"		"west"
+		"paintbackground"	"0"
+		"font"	"Arial12Thick"
+		"labelText"			"#dota_join_chat_channel_startup_header"
+	}
+	"Line"
+	{
+		"ControlName"			"Label"
+		"fieldName"			"Line"
+		"xpos"				"5"
+		"ypos"				"18"
+		"zpos"				"3"
+		"wide"				"250"
+		"tall"				"1"
+		"bgcolor_override"	"255 255 255 255"
+	}
+}

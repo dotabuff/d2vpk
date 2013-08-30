@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	$baseTexture "models/items/witchdoctor/tale_tellers_dress_color"
+	"$normalmap" "models/items/witchdoctor/tale_tellers_dress_normal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	//"$diffusewarp" "models/heroes/axe/axe_diffusewarp"
+//	"$maskmap1" "models/heroes/witchdoctor/witchdoctor_body_mask1"
+	"$maskmap2" "models/items/witchdoctor/tale_tellers_dress_mask2"
+	
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 15
+	$SPECULARCOLOR "[0.5 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	$RIMLIGHTSCALE 3
+	$alphatest 1	
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,33 @@
+CustomHero
+{
+$baseTexture "models/courier/sillydragon/sillydragon_color"
+$normalmap "models/courier/sillydragon/sillydragon_normal"
+$maskmap1 "models/courier/sillydragon/sillydragon_mask1"
+$maskmap2 "models/courier/sillydragon/sillydragon_mask2"
+
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+	$IgnoreBudgetCheck 1	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+	
+}
+
+

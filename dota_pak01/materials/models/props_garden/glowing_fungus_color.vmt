@@ -1,0 +1,9 @@
+// ### This basic VMT was written based on the E:\dota\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_garden/glowing_fungus_color"
+	  "$SPECTEXTURE" "models/props_garden/glowing_fungus_spec"
+	   $SPECULAR_BLOOM		.75
+		"$alphatest" "1"
+	"$fow"                          "_rt_fog_of_war"
+}

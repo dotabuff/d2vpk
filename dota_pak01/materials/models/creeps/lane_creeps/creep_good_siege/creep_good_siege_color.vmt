@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture" "models/creeps/lane_creeps/creep_good_siege/creep_good_siege_color"
+	"$normalmap" "models/creeps/lane_creeps/creep_good_siege/creep_good_siege_normal"
+	
+	"$maskmap1" "models\creeps\lane_creeps\creep_good_siege\creep_good_siege_masks1"
+	"$maskmap2" "models\creeps\lane_creeps\creep_good_siege\creep_good_siege_masks2"
+	
+	$SPECULAREXPONENT 30 
+	//$SPECULAREXPONENTBLENDTOFULL 1
+//	$SPECULARBLENDTOFULL 0.1
+	$SPECULARCOLOR 1 1 1
+	$SPECULARSCALE 2
+	$RIMLIGHTSCALE	1
+	//$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+
+	$IgnoreBudgetCheck 1
+	//$SPECULAREXPONENT 13
+	//$SPECULARSCALE 1
+	//$RIMLIGHTSCALE	2
+
+// Status Effects
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

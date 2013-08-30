@@ -1,0 +1,46 @@
+"CustomHero"
+{
+	$baseTexture "models/items/puck/fairy_wing_color.vtf"
+	"$normalmap" "models/items/puck/fairy_wing_normal"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$FRESNELWARP" "models/heroes/puck/puck_fresnelranges"
+	"$FRESNELCOLORWARP" "models/heroes/puck/puck_colorwarp"
+//	"$SPECULARWARP" "models/heroes/juggernaut/juggernaut_lightwarp"
+
+	"$maskmap1" "models/items/puck/fairy_wing_mask1"
+	"$maskmap2" "models/items/puck/fairy_wing_mask2"
+
+	
+	
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" "15"
+
+	$SPECULAR_BLOOM_SCALE      0
+	
+
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 25
+	//$SPECULARCOLOR "[1 .50 0]"
+	$AMBIENTSCALE 1
+	$alphatest 1
+
+	
+	
+	$RIMLIGHTSCALE	2
+	$RIMLIGHTCOLOR	"[.5 1 .5]"
+
+  $IgnoreBudgetCheck 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

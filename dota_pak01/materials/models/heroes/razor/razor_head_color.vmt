@@ -1,0 +1,53 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/razor/razor_head_color.vtf"
+	"$normalmap" "models/heroes/razor/razor_head_normal.vtf"
+	"$detail1"  "models/heroes/razor/razor_electric.vtf"
+	"$maskmap1" "models/heroes/razor/razor_head_masks1.vtf"
+	"$maskmap2" "models/heroes/razor/razor_head_masks2.vtf"
+	"$diffusewarp" "models/heroes/razor/razor_lightwarp"
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 1.5
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 6
+	$DETAIL1BLENDFACTOR 1 
+
+	$RIMLIGHTSCALE	1
+//	$RIMLIGHTCOLOR	"[1 1 .8]"
+
+
+	$SPECULAR_BLOOM_SCALE      0
+	$alphatest 1
+
+
+
+	
+	$FRESNELWARP "models/heroes/juggernaut/juggernaut_fresnelranges"
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.4"
+			"texturescrollangle"	 "32"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+

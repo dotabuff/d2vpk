@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\tuskarr\tuskarr_color"
+	"$normalmap" "models/development/flatnormal"
+//    	"$diffusewarp" "models/heroes/drow/diffusewarp"
+//	"$maskmap2" "models\heroes\tuskarr\tuskarr_mask1"
+	"$maskmap2" "models\heroes\tuskarr\tuskarr_mask2"
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+	$SPECULAREXPONENT 60
+	$SPECULARSCALE 6
+	$SPECULARCOLOR "[.3 .75 1]"
+
+//	"$envmap" "env_cubemap"
+//	"$envmapintensity" "1"
+
+	$RIMLIGHTSCALE 5
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

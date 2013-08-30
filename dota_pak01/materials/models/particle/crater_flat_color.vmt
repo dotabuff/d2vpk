@@ -1,0 +1,51 @@
+"CustomHero"
+{
+	"$baseTexture" "models/particle/crater_color"
+	"$normalmap" "models/particle/crater_flat_normal"
+
+	"$detail1"  "models/particle/meteor_glow"
+	"$maskmap1" "models/particle/meteor_mask1"
+	"$maskmap2" "models/particle/meteor_mask2"
+
+	"$diffusewarp" "models/particle/meteor_diffusewarp"
+
+	$SPECULAREXPONENT 10
+	$SPECULARBLENDTOFULL 1
+	$SPECULARCOLOR "[1 1 1]"
+	$SPECULARSCALE 1
+	
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE .5
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1
+
+	$TRANSLUCENT	1
+
+	"$cloakPassEnabled" "1"
+	$CLOAK_BLUR_AMOUNT        0.001
+
+	$cloakintensity 0.001   //blend % with original base color
+	$cloakfactor 0.001      //
+	$refractamount 0.00     //level of refraction
+	"Proxies"
+	{
+			"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.05"
+			"texturescrollangle"	 "0.25"	
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,62 @@
+
+// ### This basic VMT was written based on the U:\dev\tools\python\templateStrings.pyc script ###
+
+"CustomHero"
+{
+	$baseTexture "models/creeps/lane_creeps/lane_radiant_ranged_color"
+	"$normalmap" "models\development\flatnormal" 
+//	"$detail1"  "EMPTY"
+//	"$maskmap1" "models/creeps/lane_creeps/creep_good_ranged/masks1.vtf"
+	"$maskmap2" "dev/reflectivity_20.vtf"
+	"$diffusewarp" "models\creeps\lane_creeps\creepgood_diffusewarp"
+//	"$envmap" "env_cubemap"
+//	"$envmapintensity" "20"
+
+	$SPECULAREXPONENT 8			
+
+	$SPECULARSCALE .25
+
+	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	1
+
+	
+//	$FRESNELWARP "models/heroes/juggernaut/juggernaut_fresnelranges"
+
+// Status Effects
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	$baseTexture "models/items/furion/staff_posoh_color"
+	"$normalmap" "models/items/furion/staff_posoh_normal"
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$maskmap1" "models/items/furion/staff_posoh_mask1"
+	"$maskmap2" "models/items/furion/staff_posoh_mask2"
+//	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" ".5"
+
+	$IgnoreBudgetCheck 1
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 2
+//	$SPECULARCOLOR "1 1 1"
+	$RIMLIGHTCOLOR "[0.7 1 1]"
+	$RIMLIGHTSCALE .6	
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

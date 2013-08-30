@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/brewmaster/windspirit_body_color"
+	"$normalmap" "models/heroes/brewmaster/windspirit_body_normal"
+	"$maskmap1" "models/heroes/brewmaster/windspirit_body_mask1"
+	"$maskmap2" "models/heroes/brewmaster/windspirit_body_mask2"
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+
+	$SPECULAR_BLOOM_SCALE    11
+	$SPECULAR_BLOOM_COLOR "[0 0 1]"
+	$SPECULAR_BLOOM_SHIFT 1
+	$alphatest 1
+		
+	
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 1 1]"
+
+	$AMBIENTSCALE 1
+
+	$RIMLIGHTSCALE	10
+	$RIMLIGHTCOLOR "[.5 .5 1]"
+	$IgnoreBudgetCheck 0	
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

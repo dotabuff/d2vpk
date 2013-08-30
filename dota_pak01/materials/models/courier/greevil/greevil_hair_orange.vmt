@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/greevil/greevil_hair_color"
+	"$normalmap" "models/courier/greevil/greevil_hair_normal"
+	"$detail1"  "models/courier/greevil/greevil_orange_detail1"
+  "$maskmap1" "models/courier/greevil/greevil_hair_orange_mask1"
+	"$maskmap2" "models/courier/greevil/greevil_hair_orange_mask2"
+
+	"$COLORWARP" "models/courier/greevil/colorwarp_greevil_orange"
+	"$COLORWARPINTENSITY" 1
+	
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1.6
+
+	$SPECULAREXPONENT 25
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 5		
+
+	$RIMLIGHTSCALE	3
+	$RIMLIGHTCOLOR	"[.75 .4 .4]"
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

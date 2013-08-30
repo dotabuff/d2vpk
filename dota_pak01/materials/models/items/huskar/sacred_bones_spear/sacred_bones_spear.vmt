@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/huskar/sacred_bones_spear/sacred_bones_spear_color"
+	"$normalmap"		"models/items/huskar/sacred_bones_spear/sacred_bones_spear_normal"
+	"$detail1"		"models/heroes/huskar/huskar_glow"
+	"$maskmap1"		"models/items/huskar/sacred_bones_spear/sacred_bones_spear_mask1"
+	"$maskmap2"		"models/items/huskar/sacred_bones_spear/sacred_bones_spear_mask2"
+	"$SPECULAREXPONENT"		"30"
+	"$SPECULARSCALE"		"5"
+	"$SPECULARCOLOR"		"[1 1 1]"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$RIMLIGHTSCALE"		"1"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$DETAIL1BLENDTOFULL"		"0"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"1"
+			"texturescrollangle"		"90"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

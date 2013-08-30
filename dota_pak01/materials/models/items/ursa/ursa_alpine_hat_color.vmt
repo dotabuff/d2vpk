@@ -1,0 +1,43 @@
+"CustomHero"
+{
+	$baseTexture "models/items/ursa/ursa_alpine_hat_color.vtf"
+	"$normalmap" "models/items/ursa/ursa_alpine_hat_normal"
+	
+	"$maskmap1" "models/items/ursa/ursa_alpine_hat_mask1"
+	"$maskmap2" "models/items/ursa/ursa_alpine_hat_mask2"
+	//$alphatest" "1"
+
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 5
+
+	$RIMLIGHTSCALE 1
+
+	//$IgnoreBudgetCheck 1
+	$AmbientScale 0.2
+
+	$DETAIL1  "models/heroes/sven/sven_glow"
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 15
+	$DETAIL1BLENDFACTOR 0  //Leave this off by default - modulates it via particle fx
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.5"
+			"texturescrollangle"	 "83"
+		}
+	}
+
+}

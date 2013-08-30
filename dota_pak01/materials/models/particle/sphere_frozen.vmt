@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/statusEffects/frozen"
+	//$additive 1
+	$translucent 1
+//	$nocull 1
+//	$model 
+//	$vertexalpha 1
+//	$vertexcolor 1
+
+	"$normalmap" "models\heroes\bane\bane_normal"
+//	"$detail1"  "models/heroes/bane/bane_glow"
+	"$maskmap1" "models/heroes/bane/bane_mask1"
+	"$maskmap2" "models/heroes/bane/bane_mask2"
+	"$diffusewarp" "models/heroes/bane/bane_lightwarp"
+	"$envmap" "env_cubemap"
+
+	"$specularwarp" "models/heroes/bane/bane_specularwarp"
+
+
+	$SPECULAREXPONENT 18
+
+	$SPECULARSCALE .5
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	4
+	$AMBIENTSCALE .5
+	
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+}

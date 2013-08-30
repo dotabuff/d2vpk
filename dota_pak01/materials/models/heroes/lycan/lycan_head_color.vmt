@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/lycan/lycan_head_color"
+	"$normalmap" "models/heroes/lycan/lycan_head_normal"
+	"$maskmap1" "models/heroes/lycan/lycan_head_masks1"
+	"$maskmap2" "models/heroes/lycan/lycan_head_masks2"
+	//"$diffusewarp" "models/heroes/lycan/lycan_lightwarp"
+	//$SPECULARWARP "models/heroes/lycan/lycan_lightwarp"
+        "$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" 3
+
+	$SPECULAREXPONENT 13
+	$SPECULARSCALE 25
+	$SPECULAR_BLOOM_SCALE 1
+	$SPECULARCOLOR "[0.7 0.9 1]"
+
+	$AMBIENTSCALE .5
+
+	$RIMLIGHTSCALE	10
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$IgnoreBudgetCheck 1
+	$alphatest 1	
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

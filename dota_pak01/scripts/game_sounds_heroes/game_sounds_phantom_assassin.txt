@@ -1,0 +1,311 @@
+"Hero_PhantomAssassin.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 0.8"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"105, 115"
+	"wave"			"weapons/hero/phantom_assassin/phantom_assassin_swing1.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+
+"Hero_PhantomAssassin.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/shared/small_blade/attack_long01.wav"
+		"wave"			")weapons/hero/shared/small_blade/attack_long02.wav"
+		"wave"			")weapons/hero/shared/small_blade/attack_long03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_PhantomAssassin.Attack.Rip"
+			}
+		}
+	}
+}
+
+
+"Hero_PhantomAssassin.Attack.Rip"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 0.8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/npc/rip01.wav"
+		"wave"			"physics/damage/npc/rip02.wav"
+		"wave"			"physics/damage/npc/rip03.wav"
+		"wave"			"physics/damage/npc/rip04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.05"
+			"input_max" "0.10"
+			}
+		}
+	}
+}
+
+"Hero_PhantomAssassin.Dagger.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/phantom_assassin/stifling_dagger_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_PhantomAssassin.Dagger.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/phantom_assassin/stifling_dagger_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_PhantomAssassin.Strike.Start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"110, 120"
+	"wave"			")weapons/hero/antimage/blink_out.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_PhantomAssassin.Strike.End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"110, 120"
+	"wave"			")weapons/hero/antimage/blink_in.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+
+"Hero_PhantomAssassin.CoupDeGrace.Mech"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"110, 120"
+	"wave"			")weapons/hero/juggernaut/sword_swing_special.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_PhantomAssassin.CoupDeGrace"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90,110"
+	"wave"			"weapons/hero/phantom_assassin/coup_de_grace.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_PhantomAssassin.Spatter"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_PhantomAssassin.Spatter"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/phantom_assassin/crit_spatter01.wav"
+		"wave"			")weapons/hero/phantom_assassin/crit_spatter02.wav"
+		"wave"			")weapons/hero/phantom_assassin/crit_spatter03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.1"
+			"input_max" "0.3"
+			}
+		}
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_default"
+// 			"volume_falloff_linear"
+// 			{
+// 			"input_max" "1250.0"
+// 			}
+// 			"mixer"
+// 			{
+// 				"mixgroup" "Weapons"
+// 			}
+// 			"speakers_spatialize"
+// 			{
+// 				"input_radius"  "300"
+// 			}
+// 		}
+	}
+}
+
+"Hero_PhantomAssassin.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.2, 0.3"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"105, 115"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}

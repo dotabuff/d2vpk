@@ -1,0 +1,22 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/greevil/greevil_tail_color"
+	"$normalmap" "models/courier/greevil/greevil_tail_normal"
+//	"$detail1"  "models/courier/greevil/greevil_detail1"
+	// "$maskmap1" "models/courier/greevil/greevil_tail_mask1"
+//	"$maskmap2" "models/courier/greevil/greevil_tail_mask2"
+
+	"$COLORWARP" "models/courier/greevil/colorwarp_greevil_black"
+	"$COLORWARPINTENSITY" 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

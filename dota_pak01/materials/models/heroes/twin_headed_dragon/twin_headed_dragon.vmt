@@ -1,0 +1,42 @@
+
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/twin_headed_dragon/twin_headed_dragon_color"
+	"$normalmap" "models/heroes/twin_headed_dragon/twin_headed_dragon_normals"
+	"$maskmap1" "models/heroes/twin_headed_dragon/twin_headed_dragon_masks1"
+	"$maskmap2" "models/heroes/twin_headed_dragon/twin_headed_dragon_masks2"
+	//"$diffusewarp" "models/heroes/vengeful/vengeful_diffusewarp"
+	//"$FRESNELWARP" "models/heroes/sven/sven_fresnelranges"
+	$IgnoreBudgetCheck 1  
+	$SPECULAR_BLOOM_SCALE 0.1
+	
+	$SPECULAREXPONENT 89
+	$SPECULARSCALE 15
+	$SPECULARCOLOR "1 1 1"
+	$RIMLIGHTCOLOR "1 1 1"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTEXPONENT 70	
+
+	$ambientscale 0.3
+
+	$DETAIL1BLENDMODE 2
+	//$SELFILLUMBLENDTOFULL 0.1
+	$DETAIL1SCALE 1
+	$alphatest 1
+
+	
+	$cloakintensity 0.65
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

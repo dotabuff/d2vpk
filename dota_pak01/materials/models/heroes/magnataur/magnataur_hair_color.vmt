@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/magnataur/magnataur_hair_color"
+	"$normalmap" "models/heroes/magnataur/magnataur_hair_normal"
+	"$maskmap1" "models/heroes/magnataur/magnataur_hair_mask1"
+	"$maskmap2" "models/heroes/magnataur/magnataur_hair_mask2"
+
+
+	
+	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+//	"$envmap" "env_cubemap"
+
+
+
+	$SPECULAREXPONENT 60
+	$SPECULARSCALE 2
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[1 4 5]"
+	$alphatest 1
+	
+	
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

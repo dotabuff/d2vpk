@@ -1,0 +1,51 @@
+"Water"
+{
+	$forceexpensive 1
+	"$normalmap" "water/water_river_normal_sharp_temp"
+
+	$flowmap "liquids/dota_flowmap_flow"
+	$flow_normaluvscale 500.0
+	$flow_worlduvscale 1
+	$flow_timeintervalinseconds .6 // Amount of time before the change happens
+	$flow_uvscrolldistance 0.18 // Stretch of UV Distance before change over to second set of flow
+	$flow_bumpstrength 1.5
+	$flow_timescale 1
+	$flow_offset 1
+
+	$flow_noise_texture "water/water_noise"
+//	$flow_noise_texture "liquids/water_noise"
+	$flow_noise_scale 0.0005
+
+	$flow_debug 0    
+
+	"$reflecttexture" "_rt_WaterReflection"
+	"$reflectamount" ".17" 
+	"$reflecttint" "[ .75 .75 .75  ]"
+//	"$reflecttint" "[ .8 .9 1 ]"
+
+//	"$reflectskyboxonly" 1
+	"$reflectentities" 1
+
+	"$refracttexture" "_rt_WaterRefraction"
+	"$refractamount" "0.06"
+	"$refracttint" "{ 136 144 70 }"
+
+	"$abovewater" 1
+	"$bottommaterial" "nodraw"
+
+	"$fogenable" 1
+	"$fogstart" 5
+	"$fogend" 40
+	"$lightmapwaterfog" 1
+
+	// 20b and higher, lightmap the water fog and don't mess with the flahlight tint on water
+	"$fogcolor" "{ 30 30 30 }"
+	"$flashlighttint" 1
+
+	"%compilewater" 1
+	"%tooltexture" "liquids/dota_flowmap_flow"
+	"$surfaceprop" "slime"
+	"$forcefresnel" .5 
+	"$fow" 				"_rt_fog_of_war"
+}
+

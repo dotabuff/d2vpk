@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/furion/necklace_color"
+	"$normalmap" "models/heroes/furion/necklace_normal"
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$maskmap1" "models/heroes/furion/necklace_mask1"
+	"$maskmap2" "models/heroes/furion/necklace_mask2"
+	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+	$IgnoreBudgetCheck 1
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 2
+	$RIMLIGHTCOLOR "[0.7 1 1]"
+	$RIMLIGHTSCALE .6
+	$alphatest 1	
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

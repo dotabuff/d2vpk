@@ -1,0 +1,52 @@
+"MultiBlend"
+
+{
+
+       	"$ScrollWaveEnable"                1
+
+	"$basetexture" "nature\water_foam_01"
+	"$spectexture" "nature\water_foam_01_spec"
+	"$scroll" "[ -0.025 -0.025 ]"
+       	"$Scroll1WaveHeight"                0.35 // 0.0 disables waves on this layer
+       	"$Scroll1WaveSecondsPerCycle" 8.0
+       	"$Scroll1WaveOffsetSeconds"  2.5
+       	"$Scroll1WaveCycleSkip"             0
+	"$scale"			1.5 
+	"$rotation"			0.0
+
+	"$basetexture2" "nature\water_foam_00"
+	"$spectexture2" "nature\water_foam_00_spec"
+	"$scroll2" "[ -0.035 -0.035 ]"
+      	"$Scroll2WaveHeight"                0.25 // 0.0 disables waves on this layer
+       	"$Scroll2WaveSecondsPerCycle" 8.0
+       	"$Scroll2WaveOffsetSeconds"  2.0
+       	"$Scroll2WaveCycleSkip"             0
+	"$scale2"			3.0 
+	"$rotation2"			10.0
+
+
+	"$basetexture3" "nature\water_ocean_01"
+	"$spectexture3" "nature\water_ocean_01_spec"
+	"$scroll3" "[ -0.045 -0.045 ]"
+      	"$Scroll3WaveHeight"                0.05 // 0.0 disables waves on this layer
+       	"$Scroll3WaveSecondsPerCycle" 12.0
+       	"$Scroll3WaveOffsetSeconds"  1.5
+       	"$Scroll3WaveCycleSkip"             0
+	"$scale3"			3.5
+	"$rotation3"			20.0
+
+	"$basetexture4" "nature\water_ocean_00"
+	"$spectexture4" "nature\water_ocean_00_spec"
+	"$scroll4" "[ -0.035 -0.035 ]"
+       	"$Scroll4WaveHeight"                0.05 // 0.0 disables waves on this layer
+       	"$Scroll4WaveSecondsPerCycle" 12.0
+       	"$Scroll4WaveOffsetSeconds"  6.0
+       	"$Scroll4WaveCycleSkip"             0
+	"$scale4"			3.0
+	"$rotation4"			20.0
+
+	"$fow" 				"_rt_fog_of_war"
+
+	"%keywords" "dota"
+	"%tooltexture" "test/terraintest-1"
+}

@@ -1,0 +1,21 @@
+"WorldVertexTransition"
+{
+	"$basetexture" "nature/mudfloor001a"	
+	"$basetexture2" "nature/mudfloor002a"
+	"%tooltexture" "nature/blendmudmud001a_tooltexture"
+	"$surfaceprop" "mud"
+	"$surfaceprop2" "dirt"
+	"%keywords" "coastline"
+
+
+ "LightmappedGeneric_DX9"
+ {
+	"$bumpmap" "nature/mudfloor001a_normal"
+	"$bumpmap2" "nature/mudfloor002a_normal"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapsaturation" 1
+	"$envmapcontrast" 1
+	"$envmaptint" "[ .65 .65 .65]"
+	"$envmap" "env_cubemap"
+ }
+}

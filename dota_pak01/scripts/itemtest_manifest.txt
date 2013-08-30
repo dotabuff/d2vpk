@@ -1,0 +1,1057 @@
+"itemtest_manifest"
+{
+	// Item directory under the "<mod>/models" directory. (i.e. TF's is "player/items/")
+	"item_directory"		"items/"
+	"terse_messages"		"1"
+
+	"classes"
+	{
+		"alchemist"				
+		{
+			"heroID"		"73"
+			"tag"			"Alchemist"
+		}
+		"antimage"				
+		{
+			"heroID"		"1"
+			"tag"			"Anti-Mage"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"rt_blade"
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"antimage_blade_primary"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/models/heroes/antimage/antimage_weapon_primary.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+				"offhand_weapon"
+				{
+					"bone"		"lf_blade"
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"antimage_blade_offhand"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/models/heroes/antimage/antimage_weapon_offhand.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
+
+		}
+		"axe"				
+		{
+			"heroID"		"2"
+			"tag"			"Axe"
+		}
+		"batrider"		
+		{
+			"heroID"		"65"
+			"tag"			"Batrider"
+		}
+		"beastmaster"		
+		{
+			"heroID"		"38"
+			"tag"			"Beastmaster"
+		}
+		"blood_seeker"		
+		{
+			"heroID"		"4"
+			"tag"			"Bloodseeker"
+		}
+		"bounty_hunter"		
+		{
+			"heroID"		"62"
+			"tag"			"Bounty Hunter"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"RWeapon"
+					"preview_def_keys"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"bounty_hunter_hand_R"
+							}
+						}
+					}
+					"add_to_item_def"
+					{
+						"particle_file"             "particles/econ/items/bounty_hunter/bounty_hunter_weapon_right_localspace.pcf"
+						"visuals"
+						{
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/particle_snapshots/bounty_hunter/bounty_hunter_weapon_r.psf"
+								"modifier"    "<PSFFILE>"
+							}
+							"asset_modifier1"
+							{
+								"type"        "particle"
+								"asset"       "bounty_hunter_hand_R"
+								"modifier"    "bounty_hunter_hand_R_local"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+				"offhand_weapon"
+				{
+					"bone"		"LWeapon"
+					"preview_def_keys"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"bounty_hunter_hand_L"
+							}
+						}
+					}
+					"add_to_item_def"
+					{
+						"particle_file"             "particles/econ/items/bounty_hunter/bounty_hunter_weapon_left_localspace.pcf"
+						"visuals"
+						{
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/particle_snapshots/bounty_hunter/bounty_hunter_weapon_l.psf"
+								"modifier"    "<PSFFILE>"
+							}
+							"asset_modifier1"
+							{
+								"type"        "particle"
+								"asset"       "bounty_hunter_hand_L"
+								"modifier"    "bounty_hunter_hand_L_local"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
+		}
+		"brewmaster"		
+		{
+			"heroID"		"78"
+			"tag"			"Brewmaster"
+		}
+		"bristleback"		
+		{
+			"heroID"		"99"
+			"tag"			"Bristleback"
+		}
+		"broodmother"		
+		{
+			"heroID"		"61"
+			"tag"			"Broodmother"
+		}
+		"centaur"		
+		{
+			"heroID"		"96"
+			"tag"			"Centaur Warrunner"
+		}		
+		"chaos_knight"		
+		{
+			"heroID"		"81"
+			"tag"			"Chaos Knight"
+		}
+		"chen"		
+		{
+			"heroID"		"66"
+			"tag"			"Chen"
+		}
+		"clinkz"		
+		{
+			"heroID"		"56"
+			"tag"			"Clinkz"
+		}
+		"crystal_maiden"		
+		{
+			"heroID"		"5"
+			"tag"			"Crystal Maiden"
+		}
+		"dark_seer"		
+		{
+			"heroID"		"55"
+			"tag"			"Dark Seer"
+		}
+		"dazzle"		
+		{
+			"heroID"		"50"
+			"tag"			"Dazzle"
+		}
+		"death_prophet"		
+		{
+			"heroID"		"43"
+			"tag"			"Death Prophet"
+		}
+		"disruptor"		
+		{
+			"heroID"		"87"
+			"tag"			"Disruptor"
+		}
+		"doom"		
+		{
+			"heroID"		"69"
+			"tag"			"Doom"
+		}
+		"dragon_knight"		
+		{
+			"heroID"		"49"
+			"tag"			"Dragon Knight"
+		}
+		"drow"				
+		{
+			"heroID"		"6"
+			"tag"			"Drow Ranger"
+		}
+		"earthshaker"		
+		{
+			"heroID"		"7"
+			"tag"			"Earthshaker"
+		}
+
+		"enchantress"		
+		{
+			"heroID"		"58"
+			"tag"			"Enchantress"
+		}
+		"faceless_void"		
+		{
+			"heroID"		"41"
+			"tag"			"Faceless Void"
+		}
+		"huskar"			
+		{
+			"heroID"		"59"
+			"tag"			"Huskar"
+		}
+		"invoker"			
+		{
+			"heroID"		"74"
+			"tag"			"Invoker"
+		}
+		"juggernaut"		
+		{
+			"heroID"		"8"
+			"tag"			"Juggernaut"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"sword_1"
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"juggernaut_blade_generic"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/models/heroes/juggernaut/juggernaut.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
+		}
+		"keeper_of_the_light"			
+		{
+			"heroID"		"90"
+			"tag"			"Keeper of the Light"
+		}
+		"kunkka"			
+		{
+			"heroID"		"23"
+			"tag"			"Kunkka"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"sword_1"
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"asset_modifier0"
+							{
+								"type"		"particle_snapshot"
+								"asset"		"particles/models/heroes/kunkka/kunkka_sword_default.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
+		}
+		"leshrac"		
+		{
+			"heroID"		"52"
+			"tag"			"Leshrac"
+		}
+		"lich"		
+		{
+			"heroID"		"31"
+			"tag"			"Lich"
+		}
+		"lina"		
+		{
+			"heroID"		"25"
+			"tag"			"Lina"
+		}
+		"lion"		
+		{
+			"heroID"		"26"
+			"tag"			"Lion"
+		}
+		"lone_druid"		
+		{
+			"heroID"		"80"
+			"tag"			"Lone Druid"
+		}
+//		"luna"		
+//		{
+//			"heroID"		"48"
+//			"tag"			"Luna"
+//		}
+		"lycan"		
+		{
+			"heroID"		"77"
+			"tag"			"Lycanthrope"
+		}
+		"medusa"		
+		{
+			"heroID"		"94"
+			"tag"			"Medusa"
+		}
+		"meepo"		
+		{
+			"heroID"		"82"
+			"tag"			"Meepo"
+		}
+		"mirana"		
+		{
+			"heroID"		"9"
+			"tag"			"Mirana"
+		}		
+		"morphling"		
+		{
+			"heroID"		"10"
+			"tag"			"Morphling"
+		}
+// Naga Siren
+		"siren"				
+		{
+			"heroID"		"89"
+			"tag"			"Naga Siren"
+		}
+// Natures Prophet
+		"furion"			
+		{
+			"heroID"		"53"
+			"tag"			"Nature's Prophet"
+		}
+		"necrolyte"		
+		{
+			"heroID"		"36"
+			"tag"			"Necrolyte"
+		}
+		"nerubian_assassin"		
+		{
+			"heroID"		"88"
+			"tag"			"Nyx Assassin"
+		}
+		"ogre_magi"		
+		{
+			"heroID"		"84"
+			"tag"			"Ogre Magi"
+		}
+		"omniknight"		
+		{
+			"heroID"		"57"
+			"tag"			"Omniknight"
+		}
+		"obsidian_destroyer"		
+		{
+			"heroID"		"76"
+			"tag"			"Outworld Devourer"
+		}
+		"phantom_assassin"		
+		{
+			"heroID"		"44"
+			"tag"			"Phantom Assassin"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"weapon0_0"
+					"preview_def_keys"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"phantom_assassin_ambient_blade_generic"
+							}
+						}
+					}
+					"add_to_item_def"
+					{
+						"particle_file"             "particles/econ/items/phantom_assassin/phantom_assassin_weapon_generic.pcf"
+						"visuals"
+						{
+							"asset_modifier1"
+							{
+								"type"        "particle"
+								"asset"       "phantom_assassin_ambient_blade"
+								"modifier"    "phantom_assassin_ambient_blade_generic"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/econ/items/phantom_assassin/phantom_assassin_weapon_generic.psf"
+								"modifier"    "<PSFFILE>"	// "particles/models/items/phantom_assassin/test/test.psf"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
+		}
+		"phantom_lancer"		
+		{
+			"heroID"		"12"
+			"tag"			"Phantom Lancer"
+		}
+		"pudge"		
+		{
+			"heroID"		"14"
+			"tag"			"Pudge"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"skip_model_combine"		"1"
+						}
+					}
+				}
+			}
+		}
+		"pugna"		
+		{
+			"heroID"		"45"
+			"tag"			"Pugna"
+		}
+		"queenofpain"		
+		{
+			"heroID"		"39"
+			"tag"			"Queen of Pain"
+		}
+		"razor"				
+		{
+			"heroID"		"15"
+			"tag"			"Razor"
+		}
+		"rikimaru"				
+		{
+			"heroID"		"32"
+			"tag"			"Riki"
+		}
+		"rubick"				
+		{
+			"heroID"		"86"
+			"tag"			"Rubick"
+		}
+		"sand_king"				
+		{
+			"heroID"		"16"
+			"tag"			"Sand King"
+		}
+		"shadow_demon"				
+		{
+			"heroID"		"79"
+			"tag"			"Shadow Demon"
+		}
+		"shadowshaman"				
+		{
+			"heroID"		"27"
+			"tag"			"Shadow Shaman"
+		}
+		"silencer"				
+		{
+			"heroID"		"75"
+			"tag"			"Silencer"
+		}
+		"skeleton_king"				
+		{
+			"heroID"		"42"
+			"tag"			"Skeleton King"
+		}
+		"skywrath_mage"				
+		{
+			"heroID"		"101"
+			"tag"			"Skywrath Mage"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"staff_1"
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"skywrath_mage_staff_ambient_generic"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/particle_snapshots/skywrath_mage/skywrath_mage_staff_default.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
+		}
+		"slardar"				
+		{
+			"heroID"		"28"
+			"tag"			"Slardar"
+		}
+		"slark"				
+		{
+			"heroID"		"93"
+			"tag"			"Slark"
+		}		
+		"sniper"				
+		{
+			"heroID"		"35"
+			"tag"			"Sniper"
+		}
+		"spectre"				
+		{
+			"heroID"		"67"
+			"tag"			"Spectre"
+		}
+		"spirit_breaker"				
+		{
+			"heroID"		"71"
+			"tag"			"Spirit Breaker"
+		}
+//		"storm_spirit"				
+//		{
+//			"heroID"		"17"
+//			"tag"			"Storm Spirit"
+//		}
+		"sven"				
+		{
+			"heroID"		"18"
+			"tag"			"Sven"
+		}
+//  Templar Assassin
+		"lanaya"
+		{
+			"heroID"		"46"
+			"tag"			"Templar Assassin"
+		}
+		"tidehunter"		
+		{
+			"heroID"		"29"
+			"tag"			"Tidehunter"
+		}
+		"ursa"				
+		{
+			"heroID"		"70"
+			"tag"			"Ursa"
+		}
+		"tuskarr"				
+		{
+			"heroID"		"100"
+			"tag"			"Tusk"
+		}
+//		"venomancer"		
+//		{
+//			"heroID"		"40"
+//			"tag"			"Venomancer"
+//		}
+		"warlock"		
+		{
+			"heroID"		"37"
+			"tag"			"Warlock"
+		}
+		"weaver"		
+		{
+			"heroID"		"63"
+			"tag"			"Weaver"
+		}
+		"windrunner"		
+		{
+			"heroID"		"21"
+			"tag"			"Windrunner"
+		}
+		"witchdoctor"		
+		{
+			"heroID"		"30"
+			"tag"			"Witch Doctor"
+		}
+
+
+
+
+		"wards"		
+		{
+			"heroID"		"999"
+			"tag"			"Wards"
+		}
+		"courier"
+		{
+			"heroID"		"1000"
+			"tag"			"Courier"
+		}
+	}
+
+	"mdl_files"
+	{
+		".mdl"				"1"
+		".dx90.vtx"			"1"
+		".vvd"				"1"
+	}
+
+	"default_material_type"	"primary"
+	"material_types"
+	{
+		"primary"
+		{
+			"file_append"	"_color"
+		}
+		"secondary"
+		{
+			"file_append"	"_secondary"
+		}
+	}
+
+	"texture_types"
+	{
+		"_color"
+		{
+			"add_to_vtex_config"
+			{
+				"numchannels"	"4"
+				"dxt5"			"1"
+			}
+		}
+		"_normal"
+		{
+			"add_to_vtex_config"
+			{
+				"numchannels"	"3"
+			}
+		}
+		"_mask1"
+		{
+			"add_to_vtex_config"
+			{
+				"numchannels"	"4"
+				"nonice"		"1"
+				"dxt5"			"1"
+			}
+		}
+		"_mask2"
+		{
+			"add_to_vtex_config"
+			{
+				"numchannels"	"4"
+				"nonice"		"1"
+				"dxt5"			"1"
+			}
+		}
+	}
+
+	"qc_template"				"scripts/itemtest/itemtest_qc_template.txt"
+
+	"vmt_templates"
+	{
+		"vmt_texture_settings"
+		{
+			"$basetexture"		"_color"
+			"$normalmap"		"_normal"
+			"$maskmap1"			"_mask1"
+			"$maskmap2"			"_mask2"
+		}
+
+		"classes"
+		{
+			"alchemist"                "materials/models/heroes/alchemist/alchemist_body_color.vmt"
+			"antimage"                 "materials/models/heroes/antimage/antimage.vmt"
+			"axe"                      "materials/models/heroes/axe/axe_body_color.vmt"
+			"batrider"              	"materials/models/heroes/batrider/batrider_color.vmt"			
+			"beastmaster"              "materials/models/heroes/beastmaster/beastmaster_color.vmt"
+			"blood_seeker"             "materials/models/heroes/blood_seeker/blood_seeker_color.vmt"
+			"bounty_hunter"            "materials/models/heroes/bounty_hunter/bountyhunter_body.vmt"
+			"brewmaster"               "materials/models/heroes/brewmaster/brewmaster_color.vmt"
+			"bristleback"              "materials/models/heroes/bristleback/bristleback_color.vmt"
+			"broodmother"              "materials/models/heroes/broodmother/broodmother_body.vmt"
+			"centaur"									 "materials/models/heroes/centaur/centaur_color.vmt"
+			"chaos_knight"	           "materials/models/heroes/chaos_knight/body.vmt"
+			"chen"	           	   		"materials/models/heroes/chen/chen_color.vmt"
+			"clinkz"									"materials/models/heroes/clinkz/clinkz_body.vmt"
+			"crystal_maiden"           "materials/models/heroes/crystal_maiden/crystal_maiden.vmt"
+			"dark_seer"                "materials/models/heroes/dark_seer/dark_seer_body.vmt"
+			"dazzle"                   "materials/models/heroes/dazzle/dazzle_base.vmt"
+			"death_prophet"            "materials/models/heroes/death_prophet/death_prophet_body.vmt"
+			"disruptor"                "materials/models/heroes/disruptor/disruptor_color.vmt"
+			"doom"                     "materials/models/heroes/doom/doom_color.vmt"
+			"dragon_knight"            "materials/models/heroes/dragon_knight/knight_color.vmt"
+			"drow"                     "materials/models/heroes/drow/drow_base.vmt"
+			"earthshaker"								"materials/models/heroes/earthshaker/earthshaker.vmt"
+			"enchantress"              "materials/models/heroes/enchantress/enchantress_body_color.vmt"
+			"faceless_void"            "materials/models/heroes/faceless_void/faceless_void_body_color.vmt"
+			"furion"                   "materials/models/heroes/furion/furion_color.vmt"
+			"huskar"                   "materials/models/heroes/huskar/huskar_body.vmt"
+			"invoker"                  "materials/models/heroes/invoker/invoker_color.vmt"
+			"juggernaut"               "materials/models/heroes/juggernaut/juggernaut_torso.vmt"
+			"keeper_of_the_light"      "materials/models/heroes/keeper_of_the_light/keeper_body.vmt"
+			"lanaya"         	   "materials/models/heroes/lanaya/lanaya_base.vmt"			
+			"kunkka"                   "materials/models/heroes/kunkka/kunkka2_body.vmt"
+			"leshrac"                  "materials/models/heroes/leshrac/leshrac_color.vmt"
+			"lich"                     "materials/models/heroes/lich/lich_base.vmt"
+			"lina"                     "materials/models/heroes/lina/lina_base.vmt"
+			"lion"                     "materials/models/heroes/lion/lion_body.vmt"
+			"lone_druid"               "materials/models/heroes/lone_druid/lonedruid_base.vmt"
+			"luna"                     "materials/models/heroes/luna/luna_body_color.vmt"
+			"lycan"               	   "materials/models/heroes/lycan/lycan_body_color.vmt"
+			"medusa"                    "materials/models/heroes/medusa/medusa_body_color.vmt"
+			"meepo"                    "materials/models/heroes/meepo/meepo_color.vmt"
+			"mirana"		   "materials/models/heroes/mirana/mirana_color.vmt"
+			"morphling"                "materials/models/heroes/morphling/morphling_color.vmt"
+			"necrolyte"                "materials/models/heroes/necrolyte/necro.vmt"
+			"nerubian_assassin"        "materials/models/heroes/nyx/nyx_color.vmt"
+			"obsidian_destroyer"       "materials/models/heroes/obsidian_destroyer/obsidian_destroyer_body_color.vmt"
+			"ogre_magi"                "materials/models/heroes/ogre_magi/ogre_magi_color.vmt"
+			"omniknight"               "materials/models/heroes/omniknight/omniknight_color.vmt"
+			"phantom_assassin"	   "materials/models/heroes/phantom_assassin/phantom_assassin_body_color.vmt"
+			"phantom_lancer"	   "materials/models/heroes/phantom_lancer/phantom_lancer_body_color.vmt"
+			"pudge"               	   "materials/models/heroes/pudge/pudge_body_color.vmt"
+			"pugna"               	   "materials/models/heroes/pugna/pugna_color.vmt"
+			"queenofpain"              "materials/models/heroes/queenofpain/queenofpain_color.vmt"
+			"razor"                    "materials/models/heroes/razor/razor_color.vmt"
+			"rikimaru"                 "materials/models/heroes/rikimaru/rikimaru_color.vmt"
+			"rubick"                   "materials/models/heroes/rubick/rubick_body.vmt"
+			"sand_king"                "materials/models/heroes/sand_king/sand_king_color.vmt"
+			"shadow_demon"             "materials/models/heroes/shadow_demon/shadow_demon_body.vmt"
+			"shadowshaman"             "materials/models/heroes/shadowshaman/shadowshaman_color.vmt"
+			"silencer"                 "materials/models/heroes/silencer/silencer_color.vmt"
+			"siren"                    "materials/models/heroes/siren/siren_body_color.vmt"
+			"skeleton_king"            "materials/models/heroes/skeleton_king/skeleton_king.vmt"
+			"skywrath_mage"            "materials/models/heroes/skywrath_mage/skywrath_mage_color1.vmt"
+			"slardar"                  "materials/models/heroes/slardar/slardar_color.vmt"
+			"slark"                    "materials/models/heroes/slark/slark_color.vmt"			
+			"sniper"                   "materials/models/heroes/sniper/sniper_color.vmt"
+			"spectre"                  "materials/models/heroes/spectre/spectre_base.vmt"
+			"spirit_breaker"           "materials/models/heroes/spirit_breaker/spirit_breaker_body_color.vmt"
+//			"storm_spirit"             "materials/models/heroes/storm_spirit/storm_spirit_base_color.vmt"
+			"sven"                     "materials/models/heroes/sven/sven_color.vmt"
+			"lanaya"                   "materials/models/heroes/lanaya/lanaya_base.vmt"
+			"tidehunter"               "materials/models/heroes/tidehunter/tidehunter.vmt"
+			"tuskarr"                  "materials/models/heroes/tuskarr/tusk_base_color.vmt"
+			"ursa"                     "materials/models/heroes/ursa/ursa_color.vmt"
+//			"venomancer"               "materials/models/heroes/venomancer/venomancer_body_color.vmt"
+			"warlock"                  "materials/models/heroes/warlock/warlock_color.vmt"
+			"weaver"                   "materials/models/heroes/weaver/weaver_color.vmt"
+			"windrunner"               "materials/models/heroes/windrunner/windrunner_base.vmt"
+			"witchdoctor"              "materials/models/heroes/witchdoctor/witchdoctor_body_color.vmt"
+
+			"wards"					   "scripts/itemtest/vmt_template_wards.vmt"
+			"courier"				   "scripts/itemtest/vmt_template_courier.vmt"
+		}
+	}
+
+
+	"dota_portrait_positions"
+	{
+		"portrait_default"
+		{
+			"PortraitPosition"		"600.000000 -40.000000 129.000000"
+			"PortraitLookAt"		"0.000000 175.899994 0.000000"
+			"PortraitFOV"		"45.000000"
+			"PortraitFar"		"2000.000000"
+			"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
+			"PortraitLightLookAt"		"33.889999 183.929993 0.000000"
+			"PortraitLightFOV"		"63.000000"
+			"PortraitLightDistance"		"471.000000"
+			"PortraitLightColor"		"0.400000 0.340000 0.730000"
+			"PortraitShadowColor"		"0.230000 0.230000 0.230000"
+			"PortraitShadowScale"		"0.205000"
+			"PortraitGroundShadowScale"		"0.300000"
+			"PortraitAmbientOrigin"		"76.519997 -7.960000 -38.340000"
+			"PortraitAmbientColor"		"0.000000 0.360000 0.330000"
+			"PortraitAmbientScale"		"1.000000"
+			"PortraitSpecularColor"		"0.970000 0.070000 0.090000"
+			"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+			"PortraitSpecularPower"		"16.000000"
+			"PortraitBackgroundColor1"		"0.550000 0.450000 0.600000"
+			"PortraitBackgroundColor2"		"0.550000 0.450000 0.600000"
+			"PortraitBackgroundColor3"		"0.550000 0.450000 0.600000"
+			"PortraitBackgroundColor4"		"0.550000 0.450000 0.600000"
+			"PortraitBackgroundTexture"		"portraits_card/portrait_backgrounds/full_view_background"
+			"PortraitBackgroundModel"		"models/heroes/pedestal/pedestal_1_small.mdl"
+			"PortraitAnimationActivity"		"0"
+			"PortraitAnimationCycle"		"0.000000"
+			"PortraitAnimationRate"		"1.000000"
+			"PortraitHideHero"		"0"
+		}
+		"portrait_courier_flying"
+		{
+			"PortraitPosition"		"600.000000 -48.000000 48.000000"
+			"PortraitLookAt"		"357.600006 175.899994 0.000000"
+			"PortraitFOV"		"45.000000"
+			"PortraitFar"		"2000.000000"
+			"PortraitLightPosition"		"276.429993 -18.010000 333.350006"
+			"PortraitLightLookAt"		"33.889999 183.929993 0.000000"
+			"PortraitLightFOV"		"63.000000"
+			"PortraitLightDistance"		"471.000000"
+			"PortraitLightColor"		"0.400000 0.340000 0.730000"
+			"PortraitShadowColor"		"0.230000 0.230000 0.230000"
+			"PortraitShadowScale"		"0.205000"
+			"PortraitGroundShadowScale"		"0.300000"
+			"PortraitAmbientOrigin"		"76.519997 -7.960000 -38.340000"
+			"PortraitAmbientColor"		"0.000000 0.360000 0.330000"
+			"PortraitAmbientScale"		"1.000000"
+			"PortraitSpecularColor"		"0.970000 0.070000 0.090000"
+			"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+			"PortraitSpecularPower"		"16.000000"
+			"PortraitBackgroundColor1"		"0.550000 0.450000 0.600000"
+			"PortraitBackgroundColor2"		"0.550000 0.450000 0.600000"
+			"PortraitBackgroundColor3"		"0.550000 0.450000 0.600000"
+			"PortraitBackgroundColor4"		"0.550000 0.450000 0.600000"
+			"PortraitBackgroundTexture"		"portraits_card/portrait_backgrounds/full_view_background"
+			"PortraitAnimationActivity"		"0"
+			"PortraitAnimationCycle"		"0.000000"
+			"PortraitAnimationRate"		"1.000000"
+			"PortraitHideHero"		"0"
+		}
+		"portrait_genericmodel_edit_default"
+		{
+			"PortraitPosition"		"315.398132 -164.254288 96.229996"
+			"PortraitLookAt"		"4.915507 150.919189 0.000000"
+			"PortraitFOV"		"27.974072"
+			"PortraitFar"		"1500.000000"
+			"PortraitLightPosition"		"-128.230728 -235.109695 273.859985"
+			"PortraitLightLookAt"		"45.640419 61.391590 0.000000"
+			"PortraitLightFOV"		"70.511765"
+			"PortraitLightDistance"		"507.600861"
+			"PortraitLightColor"		"0.390000 0.220000 0.550000"
+			"PortraitShadowColor"		"0.050000 0.020000 0.020000"
+			"PortraitShadowScale"		"1.000000"
+			"PortraitGroundShadowScale"		"0.300000"
+			"PortraitAmbientOrigin"		"0.327113 0.519097 -0.789642"
+			"PortraitAmbientColor"		"0.120000 0.220000 0.150000"
+			"PortraitAmbientScale"		"1.000000"
+			"PortraitSpecularColor"		"0.970000 0.070000 0.090000"
+			"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+			"PortraitSpecularPower"		"16.000000"
+			"PortraitBackgroundColor1"		"0.100000 0.100000 0.100000"
+			"PortraitBackgroundColor2"		"0.250000 0.250000 0.250000"
+			"PortraitBackgroundColor3"		"0.500000 0.500000 0.500000"
+			"PortraitBackgroundColor4"		"0.700000 0.700000 0.700000"
+			"PortraitBackgroundTexture"		"vgui/hud/heroportraits/portraitbackground_forest"
+			"PortraitAnimationActivity"		"0"
+			"PortraitAnimationCycle"		"0.000000"
+			"PortraitAnimationRate"		"1.000000"
+			"PortraitHideHero"		"0"
+		}
+	}
+
+	"dota_portrait_light_presets"
+	{
+		"#DOTA_Workshop_LPreset_TopDown"
+		{
+				"PortraitLightPosition"		"57.029282 -40.591396 219.000000"
+				"PortraitLightLookAt"		"72.274315 144.558105 0.000000"
+				"PortraitLightFOV"		"63.000000"
+				"PortraitLightDistance"		"471.000000"
+				"PortraitLightColor"		"0.400000 0.340000 0.730000"
+				"PortraitShadowColor"		"0.040653 0.030708 0.028553"
+				"PortraitShadowScale"		"0.205000"
+				"PortraitGroundShadowScale"		"0.300000"
+				"PortraitAmbientOrigin"		"0.033233 -0.967880 0.249206"
+				"PortraitAmbientColor"		"0.048115 0.012215 0.012215"
+				"PortraitAmbientScale"		"1.000000"
+				"PortraitSpecularColor"		"0.970000 0.070000 0.090000"
+				"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+				"PortraitSpecularPower"		"16.000000"
+		}
+		"#DOTA_Workshop_LPreset_Stage"
+		{
+			"PortraitLightPosition"		"-8.708109 -229.835098 218.000000"
+			"PortraitLightLookAt"		"54.423565 75.155396 0.000001"
+			"PortraitLightFOV"		"63.000000"
+			"PortraitLightDistance"		"471.000000"
+			"PortraitLightColor"		"0.207229 0.202236 0.180280"
+			"PortraitShadowColor"		"0.011011 0.014302 0.011566"
+			"PortraitShadowScale"		"0.205000"
+			"PortraitGroundShadowScale"		"0.300000"
+			"PortraitAmbientOrigin"		"-0.218151 -0.881660 -0.418433"
+			"PortraitAmbientColor"		"0.181656 0.171154 0.137700"
+			"PortraitAmbientScale"		"1.000000"
+			"PortraitSpecularColor"		"0.970000 0.070000 0.090000"
+			"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+			"PortraitSpecularPower"		"16.000000"
+		}
+		"#DOTA_Workshop_LPreset_NightTime"
+		{
+			"PortraitLightPosition"		"-68.555138 271.477783 197.000000"
+			"PortraitLightLookAt"		"35.129124 -75.827637 0.000001"
+			"PortraitLightFOV"		"63.000000"
+			"PortraitLightDistance"		"471.000000"
+			"PortraitLightColor"		"0.054417 0.148534 0.730000"
+			"PortraitShadowColor"		"0.011011 0.014302 0.011566"
+			"PortraitShadowScale"		"0.205000"
+			"PortraitGroundShadowScale"		"0.300000"
+			"PortraitAmbientOrigin"		"-0.111338 0.953848 0.278888"
+			"PortraitAmbientColor"		"0.073533 0.035426 0.035426"
+			"PortraitAmbientScale"		"1.000000"
+			"PortraitSpecularColor"		"0.970000 0.070000 0.090000"
+			"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+			"PortraitSpecularPower"		"16.000000"
+		}
+		"#DOTA_Workshop_LPreset_CrossLight"
+		{
+			"PortraitLightPosition"		"169.408173 155.566299 267.000000"
+			"PortraitLightLookAt"		"34.859127 -118.618515 0.000000"
+			"PortraitLightFOV"		"63.000000"
+			"PortraitLightDistance"		"471.000000"
+			"PortraitLightColor"		"0.233269 0.132967 0.085493"
+			"PortraitShadowColor"		"0.062495 0.021549 0.021549"
+			"PortraitShadowScale"		"0.205000"
+			"PortraitGroundShadowScale"		"0.300000"
+			"PortraitAmbientOrigin"		"-0.301470 0.512622 0.803949"
+			"PortraitAmbientColor"		"0.031585 0.043140 0.040540"
+			"PortraitAmbientScale"		"1.000000"
+			"PortraitSpecularColor"		"0.970000 0.070000 0.090000"
+			"PortraitSpecularDirection"		"0.000000 0.000000 -1.000000"
+			"PortraitSpecularPower"		"16.000000"
+		}
+	}
+
+	"dota_portrait_background_textures"
+	{
+		"vgui/hud/heroportraits/portraitbackground_light"			"1"
+		"vgui/hud/heroportraits/portraitbackground_gradient_top"	"1"
+		"vgui/hud/heroportraits/portraitbackground_gradient_btm"	"1"
+		"vgui/hud/heroportraits/portraitbackground_laboratory"		"1"
+		"vgui/hud/heroportraits/portraitbackground_glacier"			"1"
+		"vgui/hud/heroportraits/portraitbackground_desert"			"1"
+		"vgui/hud/heroportraits/portraitbackground_windrunner"		"1"
+		"vgui/hud/heroportraits/portraitbackground_darkclouds"		"1"
+		"vgui/hud/heroportraits/portraitbackground_coolinterior"	"1"
+		"vgui/hud/heroportraits/portraitbackground_motion_swoops"	"1"
+		"vgui/hud/heroportraits/portraitbackground_forest"			"1"
+		"vgui/hud/heroportraits/portraitbackground_bluebloom"		"1"
+		"vgui/hud/heroportraits/portraitbackground_graveyard"		"1"
+		"vgui/hud/heroportraits/portraitbackground_underwater"		"1"
+		"vgui/hud/heroportraits/portraitbackground_moon"			"1"
+		"vgui/hud/heroportraits/portraitbackground_water"			"1"
+		"vgui/hud/heroportraits/portraitbackground_slark"			"1"
+		"vgui/hud/heroportraits/portraitbackground_brokenlight"		"1"
+		"vgui/hud/heroportraits/portraitbackground_forest_two"		"1"
+		"vgui/hud/heroportraits/portraitbackground_ghosts"			"1"
+		"vgui/hud/heroportraits/portraitbackground_purple"			"1"
+		"vgui/hud/heroportraits/portraitbackground_jakiro"			"1"
+	}
+
+	// DATA IS FROM TF
+
+	"autoskin_vectors"
+	{
+		// Vector for the bone that autoskin should skin to
+		"demo"				"0 76.142968, -0.39608"
+		"engineer"			"0 69.030248, -1.264691"
+		"heavy"				"-0.000138993 79.541796, -3.352982"
+		"medic"				"-0.000111273 76.504372, -0.565035"
+		"pyro"				"-0.000102534 71.788881,  2.145585"
+		"scout"				"0 73.501752, -1.429994"
+		"sniper"			"0 75.982279, -3.858408"
+		"soldier"			"0 75.194376, -1.120618"
+		"spy"				"0 75.679732, -2.87915"
+	}
+
+	"autoskin_vectors"
+	{
+		// Angle for the bone that autoskin should skin to
+		"demo"				"-180.0 0 0"
+		"engineer"			"-170.459 0 0"
+		"heavy"				"-180.0 0 0"
+		"medic"				"-180.0 0 0"
+		"pyro"				"-154.175 0 0"
+		"scout"				"-173.451 0 0"
+		"sniper"			"-172.722 0 0"
+		"soldier"			"-179.729 0 0"
+		"spy"				"-180.0 0 0"
+	}
+}

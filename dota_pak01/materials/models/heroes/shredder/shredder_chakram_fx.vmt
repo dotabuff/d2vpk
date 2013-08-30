@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\shredder\shredder_chakram_fx"
+	"$normalmap" "models\development\flatnormal"
+
+	$SPECULAREXPONENT 10
+	$SPECULARBLENDTOFULL 1
+	$SPECULARCOLOR "[1 1 1]"
+	$SPECULARSCALE .2
+	
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE .2
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1
+
+	$TRANSLUCENT	1
+
+	"$cloakPassEnabled" "1"
+	$CLOAK_BLUR_AMOUNT        0.001
+
+	$cloakintensity 0.001   //blend % with original base color
+	$cloakfactor 0.001      //
+	$refractamount 0.00     //level of refraction
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

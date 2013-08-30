@@ -1,0 +1,30 @@
+// ### This basic VMT was written based on the D:\tools\python\templateStrings.pyc script ###
+"customhero"
+{
+	$baseTexture "models/heroes/pugna/pugna_wand"
+	"$normalmap" "models/heroes/pugna/Pugna_Wand_Normal"
+
+	"$maskmap1" "models/heroes/pugna/pugna_wand_masks1"
+	"$maskmap2" "models/heroes/pugna/pugna_wand_masks2"
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 1
+
+	$RIMLIGHTSCALE .21
+	$AMBIENTSCALE 1
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	$alphatest 1
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

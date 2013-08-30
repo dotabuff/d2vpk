@@ -1,0 +1,25 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/greevil/greevil_teeth_color"
+	"$normalmap" "models/courier/greevil/greevil_highres_teeth_normal"
+  "$maskmap1" "models/courier/greevil/greevil_teeth_neutral_mask1"
+	"$maskmap2" "models/courier/greevil/greevil_teeth_neutral_mask2"
+
+//	"$COLORWARP" "models/courier/greevil/colorwarp_greevil_neutral"
+//	"$COLORWARPINTENSITY" .5
+
+	$SPECULAREXPONENT 25
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 2		
+
+	$RIMLIGHTSCALE	3
+	$RIMLIGHTCOLOR	"[1 1 1]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

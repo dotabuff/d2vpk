@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/phantom_assassin/phantom_assassin_color"
+	"$normalmap" "models/development/flatnormal"
+    "$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/phantom_assassin/phantom_assassin_masks1"
+	"$maskmap2" "models/heroes/phantom_assassin/phantom_assassin_masks2"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 2
+	$SPECULARCOLOR "[1 1 1]"
+	
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" ".5"
+	
+	"$nocull" "1"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+"SpriteCard"
+{
+	"$basetexture" "particle\smoke\maya_wispy\wispy_v2"
+	//$ADDSELF 0
+	$additive 1
+	$BLENDFRAMES 1
+	//$ADDOVERBLEND 1
+	$POWERFUNCTION "[0.8 2.5 5]"
+	
+	$OVERBRIGHTFACTOR 1
+	$startfadesize .2
+	$endfadesize .25
+	$MAXSIZE .25
+}

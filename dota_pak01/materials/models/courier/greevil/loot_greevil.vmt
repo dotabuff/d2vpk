@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/greevil/loot_greevil_body_color"
+	"$normalmap" "models/courier/greevil/loot_greevil_body_normal"
+//	"$detail1"  "models/courier/greevil/greevil_detail1"
+	"$maskmap1" "models/courier/greevil/loot_greevil_body_mask1"
+	"$maskmap2" "models/courier/greevil/greevil_body_mask2"
+
+//	"$COLORWARP" "models/courier/greevil/colorwarp_greevil_neutral"
+	"$COLORWARPINTENSITY" 1
+
+	$SPECULAREXPONENT 25
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 5		
+
+	$RIMLIGHTSCALE	3
+	$RIMLIGHTCOLOR	"[.55 .2 .2]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

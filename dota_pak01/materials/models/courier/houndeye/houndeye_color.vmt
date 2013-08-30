@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/houndeye/houndeye_color"
+	"$normalmap" "models/courier/houndeye/houndeye_normal"
+	"$maskmap1" "models/courier/houndeye/houndeye_masks1"
+	"$maskmap2" "models/courier/houndeye/houndeye_masks2"
+	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+
+	
+
+	$nocull 1
+	
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 30
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[0.5 0.9 1]"
+	$RIMLIGHTCOLOR "[1 4 5]"
+	$RIMLIGHTSCALE 1.5
+	$alphatest 1
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 3.2
+	$DETAIL1BLENDFACTOR 1.6
+	$DETAIL1BLENDTOFULL 0
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

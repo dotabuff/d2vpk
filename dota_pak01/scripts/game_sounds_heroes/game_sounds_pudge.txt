@@ -1,0 +1,416 @@
+
+"Hero_Pudge.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh03.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.2"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Pudge.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/pudge/attack01.wav"
+		"wave"	")weapons/hero/pudge/attack02.wav"
+		"wave"	")weapons/hero/pudge/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Pudge.Attack.Rip"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Pudge.Attack.Ring"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Pudge.Attack.Rip"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/shared/large_blade/follow_thru01.wav"
+		"wave"	")weapons/hero/shared/large_blade/follow_thru02.wav"
+		"wave"	")weapons/hero/shared/large_blade/follow_thru03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.05"
+			"input_max" "0.12"
+			}
+		}
+	}
+}
+
+"Hero_Pudge.Attack.Ring"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.0, 0.9"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		")physics\movement\hero\pudge\chain_movement1.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement2.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement3.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.12"
+			"input_max" "0.17"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+ 		}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Pudge.AttackSpecial"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			")weapons/hero/juggernaut/sword_swing_special.wav"
+
+}
+
+"Hero_Pudge.AttackHookExtend"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/pudge/hook_throw.wav"
+
+}
+
+"Hero_Pudge.AttackHookImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/pudge/hook_impact.wav"
+
+}
+
+"Hero_Pudge.AttackHookRetract"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/pudge/hook_throw.wav"
+
+}
+
+"Hero_Pudge.AttackHookRetractStop"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/pudge/hook_retract_stop.wav"
+}
+
+"Hero_Pudge.Rot"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			")weapons/hero/pudge/rot.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_in"
+			{
+				"input_max" "0.25"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "0.25"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
+			}
+
+// 			"get_entity_info"
+// 			{
+// 				"operator" "game_entity_info"
+// 				"input_entity_index" "@source_info.output_entity_index"
+
+// 			}
+// 			"print_velocity"
+// 			{
+// 				"operator" "util_print_float"
+// 				"input" "@get_entity_info.output_velocity"
+// 			}
+		}
+	}
+
+}
+
+"Hero_Pudge.Dismember"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/pudge/dismember_blood1.wav"
+		"wave"	")weapons/hero/pudge/dismember_blood2.wav"
+		"wave"	")weapons/hero/pudge/dismember_blood3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Pudge.DismemberSwings"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/pudge/dismember_swing1.wav"
+		"wave"	")weapons/hero/pudge/dismember_swing2.wav"
+		"wave"	")weapons/hero/pudge/dismember_swing3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Pudge.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\pudge\step01.wav"
+		"wave"		"physics\footsteps\hero\pudge\step02.wav"
+		"wave"		"physics\footsteps\hero\pudge\step03.wav"
+		"wave"		"physics\footsteps\hero\pudge\step04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Pudge.ChainFoley"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+
+	"rndwave"
+	{
+		"wave"		")physics\movement\hero\pudge\chain_movement1.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement2.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement3.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Pudge.Death"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/pudge/death.wav"
+
+}
+
+"Pudge.Background"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.25"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"vo/pudge/pudge_background.wav"
+}
+
+"Hero_Pudge.IdleLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"physics\movement\hero\pudge\idle_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.2"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}

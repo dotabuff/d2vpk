@@ -1,0 +1,24 @@
+"CustomHero"
+{
+	$baseTexture "models/props_gameplay/status_Silence01.vtf"
+	"$normalmap" "models\development\flatnormal"	
+	//"$vertexalpha" "1"
+	//"$vertexcolor" "1"
+
+	$SPECULAREXPONENT 50
+
+	$SPECULARSCALE 1
+
+	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+	$RIMLIGHTSCALE 2
+	$additive 1
+
+	$rimlightcolor "[5 1 1]"
+
+        $translucent       1
+        $ALLOWDIFFUSEMODULATION 1
+	
+	$ambientscale 4
+}

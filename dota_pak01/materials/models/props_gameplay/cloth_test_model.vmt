@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$basetexture"	"models/props_gameplay/cloth_test_model"
+	"$normalmap" "models/development/flatnormal"
+	"$nocull" "1"
+	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+
+	$RIMLIGHTSCALE	1
+	$specularcolor "[1 .4 .7]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	"$rimlightblendtofull" "1"
+	"$specularblendtofull" "1"
+	"$specularexponentblendtofull" "1"
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE .5
+
+	$AMBIENTSCALE 2
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

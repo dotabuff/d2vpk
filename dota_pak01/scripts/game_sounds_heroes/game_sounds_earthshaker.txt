@@ -1,0 +1,388 @@
+"Hero_EarthShaker.PreAttack" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/earthshaker/fist_swing1.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing2.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing3.wav"
+	}
+		"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.2"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact1.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact2.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact3.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Earthshaker.Attack.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Earthshaker.Attack.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/shared/large_blade/thump01.wav"
+		"wave"			"weapons/hero/shared/large_blade/thump02.wav"
+		"wave"			"weapons/hero/shared/large_blade/thump03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+ 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Whoosh"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			")weapons/hero/earthshaker/fissure_whoosh.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Fissure"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/earthshaker/fissure.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.FissureDestroy"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/earthshaker/fissure_destroy01.wav"
+		"wave"	"weapons/hero/earthshaker/fissure_destroy02.wav"
+		"wave"	"weapons/hero/earthshaker/fissure_destroy03.wav"
+		"wave"	"weapons/hero/earthshaker/fissure_destroy04.wav"
+		"wave"	"weapons/hero/earthshaker/fissure_destroy05.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "fissure"
+				"match_channel" "true"
+			}
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Totem"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/earthshaker/enchant.wav"
+"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Totem.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/earthshaker/enchant_attack.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.EchoSlam"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/earthshaker/echo_slam.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.EchoSlamEcho"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/earthshaker/echo01.wav"
+		"wave"			"weapons/hero/earthshaker/echo02.wav"
+		"wave"			"weapons/hero/earthshaker/echo03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "4500"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.EchoSlamSmall"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/earthshaker/echo_slam_small.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.1, 0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/earthshaker/walk01.wav"
+		"wave"		"physics/footsteps/hero/earthshaker/walk02.wav"
+		"wave"		"physics/footsteps/hero/earthshaker/walk03.wav"
+		"wave"		"physics/footsteps/hero/earthshaker/walk04.wav"
+		"wave"		"physics/footsteps/hero/earthshaker/walk05.wav"
+		"wave"		"physics/footsteps/hero/earthshaker/walk06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_EarthShaker.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"physics\deaths\specials\earthshaker_death_totem.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.IdleSlam"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			")weapons/hero/earthshaker/echo_slam_small.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

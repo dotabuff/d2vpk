@@ -1,0 +1,31 @@
+
+"CustomHero"
+{
+	$baseTexture "models/heroes/beastmaster/Beastmaster_Diffuse"
+	"$normalmap" "models/heroes/beastmaster/Beastmaster_Normal"
+	"$maskmap1" "models/heroes/enchantress/enchantress_masks1"
+	"$maskmap2" "models/heroes/enchantress/enchantress_masks1"
+
+	"$maskmap1" "models/heroes/enchantress/masks1"
+	"$maskmap2" "models/heroes/enchantress/masks2"
+
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 1
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

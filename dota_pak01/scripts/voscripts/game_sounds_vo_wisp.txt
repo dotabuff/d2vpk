@@ -1,0 +1,224 @@
+"wisp_spawn_respawn"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\spawn_respawn.wav"
+}
+
+"wisp_battlebegins"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\battlebegins.wav"
+}
+
+"wisp_firstblood"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\firstblood.wav"
+}
+
+"wisp_move"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+	"pitch"		"95, 105"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"rndwave"
+	{
+		"wave" 		"vo\wisp\move01.wav"
+		"wave" 		"vo\wisp\move02.wav"
+		"wave" 		"vo\wisp\move03.wav"
+		"wave" 		"vo\wisp\move04.wav"
+
+	}
+}
+
+"wisp_attack"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\attack.wav"
+}
+
+"wisp_levelup"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\levelup.wav"
+}
+
+"wisp_kill"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\kill.wav"
+}
+
+"wisp_ally"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\ally.wav"
+}
+
+"wisp_lasthit"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\lasthit.wav"
+}
+
+"wisp_death"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\death.wav"
+}
+
+"wisp_fastres"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\fastres.wav"
+}
+
+"wisp_purchase_expensive"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\purchase_expensive.wav"
+}
+
+"wisp_purchase_scepter"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\purchase_scepter.wav"
+}
+
+"wisp_deny"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\deny.wav"
+}
+
+"wisp_imort"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\imort.wav"
+}
+
+"wisp_all_runes_pickup"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\all_runes_pickup.wav"
+}
+
+"wisp_no_mana_not_yet01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\no_mana_not_yet01.wav"
+}
+
+"wisp_no_mana_not_yet02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\no_mana_not_yet02.wav"
+}
+
+"wisp_no_mana_not_yet03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\no_mana_not_yet03.wav"
+}
+
+"wisp_thanks"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\thanks.wav"
+}
+
+"wisp_under_attack"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\under_attack.wav"
+}
+
+"wisp_inthebag"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\inthebag.wav"
+}
+
+"wisp_shitty_crummy_wizard"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\shitty_crummy_wizard.wav"
+}
+
+"wisp_lose"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\lose.wav"
+}
+
+"wisp_win"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"vo\wisp\win.wav"
+}
+
+"wisp_laugh"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"pitch"		"95, 105"
+	"wave" 		"vo\wisp\laugh.wav"
+}

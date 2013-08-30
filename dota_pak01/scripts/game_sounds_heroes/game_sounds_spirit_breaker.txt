@@ -1,0 +1,331 @@
+
+"Hero_Spirit_Breaker.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/spirit_breaker/preattack01.wav"
+		"wave"			")weapons/hero/spirit_breaker/preattack02.wav"
+		"wave"			")weapons/hero/spirit_breaker/preattack03.wav"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_Spirit_Breaker.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/spirit_breaker/attack01.wav"
+		"wave"		")weapons/hero/spirit_breaker/attack02.wav"
+		"wave"		")weapons/hero/spirit_breaker/attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Spirit_Breaker.ChargeOfDarkness"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/spirit_breaker/charge_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Spirit_Breaker.ChargeOfDarkness.FP"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/spirit_breaker/charge_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_accumulate"
+			{
+				"input4" "1.0"
+				"input7" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Spirit_Breaker.Charge.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/spirit_breaker/charge_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+
+"Hero_Spirit_Breaker.GreaterBash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/spirit_breaker/greater_bash.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_Spirit_Breaker.NetherStrike.Begin"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/spirit_breaker/nether_strike_in.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Spirit_Breaker.NetherStrike.End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/spirit_breaker/nether_strike_out.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_Spirit_Breaker.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"85,90"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\enchantress\footstep01.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep02.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep03.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep04.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Spirit_Breaker.Forepaw"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95. 105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\pudge\step01.wav"
+		"wave"		"physics\footsteps\hero\pudge\step02.wav"
+		"wave"		"physics\footsteps\hero\pudge\step03.wav"
+		"wave"		"physics\footsteps\hero\pudge\step04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Spirit_Breaker.Charge.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"85,90"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\pudge\step01.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep02.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep03.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Spirit_Breaker.Charge.Movement"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			")physics/movement/hero/spirit_breaker/charge01.wav"
+		"wave"			")physics/movement/hero/spirit_breaker/charge02.wav"
+		"wave"			")physics/movement/hero/spirit_breaker/charge03.wav"
+	}
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Spirit_Breaker.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

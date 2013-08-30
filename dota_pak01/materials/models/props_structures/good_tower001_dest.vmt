@@ -1,0 +1,11 @@
+// ### This basic VMT was written based on the E:\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+
+  $baseTexture "models/props_structures/good_tower001"
+  "$SPECTEXTURE" "models/props_structures/good_tower001_spec.vtf"
+//	$SPECULAR_BLOOM		1.0
+	$SPECULAR_INTENSITY  0.75
+	"$alphatest" "1"
+	"$fow"                          "_rt_fog_of_war"
+}

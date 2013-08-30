@@ -1,0 +1,25 @@
+"CustomHero"
+{
+	"$basetexture"	"models/courier/smeevil_bird/bird_bags2"
+	"$normalmap" "models/courier/smeevil_bird/bird_bags2_normal"
+//	"$maskmap1" "models/courier/smeevil_bird/bird_bags2_masks1"
+//	"$maskmap2" "models/courier/smeevil_bird/bird_bags2_masks2"
+//	"$specularwarp" "models/heroes/nyx/nyx_lightwarp"
+
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"	
+	
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE .2
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE	4
+	$RIMLIGHTCOLOR	"[1 1 1]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

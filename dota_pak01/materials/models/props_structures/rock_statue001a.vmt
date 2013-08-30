@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	$baseTexture "models/props_structures/rock_statue001a.vtf"
+	"$normalmap" "models/props_structures/rock_statue001a_normal"
+	"$maskmap1" "models/props_structures/rock_statue001a_mask1"
+	"$maskmap2" "models/props_structures/rock_statue001a_mask2"
+//	"$detail1"  "models/heroes/sven/sven_glow" 
+
+//	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	
+	$SPECULAREXPONENT 6
+	$SPECULARSCALE 3
+	$SPECULARCOLOR "[1 .85 .75]"
+	$RIMLIGHTCOLOR "[.1 .5 .8]"
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULAREXPONENTBLENDTOFULL .5
+
+	$RIMLIGHTSCALE 10
+
+//	$DETAIL1BLENDMODE 3
+//	$DETAIL1SCALE 1
+//	$DETAIL1BLENDFACTOR 0
+//	$DETAIL1BLENDTOFULL 0
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"$alphatest" "1"
+
+}

@@ -1,0 +1,56 @@
+ClothSystem
+{
+	Cloth
+	{
+		debug			0
+		columns			3	
+		rows			6											
+		BonePrefix		"RT_Cloth_"
+		
+		damping			.3								//0 to 1 (default .25) higher # more damping 
+		gravity			"0 0 -500.00"					//generally a neg Z value (0.0 0.0 -20.0)
+		WorldFriction		0.300000					//0 to 1 (def .35) lower = more stickiness to world
+		SpringStretchiness	1.0			//0 to 1 (def 1.0) higher = less stretch 
+		
+		StructSpringConstant 1		//0 to 100 (def 4.0) higher = faster back to rest length
+		StructSpringDamping	.1`			//0 to 1 (def .6) higher = more damping/stability
+		ShearSpringConstant	1		//0 to 100 (def 4.0) higher = faster back to rest length
+		ShearSpringDamping	.1		//0 to 1 (def. .6) higher = more shear/stability
+		BendSpringConstant	1			//0 to 100 (def. 2.4) higher = faster back to rest length
+		BendSpringDamping	.1				//0 to 1 (def. 8) higher = more velocity reduction
+		
+		R0			"fixed"      						 //0 to 10 weight on joints from top (fixed) to bottom
+		R1			"mass .1"
+		R2			"mass .1"
+		R3			"mass .5"
+		R4			"mass 6"
+		R5			"mass 9"
+	}
+	Cloth
+	{
+		debug			0
+		columns			3	
+		rows			6
+		BonePrefix		"LF_Cloth_"
+		
+		damping			0.90000
+		gravity			"0 0 -300.00"
+		WorldFriction		0.300000
+		SpringStretchiness	1.000000
+
+		
+		StructSpringConstant	10.000000
+		StructSpringDamping	0.500000
+		ShearSpringConstant	10.000000
+		ShearSpringDamping	0.500000
+		BendSpringConstant	10.000000
+		BendSpringDamping	0.500000
+		
+		R0			"fixed"
+		R1			"mass 8"
+		R2			"mass 6"
+		R3			"mass 4"
+		R4			"mass 2"
+	}
+
+}

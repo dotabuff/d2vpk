@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/ancient_apparition/ancientapparition_color"
+	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/heroes/ancient_apparition/ancientapparition_mask1"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+
+	$SPECULAREXPONENT 4
+	$SPECULARSCALE .5
+
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$RIMLIGHTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

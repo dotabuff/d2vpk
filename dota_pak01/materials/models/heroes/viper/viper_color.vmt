@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/viper/viper_color"
+	"$normalmap" "models/heroes/viper/viper_normal"
+	//"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$diffusewarp" "models/heroes/tiny_04/tiny_04_lightwarp"
+	"$maskmap1" "models/heroes/viper/masks1"
+	"$maskmap2" "models/heroes/viper/masks2"
+
+
+	//$specularblendtofull 1
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 4.5
+	$SPECULARCOLOR "[.65 1.25 1.5]"
+	$RIMLIGHTCOLOR "[.2 .8 1]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTEXPONENT 10
+	$alphatest 1
+
+	//$ambientSCALE 2
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

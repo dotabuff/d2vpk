@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/sven/blade_color2.vtf"
+	"$normalmap" "models/development/flatnormal"
+
+
+
+	$SPECULAREXPONENT 40
+	$SPECULARSCALE 1.5
+	$RIMLIGHTSCALE	1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+
+	
+
+
+	$rimlightcolor "[1 .8 .7]"
+
+	$COLORWARP 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

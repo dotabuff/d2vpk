@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/brewmaster/bracer_color"
+	"$normalmap" "models/heroes/brewmaster/bracer_normal"
+	"$maskmap1" "models/heroes/brewmaster/bracer_mask1"
+	"$maskmap2" "models/heroes/brewmaster/bracer_mask2"
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 1 1]"
+	//$SPECULARBLENDTOFULL 1
+
+	//$SPECULAREXPONENTBLENDTOFULL 1
+
+	$AMBIENTSCALE .5
+	$alphatest 1
+
+	$RIMLIGHTSCALE	1
+	//$RIMLIGHTCOLOR "[1 1 1]"
+	$IgnoreBudgetCheck 1	
+	"$rimlightblendtoful" "1"
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

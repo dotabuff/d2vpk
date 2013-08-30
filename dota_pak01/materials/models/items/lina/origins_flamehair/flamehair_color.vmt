@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture"	"models/items/lina/origins_flamehair/flamehair_color.vtf"
+	"$normalmap"		"models/development/flatnormal"
+	"$maskmap1" "models/items/lina/origins_flamehair/flamehair_masks1"
+	"$maskmap2" "models/items/lina/origins_flamehair/flamehair_masks2"
+		
+	"$detail1"		"models/heroes/lina/lina_fire_motion"
+
+	
+	"$SPECULAREXPONENT"		"30"
+	"$SPECULARSCALE"		"0"
+	"$RIMLIGHTSCALE"		"0"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"			".5"
+	"$DETAIL1BLENDFACTOR" 		"1"
+	"$alphatest"			"1"
+
+	"$cloakPassEnabled"		"1"
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.350000"
+			"texturescrollangle"		"135"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}		
+	}
+}

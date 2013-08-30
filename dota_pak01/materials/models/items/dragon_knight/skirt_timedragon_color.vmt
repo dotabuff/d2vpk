@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models/items/dragon_knight/Skirt_TimeDragon_color.vtf"
+	"$normalmap" "models/items/dragon_knight/Skirt_TimeDragon_normal"
+	"$maskmap2" "models/items/dragon_knight/Skirt_TimeDragon_mask2"
+//	"$maskmap1" "models/items/dragon_knight/Pauldrons_TimeDragon_mask1"
+
+
+	$SPECULAREXPONENT 1
+	$SPECULARSCALE 10
+	$RIMLIGHTSCALE	5
+	$specularcolor "[1 1 1]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	"$rimlightblendtofull" "1"
+	"$specularblendtofull" "1"
+	"$specularexponentblendtofull" "1"
+	$alphatest 1
+
+//	$SPECULAREXPONENT 15
+//	$SPECULARSCALE .5
+
+//	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 2
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

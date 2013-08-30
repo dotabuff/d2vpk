@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/tidehunter/bracer"
+ 	"$normalmap" "models/heroes/tidehunter/bracer_normal"
+
+
+//	"$detail1"  "models/heroes/tidehunter/tidehunter_glow"
+//	"$maskmap1" "models/heroes/tidehunter/tidehunter_masks1"
+	"$maskmap2" "models/heroes/tidehunter/bracer_masks2"
+//	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+//	"$envmap" "env_cubemap"
+	"$alphatest" "1"
+
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 3
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1.2 1.1 1.6]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

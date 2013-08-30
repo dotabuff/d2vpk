@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/QueenOfPain/QueenOfPain_hair_color"
+	"$normalmap" "models/heroes/QueenOfPain/QueenOfPain_hair_normals"
+	"$maskmap1" "models/heroes/QueenOfPain/queenofpain_hair_masks1"
+	"$maskmap2" "models/heroes/QueenOfPain/queenofpain_hair_masks2"
+	//"$normalmap" "models/development/flatnormal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	$FRESNELWARP "models/heroes/QueenOfPain/QueenOfPain_fresnelranges"
+
+
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 2
+	$RIMLIGHTSCALE	.3
+	$specularcolor "[.5 1 1]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	"$rimlightblendtoful" "1"
+	$alphatest 1
+	
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

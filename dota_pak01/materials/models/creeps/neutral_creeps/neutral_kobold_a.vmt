@@ -1,0 +1,33 @@
+// ### This basic VMT was written based on the U:\dev\tools\python\templateStrings.pyc script ###
+
+"CustomHero"
+{
+	$baseTexture "models\creeps\neutral_creeps\neutral_kobold_a_color"
+	"$normalmap" "models\creeps\neutral_creeps\neutral_kobold_a_normal"
+	"$maskmap1" "models\creeps\neutral_creeps\neutral_kobold_a_mask1"
+	"$maskmap2" "models\creeps\neutral_creeps\neutral_kobold_a_mask2"
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 10
+//	$nocull	1
+	$RIMLIGHTSCALE 12	
+	$AMBIENTSCALE 1
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+	$ignorebudgetcheck 1
+
+// Status Effects
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}

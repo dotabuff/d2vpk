@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$baseTexture" "models\heroes\crystal_maiden\head_item_color"
+	"$normalmap" "models\heroes\crystal_maiden\head_item_normal"
+	//"$diffusewarp" "models/heroes/crystal_maiden/crystalmaiden_lightwarp"
+	"$maskmap1" "models/heroes/crystal_maiden/head_item_mask1"
+	"$maskmap2" "models/heroes/crystal_maiden/head_item_mask2"
+$alphatest 1
+	$SPECULAREXPONENT 35
+	$SPECULARSCALE 2 
+	$SPECULARCOLOR "[1 2 3]"
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR "[1 1 1]"
+	
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

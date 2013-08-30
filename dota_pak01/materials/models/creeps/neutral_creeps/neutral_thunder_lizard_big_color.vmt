@@ -1,0 +1,63 @@
+
+
+"CustomHero"
+{
+	$baseTexture "models\creeps\neutral_creeps\neutral_thunder_lizard_big_color"
+	"$normalmap" "models\creeps\neutral_creeps\neutral_thunder_lizard_big_normal"
+	
+	"$maskmap1" "models\creeps\neutral_creeps\neutral_thunder_lizard_big_masks1"
+	"$maskmap2" "models\creeps\neutral_creeps\neutral_thunder_lizard_big_masks2"
+
+	"$detail1" "models\creeps\neutral_creeps\neutral_motion_fire"
+
+
+	//$ambientscale .5
+	$specularscale 5
+	$RIMLIGHTSCALE 1
+	$specularexponent 15
+
+	$SPECULAR_BLOOM_SCALE      .7
+
+//	$rimlightcolor "[.3 .08 .01]"
+
+	$IgnoreBudgetCheck 1
+
+//	$SPECULARBLENDTOFULL 0
+//	$SPECULARCOLOR "[.2 1 .5]"
+
+
+//	$rimambience .2
+
+// Status Effects
+
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 5
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.05
+			"texturescrollangle"	180
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

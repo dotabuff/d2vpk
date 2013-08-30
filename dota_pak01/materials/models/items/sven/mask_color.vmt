@@ -1,0 +1,54 @@
+"CustomHero"
+{
+
+	$baseTexture "models/items/sven/mask_color.vtf"
+	"$normalmap" "models/items/sven/mask_normal.vtf"
+	"$detail1"  "models/heroes/sven/sven_glow"
+
+
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	//$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+
+
+        "$maskmap1" "models/items/sven/mask_masks1"
+        "$maskmap2" "models/items/sven/mask_masks2"
+
+
+	$SPECULAREXPONENT 50
+	$SPECULARSCALE 3
+	$RIMLIGHTSCALE 2
+	$SPECULARCOLOR "[.7 1 1]"
+	$RIMLIGHTCOLOR "[.8 1 1]"
+	//$SPECULARBLENDTOFULL 1
+	$alphatest 1
+
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0   //Leave this off by default - God's Strength modulates it via particle fx
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "5.5"
+			"texturescrollangle"	 "0"
+		}
+
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

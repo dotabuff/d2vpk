@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture"  "models/heroes/broodmother/spiderling_color.vtf"
+	"$normalmap" "models/heroes/broodmother/spiderling_normal.vtf"
+	"$maskmap1" "models/heroes/broodmother/spiderling_masks1"
+	"$maskmap2" "models/heroes/broodmother/spiderling_masks2"
+//	"$diffusewarp" "models/heroes/vengeful/vengeful_diffusewarp"
+//	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 100
+	$SPECULARSCALE 55
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTEXPONENT 10
+	$SPECULARCOLOR "[.5 0.4 0.803]"
+	$RIMLIGHTCOLOR "[1.5 .25 0]"
+	$ambientscale 1
+	$RIMLIGHTBLENDTOFULL 1
+	$rimambience 1
+	
+	
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+
+	$cloakintensity 0.6
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,2541 @@
+///////////////////////////////////////////////////////////////////////////////
+//Creeps Good
+///////////////////////////////////////////////////////////////////////////////
+
+"Creep_Good_Range.PreAttack"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Creep_Good_Range.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/good/range_projectile_launch.wav"
+		"wave"	"weapons/creep/good/range_projectile_launch2.wav"
+		"wave"	"weapons/creep/good/range_projectile_launch3.wav"
+		"wave"	"weapons/creep/good/range_projectile_launch4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Good_Range.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/good/range_projectile_impact.wav"
+		"wave"	"weapons/creep/good/range_projectile_impact2.wav"
+		"wave"	"weapons/creep/good/range_projectile_impact3.wav"
+		"wave"	"weapons/creep/good/range_projectile_impact4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Good_Melee.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/whoosh01.wav"
+		"wave"	"weapons/creep/shared/whoosh02.wav"
+		"wave"	"weapons/creep/shared/whoosh03.wav"
+		"wave"	"weapons/creep/shared/whoosh04.wav"
+		"wave"	"weapons/creep/shared/whoosh05.wav"
+		"wave"	"weapons/creep/shared/whoosh06.wav"
+		"wave"	"weapons/creep/shared/whoosh07.wav"
+		"wave"	"weapons/creep/shared/whoosh08.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"0"
+			"entry_name" "Creep_Good_Melee.Vocal"
+			}
+		}
+	}
+}
+
+"Creep_Good_Melee.Vocal"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"weapons/creep/greevil/preattack01.wav"
+		"wave"	"weapons/creep/greevil/preattack02.wav"
+		"wave"	"weapons/creep/greevil/preattack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Good_Melee.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/melee_hit01.wav"
+		"wave"	"weapons/creep/shared/melee_hit02.wav"
+		"wave"	"weapons/creep/shared/melee_hit03.wav"
+		"wave"	"weapons/creep/shared/melee_hit04.wav"
+		"wave"	"weapons/creep/shared/melee_hit05.wav"
+		"wave"	"weapons/creep/shared/melee_hit06.wav"
+		"wave"	"weapons/creep/shared/melee_hit07.wav"
+		"wave"	"weapons/creep/shared/melee_hit08.wav"
+		"wave"	"weapons/creep/shared/melee_hit09.wav"
+		"wave"	"weapons/creep/shared/melee_hit10.wav"
+		"wave"	"weapons/creep/shared/melee_hit11.wav"
+		"wave"	"weapons/creep/shared/melee_hit12.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+		}
+	}
+}
+
+"Creep_Radiant.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_63dB"
+	"pitch"			"95,105"
+	"volume"		"1"
+	"rndwave"
+	{
+		"wave"	"physics\footsteps\creeps\good\01.wav"
+		"wave"	"physics\footsteps\creeps\good\03.wav"
+		"wave"	"physics\footsteps\creeps\good\05.wav"
+		"wave"	"physics\footsteps\creeps\good\07.wav"
+		"wave"	"physics\footsteps\creeps\good\09.wav"
+		"wave"	"physics\footsteps\creeps\good\11.wav"
+		"wave"	"physics\footsteps\creeps\good\02.wav"
+		"wave"	"physics\footsteps\creeps\good\04.wav"
+		"wave"	"physics\footsteps\creeps\good\06.wav"
+		"wave"	"physics\footsteps\creeps\good\08.wav"
+		"wave"	"physics\footsteps\creeps\good\10.wav"
+		"wave"	"physics\footsteps\creeps\good\12.wav"
+	}
+
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "8.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Creep_Radiant.Footstep"
+				"match_channel" "false"
+			}
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Creep_Good_Engine.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Creep_Good_Engine.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/good/engine_attack01.wav"
+		"wave"	"weapons/creep/good/engine_attack02.wav"
+		"wave"	"weapons/creep/good/engine_attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+		}
+	}
+}
+
+"Creep_Good_Engine.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_72dB"
+	"pitch"			"135"
+	"wave"			"physics/damage/npc/tower_projectile.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Creep_Good_Engine.Move"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"80, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/good/engine_move01.wav"
+		"wave"	"weapons/creep/good/engine_move02.wav"
+		"wave"	"weapons/creep/good/engine_move03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_substring" "false"
+				"match_entry" "Creep_Good_Engine.Move"
+				"match_channel" "true"
+			}
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Siege_Radiant.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  		"SNDLVL_78dB"
+	"pitch"			"95,100"
+	"rndwave"			
+	{
+		"wave"			"physics/damage/engines/radiant_engine_destruction_01.wav"
+		"wave"			"physics/damage/engines/radiant_engine_destruction_02.wav"
+		"wave"			"physics/damage/engines/radiant_engine_destruction_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//Creeps Bad
+///////////////////////////////////////////////////////////////////////////////
+
+"Creep_Bad_Range.PreAttack"
+{
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Creep_Bad_Range.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/bad/range_projectile_launch.wav"
+		"wave"	"weapons/creep/bad/range_projectile_launch2.wav"
+		"wave"	"weapons/creep/bad/range_projectile_launch3.wav"
+		"wave"	"weapons/creep/bad/range_projectile_launch4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Bad_Range.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_72dB"
+	"pitch"			"95,105"
+
+	"rndwave"
+	{
+		"wave"	"weapons/creep/bad/range_projectile_impact.wav"
+		"wave"	"weapons/creep/bad/range_projectile_impact2.wav"
+		"wave"	"weapons/creep/bad/range_projectile_impact3.wav"
+		"wave"	"weapons/creep/bad/range_projectile_impact4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Bad_Melee.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"		"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/whoosh01.wav"
+		"wave"	"weapons/creep/shared/whoosh02.wav"
+		"wave"	"weapons/creep/shared/whoosh03.wav"
+		"wave"	"weapons/creep/shared/whoosh04.wav"
+		"wave"	"weapons/creep/shared/whoosh05.wav"
+		"wave"	"weapons/creep/shared/whoosh06.wav"
+		"wave"	"weapons/creep/shared/whoosh07.wav"
+		"wave"	"weapons/creep/shared/whoosh08.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"0"
+			"entry_name" "Creep_Bad_Melee.Vocal"
+			}
+		}
+	}
+}
+
+"Creep_Bad_Melee.Vocal"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+		"wave"	"weapons/creep/greevil/preattack04.wav"
+		"wave"	"weapons/creep/greevil/preattack05.wav"
+		"wave"	"weapons/creep/greevil/preattack06.wav"
+		"wave"	"weapons/creep/greevil/preattack07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Bad_Melee.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/melee_hit01.wav"
+		"wave"	"weapons/creep/shared/melee_hit02.wav"
+		"wave"	"weapons/creep/shared/melee_hit03.wav"
+		"wave"	"weapons/creep/shared/melee_hit04.wav"
+		"wave"	"weapons/creep/shared/melee_hit05.wav"
+		"wave"	"weapons/creep/shared/melee_hit06.wav"
+		"wave"	"weapons/creep/shared/melee_hit07.wav"
+		"wave"	"weapons/creep/shared/melee_hit08.wav"
+		"wave"	"weapons/creep/shared/melee_hit09.wav"
+		"wave"	"weapons/creep/shared/melee_hit10.wav"
+		"wave"	"weapons/creep/shared/melee_hit11.wav"
+		"wave"	"weapons/creep/shared/melee_hit12.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+		}
+	}
+}
+
+"Creep_Dire.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_63dB"
+	"pitch"			"95,105"
+	"volume"		"1"
+	"rndwave"
+	{
+		"wave"	"physics\footsteps\creeps\bad\01.wav"
+		"wave"	"physics\footsteps\creeps\bad\03.wav"
+		"wave"	"physics\footsteps\creeps\bad\05.wav"
+		"wave"	"physics\footsteps\creeps\bad\07.wav"
+		"wave"	"physics\footsteps\creeps\bad\09.wav"
+		"wave"	"physics\footsteps\creeps\bad\11.wav"
+		"wave"	"physics\footsteps\creeps\bad\02.wav"
+		"wave"	"physics\footsteps\creeps\bad\04.wav"
+		"wave"	"physics\footsteps\creeps\bad\06.wav"
+		"wave"	"physics\footsteps\creeps\bad\08.wav"
+		"wave"	"physics\footsteps\creeps\bad\10.wav"
+		"wave"	"physics\footsteps\creeps\bad\12.wav"
+	}
+
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "8.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Creep_Dire.Footstep"
+				"match_channel" "false"
+			}
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Creep_Bad_Engine.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Creep_Bad_Engine.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"	"weapons/creep/bad/engine_attack01.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+		}
+	}
+}
+
+"Creep_Bad_Engine.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_72dB"
+	"pitch"			"120"
+	"wave"			"physics/damage/npc/tower_projectile.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Creep_Bad_Engine.Move"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"80, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/bad/engine_move01.wav"
+		"wave"	"weapons/creep/bad/engine_move02.wav"
+		"wave"	"weapons/creep/bad/engine_move03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_substring" "false"
+				"match_entry" "Creep_Bad_Engine.Move"
+				"match_channel" "false"
+			}
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Siege_Dire.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,100"
+	"rndwave"			
+	{
+		"wave"			"physics/damage/engines/dire_engine_destruction_01.wav"
+		"wave"			"physics/damage/engines/dire_engine_destruction_02.wav"
+		"wave"			"physics/damage/engines/dire_engine_destruction_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//Creeps Shared
+///////////////////////////////////////////////////////////////////////////////
+
+"BodyImpact_Lanecreeps.Light"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.15"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"WeaponDrop_Lanecreeps.Staff"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\items\weapon_drop_wood_01.wav"
+		"wave"			"physics\items\weapon_drop_wood_02.wav"
+		"wave"			"physics\items\weapon_drop_wood_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+"n_creep_Heavy.PreAttack"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/shared_whoosh_heavy_01.wav"
+		"wave"	"weapons/creep/shared/shared_whoosh_heavy_02.wav"
+		"wave"	"weapons/creep/shared/shared_whoosh_heavy_03.wav"
+		"wave"	"weapons/creep/shared/shared_whoosh_heavy_04.wav"
+		"wave"	"weapons/creep/shared/shared_whoosh_heavy_05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Wings.Heavy"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_66dB"
+	"volume"		"0.6"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"physics/movement/wings/wingflaps_heavy_01.wav"
+		"wave"	"physics/movement/wings/wingflaps_heavy_02.wav"
+		"wave"	"physics/movement/wings/wingflaps_heavy_03.wav"
+		"wave"	"physics/movement/wings/wingflaps_heavy_04.wav"
+		"wave"	"physics/movement/wings/wingflaps_heavy_05.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.3"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"n_creep_Wings.Light"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_63dB"
+	"volume"		"0.6"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"physics/movement/wings/wingflaps_light_01.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_02.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_03.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_04.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_05.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.1"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"n_creep_Wings.LightQuiet"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_63dB" 
+	"volume"		"0.4"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"physics/movement/wings/wingflaps_light_01.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_02.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_03.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_04.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_05.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.01"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"n_creep_Wings.Roquelaire"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_70dB"
+	"volume"		"0.15" 
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"physics/movement/wings/wingflaps_light_01.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_02.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_03.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_04.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Neutral Creeps
+///////////////////////////////////////////////////////////////////////////////
+
+"n_creep_Melee.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/whoosh01.wav"
+		"wave"	"weapons/creep/shared/whoosh02.wav"
+		"wave"	"weapons/creep/shared/whoosh03.wav"
+		"wave"	"weapons/creep/shared/whoosh04.wav"
+		"wave"	"weapons/creep/shared/whoosh05.wav"
+		"wave"	"weapons/creep/shared/whoosh06.wav"
+		"wave"	"weapons/creep/shared/whoosh07.wav"
+		"wave"	"weapons/creep/shared/whoosh08.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Melee.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/melee_hit01.wav"
+		"wave"	"weapons/creep/shared/melee_hit02.wav"
+		"wave"	"weapons/creep/shared/melee_hit03.wav"
+		"wave"	"weapons/creep/shared/melee_hit04.wav"
+		"wave"	"weapons/creep/shared/melee_hit09.wav"
+		"wave"	"weapons/creep/shared/melee_hit10.wav"
+		"wave"	"weapons/creep/shared/melee_hit11.wav"
+		"wave"	"weapons/creep/shared/melee_hit12.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Ranged.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"n_creep_Ranged.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/bad/range_projectile_launch.wav"
+		"wave"	"weapons/creep/bad/range_projectile_launch2.wav"
+		"wave"	"weapons/creep/bad/range_projectile_launch3.wav"
+		"wave"	"weapons/creep/bad/range_projectile_launch4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Ranged.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_72dB"
+	"pitch"			"95,105"
+
+	"rndwave"
+	{
+		"wave"	"weapons/creep/bad/range_projectile_impact.wav"
+		"wave"	"weapons/creep/bad/range_projectile_impact2.wav"
+		"wave"	"weapons/creep/bad/range_projectile_impact3.wav"
+		"wave"	"weapons/creep/bad/range_projectile_impact4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_General.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_65dB"
+	"pitch"			"95,105"
+	"volume"		"1"
+	"rndwave"
+	{
+		"wave"	"physics\footsteps\creeps\good\01.wav"
+		"wave"	"physics\footsteps\creeps\good\03.wav"
+		"wave"	"physics\footsteps\creeps\good\05.wav"
+		"wave"	"physics\footsteps\creeps\good\07.wav"
+		"wave"	"physics\footsteps\creeps\good\09.wav"
+		"wave"	"physics\footsteps\creeps\good\11.wav"
+		"wave"	"physics\footsteps\creeps\good\02.wav"
+		"wave"	"physics\footsteps\creeps\good\04.wav"
+		"wave"	"physics\footsteps\creeps\good\06.wav"
+		"wave"	"physics\footsteps\creeps\good\08.wav"
+		"wave"	"physics\footsteps\creeps\good\10.wav"
+		"wave"	"physics\footsteps\creeps\good\12.wav"
+	}
+
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Hooved.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\enchantress\footstep01.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep02.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep03.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep04.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Giant.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8, 0.9"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\creeps\neutral\giant_step_01.wav"
+		"wave"		"physics\footsteps\creeps\neutral\giant_step_02.wav"
+		"wave"		"physics\footsteps\creeps\neutral\giant_step_03.wav"
+		"wave"		"physics\footsteps\creeps\neutral\giant_step_04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+// Neutral Creep Deaths
+///////////////////////////////////////////////////////////////////////////////
+
+"n_creep_furbolgchampion.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_furbolg_champion.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_furbolgUrsa.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_furbolg_ursa.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_blackdragon.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_black_dragon.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_blackdrake.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_black_drake_01.wav"
+			"wave"			"misc\creep_deaths\death_black_drake_01.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_centaurKhan.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_centaur_khan.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_centaurOutrunner.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.65"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_centaur_outrunner.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_dragonspawnSorc.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_dragonspawn_sorcerer_01.wav"
+			"wave"			"misc\creep_deaths\death_dragonspawn_sorcerer_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_dragonspawnOverseer.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_dragonspawn_overseer.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_trollCommon.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_troll_common_01.wav"
+			"wave"			"misc\creep_deaths\death_troll_common_02.wav"
+			"wave"			"misc\creep_deaths\death_troll_common_03.wav"
+			"wave"			"misc\creep_deaths\death_troll_common_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_trollWarlord.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_troll_warlord.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_ghost.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_ghost.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_fellbeast.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_ghost_fellbeast_01.wav"
+			"wave"			"misc\creep_deaths\death_ghost_fellbeast_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_gnoll.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_gnoll_01.wav"
+			"wave"			"misc\creep_deaths\death_gnoll_02.wav"
+			"wave"			"misc\creep_deaths\death_gnoll_03.wav"
+			"wave"			"misc\creep_deaths\death_gnoll_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_golemRock.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_golem_rock_01.wav"
+			"wave"			"misc\creep_deaths\death_golem_rock_02.wav"
+			"wave"			"misc\creep_deaths\death_golem_granite.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_harpy.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_harpy_01.wav"
+			"wave"			"misc\creep_deaths\death_harpy_02.wav"
+			"wave"			"misc\creep_deaths\death_harpy_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_junglestalkerCommon.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_junglestalkers_01.wav"
+			"wave"			"misc\creep_deaths\death_junglestalkers_02.wav"
+			"wave"			"misc\creep_deaths\death_junglestalkers_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_junglestalkerElder.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_junglestalker_elder.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+"n_creep_koboldTaskmaster.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"misc\creep_deaths\death_kobold_taskmaster.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_kobolds.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_kobold_common_01.wav"
+			"wave"			"misc\creep_deaths\death_kobold_common_02.wav"
+			"wave"			"misc\creep_deaths\death_kobold_common_03.wav"
+			"wave"			"misc\creep_deaths\death_kobold_common_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_ogres.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_ogre_01.wav"
+			"wave"			"misc\creep_deaths\death_ogre_02.wav"
+			"wave"			"misc\creep_deaths\death_ogre_03.wav"
+			"wave"			"misc\creep_deaths\death_ogre_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_SatyrCommon.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_satyr_01.wav"
+			"wave"			"misc\creep_deaths\death_satyr_02.wav"
+			"wave"			"misc\creep_deaths\death_satyr_03.wav"
+			"wave"			"misc\creep_deaths\death_satyr_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_SatyrSmall.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_satyr_small_01.wav"
+			"wave"			"misc\creep_deaths\death_satyr_small_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_SatyrH.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"volume"		"0.35"
+	"wave"			"misc\creep_deaths\death_satyr_hellcaller.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Skeleton.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.25"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_skeleton_01.wav"
+			"wave"			"misc\creep_deaths\death_skeleton_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Thunderlizard_Big.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"volume"		"0.65"
+	"wave"			"misc\creep_deaths\death_thunderlizard.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Thunderlizard_Small.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"volume"		"0.45"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_thunderlizard_small_01.wav"
+			"wave"			"misc\creep_deaths\death_thunderlizard_small_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Wildkin.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_wildkin_01.wav"
+			"wave"			"misc\creep_deaths\death_wildkin_02.wav"
+			"wave"			"misc\creep_deaths\death_wildkin_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Worg.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"	"SNDLVL_75dB"
+	"rndwave"			
+	{
+			"wave"			"misc\creep_deaths\death_worg_01.wav"
+			"wave"			"misc\creep_deaths\death_worg_02.wav"
+			"wave"			"misc\creep_deaths\death_worg_03.wav"
+			"wave"			"misc\creep_deaths\death_worg_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//Creep Abilities and Misc
+///////////////////////////////////////////////////////////////////////////////
+
+"n_creep_Centaur.Stomp"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"rndwave"
+	{
+		"wave" 	"weapons/creep/neutral/centaur_khan_stomp_01.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"n_creep_HarpyStorm.Shoot"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"volume"		"0.8"
+	"wave"			"weapons\creep\neutral\harpystorm_shoot.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_HarpyStorm.ChainLighting"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"volume"		"1"
+	"rndwave"			
+	{
+		"wave"		"weapons\creep\neutral\harpystorm_transfer_01.wav"
+		"wave"		"weapons\creep\neutral\harpystorm_transfer_02.wav"
+		"wave"		"weapons\creep\neutral\harpystorm_transfer_03.wav"
+		"wave"		"weapons\creep\neutral\harpystorm_transfer_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Kobold.Whip"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"volume"		"0.7"
+	"rndwave"			
+	{
+		"wave"		"weapons\creep\neutral\kobold_whip_01.wav"
+		"wave"		"weapons\creep\neutral\kobold_whip_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+"n_creep_OgreMagi.FrostArmor"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_81dB"
+	"wave"			"weapons\creep\neutral\orgremagi_iceboost.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_SatyrHellcaller.Shockwave"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_78dB"
+	"volume"		"0.5"
+	"pitch"			"115"
+	"wave"			"weapons\creep\neutral\satyr_hellcaster_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+ 			}
+            "source_info"
+       		{
+				"source"   "emitter"
+            }
+		}
+	}
+}
+
+"n_creep_SatyrHellcaller.Shockwave.Damage"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1"
+	"pitch"			"95, 105"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"weapons\creep\neutral\satyr_hellcaster_damage.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_SatyrSoulstealer.ManaBurn"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"weapons\creep\neutral\satyr_soulstealer_manaburn.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_SatyrTrickster.Cast"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"weapons\creep\neutral\satyr_trickster_purge.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Skeleton.Spawn"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"volume"		"0.7"
+	"rndwave"			
+	{
+		"wave"		"weapons\creep\neutral\skeleton_spawn_01.wav"
+		"wave"		"weapons\creep\neutral\skeleton_spawn_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+"n_creep_Thunderlizard_Big.Stomp"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_85dB"
+	"wave"			"weapons\creep\neutral\thunderlizard_stomp.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+"n_creep_Thunderlizard_Big.Roar"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_85dB"
+	"wave"			"weapons\creep\neutral\thunderlizard_roar.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+"n_creep_ForestTrollHighPriest.Heal"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"weapons\creep\neutral\troll_priest_heal.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_TrollWarlord.Ensnare"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_84dB"
+	"wave"			"weapons\creep\neutral\troll_cast_net.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_TrollWarlord.RaiseDead"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_75dB"
+	"volume"		"0.55"
+	"wave"			"weapons\creep\neutral\troll_cast_raisedead.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"n_creep_Ursa.Clap"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"rndwave"
+	{
+		"wave" 	"weapons/creep/neutral/ursa_thunder_clap_01.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"n_creep_Wildkin.SummonTornado"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"rndwave"
+	{
+		"wave" 	"weapons/creep/neutral/wildkin_summon_tornado_01.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"n_creep_Wildkin.Tornado"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.25"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"weapons\creep\neutral\wildkin_tornado_loop.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+			
+			"usat_stop_time"
+			{
+				"input2" "40.0"
+			}
+
+			"volume_fade_in"
+			{
+				"input_Max" "1.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//Roshan
+///////////////////////////////////////////////////////////////////////////////
+
+"Roshan.PreAttack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/whoosh01.wav"
+		"wave"	"weapons/hero/shared/large_blade/whoosh02.wav"
+		"wave"	"weapons/hero/shared/large_blade/whoosh03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Roshan.Grunt"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Roshan.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 0.8"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/roshan/attack01.wav"
+		"wave"	"weapons/creep/roshan/attack02.wav"
+		"wave"	"weapons/creep/roshan/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Roshan.Attack.Post"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Roshan.Grunt"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1, 1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/roshan/grunt01.wav"
+		"wave"	"weapons/creep/roshan/grunt02.wav"
+		"wave"	"weapons/creep/roshan/grunt03.wav"
+		"wave"	"weapons/creep/roshan/grunt04.wav"
+		"wave"	"weapons/creep/roshan/grunt05.wav"
+		"wave"	"weapons/creep/roshan/grunt06.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Roshan.Attack.Post"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/shared/large_blade/follow_thru01.wav"
+		"wave"		")weapons/hero/shared/large_blade/follow_thru02.wav"
+		"wave"		")weapons/hero/shared/large_blade/follow_thru03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+"Roshan.Bash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/creep/roshan/bash.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Roshan.Slam"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/creep/roshan/slam.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Roshan.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_87dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\creeps\roshan\footstep01.wav"
+		"wave"		"physics\footsteps\creeps\roshan\footstep02.wav"
+		"wave"		"physics\footsteps\creeps\roshan\footstep03.wav"
+		"wave"		"physics\footsteps\creeps\roshan\footstep04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//Old sound entries
+///////////////////////////////////////////////////////////////////////////////
+
+//	"Creep_Good_Melee.Death"
+//	{
+//		"channel"		"CHAN_BODY"
+//		"volume"		"0.2"
+//		"soundlevel"	"SNDLVL_75dB"
+//		"rndwave"
+//		{
+//			"wave"			"physics\deaths\common\body_impact_light_01.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_02.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_03.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_04.wav"
+//		}
+//		"operator_stacks"
+//		{
+//			"start_stack"
+//			{
+//				"import_stack" "start_block_at_distance"
+//				"block_dist"
+//				{
+//					"input2" "2000"
+//				}
+//			}
+//		}
+//	}
+
+//	"Creep_Good_Ranged.Death"
+//	{
+//		"channel"		"CHAN_BODY"
+//		"volume"		"0.2"
+//		"soundlevel"	"SNDLVL_75dB"
+//		"rndwave"
+//		{
+//			"wave"			"physics\deaths\common\body_impact_light_01.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_02.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_03.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_04.wav"
+//		}
+//		"operator_stacks"
+//		{
+//			"start_stack"
+//			{
+//				"import_stack" "start_block_at_distance"
+//				"block_dist"
+//				{
+//					"input2" "2000"
+//				}
+//			}
+//		}
+//	}
+
+//	"Creep_Bad_Melee.Death"
+//	{
+//		"channel"		"CHAN_BODY"
+//		"volume"		"0.2"
+//		"soundlevel"  	"SNDLVL_81dB"
+//		"rndwave"
+//		{
+//			"wave"			"physics\deaths\common\body_impact_light_01.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_02.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_03.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_04.wav"
+//		}
+//		"operator_stacks"
+//		{
+//			"start_stack"
+//			{
+//				"import_stack" "start_block_at_distance"
+//				"block_dist"
+//				{
+//					"input2" "2000"
+//				}
+//			}
+//		}
+//	}
+
+//	"Creep_Bad_Range.Death"
+//	{
+//		"channel"		"CHAN_BODY"
+//		"volume"		"0.2"
+//		"soundlevel"	"SNDLVL_72dB"
+//		"rndwave"
+//		{
+//			"wave"			"physics\deaths\common\body_impact_light_01.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_02.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_03.wav"
+//			"wave"			"physics\deaths\common\body_impact_light_04.wav"
+//		}
+//		"operator_stacks"
+//		{
+//			"start_stack"
+//			{
+//				"import_stack" "start_block_at_distance"
+//				"block_dist"
+//				{
+//					"input2" "2000"
+//				}
+//			}
+//		}
+//	}
+
+//  "Necronomicon_Warrior.Death"
+//  {
+//	  "channel"		"CHAN_BODY"
+//	  "volume"		"0.2"
+//	  "soundlevel"	"SNDLVL_72dB"
+//	  "rndwave"
+//	  {
+//	  	  "wave"			"physics\deaths\common\body_impact_light_01.wav"
+//		  "wave"			"physics\deaths\common\body_impact_light_02.wav"
+//		  "wave"			"physics\deaths\common\body_impact_light_03.wav"
+//		  "wave"			"physics\deaths\common\body_impact_light_04.wav"
+//	  }
+//	  "operator_stacks"
+//	  {
+//		  "start_stack"
+//		  {
+//			  "import_stack" "start_block_at_distance"
+//			  "block_dist"
+//			  {
+//				  "input2" "2000"
+//			  }
+//		  }
+//	  }
+//  }
+//
+//  "Necronomicon_Archer.Death"
+//  {
+//	  "channel"		"CHAN_BODY"
+//	  "volume"		"0.2"
+//	  "soundlevel"	"SNDLVL_72dB"
+//	  "rndwave"
+//	  {
+//		  "wave"			"physics\deaths\common\body_impact_light_01.wav"
+//		  "wave"			"physics\deaths\common\body_impact_light_02.wav"
+//		  "wave"			"physics\deaths\common\body_impact_light_03.wav"
+//		  "wave"			"physics\deaths\common\body_impact_light_04.wav"
+//	  }
+//	  "operator_stacks"
+//	  {
+//		  "start_stack"
+//		  {
+//			  "import_stack" "start_block_at_distance"
+//			  "block_dist"
+//			  {
+//				  "input2" "2000"
+//			  }
+//		  }
+//	  }
+//  }

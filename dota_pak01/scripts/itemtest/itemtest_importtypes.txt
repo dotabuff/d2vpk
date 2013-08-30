@@ -1,0 +1,2552 @@
+"itemtest_importtypes"
+{
+	// This is the list of Hero ability/spell related model imports
+	// Each Hero name must match the name of a hero in the "classes" section of the itemtest_manifest.txt
+	// Each "imports" entry must match the name of an import block somewhere in this itemtest_importtypes.txt file.
+	"hero_imports"
+	{
+		"beastmaster"
+		{
+			"boar"	"1"
+			"hawk"	"1"
+		}
+		"broodmother"
+		{
+			"spiderling"	"1"
+		}
+		"death_prophet"
+		{
+			"exorcism"	"1"
+		}
+		"juggernaut"
+		{
+			"jugg_ward"	"1"
+		}
+		"invoker"
+		{
+			"forge_spirit"	"1"
+		}
+		"lone_druid"
+		{
+			"bear"	"1"
+		}
+		"lycan"	
+		{
+			"wolves"	"1"
+			"lycan_ult"	"1"
+		}
+		"furion"
+		{
+			"np_treant"	"1"
+		}
+		"pugna"
+		{
+			"pugna_ward"	"1"
+		}
+		"shadowshaman"
+		{
+			"serpent_ward"	"0"
+		}
+		"tuskarr"
+		{
+			"tusk_sigil"	"1"
+		}
+		"warlock"	
+		{
+			"warlock_golem"	"1"
+		}
+		"witchdoctor"	
+		{
+			"wd_ward"	"1"
+		}
+	}
+
+	// This is a list of the files inside a HUD skin import
+	"hudskin_files"
+	{
+		"icon.png"							"1"
+		"preview_one.png"					"1"
+		"preview_two.png"					"1"
+		"preview_three.png"					"1"
+		"loadingscreen.png"					"1"
+		"actionpanel/center_left.png"		"1"
+		"actionpanel/center_left_wide.png"	"1"
+		"actionpanel/center_right.png"		"1"
+		"actionpanel/minimapborder.png"		"1"
+		"actionpanel/portrait.png"			"1"
+		"actionpanel/portrait_wide.png"		"1"
+		"actionpanel/spacer_16_10.png"		"1"
+		"actionpanel/spacer_16_9.png"		"1"
+		"actionpanel/light_4_3.png"			"1"
+		"actionpanel/light_16_10.png"		"1"
+		"actionpanel/light_16_9.png"		"1"
+		"inventory/background_4_3.png"		"1"
+		"inventory/background_wide.png"		"1"
+		"inventory/rocks_16_10.png"			"1"
+		"inventory/rocks_16_9.png"			"1"
+		"inventory/rocks_4_3.png"			"1"
+		"inventory/spacer.png"				"1"
+ 		"inventory/stash_upper.png"			"1"
+ 		"inventory/stash_active_lower.png"	"1"
+ 		"inventory/stash_lower.png"			"1"
+ 		"inventory/light_right_4_3.png"		"1"
+ 		"inventory/light_right_16_10.png"	"1"
+ 		"inventory/light_right_16_9.png"	"1"
+		"scoreboard/daynight.png"			"1"
+		"scoreboard/topbar.png"				"1"
+	}
+
+	"wearable"
+	{
+		"name"				"#DOTA_Workshop_SubmissionType_Wearable"
+		"description"		"#DOTA_Workshop_SubmissionType_Wearable_Desc"
+
+		"models"
+		{
+			"0"
+			{
+				"name"				"#DOTA_Workshop_SubmissionType_Wearable"
+				"qc_template"		"scripts/itemtest/itemtest_qc_template.txt"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_ItemTest_Texture_Title"
+						"description"		"#DOTA_ItemTest_Texture_Desc"
+
+						// These aren't used. Instead, the Hero & Slot sets them.
+						"TextureWidth"		"NOT USED"
+						"TextureHeight"		"NOT USED"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_ItemTest_LOD0Title"
+						"description"	"#DOTA_ItemTest_LOD0Desc"
+						"max_polygons"	"NOT USED"	// Hero & Slot sets this.
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_ItemTest_LOD1Title"
+						"description"	"#DOTA_ItemTest_LOD1Desc"
+						"max_polygons"	"NOT USED"	// Hero & Slot sets this.
+					}
+				}
+			}
+		}
+	}
+
+	"courier"
+	{
+		"name"				"#DOTA_Workshop_SubmissionType_Courier"
+		"description"			"#DOTA_Workshop_SubmissionType_Courier_ImportDesc"
+		"directory"			"courier"
+
+		"models"
+		{
+			"0"
+			{
+				"name"			"#DOTA_Workshop_Courier_BaseModel"
+				"qc_template"		"scripts/itemtest/itemtest_qc_template_courier.txt"
+				"preview_reference"		"models/props_gameplay/donkey.mdl"				
+				"item_editor_key"	"courier_model"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_ItemTest_Texture_Title"
+						"description"		"#DOTA_ItemTest_Mat0Desc_Courier"
+						"TextureWidth"		"512"
+						"TextureHeight"		"512"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_ItemTest_LOD0Title"
+						"description"	"#DOTA_ItemTest_LOD0Desc"
+						"max_polygons"	"3500"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_ItemTest_LOD1Title"
+						"description"	"#DOTA_ItemTest_LOD1Desc"
+						"max_polygons"	"3000"
+					}
+				}
+
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"RunRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_RunRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"Left Eye"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_LeftEye"
+						"description"	"#DOTA_ItemTest_Attachment_LeftEye_Desc"
+						"internal_name"	"attach_eye_l"
+						"ui_block"		"0"
+					}
+					"Right Eye"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_RightEye"
+						"description"	"#DOTA_ItemTest_Attachment_RightEye_Desc"
+						"internal_name"	"attach_eye_r"
+						"ui_block"		"0"
+					}
+				}
+			}
+
+			"1"
+			{
+				"name"			"#DOTA_Workshop_Courier_FlyingModel"
+				"portrait"		"portrait_courier_flying"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_courier_flying.txt"
+				"file_append"	"_flying"
+				"preview_reference"		"models/props_gameplay/donkey_wings.mdl"
+				"preview_offset"		"0 0 160"				
+				"item_editor_key"	"courier_model_flying"
+
+				"materials"
+				{
+					"description"			"#DOTA_ItemTest_SharedMats_Courier"
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_ItemTest_LOD0Title"
+						"description"	"#DOTA_ItemTest_LOD0Desc_Courier"
+						"max_polygons"	"3500"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_ItemTest_LOD1Title"
+						"description"	"#DOTA_ItemTest_LOD1Desc_Courier"
+						"max_polygons"	"3000"
+					}
+				}
+
+				"animations"
+				{
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"RunRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_RunRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"RunHaste"
+					{
+						"name"			"#DOTA_ItemTest_Animation_RunHaste"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"Left Eye"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_LeftEye"
+						"description"	"#DOTA_ItemTest_Attachment_LeftEye_Desc"
+						"internal_name"	"attach_eye_l"
+						"ui_block"		"0"
+					}
+					"Right Eye"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_RightEye"
+						"description"	"#DOTA_ItemTest_Attachment_RightEye_Desc"
+						"internal_name"	"attach_eye_r"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+
+	"ward"
+	{
+		"name"			"#DOTA_Workshop_SubmissionType_Ward"
+		"description"	"#DOTA_Workshop_SubmissionType_Ward_ImportDesc"
+		"directory"		"wards"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Ward"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_ward.txt"
+				"preview_reference"	"models/props_gameplay/default_ward.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_ItemTest_Mat0Title_Ward"
+						"description"		"#DOTA_ItemTest_Mat0Desc_Ward"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+
+						"_normal"			"2"		// 0 = Required, 1 = not used, 2 = optional
+						"_mask1"			"2"		// 0 = Required, 1 = not used, 2 = optional
+						"_mask2"			"2"		// 0 = Required, 1 = not used, 2 = optional
+					}
+					"1"
+					{
+						"name"				"#DOTA_ItemTest_Mat1Title_Ward"
+						"description"		"#DOTA_ItemTest_Mat1Desc_Ward"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+						"mat_affix"			"_sentry"
+
+						"_normal"			"2"		// 0 = Required, 1 = not used, 2 = optional
+						"_mask1"			"2"		// 0 = Required, 1 = not used, 2 = optional
+						"_mask2"			"2"		// 0 = Required, 1 = not used, 2 = optional
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_ItemTest_LOD0Title_Ward"
+						"description"	"#DOTA_ItemTest_LOD0Desc_Ward"
+						"max_polygons"	"2000"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_ItemTest_LOD1Title_Ward"
+						"description"	"#DOTA_ItemTest_LOD1Desc_Ward"
+						"max_polygons"	"1500"
+					}
+				}
+
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+
+	"boar"
+	{
+		"name"			"#DOTA_Import_Boar"
+		"description"	"#DOTA_Import_Boar_Desc"
+		"directory"		"boar"
+		"vmt"			"materials/models/heroes/beastmaster/beastmaster_beast_color.vmt"
+		"unit"			"npc_dota_beastmaster_boar"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Boar"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_boar.txt"
+				"preview_reference"	"models/heroes/beastmaster/beastmaster_beast.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"512"
+						"TextureHeight"		"512"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_Import_LOD0Title_Generic"
+						"description"	"#DOTA_Import_LOD0Desc_Generic"
+						"max_polygons"	"3500"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"2000"
+					}
+				}
+
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Attack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_Attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1.0"
+						"ui_block"		"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"1"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"1"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+	"hawk"
+	{
+		"name"			"#DOTA_Import_Hawk"
+		"description"	"#DOTA_Import_Hawk_Desc"
+		"directory"		"hawk"
+		"vmt"			"materials/models/heroes/beastmaster/bird_color.vmt"
+		"unit"			"npc_dota_scout_hawk"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Hawk"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_hawk.txt"
+				"preview_reference"	"models/heroes/beastmaster/beastmaster_bird.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"1000"
+					}
+				}
+
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"1"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"1"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+	"bear"
+	{
+		"name"			"#DOTA_Import_Bear"
+		"description"	"#DOTA_Import_Bear_Desc"
+		"directory"		"bear"
+		"vmt"			"materials/models/heroes/lone_druid/ld_spirit_bear.vmt"
+		"unit"			"npc_dota_lone_druid_bear1"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Bear"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_bear.txt"
+				"preview_reference"	"models/heroes/lone_druid/spirit_bear.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"512"
+						"TextureHeight"		"512"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_Import_LOD0Title_Generic"
+						"description"	"#DOTA_Import_LOD0Desc_Generic"
+						"max_polygons"	"4500"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"3000"
+					}
+				}
+
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"0"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"1"
+					}
+					"RunOutOfRange"
+					{
+						"name"		"#DOTA_ItemTest_Animation_RunOutOfRange"
+						"description"	"#DOTA_ItemTest_Animation_RunOutOfRange_Desc_SB"
+						"ui_block"	"1"
+					}
+					"RunInjured"
+					{
+						"name"			"#DOTA_ItemTest_Animation_RunInjured"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"RunHaste"
+					{
+						"name"			"#DOTA_ItemTest_Animation_RunHaste"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"IdleOutOfRange"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleOutOfRange"
+						"description"	"#DOTA_ItemTest_Animation_IdleOutOfRange_Desc_SB"
+						"ui_block"	"1"
+					}
+					"AttackA"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_Attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1.1"
+						"ui_block"		"2"
+					}
+					"AttackB"
+					{
+						"name"			"#DOTA_ItemTest_Animation_AttackB"
+						"description"	"#DOTA_ItemTest_Animation_AttackB_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1.1"
+						"optional"		"1"
+						"ui_block"		"2"
+					}
+					"Attack2A"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack2"
+						"description"	"#DOTA_ItemTest_Animation_Attack2_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1.1"
+						"optional"		"1"
+						"ui_block"		"2"
+					}
+					"Attack2B"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack2B"
+						"description"	"#DOTA_ItemTest_Animation_Attack2B_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1.1"
+						"optional"		"1"
+						"ui_block"		"2"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"3"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"3"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"3"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"3"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"3"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+					"AttackPoint2"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint2"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint2_Desc"
+						"internal_name"	"attach_attack2"
+						"ui_block"		"0"
+					}
+					"MouthPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_Mouth"
+						"description"	"#DOTA_ItemTest_Attachment_Mouth_Desc"
+						"internal_name"	"attach_mouth"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+
+	"spiderling"
+	{
+		"name"			"#DOTA_Import_Spiderling"
+		"description"	"#DOTA_Import_Spiderling_Desc"
+		"directory"		"spiderling"
+		"vmt"			"materials/models/heroes/broodmother/spiderling.vmt"
+		"unit"			"npc_dota_broodmother_spiderling"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Spiderling"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_spiderling.txt"
+				"preview_reference"	"models/heroes/broodmother/spiderling.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"1000"
+					}
+				}
+
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Attack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_Attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"0.8"
+						"ui_block"		"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"1"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"1"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"Die2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die2"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+
+	"wolves"
+	{
+		"name"			"#DOTA_Import_Wolves"
+		"description"	"#DOTA_Import_Wolves_Desc"
+		"directory"		"wolves"
+		"loadout_slot"	"summon"
+		"vmt"			"materials/models/heroes/lycan/summon_wolves_body_color.vmt"
+		"unit"			"npc_dota_lycan_wolf1"
+		
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Wolves"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_wolves.txt"
+				"preview_reference"	"models/heroes/lycan/summon_wolves.mdl"
+
+				"asset_modifier"
+				{
+					"type"		"entity_model"
+					"asset"		"npc_dota_lycan_wolf"
+				}
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"512"
+						"TextureHeight"		"512"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_Import_LOD0Title_Generic"
+						"description"	"#DOTA_Import_LOD0Desc_Generic"
+						"max_polygons"	"3500"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"2250"
+					}
+				}
+
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Attack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_Attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1"
+						"ui_block"		"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"1"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"1"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"Die2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die2"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"Ability1"
+					{
+						"name"		"#DOTA_Import_Wolves_Anim_Ability1"
+						"description" "#DOTA_Import_Wolves_Anim_Ability1_Desc"
+						"ui_block"	"3"
+					}
+					"Ability2"
+					{
+						"name"		"#DOTA_Import_Wolves_Anim_Ability2"
+						"description" "#DOTA_Import_Wolves_Anim_Ability2_Desc"
+						"ui_block"	"3"
+						//"gesture"	"ACT_DOTA_RUN"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+
+	"lycan_ult"
+	{
+		"name"			"#DOTA_Import_Lycan_Ult"
+		"description"	"#DOTA_Import_Lycan_Ult_Desc"
+		"directory"		"ultimate"
+		"loadout_slot"	"ability4"
+		"vmt"			"materials/models/heroes/lycan/lycan_wolf_body_color.vmt"
+		"unit"			"npc_dota_hero_lycan"
+		
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Lycan_Ult"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_lycan_ult.txt"
+				"preview_reference"	"models/heroes/lycan/lycan_wolf.mdl"
+
+				"asset_modifier"
+				{
+					"type"		"hero_model_change"
+					"asset"		"models/heroes/lycan/lycan_wolf.mdl"
+				}
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"512"
+						"TextureHeight"		"512"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_Import_LOD0Title_Generic"
+						"description"	"#DOTA_Import_LOD0Desc_Generic"
+						"max_polygons"	"5500"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"3500"
+					}
+				}
+
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Attack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_Attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1"
+						"ui_block"		"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"1"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"1"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"Die2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die2"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"Ability1"
+					{
+						"name"		"#DOTA_Import_Wolves_Anim_Ability1"
+						"description" "#DOTA_Import_Wolves_Anim_Ability1_Desc"
+						"ui_block"	"3"
+					}
+					"Ability2"
+					{
+						"name"		"#DOTA_Import_Wolves_Anim_Ability2"
+						"description" "#DOTA_Import_Wolves_Anim_Ability2_Desc"
+						"ui_block"	"3"
+						//"gesture"	"ACT_DOTA_RUN"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+
+  "wd_ward"
+	{
+		"name"			"#DOTA_Import_WD_Ward"
+		"description"	"#DOTA_Import_WD_Ward_Desc"
+		"directory"		"wd_ward"
+		"vmt"			"materials/models/heroes/witchdoctor/witchdoctor_ward.vmt"
+		"unit"			"npc_dota_witch_doctor_death_ward"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_WD_Ward"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_wd_ward.txt"
+				"preview_reference"	"models/heroes/witchdoctor/witchdoctor_ward.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"2000"
+					}
+				}
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+  "tusk_sigil"
+	{
+		"name"			"#DOTA_Import_Tusk_Sigil"
+		"description"	"#DOTA_Import_Tusk_Sigil_Desc"
+		"directory"		"sigil"
+		"vmt"			"materials/models/particle/frozensigil.vmt"
+		"unit"			"npc_dota_tusk_frozen_sigil1"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Tusk_Sigil"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_tusk_sigil.txt"
+				"preview_reference"	"models/heroes/tuskarr/tuskarr_sigil.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"1000"
+					}
+				}
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+  "jugg_ward"
+	{
+		"name"			"#DOTA_Import_Jugg_Ward"
+		"description"	"#DOTA_Import_Jugg_Ward_Desc"
+		"directory"		"ward"
+		"vmt"			"materials/models/heroes/juggernaut/jugg_healing_ward_color.vmt"
+		"unit"			"npc_dota_juggernaut_healing_ward"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Jugg_Ward"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_jugg_ward.txt"
+				"preview_reference"	"models/heroes/juggernaut/jugg_healing_ward.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"2400"
+					}
+				}
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+  "pugna_ward"
+	{
+		"name"			"#DOTA_Import_Pugna_Ward"
+		"description"	"#DOTA_Import_Pugna_Ward_Desc"
+		"directory"		"ward"
+		"vmt"			"materials/models/heroes/pugna/pugna_ward.vmt"
+		"unit"			"npc_dota_pugna_nether_ward_1"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Pugna_Ward"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_pugna_ward.txt"
+				"preview_reference"	"models/heroes/pugna/pugna_ward.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"1000"
+					}
+				}
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+	"NP_Treant"
+	{
+		"name"			"#DOTA_Import_NP_Treant"
+		"description"	"#DOTA_Import_NP_Treant_Desc"
+		"directory"		"treant"
+		"vmt"			"materials/models/heroes/furion/treant_color.vmt"
+		"unit"			"npc_dota_furion_treant"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_NP_Treant"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_np_treant.txt"
+				"preview_reference"	"models/heroes/furion/treant.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"512"
+						"TextureHeight"		"512"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_Import_LOD0Title_Generic"
+						"description"	"#DOTA_Import_LOD0Desc_Generic"
+						"max_polygons"	"2400"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"1200"
+					}
+				}
+// There is a limit to 5 animations per page, 4 pages total
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Attack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_Attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1"
+						"ui_block"		"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"1"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"1"
+					}
+					"Attack2"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack2"
+						"description"	"#DOTA_ItemTest_Animation_Attack2_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1"
+						"optional"	"1"
+						"ui_block"		"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"Die2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die2"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+					"AttackPoint2"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint2"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint2_Desc"
+						"internal_name"	"attach_attack2"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+	"forge_spirit"
+	{
+		"name"			"#DOTA_Import_Forge_Spirit"
+		"description"	"#DOTA_Import_Forge_Spirit_Desc"
+		"directory"		"forge_spirit"
+		"vmt"			"materials/models/heroes/invoker/forge_spirit_color.vmt"
+		"unit"			"npc_dota_invoker_forged_spirit"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Forge_Spirit"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_forge_spirit.txt"
+				"preview_reference"	"models/heroes/invoker/forge_spirit.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"2400"
+					}
+				}
+// There is a limit to 5 animations per page, 4 pages total
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Attack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_Attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".8"
+						"ui_block"		"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"1"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"1"
+					}
+					"Attack2"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack2"
+						"description"	"#DOTA_ItemTest_Animation_Attack2_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".8"
+						"optional"	"1"
+						"ui_block"		"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"Die2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die2"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+					"AttackPoint2"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint2"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint2_Desc"
+						"internal_name"	"attach_attack2"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+	"serpent_ward"
+	{
+		"name"			"#DOTA_Import_Serpent_Ward"
+		"description"	"#DOTA_Import_Serpent_Ward_Desc"
+		"directory"		"serpent_ward"
+		"vmt"			"materials/models/heroes/shadowshaman/totem_color.vmt"
+		"unit"			"npc_dota_shadow_shaman_ward_1"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Serpent_Ward"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_serpent_ward.txt"
+				"preview_reference"	"models/heroes/shadowshaman/shadowshaman_totem.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"800"
+					}
+				}
+// There is a limit to 5 animations per page, 4 pages total
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Die2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die2"
+						"optional"	"1"
+						"ui_block"	"0"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"0"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"description"	"#DOTA_ItemTest_Animation_Center_Desc"
+						"ui_block"	"1"
+					}
+					"BackLeftIdle"
+					{
+						"name"			"#DOTA_ItemTest_Animation_BackLeftIdle"
+						"description"	"#DOTA_ItemTest_Animation_BackLeft_Desc"
+						"ui_block"	"1"
+					}
+					"LeftIdle"
+					{
+						"name"			"#DOTA_ItemTest_Animation_LeftIdle"
+						"description"	"#DOTA_ItemTest_Animation_Left_Desc"
+						"ui_block"	"1"
+					}
+					"RightIdle"
+					{
+						"name"			"#DOTA_ItemTest_Animation_RightIdle"
+						"description"	"#DOTA_ItemTest_Animation_Right_Desc"
+						"ui_block"	"1"
+					}
+					"BackRightIdle"
+					{
+						"name"			"#DOTA_ItemTest_Animation_BackRightIdle"
+						"description"	"#DOTA_ItemTest_Animation_BackRight_Desc"
+						"ui_block"	"1"
+					}
+					"Attack"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+					}
+					"BackLeftAttack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_BackLeftAttack"
+						"description"	"#DOTA_ItemTest_Animation_BackLeft_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+					}
+					"LeftAttack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_LeftAttack"
+						"description"	"#DOTA_ItemTest_Animation_Left_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+					}
+					"RightAttack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_RightAttack"
+						"description"	"#DOTA_ItemTest_Animation_Right_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+					}
+					"BackRightAttack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_BackRightAttack"
+						"description"	"#DOTA_ItemTest_Animation_BackRight_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+	"Warlock_Golem"
+	{
+		"name"			"#DOTA_Import_Warlock_Golem"
+		"description"	"#DOTA_Import_Warlock_Golem_Desc"
+		"directory"		"golem"
+		"vmt"			"materials/models/heroes/warlock_demon/warlock_demon_color.vmt"
+		"unit"			"npc_dota_warlock_golem_1"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Warlock_Golem"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_warlock_golem.txt"
+				"preview_reference"	"models/heroes/warlock/warlock_demon.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"512"
+						"TextureHeight"		"512"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_Import_LOD0Title_Generic"
+						"description"	"#DOTA_Import_LOD0Desc_Generic"
+						"max_polygons"	"6500"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"3500"
+					}
+				}
+// There is a limit to 5 animations per page, 4 pages total
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+					}
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"ui_block"	"0"
+					}
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Attack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_Attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1"
+						"ui_block"		"0"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+					}
+					"Disabled"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Disabled"
+						"ui_block"		"1"
+					}
+					"Flail"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Flail"
+						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
+						"ui_block"		"1"
+					}
+					"Attack2"
+					{
+						"name"			"#DOTA_ItemTest_Animation_Attack2"
+						"description"	"#DOTA_ItemTest_Animation_Attack2_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	"1"
+						"optional"	"1"
+						"ui_block"		"1"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"PortraitIdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"Die2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die2"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"IdleRare"
+					{
+						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
+						"ui_block"		"0"
+					}
+					"AttackPoint2"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint2"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint2_Desc"
+						"internal_name"	"attach_attack2"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+	"exorcism"
+	{
+		"name"			"#DOTA_Import_Exorcism"
+		"description"	"#DOTA_Import_Exorcism_Desc"
+		"directory"		"exorcism"
+		"vmt"			"materials/models/heroes/death_prophet/deathprophet_ladyghosts_color.vmt"
+		"unit"			"dota_death_prophet_exorcism_spirit"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Exorcism"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_exorcism.txt"
+				"preview_reference"	"models/heroes/death_prophet/death_prophet_ghost.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					"0"
+					{
+						"name"			"#DOTA_Import_LOD0Title_Generic"
+						"description"	"#DOTA_Import_LOD0Desc_Generic"
+						"max_polygons"	"600"
+						"optional"		"1"
+					}
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"450"
+					}
+				}
+
+// There is a limit to 5 animations per page, 4 pages total
+				"animations"
+				{
+					"Run"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"ui_block"	"0"
+					}
+					"Run2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_RunRare"
+						"ui_block"	"0"
+					}
+					"TurnPoseCenter"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
+						"ui_block"	"0"
+					}
+					"TurnPoseLeft"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
+						"ui_block"	"0"
+					}
+					"TurnPoseRight"
+					{
+						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
+						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
+						"ui_block"	"0"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"1"
+					}
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+}

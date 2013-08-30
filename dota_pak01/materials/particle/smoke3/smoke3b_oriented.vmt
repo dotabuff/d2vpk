@@ -1,0 +1,20 @@
+"SpriteCard"
+{
+	$basetexture "particle/smoke3/smoke3b"
+	$translucent 1
+	$DEPTHBLEND 1
+	"$blendframes" "0"
+	$vertexfogamount 1
+	$DUALSEQUENCE 1
+	$SEQUENCE_BLEND_MODE 1 //2
+	$MAXLUMFRAMEBLEND1 0
+	$MAXLUMFRAMEBLEND2 1
+	$ZOOMANIMATESEQ2 4
+	"$STARTFADESIZE" "1"
+	"$ENDFADESIZE" "1.4"
+	"GPU<2?$STARTFADESIZE" ".75"
+	"GPU<2?$ENDFADESIZE" "1.0"
+	"GPU<2?$BLENDFRAMES" "0"
+	"GPU<2?$DEPTHBLEND" "0"
+	$orientation 3
+}

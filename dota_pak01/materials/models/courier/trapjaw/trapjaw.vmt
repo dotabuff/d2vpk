@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/trapjaw/trapjaw_color"
+	"$normalmap" "models/courier/trapjaw/trapjaw_normal"
+	"$maskmap1" "models/courier/trapjaw/trapjaw_masks1"
+	"$maskmap2" "models/courier/trapjaw/trapjaw_masks2"
+	
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 16	
+	$SPECULARSCALE 1.5
+	//$SPECULARCOLOR "[0.7 0.9 1]"
+	//$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 1
+	$IgnoreBudgetCheck 1
+	
+	$alphatest 1
+
+	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/abaddon/abaddon_cloak_sword_shape_color"
+	"$normalmap" "models\heroes\abaddon\abaddon_cloak_sword_shape_normal"
+	"$maskmap1" "models\heroes\abaddon\abaddon_cloak_sword_shape_masks1"
+	"$maskmap2" "models\heroes\abaddon\abaddon_cloak_sword_shape_masks2"
+	
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 10
+	
+	$RIMLIGHTSCALE 3
+	$IgnoreBudgetCheck 1
+	$alphatest	1
+	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,41 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/keeper_of_the_light/horsefx_color"
+	"$normalmap" "models\heroes\keeper_of_the_light\horse_normals"
+	"$maskmap1" "models\heroes\keeper_of_the_light\horsefx_masks1"
+	"$maskmap2" "models\heroes\keeper_of_the_light\horsefx_masks2"
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	//$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+	
+//	"$detail1" "models/heroes/rubick/rubick_motion"
+
+	//$additive 1
+	//$allowdiffusemodulation
+	$SPECULAR_BLOOM_SCALE      50
+	$SPECULAREXPONENT 50	
+	$SPECULARSCALE 50	
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTCOLOR "[1 0.8 0.25]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 10
+	$IgnoreBudgetCheck 1
+	$alphatest 1
+
+	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

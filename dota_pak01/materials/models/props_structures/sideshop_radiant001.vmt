@@ -1,0 +1,9 @@
+// ### This basic VMT was written based on the E:\dota\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_structures/SideShop_Radiant001"	
+	$specTexture "models/props_structures/SideShop_Radiant001_spec"
+	$specular_bloom .99
+	"$fow"                          "_rt_fog_of_war"
+	"$alphatest" 1
+}

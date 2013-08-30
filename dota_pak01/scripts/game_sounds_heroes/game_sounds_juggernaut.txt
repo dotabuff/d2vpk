@@ -1,0 +1,550 @@
+
+"Hero_Juggernaut.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7. 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh03.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.1"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/juggernaut/attack01.wav"
+		"wave"	")weapons/hero/juggernaut/attack02.wav"
+		"wave"	")weapons/hero/juggernaut/attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Juggernaut.Attack.Rip"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Juggernaut.Attack.Ring"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.Attack.Rip"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/npc/rip01.wav"
+		"wave"			"physics/damage/npc/rip02.wav"
+		"wave"			"physics/damage/npc/rip03.wav"
+		"wave"			"physics/damage/npc/rip04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.05"
+			"input_max" "0.12"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.Attack.Ring"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.0, 0.9"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/ring01.wav"
+		"wave"	")weapons/hero/shared/small_blade/ring02.wav"
+		"wave"	")weapons/hero/shared/small_blade/ring03.wav"
+		"wave"	"null.wav"
+		"wave"	"null.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.12"
+			"input_max" "0.17"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+//  			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.BladeDance"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/juggernaut/sword_swing_special.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.BladeFuryStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/juggernaut/bladefury_start_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.BladeFuryStop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/juggernaut/bladefury_stop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+
+}
+
+"Hero_Juggernaut.BladeFury.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh03.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.0"
+			"input_max" "0.1"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.HealingWard.Cast"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			")weapons/hero/juggernaut/healing_ward_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.HealingWard.Loop"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			")weapons/hero/juggernaut/healing_ward_loop.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_fade_in"
+			{
+				"input_Max" "1.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.HealingWard.Stop"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/juggernaut/healing_ward_stop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.OmniSlash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.9"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/juggernaut/omnislash_attack1.wav"
+		"wave"	")weapons/hero/juggernaut/omnislash_attack2.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.OmniSlash.Damage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/juggernaut/attack01.wav"
+		"wave"	")weapons/hero/juggernaut/attack02.wav"
+		"wave"	")weapons/hero/juggernaut/attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Juggernaut.Attack.Ring"
+			}
+// 			"play_third_layer"
+// 			{
+// 			"input_execute"	"1"
+// 			"entry_name" "Hero_Juggernaut.Attack.Ring"
+// 			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+"Hero_Juggernaut.Impact"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.idle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.7"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"misc\idles\idle_jugger.wav"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.Taunt.Spin"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"misc\idles\idle_troll_spin.wav"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Juggernaut.Taunt.Impact"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}

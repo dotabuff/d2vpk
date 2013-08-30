@@ -1,0 +1,47 @@
+"CustomHero"
+{
+	$baseTexture "models/items/invoker/wizard_bracer_color"
+	"$normalmap" "models/items/invoker/wizard_bracer_normal"
+	"$maskmap2"  "models/items/invoker/wizard_bracer_mask2"
+	"$maskmap1"  "models/items/invoker/wizard_bracer_mask1"
+	"$alphatest" "1"
+	
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+
+
+	$SPECULAREXPONENT 15
+
+	$SPECULARSCALE 3
+	$RIMLIGHTSCALE 2
+	$specularcolor "[2 .8 .7]"
+	$RIMLIGHTCOLOR "[1 1 .75]"
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	$DETAIL1BLENDTOFULL 0
+	
+	$SPECULAR_BLOOM_SCALE	1
+
+	
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

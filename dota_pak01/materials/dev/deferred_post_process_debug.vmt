@@ -1,0 +1,15 @@
+"deferred_post_process"
+{
+	$ssao_tint			"[ 0.0 0.0 0.0 ]"
+	$ssao_intensity 	1.75
+	$fow 				"_rt_fog_of_war"
+	$FOW_HEIGHT_TEXTURE	"dev/fow_clouds_00"
+	$FOW_HEIGHT_SCROLL	"[ 0.012 -0.006 0.03 -0.06]"
+	$FOW_HEIGHT_WORLD_SCALE	1600
+	$FOW_HEIGHT_ADJUSTMENT	       -200
+	$FOW_HEIGHT_SCALE_1		1300
+	$FOW_HEIGHT_SCALE_2		850
+	$FOW_HEIGHT_SCALE		400
+	$FOW_HEIGHT_COLOR	"[ 0.02 0.04 0.06 ]"
+	$DEBUG_SHADER		1
+}

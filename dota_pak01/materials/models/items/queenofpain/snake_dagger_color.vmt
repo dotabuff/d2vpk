@@ -1,0 +1,42 @@
+// ### This basic VMT was written based on the D:\dev\tools\python\templateStrings.pyc script ###
+"CustomHero"
+{
+	$baseTexture "models/items/QueenOfPain/snake_dagger_color.vtf"
+	
+	"$normalmap" "models/items/queenofpain/snake_dagger_normal"
+	"$maskmap2" "models/items/queenofpain/snake_dagger_mask2"
+	
+
+
+	$FRESNELWARP "models/heroes/QueenOfPain/QueenOfPain_fresnelranges"
+
+	//$FRESNELWARP "models/heroes/silencer/silencer_fresnelranges"
+
+	"$detail1" "models/heroes/QueenOfPain/QueenOfPain_motion_fire"
+
+
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 8
+	$RIMLIGHTSCALE	1
+	//$specularcolor "[1 .3 .7]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	//"$rimlightblendtoful" "1"
+	
+
+
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

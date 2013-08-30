@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/kunkka/ghostship_base.vtf"
+	"$normalmap" "models\development\flatnormal"
+	//$nocull 1	
+
+	$diffusewarp "models/heroes/kunkka/ghostship_diffusewarp"
+	$FRESNELWARP "models/heroes/kunkka/ghostship_fresnelranges"
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[0 .5 2]"
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+	$REFLECTIONSTINTBYBASEBLENDTONONE 1
+
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[0 .4 1]"
+	$RIMLIGHTBLENDTOFULL 1
+		
+	$SPECULAR_BLOOM_SCALE      11
+	
+
+	"$cloakPassEnabled" "1"
+	$CLOAK_BLUR_AMOUNT        0.005
+
+	$cloakintensity .6   //blend % with original base color
+	$cloakfactor .41        //
+	$refractamount 0.003     //level of refraction
+
+	
+	
+	$rimlightcolor "[.1 .1 .5]"
+
+        $ALLOWDIFFUSEMODULATION 1
+}

@@ -1,0 +1,42 @@
+"CustomHero"
+{
+	"$basetexture" "models\props_gameplay\magic_wand"
+
+//	"$specTexture" "models/props_gameplay/magic_wand_spec"
+//	"$SPECULAR_BLOOM"		4.0
+
+	"$normalmap" "models\props_gameplay\magic_wand_normal"
+//	"$detail1"  "models\props_gameplay\item_pulse.vtf"
+ 	"$maskmap1" "models\props_gameplay\magic_wand_mask1"
+	"$maskmap2" "models\props_gameplay\magic_wand_mask2"
+
+	
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 6
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTCOLOR "[2 .3 .1]"
+	$RIMLIGHTSCALE 20
+
+//	$DETAIL1BLENDMODE 1
+//	$DETAIL1SCALE 2
+//	$DETAIL1BLENDFACTOR .2
+//	$DETAIL1BLENDTOFULL 
+
+
+
+
+//	"Proxies"
+//	{
+//		"TextureScroll"		
+//		{
+//			"texturescrollvar"	"$detail1texturetransform"
+//			"texturescrollrate"	".8"
+//			"texturescrollangle"	"90"
+//		}
+//
+//	}
+
+
+
+}

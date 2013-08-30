@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/lich/lich_base_color"
+	"$normalmap" "models/heroes/lich/lich_base_normal"
+	"$maskmap1" "models/heroes/lich/lich_base_masks1"
+	"$maskmap2" "models/heroes/lich/lich_base_masks2"
+
+	//"$nocull" "1"
+	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+	//$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 4
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1.4
+	$RIMLIGHTCOLOR "[.5 1 1]"
+	$ALPHATEST 1
+
+
+// Status Effects
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

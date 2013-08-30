@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	$baseTexture "models/items/brewmaster/spiritual_spirits_color"
+	"$normalmap" "models/items/brewmaster/spiritual_spirits_normal"
+	"$maskmap1" "models/items/brewmaster/spiritual_spirits_mask1"
+	"$maskmap2" "models/items/brewmaster/spiritual_spirits_mask2"
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 1 1]"
+	//$SPECULARBLENDTOFULL 1
+
+	//$SPECULAREXPONENTBLENDTOFULL 1
+
+	$AMBIENTSCALE .5
+	$alphatest 1
+
+	$RIMLIGHTSCALE	2
+	//$RIMLIGHTCOLOR "[1 1 1]"
+	$IgnoreBudgetCheck 1	
+	"$rimlightblendtoful" "1"
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,424 @@
+
+"Hero_Rattletrap.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_72dB"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/rattletrap/attack01.wav"
+		"wave"	"weapons/hero/rattletrap/attack02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_Rattletrap.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/impacts/heavy_blade_impact1.wav"
+		"wave"	"weapons/hero/shared/impacts/heavy_blade_impact2.wav"
+		"wave"	"weapons/hero/shared/impacts/heavy_blade_impact3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Rattletrap.Battery_Assault"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/rattletrap/battery_assault_loop.wav"
+
+	"update_stack"
+	{
+		"import_stack" "dota_update_default"
+
+		"volume_fade_out"
+		{
+			"input_max" "0.5"
+		}
+	}
+}
+
+"Hero_Rattletrap.Battery_Assault_Launch"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{	
+		"wave"			"weapons/hero/rattletrap/battery_assault_launch01.wav"
+		"wave"			"weapons/hero/rattletrap/battery_assault_launch02.wav"
+		"wave"			"weapons/hero/rattletrap/battery_assault_launch03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Rattletrap.Battery_Assault_Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90,105"
+	"wave"			")weapons/hero/rattletrap/battery_assault_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"start_stack"
+		{
+			"delay_output"
+            {
+             "operator" "sys_output"
+             "input_float" "0.1"
+             "output" "delay"
+             }
+		}
+	}
+}
+
+"Hero_Rattletrap.Power_Cogs"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/rattletrap/power_cogs.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Rattletrap.Power_Cogs_Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/rattletrap/power_cogs_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Rattletrap.Rocket_Flare.Fire"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons/hero/rattletrap/flare_fire.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "450"
+			}
+		}
+	}
+}
+
+"Hero_Rattletrap.Rocket_Flare.Fire.FP"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons/hero/rattletrap/flare_fire.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "25000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_Rattletrap.Rocket_Flare.Travel"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"	"<weapons/hero/rattletrap/flare_loop.wav"
+}
+
+"Hero_Rattletrap.Rocket_Flare.Explode"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/rattletrap/flare_explode.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"speed_stop_entry"
+			{
+				"input_execute" "1"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "true"	
+				"match_substring" "false"
+				"match_entry" "Hero_Rattletrap.Rocket_Flare.Travel"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1500"
+			}
+		}
+	}
+}
+
+
+"Hero_Rattletrap.Hookshot.Fire"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/rattletrap/hookshot_fire.wav"
+ 	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+		}
+	}
+}
+
+"Hero_Rattletrap.Hookshot.Retract"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/rattletrap/hookshot_retract.wav"
+	"operator_stacks"
+		{
+			"update_stack"
+			{
+				"import_stack" "dota_update_default"
+				"mixer"
+				{
+					"mixgroup" "Ultimates"
+				}
+				"speakers_spatialize"
+				{
+					"input_radius"  "300"
+				}
+			}
+		}
+}
+
+"Hero_Rattletrap.Hookshot.Damage"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/rattletrap/hookshot_damage.wav"
+	"operator_stacks"
+		{
+			"update_stack"
+			{
+				"import_stack" "dota_update_default"
+				"mixer"
+				{
+					"mixgroup" "Ultimates"
+				}
+				"speakers_spatialize"
+				{
+					"input_radius"  "300"
+				}
+			}
+		}
+}
+
+
+"Hero_Rattletrap.Hookshot.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/rattletrap/hookshot_impact.wav"
+	"operator_stacks"
+		{
+			"update_stack"
+			{
+				"import_stack" "dota_update_default"
+				"mixer"
+				{
+					"mixgroup" "Ultimates"
+				}
+				"speakers_spatialize"
+				{
+					"input_radius"  "300"
+				}
+			}
+		}
+}
+
+"Rattletrap.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Rattletrap.Foley"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.1, 0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\rattletrap\foley01.wav"
+		"wave"		"physics\footsteps\hero\rattletrap\foley02.wav"
+		"wave"		"physics\footsteps\hero\rattletrap\foley03.wav"
+		"wave"		"physics\footsteps\hero\rattletrap\foley04.wav"
+		"wave"		"physics\footsteps\hero\rattletrap\foley05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Rattletrap.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"physics\deaths\specials\clockwerk_death.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

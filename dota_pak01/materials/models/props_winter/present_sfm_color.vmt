@@ -1,0 +1,35 @@
+//"GlobalLitSimple"
+"CustomHero"
+{
+	"$baseTexture" "models/props_winter/present_sfm_color"
+	"$normalmap" "models/development/flatnormal"
+	$MASKMAP1 "models/props_winter/present_sfm_masks1"
+	$MASKMAP2 "models/props_winter/present_sfm_masks2"
+
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 53	
+	$SPECULARSCALE 50	
+	$SPECULARCOLOR "[0.9 0.7 0.1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 10
+	$AMBIENTSCALE 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+	
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

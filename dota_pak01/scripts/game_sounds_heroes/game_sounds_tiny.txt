@@ -1,0 +1,522 @@
+"Hero_Tiny.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/tiny/preattack01.wav"
+		"wave"	"weapons/hero/tiny/preattack02.wav"
+		"wave"	"weapons/hero/tiny/preattack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_Tiny.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/tiny/tiny_attack.wav"
+		"wave"	"weapons/hero/tiny/tiny_attack2.wav"
+		"wave"	"weapons/hero/tiny/tiny_attack3.wav"
+		"wave"	"weapons/hero/tiny/tiny_attack4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Tiny.Attack.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+	}
+}
+
+"Hero_Tiny.Attack.Impact"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/follow_thru01.wav"
+		"wave"	"weapons/hero/shared/large_blade/follow_thru02.wav"
+		"wave"	"weapons/hero/shared/large_blade/follow_thru03.wav"
+	}
+}
+
+"Ability.Avalanche"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/tiny/tiny_avalanche.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Ability.TossThrow"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/tiny/tiny_toss_throw.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Ability.TossImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/tiny/tiny_toss_impact.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Tiny.Toss.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/tiny/toss_target.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Tiny.CraggyExterior"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/tiny/tiny_attack.wav"
+		"wave"	"weapons/hero/tiny/tiny_attack2.wav"
+		"wave"	"weapons/hero/tiny/tiny_attack3.wav"
+		"wave"	"weapons/hero/tiny/tiny_attack4.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Tiny.CraggyExterior.Stun"
+			}
+		}
+	}
+}
+
+"Hero_Tiny.CraggyExterior.Stun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"110, 120"
+	"wave"		"weapons/hero/slardar/bash_stun.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.15"
+			}
+		}
+	}
+}
+
+"Tiny.Grow"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_80dB"
+
+	"wave"		")weapons/hero/tiny/tiny_grow.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Tiny.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"110, 115"
+	
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/tiny/walk01.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk02.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk03.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk04.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk05.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Tiny.Footsteps1"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4, 0.7"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"100, 105"
+	
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/tiny/walk01.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk02.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk03.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk04.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk05.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Tiny.Footsteps2"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6, 0.8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			 "95, 100"
+	
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/tiny/walk01.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk02.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk03.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk04.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk05.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Tiny.Footsteps3"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6, 0.9"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"85, 95"
+	
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/tiny/walk01.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk02.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk03.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk04.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk05.wav"
+		"wave"		"physics/footsteps/hero/tiny/walk06.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Tiny.Death_01"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"physics\deaths\specials\tiny_death_01.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Tiny.Death_02"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"physics\deaths\specials\tiny_death_02.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Tiny.Death_03"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"physics\deaths\specials\tiny_death_03.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Tiny.Death_04"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			"physics\deaths\specials\tiny_death_03.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Tiny_Tree.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100, 120"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/tiny/lanm_ti2style_preattack01.wav"
+		"wave"	")weapons/hero/tiny/lanm_ti2style_preattack02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+// 			"delay_output"
+// 			{
+// 			"input_float" "0.1"
+// 			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Tiny_Tree.Movement"
+			}
+		}
+	}
+}
+
+"Hero_Tiny_Tree.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_87dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/tiny/lanm_ti2style_attack01.wav"
+		"wave"	")weapons/hero/tiny/lanm_ti2style_attack02.wav"
+		
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Tiny_Tree.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+	}
+}
+
+"Hero_Tiny_Tree.Movement"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/tiny/tree_rattle01.wav"
+		"wave"		"weapons/hero/tiny/tree_rattle02.wav"
+		"wave"		"weapons/hero/tiny/tree_rattle03.wav"
+		"wave"		"weapons/hero/tiny/tree_rattle04.wav"
+		"wave"		"weapons/hero/tiny/tree_rattle05.wav"
+		"wave"		"weapons/hero/tiny/tree_rattle06.wav"
+	}	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_Tiny_Tree.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/tiny/tiny_tree_impact_01.wav"
+		"wave"	")weapons/hero/tiny/tiny_tree_impact_02.wav"
+	}	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

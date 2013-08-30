@@ -1,0 +1,8 @@
+// ### This basic VMT was written based on the E:\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_debris/lantern002.vtf"
+	$specTexture "models/props_debris/lantern002_spec"
+	$specular_bloom .5
+	"$fow"                          "_rt_fog_of_war"
+}

@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/lina/lina2_color"
+	"$normalmap" "models/development/flatnormal"
+   	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+
+
+	$SPECULAREXPONENT 3
+	$SPECULARSCALE 5
+	$SPECULARBLENDTOFULL 1
+
+	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

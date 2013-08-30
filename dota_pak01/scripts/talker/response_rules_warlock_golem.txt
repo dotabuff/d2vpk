@@ -1,0 +1,111 @@
+criterion "Iswarlock_golem" "classname" "npc_dota_warlock_golem" weight 5 required
+criterion "IsEnemywarlock_golem" "targetclassname" "npc_dota_warlock_golem" weight 5 required
+criterion "IsAllywarlock_golem" "nearby_ally" "npc_dota_warlock_golem" weight 5 required
+
+Response warlock_golem_Spawn
+{
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_01.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_02.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_03.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_03a.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_04.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_04a.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_05.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_06.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_07.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_08.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_spawn_18.vcd" nodelay noscene 
+}
+
+Rule warlock_golem_Spawn_Rule
+{
+	criteria Spawn Iswarlock_golem 
+	response warlock_golem_Spawn
+}
+
+Response warlock_golem_Move
+{
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_01.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_02.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_03.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_04.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_05.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_06.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_07.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_08.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_12.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_14.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_15.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_16.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_17.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_18.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_move_19.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_sfx_01.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_sfx_02.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_sfx_03.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_sfx_04.vcd" nodelay noscene 
+}
+
+Rule warlock_golem_Move_Rule
+{
+	criteria Move Iswarlock_golem 
+	response warlock_golem_Move
+}
+
+Response warlock_golem_Attack
+{
+	scene "scenes/warlock_golem/warlock_golem_wargol_attack_01.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_attack_02.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_attack_03.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_attack_06.vcd" nodelay noscene 
+}
+
+Rule warlock_golem_Attack_Rule
+{
+	criteria Attack Iswarlock_golem 
+	response warlock_golem_Attack
+}
+
+Response warlock_golem_Pain
+{
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_01.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_02.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_03.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_04.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_05.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_06.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_07.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_08.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_09.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_hit_10.vcd" nodelay noscene 
+}
+
+Rule warlock_golem_Pain_Rule
+{
+	criteria Pain Iswarlock_golem 
+	response warlock_golem_Pain
+}
+
+Response warlock_golem_Death
+{
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_01.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_02.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_03.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_04.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_05.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_06.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_07.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_08.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_09.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_10.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_11.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_12.vcd" nodelay noscene 
+	scene "scenes/warlock_golem/warlock_golem_wargol_death_15.vcd" nodelay noscene 
+}
+
+Rule warlock_golem_Death_Rule
+{
+	criteria Death Iswarlock_golem 
+	response warlock_golem_Death
+}
+

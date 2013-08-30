@@ -1,0 +1,32 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/necrolyte/shoulders_color"
+	"$normalmap" "models/heroes/necrolyte/shoulders_normal"
+	$MASKMAP2 "models\heroes\necrolyte/shoulders_mask2"
+	$MASKMAP1 "models\heroes\necrolyte/shoulders_mask1"
+	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+	"$alphatest" "1"
+
+	$SPECULAR_BLOOM_SCALE      2
+	$SPECULAR_BLOOM_COLOR "[0 1 .3]"
+	$SPECULAR_BLOOM_SHIFT 0
+
+	$SPECULAREXPONENT 30
+
+	$SPECULARSCALE 4
+	$RIMLIGHTSCALE .75
+	$AMBIENTSCALE 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,32 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/beastmaster/beastmaster_beast_color"
+	"$normalmap" "models/heroes/beastmaster/beastmaster_beast_normal"
+	"$maskmap1" "models/heroes/beastmaster/beastmaster_beast_masks1"
+	"$maskmap2" "models/heroes/beastmaster/beastmaster_beast_masks2"
+   	
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+
+	$SPECULAREXPONENT 6
+	$SPECULARSCALE 22
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE .3
+//	$RIMLIGHTBLENDTOFULL 1
+	$AMBIENTSCALE 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

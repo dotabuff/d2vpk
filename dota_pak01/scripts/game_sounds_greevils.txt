@@ -1,0 +1,1748 @@
+
+"Greevil.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.6, 1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100, 110"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/greevil/preattack01.wav"
+		"wave"	"weapons/creep/greevil/preattack02.wav"
+		"wave"	"weapons/creep/greevil/preattack03.wav"
+		"wave"	"weapons/creep/greevil/preattack04.wav"
+		"wave"	"weapons/creep/greevil/preattack05.wav"
+		"wave"	"weapons/creep/greevil/preattack06.wav"
+		"wave"	"weapons/creep/greevil/preattack07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Greevil.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100, 110"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/greevil/attack01.wav"
+		"wave"	"weapons/creep/greevil/attack02.wav"
+		"wave"	"weapons/creep/greevil/attack03.wav"
+		"wave"	"weapons/creep/greevil/attack04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+
+"Miniboss_Greevil.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"80, 90"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/greevil/preattack01.wav"
+		"wave"	"weapons/creep/greevil/preattack02.wav"
+		"wave"	"weapons/creep/greevil/preattack03.wav"
+		"wave"	"weapons/creep/greevil/preattack04.wav"
+		"wave"	"weapons/creep/greevil/preattack05.wav"
+		"wave"	"weapons/creep/greevil/preattack06.wav"
+		"wave"	"weapons/creep/greevil/preattack07.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Miniboss_Greevil.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/greevil/attack01.wav"
+		"wave"	"weapons/creep/greevil/attack02.wav"
+		"wave"	"weapons/creep/greevil/attack03.wav"
+		"wave"	"weapons/creep/greevil/attack04.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.BladeFuryStart"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/juggernaut/bladefury_start_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.BladeFuryStop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/juggernaut/bladefury_stop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+
+}
+
+"Greevil.BladeFury.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh03.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.0"
+			"input_max" "0.1"
+			}
+		}
+	}
+}
+
+"Greevil.Bloodlust.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.Bloodlust.Target"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.Bloodlust.Target.FP"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_target_fp.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "1.5"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.ColdSnap.Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			"weapons/hero/faceless_void/time_walk.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.ColdSnap"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/invoker/cold_snap.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.ColdSnap.Freeze"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/lich/attack.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Greevil.Decrepify"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/pugna/decrepify.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.Diabolic_Edict_lp"
+{	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/leshrac/diabolic_edict_lp.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "500"
+			}
+   			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Greevil.Diabolic_Edict"
+{	
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125, 135"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/leshrac/diabolic_edict01.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict02.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict03.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict04.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict05.wav"
+		"wave"			"weapons/hero/leshrac/diabolic_edict06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+   		}
+	}
+}
+
+"Greevil.Earthshock"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/Ursa/Ursa_EarthShock.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.EchoSlam"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/earthshaker/echo_slam.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Greevil.EchoSlamEcho"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125, 135"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/earthshaker/echo01.wav"
+		"wave"			"weapons/hero/earthshaker/echo02.wav"
+		"wave"			"weapons/hero/earthshaker/echo03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "4500"
+			}
+		}
+	}
+}
+
+"Greevil.EchoSlamSmall"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/earthshaker/echo_slam_small.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.FatalBonds" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/warlock/fatal_bonds_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Greevil.FatalBondsDamage" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/warlock/fatal_bonds_damage.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "sfx_random_delay_start"
+			"import_stack" "dota_poly_limiting_start"
+			"get_random_delay"
+			{
+			"input_min" "0.00"
+			"input_max" "0.15"
+			}
+			
+			"limit_sound"
+			{
+				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+				"match_substring" "true"
+				"match_entry" "FatalBondsDamage"
+			}
+		}
+	}
+}
+
+"Greevil.FleshGolem.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/undying/flesh_golem_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Greevil.FleshGolem.Aura"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/undying/soul_rip_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Greevil.FleshGolem.End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/undying/soul_rip_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Greevil.IceWall.Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"80, 90"
+	"wave"			")weapons/hero/ancient_apparition/cold_feet.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"Greevil.IceWall.Slow"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"125"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/invoker/ice_wall_slow01.wav"
+		"wave"			")weapons/hero/invoker/ice_wall_slow02.wav"
+		"wave"			")weapons/hero/invoker/ice_wall_slow03.wav"
+		"wave"			")weapons/hero/invoker/ice_wall_slow04.wav"
+		"wave"			")weapons/hero/invoker/ice_wall_slow05.wav"
+		"wave"			")weapons/hero/invoker/ice_wall_slow06.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Greevil.LagunaBlade"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/lina/lagunablade.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.LagunaBladeImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/lina/lagunablade_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Greevil.LeechSeed.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/treant/leech_seed_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.LeechSeed.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			"weapons/hero/treant/leech_seed_target.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.LeechSeed.Tick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/treant/leech_seed_tick.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.MagicMissile"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/vengeful_spirit/magic_missile1.wav"
+		"wave"	")weapons/hero/vengeful_spirit/magic_missile2.wav"
+		"wave"	")weapons/hero/vengeful_spirit/magic_missile3.wav"
+		"wave"	")weapons/hero/vengeful_spirit/magic_missile4.wav"
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.MagicMissileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"	")weapons/hero/vengeful_spirit/magic_missile_impact.wav"
+	"pitch"			"125"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+
+"Greevil.Maledict_Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/witch_doctor/maledict_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.Maledict_CastFail"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/witch_doctor/maledict_fail.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Greevil.Maledict_Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/witch_doctor/maledict_loop.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+
+			"volume_fade_out"
+			{
+				"input_max" "0.5"
+			}
+		}
+	}
+}
+
+"Greevil.Maledict_Tick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/witch_doctor/maledict_tick.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.NaturesAttendantsCast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/enchantress/natures_attendants.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.Strike.Start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/antimage/blink_out.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Greevil.Strike.End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/antimage/blink_in.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Greevil.PoisonNova"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"		")weapons/hero/venomancer/venomancer_poison_nova.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+
+}
+
+"Greevil.PoisonNovaImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"125"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/venomancer/venomancer_venomous_gale_impact1.wav"
+		"wave"		")weapons/hero/venomancer/venomancer_venomous_gale_impact2.wav"
+		"wave"		")weapons/hero/venomancer/venomancer_venomous_gale_impact3.wav"
+	}
+}
+
+
+"Greevil.Purification"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/omniknight/purification.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.ShadowStrike"  
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/queenofpain/queenofpain_shadowstrike.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.Shadow_Wave"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/dazzle/shadow_wave.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Greevil.AttackHookExtend"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/pudge/hook_throw.wav"
+
+}
+
+"Greevil.AttackHookImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/pudge/hook_impact.wav"
+
+}
+
+"Greevil.AttackHookRetract"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/pudge/hook_throw.wav"
+
+}
+
+"Greevil.AttackHookRetractStop"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/pudge/hook_retract_stop.wav"
+}
+
+"Greevil.Rot"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/pudge/rot.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_in"
+			{
+				"input_max" "0.25"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "0.25"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
+			}
+		}
+	}
+}
+
+"Greevil.Black_Hole"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/enigma/black_hole_loop.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "2000"
+			}
+		}
+	}
+}
+
+"Greevil.Black_Hole.Stop"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/enigma/black_hole_stop.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1000"
+			}
+		}
+	}
+}
+
+"Item.GreevilWhistle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")items/greevil_whistle.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}
+
+"Item.GreevilWhistle.Return"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"wave"			")items/greevil_whistle_return.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}
+
+"Greevil.Toggle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Greevil.Transformed"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"90"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/greevil/preattack01.wav"
+		"wave"	"weapons/creep/greevil/preattack02.wav"
+		"wave"	"weapons/creep/greevil/preattack06.wav"
+		"wave"	"weapons/creep/greevil/preattack07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Miniboss_Greevil.Death"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/greevil/death01.wav"
+		"wave"	"weapons/creep/greevil/death02.wav"
+		"wave"	"weapons/creep/greevil/death03.wav"
+		"wave"	"weapons/creep/greevil/death04.wav"
+		"wave"	"weapons/creep/greevil/death05.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+////////////////////////////////////////////////////////////////////
+
+"FrostivusGameStart.DireSide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_96dB"
+	"wave"			")music/stingers/greevil_stingers/greevil_game_start.mp3"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_music_spatial"
+			"position_array"
+			{
+				"input_entry_count" "1"
+
+				"input_position_0[0]"   "5545.06" 
+				"input_position_0[1]"   "4998.54"
+				"input_position_0[2]"   "1243.07"
+			}
+	       "source_distance"
+		   {
+			   "force_not_player_sound" "true"
+			}
+			"mixer"
+			{
+				"set_mixgroup_to_channel" "true"
+				"mixgroup" "Ultimates"
+			}
+			"volume_apply_musicvolume_convar"
+			{
+				"input1" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "12000"
+			}
+		}
+	}
+}
+
+"FrostivusGameStart.RadiantSide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_96dB"
+	"wave"			")music/stingers/greevil_stingers/greevil_game_start.mp3"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_music_spatial"
+			"position_array"
+			{
+				"input_entry_count" "1"
+
+				"input_position_0[0]"   "-5791.23"
+				"input_position_0[1]"   "-5426.02" 
+				"input_position_0[2]"   "1243.07"
+			}
+	       "source_distance"
+		   {
+			   "force_not_player_sound" "true"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+				"set_mixgroup_to_channel" "true"
+			}
+			"volume_apply_musicvolume_convar"
+			{
+				"input1" "1.0"
+			}
+
+			"speakers_spatialize"
+			{
+				"input_radius"  "12000"
+			}
+		}
+	}
+}
+
+"UnitMovement.OnIce.Skates"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\shared\skate_loop01.wav"
+		"wave"		"physics\movement\hero\shared\skate_loop02.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.3"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"UnitMovement.OnIce.NoSkates"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\shared\no_skates01.wav"
+		"wave"		"physics\movement\hero\shared\no_skates02.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.3"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1250.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+
+"LootGreevil.Skates"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"physics\footsteps\creeps\neutral\greevil\skate01.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\skate02.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\skate03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"LootGreevil.Hum"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"	"physics\footsteps\creeps\neutral\greevil\hum01.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\hum02.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\hum03.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\hum04.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\hum05.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\hum06.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\hum07.wav"
+		"wave"	"physics\footsteps\creeps\neutral\greevil\hum08.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+		}
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+"Frostivus.Item.Campfire.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/doom_bringer/idle_loop.wav"
+}
+
+"Frostivus.Item.Snowball.Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"110, 120"
+	"wave"			"weapons\hero\phantom_lancer\preattack01.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Frostivus.Item.Snowball.Target"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+		"wave"	"weapons\hero\crystal_maiden\impact01.wav"
+		"wave"	"weapons\hero\crystal_maiden\impact02.wav"
+		"wave"	"weapons\hero\crystal_maiden\impact03.wav"
+	}
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+
+"Frostivus.Item.Coal.Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"110, 120"
+	"wave"			"weapons/hero/warlock/demon_preattack.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Frostivus.Item.Coal.Target"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"110, 120"
+	"wave"			"weapons/hero/warlock/attack3.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+
+"Frostivus.PointScored.Team"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_NONE"
+
+	"wave"			"misc/greevil_point_team.wav"
+}
+
+"Frostivus.PointScored.Enemy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_NONE"
+
+	"wave"			")misc/greevil_point_enemy.wav"
+}
+

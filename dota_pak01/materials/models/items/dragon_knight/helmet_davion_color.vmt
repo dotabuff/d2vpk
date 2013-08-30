@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	$baseTexture "models/items/dragon_knight/Helmet_Davion_color"
+	"$normalmap" "models/items/dragon_knight/Helmet_Davion_normal"
+	"$maskmap2" "models/items/dragon_knight/Helmet_Davion_mask2"
+	"$maskmap1" "models/items/dragon_knight/Helmet_Davion_mask1"
+	"$nocull" "1"
+	$IgnoreBudgetCheck 1
+	
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+	//$SpecularBlendtoFull 1
+	$SPECULAREXPONENT 11
+	$SPECULARSCALE 5
+ // $SPECULARCOLOR "[1 .50 .0]"
+//	$RIMLIGHTCOLOR ".8 1 1"
+	$RIMLIGHTSCALE 1
+
+	//$COLORWARP 1
+	$alphatest 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/lion/lion_body_color"
+	"$normalmap" "models/heroes/lion/lion_body_normals"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	$MASKMAP1 "models\heroes\lion\lion_body_masks1"
+	$MASKMAP2 "models\heroes\lion\lion_body_masks2"
+	$SPECULAR_BLOOM_SCALE 0
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 15
+	$RIMLIGHTCOLOR "[0.5 0.8 0.8]"	
+//	$SPECULARBLENDTOFULL 1
+	$SPECULARCOLOR "[0.7 0.9 1]"
+
+	$RIMLIGHTSCALE 10
+	$AMBIENTSCALE 1
+	$ALPHATEST 1
+
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

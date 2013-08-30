@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/earthshaker/belt_color"
+	$normalmap "models/heroes/earthshaker/belt_normal"
+	$maskmap1 "models/heroes/earthshaker/belt_mask1"
+	$maskmap2 "models/heroes/earthshaker/belt_mask2"
+	$diffusewarp "models/heroes/earthshaker/earthshaker_lightwarp"
+//	$FRESNELWARP "models/heroes/earthshaker/earthshaker_fresnelranges"
+
+	$SPECULAREXPONENT 30
+
+	$SPECULARSCALE 4
+
+
+	$RIMLIGHTSCALE	1
+	$AMBIENTSCALE 1
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

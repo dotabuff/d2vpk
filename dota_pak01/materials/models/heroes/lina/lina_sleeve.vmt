@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/lina/lina_sleeve_color"
+	"$normalmap" "models/heroes/lina/lina_sleeve_normal"
+	"$maskmap1" "models/heroes/lina/lina_sleeve_masks1"
+	"$maskmap2" "models/heroes/lina/lina_sleeve_masks2"
+
+	"$alphatest" "1"
+
+	//"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	
+	"$detail1" "models/heroes/lina/lina_fire_motion"
+
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 3
+	$RIMLIGHTSCALE	1
+	//$specularcolor "[2 .8 .7]"
+	$RIMLIGHTCOLOR "[1 1 .75]"
+
+//	$COLORWARP 1
+
+	$DETAIL1BLENDMODE 2
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.15
+			"texturescrollangle"	45
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

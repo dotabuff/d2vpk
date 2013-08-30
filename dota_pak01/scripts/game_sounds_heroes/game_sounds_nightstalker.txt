@@ -1,0 +1,343 @@
+
+"Hero_Nightstalker.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"115, 125"
+	"rndwave"
+	{
+		"wave"		")weapons\hero\shared\large_blade\whoosh01.wav"
+		"wave"		")weapons\hero\shared\large_blade\whoosh02.wav"
+		"wave"		")weapons\hero\shared\large_blade\whoosh03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.15"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Nightstalker.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 0.7"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons\hero\nightstalker\attack01.wav"
+		"wave"	")weapons\hero\nightstalker\attack02.wav"
+		"wave"	")weapons\hero\nightstalker\attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Nightstalker.Attack.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+ 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Nightstalker.Attack.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 0.7"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/shared/large_blade/follow_thru01.wav"
+		"wave"			")weapons/hero/shared/large_blade/follow_thru02.wav"
+		"wave"			")weapons/hero/shared/large_blade/follow_thru03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+// 		"update_stack"
+// 		{
+// 			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+//  			}
+// 			"mixer"
+// 			{
+// 				"mixgroup" "BaseAttacks"
+// 			}
+// 			"speakers_spatialize"
+// 			{
+// 				"input_radius"  "150"
+// 			}
+// 		}
+	}
+}
+
+"Hero_Nightstalker.Void"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons\hero\nightstalker\dota_nightstalker_void.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+
+"Hero_Nightstalker.Trickling_Fear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons\hero\nightstalker\dota_nightstalker_trickling_fear.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Nightstalker.Trickling_Fear_lp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons\hero\nightstalker\dota_nightstalker_trickling_fear_lp.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Nightstalker.Trickling_Fear_end"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons\hero\nightstalker\dota_nightstalker_trickling_fear_end.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Nightstalker.Darkness"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons\hero\nightstalker\darkness.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"Hero_Nightstalker.Darkness.Team"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons\hero\nightstalker\darkness.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "20000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "10000"
+			}
+		}
+	}
+}
+
+"Hero_Nightstalker.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+"Hero_Nightstalker.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+
+// "Hero_Nightstalker.Movement"
+// {
+// 	"channel"		"CHAN_BODY"
+// 	"volume"		"0.3, 0.6"
+// 	"soundlevel"  	"SNDLVL_72dB"
+// 	"pitch"			"95,105"
+// 	"rndwave"
+// 	{
+// 		"wave"		"physics\movement\hero\nightstalker\dota_nightstalker_movement_01.wav"
+// 		"wave"		"physics\movement\hero\nightstalker\dota_nightstalker_movement_02.wav"
+// 		"wave"		"physics\movement\hero\nightstalker\dota_nightstalker_movement_03.wav"
+// 		"wave"		"physics\movement\hero\nightstalker\dota_nightstalker_movement_04.wav"
+// 	}
+// 	"soundentry_version" "2"
+// 	"operator_stacks"
+// 	{
+// 		"start_stack"
+// 		{
+// 			"import_stack" "start_block_at_distance"
+// 			"block_dist"
+// 			{
+// 				"input2" "2000"
+// 			}
+// 		}
+// 	}
+// }

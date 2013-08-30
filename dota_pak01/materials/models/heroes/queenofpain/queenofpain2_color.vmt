@@ -1,0 +1,28 @@
+
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/QueenOfPain/queenofpain2_color"
+	"$normalmap" "models/development/flatnormal"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+//	$FRESNELWARP "models/heroes/QueenOfPain/QueenOfPain_fresnelranges"
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$SPECULAREXPONENT 2
+	$SPECULARSCALE 6
+		$IgnoreBudgetCheck 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

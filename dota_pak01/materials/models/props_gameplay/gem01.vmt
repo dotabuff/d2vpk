@@ -1,0 +1,42 @@
+"CustomHero"
+{
+	"$basetexture" "models\props_gameplay\gem_color"
+
+	"$normalmap" "models/development/flatnormal"
+//	"$normalmap" "models\props_gameplay\gem_normal"
+//	"$detail1"  "models\props_gameplay\item_pulse.vtf"
+	"$maskmap1" "models\props_gameplay\gem_mask1"
+	"$maskmap2" "models\props_gameplay\gem_mask2"
+
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 4
+//	$SPECULARCOLOR "[0 .003 0]"
+
+//	$SPECULAR_BLOOM_SCALE 0
+	
+	$RIMLIGHTSCALE 8
+//	$AMBIENTSCALE 1
+	
+	$RIMLIGHTCOLOR "[0 0.75 .5]"
+
+//	$DETAIL1BLENDMODE 1
+//	$DETAIL1SCALE 2
+//	$DETAIL1BLENDFACTOR .2
+//	$DETAIL1BLENDTOFULL 
+
+
+//	"Proxies"
+//	{
+//		"TextureScroll"		
+//		{
+//			"texturescrollvar"	"$detail1texturetransform"
+//			"texturescrollrate"	".8"
+//			"texturescrollangle"	"90"
+//		}
+//
+//	}
+
+
+
+}

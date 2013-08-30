@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/chen/chen_mount_color"
+	"$normalmap" "models/heroes/chen/chen_mount_normal"
+	"$maskmap1" "models/heroes/chen/chen_mount_masks1"
+	"$maskmap2" "models/heroes/chen/chen_mount_masks2"
+
+  $alphatest 1   
+	"$diffusewarp" "models/heroes/chen/chen_diffusewarp"
+//	"$nocull" "1"
+
+        $SPECULAREXPONENT 20
+	$SPECULARSCALE 1
+	
+	//$SPECULARCOLOR "[1 1 .5]"
+	
+	
+	
+	$RIMLIGHTCOLOR "[1 1 .9]"
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+     	//$FRESNELWARP "models/heroes/chen/chen_fresnelranges"
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

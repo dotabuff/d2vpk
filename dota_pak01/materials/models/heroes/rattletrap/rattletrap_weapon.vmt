@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/rattletrap/rattletrap_weapon_color"
+	"$normalmap" "models/heroes/rattletrap/Rattletrap_Weapon_Normal"
+	"$maskmap1" "models/heroes/rattletrap/rattletrap_weapon_mask1"
+	"$maskmap2" "models/heroes/rattletrap/rattletrap_weapon_mask2"
+	//"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	//$SpecularBlendtoFull 1
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 2
+	//$SPECULARCOLOR "[1 .45 0]"
+	$RIMLIGHTCOLOR ".8 1 1"
+	$RIMLIGHTSCALE 1	
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

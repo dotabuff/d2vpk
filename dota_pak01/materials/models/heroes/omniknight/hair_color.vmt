@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/omniknight/hair_color"
+	"$normalmap" "models/heroes/omniknight/hair_normal"
+	"$maskmap1"  "models/heroes/omniknight/hair_mask1"
+	"$maskmap2"  "models/heroes/omniknight/hair_mask2"
+	
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 1
+    $RIMLIGHTSCALE 1
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	$DETAIL1BLENDTOFULL 0
+
+	//$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

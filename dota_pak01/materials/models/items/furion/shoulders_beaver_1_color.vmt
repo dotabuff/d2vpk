@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/furion/shoulder_beaver_1_color"
+	"$normalmap" "models/items/furion/shoulder_beaver_1_normal"
+//	"$maskmap2" "dev/reflectivity_10"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+
+	$SPECULAREXPONENT 32
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 5
+
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	1.0
+	$RIMLIGHTCOLOR	"[.85 1 1]"
+
+
+
+
+	$cloakintensity 0.85
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$baseTexture" 	"models/heroes/drow/haircowl_color"
+	"$normalmap" 	"models/heroes/drow/haircowl_normal"
+	"$maskmap1" 	"models/heroes/drow/haircowl_masks1"
+	"$maskmap2" 	"models/heroes/drow/haircowl_masks2"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 2
+
+
+	$RIMLIGHTSCALE	1
+	$alphatest 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

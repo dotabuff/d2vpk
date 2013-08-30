@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$basetexture"	"models/heroes/antimage/antimage_weapon"
+	"$normalmap" "models/heroes/antimage/antimage_weapon_normal"
+	"$maskmap1" "models/heroes/antimage/antimage_weapon_masks1"
+	"$maskmap2" "models/heroes/antimage/antimage_weapon_masks2"
+
+		"$alphatest" "1"
+	
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 7
+
+	$RIMLIGHTSCALE .5
+	$AMBIENTSCALE 1
+	$ENVMAP "models/cubemaps/default_gray"
+
+	$ENVMAPINTENSITY 11
+	$ENVMAPBLENTOFULL 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
+

@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	$baseTexture "models\creeps\item_creeps\necro_archer_color"
+	"$normalmap" "models\creeps\item_creeps\necro_archer_normal"
+		"$maskmap1" "models\heroes\bane\bane_body_mask1"
+	"$maskmap2" "models\heroes\bane\bane_body_mask2"
+
+	$SPECULAREXPONENT 25			
+
+	$SPECULARSCALE 3
+	$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE	1
+	$RIMBLENDTOFULL	1
+
+// Status Effects
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

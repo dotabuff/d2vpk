@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/warlock/warlock_fourleg_demon/Warlock_fourleg_demon_colorb"
+	"$normalmap" "models/items/warlock/warlock_fourleg_demon/Warlock_fourleg_demon_normal"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/items/warlock/warlock_fourleg_demon/masks1"
+	"$maskmap2" "models/items/warlock/warlock_fourleg_demon/masks2"
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 1
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 1 .8]"
+
+	$RIMLIGHTCOLOR "[1 1 .6]"
+	$RIMLIGHTSCALE .8
+	$AMBIENTSCALE 1.2
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

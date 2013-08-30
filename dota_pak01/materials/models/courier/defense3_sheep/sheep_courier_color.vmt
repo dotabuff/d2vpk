@@ -1,0 +1,31 @@
+CustomHero
+{
+$baseTexture "models/courier/defense3_sheep/sheep_courier_color.vtf"
+$normalmap "models/courier/defense3_sheep/sheep_courier_normal"
+$maskmap1 "models/courier/defense3_sheep/sheep_courier_mask1"
+$maskmap2 "models/courier/defense3_sheep/sheep_courier_mask2"
+//$normalmap "models/development/flatnormal"
+
+
+
+
+$SPECULAREXPONENT 3
+$SPECULARSCALE .25
+
+$DIFFUSEWARPBLENDTOFULL .52
+
+
+//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+//$RIMLIGHTSCALE 1.35
+
+$cloakPassEnabled 1
+Proxies
+{
+invis_proxy
+{
+}
+status_proxy
+{
+}
+}
+}

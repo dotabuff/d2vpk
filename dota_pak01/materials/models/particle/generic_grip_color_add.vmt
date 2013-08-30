@@ -1,0 +1,17 @@
+// ### This basic VMT was written based on the D:\dev\tools\python\templateStrings.pyc script ###
+"CustomHero"
+{
+	$baseTexture "models/particle/generic_grip_color"
+	"$normalmap" "models/particle/generic_grip_normal"
+
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 150
+
+	$RIMLIGHTSCALE	300
+	$AMBIENTSCALE 150
+	
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	$additive 1
+        $ALLOWDIFFUSEMODULATION 1
+}

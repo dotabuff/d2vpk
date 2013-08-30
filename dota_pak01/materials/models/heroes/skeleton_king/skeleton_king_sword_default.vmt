@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/skeleton_king/skeleton_king_sword"
+	"$normalmap" "models/heroes/skeleton_king/skeleton_king_normal_sword"
+	"$maskmap1" "models/heroes/skeleton_king/skeleton_king_sword_masks1"
+	"$maskmap2" "models/heroes/skeleton_king/skeleton_king_sword_masks2"
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 7
+
+	$RIMLIGHTSCALE .5
+	$AMBIENTSCALE 1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

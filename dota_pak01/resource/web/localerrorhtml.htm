@@ -1,0 +1,33 @@
+<html><title>Page Load Error</title>
+<body bgcolor="#14171A" width="100%">
+<img src="page_load_error.png" border="0" style='position:absolute; top:50px; left:70px;'/>
+<div id="message" style="position:absolute; top:200px; left:500px;">
+<p id="errorTitle" style='font-size: 36px; font-family: Georgia, "Bitstream Charter", serif; color:#ffffff;'>Page Currently Unavailable</p>
+<p id="errorDesc" style='font-family: Arial, sans-serif; font-size:14px; color:#ffffff;'>I'm sure that someone is working hard to fix the problem...<br />Why not queue for a match instead?</p>
+</div>
+
+<script type="text/javascript">
+    function GetParam(paramName) {
+        var strURL = window.location.href;
+        var splitURL = strURL.split("?");
+        var strParams = splitURL[1].split("&");
+        for (var i = 0; i < strParams.length; i++)
+        {
+            var args = strParams[i].split("=");
+            if (args[0] == paramName)
+                return decodeURIComponent(args[1]);
+        }
+        return "Unknown";
+    }
+
+    function UpdateErrorLabels() {
+        var strTitle = GetParam("title");
+        var strDescription = GetParam("text");
+        document.getElementById("errorTitle").innerHTML = strTitle;
+        document.getElementById("errorDesc").innerHTML = strDescription;
+    }
+    UpdateErrorLabels();
+</script>
+
+</body>
+</html>

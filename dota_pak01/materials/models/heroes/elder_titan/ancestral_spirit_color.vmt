@@ -1,0 +1,49 @@
+
+"CustomHero"
+{
+	$baseTexture "models/heroes/elder_titan/ancestral_spirit_color"
+	"$normalmap" "models/heroes/elder_titan/ancestral_spirit_normal"	
+	"$maskmap1" "models/heroes/elder_titan/ancestral_spirit_mask1"
+	"$maskmap2" "models/heroes/elder_titan/ancestral_spirit_mask2"
+	
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+//	"$alphatest" "1"
+	
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 3
+	$ENVMAPBLENTOFULL 1
+	
+	$MASKENVBYMETALNESS 1
+
+	$SPECULAR_BLOOM_SCALE 10
+	$SPECULAREXPONENT 15	
+	$SPECULARSCALE 100
+  	$SPECULARCOLOR "[.16 0.94 .79]"
+	$RIMLIGHTCOLOR "[.16 0.94 .79]"
+	
+	$AMBIENTSCALE 8
+	$RIMLIGHTSCALE 140
+	$RIMLIGHTBLENDTOFULL 1
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	$DETAIL1BLENDTOFULL 0
+	
+	$COLORWARP "models/heroes/statuseffects/colorwarp_electrical"
+	$COLORWARPINTENSITY 1
+	
+
+  	$IgnoreBudgetCheck 1
+
+
+	"$cloakPassEnabled" "1"
+	$CLOAK_BLUR_AMOUNT        0.005
+
+	$cloakintensity .6   //blend % with original base color
+	$cloakfactor .4      
+	$refractamount 0.03     //level of refraction
+
+        //$ALLOWDIFFUSEMODULATION 1
+
+}

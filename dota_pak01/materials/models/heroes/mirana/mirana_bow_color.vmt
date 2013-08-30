@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/mirana/mirana_bow_color"
+	"$normalmap" "models/heroes/mirana/mirana_bow_normal"
+	"$maskmap1" "models/heroes/mirana/mirana_bow_masks1"
+	"$maskmap2" "models/heroes/mirana/mirana_bow_masks2"
+//	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 10
+	$RIMLIGHTSCALE	1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+
+
+	$rimlightcolor "[1 1 1]"
+	
+ 
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

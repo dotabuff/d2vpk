@@ -1,0 +1,46 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/vengeful/vengeful_spirit_color"
+	"$normalmap" "models/heroes/vengeful/vengeful_spirit_normal"
+		"$detail1" "models/heroes/vengeful/vengeful_glow.vtf"
+	"$maskmap1" "models/heroes/vengeful/vengeful_spirit_masks1"
+	"$maskmap2" "models/heroes/vengeful/vengeful_spirit_masks2"
+	"$fresnelwarp" "models/creeps/roshan/roshan_fresnelranges"
+
+//	$additive 1
+	$SPECULAREXPONENT 6
+	$SPECULARSCALE 3
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$SPECULAR_BLOOM_SCALE      0
+	
+
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[.3 .8 1]"
+	$RIMAMBIENCE 1
+
+
+	$AMBIENTSCALE 1
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.50
+			"texturescrollangle"	90
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+"ssao"
+{
+	$DEPTH_TEXTURE	"_rt_deferred_depth"
+	$QUARTER_DEPTH_TEXTURE	"_rt_ssao_quarter_depth"
+	$RANDOM_TEXTURE "dev/ssao_random"
+	$NORMAL_TEXTURE	"_rt_deferred_normal"
+	$bias 			.25
+	$strength 		2.5
+	$radius 		100.0
+}

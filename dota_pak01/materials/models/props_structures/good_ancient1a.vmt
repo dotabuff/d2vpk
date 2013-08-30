@@ -1,0 +1,9 @@
+// ### This basic VMT was written based on the E:\dota\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_structures/good_ancient1A"
+	  "$SPECTEXTURE" "models/props_structures/good_ancient1A_spec.vtf"
+	   $SPECULAR_BLOOM		.75
+		"$alphatest" "1"
+	"$fow"                          "_rt_fog_of_war"
+}

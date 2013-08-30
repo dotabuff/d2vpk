@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/rikimaru/rikimaru_shoulder_color"
+	"$normalmap" "models/heroes/rikimaru/rikimaru_shoulder_normal"
+	"$maskmap1" "models/heroes/rikimaru/rikimaru_shoulder_masks1"
+	"$maskmap2" "models/heroes/rikimaru/rikimaru_shoulder_masks2"
+//	"$nocull" "1"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	$SPECULAREXPONENT 20
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 5
+	$alphatest 1
+
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR	"[.85 1 1]"
+
+	$CLOAK_BLUR_AMOUNT        0.005
+	$refractamount .01     //level of refraction
+
+	$cloakintensity 0.75
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

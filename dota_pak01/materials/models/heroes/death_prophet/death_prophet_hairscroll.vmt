@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/death_prophet/death_prophet_hairscroll"
+	"$normalmap" "models/development/flatnormal"
+
+
+	$SPECULAR_BLOOM_SCALE      1
+	$SPECULAREXPONENT 23	
+	$SPECULARSCALE 6	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.3 0.3 0.3]"
+	//$SPECULARBLENDTOFULL 1
+	$alphatest 1
+
+	$RIMLIGHTSCALE 10
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$basetexturetransform"
+			"texturescrollrate"	"0.9"
+			"texturescrollangle"	"90"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

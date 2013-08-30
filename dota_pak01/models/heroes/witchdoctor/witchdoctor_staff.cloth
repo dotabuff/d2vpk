@@ -1,0 +1,53 @@
+ClothSystem
+{
+	
+	Cloth
+	{
+		debug			0
+		columns		1
+		rows			3
+		BonePrefix		"staff_skull_bottom_"
+		
+		damping			.3
+		gravity			"0.000000 0.000000 -600"
+		WorldFriction		0.300000
+		SpringStretchiness	0.100000
+		LocalForce			0.1
+		
+		StructSpringConstant	40.000000
+		StructSpringDamping		0.2500000
+		ShearSpringConstant		40.000000
+		ShearSpringDamping		0.2500000
+		BendSpringConstant		0.000000
+		BendSpringDamping		0.000000
+		
+		R0			"fixed"
+		R1			"mass	3.5"
+		R2			"mass	4.7500000"
+	}
+	Cloth
+	{
+		debug			0
+		columns			1
+		rows			3
+		BonePrefix		"staff_skull_top_"
+		
+		damping			1.000000
+		gravity			"0.000000 0.000000 -400"
+		WorldFriction		0.300000
+		SpringStretchiness	0.100000
+		LocalForce			0.4
+		FixedPointDamping	0.1
+		
+		StructSpringConstant	40.000000
+		StructSpringDamping		0.2500000
+		ShearSpringConstant		40.000000
+		ShearSpringDamping		0.2500000
+		BendSpringConstant		0.000000
+		BendSpringDamping		0.000000
+		
+		R0			"fixed"
+		R1			"mass	2.5"
+		R2			"mass	4.5"
+	}
+}

@@ -1,0 +1,63 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/obsidian_destroyer/obsidian_head_color"
+	"$normalmap" "models/heroes/obsidian_destroyer/obsidian_head_normal"
+	"$maskmap1" "models/heroes/obsidian_destroyer/obsidian_head_masks1"
+	"$maskmap2" "models/heroes/obsidian_destroyer/obsidian_head_masks2"
+	"$detail1" "models/heroes/obsidian_destroyer/obsidian_destroyer_motion"
+	
+
+	$FRESNELWARP "models/heroes/obsidian_destroyer/obsidian_destroyer_fresnelranges2"
+
+	$SPECULAR_BLOOM_SCALE  0
+	$alphatest 1
+
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+
+	$SPECULAREXPONENT 40
+	$SPECULARSCALE 4
+	$SPECULARCOLOR "[1 .8 1]"
+
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULAREXPONENTBLENDTOFULL 1
+
+	$DIFFUSEWARPBLENDTOFUL .5
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR "[1 1 .8]"
+	$RIMLIGHTBLENDTOFULL 1
+	
+
+
+
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.30
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

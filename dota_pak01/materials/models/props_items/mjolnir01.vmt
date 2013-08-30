@@ -1,0 +1,25 @@
+
+
+//"GlobalLitSimple"
+//{
+//same as props_gamplay props
+//$baseTexture "models/props_items/mjolnir01"
+//"$SPECTEXTURE" "models\props_gameplay\specular"
+//}
+
+
+
+"CustomHero"
+{
+	$baseTexture "models/props_items/mjolnir01"
+	"$normalmap" "models\development\flatnormal"
+	"$MASKMAP2" "models/props_items/mjolnir01_mask"
+	"$ENVMAP" "models/creeps/lane_creeps/creep_good_siege/creep_good_siege_envmap"
+	$SPECULAREXPONENT 30 
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$SPECULARBLENDTOFULL 0.25
+	$SPECULARCOLOR 1 1 1
+	$SPECULARSCALE 15
+	$RIMLIGHTSCALE	2
+
+}

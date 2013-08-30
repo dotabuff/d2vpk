@@ -1,0 +1,14 @@
+"Projected"
+{
+	
+	"$basetexture" "particle\projected_groundcracks_light"
+	//"$normalmap" 
+	//"$bumpmap" "models\props_destruction\glass_fracture_D_normal"
+	//"$basetexture" "particle\projected_crystalgravel"
+	$translucent 1
+	
+	$SOLID_RANGE 0.9
+	$ALPHA_RANGE 0.8
+	$falloff_range .35
+	$falloff_final .15
+}

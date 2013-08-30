@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	$baseTexture "models/props_gameplay/crystal_ring01"
+	"$normalmap" "models\development\flatnormal"
+	"$SPECTEXTURE" "models\props_gameplay\specular"
+
+	$nocull 1	
+
+	//$diffusewarp "models/heroes/kunkka/ghostship_diffusewarp"
+	//$FRESNELWARP "models/heroes/kunkka/ghostship_fresnelranges"
+
+	$SPECULAREXPONENT 50
+
+	$SPECULARSCALE 0
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+	$RIMLIGHTSCALE 2
+	$translucent 1
+	$additive 1
+
+	$rimlightcolor "[.1 .1 .5]"
+
+        $ALLOWDIFFUSEMODULATION 1
+}

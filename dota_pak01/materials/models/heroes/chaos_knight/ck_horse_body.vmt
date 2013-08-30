@@ -1,0 +1,60 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/chaos_knight/ck_horse_color"
+	"$normalmap" "models/heroes/chaos_knight/ck_horse_normal"
+
+	"$maskmap1" "models/heroes/chaos_knight/ck_horse_masks1"
+	"$maskmap2" "models/heroes/chaos_knight/ck_horse_masks2"
+
+//	$FRESNELWARP "models/heroes/chaos_knight/ck_horse_fresnelranges"
+
+	"$detail1" "models/heroes/chaos_knight/chaos_knight_motion_fire"
+
+
+//	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+//	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+	$SPECULAR_BLOOM_SCALE 0
+
+	//$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENT 14
+	$SPECULARSCALE .1
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 .8  .4]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[.4 .62 .7]"
+
+	$RIMAMBIENCE 1
+
+
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 2
+	$IgnoreBudgetCheck 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.30
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,32 @@
+"deferred_post_process"
+{
+	$ssao_tint			"[ 0.0 0.0 0.0 ]"
+	$ssao_intensity 	1.5
+	$fow 				"_rt_fog_of_war"
+	
+//	"$FOG_TEXTURE"			"effects/fog_world_00"
+//	"$FOG_HEIGHT_TEXTURE"		"dev/fow_clouds_00"				// uses the red and alpha channels!
+//	"$FOG_HEIGHT_WORLD_SCALE"		"564"
+//	"$FOG_HEIGHT_ADJUSTMENT"		"-34"
+//	"$FOG_HEIGHT_SCALE_1"		".5"
+//	"$FOG_HEIGHT_SCALE_2"		".5"
+//	"$FOG_HEIGHT_SCALE"		"128"
+//	"$FOG_HEIGHT_DRAW_SCALE_1"		"1"
+//	"$FOG_HEIGHT_DRAW_SCALE_2"		"564"
+//	"$FOG_HEIGHT_SCROLL"		"[ -0.072 0.016 -0.18 0.16 ]"
+
+//	$FOW_HEIGHT_TEXTURE		"dev/fow_clouds_00"
+//	$FOW_HEIGHT_SCROLL		"[ 0.018 -0.004 0.09 -0.04]"
+//	$FOW_HEIGHT_WORLD_SCALE	1600
+//	$FOW_HEIGHT_ADJUSTMENT	-200
+//	$FOW_HEIGHT_SCALE_1		1500
+//	$FOW_HEIGHT_SCALE_2		600
+//	$FOW_HEIGHT_SCALE		600
+//	$FOW_HEIGHT_COLOR		"[ 0.01 0.02 0.03 ]"
+
+	$FOW_DARKNESS		2.25
+	$FOW_GRAY_FACTOR	0.0025
+	$FOW_COLOR_FACTOR	0.035	
+	$FOW_GRAY_HILIGHTS	0.1
+	$FOW_COLOR		"[ 0.0 1.5 2.25 ]"
+}

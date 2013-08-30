@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\undying\undying_zombie"
+	"$normalmap" "models\heroes\undying\undying_zombie_normal"
+	"$maskmap1" "models\heroes\undying\undying_zombie_mask1"
+	"$maskmap2" "models\heroes\undying\undying_zombie_mask2"
+
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE .25
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+//	$AMBIENTSCALE .5
+//	$SPECULAREXPONENT 100
+//	$SPECULARSCALE 2
+//	$RIMLIGHTSCALE 1	
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

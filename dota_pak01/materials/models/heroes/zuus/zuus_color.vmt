@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/zuus/zuus_color"
+	"$normalmap" "models/heroes/zuus/zuus_normal"
+	"$maskmap1" "models/heroes/zuus/zuus_masks1"
+	"$maskmap2" "models/heroes/zuus/zuus_masks2"
+
+	"$diffusewarp" "models/heroes/zuus/zuus_lightwarp"
+	$FRESNELWARP "models/heroes/windrunner/windrunner_fresnelranges"
+	"$alphatest" "1"
+
+	$SPECULAREXPONENT 20
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 4
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR	"[.85 1 1]"
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

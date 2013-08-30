@@ -1,0 +1,51 @@
+
+"CustomHero"
+{
+	$baseTexture "models/heroes/shadow_demon/shadow_demon_cape_color"
+	"$normalmap" "models/heroes/shadow_demon/shadow_demon_cape_normal"
+	"$detail1" "models/heroes/shadow_demon/shadow_demon_glow.vtf"
+	"$maskmap1" "models/heroes/shadow_demon/shadow_demon_cape_masks1"
+	"$maskmap2" "models/heroes/shadow_demon/shadow_demon_belt_masks2"
+
+	$IgnoreBudgetCheck 1
+
+
+//	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+//	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+
+	//$SPECULARBLENDTOFULL 1
+	$alphatest 1
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 8
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[.6 .4 1]"
+//	$SPECULARCOLOR "[.4 .1 1]"
+	$RIMLIGHTSCALE 2.3
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+
+
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.1
+			"texturescrollangle"	90
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

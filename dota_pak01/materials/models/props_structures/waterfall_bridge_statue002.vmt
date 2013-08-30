@@ -1,0 +1,8 @@
+// ### This basic VMT was written based on the E:\dota\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_structures/waterfall_bridge_statue002"
+	$specTexture "models/props_structures/waterfall_bridge_statue002_spec"
+	$specular_intensity .5
+		"$fow"                          "_rt_fog_of_war"
+}

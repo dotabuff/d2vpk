@@ -1,0 +1,37 @@
+
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/windrunner/windrunner_bow_color"
+	"$normalmap" "models/heroes/windrunner/windrunner_bow_normal"
+	"$maskmap1" "models/heroes/windrunner/windrunner_bow_mask1"
+	"$maskmap2" "models/heroes/windrunner/windrunner_bow_mask2"
+//	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+	"$diffusewarp" "models/heroes/windrunner/windrunner_lightwarp"
+	"$alphatest"		"1"
+	
+	$FRESNELWARP "models/heroes/windrunner/windrunner_fresnelranges"
+
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 1
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULAREXPONENTBLENDTOFULL 1 
+
+//	$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTSCALE	.5
+	$RIMLIGHTCOLOR	"[1 .9 .5]"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

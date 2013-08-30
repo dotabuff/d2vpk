@@ -1,0 +1,24 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/crystal_maiden/owl_staff/owl_staff_color"
+	"$normalmap"		"models/items/crystal_maiden/owl_staff/owl_staff_normal"
+	"$maskmap1"		"models/items/crystal_maiden/owl_staff/owl_staff_mask1"
+	"$maskmap2"		"models/items/crystal_maiden/owl_staff/owl_staff_mask2"
+	$alphatest 1
+	"$SPECULAREXPONENT"		"35"
+	"$SPECULARSCALE"		"2"
+	"$SPECULARCOLOR"		"[1 2 3]"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$cloakPassEnabled"		"1"
+	"$noclull" 			"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

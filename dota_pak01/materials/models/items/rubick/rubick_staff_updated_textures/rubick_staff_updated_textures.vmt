@@ -1,0 +1,42 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/rubick/rubick_staff_updated_textures/rubick_staff_updated_textures_color"
+	"$normalmap"		"models/items/rubick/rubick_staff_updated_textures/rubick_staff_updated_textures_normal"
+	"$maskmap1"		"models/items/rubick/rubick_staff_updated_textures/rubick_staff_updated_textures_mask1"
+	"$maskmap2"		"models/items/rubick/rubick_staff_updated_textures/rubick_staff_updated_textures_mask2"
+	"$FRESNELWARP"		"models/heroes/sven/sven_fresnelranges"
+	"$detail1"		"models/heroes/rubick/rubick_motion"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAREXPONENT"		"23"
+	"$SPECULARSCALE"		"5"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$RIMLIGHTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"6"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$cloakPassEnabled"		"1"
+	"$alphatest" 			"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.200000"
+			"texturescrollangle"		"90"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

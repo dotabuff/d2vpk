@@ -1,0 +1,29 @@
+"SpriteCard"
+{
+	"$basetexture" "particle/fire_particle_4/blue_particle_4"
+	$addself 1.5
+	$depthblend 0
+	$distancealpha 1
+	$softedges 0
+	$edgesoftnessstart .45
+	$edgesoftnessend .385
+
+	$outline 1
+	$outlinecolor "[1 1 1]"
+	$outlinealpha .125
+
+
+	$outlinestart0 0.391
+	$outlinestart1 0.39122
+	$outlineend0 0.714
+	$outlineend1 0.855
+
+	$perparticleoutline 1
+	$blendframes 1
+
+	$maxsize .75
+	$startfadesize .575
+	$endfadesize .65
+	
+	$overbrightfactor 5
+}

@@ -1,0 +1,36 @@
+// ### This basic VMT was written based on the D:\dev\tools\python\templateStrings.pyc script ###
+"CustomHero"
+{
+	
+	$baseTexture "models/items/witchdoctor/horn_mask_color"
+	"$normalmap" "models/items/witchdoctor/horn_mask_normal"
+	"$maskmap2" "models/items/witchdoctor/horn_mask_mask2"
+
+
+
+
+	$SPECULAREXPONENT 16
+	$AMBIENTSCALE 1
+		$SPECULARSCALE 4
+//		$SPECULARCOLOR "[.5 1 .8]"
+	$RIMLIGHTSCALE	1.0
+//	$RIMLIGHTCOLOR "[1 1 1]"
+	$alphatest 1
+
+
+
+
+	$cloakintensity 0.85
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

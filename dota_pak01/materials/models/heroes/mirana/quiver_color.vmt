@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/mirana/quiver_color"
+	"$normalmap" "models\heroes\mirana\quiver_normal"
+//	"$diffusewarp" "models/heroes/mirana\mirana_lightwarp"
+	"$maskmap1" "models/heroes/mirana/quiver_masks1"
+	"$maskmap2" "models/heroes/mirana/quiver_masks2"
+//	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+	$SPECULAR_BLOOM_SCALE 1
+	"$alphatest" "1"
+
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE 10
+	$RIMLIGHTSCALE	1
+
+	$AMBIENTSCALE	0.5
+	$IgnoreBudgetCheck 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+
+
+	$rimlightcolor "[1 1 1]"
+	
+ 
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

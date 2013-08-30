@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	$baseTexture "models/items/wards/drow_ward/drow_ward_color"
+	"$normalmap" "models/items/wards/drow_ward/drow_ward_normal"
+	//"$detail1"  "models/heroes/nevermore/nevermore_detail1"
+	"$maskmap1" "models/items/wards/drow_ward/drow_ward_mask1"
+	"$maskmap2" "models/items/wards/drow_ward/drow_ward_mask2"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+//	"$envmap" "env_cubemap"
+//	"$envmapintensity" 1
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 2
+//	$SPECULARCOLOR "0 3 2"
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULAREXPONENTBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFULL 1
+
+
+	$RIMLIGHTSCALE	1
+//	$RIMLIGHTCOLOR [ 0 0 0 ]
+	
+//	$FRESNELWARP "models/heroes/drow/drow_fresnelwarp"	
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+"Refract"
+{
+	"<dx90"
+	{
+		"$fallbackmaterial" "particle\particle_ring_wave_10"
+	}
+ 	"$normalmap" "particle/warp_ripple_normal"
+ 	"$dudvmap" "particle/warp_ripple_dudv"
+ 	"$refractamount" "0.0075"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$translucent" "1"
+	"$forcerefract" 1
+ 	"$bluramount" "25"
+	"$nofog" "1"
+	"$vertexcolormodulate" "1"
+	$NoCull 1
+	$NOVIEWPORTFIXUP        1
+}

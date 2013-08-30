@@ -1,0 +1,13 @@
+"SpriteCard"
+{
+	$basetexture "models\heroes\morphling\watersprites/prowflow.vtf"
+//	$blendframes 0
+//	$maxsize .85
+//	$startfadesize .675
+//	$endfadesize .75
+	//$depthblendscale 4
+	"GPU<2?$BLENDFRAMES" "0"
+	"GPU<2?$DEPTHBLEND" "0"
+	$addself 3
+	$orientation 3
+}

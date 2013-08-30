@@ -1,0 +1,15 @@
+"SpriteCard"
+{
+	$basetexture "particle/smoke1/smoke1"
+	$translucent 1
+	$DEPTHBLEND 1
+	$DEPTHBLENDSCALE 32
+	//$nocull 1
+	//$maxsize .5
+	"360?$STARTFADESIZE" ".125"
+	"360?$ENDFADESIZE" ".4"
+	"!360?$startfadesize" ".25"
+	"!360?$endfadesize" ".55"
+	"$blendframes" "0"
+
+}

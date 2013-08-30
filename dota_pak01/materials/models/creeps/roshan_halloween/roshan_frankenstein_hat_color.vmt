@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$baseTexture" "models/creeps/roshan_halloween/roshan_frankenstein_hat"
+	"$normalmap" "models/creeps/roshan_halloween/roshan_frankenstein_hat_normal"
+	"$alphatest" "1"
+	"$maskmap1" "models/creeps/roshan_halloween/roshan_frankenstein_hat_masks1"
+	"$maskmap2" "models/creeps/roshan_halloween/roshan_frankenstein_hat_masks2"
+	
+	//$ambientscale .5
+	$specularscale 10
+	$RIMLIGHTSCALE .2
+	$specularexponent 20
+
+
+//	$rimlightcolor "[.3 .08 .01]"
+
+	$IgnoreBudgetCheck 1
+
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULARCOLOR "[.2 1 .5]"
+
+
+//	$rimambience .2
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

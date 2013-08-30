@@ -1,0 +1,32 @@
+"ClothSystem"
+{
+	"Cloth"
+	{
+		"columns"		"1"
+		"rows"			"4"
+		"damping"		"0.107000"
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"700.000000"
+		"WorldFriction"		"0.300000"
+		"LocalForce"		"0.386000"
+		"LocalRotation"		"1.000000"
+		"FixedPointDamping"		"0.100000"
+		"StretchForce"		"1.000000"
+		"SpringStretchiness"		"0.000000"
+		"AnimationForceAttraction"		"0.200000"
+		"AnimationVertexAttraction"		"0.200000"
+		"ExternalForceScale"		"1.000000"
+		"StructSpringConstant"		"10.000000"
+		"StructSpringDamping"		"0.500000"
+		"ShearSpringConstant"		"10.000000"
+		"ShearSpringDamping"		"0.500000"
+		"BendSpringConstant"		"10.000000"
+		"BendSpringDamping"		"0.400000"
+		"R0"		"fixed"
+		"R1"		"fixed"
+		"R2"		"mass 1"
+		"R3"		"mass 1.5"
+		"BonePrefix"		"back_fur_"
+	}
+	
+}

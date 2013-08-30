@@ -1,0 +1,50 @@
+"CustomHero"
+{
+	"$basetexture" "models\items\nightstalker\nighthunter_wings_color"
+	"$normalmap" "models\items\nightstalker\nighthunter_wings_normal"
+	"$maskmap1" "models\items\nightstalker\nighthunter_wings_masks1"
+	"$maskmap2" "models\items\nightstalker\nighthunter_wings_masks2"
+
+	"$alphatest"	"1"
+	
+   	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+	$SPECULAREXPONENT 33	
+	$SPECULARSCALE 11
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 4
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	$DETAIL1BLENDTOFULL 0
+	$SPECULAR_BLOOM_SCALE      .5
+	
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

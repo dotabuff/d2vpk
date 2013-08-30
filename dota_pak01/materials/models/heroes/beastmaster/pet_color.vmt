@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/beastmaster/pet_color"
+	"$normalmap" "models/development/flatnormal"
+//   	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 3
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+//	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE .1
+	$AMBIENTSCALE 1
+
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

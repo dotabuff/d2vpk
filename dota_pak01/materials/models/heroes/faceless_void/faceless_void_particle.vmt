@@ -1,0 +1,22 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/faceless_void/faceless_void_color"
+	"$normalmap" "models/development/flatnormal"
+
+	$diffusewarp "models/heroes/storm_spirit/storm_spirit_staticremnant_diffusewarp"
+	$FRESNELWARP "models/heroes/storm_spirit/storm_spirit_staticremnant_fresnelranges"
+
+	$SPECULAREXPONENT 50
+
+	$SPECULARSCALE 50
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+	$RIMLIGHTSCALE 20
+	$additive 1
+        $ALLOWDIFFUSEMODULATION 1
+
+	$rimlightcolor "[.3 .4 4]"
+
+}

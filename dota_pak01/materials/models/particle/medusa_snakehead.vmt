@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	$baseTexture "models/particle/medusa_snakehead"
+	"$normalmap" "models/development/flatnormal"
+
+	$ADDITIVE 1
+    $ALLOWDIFFUSEMODULATION 1
+    "$nofog" "1"
+	
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE .5
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$selfillum 1
+	$SELFILLUMBLENDTOFULL 1
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

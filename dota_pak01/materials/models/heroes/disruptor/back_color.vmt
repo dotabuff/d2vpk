@@ -1,0 +1,29 @@
+
+"CustomHero"
+{
+	$baseTexture "models/heroes/disruptor/back_color"
+	"$normalmap" "models/heroes/disruptor/back_normal"
+	"$maskmap1" "models/heroes/disruptor/back_masks1"
+	"$maskmap2" "models/heroes/disruptor/back_masks2"
+
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 5
+	$AMBIENTSCALE 1
+	$RIMLIGHTSCALE 3
+
+	$IgnoreBudgetCheck 1
+	$alphatest 1	
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

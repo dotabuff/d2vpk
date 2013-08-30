@@ -1,0 +1,25 @@
+//LightmappedGeneric
+Refract
+{
+	"$translucent" 1
+//	"$alphatest" 1
+	//"$envmap" "env_cubemap"
+	//"$normalmapalphaenvmapmask" 1
+	"$normalmap" "particle\ground\ground_cracks_normal"
+	"$envmapcontrast" ".5 .5 .5"
+	"$fresnelreflection" ".83"
+	//"$envmaptint" "[ .5 .5 .5 ]"
+	"$vertexcolormodulate" "1"
+	//$orientation 3
+ 	"$refractamount" "1.04"
+	"$vertexalpha" "1"
+	"$vertexcolor" "1"
+	"$translucent" "1"
+	"$forcerefract" 1
+ 	"$bluramount" "1"
+	"$nofog" "1"
+	"$vertexcolormodulate" "1"
+	$NoCull 1
+//	"$ignorez" "1"
+	$NOVIEWPORTFIXUP        1
+}

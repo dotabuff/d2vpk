@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$basetexture" "models\props_gameplay\smoke_color"
+	"$normalmap" "models\props_gameplay\smoke_normal"
+	"$detail1"  "models\props_gameplay\smoke_detail"
+	"$maskmap1" "models\props_gameplay\smoke_mask1"
+	"$maskmap2" "models\props_gameplay\smoke_mask2"
+
+	
+	$SPECULAREXPONENT 12
+	$SPECULARSCALE 3
+	$SPECULARCOLOR "[1 1 1]"
+
+//	$SPECULAR_BLOOM_SCALE 0
+	
+	$RIMLIGHTSCALE 18
+//	$AMBIENTSCALE 1
+	
+	$RIMLIGHTCOLOR "[0 0.75 .5]"
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR .75
+//	$DETAIL1BLENDTOFULL 
+
+
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	".8"
+			"texturescrollangle"	"90"
+		}
+
+	}
+
+
+
+}

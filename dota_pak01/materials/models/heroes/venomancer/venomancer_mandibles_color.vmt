@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/venomancer/venomancer_mandibles_color"
+	"$normalmap" "models/heroes/venomancer/venomancer_mandibles_normal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/venomancer/venomancer_mandibles_masks1"
+	"$maskmap2" "models/heroes/venomancer/venomancer_mandibles_masks2"
+
+
+	$SPECULAREXPONENT 25
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 1		
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR	"[1 1 1]"
+	
+	$FRESNELWARP "models/heroes/pudge/pudge_fresnelranges"
+
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

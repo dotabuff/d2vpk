@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/ursa/helmet_color"
+	"$normalmap" "models/heroes/ursa/helmet_normal"
+	"$maskmap2" "models/heroes/ursa/helmet_mask2"	
+	"$maskmap1" "models/heroes/ursa/helmet_mask1"
+
+	$SPECULAR_BLOOM_SCALE 0	
+
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 4
+	
+	$RIMLIGHTSCALE 1
+
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

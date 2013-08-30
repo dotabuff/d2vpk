@@ -1,0 +1,56 @@
+"CustomHero"
+{
+	"$baseTexture" "models\creeps\lane_creeps\creep_radiant_mele\creep_rad_melee_color"
+	"$normalmap" "models\creeps\lane_creeps\creep_radiant_mele\creep_rad_melee_normal"
+	"$maskmap1" "models\creeps\lane_creeps\creep_radiant_mele\creep_radiant_melee_masks1.vtf"
+	"$maskmap2" "models\creeps\lane_creeps\creep_radiant_mele\creep_radiant_melee_masks2.vtf"
+	"$diffusewarp" "models\creeps\lane_creeps\creepgood_diffusewarp"
+
+	$SPECULAREXPONENT 8		
+
+	$SPECULARSCALE .25
+
+	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	.25
+
+	
+//	$FRESNELWARP "models/heroes/juggernaut/juggernaut_fresnelranges"
+
+// Status Effects
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

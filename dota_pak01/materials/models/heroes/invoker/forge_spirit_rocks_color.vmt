@@ -1,0 +1,50 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/invoker/forge_spirit_rocks_color"
+	"$normalmap" "models/heroes/invoker/forge_spirit_rocks_normal"
+	"$maskmap2"  "models/heroes/invoker/forge_spirit_rocks_mask2"
+	"$maskmap1"  "models/heroes/invoker/forge_spirit_rocks_mask1"
+	"$detail1" "models/heroes/shadowshaman/totem_motion"
+
+//	$SPECULAREXPONENTBLENDTOFULL 1
+	$SPECULAREXPONENT 4
+	$SPECULARSCALE  1
+	$AMBIENTSCALE 0
+//	$SPECULARCOLOR "[1 0 0]"
+	
+	$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTSCALE  2
+//	$RIMAMBIENTS  1
+	$RIMLIGHTCOLOR "[1 0 0]"
+	//$additive 1
+
+	$DETAIL1BLENDMODE 4
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDTOFULL 1
+//	$SPECULARBLENDTOFULL "1"
+
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

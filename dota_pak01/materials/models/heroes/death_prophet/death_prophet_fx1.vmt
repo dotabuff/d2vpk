@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/death_prophet/death_prophet_fx1_color"
+	"$normalmap" "models/development/flatnormal"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	"$alphatest" "1"
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE .5
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$basetexturetransform"
+			"texturescrollrate"	 "1"
+			"texturescrollangle"	 "20"
+		}
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

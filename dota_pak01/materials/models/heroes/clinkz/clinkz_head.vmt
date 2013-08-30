@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/clinkz/Clinkz_Head_color"
+	"$normalmap" "models/heroes/clinkz/Clinkz_Head_Normal"
+   	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+
+	"$maskmap1" "models/heroes/clinkz/clinkz_head_masks1"
+	"$maskmap2" "models/heroes/clinkz/clinkz_head_masks2"
+	
+	$SPECULAR_BLOOM_SCALE      0
+
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 3
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+//	$SPECULAREXPONENTBLENDTOFULL 1
+	$alphatest 1
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

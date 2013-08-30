@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/dark_seer/dark_seer_color"
+	"$normalmap" "models/heroes/dark_seer/dark_seer_normal"
+	"$maskmap1" "models/heroes/dark_seer/dark_seer_masks1"
+	"$maskmap2" "models/heroes/dark_seer/dark_seer_masks2"
+
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	$SPECULAR_BLOOM_SCALE      0
+
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 2
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$alphatest 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

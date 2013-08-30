@@ -1,0 +1,32 @@
+"SpriteCard"
+{
+	"$basetexture"	"particle/water_splash/water_splash"
+	//$additive 1
+	$addself 4
+	$depthblend 0
+	$distancealpha 1
+	$softedges 1
+	$edgesoftnessstart .6
+	$edgesoftnessend .45148
+
+	$outline 1
+	$outlinecolor "[.04 .0625 .01]"
+	$outlinealpha .05
+
+
+	$outlinestart0 0.415
+	$outlinestart1 0.44
+	$outlineend0 0.49
+	$outlineend1 0.6
+
+	$perparticleoutline 0
+	$blendframes 1
+
+	$maxsize .35
+	//$startfadesize .475
+	//$endfadesize .55
+	
+	$overbrightfactor 4
+	// orientation for mapping to a normal
+	$orientation 3 
+}

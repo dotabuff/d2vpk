@@ -1,0 +1,44 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/nevermore/nevermore_shape_color.vtf"
+	"$normalmap" "models/development/flatnormal"
+	//"$normalmap" "models/heroes/nevermore/nevermore_normal"
+	//"$detail1"  "models/heroes/nevermore/nevermore_detail1"
+	"$maskmap1" "models/heroes/nevermore/maskS1"
+	"$maskmap2" "models/heroes/nevermore/maskS2"
+	"$diffusewarp" "models/heroes/nevermore/nevermore_lightwarp"
+	
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 2
+
+	//$SPECULARBLENDTOFULL 1
+	$DIFFUSEWARPBLENDTOFUL .5
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR "[0 0 0]"
+	//$RIMLIGHTBLENDTOFULL 1
+
+//	$FRESNELWARP "models/heroes/nevermore/nevermore_fresnelwarp"	
+
+	$VERTEXALPHA 1
+	$VERTEXCOLOR 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

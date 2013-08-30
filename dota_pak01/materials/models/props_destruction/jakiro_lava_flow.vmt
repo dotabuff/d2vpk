@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	$baseTexture "models/props_destruction/jakiro_Lava_flow"
+	"$normalmap" "models/props_destruction/lava_normalMap"
+	"$diffusewarp" "models/props_destruction/jakiro_lava_flow_cwarp"
+	"$fow"               "_rt_fog_of_war"
+	$SpecularBlendtoFull 1
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 3
+	$SPECULARCOLOR "[1 0 0]"
+	$RIMLIGHTCOLOR "1 .25 .25"
+	$RIMLIGHTSCALE 3.0	
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

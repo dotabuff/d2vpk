@@ -1,0 +1,48 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/vengeful/vengeful_skirt_color"
+	"$normalmap" "models/heroes/vengeful/vengeful_skirt_normal"
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+//	$FRESNELWARP "models/heroes/dragon_knight/dragon_knight_fresnelranges"
+	"$maskmap1" "models/heroes/vengeful/vengeful_skirt_mask1"
+	"$maskmap2" "models/heroes/vengeful/vengeful_skirt_mask2"
+
+
+	$SPECULAR_BLOOM_SCALE      1
+	$SPECULAREXPONENT 13	
+	$SPECULARSCALE 100	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 10
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"55"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

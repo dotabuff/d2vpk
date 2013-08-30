@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/greevil/greevil_eyes_color"
+	"$normalmap" "models/courier/greevil/greevil_eyes_normal"
+  "$detail1"  "models/courier/greevil/greevil_red_detail1"
+	"$maskmap1" "models/courier/greevil/greevil_eyes_mask1"
+	"$maskmap2" "models/courier/greevil/greevil_eyes_mask2"
+
+  "$FRESNELWARP" "models/heroes/dragon_knight/knight_fresnelranges"
+	"$COLORWARP" "models/courier/greevil/colorwarp_greevil_blue"
+	"$COLORWARPINTENSITY" 6
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1.2
+
+	$SPECULAREXPONENT 25
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 5		
+
+	$RIMLIGHTSCALE	3
+	$RIMLIGHTCOLOR	"[.8 .3 0]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

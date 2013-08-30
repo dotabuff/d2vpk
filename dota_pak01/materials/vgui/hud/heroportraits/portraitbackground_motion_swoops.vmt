@@ -1,0 +1,17 @@
+"UnlitTwoTexture"
+{
+	"$baseTexture" "vgui\hud\heroportraits\portraitbackground_gradient_btm"
+	"$texture2" "vgui\hud\heroportraits\portraitbackground_motion_swoops"
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$TEXTURE2TRANSFORM"
+			"texturescrollrate"	-.85
+			"texturescrollangle"	-45
+		}
+
+	}
+}

@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/obsidian_destroyer/obsidian_body_color"
+	"$normalmap" "models/heroes/obsidian_destroyer/obsidian_body_normal"
+
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 1.5
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$DIFFUSEWARPBLENDTOFUL .5
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$RIMLIGHTSCALE	1
+//	$RIMLIGHTCOLOR "[0 .25 1]"
+	$RIMLIGHTBLENDTOFULL 1
+	
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

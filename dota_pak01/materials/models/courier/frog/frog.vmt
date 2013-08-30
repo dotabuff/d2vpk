@@ -1,0 +1,32 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/frog/frog"
+	"$normalmap" "models/courier/frog/frog_normal"
+	"$maskmap2" "models/courier/frog/frog_mask2"
+
+
+	$SPECULAREXPONENT 70
+	$SPECULARSCALE 20
+	$RIMLIGHTSCALE	2
+//	$specularcolor "[1 1 1]"
+//	$RIMLIGHTCOLOR "[1 1 1]"
+//	"$rimlightblendtofull" "1"
+//	"$specularblendtofull" "1"
+//	"$specularexponentblendtofull" "1"
+
+//	$SPECULAREXPONENT 15
+//	$SPECULARSCALE .5
+
+//	$RIMLIGHTSCALE 1
+//	$AMBIENTSCALE 2
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/skeleton_king/skeleton_king_gauntlet_color"
+	"$normalmap" "models/heroes/skeleton_king/skeleton_king_gauntlet_normal"
+	"$maskmap1" "models/heroes/skeleton_king/skeleton_king_gauntlet_masks1"
+	"$maskmap2" "models/heroes/skeleton_king/skeleton_king_gauntlet_masks2"
+
+
+	
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 7
+
+	$RIMLIGHTSCALE .5
+	$AMBIENTSCALE 1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

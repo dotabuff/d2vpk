@@ -1,0 +1,527 @@
+
+"Hero_KeeperOfTheLight.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/dazzle/preattack.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"110, 120"
+	"wave"			"weapons/hero/dazzle/attack.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/keeper/projectile_impact.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Illuminate.Charge"
+{
+	"channel"		"CHAN_STATIC"
+    "volume"		"0.5"
+    "soundlevel"	"SNDLVL_81dB"
+    "pitch"			"90, 100"
+    "wave"			"weapons/hero/keeper/illuminate_charge.wav"
+    "soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+						"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+"Hero_KeeperOfTheLight.Illuminate.Discharge"
+{
+    "channel"		"CHAN_STATIC"
+    "volume"		"1.0"
+    "soundlevel"	"SNDLVL_81dB"
+    "pitch"			"95, 105"
+    "wave"			")weapons/hero/keeper/illuminate_discharge.wav"
+    "soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_poly_limiting_start" 
+			"limit_sound"
+			{
+			"match_substring" "false"
+			"match_entry" "Hero_KeeperOfTheLight.Illuminate.Charge"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Illuminate.Target" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 110"
+	"wave"			"weapons/hero/keeper/illuminate_target.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_KeeperOfTheLight.Illuminate.Target.Secondary"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Illuminate.Target.Secondary"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/keeper/illuminate_target01.wav"
+		"wave"			"weapons/hero/keeper/illuminate_target02.wav"
+		"wave"			"weapons/hero/keeper/illuminate_target03.wav"
+		"wave"			"weapons/hero/keeper/illuminate_target04.wav"
+		"wave"			"weapons/hero/keeper/illuminate_target05.wav"
+		"wave"			"weapons/hero/keeper/illuminate_target06.wav"
+		"wave"			"weapons/hero/keeper/illuminate_target07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.ManaLeak.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/keeper/mana_leak_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.ManaLeak.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/keeper/mana_leak_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.ManaLeak.Target.FP"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"weapons/hero/keeper/mana_leak_target_fp.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.1"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "2.0"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.ManaLeak.Stun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125, 135"
+	"wave"			")weapons/hero/sven/storm_bolt.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.ChakraMagic.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\keeper\chakra_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.SpiritForm"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/keeper/spirit_form.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Recall.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"80"
+	"wave"			")ui/portal_loop.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+
+			"volume_fade_in"
+			{
+				"input_max" "0.5"
+			}
+						"volume_fade_out"
+			{
+				"input_max" "0.5"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+			
+			"usat_stop_time"
+			{
+				"input2" "5.0"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Recall.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"120"
+
+	"wave"			")ui/portal_loop.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+
+			"volume_fade_in"
+			{
+				"input_max" "0.5"
+			}
+
+			"volume_fade_out"
+			{
+				"input_max" "0.5"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+			
+			"usat_stop_time"
+			{
+				"input2" "5.0"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Recall.End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"120"
+
+	"wave"			")ui/portal_appear.wav"
+}
+
+"Hero_KeeperOfTheLight.Recall.Fail"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+
+	"wave"			")weapons/hero/keeper/recall_fail.wav"
+}
+
+"Hero_KeeperOfTheLight.BlindingLight"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/keeper/blinding_light.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"85,90"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\enchantress\footstep01.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep02.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep03.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep04.wav"
+		"wave"		"physics\footsteps\hero\enchantress\footstep05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"physics\deaths\specials\kotl_death_mount.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_KeeperOfTheLight.Spawn"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"misc\kotl_spawn_mount.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+

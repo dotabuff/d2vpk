@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models\heroes\medusa\medusa_veil_color"
+	"$normalmap" "models\heroes\medusa\medusa_veil_normal"
+//    	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models\heroes\medusa\medusa_veil_mask1"
+	"$maskmap2" "models\heroes\medusa\medusa_veil_mask2"
+
+	$SPECULAREXPONENT 22
+	$SPECULARSCALE 15
+//	$SPECULARCOLOR "[.3 .75 1]"
+	$alphatest 1
+
+	$ENVMAP "models/cubemaps/glossy"
+
+	$RIMLIGHTSCALE 4
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

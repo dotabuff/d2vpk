@@ -1,0 +1,769 @@
+"ti_2013_podseats.txt"
+{
+	// HOME appears at the top of the screen, mapped to the pods on stage RIGHT ( house LEFT )
+
+	// AWAY appears at the bottom of the screen, mapped to the pods on stage LEFT ( house RIGHT )
+	"home_teams"
+	{
+		// Move teams here to have them appear as HOME
+		"Alliance"		"111474"
+		"TongFu|"		"20"
+		"Virtus.Pro"		"40"
+		
+		// Move teams inside this block to have them appear as AWAY
+		"not_home"
+		{
+			"Natus Vincere"		"36"			
+			"Virtus.Pro"		"40"
+			"Invictus Gaming"		"5"			
+			"Orange.Neolution Esports"		"416900"			
+			"Fnatic"		"350190"
+			"Team Liquid"		"2163"
+			"Zenith"		"2"
+			"Team Dignitas"		"142"			
+			"DK"		"7"
+			"LGD-GAMING.int"		"77666"
+			"Invasion MUFC"		"497529"
+			"mousesports"		"26"
+			"LGD Gaming"		"15"
+			"Quantic Gaming"		"680683"
+			"Rattlesnake"		"496774"
+
+			// All star teams
+			"Radiant"		"824543"
+			"Dire"			"824639"
+		}		
+	}
+	"player_seats"
+	{
+
+		// iG					
+// 		Invictus Gaming	Player	ChuaN	Wong Hock Chuan	1
+// 		Invictus Gaming	Captain	Zhou	Chen Yao	2
+// 		Invictus Gaming	Player	Faith	Zeng Hongda	3
+// 		Invictus Gaming	Player	YYF	Jiang Cen	4
+// 		Invictus Gaming	Player	Ferrari_430	Luo Feichi 5
+
+		"player"
+		{
+			"displayed_name"		"Zhou"
+			"steamid"		"0x01100001055F643F"
+			"seat"		"3"
+			"teamid"		"5"
+		}
+		"player"
+		{
+			"displayed_name"		"Ferrari_430"
+			"steamid"		"0x011000010547B375"
+			"seat"		"0"
+			"teamid"		"5"
+		}
+		"player"
+		{
+			"displayed_name"		"YYF"
+			"steamid"		"0x01100001055DFA51"
+			"seat"		"1"
+			"teamid"		"5"
+		}
+		"player"
+		{
+			"displayed_name"		"ChuaN"
+			"steamid"		"0x01100001054736FD"
+			"seat"		"4"
+			"teamid"		"5"
+		}
+		"player"
+		{
+			"displayed_name"		"Faith"
+			"steamid"		"0x0110000104E8387A"
+			"seat"		"2"
+			"teamid"		"5"
+		}
+
+		// TongFu
+// 		TongFu	Player	Mu 			Zhang Pan 		1
+// 		TongFu	Player	KingJ		Yang Zhou		2
+// 		TongFu	Captain	Hao			Chen Zhihao 	3
+// 		TongFu	Player	Sansheng	Wang Zhaohui 	4
+// 		TongFu	Player	Banana		Wang Jiao		5
+ 
+		"player"
+		{
+			"displayed_name"		"Hao"
+			"steamid"		"0x0110000105468863"
+			"seat"		"2"
+			"teamid"		"20"
+		}
+		"player"
+		{
+			"displayed_name"		"Mu"
+			"steamid"		"0x0110000105506FE6"
+			"seat"		"4"
+			"teamid"		"20"
+		}
+		"player"
+		{
+			"displayed_name"		"Sansheng"
+			"steamid"		"0x0110000106035CFC"
+			"seat"		"1"
+			"teamid"		"20"
+		}
+		"player"
+		{
+			"displayed_name"		"Banana"
+			"steamid"		"0x0110000105515B87"
+			"seat"		"0"
+			"teamid"		"20"
+		}
+		"player"
+		{
+			"displayed_name"		"KingJ"
+			"steamid"		"0x0110000105518DF2"
+			"seat"		"3"
+			"teamid"		"20"
+		}
+
+		// Orange
+// 		Orange	Player	Ohaiyo	Chong Xin Khoo			1
+// 		Orange	Player	Mushi	Chai Yee Fung			2
+// 		Orange	Player	kYxY	Lee Kong Yang			3
+// 		Orange	player	Net		Wai Pern Lim			4
+// 		Orange	capt	XtiNcT	Joel Chan Zhan Leong	5
+
+		"player"
+		{
+			"displayed_name"		"Mushi"
+			"steamid"		"0x01100001055B54C5"
+			"seat"		"3"
+			"teamid"		"416900"
+		}
+		"player"
+		{
+			"displayed_name"		"Ohaiyo"
+			"steamid"		"0x011000010594787B"
+			"seat"		"4"
+			"teamid"		"416900"
+		}
+		"player"
+		{
+			"displayed_name"		"kYxY"
+			"steamid"		"0x0110000105766323"
+			"seat"		"2"
+			"teamid"		"416900"
+		}
+		"player"
+		{
+			"displayed_name"		"XtiNcT"
+			"steamid"		"0x011000010553133D"
+			"seat"		"0"
+			"teamid"		"416900"
+		}
+		"player"
+		{
+			"displayed_name"		"Net"
+			"steamid"		"0x011000010551D635"
+			"seat"		"1"
+			"teamid"		"416900"
+		}
+
+		// Alliance		
+// 		Alliance	Player	AdmiralBulldog	Henrik Ahnberg	1
+// 		Alliance	Player	s4	Gustav Magnusson	2
+// 		Alliance	Player	Akke	Joakim Akterhall	3
+// 		Alliance	Player	EGM	Jerry Lundkvist	4
+// 		Alliance	Player	Loda	Jonathan Berg 5
+		"player"
+		{
+			"displayed_name"		"Akke"
+			"steamid"		"0x01100001027604FB"
+			"seat"		"2"
+			"teamid"		"111474"
+		}
+		"player"
+		{
+			"displayed_name"		"AdmiralBulldog"
+			"steamid"		"0x01100001048F0782"
+			"seat"		"4"
+			"teamid"		"111474"
+		}
+		"player"
+		{
+			"displayed_name"		"Loda"
+			"steamid"		"0x01100001060CB344"
+			"seat"		"0"
+			"teamid"		"111474"
+		}
+		"player"
+		{
+			"displayed_name"		"EGM"
+			"steamid"		"0x01100001003BC28C"
+			"seat"		"1"
+			"teamid"		"111474"
+		}
+		"player"
+		{
+			"displayed_name"		"S4"
+			"steamid"		"0x01100001027524D3"
+			"seat"		"3"
+			"teamid"		"111474"
+		}
+
+		// Fnatic
+		Fnatic	Player	Era	Adrian Kryeziu	1
+// 		Fnatic	Player	N0tail	Johan Sundstein	2
+// 		Fnatic	capt	Fly	Tal Aizik	3
+// 		Fnatic	Player	H4nn1	Kai Hanbueckers	4
+// 		Fnatic	Player	Trixi	Kalle Saarinen 5
+
+		"player"
+		{
+			"displayed_name"		"Fly"
+			"steamid"		"0x01100001059CB194"
+			"seat"		"2"
+			"teamid"		"350190"
+		}
+		"player"
+		{
+			"displayed_name"		"N0tail"
+			"steamid"		"0x01100001012C2D22"
+			"seat"		"3"
+			"teamid"		"350190"
+		}
+		"player"
+		{
+			"displayed_name"		"Era"
+			"steamid"		"76561198060583478"
+			"seat"		"4"
+			"teamid"		"350190"
+		}
+		"player"
+		{
+			"displayed_name"		"H4nn1"
+			"steamid"		"0x0110000101447E15"
+			"seat"		"1"
+			"teamid"		"350190"
+		}
+		"player"
+		{
+			"displayed_name"		"Trixi"
+			"steamid"		"0x011000010084F072"
+			"seat"		"0"
+			"teamid"		"350190"
+		}
+
+		// Liquid
+// 		Liquid	Player	Korok		Steven Ashworth	1
+// 		Liquid	Player	TC			Tyler Cook		2
+// 		Liquid	Capt	FLUFFNSTUFF	Brian Lee		3
+// 		Liquid	Player	ixmike88	Michael Ghannam	4
+// 		Liquid	Player	BuLba		Sam Sosale		5
+
+		"player"
+		{
+			"displayed_name"		"FLUFFNSTUFF"
+			"steamid"		"0x011000010278CB0B"
+			"seat"		"2"
+			"teamid"		"2163"
+		}
+		"player"
+		{
+			"displayed_name"		"ixmike88"
+			"steamid"		"0x01100001052B2AF9"
+			"seat"		"1"
+			"teamid"		"2163"
+		}
+		"player"
+		{
+			"displayed_name"		"TC"
+			"steamid"		"0x011000010407851D"
+			"seat"		"3"
+			"teamid"		"2163"
+		}
+		"player"
+		{
+			"displayed_name"		"Korok"
+			"steamid"		"0x011000010012176C"
+			"seat"		"4"
+			"teamid"		"2163"
+		}
+		"player"
+		{
+			"displayed_name"		"BuLba"
+			"steamid"		"0x0110000101CD621B"
+			"seat"		"0"
+			"teamid"		"2163"
+		}
+
+		// Navi
+// 		Natus Vincere	Player	XBOCT	Alexander Dashkevich	1
+// 		Natus Vincere	Player	KuroKy	Kuro Salehi Takhasomi	2
+// 		Natus Vincere	Captain	Puppey	Clement Ivanov			3
+// 		Natus Vincere	Player	Dendi	Danil Ishutin			4
+// 		Natus Vincere	Player	Funn1k	Gleb Lipatnikov			5
+
+		"player"
+		{
+			"displayed_name"		"XBOCT"
+			"steamid"		"0x0110000105579380"
+			"seat"		"4"
+			"teamid"		"36"
+		}
+		"player"
+		{
+			"displayed_name"		"Dendi"
+			"steamid"		"0x0110000104320BB1"
+			"seat"		"1"
+			"teamid"		"36"
+		}
+		"player"
+		{
+			"displayed_name"		"Puppey"
+			"steamid"		"0x011000010533C4A5"
+			"seat"		"2"
+			"teamid"		"36"
+		}
+		"player"
+		{
+			"displayed_name"		"Funn1k"
+			"steamid"		"0x01100001052B4A47"
+			"seat"		"0"
+			"teamid"		"36"
+		}
+		"player"
+		{
+			"displayed_name"		"KuroKy"
+			"steamid"		"0x0110000104E73A88"
+			"seat"		"3"
+			"teamid"		"36"
+		}
+
+		// Zenith
+// 		Zenith	Capt	iceiceice	Daryl Koh Pei Xiang	1
+// 		Zenith	Player	xFreedom	Nicholas Kelvin Ileto Lim	2
+// 		Zenith	Player	Ice			Chua Chee Cai 	3
+// 		Zenith	Player	YamateH		Ng Wei Poong 	4
+// 		Zenith	Player	xy-			Toh Wai Hong	5
+
+		"player"
+		{
+			"displayed_name"		"iceiceice"
+			"steamid"		"0x01100001050D8658"
+			"seat"		"4"
+			"teamid"		"2"
+		}
+		"player"
+		{
+			"displayed_name"		"xFreedom"
+			"steamid"		"0x0110000104ECD92F"
+			"seat"		"3"
+			"teamid"		"2"
+		}
+		"player"
+		{
+			"displayed_name"		"xy-"
+			"steamid"		"0x0110000105175C4A"
+			"seat"		"0"
+			"teamid"		"2"
+		}
+		"player"
+		{
+			"displayed_name"		"YamateH"
+			"steamid"		"0x0110000107371D3F"
+			"seat"		"1"
+			"teamid"		"2"
+		}
+		"player"
+		{
+			"displayed_name"		"Ice"
+			"steamid"		"0x0110000105954C07"
+			"seat"		"2"
+			"teamid"		"2"
+		}
+
+		// dignitas
+// 		Dignitas	Player	Sneyking	JingJun Wu	1
+// 		Dignitas	Player	UNiVeRsE	Saahil Arora	2
+// 		Dignitas	Capt	Waytosexy	Peter Nguyen	3
+// 		Dignitas	Player	Fogged	Ioannis Loucas	4
+// 		Dignitas	Player	Aui_2000	Kurtis Ling	5
+
+		"player"
+		{
+			"displayed_name"		"sneyking"
+			"steamid"		"0x01100001009E2E98"
+			"seat"		"4"
+			"teamid"		"142"
+		}
+		"player"
+		{
+			"displayed_name"		"Aui_2000"
+			"steamid"		"0x01100001026AB492"
+			"seat"		"0"
+			"teamid"		"142"
+		}
+		"player"
+		{
+			"displayed_name"		"Waytosexy"
+			"steamid"		"0x01100001024BB1CD"
+			"seat"		"2"
+			"teamid"		"142"
+		}
+		"player"
+		{
+			"displayed_name"		"fogged"
+			"steamid"		"0x01100001005321AC"
+			"seat"		"1"
+			"teamid"		"142"
+		}
+		"player"
+		{
+			"displayed_name"		"UNiVeRsE"
+			"steamid"		"0x011000010533BB3B"
+			"seat"		"3"
+			"teamid"		"142"
+		}
+
+		// Virtus Pro
+// 		Virtus.Pro	Player	KSi		Sergey Kuzin		1
+// 		Virtus.Pro	Capt	NS		Yaroslav Kuznetsov	2
+// 		Virtus.Pro	Player	Crazy	Oleg Kolesnichenko	3
+// 		Virtus.Pro	Player	ARS-ART	Sergey Revin		4
+// 		Virtus.Pro	Player	Illidan	Ilya Pivtcaev		5
+
+		"player"
+		{
+			"displayed_name"		"NS"
+			"steamid"		"0x011000010595EF2B"
+			"seat"		"3"
+			"teamid"		"40"
+		}
+		"player"
+		{
+			"displayed_name"		"KSi"
+			"steamid"		"0x01100001057AC24B"
+			"seat"		"4"
+			"teamid"		"40"
+		}
+		"player"
+		{
+			"displayed_name"		"Crazy"
+			"steamid"		"0x01100001052D14EA"
+			"seat"		"2"
+			"teamid"		"40"
+		}
+		"player"
+		{
+			"displayed_name"		"Illidan"
+			"steamid"		"0x0110000101918F93"
+			"seat"		"0"
+			"teamid"		"40"
+		}
+		"player"
+		{
+			"displayed_name"		"ARS-ART"
+			"steamid"		"0x01100001066A8571"
+			"seat"		"1"
+			"teamid"		"40"
+		}
+
+		// DK
+// 		DK	Captain	BurNIng	Xu Zhilei	1
+// 		DK	Player	X!!		Lei Zengrong	2
+// 		DK	Player	QQQ		Yao Yi	3
+// 		DK	Player	Super	Xie JunHao	4
+// 		DK	Player	rOtK	Bai Fan 5
+
+		"player"
+		{
+			"displayed_name"		"BurNIng"
+			"steamid"		"0x01100001056AE9BE"
+			"seat"		"4"
+			"teamid"		"7"
+		}
+		"player"
+		{
+			"displayed_name"		"Super"
+			"steamid"		"0x01100001056AC06F"
+			"seat"		"1"
+			"teamid"		"7"
+		}
+		"player"
+		{
+			"displayed_name"		"rOtk"
+			"steamid"		"0x01100001057733AB"
+			"seat"		"0"
+			"teamid"		"7"
+		}
+		"player"
+		{
+			"displayed_name"		"QQQ"
+			"steamid"		"0x01100001055421C6"
+			"seat"		"2"
+			"teamid"		"7"
+		}
+		"player"
+		{
+			"displayed_name"		"X!!"
+			"steamid"		"0x0110000105543E89"
+			"seat"		"3"
+			"teamid"		"7"
+		}
+
+		// LGD Int
+// 		LGD.int	Player	Pajkatt	Per Anders Olsson Lille	1
+// 		LGD.int	Capt	1437	Theeban Siva			2
+// 		LGD.int	Player	MiSeRy	Rasmus Filipsen			3
+// 		LGD.int	Player	God		Sergey Bragin			4
+// 		LGD.int	Player	Brax	Braxton Paulson			5
+
+		"player"
+		{
+			"displayed_name"		"Misery"
+			"steamid"		"0x0110000105355A33"
+			"seat"		"2"
+			"teamid"		"77666"
+		}
+		"player"
+		{
+			"displayed_name"		"Pajkatt"
+			"steamid"		"0x011000010533DE51"
+			"seat"		"4"
+			"teamid"		"77666"
+		}
+		"player"
+		{
+			"displayed_name"		"God"
+			"steamid"		"0x01100001053878B0"
+			"seat"		"1"
+			"teamid"		"77666"
+		}
+		"player"
+		{
+			"displayed_name"		"1437"
+			"steamid"		"0x01100001053284DA"
+			"seat"		"3"
+			"teamid"		"77666"
+		}
+		"player"
+		{
+			"displayed_name"		"Brax"
+			"steamid"		"0x0110000101E58465"
+			"seat"		"0"
+			"teamid"		"77666"
+		}
+
+		// MUFC
+// 		MUFC	Player	FzFz		Cheng Hor Siew		1
+// 		MUFC	Capt	WinteR		Chan Litt-Binn 		2
+// 		MUFC	Player	T.F.G.		Daniel Wong			3
+// 		MUFC	Player	Ling		Sim Woi Cheong 		4
+// 		MUFC	Player	dabeliuteef	Jun Liong Loh		5
+
+		"player"
+		{
+			"displayed_name"		"WinteR"
+			"steamid"		"0x01100001052BE235"
+			"seat"		"3"
+			"teamid"		"497529"
+		}
+		"player"
+		{
+			"displayed_name"		"FzFz"
+			"steamid"		"0x0110000105C3A8DE"
+			"seat"		"4"
+			"teamid"		"497529"
+		}
+		"player"
+		{
+			"displayed_name"		"T.F.G."
+			"steamid"		"0x01100001056EBE76"
+			"seat"		"2"
+			"teamid"		"497529"
+		}
+		"player"
+		{
+			"displayed_name"		"Ling"
+			"steamid"		"0x0110000105522108"
+			"seat"		"1"
+			"teamid"		"497529"
+		}
+		"player"
+		{
+			"displayed_name"		"dabeliuteef"
+			"steamid"		"0x0110000104CD7EFE"
+			"seat"		"0"
+			"teamid"		"497529"
+		}
+
+		// Mousesports
+// 		mousesports	player	Black^		Dominik Reitmeier	1
+// 		mousesports	player	paS			Pascal Lohmeier		2
+// 		mousesports	Captain	syndereN	Troels Nielsen		3
+// 		mousesports	player	FATA-		Adrian Trinks		4
+// 		mousesports	player	qojqva		Max Broecker		5
+
+		"player"
+		{
+			"displayed_name"		"Black^"
+			"steamid"		"0x011000010144D957"
+			"seat"		"4"
+			"teamid"		"26"
+		}
+		"player"
+		{
+			"displayed_name"		"syndereN"
+			"steamid"		"0x0110000100415581"
+			"seat"		"2"
+			"teamid"		"26"
+		}
+		"player"
+		{
+			"displayed_name"		"FATA-"
+			"steamid"		"0x01100001052C73C4"
+			"seat"		"1"
+			"teamid"		"26"
+		}
+		"player"
+		{
+			"displayed_name"		"paS"
+			"steamid"		"0x0110000101DA38F7"
+			"seat"		"3"
+			"teamid"		"26"
+		}
+		"player"
+		{
+			"displayed_name"		"qojqva"
+			"steamid"		"0x01100001052B8706"
+			"seat"		"0"
+			"teamid"		"26"
+		}
+
+		// LGD China
+// 		LGD.cn	Player	Yao		Yao Zhengzheng	1
+// 		LGD.cn	Capt	xiao8	Zhang Ning		2
+// 		LGD.cn	Player	DDC		Leong Fat-Meng	3
+// 		LGD.cn	Player	Sylar	Liu Jiajun		4
+// 		LGD.cn	Player	DD		Xie Bin			5
+		"player"
+		{
+			"displayed_name"		"xiao8"
+			"steamid"		"0x0110000105E4E8E9"
+			"seat"		"3"
+			"teamid"		"15"
+		}
+		"player"
+		{
+			"displayed_name"		"DDC"
+			"steamid"		"0x0110000106CF278B"
+			"seat"		"2"
+			"teamid"		"15"
+		}
+		"player"
+		{
+			"displayed_name"		"Yao"
+			"steamid"		"0x0110000105E4C23A"
+			"seat"		"4"
+			"teamid"		"15"
+		}
+		"player"
+		{
+			"displayed_name"		"Sylar"
+			"steamid"		"0x011000010675C76C"
+			"seat"		"1"
+			"teamid"		"15"
+		}
+		"player"
+		{
+			"displayed_name"		"DD"
+			"steamid"		"0x011000010553B3C4"
+			"seat"		"0"
+			"teamid"		"15"
+		}
+
+		// Quantic
+// 		Quantic	player	Sockshka	Titouan Merloz		1
+// 		Quantic	Player	Funzii		Thibault Calonne	2
+// 		Quantic	Captain	Goblak		Artur Kostenko		3
+// 		Quantic	Player	7ckngMad	Sebastien Debs		4
+// 		Quantic	Player	Silent		Airat Gaziev		5
+
+		"player"
+		{
+			"displayed_name"		"7ckngMad"
+			"steamid"		"0x011000010542E985"
+			"seat"		"1"
+			"teamid"		"680683"
+		}
+		"player"
+		{
+			"displayed_name"		"Funzii"
+			"steamid"		"0x0110000101BFA780"
+			"seat"		"3"
+			"teamid"		"680683"
+		}
+		"player"
+		{
+			"displayed_name"		"Sockshka"
+			"steamid"		"0x0110000100FFE0C7"
+			"seat"		"4"
+			"teamid"		"680683"
+		}
+		"player"
+		{
+			"displayed_name"		"Silent"
+			"steamid"		"0x011000010595CF40"
+			"seat"		"0"
+			"teamid"		"680683"
+		}
+		"player"
+		{
+			"displayed_name"		"Goblak"
+			"steamid"		"0x01100001055020F7"
+			"seat"		"2"
+			"teamid"		"680683"
+		}
+
+		// Rattlesnake
+// 		Rattlesnake	Player	Icy		Wang Peng 	1
+// 		Rattlesnake	Captain	Luo		Luo Yinqi	2
+// 		Rattlesnake	Player	LaNm	Zhang Zhicheng 	3
+// 		Rattlesnake	Player	Sag		Li Guo 	4
+// 		Rattlesnake	Player	Kabu	Zhao Kai 5
+
+		"player"
+		{
+			"displayed_name"		"Kabu"
+			"steamid"		"0x011000010546BADB"
+			"seat"		"0"
+			"teamid"		"496774"
+		}
+		"player"
+		{
+			"displayed_name"		"LaNm"
+			"steamid"		"0x0110000105547F8C"
+			"seat"		"2"
+			"teamid"		"496774"
+		}
+		"player"
+		{
+			"displayed_name"		"Sag"
+			"steamid"		"0x0110000105528FFD"
+			"seat"		"1"
+			"teamid"		"496774"
+		}
+		"player"
+		{
+			"displayed_name"		"Icy"
+			"steamid"		"0x0110000105EDA5D8"
+			"seat"		"4"
+			"teamid"		"496774"
+		}
+		"player"
+		{
+			"displayed_name"		"Luo"
+			"steamid"		"0x011000010551CC74"
+			"seat"		"3"
+			"teamid"		"496774"
+		}
+	}
+}

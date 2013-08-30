@@ -1,0 +1,771 @@
+base.styles
+{
+	colors
+	{
+		none="0 0 0 0"
+		black="0 0 0 255"
+		white="255 255 255 255"
+		red="255 0 0 255"		
+		blue="0 0 255 255"	
+		green="0 255 0 255"
+		
+		darkgrey="39 39 39 255"
+		LightGrey="51 51 51 255"
+		LighterGrey="90 90 90 255"
+		
+		darkgreyTransparent="20 20 20 128"
+		LighterGreyTransparent="45 45 45 220"
+		
+		Label="255 255 255 255"
+		LabelDisabled="138 135 132 255"
+		LabelFocus="199 196 194 255"
+		
+		TransparentRed="255 0 0 100"
+		
+		OrangeYellow="201 119 20 255"
+		
+		Label="255 255 255 255"
+		
+		// default control colors - todo: cull colors that are not used
+		ButtonFace="105 102 99 200"
+		ButtonFace2="92 89 86 255"
+		ButtonFace3="95 92 90 255"
+		ButtonFaceDisabled="none"
+		ButtonFaceHover="105 102 99  240"   /// hover!
+		ButtonFaceActive="105 102 99  240"  // not sure what this state is...
+		ButtonFaceFocus="105 102 99  240"  //  keyboard focus
+		ButtonFaceActiveFocus="105 102 99  255"  // this is the default choice
+		
+		ButtonBorder="112 109 105 255"
+		ButtonBorderPage="128 124 120 255"
+		ButtonBorderDisabled="77 75 72 255"
+		ButtonBorderDisabled2="67 65 63 255"  //cornering pixels
+		ButtonBorderActive="140 135 129 255"
+		ButtonBorderFocus="153 147 141 255"
+		PropertySheetBG="74 72 70 255"
+		
+		Text="209 207 205 255"
+		Text2="184 180 176 255"
+		TextDisabled="102 99 96 255"
+		TextHover="229 226 223 255"
+		TextSelected="242 239 235 255"
+		TextentrySelected="240 237 235 235" // color of any selected text
+		TextSelectedBG="64 89 128 255" // background color of any selected text
+		
+		BuyButtonTextActive="160 160 160 255"
+		BuyButtonTextDisabled="160 160 160 255"
+		BuyButtonActive="252 176 64 255"
+		BuyButtonDisabled="70 70 70 255" 
+		
+		transparentgrey="51 51 51 100"
+		
+		dividergrey="61 61 61 255"
+		
+		tooltipgrey="151 151 151 255"
+		
+		GoldLabelColor="231 172 22 255"
+		
+		// Action Panel
+		AbilityBorderBright="200 200 200 40"
+		AbilityBorderDark="0 0 0 160"
+		
+		ManaCost="48 148 255 255"
+		AttributeColor="209 207 205 255"
+		AttributeBonusColor="50 207 50 255"
+		
+		QueryEnemy="135 10 7 255"
+		QueryFriendly="10 135 7 255"
+	}
+	
+	styles
+	{
+		Label
+		{
+			textcolor=white
+			selectedtextcolor=white
+			render_bg
+			{
+				0="fill( x0,y0,x1,y1, none )"
+			}
+		}
+		
+		// Action Panel
+		GoldLabel
+		{
+			textcolor=GoldLabelColor
+			font=Arial24Thick
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,none)"
+			}
+		}
+		
+		GoldLabel:disabled
+		{
+			textcolor=tooltipgrey
+			font=Arial24Thick
+			render_bg
+			{
+				0="fill(x0,y0,x1,y1,none)"
+			}
+		}
+		
+		ChargesLabel
+		{
+			textcolor=black
+			selectedtextcolor=black
+			render_bg
+			{
+				0="fill( x0,y0,x1,y1, none )"
+			}
+		}
+		
+		StashButtonBackground
+		{
+			textcolor=LightGrey
+			font=Arial12Thick
+			render_bg
+			{
+				0="roundedfill( x0, y0, x1, y1, 7, OrangeYellow )"
+			}
+		}
+		
+		StashButtonBackground:hover
+		{
+			textcolor=white
+			font=Arial12Thick
+			render_bg
+			{
+				0="roundedfill( x0, y0, x1, y1, 7, OrangeYellow )"
+			}
+		}
+				
+		RoundedYellowBackground
+		{
+			textcolor=LightGrey
+			font=Arial12Thick
+			render_bg
+			{
+				//0="roundedfill( x0, y0, x1, y1, 7, OrangeYellow )"
+			}
+		}
+		
+		RoundedYellowBackground:disabled
+		{
+			textcolor=black
+			font=Arial12Thick
+			render_bg
+			{
+				0="roundedfill( x0, y0, x1, y1, 7, LighterGrey )"
+			}
+		}
+		
+		RoundedYellowBackground:hover
+		{
+			textcolor=LightGrey
+			font=Arial12Thick
+			render_bg
+			{
+				//0="roundedfill( x0, y0, x1, y1, 7, OrangeYellow )"
+			}
+		}
+		
+		ShopYellowBackground
+		{
+			textcolor=LightGrey
+			font=Arial12Thick
+			render_bg
+			{
+				0="roundedfill( x0, y0, x1, y1, 9, GoldLabelColor )"
+			}
+		}
+		
+		ShopYellowBackground:disabled
+		{
+			textcolor=black
+			font=Arial12Thick
+			render_bg
+			{
+				0="roundedfill( x0, y0, x1, y1, 9, LighterGrey )"
+			}
+		}
+				
+		nobackground
+		{
+			render_bg
+			{
+			}
+		}
+		
+		DarkGreySquareBackground
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, darkgrey )"				
+				
+				//0="roundedfill( x0, y0, x1, y1, 10, darkgrey )"
+				
+				//0="image( x0, y0, x1, y1, hud/heroportraits/portrait_axe )"
+				//0="image_scale( x0, y0, x1, y1, hud/heroportraits/portrait_axe )"
+				//0="image_proportional( x0, y0, x1, y1, hud/heroportraits/portrait_axe )"
+				//0="image_tiled( x0, y0, x1, y1, hud/heroportraits/portrait_axe )"
+				//0="image_scalable( x0, y0, x1, y1, hud/test_scalable, 32, 32, 16, 16, 1, 1 )"
+				
+				//0="gradient( x0, y0, x1, y1, red, blue )"
+				//0="gradient-horizontal( x0, y0, x1, y1, red, blue )"
+				//1="dashedrect( x0, y0, x1, y1, red )"
+			}
+		}
+		
+		BlackSquareBackground
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, black )"
+			}
+		}	
+		
+		TooltipName
+		{
+			textcolor=white
+			bgcolor=none
+			font=DIN14Thick
+		}
+		
+		TooltipDescription
+		{
+		}
+		
+		TooltipDivider
+		{
+			render
+			{
+				0="fill(x0,y0,x1,y1,dividergrey)"
+			}
+		}		
+		
+		TooltipBackground
+		{
+			render_bg
+			{
+				0="roundedfill( x0, y0, x1, y1, 7, LighterGrey)"
+				1="roundedfill( x0+1, y0+1, x1-1, y1-1, 7, darkgrey)"
+			}
+		}
+		TooltipBackgroundTransparent
+		{
+			render_bg
+			{
+				0="roundedfill( x0, y0, x1, y1, 7, LighterGreyTransparent)"
+				1="roundedfill( x0+1, y0+1, x1-1, y1-1, 7, darkgreyTransparent)"
+			}
+		}
+		    
+		Button
+		{     		
+			font=Default			
+			textcolor="Text"
+			bgcolor=none
+// 			render_bg
+// 			{
+// 				// background fill
+// 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, buttonface2, propertysheetbg )"
+// 
+// 				// lines around
+// 				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
+// 				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
+// 				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
+// 				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
+// 
+// 				// single pixel fills in the corners
+// 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorder )"
+// 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"
+// 				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorder )"
+// 				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"
+// 				9="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+// 				10="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+// 				11="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+// 				12="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+// 				13="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+// 				14="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+// 				15="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+// 				16="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+// 			}
+		}
+
+		Button:hover
+		{   
+			textcolor="TextHover"
+// 			render_bg
+// 			{     
+// 				// background fill
+// 				// background fill
+// 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, buttonfaceactive, propertysheetbg )"
+// 
+// 				// lines around
+// 				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderFocus )"  // top
+// 				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderFocus )"  // bottom
+// 				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderFocus )"  // left
+// 				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderFocus )"  // right
+// 
+// 				// single pixel fills in the corners
+// 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderFocus )"
+// 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"
+// 				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderFocus )"
+// 				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"
+// 				9="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+// 				10="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+// 				11="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+// 				12="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+// 				13="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+// 				14="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+// 				15="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+// 				16="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+// 			}
+		}
+
+		Button:focus
+		{
+			textcolor="TextHover"
+// 			render_bg
+// 			{
+// 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, buttonfacefocus, propertysheetbg )"			
+// 
+// 				// lines around
+// 				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderFocus )"  // top
+// 				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderFocus )"  // bottom
+// 				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderFocus )"  // left
+// 				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderFocus )"  // right
+// 
+// 				// single pixel fills in the corners
+// 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderFocus )"
+// 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"
+// 				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderFocus )"
+// 				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"
+// 				9="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+// 				10="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+// 				11="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+// 				12="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+// 				13="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+// 				14="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+// 				15="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+// 				16="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+// 			}
+		}
+
+		Button:active // this is the left-mouse-currently-pressed state
+		{
+			textcolor="TextHover"
+// 			render_bg
+// 			{     
+// 				// background fill
+// 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, buttonfaceactive, propertysheetbg )"
+// 
+// 				// lines around
+// 				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderFocus )"  // top
+// 				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderFocus )"  // bottom
+// 				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderFocus )"  // left
+// 				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderFocus )"  // right
+// 
+// 				// single pixel fills in the corners
+// 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderFocus )"
+// 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"
+// 				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderFocus )"
+// 				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"
+// 				9="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+// 				10="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+// 				11="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+// 				12="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+// 				13="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+// 				14="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+// 				15="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+// 				16="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+// 			}
+		}   
+
+		Button:focus:hover
+		{
+			textcolor="TextHover"
+// 			render_bg
+// 			{     
+// 				// background fill
+// 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, buttonfaceactive, propertysheetbg )"
+// 
+// 				// lines around
+// 				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderFocus )"  // top
+// 				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderFocus )"  // bottom
+// 				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderFocus )"  // left
+// 				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderFocus )"  // right
+// 
+// 				// single pixel fills in the corners
+// 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderFocus )"
+// 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"
+// 				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderFocus )"
+// 				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"
+// 				9="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+// 				10="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+// 				11="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+// 				12="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+// 				13="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+// 				14="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+// 				15="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+// 				16="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+// 			}
+		}
+
+		Button:selected
+		{
+			textcolor="TextHover"
+// 			render_bg
+// 			{     
+// 				// background fill
+// 				0="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, buttonfaceactivefocus, propertysheetbg )"
+// 
+// 				// lines around
+// 				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderFocus )"  // top
+// 				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderFocus )"  // bottom
+// 				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderFocus )"  // left
+// 				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderFocus )"  // right
+// 
+// 				// single pixel fills in the corners
+// 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderFocus  )"
+// 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus  )"
+// 				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderFocus  )"
+// 				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus  )"
+// 				9="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonFace2 )"
+// 				10="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonFace2 )"
+// 				11="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonFace2 )"
+// 				12="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonFace2 )"
+// 				13="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonFace2 )"
+// 				14="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonFace2 )"
+// 				15="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonFace2 )"
+// 				16="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonFace2 )"
+// 			}
+		}
+
+		Button:disabled
+		{
+			textcolor="LabelDisabled"
+// 			render_bg
+// 			{     
+// 				// background fill
+// 				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
+// 
+// 				// lines around
+// 				1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
+// 				2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
+// 				3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
+// 				4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
+// 
+// 				// single pixel fills in the corners
+// 				5="fill( x0 + 1, y0 + 1, x0 + 2, y0 + 2, ButtonBorderDisabled )"
+// 				6="fill( x1 - 2, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"
+// 				7="fill( x0 + 1, y1 - 2, x0 + 2, y1 - 1, ButtonBorderDisabled )"
+// 				8="fill( x1 - 2, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"
+// 				11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
+// 				12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
+// 				13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
+// 				14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
+// 				15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
+// 				16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
+// 				17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
+// 				18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
+// 			}
+		}   
+		
+		ScrollBarButton.up
+		{
+			textcolor=none
+			bgcolor=none
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_up )"
+			}	
+		}
+	    
+		ScrollBarButton.up:hover
+		{
+			bgcolor=none
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_up )"
+			}
+		}
+	    
+		ScrollBarButton.up:active
+		{
+			bgcolor=none
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_up )"
+			}
+		}
+		
+		ScrollBarButton.down
+		{
+			textcolor=none
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_down )"
+			}
+		}
+	    
+		ScrollBarButton.down:hover
+		{
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_down )"
+			}
+		}
+    
+        ScrollBarButton.down:active
+		{
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_down )"
+			}
+		}
+		
+		ScrollBarButton.left
+		{
+			textcolor=none
+			bgcolor=none
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_left )"
+			}
+		}
+	    
+		ScrollBarButton.left:hover
+		{
+			textcolor=none
+			bgcolor=none
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_left )"
+			}
+		}
+	        
+		ScrollBarButton.right
+		{
+			textcolor=none
+			bgcolor=none
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_right )"
+			}
+		}
+	        
+		ScrollBarButton.right:hover
+		{
+			textcolor=none
+			bgcolor=none
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_right )"
+			}
+		}
+		
+		ScrollBarHandle  //vertical scrollbar thumb
+		{
+			bgcolor="none"
+			render_bg
+			{
+				1="image_scalable( x0, y0, x1, y1, scroll_box, 0, 16, 0, 6, 1, 1 )"
+			}
+		}
+	       
+		"ScrollBarHandle:hover"
+		{
+			bgcolor="none"
+			render_bg
+			{
+				1="image_scalable( x0, y0, x1, y1, scroll_box, 0, 16, 0, 6, 1, 1 )"
+			}
+		}
+	    
+		"ScrollBarHandle:active"
+		{
+			bgcolor="none"
+			render_bg
+			{
+				1="image_scalable( x0, y0, x1, y1, scroll_box, 0, 16, 0, 6, 1, 1 )"
+			}
+		}
+		
+		ScrollBarHandle_Horiz  //vertical scrollbar thumb
+		{
+			bgcolor="none"
+			render_bg
+			{
+				0="image_scalable( x0, y0, x1, y1, scroll_box_horiz, 16, 0, 6, 0, 1, 1 )"
+			}
+		}
+	       
+		"ScrollBarHandle_Horiz:hover"
+		{
+			bgcolor="none"
+			render_bg
+			{
+				0="image_scalable( x0, y0, x1, y1, scroll_box_horiz, 16, 0, 6, 0, 1, 1 )"
+			}
+		}
+	    
+		"ScrollBarHandle_Horiz:active"
+		{
+			bgcolor="none"
+			render_bg
+			{
+				0="image_scalable( x0, y0, x1, y1, scroll_box_horiz, 16, 0, 6, 0, 1, 1 )"
+			}
+		}
+		
+		ScrollBarSlider // gutter
+		{
+			bgcolor="none"
+			render_bg
+			{
+				1="image_scale( x0, y0, x1, y1, scroll_line )"
+			}
+		}
+		
+		// Action Panel Shared
+			
+		// Passive ability
+		AbilityButton
+		{
+		}
+			
+		// Active ability	
+		AbilityButton:selected
+		{
+		}
+		
+		AbilityAutoCast
+		{
+			render
+			{
+				0="image_scale( x0, y0, x1, y1, hud/ui_skill_autocast_channel )"
+				1="image_scale( x0, y0, x1, y1, hud/ui_skill_autocast )"
+			}
+		}
+		
+		AbilityAutoCast:disabled
+		{
+			render
+			{
+				0="image_scale( x0, y0, x1, y1, hud/ui_skill_autocast_channel )"
+			}
+		}
+		
+		AbilityLearnButton
+		{
+			textcolor=none
+			render_bg
+			{
+				0="image_scalable( x0, y0, x1, y1, hud/test_pulse, 16, 20, 6, 7, 0, 0 )"			
+				//1="image_scale( x0+26, y0-3, x0+54, y1+4, hud/button_level_64 )"
+			}
+		}
+		
+		AbilityLearnButton:disabled
+		{
+			textcolor=black
+			font=Arial12Thick
+			render_bg
+			{
+				0="image_scalable( x0, y0, x1, y1, hud/button_blank_64_grey, 16, 20, 6, 7, 0, 0 )"
+				//0="image_scale( x0, y0, x1, y1, hud/button_blank_64_grey )"
+				//1="dashedrect( x0, y0, x1, y1, green )"
+			}
+		}
+		
+		AttributeLearn
+		{
+			textcolor=none
+			render_bg
+			{
+				//0="image_scalable( x0, y0, x1, y1, hud/button_blank_64, 16, 20, 4, 5, 1, 1 )"
+				0="image_scalable( x0, y0, x1, y1, hud/test_pulse, 16, 20, 6, 7, 0, 0 )"
+				
+				1="image_scale( x0+50, y0-3, x0+78, y1+4, hud/button_level_64 )"
+			}
+		}
+		
+		ActionsBackground
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, darkgrey )"
+				1="fill( x0, y0+4, x1, y1, black )"
+			}
+		}
+		
+		QueryBackground
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, QueryEnemy )"
+			}
+		}
+		
+		QueryBackground:disabled
+		{
+			render_bg
+			{
+				0="fill( x0, y0, x1, y1, QueryFriendly )"
+			}
+		}
+		
+		XPPoints
+		{
+			font=Arial12Thick
+			textcolor=white				
+			render_bg
+			{
+				0="image_scale(x0, y0, x1, y1, hud/container_skillnum_64 )"
+			}			
+		}
+		
+		ManaCost
+		{
+			font=Arial12Thick
+			textcolor=ManaCost
+			inset-left=14
+			bgcolor=black		
+			
+			render
+			{
+				0="image_scale( x0, y0+1, x0+13, y1-2, hud/mana_drop )"
+			}	
+		}
+		
+		Attribute
+		{
+			font=Din12Thick
+			textcolor=AttributeColor
+		}
+		
+		AttributeBonus
+		{
+			font=Din12Thick
+			textcolor=AttributeBonusColor
+		}
+		
+		ArmorIcon
+		{
+			render
+			{			
+				0="image_scale( x0, y0, x1, y1, hud/hudicons/attr_armor )"
+			}
+		}
+		
+		DamageIcon
+		{
+			render
+			{			
+				0="image_scale( x0, y0, x1, y1, hud/hudicons/attr_damage )"
+			}
+		}
+	}
+}	

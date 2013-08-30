@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/leshrac/leshrac_tail_color"
+	"$normalmap" "models/heroes/leshrac/leshrac_tail_normal"
+	"$maskmap1" "models/heroes/leshrac/leshrac_tail_masks1"
+	"$maskmap2" "models/heroes/leshrac/leshrac_tail_masks2"
+//	$diffusewarp "models/heroes/earthshaker/earthshaker_lightwarp"
+
+	$SPECULAREXPONENT 4
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[.2 1 2]"
+	$RIMLIGHTCOLOR "1 1 1"
+
+	$RIMLIGHTSCALE .1
+	$AMBIENTSCALE 1
+
+
+	$SPECULAR_BLOOM_SCALE      1
+	$SPECULAR_BLOOM_COLOR "[0 0 .6]"
+	$SPECULAR_BLOOM_SHIFT 1
+	$ALPHATEST 1
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

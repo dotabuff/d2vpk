@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models/items/furion/staff_leafy_1"
+  
+	
+	
+	"$normalmap" "models/items/furion/staff_leafy_1_normal"
+//	"$maskmap2" "dev/reflectivity_10"
+
+
+
+	$SPECULAREXPONENT 8
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 1
+	$RIMLIGHTSCALE	1.0
+	$RIMLIGHTCOLOR	"[.85 1 1]"
+
+
+
+	$cloakintensity 0.85
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

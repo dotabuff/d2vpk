@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/sven/blade_color"
+	"$normalmap" "models/heroes/sven/blade_normal"
+	"$maskmap1" "models/heroes/sven/blade_mask1"
+	"$maskmap2" "models/heroes/sven/blade_mask2"
+//	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+//	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+        $FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "1 1 1"
+	$RIMLIGHTCOLOR ".8 1 1"
+	$SPECULARBLENDTOFULL 1
+	$alphatest 1
+
+	$RIMLIGHTSCALE 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

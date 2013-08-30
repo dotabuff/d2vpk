@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/ancient_apparition/ancientapparition_colors"
+	"$normalmap" "models/heroes/ancient_apparition/ancientapparition_normals"
+	"$maskmap1" "models/heroes/ancient_apparition/ancientapparition_masks1"
+	"$maskmap2" "models/heroes/ancient_apparition/ancientapparition_masks2"
+	
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[.7 1 1]"
+	$RIMLIGHTCOLOR "[.8 1 1]"
+
+	$ENVMAP "models/cubemaps/default_gray"
+
+	$ENVMAPINTENSITY 6
+	$ENVMAPBLENTOFULL 1
+
+	$RIMLIGHTSCALE 1
+
+//	$DETAIL1BLENDMODE 3
+//	$DETAIL1SCALE 1
+//	$DETAIL1BLENDFACTOR 0
+//	$DETAIL1BLENDTOFULL 0
+	$AMBIENTSCALE .5
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

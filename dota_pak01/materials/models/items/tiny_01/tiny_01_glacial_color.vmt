@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/tiny_01/tiny_01_glacial_color"
+	"$normalmap" "models/heroes/tiny_01/tiny_01_normal"
+	"$alphatest" "1"
+
+	//"$diffusewarp" "models/heroes/tiny_04/tiny_04_lightwarp"
+	"$maskmap1" "models/heroes/tiny_01/tiny_01_masks1"
+	"$maskmap2" "models/items/tiny_01/tiny_01_glacial_masks2"
+
+	
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 1.5
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1.5
+	$RIMLIGHTCOLOR "[.75 1 1]"
+
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

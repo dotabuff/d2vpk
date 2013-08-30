@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/Broodmother/broodmother_hair.vtf"
+	"$normalmap" "models/heroes/Broodmother/broodmother_hair_normal.vtf"
+	"$maskmap2" "models/heroes/Broodmother/broodmother_hair_mask2"
+
+
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 64
+	$RIMLIGHTSCALE	2
+	$alphatest 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+
+//	$ambientscale 1
+
+//	$rimlightcolor "[.3 1 .8]"
+
+	$cloakintensity 0.75
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

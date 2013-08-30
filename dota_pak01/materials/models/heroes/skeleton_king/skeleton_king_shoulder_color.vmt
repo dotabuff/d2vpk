@@ -1,0 +1,32 @@
+// ### This basic VMT was written based on the D:\dev\tools\python\templateStrings.py script ###
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/skeleton_king/skeleton_king_shoulder_color"
+	"$normalmap" "models/heroes/skeleton_king/skeleton_king_shoulder_normal"
+	"$maskmap1" "models/heroes/skeleton_king/skeleton_king_shoulder_masks1"
+	"$maskmap2" "models/heroes/skeleton_king/skeleton_king_shoulder_masks2"
+
+
+	
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 7
+
+	$RIMLIGHTSCALE .5
+	$AMBIENTSCALE 1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

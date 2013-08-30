@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$basetexture" "particle/beam_generic_2.vtf"
+	"$normalmap" "particle\beam_liquid_01_normal"
+
+	//$NoCull 1
+
+
+	$FRESNELWARP "models/heroes/storm_spirit/storm_spirit_fresnelranges"
+
+
+
+	//$FRESNELWARP "models/heroes/kunkka/ghostship_fresnelranges"
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 14
+	$SPECULARCOLOR "[.5 0 2]"
+
+	$RIMLIGHTSCALE 44
+	$RIMLIGHTCOLOR "[.3 0 4]"
+	$RIMLIGHTBLENDTOFULL 1
+		
+	$SPECULAR_BLOOM_SCALE      11
+
+        $ALLOWDIFFUSEMODULATION 1
+}

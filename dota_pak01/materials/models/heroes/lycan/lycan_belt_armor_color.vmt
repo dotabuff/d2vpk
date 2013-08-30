@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/lycan/lycan_belt_armor_color"
+	"$normalmap" "models/heroes/lycan/lycan_belt_armor_normal"
+	"$maskmap1" "models/heroes/lycan/lycan_belt_armor_masks1"
+	"$maskmap2" "models/heroes/lycan/lycan_belt_armor_masks2"
+	"$diffusewarp" "models/heroes/lycan/lycan_lightwarp"
+	//$SPECULARWARP "models/heroes/lycan/lycan_lightwarp"
+
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" 3
+
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 10
+	$SPECULAR_BLOOM_SCALE 2
+	$SPECULARCOLOR "[1 1 1]"
+
+	$AMBIENTSCALE .5
+
+	$RIMLIGHTSCALE	.5
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$IgnoreBudgetCheck 1
+	$alphatest 1	
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

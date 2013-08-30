@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/lina/lina_dress_color"
+	"$normalmap" "models/heroes/lina/lina_dress_normal"
+	"$maskmap1" "models/heroes/lina/lina_dress_masks1"
+	"$maskmap2" "models/heroes/lina/lina_dress_masks2"
+
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 3
+	$RIMLIGHTSCALE	2
+	$specularcolor "[2 .8 .7]"
+	$RIMLIGHTCOLOR "[1 1 .75]"
+
+	$COLORWARP 1
+	$ALPHATEST 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

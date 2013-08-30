@@ -1,0 +1,37 @@
+"SpriteCard"
+{
+	$basetexture "particle/fire_burning_character/fire_burning_character"
+	$ADDSELF 1
+	$BLENDFRAMES 1
+
+	$CROPFACTOR "[0.5 1]"
+
+	$OVERBRIGHTFACTOR 5.0  //1.5
+	//$MINSIZE .0125
+	//$MAXSIZE .6
+	$STARTFADESIZE .21
+	$ENDFADESIZE .325
+	$DEPTHBLEND 1
+	$DEPTHBLENDSCALE "32"
+	$maxsize .21
+
+
+
+	360?$STARTFADESIZE .15
+	360?$ENDFADESIZE .22
+	360?$BLENDFRAMES 0
+	360?$DEPTHBLEND 0
+	360?$maxsize .15
+
+	GPU<2?$STARTFADESIZE .35
+	GPU<2?$ENDFADESIZE .4
+	GPU<2?$BLENDFRAMES 0
+	GPU<2?$DEPTHBLEND 0
+	GPU<2?$maxsize .15
+
+	//$VERTEXCOLORLERP 1
+	//$LERPCOLOR1 "{126 119 82}"
+	//$LERPCOLOR2 "{132 83 47}"
+
+	$orientation 3
+}

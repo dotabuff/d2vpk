@@ -1,0 +1,129 @@
+
+"Hero_DrowRanger.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_DrowRanger.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/drow_ranger/arrow_1.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_2.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_3.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_DrowRanger.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_1.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_2.wav"
+		"wave"		"weapons/hero/drow_ranger/arrow_impact_3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Hero_DrowRanger.FrostArrows"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_81dB"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/drow_ranger/frost_arrow1.wav"
+		"wave"		")weapons/hero/drow_ranger/frost_arrow2.wav"
+		"wave"		")weapons/hero/drow_ranger/frost_arrow3.wav"
+		"wave"		")weapons/hero/drow_ranger/frost_arrow4.wav"
+	}
+}
+
+"Hero_DrowRanger.Silence"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/drow_ranger/silence.wav"
+}
+
+"Hero_DrowRanger.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.2, 0.3"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"105, 115"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_DrowRanger.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

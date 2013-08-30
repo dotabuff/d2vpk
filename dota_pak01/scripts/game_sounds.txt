@@ -1,0 +1,2966 @@
+// Channels
+//	CHAN_AUTO		= 0,
+//	CHAN_WEAPON		= 1,
+//	CHAN_VOICE		= 2,
+//	CHAN_ITEM		= 3,
+//	CHAN_BODY		= 4,
+//	CHAN_STREAM		= 5,		// allocate stream channel from the static or dynamic area
+//	CHAN_STATIC		= 6,		// allocate channel from the static area 
+// these can be set with "channel" "2" or "channel" "chan_voice"
+
+
+
+"General.GameStart"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"GameStart.DireAncient"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_96dB"
+	"wave"			")ambient/horn_dire.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{			
+			"stop_prehorn_music"
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "true"
+				"input_execute"	"1.0"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StopPrehorn" //Replace with the sound you want to play.
+			}
+		}
+	
+		"update_stack"
+		{
+			"import_stack" "update_music_spatial"
+			"position_array"
+			{
+				"input_entry_count" "1"
+
+				"input_position_0[0]"   "5545.06" 
+				"input_position_0[1]"   "4998.54"
+				"input_position_0[2]"   "1243.07"
+			}
+	       "source_distance"
+		   {
+			   "force_not_player_sound" "true"
+			}
+			"mixer"
+			{
+				"set_mixgroup_to_channel" "true"
+				"mixgroup" "Ultimates"
+			}
+			"volume_apply_musicvolume_convar"
+			{
+				"input1" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "12000"
+			}
+		}
+	}
+}
+
+"GameStart.RadiantAncient"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_96dB"
+	"wave"			")ambient/horn_radiant.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{			
+			"stop_prehorn_music"
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "true"
+				"input_execute"	"1.0"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StopPrehorn" //Replace with the sound you want to play.
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "update_music_spatial"
+			"position_array"
+			{
+				"input_entry_count" "1"
+
+				"input_position_0[0]"   "-5791.23"
+				"input_position_0[1]"   "-5426.02" 
+				"input_position_0[2]"   "1243.07"
+			}
+	       "source_distance"
+		   {
+			   "force_not_player_sound" "true"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+				"set_mixgroup_to_channel" "true"
+			}
+			"volume_apply_musicvolume_convar"
+			{
+				"input1" "1.0"
+			}
+
+			"speakers_spatialize"
+			{
+				"input_radius"  "12000"
+			}
+		}
+	}
+}
+
+"Hero_Shared.WaterFootsteps"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.7, 1.0"
+	"soundlevel"  "SNDLVL_63dB"
+	"rndwave"
+	{
+		"wave"	"physics/footsteps/common/waterstep_01.wav"
+		"wave"	"physics/footsteps/common/waterstep_02.wav"
+		"wave"	"physics/footsteps/common/waterstep_03.wav"
+		"wave"	"physics/footsteps/common/waterstep_04.wav"
+		"wave"	"physics/footsteps/common/waterstep_05.wav"
+		"wave"	"physics/footsteps/common/waterstep_06.wav"
+		"wave"	"physics/footsteps/common/waterstep_07.wav"
+		"wave"	"physics/footsteps/common/wade5.wav"
+		"wave"	"physics/footsteps/common/wade6.wav"
+		"wave"	"physics/footsteps/common/wade7.wav"
+		"wave"	"physics/footsteps/common/wade8.wav"
+	}
+
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"BaseEntity.ExitWater"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  "SNDLVL_63dB"
+	"rndwave"
+	{
+		"wave"	"physics/footsteps/common/waterstep_01.wav"
+		"wave"	"physics/footsteps/common/waterstep_02.wav"
+		"wave"	"physics/footsteps/common/waterstep_03.wav"
+		"wave"	"physics/footsteps/common/waterstep_04.wav"
+		"wave"	"physics/footsteps/common/waterstep_05.wav"
+		"wave"	"physics/footsteps/common/waterstep_06.wav"
+		"wave"	"physics/footsteps/common/waterstep_07.wav"
+	}
+
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Portal.Loop_Appear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"100"
+
+	"wave"			")ui/portal_loop.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_fade_in"
+			{
+				"input_max" "1.5"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Portal.Loop_Disappear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"100"
+
+	"wave"			")ui/portal_loop_alt.wav"
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_fade_in"
+			{
+				"input_max" "1.5"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Portal.Hero_Appear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			")ui/portal_appear.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Portal.Hero_Disappear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			")ui/portal_disappear.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Courier.Spawn"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+
+	"wave"			"npc/courier/courier_spawn.wav"
+
+}
+
+"Courier.Acknowledge"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+
+	"wave"			"npc/courier/courier_acknowledge.wav"
+
+}
+
+"Courier.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc/courier/courier_footstep01.wav"
+		"wave"		"npc/courier/courier_footstep02.wav"
+		"wave"		"npc/courier/courier_footstep03.wav"
+		"wave"		"npc/courier/courier_footstep04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+"Courier.Impact"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.25"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"General.MorphIn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")misc/morph_in.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.MorphOut"  
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")misc/morph_out.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.Chicken"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"wave"			")ambient/chicken.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.Pig"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"wave"			")ambient/pig.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.Sheep"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"wave"			")ambient/sheep.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.Frog"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"wave"			"ambient/frog.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.RunePickUp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	
+	"wave"			"ui/rune_pickup01.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_vo_clamped"
+		}		
+	}
+}
+
+"General.Illusion.Create"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")misc/morph_in.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.Illusion.Destroy" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")misc/morph_out.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+
+"Default.Null"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"		"test/null.wav"
+	"soundentry_version" "2"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" 	"P2_null_start" //don't try to play wave			
+		}
+	}
+}
+
+"xray.beep"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"		"SNDLVL_65dB"
+	"volume"		"0.30"
+	"wave"		"test/beep.wav"
+}
+
+"DotaSOS.TestBeep"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"		"SNDLVL_NORM"
+	"wave"		"test/beep.wav"
+	"soundentry_version" "2"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" 	"dota_exclusion_time_and_poly_limiting_start" //don't try to play wave	
+			
+			"block_entries"
+			{
+				"input_duration" "1.0" //in seconds, you can use "@get_random.output" for a random blocking period
+				"match_entry" "DotaSOS.TestBeep" //The sound entry to use
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			
+			"mixer"
+			{
+				"mixgroup" "All"
+			}
+		}
+		
+		"stop_stack"
+		{
+			"import_stack"	"stop_and_play"
+		
+			"play_entry"
+			{
+				"entry_name" "xray.beep" //Replace with the sound you want to play.
+			}		
+		}
+	}
+}
+
+"Dota.UpdateVODefault"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		    "common/null.wav"
+	"soundentry_version" "2"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"stop_voice"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_channel" "true"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_vo_default"	
+		}		
+	}
+}
+
+"Dota.UpdateVOClamped"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		    "common/null.wav"
+	"soundentry_version" "2"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"stop_voice"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_channel" "true"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_vo_clamped"
+		}		
+	}
+}
+
+"Dota.UpdateVOClampedPanning"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		    "common/null.wav"
+	"soundentry_version" "2"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"stop_voice"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_channel" "true"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_vo_clamped_panning"
+		}		
+	}
+}
+
+"Dota.UpdateVOSpatialStereo"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_TALKING"
+	"wave"		    "common/null.wav"
+	"soundentry_version" "2"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"stop_voice"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_channel" "true"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_vo_spatial_stereo"
+		}		
+	}
+}
+
+"Building_Generic.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  		"SNDLVL_85dB"
+	"pitch"			"95,100"
+	"rndwave"			
+	{
+		"wave"			")physics/damage/engines/dire_base_destruction_01.wav"
+		"wave"			")physics/damage/engines/dire_base_destruction_02.wav"
+		"wave"			")physics/damage/engines/dire_base_destruction_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Building_RadiantTower.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_105dB"
+	"pitch"			"95,100"
+	"rndwave"			
+	{
+		"wave"			")physics/damage/building/radiant_tower_destruction_01.wav"
+		"wave"			")physics/damage/building/radiant_tower_destruction_02.wav"
+		"wave"			")physics/damage/building/radiant_tower_destruction_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack"  "dota_attack_block_dist"
+			"block_dist"
+			{
+			"input2" "25000"
+			}
+			"play_second_layer"
+			{
+				"input_execute"	"1"
+				"entry_name" "Building_RadiantTower.Destruction.Distant"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+				"input_max" "6000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}	
+}	
+
+"Building_RadiantTower.Destruction.Distant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_105dB"
+	"pitch"			"95,100"
+	"rndwave"			
+	{		
+		"wave"			")physics/damage/building/radiant_tower_distant01.wav"
+		"wave"			")physics/damage/building/radiant_tower_distant02.wav"
+		"wave"			")physics/damage/building/radiant_tower_distant03.wav"
+	}
+	"operator_stacks"
+	{
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"operator" "math_remap_float"
+			"input" "@source_distance.output"
+			"input_min" "300.0"
+			"input_max" "1000.0"
+			"input_map_min" "0.1"
+			"input_map_max" "1.0"
+			"default_to_max" "false"	
+			}
+		}
+	}	
+}
+
+
+"Building_DireTower.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_105dB"
+	"pitch"			"95,100"
+	"rndwave"			
+	{		
+		"wave"			")physics/damage/building/dire_tower_destruction_01.wav"
+		"wave"			")physics/damage/building/dire_tower_destruction_02.wav"
+		"wave"			")physics/damage/building/dire_tower_destruction_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack"  "dota_attack_block_dist"
+			"block_dist"
+			{
+			"input2" "25000"
+			}
+			"play_second_layer"
+			{
+				"input_execute"	"1"
+				"entry_name" "Building_DireTower.Destruction.Distant"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+				"input_max" "6000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}	
+}
+
+"Building_DireTower.Destruction.Distant"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_105dB"
+	"pitch"			"95,100"
+	"rndwave"			
+	{		
+		"wave"			")physics/damage/building/dire_tower_distant01.wav"
+		"wave"			")physics/damage/building/dire_tower_distant02.wav"
+		"wave"			")physics/damage/building/dire_tower_distant03.wav"
+	}
+	"operator_stacks"
+	{
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"operator" "math_remap_float"
+			"input" "@source_distance.output"
+			"input_min" "300.0"
+			"input_max" "1000.0"
+			"input_map_min" "0.1"
+			"input_map_max" "1.0"
+			"default_to_max" "false"	
+			}
+		}
+	}	
+}
+
+"Dire.ancient.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_120dB"
+	"wave"			")physics/damage/building/dire_ancient_destruction_lose.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+				"input_max" "30000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "6000"
+			}
+		}
+	}	
+}
+
+"Radiant.ancient.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_120dB"
+	"wave"			")physics/damage/building/radiant_ancient_destruction_lose.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "30000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "6000"
+			}
+		}
+	}			
+}
+
+"Building_Tombstone.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  		"SNDLVL_81dB"
+	"pitch"			"120"
+	"rndwave"			
+	{
+		"wave"			")physics/damage/engines/dire_base_destruction_01.wav"
+		"wave"			")physics/damage/engines/dire_base_destruction_02.wav"
+		"wave"			")physics/damage/engines/dire_base_destruction_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+
+"Damage_Melee.Hero"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/npc/melee01.wav"
+		"wave"			"physics/damage/npc/melee02.wav"
+		"wave"			"physics/damage/npc/melee03.wav"
+		"wave"			"physics/damage/npc/melee04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Damage_Melee.Gore"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			")physics/damage/npc/spatter01.wav"
+		"wave"			")physics/damage/npc/spatter02.wav"
+		"wave"			")physics/damage/npc/spatter03.wav"
+		"wave"			")physics/damage/npc/spatter04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "Damage_Melee.Gore"
+				"match_channel" "false"
+			}
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+		}
+	}
+}
+
+"Damage_Melee.Building"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/building/damage01.wav"
+		"wave"			"physics/damage/building/damage02.wav"
+		"wave"			"physics/damage/building/damage03.wav"
+		"wave"			"physics/damage/building/damage04.wav"
+		"wave"			"physics/damage/building/damage05.wav"
+		"wave"			"physics/damage/building/sweeten01.wav"
+		"wave"			"physics/damage/building/sweeten02.wav"
+		"wave"			"physics/damage/building/sweeten03.wav"
+		"wave"			"physics/damage/building/sweeten04.wav"
+		"wave"			"physics/damage/building/sweeten05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Damage_Melee.Player"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_110dB"
+	"pitch"			"95,100"
+	"rndwave"
+	{
+		"wave"			"physics/damage/player/melee01.wav"
+		"wave"			"physics/damage/player/melee02.wav"
+		"wave"			"physics/damage/player/melee03.wav"
+		"wave"			"physics/damage/player/melee04.wav"
+	}
+}
+
+"Damage_Projectile.Player"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_110dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/player/projectile01.wav"
+		"wave"			"physics/damage/player/projectile02.wav"
+		"wave"			"physics/damage/player/projectile03.wav"
+		"wave"			"physics/damage/player/projectile04.wav"
+	}
+}
+
+"Tower.HeroImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_110dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/player/tower_projectile01.wav"
+		"wave"			"physics/damage/player/tower_projectile02.wav"
+		"wave"			"physics/damage/player/tower_projectile03.wav"
+		"wave"			"physics/damage/player/tower_projectile04.wav"
+	}
+
+}
+
+
+
+"Tree.GrowBack"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/furion/treant_spawn01.wav"
+		"wave"			"weapons/hero/furion/treant_spawn02.wav"
+		"wave"			"weapons/hero/furion/treant_spawn03.wav"
+		"wave"			"weapons/hero/furion/treant_spawn04.wav"
+		"wave"			"physics\footsteps\hero\furion\treant_death01.wav"
+		"wave"			"physics\footsteps\hero\furion\treant_death02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "1500.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+		}
+	}
+}
+
+"Tree.CutDown"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5, 0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 110"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/furion/treant_spawn01.wav"
+		"wave"			"weapons/hero/furion/treant_spawn02.wav"
+		"wave"			"weapons/hero/furion/treant_spawn03.wav"
+		"wave"			"weapons/hero/furion/treant_spawn04.wav"
+		"wave"			"physics\footsteps\hero\furion\treant_death01.wav"
+		"wave"			"physics\footsteps\hero\furion\treant_death02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "1800.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+		}
+	}
+}
+
+"Roshan.Death"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_150dB"
+	"pitch"			"100"
+	"wave"			")misc/rosh_death.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "10000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//crowd sounds
+///////////////////////////////////////////////////////////////////////////////
+
+"crowd.lv_01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"95, 105"
+	"wave"			"misc\crowd_lv_01.wav"
+}
+
+"crowd.lv_02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"95, 105"
+	"wave"			"misc\crowd_lv_02.wav"
+}
+
+"crowd.lv_03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"95, 105"
+	"wave"			"misc\crowd_lv_03.wav"
+}
+
+"crowd.lv_04"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"pitch"			"95, 105"
+	"wave"			"misc\crowd_lv_04.wav"
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//old shit
+///////////////////////////////////////////////////////////////////////////////
+
+"General.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Bow.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Melee.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Game.HappyBirthday"
+{
+ 	"channel"  "CHAN_STATIC"
+ 	"volume"  "1"
+ 	"pitch"  "100"
+ 	"soundlevel"   "SNDLVL_87dB"
+	"wave"  "misc/happy_birthday.wav"
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//common body sounds
+///////////////////////////////////////////////////////////////////////////////
+
+"BodyImpact_Common.Light"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"BodyImpact_Common.Medium"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.45"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_medium_01.wav"
+		"wave"			"physics\deaths\common\body_impact_medium_02.wav"
+		"wave"			"physics\deaths\common\body_impact_medium_03.wav"
+		"wave"			"physics\deaths\common\body_impact_medium_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"BodyImpact_Common.Heavy"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_80dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_heavy_01.wav"
+		"wave"			"physics\deaths\common\body_impact_heavy_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"BodyImpact_Common.Giant"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_80dB"
+	"wave"			"physics\deaths\common\body_impact_giant.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//common item drop sounds
+///////////////////////////////////////////////////////////////////////////////
+"WeaponImpact_Common.Light"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_69dB"
+	"rndwave"
+	{
+		"wave"			"physics\items\weapon_drop_common_01.wav"
+		"wave"			"physics\items\weapon_drop_common_02.wav"
+		"wave"			"physics\items\weapon_drop_common_03.wav"
+		"wave"			"physics\items\weapon_drop_common_04.wav"
+		"wave"			"physics\items\weapon_drop_common_05.wav"
+		"wave"			"physics\items\weapon_drop_common_06.wav"
+		"wave"			"physics\items\weapon_drop_common_07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"WeaponImpact_Common.Heavy"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_69dB"
+	"rndwave"
+	{
+		"wave"			"physics\items\weapon_drop_heavy_01.wav"
+		"wave"			"physics\items\weapon_drop_heavy_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"WeaponImpact_Common.Dull"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_69dB"
+	"rndwave"
+	{
+		"wave"			"physics\items\weapon_drop_dull_01.wav"
+		"wave"			"physics\items\weapon_drop_dull_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"WeaponImpact_Common.Wood"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_69dB"
+	"rndwave"
+	{
+		"wave"			"physics\items\weapon_drop_wood_01.wav"
+		"wave"			"physics\items\weapon_drop_wood_02.wav"
+		"wave"			"physics\items\weapon_drop_wood_03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//turtle_courier
+///////////////////////////////////////////////////////////////////////////////
+
+// "turtle_Courier.Spawn"
+// {
+	// "channel"		"CHAN_VOICE"
+	// "volume"		"0.0"
+	// "soundlevel"  	"SNDLVL_72dB"
+	// "pitch"			"95,105"
+
+	// "wave"			"null.wav"
+
+// }
+
+// "turtle_Courier.Acknowledge"
+// {
+	// "channel"		"CHAN_VOICE"
+	// "volume"		"0.0"
+	// "soundlevel"  	"SNDLVL_72dB"
+	// "pitch"			"95,105"
+
+	// "wave"			"null.wav"
+
+// }
+
+"turtle_Courier.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\turtle\turtle_rider_fs_01.wav"
+		"wave"		"npc\courier\turtle\turtle_rider_fs_02.wav"
+		"wave"		"npc\courier\turtle\turtle_rider_fs_03.wav"
+		"wave"		"npc\courier\turtle\turtle_rider_fs_04.wav"
+		"wave"		"npc\courier\turtle\turtle_rider_fs_05.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"turtle_Courier.chest_bounce"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\turtle\turtle_rider_chest_01.wav"
+		"wave"		"npc\courier\turtle\turtle_rider_chest_02.wav"
+		"wave"		"npc\courier\turtle\turtle_rider_chest_03.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"turtle_Courier.Impact"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"turtle_Courier.rear_up"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".6, .8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"npc\courier\turtle\turtle_rider_rear_up.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"turtle_Courier.scratch"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".5, .7"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"npc\courier\turtle\turtle_rider_head_scratch.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//lockjaw_courier
+///////////////////////////////////////////////////////////////////////////////
+
+// "lockjaw_Courier.Spawn"
+// {
+	// "channel"		"CHAN_VOICE"
+	// "volume"		"0.0"
+	// "soundlevel"  	"SNDLVL_72dB"
+	// "pitch"			"95,105"
+
+	// "wave"			"null.wav"
+
+// }
+
+// "lockjaw_Courier.Acknowledge"
+// {
+	// "channel"		"CHAN_VOICE"
+	// "volume"		"0.0"
+	// "soundlevel"  	"SNDLVL_72dB"
+	// "pitch"			"95,105"
+
+	// "wave"			"null.wav"
+
+// }
+
+"lockjaw_Courier.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_fs_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_fs_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_fs_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_fs_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.Footsteps_land"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5, 0.7"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_fs_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_fs_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_fs_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_fs_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.chest_creak"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.chest_creak_big"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.9, 1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.chest_creak_idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_creak_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+
+"lockjaw_Courier.chest_latch"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.chest_latch_big"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.chest_latch_idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_latch_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.chains"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_03.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.chains_big"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_03.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.chains_idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1, 0.3"
+	"soundlevel"  	"SNDLVL_70dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_chains_03.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.gold"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_gold_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_gold_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_gold_03.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.gold_big"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_run_gold_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_gold_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_run_gold_03.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.Impact"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+// "lockjaw_Courier.rear_up"
+// {
+	// "channel"		"CHAN_BODY"
+	// "volume"		".4, .6"
+	// "soundlevel"  	"SNDLVL_72dB"
+	// "wave"			"npc\courier\turtle\turtle_rider_rear_up.wav"
+	// "operator_stacks"
+	// {
+		// "start_stack"
+		// {
+			// "import_stack" "start_block_at_distance"
+			// "block_dist"
+			// {
+				// "input2" "2000"
+			// }
+		// }
+	// }
+// }
+
+"lockjaw_Courier.scratch"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_scratch_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_scratch_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_scratch_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_scratch_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"lockjaw_Courier.scratch_final"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.3"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\lockjaw\lockjaw_scratch_01.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_scratch_02.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_scratch_03.wav"
+		"wave"		"npc\courier\lockjaw\lockjaw_scratch_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////////
+//drodo_courier
+///////////////////////////////////////////////////////////////////////////////
+
+// "drodo_Courier.Spawn"
+// {
+	// "channel"		"CHAN_VOICE"
+	// "volume"		"0.0"
+	// "soundlevel"  	"SNDLVL_72dB"
+	// "pitch"			"95,105"
+
+	// "wave"			"null.wav"
+
+// }
+
+// "drodo_Courier.Acknowledge"
+// {
+	// "channel"		"CHAN_VOICE"
+	// "volume"		"0.0"
+	// "soundlevel"  	"SNDLVL_72dB"
+	// "pitch"			"95,105"
+
+	// "wave"			"null.wav"
+
+// }
+
+"drodo_Courier.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\drodo\fs_01.wav"
+		"wave"		"npc\courier\drodo\fs_02.wav"
+		"wave"		"npc\courier\drodo\fs_03.wav"
+		"wave"		"npc\courier\drodo\fs_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"drodo_Courier.flutter"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\drodo\flutter_01.wav"
+		"wave"		"npc\courier\drodo\flutter_02.wav"
+		"wave"		"npc\courier\drodo\flutter_03.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"drodo_Courier.Impact"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"drodo_Courier.fish_catch"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"npc\courier\drodo\fish_catch.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"drodo_Courier.fish_slam"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".6, .8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"npc\courier\drodo\fish_slam.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"drodo_Courier.idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".6, .8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"npc\courier\drodo\idle_01.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\drodo\fs_01.wav"
+		"wave"		"npc\courier\drodo\fs_02.wav"
+		"wave"		"npc\courier\drodo\fs_03.wav"
+		"wave"		"npc\courier\drodo\fs_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.footsteps_small"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.0, 0.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\drodo\fs_01.wav"
+		"wave"		"npc\courier\drodo\fs_02.wav"
+		"wave"		"npc\courier\drodo\fs_03.wav"
+		"wave"		"npc\courier\drodo\fs_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.footsteps_spawn"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5, 0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\drodo\fs_01.wav"
+		"wave"		"npc\courier\drodo\fs_02.wav"
+		"wave"		"npc\courier\drodo\fs_03.wav"
+		"wave"		"npc\courier\drodo\fs_04.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.pant_small"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4, 0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\pant_small_01.mp3"
+		"wave"		"npc\courier\greevil\pant_small_02.mp3"
+		"wave"		"npc\courier\greevil\pant_small_03.mp3"
+		"wave"		"npc\courier\greevil\pant_small_04.mp3"
+		"wave"		"npc\courier\greevil\pant_small_05.mp3"
+		"wave"		"npc\courier\greevil\pant_small_06.mp3"
+		"wave"		"npc\courier\greevil\pant_small_07.mp3"
+		"wave"		"npc\courier\greevil\pant_small_08.mp3"
+		"wave"		"npc\courier\greevil\pant_small_09.mp3"
+		"wave"		"npc\courier\greevil\pant_small_10.mp3"
+		"wave"		"npc\courier\greevil\pant_small_11.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.pant_small_always"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4, 0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\pant_small_01.mp3"
+		"wave"		"npc\courier\greevil\pant_small_02.mp3"
+		"wave"		"npc\courier\greevil\pant_small_03.mp3"
+		"wave"		"npc\courier\greevil\pant_small_04.mp3"
+		"wave"		"npc\courier\greevil\pant_small_05.mp3"
+		"wave"		"npc\courier\greevil\pant_small_06.mp3"
+		"wave"		"npc\courier\greevil\pant_small_07.mp3"
+		"wave"		"npc\courier\greevil\pant_small_08.mp3"
+		"wave"		"npc\courier\greevil\pant_small_09.mp3"
+		"wave"		"npc\courier\greevil\pant_small_10.mp3"
+		"wave"		"npc\courier\greevil\pant_small_11.mp3"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.pant_big"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\pant_big_01.mp3"
+		"wave"		"npc\courier\greevil\pant_big_02.mp3"
+		"wave"		"npc\courier\greevil\pant_big_03.mp3"
+		"wave"		"npc\courier\greevil\pant_big_04.mp3"
+		"wave"		"npc\courier\greevil\pant_big_05.mp3"
+		"wave"		"npc\courier\greevil\pant_big_06.mp3"
+		"wave"		"npc\courier\greevil\pant_big_07.mp3"
+		"wave"		"npc\courier\greevil\pant_big_08.mp3"
+		"wave"		"npc\courier\greevil\pant_big_09.mp3"
+		"wave"		"npc\courier\greevil\pant_big_10.mp3"
+		"wave"		"npc\courier\greevil\pant_big_11.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.pant_big_soft"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1, 0.2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\pant_big_01.mp3"
+		"wave"		"npc\courier\greevil\pant_big_02.mp3"
+		"wave"		"npc\courier\greevil\pant_big_03.mp3"
+		"wave"		"npc\courier\greevil\pant_big_04.mp3"
+		"wave"		"npc\courier\greevil\pant_big_05.mp3"
+		"wave"		"npc\courier\greevil\pant_big_06.mp3"
+		"wave"		"npc\courier\greevil\pant_big_07.mp3"
+		"wave"		"npc\courier\greevil\pant_big_08.mp3"
+		"wave"		"npc\courier\greevil\pant_big_09.mp3"
+		"wave"		"npc\courier\greevil\pant_big_10.mp3"
+		"wave"		"npc\courier\greevil\pant_big_11.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.pant_big_idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1, 0.2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\pant_big_01.mp3"
+		"wave"		"npc\courier\greevil\pant_big_02.mp3"
+		"wave"		"npc\courier\greevil\pant_big_03.mp3"
+		"wave"		"npc\courier\greevil\pant_big_04.mp3"
+		"wave"		"npc\courier\greevil\pant_big_05.mp3"
+		"wave"		"npc\courier\greevil\pant_big_06.mp3"
+		"wave"		"npc\courier\greevil\pant_big_07.mp3"
+		"wave"		"npc\courier\greevil\pant_big_08.mp3"
+		"wave"		"npc\courier\greevil\pant_big_09.mp3"
+		"wave"		"npc\courier\greevil\pant_big_10.mp3"
+		"wave"		"npc\courier\greevil\pant_big_11.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.grunt"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".2, .4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\grunt_01.mp3"
+		"wave"		"npc\courier\greevil\grunt_02.mp3"
+		"wave"		"npc\courier\greevil\grunt_03.mp3"
+		"wave"		"npc\courier\greevil\grunt_04.mp3"
+		"wave"		"npc\courier\greevil\grunt_05.mp3"
+		"wave"		"npc\courier\greevil\grunt_06.mp3"
+		"wave"		"npc\courier\greevil\grunt_07.mp3"
+		"wave"		"npc\courier\greevil\grunt_08.mp3"
+		"wave"		"npc\courier\greevil\grunt_09.mp3"
+		"wave"		"npc\courier\greevil\grunt_10.mp3"
+		"wave"		"npc\courier\greevil\grunt_11.mp3"
+		"wave"		"npc\courier\greevil\grunt_12.mp3"
+		"wave"		"npc\courier\greevil\grunt_13.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.grunt_big"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".4, .6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\grunt_01.mp3"
+		"wave"		"npc\courier\greevil\grunt_02.mp3"
+		"wave"		"npc\courier\greevil\grunt_03.mp3"
+		"wave"		"npc\courier\greevil\grunt_04.mp3"
+		"wave"		"npc\courier\greevil\grunt_05.mp3"
+		"wave"		"npc\courier\greevil\grunt_06.mp3"
+		"wave"		"npc\courier\greevil\grunt_07.mp3"
+		"wave"		"npc\courier\greevil\grunt_08.mp3"
+		"wave"		"npc\courier\greevil\grunt_09.mp3"
+		"wave"		"npc\courier\greevil\grunt_10.mp3"
+		"wave"		"npc\courier\greevil\grunt_11.mp3"
+		"wave"		"npc\courier\greevil\grunt_12.mp3"
+		"wave"		"npc\courier\greevil\grunt_13.mp3"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.grunt_idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".1, .2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\grunt_01.mp3"
+		"wave"		"npc\courier\greevil\grunt_02.mp3"
+		"wave"		"npc\courier\greevil\grunt_03.mp3"
+		"wave"		"npc\courier\greevil\grunt_04.mp3"
+		"wave"		"npc\courier\greevil\grunt_05.mp3"
+		"wave"		"npc\courier\greevil\grunt_06.mp3"
+		"wave"		"npc\courier\greevil\grunt_07.mp3"
+		"wave"		"npc\courier\greevil\grunt_08.mp3"
+		"wave"		"npc\courier\greevil\grunt_09.mp3"
+		"wave"		"npc\courier\greevil\grunt_10.mp3"
+		"wave"		"npc\courier\greevil\grunt_11.mp3"
+		"wave"		"npc\courier\greevil\grunt_12.mp3"
+		"wave"		"npc\courier\greevil\grunt_13.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.grunt_death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".2, .4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\grunt_01.mp3"
+		"wave"		"npc\courier\greevil\grunt_02.mp3"
+		"wave"		"npc\courier\greevil\grunt_03.mp3"
+		"wave"		"npc\courier\greevil\grunt_04.mp3"
+		"wave"		"npc\courier\greevil\grunt_05.mp3"
+		"wave"		"npc\courier\greevil\grunt_06.mp3"
+		"wave"		"npc\courier\greevil\grunt_07.mp3"
+		"wave"		"npc\courier\greevil\grunt_08.mp3"
+		"wave"		"npc\courier\greevil\grunt_09.mp3"
+		"wave"		"npc\courier\greevil\grunt_10.mp3"
+		"wave"		"npc\courier\greevil\grunt_11.mp3"
+		"wave"		"npc\courier\greevil\grunt_12.mp3"
+		"wave"		"npc\courier\greevil\grunt_13.mp3"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.grunt_idle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		".1, .2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"npc\courier\greevil\grunt_01.mp3"
+		"wave"		"npc\courier\greevil\grunt_02.mp3"
+		"wave"		"npc\courier\greevil\grunt_03.mp3"
+		"wave"		"npc\courier\greevil\grunt_04.mp3"
+		"wave"		"npc\courier\greevil\grunt_05.mp3"
+		"wave"		"npc\courier\greevil\grunt_06.mp3"
+		"wave"		"npc\courier\greevil\grunt_07.mp3"
+		"wave"		"npc\courier\greevil\grunt_08.mp3"
+		"wave"		"npc\courier\greevil\grunt_09.mp3"
+		"wave"		"npc\courier\greevil\grunt_10.mp3"
+		"wave"		"npc\courier\greevil\grunt_11.mp3"
+		"wave"		"npc\courier\greevil\grunt_12.mp3"
+		"wave"		"npc\courier\greevil\grunt_13.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"greevil_courier.impact"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+
+
+"DireTideGameStart.DireSide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_96dB"
+	"wave"			"ambient/diretide/diretide_begins_dire.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_music_spatial"
+			"position_array"
+			{
+				"input_entry_count" "1"
+
+				"input_position_0[0]"   "5545.06" 
+				"input_position_0[1]"   "4998.54"
+				"input_position_0[2]"   "1243.07"
+			}
+	       "source_distance"
+		   {
+			   "force_not_player_sound" "true"
+			}
+			"mixer"
+			{
+				"set_mixgroup_to_channel" "true"
+				"mixgroup" "Ultimates"
+			}
+			"volume_apply_musicvolume_convar"
+			{
+				"input1" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "12000"
+			}
+		}
+	}
+}
+
+"DireTideGameStart.RadiantSide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_96dB"
+	"wave"			"ambient/diretide/diretide_begins_radiant.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "update_music_spatial"
+			"position_array"
+			{
+				"input_entry_count" "1"
+
+				"input_position_0[0]"   "-5791.23"
+				"input_position_0[1]"   "-5426.02" 
+				"input_position_0[2]"   "1243.07"
+			}
+	       "source_distance"
+		   {
+			   "force_not_player_sound" "true"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+				"set_mixgroup_to_channel" "true"
+			}
+			"volume_apply_musicvolume_convar"
+			{
+				"input1" "1.0"
+			}
+
+			"speakers_spatialize"
+			{
+				"input_radius"  "12000"
+			}
+		}
+	}
+}
+
+"Boar.Spawn"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+
+	"wave"			"npc\courier\boar\boar_spawn1.mp3"
+
+}
+
+"Boar.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"90,100"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\boar\boarFootstep1.mp3"
+		"wave"		"npc\courier\boar\boarFootstep2.mp3"
+		"wave"		"npc\courier\boar\boarFootstep3.mp3"
+		"wave"		"npc\courier\boar\boarFootstep4.mp3"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Boar.PackJingle"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_74dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\boar\boar_pack_jingle1.mp3"
+		"wave"		"npc\courier\boar\boar_pack_jingle2.mp3"
+		"wave"		"npc\courier\boar\boar_pack_jingle3.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Boar.Snort"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.9, 1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"npc\courier\boar\boar_snort1.mp3"
+		"wave"		"npc\courier\boar\boar_snort5.mp3"
+		"wave"		"npc\courier\boar\boar_snort6.mp3"
+		"wave"		"npc\courier\boar\boar_snort7.mp3"
+		"wave"		"npc\courier\boar\boar_snort8.mp3"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Boar.Death"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+
+	"wave"			"npc\courier\boar\boar_death1.mp3"
+
+}

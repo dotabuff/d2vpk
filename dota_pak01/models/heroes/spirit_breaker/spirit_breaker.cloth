@@ -1,0 +1,35 @@
+ClothSystem
+{
+	
+		"Cloth"
+	{
+		"name"		"mace"
+		"columns"		"1"
+		"rows"		"5"
+		"damping"		"0.5"						//  0.98
+		"gravity"		"0 0 -1"						// 0 0 -1
+		"gravity_scale"		"400.000000"
+		"WorldFriction"		"0.10000"
+		"LocalForce"		"1.000000"					// 1.0
+		"LocalRotation"		"1.0000"
+		"FixedPointDamping"		"0.165000"
+		"StretchForce"		"1"					// 5.0
+		"SpringStretchiness"		"0"				// 0.1
+		"AnimationForceAttraction"		"0.0"
+		"AnimationVertexAttraction"		"0.5"
+		"ExternalForceScale"		"1.000000"			// 	1.0
+		"StructSpringConstant"		"10.000000"			// 10.0
+		"StructSpringDamping"		"0.500000"			//	0.1
+		"ShearSpringConstant"		"20.000000"			// 20.0
+		"ShearSpringDamping"		"0.900000"			//  0.5
+		"BendSpringConstant"		"10.000000"			// 10.0
+		"BendSpringDamping"		"0.900000"				//  0.5
+		"R0"		"fixed"
+		"R1"		"mass  1"
+		"R2"		"mass  1"
+		"R3"		"world | mass  1"
+		"R4"		"world | mass 12"
+		"BonePrefix"		"mace_"
+	}
+	
+}

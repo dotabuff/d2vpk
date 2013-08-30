@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/sniper/sniper_gun_color"
+	"$normalmap" "models/heroes/sniper/sniper_gun_normal"
+	"$maskmap1" "models/heroes/sniper/sniper_gun_masks1"
+	"$maskmap2" "models/heroes/sniper/sniper_gun_masks2"
+	
+	$SPECULAREXPONENT 50
+	$SPECULARSCALE 25
+	$SPECULARCOLOR "[0.5 1.0 1.0]"
+	//$SPECULARBLENDTOFULL 1
+	
+	//"$envmap" "models/cubemaps/glossy"
+	//"$envmapintensity" "1"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$alphatest 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

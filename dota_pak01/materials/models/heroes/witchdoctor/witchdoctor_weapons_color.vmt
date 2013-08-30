@@ -1,0 +1,34 @@
+
+"CustomHero"
+{
+	$baseTexture "models/heroes/witchdoctor/witchdoctor_weapons_color"
+	"$normalmap" "models/heroes/witchdoctor/witchdoctor_weapons_normal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	//"$diffusewarp" "models/heroes/axe/axe_diffusewarp"
+	"$maskmap1" "models/heroes/witchdoctor/witchdoctor_weapons_mask1"
+	"$maskmap2" "models/heroes/witchdoctor/witchdoctor_weapons_mask2"
+
+
+//	"$envmap" "env_cubemap"
+//	"$envmapintensity" "1"
+
+
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 3
+	$SPECULARCOLOR "1 1 1"
+	$RIMLIGHTSCALE 1	
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

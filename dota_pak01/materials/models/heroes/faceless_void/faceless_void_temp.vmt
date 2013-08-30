@@ -1,0 +1,32 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/faceless_void/faceless_void_color"
+	"$normalmap" "models/development/flatnormal"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE .5
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	$COLORWARP 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

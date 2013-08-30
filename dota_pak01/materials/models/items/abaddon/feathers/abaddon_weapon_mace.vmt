@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/abaddon/feathers/abaddon_weapon_mace_color"
+	"$normalmap" "models/items/abaddon/feathers/abaddon_weapon_mace_normal"
+	"$maskmap1" "models/items/abaddon/feathers/abaddon_weapon_mace_masks1"
+	"$maskmap2" "models/items/abaddon/feathers/abaddon_weapon_mace_masks2"
+	
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 10
+	
+	$RIMLIGHTSCALE 3
+	$IgnoreBudgetCheck 1
+	$alphatest	1
+	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

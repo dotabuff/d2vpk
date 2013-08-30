@@ -1,0 +1,9 @@
+// ### This basic VMT was written based on the E:\dev\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_stone/stoneblock004a"
+	$specTexture "models/props_stone/stoneblock004a_spec"
+	$specular_bloom .7
+	$specular_intensity 1
+	"$fow"                          "_rt_fog_of_war"
+}

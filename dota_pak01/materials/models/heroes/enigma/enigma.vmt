@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/enigma/enigma_color"
+	"$detail1"  "models/heroes/enigma/enigma_motion"
+	"$normalmap" "models/heroes/enigma/enigma_normals"
+	"$maskmap1" "models/heroes/enigma/enigma_masks1"
+	"$maskmap2" "models/heroes/enigma/enigma_masks2"
+//	"$diffusewarp" "models/heroes/enigma/razor_lightwarp"
+
+	$SPECULAREXPONENT 5
+//	$ambientscale 1
+	$SPECULARSCALE 2
+	$SPECULARCOLOR "[0 .2 1]"
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDTOFULL 0
+	$RIMLIGHTSCALE	21
+	$RIMLIGHTCOLOR	"[1 .3 2]"
+
+	$SPECULAR_BLOOM_SCALE      0
+	
+	
+	$FRESNELWARP "models/heroes/enigma/enigma_fresnelranges"
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	-.2
+			"texturescrollangle"	70
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+

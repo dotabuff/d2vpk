@@ -1,0 +1,21 @@
+"CustomHero"
+{
+	"$baseTexture"  "models/heroes/items/hat_test/top_hat"
+	"$normalmap" "models/development/flatnormal.vtf"
+
+	$RIMLIGHTSCALE	1
+
+
+	$rimlightcolor "[1 .8 .7]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

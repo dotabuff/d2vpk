@@ -1,0 +1,43 @@
+ClothSystem
+{
+	cloth
+	{
+		columns	11
+		rows 	6
+		major_columns	1
+		
+		damping			0.25
+		gravity			"0.0 0.0 -10.0"
+		WorldFriction 	0.35
+		
+		StructSpringConstant 	8.0
+		StructSpringDamping 	0.9
+		ShearSpringConstant 	8.0
+		ShearSpringDamping 		0.6
+		BendSpringConstant 		8.4
+		BendSpringDamping 		0.9
+		
+		R0C0	fixed
+		R1C0	fixed
+		R2C0	fixed
+		R3C0	fixed
+		R4C0	fixed
+		R5C0	fixed
+		
+		force_ignoreme
+		{
+			CLOTH_FORCE_VECTOR_ANGLES						"0.0 40.0 0.0"
+			CLOTH_FORCE_VECTOR_ANGLES_VARIANCE_START		"-10.0 -30.0 0.0"
+			CLOTH_FORCE_VECTOR_ANGLES_VARIANCE_END			"0.0 30.0 0.0"
+			CLOTH_FORCE_FLOAT_ANGLES_VARIANCE_DURATION_MIN	0.1
+			CLOTH_FORCE_FLOAT_ANGLES_VARIANCE_DURATION_MAX	0.2
+			CLOTH_FORCE_FLOAT_FORCE							22.0
+			CLOTH_FORCE_FLOAT_FORCE_VARIANCE_START			-12.0
+			CLOTH_FORCE_FLOAT_FORCE_VARIANCE_END			0.0
+			CLOTH_FORCE_FLOAT_FORCE_VARIANCE_DURATION_MIN	0.5
+			CLOTH_FORCE_FLOAT_FORCE_VARIANCE_DURATION_MAX	0.8
+			CLOTH_FORCE_FLOAT_FORCE_REST_MIN				0.1
+			CLOTH_FORCE_FLOAT_FORCE_REST_MAX				0.8
+		}
+	}
+}

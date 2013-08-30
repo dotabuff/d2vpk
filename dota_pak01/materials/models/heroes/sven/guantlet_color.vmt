@@ -1,0 +1,18 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/sven/guantlet_color.vtf"
+	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/heroes/sven/guantlet_mask1"
+	"$maskmap2" "models/heroes/sven/guantlet_mask2"
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 1
+	$RIMLIGHTSCALE	3
+
+	$translucent 1
+
+	$rimlightcolor "[1 .8 .7]"
+
+}

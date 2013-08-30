@@ -1,0 +1,41 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/undying/undying_armlet_color.vtf"
+	"$normalmap" "models/heroes/undying/undying_armlet_normal.vtf"
+	"$maskmap1" "models/heroes/undying/undying_armlet_mask1.vtf"
+	"$maskmap2" "models/heroes/undying/undying_armlet_mask2.vtf"
+//	"$diffusewarp" "models/heroes/razor/razor_lightwarp"
+	$IgnoreBudgetCheck 1
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 44
+	$SPECULARCOLOR "[1 1 1]"
+
+
+	$RIMLIGHTSCALE	2
+	
+
+
+
+	
+//	$FRESNELWARP "models/heroes/juggernaut/juggernaut_fresnelranges"
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+

@@ -1,0 +1,27 @@
+"MultiBlend"
+{
+	"%keywords" "dota"
+	"%tooltexture"		"test/terraintest-1"
+	"$basetexture"		nature/snow_ambient_00
+	"$spectexture"		nature/snow_directional_00_spec
+	"$scale"			1.5
+	"$rotation"			25.0
+
+	"$basetexture2"		nature/snow_directional_00
+	"$spectexture2"		nature/snow_directional_00_spec
+	"$specular_bloom" "0"	
+	"$scale2"			2.5
+	"$rotation2"			30.0
+
+	"$basetexture4"		nature/sand_path007
+	"$spectexture4"		nature/sand_path001_spec
+	"$scale4"			3.0
+	"$rotation4"			0.0
+
+	"$basetexture3"		stone/stone_path001_snow_angled
+	"$spectexture3"		stone/stone_path001_spec
+	"$scale3"			3.0
+	"$rotation3"			-45.0
+
+	"$fow" 				"_rt_fog_of_war"
+}

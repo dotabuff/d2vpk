@@ -1,0 +1,339 @@
+"Hero_NagaSiren.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7. 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh03.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.1"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+//		"wave"	"weapons/hero/antimage/antimage_attack1.wav"
+// 		"wave"	"weapons/hero/antimage/antimage_attack2.wav"
+ 		"wave"	"weapons/hero/antimage/antimage_attack3.wav"
+ 		"wave"	"weapons/hero/antimage/antimage_attack4.wav"
+ 		"wave"	"weapons/hero/antimage/antimage_attack5.wav"
+// 		"wave"	"weapons/hero/antimage/antimage_attack6.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_NagaSiren.Attack.Ring"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.Attack.Ring"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.1, 0.3"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/ring01.wav"
+		"wave"	")weapons/hero/shared/small_blade/ring02.wav"
+		"wave"	")weapons/hero/shared/small_blade/ring03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.01"
+			"input_max" "0.1"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.MirrorImage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\naga_siren\mirror_image.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.Ensnare.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons\hero\naga_siren\ensnare_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.Ensnare.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons\hero\naga_siren\ensnare_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.RipTide.Precast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons\hero\naga_siren\riptide_precast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Hero_NagaSiren.RipTide.Precast"
+				"match_channel" "false"
+			}
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+		}
+	}
+}
+
+
+"Hero_NagaSiren.Riptide.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons\hero\naga_siren\riptide01.wav"
+		"wave"			"weapons\hero\naga_siren\riptide02.wav"
+		"wave"			"weapons\hero\naga_siren\riptide03.wav"
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.SongOfTheSiren"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/naga_siren/song_of_the_siren.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "750"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.SongOfTheSiren.Cancel"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons\hero\naga_siren\song_cancel.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_NagaSiren.Movement"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\slardar\move01.wav"
+		"wave"		"physics\footsteps\hero\slardar\move02.wav"
+		"wave"		"physics\footsteps\hero\slardar\move03.wav"
+		"wave"		"physics\footsteps\hero\slardar\move04.wav"
+	}
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_NagaSiren.IdleLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_69dB"
+	"wave"			"physics\movement\hero\morphling\idle_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.2"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+
+
+"Hero_NagaSiren.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

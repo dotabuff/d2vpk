@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/ancient_apparition/ancientapparition_ghost"
+	$normalmap "models/development/flatnormal"
+	"$detail1" "models/heroes/ancient_apparition/ancientapparition_glows"
+
+	$SPECULAREXPONENT 50
+	$nocull 1
+	$SPECULARSCALE 0
+
+	$selfillumblendtofull 1
+
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDTOFULL 1
+
+	$RIMLIGHTSCALE 2
+	$additive 1
+
+	$rimlightcolor "[0 .4 1]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	-2
+			"texturescrollangle"	78
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

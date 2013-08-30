@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	$basetexture "models\heroes\luna\luna_head_color"
+	"$normalmap" "models/heroes/luna/luna_head_normal"
+	"$maskmap1" "models/heroes/luna/luna_head_masks1"
+	"$maskmap2" "models/heroes/luna/luna_head_masks2"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 7
+	$SPECULARCOLOR "[.8 1 1]"
+	$RIMLIGHTCOLOR "[.8 1 1]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 4
+	$AMBIENTSCALE 1
+
+	$IgnoreBudgetCheck 1	
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.5"
+			"texturescrollangle"	 "83"
+		}
+
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

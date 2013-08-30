@@ -1,0 +1,21 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/lanaya/lanaya_crystals_color_1"
+	"$specTexture" "models/props_magic/bad_crystals001_spec"
+	"$normalmap" "models/development/flatnormal"
+
+	"$maskmap1" "models/heroes/lanaya/lanaya_mask1"
+	"$maskmap2" "models/heroes/lanaya/lanaya_mask2"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 10
+	$SPECULAR_BLOOM_SCALE  2
+
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE 2
+
+	$FRESNELWARP "models/heroes/enigma/enigma_fresnelranges"
+	$translucent 1
+	
+}

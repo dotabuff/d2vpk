@@ -1,0 +1,19 @@
+"CustomHero"
+{
+	"$baseTexture" "models/projectiles/ground_spike_color"
+	"$normalmap" "models/development/flatnormal"
+	"$MASKMAP2" "models/projectiles/crystal_spike_mask"
+	"$ENVMAP" "models/creeps/lane_creeps/creep_good_siege/creep_good_siege_envmap"
+	$diffusewarp "models/projectiles/crystal_diffusewarp"
+	$FRESNELWARP "models/projectiles/crystal_fresnelranges"
+	//"models/projectiles/crystal_lightwarp"
+	
+	$SPECULAREXPONENTBLENDTOFULL 0.5
+	$SPECULARBLENDTOFULL 0.1
+	$SPECULARCOLOR 1 0 1
+	$SPECULARSCALE 2
+	
+	$SPECULAREXPONENT 2
+	$RIMLIGHTSCALE	2
+
+}

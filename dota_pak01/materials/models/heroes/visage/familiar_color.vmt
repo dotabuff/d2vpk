@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/visage/familiar_color"
+	"$normalmap" "models/heroes/visage/familiar_normal"
+	"$detail1" "models/heroes/visage/familiar_glow2"
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	"$maskmap1" "models/heroes/visage/familiar_masks1"
+	"$maskmap2" "models/heroes/visage/familiar_masks2"
+
+	$nocull 0
+	$additive 0
+	$SPECULAR_BLOOM_SCALE      .25
+	$SPECULAREXPONENT 24	
+	$SPECULARSCALE 5		
+	$SPECULARCOLOR "[0.6 1 0.8]"
+	$RIMLIGHTCOLOR "[0.25 0.48 0.9]"
+	$SPECULARBLENDTOFULL .1
+	$RIMLIGHTSCALE 7
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 2
+	$DETAIL1BLENDTOFULL 0
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"310"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

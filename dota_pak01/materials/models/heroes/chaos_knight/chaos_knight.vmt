@@ -1,0 +1,44 @@
+
+"CustomHero"
+{
+	$baseTexture "models/heroes/chaos_knight/chaos_knight_body_color"
+	"$normalmap" "models/heroes/chaos_knight/chaos_knight_body_normal"
+
+//	"$maskmap1" "models/heroes/chaos_knight/chaos_knight_body_mask1"
+//	"$maskmap2" "models/heroes/chaos_knight/chaos_knight_body_mask2"
+
+
+//	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+//	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+
+	//$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENT 150
+	$SPECULARSCALE 50
+	$AMBIENTSCALE .1
+	$SPECULARCOLOR "[.5 .2 .2]"
+	$RIMLIGHTSCALE 10
+	$RIMLIGHTCOLOR "[.5 .2 .2]"
+
+
+	// HERO FX
+	"$detail1"  "models/heroes/sven/sven_glow"
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 10
+	$DETAIL1BLENDFACTOR 0   //Leave this off by default - modulates it via particle fx
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	"$basetexture"	"models/courier/otter_dragon/otter_dragon_color"
+	"$normalmap" "models/courier/otter_dragon/otter_dragon_normal"
+	"$maskmap1" "models/courier/otter_dragon/otter_dragon_masks1"
+	"$maskmap2" "models/courier/otter_dragon/otter_dragon_masks2"
+
+	"$ignorebudgetcheck" "1"
+	
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"	
+	
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[.7 .8 1]"
+
+	$RIMLIGHTSCALE	2
+	$RIMLIGHTCOLOR	"[.2 .5 .6]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}
+

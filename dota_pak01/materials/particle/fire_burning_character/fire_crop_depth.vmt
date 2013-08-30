@@ -1,0 +1,15 @@
+"SpriteCard"
+{
+	$basetexture "particle/fire_burning_character/fire_burning_character"
+	$ADDSELF 1
+	$BLENDFRAMES 1
+
+	$CROPFACTOR "[0.5 1]"
+
+	$OVERBRIGHTFACTOR 2.5  //1.5
+	$DEPTHBLEND 0
+	360?$BLENDFRAMES 0
+	360?$DEPTHBLEND 0
+	GPU<2?$BLENDFRAMES 0
+
+}

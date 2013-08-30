@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture"  "models/heroes/broodmother/broodmother_color.vtf"
+	"$normalmap" "models/heroes/broodmother/broodmother_normal.vtf"
+//	"$maskmap1" "models/heroes/broodmother/broodmother_mask1"
+//	"$maskmap2" "models/heroes/broodmother/broodmother_mask2"
+//	"$diffusewarp" "models/heroes/vengeful/vengeful_diffusewarp"
+//	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 64
+	$RIMLIGHTSCALE	2
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+
+//	$ambientscale 1
+
+//	$rimlightcolor "[.3 1 .8]"
+
+	$COLORWARP 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,27 @@
+"ClothSystem"
+{
+	"Cloth"
+	{
+		"columns"		"1"
+		"rows"			"2"
+		"damping"		"0.750000"
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"100.000000"
+		"WorldFriction"		"0.350000"
+		"LocalForce"		"0.400000"
+		"LocalRotation"		"0.500000"
+		"FixedPointDamping"	"0.300000"
+		"StretchForce"		"0.500000"
+		"SpringStretchiness"	"0.000000"
+		"ExternalForceScale"	".500000"
+		"StructSpringConstant"	"20.000000"
+		"StructSpringDamping"	"0.400000"
+		"ShearSpringConstant"	"20.000000"
+		"ShearSpringDamping"	"0.400000"
+		"BendSpringConstant"	"20.000000"
+		"BendSpringDamping"	"0.400000"
+		"R0"		"fixed"
+		"R1"		"5"
+		"BonePrefix"		"necklace_"		
+	}
+}

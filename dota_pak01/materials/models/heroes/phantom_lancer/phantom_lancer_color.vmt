@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/phantom_lancer/phantom_lancer_color"
+	"$normalmap" "models/development/flatnormal"
+//	"$maskmap1" "models/heroes/phantom_lancer/phantom_lancer_masks1"
+//	"$maskmap2" "models/heroes/phantom_lancer/phantom_lancer_masks2"
+	//"$diffusewarp" "models/heroes/magnataur/magnataur_lightwarp"
+	//$SPECULARWARP "models/heroes/magnataur/magnataur_lightwarp"
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+	$alphatest 1
+
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$SPECULAR_BLOOM_SCALE      0
+
+	$RIMLIGHTSCALE	.5
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$IgnoreBudgetCheck 1	
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

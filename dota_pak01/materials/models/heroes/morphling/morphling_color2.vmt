@@ -1,0 +1,55 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/morphling/morphling_color2"
+	"$detail1" "models/heroes/morphling/morphling_motion_water"
+
+	"$maskmap1" "models/heroes/morphling/morphling_mask1"
+	"$maskmap2" "models/heroes/morphling/morphling_mask2"
+
+
+	"$normalmap" "models/heroes/morphling/morphling_water_normals"
+	
+	"$FRESNELWARP" "models/heroes/morphling/morphling_fresnelranges"
+	"$FRESNELCOLORWARP" "models/heroes/morphling/morphling_colorwarp"
+
+
+	$SPECULAREXPONENT 70
+	$SPECULARSCALE 10
+	$RIMLIGHTSCALE	0
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDTOFULL 1
+	$SPECULARBLENDTOFULL "1"
+	
+	$rimlightcolor "[.2 .8 .7]"
+
+	$COLORWARP 1
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.25
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.25
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+
+	}
+}
+

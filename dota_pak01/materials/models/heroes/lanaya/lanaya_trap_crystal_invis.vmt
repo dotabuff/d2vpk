@@ -1,0 +1,20 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/lanaya/lanaya_crystals_invis"
+	"$specTexture" "models/props_magic/bad_crystals001_spec"
+	"$normalmap" "models/development/flatnormal"
+
+	"$maskmap1" "models/heroes/lanaya/lanaya_mask1"
+	"$maskmap2" "models/heroes/lanaya/lanaya_mask2"
+	$translucent 1
+	
+		$CLOAKFACTOR 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"status_proxy"
+		{
+		}
+	}
+}

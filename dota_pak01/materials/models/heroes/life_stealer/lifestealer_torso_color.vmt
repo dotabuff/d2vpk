@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/life_stealer/lifestealer_torso_color.vtf"
+	"$normalmap" "models/heroes/life_stealer/lifestealer_torso_normal"
+	"$maskmap1" "models/heroes/life_stealer/lifestealer_torso_masks1"
+	"$maskmap2" "models/heroes/life_stealer/lifestealer_torso_masks2"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 0.4	
+//	$MASKENVBYMETALNESS 1
+//	$METALNESSBLENDTOFULL 0
+	$SPECULAREXPONENT 10
+	//$specularexponentblendtofull 1
+	$SPECULARSCALE 1
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULARCOLOR "[1 1 1]"
+	//$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+	$FRESNELWARP "models/heroes/life_stealer/lifestealer_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

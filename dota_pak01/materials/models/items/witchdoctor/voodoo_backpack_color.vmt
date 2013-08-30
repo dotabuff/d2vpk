@@ -1,0 +1,31 @@
+// ### This basic VMT was written based on the E:\dota\tools\python\templateStrings.py script ###
+"CustomHero"
+{
+	$baseTexture "models/items/witchdoctor/voodoo_backpack_color"
+	"$normalmap" "models/items/witchdoctor/voodoo_backpack_normal"
+	"$maskmap2" "models/items/witchdoctor/voodoo_backpack_mask2"
+
+
+
+
+        $SPECULAREXPONENT 20
+	$SPECULARSCALE 15
+	$SPECULARCOLOR "[0.5 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	$RIMLIGHTSCALE 3
+	$alphatest 1	
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

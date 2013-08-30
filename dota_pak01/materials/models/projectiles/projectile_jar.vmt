@@ -1,0 +1,21 @@
+// ### This basic VMT was written based on the D:\dev\tools\python\templateStrings.py script ###
+"CustomHero"
+{
+
+	$baseTexture "models/projectiles/projectile_jar"
+
+	"$normalmap" "models/heroes/axe/axe_normal"
+	"$diffusewarp" "models/heroes/axe/axe_diffusewarp"
+	"$maskmap1" "models/heroes/axe/masks1"
+	"$maskmap2" "models/heroes/axe/masks2"
+	$translucent 1
+
+	"$envmap" "env_cubemap"
+	"$envmapintensity" "0.25"
+
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "1 1 1"
+	$RIMLIGHTSCALE 1
+}

@@ -1,0 +1,36 @@
+"Water"
+{
+	$forcecheap 1
+	
+	"$normalmap" "water/water_river_normal_sharp_temp"
+
+	$flowmap "liquids/dota_flowmap_flow"
+	$flow_normaluvscale 500.0
+	$flow_worlduvscale 1
+	$flow_timeintervalinseconds .6 // Amount of time before the change happens
+	$flow_uvscrolldistance 0.18 // Stretch of UV Distance before change over to second set of flow
+	$flow_bumpstrength 2.5
+	$flow_timescale 0
+	$flow_offset 1
+
+	$flow_noise_texture "water/water_noise"
+//	$flow_noise_texture "liquids/water_noise"
+	$flow_noise_scale 0.0005
+
+	$flow_debug 0    
+
+	"%compilewater" 1
+	"%tooltexture" "liquids/dota_flowmap_flow"
+	
+	$REFLECTION_DIR				"[ -0.45 -.5 0.499 ]"
+//	$REFLECTION_DIR				"[ -0.09 -0.44 0.899]"
+	$SURFACE_FACTOR				.5
+	$SURFACE_MINIMUM_COLOR		0.5
+	$SURFACE_MINIMUM_OPACITY	0.95
+	$REFLECTION_POWER			3
+	$SURFACE_COLOR				"[ .015 .030 .03 ]"
+	$REFLECTION_COLOR			"[ .02 .03 .02 ]"
+	$BASE_BLOOM			        0.1
+	$BLOOM_POWER				.1
+}
+

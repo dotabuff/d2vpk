@@ -1,0 +1,41 @@
+"ClothSystem"
+{
+
+	"Cloth"
+	{
+        //
+        // CAPE OF THE BURNING CABAL
+        //
+
+		"columns"		"7"
+		"rows"		"6"
+
+		"damping"		"12"
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"75"
+		"WorldFriction"		"0.350000"
+		"LocalForce"		"1.00000"
+		"LocalRotation"		"1.00000"
+		"FixedPointDamping"		"0.1"
+		"StretchForce"		"0.05"
+		"SpringStretchiness"		"0.0"
+		"AnimationForceAttraction"		"0.2"
+		"AnimationVertexAttraction"		"0.05"
+		"ExternalForceScale"		"1.000000"
+		//"StructSpringConstant"		"20.00000"
+		//"StructSpringDamping"		"0.600000"
+		//"ShearSpringConstant"		"20.00000"
+		//"ShearSpringDamping"		"0.600000"
+		//"BendSpringConstant"		"20.00000"
+		//"BendSpringDamping"		"0.800000"
+
+		"R0"		"fixed"
+		"R1"		"3"
+		"R2"		"3"
+		"R3"		"3"
+		"R4"		"3"
+		"R5"		"3"
+		"BonePrefix"		"invoker_cape_"		
+	}
+
+}

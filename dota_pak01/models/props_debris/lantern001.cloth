@@ -1,0 +1,30 @@
+ClothSystem
+{
+	Cloth
+	{
+		columns	1
+		rows 	7
+		
+		damping			0.1
+		gravity			"0.0 0.0 -80.0"
+		SpringStretchiness	0.0
+		StretchForce	0
+		
+		StructSpringConstant 	4.0
+		StructSpringDamping 	0.4
+		ShearSpringConstant 	4.0
+		ShearSpringDamping 		0.4
+		BendSpringConstant 		4.0
+		BendSpringDamping 		0.6
+		
+		R0	"fixed"
+		R1	"mass 0.3"
+		R2	"mass 0.3"
+		R3	"mass 0.4"
+		R4	"mass 0.4"
+		R5	"mass 0.5"
+		R6	"mass 0.6"
+		R7	"mass 0.8"
+
+	}
+}

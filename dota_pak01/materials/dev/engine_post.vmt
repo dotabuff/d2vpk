@@ -1,0 +1,49 @@
+"engine_post"
+{
+	// Master disable bools
+	"$AllowVignette" "1"
+	"$AllowNoise" "1"
+	"$AllowLocalContrast" "1"
+	"$AAEnable" "1"
+
+	// Standard params
+	"$basetexture" "_rt_SmallFB0"
+	"$fbtexture" "_rt_FullFrameFB"
+	"$additive" 0
+	"$ignorez" 1
+	"$nocull" 1
+	"%noToolTexture" 1
+
+	// Post Params
+	"$noiseScale" "1.0"
+	"$noiseTexture" "dev/noise_post"
+
+	// Proxies
+	"$localcontrastenable" "1"
+	"$noiseEnable" "1"
+	"$vignetteEnable" "1"
+	"Proxies"
+	{
+		"Engine_Post"
+		{
+		}
+
+		"ConVar"
+		{
+			"resultVar" "$localcontrastenable"
+			"convar" "mat_local_contrast_enable"
+		}
+
+		"ConVar"
+		{
+			"resultVar" "$noiseEnable"
+			"convar" "mat_grain_enable"
+		}
+
+		"ConVar"
+		{
+			"resultVar" "$vignetteEnable"
+			"convar" "mat_vignette_enable"
+		}
+	}
+}

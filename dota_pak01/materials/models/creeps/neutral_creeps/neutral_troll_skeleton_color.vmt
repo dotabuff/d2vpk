@@ -1,0 +1,25 @@
+// ### This basic VMT was written based on the U:\dev\tools\python\templateStrings.pyc script ###
+
+"CustomHero"
+{
+	$baseTexture "models\creeps\neutral_creeps\neutral_troll_skeleton_color"
+	"$normalmap" "models\development\flatnormal" 
+	$SPECULAREXPONENT 4
+	$SPECULARSCALE 1
+	$RIMLIGHTSCALE .25
+
+
+// Status Effects
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}

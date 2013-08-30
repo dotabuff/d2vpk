@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/spirit_breaker/spirit_breaker_lower_armor_color"
+	"$normalmap" "models/heroes/spirit_breaker/spirit_breaker_lower_armor_normal"
+	"$maskmap1" "models/heroes/spirit_breaker/spirit_breaker_lower_armor_masks1"
+	"$maskmap2" "models/heroes/spirit_breaker/spirit_breaker_lower_armor_masks2"
+	$alphatest 1
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 15
+	$SPECULARCOLOR "[.75 .8 1]"
+
+	$AMBIENTSCALE 0.3
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR "[.75 .75 1]"
+	$IgnoreBudgetCheck 1	
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

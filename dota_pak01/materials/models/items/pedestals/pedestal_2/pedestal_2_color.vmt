@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/pedestals/pedestal_2/pedestal_2_color"
+	"$normalmap" "models/items/pedestals/pedestal_2/pedestal_2_Normal"
+	"$maskmap2" "models/items/pedestals/pedestal_2/pedestal_2_masks2"
+	"$maskmap1" "models/items/pedestals/pedestal_2/pedestal_2_masks1"
+	
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 5
+	//$MASKENVBYMETALNESS 1
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+	
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 2
+ 
+	$RIMLIGHTSCALE 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

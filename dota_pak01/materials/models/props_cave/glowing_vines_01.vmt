@@ -1,0 +1,11 @@
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_cave/glowing_vines_01.vtf"
+	"$SPECTEXTURE" "models/props_cave/glowing_vines_01_spec"
+	  $SPECULAR_BLOOM		.75
+	"$alphatest" "1"
+	"$fow"                          "_rt_fog_of_war"
+	"$nocull" "1"
+	"$additive" "1"
+
+}

@@ -1,0 +1,48 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/warlock/archivist_golem/archivist_golem_color"
+	"$normalmap"		"models/items/warlock/archivist_golem/archivist_golem_normal"
+	"$maskmap1"		"models/items/warlock/archivist_golem/archivist_golem_mask1"
+	"$maskmap2"		"models/items/warlock/archivist_golem/archivist_golem_mask2"
+	"$detail1" "models/heroes/invoker/forge_spirit_motion"
+	
+	$DETAIL1BLENDMODE 4
+	$DETAIL1SCALE 5
+		
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 1
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 1 .8]"
+
+	$RIMLIGHTCOLOR "[1 1 .6]"
+	$RIMLIGHTSCALE .8
+	$AMBIENTSCALE 1.2
+
+	$SPECULAR_BLOOM_SCALE     .3
+	$SPECULAR_BLOOM_COLOR      "[1 0 0]"
+	$SPECULAR_BLOOM_SHIFT 1
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.25
+			"texturescrollangle"	87
+		}
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

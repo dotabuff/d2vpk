@@ -1,0 +1,8051 @@
+"start_stacks"
+{
+	"start_default"
+	{
+		"stop_entries"
+		{
+			"operator" "sys_stop_entries"
+		}
+	}
+
+	"sfx_random_delay_start" //Play a sound after a random delay
+	{
+		"get_random_delay"
+		{
+			"operator" "math_random"
+			"input_execute" "1.0"
+			//Delay time is in seconds	
+			"input_min" "0.0"
+			"input_max" "1.0"	
+		}
+		
+		"sfx_delay_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@get_random_delay.output" //delays the start of a sound by a random amount
+			"output" "delay"
+		}
+	}
+	
+
+	"start_barracks_cooldown"
+	{
+		"block_entries"
+		{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "10.0"
+			"match_substring" "false"
+			"match_entry" "xray.beep"
+			// "match_sound" "npc\dog\dog_idlemode_loop1.wav"
+			"match_channel" "false"
+			"match_entity" "false"
+		}
+	}
+	
+	"dota_start_4layer"
+	{
+	
+		"layer1"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "1.0"	
+			"entry_name" "Default.Null"
+		}
+	
+		"layer2"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "1.0"	
+			"entry_name" "Default.Null"
+		}
+	
+		"layer3"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "1.0"	
+			"entry_name" "Default.Null"
+		}
+	
+		"layer4"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "1.0"	
+			"entry_name" "Default.Null"
+		}	
+	}
+	
+	"dota_start_music_type_tracker"
+	{
+			
+		"get_currently_playing_music" //Keeping track of what music is playing at a given moment
+		{
+			"operator" "get_opvar_float"
+			"opvar" "current_music"
+		}
+				
+		"add_music_value"
+		{
+			"operator" "math_float"
+			"apply"	"add"
+			"input1" "@get_currently_playing_music.output"
+			"input2" "0" //MUSIC VALUE HERE
+		}			
+		
+		"set_music_type_opvar" //set the current music opvar
+		{
+			"operator" "set_opvar_float"
+			"opvar" "current_music"
+			"input" "@add_music_value.output"
+		}	
+	}
+	
+	"dota_start_check_music_not_playing"
+		{
+			"get_current_music_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" "current_music"
+			}	
+						
+			"music_playing_test_less_than" //are we playing battle music (or higher ID)?
+			{
+				"operator" "math_float"
+				"apply"	"less_than"
+				"input1" "@get_current_music_opvar.output"
+				"input2" "4" //battle music ID
+			}	
+						
+			"music_playing_test_greater_than_equal" //are we playing battle music (or higher ID)?
+			{
+				"operator" "math_float"
+				"apply"	"greater_than" 
+				"input1" "@get_current_music_opvar.output"
+				"input2" "8" //higher than battle
+			}	
+						
+			"music_playing_test_not_dead" //are we dead?
+			{
+				"operator" "math_float"
+				"apply"	"not_equal" 
+				"input1" "@get_current_music_opvar.output"
+				"input2" "16" //dead
+			}	
+						
+			"music_playing_or" //are we playing battle music (or higher ID)?
+			{
+				"operator" "math_float"
+				"apply"	"max"
+				"input1" "@music_playing_test_greater_than_equal.output"
+				"input2" "@music_playing_test_less_than.output"
+			}	
+						
+			"music_playing_and" //are we playing battle music (or higher ID)?
+			{
+				"operator" "math_float"
+				"apply"	"min"
+				"input1" "@music_playing_or.output"
+				"input2" "@music_playing_test_not_dead.output"
+			}	
+		}
+
+
+
+// 	"start_test_random"
+// 	{
+// 		"random_float"
+// 		{
+// 			"operator" "math_random"
+// 			"input_min" "0.0"
+// 			"input_max" "1.0"
+// 		}
+// 	}
+
+// 	"start_test"
+// 	{
+
+// 		// "get_elapsed"
+// 		// {
+// 			// "operator" "get_entry_time"
+// 		// }
+
+// // 		"play_entry"
+// // 		{
+// // 			"operator" "sys_start_entry"
+// // 			"input_start" "1"	
+// // 			"entry_name" "xray.beep"	
+// // 		}
+// 		"stop_entries"
+// 		{
+// 			"operator" "sys_stop_entries"
+// 		}
+// 		"block_entries"
+// 		{
+// 			"operator" "sys_block_entries"
+// 			"input_active" "1.0"	
+// 			"input_duration" "2.0"
+// 			"match_substring" "false"
+// 			"match_entry" "xray.beep"
+// 			// "match_sound" "npc\dog\dog_idlemode_loop1.wav"
+// 			"match_channel" "false"
+// 			"match_entity" "false"
+// 		}
+// 		"delay_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "0.0"
+// 			"output" "delay"
+// 		}
+// 	}
+// 	"start_global_bpm_quantize"
+// 	{
+// 		"sys_time"
+// 		{
+// 			"operator" "get_sys_time"
+// 		}
+// 		"bpm"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "60"
+// 			"input2" "120"	
+// 		}
+// 		"beats"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@bpm.output"
+// 			"input2" "1"	
+// 		}
+//  		"time_mod"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mod"
+// 			"input1" "@sys_time.output_client_time"
+// 			"input2" "@beats.output"
+// 		}
+//  		"negative_delay"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"
+// 			"input1" "@time_mod.output"
+// 			"input2" "-1.0"
+// 		}
+// 		"delay_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@negative_delay.output"
+// 			"output" "delay"
+// 		}
+// 	}
+// 	"start_sync_to_entry"
+// 	{
+// 		"elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+// 		"duration_div"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "@elapsed_time.output_sound_duration"
+// 			"input2" "4"	
+// 		}
+//  		"time_mod"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mod"
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "@duration_div.output"
+// 		}
+//  		"div_mult"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"
+// 			"input1" "0.0"
+// 			"input2" "@duration_div.output"
+// 		}
+//  		"add_offset"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "add"
+// 			"input1" "@time_mod.output"
+// 			"input2" "@div_mult.output"
+// 		}
+//  		"negative_delay"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"
+// 			"input1" "@add_offset.output"
+// 			"input2" "-1.0"
+// 		}
+// 		"delay_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@negative_delay.output"
+// 			"output" "delay"
+// 		}
+// 	}
+// 	"start_delay_sync_to_entry"
+// 	{
+// 		"import_stack" "start_sync_to_entry"
+//  		"negative_delay"
+// 		{
+// 			"apply" "sub"
+// 			"input1" "@duration_div.output"
+// 			"input2" "@time_mod.output"
+// 		}
+
+// 	}
+
+	"start_delay_to_entry_sync_point"
+	{
+		// report various forms of elapsed time
+		"elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		// the start sync point for the file we are syncing to
+ 		"sync_entry_lead_in"
+		{
+			"operator" "math_float"
+			"apply" "add"
+			"input1" "1.118"  // this entries lead in time
+			"input2" "0"
+		}
+		// subtract the start sync from the overall duration of the sync file
+ 		"subtract_head_from_duration"
+		{
+			"operator" "math_float"
+			"apply" "sub"
+			"input1" "@elapsed_time.output_sound_duration"
+			"input2" "@sync_entry_lead_in.output" // length of head lead in
+		}
+		// subtract the start sync from the elapsed time (quantize the start)
+ 		"subtract_head_from_elapsed"
+		{
+			"operator" "math_float"
+			"apply" "sub"
+			"input1" "@elapsed_time.output_sound_elapsed"
+			"input2" "@sync_entry_lead_in.output" // length of head lead in
+		}
+		// use a division of sound file duration - head to establish a sync point length
+		"sync_duration"
+		{
+			"operator" "math_float"
+			"apply" "div"	
+			"input1" "@subtract_head_from_duration.output"
+			"input2" "4"  // subdivision that defines quantize length
+		}
+		// just a convenience container for simple explicit override
+ 		"sync_entry_sync_length"
+		{
+			"operator" "math_float"
+			"apply" "add"
+			"input1" "@sync_duration.output"  // this entries lead in time
+			"input2" "0"
+		}
+		// get the remainder of elapsed time / last sync (time from last sync point)
+ 		"time_elapsed_since_last_sync"
+		{
+			"operator" "math_float"
+			"apply" "mod"
+			"input1" "@subtract_head_from_elapsed.output"
+			"input2" "@sync_entry_sync_length.output"  // quantize length overridden here
+		}
+		// get time until next sync point
+ 		"time_until_next_sync"
+		{
+			"operator" "math_float"
+			"apply" "sub"
+			"input1" "@sync_entry_sync_length.output"  // quantize length overridden here
+			"input2" "@time_elapsed_since_last_sync.output"
+		}
+
+		// just a container for THIS files start sync
+ 		"this_entry_lead_in"
+		{
+			"operator" "math_float"
+			"apply" "add"
+			"input1" "1.118"  // this entries lead in time
+			"input2" "0"
+		}
+		// is the start sync longer than time til next sync point
+		"lead_in_greater_than_delay"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@this_entry_lead_in.output"
+			"input2" "@time_until_next_sync.output"
+		}
+		// add a whole extra sync chunk if needed
+ 		"calculate_extra_sync_time"
+		{
+			"operator" "math_float"
+			"apply" "mult"
+			"input1" "@sync_entry_sync_length.output"
+			"input2" "@lead_in_greater_than_delay.output"
+		}
+ 		"add_extra_sync_time"
+		{
+			"operator" "math_float"
+			"apply" "add"
+			"input1" "@calculate_extra_sync_time.output"
+			"input2" "@time_until_next_sync.output"
+		}
+		// subtract THIS files start sync from the delay time
+ 		"subtract_lead_in_time"
+		{
+			"operator" "math_float"
+			"apply" "sub"
+			"input1" "@add_extra_sync_time.output"
+			"input2" "@this_entry_lead_in.output"
+		}
+		
+		// output our resulting delay value
+		"delay_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@subtract_lead_in_time.output"
+			"output" "delay"
+		}
+	}
+
+	"start_delay_to_track_sync_point"
+	{
+		// the start sync point for the file we are syncing to
+		"this_entry_syncpoints"
+		{
+			"operator" "get_track_syncpoint"
+			"syncpoint_list" "syncpoints_1"
+			"this_entry_syncpoints" "true"
+		}
+		"sync_track_syncpoints"
+		{
+			"operator" "get_track_syncpoint"
+			"syncpoint_list" "syncpoints_1"
+			"input_min_time_to_next_sync" 	"@this_entry_syncpoints.output_first_syncpoint"
+			"input_max_time_to_next_sync" 	"1000"
+			"match_entry" "DOTAMusic.BattleMusic"
+		}
+		
+		// output our resulting delay value
+		"delay_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@sync_track_syncpoints.output_time_to_next_syncpoint"
+			"output" "delay"
+		}
+	}
+
+	"start_block_at_distance"
+	{
+
+		"source_info"
+		{
+			"operator" "get_source_info"
+			"source"   "emitter"
+		}
+		"source_distance"
+		{
+			"operator" "calc_source_distance"
+			"input_position"   "@source_info.output_position"
+		}
+		"block_dist"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@source_distance.output"
+			"input2" "1.0"
+		}
+		"block_start"
+		{	
+			"input_execute" "@block_dist.output"
+			"operator" "sys_output"
+			"input_float" "1"
+			"output" "block_start"
+		}
+		"delay_output"
+		{
+			"operator" "sys_output"
+			"input_float" "0.0"
+			"output" "delay"
+		}
+// 		"print_DOTA_BLOCK_DIST"
+// 		{
+// //			"input_execute" "@block_dist.output"
+// 			"input_execute" "1"
+// 			"operator" "util_print_float"
+// //			"input" "1"	
+// 			"input" "@block_dist.output"
+// 		}
+
+	}
+
+	"dota_preattack_block_dist"
+	{
+		"import_stack" "start_block_at_distance"
+		"block_dist"
+		{
+			"input2" "1500"
+		}
+	}
+	
+	"dota_attack_block_dist"
+	{
+		"import_stack" "start_block_at_distance"
+		"block_dist"
+		{
+			"input2" "2500"
+		}
+		"play_second_layer"
+		{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"0"
+			"input_start" "1"
+			"entry_name" "Default.Null" //Replace with the sound you want to play.
+		}
+		"play_third_layer"
+		{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"0"
+			"input_start" "1"
+			"entry_name" "Default.Null" //Replace with the sound you want to play.
+		}
+
+	}
+
+	"dota_projectile_impact_block_dist"
+	{
+		"import_stack" "start_block_at_distance"
+		"block_dist"
+		{
+			"input2" "1000"
+		}
+	}
+
+	"dota_null_start" //replaces null.wav
+	{
+// 		"get_random_null"
+// 		{
+// 			"operator" "math_random"
+// 			"input_execute" "0.0"
+// 			"input_min" "0.0"
+// 			"input_max" "1.0"		
+// 		}
+// 		
+// 		"percent_null"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "0.60" // This is the percentage chance to play a null
+// 			"input2" "@get_random_null.output" 
+// 		}
+
+		"block_start"
+		{	
+			"input_execute" "1.0"
+			//"input_execute" "@percent_null.output"
+			"operator" "sys_output"
+			"input_float" "1"
+			"output" "block_start"
+		}
+	}
+
+// 	"dota_coop_robot_start"
+// 	{
+// 		"stop_footsteps"
+// 		{
+// 			"operator" "sys_stop_entries"
+// 			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+// 			"match_entity" "false"	
+// 			"match_substring" "true"	
+// 		}
+// 	}
+	
+// 	"dota_portalgun_start"
+// 	{
+// 		"stop_gun"
+// 		{
+// 			"operator" "sys_stop_entries"
+// 			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+// 			"match_entity" "false"	
+// 			"match_substring" "true"	
+// 		}
+// 	}
+
+	"dota_water_footsteps_start"
+	{
+		"hero_info"
+		{
+			"operator"	"get_source_info"
+			 "source"   "entity"
+			//"source"   "emitter"
+		}
+		
+		"is_in_water"
+		{
+			"operator"	"dota_is_in_water"
+			"input_position"	"@hero_info.output_position"
+		}
+		
+		"play_fs_water_entry"
+		{
+			"input_execute" "@is_in_water.output"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"entry_name" "Hero_Shared.WaterFootsteps"
+		}
+		
+		"block_regular_fs"
+		{	
+			"input_execute" "@is_in_water.output"
+			"operator" "sys_output"
+			"input_float" "1"
+			"output" "block_start"
+		}
+	}
+	
+	"dota_poly_limiting_start" //Generic poly limiter.  Override values to make usable.
+	{
+		"limit_sound"
+		{
+			"operator" "sys_stop_entries"
+			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			"match_entity" "false"	
+			"match_substring" "true"
+			"match_entry" "NONE"		
+		}
+		
+		// "limit_robot_sounds"
+		// {
+			// "operator" "sys_stop_entries"
+			// "input_max_entries" "23.000000" //A sound will not stop itself from playing.
+			// "match_entity" "false"	
+			// "match_substring" "true"
+			// "match_entry" "Robot"		
+		// }
+		
+		//Console hacks begin here.
+		
+		
+		// "sys_get_platform" //should be for X360/PS3, only use PC for testing.
+		// {
+			// "operator" "sys_platform"
+			// //"pc" "true" //IF THIS IS UNCOMMENTED CHANGE IT!!!  SERIOUSLY!!!
+			// "x360" "true"
+			// "ps3" "true"
+		// }
+		
+		// "limit_robot_sounds_ps3"
+		// {
+			// "operator" "sys_stop_entries"
+			// "input_execute" "@sys_get_platform.output"
+			// "input_max_entries" "9.000000" //I hate myself.
+			// "match_entity" "false"	
+			// "match_substring" "true"
+			// "match_entry" "Robot"		
+		// }
+		
+		// "ps3_num_voices_compare"
+		// {
+			// "operator" "math_float"
+			// "apply" "greater_than_or_equal"	
+			// "input1" "@limit_robot_sounds_ps3.output_entries_matching" // This is the percentage chance to play a null
+			// "input2" "10.0" //match the max number of played sounds ( = input_max_entries + 1 )
+		// }
+		
+		// "block_robot_entries_ps3"  //helps with disc I/O: Blocks sound requests of robots once a max number of robots exist
+		// {
+			// "operator" "sys_block_entries"
+			// //"input_execute" "0.0"
+			// "input_execute" "@ps3_num_voices_compare.output"
+			// "input_active" "1.0"	
+			// "input_duration" "0.25" //in seconds, you can use "@get_random.output" for a random blocking period
+			// "match_substring" "true"
+			// "match_entry" "Robot" //The sound entry to use
+			// "match_channel" "false"
+			// "match_entity" "false"
+		// }
+		
+		// "limit_sound_ps3"
+		// {
+			// "operator" "sys_stop_entries"
+			// "input_execute" "0.0"
+			// //"input_execute" "@sys_get_platform.output"
+			// "input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			// "match_entity" "false"	
+			// "match_substring" "true"
+			// "match_entry" "NONE"		
+		// }
+		
+		// "block_entries_ps3"
+		// {
+			// "operator" "sys_block_entries"
+			// "input_execute" "0.0"
+			// //"input_execute" "@sys_get_platform.output"
+			// "input_active" "1.0"	
+			// "input_duration" "5.0" //in seconds, you can use "@get_random.output" for a random blocking period
+			// "match_substring" "false"
+			// "match_entry" "NONE" //The sound entry to use
+			// "match_channel" "false"
+			// "match_entity" "false"
+		// }
+		
+	}
+	
+	"dota_exclusion_time_blocker_start" //Generic exclusion time.  Override values to make usable.
+	{
+		"get_random"
+		{
+			"operator" "math_random"
+			"input_execute" "0.0"
+			"input_min" "0.0"
+			"input_max" "1.0"		
+		}
+		
+		"block_entries"
+		{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "0.1" //in seconds, you can use "@get_random.output" for a random blocking period
+			"match_substring" "false"
+			"match_entry" "NONE" //The sound entry to use
+			// "match_sound" "npc\dog\dog_idlemode_loop1.wav"
+			"match_channel" "false"
+			"match_entity" "false"
+		}
+	}
+		
+	"dota_exclusion_time_and_poly_limiting_start" //Combines exclusion time and poly limiting
+	{
+		"import_stack" "dota_exclusion_time_blocker_start"
+		"import_stack" "dota_poly_limiting_start"		
+	}
+	
+	
+	"dota_play_entry_start" //Play another sound in addition to the called one.  Block the called one if necessary. 
+	{	
+		"play_entry"
+		{
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"entry_name" "xray.beep"	
+		}
+
+		"block_start"
+		{	
+			"input_execute" "0.0"
+			"operator" "sys_output"
+			"input_float" "1"
+			"output" "block_start"
+		}
+	}
+
+	"dota_random_delay_start" //Play a sound after a random delay
+	{
+		"get_random_delay"
+		{
+			"operator" "math_random"
+			"input_execute" "1.0"
+			//Delay time is in seconds	
+			"input_min" "0.0"
+			"input_max" "1.0"	
+		}
+		
+		"get_random_delay_tutorial"
+		{
+			"operator" "math_random"
+			"input_execute" "1.0"
+			//Delay time is in seconds	
+			"input_min" "0.0"
+			"input_max" "1.0"	 
+		}
+			
+		"tutorial_opvar_check_01"
+		{
+			"input_execute" "0.0" //enable map checking here
+			"operator" "get_map_name"
+			"map_name" "tutorial" //your map name here	
+			"match_substring" "true"
+		}	
+		
+		"tutorial_opvar_switch"
+		{
+			"operator" "math_logic_switch" 
+			"input1" "@get_random_delay.output"
+			"input2" "@get_random_delay_tutorial.output"
+			"input_switch" "@tutorial_opvar_check_01.output"
+		}
+		
+		"delay_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@tutorial_opvar_switch.output" //delays the start of a sound by a random amount
+			"output" "delay"
+		}
+	}
+	
+		
+	"CS_random_music_entry_start_2" //replaces null.wav
+	{
+		//If you're using the no-repeat functionality, change the opvar name to something _specific to you_
+		//You'll need to change the input_min on the random number generator
+		// and point the "identity_for_comparing" op to mod_added_num output.
+		//DF
+		"get_no_repeat_opvar" 
+		{
+			"operator" "get_opvar_float"
+			"opvar" "dota_change_this_opvar_name"
+		}
+		
+		"random_variation_picker" //use for random volume if needed
+ 		{
+ 			"operator" "math_random"
+ 			"execute_once" "true"
+ 			"input_execute" "1.0"
+ 			//"input_min" "@get_no_repeat_opvar.output_opvar_exists"			
+			"input_min" "0.0" //low value here
+			"input_max" "3.0"	//high value here.	
+			"round_to_int" "true"
+ 		}
+		
+		"sum_stored_and_rand"
+		{
+			"operator" "math_float"
+			"apply" "add"
+			"input_execute"	"1.0"			
+			"input1" "@get_no_repeat_opvar.output"
+			"input2" "@random_variation_picker.output"
+		}	
+		
+		"mod_added_num"
+		{
+			"operator" "math_float"
+			"apply" "mod"	
+			"input1" "@sum_stored_and_rand.output"
+			"input2" "3" //same as the rand max value, change this if you add more variations	
+		}	
+			
+		"set_no_repeat_opvar"
+		{
+			"operator" "set_opvar_float"
+			"opvar" "dota_change_this_opvar_name"
+			"input" "@mod_added_num.output"
+		}
+		
+		"identity_for_comparing" //using this like a variable, since we have no variables atm.
+		{
+			"operator" "math_float"
+			"apply" "add"
+			"input_execute"	"1.0"			
+			"input1" "@random_variation_picker.output"
+			"input2" "0.0"
+		}
+				
+		"compare_1"
+		{
+			"operator" "math_float"
+			"apply" "equals"
+			"input_execute"	"1.0"			
+			"input1" "@identity_for_comparing.output"
+			"input2" "0.0"
+		}		
+				
+		"compare_2"
+		{
+			"operator" "math_float"
+			"apply" "equals"	
+ 			"input_execute" "1.0"
+			"input1" "@identity_for_comparing.output"
+			"input2" "1.0"
+		}	
+		
+		"compare_3"
+		{
+			"operator" "math_float"
+			"apply" "equals"	
+ 			"input_execute" "1.0"
+			"input1" "@identity_for_comparing.output"
+			"input2" "2.0"
+		}	
+		
+		"play_variation_1"
+		{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"@compare_1.output"
+			"input_start" "1"
+			"entry_name" "Default.Null" //Replace with the sound you want to play.
+		}
+		
+		"play_variation_2"
+		{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"@compare_2.output"
+			"input_start" "1"
+			"entry_name" "Default.Null" //Replace with the sound you want to play.
+		}
+		
+		"play_variation_3"
+		{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"@compare_3.output"
+			"input_start" "1"
+			"entry_name" "Default.Null" //Replace with the sound you want to play.
+		}
+		
+	}
+	
+// 	"dota_null_start" //replaces null.wav
+// 	{
+// 		"get_random_null"
+// 		{
+// 			"operator" "math_random"
+// 			"input_execute" "0.0"
+// 			"input_min" "0.0"
+// 			"input_max" "1.0"		
+// 		}
+		
+// 		"percent_null"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "0.60" // This is the percentage chance to play a null
+// 			"input2" "@get_random_null.output" 
+// 		}
+
+// 		"block_start"
+// 		{	
+// 			"input_execute" "1.0"
+// 			//"input_execute" "@percent_null.output"
+// 			"operator" "sys_output"
+// 			"input_float" "1"
+// 			"output" "block_start"
+// 		}
+// 	}
+	
+// 	"dota_null_player_start" //Play an entry other than the called one!
+// 	{
+// 		"play_entry"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"1.0"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}
+
+// 		"block_start"
+// 		{	
+// 			"input_execute" "1.0"
+// 			"operator" "sys_output"
+// 			"input_float" "1"
+// 			"output" "block_start"
+// 		}	
+	
+// 	}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// dialog start stacks
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+
+	// "dota_glados_start" // default start stack for glados v.o.
+	// {
+		// "set_mixlayer_vol_wheatley"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "wheatleyVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+		// "set_mixlayer_vol_announcer"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "announcerVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+		// "set_mixlayer_vol_cave"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "caveVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+	// }
+	// "dota_glados_start_mute" // default start stack for glados v.o.
+	// {
+		// "set_mixlayer_mute_wheatley"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "wheatleyVO"
+			// "field" "mute"
+			// "input" "0.0"
+		// }
+		// "set_mixlayer_mute_announcer"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "announcerVO"
+			// "field" "mute"
+			// "input" "0.0"
+		// }
+		// "set_mixlayer_mute_cave"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "caveVO"
+			// "field" "mute"
+			// "input" "0.0"
+		// }
+	// }
+	// "dota_wheatley_start" // default start stack for wheatley v.o.
+	// {
+		// "set_mixlayer_vol_glados"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "wheatleyVOLayer"
+			// "mixgroup" "gladosVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+		// "set_mixlayer_vol_announcer"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "wheatleyVOLayer"
+			// "mixgroup" "announcerVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+	// }
+	// "dota_announcer_start" // default start stack for announcer v.o.
+	// {
+		// "set_mixlayer_vol_glados"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "announcerVOLayer"
+			// "mixgroup" "gladosVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+		// "set_mixlayer_vol_wheatley"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "announcerVOLayer"
+			// "mixgroup" "wheatleyVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+	// }
+	
+
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// update stacks
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+"update_stacks"
+{
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// TEST STACKS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// 	"update_test1"
+// 	{
+
+// 		"test1_value1"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "add"	
+// 			"input1" "8"
+// 			"input2" "9"
+// 		}
+// 		"test1_value1"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "0"
+// 			"input2" "1"
+// 		}
+// 		"test1_value2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "add"	
+// 			"input1" "@test1_value1.output"
+// 			"input2" "1"
+// 		}
+// 	}
+// 	"update_test2"
+// 	{
+// 		"test2_value1"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "8"
+// 			"input2" "9"
+// 		}
+// 		"test2_value1"
+// 		{
+// 			"apply" "add"	
+// 			"input1" "6"
+// 			"input2" "7"
+// 		}
+// 		"test2_value2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "add"	
+// 			"input1" "@test2_value1.output"
+// 			"input2" "1"
+// 		}
+// 	}
+// 	"update_test3"
+// 	{
+// 		"import_stack" "update_test1"
+// 		"import_stack" "update_test2"
+// 		"test2_value1"
+// 		{
+// 			"apply" "add"	
+// 			"input1" "2"
+// 			"input2" "3"
+// 		}
+// 	}
+// 	"update_test4"
+// 	{
+// 		"elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+// 		"duration_div"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "@elapsed_time.output_sound_duration"
+// 			"input2" "4"	
+// 		}
+// 		"time_div"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "@duration_div.output"	
+// 		}
+// 		"time_mod"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mod"	
+// 			"input1" "@time_div.output"
+// 			"input2" "1"	
+// 		}
+// 		"time_step"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "sub"	
+// 			"input1" "@time_div.output"
+// 			"input2" "@time_mod.output"
+// 		}
+// 		"step_delta"
+// 		{
+// 			"operator" "math_delta"
+// 			"input" "@time_step.output"	
+// 		}
+// 		"delta_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@step_delta.output"
+// 			"input2" "0.1"
+// 		}
+		
+// 		"play_entry"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"input_start" "@delta_trigger.output"
+// 			"entry_name" "xray.beep"	
+// 		}
+
+// 		"speaker_volume"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "1"
+// 			"input2" "1"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "mult"
+// 			"left_front"   "1.0"	
+// 			"right_front"  "1.0"	
+// 			"center"       "0.0"	
+// 			"lfe"          "0.0"	
+// 			"left_rear"    "0.0"
+// 			"right_rear"   "0.0"	
+			
+// 			"input2[*]" "@speaker_volume.output"		
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_limit.output"
+// 			"output" "speakers"
+// 		}
+// 	}
+
+// 	"update_remap_tests"
+// 	{
+
+// 		"remap_norm"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" ".7"
+// 			"input_min" "0"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_norm_rev1"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" ".7"
+// 			"input_min" "1"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_norm_rev2"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" ".7"
+// 			"input_min" "0"
+// 			"input_max" "1"
+// 			"input_map_min" "1.0"
+// 			"input_map_max" "0.0"
+// 		}
+// 		"remap_norm_rev3"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" ".7"
+// 			"input_min" "1"
+// 			"input_max" "0"
+// 			"input_map_min" "1.0"
+// 			"input_map_max" "0.0"
+// 		}
+// 		"remap_less_than_min"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "-1"
+// 			"input_min" "0"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_greater_than_max"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "2"
+// 			"input_min" "0"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_less_than_min_clamp"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "-1"
+// 			"input_min" "0"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"clamp_range" "true"	
+// 		}
+// 		"remap_greater_than_max_clamp"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "2"
+// 			"input_min" "0"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"clamp_range" "true"	
+// 		}
+
+// 		"remap_equal_equal_min_max"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "1"
+// 			"input_min" "1"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_equal_equal_min_max_default_min"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "1"
+// 			"input_min" "1"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "false"
+// 		}
+
+// 		"remap_less_than_equal_min_max"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" ".5"
+// 			"input_min" "1"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_greater_than_equal_min_max"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "1.5"
+// 			"input_min" "1"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_greater_than_range"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "1.5"
+// 			"input_min" "0"
+// 			"input_max" "1"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_less_than_range"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "0.5"
+// 			"input_min" "1.0"
+// 			"input_max" "2.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+
+// 		"remap_norm_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" ".7"
+// 			"input_min" "1"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_less_than_min_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "-1"
+// 			"input_min" "1"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_greater_than_max_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "2"
+// 			"input_min" "1"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 		}
+// 		"remap_less_than_min_clamp_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "-1"
+// 			"input_min" "1"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"clamp_range" "true"	
+// 		}
+// 		"remap_greater_than_max_clamp_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "2"
+// 			"input_min" "1"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"clamp_range" "true"	
+// 		}
+
+// 		"big_remap_norm"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "70"
+// 			"input_min" "0"
+// 			"input_max" "100"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 		}
+// 		"big_remap_less_than_min"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "-1"
+// 			"input_min" "0"
+// 			"input_max" "100"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 		}
+// 		"big_remap_greater_than_max"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "200"
+// 			"input_min" "0"
+// 			"input_max" "100"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 		}
+// 		"big_remap_less_than_min_clamp"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "-1"
+// 			"input_min" "0"
+// 			"input_max" "100"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 			"clamp_range" "true"	
+// 		}
+// 		"big_remap_greater_than_max_clamp"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "200"
+// 			"input_min" "0"
+// 			"input_max" "100"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 			"clamp_range" "true"	
+// 		}
+
+// 		"big_remap_greater_than_range"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "150"
+// 			"input_min" "0"
+// 			"input_max" "100"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 		}
+// 		"big_remap_less_than_range"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "50"
+// 			"input_min" "100.0"
+// 			"input_max" "200.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 		}
+
+// 		"big_remap_norm_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "70"
+// 			"input_min" "100"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 		}
+// 		"big_remap_less_than_min_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "-100"
+// 			"input_min" "100"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 		}
+// 		"big_remap_greater_than_max_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "200"
+// 			"input_min" "100"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 		}
+// 		"big_remap_less_than_min_clamp_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "-100"
+// 			"input_min" "100"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 			"clamp_range" "true"	
+// 		}
+// 		"big_remap_greater_than_max_clamp_rev"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "math_remap_float"
+// 			"input" "200"
+// 			"input_min" "100"
+// 			"input_max" "0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "100.0"
+// 			"clamp_range" "true"	
+// 		}
+
+
+// 	}
+
+// 	"update_remap_test"
+// 	{
+
+// 		//////////////////////
+// 		// POSITION
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			// "source"   "entity"
+// 			"source"   "emitter"
+// 		}
+
+// 		// NOTE: uses player data, ie: SS
+// 		// SS Self-contained, returns closest distance
+// 		"source_distance"
+// 		{
+// 			"operator" "calc_source_distance"
+// 			"input_position"   "@source_info.output_position"
+// 		}
+
+// 		"remap_distance"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@source_distance.output"
+// 			"input_min" "300"
+// 			"input_max" "1000"
+// 			"input_map_min" "0.80"
+// 			"input_map_max" "1.2"
+// 		}
+// 		"invert_remap"
+// 		{
+// 			"operator" "math_float"
+// // 			"apply" "sub"
+// 			"apply" "mult"
+// 			"input1" "1.0"
+// 			"input2" "@remap_distance.output"
+// 		}
+
+// 		"pitch_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "pitch"
+// 			"input_float" "@remap_distance.output"	
+// 		}
+
+	
+// 		/////////////////////
+// 		// SPEAKERS
+
+// 		"speakers_spatialize"
+// 		{
+// 			"operator" "calc_spatialize_speakers"
+// 			"input_radius"  "300"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_position"  "@source_info.output_position"
+// 		}
+	
+// 		"speakers_volume"
+// 		{
+// 			"operator"     "math_speakers"
+// 			"apply"	       "mult"
+// 			"input1"       "@speakers_spatialize.output"
+// 			"input2[*]"	   "@invert_remap.output"
+// 			// "input2[*]"	   "@facing.output"
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_volume.output"
+// 			"output" "speakers"
+// 		}
+// 	}
+
+
+	"update_stop_at_time"
+	{
+		"usat_elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		
+		"usat_stop_time"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@usat_elapsed_time.output_sound_elapsed"
+			"input2" "1.0"
+		}
+		"usat_stop_entry"
+		{
+			"input_execute" "@usat_stop_time.output"
+			"operator" "sys_stop_entries"
+			"stop_this_entry" "true"	
+
+			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			"match_entity" "false"	
+			"match_substring" "false"
+		}
+	}
+	"update_stop_at_track_syncpoint"
+	{
+		"usats_this_entry_syncpoints"
+		{
+			"operator" "get_track_syncpoint"
+			"syncpoint_list" "syncpoints_1"
+			"this_entry_syncpoints" "true"
+		}
+
+		"usats_elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		
+		"usats_stop_time"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@usats_elapsed_time.output_sound_elapsed"
+			"input2" "@usats_this_entry_syncpoints.output_first_syncpoint"
+		}
+		"usats_stop_entry"
+		{
+			"input_execute" "@usats_stop_time.output"
+			"operator" "sys_stop_entries"
+			"stop_this_entry" "false"
+			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			"match_entity" "false"
+			"match_entry" "Default.Null"
+		}
+	}
+	
+// 	"dota_block_from_number_update" //Generic poly limiter.  Override values to make usable.
+// 	{
+// 		"sound_to_limit"
+// 		{
+// 			"operator" "sys_stop_entries"
+// 			"input_max_entries" "128.000000" //Just using this to get the count
+// 			"match_entity" "false"	
+// 			"match_substring" "true"
+// 			"match_entry" "NONE"		
+// 		}
+// 		
+// 		"num_voices_to_limit" //This is the number of voices that you want to limit to
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "12.0"
+// 			"input2" "1" //Using this operator as a variable
+// 		}
+// 		
+// 		"voice_limit_compare"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than_or_equal_to"	
+// 			"input1" "@sound_to_limit.output_entries_matching"
+// 			"input2" "@num_voices_to_limit.output" //The number to compare against
+// 		}
+// 		
+// 		"block_sound"
+// 		{
+// 			"operator" "sys_block_entries"
+// 			"input_active" "@voice_limit_compare.output"	
+// 			"input_duration" "0.1" //in seconds, you can use "@get_random.output" for a random blocking period
+// 			"match_substring" "false"
+// 			"match_entry" "NONE" //The sound entry to use
+// 			// "match_sound" "npc\dog\dog_idlemode_loop1.wav"
+// 			"match_channel" "false"
+// 			"match_entity" "false"
+// 		}
+// 		
+// 		"voice_limit_compare_2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than_or_equal_to"	
+// 			"input1" "@sound_to_limit.output_entries_matching"
+// 			"input2" "@num_voices_to_limit.output" //The number to compare against
+// 		}
+// 		
+// 		"random_hack" //using as a switch.
+// 		{
+// 			"operator" "math_random"
+// 			"execute_once" "true"
+// 			"input_execute" "@voice_limit_compare_2.output"
+// 			"input_min" "1.0"
+// 			"input_max" "1.0"		
+// 		}
+// 		
+// 		"random_hack_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@random_hack.output"
+// 			"input2" "0.9"
+// 		}
+// 		
+// 		"limit_sounds"
+// 		{
+// 			"operator" "sys_stop_entries"
+// 			"input_active" "@random_hack_trigger.output"
+// 			"input_max_entries" "@num_voices_to_limit.output" //A sound will not stop itself from playing.
+// 			"match_entity" "false"	
+// 			"match_substring" "true"
+// 			"match_entry" "NONE"		
+// 		}
+// 	}
+
+
+	
+
+	"update_stop_and_play_at_time"
+	{
+		"uspat_elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		
+		"uspat_stop_time"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@uspat_elapsed_time.output_sound_elapsed"
+			"input2" "1.0"
+		}
+		"uspat_stop_entry"
+		{
+			"input_execute" "@uspat_stop_time.output"
+			"operator" "sys_stop_entries"
+			"stop_this_entry" "true"	
+
+			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			"match_entity" "false"	
+			"match_substring" "false"
+		}
+		"uspat_play_entry"
+		{
+			"input_execute" "@uspat_stop_time.output"
+			"execute_once" "true"	
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"entry_name" "Default.Null"	
+		}
+	}
+	"update_play_at_time"
+	{
+		"upat_elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		
+		"upat_start_time"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@upat_elapsed_time.output_sound_elapsed"
+			"input2" "1.0"
+		}
+		"upat_play_entry"
+		{
+			"input_execute" "@upat_start_time.output"
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"
+			"entry_name" "Default.Null"	
+		}
+	}
+
+	"update_play_at_last_syncpoint"
+	{
+		"upals_this_entry_syncpoints"
+		{
+			"operator" "get_track_syncpoint"
+			"syncpoint_list" "syncpoints_1"
+			"this_entry_syncpoints" "true"
+		}
+		"upals_elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		
+		"upals_start_time"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@upals_elapsed_time.output_sound_elapsed"
+			"input2" "@upals_this_entry_syncpoints.output_last_syncpoint"
+		}
+		"upals_play_entry"
+		{
+			"input_execute" "@upals_start_time.output"
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"
+			"entry_name" "Default.Null"	
+		}
+	}
+		
+	"dota_update_music_4layer"
+	//Test Info: min 300 max 5000
+	{
+		"elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		"source_info"
+		{
+			"operator" "get_source_info"
+			// "source"   "entity"
+			"source"   "emitter"
+		}
+			
+		"source_distance"
+		{
+			"operator" "calc_source_distance"
+			"input_position"   "@source_info.output_position"
+		}
+				
+		"mixer"
+		{
+			"operator" "get_soundmixer"
+			"mixgroup" "Music"
+		}
+		"snd_gain_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gain"
+		}
+		"snd_musicvolume_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_musicvolume"
+		}
+		"dashboard"
+		{
+			"operator" "get_dashboard"
+		}
+		"snd_musicvolume_convar_floor"
+		{
+			"operator" "math_float"
+			"apply" "max"	
+			"input1" "@snd_musicvolume_convar.output"
+			"input2" "0.0"
+		}	
+		
+		// "convar_total"
+		// {
+			// "operator" "math_float"
+			// "apply" "mult"	
+			// "input1" "@snd_musicvolume_convar_floor.output"
+			// "input2" "@snd_gain_convar.output"
+		// }
+		
+		// "dashboard_total"
+		// {
+			// "operator" "math_float"
+			// "apply" "mult"	
+			// "input1" "@convar_total.output"
+			// "input2" "@dashboard.output"
+		// }
+		
+		"volume_fade_in"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_fade_initial"
+		{
+			"input_execute" "0"
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "false"	
+		}
+		"volume_invert_initial"
+		{
+			"operator" "math_float"
+			"apply"	"sub"
+			"input1" "1.0"
+			"input2" "@volume_fade_initial.output"
+		}
+		"volume_lfo_time_scale"
+		{
+			"operator" "math_float"
+			"apply" "mult"
+			"input1" "@elapsed_time.output_sound_elapsed"
+			"input2" "0.0"	
+		}
+		"volume_lfo"
+		{
+			"operator" "math_func1"
+			"function" "cos"
+			"normalize_trig" "true"	
+			"input1" "@volume_lfo_time_scale.output"
+		}
+		"volume_lfo_scale"
+		{
+			"operator" "math_float"
+			"apply"	"invert_scale"
+			"input1" "@volume_lfo.output"
+			"input2" "0.0"
+		}
+
+		"volume_fade_out"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_stop_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "false"	
+		}
+		"volume_invert_fadeout"
+		{
+			"operator" "math_float"
+			"apply"	"sub"
+			"input1" "1.0"
+			"input2" "@volume_fade_out.output"
+		}
+		
+		// "volume_apply_fade_in"
+		// {
+			// "operator" "math_float"
+			// "apply"	"mult"
+			// "input1" "@volume_fade_in.output"
+			// "input2" "@dashboard_total.output"
+		// }		
+		
+		// "volume_apply_fade_initial"
+		// {
+			// "operator" "math_float"
+			// "apply"	"mult"
+			// "input1" "@volume_invert_initial.output"
+			// "input2" "@volume_apply_fade_in.output"
+		// }
+		
+		// "volume_apply_lfo"
+		// {
+			// "operator" "math_float"
+			// "apply"	"mult"
+			// "input1" "@volume_apply_fade_initial.output"
+			// "input2" "@volume_lfo_scale.output"
+		// }
+				
+		// "volume_apply_fade_out"
+		// {
+			// "operator" "math_float"
+			// "apply"	"mult"
+			// "input1" "@volume_apply_lfo.output"
+			// "input2" "@volume_invert_fadeout.output"
+		// }
+		
+		//////////////////////////////////////////////////
+		//INTENSITY STUFF GOES HERE  ////////////////////
+		/////////////////////////////////////////////////
+		
+		//TO DO: ADD INTENSITY SMOOTHING
+		//ADD MULTINODE REMAPPING
+		
+		"get_music_intensity_opvar"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "dota_battle_score_smooth_remap"
+		}
+		
+		"get_spectator_status"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "music_is_spectator"
+		}	
+				
+		"get_hero_levels"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "music_player_level_total"
+		}	
+								
+		"spectator_hero_levels_remap" 
+		{
+			"input_execute" "@get_spectator_status.output"
+			"operator" "math_curve_2d_4knot"
+			"curve_type" "linear"	
+			"input" "@get_hero_levels.output"
+			"input_X1" "40.0"	
+			"input_Y1" "0.0"	
+			"input_X2" "100.0"	
+			"input_Y2" "0.50"	
+			"input_X3" "200.0"	
+			"input_Y3" "0.85"	
+			"input_X4" "200.0"	
+			"input_Y4" "0.85"	
+		}	
+		
+		"intensity_add_offset"
+		{
+			"operator" "math_float"
+			"apply"	"add"
+			"input1" "@get_music_intensity_opvar.output"
+			"input2" "@spectator_hero_levels_remap.output"  
+			// "input2" "0.0"
+		}	
+				
+		"intensity_to_vol_remap" 
+		{
+			"operator" "math_curve_2d_4knot"
+			"curve_type" "linear"	
+			"input" "@intensity_add_offset.output"
+			"input_X1" "0.0"	
+			"input_Y1" "0.0"	
+			"input_X2" "1.0"	
+			"input_Y2" "1.0"	
+			"input_X3" "1.0"	
+			"input_Y3" "1.0"	
+			"input_X4" "1.0"	
+			"input_Y4" "1.0"	
+		}	
+		
+		"dota_music_intensity_cap"
+		{
+			"operator" "math_float"
+			"apply" "min"	
+			"input1" "@intensity_to_vol_remap.output"
+			"input2" "1.0"		
+		}
+		
+		/////////////////////////////////////////////////
+		//END INTENSITY STUFF  /////////////////////////
+		////////////////////////////////////////////////
+		
+		// "volume_apply_intensity"
+		// {
+			// "operator" "math_float"
+			// "apply"	"mult"
+			// "input1" "@intensity_to_vol_remap.output"
+			// "input2" "@volume_apply_fade_out.output"
+		// }		
+				
+		// "volume_apply_mixer"
+		// {
+			// "operator" "math_float"
+			// "apply" "mult"	
+			// "input1" "@mixer.output_volume"
+			// "input2" "@volume_apply_intensity.output"	
+		// }
+		
+		// "volume_apply_adjust"
+		// {
+			// "operator" "math_float"
+			// "apply" "mult"	
+			// "input1" "1.0"
+			// "input2" "@volume_apply_mixer.output"	
+		// }
+					
+		"volume_accumulate"
+		{
+			"operator" "math_float_accumulate12"
+			"apply"	"mult"
+			"input1" "@snd_musicvolume_convar_floor.output"
+			"input2" "@snd_gain_convar.output"
+			"input3" "@dashboard.output"
+			"input4" "@volume_fade_in.output"
+			"input5" "@volume_invert_initial.output"
+			"input6" "@volume_lfo_scale.output"
+			"input7" "@volume_invert_fadeout.output"
+			"input8" "@dota_music_intensity_cap.output"
+			"input9" "@mixer.output_volume"
+			"input10" "1.0"
+			"input11" "1.0"
+			"input12" "1.0"
+		}
+		
+		"speaker_volume"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@source_info.output_volume"
+			"input2" "@volume_accumulate.output"
+		}
+		
+// 		"dota_music_hack_max"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "max"	
+// 			"input1" "@speaker_volume.output"
+// 			"input2" "0.0"		
+// 		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "0.0"	
+			"lfe"          "0.0"	
+			"left_rear"    "0.7"
+			"right_rear"   "0.7"	
+			
+			"input2[*]" "@speaker_volume.output"		
+		}
+
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit.output" 
+			"output" "speakers"
+		}
+		"output_mixlayer_trigger"
+		{
+			"operator" "sys_output"
+			"input_float" "1"
+			"output" "mixlayer_trigger"
+		}
+		"stoptime_elapsed_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@volume_invert_fadeout.output"
+			"input2" "0.0" 
+		}
+		"stop_hold_output"
+		{
+			"operator" "sys_output"
+			"output"   "stop_hold"
+			"input_float" "@stoptime_elapsed_trigger.output"	
+		}
+	}
+
+
+// 	"update_trigger_layer_til_time"
+// 	{
+// 		"utltt_elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+		
+// 		"utltt_trigger_time"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than"	
+// 			"input1" "@utltt_elapsed_time.output_sound_elapsed"
+// 			"input2" "1.0"
+// 		}
+// 		"utltt_output_mixlayer_trigger"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@utltt_trigger_time.output"
+// 			"output" "mixlayer_trigger"
+// 		}
+
+// 	}
+
+// 	"update_stop_at_distance"
+// 	{
+// 		// this will use the standard "source_distance" operator exists
+// 		"usad_stop_dist"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "0.0"
+// 			"input2" "1.0"
+// 		}
+// 		"usad_stop_entry"
+// 		{
+// 			"operator" "sys_stop_entries"
+// 			"input_execute" "@usad_stop_dist.output"
+// 			"stop_this_entry" "true"	
+// 		}
+// 	}
+	
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// TRIGGER STACKS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+// 	"update_music_div_trigger"
+// 	{
+// 		"elapsed_time_div"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+// 		"duration_div"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "@elapsed_time_div.output_sound_duration"
+// 			"input2" "4"	
+// 		}
+// 		"time_div"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "@elapsed_time_div.output_sound_elapsed"
+// 			"input2" "@duration_div.output"	
+// 		}
+// 		"time_mod"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mod"	
+// 			"input1" "@time_div.output"
+// 			"input2" "1"	
+// 		}
+// 		"time_step"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "sub"	
+// 			"input1" "@time_div.output"
+// 			"input2" "@time_mod.output"
+// 		}
+// 		"step_delta"
+// 		{
+// 			"operator" "math_delta"
+// 			"input" "@time_step.output"	
+// 		}
+// 		"delta_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@step_delta.output"
+// 			"input2" "0.1"
+// 		}
+		
+// 		"play_entry"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"input_start" "@delta_trigger.output"
+// 			"entry_name" "xray.beep"	
+// 		}
+// 	}
+
+// 	"update_looping_triggers"
+// 	{
+// 		"elapsed_time_div"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+// 		///////////// x1
+//  		"duration_div_x1"
+//  		{
+//  			"operator" "math_float"
+//  			"apply" "div"	
+//  			"input1" "@elapsed_time_div.output_sound_duration"
+//  			"input2" "4"	
+//  		}
+// 		"time_div_x1"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "@elapsed_time_div.output_entry_elapsed"
+// 			"input2" "@duration_div_x1.output"	
+// 		}
+// 		"time_mod_x1"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mod"	
+// 			"input1" "@time_div_x1.output"
+// 			"input2" "1"	
+// 		}
+// 		"time_step_x1"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "sub"	
+// 			"input1" "@time_div_x1.output"
+// 			"input2" "@time_mod_x1.output"
+// 		}
+// 		"step_delta_x1"
+// 		{
+// 			"operator" "math_delta"
+// 			"input" "@time_step_x1.output"	
+// 		}
+// 		"delta_trigger_x1"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@step_delta_x1.output"
+// 			"input2" "0.1"
+// 		}
+		
+// 		"play_entry_x1"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"input_start" "@delta_trigger_x1.output"
+// 			"entry_name" "xray.beep"	
+// 		}
+
+// 		///////////// x2
+//  		"duration_div_x2"
+//  		{
+//  			"operator" "math_float"
+//  			"apply" "div"	
+//  			"input1" "@elapsed_time_div.output_sound_duration"
+//  			"input2" "4"	
+//  		}
+// 		"time_div_x2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "@elapsed_time_div.output_entry_elapsed"
+// 			"input2" "@duration_div_x2.output"	
+// 		}
+// 		"time_mod_x2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mod"	
+// 			"input1" "@time_div_x2.output"
+// 			"input2" "1"	
+// 		}
+// 		"time_step_x2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "sub"	
+// 			"input1" "@time_div_x2.output"
+// 			"input2" "@time_mod_x2.output"
+// 		}
+// 		"step_delta_x2"
+// 		{
+// 			"operator" "math_delta"
+// 			"input" "@time_step_x2.output"	
+// 		}
+// 		"delta_trigger_x2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@step_delta_x2.output"
+// 			"input2" "0.1"
+// 		}
+		
+// 		"play_entry_x2"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"input_start" "@delta_trigger_x2.output"
+// 			"entry_name" "xray.beep"	
+// 		}
+// 	}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// MUSIC STACKS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+	"dota_update_music_stereo"
+	{
+		"elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		"source_info"
+		{
+			"operator" "get_source_info"
+			// "source"   "entity"
+			"source"   "emitter"
+		}
+		"mixer"
+		{
+			"operator" "get_soundmixer"
+			"mixgroup" "Music"
+		}
+		"snd_gain_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gain"
+		}
+		"snd_musicvolume_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_musicvolume"
+		}
+		"dashboard"
+		{
+			"operator" "get_dashboard"
+		}
+		"get_worldmap_flag"
+		{
+			"operator" "get_opvar_float"
+			"execute_once" "false"
+			"opvar" "dota_worldmap_flag"
+		}
+		"snd_musicvolume_convar_floor"
+		{
+			"operator" "math_float"
+			"apply" "max"	
+			"input1" "@snd_musicvolume_convar.output"
+			"input2" "0.0"
+		}
+		"convar_total"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@snd_musicvolume_convar_floor.output"
+			"input2" "@snd_gain_convar.output"
+		}
+		"dashboard_total"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@convar_total.output"
+			"input2" "@dashboard.output"
+		}
+		"volume_fade_in"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_fade_initial"
+		{
+			"input_execute" "0"
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "false"	
+		}
+		"volume_invert_initial"
+		{
+			"operator" "math_float"
+			"apply"	"sub"
+			"input1" "1.0"
+			"input2" "@volume_fade_initial.output"
+		}
+		"volume_lfo_time_scale"
+		{
+			"operator" "math_float"
+			"apply" "mult"
+			"input1" "@elapsed_time.output_sound_elapsed"
+			"input2" "0.0"	
+		}
+		"volume_lfo"
+		{
+			"operator" "math_func1"
+			"function" "cos"
+			"normalize_trig" "true"	
+			"input1" "@volume_lfo_time_scale.output"
+		}
+		"volume_lfo_scale"
+		{
+			"operator" "math_float"
+			"apply"	"invert_scale"
+			"input1" "@volume_lfo.output"
+			"input2" "0.0"
+		}
+
+		"volume_fade_out"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_stop_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "false"	
+		}
+		"volume_invert_fadeout"
+		{
+			"operator" "math_float"
+			"apply"	"sub"
+			"input1" "1.0"
+			"input2" "@volume_fade_out.output"
+		}
+		"volume_apply_fade_in"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_fade_in.output"
+			"input2" "@dashboard_total.output"
+		}
+		"volume_apply_fade_initial"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_invert_initial.output"
+			"input2" "@volume_apply_fade_in.output"
+		}
+		"volume_apply_lfo"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_apply_fade_initial.output"
+			"input2" "@volume_lfo_scale.output"
+		}
+		"volume_apply_fade_out"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_apply_lfo.output"
+			"input2" "@volume_invert_fadeout.output"
+		}
+		"volume_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_volume"
+			"input2" "@volume_apply_fade_out.output"	
+		}
+		"volume_apply_adjust"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "1.0"
+			"input2" "@volume_apply_mixer.output"	
+		}
+		"speaker_volume"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@source_info.output_volume"
+			"input2" "@volume_apply_adjust.output"
+		}
+		"external_scaler"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@speaker_volume.output"
+			"input2" "1.0"
+		}
+		
+// 		"dota_music_hack_max"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "max"	
+// 			"input1" "@speaker_volume.output"
+// 			"input2" "0.0"		
+// 		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "0.0"	
+			"lfe"          "0.0"	
+			"left_rear"    "0.7"
+			"right_rear"   "0.7"	
+			
+			"input2[*]" "@speaker_volume.output"		
+		}
+
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit.output"
+			"output" "speakers"
+		}
+		"output_mixlayer_trigger"
+		{
+			"operator" "sys_output"
+			"input_float" "1"
+			"output" "mixlayer_trigger"
+		}
+		"stoptime_elapsed_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@volume_invert_fadeout.output"
+			"input2" "0.0" 
+		}
+		"stop_hold_output"
+		{
+			"operator" "sys_output"
+			"output"   "stop_hold"
+			"input_float" "@stoptime_elapsed_trigger.output"	
+		}
+	}	
+
+// 	"update_music_stereo"
+// 	{
+// 		"save_restore_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"execute_once" "true"
+// 			"input_float" "1.0"
+// 			"output" "save_restore"
+// 		}
+// 		"elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			// "source"   "entity"
+// 			"source"   "emitter"
+// 		}
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "Music"
+// 		}
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+// 		"snd_musicvolume_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_musicvolume"
+// 		}
+// 		"dashboard"
+// 		{
+// 			"operator" "get_dashboard"
+// 		}
+// 		"convar_total"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@snd_musicvolume_convar.output"
+// 			"input2" "@snd_gain_convar.output"
+// 		}
+// 		"dashboard_total"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@convar_total.output"
+// 			"input2" "@dashboard.output"
+// 		}
+// 		"volume_fade_in"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@elapsed_time.output_entry_elapsed"
+// 			"input_min" "0.0"
+// 			"input_max" "0.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "true"	
+// 		}
+// 		"volume_fade_initial"
+// 		{
+// 			"input_execute" "0"
+// 			"operator" "math_remap_float"
+// 			"input" "@elapsed_time.output_entry_elapsed"
+// 			"input_min" "0.0"
+// 			"input_max" "0.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "false"	
+// 		}
+// 		"volume_invert_initial"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"sub"
+// 			"input1" "1.0"
+// 			"input2" "@volume_fade_initial.output"
+// 		}
+// 		"volume_lfo_time_scale"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "0.0"	
+// 		}
+// 		"volume_lfo"
+// 		{
+// 			"operator" "math_func1"
+// 			"function" "cos"
+// 			"normalize_trig" "true"	
+// 			"input1" "@volume_lfo_time_scale.output"
+// 		}
+// 		"volume_lfo_scale"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"invert_scale"
+// 			"input1" "@volume_lfo.output"
+// 			"input2" "0.0"
+// 		}
+
+// 		"volume_fade_out"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@elapsed_time.output_stop_elapsed"
+// 			"input_min" "0.0"
+// 			"input_max" "0.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "false"	
+// 		}
+// 		"volume_invert_fadeout"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"sub"
+// 			"input1" "1.0"
+// 			"input2" "@volume_fade_out.output"
+// 		}
+// 		"volume_apply_fade_in"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_fade_in.output"
+// 			"input2" "@dashboard_total.output"
+// 		}
+// 		"volume_apply_fade_initial"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_invert_initial.output"
+// 			"input2" "@volume_apply_fade_in.output"
+// 		}
+// 		"volume_apply_lfo"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_fade_initial.output"
+// 			"input2" "@volume_lfo_scale.output"
+// 		}
+// 		"volume_apply_fade_out"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_lfo.output"
+// 			"input2" "@volume_invert_fadeout.output"
+// 		}
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@volume_apply_fade_out.output"	
+// 		}
+// 		"volume_apply_adjust"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "1.0"
+// 			"input2" "@volume_apply_mixer.output"	
+// 		}
+// 		"speaker_volume"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@source_info.output_volume"
+// 			"input2" "@volume_apply_adjust.output"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "mult"
+// 			"left_front"   "1.0"	
+// 			"right_front"  "1.0"	
+// 			"center"       "0.0"	
+// 			"lfe"          "0.0"	
+// 			"left_rear"    "0.8"
+// 			"right_rear"   "0.8"	
+			
+// 			"input2[*]" "@speaker_volume.output"		
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_limit.output"
+// 			"output" "speakers"
+// 		}
+// 		"output_mixlayer_trigger"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "1"
+// 			"output" "mixlayer_trigger"
+// 		}
+// 		"stoptime_elapsed_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@volume_invert_fadeout.output"
+// 			"input2" "0.0" 
+// 		}
+// 		"stop_hold_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "stop_hold"
+// 			"input_float" "@stoptime_elapsed_trigger.output"	
+// 		}
+// 	}	
+
+	"update_music_spatial"
+	{
+// 		"save_restore_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"execute_once" "true"
+// 			"input_float" "1.0"
+// 			"output" "save_restore"
+// 		}
+
+		//////////////////////
+		// POSITION
+		"source_info"
+		{
+			"operator" "get_source_info"
+			// "source"   "entity"
+			"source"   "emitter"
+		}
+
+		"elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+
+		"position_array"
+		{
+			"operator" "util_pos_vec8"
+				
+			"input_entry_count" "1"
+			"input_index" "0"	
+			"input_position_0" "@source_info.output_position"
+
+		}
+
+        // NOTE: uses player data, ie: SS, returns minimum distance
+		"source_distance"
+		{
+			"operator" "calc_source_distance"
+			"input_position"   "@position_array.output_position"
+		}
+
+		////////////////////
+		// calc
+		"mixer"
+		{
+			"operator" "get_soundmixer"
+			"mixgroup" "Music"
+		}
+
+		// NOTE: uses player data, ie: SS, return least occluded value
+		"occlusion"
+		{
+			"operator" "calc_occlusion"
+			"input_position"   "@position_array.output_position"
+		}
+
+		"snd_gain_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gain"
+		}
+		"snd_op_test_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_op_test_convar"
+		}
+		"snd_musicvolume_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_musicvolume"
+		}
+
+		"dashboard"
+		{
+			"operator" "get_dashboard"
+		}
+
+		//////////////////////
+		// LEVEL
+		"level_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_level"
+			"input2" "@source_info.output_level"
+		}
+
+		/////////////////////
+		// VOLUME
+
+		// NOTE: distance has precalculated minimum distance of the ss players	
+
+		"volume_falloff"
+		{
+			"operator" "calc_falloff"
+			"input_distance"  "@source_distance.output"
+			"input_level"	  "@level_apply_mixer.output"
+		}
+
+		"volume_fade_in"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "@source_info.output_volume"
+		}
+
+		"volume_clamp_fade_in"
+		{
+			"operator" "math_float"
+			"apply"	"min"
+			"input1" "@volume_fade_in.output"
+			"input2" "1.0"
+		}
+		"volume_fade_initial"
+		{
+			"input_execute" "0"
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "false"	
+		}
+		"volume_invert_initial"
+		{
+			"operator" "math_float"
+			"apply"	"sub"
+			"input1" "1.0"
+			"input2" "@volume_fade_initial.output"
+		}
+		"volume_apply_fade_initial"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_invert_initial.output"
+			"input2" "@volume_clamp_fade_in.output"
+		}
+
+		"volume_fade_out"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_stop_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "false"	
+		}
+		"volume_invert_fadeout"
+		{
+			"operator" "math_float"
+			"apply"	"sub"
+			"input1" "1.0"
+			"input2" "@volume_fade_out.output"
+		}
+
+		"volume_apply_fade_out"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_apply_fade_initial.output"
+			"input2" "@volume_invert_fadeout.output"
+		}
+
+		"volume_apply_falloff"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_apply_fade_out.output"
+			"input2" "@volume_falloff.output"
+		}
+
+		"volume_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_volume"
+			"input2" "@volume_apply_falloff.output"	
+		}
+
+		"volume_apply_snd_gain_convar"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@snd_gain_convar.output"
+			"input2" "@volume_apply_mixer.output"	
+		}
+
+		"volume_apply_musicvolume_convar"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@snd_musicvolume_convar.output"
+			"input2" "@volume_apply_snd_gain_convar.output"	
+		}
+
+		"volume_apply_occlusion"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_apply_musicvolume_convar.output"
+			"input2" "@occlusion.output"
+		}
+
+		"volume_apply_dashboard"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@volume_apply_occlusion.output"
+			"input2" "@dashboard.output"
+		}
+
+
+		// set dsp just to be sure
+		"dsp_output"
+		{
+			"operator" "sys_output"
+			// "input_float" "@dsp_apply_distant.output"
+			"input_float" "0"
+			"output" "dsp"
+		}
+
+		/////////////////////
+		// SPEAKERS
+
+		// NOTE: uses player data, ie: SS, calculates all players and merges them
+		"speakers_spatialize"
+		{
+			"operator" "calc_spatialize_speakers"
+			"input_rear_stereo_scale" "1.0"	
+			"input_radius"  "300"
+			"input_distance"  "@source_distance.output"
+			"input_position"   "@position_array.output_position"
+		}
+	
+		"speakers_volume"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"input1"       "@speakers_spatialize.output"
+			"input2[*]"	   "@volume_apply_dashboard.output"
+		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "1.0"	
+			"lfe"          "1.0"	
+			"left_rear"    "1.0"
+			"right_rear"   "1.0"	
+			
+			"input2" "@speakers_volume.output"
+		
+		}
+
+		"speakers_multi_origin"
+		{
+			"operator"    "iterate_merge_speakers"
+
+			"input_max_iterations" "@position_array.output_max_index"
+            "iterate_operator" "position_array"
+			"input" "@speakers_limit.output"
+
+		}
+		// connecting output after operator has been created
+		"position_array"
+		{
+			"input_index" "@speakers_multi_origin.output_index"	
+		}
+
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_multi_origin.output"
+			"output" "speakers"
+		}
+
+		// stop deletion until after fadeout
+		"stoptime_elapsed_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@volume_invert_fadeout.output"
+			"input2" "0.0" 
+		}
+		"stop_hold_output"
+		{
+			"operator" "sys_output"
+			"output"   "stop_hold"
+			"input_float" "@stoptime_elapsed_trigger.output"	
+		}
+	}	
+
+"dota_update_death_music" //WHY DOES THIS WORK?
+	{
+
+		//////////////////////
+		// POSITION
+		"source_info"
+		{
+			"operator" "get_source_info"
+			"source"   "entity"
+			"source"   "emitter"
+		}
+
+		"get_entity_info"
+		{
+			"input_execute"	"1"
+			"operator" "game_entity_info"
+			"input_entity_index" "@source_info.output_entity_index"
+		}
+		// local player ent index is stored in this convar
+		"get_local_player_entity_index"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "dota_local_selected_entindex"
+		}
+		// test if this sound is us
+		"test_local_player_ent_index"
+		{
+			"operator" "math_float"
+			"apply" "equals"	
+			"input1" "@source_info.output_entity_index"
+			"input2" "@get_local_player_entity_index.output"
+		}
+		"volume_adjust_local_player"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@test_local_player_ent_index.output"
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+		}
+		"volume_add_local_player"
+		{
+			"operator" "math_float"
+			"apply" "add"	
+			"input1" "@volume_adjust_local_player.output"
+			"input2" "1.0"
+		}
+
+
+		// reports various time values
+		"elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+
+        // NOTE: uses player data, ie: SS, returns minimum distance
+		"source_distance"
+		{
+			"operator" "calc_source_distance"
+			"input_position"   "@source_info.output_position"
+//			"in2d"		"true"
+		}
+
+		// get values of specified mixgroup
+		// NOTE: I believe this also sets this sound to be a member of that mixgroup as well
+		// which is relevant to mixlayers
+		"mixer"
+		{
+			"operator" "get_soundmixer"
+			"set_mixgroup_to_channel" "true"
+			"mixgroup" "Music"
+		}
+
+		// convar to control all sound levels
+		"snd_gain_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gain"
+		}
+
+		"snd_musicvolume_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_musicvolume"
+		}
+
+		"snd_op_test_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_op_test_convar"
+		}
+
+		//////////////////////
+		// LEVEL
+		// adjust SPL to reflect mixer settings, this will be used below in falloff calculations
+		"level_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_level"
+			"input2" "@source_info.output_level"
+		}
+
+		/////////////////////
+		// VOLUME
+		//
+		// Various volume calculations
+		//
+
+
+		"volume_fade_in"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.05"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_fade_out"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_stop_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "1.0"
+			"input_map_max" "0.0"
+			"default_to_max" "false"	
+		}
+
+		// multiply all volume adjustments together
+		"volume_accumulate"
+		{
+			"operator" "math_float_accumulate12"
+			"apply"	"mult"
+			"input1" "@source_info.output_volume"
+			"input2" "@mixer.output_volume"
+			"input3" "@snd_gain_convar.output"
+			"input4" "@snd_musicvolume_convar.output"
+			"input5" "1.0"
+			"input6" "1.0"
+			"input7" "1.0"
+			"input8" "1.0"
+			"input9" "1.0"
+			"input10" "1.0"
+			"input11" "1.0"
+			"input12" "1.0"
+		}
+
+		"output_mixlayer_trigger"
+        {
+            "execute_once" "0"
+            "operator" "sys_output"
+            "input_float" "@volume_accumulate.output"
+            "output" "mixlayer_trigger"
+        }
+
+
+		/////////////////////////////////////////////////////////
+		// handle stoptime/fade outs
+		"stoptime_elapsed_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@volume_fade_out.output"
+			"input2" "0.0" 
+		}
+		"stop_hold_output"
+		{
+			"operator" "sys_output"
+			"output"   "stop_hold"
+			"input_float" "@stoptime_elapsed_trigger.output"	
+		}
+
+		///////////////////
+		// PITCH
+		
+		"pitch_output"
+		{
+			"operator" "sys_output"
+			"output"   "pitch"
+			"input_float" "@source_info.output_pitch"	
+		}
+
+		///////////////////
+		// DSP
+		"dsp_emitter"
+		{
+			"operator" "math_float"
+			"apply"	      "set"
+			"input1" "1.0"	
+		}
+		"dsp_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_dsp"
+			"input2" "@dsp_emitter.output"	
+		}
+		"dsp_distantDSP"
+		{
+			"operator" "calc_distant_dsp"
+			"input_distance"  "@source_distance.output"
+			"input_level"	  "@level_apply_mixer.output"
+		}
+		"dsp_apply_distant"
+		{
+			"operator" "math_float"
+			"apply"	      "mult"
+			"input1" "@dsp_distantDSP.output"
+			"input2" "@dsp_apply_mixer.output"			
+		}
+		"dsp_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@dsp_apply_distant.output"
+			"output" "dsp"
+		}
+
+		/////////////////////
+		// SPEAKERS
+
+		// NOTE: uses player data, ie: SS, calculates all players and merges them
+		"speakers_spatialize"
+		{
+			"operator" "calc_spatialize_speakers"
+			"input_radius"  "300"
+			"input_distance"  "@source_distance.output"
+			"input_position"  "@source_info.output_position"
+		}
+	
+		"speakers_apply_volume"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"input1"       "@speakers_spatialize.output"
+			"input2[*]"	   "@volume_accumulate.output"
+		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "0.0"	
+			"lfe"          "0.0"	
+			"left_rear"    "0.7"
+			"right_rear"   "0.7"	
+			
+			"input2"	   "@speakers_apply_volume.output"
+		}
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit.output"
+			"output" "speakers"
+		}
+	}
+
+
+
+// 	"update_music_spatial_stop_dist"
+// 	{
+// 		"import_stack" 	"update_music_spatial"
+
+// 		"import_stack" 	"update_stop_at_distance"
+// 		"usad_stop_dist"
+// 		{
+// 			"input1" "@source_distance.output"
+// 			"input2" "1.0"  // distance beyond which to stop
+// 		}
+// 	}
+
+// 	"update_music_spatial_looping_triggers"
+// 	{
+// 		"import_stack" 	"update_music_spatial"
+// 		"import_stack" "update_looping_triggers"
+// 	}
+
+// 	"update_music_stereo_trigger"
+// 	{
+// 		"import_stack" 	"update_music_stereo"
+// 		"import_stack" "update_music_div_trigger"
+// 	}
+
+
+// 	"dota_update_music_play_tbeam"
+// 	{
+// 		"tb_mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "testTBin"
+// 		}
+// // 		"print_tb_mixer"
+// // 		{
+// // 			"operator" "util_print_float"
+// // 			"input" "@tb_mixer.output_volume"	
+// // 		}
+// 		"tb_delta"
+// 		{
+// 			"operator" "math_delta"
+// 			"input" "@tb_mixer.output_volume"	
+// 		}
+// 		"tb_mixer_zero"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than_or_equal"	
+// 			"input1" "@tb_mixer.output_volume"
+// 			"input2" "0.0"
+// 		}
+// 		"tb_start_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than"	
+// 			"input1" "@tb_delta.output"
+// 			"input2" "0.0"
+// 		}
+// 		"tb_start_trigger_test"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "min"	
+// 			"input1" "@tb_start_trigger.output"
+// 			"input2" "@tb_mixer_zero.output"
+// 		}
+// // 		"print_tb_delta"
+// // 		{
+// // 			"operator" "util_print_float"
+// // 			"input" "@tb_delta.output"	
+// // 		}
+
+// // 		"print_start_trigger"
+// // 		{
+// // 			"input_execute" "@tb_start_trigger.output"
+// // 			"operator" "util_print_float"
+// // 			"input" "@tb_start_trigger_test.output"	
+// // 		}
+// 		"tb_stop_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@tb_mixer.output_volume"
+// 			"input2" "0.0"
+// 		}
+		
+// 		"play_entry"
+// 		{
+// 			"execute_once" "false"
+// 			"operator" "sys_start_entry"
+// 			"input_start" "1"	
+// 			"input_execute" "@tb_start_trigger_test.output"	
+// 			"entry_name" "Default.Null"
+// 		}	
+// 		"stop_entry"
+// 		{
+// 			"input_execute" "@tb_stop_trigger.output"	
+// 			"operator" "sys_stop_entries"
+// 			"input_max_entries" "0.000000"
+// 			"match_entity" "false"	
+// 			"match_substring" "false"
+// 			"match_entry" "Default.Null"
+// 		}
+// 	}
+
+
+// 	"dota_update_music_play_gel"
+// 	{
+// 		"gel_elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+
+// 		"bounce_view_info"
+// 		{
+// 			"operator" "game_view_info"
+// 		}
+// 		"gel_mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "testGelBounce"
+// 		}
+// 		"gel_delta"
+// 		{
+// 			"operator" "math_delta"
+// 			"input" "@gel_mixer.output_volume"	
+// 		}
+// // 		"gel_delta_test"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "less_than"	
+// // 			"input1" "@gel_delta.output"
+// // 			"input2" "0.0"
+// // 		}
+// // 		"print_delta"
+// // 		{
+// // 			"input_execute" "@gel_delta_test.output"
+// // 			"operator" "util_print_float"
+// // 			"input" "@gel_delta.output"	
+// // 		}
+// 		"gel_mixer_zero"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than_or_equal"	
+// 			"input1" "@gel_mixer.output_volume"
+// 			"input2" "0.0"
+// 		}
+// 		"gel_start_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than"	
+// 			"input1" "@gel_delta.output"
+// 			"input2" "0.0"
+// 		}
+// 		"gel_start_trigger_test"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "min"	
+// 			"input1" "@gel_start_trigger.output"
+// 			"input2" "@gel_mixer_zero.output"
+// 		}
+
+// // 		"gel_start_trigger"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "less_than"	
+// // 			"input1" "@gel_delta.output"
+// // 			"input2" "0.0"
+// // 		}
+// 		"gel_stop_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than"	
+// 			"input1" "@bounce_view_info.output_velocity_vector_z"
+// 			"input2" "1.0"
+// 		}
+// 		"gel_test_stopped"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than"	
+// 			"input1" "@gel_elapsed_time.output_stop_elapsed"
+// 			"input2" "0.0"
+// 		}
+// // 		"print_gel_test_stopped"
+// // 		{
+// // 			"input_execute" "@gel_delta_test.output"
+// // 			"operator" "util_print_float"
+// // 			"input" "@gel_test_stopped.output"
+// // 		}
+// // 		"print_gel_test_start_trigger"
+// // 		{
+// // 			"input_execute" "@gel_delta_test.output"
+// // 			"operator" "util_print_float"
+// // 			"input" "@gel_start_trigger.output"
+// // 		}
+// // 		"print_gel_test_stop_trigger"
+// // 		{
+// // 			"input_execute" "@gel_delta_test.output"
+// // 			"operator" "util_print_float"
+// // 			"input" "@gel_stop_trigger.output"
+// // 		}
+// 		"gel_play_entry"
+// 		{
+// 			"execute_once" "false"
+// 			"operator" "sys_start_entry"
+// 			"input_start" "@gel_test_stopped.output"	
+// 			"input_execute" "@gel_start_trigger_test.output"	
+// 			"entry_name" "Default.Null"
+// 		}	
+// 		"gel_stop_entry"
+// 		{
+// 			"input_execute" "@gel_stop_trigger.output"	
+// 			"operator" "sys_stop_entries"
+// 			"input_max_entries" "0.000000"
+// 			"match_entity" "false"	
+// 			"match_substring" "false"
+// 			"match_entry" "Default.Null"
+// 		}
+// 	}
+
+
+// 	"dota_update_music_play_speed_gel"
+// 	{
+// 		"speed_view_info"
+// 		{
+// 			"operator" "game_view_info"
+// 		}
+
+// 		"speed_velocity_fabs_xy"
+// 		{
+// 			"operator" "math_func1"
+// 			"function" "fabs"
+// 			"input1" "@speed_view_info.output_velocity_xy"
+// 		}	
+
+// 		"speed_velocity_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@speed_velocity_fabs_xy.output"
+// 			"input2" "12"
+// 		}
+// 		"speed_delta"
+// 		{
+// 			"operator" "math_delta"
+// 			"input" "@speed_velocity_trigger.output"	
+// 		}
+
+// 		"speed_start_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@speed_delta.output"
+// 			"input2" "0"
+// 		}
+
+// 		"speed_stop_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than"	
+// 			"input1" "@speed_delta.output"
+// 			"input2" "0"
+// 		}
+
+// 		"speed_play_entry"
+// 		{
+// 			"execute_once" "false"
+// 			"operator" "sys_start_entry"
+// 			"input_start" "1"	
+// 			"input_execute" "@speed_start_trigger.output"	
+// 			"entry_name" "Default.Null"
+// 		}	
+// 		"speed_stop_entry"
+// 		{
+// 			"input_execute" "@speed_stop_trigger.output"	
+// 			"operator" "sys_stop_entries"
+// 			"input_max_entries" "0.000000"
+// 			"match_entity" "false"	
+// 			"match_substring" "false"
+// 			"match_entry" "Default.Null"
+// 		}
+// 	}
+
+
+// 	"dota_update_music_stereo_bounce"
+// 	{
+// 		"import_stack" 	"update_music_stereo"
+// 		"game_view_info"
+// 		{
+// 			"operator" "game_view_info"
+// 		}
+// // 		"volume_bounce"
+// // 		{
+// // 			"operator" "math_remap_float"
+// // 			"input" "@game_view_info.output_stop_elapsed"
+// // 			"input_min" "-80.0"
+// // 			"input_max" "100.0"
+// // 			"input_map_min" "0.0"
+// // 			"input_map_max" "1.0"
+// // 			"default_to_max" "false"	
+// // 		}
+
+// 		"abs_velocity_vector_z"
+// 		{
+// 			"operator" "math_func1"
+// 			"function"	"fabs"
+// 			"input1" "@game_view_info.output_velocity_vector_z"
+// 		}
+// 		"volume_bounce"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@abs_velocity_vector_z.output"
+// 			"input_min" "0.0"
+// 			"input_max" "100.0"
+// 			"input_map_min" "0.1"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "false"	
+// 		}
+// 		"volume_apply_adjust"
+// 		{
+// 			"input1" "@volume_bounce.output"
+// 		}
+
+// 	}
+
+// 	"dota_update_music_spatial_portals"
+// 	{
+// 		"import_stack" 	"update_music_spatial"
+		
+// 		// 	set up so it iterates over portalized sounds
+// 		"speakers_multi_origin"
+// 		{
+// 			"input_max_iterations" "@source_info.output_source_count"
+//             "iterate_operator" "source_info"
+// 		}
+// 		// connecting output after operator has been created
+// 		"source_info"
+// 		{
+// 			"input_source_index" "@speakers_multi_origin.output_index"	
+// 		}
+// 		// turn off position array indexing 
+// 		"position_array"
+// 		{
+// 			"input_index" "0"	
+// 		}
+// 	}
+	
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// STANDARD STACKS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+// 	"update_simple_quad"
+// 	{
+// 		"save_restore_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"execute_once" "true"	
+// 			"input_float" "1.0"
+// 			"output" "save_restore"
+// 		}
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "All"
+// 		}
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@snd_gain_convar.output"
+// 		}
+// 		"speaker_volume"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "1"
+// 			"input2" "@volume_apply_mixer.output"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "mult"
+// 			"left_front"   "1.0"	
+// 			"right_front"  "1.0"	
+// 			"center"       "0.0"	
+// 			"lfe"          "0.0"	
+// 			"left_rear"    "1.0"
+// 			"right_rear"   "1.0"	
+			
+// 			"input2[*]" "@speaker_volume.output"		
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_limit.output"
+// 			"output" "speakers"
+// 		}
+// 		"output_mixlayer_trigger"
+// 		{
+// 			"execute_once" "1"
+// 			"operator" "sys_output"
+// 			"input_float" "1"
+// 			"output" "mixlayer_trigger"
+// 		}
+// 	}	
+
+	"update_default"
+	{
+
+		//////////////////////
+		// POSITION
+		"source_info"
+		{
+			"operator" "get_source_info"
+			// "source"   "entity"
+			"source"   "emitter"
+		}
+
+        // NOTE: uses player data, ie: SS, returns minimum distance
+		"source_distance"
+		{
+			"operator" "calc_source_distance"
+			"input_position"   "@source_info.output_position"
+		}
+
+		////////////////////
+		// calc
+		"mixer"
+		{
+			"operator" "get_soundmixer"
+			"set_mixgroup_to_channel" "true"
+			"mixgroup" "All"
+		}
+
+
+		// NOTE: uses player data, ie: SS, return least occluded value
+		"occlusion"
+		{
+			"operator" "calc_occlusion"
+			"input_position" "@source_info.output_position"	
+		}
+
+		"snd_gain_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gain"
+		}
+		"snd_op_test_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_op_test_convar"
+		}
+
+		//////////////////////
+		// LEVEL
+		"level_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_level"
+			"input2" "@source_info.output_level"
+		}
+
+		/////////////////////
+		// VOLUME
+			
+		// NOTE: distance has precalculated minimum distance of the ss players			
+		"volume_falloff"
+		{
+			"operator" "calc_falloff"
+			"input_distance"  "@source_distance.output"
+			"input_level"	  "@level_apply_mixer.output"
+		}
+		"volume_apply_falloff"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@source_info.output_volume"
+			"input2" "@volume_falloff.output"
+		}
+		"volume_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_volume"
+			"input2" "@volume_apply_falloff.output"	
+		}
+		"volume_apply_snd_gain_convar"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@snd_gain_convar.output"
+			"input2" "@volume_apply_mixer.output"	
+		}
+		"volume_apply_test_convar"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "1.0"
+			"input2" "@volume_apply_snd_gain_convar.output"	
+		}
+
+		"volume_apply_occlusion"
+		{
+			"operator" "math_float"
+			"apply"	"mult"
+			"input1" "@volume_apply_test_convar.output"
+			"input2" "@occlusion.output"
+		}
+		// this calculates the loudest volume of the ss clients
+		// NOT NEEDED ALL SS OPS SELF-CONTAINGED
+		// "volume_acc_ss_max"
+		// {
+			// "operator" "op_accumulate_ss_float"
+			// "input" "volume_apply_occlusion.output"
+			// "iterate_operator" "occlusion"
+		// }	
+
+		// shouldn't this be volume level?
+		"output_mixlayer_trigger"
+		{
+			"execute_once" "1"
+			"operator" "sys_output"
+			"input_float" "1"
+			"output" "mixlayer_trigger"
+		}
+		///////////////////
+		// PITCH
+		"pitch_output"
+		{
+			"operator" "sys_output"
+			"output"   "pitch"
+			"input_float" "@source_info.output_pitch"	
+		}
+
+		///////////////////
+		// DSP
+		"dsp_emitter"
+		{
+			"operator" "math_float"
+			"apply"	      "set"
+			"input1" "1.0"	
+		}
+		"dsp_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_dsp"
+			"input2" "@dsp_emitter.output"	
+		}
+		"dsp_distantDSP"
+		{
+			"operator" "calc_distant_dsp"
+			"input_distance"  "@source_distance.output"
+			"input_level"	  "@level_apply_mixer.output"
+		}
+		"dsp_apply_distant"
+		{
+			"operator" "math_float"
+			"apply"	      "mult"
+			"input1" "@dsp_distantDSP.output"
+			"input2" "@dsp_apply_mixer.output"			
+		}
+		"dsp_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@dsp_apply_distant.output"
+			"output" "dsp"
+		}
+
+		/////////////////////
+		// SPEAKERS
+
+		// NOTE: uses player data, ie: SS, calculates all players and merges them
+		"speakers_spatialize"
+		{
+			"operator" "calc_spatialize_speakers"
+			"input_radius"  "300"
+			"input_distance"  "@source_distance.output"
+			"input_position"  "@source_info.output_position"
+		}
+	
+		"speakers_apply_volume"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"input1"       "@speakers_spatialize.output"
+			"input2[*]"	   "@volume_apply_occlusion.output"
+		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "1.0"	
+			"lfe"          "1.0"	
+			"left_rear"    "1.0"
+			"right_rear"   "1.0"	
+			
+			"input2"	   "@speakers_apply_volume.output"
+		}
+
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit.output"
+			"output" "speakers"
+		}
+	}	
+
+	"dota_update_default"
+	{
+
+		//////////////////////
+		// POSITION
+		"source_info"
+		{
+			"operator" "get_source_info"
+			"source"   "entity"
+//			"source"   "emitter"
+		}
+
+		"get_entity_info"
+		{
+			"input_execute"	"1"
+			"operator" "game_entity_info"
+			"input_entity_index" "@source_info.output_entity_index"
+		}
+		// local player ent index is stored in this convar
+		"get_local_player_entity_index"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "dota_local_selected_entindex"
+		}
+		// test if this sound is us
+		"test_local_player_ent_index"
+		{
+			"operator" "math_float"
+			"apply" "equals"	
+			"input1" "@source_info.output_entity_index"
+			"input2" "@get_local_player_entity_index.output"
+		}
+		"volume_adjust_local_player"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@test_local_player_ent_index.output"
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+		}
+		"volume_add_local_player"
+		{
+			"operator" "math_float"
+			"apply" "add"	
+			"input1" "@volume_adjust_local_player.output"
+			"input2" "1.0"
+		}
+
+
+		// reports various time values
+		"elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+
+        // NOTE: uses player data, ie: SS, returns minimum distance
+		"source_distance"
+		{
+			"operator" "calc_source_distance"
+			"input_position"   "@source_info.output_position"
+//			"in2d"		"true"
+		}
+
+		// get values of specified mixgroup
+		// NOTE: I believe this also sets this sound to be a member of that mixgroup as well
+		// which is relevant to mixlayers
+		"mixer"
+		{
+			"operator" "get_soundmixer"
+			"set_mixgroup_to_channel" "true"
+			"mixgroup" "All"
+		}
+
+		// NOTE: uses player data, ie: SS, return least occluded value
+// 		"occlusion"
+// 		{
+// 			"operator" "calc_occlusion"
+// 			"input_position" "@source_info.output_position"	
+// 		}
+
+		// convar to control all sound levels
+		"snd_gain_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gain"
+		}
+		"snd_op_test_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_op_test_convar"
+		}
+
+		//////////////////////
+		// LEVEL
+		// adjust SPL to reflect mixer settings, this will be used below in falloff calculations
+		"level_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_level"
+			"input2" "@source_info.output_level"
+		}
+
+		/////////////////////
+		// VOLUME
+		//
+		// Various volume calculations
+		//
+
+		"volume_falloff_linear"
+		{
+			"operator" "math_remap_float"
+			"input" "@source_distance.output"
+			"input_min" "750.0"
+			"input_max" "4500.0"
+			"input_map_min" "1.0"
+			"input_map_max" "0.01"
+			"default_to_max" "false"	
+		}
+
+		"volume_fade_in"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.05"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_fade_out"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_stop_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "1.0"
+			"input_map_max" "0.0"
+			"default_to_max" "false"	
+		}
+		"volume_move"
+		{
+			"input_execute"	"1"
+			"operator" "math_remap_float"
+			"input" "@get_entity_info.output_velocity"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_move_filter"
+		{
+			"operator" "math_float_filter"
+			"input" "@volume_move.output"
+			"input_max_velocity" "1.0"
+		}
+
+		// multiply all volume adjustments together
+		"volume_accumulate"
+		{
+			"operator" "math_float_accumulate12"
+			"apply"	"mult"
+			"input1" "@source_info.output_volume"
+			"input2" "@mixer.output_volume"
+			"input3" "@snd_gain_convar.output"
+			"input4" "@volume_falloff_linear.output"
+			"input5" "@volume_fade_in.output"
+			"input6" "@volume_fade_out.output"
+			"input7" "@volume_move_filter.output"
+			"input8" "@volume_add_local_player.output"
+			"input9" "1.0"
+			"input10" "1.0"
+			"input11" "1.0"
+			"input12" "1.0"
+		}
+
+		"output_mixlayer_trigger"
+        {
+            "execute_once" "0"
+            "operator" "sys_output"
+            "input_float" "@volume_accumulate.output"
+            "output" "mixlayer_trigger"
+        }
+
+
+		/////////////////////////////////////////////////////////
+		// handle stoptime/fade outs
+		"stoptime_elapsed_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@volume_fade_out.output"
+			"input2" "0.0" 
+		}
+		"stop_hold_output"
+		{
+			"operator" "sys_output"
+			"output"   "stop_hold"
+			"input_float" "@stoptime_elapsed_trigger.output"	
+		}
+
+		///////////////////
+		// PITCH
+		
+		"pitch_output"
+		{
+			"operator" "sys_output"
+			"output"   "pitch"
+			"input_float" "@source_info.output_pitch"	
+		}
+
+		///////////////////
+		// DSP
+		"dsp_emitter"
+		{
+			"operator" "math_float"
+			"apply"	      "set"
+			"input1" "1.0"	
+		}
+		"dsp_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_dsp"
+			"input2" "@dsp_emitter.output"	
+		}
+		"dsp_distantDSP"
+		{
+			"operator" "calc_distant_dsp"
+			"input_distance"  "@source_distance.output"
+			"input_level"	  "@level_apply_mixer.output"
+		}
+		"dsp_apply_distant"
+		{
+			"operator" "math_float"
+			"apply"	      "mult"
+			"input1" "@dsp_distantDSP.output"
+			"input2" "@dsp_apply_mixer.output"			
+		}
+		"dsp_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@dsp_apply_distant.output"
+			"output" "dsp"
+		}
+
+		/////////////////////
+		// SPEAKERS
+
+		// NOTE: uses player data, ie: SS, calculates all players and merges them
+		"speakers_spatialize"
+		{
+			"operator" "calc_spatialize_speakers"
+			"input_radius"  "300"
+			"input_distance"  "@source_distance.output"
+			"input_position"  "@source_info.output_position"
+		}
+	
+		"speakers_apply_volume"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"input1"       "@speakers_spatialize.output"
+			"input2[*]"	   "@volume_accumulate.output"
+		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "0.6"	
+			"lfe"          "0.0"	
+			"left_rear"    "1.0"
+			"right_rear"   "1.0"	
+			
+			"input2"	   "@speakers_apply_volume.output"
+		}
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit.output"
+			"output" "speakers"
+		}
+	}
+
+	"dota_update_default_multi_origin"
+	{
+
+		//////////////////////
+		// POSITION
+		"source_info"
+		{
+			"operator" "get_source_info"
+			"source"   "entity"
+//			"source"   "emitter"
+		}
+
+		"get_entity_info"
+		{
+			"input_execute"	"1"
+			"operator" "game_entity_info"
+			"input_entity_index" "@source_info.output_entity_index"
+		}
+
+		// reports various time values
+		"elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+
+        // NOTE: uses player data, ie: SS, returns minimum distance
+		"source_distance"
+		{
+			"operator" "calc_source_distance"
+			"input_position"   "@source_info.output_position"
+//			"in2d"		"true"
+		}
+
+		// get values of specified mixgroup
+		// NOTE: I believe this also sets this sound to be a member of that mixgroup as well
+		// which is relevant to mixlayers
+		"mixer"
+		{
+			"operator" "get_soundmixer"
+			"mixgroup" "All"
+		}
+
+        "output_mixlayer_trigger"
+        {
+            "execute_once" "1"
+            "operator" "sys_output"
+            "input_float" "1"
+            "output" "mixlayer_trigger"
+        }
+
+		// NOTE: uses player data, ie: SS, return least occluded value
+// 		"occlusion"
+// 		{
+// 			"operator" "calc_occlusion"
+// 			"input_position" "@source_info.output_position"	
+// 		}
+
+		// convar to control all sound levels
+		"snd_gain_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gain"
+		}
+		"snd_op_test_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_op_test_convar"
+		}
+
+		//////////////////////
+		// LEVEL
+		// adjust SPL to reflect mixer settings, this will be used below in falloff calculations
+		"level_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_level"
+			"input2" "@source_info.output_level"
+		}
+
+		/////////////////////
+		// VOLUME
+		//
+		// Various volume calculations
+		//
+
+		"volume_falloff_linear"
+		{
+			"operator" "math_remap_float"
+			"input" "@source_distance.output"
+			"input_min" "30.0"
+			"input_max" "1800.0"
+			"input_map_min" "1.0"
+			"input_map_max" "0.05"
+			"default_to_max" "false"	
+		}
+
+		"volume_fade_in"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.05"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_fade_out"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_stop_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "1.0"
+			"input_map_max" "0.0"
+			"default_to_max" "false"	
+		}
+		"volume_move"
+		{
+			"input_execute"	"1"
+			"operator" "math_remap_float"
+			"input" "@get_entity_info.output_velocity"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_move_filter"
+		{
+			"operator" "math_float_filter"
+			"input" "@volume_move.output"
+			"input_max_velocity" "1.0"
+		}
+
+		// multiply all volume adjustments together
+		"volume_accumulate"
+		{
+			"operator" "math_float_accumulate12"
+			"apply"	"mult"
+			"input1" "@source_info.output_volume"
+			"input2" "@mixer.output_volume"
+			"input3" "@snd_gain_convar.output"
+			"input4" "@volume_falloff_linear.output"
+			"input5" "@volume_fade_in.output"
+			"input6" "@volume_fade_out.output"
+			"input7" "@volume_move_filter.output"
+			"input8" "1.0"
+			"input9" "1.0"
+			"input10" "1.0"
+			"input11" "1.0"
+			"input12" "1.0"
+		}
+
+		/////////////////////////////////////////////////////////
+		// handle stoptime/fade outs
+		"stoptime_elapsed_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@volume_fade_out.output"
+			"input2" "0.0" 
+		}
+		"stop_hold_output"
+		{
+			"operator" "sys_output"
+			"output"   "stop_hold"
+			"input_float" "@stoptime_elapsed_trigger.output"	
+		}
+
+		///////////////////
+		// PITCH
+		
+		"pitch_output"
+		{
+			"operator" "sys_output"
+			"output"   "pitch"
+			"input_float" "@source_info.output_pitch"	
+		}
+
+		///////////////////
+		// DSP
+		"dsp_emitter"
+		{
+			"operator" "math_float"
+			"apply"	      "set"
+			"input1" "1.0"	
+		}
+		"dsp_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_dsp"
+			"input2" "@dsp_emitter.output"	
+		}
+		"dsp_distantDSP"
+		{
+			"operator" "calc_distant_dsp"
+			"input_distance"  "@source_distance.output"
+			"input_level"	  "@level_apply_mixer.output"
+		}
+		"dsp_apply_distant"
+		{
+			"operator" "math_float"
+			"apply"	      "mult"
+			"input1" "@dsp_distantDSP.output"
+			"input2" "@dsp_apply_mixer.output"			
+		}
+		"dsp_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@dsp_apply_distant.output"
+			"output" "dsp"
+		}
+
+		/////////////////////
+		// SPEAKERS
+
+		// NOTE: uses player data, ie: SS, calculates all players and merges them
+		"speakers_spatialize"
+		{
+			"operator" "calc_spatialize_speakers"
+			"input_radius"  "900"
+			"input_distance"  "@source_distance.output"
+			"input_position"  "@source_info.output_position"
+		}
+	
+		"speakers_apply_volume"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"input1"       "@speakers_spatialize.output"
+			"input2[*]"	   "@volume_accumulate.output"
+		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "0.6"	
+			"lfe"          "0.0"	
+			"left_rear"    "1.0"
+			"right_rear"   "1.0"	
+			
+			"input2"	   "@speakers_apply_volume.output"
+		}
+
+		"speakers_multi_origin"
+		{
+			"operator"    "iterate_merge_speakers"
+
+			"input_max_iterations" "@source_info.output_source_count"
+            "iterate_operator" "source_info"
+			"input" "@speakers_limit.output"
+
+		}
+
+		// connecting output after operator has been created
+		"source_info"
+		{
+			"input_source_index" "@speakers_multi_origin.output_index"	
+		}
+
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_multi_origin.output"
+			"output" "speakers"
+		}
+	}
+
+	"dota_update_base_attack"
+	{
+		"import_stack"	"dota_update_default"
+		"mixer"
+		{
+			"mixgroup" "Weapons"
+		}
+		"speakers_spatialize"
+		{
+			"input_radius"  "150"
+		}
+	}
+	
+	"dota_update_vo_default"
+	{
+
+		//////////////////////
+		// POSITION
+		"source_info"
+		{
+			"operator" "get_source_info"
+			"source"   "entity"
+//			"source"   "emitter"
+		}
+
+		"get_entity_info"
+		{
+			"input_execute"	"1"
+			"operator" "game_entity_info"
+			"input_entity_index" "@source_info.output_entity_index"
+		}		
+
+		// reports various time values
+		"elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+
+		// calculate distance from "input_position" to listener
+		"source_distance"
+		{
+			"operator" "calc_source_distance"
+			"input_position"   "@source_info.output_position"
+			"in2d"		"true"
+		}
+
+		// get values of specified mixgroup
+		// NOTE: I believe this also sets this sound to be a member of that mixgroup as well
+		// which is relevant to mixlayers
+		"mixer"
+		{
+			"operator" "get_soundmixer"
+//			"mixgroup" "VO"
+		}
+		
+        "output_mixlayer_trigger"
+        {
+            "execute_once" "1"
+            "operator" "sys_output"
+            "input_float" "1"
+            "output" "mixlayer_trigger"
+        }
+
+		// get the amount that the specified position is "occluded" from listener
+// 		"occlusion"
+// 		{
+// 			"operator" "calc_occlusion"
+// 			"input_position" "@source_info.output_position"	
+// 		}
+
+		// convar to control all sound levels
+		"snd_gain_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gain"
+		}
+		// test convar for... "testing", do not use in any permanent fashion
+		"snd_op_test_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_op_test_convar"
+		}
+
+		//////////////////////
+		// LEVEL
+		// adjust SPL to reflect mixer settings, this will be used below in falloff calculations
+		"level_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_level"
+			"input2" "@source_info.output_level"
+		}
+
+		/////////////////////
+		// VOLUME
+		//
+		// Various volume calculations
+		//
+	
+// 		"volume_falloff"
+// 		{
+// 			"operator" "calc_falloff"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+
+		/////////////////////////////////////////////
+		// Massage Falloff
+		/////////////////////////////////////////////
+		
+				
+		"distance_falloff_remap" //REPLACE THIS WITH A MULTINODE REMAPPER WHEN THE TIME COMES <DONE>
+		{
+			"operator" "math_curve_2d_4knot"
+			"curve_type" "linear"	
+			"input" "@source_distance.output"
+			"input_X1" "30.0"	
+			"input_Y1" "1.0"	
+			"input_X2" "1500.0"	
+			"input_Y2" "0.5"	
+			"input_X3" "2250.0"	
+			"input_Y3" "0.25"	
+			"input_X4" "2625.0"	
+			"input_Y4" "0.0005"	
+		}
+				
+////////////
+		"volume_get_random" //use for random volume if needed
+		{
+			"operator" "math_random"
+			"execute_once" "true"
+			"input_execute" "0.0"
+			"input_min" "0.15" //low value here
+			"input_max" "0.55"	//high value here.	
+		}
+
+		"volume_fade_in"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_entry_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_fade_out"
+		{
+			"operator" "math_remap_float"
+			"input" "@elapsed_time.output_stop_elapsed"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "1.0"
+			"input_map_max" "0.0"
+			"default_to_max" "false"	
+		}
+
+		"volume_move"
+		{
+			"input_execute"	"1"
+			"operator" "math_remap_float"
+			"input" "@get_entity_info.output_velocity"
+			"input_min" "0.0"
+			"input_max" "0.0"
+			"input_map_min" "0.0"
+			"input_map_max" "1.0"
+			"default_to_max" "true"	
+		}
+		"volume_move_filter"
+		{
+			"operator" "math_float_filter"
+			"input" "@volume_move.output"
+			"input_max_velocity" "1.0"
+		}
+
+		// multiply all volume adjustments together
+		"volume_accumulate"
+		{
+			"operator" "math_float_accumulate12"
+			"apply"	"mult"
+// 			"input1" "@volume_mult.output"
+			"input1" "@source_info.output_volume"
+			"input2" "@volume_fade_in.output"
+			"input3" "@volume_fade_out.output"
+			"input4" "@distance_falloff_remap.output"
+			"input5" "@mixer.output_volume"
+			"input6" "@volume_move_filter.output"	
+			"input7" "@snd_gain_convar.output"
+//			"input8" "@occlusion.output"
+			"input8" "1.0"
+			"input9" "1.0"
+			"input10" "1.0"
+			"input11" "1.0"
+			"input12" "1.0"
+
+		}
+
+
+
+		/////////////////////////////////////////////////////////
+		// handle stoptime/fade outs
+		"stoptime_elapsed_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@volume_fade_out.output"
+			"input2" "0.0" 
+		}
+		// this stops the system from deleting this channel/entry until the output goes to 0.0
+		"stop_hold_output"
+		{
+			"operator" "sys_output"
+			"output"   "stop_hold"
+			"input_float" "@stoptime_elapsed_trigger.output"	
+		}
+
+		///////////////////
+		// PITCH
+		
+		"pitch_output"
+		{
+			"operator" "sys_output"
+			"output"   "pitch"
+			"input_float" "@source_info.output_pitch"	
+		}
+
+		///////////////////
+		// DSP
+		"dsp_emitter"
+		{
+			"operator" "math_float"
+			"apply"	      "set"
+			"input1" "1.0"	
+		}
+		"dsp_apply_mixer"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer.output_dsp"
+			"input2" "@dsp_emitter.output"	
+		}
+		"dsp_distantDSP"
+		{
+			"operator" "calc_distant_dsp"
+			"input_distance"  "@source_distance.output"
+			"input_level"	  "@level_apply_mixer.output"
+		}
+		"dsp_apply_distant"
+		{
+			"operator" "math_float"
+			"apply"	      "mult"
+			"input1" "@dsp_distantDSP.output"
+			"input2" "@dsp_apply_mixer.output"			
+		}
+		"dsp_output"
+		{
+			"operator" "sys_output"
+			"input_float" "@dsp_apply_distant.output"
+			"output" "dsp"
+		}
+
+		/////////////////////
+		// SPEAKERS
+
+		// NOTE: uses player data, ie: SS, calculates all players and merges them
+		"speakers_spatialize"
+		{
+			"operator" "calc_spatialize_speakers"
+			"input_radius"  "300"
+			"input_distance"  "@source_distance.output"
+			"input_position"  "@source_info.output_position"
+		}
+		"distance_falloff_scale"
+		{
+			"operator" "math_float"
+			"apply"	    "sub"
+			"input1" "1.0"
+			"input2" "@distance_falloff_remap.output"
+		}
+	
+		"speakers_falloff_scaled"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"input1[*]"	   "@distance_falloff_scale.output"
+			"input2"	   "@speakers_spatialize.output"
+		}
+		"speakers_scaled_plus_falloff"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "add"
+			"input1"	   "@speakers_falloff_scaled.output"
+			"input2[*]"	   "@distance_falloff_remap.output"
+		}
+// 		"speakers_apply_falloff"
+// 		{
+// 			"operator"     "math_speakers"
+// 			"apply"	       "mult"
+// 			"input1"       "@speakers_inverse.output"
+// 			"input2[*]"	   "@volume_accumulate.output"
+// 		}
+
+		"speakers_apply_volume"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"input1"       "@speakers_scaled_plus_falloff.output"
+			"input2[*]"	   "@volume_accumulate.output"
+		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "1.0"	
+			"lfe"          "1.0"	
+			"left_rear"    "1.0"
+			"right_rear"   "1.0"	
+			
+			"input2"	   "@speakers_apply_volume.output"
+		}
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit.output"
+			"output" "speakers"
+		}
+	}	
+
+	"dota_update_vo_clamped"
+	{
+		"import_stack" "dota_update_vo_default"
+		
+		"distance_falloff_remap"
+		{
+			"input_X1" "30.0"	
+			"input_Y1" "1.0"	
+			"input_X2" "1500.0"	
+			"input_Y2" "1.0"	
+			"input_X3" "2250.0"	
+			"input_Y3" "1.0"	
+			"input_X4" "2625.0"	
+			"input_Y4" "1.0"	
+		}
+	}
+
+	"dota_update_vo_clamped_panning"
+	{
+		"import_stack" "dota_update_vo_default"
+		
+		"distance_falloff_remap"
+		{
+			"input_X1" "30.0"	
+			"input_Y1" "1.0"	
+			"input_X2" "1500.0"	
+			"input_Y2" "1.0"	
+			"input_X3" "2250.0"	
+			"input_Y3" "1.0"	
+			"input_X4" "2625.0"	
+			"input_Y4" "1.0"	
+		}
+
+		"speakers_spatialize"
+		{
+			"operator" "calc_spatialize_speakers"
+			"input_radius"  "300"
+			"input_distance"  "@source_distance.output"
+			"input_position"  "@source_info.output_position"
+		}
+	
+		"speakers_apply_volume"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"input1"       "@speakers_spatialize.output"
+			"input2[*]"	   "@volume_accumulate.output"
+		}
+
+		"speakers_limit"
+		{
+			"operator"      "math_speakers"
+			"apply"	       "mult"
+
+			"left_front"   "1.0"	
+			"right_front"  "1.0"	
+			"center"       "0.6"	
+			"lfe"          "0.0"	
+			"left_rear"    "1.0"
+			"right_rear"   "1.0"	
+			
+			"input2"	   "@speakers_apply_volume.output"
+		}
+		"speakers_output"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit.output"
+			"output" "speakers"
+		}
+	}
+
+	"dota_update_vo_spatial_stereo"
+	{
+		"import_stack" "dota_update_vo_default"
+
+		"speakers_spatialize"
+		{
+			"input_radius"  "1500" // set this to adjust spatial "fallon"
+		}
+		"distance_falloff_remap"
+		{
+			"input_X1" "30.0"	
+			"input_Y1" "1.0"	
+			"input_X2" "1500.0"	
+			"input_Y2" "1.0"	
+			"input_X3" "2250.0"	
+			"input_Y3" "1.0"	
+			"input_X4" "2625.0"	
+			"input_Y4" "1.0"	
+		}
+		"speakers_falloff_scaled"
+		{
+//			"apply"	       "mult"
+			"input1"	   "1.0"
+			"input2"	   "@speakers_spatialize.output"
+		}
+		"speakers_scaled_plus_falloff"
+		{
+//			"apply"	       "add"
+			"input1"	   "@speakers_falloff_scaled.output"
+			"input2[*]"	   "0.0"
+		}
+	}
+	
+	"dota_debug_opvar_smooth"
+	{		
+		"get_debug_opvar" //Get the current from-the-game battle score
+		{
+			"execute_once" "true"
+			"operator" "get_opvar_float"
+			"opvar" "myOpvar" //opvar name here
+		}
+		
+		"debug_battle_score_ramp" //ramp from the current smoothed battle score to the new game score
+		{
+			"operator" "util_timer_ramp"
+			"input_start" "1.0"
+			"input_stop" "0.0"
+			"input_start_value" "@get_debug_opvar.output"
+			"input_end_value" "0.33"
+			"input_duration" "3.0"
+		}
+		
+		"set_debug_opvar"
+		{
+			"operator" "set_opvar_float"
+			"opvar" "myOpvar" //same as above
+			"input" "@debug_battle_score_ramp.output"
+		}	
+
+		"ramp_time_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than_or_equal"	
+			"input1" "@debug_battle_score_ramp.output_elapsed_time"
+			"input2" "3.0" //our ramp time
+		}
+		
+		"stop_this"
+		{
+			"operator" "sys_stop_entries"
+			"input_execute"	"@ramp_time_trigger.output"
+			"stop_this_entry" "true"	
+		}	
+	}
+	
+	"dota_opvar_smoothing_update"
+	{
+		"get_current_spectator_status"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "music_is_spectator"
+		}
+		
+		"get_current_game_time"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "music_game_time"
+		}	
+		
+		"get_current_pregame_time"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "music_pregame_time"
+		}	
+		
+		"get_spectator_score_opvar"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "myRealtimeOpvar" //replace me			
+		}
+		
+		"remap_spectator_to_battle_score"
+		{
+			"operator" "math_curve_2d_4knot"
+			"curve_type" "linear"	
+			"input" "@get_spectator_score_opvar.output"
+			"input_X1" "0.0"	
+			"input_Y1" "0.0"	
+			"input_X2" "25.0"	
+			"input_Y2" "8.0"	
+			"input_X3" "50.0"	
+			"input_Y3" "15.5"	
+			"input_X4" "75.0"	
+			"input_Y4" "25.0"	
+		}
+		
+		"get_live_value_opvar" //Get the current from-the-game battle score
+		{
+			"operator" "get_opvar_float"
+			"opvar" "myRealtimeOpvar" //replace me
+		}
+		
+		"get_smooth_value_opvar" //get our smoothed version of the battle score
+		{
+			"operator" "get_opvar_float"
+			"opvar" "mySmoothOpvar" //replace me
+		}
+		
+		//Here lies good program design
+		//It was murdered in the name of "Tutorial"
+		
+		"get_live_value_opvar_tutorial" //Get the current from-the-game battle score
+		{
+			"operator" "get_opvar_float"
+			"opvar" "myRealtimeOpvarTutorial" //replace me
+		}
+			
+		"tutorial_opvar_check_01"
+		{
+			"input_execute" "1.0" //enable map checking here
+			"operator" "get_map_name"
+			"map_name" "tutorial" //your map name here	
+			"match_substring" "true"
+		}	
+		
+		"tutorial_opvar_switch_live"
+		{
+			"operator" "math_logic_switch" 
+			"input1" "@get_live_value_opvar.output"
+			"input2" "@get_live_value_opvar_tutorial.output"
+			"input_switch" "@tutorial_opvar_check_01.output"
+		}
+		
+		"spectator_opvar_switch_live"
+		{
+			"operator" "math_logic_switch" 
+			"input1" "@tutorial_opvar_switch_live.output"
+			"input2" "@remap_spectator_to_battle_score.output"
+			"input_switch" "@get_current_spectator_status.output"
+		}
+		
+		///////////////////////////////////////////
+		 
+		"live_opvar_delta" //Detect if the game-side battle score has changed, this gives the value of the change.
+		{
+			"operator" "math_delta"
+			"input" "@spectator_opvar_switch_live.output"	
+		}
+		
+		"live_opvar_delta_compare" //Detect if the game-side battle score has changed, this gives a 1.0 for unchanged or a 0.0 for changed
+		{
+			"input_execute"	"1.0"	
+			"operator" "math_float"
+			"apply" "equals"		
+			"input1" "@live_opvar_delta.output"
+			"input2" "0.0"
+		}	
+		
+		"live_opvar_delta_invert" //invert the compare
+		{
+			"operator" "math_float"
+			"apply" "sub"	
+			"input1" "1.0"
+			"input2" "@live_opvar_delta_compare.output"
+		}
+		
+		//find the difference between the current value and our target value, 
+		//and get a time value based on that
+		
+		"opvar_smoothing_difference" //find the difference between the current interpolated value and the target value
+		{
+			"operator" "math_float"
+			"apply" "sub"	
+			"input1" "@spectator_opvar_switch_live.output"
+			"input2" "@get_smooth_value_opvar.output"
+		}			
+		 
+		"abs_travel_distance"
+		{
+			"operator" "math_func1"
+			"function"	"fabs"
+			"input1" "@opvar_smoothing_difference.output"
+		}	
+		
+		"opvar_smoothing_difference_compare" //find the difference between the current interpolated value and the target value
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@opvar_smoothing_difference.output"
+			"input2" "0.0"
+		}		
+		
+		"remap_travel_distance_to_time"
+		{
+			"operator" "math_curve_2d_4knot"
+			"curve_type" "linear"	
+			"input" "@abs_travel_distance.output"
+			"input_X1" "0.0"	
+			"input_Y1" "0.0"	
+			"input_X2" "1.0"	
+			"input_Y2" "1.0"	
+			"input_X3" "2.0"	
+			"input_Y3" "4.5"	
+			"input_X4" "5.0"	
+			"input_Y4" "5.0"	
+		}		
+		
+		"remap_travel_distance_to_time_falling"
+		{
+			"operator" "math_curve_2d_4knot"
+			"curve_type" "linear"	
+			"input" "@abs_travel_distance.output"
+			"input_X1" "0.0"	
+			"input_Y1" "0.0"	
+			"input_X2" "1.0"	
+			"input_Y2" "1.0"	
+			"input_X3" "2.0"	
+			"input_Y3" "4.5"	
+			"input_X4" "5.0"	
+			"input_Y4" "5.0"	
+		}
+		
+		"time_remap_logic_switch"
+		{
+			"operator" "math_logic_switch" 
+			"input1" "@remap_travel_distance_to_time_falling.output"
+			"input2" "@remap_travel_distance_to_time.output"
+			"input_switch" "@opvar_smoothing_difference_compare.output"
+		}
+		
+		"opvar_value_latch" //use latched values that only change when the target changes
+		{
+			"input_execute"	"@live_opvar_delta_invert.output"
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@spectator_opvar_switch_live.output"
+			"input2" "1"
+		}
+		
+		"opvar_value_smooth_latch"
+		{
+			"input_execute"	"@live_opvar_delta_invert.output"
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@get_smooth_value_opvar.output"
+			"input2" "1"
+		}
+		
+		"interp_time_latch"
+		{
+			"input_execute"	"@live_opvar_delta_invert.output"
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@time_remap_logic_switch.output"
+			"input2" "1"
+		}
+
+		"opvar_value_ramp" //ramp from the current smoothed battle score to the new game score
+		{
+			"operator" "util_timer_ramp"
+			// "input_start" "@live_opvar_delta_invert.output"
+			"input_start" "1.0"
+			"input_stop" "@live_opvar_delta_invert.output"
+			"input_start_value" "@opvar_value_smooth_latch.output"
+			"input_end_value" "@opvar_value_latch.output"
+			"input_duration" "@interp_time_latch.output"
+		}		
+					
+		"set_opvar" //set the current smooth opvar val
+		{
+			"operator" "set_opvar_float"
+			"opvar" "mySmoothOpvar" //replace me
+			"input" "@opvar_value_ramp.output"
+		}
+	}
+	
+	"dota_update_start_3layer"
+	{
+	
+		"layer1"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "1.0"	
+			"entry_name" "Default.Null"
+		}
+	
+		"layer2"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "1.0"	
+			"entry_name" "Default.Null"
+		}
+	
+		"layer3"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "1.0"	
+			"entry_name" "Default.Null"
+		}
+	}
+	
+	"dota_update_start_3layer_delay"
+	{
+		"elapsed_3layer_time"
+		{
+			"operator" "get_entry_time"
+		}
+		
+		"get_random_delay"
+		{
+			"execute_once" "true"
+			"operator" "math_random"
+			"input_execute" "1.0"
+			//Delay time is in seconds	
+			"input_min" "0.0"
+			"input_max" "1.0"	
+		}
+		
+		"get_random_delay_tutorial"
+		{
+			"execute_once" "true"
+			"operator" "math_random"
+			"input_execute" "1.0"
+			//Delay time is in seconds	
+			"input_min" "0.0"
+			"input_max" "1.0"	 
+		}
+			
+		"tutorial_opvar_check_01"
+		{
+			"input_execute" "0.0" //enable map checking here
+			"operator" "get_map_name"
+			"map_name" "tutorial" //your map name here	
+			"match_substring" "true"
+		}	
+		
+		"tutorial_opvar_switch"
+		{
+			"operator" "math_logic_switch" 
+			"input1" "@get_random_delay.output"
+			"input2" "@get_random_delay_tutorial.output"
+			"input_switch" "@tutorial_opvar_check_01.output"
+		}
+		
+		"time_elapsed_trigger"
+		{
+			"operator" "math_float"
+			"apply" "greater_than_or_equal"	
+			"input1" "@elapsed_3layer_time.output_entry_elapsed"
+			"input2" "@tutorial_opvar_switch.output" //Elapsed time in seconds goes here.
+		}
+	
+		"layer1"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "@time_elapsed_trigger.output"	
+			"entry_name" "Default.Null"
+		}
+	
+		"layer2"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "@time_elapsed_trigger.output"	
+			"entry_name" "Default.Null"
+		}
+	
+		"layer3"
+		{
+			"execute_once" "true"
+			"operator" "sys_start_entry"
+			"input_start" "1"	
+			"input_execute" "@time_elapsed_trigger.output"	
+			"entry_name" "Default.Null"
+		}
+	}
+	
+	"dota_limit_speakers_ui" //limits to just L and R, used by UI sounds for consistency across various multichannels sytems
+	{
+	
+		"mixer_ui" //gets ui mixgroup values
+		{
+			"operator" "get_soundmixer"
+			"set_mixgroup_to_channel" "true"
+			"mixgroup" "UI"
+		}
+		
+		"level_apply_mixer_ui" // multiplies mixgroup volume by a set variable, adjusted for some sounds individually
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer_ui.output_volume"
+			"input2" "0.4"
+		}
+		
+		"speakers_limit_ui" // applies volume to just L and R
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"left_front"   "0.7"	
+			"right_front"  "0.7"	
+			"center"       "0.0"	
+			"lfe"          "0.0"	
+			"left_rear"    "0.0"
+			"right_rear"   "0.0"
+				
+			"input2[*]" "@level_apply_mixer_ui.output"	
+		}
+			
+		"speakers_output_ui" 
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit_ui.output" 
+			"output" "speakers"
+		}
+	
+	}
+	
+	"dota_limit_speakers_spectui" //limits to just L and R, used by Spectator UI sounds for consistency across various multichannels sytems
+	{
+		"mixer_spectui"
+		{
+			"operator" "get_soundmixer"
+			"set_mixgroup_to_channel" "true"
+			"mixgroup" "UI"
+		}
+		
+		"level_apply_mixer_spectui"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer_spectui.output_volume"
+			"input2" "1"
+		}
+		
+		"speakers_limit_spectui"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"left_front"   "0.8"	
+			"right_front"  "0.8"	
+			"center"       "0.0"	
+			"lfe"          "0.0"	
+			"left_rear"    "0.0"
+			"right_rear"   "0.0"
+				
+			"input2[*]" "@level_apply_mixer_spectui.output"	
+		}
+			
+		"speakers_output_spectui"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit_spectui.output" 
+			"output" "speakers"
+		}
+	}
+	
+	"dota_limit_speakers_spectator_inv" //limits to just L and R, used by Inventory sounds for consistency across various multichannels sytems
+	{
+		"mixer_inv"
+		{
+			"operator" "get_soundmixer"
+			"set_mixgroup_to_channel" "true"
+			"mixgroup" "UI"
+		}
+		
+		"level_apply_mixer_inv"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@mixer_inv.output_volume"
+			"input2" "0.2"
+		}
+		
+		"speakers_limit_inv"
+		{
+			"operator"     "math_speakers"
+			"apply"	       "mult"
+			"left_front"   "0.6"	
+			"right_front"  "0.6"	
+			"center"       "0.0"	
+			"lfe"          "0.0"	
+			"left_rear"    "0.0"
+			"right_rear"   "0.0"
+				
+			"input2[*]" "@level_apply_mixer_inv.output"	
+		}
+			
+		"speakers_output_inv"
+		{
+			"operator" "sys_output"
+			"input_speakers" "@speakers_limit_inv.output" 
+			"output" "speakers"
+		}
+	}
+	
+	
+// 	"dota_offset_start_update"
+// 	{
+// 		"import_stack" "dota_update_default"
+		
+// 		"elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+		
+// 		"time_elapsed_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "0.1" //Elapsed time in seconds goes here.
+// 		}
+		
+// 		"time_elapsed_trigger_2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "0.1" //Elapsed time in seconds goes here.
+// 		}
+		
+// 		"time_elapsed_trigger_3"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "0.1" //Elapsed time in seconds goes here.
+// 		}
+		
+// 		"time_elapsed_trigger_4"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "0.1" //Elapsed time in seconds goes here.
+// 		}
+		
+// 		"bool_delta" //Check to see if the trigger has been flipped
+// 		{
+// 			"operator" "math_delta"
+// 			"input" "@time_elapsed_trigger.output"	
+// 		}
+		
+// 		"bool_delta_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@bool_delta.output"
+// 			"input2" "0.1"
+// 		}
+		
+// 		"play_entry"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"@bool_delta_trigger.output"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}
+		
+// 		"play_entry_2"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"@time_elapsed_trigger_2.output"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}
+		
+// 		"play_entry_3"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"@time_elapsed_trigger_3.output"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}
+		
+// 		"play_entry_4"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"@time_elapsed_trigger_4.output"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}	
+// 	}
+
+// 	"dota_offset_start_update_random"
+// 	{
+// 		"import_stack" "dota_update_default"
+		
+// 		"elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+		
+// 		"delay_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "0.1" //Elapsed time in seconds goes here.
+// 		}
+			
+// 		"random_play"
+// 		{
+// 			"operator" "math_random"
+// 			"execute_once" "true"
+// 			"input_execute" "0.0"
+// 			"input_min" "0.0"
+// 			"input_max" "1.0"		
+// 		}	
+	
+// 		"percent_fire"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "0.60" // This is the percentage chance to play a sound
+// 			"input2" "@random_play.output" 
+// 		}
+
+// 		"do_we_fire"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"min"
+// 			"input1" "@percent_fire.output"
+// 			"input2" "@delay_trigger.output"
+// 		}
+		
+// 		"triggered_sound"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"@do_we_fire.output"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}
+// 	}
+	
+// 	"dota_offset_start_level_based"
+// 	{
+// 		"import_stack" "dota_update_default"
+		
+// 		"elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+		
+// 		"delay_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "0.1" //Elapsed time in seconds goes here.
+// 		}
+		
+// 		"delay_trigger_2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@elapsed_time.output_sound_elapsed"
+// 			"input2" "0.1" //Elapsed time in seconds goes here.
+// 		}
+			
+// 		"level_specific_check"
+// 		{
+// 			"input_execute" "0.0" //enable map checking here
+// 			"operator" "get_map_name"
+// 			"map_name" "dota_empty4" //your map name here		
+// 		}	
+	
+// 		"get_pos_data"
+// 		{
+// 			"operator" "game_view_info"
+// 		}
+		
+// 		"pos_specific_check"
+// 		{
+// 			"operator"	"math_float"
+// 			"apply"	"greater_than_or_equal"
+// 			"input1"	"@get_pos_data.output_position_z" //replace with the param to check against
+// 			"input2"	"0.0" //Replace with val you want to check against		
+// 		}
+		
+// 		"level_and_pos_check"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"min"
+// 			"input1" "@level_specific_check.output"
+// 			"input2" "@pos_specific_check.output"		
+// 		}
+
+// 		"do_we_fire"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"min"
+// 			"input1" "@level_and_pos_check.output"
+// 			"input2" "@delay_trigger.output"
+// 		}
+
+// 		"do_we_fire_2"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"min"
+// 			"input1" "@level_and_pos_check.output"
+// 			"input2" "@delay_trigger_2.output"
+// 		}
+		
+// 		"triggered_sound"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"@do_we_fire.output"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}
+		
+// 		"triggered_sound_2"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"@do_we_fire.output"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}
+// 	}
+
+// 	"dota_update_start_at_elapsed"
+// 	{
+// 		"usae_elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+		
+// 		"sound_duration_mult"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@usae_elapsed_time.output_sound_duration"
+// 			"input2" "2"
+// 		}
+
+// 		"time_elapsed_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than_or_equal"	
+// 			"input1" "@usae_elapsed_time.output_sound_elapsed"
+// 			"input2" "@sound_duration_mult.output"
+// 		}
+		
+// 		"stop_this"
+// 		{
+// 			"operator" "sys_stop_entries"
+// 			"input_execute"	"@time_elapsed_trigger.output"
+// 			"stop_this_entry" "true"	
+// 		}
+// 		"play_entry"
+// 		{
+// 			"operator" "sys_start_entry"
+// 			"execute_once" "true"
+// 			"input_execute"	"@time_elapsed_trigger.output"
+// 			"input_start" "1"
+// 			"entry_name" "Default.Null" //Replace with the sound you want to play.
+// 		}
+// 	}
+
+// 	"dota_update_stop_at_elapsed"
+// 	{
+// 		"usae_elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+		
+// 		"sound_duration_mult"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@usae_elapsed_time.output_sound_duration"
+// 			"input2" "2"
+// 		}
+// 		"time_elapsed_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than_or_equal"	
+// 			"input1" "@usae_elapsed_time.output_sound_elapsed"
+// 			"input2" "@sound_duration_mult.output"
+// 		}		
+// 		"stop_this"
+// 		{
+// 			"operator" "sys_stop_entries"
+// 			"input_execute"	"@time_elapsed_trigger.output"
+// 			"stop_this_entry" "true"	
+// 		}
+// 	}
+	
+// 	"dota_update_default_pitch_ramp" 
+// 	{
+// 		//This is identical to dota_update_default except for the pitch being ramped based on volume, 
+		
+		
+// 		//////////////////////
+// 		// POSITION
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			// "source"   "entity"
+// 			"source"   "emitter"
+// 		}
+
+// 		"elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+
+//         // NOTE: uses player data, ie: SS, returns minimum distance
+// 		"source_distance"
+// 		{
+// 			"operator" "calc_source_distance"
+// 			"input_position"   "@source_info.output_position"
+// 		}
+
+// 		////////////////////
+// 		// calc
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "All"
+// 		}
+
+// 		// NOTE: uses player data, ie: SS, return least occluded value
+// 		"occlusion"
+// 		{
+// 			"operator" "calc_occlusion"
+// 			"input_position" "@source_info.output_position"	
+// 		}
+
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+// 		"snd_op_test_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_op_test_convar"
+// 		}
+
+// 		//////////////////////
+// 		// LEVEL
+// 		"level_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_level"
+// 			"input2" "@source_info.output_level"
+// 		}
+
+// 		/////////////////////
+// 		// VOLUME
+
+// 		// NOTE: distance has precalculated minimum distance of the ss players	
+// 		"volume_falloff"
+// 		{
+// 			"operator" "calc_falloff"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+
+// 		"volume_fade_in"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@elapsed_time.output_entry_elapsed"
+// 			"input_min" "0.0"
+// 			"input_max" "0.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "true"	
+// 		}
+// 		"volume_fade_out"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@elapsed_time.output_stop_elapsed"
+// 			"input_min" "0.0"
+// 			"input_max" "0.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "false"	
+// 		}
+// 		"volume_invert_fadeout"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"sub"
+// 			"input1" "1.0"
+// 			"input2" "@volume_fade_out.output"
+// 		}
+// 		"volume_apply_fade_in"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_fade_in.output"
+// 			"input2" "@source_info.output_volume"
+// 		}
+// 		"volume_apply_fade_out"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_fade_in.output"
+// 			"input2" "@volume_invert_fadeout.output"
+// 		}
+		
+// 		"volume_fade_initial"
+// 		{
+// 			"input_execute" "0"
+// 			"operator" "math_remap_float"
+// 			"input" "@elapsed_time.output_entry_elapsed"
+// 			"input_min" "0.0"
+// 			"input_max" "0.0"
+// 			"input_map_min" "1.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "false"	
+// 		}		
+// 		"volume_invert_initial"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"sub"
+// 			"input1" "1.0"
+// 			"input2" "@volume_fade_initial.output"
+// 		}
+// 		"volume_apply_fade_initial"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_fade_out.output"
+// 			"input2" "@volume_invert_initial.output"
+// 		}
+		
+// 		//Level specific volume scalar
+		
+// 		"volume_get_map_name"
+// 		{
+// 			"input_execute" "0.0" //enable map checking here
+// 			"operator" "get_map_name"
+// 			"map_name" "dota_empty4" //your map name here
+// 		}	
+		
+// 		"volume_invert_map_name"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"sub"
+// 			"input1" "1.0"
+// 			"input2" "@volume_get_map_name.output"
+// 		}
+		
+// 		"volume_map_name_scalar"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@volume_invert_map_name.output"
+// 			"input_min" "0.0"
+// 			"input_max" "1.0"
+// 			"input_map_min" "1.0" //This is the map-specific volume scalar, does nothing by default
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "true"	
+// 		}				
+		
+// 		"volume_mult"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input2" "@volume_apply_fade_initial.output"
+// 			"input1" "1.0" //change to "@volume_map_name_scalar.output" to use a map specific scalar
+// 		}
+
+// 		"volume_apply_falloff"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_mult.output"
+// 			"input2" "@volume_falloff.output"
+// 		}
+		
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@volume_apply_falloff.output"	
+// 		}
+// 		"volume_apply_snd_gain_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@snd_gain_convar.output"
+// 			"input2" "@volume_apply_mixer.output"	
+// 		}
+// 		"volume_apply_test_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"
+// 			"input1" "1.0"
+// 			"input2" "@volume_apply_snd_gain_convar.output"	
+// 		}
+
+// 		"volume_apply_occlusion"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_test_convar.output"
+// 			"input2" "@occlusion.output"
+// 		}
+// 		// this calculates the loudest volume of the ss clients
+// 		// NOT NEEDED ALL SS OPS SELF-CONTAINGED
+// 		// "volume_acc_ss_max"
+// 		// {
+// 			// "operator" "op_accumulate_ss_float"
+// 			// "input" "volume_apply_occlusion.output"
+// 			// "iterate_operator" "occlusion"
+// 		// }	
+
+// 		"stoptime_elapsed_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@volume_invert_fadeout.output"
+// 			"input2" "0.0" 
+// 		}
+// 		"stop_hold_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "stop_hold"
+// 			"input_float" "@stoptime_elapsed_trigger.output"	
+// 		}
+
+// 		///////////////////
+// 		// PITCH
+// 		"max_volume_percentage"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "div"	
+// 			"input1" "@volume_apply_fade_out.output"
+// 			"input2" "@source_info.output_volume"	
+// 		}
+		
+// 		"pitch_fade_in"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@max_volume_percentage.output"
+// 			"input_min" "0.0"
+// 			"input_max" "1.0"
+// 			"input_map_min" "1.0" //Always outputs 1.0 by default
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "true"	
+// 		}
+		
+// 		"pitch_random" //Use for random pitch
+// 		{
+// 			"operator" "math_random"
+// 			"execute_once" "true"
+// 			"input_execute" "0.0"
+// 			"input_min" "1.0"
+// 			"input_max" "1.0"		
+// 		}
+
+// 		"pitch_apply_fade_in"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@pitch_random.output"
+// 			"input2" "@pitch_fade_in.output"
+// 		}
+		
+// 		"pitch_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "pitch"
+// 			"input_float" "@pitch_apply_fade_in.output"	
+// 		}
+
+// 		///////////////////
+// 		// DSP
+// 		"dsp_emitter"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "set"
+// 			"input1" "1.0"	
+// 		}
+// 		"dsp_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_dsp"
+// 			"input2" "@dsp_emitter.output"	
+// 		}
+// 		"dsp_distantDSP"
+// 		{
+// 			"operator" "calc_distant_dsp"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+// 		"dsp_apply_distant"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "mult"
+// 			"input1" "@dsp_distantDSP.output"
+// 			"input2" "@dsp_apply_mixer.output"			
+// 		}
+// 		"dsp_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@dsp_apply_distant.output"
+// 			"output" "dsp"
+// 		}
+
+// 		/////////////////////
+// 		// SPEAKERS
+
+// 		// NOTE: uses player data, ie: SS, calculates all players and merges them
+// 		"speakers_spatialize"
+// 		{
+// 			"operator" "calc_spatialize_speakers"
+// 			"input_radius"  "300"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_position"  "@source_info.output_position"
+// 		}
+	
+// 		"speakers_apply_volume"
+// 		{
+// 			"operator"     "math_speakers"
+// 			"apply"	       "mult"
+// 			"input1"       "@speakers_spatialize.output"
+// 			"input2[*]"	   "@volume_apply_occlusion.output"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "mult"
+
+// 			"left_front"   "1.0"	
+// 			"right_front"  "1.0"	
+// 			"center"       "1.0"	
+// 			"lfe"          "1.0"	
+// 			"left_rear"    "1.0"
+// 			"right_rear"   "1.0"	
+			
+// 			"input2"	   "@speakers_apply_volume.output"
+// 		}
+// 		"speakers_multi_origin"
+// 		{
+// 			"operator"    "iterate_merge_speakers"
+
+// 			"input_max_iterations" "@source_info.output_source_count"
+//             "iterate_operator" "source_info"
+// 			"input" "@speakers_limit.output"
+
+// 		}
+// 		// connecting output after operator has been created
+// 		"source_info"
+// 		{
+// 			"input_source_index" "@speakers_multi_origin.output_index"	
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_multi_origin.output"
+// 			"output" "speakers"
+// 		}
+// 	}			
+
+// 	"dota_update_envelope_radius" //This is a wholesale copy of dota_update_default except that we've changed the way falloff works
+// 	{
+
+// 		//////////////////////
+// 		// POSITION
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			// "source"   "entity"
+// 			"source"   "emitter"
+// 		}
+
+// 		"elapsed_time"
+// 		{
+// 			"operator" "get_entry_time"
+// 		}
+
+//         // NOTE: uses player data, ie: SS, returns minimum distance
+// 		"source_distance"
+// 		{
+// 			"operator" "calc_source_distance"
+// 			"input_position"   "@source_info.output_position"
+// 		}
+
+// 		////////////////////
+// 		// calc
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "All"
+// 		}
+
+// 		// NOTE: uses player data, ie: SS, return least occluded value
+// 		"occlusion"
+// 		{
+// 			"operator" "calc_occlusion"
+// 			"input_position" "@source_info.output_position"	
+// 		}
+
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+// 		"snd_op_test_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_op_test_convar"
+// 		}
+
+// 		//////////////////////
+// 		// LEVEL
+// 		"level_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_level"
+// 			"input2" "@source_info.output_level"
+// 		}
+
+// 		/////////////////////
+// 		// VOLUME
+
+// 		// NOTE: distance has precalculated minimum distance of the ss players	
+// 		"volume_falloff"
+// 		{
+// 			"operator" "calc_falloff"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+// 		"volume_mult"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input2" "@source_info.output_volume"
+// 			"input1" "1.0"
+// 		}
+
+// 		"volume_fade_in"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@elapsed_time.output_entry_elapsed"
+// 			"input_min" "0.0"
+// 			"input_max" "0.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "true"	
+// 		}
+// 		"volume_fade_out"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@elapsed_time.output_stop_elapsed"
+// 			"input_min" "0.0"
+// 			"input_max" "0.0"
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "false"	
+// 		}
+// 		"volume_invert_fadeout"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"sub"
+// 			"input1" "1.0"
+// 			"input2" "@volume_fade_out.output"
+// 		}
+// 		"volume_apply_fade_in"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_fade_in.output"
+// 			"input2" "@volume_mult.output"
+// 		}
+// 		"volume_apply_fade_out"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_fade_in.output"
+// 			"input2" "@volume_invert_fadeout.output"
+// 		}
+		
+// 		/////////////////////////////////////////////
+// 		// Massage Falloff
+// 		/////////////////////////////////////////////
+		
+// 		"falloff_xover_1" //Use these like variables
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "0.6" //first point goes here
+// 			"input2" "1.0"	//identity, do not change
+// 		}
+		
+// 		"falloff_xover_2" //Use these like variables
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "0.45" //second point goes here
+// 			"input2" "1.0"	//identity, do not change
+// 		}
+				
+// 		"falloff_leg_1"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@volume_falloff.output"
+// 			"input_min" "@falloff_xover_1.output" //default 0.6
+// 			"input_max" "1.0"
+// 			"input_map_min" "0.55"
+// 			"input_map_max" "1.0"
+// 			"default_to_max" "false"	
+// 		}
+				
+// 		"falloff_leg_2"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@volume_falloff.output"
+// 			"input_min" "@falloff_xover_2.output" //default 0.45
+// 			"input_max" "@falloff_xover_1.output" //default 0.6
+// 			"input_map_min" "0.4"
+// 			"input_map_max" "@falloff_leg_1.output"
+// 			"default_to_max" "false"	
+// 		}
+				
+// 		"falloff_leg_3"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@volume_falloff.output"
+// 			"input_min" "0.0"
+// 			"input_max" "@falloff_xover_2.output" //default 0.45
+// 			"input_map_min" "0.0"
+// 			"input_map_max" "@falloff_leg_2.output"
+// 			"default_to_max" "true"	
+// 		}
+
+// 		"volume_apply_falloff"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_fade_out.output"
+// 			"input2" "@volume_falloff.output"
+// 			//"input2" "@falloff_leg_3.output" //uncomment if you want to use wacky falloffs
+// 		}
+// 		/////////////////////////////////////////////
+		
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@volume_apply_falloff.output"	
+// 		}
+// 		"volume_apply_snd_gain_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@snd_gain_convar.output"
+// 			"input2" "@volume_apply_mixer.output"	
+// 		}
+// 		"volume_apply_test_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"
+// 			"input1" "1.0"
+// 			"input2" "@volume_apply_snd_gain_convar.output"	
+// 		}
+
+// 		"volume_apply_occlusion"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_test_convar.output"
+// 			"input2" "@occlusion.output"
+// 		}
+// 		// this calculates the loudest volume of the ss clients
+// 		// NOT NEEDED ALL SS OPS SELF-CONTAINGED
+// 		// "volume_acc_ss_max"
+// 		// {
+// 			// "operator" "op_accumulate_ss_float"
+// 			// "input" "volume_apply_occlusion.output"
+// 			// "iterate_operator" "occlusion"
+// 		// }	
+
+// 		"stoptime_elapsed_trigger"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "greater_than"	
+// 			"input1" "@volume_invert_fadeout.output"
+// 			"input2" "0.0" 
+// 		}
+// 		"stop_hold_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "stop_hold"
+// 			"input_float" "@stoptime_elapsed_trigger.output"	
+// 		}
+
+// 		///////////////////
+// 		// PITCH
+		
+// 		"pitch_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "pitch"
+// 			"input_float" "@source_info.output_pitch"	
+// 		}
+
+// 		///////////////////
+// 		// DSP
+// 		"dsp_emitter"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "set"
+// 			"input1" "1.0"	
+// 		}
+// 		"dsp_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_dsp"
+// 			"input2" "@dsp_emitter.output"	
+// 		}
+// 		"dsp_distantDSP"
+// 		{
+// 			"operator" "calc_distant_dsp"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+// 		"dsp_apply_distant"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "mult"
+// 			"input1" "@dsp_distantDSP.output"
+// 			"input2" "@dsp_apply_mixer.output"			
+// 		}
+// 		"dsp_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@dsp_apply_distant.output"
+// 			"output" "dsp"
+// 		}
+
+// 		/////////////////////
+// 		// SPEAKERS
+
+// 		// NOTE: uses player data, ie: SS, calculates all players and merges them
+// 		"speakers_spatialize"
+// 		{
+// 			"operator" "calc_spatialize_speakers"
+// 			"input_radius"  "300"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_position"  "@source_info.output_position"
+// 		}
+	
+// 		"speakers_apply_volume"
+// 		{
+// 			"operator"     "math_speakers"
+// 			"apply"	       "mult"
+// 			"input1"       "@speakers_spatialize.output"
+// 			"input2[*]"	   "@volume_apply_occlusion.output"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "mult"
+
+// 			"left_front"   "1.0"	
+// 			"right_front"  "1.0"	
+// 			"center"       "1.0"	
+// 			"lfe"          "1.0"	
+// 			"left_rear"    "1.0"
+// 			"right_rear"   "1.0"	
+			
+// 			"input2"	   "@speakers_apply_volume.output"
+// 		}
+// 		"speakers_multi_origin"
+// 		{
+// 			"operator"    "iterate_merge_speakers"
+
+// 			"input_max_iterations" "@source_info.output_source_count"
+//             "iterate_operator" "source_info"
+// 			"input" "@speakers_limit.output"
+
+// 		}
+// 		// connecting output after operator has been created
+// 		"source_info"
+// 		{
+// 			"input_source_index" "@speakers_multi_origin.output_index"	
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_multi_origin.output"
+// 			"output" "speakers"
+// 		}
+// 	}
+	
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// AMBIENT SOUNDS
+//
+////////////////////////////////////////////////////////////////////////////////////////////	
+// 	"dota_update_ambient_sound_spatial"	
+// 	{
+// 		"import_stack" 	"dota_update_music_spatial_portals"
+// 	}
+	
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// DIALOG STACKS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// 	"update_dialog"
+// 	{
+
+// 		///////////////////////
+//         //  stopping previous lines
+// 		"stop_entries"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "sys_stop_entries"
+// 			"match_channel" "true"
+// 			"match_entity" "true"	
+// 			"input_max_entries" "0" // doesn't include new one
+// 		}
+
+// 		//////////////////////
+// 		// POSITION
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			// "source"   "entity"
+// 			"source"   "emitter"
+// 		}
+
+// 		////////////////////
+// 		// calc
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "All"
+// 		}
+
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+
+// 		////////////////////////
+// 		// tell the mixer we're active
+// 		"output_mixlayer_trigger"
+// 		{
+// 			"execute_once" "1"
+// 			"operator" "sys_output"
+// 			"input_float" "1"
+// 			"output" "mixlayer_trigger"
+// 		}
+
+// 		/////////////////////
+// 		// VOLUME
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@source_info.output_volume"	
+// 		}
+// 		"volume_apply_snd_gain_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@snd_gain_convar.output"
+// 			"input2" "@volume_apply_mixer.output"	
+// 		}
+
+// 		///////////////////
+// 		// PITCH
+// 		"pitch_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "pitch"
+// 			"input_float" "@source_info.output_pitch"	
+// 		}
+
+// 		///////////////////
+// 		// DSP
+// 		"dsp_emitter"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "set"
+// 			"input1" "1.0"	
+// 		}
+// 		"dsp_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_dsp"
+// 			"input2" "@dsp_emitter.output"	
+// 		}
+// 		"dsp_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@dsp_apply_mixer.output"
+// 			"output" "dsp"
+// 		}
+
+
+
+// 		/////////////////////
+// 		// SPEAKERS
+// 		"snd_op_test_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_op_test_convar"
+// 		}
+// 		"snd_surround_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_surround_speakers"
+// 		}
+// 		"remap_surround_dialog"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@snd_surround_convar.output"
+// 			"input_min" "2"
+// 			"input_max" "5" //default 0.45
+// 			"input_map_min" "0.0"
+// //			"input_map_max" "@snd_op_test_convar.output"
+// 			"input_map_max" "0.28"
+// 			"default_to_max" "false"	
+// 		}
+// 		"snd_surround_dialog_invert"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"sub"
+// 			"input1" "1.0"
+// 			"input2" "@remap_surround_dialog.output"
+// 		}
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "mult"
+
+// 			"input1[*]"	   "@snd_surround_dialog_invert.output"
+
+// // 			"left_front"   "1.0"
+// // 			"right_front"  "1.0"
+// // 			"center"       "1.0"
+// 			"lfe"          "0.0"	
+// // 			"left_rear"    "1.0"
+// // 			"right_rear"   "1.0"
+			
+// 			"input2[*]"	   "@volume_apply_snd_gain_convar.output"
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_limit.output"
+// 			"output" "speakers"
+// 		}
+// 	}	
+
+// 	"update_dialog_spatial"
+// 	{
+
+// 		///////////////////////
+//         //  stopping previous lines
+// 		"stop_entries"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "sys_stop_entries"
+// 			"match_channel" "true"
+// 			"match_entity" "true"	
+// 			"input_max_entries" "0" // doesn't include new one
+// 		}
+
+// 		//////////////////////
+// 		// POSITION
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			"source"   "entity"
+// //			"source"   "emitter"
+// 		}
+
+//         // NOTE: uses player data, ie: SS, returns minimum distance
+// 		"source_distance"
+// 		{
+// 			"operator" "calc_source_distance"
+// 			"input_position"   "@source_info.output_position"
+// 		}
+
+// 		"occlusion"
+// 		{
+// 			"operator" "calc_occlusion"
+// 			"input_position" "@source_info.output_position"
+// //			"input_trace_interval" "0.05"
+// //			"input_scalar" "0.7"
+// 		}
+
+// // 		"print_occlusion"
+// // 		{
+// // 			"operator" "util_print_float"
+// // 			"input" "@occlusion.output"
+// // 		}
+// // 		// ramp distance to affect occlusion
+// // 		"remap_distance_occlusion"
+// // 		{
+// // 			"operator" "math_remap_float"
+// // 			"input" "@source_distance.output"
+// // 			"input_min" "1000.0"
+// // 			"input_max" "1500.0"
+// // 			"input_map_min" "0.0"
+// // 			"input_map_max" "1.0"
+// // 			"default_to_max" "false"	
+// // 		}
+// // 		"distance_occlusion_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "sub"	
+// // 			"input1" "1.0"
+// // 			"input2" "@remap_distance_occlusion"
+// // 		}
+// // 		"occlusion_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "sub"	
+// // 			"input1" "1.0"
+// // 			"input2" "@occlusion.output"
+// // 		}
+
+
+
+// 		////////////////////
+// 		// calc
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "All"
+// 		}
+
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+
+// 		"snd_op_test_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_op_test_convar"
+// 		}
+
+// 		////////////////////////
+// 		// tell the mixer we're active
+// 		"output_mixlayer_trigger"
+// 		{
+// 			"execute_once" "1"
+// 			"operator" "sys_output"
+// 			"input_float" "1"
+// 			"output" "mixlayer_trigger"
+// 		}
+
+// 		//////////////////////
+// 		// LEVEL
+// 		"level_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_level"
+// 			"input2" "@source_info.output_level"
+// 		}
+
+// 		/////////////////////
+// 		// VOLUME
+// 		"volume_falloff"
+// 		{
+// 			"operator" "calc_falloff"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+
+			
+// 		// NOTE: distance has precalculated minimum distance of the ss players			
+// 		// ramp distance to affect occlusion
+// // 		"remap_distance_falloff"
+// // 		{
+// // 			"operator" "math_remap_float"
+// // 			"input" "@source_distance.output"
+// // 			"input_min" "2500.0"
+// // 			"input_max" "3000.0"
+// // 			"input_map_min" "0.0"
+// // 			"input_map_max" "1.0"
+// // 			"default_to_max" "false"	
+// // 		}
+// // 		"remap_distance_falloff_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply"	"sub"
+// // 			"input1" "1"
+// // 			"input2" "@remap_distance_falloff.output"
+// // 		}
+		
+// 		"volume_apply_occlusion"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@source_info.output_volume"
+// 			"input2" "@occlusion.output"
+// //			"input2" "1"
+// 		}
+// 		"volume_apply_falloff"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_occlusion.output"
+// 			"input2" "@volume_falloff.output"
+// 		}
+// // 		"volume_apply_distance_falloff"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply"	"mult"
+// // 			"input1" "@volume_apply_falloff.output"
+// // 			"input2" "@remap_distance_falloff_invert.output"
+// // 		}
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@volume_apply_falloff.output"	
+// 		}
+// // 		"volume_apply_distance_occlusion"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "mult"	
+// // 			"input1" "@mixer.output_volume"
+// // 			"input2" "@volume_apply_falloff.output"	
+// // 		}
+// 		"volume_apply_snd_gain_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@snd_gain_convar.output"
+// 			"input2" "@volume_apply_mixer.output"	
+// 		}
+// 		"volume_apply_test_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "1.0"
+// 			"input2" "@volume_apply_snd_gain_convar.output"	
+// 		}
+
+// 		///////////////////
+// 		// PITCH
+// 		"pitch_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "pitch"
+// 			"input_float" "@source_info.output_pitch"	
+// 		}
+
+// 		///////////////////
+// 		// DSP
+// 		"dsp_emitter"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "set"
+// 			"input1" "1.0"	
+// 		}
+// 		"dsp_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_dsp"
+// 			"input2" "@dsp_emitter.output"	
+// 		}
+// 		"dsp_distantDSP"
+// 		{
+// 			"operator" "calc_distant_dsp"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+// 		"dsp_apply_distance"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@dsp_distantDSP.output"
+// 			"input2" "@dsp_apply_mixer.output"	
+// 		}
+// 		"dsp_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@dsp_apply_distance.output"
+// 			"output" "dsp"
+// 		}
+
+// 		/////////////////////
+// 		// SPEAKERS
+
+// 		// NOTE: uses player data, ie: SS, calculates all players and merges them
+// 		"speakers_spatialize"
+// 		{
+// 			"operator" "calc_spatialize_speakers"
+// 			"input_radius"  "300"
+// 			"input_rear_stereo_scale" "1.0"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_position"  "@source_info.output_position"
+// 		}
+	
+// 		"speakers_apply_volume"
+// 		{
+// 			"operator"     "math_speakers"
+// 			"apply"	       "mult"
+// 			"input1"       "@speakers_spatialize.output"
+// 			"input2[*]"	   "@volume_apply_test_convar.output"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "max"
+
+// 			"left_front"   "0.0"	
+// 			"right_front"  "0.0"	
+// 			"center"       "0.0"	
+// 			"lfe"          "0.0"	
+// 			"left_rear"    "0.0"
+// 			"right_rear"   "0.0"	
+			
+// 			"input2"	   "@speakers_apply_volume.output"
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_limit.output"
+// 			"output" "speakers"
+// 		}
+// 	}	
+
+// 	"dota_update_dialog_spatial_cave"
+// 	{
+// 		///////////////////////
+//         //  stopping previous lines
+// 		"stop_entries"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "sys_stop_entries"
+// 			"match_channel" "true"
+// 			"match_entity" "true"	
+// 			"input_max_entries" "0" // doesn't include new one
+// 		}
+
+// 		//////////////////////
+// 		// POSITION
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			"source"   "entity"
+// //			"source"   "emitter"
+// 		}
+// 		"position_array"
+// 		{
+// 			"operator" "util_pos_vec8"
+				
+// 			"input_entry_count" "1"
+// 			"input_index" "0"	
+// 			"input_position_0" "@source_info.output_position"
+
+// 		}
+
+//         // NOTE: uses player data, ie: SS, returns minimum distance
+// 		"source_distance"
+// 		{
+// 			"operator" "calc_source_distance"
+// 			"input_position"   "@position_array.output_position"
+// 		}
+
+// // 		"occlusion"
+// // 		{
+// // 			"operator" "calc_occlusion"
+// // 			"input_position" "@position_array.output_position"
+// // // 			"input_scalar" "0.5"
+// // // 			"input_trace_interval" "0.25"
+// // 		}
+
+// // 		// ramp distance to affect occlusion
+// // 		"remap_distance_occlusion"
+// // 		{
+// // 			"operator" "math_remap_float"
+// // 			"input" "@source_distance.output"
+// // 			"input_min" "1000.0"
+// // 			"input_max" "1500.0"
+// // 			"input_map_min" "0.0"
+// // 			"input_map_max" "1.0"
+// // 			"default_to_max" "false"	
+// // 		}
+// // 		"distance_occlusion_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "sub"	
+// // 			"input1" "1.0"
+// // 			"input2" "@remap_distance_occlusion"
+// // 		}
+// // 		"occlusion_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "sub"	
+// // 			"input1" "1.0"
+// // 			"input2" "@occlusion.output"
+// // 		}
+
+
+
+// 		////////////////////
+// 		// calc
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "caveVO"
+// 		}
+
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+
+// 		"snd_op_test_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_op_test_convar"
+// 		}
+
+// 		////////////////////////
+// 		// tell the mixer we're active
+// 		"output_mixlayer_trigger"
+// 		{
+// 			"execute_once" "1"
+// 			"operator" "sys_output"
+// 			"input_float" "1"
+// 			"output" "mixlayer_trigger"
+// 		}
+
+// 		//////////////////////
+// 		// LEVEL
+// 		"level_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_level"
+// 			"input2" "90"
+// 		}
+
+// 		/////////////////////
+// 		// VOLUME
+// 		"volume_falloff"
+// 		{
+// 			"operator" "calc_falloff"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+
+			
+// 		// NOTE: distance has precalculated minimum distance of the ss players			
+// 		// ramp distance to affect occlusion
+// // 		"remap_distance_falloff"
+// // 		{
+// // 			"operator" "math_remap_float"
+// // 			"input" "@source_distance.output"
+// // 			"input_min" "2500.0"
+// // 			"input_max" "3000.0"
+// // 			"input_map_min" "0.0"
+// // 			"input_map_max" "1.0"
+// // 			"default_to_max" "false"	
+// // 		}
+// // 		"remap_distance_falloff_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply"	"sub"
+// // 			"input1" "1"
+// // 			"input2" "@remap_distance_falloff.output"
+// // 		}
+		
+// 		"volume_apply_occlusion"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@source_info.output_volume"
+// //			"input2" "@occlusion.output"
+// 			"input2" "1"
+// 		}
+// 		"volume_apply_falloff"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_occlusion.output"
+// 			"input2" "@volume_falloff.output"
+// 		}
+// // 		"volume_apply_distance_falloff"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply"	"mult"
+// // 			"input1" "@volume_apply_falloff.output"
+// // 			"input2" "@remap_distance_falloff_invert.output"
+// // 		}
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@volume_apply_falloff.output"	
+// 		}
+// // 		"volume_apply_distance_occlusion"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "mult"	
+// // 			"input1" "@mixer.output_volume"
+// // 			"input2" "@volume_apply_falloff.output"	
+// // 		}
+// 		"volume_apply_snd_gain_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@snd_gain_convar.output"
+// 			"input2" "@volume_apply_mixer.output"	
+// 		}
+// 		"volume_apply_test_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "1.0"
+// 			"input2" "@volume_apply_snd_gain_convar.output"	
+// 		}
+
+// 		///////////////////
+// 		// PITCH
+// 		"pitch_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "pitch"
+// 			"input_float" "@source_info.output_pitch"	
+// 		}
+
+// 		///////////////////
+// 		// DSP
+// 		"dsp_emitter"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "set"
+// 			"input1" "1.0"	
+// 		}
+// 		"dsp_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_dsp"
+// 			"input2" "@dsp_emitter.output"	
+// 		}
+// 		"dsp_distantDSP"
+// 		{
+// 			"operator" "calc_distant_dsp"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+// 		"dsp_apply_distance"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@dsp_distantDSP.output"
+// 			"input2" "@dsp_apply_mixer.output"	
+// 		}
+//  		"dsp_min"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "max"	
+// 			"input1" "0.4"
+// 			"input2" "@dsp_apply_distance.output"	
+// 		}
+//  		"dsp_max"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "min"	
+// 			"input1" "0.6"
+// 			"input2" "@dsp_min.output"	
+// 		}
+// 		"dsp_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@dsp_max.output"
+// 			"output" "dsp"
+// 		}
+
+// 		/////////////////////
+// 		// SPEAKERS
+
+// 		// NOTE: uses player data, ie: SS, calculates all players and merges them
+// 		"speakers_spatialize"
+// 		{
+// 			"operator" "calc_spatialize_speakers"
+// 			"input_radius"  "60"
+// 			"input_rear_stereo_scale" "1.0"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_position"  "@position_array.output_position"
+// 		}
+	
+// 		"speakers_apply_volume"
+// 		{
+// 			"operator"     "math_speakers"
+// 			"apply"	       "mult"
+// 			"input1"       "@speakers_spatialize.output"
+// 			"input2[*]"	   "@volume_apply_test_convar.output"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "max"
+
+// 			"left_front"   "0.0"	
+// 			"right_front"  "0.0"	
+// 			"center"       "0.0"	
+// 			"lfe"          "0.0"	
+// 			"left_rear"    "0.0"
+// 			"right_rear"   "0.0"	
+			
+// 			"input2"	   "@speakers_apply_volume.output"
+// 		}
+
+// 		"speakers_multi_origin"
+// 		{
+// 			"operator"    "iterate_merge_speakers"
+
+// 			"input_max_iterations" "@position_array.output_max_index"
+//             "iterate_operator" "position_array"
+// 			"input" "@speakers_limit.output"
+
+// 		}
+
+// 		// connecting output after operator has been created
+// 		"position_array"
+// 		{
+// 			"input_index" "@speakers_multi_origin.output_index"	
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_multi_origin.output"
+// 			"output" "speakers"
+// 		}
+// 	}	
+
+// 	"dota_update_dialog_spatial_cores"
+// 	{
+// 		"import_stack" "update_dialog_spatial"
+// 		"mixer"
+// 		{
+// 			"mixgroup" "All"
+// 		}
+// 		"speakers_spatialize"
+// 		{
+// 				"input_radius"  "200"
+// 		}
+// 	}
+
+// 	"dota_update_dialog_spatial_wheatley"
+// 	{
+// 		///////////////////////
+//         //  stopping previous lines
+// 		"stop_entries"
+// 		{
+// 			"execute_once" "true"
+// 			"operator" "sys_stop_entries"
+// 			"match_channel" "true"
+// 			"match_entity" "true"	
+// 			"input_max_entries" "0" // doesn't include new one
+// 		}
+
+// 		//////////////////////
+// 		// POSITION
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			"source"   "entity"
+// //			"source"   "emitter"
+// 		}
+
+//         // NOTE: uses player data, ie: SS, returns minimum distance
+// 		"source_distance"
+// 		{
+// 			"operator" "calc_source_distance"
+// 			"input_position"   "@source_info.output_position"
+// 		}
+
+// 		"occlusion"
+// 		{
+// 			"operator" "calc_occlusion"
+// 			"input_position" "@source_info.output_position"
+// //			"input_trace_interval" "0.05"
+// //			"input_scalar" "0.7"
+// 		}
+
+// // 		"print_occlusion"
+// // 		{
+// // 			"operator" "util_print_float"
+// // 			"input" "@occlusion.output"
+// // 		}
+// // 		// ramp distance to affect occlusion
+// // 		"remap_distance_occlusion"
+// // 		{
+// // 			"operator" "math_remap_float"
+// // 			"input" "@source_distance.output"
+// // 			"input_min" "1000.0"
+// // 			"input_max" "1500.0"
+// // 			"input_map_min" "0.0"
+// // 			"input_map_max" "1.0"
+// // 			"default_to_max" "false"	
+// // 		}
+// // 		"distance_occlusion_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "sub"	
+// // 			"input1" "1.0"
+// // 			"input2" "@remap_distance_occlusion"
+// // 		}
+// // 		"occlusion_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "sub"	
+// // 			"input1" "1.0"
+// // 			"input2" "@occlusion.output"
+// // 		}
+
+
+
+// 		////////////////////
+// 		// calc
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "All"
+// 		}
+
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+
+// 		"snd_op_test_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_op_test_convar"
+// 		}
+
+// 		////////////////////////
+// 		// tell the mixer we're active
+// 		"output_mixlayer_trigger"
+// 		{
+// 			"execute_once" "1"
+// 			"operator" "sys_output"
+// 			"input_float" "1"
+// 			"output" "mixlayer_trigger"
+// 		}
+
+// 		//////////////////////
+// 		// LEVEL
+// 		"level_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_level"
+// 			"input2" "@source_info.output_level"
+// 		}
+
+// 		/////////////////////
+// 		// VOLUME
+// 		"volume_falloff"
+// 		{
+// 			"operator" "calc_falloff"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+
+			
+// 		// NOTE: distance has precalculated minimum distance of the ss players			
+// 		// ramp distance to affect occlusion
+// // 		"remap_distance_falloff"
+// // 		{
+// // 			"operator" "math_remap_float"
+// // 			"input" "@source_distance.output"
+// // 			"input_min" "2500.0"
+// // 			"input_max" "3000.0"
+// // 			"input_map_min" "0.0"
+// // 			"input_map_max" "1.0"
+// // 			"default_to_max" "false"	
+// // 		}
+// // 		"remap_distance_falloff_invert"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply"	"sub"
+// // 			"input1" "1"
+// // 			"input2" "@remap_distance_falloff.output"
+// // 		}
+// 		"volume_test_distance"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than"	
+// 			"input1" "@source_distance.output"
+// 			"input2" "80"
+// 		}
+// 		"volume_defeat_occlusion"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "max"	
+// 			"input1" "@volume_test_distance.output"
+// 			"input2" "@occlusion.output"	
+// 		}
+		
+// 		"volume_apply_occlusion"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@source_info.output_volume"
+// 			"input2" "@volume_defeat_occlusion.output"
+// //			"input2" "1"
+// 		}
+// 		"remap_distance_falloff"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@source_distance.output"
+// 			"input_min" "400"
+// 			"input_max" "600"
+// 			"input_map_min" "1.0"
+// 			"input_map_max" "1.3"
+// 			"default_to_max" "false"	
+// 		}
+// 		"volume_apply_falloff"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_occlusion.output"
+// 			"input2" "@volume_falloff.output"
+// 		}
+// 		"volume_apply_distance_falloff"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_falloff.output"
+// 			"input2" "@remap_distance_falloff.output"
+// 		}
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@volume_apply_distance_falloff.output"	
+// 		}
+// // 		"volume_apply_distance_occlusion"
+// // 		{
+// // 			"operator" "math_float"
+// // 			"apply" "mult"	
+// // 			"input1" "@mixer.output_volume"
+// // 			"input2" "@volume_apply_falloff.output"	
+// // 		}
+// 		"volume_apply_snd_gain_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@snd_gain_convar.output"
+// 			"input2" "@volume_apply_mixer.output"	
+// 		}
+// 		"volume_apply_test_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "1.0"
+// 			"input2" "@volume_apply_snd_gain_convar.output"	
+// 		}
+
+// 		///////////////////
+// 		// PITCH
+// 		"pitch_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "pitch"
+// 			"input_float" "@source_info.output_pitch"	
+// 		}
+
+// 		///////////////////
+// 		// DSP
+// 		"dsp_emitter"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "set"
+// 			"input1" "1.0"	
+// 		}
+// 		"dsp_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_dsp"
+// 			"input2" "@dsp_emitter.output"	
+// 		}
+// 		"dsp_distantDSP"
+// 		{
+// 			"operator" "calc_distant_dsp"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+// 		"dsp_apply_distance"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@dsp_distantDSP.output"
+// 			"input2" "@dsp_apply_mixer.output"	
+// 		}
+// 		"dsp_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@dsp_apply_distance.output"
+// 			"output" "dsp"
+// 		}
+
+// 		/////////////////////
+// 		// SPEAKERS
+			
+// 		"radius_get_sp_a1_intro1"
+// 		{
+// //			"execute_once" "true"
+// //			"input_execute" "1.0" //enable map checking here
+// 			"operator" "get_map_name"
+// 			"map_name" "sp_a1_intro1" //your map name here
+// 		}	
+// 		"radius_invert_test"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "less_than"	
+// 			"input1" "@radius_get_sp_a1_intro1.output"
+// 			"input2" "1.0"
+// 		}
+
+// 		"radius_remap_map_test1"
+// 		{
+// 			"operator" "math_remap_float"
+// 			"input" "@radius_invert_test.output"
+// 			"input_min" "0"
+// 			"input_max" "1"
+// 			"input_map_min" "600.0"
+// 			"input_map_max" "600.0"
+// 			"default_to_max" "false"	
+// 		}
+// 		// NOTE: uses player data, ie: SS, calculates all players and merges them
+// 		"speakers_spatialize"
+// 		{
+// 			"operator" "calc_spatialize_speakers"
+// 			"input_radius"  "@radius_remap_map_test1.output"
+// 			"input_rear_stereo_scale" "1.0"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_position"  "@source_info.output_position"
+// 		}
+	
+// 		"speakers_apply_volume"
+// 		{
+// 			"operator"     "math_speakers"
+// 			"apply"	       "mult"
+// 			"input1"       "@speakers_spatialize.output"
+// 			"input2[*]"	   "@volume_apply_test_convar.output"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "max"
+
+// 			"left_front"   "0.0"	
+// 			"right_front"  "0.0"	
+// 			"center"       "0.0"	
+// 			"lfe"          "0.0"	
+// 			"left_rear"    "0.0"
+// 			"right_rear"   "0.0"	
+			
+// 			"input2"	   "@speakers_apply_volume.output"
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_limit.output"
+// 			"output" "speakers"
+// 		}
+// 	}
+	
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// SPECIALTY STACKS
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+
+// 	"update_facing"
+// 	{
+
+// 		//////////////////////
+// 		// POSITION
+// 		"source_info"
+// 		{
+// 			"operator" "get_source_info"
+// 			// "source"   "entity"
+// 			"source"   "emitter"
+// 		}
+
+// 		// NOTE: uses player data, ie: SS, returns nearest distance
+// 		"source_distance"
+// 		{
+// 			"operator" "calc_source_distance"
+// 			"input_position"   "@source_info.output_position"
+// 		}
+
+// 		////////////////////
+// 		// calc
+// 		"mixer"
+// 		{
+// 			"operator" "get_soundmixer"
+// 			"mixgroup" "TEST"
+// 		}
+
+// 		// NOTE: uses player data, ie: SS, least occluded player
+// 		"occlusion"
+// 		{
+// 			"operator" "calc_occlusion"
+// 			"input_position" "@source_info.output_position"
+// 		}
+
+// 		// NOTE: uses player data, ie: blended origin for SS players
+// 		"facing"
+// 		{
+// 			"operator" "calc_angles_facing"
+// 			// "input_angles" "@source_info.output_angles"
+// 			"input_angles[0]" "0"
+// 			"input_angles[1]" "0"
+// 			"input_angles[2]" "0"
+// 		}
+
+// 		"facing_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@facing.output"
+// 			"output" "facing"
+// 		}
+// 		"snd_gain_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_gain"
+// 		}
+
+// 		"snd_op_test_convar"
+// 		{
+// 			"operator" "get_convar"
+// 			"convar" "snd_op_test_convar"
+// 		}
+
+// 		//////////////////////
+// 		// LEVEL
+// 		"level_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_level"
+// 			"input2" "@source_info.output_level"
+// 		}
+
+// 		/////////////////////
+// 		// VOLUME
+// 		"volume_falloff"
+// 		{
+// 			"operator" "calc_falloff"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+// 		"volume_apply_falloff"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@source_info.output_volume"
+// 			"input2" "@volume_falloff.output"
+// 		}
+
+// 		"volume_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_volume"
+// 			"input2" "@volume_apply_falloff.output"	
+// 		}
+// 		"volume_apply_snd_gain_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@snd_gain_convar.output"
+// 			"input2" "@volume_apply_mixer.output"	
+// 		}
+// 		"volume_apply_test_convar"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "1.0"
+// 			"input2" "@volume_apply_snd_gain_convar.output"	
+// 		}
+
+// 		"volume_apply_facing"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@facing.output"
+// 			"input2" "@volume_apply_test_convar.output"	
+// 		}
+
+// 		"volume_apply_occlusion"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	"mult"
+// 			"input1" "@volume_apply_facing.output"
+// 			"input2" "@occlusion.output"
+// 		}
+
+// 		///////////////////
+// 		// PITCH
+// 		"pitch_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"output"   "pitch"
+// 			"input_float" "@source_info.output_pitch"	
+// 		}
+
+// 		///////////////////
+// 		// DSP
+// 		"dsp_emitter"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "set"
+// 			"input1" "1.0"	
+// 		}
+// 		"dsp_apply_mixer"
+// 		{
+// 			"operator" "math_float"
+// 			"apply" "mult"	
+// 			"input1" "@mixer.output_dsp"
+// 			"input2" "@dsp_emitter.output"	
+// 		}
+// 		"dsp_distantDSP"
+// 		{
+// 			"operator" "calc_distant_dsp"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_level"	  "@level_apply_mixer.output"
+// 		}
+// 		"dsp_apply_distant"
+// 		{
+// 			"operator" "math_float"
+// 			"apply"	      "mult"
+// 			"input1" "@dsp_distantDSP.output"
+// 			"input2" "@dsp_apply_mixer.output"			
+// 		}
+// 		"dsp_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_float" "@dsp_apply_distant.output"
+// 			"output" "speakers"
+// 		}
+// 		/////////////////////
+// 		// SPEAKERS
+
+// 		// NOTE: uses player data, ie: SS
+//         // SS COULD BE SELF-CONTAINED? 
+// 		"speakers_spatialize"
+// 		{
+// 			"operator" "calc_spatialize_speakers"
+// 			"input_radius"  "300"
+// 			"input_distance"  "@source_distance.output"
+// 			"input_position"  "@source_info.output_position"
+// 		}
+	
+// 		"speakers_volume"
+// 		{
+// 			"operator"     "math_speakers"
+// 			"apply"	       "mult"
+// 			"input1"       "@speakers_spatialize.output"
+// 			"input2[*]"	   "@volume_apply_occlusion.output"
+// 			// "input2[*]"	   "@facing.output"
+// 		}
+
+// 		"speakers_limit"
+// 		{
+// 			"operator"      "math_speakers"
+// 			"apply"	       "mult"
+// 			"left_front"   "1.0"	
+// 			"right_front"  "1.0"	
+// 			"center"       "1.0"	
+// 			"lfe"          "1.0"	
+// 			"left_rear"    "1.0"
+// 			"right_rear"   "1.0"	
+			
+// 			"input2" "@speakers_volume.output"
+		
+// 		}
+
+// 		"speakers_output"
+// 		{
+// 			"operator" "sys_output"
+// 			"input_speakers" "@speakers_limit.output"
+// 			"output" "speakers"
+// 		}
+// 	}	
+
+}
+
+"stop_stacks"
+{
+	"stop_test"
+	{
+		"play_entry"
+		{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"1"
+			"input_start" "1"
+			"entry_name" "Default.Null" //Replace with the sound you want to play.
+		}	
+
+	}
+	"stop_default"
+	{
+		"snd_op_test_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_op_test_convar"
+		}
+	}
+
+	"stop_and_play"
+	{
+		"play_entry"
+		{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"1"
+			"input_start" "1"
+			"entry_name" "Default.Null" //Replace with the sound you want to play.
+		}
+	}
+
+	"dota_stop_child_and_parent"
+	{
+		
+		"stop_child"
+		{
+			"operator" "sys_stop_entries"
+			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			"match_substring" "false"	
+			"match_entry" "Default.Null" //Replace with the sound you want to stop.
+			"match_entity" "true"
+		}
+	}
+	
+	"dota_stop_4layer"
+	{
+		"4layer_stop"
+		{
+			"operator" "sys_stop_entries"
+			"input_execute" "1.0"
+			"stop_this_entry" "false"	
+			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			"match_entry" "Default.Null"
+			"match_entity" "false"	
+			"match_substring" "true"
+		}
+	}
+	
+	"dota_stop_music_type_tracker"
+	{
+		"get_currently_playing_music" //Keeping track of what music is playing at a given moment
+		{
+			"operator" "get_opvar_float"
+			"opvar" "current_music"
+		}
+				
+		"remove_music_value"
+		{
+			"operator" "math_float"
+			"apply"	"sub"
+			"input1" "@get_currently_playing_music.output"
+			"input2" "0" //MUSIC VALUE HERE
+		}			
+		
+		"set_music_type_opvar" //set the current music opvar
+		{
+			"operator" "set_opvar_float"
+			"opvar" "current_music"
+			"input" "@remove_music_value.output"
+		}
+	}
+	
+	"dota_spectator_flag_set"
+	{
+		"set_spectator_flag_opar"
+		{
+			"operator"	"set_opvar_float"
+			"opvar"		"spectator_battle_music_flag"
+			"input"		"1.0"				
+		}
+	
+	}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//
+// dialog stop stacks
+//
+////////////////////////////////////////////////////////////////////////////////////////////
+
+	// "dota_glados_stop" // default stop stack for glados v.o.
+	// {
+		// "set_mixlayer_vol_wheatley"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "wheatleyVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+		// "set_mixlayer_vol_announcer"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "announcerVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+		// "set_mixlayer_vol_cave"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "caveVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+	// }
+	// "dota_glados_stop_mute" // default stop stack for glados v.o.
+	// {
+		// "set_mixlayer_mute_wheatley"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "wheatleyVO"
+			// "field" "mute"
+			// "input" "0.0"
+		// }
+		// "set_mixlayer_mute_announcer"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "announcerVO"
+			// "field" "mute"
+			// "input" "0.0"
+		// }
+		// "set_mixlayer_mute_cave"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "gladosVOLayer"
+			// "mixgroup" "caveVO"
+			// "field" "mute"
+			// "input" "0.0"
+		// }
+	// }
+	// "dota_wheatley_stop" // default stop stack for wheatley v.o.
+	// {
+		// "set_mixlayer_vol_glados"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "wheatleyVOLayer"
+			// "mixgroup" "gladosVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+		// "set_mixlayer_vol_announcer"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "wheatleyVOLayer"
+			// "mixgroup" "announcerVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+	// }
+	// "dota_announcer_stop" // default stop stack for announcer v.o.
+	// {
+		// "set_mixlayer_vol_glados"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "announcerVOLayer"
+			// "mixgroup" "gladosVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+		// "set_mixlayer_vol_wheatley"
+		// {
+			// "operator" "sys_mixlayer"
+			// "mixlayer" "announcerVOLayer"
+			// "mixgroup" "wheatleyVO"
+			// "field" "volume"
+			// "input" "1.0"
+		// }
+	// }
+}

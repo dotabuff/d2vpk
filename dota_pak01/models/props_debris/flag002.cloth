@@ -1,0 +1,25 @@
+ClothSystem
+{
+	Cloth
+	{
+		columns	4
+		rows 	6
+		
+		damping			0.45
+		gravity			"0.0 0.0 -25.0"
+		WorldFriction 	0.35
+		
+		StructSpringConstant 	4.0
+		StructSpringDamping 	0.9
+		ShearSpringConstant 	4.0
+		ShearSpringDamping 		0.6
+		BendSpringConstant 		4.4
+		BendSpringDamping 		0.9
+		
+		R0C0	fixed
+		R0C1	fixed
+		R0C2	fixed
+		R0C3	fixed
+
+	}
+}

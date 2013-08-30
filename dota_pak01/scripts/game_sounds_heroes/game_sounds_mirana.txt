@@ -1,0 +1,312 @@
+
+"Hero_Mirana.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_Mirana.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/mirana/miranaarrowlaunch1.wav"
+		"wave"		"weapons/hero/mirana/miranaarrowlaunch2.wav"
+		"wave"		"weapons/hero/mirana/miranaarrowlaunch3.wav"
+		"wave"		"weapons/hero/mirana/miranaarrowlaunch4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Mirana.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/mirana/miranaarrowimpact1.wav"
+		"wave"	"weapons/hero/mirana/miranaarrowimpact2.wav"
+		"wave"	"weapons/hero/mirana/miranaarrowimpact3.wav"
+		"wave"	"weapons/hero/mirana/miranaarrowimpact4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Ability.Leap"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_81dB"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/mirana/leap1.wav"
+		"wave"	")weapons/hero/mirana/leap2.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Ability.Starfall"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	 "wave"  		")weapons/hero/mirana/starfall.wav"
+	 "operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Ability.StarfallImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7, 1.0"
+	"pitch"			"80, 100"
+	"soundlevel"  	"SNDLVL_78dB"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/mirana/starfall_impact01.wav"
+		"wave"	"weapons/hero/mirana/starfall_impact02.wav"
+		"wave"	"weapons/hero/mirana/starfall_impact03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Ability.MoonlightShadow"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.25"
+	"soundlevel"  	"SNDLVL_81dB"
+	 "wave"  		")weapons/hero/mirana/moonlight_shadow.wav"
+	 "operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Mirana.ArrowCast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/mirana/arrow.wav"
+		
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Mirana.Arrow"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/mirana/arrow_fly.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_fade_out"
+			{
+				"input_max" "0.5"
+			}
+            "source_info"
+       		{
+				"source"   "emitter"
+            }
+
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Mirana.ArrowImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"80"
+	"wave"			")weapons/hero/mirana/arrow.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Mirana.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.3"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"95, 105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\mirana\01.wav"
+		"wave"		"physics\footsteps\hero\mirana\02.wav"
+		"wave"		"physics\footsteps\hero\mirana\03.wav"
+		"wave"		"physics\footsteps\hero\mirana\04.wav"
+		"wave"		"physics\footsteps\hero\mirana\05.wav"
+		"wave"		"physics\footsteps\hero\mirana\06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Mirana.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"physics\deaths\specials\mirana_death_mount.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////
+
+"Hero_Mirana.Leap.Owlcat"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/mirana/leap3.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$basetexture"	"models/heroes/ogre_magi/ogre_magi_color"
+	"$normalmap" 	"models/heroes/ogre_magi/ogre_magi_normal"
+	"$maskmap1"		"models/heroes/ogre_magi/ogre_magi_masks1"
+	"$maskmap2"		"models/heroes/ogre_magi/ogre_magi_masks2"
+	"$alphatest"	"1"
+"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE 10
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE 5
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+	$IgnoreBudgetCheck 1	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

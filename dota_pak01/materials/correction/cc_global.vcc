@@ -1,0 +1,91 @@
+<!-- dmx encoding keyvalues2 1 format dmx 1 -->
+"DmeColorCorrectionOperatorList"
+{
+	"id" "elementid" "74e363f2-6770-4ab8-8969-8661a4320a65"
+	"operators" "element_array" 
+	[
+		"CDmeColorCorrectionCurvesOp"
+		{
+			"id" "elementid" "8d6db9db-229f-43a1-886f-6389b7768c2c"
+			"blendFactor" "float" "1"
+			"channelMask" "int" "1"
+			"controlPoints" "vector3_array" 
+			[
+				"0 0 0",
+				"0.2774869204 0.2198953032 0",
+				"0.4973821938 0.4921466112 0",
+				"0.7905759215 0.7225130796 0",
+				"0.9947643876 0.9895287752 0"
+			]
+			"enabled" "bool" "1"
+			"name" "string" "Curves"
+		},
+		"CDmeColorCorrectionCurvesOp"
+		{
+			"id" "elementid" "e3aee04d-f34e-4690-8626-827870612e2e"
+			"blendFactor" "float" "1"
+			"channelMask" "int" "4"
+			"controlPoints" "vector3_array" 
+			[
+				"0 0 0",
+				"0.136125654 0.2198953032 0",
+				"0.4816753864 0.5183246136 0",
+				"0.7172774673 0.7748690844 0",
+				"0.9895287752 0.9842932224 0"
+			]
+			"enabled" "bool" "1"
+			"name" "string" "Curves"
+		},
+		"CDmeColorCorrectionCurvesOp"
+		{
+			"id" "elementid" "c1cf091d-62c4-4f4d-ae67-2bb2c88a6641"
+			"blendFactor" "float" "1"
+			"channelMask" "int" "2"
+			"controlPoints" "vector3_array" 
+			[
+				"0 0 0",
+				"0.2303664982 0.251308918 0",
+				"0.4973821938 0.502617836 0",
+				"0.7225130796 0.7434555292 0",
+				"1 0.9895287752 0"
+			]
+			"enabled" "bool" "1"
+			"name" "string" "Curves"
+		},
+		"CDmeColorCorrectionLevelsOp"
+		{
+			"id" "elementid" "d29496fc-760b-4dab-ac9c-0c49379b59a9"
+			"blendFactor" "float" "1"
+			"channelMask" "int" "7"
+			"enabled" "bool" "1"
+			"maxInputLevel" "float" "1"
+			"maxOutputLevel" "float" "1"
+			"midInputLevel" "float" "0.5490196347"
+			"minInputLevel" "float" "0.0470588282"
+			"minOutputLevel" "float" "0"
+			"name" "string" "Levels"
+		},
+		"CDmeColorCorrectionSelectedHSVOp"
+		{
+			"id" "elementid" "d8293719-53ef-4ec3-8efa-6d1102190b04"
+			"blendFactor" "float" "1"
+			"colorize" "bool" "0"
+			"deltaHSV" "vector3" "6 0.2235294282 0.0352941193"
+			"enabled" "bool" "1"
+			"fuzziness" "float" "0.0274509825"
+			"invertSelection" "bool" "0"
+			"name" "string" "HSV"
+			"selectedHSVs" "vector3_array" 
+			[
+				"201.7241516113 0.852941215 0.2666666806"
+			]
+			"selectedRGBs" "vector3_array" 
+			[
+				"0.0392156877 0.1843137294 0.2666666806"
+			]
+			"selectionMethod" "int" "7"
+			"tolerance" "float" "0.2000000179"
+		}
+	]
+}
+

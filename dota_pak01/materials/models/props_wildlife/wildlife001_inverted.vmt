@@ -1,0 +1,38 @@
+"customhero"
+{
+	"$baseTexture" "models/props_wildlife/wildlife001.vtf"
+	"$specTexture" "models/props_wildlife/wildlife001_invert_spec.vtf"
+	"$normalmap" "models/development/flatnormal.vtf"
+	"$colorwarp" "models/props_wildlife/colorwarp_invert.vtf"
+	$COLORWARPINTENSITY 1.0 //1.5
+
+	//$DIFFUSEWARPBLENDTOFULL 1
+	//"$cloakPassEnabled" "1"
+
+	//$CLOAK_BLUR_AMOUNT        0.005
+
+	//$cloakintensity .6   //blend % with original base color
+	//$cloakfactor .41        //
+	//$refractamount 0.003     //level of refraction
+
+	$SPECULAREXPONENT 100
+	$SPECULARSCALE 10
+	$SPECULARCOLOR "[2.49 1.99 0]"
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$DIFFUSEWARPBLENDTOFULL 1
+	$REFLECTIONSTINTBYBASEBLENDTONONE .5
+
+	$RIMLIGHTSCALE 10
+	//$RIMLIGHTBLENDTOFULL 1
+		
+	$SPECULAR_BLOOM_SCALE      10
+	
+	$rimlightcolor "[2.49 1.99 0]"
+	//$additive 1
+
+        //$ALLOWDIFFUSEMODULATION 1
+
+
+	$nocull 1
+}

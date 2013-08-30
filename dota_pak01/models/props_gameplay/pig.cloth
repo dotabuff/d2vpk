@@ -1,0 +1,47 @@
+ClothSystem
+{
+	Cloth
+	{
+		columns	1
+		rows 	3
+		BonePrefix	"lf_ear_"
+		
+		damping			0.85
+		gravity			"0.0 0.0 -100.0"
+		WorldFriction 	0.35
+		SpringStretchiness	0
+		
+		StructSpringConstant 	20.0
+		StructSpringDamping 	0.6
+		ShearSpringConstant 	20.0
+		ShearSpringDamping 		0.6
+		BendSpringConstant 		20.4
+		BendSpringDamping 		0.8
+		
+		R0C0	fixed
+		R0C1	"mass 3"
+		R0C2	"mass 2"
+	}
+	Cloth
+	{
+		columns	1
+		rows 	3
+		BonePrefix	"rt_ear_"
+		
+		damping			0.85
+		gravity			"0.0 0.0 -100.0"
+		WorldFriction 	0.35
+		SpringStretchiness	0
+		
+		StructSpringConstant 	20.0
+		StructSpringDamping 	0.6
+		ShearSpringConstant 	20.0
+		ShearSpringDamping 		0.6
+		BendSpringConstant 		20.4
+		BendSpringDamping 		0.8
+		
+		R0C0	fixed
+		R0C1	"mass 3.3"
+		R0C2	"mass 2.5"
+	}
+}

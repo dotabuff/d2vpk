@@ -1,0 +1,38 @@
+"MultiBlend"
+
+{
+
+       	"$ScrollWaveEnable"                1
+
+	"$basetexture" "nature/rocky00"
+	"$spectexture" "nature/rocky00_spec"
+	"$scale"			2.0
+	"$rotation"			35.0
+
+	"$basetexture2" "nature/rocky01"
+	"$spectexture2" "nature/rocky01_spec"
+	"$scale2"			1.25
+	"$rotation2"			35.0
+
+	"$basetexture3" "nature\water_foam_01"
+	"$spectexture3" "nature\water_foam_01_spec"
+	"$scroll3" "[ -0.025 -0.025 ]"
+       	"$Scroll3WaveHeight"                0.35 // 0.0 disables waves on this layer
+       	"$Scroll3WaveSecondsPerCycle" 8.0
+       	"$Scroll3WaveOffsetSeconds"  5.0
+       	"$Scroll3WaveCycleSkip"             0
+	"$scale3"			1.5 
+	"$rotation3"			0.0
+
+	"$basetexture4" "nature/sand_path001"
+	"$spectexture4" "nature/sand_path001_spec"
+	"$scale4"			2.5
+	"$rotation4"			0.0
+
+	"$surfaceprop" "sand"
+
+	"$fow" 				"_rt_fog_of_war"
+
+	"%keywords" "dota"
+	"%tooltexture" "test/terraintest-1"
+}

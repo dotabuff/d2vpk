@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/axe/axe_weapon_color"
+	"$normalmap" "models/heroes/axe/axe_weapon_normal"
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$maskmap1" "models/heroes/axe/weapon_masks1"
+	"$maskmap2" "models/heroes/axe/weapon_masks2"
+	//"$FRESNELCOLORWARP" "models/heroes/axe/axe_colorwarp"
+	
+	"$envmap" "env_cubemap"
+	"$envmapintensity" "0.4"
+
+	
+
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 1.2
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1.2
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$alphatest 1
+
+
+
+// Status Effects
+
+	$cloakintensity 0.85
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

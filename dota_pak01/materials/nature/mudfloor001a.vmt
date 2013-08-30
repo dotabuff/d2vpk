@@ -1,0 +1,17 @@
+// envmaptint_fix
+"LightmappedGeneric"
+{
+	"$basetexture" "nature/mudfloor001a"
+	"$surfaceprop" "mud"
+	"%keywords" "wasteland"
+
+ "LightmappedGeneric_DX9"
+ {
+	"$bumpmap" "Nature/mudfloor001a_normal"
+	"$normalmapalphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[ .65 .65 .65 ]"
+	"$envmap" "env_cubemap"
+ }
+}

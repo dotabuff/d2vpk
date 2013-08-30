@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/dragon_knight/shield_color"
+	"$normalmap" "models/heroes/dragon_knight/shield_Normal"
+	"$maskmap2" "models/heroes/dragon_knight/shield_mask2"
+	"$maskmap1" "models/heroes/dragon_knight/shield_mask1"
+	//"$nocull" "1"
+	$IgnoreBudgetCheck 1
+	
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges_two"
+
+	//$SpecularBlendtoFull 1
+	$SPECULAREXPONENT 11
+	$SPECULARSCALE 5
+ // $SPECULARCOLOR "[1 .50 .0]"
+//	$RIMLIGHTCOLOR ".8 1 1"
+	$RIMLIGHTSCALE 1
+	$alphatest 1
+
+	//$COLORWARP 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

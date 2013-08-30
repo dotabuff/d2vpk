@@ -1,0 +1,468 @@
+"DOTAKeys"
+{
+	"Templates"
+	{
+		"ARROW"
+		{
+			"Name"			"ARROW"
+			"Version"		"1"
+			
+			//=================================================================
+			//
+			// Default Key Bindings
+			//
+			//=================================================================
+			
+			"Keys"
+			{
+				//=============================================================
+				//
+				// Movement
+				//
+				//=============================================================
+
+				"CameraUp"
+				{
+					"Name"			"CameraUp"
+					"Version"		"1"
+					"Action"		"+forward"
+					"Description"	"#Valve_Move_Forward"
+					"Key"			"UPARROW"
+				}
+				
+				"CameraDown"
+				{
+					"Name"			"CameraDown"
+					"Version"		"1"
+					"Action"		"+back"
+					"Description"	"#Valve_Move_Back"
+					"Key"			"DOWNARROW"
+				}
+				
+				"CameraLeft"
+				{
+					"Name"			"CameraLeft"
+					"Version"		"1"
+					"Action"		"+moveleft"
+					"Description"	"#Valve_Move_Left"
+					"Key"			"LEFTARROW"
+				}		
+
+				"CameraRight"
+				{
+					"Name"			"CameraRight"
+					"Version"		"1"
+					"Action"		"+moveright"
+					"Description"	"#Valve_Move_Right"
+					"Key"			"RIGHTARROW"
+				}
+
+				"CameraHome"
+				{
+					"Name"			"CameraHome"
+					"Version"		"1"
+					"Action"		"dota_home"
+					"Description"	""
+					"Key"			"H"
+				}
+				
+				"CameraGrip"
+				{
+					"Name"			"CameraGrip"
+					"Version"		"1"
+					"Action"		""
+					"Description"	""
+					"Key"			"SPACE"
+					// MOUSE3 is also bound!					
+				}
+				
+				//=============================================================
+				//
+				// Hero
+				//
+				//=============================================================
+							
+				"HeroAttack"
+				{
+					"Name"			"HeroAttack"
+					"Version"		"1"
+					"Action"		"mc_attack"
+					"Description"	"#DOTA_AttackMove"
+					"Key"			"A"
+				}
+				
+				"HeroStop"
+				{
+					"Name"			"HeroStop"
+					"Version"		"1"
+					"Action"		"dota_hold"
+					"Description"	"#DOTA_UnitHold"
+					"Key"			"S"
+				}
+
+				"HeroHome"
+				{
+					"Name"			"HeroHome"
+					"Version"		"1"
+					"Action"		""
+					"Description"	""
+					"Key"			""
+				}
+
+				//=============================================================
+				//
+				// Abilities
+				//
+				//=============================================================
+
+				"AbilityPrimary1"
+				{
+					"Name"			"AbilityPrimary1"
+					"Version"		"1"
+					"Action"		"dota_ability_execute 0"
+					"Description"	"#DOTA_ExecuteAbility0"
+					"Key"			"Q"
+				}				
+
+				"AbilityPrimary2"
+				{
+					"Name"			"AbilityPrimary2"
+					"Version"		"1"
+					"Action"		"dota_ability_execute 1"
+					"Description"	"#DOTA_ExecuteAbility1"
+					"Key"			"W"
+				}
+
+				"AbilityPrimary3"
+				{
+					"Name"			"AbilityPrimary3"
+					"Version"		"1"
+					"Action"		"dota_ability_execute 2"
+					"Description"	"#DOTA_ExecuteAbility2"
+					"Key"			"E"
+				}
+
+				"AbilitySecondary1"
+				{
+					"Name"			"AbilitySecondary1"
+					"Version"		"1"
+					"Action"		"dota_ability_execute 3"
+					"Description"	"#DOTA_ExecuteAbility3"
+					"Key"			"R"
+				}
+
+				"AbilitySecondary2"
+				{
+					"Name"			"AbilitySecondary2"
+					"Version"		"1"
+					"Action"		"dota_ability_execute 4"
+					"Description"	"#DOTA_ExecuteAbility4"
+					"Key"			"T"
+				}
+
+				"AbilityUltimate"
+				{
+					"Name"			"AbilityUltimate"
+					"Version"		"1"
+					"Action"		"dota_ability_execute 5"
+					"Description"	"#DOTA_ExecuteAbility5"
+					"Key"			"F"
+				}
+				
+				//=============================================================
+				//
+				// Inventory
+				//
+				//=============================================================
+				
+				"Inventory1"
+				{
+					"Name"			"Inventory1"
+					"Version"		"1"
+					"Action"		"dota_item_execute 0"
+					"Description"	""
+					"Key"			"1"
+				}
+
+				"Inventory2"
+				{
+					"Name"			"Inventory2"
+					"Version"		"1"
+					"Action"		"dota_item_execute 1"
+					"Description"	""
+					"Key"			"2"
+				}
+
+				"Inventory3"
+				{
+					"Name"			"Inventory3"
+					"Version"		"1"
+					"Action"		"dota_item_execute 2"
+					"Description"	""
+					"Key"			"3"
+				}
+				
+				"Inventory4"
+				{
+					"Name"			"Inventory4"
+					"Version"		"1"
+					"Action"		"dota_item_execute 3"
+					"Description"	""
+					"Key"			"4"
+				}
+				
+				"Inventory5"
+				{
+					"Name"			"Inventory5"
+					"Version"		"1"
+					"Action"		"dota_item_execute 4"
+					"Description"	""
+					"Key"			"5"
+				}
+				
+				"Inventory6"
+				{
+					"Name"			"Inventory6"
+					"Version"		"1"
+					"Action"		"dota_item_execute 5"
+					"Description"	""
+					"Key"			"6"
+				}
+				
+				//=============================================================
+				//
+				// Communication
+				//
+				//=============================================================
+
+				"ChatVoice"
+				{
+					"Name"			"ChatVoice"
+					"Version"		"1"
+					"Action"		"+voicerecord"
+					"Description"	"#Valve_Use_Voice_Communication"
+					"Key"			"V"
+					// MOUSE4 is also bound!
+				}
+
+				"ChatTeam"
+				{
+					"Name"			"ChatTeam"
+					"Version"		"1"
+					"Action"		"say"
+					"Description"	"#Valve_Team_Message"
+					"Key"			"ENTER"
+				}
+
+				"ChatGlobal"
+				{
+					"Name"			"CommunicationChatGlobal"
+					"Version"		"1"
+					"Action"		"say"
+					"Description"	"#Valve_Chat_Message"
+					"ModifiedKey"	"ChatTeam"
+					"Modifier"		"SHIFT"
+				}
+
+				//=============================================================
+				//
+				// Hero/Selection
+				//
+				//=============================================================
+
+				"HeroSelect"
+				{
+					"Name"			"HeroSelect"
+					"Version"		"1"
+					"Action"		"+dota_camera_follow"
+					"Description"	"#DOTA_SelectHeroAndCenter"
+					"Key"			"F1"
+				}
+
+				"HeroLock"
+				{
+					"Name"			"HeroLock"
+					"Version"		"1"
+					"Action"		"+dota_camera_follow"
+					"Description"	""
+					"ModifiedKey"	"HeroSelect"
+					"Modifier"		"HOLD"
+				}
+
+				"HeroCycle"
+				{
+					"Name"			"HeroCycle"
+					"Version"		"1"
+					"Action"		"dota_cycle_selected"
+					"Description"	"#DOTA_TabUnit"
+					"Key"			"TAB"
+				}
+
+				//=============================================================
+				//
+				// Control Groups
+				//
+				//=============================================================
+
+				"ControlGroup1"
+				{
+					"Name"			"ControlGroup1"
+					"Version"		"1"
+					"Action"		"+dota_control_group 1"
+					"Description"	"#DOTA_ControlGroup1"
+					"Key"			"Z"
+				}
+				
+				"ControlGroup2"
+				{
+					"Name"			"ControlGroup2"
+					"Version"		"1"
+					"Action"		"+dota_control_group 2"
+					"Description"	"#DOTA_ControlGroup2"
+					"Key"			"X"
+				}
+				
+				"ControlGroup3"
+				{
+					"Name"			"ControlGroup3"
+					"Version"		"1"
+					"Action"		"+dota_control_group 3"
+					"Description"	"#DOTA_ControlGroup3"
+					"Key"			"C"
+				}
+
+				"ControlGroup4"
+				{
+					"Name"			"ControlGroup4"
+					"Version"		"1"
+					"Action"		"+dota_control_group 4"
+					"Description"	"#DOTA_ControlGroup4"
+					"Key"			""
+				}
+
+				"ControlGroup5"
+				{
+					"Name"			"ControlGroup5"
+					"Version"		"1"
+					"Action"		"+dota_control_group 5"
+					"Description"	"#DOTA_ControlGroup5"
+					"Key"			""
+				}
+				
+				"ControlGroup6"
+				{
+					"Name"			"ControlGroup6"
+					"Version"		"1"
+					"Action"		"+dota_control_group 6"
+					"Description"	"#DOTA_ControlGroup6"
+					"Key"			""
+				}
+				
+				//=============================================================
+				//
+				// World Cameras
+				//
+				//=============================================================
+
+				"Camera1"
+				{
+					"Name"			"Camera1"
+					"Version"		"1"
+					"Action"		""
+					"Description"	""
+					"Key"			"F2"
+				}
+				
+				"Camera2"
+				{
+					"Name"			"Camera2"
+					"Version"		"1"
+					"Action"		""
+					"Description"	""
+					"Key"			"F3"
+				}
+				
+				"Camera3"
+				{
+					"Name"			"Camera3"
+					"Version"		"1"
+					"Action"		""
+					"Description"	""
+					"Key"			"F4"
+				}
+				
+				//=============================================================
+				//
+				// Shop
+				//
+				//=============================================================
+
+				"ShopToggle"
+				{
+					"Name"			"ShopToggle"
+					"Version"		"1"
+					"Action"		"toggleshoppanel"
+					"Descriptoin"	""
+					"Key"			"B"
+				}
+
+				//=============================================================
+				//
+				// Scoreboard
+				//
+				//=============================================================
+
+				"ScoreboardToggle"
+				{
+					"Name"				"ScoreboardToggle"
+					"Version"			"1"
+					"Action"			"+showscores"
+					"Description"		"#DOTA_Scoreboard"
+					"Key"				"G"
+				}
+
+				//=============================================================
+				//
+				// Misc.
+				//
+				//=============================================================
+				
+				"MiscConsole"
+				{
+					"Name"			"MiscConsole"
+					"Version"		"1"
+					"Action"		"toggleconsole"
+					"Description"	""
+					"Key"			"`"
+				}
+				
+				"ScreenshotSettings"
+				{
+					"Name"			"ScreenshotSettings"
+					"Version"		"1"
+					"Action"		"jpeg"
+					"Description"	"#Valve_Take_Screen_shot"
+					"Key"			"F6"
+				}
+				
+				"FeedbackSettings"
+				{
+					"Name"			"FeedbackSettings"
+					"Version"		"1"
+					"Action"		"+voice_feedbackrecord"
+					"Description"	""
+					"Key"			"F7"
+				}
+				
+				"MiscEscape"
+				{
+					"Name"			"MiscEscape"
+					"Version"		"1"
+					"Action"		"escape"
+					"Description"	""
+					"Key"			"ESCAPE"
+				}
+			}			
+		}	
+	}
+}

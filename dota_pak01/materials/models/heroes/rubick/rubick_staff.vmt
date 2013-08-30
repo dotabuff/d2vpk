@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/rubick/rubick_staff_color"
+	"$normalmap" "models\heroes\rubick\rubick_staff_normal"
+//	"$detail1"  "models/heroes/sven/sven_glow" 
+	"$maskmap1" "models/heroes/rubick/rubick_staff_masks1"
+	"$maskmap2" "models/heroes/rubick/rubick_staff_masks2"
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+	
+
+
+	$SPECULAR_BLOOM_SCALE      1
+	$SPECULAREXPONENT 23	
+	$SPECULARSCALE 22	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+	"$alphatest" "1"
+
+	$RIMLIGHTSCALE 10
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 5
+	$DETAIL1BLENDFACTOR 0   
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

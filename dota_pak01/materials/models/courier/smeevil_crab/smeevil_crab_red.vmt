@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$basetexture" "models\courier\smeevil_crab\smeevil_crab_red_color"
+	"$normalmap" "models/courier/smeevil_crab/smeevil_crab_normal"
+	"$maskmap1" "models/courier/smeevil_crab/smeevil_crab_mask1"
+	"$maskmap2" "models/courier/smeevil_crab/smeevil_crab_mask2"
+//	"$specularwarp" "models/heroes/nyx/nyx_lightwarp"
+
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"	
+	
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 4
+//	$SPECULARCOLOR "[.5 .4 0]"
+
+	$RIMLIGHTSCALE	3
+	$RIMLIGHTCOLOR	"[.4 .6 .2]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}
+

@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$basetexture"	"models/heroes/ogre_magi/bracers_color"
+	"$normalmap" 	"models/heroes/ogre_magi/bracers_normal"
+	"$maskmap1"		"models/heroes/ogre_magi/bracers_mask1"
+	"$maskmap2"		"models/heroes/ogre_magi/bracers_mask2"
+	"$alphatest"	"1"
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+	$IgnoreBudgetCheck 1	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

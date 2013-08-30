@@ -1,0 +1,18 @@
+"CustomHero"
+{
+	"$baseTexture" "models\props_gameplay\antler_trap_color"
+	"$normalmap" "models\props_gameplay\antler_trap_normal"
+	"$maskmap1" "models\props_gameplay\antler_trap_masks1"
+	"$maskmap2" "models\props_gameplay\antler_trap_masks2"
+
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$FRESNELWARP" "models/heroes/axe/axe_fresnelranges"
+	
+	
+	$SPECULARSCALE 15
+	$SPECULAREXPONENT 15
+	$SPECULARCOLOR "[.1 .9 .6]"
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[.2 .4 1]"
+
+}

@@ -1,0 +1,21 @@
+
+
+//"CustomHero"
+"GlobalLitSimple"
+{
+	$baseTexture "models/heroes/pugna/pugna_ward_runes"
+	"$normalmap" "models\development\flatnormal"
+	"$ENVMAP" "models/creeps/lane_creeps/creep_good_siege/creep_good_siege_envmap"
+	$SPECULAREXPONENT 8 
+	$SPECULAREXPONENTBLENDTOFULL 0
+	$SPECULARBLENDTOFULL 0.1
+	$SPECULARCOLOR 2 3 1
+	$SPECULARSCALE  10
+	$RIMLIGHTSCALE	3
+
+//	"$alphatest" "1"
+//	"$AlphaTestReference" ".5"
+//	"$AllowAlphaToCoverage" "1"
+	"$translucent" 1
+
+}

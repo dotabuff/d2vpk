@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/furion/bracers_stones_1_color"
+	"$normalmap" "models/items/furion/bracers_stones_1_normal"
+//	"$maskmap1" "models/items/juggernaut/riki_diffusal_masks1"
+	"$maskmap2" "models/items/furion/bracers_stones_1_mask2"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+
+	$SPECULAREXPONENT 8
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 7
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	1.0
+	$RIMLIGHTCOLOR	"[.85 1 1]"
+
+
+
+
+	$cloakintensity 0.85
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

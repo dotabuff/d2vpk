@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/items/juggernaut/head_death_mask_color"
+	"$normalmap" "models/items/juggernaut/head_death_mask_normal"
+	"$maskmap1" "models/items/juggernaut/head_death_mask_mask1"
+	"$maskmap2" "models/items/juggernaut/head_death_mask_mask2"
+	"$diffusewarp" "models/heroes/juggernaut/juggernaut_lightwarp"
+//	"$envmap" "env_cubemap"
+
+	$SPECULAREXPONENT 3
+
+	$SPECULARSCALE 2
+
+//	$SPECULARBLENDTOFULL 1
+	$DIFFUSEWARPBLENDTOFULL .52
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	1.35
+
+
+	$FRESNELWARP "models/heroes/juggernaut/juggernaut_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/axe/berserkers_helm_color"
+	"$normalmap" "models/items/axe/berserkers_helm_normal"
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$maskmap1" "models/items/axe/berserkers_helm_masks1"
+	"$maskmap2" "models/items/axe/berserkers_helm_masks2"
+	"$FRESNELWARP" "models/heroes/axe/axe_fresnelranges"
+	
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 2.5
+	$SPECULARCOLOR "[.9 .8 1]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+//	$CLOAK_BLUR_AMOUNT        0.005
+
+//	$cloakintensity .85   //blend % with original base color
+//	$cloakfactor .94        //
+//	$refractamount .02     //level of refraction
+
+	"$cloakPassEnabled" "1"
+	"$alphatest" 			"1"
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

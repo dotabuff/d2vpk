@@ -1,0 +1,545 @@
+"Hero_OgreMagi.PreAttack" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"90, 100"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/doom_bringer/preattack01.wav"
+		"wave"	"weapons/hero/doom_bringer/preattack02.wav"
+		"wave"	"weapons/hero/doom_bringer/preattack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_OgreMagi.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact1.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact2.wav"
+		"wave"	"weapons/hero/earthshaker/fist_swing_impact3.wav"
+	}
+		"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_OgreMagi.Attack.Impact"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Attack.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/shared/large_blade/thump01.wav"
+		"wave"			"weapons/hero/shared/large_blade/thump02.wav"
+		"wave"			"weapons/hero/shared/large_blade/thump03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+ 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+"Hero_OgreMagi.Fireblast.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/ogre_magi/fireblast_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Fireblast.Target"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"				")weapons/hero/ogre_magi/fireblast_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Fireblast.x1"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"90"
+	"wave"			")weapons/hero/ogre_magi/multicast01.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_OgreMagi.Fireblast.x2"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/ogre_magi/multicast02.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_OgreMagi.Fireblast.x3"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"110"
+	"wave"			")weapons/hero/ogre_magi/multicast03.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_OgreMagi.Ignite.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/ogre_magi/ignite_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Ignite.Target"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/ogre_magi/ignite_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Ignite.Damage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/alchemist/acid_spray_damage01.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage02.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage03.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage04.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage05.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage06.wav"
+		"wave"	"weapons/hero/alchemist/acid_spray_damage07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "5000000" //A sound will not stop itself from playing.
+				"match_substring" "false"
+				"match_entry" "Ignite.Damage"
+			}
+		}
+	}
+}
+
+// "Hero_OgreMagi.Bloodlust.Cast"
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1.0"
+// 	"soundlevel"  	"SNDLVL_84dB"
+// 	"pitch"			"95, 105"
+// 	"wave"			")weapons/hero/ogre_magi/bloodlust_cast.wav"
+// 	"operator_stacks"
+// 	{
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_default"
+// 			"mixer"
+// 			{
+// 				"mixgroup" "Weapons"
+// 			}
+// 			"speakers_spatialize"
+// 			{
+// 				"input_radius"  "300"
+// 			}
+// 		}
+// 	}
+// }
+
+"Hero_OgreMagi.Bloodlust.Cast.Anim"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_OgreMagi.Bloodlust.Target"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Bloodlust.Target.FP"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_target_fp.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "1.5"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.4, 0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"		"80, 90"
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/shared/general01.wav"
+		"wave"		"physics/footsteps/hero/shared/general02.wav"
+		"wave"		"physics/footsteps/hero/shared/general03.wav"
+		"wave"		"physics/footsteps/hero/shared/general04.wav"
+		"wave"		"physics/footsteps/hero/shared/general05.wav"
+		"wave"		"physics/footsteps/hero/shared/general06.wav"
+		"wave"		"physics/footsteps/hero/shared/general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_OgreMagi.Movement"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"		"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics/movement/hero/ogre_magi/move01.wav"
+		"wave"		"physics/movement/hero/ogre_magi/move02.wav"
+		"wave"		"physics/movement/hero/ogre_magi/move03.wav"
+		"wave"		"physics/movement/hero/ogre_magi/move04.wav"
+		"wave"		"physics/movement/hero/ogre_magi/move05.wav"
+		"wave"		"physics/movement/hero/ogre_magi/move06.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.1"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_OgreMagi.Idle.Headbutt"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"misc/idles/idle_ogremagi_fight_headbutt.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Idle.Punch"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"misc/idles/idle_ogremagi_fight_punch.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_OgreMagi.Idle.Scratch"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.45"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"misc/idles/idle_ogremagi_scratch_01.wav"
+		"wave"		"misc/idles/idle_ogremagi_scratch_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/lone_druid/LoneDruid_Shoulder/LoneDruid_Shoulder_color"
+	"$normalmap"		"models/items/lone_druid/LoneDruid_Shoulder/LoneDruid_Shoulder_normal"
+	"$diffusewarp"		"models/heroes/sven/sven_diffusewarp"
+	"$detail1"		"models/heroes/lone_druid/ld_body_glow"
+	"$maskmap1"		"models/items/lone_druid/LoneDruid_Shoulder/LoneDruid_Shoulder_mask1"
+	"$maskmap2"		"models/items/lone_druid/LoneDruid_Shoulder/LoneDruid_Shoulder_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAREXPONENT"		"23"
+	"$SPECULARSCALE"		"22"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$RIMLIGHTSCALE"		"10"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"5"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$cloakPassEnabled"		"1"
+	"$alphatest"			"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

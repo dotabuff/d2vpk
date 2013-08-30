@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/pugna/Pugna_Cape_Diffuse"
+	"$normalmap" "models/heroes/pugna/Pugna_Cape_Normal"
+
+	"$maskmap1" "models/heroes/pugna/pugna_cape_masks1"
+	"$maskmap2" "models/heroes/pugna/pugna_cape_masks2"
+	
+
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 1
+
+	$RIMLIGHTSCALE .21
+	$AMBIENTSCALE .1
+	$SPECULARCOLOR "[1 1 0]"
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+	$alphatest 1
+
+	"$cloakPassEnabled" "1"
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

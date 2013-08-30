@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/abaddon/abaddon_cape_color"
+	"$normalmap" "models\heroes\abaddon\abaddon_cape_normal"
+//	"$detail1" "models/heroes/abaddon/abaddon_detail"
+	"$maskmap1" "models\heroes\abaddon\abaddon_cape_masks1"
+	"$maskmap2" "models\heroes\abaddon\abaddon_cape_masks2"
+	
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 10
+	
+	
+	
+	$RIMLIGHTSCALE 3
+	$IgnoreBudgetCheck 1
+	$alphatest	1
+	
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 3
+	$DETAIL1BLENDFACTOR 1
+	$DETAIL1BLENDTOFULL 0
+	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.3"
+			"texturescrollangle"	"270"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

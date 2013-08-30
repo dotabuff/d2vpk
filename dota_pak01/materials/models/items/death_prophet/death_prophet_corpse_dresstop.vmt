@@ -1,0 +1,51 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/death_prophet/death_prophet_corpse_dresstop"
+	"$normalmap" "models/items/death_prophet/death_prophet_corpse_dresstop_normals"
+	"$alphatest" "1"
+
+	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	//$FRESNELWARP "models/heroes/dragon_knight/dragon_knight_fresnelranges"
+	"$maskmap1" "models/items/death_prophet/death_prophet_corpse_dresstop_masks1"
+	"$maskmap2" "models/items/death_prophet/death_prophet_corpse_dresstop_masks2"
+	$nocull 1
+	
+	
+	
+	$SPECULAR_BLOOM_SCALE      0.3
+	$SPECULAREXPONENT 23	
+	$SPECULARSCALE 42	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 10
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$basetexturetransform"
+			"texturescrollrate"	"0"
+			"texturescrollangle"	"93"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

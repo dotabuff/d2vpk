@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/storm_spirit/storm_spirit_hat_hair_color"
+	$normalmap "models/heroes/storm_spirit/storm_spirit_hat_hair_normal"
+//	$detail1  "models/heroes/storm_spirit/storm_spirit_glow"
+	$maskmap1 "models/heroes/storm_spirit/storm_spirit_hat_hair_masks1"
+//	$maskmap1 "models/heroes/sven/sven_mask1"
+	$maskmap2 "models/heroes/storm_spirit/storm_spirit_hat_hair_masks2"
+	$diffusewarp "models/heroes/storm_spirit/storm_spirit_diffusewarp"
+	$FRESNELWARP "models/heroes/storm_spirit/storm_spirit_fresnelranges"
+
+	$SPECULAREXPONENT 75
+	$SPECULARSCALE 1.3
+
+//	$SPECULARBLENDTOFULL .1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+	$RIMLIGHTSCALE	1.3
+	$alphatest 1
+	
+
+//	$rimlightcolor "[4 1 0]"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

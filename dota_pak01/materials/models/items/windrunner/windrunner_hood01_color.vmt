@@ -1,0 +1,41 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/windrunner/windrunner_hood01_color"
+	"$normalmap" "models/items/rikimaru/riki_diffusal_normal"
+	"$maskmap1" "models/items/rikimaru/riki_diffusal_masks1"
+	"$maskmap2" "models/items/rikimaru/riki_diffusal_masks2"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$alphatest"		"1"
+
+	$SPECULAR_BLOOM_SCALE      0
+	
+	$SPECULAREXPONENT 30
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 1
+
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	$RIMLIGHTSCALE	1.3
+	$RIMLIGHTCOLOR	"[.85 1 1]"
+
+
+
+
+	$cloakintensity 0.85
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

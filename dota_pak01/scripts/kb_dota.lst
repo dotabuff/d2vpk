@@ -1,0 +1,638 @@
+"DOTAKeys"
+{
+	"Version"	"5"
+	
+	//====================================================================================
+	//
+	// Camera
+	//
+	"Key_CameraUp"
+	{
+		"Action"	"+forward"
+		"Description"	"#Valve_Move_Forward"
+		"Key1"		"UPARROW"
+		"Key2"		""
+		"SectionIndex"	"1"
+		"SectionName"	"#Valve_Movement_Title"
+	}
+
+	"Key_CameraDown"
+	{
+		"Action"	"+back"
+		"Description"	"#Valve_Move_Back"
+		"Key1"		"DOWNARROW"
+		"Key2"		""
+		"SectionIndex"	"1"
+		"SectionName"	"#Valve_Movement_Title"
+	}
+
+	"Key_CameraLeft"
+	{
+		"Action"	"+moveleft"
+		"Description"	"#Valve_Move_Left"
+		"Key1"		"LEFTARROW"
+		"Key2"		""
+		"SectionIndex"	"1"
+		"SectionName"	"#Valve_Movement_Title"
+	}
+
+	"Key_CameraRight"
+	{
+		"Action"	"+moveright"
+		"Description"	"#Valve_Move_Right"
+		"Key1"		"RIGHTARROW"
+		"Key2"		""
+		"SectionIndex"	"1"
+		"SectionName"	"#Valve_Movement_Title"
+	}
+
+	//====================================================================================
+	//
+	// Units
+	//
+
+	"Key_UnitAttackMove"
+	{
+		"Action"	"mc_attack"
+		"Description"	"#DOTA_AttackMove"
+		"Key1"		"a"
+		"Key2"		""
+		"SectionIndex"	"2"
+		"SectionName"	"#Valve_Combat_Title"
+	}
+
+	"Key_UnitHold"
+	{
+		"Action"	"dota_hold"
+		"Description"	"#DOTA_UnitHold"
+		"Key1"		"s"
+		"Key2"		""
+		"SectionIndex"	"2"
+		"SectionName"	"#Valve_Combat_Title"
+	}
+	
+	//====================================================================================
+	//
+	// Abilities
+	//
+	"Key_Ability0"
+	{
+		"Button"		"AbilityButton_0"
+		"Action"		"dota_ability_execute 0"
+		"Description"	"#DOTA_ExecuteAbility0"
+		"Key1"			"q"
+		"Key2"			""
+	}
+
+	"Key_Ability1"
+	{
+		"Button"		"AbilityButton_1"
+		"Action"		"dota_ability_execute 1"
+		"Description"	"#DOTA_ExecuteAbility1"
+		"Key1"			"w"
+		"Key2"			""
+	}
+
+	"Key_Ability2"
+	{
+		"Button"		"AbilityButton_2"
+		"Action"		"dota_ability_execute 2"
+		"Description"	"#DOTA_ExecuteAbility2"
+		"Key1"			"e"
+		"Key2"			""
+	}
+
+	"Key_Ability3"
+	{
+		"Button"		"AbilityButton_3"
+		"Action"		"dota_ability_execute 3"
+		"Description"	"#DOTA_ExecuteAbility3"
+		"Key1"			"r"
+		"Key2"			""
+	}
+
+	"Key_Ability4"
+	{
+		"Button"		"AbilityButton_4"
+		"Action"		"dota_ability_execute 4"
+		"Description"	"#DOTA_ExecuteAbility4"
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Ability5"
+	{
+		"Button"		"AbilityButton_5"
+		"Action"		"dota_ability_execute 5"
+		"Description"	"#DOTA_ExecuteAbility5"
+		"Key1"			""
+		"Key2"			""
+	}
+
+	// Learn
+	"Key_Learn0"
+	{
+		"Button"		"AbilityLearn_0"
+		"Action"		"dota_ability_learn 0"
+		"Description"	""
+		"Key1"			""
+		"Key2"			""	
+	}
+
+	// Learn
+	"Key_Learn1"
+	{
+		"Button"		"AbilityLearn_1"
+		"Action"		"dota_ability_learn 1"
+		"Description"	""
+		"Key1"			""
+		"Key2"			""	
+	}
+
+	// Learn
+	"Key_Learn2"
+	{
+		"Button"		"AbilityLearn_2"
+		"Action"		"dota_ability_learn 2"
+		"Description"	""
+		"Key1"			""
+		"Key2"			""	
+	}
+
+	// Learn
+	"Key_Learn3"
+	{
+		"Button"		"AbilityLearn_3"
+		"Action"		"dota_ability_learn 3"
+		"Description"	""
+		"Key1"			""
+		"Key2"			""	
+	}
+
+	// Learn
+	"Key_Learn4"
+	{
+		"Button"		"AbilityLearn_4"
+		"Action"		"dota_ability_learn 4"
+		"Description"	""
+		"Key1"			""
+		"Key2"			""	
+	}
+
+	// Learn
+	"Key_Learn5"
+	{
+		"Button"		"AbilityLearn_5"
+		"Action"		"dota_ability_learn 5"
+		"Description"	""
+		"Key1"			""
+		"Key2"			""	
+	}
+
+	// Learn Attributes
+	"Key_LearnAttribute"
+	{
+		"Button"		"AttributeLearn"
+		"Action"		"dota_attribute_learn"
+		"Description"	""
+		"Key1"			"l"
+		"Key2"			""	
+	}
+
+	//====================================================================================
+	//
+	// Inventory
+	//
+	"Key_Inventory0"
+	{
+		"Button"		"InventoryButton_0"
+		"Action"		"dota_item_execute 0"
+		"Description"	""
+		"Key1"			"z"
+		"Key2"			""	
+	}
+
+	"Key_Inventory1"
+	{
+		"Button"		"InventoryButton_1"
+		"Action"		"dota_item_execute 1"
+		"Description"	""
+		"Key1"			"x"
+		"Key2"			""	
+	}
+
+	"Key_Inventory2"
+	{
+		"Button"		"InventoryButton_2"
+		"Action"		"dota_item_execute 2"
+		"Description"	""
+		"Key1"			"c"
+		"Key2"			""	
+	}
+
+	"Key_Inventory3"
+	{
+		"Button"		"InventoryButton_3"
+		"Action"		"dota_item_execute 3"
+		"Description"	""
+		"Key1"			"v"
+		"Key2"			""	
+	}
+
+	"Key_Inventory4"
+	{
+		"Button"		"InventoryButton_4"
+		"Action"		"dota_item_execute 4"
+		"Description"	""
+		"Key1"			"b"
+		"Key2"			""	
+	}
+
+	"Key_Inventory5"
+	{
+		"Button"		"InventoryButton_5"
+		"Action"		"dota_item_execute 5"
+		"Description"	""
+		"Key1"			"n"
+		"Key2"			""	
+	}
+	
+	//====================================================================================
+	//
+	// Communication
+	//
+	"Key_CommVoice"
+	{
+		"Action"	"+voicerecord"
+		"Description"	"#Valve_Use_Voice_Communication"
+		"Key1"		"MOUSE4"
+		"Key2"		""
+		"SectionIndex"	"3"
+		"SectionName"	"#Valve_Communication_Title"
+	}
+
+	"Key_CommSay"
+	{
+		"Action"	"say"
+		"Description"	"#Valve_Chat_Message"
+		"Key1"		"y"
+		"Key2"		""
+		"SectionIndex"	"3"
+		"SectionName"	"#Valve_Communication_Title"
+	}
+
+	"Key_CommSayTeam"
+	{
+		"Action"	"say_team"
+		"Description"	"#Valve_Team_Message"
+		"Key1"		"u"
+		"Key2"		""
+		"SectionIndex"	"3"
+		"SectionName"	"#Valve_Communication_Title"
+	}
+
+	//====================================================================================
+	//
+	// Misc
+	//
+	"Key_MiscScreenShot"
+	{
+		"Action"		"jpeg"
+		"Description"	"#Valve_Take_Screen_shot"
+		"Key1"			""
+		"Key2"			""
+		"SectionIndex"	"4"
+		"SectionName"	"#Valve_Miscellaneous_Title"
+	}
+
+	"Key_MiscQuit"
+	{
+		"Action"		"quit"
+		"Description"	"#Valve_Quit_Game"
+		"Key1"			""
+		"Key2"			""
+		"SectionIndex"	"4"
+		"SectionName"	"#Valve_Miscellaneous_Title"
+	}
+
+	"Key_MiscPause"
+	{
+		"Action"		"pause"
+		"Description"	""
+		"Key1"			"PAUSE"
+		"Key2"			""
+	}
+
+	"Key_MiscEscape"
+	{
+		"Action"		"escape"
+		"Description"	""
+		"Key1"			"ESCAPE"
+		"Key2"			""
+	}
+
+	"Key_MiscConsole"
+	{
+		"Action"		"toggleconsole"
+		"Description"	""
+		"Key1"			"`"
+		"Key2"			"~"
+	}
+	
+	"Key_Scoreboard"
+	{
+		"Action"		"+showscores"
+		"Description"	"#DOTA_Scoreboard"
+		"Key1"			"TAB"
+		"Key2"			""
+		"SectionIndex"	"4"
+		"SectionName"	"#Valve_Miscellaneous_Title"
+	}
+
+	"Key_Query"
+	{
+		"Button"		"QueryButton"
+		"Action"		"+query"
+		"Description"	"Query"
+		"Key1"			"CTRL"
+		"Key2"			""
+		"SectionIndex"	"4"
+		"SectionName"	"#Valve_Miscellaneous_Title"
+	}
+
+	//====================================================================================
+	//
+	// Selection
+	//
+
+	"Key_CameraCenter"
+	{
+		"Action"		"+dota_camera_follow"
+		"Description"	"#DOTA_SelectHeroAndCenter"
+		"Key1"			"F1"
+		"Key2"			""
+		"SectionIndex"	"5"
+		"SectionName"	"#DOTA_UnitSelection_Title"
+	}
+
+	"Key_CycleSelection"
+	{
+		"Action"		"dota_cycle_selected"
+		"Description"	"#DOTA_TabUnit"
+		"Key1"			"F2"
+		"Key2"			""
+		"SectionIndex"	"5"
+		"SectionName"	"#DOTA_UnitSelection_Title"
+	}
+
+	"Key_ControlGroup1"
+	{
+		"Action"		"+dota_control_group 1"
+		"Description"	"#DOTA_ControlGroup1"
+		"Key1"			"1"
+		"Key2"			""
+		"SectionIndex"	"5"
+		"SectionName"	"#DOTA_UnitSelection_Title"
+	}
+
+	"Key_ControlGroup2"
+	{
+		"Action"		"+dota_control_group 2"
+		"Description"	"#DOTA_ControlGroup2"
+		"Key1"			"2"
+		"Key2"			""
+		"SectionIndex"	"5"
+		"SectionName"	"#DOTA_UnitSelection_Title"
+	}
+
+	"Key_ControlGroup3"
+	{
+		"Action"		"+dota_control_group 3"
+		"Description"	"#DOTA_ControlGroup3"
+		"Key1"			"3"
+		"Key2"			""
+		"SectionIndex"	"5"
+		"SectionName"	"#DOTA_UnitSelection_Title"
+	}
+
+	"Key_ControlGroup4"
+	{
+		"Action"		"+dota_control_group 4"
+		"Description"	"#DOTA_ControlGroup4"
+		"Key1"			"4"
+		"Key2"			""
+		"SectionIndex"	"5"
+		"SectionName"	"#DOTA_UnitSelection_Title"
+	}
+
+	"Key_ControlGroup5"
+	{
+		"Action"		"+dota_control_group 5"
+		"Description"	"#DOTA_ControlGroup5"
+		"Key1"			"5"
+		"Key2"			""
+		"SectionIndex"	"5"
+		"SectionName"	"#DOTA_UnitSelection_Title"
+	}
+
+	"Key_ControlGroup6"
+	{
+		"Action"		"+dota_control_group 6"
+		"Description"	"#DOTA_ControlGroup6"
+		"Key1"			"6"
+		"Key2"			""
+		"SectionIndex"	"5"
+		"SectionName"	"#DOTA_UnitSelection_Title"
+	}
+
+	//====================================================================================
+	//
+	// Shops
+	//
+	"Key_Shop"
+	{
+		"Button"		"ShopButton"
+		"Action"		"toggleshoppanel"
+		"Descriptoin"	""
+		"Key1"			"F3"
+		"Key2"			""
+	}
+
+	"Key_Cat0"
+	{
+		"Button"		"ShopCategoryButton_0"
+		"Action"		"openshop_category 0"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat1"
+	{
+		"Button"		"ShopCategoryButton_1"
+		"Action"		"openshop_category 1"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat2"
+	{
+		"Button"		"ShopCategoryButton_2"
+		"Action"		"openshop_category 2"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat3"
+	{
+		"Button"		"ShopCategoryButton_3"
+		"Action"		"openshop_category 3"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat4"
+	{
+		"Button"		"ShopCategoryButton_4"
+		"Action"		"openshop_category 4"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat5"
+	{
+		"Button"		"ShopCategoryButton_5"
+		"Action"		"openshop_category 5"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+	
+	"Key_Cat6"
+	{
+		"Button"		"ShopCategoryButton_6"
+		"Action"		"openshop_category 6"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat7"
+	{
+		"Button"		"ShopCategoryButton_7"
+		"Action"		"openshop_category 7"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat8"
+	{
+		"Button"		"ShopCategoryButton_8"
+		"Action"		"openshop_category 8"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat9"
+	{
+		"Button"		"ShopCategoryButton_9"
+		"Action"		"openshop_category 9"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}
+
+	"Key_Cat10"
+	{
+		"Button"		"ShopCategoryButton_10"
+		"Action"		"openshop_category 10"
+		"Descriptoin"	""
+		"Key1"			""
+		"Key2"			""
+	}	
+
+
+	//====================================================================================
+	//
+	// Developer
+	//
+	
+	"Key_Teleport"
+      	{
+            	"Action"          "dota_dev hero_teleport"
+            	"Description"           "Teleport Hero"
+            	"Key1"            	"K"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+	"Key_JointeamGood"
+      	{
+            	"Action"          "jointeam good"
+            	"Description"           "Jointeam Good"
+            	"Key1"            	"f6"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+	"Key_MaxLevel"
+      	{
+            	"Action"          "dota_dev hero_maxlevel"
+            	"Description"           "Hero Max Level"
+            	"Key1"            	"f7"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+	"Key_GiveGold"
+      	{
+            	"Action"          "dota_dev player_givegold 5000"
+            	"Description"           "+5000 gold"
+            	"Key1"            	"f8"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+	"Key_CreateEnemyCreep"
+      	{
+            	"Action"          "dota_create_unit badguys_melee enemy"
+            	"Description"           "Create enemy creep"
+            	"Key1"            	"0"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+	"Key_Noclip"
+      	{
+            	"Action"          "noclip"
+            	"Description"           "Noclip"
+            	"Key1"            	"h"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+	"Key_ForceGameStart"
+      	{
+            	"Action"          "dota_dev forcegamestart"
+            	"Description"           "Start Creeps"
+            	"Key1"            	"8"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+	"Key_ForceCreepSpawn"
+      	{
+            	"Action"          "dota_dev forcecreepspawn"
+            	"Description"           "Force Creep Wave"
+            	"Key1"            	"9"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+	"Key_ReloadHeroMaterial"
+      	{
+            	"Action"          "mat_reloadmaterial color"
+            	"Description"           "Reload Hero Materials"
+            	"Key1"            	"m"
+       		"SectionIndex"          "6"
+		"SectionName"           "#DOTA_Developer"
+	}
+}

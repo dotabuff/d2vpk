@@ -1,0 +1,18 @@
+"customhero"
+{
+	"$basetexture" "particle/beam_generic_2.vtf"
+	"$normalmap" "particle\beam_liquid_01_normal"
+
+	//$NoCull 1
+
+
+	$FRESNELWARP "models/heroes/storm_spirit/storm_spirit_fresnelranges"
+
+	//$SPECULAREXPONENT 135
+	//$SPECULARSCALE .9
+
+	$RIMLIGHTSCALE	4
+
+	$ALLOWDIFFUSEMODULATION 1
+	$additive 1
+}

@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$basetexture"	"models/props_gameplay/chicken01"
+	"$normalmap" "models/development/flatnormal"
+
+	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+
+	$SPECULAREXPONENT 2
+	$SPECULARSCALE 1
+	$RIMLIGHTSCALE	1
+	$specularcolor "[1 .4 .7]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	"$rimlightblendtofull" "1"
+	"$specularblendtofull" "1"
+	"$specularexponentblendtofull" "1"
+
+	$AMBIENTSCALE 2
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}
+

@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/visage/familiar_shapemodel_texture"
+	"$normalmap" "models/heroes/visage/vis_shapemodel_rock_normals"
+	//"$detail1"  "models/heroes/huskar/huskar_glow"
+ 	//"$maskmap1" "models/heroes/huskar/huskar_masks1"
+	//"$maskmap2" "models/heroes/huskar/huskar_masks2"
+
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[.7 1 1]"
+
+	$RIMLIGHTCOLOR "[.8 1 1]"
+	$RIMLIGHTSCALE 1
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	$DETAIL1BLENDTOFULL 0
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"1"
+			"texturescrollangle"	"90"
+		}
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,476 @@
+"Hero_Warlock.PreAttack" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"weapons/hero/witch_doctor/preattack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_Warlock.Attack" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/warlock/attack1.wav"
+		"wave"		"weapons/hero/warlock/attack2.wav"
+		"wave"		"weapons/hero/warlock/attack3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Warlock.ProjectileImpact" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"weapons/hero/witch_doctor/projectile_impact.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+// "Hero_Warlock.FatalBonds_precast" 
+// {
+// 	"channel"		"CHAN_WEAPON"
+// 	"volume"		"1"
+// 	"soundlevel"  	"SNDLVL_78dB"
+// 	"wave"			")weapons/hero/warlock/fatal_bonds_precast.wav"
+// }
+
+"Hero_Warlock.FatalBonds" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/warlock/fatal_bonds_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Warlock.FatalBondsDamage" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"90, 110"
+	"wave"			")weapons/hero/warlock/fatal_bonds_damage.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "sfx_random_delay_start"
+			"import_stack" "dota_poly_limiting_start"
+			"get_random_delay"
+			{
+			"input_min" "0.00"
+			"input_max" "0.15"
+			}
+			
+			"limit_sound"
+			{
+				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+				"match_substring" "true"
+				"match_entry" "FatalBondsDamage"
+			}
+		}
+	}
+}
+
+"Hero_Warlock.ShadowWord" //loops on target
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"  		")weapons/hero/warlock/warlock_shadowword.wav"
+	"pitch"			"95, 105"
+	"operator_stacks"
+	{	
+		"start_stack"
+		{
+ 			"play_entry"
+			{
+				"operator" "sys_start_entry"
+				"input_start" "1"	
+				"entry_name" "Hero_Warlock.Incantations"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ambient"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+ 			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Warlock.Incantations"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90,110"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/warlock/incant01.wav"
+		"wave"		"weapons/hero/warlock/incant02.wav"
+		"wave"		"weapons/hero/warlock/incant03.wav"
+		"wave"		"weapons/hero/warlock/incant04.wav"
+		"wave"		"weapons/hero/warlock/incant05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Warlock.ShadowWordCastGood" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"  		")weapons/hero/warlock/shadowword_cast_heal.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Warlock.ShadowWordCastBad" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"  		")weapons/hero/warlock/shadowword_cast_damage.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Warlock.Upheaval" //loops
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/warlock/warlock_upheaval.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"Hero_Warlock.RainOfChaos_buildup" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/warlock/rain_of_chaos_buildup.wav"
+	"soundentry_version" "1"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"Hero_Warlock.RainOfChaos" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/warlock/rain_of_chaos_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Warlock.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.3"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"90,100"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Warlock.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"physics\deaths\specials\warlock_death.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_WarlockGolem.Spawn_Loop" //needs to loop for as long as Golem lives
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"  		")physics\movement\hero\warlock\golem_spawn_loop.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_fade_in"
+			{
+				"input_Max" "1.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "4.0"
+			}
+		}
+	}
+}
+
+"Hero_WarlockGolem.PreAttack" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90, 110"
+	"wave"			"weapons/hero/warlock/demon_preattack.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_WarlockGolem.Attack" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/warlock/demon_attack01.wav"
+		"wave"		"weapons/hero/warlock/demon_attack02.wav"
+		"wave"		"weapons/hero/warlock/demon_attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+// "Hero_WarlockGolem.Death" //needs to fade then kill Spawn loop
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1"
+// 	"soundlevel"  	"SNDLVL_81dB"
+// 	"wave"  		")weapons/hero/warlock/warlock_rainofchaos.wav"
+// }
+
+"Hero_WarlockGolem.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"90, 100"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\warlock_golem\step01.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\step02.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\step03.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\step04.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\step05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_WarlockGolem.Foley"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.1, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 100"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\warlock_golem\chains01.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\chains02.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\chains03.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\chains04.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\chains05.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

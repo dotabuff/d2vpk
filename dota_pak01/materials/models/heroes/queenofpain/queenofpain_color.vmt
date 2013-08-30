@@ -1,0 +1,56 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/QueenOfPain/QueenOfPain_color"
+	"$normalmap" "models/heroes/QueenOfPain/QueenOfPain_normals"
+	"$maskmap1" "models/heroes/QueenOfPain/QueenOfPain_masks1"
+	"$maskmap2" "models/heroes/QueenOfPain/QueenOfPain_masks2"
+	//"$normalmap" "models/development/flatnormal"
+	//"$diffusewarp" "models/heroes/drow/diffusewarp"
+	$FRESNELWARP "models/heroes/QueenOfPain/QueenOfPain_fresnelranges"
+
+	//$FRESNELWARP "models/heroes/silencer/silencer_fresnelranges"
+
+	"$detail1" "models/heroes/QueenOfPain/QueenOfPain_motion_fire"
+
+	$SPECULAR_BLOOM_SCALE      0
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 8
+	$RIMLIGHTSCALE	1
+	//$specularcolor "[1 .3 .7]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	//"$rimlightblendtoful" "1"
+	$alphatest 1
+	
+
+
+	$DETAIL1BLENDMODE 4
+	$DETAIL1SCALE 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.30
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

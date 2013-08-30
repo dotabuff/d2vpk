@@ -1,0 +1,11 @@
+// ### This basic VMT was written based on the U:\dev\tools\python\templateStrings.py script ###
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_structures/boat_dragonKnight_color"
+	$specTexture "models/props_structures/boat_dragonKnight_spec"
+	$specular_bloom 0
+	$specular_intensity 1
+	"$fow"                          "_rt_fog_of_war"
+
+	"$alphatest" "1"
+}

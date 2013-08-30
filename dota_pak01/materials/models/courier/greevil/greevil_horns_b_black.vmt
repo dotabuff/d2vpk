@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/greevil/greevil_horns_b_color"
+	"$normalmap" "models/courier/greevil/greevil_horns_b_normal"
+  "$detail1"  "models/courier/greevil/greevil_black_detail1"
+  "$maskmap1" "models/courier/greevil/greevil_horns_b_mask1"
+	"$maskmap2" "models/courier/greevil/greevil_horns_b_mask2"
+
+	"$COLORWARP" "models/courier/greevil/colorwarp_greevil_black"
+	"$COLORWARPINTENSITY" 1
+
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1.2
+
+	$SPECULAREXPONENT 25
+	$AMBIENTSCALE 1
+	$SPECULARSCALE 5		
+
+	$RIMLIGHTSCALE	3
+	$RIMLIGHTCOLOR	"[1 .5 0]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

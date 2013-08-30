@@ -1,0 +1,726 @@
+
+
+"DOTA_Item.Tango.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")items/tango.wav"
+}
+
+"DOTA_Item.ClarityPotion.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"100"
+	"wave"			")items/clarity_potion.wav"
+}
+
+"DOTA_Item.HealingSalve.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"100"
+	"wave"			")items/healing_salve.wav"
+}
+
+"DOTA_Item.SmokeOfDeceit.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			"items/smoke_of_deceit.wav"
+}
+
+"DOTA_Item.Hand_Of_Midas"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.65"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100"
+	"wave"			")items/item_handofmidas.wav"
+}
+
+"DOTA_Item.DustOfAppearance.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			")items/dust_of_appearance.wav"
+}
+
+"DOTA_Item.SentryWard.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			")items/ward_activate.wav"
+}
+
+"DOTA_Item.ObserverWard.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			")items/ward_activate.wav"
+}
+
+"DOTA_Item.BlinkDagger.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\antimage\blink_out.wav"
+}
+
+
+"DOTA_Item.MagicStick.Activate" //local
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")items/magic_stick_activate.wav"
+}
+
+"DOTA_Item.MagicWand.Activate" //local
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")items/magic_stick_activate.wav"
+}
+
+"DOTA_Item.PhaseBoots.Activate" //local
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")items/phase_boots_activate.wav"
+}
+
+
+"DOTA_Item.Mekansm.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1.0"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"			")items/mek_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"DOTA_Item.Mekansm.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.5, 0.7"
+	"soundlevel"  	"SNDLVL_84dB"
+	"rndwave"
+	{
+		"wave"			"items/mek_target01.wav"
+		"wave"			"items/mek_target02.wav"
+		"wave"			"items/mek_target03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "8.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "DOTA_Item.Mekansm.Target"
+				"match_channel" "false"
+			}
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"DOTA_Item.Pipe.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/pipe.wav"
+}
+
+"DOTA_Item.Orchid.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items/orchid.wav"
+}
+
+"DOTA_Item.Cyclone.Activate" //target
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/dota_item_cyclone.wav"
+}
+
+"DOTA_Item.ForceStaff.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")items/force_staff.wav"
+}
+
+"DOTA_Item.Dagon.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_87dB"
+	"pitch"			"95, 105"
+	"wave"			")items/dagon.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+
+"DOTA_Item.Refresher.Activate" //local
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/refresher.wav"
+}
+
+"DOTA_Item.BlackKingBar.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_87dB"
+	"pitch"			"95, 105"
+	"wave"			")items\black_king_bar.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"DOTA_Item.ShivasGuard.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/shivas_guard.wav"
+}
+
+
+"DOTA_Item.BladeMail.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items\dota_item_blade_mail.wav"
+}
+
+"DOTA_Item.BladeMail.Deactivate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.75"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			"null.wav"
+}
+
+"DOTA_Item.DiffusalBlade.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items\item_diffusalblade.wav"
+}
+
+"DOTA_Item.Satanic.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items\item_satanic.wav"
+}
+
+"DOTA_Item.HotD.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100"
+	"wave"			"null.wav"
+}
+
+
+"DOTA_Item.Manta.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/manta.wav"
+}
+
+"DOTA_Item.Manta.End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			"null.wav"
+}
+
+"DOTA_Item.InvisibilitySword.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/weaver/shukuchi.wav"
+}
+
+"DOTA_Item.MaskOfMadness.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items/mask_of_madness.wav"
+}
+
+"DOTA_Item.SoulRing.Activate" //local
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items/soul_ring.wav"
+}
+
+"DOTA_Item.ArcaneBoots.Activate" //local team
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")items/dota_item_arcane_boots.wav"
+}
+
+"DOTA_Item.LinkensSphere.Activate"
+{
+	"channel"		"CHAN_STATIC"
+ 	"volume"			"1"
+ 	"soundlevel"  	 "SNDLVL_90dB"
+ 	"pitch"			"95,105" 
+ 	"wave"			")items/linkens_sphere.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"DOTA_Item.VeilofDiscord.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items\veil_of_discord.wav"
+}
+
+"DOTA_Item.UrnOfShadows.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/urn_of_shadows.wav"
+}
+
+"DOTA_Item.MedallionOfCourage.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items\medallion_of_courage.wav"
+}
+
+"DOTA_Item.AbyssalBlade.Activate"
+{
+	"channel"		"CHAN_STATIC"
+ 	"volume"		"1"
+ 	"soundlevel"  	 "SNDLVL_84dB"
+ 	"pitch"			"95, 105"
+  	"wave"			")items\abyssal_blade.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"DOTA_Item.HeavensHalberd.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items\heavens_halberd.wav"
+}
+
+"DOTA_Item.RodOfAtos.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items\rod_of_atos.wav"
+}
+
+"DOTA_Item.TranquilBoots.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items\healing_salve.wav"
+}
+
+"Item.Maelstrom.Chain_Lightning"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.85"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"rndwave"
+		{
+			"wave"	"items/item_mael_lightning_01.wav"
+			"wave"	"items/item_mael_lightning_02.wav"
+			"wave"	"items/item_mael_lightning_03.wav"
+			"wave"	"items/item_mael_lightning_04.wav"
+			"wave"	"items/item_mael_lightning_05.wav"
+		}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Item.Maelstrom.Chain_Lightning.Jump"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.75"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"		"items/item_mael_lightning_chain.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"DOTA_Item.ShadowAmulet.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.5"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"80"
+	"wave"			")weapons/hero/weaver/shukuchi.wav"
+}
+
+//
+
+"DOTA_Item.Buckler.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.9"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_buckler.wav"
+}
+
+"DOTA_Item.DoE.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_drum.wav"
+}
+
+"DOTA_Item.Mjollnir.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_mjoll_on.wav"
+}
+
+"DOTA_Item.Mjollnir.DeActivate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_mjoll_off.wav"
+}
+
+"DOTA_Item.Mjollnir.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100"
+	"wave"			")items/item_mjoll_loop.wav"
+}
+
+"DOTA_Item.Necronomicon.Activate"
+{
+ 	"channel"		"CHAN_STATIC"
+ 	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+ 	"pitch"			"95, 105"
+	"wave"			")items/item_necro_spawn.wav"
+}
+
+"DOTA_Item.Necronomicon.Deaths"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"items/item_necro_death_01.wav"
+		"wave"			"items/item_necro_death_02.wav"
+	}
+		"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"DOTA_Item.Necronomicon.Bow"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"items/item_necro_bow_01.wav"
+		"wave"			"items/item_necro_bow_02.wav"
+	}
+		"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"DOTA_Item.Armlet.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.9"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_armlet_activate.wav"
+}
+
+"DOTA_Item.Armlet.DeActivate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_armlet_deactivate.wav"
+}
+
+"DOTA_Item.Sheepstick.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"wave"			"null.wav"
+}
+
+"DOTA_Item.EtherealBlade.Activate"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_ghost_etherealblade.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"DOTA_Item.EtherealBlade.Target"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_ghost_etherealblade.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.15"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"DOTA_Item.GhostScepter.Activate" //local
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/item_ghost_sceptre.wav"
+}
+
+"DOTA_Item.Cheese.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"			")items/cheese.wav"
+}

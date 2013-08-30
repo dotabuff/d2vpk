@@ -1,0 +1,50 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/lycan/lycan_wolf_body_color"
+	"$normalmap" "models/heroes/lycan/lycan_wolf_body_normal"
+	"$detail1" "models/heroes/lycan/lycan_glow_pulse"
+	"$maskmap1" "models/heroes/lycan/lycan_wolf_body_masks1"
+	"$maskmap2" "models/heroes/lycan/lycan_wolf_body_masks2"
+	"$diffusewarp" "models/heroes/lycan/lycan_lightwarp"
+	//$SPECULARWARP "models/heroes/lycan/lycan_lightwarp"
+
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" .5
+
+	$SPECULAREXPONENT 25
+	$SPECULAR_BLOOM_SCALE .25
+	$SPECULARSCALE 10
+	$SPECULARCOLOR "[1 1 1]"
+	$NOCULL 1
+
+	$AMBIENTSCALE 1
+
+	$RIMLIGHTSCALE	.5
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$IgnoreBudgetCheck 1	
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE .5
+	$DETAIL1BLENDFACTOR 4
+	$alphatest 1
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.3"
+			"texturescrollangle"	"25"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

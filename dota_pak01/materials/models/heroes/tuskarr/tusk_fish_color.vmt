@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/tuskarr/tusk_fish_color"
+	"$normalmap" "models/heroes/tuskarr/tusk_fish_normal"
+
+//	"$maskmap1" "models/heroes/lanaya/lanaya_mask1"
+//	"$maskmap2" "models/heroes/lanaya/lanaya_mask2"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$alphatest"	"1"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 3
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+	$RIMLIGHTCOLOR "[1 .5 1]"
+
+	$RIMLIGHTSCALE 2
+	$AMBIENTSCALE 1
+
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

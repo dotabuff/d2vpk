@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/sand_king/SandKingtexture_temp"
+	"$normalmap" "models/development/flatnormal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/axe/masks1"
+	"$maskmap2" "models/heroes/axe/masks2"
+	
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 3
+	$SPECULARBLENDTOFULL 1
+	$SPECULARCOLOR "[1 .4 0]"
+
+	$RIMLIGHTSCALE 3
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

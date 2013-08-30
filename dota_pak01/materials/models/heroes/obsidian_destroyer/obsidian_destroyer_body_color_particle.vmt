@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/obsidian_destroyer/obsidian_body_color"
+	//$baseTexture "models/heroes/obsidian_destroyer/obsidian_rocks_color"
+	"$normalmap" "models/heroes/obsidian_destroyer/obsidian_body_normal"
+
+	"$maskmap1" "models/heroes/obsidian_destroyer/obsidian_body_masks1"
+	"$maskmap2" "models/heroes/obsidian_destroyer/obsidian_body_masks2"
+
+	//$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+	$SPECULAR_BLOOM_SCALE  0
+
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE .8
+	$SPECULARCOLOR "[1 .8 1]"
+
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULAREXPONENTBLENDTOFULL 1
+
+	$DIFFUSEWARPBLENDTOFUL .5
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$RIMLIGHTSCALE	1
+//	$RIMLIGHTCOLOR "[0 .25 1]"
+//	$RIMLIGHTBLENDTOFULL 1
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
+

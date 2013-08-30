@@ -1,0 +1,424 @@
+
+"Hero_Ancient_Apparition.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/ancient_apparition/attack1.wav"
+		"wave"	"weapons/hero/ancient_apparition/attack2.wav"
+		"wave"	"weapons/hero/ancient_apparition/attack3.wav"
+		"wave"	"weapons/hero/ancient_apparition/attack4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/ancient_apparition/attack_impact1.wav"
+		"wave"	"weapons/hero/ancient_apparition/attack_impact2.wav"
+		"wave"	"weapons/hero/ancient_apparition/attack_impact3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.ColdFeetCast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/ancient_apparition/cold_feet.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.ColdFeetTick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/ancient_apparition/cold_feet_tick.wav"
+		"wave"	")weapons/hero/ancient_apparition/cold_feet_tick2.wav"
+		"wave"	")weapons/hero/ancient_apparition/cold_feet_tick3.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.ColdFeetFreeze"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90"
+	"wave"			")weapons/hero/ancient_apparition/cold_feet.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.IceVortexCast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/ancient_apparition/ice_vortex_cast.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.IceVortex"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.25"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/ancient_apparition/ice_vortex_lp.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			
+			"source_info"
+			{
+				"source"   "emitter"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+			
+			"usat_stop_time"
+			{
+				"input2" "13.0"
+			}
+
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.ChillingTouchCast" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/ancient_apparition/chilling_touch_cast.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.IceBlast.Tracker" 
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/ancient_apparition/iceblast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_accumulate"
+			{
+				"input4" "1.0"
+				"input7" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.IceBlastRelease.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/ancient_apparition/iceblast_release.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.IceBlastRelease.Cast.Self"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/ancient_apparition/iceblast_release.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_accumulate"
+			{
+				"input4" "1.0"
+				"input7" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+// "Hero_Ancient_Apparition.IceBlast.Particle" 
+// {
+// 	"channel"		"CHAN_STATIC"
+// 	"volume"		"1"
+// 	"soundlevel"  	"SNDLVL_90dB"
+// 	"wave"			"weapons/hero/ancient_apparition/iceblast_travel.wav"
+// 	"operator_stacks"
+// 	{
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_default"
+// 			"source_info"
+// 			{
+// 				"source"   "emitter"
+// 			}
+// 			"mixer"
+// 			{
+// 				"mixgroup" "Weapons"
+// 			}
+// 			"speakers_spatialize"
+// 			{
+// 				"input_radius"  "150"
+// 			}
+// 		}
+// 	}
+// }
+
+
+"Hero_Ancient_Apparition.IceBlast.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/ancient_apparition/iceblast_explode.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "750"
+			}
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.IceBlastRelease.Tick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90,110"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/ancient_apparition/iceblast_tick01.wav"
+		"wave"	")weapons/hero/ancient_apparition/iceblast_tick02.wav"
+		"wave"	")weapons/hero/ancient_apparition/iceblast_tick03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.IdleLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"physics\movement\hero\ancient_apparition\idle_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.3"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Ancient_Apparition.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"physics\deaths\specials\ancientapp_death.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

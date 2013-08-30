@@ -1,0 +1,24 @@
+"SpriteCard"
+{
+	//$DUALSEQUENCE 0
+	//$MOD2X 1
+	$MAXLUMFRAMEBLEND1 1  //0
+	//$MAXLUMFRAMEBLEND2 0  //1
+	//$ZOOMANIMATESEQ2 1
+	//$STARTFADESIZE .5
+	//$ENDFADESIZE .8
+
+	"$basetexture" "particle\fluidExplosions\fluidexplosion"
+	// Set this if you always want "additive over" blending (ONE:INVSRCALPHA)
+	$ADDOVERBLEND 1
+	$SEQUENCE_BLEND_MODE 0 //2
+	$CROPFACTOR "[1 1]"
+	$OVERBRIGHTFACTOR 4.5
+	$ADDSELF 1
+	$DEPTHBLEND 1
+	$BLENDFRAMES 1
+	360?$BLENDFRAMES 0
+	360?$DEPTHBLEND 0
+	GPU<2?$BLENDFRAMES 0
+
+}

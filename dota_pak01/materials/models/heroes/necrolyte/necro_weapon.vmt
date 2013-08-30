@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/necrolyte/necro_weapon_color"
+	"$normalmap" "models/heroes/necrolyte/necro_weapon_normal"
+	$MASKMAP2 "models\heroes\necrolyte/necro_weapon_mask2"
+//	$MASKMAP1 "models\heroes\necrolyte/necro_weapon_mask1"
+	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+	$SPECULAREXPONENT 50
+	$SPECULARSCALE 16
+	$RIMLIGHTSCALE .5
+	$AMBIENTSCALE .5
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" "15"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
