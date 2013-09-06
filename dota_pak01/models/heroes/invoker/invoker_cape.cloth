@@ -1,33 +1,43 @@
-"ClothSystem"
+// file    : invoker_cape.cloth
+// author  : jameso
+// date    : 20 Aug 2013, 02:02PM
+// 
+// cloth data generated via TweakCloth (0.3.0) -- edit at your own risk!
+
+ClothSystem
 {
-	"Cloth"
-	{
-		"columns"		"7"
-		"rows"		"6"
-		"damping"		"8"
-		"gravity"		"0 0 -1"
-		"gravity_scale"		"75"
-		//"WorldFriction"		"0.350000"
-		//"LocalForce"		"1.00000"
-		//"LocalRotation"		"1.00000"
-		"FixedPointDamping"		"0.05"
-		"StretchForce"		"0.15"
-		"SpringStretchiness"		"0.01"
-		"AnimationForceAttraction"		"0.125"
-		"AnimationVertexAttraction"		"0.05"
-		//"ExternalForceScale"		"1.000000"
-		//"StructSpringConstant"		"20.00000"
-		//"StructSpringDamping"		"0.600000"
-		"ShearSpringConstant"		"20.00000"
-		"ShearSpringDamping"		"0.600000"
-		"BendSpringConstant"		"20.00000"
-		"BendSpringDamping"		"0.800000"
-		"R0"		"fixed"
-		"R1"		"3"
-		"R2"		"3"
-		"R3"		"3"
-		"R4"		"3"
-		"R5"		"3"
-		"BonePrefix"		"invoker_cape_"		
-	}
+    Cloth
+    {
+        AnimationForceAttraction         "0.2"
+        AnimationVertexAttraction        "0.08"
+        BendSpringConstant               "20.0"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "invoker_cape_"
+        columns                          "7"
+        Damping                          "4.0"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.15"
+        gravity                          "0 0 -1"
+        gravity_scale                    "250.0"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        R0                               "fixed"
+        R1                               "3.0"
+        R2                               "3.0"
+        R3                               "3.0"
+        R4                               "3.0"
+        R5                               "3.0"
+        rows                             "6"
+        ShearSpringConstant              "20.0"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.15"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
 }
+
+// eof

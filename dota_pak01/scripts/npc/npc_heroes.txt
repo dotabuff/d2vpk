@@ -14791,22 +14791,6 @@
 		// Additional data needed to render the out of game portrait
 		"RenderablePortrait"
 		{
-			"Particles"
-			{
-				"spirit_breaker_ambient_flame"
-				{
-					"0"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_attack1"
-					}
-					"1"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_head"
-					}
-				}	
-			}
 		}	
 		
 		// Items
@@ -20359,9 +20343,9 @@
 				"SlotName"	"weapon"
 				"SlotText"	"#LoadoutSlot_Weapon"
 				"TextureWidth"		"256"
-				"TextureHeight"		"128"
-				"MaxPolygonsLOD0"	"650"
-				"MaxPolygonsLOD1"	"400"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"450"
+				"MaxPolygonsLOD1"	"300"
 			}		
 			"1"	
 			{
@@ -20370,7 +20354,7 @@
 				"SlotText"	"#LoadoutSlot_Head"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"450"
+				"MaxPolygonsLOD0"	"550"
 				"MaxPolygonsLOD1"	"300"
 			}
 			"2"	
@@ -20380,8 +20364,8 @@
 				"SlotText"	"#LoadoutSlot_Back"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1000"
-				"MaxPolygonsLOD1"	"400"
+				"MaxPolygonsLOD0"	"600"
+				"MaxPolygonsLOD1"	"300"
 			}
 			"3"	
 			{
@@ -20390,8 +20374,8 @@
 				"SlotText"	"#LoadoutSlot_Shoulder"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"600"
-				"MaxPolygonsLOD1"	"350"
+				"MaxPolygonsLOD0"	"400"
+				"MaxPolygonsLOD1"	"250"
 			}
 			"4"	
 			{
@@ -20400,8 +20384,8 @@
 				"SlotText"	"#LoadoutSlot_Mount"
 				"TextureWidth"		"512"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"400"
-				"MaxPolygonsLOD1"	"300"
+				"MaxPolygonsLOD0"	"2850"
+				"MaxPolygonsLOD1"	"1650"
 			}						
 		}
 		"Bot"

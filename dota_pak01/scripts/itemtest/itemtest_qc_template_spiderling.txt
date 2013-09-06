@@ -17,7 +17,7 @@ $bodygroup "default"
 
 $sequence ref "<ITEMTEST_REPLACE_LOD0>"
 $sequence spiderling_spawn "<ITEMTEST_REPLACE_ANIM0>" ACT_DOTA_SPAWN 1
-$sequence spiderling_idle "<ITEMTEST_REPLACE_ANIM1>" loop ACT_DOTA_IDLE 3
+$sequence spiderling_idle "<ITEMTEST_REPLACE_ANIM1>" loop ACT_DOTA_IDLE 1
 <ITEMTEST_COMMENT_IF_ANIM10>$sequence spiderling_run "<ITEMTEST_REPLACE_ANIM2>" LX loop ACT_DOTA_RUN 1
 <ITEMTEST_COMMENT_IF_NO_ANIM10>$sequence spiderling_runx "<ITEMTEST_REPLACE_ANIM2>" LX loop addlayer "spiderling_turns" ACT_DOTA_RUN 1
 $sequence spiderling_attack "<ITEMTEST_REPLACE_ANIM3>" ACT_DOTA_ATTACK 1
@@ -25,7 +25,7 @@ $sequence spiderling_death "<ITEMTEST_REPLACE_ANIM4>" ACT_DOTA_DIE 1
 <ITEMTEST_COMMENT_IF_NO_ANIM13>$sequence spiderling_death2 "<ITEMTEST_REPLACE_ANIM13>" ACT_DOTA_DIE 1
 $sequence spiderling_stun "<ITEMTEST_REPLACE_ANIM5>" ACT_DOTA_DISABLED 1
 $sequence spiderling_flail "<ITEMTEST_REPLACE_ANIM6>" ACT_DOTA_FLAIL 1
-<ITEMTEST_COMMENT_IF_NO_ANIM7>$sequence spiderling_idle_alt "<ITEMTEST_REPLACE_ANIM7>" ACT_DOTA_IDLE 1
+<ITEMTEST_COMMENT_IF_NO_ANIM7>$sequence spiderling_idle_alt "<ITEMTEST_REPLACE_ANIM7>" ACT_DOTA_IDLE_RARE 1
 
 <ITEMTEST_COMMENT_IF_ANIM8>$sequence portrait_idle "<ITEMTEST_REPLACE_ANIM1>" ACT_DOTA_CAPTURE 3
 <ITEMTEST_COMMENT_IF_NO_ANIM8>$sequence portrait_idle "<ITEMTEST_REPLACE_ANIM8>" ACT_DOTA_CAPTURE 3

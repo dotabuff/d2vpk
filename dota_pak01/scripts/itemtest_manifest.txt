@@ -6,6 +6,38 @@
 
 	"classes"
 	{
+		"abaddon"				
+		{
+			"heroID"		"102"
+			"tag"			"Abaddon"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"sword_1"
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"abaddon_blade"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/models/heroes/abaddon/abaddon_sword_default.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
+		}
 		"alchemist"				
 		{
 			"heroID"		"73"
@@ -746,6 +778,7 @@
 
 		"classes"
 		{
+			"abaddon"                "materials/models/heroes/abaddon/abaddon_body.vmt"
 			"alchemist"                "materials/models/heroes/alchemist/alchemist_body_color.vmt"
 			"antimage"                 "materials/models/heroes/antimage/antimage.vmt"
 			"axe"                      "materials/models/heroes/axe/axe_body_color.vmt"

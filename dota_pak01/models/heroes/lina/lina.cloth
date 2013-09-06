@@ -1,31 +1,39 @@
-"ClothSystem"
+// file    : lina.cloth
+// author  : jameso
+// date    : 19 Aug 2013, 12:29PM
+// 
+// cloth data generated via TweakCloth (0.3.0) -- edit at your own risk!
+
+ClothSystem
 {
-	"Cloth"
-	{
-		"columns"	"4"
-		"rows"		"4"
-		"damping"		"3"
-		"gravity"		"0 0 -1"
-		"gravity_scale"		"50.000000"
-		"WorldFriction"		"0.350000"
-		//"LocalForce"		".000000"
-		"LocalRotation"		"1.000000"
-		"FixedPointDamping"		"0.9"
-		//"StretchForce"		"1.000000"
-		"SpringStretchiness"		"0.000000"
-		"AnimationForceAttraction"		"0.300"		// 0.0500
-		//"AnimationVertexAttraction"		"0.800"		// 0.0000
-		//"ExternalForceScale"		".100000"
-		"StructSpringConstant"		"40.000000"
-		"StructSpringDamping"		"0.0"
-		//"ShearSpringConstant"		"20.000000"
-		//"ShearSpringDamping"		"0.500000"
-		//"BendSpringConstant"		"40.400000"
-		//"BendSpringDamping"		"0.250000"
-		"R0"		"fixed"
-		"R1"		"1"
-		"R2"		"1"
-		"R2"		"1"
-		"BonePrefix"		"dress_"		
-	}
+    Cloth
+    {
+        AnimationForceAttraction         "0.75"
+        AnimationVertexAttraction        "0.1"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "dress_"
+        columns                          "4"
+        Damping                          "40.0"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.4"
+        gravity                          "0 0 -1"
+        gravity_scale                    "120.0"
+        LocalForce                       "0.0"
+        LocalRotation                    "0.0"
+        R0                               "fixed"
+        R1                               "1.0"
+        R2                               "1.0"
+        R3                               "1.0"
+        rows                             "4"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "40.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.1"
+    }
 }
+
+// eof

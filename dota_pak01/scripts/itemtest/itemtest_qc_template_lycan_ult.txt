@@ -17,7 +17,7 @@ $bodygroup "default"
 
 $sequence ref "<ITEMTEST_REPLACE_LOD0>"
 $sequence lycan_wolf_spawn "<ITEMTEST_REPLACE_ANIM_spawn>" ACT_DOTA_SPAWN 1
-$sequence lycan_wolf_idle "<ITEMTEST_REPLACE_ANIM_Idle>" loop ACT_DOTA_IDLE 3
+$sequence lycan_wolf_idle "<ITEMTEST_REPLACE_ANIM_Idle>" loop ACT_DOTA_IDLE 1
 <ITEMTEST_COMMENT_IF_ANIM_TurnPoseCenter>$sequence lycan_wolf_run "<ITEMTEST_REPLACE_ANIM_Run>" LX loop ACT_DOTA_RUN 1
 <ITEMTEST_COMMENT_IF_NO_ANIM_TurnPoseCenter>$sequence lycan_wolf_runx "<ITEMTEST_REPLACE_ANIM_Run>" LX loop addlayer "lycan_wolf_turns" ACT_DOTA_RUN 1
 $sequence lycan_wolf_attack "<ITEMTEST_REPLACE_ANIM_Attack>" ACT_DOTA_ATTACK 1
@@ -25,7 +25,7 @@ $sequence lycan_wolf_death "<ITEMTEST_REPLACE_ANIM_Die>" ACT_DOTA_DIE 1
 <ITEMTEST_COMMENT_IF_NO_ANIM_Die2>$sequence lycan_wolf_death2 "<ITEMTEST_REPLACE_ANIM_Die2>" ACT_DOTA_DIE 1
 $sequence lycan_wolf_stun "<ITEMTEST_REPLACE_ANIM_Disabled>" ACT_DOTA_DISABLED 1
 $sequence lycan_wolf_flail "<ITEMTEST_REPLACE_ANIM_Flail>" ACT_DOTA_FLAIL 1
-<ITEMTEST_COMMENT_IF_NO_ANIM_IdleRare>$sequence lycan_wolf_idle_alt "<ITEMTEST_REPLACE_ANIM_IdleRare>" ACT_DOTA_IDLE 1
+<ITEMTEST_COMMENT_IF_NO_ANIM_IdleRare>$sequence lycan_wolf_idle_alt "<ITEMTEST_REPLACE_ANIM_IdleRare>" ACT_DOTA_IDLE_RARE 1
 
 $sequence lycan_wolf_cast1_summonWolves "<ITEMTEST_REPLACE_ANIM_Ability1>" ACT_DOTA_CAST_ABILITY_1 1
 $sequence lycan_wolf_cast2_howl "<ITEMTEST_REPLACE_ANIM_Ability2>" ACT_DOTA_CAST_ABILITY_2 1
