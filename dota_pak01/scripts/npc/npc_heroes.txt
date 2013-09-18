@@ -16819,47 +16819,6 @@
 		// Additional data needed to render the out of game portrait
 		"RenderablePortrait"
 		{
-			"Particles"
-			{
-				"chaos_knight_ambient"
-				{
-					"0"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_horse_eye_r"
-					}
-					"1"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_horse_eye_l"
-					}
-					"2"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_human_eye_r"
-					}
-					"3"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_human_eye_l"
-					}
-					"4"
-					{
-						"type"		"follow_origin"
-						"location"	"attach_hitloc"  //Note : shouldn't need this
-					}
-					"5"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_attack1"
-					}
-					"7"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_tail"
-					}
-				}	
-			}
 		}
 
 		// Items
