@@ -5083,7 +5083,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I never really interested in fire, I don’t know why.
+I was never really interested in fire, I don’t know why.
 }
 WORDS
 {
@@ -5091,9 +5091,15 @@ WORD I 0.192 0.240
 {
 593 ay 0.192 0.240 1
 }
-WORD never 0.240 0.816
+WORD was 0.288 0.448
 {
-110 n 0.240 0.704 1
+119 w 0.288 0.320 1
+601 ax 0.320 0.368 1
+122 z 0.368 0.448 1
+}
+WORD never 0.448 0.816
+{
+110 n 0.448 0.704 1
 603 eh 0.704 0.784 1
 118 v 0.784 0.800 1
 602 er 0.800 0.816 1

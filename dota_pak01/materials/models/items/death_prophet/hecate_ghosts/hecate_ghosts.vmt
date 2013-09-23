@@ -1,0 +1,21 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/death_prophet/hecate_ghosts/hecate_ghosts_color"
+	"$normalmap" "models/development/flatnormal"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	
+	"$ADDITIVE" "1"
+	
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$basetexturetransform"
+			"texturescrollrate"		"0"
+			"texturescrollangle"		"93"
+		}
+	}
+}

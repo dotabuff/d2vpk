@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	$baseTexture "models/items/wards/portal_ward/portal_ward_color"
+
+	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/items/wards/portal_ward/portal_ward_masks1"
+	"$maskmap2" "models/items/wards/portal_ward/portal_ward_masks2"
+
+
+	$SPECULAREXPONENT 24
+	$SPECULARSCALE 2
+	$SPECULARCOLOR "1 1 1"
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$RIMLIGHTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE	2
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

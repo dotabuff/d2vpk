@@ -2,8 +2,7 @@ criterion "Isstormspirit" "classname" "npc_dota_hero_storm_spirit" weight 5 requ
 criterion "IsEnemystormspirit" "targetclassname" "npc_dota_hero_storm_spirit" weight 5 required
 criterion "IsAllystormspirit" "nearby_ally" "npc_dota_hero_storm_spirit" weight 5 required
 criterion "IsStaticRemnant" "abilityname" "storm_spirit_static_remnant" weight 5 required
-criterion "IsOverloadPop" "overloadpop" "1" weight 5 required
-criterion "IsBallLightningStart" "balllightning" "start" weight 5 required
+criterion "IsBallLightningSpell" "abilityname" "storm_spirit_ball_lightning" weight 5 required
 criterion "IsBallLightningEnd" "balllightning" "end" weight 5 required
 
 Response stormspirit_Spawn
@@ -40,6 +39,7 @@ Response stormspirit_Move
 	scene "scenes/stormspirit/stormspirit_ss_laugh_02.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_laugh_03.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_acknow_01.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_acknow_04.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_acknow_05.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_acknow_06.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_acknow_07.vcd" nodelay noscene 
@@ -51,138 +51,17 @@ Rule stormspirit_Move_Rule
 	response stormspirit_Move
 }
 
-Response stormspirit_CustomIsGameStart
+Response stormspirit_KillIsBallLightningSpellChance_10%
 {
-	scene "scenes/stormspirit/stormspirit_ss_move_11.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_stormspirit_battlebegins_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_stormspirit_battlebegins_02.vcd" nodelay noscene 
-}
-
-Rule stormspirit_CustomIsGameStart_Rule
-{
-	criteria Custom Isstormspirit IsGameStart
-	response stormspirit_CustomIsGameStart
-}
-
-Response stormspirit_CustomIsBallLightningStart
-{
+	scene "scenes/stormspirit/stormspirit_ss_move_05.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_02.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_03.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_14.vcd" nodelay noscene 
 }
 
-Rule stormspirit_CustomIsBallLightningStart_Rule
+Rule stormspirit_KillIsBallLightningSpellChance_10%_Rule
 {
-	criteria Custom Isstormspirit IsBallLightningStart
-	response stormspirit_CustomIsBallLightningStart
-}
-
-Response stormspirit_CustomIsBallLightningEnd
-{
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_04.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_05.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_06.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_07.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_08.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_09.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_10.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_20.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_21.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_23.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_24.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_25.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_26.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_29.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_30.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_32.vcd" nodelay noscene 
-}
-
-Rule stormspirit_CustomIsBallLightningEnd_Rule
-{
-	criteria Custom Isstormspirit IsBallLightningEnd
-	response stormspirit_CustomIsBallLightningEnd
-}
-
-Response stormspirit_CustomIsStaticRemnant
-{
-	scene "scenes/stormspirit/stormspirit_ss_ability_static_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_static_02.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_static_03.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_static_04.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_static_05.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_ability_static_06.vcd" nodelay noscene 
-}
-
-Rule stormspirit_CustomIsStaticRemnant_Rule
-{
-	criteria Custom Isstormspirit IsStaticRemnant
-	response stormspirit_CustomIsStaticRemnant
-}
-
-Response stormspirit_Attack
-{
-	scene "scenes/stormspirit/stormspirit_ss_attack_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_02.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_03.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_04.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_05.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_06.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_07.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_08.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_09.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_attack_10.vcd" nodelay noscene 
-}
-
-Rule stormspirit_Attack_Rule
-{
-	criteria Attack Isstormspirit 
-	response stormspirit_Attack
-}
-
-Response stormspirit_CastOrder
-{
-	scene "scenes/stormspirit/stormspirit_ss_cast_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_cast_02.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_cast_03.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_cast_04.vcd" nodelay noscene 
-}
-
-Rule stormspirit_CastOrder_Rule
-{
-	criteria CastOrder Isstormspirit 
-	response stormspirit_CastOrder
-}
-
-Response stormspirit_Death
-{
-	scene "scenes/stormspirit/stormspirit_ss_death_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_death_02.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_death_03.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_death_04.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_death_05.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_death_06.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_death_07.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_death_08.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_death_09.vcd" nodelay noscene 
-}
-
-Rule stormspirit_Death_Rule
-{
-	criteria Death Isstormspirit 
-	response stormspirit_Death
-}
-
-Response stormspirit_DeathIsReincarnating
-{
-	scene "scenes/stormspirit/stormspirit_ss_lasthit_06.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_stormspirit_fastres_01.vcd" nodelay noscene 
-}
-
-Rule stormspirit_DeathIsReincarnating_Rule
-{
-	criteria Death Isstormspirit IsReincarnating
-	response stormspirit_DeathIsReincarnating
+	criteria Kill Isstormspirit IsBallLightningSpell Chance_10%
+	response stormspirit_KillIsBallLightningSpellChance_10%
 }
 
 Response stormspirit_Kill
@@ -396,6 +275,132 @@ Rule stormspirit_KillIsFirstBlood_Rule
 	response stormspirit_KillIsFirstBlood
 }
 
+Response stormspirit_CustomIsGameStart
+{
+	scene "scenes/stormspirit/stormspirit_ss_move_11.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_stormspirit_battlebegins_01.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_stormspirit_battlebegins_02.vcd" nodelay noscene 
+}
+
+Rule stormspirit_CustomIsGameStart_Rule
+{
+	criteria Custom Isstormspirit IsGameStart
+	response stormspirit_CustomIsGameStart
+}
+
+Response stormspirit_CustomIsBallLightningEnd
+{
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_04.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_05.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_06.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_07.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_08.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_09.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_10.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_13.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_14.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_18.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_20.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_21.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_23.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_24.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_25.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_26.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_27.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_28.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_29.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_30.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_31.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_lightning_32.vcd" nodelay noscene 
+}
+
+Rule stormspirit_CustomIsBallLightningEnd_Rule
+{
+	criteria Custom Isstormspirit IsBallLightningEnd
+	response stormspirit_CustomIsBallLightningEnd
+}
+
+Response stormspirit_CustomIsStaticRemnantChance_50%
+{
+	scene "scenes/stormspirit/stormspirit_ss_ability_static_01.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_static_02.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_static_03.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_static_04.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_static_05.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_ability_static_06.vcd" nodelay noscene 
+}
+
+Rule stormspirit_CustomIsStaticRemnantChance_50%_Rule
+{
+	criteria Custom Isstormspirit IsStaticRemnant Chance_50%
+	response stormspirit_CustomIsStaticRemnantChance_50%
+}
+
+Response stormspirit_Attack
+{
+	scene "scenes/stormspirit/stormspirit_ss_attack_01.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_02.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_03.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_04.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_05.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_06.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_07.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_08.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_09.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_attack_10.vcd" nodelay noscene 
+}
+
+Rule stormspirit_Attack_Rule
+{
+	criteria Attack Isstormspirit 
+	response stormspirit_Attack
+}
+
+Response stormspirit_CastOrder
+{
+	scene "scenes/stormspirit/stormspirit_ss_cast_01.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_cast_02.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_cast_03.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_cast_04.vcd" nodelay noscene 
+}
+
+Rule stormspirit_CastOrder_Rule
+{
+	criteria CastOrder Isstormspirit 
+	response stormspirit_CastOrder
+}
+
+Response stormspirit_Death
+{
+	scene "scenes/stormspirit/stormspirit_ss_death_01.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_death_02.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_death_03.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_death_04.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_death_05.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_death_06.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_death_07.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_death_08.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_death_09.vcd" nodelay noscene 
+}
+
+Rule stormspirit_Death_Rule
+{
+	criteria Death Isstormspirit 
+	response stormspirit_Death
+}
+
+Response stormspirit_DeathIsReincarnating
+{
+	scene "scenes/stormspirit/stormspirit_ss_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_stormspirit_fastres_01.vcd" nodelay noscene 
+}
+
+Rule stormspirit_DeathIsReincarnating_Rule
+{
+	criteria Death Isstormspirit IsReincarnating
+	response stormspirit_DeathIsReincarnating
+}
+
 Response stormspirit_Respawn
 {
 	scene "scenes/stormspirit/stormspirit_ss_respawn_01.vcd" nodelay noscene 
@@ -530,18 +535,6 @@ Rule stormspirit_PurchaseIsBlinkDagger_Rule
 	response stormspirit_PurchaseIsBlinkDagger
 }
 
-Response stormspirit_Immortality
-{
-	scene "scenes/stormspirit/stormspirit_ss_immort_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_immort_03.vcd" nodelay noscene 
-}
-
-Rule stormspirit_Immortality_Rule
-{
-	criteria Immortality Isstormspirit 
-	response stormspirit_Immortality
-}
-
 Response stormspirit_Deny
 {
 	scene "scenes/stormspirit/stormspirit_ss_deny_01.vcd" nodelay noscene 
@@ -629,13 +622,23 @@ Response stormspirit_Defeat
 	scene "scenes/stormspirit/stormspirit_ss_lose_01.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_lose_02.vcd" nodelay noscene 
 	scene "scenes/stormspirit/stormspirit_ss_lose_03.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_lose_04.vcd" nodelay noscene 
 }
 
 Rule stormspirit_Defeat_Rule
 {
 	criteria Defeat Isstormspirit 
 	response stormspirit_Defeat
+}
+
+Response stormspirit_DefeatChance_10%
+{
+	scene "scenes/stormspirit/stormspirit_ss_lose_04.vcd" nodelay noscene 
+}
+
+Rule stormspirit_DefeatChance_10%_Rule
+{
+	criteria Defeat Isstormspirit Chance_10%
+	response stormspirit_DefeatChance_10%
 }
 
 Response stormspirit_Victory
@@ -669,6 +672,18 @@ Rule stormspirit_Bottling_Rule
 	response stormspirit_Bottling
 }
 
+Response stormspirit_Immortality
+{
+	scene "scenes/stormspirit/stormspirit_ss_immort_01.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_immort_03.vcd" nodelay noscene 
+}
+
+Rule stormspirit_Immortality_Rule
+{
+	criteria Immortality Isstormspirit 
+	response stormspirit_Immortality
+}
+
 Response stormspirit_PowerupIsPowerupHaste
 {
 	scene "scenes/stormspirit/stormspirit_ss_haste_01.vcd" nodelay noscene 
@@ -683,13 +698,23 @@ Rule stormspirit_PowerupIsPowerupHaste_Rule
 Response stormspirit_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/stormspirit/stormspirit_ss_doubdam_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_doubdam_02.vcd" nodelay noscene 
 }
 
 Rule stormspirit_PowerupIsPowerupDoubleDamage_Rule
 {
 	criteria Powerup Isstormspirit IsPowerupDoubleDamage
 	response stormspirit_PowerupIsPowerupDoubleDamage
+}
+
+Response stormspirit_PowerupIsPowerupDoubleDamageChance_25%
+{
+	scene "scenes/stormspirit/stormspirit_ss_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule stormspirit_PowerupIsPowerupDoubleDamageChance_25%_Rule
+{
+	criteria Powerup Isstormspirit IsPowerupDoubleDamage Chance_25%
+	response stormspirit_PowerupIsPowerupDoubleDamageChance_25%
 }
 
 Response stormspirit_PowerupIsPowerupRegeneration
@@ -782,6 +807,17 @@ Rule stormspirit_Pain_Rule
 {
 	criteria Pain Isstormspirit 
 	response stormspirit_Pain
+}
+
+Response stormspirit_PainChance_25%
+{
+	scene "scenes/stormspirit/stormspirit_stormspirit_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule stormspirit_PainChance_25%_Rule
+{
+	criteria Pain Isstormspirit Chance_25%
+	response stormspirit_PainChance_25%
 }
 
 Response stormspirit_CooldownMediumNag
@@ -882,21 +918,6 @@ Rule stormspirit_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isstormspirit IsEmoteLaugh
 	response stormspirit_EmoteIsEmoteLaugh
-}
-
-Response stormspirit_EmoteIsEmoteAnger
-{
-	scene "scenes/stormspirit/stormspirit_ss_anger_01.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_anger_02.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_anger_03.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_anger_04.vcd" nodelay noscene 
-	scene "scenes/stormspirit/stormspirit_ss_anger_05.vcd" nodelay noscene 
-}
-
-Rule stormspirit_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isstormspirit IsEmoteAnger
-	response stormspirit_EmoteIsEmoteAnger
 }
 
 Response stormspirit_Thanks

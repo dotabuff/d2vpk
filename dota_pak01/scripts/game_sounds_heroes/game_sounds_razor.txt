@@ -100,8 +100,8 @@
 "Hero_razor.lightning"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.5"
-	"soundlevel"  	"SNDLVL_78dB"
+	"volume"		"0.6, 0.9"
+	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"95,105"
 
 	"rndwave"
@@ -122,13 +122,13 @@
 }
 
 
-"Hero_razor.storm"
+"Hero_Razor.Storm.Cast"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.4"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
-	"wave"			")weapons/hero/razor/razor_storm_loop.wav"
+	"wave"			")weapons/hero/razor/storm_cast.wav"
 	
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -138,11 +138,42 @@
 			"import_stack" "dota_update_default"
 			"mixer"
 			{
-				"mixgroup" "Weapons"
+				"mixgroup" "Ultimates"
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "500"
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Razor.Storm.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			")weapons/hero/razor/storm_loop.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_fade_in"
+			{
+				"input_Max" "1.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
 			}
 		}
 	}
@@ -151,8 +182,8 @@
 "Hero_Razor.StormEnd"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
-	"soundlevel"  	"SNDLVL_81dB"
+	"volume"		"0.3"
+	"soundlevel"  	"SNDLVL_75dB"
 	"wave"			")weapons/hero/razor/razor_storm_loop_end.wav"
 	"operator_stacks"
 	{

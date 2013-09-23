@@ -27,45 +27,34 @@ Rule slardar_CustomIsGameStart_Rule
 	response slardar_CustomIsGameStart
 }
 
-Response slardar_CustomIsAmpDamageIsInvisible
+Response slardar_CustomIsAmpDamageChance_15%
 {
-	scene "scenes/slardar/slardar_slar_ability_ampdam_04.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/slardar/slardar_slar_ability_ampdam_05.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/slardar/slardar_slar_ability_ampdam_06.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/slardar/slardar_slar_ability_ampdam_07.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/slardar/slardar_slar_ability_ampdam_08.vcd" nodelay noscene respeakdelay 15
+	scene "scenes/slardar/slardar_slar_ability_ampdam_01.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/slardar/slardar_slar_ability_ampdam_04.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/slardar/slardar_slar_ability_ampdam_06.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/slardar/slardar_slar_ability_ampdam_07.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/slardar/slardar_slar_ability_ampdam_08.vcd" nodelay noscene respeakdelay 30
 }
 
-Rule slardar_CustomIsAmpDamageIsInvisible_Rule
+Rule slardar_CustomIsAmpDamageChance_15%_Rule
 {
-	criteria Custom Isslardar IsAmpDamage IsInvisible
-	response slardar_CustomIsAmpDamageIsInvisible
+	criteria Custom Isslardar IsAmpDamage Chance_15%
+	response slardar_CustomIsAmpDamageChance_15%
 }
 
-Response slardar_CustomIsAmpDamageIsEnemyRiki
+Response slardar_CustomIsAmpDamageIsEnemyRikiChance_30%
 {
-	scene "scenes/slardar/slardar_slar_ability_ampdam_09.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/slardar/slardar_slar_ability_ampdam_10.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/slardar/slardar_slar_ability_ampdam_11.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/slardar/slardar_slar_ability_ampdam_13.vcd" nodelay noscene respeakdelay 15
+	scene "scenes/slardar/slardar_slar_ability_ampdam_09.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/slardar/slardar_slar_ability_ampdam_10.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/slardar/slardar_slar_ability_ampdam_11.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/slardar/slardar_slar_ability_ampdam_12.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/slardar/slardar_slar_ability_ampdam_13.vcd" nodelay noscene respeakdelay 30
 }
 
-Rule slardar_CustomIsAmpDamageIsEnemyRiki_Rule
+Rule slardar_CustomIsAmpDamageIsEnemyRikiChance_30%_Rule
 {
-	criteria Custom Isslardar IsAmpDamage IsEnemyRiki
-	response slardar_CustomIsAmpDamageIsEnemyRiki
-}
-
-Response slardar_CustomIsAmpDamageIsEnemyRikiIsInvisible
-{
-	scene "scenes/slardar/slardar_slar_ability_ampdam_12.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/slardar/slardar_slar_ability_ampdam_14.vcd" nodelay noscene respeakdelay 15
-}
-
-Rule slardar_CustomIsAmpDamageIsEnemyRikiIsInvisible_Rule
-{
-	criteria Custom Isslardar IsAmpDamage IsEnemyRiki IsInvisible
-	response slardar_CustomIsAmpDamageIsEnemyRikiIsInvisible
+	criteria Custom Isslardar IsAmpDamage IsEnemyRiki Chance_30%
+	response slardar_CustomIsAmpDamageIsEnemyRikiChance_30%
 }
 
 Response slardar_Move
@@ -92,6 +81,94 @@ Rule slardar_Move_Rule
 {
 	criteria Move Isslardar 
 	response slardar_Move
+}
+
+Response slardar_PowerupIsPowerupHasteChance_25%
+{
+	scene "scenes/slardar/slardar_slar_move_09.vcd" nodelay noscene 
+}
+
+Rule slardar_PowerupIsPowerupHasteChance_25%_Rule
+{
+	criteria Powerup Isslardar IsPowerupHaste Chance_25%
+	response slardar_PowerupIsPowerupHasteChance_25%
+}
+
+Response slardar_PowerupIsPowerupHaste
+{
+	scene "scenes/slardar/slardar_slar_haste_01.vcd" nodelay noscene 
+}
+
+Rule slardar_PowerupIsPowerupHaste_Rule
+{
+	criteria Powerup Isslardar IsPowerupHaste
+	response slardar_PowerupIsPowerupHaste
+}
+
+Response slardar_PowerupIsPowerupDoubleDamage
+{
+	scene "scenes/slardar/slardar_slar_doubdam_01.vcd" nodelay noscene 
+}
+
+Rule slardar_PowerupIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Isslardar IsPowerupDoubleDamage
+	response slardar_PowerupIsPowerupDoubleDamage
+}
+
+Response slardar_PowerupIsPowerupDoubleDamageChance_25%
+{
+	scene "scenes/slardar/slardar_slar_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule slardar_PowerupIsPowerupDoubleDamageChance_25%_Rule
+{
+	criteria Powerup Isslardar IsPowerupDoubleDamage Chance_25%
+	response slardar_PowerupIsPowerupDoubleDamageChance_25%
+}
+
+Response slardar_PowerupIsPowerupRegeneration
+{
+	scene "scenes/slardar/slardar_slar_regen_01.vcd" nodelay noscene 
+}
+
+Rule slardar_PowerupIsPowerupRegeneration_Rule
+{
+	criteria Powerup Isslardar IsPowerupRegeneration
+	response slardar_PowerupIsPowerupRegeneration
+}
+
+Response slardar_PowerupIsPowerupIllusion
+{
+	scene "scenes/slardar/slardar_slar_illus_01.vcd" nodelay noscene 
+}
+
+Rule slardar_PowerupIsPowerupIllusion_Rule
+{
+	criteria Powerup Isslardar IsPowerupIllusion
+	response slardar_PowerupIsPowerupIllusion
+}
+
+Response slardar_Powerup
+{
+	scene "scenes/slardar/slardar_slar_illus_02.vcd" nodelay noscene 
+}
+
+Rule slardar_Powerup_Rule
+{
+	criteria Powerup Isslardar 
+	response slardar_Powerup
+}
+
+Response slardar_PowerupIsPowerupInvisibility
+{
+	scene "scenes/slardar/slardar_slar_invis_01.vcd" nodelay noscene 
+}
+
+Rule slardar_PowerupIsPowerupInvisibility_Rule
+{
+	criteria Powerup Isslardar IsPowerupInvisibility
+	response slardar_PowerupIsPowerupInvisibility
 }
 
 Response slardar_Attack
@@ -133,6 +210,7 @@ Response slardar_Kill
 	scene "scenes/slardar/slardar_slar_longdistance_02.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_kill_01.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_kill_02.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_kill_03.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_kill_05.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_kill_07.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_kill_08.vcd" nodelay noscene 
@@ -167,11 +245,13 @@ Rule slardar_KillIsFirstBlood_Rule
 
 Response slardar_LevelUp
 {
+	scene "scenes/slardar/slardar_slar_level_01.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_level_02.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_level_03.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_level_05.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_level_06.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_level_07.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_kill_11.vcd" nodelay noscene 
 }
 
 Rule slardar_LevelUp_Rule
@@ -289,7 +369,7 @@ Response slardar_PurchaseIsBlinkDagger
 {
 	scene "scenes/slardar/slardar_slar_blink_01.vcd" nodelay noscene speakonce
 	scene "scenes/slardar/slardar_slar_blink_02.vcd" nodelay noscene speakonce
-	scene "scenes/slardar/slardar_slar_blink_03.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_blink_03.vcd" nodelay noscene speakonce
 }
 
 Rule slardar_PurchaseIsBlinkDagger_Rule
@@ -312,7 +392,7 @@ Rule slardar_PurchaseIsUltimateScepter_Rule
 
 Response slardar_PurchaseIsDivineRapier
 {
-	scene "scenes/slardar/slardar_slar_divine_01.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_divine_01.vcd" nodelay noscene speakonce
 }
 
 Rule slardar_PurchaseIsDivineRapier_Rule
@@ -323,8 +403,8 @@ Rule slardar_PurchaseIsDivineRapier_Rule
 
 Response slardar_PurchaseIsArmlet
 {
-	scene "scenes/slardar/slardar_slar_armlet_01.vcd" nodelay noscene 
-	scene "scenes/slardar/slardar_slar_armlet_03.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_armlet_01.vcd" nodelay noscene speakonce
+	scene "scenes/slardar/slardar_slar_armlet_03.vcd" nodelay noscene speakonce
 }
 
 Rule slardar_PurchaseIsArmlet_Rule
@@ -344,36 +424,6 @@ Rule slardar_Bottling_Rule
 {
 	criteria Bottling Isslardar 
 	response slardar_Bottling
-}
-
-Response slardar_MissingIsLaneTop
-{
-}
-
-Rule slardar_MissingIsLaneTop_Rule
-{
-	criteria Missing Isslardar IsLaneTop
-	response slardar_MissingIsLaneTop
-}
-
-Response slardar_MissingIsLaneMid
-{
-}
-
-Rule slardar_MissingIsLaneMid_Rule
-{
-	criteria Missing Isslardar IsLaneMid
-	response slardar_MissingIsLaneMid
-}
-
-Response slardar_MissingIsLaneBot
-{
-}
-
-Rule slardar_MissingIsLaneBot_Rule
-{
-	criteria Missing Isslardar IsLaneBot
-	response slardar_MissingIsLaneBot
 }
 
 Response slardar_Deny
@@ -442,83 +492,6 @@ Rule slardar_ImmortalityChance_25%_Rule
 	response slardar_ImmortalityChance_25%
 }
 
-Response slardar_PowerupIsPowerupHaste
-{
-	scene "scenes/slardar/slardar_slar_haste_01.vcd" nodelay noscene 
-}
-
-Rule slardar_PowerupIsPowerupHaste_Rule
-{
-	criteria Powerup Isslardar IsPowerupHaste
-	response slardar_PowerupIsPowerupHaste
-}
-
-Response slardar_PowerupIsPowerupDoubleDamage
-{
-	scene "scenes/slardar/slardar_slar_doubdam_01.vcd" nodelay noscene 
-}
-
-Rule slardar_PowerupIsPowerupDoubleDamage_Rule
-{
-	criteria Powerup Isslardar IsPowerupDoubleDamage
-	response slardar_PowerupIsPowerupDoubleDamage
-}
-
-Response slardar_PowerupIsPowerupDoubleDamageChance_25%
-{
-	scene "scenes/slardar/slardar_slar_doubdam_02.vcd" nodelay noscene 
-}
-
-Rule slardar_PowerupIsPowerupDoubleDamageChance_25%_Rule
-{
-	criteria Powerup Isslardar IsPowerupDoubleDamage Chance_25%
-	response slardar_PowerupIsPowerupDoubleDamageChance_25%
-}
-
-Response slardar_PowerupIsPowerupRegeneration
-{
-	scene "scenes/slardar/slardar_slar_regen_01.vcd" nodelay noscene 
-}
-
-Rule slardar_PowerupIsPowerupRegeneration_Rule
-{
-	criteria Powerup Isslardar IsPowerupRegeneration
-	response slardar_PowerupIsPowerupRegeneration
-}
-
-Response slardar_PowerupIsPowerupIllusion
-{
-	scene "scenes/slardar/slardar_slar_illus_01.vcd" nodelay noscene 
-}
-
-Rule slardar_PowerupIsPowerupIllusion_Rule
-{
-	criteria Powerup Isslardar IsPowerupIllusion
-	response slardar_PowerupIsPowerupIllusion
-}
-
-Response slardar_Powerup
-{
-	scene "scenes/slardar/slardar_slar_illus_02.vcd" nodelay noscene 
-}
-
-Rule slardar_Powerup_Rule
-{
-	criteria Powerup Isslardar 
-	response slardar_Powerup
-}
-
-Response slardar_PowerupIsPowerupInvisibility
-{
-	scene "scenes/slardar/slardar_slar_invis_01.vcd" nodelay noscene 
-}
-
-Rule slardar_PowerupIsPowerupInvisibility_Rule
-{
-	criteria Powerup Isslardar IsPowerupInvisibility
-	response slardar_PowerupIsPowerupInvisibility
-}
-
 Response slardar_CooldownLittleNag
 {
 	scene "scenes/slardar/slardar_slar_notyet_01.vcd" nodelay noscene 
@@ -536,6 +509,7 @@ Response slardar_CooldownMediumNag
 {
 	scene "scenes/slardar/slardar_slar_notyet_04.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_notyet_05.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_notyet_06.vcd" nodelay noscene 
 }
 
 Rule slardar_CooldownMediumNag_Rule
@@ -546,6 +520,7 @@ Rule slardar_CooldownMediumNag_Rule
 
 Response slardar_CooldownSuperNag
 {
+	scene "scenes/slardar/slardar_slar_notyet_07.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_notyet_08.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_notyet_09.vcd" nodelay noscene 
 }
@@ -608,12 +583,25 @@ Rule slardar_Thanks_Rule
 	response slardar_Thanks
 }
 
+Response slardar_PainChance_25%
+{
+	scene "scenes/slardar/slardar_slar_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule slardar_PainChance_25%_Rule
+{
+	criteria Pain Isslardar Chance_25%
+	response slardar_PainChance_25%
+}
+
 Response slardar_Pain
 {
-	scene "scenes/slardar/slardar_slar_underattack_01.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_pain_01.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_pain_02.vcd" nodelay noscene 
 	scene "scenes/slardar/slardar_slar_pain_03.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_pain_04.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_pain_06.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_pain_07.vcd" nodelay noscene 
 }
 
 Rule slardar_Pain_Rule
@@ -685,21 +673,5 @@ Rule slardar_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isslardar IsEmoteLaugh
 	response slardar_EmoteIsEmoteLaugh
-}
-
-Response slardar_EmoteIsEmoteAnger
-{
-	scene "scenes/slardar/slardar_slar_anger_01.vcd" nodelay noscene 
-	scene "scenes/slardar/slardar_slar_anger_02.vcd" nodelay noscene 
-	scene "scenes/slardar/slardar_slar_anger_03.vcd" nodelay noscene 
-	scene "scenes/slardar/slardar_slar_anger_04.vcd" nodelay noscene 
-	scene "scenes/slardar/slardar_slar_anger_05.vcd" nodelay noscene 
-	scene "scenes/slardar/slardar_slar_anger_06.vcd" nodelay noscene 
-}
-
-Rule slardar_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isslardar IsEmoteAnger
-	response slardar_EmoteIsEmoteAnger
 }
 

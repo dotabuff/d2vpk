@@ -90,7 +90,7 @@ Rule shadowshaman_CastOrder_Rule
 	response shadowshaman_CastOrder
 }
 
-Response shadowshaman_CastExecuteIsShadowShamanShock
+Response shadowshaman_CastExecuteIsShadowShamanShockChance_75%
 {
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_ether_01.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_ether_02.vcd" nodelay noscene 
@@ -98,10 +98,10 @@ Response shadowshaman_CastExecuteIsShadowShamanShock
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_ether_04.vcd" nodelay noscene 
 }
 
-Rule shadowshaman_CastExecuteIsShadowShamanShock_Rule
+Rule shadowshaman_CastExecuteIsShadowShamanShockChance_75%_Rule
 {
-	criteria CastExecute Isshadowshaman IsShadowShamanShock
-	response shadowshaman_CastExecuteIsShadowShamanShock
+	criteria CastExecute Isshadowshaman IsShadowShamanShock Chance_75%
+	response shadowshaman_CastExecuteIsShadowShamanShockChance_75%
 }
 
 Response shadowshaman_CastExecuteIsShadowShamanVooodoo
@@ -131,6 +131,7 @@ Response shadowshaman_CastExecuteIsShadowShamanShackle
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_shackle_05.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_shackle_06.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_shackle_08.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_ability_entrap_02.vcd" nodelay noscene 
 }
 
 Rule shadowshaman_CastExecuteIsShadowShamanShackle_Rule
@@ -153,15 +154,15 @@ Rule shadowshaman_CastExecuteIsShadowWards_Rule
 	response shadowshaman_CastExecuteIsShadowWards
 }
 
-Response shadowshaman_LastHitIsTower
+Response shadowshaman_LastHitIsKilledTower
 {
-	scene "scenes/shadowshaman/shadowshaman_shad_ability_ward_towerattack_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_ability_ward_towerattack_02.vcd" nodelay noscene speakonce
 }
 
-Rule shadowshaman_LastHitIsTower_Rule
+Rule shadowshaman_LastHitIsKilledTower_Rule
 {
-	criteria LastHit Isshadowshaman IsTower
-	response shadowshaman_LastHitIsTower
+	criteria LastHit Isshadowshaman IsKilledTower
+	response shadowshaman_LastHitIsKilledTower
 }
 
 Response shadowshaman_LastHit
@@ -215,6 +216,7 @@ Response shadowshaman_Kill
 	scene "scenes/shadowshaman/shadowshaman_shad_kill_11.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_kill_12.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_kill_13.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_blink_02.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_laugh_07.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_laugh_08.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_laugh_09.vcd" nodelay noscene 
@@ -323,7 +325,7 @@ Rule shadowshaman_PurchaseIsExpensiveItem_Rule
 
 Response shadowshaman_PurchaseIsBlinkDagger
 {
-	scene "scenes/shadowshaman/shadowshaman_shad_blink_01.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_blink_01.vcd" nodelay noscene speakonce
 }
 
 Rule shadowshaman_PurchaseIsBlinkDagger_Rule
@@ -334,8 +336,8 @@ Rule shadowshaman_PurchaseIsBlinkDagger_Rule
 
 Response shadowshaman_PurchaseIsUltimateScepter
 {
-	scene "scenes/shadowshaman/shadowshaman_shad_scepter_01.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_scepter_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_scepter_01.vcd" nodelay noscene speakonce
+	scene "scenes/shadowshaman/shadowshaman_shad_scepter_02.vcd" nodelay noscene speakonce
 }
 
 Rule shadowshaman_PurchaseIsUltimateScepter_Rule
@@ -346,8 +348,8 @@ Rule shadowshaman_PurchaseIsUltimateScepter_Rule
 
 Response shadowshaman_PurchaseIsRefresher
 {
-	scene "scenes/shadowshaman/shadowshaman_shad_refresh_01.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_refresh_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_refresh_01.vcd" nodelay noscene speakonce
+	scene "scenes/shadowshaman/shadowshaman_shad_refresh_02.vcd" nodelay noscene speakonce
 }
 
 Rule shadowshaman_PurchaseIsRefresher_Rule
@@ -367,36 +369,6 @@ Rule shadowshaman_Bottling_Rule
 {
 	criteria Bottling Isshadowshaman 
 	response shadowshaman_Bottling
-}
-
-Response shadowshaman_MissingIsLaneTop
-{
-}
-
-Rule shadowshaman_MissingIsLaneTop_Rule
-{
-	criteria Missing Isshadowshaman IsLaneTop
-	response shadowshaman_MissingIsLaneTop
-}
-
-Response shadowshaman_MissingIsLaneMid
-{
-}
-
-Rule shadowshaman_MissingIsLaneMid_Rule
-{
-	criteria Missing Isshadowshaman IsLaneMid
-	response shadowshaman_MissingIsLaneMid
-}
-
-Response shadowshaman_MissingIsLaneBot
-{
-}
-
-Rule shadowshaman_MissingIsLaneBot_Rule
-{
-	criteria Missing Isshadowshaman IsLaneBot
-	response shadowshaman_MissingIsLaneBot
 }
 
 Response shadowshaman_Deny
@@ -642,11 +614,26 @@ Rule shadowshaman_Thanks_Rule
 	response shadowshaman_Thanks
 }
 
+Response shadowshaman_PainChance_25%
+{
+	scene "scenes/shadowshaman/shadowshaman_shad_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule shadowshaman_PainChance_25%_Rule
+{
+	criteria Pain Isshadowshaman Chance_25%
+	response shadowshaman_PainChance_25%
+}
+
 Response shadowshaman_Pain
 {
-	scene "scenes/shadowshaman/shadowshaman_shad_underattack_01.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_pain_01.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_pain_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_pain_03.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_pain_04.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_pain_05.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_pain_06.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_pain_07.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_pain_08.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_pain_09.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_pain_10.vcd" nodelay noscene 
 }
@@ -721,21 +708,5 @@ Rule shadowshaman_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isshadowshaman IsEmoteLaugh
 	response shadowshaman_EmoteIsEmoteLaugh
-}
-
-Response shadowshaman_EmoteIsEmoteAnger
-{
-	scene "scenes/shadowshaman/shadowshaman_shad_anger_01.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_anger_02.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_anger_03.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_anger_04.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_anger_05.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_anger_06.vcd" nodelay noscene 
-}
-
-Rule shadowshaman_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isshadowshaman IsEmoteAnger
-	response shadowshaman_EmoteIsEmoteAnger
 }
 

@@ -93,20 +93,171 @@ Rule skeleton_king_CastOrder_Rule
 	response skeleton_king_CastOrder
 }
 
-Response skeleton_king_CastExecuteIsHellfireBlast
+Response skeleton_king_CastExecuteIsHellfireBlastChance_15%
 {
 	scene "scenes/skeleton_king/skeleton_king_skel_ability_hellfire_01.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_ability_hellfire_02.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_ability_hellfire_03.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_CastExecuteIsHellfireBlastChance_15%_Rule
+{
+	criteria CastExecute Isskeleton_king IsHellfireBlast Chance_15%
+	response skeleton_king_CastExecuteIsHellfireBlastChance_15%
+}
+
+Response skeleton_king_CastExecuteIsHellfireBlastChance_75%
+{
 	scene "scenes/skeleton_king/skeleton_king_skel_ability_hellfire_04.vcd" nodelay noscene 
 	scene "scenes/skeleton_king/skeleton_king_skel_ability_hellfire_05.vcd" nodelay noscene 
 	scene "scenes/skeleton_king/skeleton_king_skel_ability_hellfire_06.vcd" nodelay noscene 
 }
 
-Rule skeleton_king_CastExecuteIsHellfireBlast_Rule
+Rule skeleton_king_CastExecuteIsHellfireBlastChance_75%_Rule
 {
-	criteria CastExecute Isskeleton_king IsHellfireBlast
-	response skeleton_king_CastExecuteIsHellfireBlast
+	criteria CastExecute Isskeleton_king IsHellfireBlast Chance_75%
+	response skeleton_king_CastExecuteIsHellfireBlastChance_75%
+}
+
+Response skeleton_king_KillIsHellfireBlastChance_10%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_ability_hellfire_03.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsHellfireBlastChance_10%_Rule
+{
+	criteria Kill Isskeleton_king IsHellfireBlast Chance_10%
+	response skeleton_king_KillIsHellfireBlastChance_10%
+}
+
+Response skeleton_king_Kill
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_01.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_02.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_03.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_04.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_05.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_06.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_07.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_08.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_09.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_10.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_11.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_12.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_14.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_15.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_16.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_17.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_kill_18.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_01.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_02.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_03.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_04.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_05.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_06.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_07.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_08.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_laugh_09.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_Kill_Rule
+{
+	criteria Kill Isskeleton_king 
+	response skeleton_king_Kill
+}
+
+Response skeleton_king_KillIsEnemyWeaverChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_01.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_02.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyWeaverChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyWeaver Chance_25%
+	response skeleton_king_KillIsEnemyWeaverChance_25%
+}
+
+Response skeleton_king_KillIsEnemyMorphlingChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_03.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyMorphlingChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyMorphling Chance_25%
+	response skeleton_king_KillIsEnemyMorphlingChance_25%
+}
+
+Response skeleton_king_KillIsEnemyPugnaChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_04.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_05.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyPugnaChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyPugna Chance_25%
+	response skeleton_king_KillIsEnemyPugnaChance_25%
+}
+
+Response skeleton_king_KillIsEnemySandKingChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_06.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_07.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemySandKingChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemySandKing Chance_25%
+	response skeleton_king_KillIsEnemySandKingChance_25%
+}
+
+Response skeleton_king_KillIsEnemyClinkzChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_08.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyClinkzChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyClinkz Chance_25%
+	response skeleton_king_KillIsEnemyClinkzChance_25%
+}
+
+Response skeleton_king_KillIsEnemyQueenOfPainChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_09.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_10.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_11.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyQueenOfPainChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyQueenOfPain Chance_25%
+	response skeleton_king_KillIsEnemyQueenOfPainChance_25%
+}
+
+Response skeleton_king_KillIsEnemyUndyingChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_12.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_14.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyUndyingChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyUndying Chance_25%
+	response skeleton_king_KillIsEnemyUndyingChance_25%
+}
+
+Response skeleton_king_KillIsFirstBlood
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_firstblood_02.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_firstblood_03.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsFirstBlood_Rule
+{
+	criteria Kill Isskeleton_king IsFirstBlood
+	response skeleton_king_KillIsFirstBlood
 }
 
 Response skeleton_king_Respawn
@@ -249,138 +400,6 @@ Rule skeleton_king_LevelUp_Rule
 	response skeleton_king_LevelUp
 }
 
-Response skeleton_king_Kill
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_01.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_02.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_03.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_04.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_05.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_06.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_07.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_08.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_09.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_10.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_11.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_12.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_14.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_15.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_16.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_17.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_kill_18.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_01.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_02.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_03.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_04.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_05.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_06.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_07.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_08.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_laugh_09.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_Kill_Rule
-{
-	criteria Kill Isskeleton_king 
-	response skeleton_king_Kill
-}
-
-Response skeleton_king_KillIsEnemyWeaverChance_25%
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_01.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_02.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_KillIsEnemyWeaverChance_25%_Rule
-{
-	criteria Kill Isskeleton_king IsEnemyWeaver Chance_25%
-	response skeleton_king_KillIsEnemyWeaverChance_25%
-}
-
-Response skeleton_king_KillIsEnemyMorphlingChance_25%
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_03.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_KillIsEnemyMorphlingChance_25%_Rule
-{
-	criteria Kill Isskeleton_king IsEnemyMorphling Chance_25%
-	response skeleton_king_KillIsEnemyMorphlingChance_25%
-}
-
-Response skeleton_king_KillIsEnemyPugnaChance_25%
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_04.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_05.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_KillIsEnemyPugnaChance_25%_Rule
-{
-	criteria Kill Isskeleton_king IsEnemyPugna Chance_25%
-	response skeleton_king_KillIsEnemyPugnaChance_25%
-}
-
-Response skeleton_king_KillIsEnemySandKingChance_25%
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_06.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_07.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_KillIsEnemySandKingChance_25%_Rule
-{
-	criteria Kill Isskeleton_king IsEnemySandKing Chance_25%
-	response skeleton_king_KillIsEnemySandKingChance_25%
-}
-
-Response skeleton_king_KillIsEnemyClinkzChance_25%
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_08.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_KillIsEnemyClinkzChance_25%_Rule
-{
-	criteria Kill Isskeleton_king IsEnemyClinkz Chance_25%
-	response skeleton_king_KillIsEnemyClinkzChance_25%
-}
-
-Response skeleton_king_KillIsEnemyQueenOfPainChance_25%
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_09.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_10.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_11.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_KillIsEnemyQueenOfPainChance_25%_Rule
-{
-	criteria Kill Isskeleton_king IsEnemyQueenOfPain Chance_25%
-	response skeleton_king_KillIsEnemyQueenOfPainChance_25%
-}
-
-Response skeleton_king_KillIsEnemyUndyingChance_25%
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_12.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_14.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_KillIsEnemyUndyingChance_25%_Rule
-{
-	criteria Kill Isskeleton_king IsEnemyUndying Chance_25%
-	response skeleton_king_KillIsEnemyUndyingChance_25%
-}
-
-Response skeleton_king_KillIsFirstBlood
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_firstblood_01.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_firstblood_02.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_firstblood_03.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_KillIsFirstBlood_Rule
-{
-	criteria Kill Isskeleton_king IsFirstBlood
-	response skeleton_king_KillIsFirstBlood
-}
-
 Response skeleton_king_LastHit
 {
 	scene "scenes/skeleton_king/skeleton_king_skel_lasthit_01.vcd" nodelay noscene 
@@ -454,8 +473,8 @@ Rule skeleton_king_PurchaseIsUltimateScepter_Rule
 
 Response skeleton_king_PurchaseIsHeart
 {
-	scene "scenes/skeleton_king/skeleton_king_skel_heart_01.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_heart_02.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_heart_01.vcd" nodelay noscene speakonce
+	scene "scenes/skeleton_king/skeleton_king_skel_heart_02.vcd" nodelay noscene speakonce
 }
 
 Rule skeleton_king_PurchaseIsHeart_Rule
@@ -466,9 +485,9 @@ Rule skeleton_king_PurchaseIsHeart_Rule
 
 Response skeleton_king_PurchaseIsArmlet
 {
-	scene "scenes/skeleton_king/skeleton_king_skel_armlet_01.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_armlet_02.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_armlet_03.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_armlet_01.vcd" nodelay noscene speakonce
+	scene "scenes/skeleton_king/skeleton_king_skel_armlet_02.vcd" nodelay noscene speakonce
+	scene "scenes/skeleton_king/skeleton_king_skel_armlet_03.vcd" nodelay noscene speakonce
 }
 
 Rule skeleton_king_PurchaseIsArmlet_Rule
@@ -488,36 +507,6 @@ Rule skeleton_king_Bottling_Rule
 {
 	criteria Bottling Isskeleton_king 
 	response skeleton_king_Bottling
-}
-
-Response skeleton_king_MissingIsLaneTop
-{
-}
-
-Rule skeleton_king_MissingIsLaneTop_Rule
-{
-	criteria Missing Isskeleton_king IsLaneTop
-	response skeleton_king_MissingIsLaneTop
-}
-
-Response skeleton_king_MissingIsLaneMid
-{
-}
-
-Rule skeleton_king_MissingIsLaneMid_Rule
-{
-	criteria Missing Isskeleton_king IsLaneMid
-	response skeleton_king_MissingIsLaneMid
-}
-
-Response skeleton_king_MissingIsLaneBot
-{
-}
-
-Rule skeleton_king_MissingIsLaneBot_Rule
-{
-	criteria Missing Isskeleton_king IsLaneBot
-	response skeleton_king_MissingIsLaneBot
 }
 
 Response skeleton_king_Deny
@@ -544,17 +533,6 @@ Rule skeleton_king_Deny_Rule
 {
 	criteria Deny Isskeleton_king 
 	response skeleton_king_Deny
-}
-
-Response skeleton_king_DenyIsTower
-{
-	scene "scenes/skeleton_king/skeleton_king_skel_deny_06.vcd" nodelay noscene 
-}
-
-Rule skeleton_king_DenyIsTower_Rule
-{
-	criteria Deny Isskeleton_king IsTower
-	response skeleton_king_DenyIsTower
 }
 
 Response skeleton_king_Defeat
@@ -805,10 +783,23 @@ Rule skeleton_king_Thanks_Rule
 	response skeleton_king_Thanks
 }
 
+Response skeleton_king_PainChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule skeleton_king_PainChance_25%_Rule
+{
+	criteria Pain Isskeleton_king Chance_25%
+	response skeleton_king_PainChance_25%
+}
+
 Response skeleton_king_Pain
 {
-	scene "scenes/skeleton_king/skeleton_king_skel_underattack_01.vcd" nodelay noscene 
-	scene "scenes/skeleton_king/skeleton_king_skel_pain_10.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_pain_01.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_pain_05.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_pain_07.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_skel_pain_09.vcd" nodelay noscene 
 	scene "scenes/skeleton_king/skeleton_king_skel_pain_11.vcd" nodelay noscene 
 	scene "scenes/skeleton_king/skeleton_king_skel_pain_12.vcd" nodelay noscene 
 	scene "scenes/skeleton_king/skeleton_king_skel_pain_13.vcd" nodelay noscene 

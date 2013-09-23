@@ -57,6 +57,7 @@ Rule spirit_breaker_KillIsFirstBlood_Rule
 
 Response spirit_breaker_Kill
 {
+	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_07.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_11.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_kill_01.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_kill_02.vcd" nodelay noscene 
@@ -261,26 +262,26 @@ Rule spirit_breaker_Attack_Rule
 	response spirit_breaker_Attack
 }
 
-Response spirit_breaker_AttackIsEnemySkeleton_KingChance_30%
+Response spirit_breaker_AttackIsEnemySkeleton_KingChance_10%
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_rival_01.vcd" nodelay noscene 
 }
 
-Rule spirit_breaker_AttackIsEnemySkeleton_KingChance_30%_Rule
+Rule spirit_breaker_AttackIsEnemySkeleton_KingChance_10%_Rule
 {
-	criteria Attack Isspirit_breaker IsEnemySkeleton_King Chance_30%
-	response spirit_breaker_AttackIsEnemySkeleton_KingChance_30%
+	criteria Attack Isspirit_breaker IsEnemySkeleton_King Chance_10%
+	response spirit_breaker_AttackIsEnemySkeleton_KingChance_10%
 }
 
-Response spirit_breaker_AttackIsEnemyBroodmotherChance_30%
+Response spirit_breaker_AttackIsEnemyBroodmotherChance_10%
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_rival_02.vcd" nodelay noscene 
 }
 
-Rule spirit_breaker_AttackIsEnemyBroodmotherChance_30%_Rule
+Rule spirit_breaker_AttackIsEnemyBroodmotherChance_10%_Rule
 {
-	criteria Attack Isspirit_breaker IsEnemyBroodmother Chance_30%
-	response spirit_breaker_AttackIsEnemyBroodmotherChance_30%
+	criteria Attack Isspirit_breaker IsEnemyBroodmother Chance_10%
+	response spirit_breaker_AttackIsEnemyBroodmotherChance_10%
 }
 
 Response spirit_breaker_CastOrder
@@ -297,17 +298,17 @@ Rule spirit_breaker_CastOrder_Rule
 	response spirit_breaker_CastOrder
 }
 
-Response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_50%
+Response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_25%
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_02.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_14.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_19.vcd" nodelay noscene 
 }
 
-Rule spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_50%_Rule
+Rule spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_25%_Rule
 {
-	criteria CastExecute Isspirit_breaker IsSpiritBreakerCharge Chance_50%
-	response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_50%
+	criteria CastExecute Isspirit_breaker IsSpiritBreakerCharge Chance_25%
+	response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_25%
 }
 
 Response spirit_breaker_AllyNearIsAllyEarthshakerEarlyGame
@@ -367,7 +368,6 @@ Response spirit_breaker_Death
 	scene "scenes/spirit_breaker/spirit_breaker_spir_death_11.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_death_12.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_death_13.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_death_14.vcd" nodelay noscene 
 }
 
 Rule spirit_breaker_Death_Rule
@@ -376,16 +376,37 @@ Rule spirit_breaker_Death_Rule
 	response spirit_breaker_Death
 }
 
+Response spirit_breaker_DeathChance_3%
+{
+	scene "scenes/spirit_breaker/spirit_breaker_spir_death_14.vcd" nodelay noscene 
+}
+
+Rule spirit_breaker_DeathChance_3%_Rule
+{
+	criteria Death Isspirit_breaker Chance_3%
+	response spirit_breaker_DeathChance_3%
+}
+
 Response spirit_breaker_DeathIsReincarnating
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_fastres_01.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_fastres_02.vcd" nodelay noscene 
 }
 
 Rule spirit_breaker_DeathIsReincarnating_Rule
 {
 	criteria Death Isspirit_breaker IsReincarnating
 	response spirit_breaker_DeathIsReincarnating
+}
+
+Response spirit_breaker_DeathIsReincarnatingChance_5%
+{
+	scene "scenes/spirit_breaker/spirit_breaker_spir_fastres_02.vcd" nodelay noscene 
+}
+
+Rule spirit_breaker_DeathIsReincarnatingChance_5%_Rule
+{
+	criteria Death Isspirit_breaker IsReincarnating Chance_5%
+	response spirit_breaker_DeathIsReincarnatingChance_5%
 }
 
 Response spirit_breaker_Respawn
@@ -462,7 +483,7 @@ Rule spirit_breaker_PurchaseIsUltimateScepter_Rule
 
 Response spirit_breaker_PurchaseIsMaskOfMadness
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_01.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_01.vcd" nodelay noscene speakonce
 }
 
 Rule spirit_breaker_PurchaseIsMaskOfMadness_Rule
@@ -473,7 +494,7 @@ Rule spirit_breaker_PurchaseIsMaskOfMadness_Rule
 
 Response spirit_breaker_PurchaseIsBlackKingBar
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_02.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_02.vcd" nodelay noscene speakonce
 }
 
 Rule spirit_breaker_PurchaseIsBlackKingBar_Rule
@@ -484,7 +505,7 @@ Rule spirit_breaker_PurchaseIsBlackKingBar_Rule
 
 Response spirit_breaker_PurchaseIsSangeAndYasha
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_03.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_03.vcd" nodelay noscene speakonce
 }
 
 Rule spirit_breaker_PurchaseIsSangeAndYasha_Rule
@@ -495,7 +516,7 @@ Rule spirit_breaker_PurchaseIsSangeAndYasha_Rule
 
 Response spirit_breaker_PurchaseIsBasher
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_04.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_04.vcd" nodelay noscene speakonce
 }
 
 Rule spirit_breaker_PurchaseIsBasher_Rule
@@ -506,7 +527,7 @@ Rule spirit_breaker_PurchaseIsBasher_Rule
 
 Response spirit_breaker_PurchaseIsArmlet
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_05.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_05.vcd" nodelay noscene speakonce
 }
 
 Rule spirit_breaker_PurchaseIsArmlet_Rule
@@ -517,7 +538,7 @@ Rule spirit_breaker_PurchaseIsArmlet_Rule
 
 Response spirit_breaker_PurchaseIsAssaultCuirass
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_06.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_06.vcd" nodelay noscene speakonce
 }
 
 Rule spirit_breaker_PurchaseIsAssaultCuirass_Rule
@@ -528,7 +549,7 @@ Rule spirit_breaker_PurchaseIsAssaultCuirass_Rule
 
 Response spirit_breaker_PurchaseIsHeart
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_07.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_07.vcd" nodelay noscene speakonce
 }
 
 Rule spirit_breaker_PurchaseIsHeart_Rule
@@ -539,8 +560,8 @@ Rule spirit_breaker_PurchaseIsHeart_Rule
 
 Response spirit_breaker_PurchaseIsCloak
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_08.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_item_09.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_08.vcd" nodelay noscene speakonce
+	scene "scenes/spirit_breaker/spirit_breaker_spir_item_09.vcd" nodelay noscene speakonce
 }
 
 Rule spirit_breaker_PurchaseIsCloak_Rule
@@ -560,36 +581,6 @@ Rule spirit_breaker_Bottling_Rule
 {
 	criteria Bottling Isspirit_breaker 
 	response spirit_breaker_Bottling
-}
-
-Response spirit_breaker_MissingIsLaneTop
-{
-}
-
-Rule spirit_breaker_MissingIsLaneTop_Rule
-{
-	criteria Missing Isspirit_breaker IsLaneTop
-	response spirit_breaker_MissingIsLaneTop
-}
-
-Response spirit_breaker_MissingIsLaneMid
-{
-}
-
-Rule spirit_breaker_MissingIsLaneMid_Rule
-{
-	criteria Missing Isspirit_breaker IsLaneMid
-	response spirit_breaker_MissingIsLaneMid
-}
-
-Response spirit_breaker_MissingIsLaneBot
-{
-}
-
-Rule spirit_breaker_MissingIsLaneBot_Rule
-{
-	criteria Missing Isspirit_breaker IsLaneBot
-	response spirit_breaker_MissingIsLaneBot
 }
 
 Response spirit_breaker_Deny
@@ -615,14 +606,24 @@ Response spirit_breaker_Defeat
 	scene "scenes/spirit_breaker/spirit_breaker_spir_lose_01.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_lose_02.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_lose_03.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_lose_04.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_lose_05.vcd" nodelay noscene 
 }
 
 Rule spirit_breaker_Defeat_Rule
 {
 	criteria Defeat Isspirit_breaker 
 	response spirit_breaker_Defeat
+}
+
+Response spirit_breaker_DefeatChance_10%
+{
+	scene "scenes/spirit_breaker/spirit_breaker_spir_lose_04.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_lose_05.vcd" nodelay noscene 
+}
+
+Rule spirit_breaker_DefeatChance_10%_Rule
+{
+	criteria Defeat Isspirit_breaker Chance_10%
+	response spirit_breaker_DefeatChance_10%
 }
 
 Response spirit_breaker_Victory
@@ -818,18 +819,18 @@ Rule spirit_breaker_Thanks_Rule
 	response spirit_breaker_Thanks
 }
 
-Response spirit_breaker_Pain
-{
-	scene "scenes/spirit_breaker/spirit_breaker_spir_underattack_01.vcd" nodelay noscene 
-}
-
-Rule spirit_breaker_Pain_Rule
-{
-	criteria Pain Isspirit_breaker 
-	response spirit_breaker_Pain
-}
-
 Response spirit_breaker_PainChance_25%
+{
+	scene "scenes/spirit_breaker/spirit_breaker_spir_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule spirit_breaker_PainChance_25%_Rule
+{
+	criteria Pain Isspirit_breaker Chance_25%
+	response spirit_breaker_PainChance_25%
+}
+
+Response spirit_breaker_Pain
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_pain_01.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_pain_02.vcd" nodelay noscene 
@@ -842,22 +843,32 @@ Response spirit_breaker_PainChance_25%
 	scene "scenes/spirit_breaker/spirit_breaker_spir_pain_09.vcd" nodelay noscene 
 }
 
-Rule spirit_breaker_PainChance_25%_Rule
+Rule spirit_breaker_Pain_Rule
 {
-	criteria Pain Isspirit_breaker Chance_25%
-	response spirit_breaker_PainChance_25%
+	criteria Pain Isspirit_breaker 
+	response spirit_breaker_Pain
 }
 
 Response spirit_breaker_InTheBag
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_inthebag_01.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_inthebag_02.vcd" nodelay noscene 
 }
 
 Rule spirit_breaker_InTheBag_Rule
 {
 	criteria InTheBag Isspirit_breaker 
 	response spirit_breaker_InTheBag
+}
+
+Response spirit_breaker_InTheBagChance_15%
+{
+	scene "scenes/spirit_breaker/spirit_breaker_spir_inthebag_02.vcd" nodelay noscene 
+}
+
+Rule spirit_breaker_InTheBagChance_15%_Rule
+{
+	criteria InTheBag Isspirit_breaker Chance_15%
+	response spirit_breaker_InTheBagChance_15%
 }
 
 Response spirit_breaker_EmoteIsEmoteLaugh
@@ -878,21 +889,5 @@ Rule spirit_breaker_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isspirit_breaker IsEmoteLaugh
 	response spirit_breaker_EmoteIsEmoteLaugh
-}
-
-Response spirit_breaker_EmoteIsEmoteAnger
-{
-	scene "scenes/spirit_breaker/spirit_breaker_spir_anger_01.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_anger_02.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_anger_03.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_anger_04.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_anger_05.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_anger_06.vcd" nodelay noscene 
-}
-
-Rule spirit_breaker_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isspirit_breaker IsEmoteAnger
-	response spirit_breaker_EmoteIsEmoteAnger
 }
 

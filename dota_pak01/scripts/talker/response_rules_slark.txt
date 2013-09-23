@@ -280,7 +280,31 @@ Rule slark_CastOrder_Rule
 	response slark_CastOrder
 }
 
-Response slark_CastExecuteIsSlarkShadowDanceChance_50%
+Response slark_VictoryChance_5%
+{
+	scene "scenes/slark/slark_slark_dark_pact_02.vcd" nodelay noscene 
+}
+
+Rule slark_VictoryChance_5%_Rule
+{
+	criteria Victory Isslark Chance_5%
+	response slark_VictoryChance_5%
+}
+
+Response slark_Victory
+{
+	scene "scenes/slark/slark_slark_win_01.vcd" nodelay noscene 
+	scene "scenes/slark/slark_slark_win_02.vcd" nodelay noscene 
+	scene "scenes/slark/slark_slark_win_03.vcd" nodelay noscene 
+}
+
+Rule slark_Victory_Rule
+{
+	criteria Victory Isslark 
+	response slark_Victory
+}
+
+Response slark_CastExecuteIsSlarkShadowDanceChance_30%
 {
 	scene "scenes/slark/slark_slark_dark_pact_05.vcd" nodelay noscene 
 	scene "scenes/slark/slark_slark_dark_pact_06.vcd" nodelay noscene 
@@ -290,10 +314,10 @@ Response slark_CastExecuteIsSlarkShadowDanceChance_50%
 	scene "scenes/slark/slark_slark_shadow_dance_04.vcd" nodelay noscene 
 }
 
-Rule slark_CastExecuteIsSlarkShadowDanceChance_50%_Rule
+Rule slark_CastExecuteIsSlarkShadowDanceChance_30%_Rule
 {
-	criteria CastExecute Isslark IsSlarkShadowDance Chance_50%
-	response slark_CastExecuteIsSlarkShadowDanceChance_50%
+	criteria CastExecute Isslark IsSlarkShadowDance Chance_30%
+	response slark_CastExecuteIsSlarkShadowDanceChance_30%
 }
 
 Response slark_LevelUp
@@ -781,7 +805,6 @@ Rule slark_Immortality_Rule
 Response slark_PowerupIsPowerupHaste
 {
 	scene "scenes/slark/slark_slark_haste_01.vcd" nodelay noscene 
-	scene "scenes/slark/slark_slark_haste_02.vcd" nodelay noscene 
 }
 
 Rule slark_PowerupIsPowerupHaste_Rule
@@ -790,10 +813,20 @@ Rule slark_PowerupIsPowerupHaste_Rule
 	response slark_PowerupIsPowerupHaste
 }
 
+Response slark_PowerupIsPowerupHasteChance_25%
+{
+	scene "scenes/slark/slark_slark_haste_02.vcd" nodelay noscene 
+}
+
+Rule slark_PowerupIsPowerupHasteChance_25%_Rule
+{
+	criteria Powerup Isslark IsPowerupHaste Chance_25%
+	response slark_PowerupIsPowerupHasteChance_25%
+}
+
 Response slark_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/slark/slark_slark_doubdam_01.vcd" nodelay noscene 
-	scene "scenes/slark/slark_slark_doubdam_02.vcd" nodelay noscene 
 }
 
 Rule slark_PowerupIsPowerupDoubleDamage_Rule
@@ -802,10 +835,20 @@ Rule slark_PowerupIsPowerupDoubleDamage_Rule
 	response slark_PowerupIsPowerupDoubleDamage
 }
 
+Response slark_PowerupIsPowerupDoubleDamageChance_25%
+{
+	scene "scenes/slark/slark_slark_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule slark_PowerupIsPowerupDoubleDamageChance_25%_Rule
+{
+	criteria Powerup Isslark IsPowerupDoubleDamage Chance_25%
+	response slark_PowerupIsPowerupDoubleDamageChance_25%
+}
+
 Response slark_PowerupIsPowerupRegeneration
 {
 	scene "scenes/slark/slark_slark_regen_01.vcd" nodelay noscene 
-	scene "scenes/slark/slark_slark_regen_02.vcd" nodelay noscene 
 }
 
 Rule slark_PowerupIsPowerupRegeneration_Rule
@@ -814,10 +857,20 @@ Rule slark_PowerupIsPowerupRegeneration_Rule
 	response slark_PowerupIsPowerupRegeneration
 }
 
+Response slark_PowerupIsPowerupRegenerationChance_25%
+{
+	scene "scenes/slark/slark_slark_regen_02.vcd" nodelay noscene 
+}
+
+Rule slark_PowerupIsPowerupRegenerationChance_25%_Rule
+{
+	criteria Powerup Isslark IsPowerupRegeneration Chance_25%
+	response slark_PowerupIsPowerupRegenerationChance_25%
+}
+
 Response slark_PowerupIsPowerupIllusion
 {
 	scene "scenes/slark/slark_slark_illus_01.vcd" nodelay noscene 
-	scene "scenes/slark/slark_slark_illus_02.vcd" nodelay noscene 
 }
 
 Rule slark_PowerupIsPowerupIllusion_Rule
@@ -826,16 +879,37 @@ Rule slark_PowerupIsPowerupIllusion_Rule
 	response slark_PowerupIsPowerupIllusion
 }
 
+Response slark_PowerupIsPowerupIllusionChance_25%
+{
+	scene "scenes/slark/slark_slark_illus_02.vcd" nodelay noscene 
+}
+
+Rule slark_PowerupIsPowerupIllusionChance_25%_Rule
+{
+	criteria Powerup Isslark IsPowerupIllusion Chance_25%
+	response slark_PowerupIsPowerupIllusionChance_25%
+}
+
 Response slark_PowerupIsPowerupInvisibility
 {
 	scene "scenes/slark/slark_slark_invis_01.vcd" nodelay noscene 
-	scene "scenes/slark/slark_slark_invis_02.vcd" nodelay noscene 
 }
 
 Rule slark_PowerupIsPowerupInvisibility_Rule
 {
 	criteria Powerup Isslark IsPowerupInvisibility
 	response slark_PowerupIsPowerupInvisibility
+}
+
+Response slark_PowerupIsPowerupInvisibilityChance_25%
+{
+	scene "scenes/slark/slark_slark_invis_02.vcd" nodelay noscene 
+}
+
+Rule slark_PowerupIsPowerupInvisibilityChance_25%_Rule
+{
+	criteria Powerup Isslark IsPowerupInvisibility Chance_25%
+	response slark_PowerupIsPowerupInvisibilityChance_25%
 }
 
 Response slark_CooldownLittleNag
@@ -928,9 +1002,19 @@ Rule slark_Thanks_Rule
 	response slark_Thanks
 }
 
+Response slark_PainChance_25%
+{
+	scene "scenes/slark/slark_slark_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule slark_PainChance_25%_Rule
+{
+	criteria Pain Isslark Chance_25%
+	response slark_PainChance_25%
+}
+
 Response slark_Pain
 {
-	scene "scenes/slark/slark_slark_underattack_01.vcd" nodelay noscene 
 	scene "scenes/slark/slark_slark_pain_01.vcd" nodelay noscene 
 	scene "scenes/slark/slark_slark_pain_02.vcd" nodelay noscene 
 	scene "scenes/slark/slark_slark_pain_03.vcd" nodelay noscene 
@@ -975,19 +1059,6 @@ Rule slark_Defeat_Rule
 {
 	criteria Defeat Isslark 
 	response slark_Defeat
-}
-
-Response slark_Victory
-{
-	scene "scenes/slark/slark_slark_win_01.vcd" nodelay noscene 
-	scene "scenes/slark/slark_slark_win_02.vcd" nodelay noscene 
-	scene "scenes/slark/slark_slark_win_03.vcd" nodelay noscene 
-}
-
-Rule slark_Victory_Rule
-{
-	criteria Victory Isslark 
-	response slark_Victory
 }
 
 Response slark_EmoteIsEmoteLaugh

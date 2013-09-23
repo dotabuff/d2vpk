@@ -232,28 +232,25 @@ Rule pugna_CastOrder_Rule
 	response pugna_CastOrder
 }
 
-Response pugna_LastHitIsTowerChance_50%
+Response pugna_LevelUp
 {
-	scene "scenes/pugna/pugna_pugna_ability_nblast_04.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_ability_nblast_06.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_ability_nblast_07.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_01.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_02.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_03.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_04.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_05.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_06.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_07.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_08.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_09.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_10.vcd" nodelay noscene 
+	scene "scenes/pugna/pugna_pugna_level_11.vcd" nodelay noscene 
 }
 
-Rule pugna_LastHitIsTowerChance_50%_Rule
+Rule pugna_LevelUp_Rule
 {
-	criteria LastHit Ispugna IsTower Chance_50%
-	response pugna_LastHitIsTowerChance_50%
-}
-
-Response pugna_LastHitIsTowerIsPugnaNetherBlastChance_50%
-{
-	scene "scenes/pugna/pugna_pugna_ability_nblast_08.vcd" nodelay noscene 
-}
-
-Rule pugna_LastHitIsTowerIsPugnaNetherBlastChance_50%_Rule
-{
-	criteria LastHit Ispugna IsTower IsPugnaNetherBlast Chance_50%
-	response pugna_LastHitIsTowerIsPugnaNetherBlastChance_50%
+	criteria LevelUp Ispugna 
+	response pugna_LevelUp
 }
 
 Response pugna_LastHit
@@ -274,27 +271,6 @@ Rule pugna_LastHit_Rule
 {
 	criteria LastHit Ispugna 
 	response pugna_LastHit
-}
-
-Response pugna_LevelUp
-{
-	scene "scenes/pugna/pugna_pugna_level_01.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_02.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_03.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_04.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_05.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_06.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_07.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_08.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_09.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_10.vcd" nodelay noscene 
-	scene "scenes/pugna/pugna_pugna_level_11.vcd" nodelay noscene 
-}
-
-Rule pugna_LevelUp_Rule
-{
-	criteria LevelUp Ispugna 
-	response pugna_LevelUp
 }
 
 Response pugna_Death

@@ -4,7 +4,6 @@ criterion "IsAllydeath_prophet" "nearby_ally" "npc_dota_hero_death_prophet" weig
 criterion "IsDeathProphetSilence" "abilityname" "death_prophet_silence" weight 5 required
 criterion "IsDeathProphetExorcism" "abilityname" "death_prophet_exorcism" weight 5 required
 criterion "IsDeathProphetExorcismEnd" "exorcismend" "1" weight 5 required
-criterion "IsDeathProphetKilledTower" "killedclass" "npc_dota_tower" weight 5 required
 
 Response death_prophet_Spawn
 {
@@ -384,17 +383,6 @@ Rule death_prophet_LastHit_Rule
 {
 	criteria LastHit Isdeath_prophet 
 	response death_prophet_LastHit
-}
-
-Response death_prophet_LastHitIsDeathProphetKilledTowerChance_25%
-{
-	scene "scenes/death_prophet/death_prophet_dpro_denyghost_05.vcd" nodelay noscene 
-}
-
-Rule death_prophet_LastHitIsDeathProphetKilledTowerChance_25%_Rule
-{
-	criteria LastHit Isdeath_prophet IsDeathProphetKilledTower Chance_25%
-	response death_prophet_LastHitIsDeathProphetKilledTowerChance_25%
 }
 
 Response death_prophet_Death

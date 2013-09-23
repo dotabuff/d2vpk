@@ -218,13 +218,13 @@ Rule announcer_dlc_bastion_CustomIsGameStartIsAnnouncerVoice_Bastion_Rule
 
 Response announcer_dlc_bastion_CustomIsFortAttackedIsNotSpectatorIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_01.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_02.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_03.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_04.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_05.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_06.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_07.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_01.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_02.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_03.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_04.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_05.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_06.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_yr_07.vcd" nodelay noscene respeakdelay 6 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsFortAttackedIsNotSpectatorIsAnnouncerVoice_Bastion_Rule
@@ -235,12 +235,12 @@ Rule announcer_dlc_bastion_CustomIsFortAttackedIsNotSpectatorIsAnnouncerVoice_Ba
 
 Response announcer_dlc_bastion_CustomIsFortAttackedIsGoodAttackedIsSpectatorIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_01.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_02.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_03.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_04.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_05.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_06.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_01.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_02.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_03.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_04.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_05.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_rad_06.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsFortAttackedIsGoodAttackedIsSpectatorIsAnnouncerVoice_Bastion_Rule
@@ -251,12 +251,12 @@ Rule announcer_dlc_bastion_CustomIsFortAttackedIsGoodAttackedIsSpectatorIsAnnoun
 
 Response announcer_dlc_bastion_CustomIsFortAttackedIsBadAttackedIsSpectatorIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_01.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_02.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_03.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_04.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_05.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_06.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_01.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_02.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_03.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_04.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_05.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_anc_attack_dire_06.vcd" nodelay noscene respeakdelay 8 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsFortAttackedIsBadAttackedIsSpectatorIsAnnouncerVoice_Bastion_Rule
@@ -346,10 +346,10 @@ Rule announcer_dlc_bastion_CustomIsTowerAttackedIsBadAttackedIsSpectatorIsBotLan
 Response announcer_dlc_bastion_CustomIsTowerAttackedIsNotSpectatorIsTopLaneIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_top_01.vcd" nodelay noscene respeakdelay 7
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_top_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_top_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_top_03.vcd" nodelay noscene respeakdelay 7
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_top_04.vcd" nodelay noscene respeakdelay 7
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_top_05.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_top_05.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsTowerAttackedIsNotSpectatorIsTopLaneIsAnnouncerVoice_Bastion_Rule
@@ -361,8 +361,8 @@ Rule announcer_dlc_bastion_CustomIsTowerAttackedIsNotSpectatorIsTopLaneIsAnnounc
 Response announcer_dlc_bastion_CustomIsTowerAttackedIsNotSpectatorIsMidLaneIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_mid_01.vcd" nodelay noscene respeakdelay 7
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_mid_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_mid_03.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_mid_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_mid_03.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_mid_04.vcd" nodelay noscene respeakdelay 7
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_mid_05.vcd" nodelay noscene respeakdelay 7
 }
@@ -376,10 +376,10 @@ Rule announcer_dlc_bastion_CustomIsTowerAttackedIsNotSpectatorIsMidLaneIsAnnounc
 Response announcer_dlc_bastion_CustomIsTowerAttackedIsNotSpectatorIsBotLaneIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_bot_01.vcd" nodelay noscene respeakdelay 7
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_bot_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_bot_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_bot_03.vcd" nodelay noscene respeakdelay 7
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_bot_04.vcd" nodelay noscene respeakdelay 7
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_bot_05.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_attack_yr_bot_05.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsTowerAttackedIsNotSpectatorIsBotLaneIsAnnouncerVoice_Bastion_Rule
@@ -391,7 +391,7 @@ Rule announcer_dlc_bastion_CustomIsTowerAttackedIsNotSpectatorIsBotLaneIsAnnounc
 Response announcer_dlc_bastion_CustomIsTowerKilledIsTopLaneIsNotDenyIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_top_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_top_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_top_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_top_03.vcd" nodelay noscene 
 }
 
@@ -404,7 +404,7 @@ Rule announcer_dlc_bastion_CustomIsTowerKilledIsTopLaneIsNotDenyIsAnnouncerVoice
 Response announcer_dlc_bastion_CustomIsTowerKilledIsMidLaneIsNotDenyIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_mid_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_mid_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_mid_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_mid_03.vcd" nodelay noscene 
 }
 
@@ -416,7 +416,7 @@ Rule announcer_dlc_bastion_CustomIsTowerKilledIsMidLaneIsNotDenyIsAnnouncerVoice
 
 Response announcer_dlc_bastion_CustomIsTowerKilledIsBotLaneIsNotDenyIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_bot_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_bot_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_bot_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_yr_bot_03.vcd" nodelay noscene 
 }
@@ -431,7 +431,7 @@ Response announcer_dlc_bastion_CustomIsEnemyTowerKilledIsTopLaneIsNotDenyIsAnnou
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_top_01.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_top_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_top_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_top_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsEnemyTowerKilledIsTopLaneIsNotDenyIsAnnouncerVoice_Bastion_Rule
@@ -442,7 +442,7 @@ Rule announcer_dlc_bastion_CustomIsEnemyTowerKilledIsTopLaneIsNotDenyIsAnnouncer
 
 Response announcer_dlc_bastion_CustomIsEnemyTowerKilledIsMidLaneIsNotDenyIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_mid_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_mid_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_mid_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_mid_03.vcd" nodelay noscene 
 }
@@ -456,7 +456,7 @@ Rule announcer_dlc_bastion_CustomIsEnemyTowerKilledIsMidLaneIsNotDenyIsAnnouncer
 Response announcer_dlc_bastion_CustomIsEnemyTowerKilledIsBotLaneIsNotDenyIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_bot_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_bot_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_bot_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_fall_enm_bot_03.vcd" nodelay noscene 
 }
 
@@ -548,7 +548,7 @@ Response announcer_dlc_bastion_CustomIsBarracksAttackedIsNotSpectatorIsTopLaneIs
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_top_01.vcd" nodelay noscene respeakdelay 7
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_top_02.vcd" nodelay noscene respeakdelay 7
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_top_03.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_top_03.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsBarracksAttackedIsNotSpectatorIsTopLaneIsAnnouncerVoice_Bastion_Rule
@@ -560,7 +560,7 @@ Rule announcer_dlc_bastion_CustomIsBarracksAttackedIsNotSpectatorIsTopLaneIsAnno
 Response announcer_dlc_bastion_CustomIsBarracksAttackedIsNotSpectatorIsMidLaneIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_mid_01.vcd" nodelay noscene respeakdelay 7
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_mid_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_mid_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_mid_03.vcd" nodelay noscene respeakdelay 7
 }
 
@@ -573,7 +573,7 @@ Rule announcer_dlc_bastion_CustomIsBarracksAttackedIsNotSpectatorIsMidLaneIsAnno
 Response announcer_dlc_bastion_CustomIsBarracksAttackedIsNotSpectatorIsBotLaneIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_bot_01.vcd" nodelay noscene respeakdelay 7
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_bot_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_bot_02.vcd" nodelay noscene respeakdelay 7 then self TLK_DOTA_FOLLOWUP_NEGATIVE_ONGOING foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_attack_yr_bot_03.vcd" nodelay noscene respeakdelay 7
 }
 
@@ -663,7 +663,7 @@ Rule announcer_dlc_bastion_CustomIsBarracksAttackedIsBadAttackedIsSpectatorIsBot
 
 Response announcer_dlc_bastion_CustomIsBarracksKilledIsTopLaneIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_top_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_top_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_top_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_top_03.vcd" nodelay noscene 
 }
@@ -678,7 +678,7 @@ Response announcer_dlc_bastion_CustomIsBarracksKilledIsMidLaneIsAnnouncerVoice_B
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_mid_01.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_mid_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_mid_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_mid_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsBarracksKilledIsMidLaneIsAnnouncerVoice_Bastion_Rule
@@ -690,7 +690,7 @@ Rule announcer_dlc_bastion_CustomIsBarracksKilledIsMidLaneIsAnnouncerVoice_Basti
 Response announcer_dlc_bastion_CustomIsBarracksKilledIsBotLaneIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_bot_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_bot_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_bot_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_yr_bot_03.vcd" nodelay noscene 
 }
 
@@ -704,7 +704,7 @@ Response announcer_dlc_bastion_CustomIsEnemyBarracksKilledIsTopLaneIsAnnouncerVo
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_top_01.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_top_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_top_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_top_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsEnemyBarracksKilledIsTopLaneIsAnnouncerVoice_Bastion_Rule
@@ -715,7 +715,7 @@ Rule announcer_dlc_bastion_CustomIsEnemyBarracksKilledIsTopLaneIsAnnouncerVoice_
 
 Response announcer_dlc_bastion_CustomIsEnemyBarracksKilledIsMidLaneIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_mid_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_mid_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_mid_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_mid_03.vcd" nodelay noscene 
 }
@@ -728,7 +728,7 @@ Rule announcer_dlc_bastion_CustomIsEnemyBarracksKilledIsMidLaneIsAnnouncerVoice_
 
 Response announcer_dlc_bastion_CustomIsEnemyBarracksKilledIsBotLaneIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_bot_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_bot_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_bot_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_rax_fall_enm_bot_03.vcd" nodelay noscene 
 }
@@ -819,7 +819,7 @@ Rule announcer_dlc_bastion_CustomIsBadBarracksKilledIsSpectatorIsBotLaneIsAnnoun
 
 Response announcer_dlc_bastion_CustomIsTowerKilledIsTopLaneIsDenyIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_top_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_top_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_top_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_top_03.vcd" nodelay noscene 
 }
@@ -832,7 +832,7 @@ Rule announcer_dlc_bastion_CustomIsTowerKilledIsTopLaneIsDenyIsAnnouncerVoice_Ba
 
 Response announcer_dlc_bastion_CustomIsTowerKilledIsMidLaneIsDenyIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_mid_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_mid_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_mid_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_mid_03.vcd" nodelay noscene 
 }
@@ -845,7 +845,7 @@ Rule announcer_dlc_bastion_CustomIsTowerKilledIsMidLaneIsDenyIsAnnouncerVoice_Ba
 
 Response announcer_dlc_bastion_CustomIsTowerKilledIsBotLaneIsDenyIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_bot_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_bot_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_bot_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_yr_bot_03.vcd" nodelay noscene 
 }
@@ -858,9 +858,9 @@ Rule announcer_dlc_bastion_CustomIsTowerKilledIsBotLaneIsDenyIsAnnouncerVoice_Ba
 
 Response announcer_dlc_bastion_CustomIsEnemyTowerKilledIsTopLaneIsDenyIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_top_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_top_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_top_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_top_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_top_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsEnemyTowerKilledIsTopLaneIsDenyIsAnnouncerVoice_Bastion_Rule
@@ -873,7 +873,7 @@ Response announcer_dlc_bastion_CustomIsEnemyTowerKilledIsMidLaneIsDenyIsAnnounce
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_mid_01.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_mid_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_mid_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_mid_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsEnemyTowerKilledIsMidLaneIsDenyIsAnnouncerVoice_Bastion_Rule
@@ -886,7 +886,7 @@ Response announcer_dlc_bastion_CustomIsEnemyTowerKilledIsBotLaneIsDenyIsAnnounce
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_bot_01.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_bot_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_bot_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_twr_deny_enm_bot_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 }
 
 Rule announcer_dlc_bastion_CustomIsEnemyTowerKilledIsBotLaneIsDenyIsAnnouncerVoice_Bastion_Rule
@@ -1035,7 +1035,7 @@ Rule announcer_dlc_bastion_CustomCourierLostGoodIsAnnouncerVoice_Bastion_Rule
 
 Response announcer_dlc_bastion_CustomIsMegaCreepsIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_mega_now_we_01.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_mega_now_we_01.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_POSITIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_mega_now_we_02.vcd" nodelay noscene 
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_mega_now_we_03.vcd" nodelay noscene 
 }
@@ -1049,7 +1049,7 @@ Rule announcer_dlc_bastion_CustomIsMegaCreepsIsAnnouncerVoice_Bastion_Rule
 Response announcer_dlc_bastion_CustomIsEnemyMegaCreepsIsAnnouncerVoice_Bastion
 {
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_mega_now_enm_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_mega_now_enm_02.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_mega_now_enm_02.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_NEGATIVE foo:0 0.5
 	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_mega_now_enm_03.vcd" nodelay noscene 
 }
 
@@ -1113,9 +1113,9 @@ Rule announcer_dlc_bastion_CustomIsRoshanKilledGoodIsAnnouncerVoice_Bastion_Rule
 
 Response announcer_dlc_bastion_CustomIsBadVictoryIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_dire_01.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_dire_02.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_dire_03.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_dire_01.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 1
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_dire_02.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 1
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_dire_03.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 1
 }
 
 Rule announcer_dlc_bastion_CustomIsBadVictoryIsAnnouncerVoice_Bastion_Rule
@@ -1126,9 +1126,9 @@ Rule announcer_dlc_bastion_CustomIsBadVictoryIsAnnouncerVoice_Bastion_Rule
 
 Response announcer_dlc_bastion_CustomIsGoodVictoryIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_rad_01.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_rad_02.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_rad_02.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_rad_01.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 1
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_rad_02.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 1
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_victory_rad_02.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 1
 }
 
 Rule announcer_dlc_bastion_CustomIsGoodVictoryIsAnnouncerVoice_Bastion_Rule
@@ -1409,6 +1409,18 @@ Rule announcer_dlc_bastion_CustomIsAllRandomIsAnnouncerVoice_Bastion_Rule
 {
 	criteria Custom Isannouncer_dlc_bastion IsAllRandom IsAnnouncerVoice_Bastion
 	response announcer_dlc_bastion_CustomIsAllRandomIsAnnouncerVoice_Bastion
+}
+
+Response announcer_dlc_bastion_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Bastion
+{
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_capt_draft_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_capt_draft_02.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_bastion_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Bastion_Rule
+{
+	criteria Custom Isannouncer_dlc_bastion IsCaptainsDraft IsDraftBegin IsAnnouncerVoice_Bastion
+	response announcer_dlc_bastion_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Bastion
 }
 
 Response announcer_dlc_bastion_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Bastion

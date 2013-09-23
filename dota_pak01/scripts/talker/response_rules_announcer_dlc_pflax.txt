@@ -1230,6 +1230,18 @@ Rule announcer_dlc_pflax_CustomIsAllRandomIsAnnouncerVoice_Pflax_Rule
 	response announcer_dlc_pflax_CustomIsAllRandomIsAnnouncerVoice_Pflax
 }
 
+Response announcer_dlc_pflax_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Pflax
+{
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_capt_draft_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_capt_draft_03.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_pflax_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Pflax_Rule
+{
+	criteria Custom Isannouncer_dlc_pflax IsCaptainsDraft IsDraftBegin IsAnnouncerVoice_Pflax
+	response announcer_dlc_pflax_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Pflax
+}
+
 Response announcer_dlc_pflax_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Pflax
 {
 	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_capt_mode_02.vcd" nodelay noscene speakonce

@@ -55,12 +55,12 @@
 	}
 }
 
-"Hero_LoneDruid.BearForm.PreAttack" 
+"Hero_LoneDruid.TrueForm.PreAttack" 
 {
 	"channel"		"CHAN_WEAPON"
-	"volume"		"1"
+	"volume"		"0.5, 0.7"
 	"pitch"			"95, 105"
-	"soundlevel"  	"SNDLVL_75dB"
+	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95,105"
 	"rndwave"
 	{
@@ -78,7 +78,7 @@
 	}
 }
 
-"Hero_LoneDruid.BearForm.Attack"
+"Hero_LoneDruid.TrueForm.Attack"
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"0.6, 0.7"
@@ -277,7 +277,7 @@
 "Hero_LoneDruid.BattleCry"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"wave"			")weapons/hero/lone_druid/battle_cry.wav"
@@ -293,7 +293,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "600"
+				"input_radius"  "300"
 			}
 		}
 	}
@@ -302,7 +302,7 @@
 "Hero_LoneDruid.BattleCry.Bear"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.6"
+	"volume"		"0.7"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"100"
 	"wave"			")weapons/hero/lone_druid/battle_cry_bear.wav"

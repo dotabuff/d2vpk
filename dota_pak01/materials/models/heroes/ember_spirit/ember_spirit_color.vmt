@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\ember_spirit\ember_spirit_color"
+	"$normalmap" "models\development\flatnormal"
+	"$maskmap1" "models\development\blankmasks1"
+	"$maskmap2" "models\development\blankmasks2"
+
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 1
+	$SPECULARBLENDTOFULL 1
+
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+//	$alphatest 1
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -234,7 +234,7 @@
 "Hero_Slardar.Movement"
 {
 	"channel"		"CHAN_BODY"
-	"volume"		"0.1, 0.5"
+	"volume"		"0.1, 0.4"
 	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95,105"
 	
@@ -251,7 +251,9 @@
 		"start_stack"
 		{
 			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_water_footsteps_start"
 		}
+		
 	}
 }
 
@@ -268,7 +270,9 @@
 		"start_stack"
 		{
 			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_water_footsteps_start"
 		}
+		
 	}
 }
 

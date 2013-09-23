@@ -215,17 +215,6 @@ Rule riki_LastHit_Rule
 	response riki_LastHit
 }
 
-Response riki_LastHitIsTower
-{
-	scene "scenes/riki/riki_riki_deny_03.vcd" nodelay noscene speakonce
-}
-
-Rule riki_LastHitIsTower_Rule
-{
-	criteria LastHit Isriki IsTower
-	response riki_LastHitIsTower
-}
-
 Response riki_Death
 {
 	scene "scenes/riki/riki_riki_death_01.vcd" nodelay noscene 

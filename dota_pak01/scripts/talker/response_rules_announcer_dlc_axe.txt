@@ -1125,6 +1125,17 @@ Rule announcer_dlc_axe_CustomIsAllRandomIsAnnouncerVoice_Axe_Rule
 	response announcer_dlc_axe_CustomIsAllRandomIsAnnouncerVoice_Axe
 }
 
+Response announcer_dlc_axe_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Axe
+{
+	scene "scenes/announcer_dlc_axe/announcer_dlc_axe_announcer_type_capt_draft.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_axe_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Axe_Rule
+{
+	criteria Custom Isannouncer_dlc_axe IsCaptainsDraft IsDraftBegin IsAnnouncerVoice_Axe
+	response announcer_dlc_axe_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoice_Axe
+}
+
 Response announcer_dlc_axe_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Axe
 {
 	scene "scenes/announcer_dlc_axe/announcer_dlc_axe_announcer_type_capt_mode.vcd" nodelay noscene speakonce

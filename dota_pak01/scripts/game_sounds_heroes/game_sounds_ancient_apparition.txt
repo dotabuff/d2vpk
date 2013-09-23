@@ -374,7 +374,7 @@
 "Hero_Ancient_Apparition.IdleLoop"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.2"
+	"volume"		"0.1"
 	"soundlevel"  	"SNDLVL_75dB"
 	"wave"			"physics\movement\hero\ancient_apparition\idle_loop.wav"
 	"operator_stacks"
@@ -389,7 +389,7 @@
  			"volume_move"
 			{
 				"input_max" "300.0"
-				"input_map_min" "0.3"
+				"input_map_min" "0.25"
 			}
 			"volume_falloff_linear"
 			{

@@ -113,7 +113,7 @@
 		}
 
 		"advance_event"				"lesson_started"
-		"advance_time"				"8"
+		"advance_time"				"10"
 		"next_lesson"				"lasthit_training_start_explanation2"
 	}
 
@@ -127,7 +127,7 @@
 		}
 
 		"advance_event"				"lesson_started"
-		"advance_time"				"8"
+		"advance_time"				"10"
 		"next_lesson"				"lasthit_training_start_explanation3"
 	}
 
@@ -164,15 +164,30 @@
 		}
 
 		"advance_event"				"lesson_started"
-		"advance_time"				"8"
-		"next_lesson"				"lasthit_training_lasthits_quest1"
+		"advance_time"				"10"
+		"next_lesson"				"lasthit_waitforplayer"
 	}
 
-	"lasthit_training_lasthits_quest1"
+	"lasthit_waitforplayer" // wait for player to arrive at mid
 	{
+		"convars"
+		{
+			"dota_tutorial_roquelaire_useperches"		"0"
+		}
+		
+		"stop_npc_speech"			"ss_roquelaire"
+		
 		"player_movement_allowed"	"1"
 		"movecamera_to"				"!player"
 		
+		"trigger_logic_relay"		"training_lasthit_roqmove"
+		
+		"advance_event"				"lasthit_event_player_arrived"
+		"next_lesson"				"lasthit_training_lasthits_quest1"
+	}
+	
+	"lasthit_training_lasthits_quest1"
+	{
 		"npc_speech"
 		{
 			"text"			"#DOTA_Tutorial_LastHit_LastHits1"
@@ -183,6 +198,7 @@
 		"advance_on_quest"			"quest_lasthits_pt1"
 		"next_lesson"				"lasthit_training_lasthits_quest2"
 	}
+	
 
 	"lasthit_training_lasthits_quest2"
 	{
@@ -253,9 +269,9 @@
 
 		"npc_speech"
 		{
-			"text"			"#DOTA_Tutorial_LastHit_DenyExplanation1"
-			"npc"			"ss_roquelaire"
-			"allow_movement"	"1"
+			"text"					"#DOTA_Tutorial_LastHit_DenyExplanation1"
+			"npc"					"ss_roquelaire"
+			"allow_movement"		"0"
 		}
 
 		"advance_event"				"lesson_started"
@@ -322,7 +338,7 @@
 	"lasthit_training_end"
 	{
 		"fade_to"					"255"
-		"finish_text"				"#DOTA_LastHitChallenge_Finished"
+		"finish_text"				"#DOTA_LastHitTraining_Finished"
 		"finish_tutorial"			"1"
 	}
 }

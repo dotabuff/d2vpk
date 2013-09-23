@@ -184,11 +184,11 @@ criterion "IsLaneBot"	"lane" "Bot" required
 criterion "IsInterruptedTeleport" "interrupted_teleport" "1" required
 
 criterion "Chance_1%"	"randomnum" "99" required
-criterion "Chance_2%"	"randomnum" "<=2" required
-criterion "Chance_3%"	"randomnum" "<=3" required
-criterion "Chance_5%"	"randomnum" "<=5" required
-criterion "Chance_10%"	"randomnum" "<=10" required
-criterion "Chance_15%"	"randomnum" "<=15" required
+criterion "Chance_2%"	"randomnum" ">=97,<=98" required
+criterion "Chance_3%"	"randomnum" ">=94,<=96" required
+criterion "Chance_5%"	"randomnum" ">=89,<=93" required
+criterion "Chance_10%"	"randomnum" ">=79,<=88" required
+criterion "Chance_15%"	"randomnum" ">=64,<=78" required
 criterion "Chance_20%"	"randomnum" "<=20" required
 criterion "Chance_25%"	"randomnum" "<=25" required
 criterion "Chance_30%"	"randomnum" "<=30" required
@@ -239,6 +239,8 @@ criterion "IsHero" "hero" "1" required
 criterion "IsQuickBlinkKill" "blinkdaggertime" "<=2" required
 
 criterion "IsTower" "tower" "1" required
+
+criterion "IsKilledTower" "killedclass" "npc_dota_tower" required
 
 //Lets hero comment when killing rival's minion
 criterion "IsEnemyLoneDruidBear" "killedClass" "npc_dota_lone_druid_bear" required
@@ -376,6 +378,8 @@ criterion "IsReverseCapMode" "announce_gamemode" "8" weight 5 required
 criterion "IsMidOnly" "announce_gamemode" "11" weight 5 required
 criterion "IsLeastPlayed" "announce_gamemode" "12" weight 5 required
 criterion "IsLimitedHeroes" "announce_gamemode" "13" weight 5 required
+criterion "IsCaptainsDraft" "announce_gamemode" "16" weight 5 required
+
 
 criterion "IsDraftBegin" "line" "announcer_announcer_type_capt_mode" weight 5 required
 

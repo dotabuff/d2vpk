@@ -77,7 +77,7 @@ Response sven_CustomIsInterruptedTeleport
 	scene "scenes/sven/sven_sven_ability_teleport_02.vcd" nodelay noscene 
 	scene "scenes/sven/sven_sven_ability_teleport_03.vcd" nodelay noscene 
 	scene "scenes/sven/sven_sven_ability_teleport_04.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_ability_teleport_05.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_rival_27.vcd" nodelay noscene 
 }
 
 Rule sven_CustomIsInterruptedTeleport_Rule
@@ -134,6 +134,9 @@ Response sven_CastExecuteIsStormBolt
 	scene "scenes/sven/sven_sven_ability_stormbolt_09.vcd" nodelay noscene 
 	scene "scenes/sven/sven_sven_ability_stormbolt_10.vcd" nodelay noscene 
 	scene "scenes/sven/sven_sven_ability_stormbolt_11.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_ability_warcry_06.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_ability_warcry_07.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_ability_warcry_09.vcd" nodelay noscene 
 }
 
 Rule sven_CastExecuteIsStormBolt_Rule
@@ -238,17 +241,82 @@ Rule sven_Kill_Rule
 	response sven_Kill
 }
 
-Response sven_KillIsEnemyDragon_KnightChance_25%
+Response sven_KillIsEnemyOmniknightChance_15%
 {
-	scene "scenes/sven/sven_sven_rivals_general_01.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_rivals_dragon_01.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_rival_19.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_rivals_general_02.vcd" nodelay noscene 
 }
 
-Rule sven_KillIsEnemyDragon_KnightChance_25%_Rule
+Rule sven_KillIsEnemyOmniknightChance_15%_Rule
 {
-	criteria Kill Issven IsEnemyDragon_Knight Chance_25%
-	response sven_KillIsEnemyDragon_KnightChance_25%
+	criteria Kill Issven IsEnemyOmniknight Chance_15%
+	response sven_KillIsEnemyOmniknightChance_15%
+}
+
+Response sven_KillIsEnemyDragon_KnightChance_15%
+{
+	scene "scenes/sven/sven_sven_rivals_general_02.vcd" nodelay noscene 
+}
+
+Rule sven_KillIsEnemyDragon_KnightChance_15%_Rule
+{
+	criteria Kill Issven IsEnemyDragon_Knight Chance_15%
+	response sven_KillIsEnemyDragon_KnightChance_15%
+}
+
+Response sven_KillIsEnemyChaos_KnightChance_15%
+{
+	scene "scenes/sven/sven_sven_rivals_general_02.vcd" nodelay noscene 
+}
+
+Rule sven_KillIsEnemyChaos_KnightChance_15%_Rule
+{
+	criteria Kill Issven IsEnemyChaos_Knight Chance_15%
+	response sven_KillIsEnemyChaos_KnightChance_15%
+}
+
+Response sven_KillIsEnemyOmniknightChance_5%
+{
+	scene "scenes/sven/sven_sven_rivals_general_03.vcd" nodelay noscene 
+}
+
+Rule sven_KillIsEnemyOmniknightChance_5%_Rule
+{
+	criteria Kill Issven IsEnemyOmniknight Chance_5%
+	response sven_KillIsEnemyOmniknightChance_5%
+}
+
+Response sven_KillIsEnemyDragon_KnightChance_5%
+{
+	scene "scenes/sven/sven_sven_rivals_general_03.vcd" nodelay noscene 
+}
+
+Rule sven_KillIsEnemyDragon_KnightChance_5%_Rule
+{
+	criteria Kill Issven IsEnemyDragon_Knight Chance_5%
+	response sven_KillIsEnemyDragon_KnightChance_5%
+}
+
+Response sven_KillIsEnemyChaos_KnightChance_5%
+{
+	scene "scenes/sven/sven_sven_rivals_general_03.vcd" nodelay noscene 
+}
+
+Rule sven_KillIsEnemyChaos_KnightChance_5%_Rule
+{
+	criteria Kill Issven IsEnemyChaos_Knight Chance_5%
+	response sven_KillIsEnemyChaos_KnightChance_5%
+}
+
+Response sven_KillIsEnemyChenChance_25%
+{
+	scene "scenes/sven/sven_sven_rivals_omni_01.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_rival_21.vcd" nodelay noscene 
+}
+
+Rule sven_KillIsEnemyChenChance_25%_Rule
+{
+	criteria Kill Issven IsEnemyChen Chance_25%
+	response sven_KillIsEnemyChenChance_25%
 }
 
 Response sven_KillIsEnemyChaos_KnightChance_25%
@@ -261,6 +329,18 @@ Rule sven_KillIsEnemyChaos_KnightChance_25%_Rule
 {
 	criteria Kill Issven IsEnemyChaos_Knight Chance_25%
 	response sven_KillIsEnemyChaos_KnightChance_25%
+}
+
+Response sven_KillIsEnemyDragon_KnightChance_25%
+{
+	scene "scenes/sven/sven_sven_rivals_dragon_01.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_rival_19.vcd" nodelay noscene 
+}
+
+Rule sven_KillIsEnemyDragon_KnightChance_25%_Rule
+{
+	criteria Kill Issven IsEnemyDragon_Knight Chance_25%
+	response sven_KillIsEnemyDragon_KnightChance_25%
 }
 
 Response sven_KillIsEnemyStormSpiritChance_25%
@@ -351,17 +431,6 @@ Rule sven_KillIsEnemyOmniknightChance_25%_Rule
 	response sven_KillIsEnemyOmniknightChance_25%
 }
 
-Response sven_KillIsEnemyChenChance_25%
-{
-	scene "scenes/sven/sven_sven_rival_21.vcd" nodelay noscene 
-}
-
-Rule sven_KillIsEnemyChenChance_25%_Rule
-{
-	criteria Kill Issven IsEnemyChen Chance_25%
-	response sven_KillIsEnemyChenChance_25%
-}
-
 Response sven_KillIsEnemyRikiChance_25%
 {
 	scene "scenes/sven/sven_sven_rival_22.vcd" nodelay noscene 
@@ -404,6 +473,17 @@ Rule sven_KillIsEnemyJuggernautChance_25%_Rule
 {
 	criteria Kill Issven IsEnemyJuggernaut Chance_25%
 	response sven_KillIsEnemyJuggernautChance_25%
+}
+
+Response sven_KillIsEnemyFurionIsStormBoltChance_15%
+{
+	scene "scenes/sven/sven_sven_rival_26.vcd" nodelay noscene 
+}
+
+Rule sven_KillIsEnemyFurionIsStormBoltChance_15%_Rule
+{
+	criteria Kill Issven IsEnemyFurion IsStormBolt Chance_15% 
+	response sven_KillIsEnemyFurionIsStormBoltChance_15%
 }
 
 Response sven_KillIsFirstBlood
@@ -478,7 +558,7 @@ Rule sven_PurchaseIsExpensiveItem_Rule
 
 Response sven_PurchaseIsBlackKingBar
 {
-	scene "scenes/sven/sven_sven_item_01.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_item_01.vcd" nodelay noscene speakonce
 }
 
 Rule sven_PurchaseIsBlackKingBar_Rule
@@ -489,9 +569,8 @@ Rule sven_PurchaseIsBlackKingBar_Rule
 
 Response sven_PurchaseIsArmlet
 {
-	scene "scenes/sven/sven_sven_item_02.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_item_03.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_item_04.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_item_02.vcd" nodelay noscene speakonce
+	scene "scenes/sven/sven_sven_item_03.vcd" nodelay noscene speakonce
 }
 
 Rule sven_PurchaseIsArmlet_Rule
@@ -500,9 +579,20 @@ Rule sven_PurchaseIsArmlet_Rule
 	response sven_PurchaseIsArmlet
 }
 
+Response sven_PurchaseIsArmletChance_5%
+{
+	scene "scenes/sven/sven_sven_item_04.vcd" nodelay noscene speakonce
+}
+
+Rule sven_PurchaseIsArmletChance_5%_Rule
+{
+	criteria Purchase Issven IsArmlet Chance_5%
+	response sven_PurchaseIsArmletChance_5%
+}
+
 Response sven_PurchaseIsDaedalus
 {
-	scene "scenes/sven/sven_sven_item_05.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_item_05.vcd" nodelay noscene speakonce
 }
 
 Rule sven_PurchaseIsDaedalus_Rule
@@ -513,7 +603,7 @@ Rule sven_PurchaseIsDaedalus_Rule
 
 Response sven_PurchaseIsHeart
 {
-	scene "scenes/sven/sven_sven_item_06.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_item_06.vcd" nodelay noscene speakonce
 }
 
 Rule sven_PurchaseIsHeart_Rule
@@ -524,7 +614,7 @@ Rule sven_PurchaseIsHeart_Rule
 
 Response sven_PurchaseIsAssaultCuirass
 {
-	scene "scenes/sven/sven_sven_item_07.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_item_07.vcd" nodelay noscene speakonce
 }
 
 Rule sven_PurchaseIsAssaultCuirass_Rule
@@ -623,6 +713,8 @@ Response sven_Deny
 	scene "scenes/sven/sven_sven_deny_07.vcd" nodelay noscene 
 	scene "scenes/sven/sven_sven_deny_08.vcd" nodelay noscene 
 	scene "scenes/sven/sven_sven_deny_09.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_laugh_08.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_laugh_09.vcd" nodelay noscene 
 }
 
 Rule sven_Deny_Rule
@@ -814,13 +906,23 @@ Response sven_Pain
 	scene "scenes/sven/sven_sven_pain_04.vcd" nodelay noscene 
 	scene "scenes/sven/sven_sven_pain_05.vcd" nodelay noscene 
 	scene "scenes/sven/sven_sven_pain_06.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_underattack_01.vcd" nodelay noscene 
 }
 
 Rule sven_Pain_Rule
 {
 	criteria Pain Issven 
 	response sven_Pain
+}
+
+Response sven_PainChance_25%
+{
+	scene "scenes/sven/sven_sven_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule sven_PainChance_25%_Rule
+{
+	criteria Pain Issven Chance_25%
+	response sven_PainChance_25%
 }
 
 Response sven_CooldownLittleNag
@@ -863,6 +965,17 @@ Rule sven_CooldownSuperNag_Rule
 {
 	criteria Cooldown Issven SuperNag
 	response sven_CooldownSuperNag
+}
+
+Response sven_CooldownSuperNagChance1%
+{
+	scene "scenes/sven/sven_sven_notyet_13.vcd" nodelay noscene 
+}
+
+Rule sven_CooldownSuperNagChance1%_Rule
+{
+	criteria Cooldown Issven SuperNag Chance 1%
+	response sven_CooldownSuperNagChance1%
 }
 
 Response sven_NoManaMediumNag
@@ -1029,20 +1142,5 @@ Rule sven_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Issven IsEmoteLaugh
 	response sven_EmoteIsEmoteLaugh
-}
-
-Response sven_EmoteIsEmoteAnger
-{
-	scene "scenes/sven/sven_sven_anger_01.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_anger_02.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_anger_03.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_anger_04.vcd" nodelay noscene 
-	scene "scenes/sven/sven_sven_anger_05.vcd" nodelay noscene 
-}
-
-Rule sven_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Issven IsEmoteAnger
-	response sven_EmoteIsEmoteAnger
 }
 

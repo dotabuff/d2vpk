@@ -1046,6 +1046,17 @@ Rule announcer_dlc_tusk_CustomIsAllRandomIsAnnouncerVoiceDLCTusk_Rule
 	response announcer_dlc_tusk_CustomIsAllRandomIsAnnouncerVoiceDLCTusk
 }
 
+Response announcer_dlc_tusk_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoiceDLCTusk
+{
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_capt_draft.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_tusk_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoiceDLCTusk_Rule
+{
+	criteria Custom Isannouncer_dlc_tusk IsCaptainsDraft IsDraftBegin IsAnnouncerVoiceDLCTusk
+	response announcer_dlc_tusk_CustomIsCaptainsDraftIsDraftBeginIsAnnouncerVoiceDLCTusk
+}
+
 Response announcer_dlc_tusk_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoiceDLCTusk
 {
 	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_capt_mode.vcd" nodelay noscene speakonce

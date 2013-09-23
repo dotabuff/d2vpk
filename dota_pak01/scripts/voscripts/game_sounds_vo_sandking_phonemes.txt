@@ -3,16 +3,19 @@
 VERSION 1.0
 PLAINTEXT
 {
-Sandking is here.
+Sand King is here.
 }
 WORDS
 {
-WORD Sandking 0.192 1.056
+WORD Sand 0.192 0.608
 {
 115 s 0.192 0.288 1
 230 ae 0.288 0.432 1
 110 n 0.432 0.576 1
 100 d 0.576 0.608 1
+}
+WORD King 0.608 1.056
+{
 107 k 0.608 0.624 1
 618 ih 0.624 0.816 1
 331 ng 0.816 1.056 1
@@ -43,18 +46,21 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Sandking.
+Sand King.
 }
 WORDS
 {
-WORD Sandking 0.096 1.520
+WORD Sand 0.096 0.864
 {
 115 s 0.096 0.272 1
 230 ae 0.272 0.496 1
 110 n 0.496 0.848 1
 100 d 0.848 0.864 1
-107 k 0.864 1.024 1
-618 ih 1.024 1.248 1
+}
+WORD King 1.024 1.520
+{
+107 k 1.024 1.040 1
+618 ih 1.040 1.248 1
 331 ng 1.248 1.520 1
 }
 }
@@ -72,7 +78,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I am Sandking.
+I am Sand King.
 }
 WORDS
 {
@@ -85,12 +91,15 @@ WORD am 0.752 1.408
 230 ae 0.752 0.976 1
 109 m 0.976 1.408 1
 }
-WORD Sandking 1.408 2.752
+WORD Sand 1.408 2.128
 {
 115 s 1.408 1.600 1
 230 ae 1.600 1.792 1
 110 n 1.792 2.032 1
 100 d 2.032 2.128 1
+}
+WORD King 2.128 2.752
+{
 107 k 2.128 2.192 1
 618 ih 2.192 2.384 1
 331 ng 2.384 2.752 1
@@ -959,16 +968,19 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Sandking cometh.
+Sand King cometh.
 }
 WORDS
 {
-WORD Sandking 0.128 1.376
+WORD Sand 0.128 0.688
 {
 115 s 0.128 0.256 1
 230 ae 0.256 0.416 1
 110 n 0.416 0.672 1
 100 d 0.672 0.688 1
+}
+WORD King 0.688 1.376
+{
 107 k 0.688 0.800 1
 618 ih 0.800 1.104 1
 331 ng 1.104 1.376 1
@@ -10352,6 +10364,191 @@ voice_duck 0
 }
 }
 
+*vo\sandking\sand_scepter_01.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Ah, scepter!
+}
+WORDS
+{
+WORD Ah 0.384 1.024
+{
+601 ax 0.384 1.024 1
+}
+WORD scepter 1.472 2.304
+{
+115 s 1.472 1.712 1
+603 eh 1.712 2.256 1
+112 p 2.256 2.272 1
+116 t 2.272 2.288 1
+602 er 2.288 2.304 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\sandking\sand_scepter_02.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+With this scepter I extend my rule.
+}
+WORDS
+{
+WORD With 0.288 0.384
+{
+119 w 0.288 0.336 1
+618 ih 0.336 0.368 1
+240 dh 0.368 0.384 1
+}
+WORD this 0.384 0.576
+{
+240 dh 0.384 0.496 1
+618 ih 0.496 0.560 1
+115 s 0.560 0.576 1
+}
+WORD scepter 0.576 0.896
+{
+115 s 0.576 0.768 1
+603 eh 0.768 0.848 1
+112 p 0.848 0.864 1
+116 t 0.864 0.880 1
+602 er 0.880 0.896 1
+}
+WORD I 0.992 1.488
+{
+593 ay 0.992 1.488 1
+}
+WORD extend 1.488 2.304
+{
+618 ih 1.488 1.504 1
+107 k 1.504 1.552 1
+115 s 1.552 1.808 1
+116 t 1.808 1.824 1
+603 eh 1.824 2.032 1
+110 n 2.032 2.224 1
+100 d 2.224 2.304 1
+}
+WORD my 2.304 2.592
+{
+109 m 2.304 2.336 1
+593 ay 2.336 2.592 1
+}
+WORD rule 2.592 3.296
+{
+633 r 2.592 2.608 1
+117 uw 2.608 2.896 1
+108 l 2.896 3.296 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\sandking\sand_blink_01.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Blink Dagger!
+}
+WORDS
+{
+WORD Blink 0.208 0.592
+{
+98 b 0.208 0.240 1
+108 l 0.240 0.256 1
+108 l 0.256 0.336 1
+331 ng 0.336 0.544 1
+107 k 0.544 0.592 1
+}
+WORD Dagger 0.592 1.152
+{
+100 d 0.592 0.720 1
+103 g 0.720 0.736 1
+602 er 0.736 1.152 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\sandking\sand_blink_02.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Blink the sand from your eyes.
+}
+WORDS
+{
+WORD Blink 0.224 0.416
+{
+98 b 0.224 0.288 1
+108 l 0.288 0.304 1
+108 l 0.304 0.336 1
+331 ng 0.336 0.400 1
+107 k 0.400 0.416 1
+}
+WORD the 0.416 0.640
+{
+240 dh 0.416 0.592 1
+105 iy 0.592 0.640 1
+}
+WORD sand 0.640 1.280
+{
+115 s 0.640 0.816 1
+230 ae 0.816 1.136 1
+110 n 1.136 1.264 1
+100 d 1.264 1.280 1
+}
+WORD from 1.280 1.584
+{
+102 f 1.280 1.424 1
+633 r 1.424 1.440 1
+652 ah 1.440 1.488 1
+109 m 1.488 1.584 1
+}
+WORD your 1.584 1.744
+{
+106 y 1.584 1.600 1
+596 ao 1.600 1.728 1
+633 r 1.728 1.744 1
+}
+WORD eyes 1.888 2.240
+{
+593 ay 1.888 2.224 1
+122 z 2.224 2.240 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
 *vo\sandking\sand_item_01.mp3
 {
 VERSION 1.0
@@ -10429,7 +10626,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
- Blademail.
+Blademail.
 }
 WORDS
 {
@@ -10637,96 +10834,6 @@ WORD more 1.888 2.384
 109 m 1.888 1.968 1
 596 ao 1.968 2.368 1
 633 r 2.368 2.384 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\sandking\sand_blink_01.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Blink Dagger!
-}
-WORDS
-{
-WORD Blink 0.208 0.592
-{
-98 b 0.208 0.240 1
-108 l 0.240 0.256 1
-108 l 0.256 0.336 1
-331 ng 0.336 0.544 1
-107 k 0.544 0.592 1
-}
-WORD Dagger 0.592 1.152
-{
-100 d 0.592 0.720 1
-103 g 0.720 0.736 1
-602 er 0.736 1.152 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\sandking\sand_blink_02.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Blink the sand from your eyes.
-}
-WORDS
-{
-WORD Blink 0.224 0.416
-{
-98 b 0.224 0.288 1
-108 l 0.288 0.304 1
-108 l 0.304 0.336 1
-331 ng 0.336 0.400 1
-107 k 0.400 0.416 1
-}
-WORD the 0.416 0.640
-{
-240 dh 0.416 0.592 1
-105 iy 0.592 0.640 1
-}
-WORD sand 0.640 1.280
-{
-115 s 0.640 0.816 1
-230 ae 0.816 1.136 1
-110 n 1.136 1.264 1
-100 d 1.264 1.280 1
-}
-WORD from 1.280 1.584
-{
-102 f 1.280 1.424 1
-633 r 1.424 1.440 1
-652 ah 1.440 1.488 1
-109 m 1.488 1.584 1
-}
-WORD your 1.584 1.744
-{
-106 y 1.584 1.600 1
-596 ao 1.600 1.728 1
-633 r 1.728 1.744 1
-}
-WORD eyes 1.888 2.240
-{
-593 ay 1.888 2.224 1
-122 z 2.224 2.240 1
 }
 }
 EMPHASIS
@@ -10951,101 +11058,6 @@ WORD service 1.600 2.592
 118 v 1.808 1.824 1
 601 ax 1.824 2.240 1
 115 s 2.240 2.592 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\sandking\sand_scepter_01.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Ah, scepter!
-}
-WORDS
-{
-WORD Ah 0.384 1.024
-{
-601 ax 0.384 1.024 1
-}
-WORD scepter 1.472 2.304
-{
-115 s 1.472 1.712 1
-603 eh 1.712 2.256 1
-112 p 2.256 2.272 1
-116 t 2.272 2.288 1
-602 er 2.288 2.304 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\sandking\sand_scepter_02.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-With this scepter I extend my rule.
-}
-WORDS
-{
-WORD With 0.288 0.384
-{
-119 w 0.288 0.336 1
-618 ih 0.336 0.368 1
-240 dh 0.368 0.384 1
-}
-WORD this 0.384 0.576
-{
-240 dh 0.384 0.496 1
-618 ih 0.496 0.560 1
-115 s 0.560 0.576 1
-}
-WORD scepter 0.576 0.896
-{
-115 s 0.576 0.768 1
-603 eh 0.768 0.848 1
-112 p 0.848 0.864 1
-116 t 0.864 0.880 1
-602 er 0.880 0.896 1
-}
-WORD I 0.992 1.488
-{
-593 ay 0.992 1.488 1
-}
-WORD extend 1.488 2.304
-{
-618 ih 1.488 1.504 1
-107 k 1.504 1.552 1
-115 s 1.552 1.808 1
-116 t 1.808 1.824 1
-603 eh 1.824 2.032 1
-110 n 2.032 2.224 1
-100 d 2.224 2.304 1
-}
-WORD my 2.304 2.592
-{
-109 m 2.304 2.336 1
-593 ay 2.336 2.592 1
-}
-WORD rule 2.592 3.296
-{
-633 r 2.592 2.608 1
-117 uw 2.608 2.896 1
-108 l 2.896 3.296 1
 }
 }
 EMPHASIS

@@ -982,6 +982,17 @@ Rule announcer_CustomIsAllRandom_Rule
 	response announcer_CustomIsAllRandom
 }
 
+Response announcer_CustomIsCaptainsDraftIsDraftBegin
+{
+	scene "scenes/announcer/announcer_announcer_type_capt_draft.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_CustomIsCaptainsDraftIsDraftBegin_Rule
+{
+	criteria Custom Isannouncer IsCaptainsDraft IsDraftBegin
+	response announcer_CustomIsCaptainsDraftIsDraftBegin
+}
+
 Response announcer_CustomIsCaptainsModeIsDraftBegin
 {
 	scene "scenes/announcer/announcer_announcer_type_capt_mode.vcd" nodelay noscene speakonce

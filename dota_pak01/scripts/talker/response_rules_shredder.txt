@@ -93,6 +93,7 @@ Response shredder_Kill
 	scene "scenes/shredder/shredder_timb_kill_14.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_kill_15.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_kill_16.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_deny_13.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_laugh_01.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_laugh_02.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_laugh_03.vcd" nodelay noscene 
@@ -107,31 +108,32 @@ Rule shredder_Kill_Rule
 	response shredder_Kill
 }
 
-Response shredder_KillIsTimbChakramChance_50%
+Response shredder_KillIsTimbChakramChance_20%
 {
 	scene "scenes/shredder/shredder_timb_chakram_01.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_chakram_04.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_chakramreturn_02.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_kill_04.vcd" nodelay noscene 
 }
 
-Rule shredder_KillIsTimbChakramChance_50%_Rule
+Rule shredder_KillIsTimbChakramChance_20%_Rule
 {
-	criteria Kill Isshredder IsTimbChakram Chance_50%
-	response shredder_KillIsTimbChakramChance_50%
+	criteria Kill Isshredder IsTimbChakram Chance_20%
+	response shredder_KillIsTimbChakramChance_20%
 }
 
-Response shredder_KillIsEnemyTroll_WarlordChance_25%
+Response shredder_KillIsEnemyTroll_WarlordChance_35%
 {
 	scene "scenes/shredder/shredder_timb_kill_10.vcd" nodelay noscene 
 }
 
-Rule shredder_KillIsEnemyTroll_WarlordChance_25%_Rule
+Rule shredder_KillIsEnemyTroll_WarlordChance_35%_Rule
 {
-	criteria Kill Isshredder IsEnemyTroll_Warlord Chance_25%
-	response shredder_KillIsEnemyTroll_WarlordChance_25%
+	criteria Kill Isshredder IsEnemyTroll_Warlord Chance_35%
+	response shredder_KillIsEnemyTroll_WarlordChance_35%
 }
 
-Response shredder_KillChance_25%IsEnemyTreant
+Response shredder_KillChance_35%IsEnemyTreant
 {
 	scene "scenes/shredder/shredder_timb_rival_01.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_rival_02.vcd" nodelay noscene 
@@ -140,155 +142,155 @@ Response shredder_KillChance_25%IsEnemyTreant
 	scene "scenes/shredder/shredder_timb_rival_07.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_25%IsEnemyTreant_Rule
+Rule shredder_KillChance_35%IsEnemyTreant_Rule
 {
-	criteria Kill Isshredder Chance_25% IsEnemyTreant
-	response shredder_KillChance_25%IsEnemyTreant
+	criteria Kill Isshredder Chance_35% IsEnemyTreant
+	response shredder_KillChance_35%IsEnemyTreant
 }
 
-Response shredder_KillChance_25%IsEnemyFurion
+Response shredder_KillChance_35%IsEnemyFurion
 {
 	scene "scenes/shredder/shredder_timb_rival_05.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_rival_06.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_rival_07.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_25%IsEnemyFurion_Rule
+Rule shredder_KillChance_35%IsEnemyFurion_Rule
 {
-	criteria Kill Isshredder Chance_25% IsEnemyFurion
-	response shredder_KillChance_25%IsEnemyFurion
+	criteria Kill Isshredder Chance_35% IsEnemyFurion
+	response shredder_KillChance_35%IsEnemyFurion
 }
 
-Response shredder_KillChance_5%IsEnemyFaceless_Void
+Response shredder_KillChance_10%IsEnemyFaceless_Void
 {
 	scene "scenes/shredder/shredder_timb_rival_08.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_5%IsEnemyFaceless_Void_Rule
+Rule shredder_KillChance_10%IsEnemyFaceless_Void_Rule
 {
-	criteria Kill Isshredder Chance_5% IsEnemyFaceless_Void
-	response shredder_KillChance_5%IsEnemyFaceless_Void
+	criteria Kill Isshredder Chance_10% IsEnemyFaceless_Void
+	response shredder_KillChance_10%IsEnemyFaceless_Void
 }
 
-Response shredder_KillChance_25%IsEnemyFaceless_Void
+Response shredder_KillChance_35%IsEnemyFaceless_Void
 {
 	scene "scenes/shredder/shredder_timb_rival_09.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_25%IsEnemyFaceless_Void_Rule
+Rule shredder_KillChance_35%IsEnemyFaceless_Void_Rule
 {
-	criteria Kill Isshredder Chance_25% IsEnemyFaceless_Void
-	response shredder_KillChance_25%IsEnemyFaceless_Void
+	criteria Kill Isshredder Chance_35% IsEnemyFaceless_Void
+	response shredder_KillChance_35%IsEnemyFaceless_Void
 }
 
-Response shredder_KillChance_25%IsEnemyBane
+Response shredder_KillChance_35%IsEnemyBane
 {
 	scene "scenes/shredder/shredder_timb_rival_10.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_25%IsEnemyBane_Rule
+Rule shredder_KillChance_35%IsEnemyBane_Rule
 {
-	criteria Kill Isshredder Chance_25% IsEnemyBane
-	response shredder_KillChance_25%IsEnemyBane
+	criteria Kill Isshredder Chance_35% IsEnemyBane
+	response shredder_KillChance_35%IsEnemyBane
 }
 
-Response shredder_KillChance_5%IsEnemyBatrider
-{
-	scene "scenes/shredder/shredder_timb_rival_11.vcd" nodelay noscene 
-}
-
-Rule shredder_KillChance_5%IsEnemyBatrider_Rule
-{
-	criteria Kill Isshredder Chance_5% IsEnemyBatrider
-	response shredder_KillChance_5%IsEnemyBatrider
-}
-
-Response shredder_KillChance_5%IsEnemyLina
+Response shredder_KillChance_10%IsEnemyBatrider
 {
 	scene "scenes/shredder/shredder_timb_rival_11.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_5%IsEnemyLina_Rule
+Rule shredder_KillChance_10%IsEnemyBatrider_Rule
 {
-	criteria Kill Isshredder Chance_5% IsEnemyLina
-	response shredder_KillChance_5%IsEnemyLina
+	criteria Kill Isshredder Chance_10% IsEnemyBatrider
+	response shredder_KillChance_10%IsEnemyBatrider
 }
 
-Response shredder_KillChance_15%IsEnemyQueenofPain
+Response shredder_KillChance_10%IsEnemyLina
+{
+	scene "scenes/shredder/shredder_timb_rival_11.vcd" nodelay noscene 
+}
+
+Rule shredder_KillChance_10%IsEnemyLina_Rule
+{
+	criteria Kill Isshredder Chance_10% IsEnemyLina
+	response shredder_KillChance_10%IsEnemyLina
+}
+
+Response shredder_KillChance_20%IsEnemyQueenofPain
 {
 	scene "scenes/shredder/shredder_timb_rival_12.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_15%IsEnemyQueenofPain_Rule
+Rule shredder_KillChance_20%IsEnemyQueenofPain_Rule
 {
-	criteria Kill Isshredder Chance_15% IsEnemyQueenofPain
-	response shredder_KillChance_15%IsEnemyQueenofPain
+	criteria Kill Isshredder Chance_20% IsEnemyQueenofPain
+	response shredder_KillChance_20%IsEnemyQueenofPain
 }
 
-Response shredder_KillChance_15%IsEnemyNaga_Siren
+Response shredder_KillChance_20%IsEnemyNaga_Siren
 {
 	scene "scenes/shredder/shredder_timb_rival_12.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_15%IsEnemyNaga_Siren_Rule
+Rule shredder_KillChance_20%IsEnemyNaga_Siren_Rule
 {
-	criteria Kill Isshredder Chance_15% IsEnemyNaga_Siren
-	response shredder_KillChance_15%IsEnemyNaga_Siren
+	criteria Kill Isshredder Chance_20% IsEnemyNaga_Siren
+	response shredder_KillChance_20%IsEnemyNaga_Siren
 }
 
-Response shredder_KillChance_25%IsEnemyInvoker
+Response shredder_KillChance_35%IsEnemyInvoker
 {
 	scene "scenes/shredder/shredder_timb_rival_13.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_25%IsEnemyInvoker_Rule
+Rule shredder_KillChance_35%IsEnemyInvoker_Rule
 {
-	criteria Kill Isshredder Chance_25% IsEnemyInvoker
-	response shredder_KillChance_25%IsEnemyInvoker
+	criteria Kill Isshredder Chance_35% IsEnemyInvoker
+	response shredder_KillChance_35%IsEnemyInvoker
 }
 
-Response shredder_KillChance_10%IsEnemyChaos_Knight
-{
-	scene "scenes/shredder/shredder_timb_rival_14.vcd" nodelay noscene 
-}
-
-Rule shredder_KillChance_10%IsEnemyChaos_Knight_Rule
-{
-	criteria Kill Isshredder Chance_10% IsEnemyChaos_Knight
-	response shredder_KillChance_10%IsEnemyChaos_Knight
-}
-
-Response shredder_KillChance_10%IsEnemyPhantom_Lancer
+Response shredder_KillChance_15%IsEnemyChaos_Knight
 {
 	scene "scenes/shredder/shredder_timb_rival_14.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_10%IsEnemyPhantom_Lancer_Rule
+Rule shredder_KillChance_15%IsEnemyChaos_Knight_Rule
 {
-	criteria Kill Isshredder Chance_10% IsEnemyPhantom_Lancer
-	response shredder_KillChance_10%IsEnemyPhantom_Lancer
+	criteria Kill Isshredder Chance_15% IsEnemyChaos_Knight
+	response shredder_KillChance_15%IsEnemyChaos_Knight
 }
 
-Response shredder_KillChance_10%IsEnemyMeepo
+Response shredder_KillChance_15%IsEnemyPhantom_Lancer
 {
 	scene "scenes/shredder/shredder_timb_rival_14.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_10%IsEnemyMeepo_Rule
+Rule shredder_KillChance_15%IsEnemyPhantom_Lancer_Rule
 {
-	criteria Kill Isshredder Chance_10% IsEnemyMeepo
-	response shredder_KillChance_10%IsEnemyMeepo
+	criteria Kill Isshredder Chance_15% IsEnemyPhantom_Lancer
+	response shredder_KillChance_15%IsEnemyPhantom_Lancer
 }
 
-Response shredder_KillChance_25%IsEnemyEnchantress
+Response shredder_KillChance_15%IsEnemyMeepo
+{
+	scene "scenes/shredder/shredder_timb_rival_14.vcd" nodelay noscene 
+}
+
+Rule shredder_KillChance_15%IsEnemyMeepo_Rule
+{
+	criteria Kill Isshredder Chance_15% IsEnemyMeepo
+	response shredder_KillChance_15%IsEnemyMeepo
+}
+
+Response shredder_KillChance_35%IsEnemyEnchantress
 {
 	scene "scenes/shredder/shredder_timb_rival_15.vcd" nodelay noscene 
 }
 
-Rule shredder_KillChance_25%IsEnemyEnchantress_Rule
+Rule shredder_KillChance_35%IsEnemyEnchantress_Rule
 {
-	criteria Kill Isshredder Chance_25% IsEnemyEnchantress
-	response shredder_KillChance_25%IsEnemyEnchantress
+	criteria Kill Isshredder Chance_35% IsEnemyEnchantress
+	response shredder_KillChance_35%IsEnemyEnchantress
 }
 
 Response shredder_Move
@@ -351,17 +353,17 @@ Rule shredder_CastOrder_Rule
 	response shredder_CastOrder
 }
 
-Response shredder_CastExecuteIsTimbWhirlingChance_25%
+Response shredder_CastExecuteIsTimbWhirlingChance_15%
 {
 	scene "scenes/shredder/shredder_timb_whirlingdeath_03.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_whirlingdeath_04.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_whirlingdeath_06.vcd" nodelay noscene 
 }
 
-Rule shredder_CastExecuteIsTimbWhirlingChance_25%_Rule
+Rule shredder_CastExecuteIsTimbWhirlingChance_15%_Rule
 {
-	criteria CastExecute Isshredder IsTimbWhirling Chance_25%
-	response shredder_CastExecuteIsTimbWhirlingChance_25%
+	criteria CastExecute Isshredder IsTimbWhirling Chance_15%
+	response shredder_CastExecuteIsTimbWhirlingChance_15%
 }
 
 Response shredder_CastExecuteIsTimbChakramChance_50%
@@ -382,6 +384,7 @@ Rule shredder_CastExecuteIsTimbChakramChance_50%_Rule
 Response shredder_CastExecuteIsTimbChackramReturnChance_5%
 {
 	scene "scenes/shredder/shredder_timb_chakramreturn_01.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_chakramreturn_08.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_chakramreturn_09.vcd" nodelay noscene 
 }
 
@@ -393,7 +396,6 @@ Rule shredder_CastExecuteIsTimbChackramReturnChance_5%_Rule
 
 Response shredder_CastExecuteIsTimbChackramReturn
 {
-	scene "scenes/shredder/shredder_timb_chakramreturn_02.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_chakramreturn_03.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_chakramreturn_04.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_chakramreturn_05.vcd" nodelay noscene 
@@ -403,17 +405,6 @@ Rule shredder_CastExecuteIsTimbChackramReturn_Rule
 {
 	criteria CastExecute Isshredder IsTimbChackramReturn
 	response shredder_CastExecuteIsTimbChackramReturn
-}
-
-Response shredder_CastExecuteIsTimbChackramReturnChance_3%
-{
-	scene "scenes/shredder/shredder_timb_chakramreturn_08.vcd" nodelay noscene 
-}
-
-Rule shredder_CastExecuteIsTimbChackramReturnChance_3%_Rule
-{
-	criteria CastExecute Isshredder IsTimbChackramReturn Chance_3%
-	response shredder_CastExecuteIsTimbChackramReturnChance_3%
 }
 
 Response shredder_CastExecuteIsTimbTangoChance_5%
@@ -440,6 +431,35 @@ Rule shredder_CastExecuteIsTimbTangoChance_15%_Rule
 {
 	criteria CastExecute Isshredder IsTimbTango Chance_15%
 	response shredder_CastExecuteIsTimbTangoChance_15%
+}
+
+Response shredder_Respawn
+{
+	scene "scenes/shredder/shredder_timb_reactivearmor_03.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_respawn_01.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_respawn_02.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_respawn_03.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_respawn_05.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_respawn_06.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_respawn_07.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_respawn_08.vcd" nodelay noscene 
+}
+
+Rule shredder_Respawn_Rule
+{
+	criteria Respawn Isshredder 
+	response shredder_Respawn
+}
+
+Response shredder_RespawnChance_5%
+{
+	scene "scenes/shredder/shredder_timb_respawn_04.vcd" nodelay noscene 
+}
+
+Rule shredder_RespawnChance_5%_Rule
+{
+	criteria Respawn Isshredder Chance_5%
+	response shredder_RespawnChance_5%
 }
 
 Response shredder_LevelUp
@@ -616,34 +636,6 @@ Rule shredder_DeathIsReincarnating_Rule
 {
 	criteria Death Isshredder IsReincarnating
 	response shredder_DeathIsReincarnating
-}
-
-Response shredder_Respawn
-{
-	scene "scenes/shredder/shredder_timb_respawn_01.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_respawn_02.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_respawn_03.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_respawn_05.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_respawn_06.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_respawn_07.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_respawn_08.vcd" nodelay noscene 
-}
-
-Rule shredder_Respawn_Rule
-{
-	criteria Respawn Isshredder 
-	response shredder_Respawn
-}
-
-Response shredder_RespawnChance_5%
-{
-	scene "scenes/shredder/shredder_timb_respawn_04.vcd" nodelay noscene 
-}
-
-Rule shredder_RespawnChance_5%_Rule
-{
-	criteria Respawn Isshredder Chance_5%
-	response shredder_RespawnChance_5%
 }
 
 Response shredder_Select
@@ -1182,9 +1174,19 @@ Rule shredder_Thanks_Rule
 	response shredder_Thanks
 }
 
+Response shredder_PainChance_25%
+{
+	scene "scenes/shredder/shredder_timb_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule shredder_PainChance_25%_Rule
+{
+	criteria Pain Isshredder Chance_25%
+	response shredder_PainChance_25%
+}
+
 Response shredder_Pain
 {
-	scene "scenes/shredder/shredder_timb_underattack_01.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_pain_01.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_pain_02.vcd" nodelay noscene 
 	scene "scenes/shredder/shredder_timb_pain_03.vcd" nodelay noscene 

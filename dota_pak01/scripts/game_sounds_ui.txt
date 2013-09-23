@@ -1791,6 +1791,24 @@
 	}
 }
 
+"ui.npe_badge"
+{
+	"volume"		"0.6"
+	"wave"  		"ui/npe_badge.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2[*]" "0.8"	
+			}
+		}
+	}
+}
+
 // New Menu Common ======================================
 
 "ui.click_forward"

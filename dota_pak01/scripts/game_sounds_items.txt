@@ -721,6 +721,45 @@
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_90dB"
+	"soundlevel"  	"SNDLVL_84dB"
 	"wave"			")items/cheese.wav"
+}
+
+"DOTA_Item.Radiance.Target.Loop"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.3"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			"items/radiance_loop.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_substring" "false"
+				"match_entry" "DOTA_Item.Radiance.Target.Loop"
+				"match_channel" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_fade_in"
+			{
+				"input_Max" "1.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
 }

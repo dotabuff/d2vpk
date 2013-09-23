@@ -134,8 +134,8 @@
 	"pitch"			"95,105"
 	"rndwave"
 	{
-		"wave"		")weapons/hero/pugna/projectile_impact01.wav"
-		"wave"		")weapons/hero/pugna/projectile_impact02.wav"
+		"wave"		"weapons/hero/pugna/projectile_impact01.wav"
+		"wave"		"weapons/hero/pugna/projectile_impact02.wav"
 	}
 	"operator_stacks"
 	{
@@ -148,7 +148,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "300"
+				"input_radius"  "600"
 			}
 		}
 	}
@@ -160,7 +160,7 @@
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
-	"wave"			")weapons/hero/pugna/attack.wav"
+	"wave"			"weapons/hero/pugna/attack.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -168,7 +168,7 @@
 			"import_stack" "dota_update_default"
 			"mixer"
 			{
-				"mixgroup" "Weapons"
+				"mixgroup" "Ultimates"
 			}
 			"speakers_spatialize"
 			{
@@ -192,7 +192,7 @@
 			"import_stack" "dota_update_default"
 			"mixer"
 			{
-				"mixgroup" "Ultimates"
+				"mixgroup" "Weapons"
 			}
 			"speakers_spatialize"
 			{

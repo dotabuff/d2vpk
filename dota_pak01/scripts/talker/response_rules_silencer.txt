@@ -1,10 +1,8 @@
 criterion "Issilencer" "classname" "npc_dota_hero_silencer" weight 5 required
 criterion "IsEnemysilencer" "targetclassname" "npc_dota_hero_silencer" weight 5 required
 criterion "IsAllysilencer" "nearby_ally" "npc_dota_hero_silencer" weight 5 required
-criterion "IsIntStealKill1" "skill2_level" "1" weight 5 required
-criterion "IsIntStealKill2" "skill2_level" "2" weight 5 required
-criterion "IsIntStealKill3" "skill2_level" "3" weight 5 required
-criterion "IsIntStealKill4" "skill2_level" "4" weight 5 required
+criterion "IsSilencerGlaives" "abilityname" "silencer_glaives_of_wisdom" weight 5 required
+criterion "IsSilencerCurse" "abilityname" "silencer_curse_of_the_silent" weight 5 required
 
 Response silencer_Spawn
 {
@@ -58,8 +56,9 @@ Rule silencer_KillIsFirstBlood_Rule
 
 Response silencer_Kill
 {
+	scene "scenes/silencer/silencer_silen_ability_glaive_01.vcd" nodelay noscene 
+	scene "scenes/silencer/silencer_silen_ability_silence_04.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_ability_silence_10.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_curse_06.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_01.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_02.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_03.vcd" nodelay noscene 
@@ -71,7 +70,6 @@ Response silencer_Kill
 	scene "scenes/silencer/silencer_silen_kill_09.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_10.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_11.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_kill_12.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_14.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_15.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_16.vcd" nodelay noscene 
@@ -99,60 +97,33 @@ Rule silencer_Kill_Rule
 	response silencer_Kill
 }
 
-Response silencer_KillIsIntStealKill1Chance_10%
+Response silencer_KillIsSilencerGlaivesChance_10%
 {
 	scene "scenes/silencer/silencer_silen_ability_intsteal_01.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_ability_intsteal_02.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_ability_intsteal_03.vcd" nodelay noscene 
+	scene "scenes/silencer/silencer_silen_kill_12.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_kill_13.vcd" nodelay noscene 
 }
 
-Rule silencer_KillIsIntStealKill1Chance_10%_Rule
+Rule silencer_KillIsSilencerGlaivesChance_10%_Rule
 {
-	criteria Kill Issilencer IsIntStealKill1 Chance_10%
-	response silencer_KillIsIntStealKill1Chance_10%
+	criteria Kill Issilencer IsSilencerGlaives Chance_10%
+	response silencer_KillIsSilencerGlaivesChance_10%
 }
 
-Response silencer_KillIsIntStealKill2Chance_10%
+Response silencer_KillIsSilencerCurseChance_10%
 {
-	scene "scenes/silencer/silencer_silen_ability_intsteal_01.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_intsteal_02.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_intsteal_03.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_kill_13.vcd" nodelay noscene 
+	scene "scenes/silencer/silencer_silen_ability_curse_04.vcd" nodelay noscene 
+	scene "scenes/silencer/silencer_silen_ability_curse_05.vcd" nodelay noscene 
+	scene "scenes/silencer/silencer_silen_ability_curse_06.vcd" nodelay noscene 
+	scene "scenes/silencer/silencer_silen_ability_curse_07.vcd" nodelay noscene 
 }
 
-Rule silencer_KillIsIntStealKill2Chance_10%_Rule
+Rule silencer_KillIsSilencerCurseChance_10%_Rule
 {
-	criteria Kill Issilencer IsIntStealKill2 Chance_10%
-	response silencer_KillIsIntStealKill2Chance_10%
-}
-
-Response silencer_KillIsIntStealKill3Chance_10%
-{
-	scene "scenes/silencer/silencer_silen_ability_intsteal_01.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_intsteal_02.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_intsteal_03.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_kill_13.vcd" nodelay noscene 
-}
-
-Rule silencer_KillIsIntStealKill3Chance_10%_Rule
-{
-	criteria Kill Issilencer IsIntStealKill3 Chance_10%
-	response silencer_KillIsIntStealKill3Chance_10%
-}
-
-Response silencer_KillIsIntStealKill4Chance_10%
-{
-	scene "scenes/silencer/silencer_silen_ability_intsteal_01.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_intsteal_02.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_intsteal_03.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_kill_13.vcd" nodelay noscene 
-}
-
-Rule silencer_KillIsIntStealKill4Chance_10%_Rule
-{
-	criteria Kill Issilencer IsIntStealKill4 Chance_10%
-	response silencer_KillIsIntStealKill4Chance_10%
+	criteria Kill Issilencer IsSilencerCurse Chance_10%
+	response silencer_KillIsSilencerCurseChance_10%
 }
 
 Response silencer_KillIsEnemyQueenofPainChance_25%
@@ -166,26 +137,37 @@ Rule silencer_KillIsEnemyQueenofPainChance_25%_Rule
 	response silencer_KillIsEnemyQueenofPainChance_25%
 }
 
-Response silencer_KillIsEnemyPudgeChance_25%
+Response silencer_KillIsEnemyPudgeChance_5%
 {
 	scene "scenes/silencer/silencer_silen_rival_02.vcd" nodelay noscene 
 }
 
-Rule silencer_KillIsEnemyPudgeChance_25%_Rule
+Rule silencer_KillIsEnemyPudgeChance_5%_Rule
 {
-	criteria Kill Issilencer IsEnemyPudge Chance_25%
-	response silencer_KillIsEnemyPudgeChance_25%
+	criteria Kill Issilencer IsEnemyPudge Chance_5%
+	response silencer_KillIsEnemyPudgeChance_5%
 }
 
-Response silencer_KillIsEnemyInvokerChance_25%
+Response silencer_KillIsEnemyUndyingChance_5%
+{
+	scene "scenes/silencer/silencer_silen_rival_02.vcd" nodelay noscene 
+}
+
+Rule silencer_KillIsEnemyUndyingChance_5%_Rule
+{
+	criteria Kill Issilencer IsEnemyUndying Chance_5%
+	response silencer_KillIsEnemyUndyingChance_5%
+}
+
+Response silencer_KillIsEnemyInvokerIsSilencerGlaivesChance_25%
 {
 	scene "scenes/silencer/silencer_silen_rival_03.vcd" nodelay noscene 
 }
 
-Rule silencer_KillIsEnemyInvokerChance_25%_Rule
+Rule silencer_KillIsEnemyInvokerIsSilencerGlaivesChance_25%_Rule
 {
-	criteria Kill Issilencer IsEnemyInvoker Chance_25%
-	response silencer_KillIsEnemyInvokerChance_25%
+	criteria Kill Issilencer IsEnemyInvoker IsSilencerGlaives Chance_25%
+	response silencer_KillIsEnemyInvokerIsSilencerGlaivesChance_25%
 }
 
 Response silencer_KillIsEnemyZuusChance_25%
@@ -219,6 +201,28 @@ Rule silencer_KillIsEnemyJakiroChance_25%_Rule
 {
 	criteria Kill Issilencer IsEnemyJakiro Chance_25%
 	response silencer_KillIsEnemyJakiroChance_25%
+}
+
+Response silencer_KillIsEnemySkywrath_MageChance_25%
+{
+	scene "scenes/silencer/silencer_silen_rival_06.vcd" nodelay noscene 
+}
+
+Rule silencer_KillIsEnemySkywrath_MageChance_25%_Rule
+{
+	criteria Kill Issilencer IsEnemySkywrath_Mage Chance_25%
+	response silencer_KillIsEnemySkywrath_MageChance_25%
+}
+
+Response silencer_KillIsEnemyPuckChance_25%
+{
+	scene "scenes/silencer/silencer_silen_rival_06.vcd" nodelay noscene 
+}
+
+Rule silencer_KillIsEnemyPuckChance_25%_Rule
+{
+	criteria Kill Issilencer IsEnemyPuck Chance_25%
+	response silencer_KillIsEnemyPuckChance_25%
 }
 
 Response silencer_KillIsEnemyStormSpiritChance_25%
@@ -569,36 +573,6 @@ Rule silencer_Bottling_Rule
 	response silencer_Bottling
 }
 
-Response silencer_MissingIsLaneTop
-{
-}
-
-Rule silencer_MissingIsLaneTop_Rule
-{
-	criteria Missing Issilencer IsLaneTop
-	response silencer_MissingIsLaneTop
-}
-
-Response silencer_MissingIsLaneMid
-{
-}
-
-Rule silencer_MissingIsLaneMid_Rule
-{
-	criteria Missing Issilencer IsLaneMid
-	response silencer_MissingIsLaneMid
-}
-
-Response silencer_MissingIsLaneBot
-{
-}
-
-Rule silencer_MissingIsLaneBot_Rule
-{
-	criteria Missing Issilencer IsLaneBot
-	response silencer_MissingIsLaneBot
-}
-
 Response silencer_Deny
 {
 	scene "scenes/silencer/silencer_silen_deny_01.vcd" nodelay noscene 
@@ -827,18 +801,18 @@ Rule silencer_Thanks_Rule
 	response silencer_Thanks
 }
 
-Response silencer_Pain
-{
-	scene "scenes/silencer/silencer_silen_underattack_01.vcd" nodelay noscene 
-}
-
-Rule silencer_Pain_Rule
-{
-	criteria Pain Issilencer 
-	response silencer_Pain
-}
-
 Response silencer_PainChance_25%
+{
+	scene "scenes/silencer/silencer_silen_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule silencer_PainChance_25%_Rule
+{
+	criteria Pain Issilencer Chance_25%
+	response silencer_PainChance_25%
+}
+
+Response silencer_Pain
 {
 	scene "scenes/silencer/silencer_silen_pain_01.vcd" nodelay noscene 
 	scene "scenes/silencer/silencer_silen_pain_02.vcd" nodelay noscene 
@@ -860,10 +834,10 @@ Response silencer_PainChance_25%
 	scene "scenes/silencer/silencer_silen_pain_18.vcd" nodelay noscene 
 }
 
-Rule silencer_PainChance_25%_Rule
+Rule silencer_Pain_Rule
 {
-	criteria Pain Issilencer Chance_25%
-	response silencer_PainChance_25%
+	criteria Pain Issilencer 
+	response silencer_Pain
 }
 
 Response silencer_InTheBag
@@ -936,7 +910,7 @@ Rule silencer_EmoteIsEmoteLaugh_Rule
 
 Response silencer_Select
 {
-	scene "scenes/silencer/silencer_silen_attack_11.vcd" nodelay noscene 
+	scene "scenes/silencer/silencer_silen_ability_glaive_01.vcd" nodelay noscene 
 }
 
 Rule silencer_Select_Rule

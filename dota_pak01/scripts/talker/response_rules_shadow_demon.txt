@@ -107,23 +107,9 @@ Rule shadow_demon_KillIsFirstBlood_Rule
 	response shadow_demon_KillIsFirstBlood
 }
 
-Response shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKill
-{
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_05.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_06.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_07.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_08.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_10.vcd" nodelay noscene 
-}
-
-Rule shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKill_Rule
-{
-	criteria Kill Isshadow_demon IsShadowDemonPoison IsShadowPoisonReleaseKill
-	response shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKill
-}
-
 Response shadow_demon_Kill
 {
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_03.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_kill_01.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_kill_02.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_kill_03.vcd" nodelay noscene 
@@ -138,11 +124,12 @@ Response shadow_demon_Kill
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_kill_12.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_kill_13.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_kill_14.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_denied_17.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_denied_18.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_laugh_01.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_laugh_02.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_laugh_03.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_laugh_04.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_laugh_05.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_laugh_06.vcd" nodelay noscene 
 }
 
@@ -150,6 +137,22 @@ Rule shadow_demon_Kill_Rule
 {
 	criteria Kill Isshadow_demon 
 	response shadow_demon_Kill
+}
+
+Response shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKillChance_20%
+{
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_05.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_06.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_07.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_08.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_09.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_10.vcd" nodelay noscene 
+}
+
+Rule shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKillChance_20%_Rule
+{
+	criteria Kill Isshadow_demon IsShadowDemonPoison IsShadowPoisonReleaseKill Chance_20%
+	response shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKillChance_20%
 }
 
 Response shadow_demon_KillIsEnemyNevermoreChance_50%
@@ -346,25 +349,6 @@ Rule shadow_demon_CastOrder_Rule
 	response shadow_demon_CastOrder
 }
 
-Response shadow_demon_CastExecuteIsShadowDemonPurge
-{
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_01.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_02.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_03.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_04.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_05.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_06.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_07.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_08.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_09.vcd" nodelay noscene 
-}
-
-Rule shadow_demon_CastExecuteIsShadowDemonPurge_Rule
-{
-	criteria CastExecute Isshadow_demon IsShadowDemonPurge
-	response shadow_demon_CastExecuteIsShadowDemonPurge
-}
-
 Response shadow_demon_CastExecuteIsShadowDemonDisruptionIsDisruptionEnemy
 {
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_disruption_01.vcd" nodelay noscene 
@@ -407,6 +391,25 @@ Rule shadow_demon_CastExecuteIsShadowDemonDisruptionIsDisruptionSelf_Rule
 {
 	criteria CastExecute Isshadow_demon IsShadowDemonDisruption IsDisruptionSelf
 	response shadow_demon_CastExecuteIsShadowDemonDisruptionIsDisruptionSelf
+}
+
+Response shadow_demon_CastExecuteIsShadowDemonPurgeChance_75%
+{
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_01.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_02.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_03.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_04.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_05.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_06.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_07.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_08.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_demonic_purge_09.vcd" nodelay noscene 
+}
+
+Rule shadow_demon_CastExecuteIsShadowDemonPurgeChance_75%_Rule
+{
+	criteria CastExecute Isshadow_demon IsShadowDemonPurge Chance_75%
+	response shadow_demon_CastExecuteIsShadowDemonPurgeChance_75%
 }
 
 Response shadow_demon_LevelUp
@@ -658,6 +661,7 @@ Response shadow_demon_Victory
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_win_01.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_win_02.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_win_03.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_laugh_05.vcd" nodelay noscene 
 }
 
 Rule shadow_demon_Victory_Rule
@@ -857,18 +861,18 @@ Rule shadow_demon_Thanks_Rule
 	response shadow_demon_Thanks
 }
 
-Response shadow_demon_Pain
-{
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_underattack_01.vcd" nodelay noscene 
-}
-
-Rule shadow_demon_Pain_Rule
-{
-	criteria Pain Isshadow_demon 
-	response shadow_demon_Pain
-}
-
 Response shadow_demon_PainChance_25%
+{
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule shadow_demon_PainChance_25%_Rule
+{
+	criteria Pain Isshadow_demon Chance_25%
+	response shadow_demon_PainChance_25%
+}
+
+Response shadow_demon_Pain
 {
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_pain_01.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_pain_02.vcd" nodelay noscene 
@@ -879,10 +883,10 @@ Response shadow_demon_PainChance_25%
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_pain_07.vcd" nodelay noscene 
 }
 
-Rule shadow_demon_PainChance_25%_Rule
+Rule shadow_demon_Pain_Rule
 {
-	criteria Pain Isshadow_demon Chance_25%
-	response shadow_demon_PainChance_25%
+	criteria Pain Isshadow_demon 
+	response shadow_demon_Pain
 }
 
 Response shadow_demon_InTheBag
@@ -944,24 +948,6 @@ Rule shadow_demon_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isshadow_demon IsEmoteLaugh
 	response shadow_demon_EmoteIsEmoteLaugh
-}
-
-Response shadow_demon_EmoteIsEmoteAnger
-{
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_anger_01.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_anger_02.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_anger_03.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_anger_04.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_anger_05.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_anger_06.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_anger_07.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_anger_08.vcd" nodelay noscene 
-}
-
-Rule shadow_demon_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isshadow_demon IsEmoteAnger
-	response shadow_demon_EmoteIsEmoteAnger
 }
 
 Response shadow_demon_Select

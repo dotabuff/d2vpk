@@ -266,6 +266,33 @@
 		{
 			"heroID"		"69"
 			"tag"			"Doom"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"sword_1"
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"doom_bringer_ambient"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/models/heroes/doom/doom_sword.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
 		}
 		"dragon_knight"		
 		{

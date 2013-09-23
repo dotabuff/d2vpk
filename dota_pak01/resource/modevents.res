@@ -221,6 +221,10 @@
 	"dota_money_changed"
 	{
 	}
+
+	"dota_enemy_money_changed"
+	{
+	}
 	
 	"dota_portrait_unit_stats_changed"
 	{
@@ -400,6 +404,10 @@
 		"PlayerID"		"short"
 		"abilityname"	"string"
 	}	
+	"dota_non_player_used_ability"
+	{
+		"abilityname"	"string"
+	}
 	"dota_player_killed"
 	{
 		"PlayerID"		"short"
@@ -459,6 +467,11 @@
 		"basepriority"	"short"
 		"priority"		"short"
 		"eventtype"		"short"		// EDOTAHeroChaseEventType
+	}
+
+	"dota_quest_complete"
+	{
+		"pQuest"		"local"		// CDotaBaseQuest
 	}
 	
 	"gameui_activated"
@@ -697,5 +710,14 @@
 	"full_ui_unlocked"
 	{
 	}
+
+	"client_connectionless_packet"
+	{
+		"local"	"1"
+		"buffer" "local"
+		"buffersize" "long"
+		"address" "string"
+	}
+
 }
 
