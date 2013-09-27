@@ -13,7 +13,7 @@
 	"$bumpstrength" "8.5"
 
 	//DIFFUSE
-	"$diffuseScale" "2.3"
+	"$diffuseScale" "4.3"
 
 	//SPECULAR
 	//"$specMaskTexture"	"particle\ice_surface_specmask"
@@ -28,20 +28,20 @@
 
 	//ENVIRONMENT MAP
 	"$envMap"		"particle\ice_surface_envmap.vtf"
-	//"$envMapTint"	"[.21 .24 .452]"
+	"$envMapTint"	"[.21 .24 .452]"
 
 	//FRESNEL
-	"$fresnelBumpStrength" "0"
+	//"$fresnelBumpStrength" "0"
 	//"$fresnelWarpTexture" "Models/blob/blob_fresnel_warp"
-	"$translucentFresnelMinMaxExp" "[0 0.5 22]"
+	//"$translucentFresnelMinMaxExp" "[0 0.5 22]"
 
 	//INTERIOR
-	"$interior" 1						// toggle this to hide the gooey interior, useful when working on the surface material
-	"$interiorFogStrength" "0.00325"	// strength of the fog (based on the thickness of the interior volume)
+	"$interior" 1					// toggle this to hide the gooey interior, useful when working on the surface material
+	"$interiorFogStrength" "0.006325"	// strength of the fog (based on the thickness of the interior volume)
 	"$interiorFogLimit" "0.36"			// how opaque the fog is beyond the range of dest alpha depth
 	"$interiorFogNormalBoost" "3.5"		// degree to boost interior thickness/fog by 'side-on'ness of vertex normals to the camera
 	"$interiorBackgroundBoost" "5"		// strength of boost applied to bright background pixels
-	"$interiorAmbientScale" ".51"			// strength of interior volume ambient lighting, .3 default
+	"$interiorAmbientScale" ".151"			// strength of interior volume ambient lighting, .3 default
 	"$interiorBacklightScale" ".4"		// strength of interior volume backlighing, .3 is default
 	"$interiorColor" "[0.1 0.3 0.9]"	// tints the interior volume lighting
 	"$interiorRefractStrength" "0.5"	// strength of bumped refract of the background seen through the interior
@@ -51,7 +51,9 @@
 	//"$lightwarptexture" "Models/blob/blob_lightwarp"	// this needs a color ramp texture
 
 	$NOVIEWPORTFIXUP        1
-
+	
+	$additive 1
+	
 	"Proxies"
 	{
 	}
