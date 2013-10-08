@@ -719,5 +719,10 @@
 		"address" "string"
 	}
 
+	"antiaddiction_toast"
+	{
+		"message"	"string"
+		"duration"	"float"
+	}
 }
 

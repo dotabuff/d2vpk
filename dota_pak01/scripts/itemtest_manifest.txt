@@ -315,10 +315,26 @@
 			"heroID"		"58"
 			"tag"			"Enchantress"
 		}
-		"faceless_void"		
-		{
+    "faceless_void"            
+    {
 			"heroID"		"41"
-			"tag"			"Faceless Void"
+			"tag"				"Faceless Void"
+			"particle_attachments"
+			{
+	      "weapon"      
+				{
+					"add_to_item_def"
+	 				{
+						"visuals"
+						{
+	          	"attached_particlesystem0"
+		          {
+								"system"        "faceless_weapon_glow"
+		          }
+						}
+					}
+				}
+			}
 		}
 		"huskar"			
 		{
