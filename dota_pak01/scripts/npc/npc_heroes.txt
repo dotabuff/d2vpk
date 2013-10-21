@@ -765,7 +765,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"305"									// Speed.
+		"MovementSpeed"				"300"									// Speed.
 		"MovementTurnRate"			"0.5"									// Turning rate.
 		
 		// Bounds
@@ -1214,7 +1214,7 @@
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
 		"VisionDaytimeRange"		"1800"									// Range of vision during day light.
-		"VisionNighttimeRange"		"1700"									// Range of vision at night time.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
@@ -1894,7 +1894,7 @@
 		
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
-		"VisionNighttimeRange"		"1200"									// Range of vision at night time.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 		
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
@@ -2718,7 +2718,7 @@
 		
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
-		"VisionNighttimeRange"		"1200"									// Range of vision at night time.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 		
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
@@ -5212,7 +5212,7 @@
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.75"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
-		"AttackRange"				"635"									// Range within a target can be attacked.
+		"AttackRange"				"650"									// Range within a target can be attacked.
 		"ProjectileModel"			"lina_base_attack"						// Particle system model for projectile.
 		"ProjectileSpeed"			"900"									// Speed of projectile.
 
@@ -7692,7 +7692,7 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"-1"									// Physical protection.
+		"ArmorPhysical"				"0"									// Physical protection.
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -8186,10 +8186,13 @@
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
+		"AbilityLayout"			"5"
 		"Ability1"					"beastmaster_wild_axes"					// Ability 1
 		"Ability2"					"beastmaster_call_of_the_wild"			// Ability 2
-		"Ability3"					"beastmaster_inner_beast"				// Ability 3
-		"Ability4"					"beastmaster_primal_roar"				// Ability 4
+		"Ability3"					"beastmaster_call_of_the_wild_boar"			// Ability 3
+		"Ability4"					"beastmaster_inner_beast"				// Ability 4
+		"Ability5"					"beastmaster_primal_roar"				// Ability 5
+		"Ability6"					"attribute_bonus"						// Ability 6 - Bonuses.
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -9033,7 +9036,7 @@
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"22"									// Base strength
 		"AttributeStrengthGain"		"2.9"									// Strength bonus per level.
-		"AttributeBaseIntelligence"	"13"									// Base intelligence
+		"AttributeBaseIntelligence"	"18"									// Base intelligence
 		"AttributeIntelligenceGain"	"1.6"									// Intelligence bonus per level.
 		"AttributeBaseAgility"		"18"									// Base agility
 		"AttributeAgilityGain"		"1.7"									// Agility bonus per level.
@@ -11090,7 +11093,7 @@
 		
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
-		"VisionNighttimeRange"		"900"									// Range of vision at night time.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
@@ -12230,7 +12233,7 @@
 		
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
-		"VisionNighttimeRange"		"1800"									// Range of vision at night time.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
@@ -12371,8 +12374,8 @@
 		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"		"21"									// Base strength
 		"AttributeStrengthGain"		"2.4"									// Strength bonus per level.
-		"AttributeBaseAgility"		"20"									// Base agility
-		"AttributeAgilityGain"		"2.4"									// Agility bonus per level.
+		"AttributeBaseAgility"		"15"									// Base agility
+		"AttributeAgilityGain"		"1.4"									// Agility bonus per level.
 		"AttributeBaseIntelligence"	"18"									// Base intelligence
 		"AttributeIntelligenceGain"	"1.5"									// Intelligence bonus per level.
 
@@ -12694,7 +12697,7 @@
 		"HeroID"			"61"											// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"			"0.93"										// old .75
 		"HeroGlowColor" 			"74 76 217"		
-		"CMEnabled"					"1"
+		"CMEnabled"					"0"
 		"PickSound"					"broodmother_broo_spawn_01"
 		"BanSound"					"broodmother_broo_anger_01"
 		"NameAliases"		"bm"
@@ -13127,7 +13130,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
 		"AttackDamageMin"			"36"									// Damage range min.
 		"AttackDamageMax"			"46"									// Damage range max.
-		"AttackRate"				"1.7"									// Speed of attack.
+		"AttackRate"				"1.8"									// Speed of attack.
 		"AttackAnimationPoint"		"0.64"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
 		"AttackRange"				"425"									// Range within a target can be attacked.
@@ -13455,8 +13458,8 @@
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"24"									// Damage range min.
-		"AttackDamageMax"			"28"									// Damage range max.
+		"AttackDamageMin"			"14"									// Damage range min.
+		"AttackDamageMax"			"18"									// Damage range max.
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.5"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
@@ -13481,7 +13484,7 @@
 	
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
-		"VisionDaytimeRange"		"1400"									// Range of vision during day light.
+		"VisionDaytimeRange"		"1200"									// Range of vision during day light.
 		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 	
 		
@@ -14395,7 +14398,7 @@
 
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
-		"VisionNighttimeRange"		"1400"									// Range of vision at night time.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 		
 		"HealthBarOffset"			"190"
 		
@@ -14726,7 +14729,7 @@
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
 		"AttackDamageMin"			"31"									// Damage range min.
 		"AttackDamageMax"			"41"									// Damage range max.
-		"AttackRate"				"1.7"									// Speed of attack.
+		"AttackRate"				"1.9"									// Speed of attack.
 		"AttackAnimationPoint"		"0.6"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
 		"AttackRange"				"128"									// Range within a target can be attacked.
@@ -15778,8 +15781,8 @@
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"23"									// Damage range min.
-		"AttackDamageMax"			"38"									// Damage range max.
+		"AttackDamageMin"			"20"									// Damage range min.
+		"AttackDamageMax"			"35"									// Damage range max.
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.46"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
@@ -15989,14 +15992,14 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"0"								// Physical protection.
+		"ArmorPhysical"				"1"								// Physical protection.
 									//-1.045714286
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"31"									// Damage range min.
-		"AttackDamageMax"			"36"									// Damage range max.
+		"AttackDamageMin"			"36"									// Damage range min.
+		"AttackDamageMax"			"41"									// Damage range max.
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.55"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
@@ -16016,7 +16019,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"305"									// Speed.
 		"MovementTurnRate"			"0.5"									// Turning rate.
-		
+				
 		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
 		"HealthBarOffset"			"220"
 		
@@ -16185,7 +16188,7 @@
 		"AttributePrimary"				"DOTA_ATTRIBUTE_STRENGTH"
 		"AttributeBaseStrength"			"23"									// Base strength
 		"AttributeStrengthGain"			"2.9"									// Strength bonus per level.
-		"AttributeBaseAgility"			"16"									// Base agility
+		"AttributeBaseAgility"			"22"									// Base agility
 		"AttributeAgilityGain"			"1.95"									// Agility bonus per level.
 		"AttributeBaseIntelligence"		"14"									// Base intelligence
 		"AttributeIntelligenceGain"		"1.25"									// Intelligence bonus per level.
@@ -16609,7 +16612,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"315"									// Speed.
+		"MovementSpeed"				"325"									// Speed.
 		"MovementTurnRate"			"0.4"									// Turning rate.
 		
 		"HealthBarOffset"			"145"
@@ -16975,7 +16978,7 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"2.0"								// Physical protection.
+		"ArmorPhysical"				"1.0"								// Physical protection.
 		"MagicalResistance"				"35"									// Magical protection (percentage).
 						
 
@@ -17002,12 +17005,12 @@
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
 		"VisionDaytimeRange"		"1800"									// Range of vision during day light.
-		"VisionNighttimeRange"		"1800"									// Range of vision at night time.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"305"									// Speed.
-		"MovementTurnRate"			"0.5"									// Turning rate.
+		"MovementTurnRate"			"0.65"									// Turning rate.
 		
 		"HealthBarOffset"			"100"
 		
@@ -17161,7 +17164,7 @@
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
 		"VisionDaytimeRange"		"1800"									// Range of vision during day light.
-		"VisionNighttimeRange"		"1200"									// Range of vision at night time.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 
 
 		// Movement
@@ -18631,7 +18634,8 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"-1.0"								// Physical protection.
+		"ArmorPhysical"				"-2.0"								// Physical protection.
+		"MagicalResistance"				"10"									// Magical protection (percentage).
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -18747,7 +18751,7 @@
 		"url"						"Slark"
 		"PickSound"					"slark_slark_spawn_01"
 		"BanSound"					"slark_slark_anger_02"
-		"CMEnabled"					"1"
+		"CMEnabled"					"0"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
 
 		// Abilities
@@ -19434,7 +19438,7 @@
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"315"									// Speed.
-		"MovementTurnRate"			"0.5"									// Turning rate.
+		"MovementTurnRate"			"0.8"									// Turning rate.
 		
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"			"220"
@@ -19745,7 +19749,7 @@
 		"AttackDamageMin"			"30"									// Damage range min.
 		"AttackDamageMax"			"40"									// Damage range max.
 		"AttackRate"				"1.7"									// Speed of attack.
-		"AttackAnimationPoint"		"0.4"									// Normalized time in animation cycle to attack.
+		"AttackAnimationPoint"		"0.3"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
 		"AttackRange"				"128"									// Range within a target can be attacked.
 
@@ -20088,7 +20092,7 @@
 		"AttributeBaseAgility"		"18"									// Base agility
 		"AttributeAgilityGain"		"0.8"									// Agility bonus per level.
 		"AttributeBaseIntelligence"	"27"									// Base intelligence
-		"AttributeIntelligenceGain"	"3.2"									// Intelligence bonus per level.
+		"AttributeIntelligenceGain"	"3.6"									// Intelligence bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
@@ -20224,7 +20228,7 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"0.0"								// Physical protection.
+		"ArmorPhysical"				"-1.0"								// Physical protection.
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -20516,8 +20520,8 @@
 		"Model"						"models/heroes/legion_commander/legion_commander.mdl"		// Model.
 		"Portrait"					"vgui/hud/heroportraits/portrait_legion_commander"						// Small image for hero selection
 		"SoundSet"					"Hero_LegionCommander"													// Name of sound set.
-		"Enabled"					"1"
-		"ForceEnable"				"1"
+		"Enabled"					"0"
+		"ForceEnable"				"0"
 		"Role"						"Carry,Durable"
 		"Rolelevels"				"1,2"
 		"Team"						"Good"

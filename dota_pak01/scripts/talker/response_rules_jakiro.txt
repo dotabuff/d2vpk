@@ -429,6 +429,17 @@ Rule jakiro_PurchaseIsEulScepter_Rule
 	response jakiro_PurchaseIsEulScepter
 }
 
+Response jakiro_PurchaseIsTangoChance_10%
+{
+	scene "scenes/jakiro/jakiro_jak_item_05.vcd" nodelay noscene speakonce
+}
+
+Rule jakiro_PurchaseIsTangoChance_10%_Rule
+{
+	criteria Purchase Isjakiro IsTango Chance_10%
+	response jakiro_PurchaseIsTangoChance_10%
+}
+
 Response jakiro_Bottling
 {
 	scene "scenes/jakiro/jakiro_jak_bottle_01.vcd" nodelay noscene 

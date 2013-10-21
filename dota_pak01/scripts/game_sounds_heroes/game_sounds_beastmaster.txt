@@ -195,13 +195,38 @@
 	}
 }
 
-"Hero_Beastmaster.Call_of_the_Wild"
+"Hero_Beastmaster.Call.Boar"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
-	"wave"	")weapons/hero/beastmaster/call_of_the_wild.wav"
+	"wave"	")weapons/hero/beastmaster/call_of_the_wild_boar.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Beastmaster.Call.Hawk"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons/hero/beastmaster/call_of_the_wild_hawk.wav"
 	"soundentry_version" "2"
 	"operator_stacks"
 	{

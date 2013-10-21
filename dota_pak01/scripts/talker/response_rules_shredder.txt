@@ -689,15 +689,15 @@ Rule shredder_PurchaseIsBlinkDagger_Rule
 	response shredder_PurchaseIsBlinkDagger
 }
 
-Response shredder_PurchaseIsBranch
+Response shredder_PurchaseIsBranchChance_10%
 {
 	scene "scenes/shredder/shredder_timb_items_01.vcd" nodelay noscene speakonce
 }
 
-Rule shredder_PurchaseIsBranch_Rule
+Rule shredder_PurchaseIsBranchChance_10%_Rule
 {
-	criteria Purchase Isshredder IsBranch
-	response shredder_PurchaseIsBranch
+	criteria Purchase Isshredder IsBranch Chance_10%
+	response shredder_PurchaseIsBranchChance_10%
 }
 
 Response shredder_PurchaseIsBloodStone

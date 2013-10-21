@@ -153,7 +153,7 @@
 "Hero_Spirit_Breaker.NetherStrike.Begin"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"wave"			")weapons/hero/spirit_breaker/nether_strike_in.wav"
@@ -166,11 +166,15 @@
 			"import_stack" "dota_update_default"
 			"mixer"
 			{
-				"mixgroup" "Ultimates"
+				"mixgroup" "Weapons"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.6"
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "600"
+				"input_radius"  "300"
 			}
 		}
 	}

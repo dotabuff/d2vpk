@@ -169,17 +169,17 @@ Rule axe_CastExecuteIsBattleHunger_Rule
 	response axe_CastExecuteIsBattleHunger
 }
 
-Response axe_KillIsCullingKill
+Response axe_KillIsCullingKillChance_30%
 {
 	scene "scenes/axe/axe_axe_ability_cullingblade_01.vcd" nodelay noscene 
 	scene "scenes/axe/axe_axe_deny_15.vcd" nodelay noscene 
 	scene "scenes/axe/axe_axe_deny_16.vcd" nodelay noscene 
 }
 
-Rule axe_KillIsCullingKill_Rule
+Rule axe_KillIsCullingKillChance_30%_Rule
 {
-	criteria Kill Isaxe IsCullingKill
-	response axe_KillIsCullingKill
+	criteria Kill Isaxe IsCullingKill Chance_30%
+	response axe_KillIsCullingKillChance_30%
 }
 
 Response axe_Kill
@@ -221,15 +221,15 @@ Rule axe_Kill_Rule
 	response axe_Kill
 }
 
-Response axe_KillIsCullingKillIsQuickBlinkKillChance_25%
+Response axe_KillIsCullingKillIsQuickBlinkKillChance_30%
 {
 	scene "scenes/axe/axe_axe_blinkcull_02.vcd" nodelay noscene 
 }
 
-Rule axe_KillIsCullingKillIsQuickBlinkKillChance_25%_Rule
+Rule axe_KillIsCullingKillIsQuickBlinkKillChance_30%_Rule
 {
-	criteria Kill Isaxe IsCullingKill IsQuickBlinkKill Chance_25%
-	response axe_KillIsCullingKillIsQuickBlinkKillChance_25%
+	criteria Kill Isaxe IsCullingKill IsQuickBlinkKill Chance_30%
+	response axe_KillIsCullingKillIsQuickBlinkKillChance_30%
 }
 
 Response axe_KillIsEnemycrystalmaidenChance_25%

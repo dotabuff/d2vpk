@@ -176,6 +176,17 @@ Rule skeleton_king_KillIsEnemyWeaverChance_25%_Rule
 	response skeleton_king_KillIsEnemyWeaverChance_25%
 }
 
+Response skeleton_king_KillIsEnemyNyx_AssassinChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_02.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyNyx_AssassinChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyNyx_Assassin Chance_25%
+	response skeleton_king_KillIsEnemyNyx_AssassinChance_25%
+}
+
 Response skeleton_king_KillIsEnemyMorphlingChance_25%
 {
 	scene "scenes/skeleton_king/skeleton_king_skel_killspecial_03.vcd" nodelay noscene 

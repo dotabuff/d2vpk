@@ -2,6 +2,7 @@
 {
 	"$baseTexture" "models/heroes/lion/lion_body_color"
 	"$normalmap" "models/heroes/lion/lion_body_normals"
+	"$detail1" "models/heroes/doom/doom_burninating"
 //	"$diffusewarp" "models/heroes/drow/diffusewarp"
 	$MASKMAP1 "models\heroes\lion\lion_body_masks1"
 	$MASKMAP2 "models\heroes\lion\lion_body_masks2"
@@ -17,6 +18,10 @@
 	$AMBIENTSCALE 1
 	$ALPHATEST 1
 
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+	
 
 //	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
 
@@ -25,6 +30,12 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.4"
+			"texturescrollangle"	"55"
+		}
 		"invis_proxy"
 		{
 		}

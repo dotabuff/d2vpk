@@ -199,11 +199,11 @@
 
 "General.Coins"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_ITEM"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
 
-	"soundlevel"	"SNDLVL_85dB"
+	"soundlevel"	"SNDLVL_NONE"
 
 	"wave"			"ui/coins.wav" 
 	
@@ -214,8 +214,8 @@
 			"import_stack" "dota_poly_limiting_start"
 			"limit_sound"
 			{
-				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
-				"match_entity" "true"	
+				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
 				"match_substring" "true"
 				"match_entry" "General.Coins"
 				"match_channel" "true"
@@ -1559,18 +1559,18 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#ui/stingers/DotA2_Music_Stinger_006.mp3"
-// 	"operator_stacks"
-// 	{
-// 		"update_stack"
-// 		{
-// 			"import_stack" "dota_update_vo_clamped"
-// 			"mixer"
-// 			{
-// 				"mixgroup" "Stingers"
-// 			}
-// 		}
-// 	}
+	"wave"			"#ui/stingers/match_ready.mp3"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+ 		}
+	}
 } 
 
 //====================================================

@@ -17,10 +17,6 @@
 		"start_stack"
 		{
 			"import_stack" "dota_preattack_block_dist"
-			"mixer"
-			{
-				"mixgroup" "BaseAttacks"
-			}
 		}
 	}
 }
@@ -157,7 +153,7 @@
 "Hero_ElderTitan.AncestralSpirit.Cast"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
 	"wave"			")weapons/hero/elder_titan/spirit_cast.wav"
@@ -238,8 +234,6 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"80, 90"
 	"wave"			")weapons/hero/skywrath/mystic_flare_target.wav"
-	
-	"soundentry_version" "2"
 	"operator_stacks"
 	{
 		"start_stack"
@@ -248,9 +242,9 @@
 			"limit_sound"
 			{
 				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
-				"match_entity" "true"	
-				"match_substring" "false"
-				"match_entry" "Hero_ElderTitan.AncestralSpirit.Target"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "Hero_ElderTitan.AncestralSpirit.Damage"
 				"match_channel" "false"
 			}
 		}
@@ -273,23 +267,15 @@
 "Hero_ElderTitan.AncestralSpirit.Buff"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1.0"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"wave"			")weapons/hero/elder_titan/spirit_buff.wav"
 	"operator_stacks"
 	{
-		"update_stack"
+		"start_stack"
 		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Weapons"
-			}
-			"speakers_spatialize"
-			{
-				"input_radius"  "300"
-			}
+			"import_stack" "dota_attack_block_dist"
 		}
 	}
 }
@@ -447,6 +433,47 @@
 			"block_dist"
 			{
 				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_ElderTitan.AncestralSpirit.Loop"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			"physics\movement\hero\elder_titan\spirit_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+			"volume_fade_in"
+			{
+				"input_Max" "0.1"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.3"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
 			}
 		}
 	}

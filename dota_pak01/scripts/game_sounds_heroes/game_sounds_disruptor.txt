@@ -303,7 +303,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
-	"wave"			")weapons/hero/disruptor/static_storm.wav"
+	"wave"			")weapons/hero/disruptor/static_storm.mp3"
 	
 	"operator_stacks"
 	{
@@ -321,6 +321,30 @@
 			"volume_fade_out"
 			{
 				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Disruptor.StaticStorm.End"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/disruptor/static_storm_end.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "500"
 			}
 		}
 	}

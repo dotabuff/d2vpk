@@ -346,8 +346,8 @@
 "DOTA_Item.MaskOfMadness.Activate"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
-	"soundlevel"  	"SNDLVL_81dB"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
 	"pitch"			"95, 105"
 	"wave"			")items/mask_of_madness.wav"
 }
@@ -545,7 +545,7 @@
 {
 	"channel"		"CHAN_STATIC"
 	"volume"			"1"
-	"soundlevel"  	"SNDLVL_84dB"
+	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"wave"			")items/item_mjoll_on.wav"
 }
@@ -553,8 +553,8 @@
 "DOTA_Item.Mjollnir.DeActivate"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"			"1"
-	"soundlevel"  	"SNDLVL_84dB"
+	"volume"			"0.3"
+	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"95, 105"
 	"wave"			")items/item_mjoll_off.wav"
 }
@@ -562,7 +562,7 @@
 "DOTA_Item.Mjollnir.Loop"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"			"1"
+	"volume"			"0.3"
 	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"100"
 	"wave"			")items/item_mjoll_loop.wav"

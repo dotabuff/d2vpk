@@ -3,11 +3,15 @@ criterion "IsEnemybeastmaster" "targetclassname" "npc_dota_hero_beastmaster" wei
 criterion "IsAllybeastmaster" "nearby_ally" "npc_dota_hero_beastmaster" weight 5 required
 criterion "IsBeastmasterHawk" "beastname" "beast_hawk" weight 5 required
 criterion "IsBeastmasterBoar" "beastname" "beast_boar" weight 5 required
-criterion "IsBeastCallWild" "abilityname" "beastmaster_call_of_the_wild" weight 5 required
+criterion "IsBeastCallWildHawk" "abilityname" "beastmaster_call_of_the_wild" weight 5 required
+criterion "IsBeastCallWildBoar" "abilityname" "beastmaster_call_of_the_wild_boar" weight 5 required
 criterion "IsBeastHawk1" "creaturename" "npc_dota_scout_hawk" weight 5 required
 criterion "IsBeastHawk2" "creaturename" "npc_dota_greater_hawk" weight 5 required
 criterion "IsBeastBoar1" "creaturename" "npc_dota_beastmaster_boar" weight 5 required
 criterion "IsBeastBoar2" "creaturename" "npc_dota_beastmaster_greater_boar" weight 5 required
+criterion "IsBeastLevelCallWild" "abilityname" "beastmaster_call_of_the_wild" weight 5 required
+criterion "IsBeastBothHawk" "skill2_level" "2" weight 5 required
+criterion "IsBeastBothBoar" "skill3_level" "2" weight 5 required
 
 Response beastmaster_Spawn
 {
@@ -63,11 +67,9 @@ Rule beastmaster_Move_Rule
 
 Response beastmaster_MoveIsBeastmasterHawkIsBeastmasterChance_30%
 {
-	scene "scenes/beastmaster/beastmaster_beas_ability_summonsbird_01.vcd" nodelay noscene 
 	scene "scenes/beastmaster/beastmaster_beas_ability_summonsbird_02.vcd" nodelay noscene 
 	scene "scenes/beastmaster/beastmaster_beas_ability_summonsbird_03.vcd" nodelay noscene 
 	scene "scenes/beastmaster/beastmaster_beas_ability_summonsbird_04.vcd" nodelay noscene 
-	scene "scenes/beastmaster/beastmaster_beas_ability_summonsbird_05.vcd" nodelay noscene 
 }
 
 Rule beastmaster_MoveIsBeastmasterHawkIsBeastmasterChance_30%_Rule
@@ -87,17 +89,16 @@ Rule beastmaster_MoveIsBeastmasterHawkIsBeastmaster_Rule
 	response beastmaster_MoveIsBeastmasterHawkIsBeastmaster
 }
 
-Response beastmaster_MoveIsBeastmasterBoarIsBeastmasterChance_50%
+Response beastmaster_MoveIsBeastmasterBoarIsBeastmasterChance_35%
 {
 	scene "scenes/beastmaster/beastmaster_beas_ability_summonsboar_02.vcd" nodelay noscene 
 	scene "scenes/beastmaster/beastmaster_beas_ability_summonsboar_03.vcd" nodelay noscene 
-	scene "scenes/beastmaster/beastmaster_beas_ability_summonsboar_04.vcd" nodelay noscene 
 }
 
-Rule beastmaster_MoveIsBeastmasterBoarIsBeastmasterChance_50%_Rule
+Rule beastmaster_MoveIsBeastmasterBoarIsBeastmasterChance_35%_Rule
 {
-	criteria Move Isbeastmaster IsBeastmasterBoar IsBeastmaster Chance_50%
-	response beastmaster_MoveIsBeastmasterBoarIsBeastmasterChance_50%
+	criteria Move Isbeastmaster IsBeastmasterBoar IsBeastmaster Chance_35%
+	response beastmaster_MoveIsBeastmasterBoarIsBeastmasterChance_35%
 }
 
 Response beastmaster_MoveIsBeastmasterBoarIsBeastmaster
@@ -142,10 +143,20 @@ Rule beastmaster_Attack_Rule
 	response beastmaster_Attack
 }
 
-Response beastmaster_AttackIsBeastmasterBoarIsBeastmaster
+Response beastmaster_AttackIsBeastmasterBoarChance_25%IsBeastmaster
 {
 	scene "scenes/beastmaster/beastmaster_beas_ability_summonsboar_05.vcd" nodelay noscene 
 	scene "scenes/beastmaster/beastmaster_beas_ability_summonsboar_06.vcd" nodelay noscene 
+}
+
+Rule beastmaster_AttackIsBeastmasterBoarChance_25%IsBeastmaster_Rule
+{
+	criteria Attack Isbeastmaster IsBeastmasterBoar Chance_25% IsBeastmaster
+	response beastmaster_AttackIsBeastmasterBoarChance_25%IsBeastmaster
+}
+
+Response beastmaster_AttackIsBeastmasterBoarIsBeastmaster
+{
 	scene "scenes/beastmaster/beastmaster_beas_ability_boar_attack_01.vcd" nodelay noscene 
 }
 
@@ -183,19 +194,39 @@ Rule beastmaster_Select_Rule
 	response beastmaster_Select
 }
 
-Response beastmaster_CastExecuteIsBeastCallWildChance_20%
+Response beastmaster_CastExecuteIsBeastCallWildBoarChance_30%
 {
-	scene "scenes/beastmaster/beastmaster_beas_ability_callwild_01.vcd" nodelay noscene 
-	scene "scenes/beastmaster/beastmaster_beas_ability_callwild_02.vcd" nodelay noscene 
-	scene "scenes/beastmaster/beastmaster_beas_ability_callwild_03.vcd" nodelay noscene 
 	scene "scenes/beastmaster/beastmaster_beas_ability_callwild_04.vcd" nodelay noscene 
-	scene "scenes/beastmaster/beastmaster_beas_ability_callwild_05.vcd" nodelay noscene 
+	scene "scenes/beastmaster/beastmaster_beas_ability_summonsboar_04.vcd" nodelay noscene 
 }
 
-Rule beastmaster_CastExecuteIsBeastCallWildChance_20%_Rule
+Rule beastmaster_CastExecuteIsBeastCallWildBoarChance_30%_Rule
 {
-	criteria CastExecute Isbeastmaster IsBeastCallWild Chance_20%
-	response beastmaster_CastExecuteIsBeastCallWildChance_20%
+	criteria CastExecute Isbeastmaster IsBeastCallWildBoar Chance_30%
+	response beastmaster_CastExecuteIsBeastCallWildBoarChance_30%
+}
+
+Response beastmaster_CastExecuteIsBeastCallWildHawkChance_30%
+{
+	scene "scenes/beastmaster/beastmaster_beas_ability_summonsbird_01.vcd" nodelay noscene 
+	scene "scenes/beastmaster/beastmaster_beas_ability_summonsbird_05.vcd" nodelay noscene 
+}
+
+Rule beastmaster_CastExecuteIsBeastCallWildHawkChance_30%_Rule
+{
+	criteria CastExecute Isbeastmaster IsBeastCallWildHawk Chance_30%
+	response beastmaster_CastExecuteIsBeastCallWildHawkChance_30%
+}
+
+Response beastmaster_LearnIsBeastLevelCallWildIsBeastBothHawkIsBeastBothBoar
+{
+	scene "scenes/beastmaster/beastmaster_beas_ability_callwild_05.vcd" nodelay noscene speakonce
+}
+
+Rule beastmaster_LearnIsBeastLevelCallWildIsBeastBothHawkIsBeastBothBoar_Rule
+{
+	criteria Learn Isbeastmaster IsBeastLevelCallWild IsBeastBothHawk IsBeastBothBoar
+	response beastmaster_LearnIsBeastLevelCallWildIsBeastBothHawkIsBeastBothBoar
 }
 
 Response beastmaster_LevelUp
