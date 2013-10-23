@@ -3128,7 +3128,7 @@ Always one step ahead of cheated customers, one town ahead of a pursuing patrona
 		"DOTA_Tooltip_ability_riki_backstab_damage_multiplier"							"AGI DAMAGE MULT:"
 		"DOTA_Tooltip_ability_riki_permanent_invisibility"								"Permanent Invisibility"
 		"DOTA_Tooltip_ability_riki_permanent_invisibility_Description"					"Riki fades into the shadows, staying permanently invisible except while attacking.  While silenced, Riki will be visible."
-		"DOTA_Tooltip_ability_riki_permanent_invisibility_Lore"							"Rikimaru comes for you."
+		"DOTA_Tooltip_ability_riki_permanent_invisibility_Lore"							"Riki comes for you."
 		"DOTA_Tooltip_ability_riki_permanent_invisibility_Note0"						"Riki won't auto attack enemies while invisible."
 		"DOTA_Tooltip_ability_riki_permanent_invisibility_Note1"						"Silence disables this ability."
 		"DOTA_Tooltip_ability_riki_permanent_invisibility_fade_delay"					"FADE DELAY:"
@@ -11401,9 +11401,9 @@ No sooner had the defeated regained consciousness than the cries for double-or-n
 		"StoreBanner_Text_BM_SteelwebSet"		"Let's see them step on this!"
 		"StoreBanner_Header_BM_WebofThornsSet"		"Broodmother: Web of Thorns Set"
 		"StoreBanner_Text_BM_WebofThornsSet"		"All the better to guard her brood."
-		"StoreBanner_Header_SILENCER_GuardianofSilenceSet"		"HUD: Tremor"
+		"StoreBanner_Header_SILENCER_GuardianofSilenceSet"		"Silencer: Guardian of Silence Set"
 		"StoreBanner_Text_SILENCER_GuardianofSilenceSet"		"Quiet their screams."
-		"StoreBanner_Header_RIKI_HighbornReckoningSet"		"Rikimaru: Highborn Reconing Set"
+		"StoreBanner_Header_RIKI_HighbornReckoningSet"		"Riki: Highborn Reckoning Set"
 		"StoreBanner_Text_RIKI_HighbornReckoningSet"		"Your enemies will pay dearly."
 		"StoreBanner_Header_INVOKER_MnemonusArcanusSet"		"Invoker: Mnemonus Arcanus Set"
 		"StoreBanner_Text_INVOKER_MnemonusArcanusSet"		"Solar vestments won by wizardly cunning."
@@ -13450,6 +13450,7 @@ No sooner had the defeated regained consciousness than the cries for double-or-n
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
 
 		"NEXON_Error" "Error"
+		"NEXON_State_ShutdownWarning" "Game usage is blocked under Shutdown law in %s1."
 		"NEXON_State_ShutdownLaw" "Game usage is blocked under Shutdown law."
 		"NEXON_State_RestrictedID" "Game usage restricted ID."
 		"NEXON_State_RestrictedAge" "Game usage is allowed for ages over 12."
@@ -13458,6 +13459,12 @@ No sooner had the defeated regained consciousness than the cries for double-or-n
 		"NEXON_State_PaymentAgreement" "Payment Agreement Restriction"
 		"NEXON_State_UnderMembershipRestriction" "Under Membership Restriction"
 		"NEXON_PlaytimeWarning" "You have played more than %s1 hour(s). Excessive usage of game might cause inconvenience in your everyday life."
+		"NEXON_CybercafeNotRegistered" "Not cyber café premium user. Please contact Nexon’s Cyber café customer service."
+		"NEXON_CybercafeExceededIP" "Exceeded number of allowed user per IP. Please contact cyber café owner."
+		"NEXON_CybercafeBlockedByAdmin" "This PC’s access is blocked by administrator. Please contact Nexon’s cyber café customer service."
+		"NEXON_CybercafeTimeExpired" "This PC’s access is blocked by administrator. Please contact Nexon’s cyber café customer service."
+		"NEXON_CybercafeGenericBlocked" "Blocked access."
+		"NEXON_CybercafeTimeLeft"	"You have %s1 minutes left in your Nexon cyber café subscription time."
 
 		"DOTA_GGPopup_Title"		"GAME WILL END"
 		"DOTA_GGPopup_Desc"			"You will lose in"
@@ -13472,5 +13479,34 @@ No sooner had the defeated regained consciousness than the cries for double-or-n
 
 		"DOTA_ItemDropLvl_Text"		"You are currently eligible to find %s1 items. Play more games to increase your level and find rarer items."
 		"DOTA_ItemDropLvl_TextMax"	"Currently eligible to find %s1 items."
+
+		// Korean used here since this is a Korean-only feature and allows testing without having to set language.
+		"Econ_Purgatory" "구매확정"
+		"Econ_Purgatory_FinalizeAllItems" "모두 구매확정"
+		"Econ_Purgatory_FinalizePurchase" "구매확정"
+		"Econ_Purgatory_ReturnItem" "청약철회"
+		"Econ_Purgatory_FinalizePurchaseDlg_Title"	"구매확정"
+		"Econ_Purgatory_FinalizePurchaseDlg_Msg"	"해당 아이템의 구매를 확정하고 배낭으로 이동하시겠습니까? 구매 확정한 아이템은 청약철회가 불가능하니 신중히 결정해 주십시오."
+		"Econ_Purgatory_FinalizePurchaseDlg_ConfirmButton"	"구매확정"
+		"Econ_Purgatory_FinalizePurchaseDlg_CancelButton"	"취소"
+		"Econ_Purgatory_ReturnDlg_Title"	"청약철회"
+		"Econ_Purgatory_ReturnDlg_Msg"	"해당 아이템의 청약철회 하시겠습니까?"
+		"Econ_Purgatory_ReturnDlg_ConfirmButton"	"청약철회"
+		"Econ_Purgatory_ReturnDlg_CancelButton"	"취소"
+
+		"ItemPurgatory_Finalize_Succeeded"					"Finalize successful."
+		"ItemPurgatory_Finalize_Failed_Incomplete"			"Finalize was only partially successful. One or more items were not finalized."
+		"ItemPurgatory_Finalize_Failed_ItemsNotInPurgatory"	"Finalize may have partially succeeded. At least one item was not in the maybe box. It's possible it was automatically moved to the Armory."
+		"ItemPurgatory_Finalize_Failed_CouldNotFindItems"	"Could not find one or more items."
+		"ItemPurgatory_Finalize_Failed_NoSOCache"			"The server is experiencing problems. Please try again in a few minutes."
+		"ItemPurgatory_Finalize_Failed_BackpackFull"		"Not all items could be finalized. Free up some space in your Armory and try again."
+
+		"ItemPurgatory_Refund_Succeeded"					"Refund successful."
+		"ItemPurgatory_Refund_Failed_ItemsNotInPurgatory"	"The item you specified was not in the Maybe Box."
+		"ItemPurgatory_Refund_Failed_CouldNotFindItem"		"Refund failed. Could not find the specified item."
+		"ItemPurgatory_Refund_Failed_TryLater"				"Refund failed. Please try again later."
+		"ItemPurgatory_Refund_Failed_Nexon"					"Failed to connect to the Nexon server."
+
+		"ItemPurgatory_UnknownError"		"Unknown error."
 	}
 }
