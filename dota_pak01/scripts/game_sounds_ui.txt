@@ -3971,3 +3971,18 @@
 	"soundlevel"	"SNDLVL_90dB"
 	"wave"			"ui/speech_popup.wav"
 }
+
+"ui.RandomSpirit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"  "ui/book/spirit1.wav"
+		"wave"  "ui/book/spirit2.wav"		
+		"wave"  "ui/book/spirit3.wav"
+		"wave"  "ui/book/spirit4.wav"
+	}
+}
