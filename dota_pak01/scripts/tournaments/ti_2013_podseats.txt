@@ -1,769 +1,385 @@
-"ti_2013_podseats.txt"
-{
-	// HOME appears at the top of the screen, mapped to the pods on stage RIGHT ( house LEFT )
-
-	// AWAY appears at the bottom of the screen, mapped to the pods on stage LEFT ( house RIGHT )
-	"home_teams"
-	{
-		// Move teams here to have them appear as HOME
-		"Alliance"		"111474"
-		"TongFu|"		"20"
-		"Virtus.Pro"		"40"
-		
-		// Move teams inside this block to have them appear as AWAY
-		"not_home"
-		{
-			"Natus Vincere"		"36"			
-			"Virtus.Pro"		"40"
-			"Invictus Gaming"		"5"			
-			"Orange.Neolution Esports"		"416900"			
-			"Fnatic"		"350190"
-			"Team Liquid"		"2163"
-			"Zenith"		"2"
-			"Team Dignitas"		"142"			
-			"DK"		"7"
-			"LGD-GAMING.int"		"77666"
-			"Invasion MUFC"		"497529"
-			"mousesports"		"26"
-			"LGD Gaming"		"15"
-			"Quantic Gaming"		"680683"
-			"Rattlesnake"		"496774"
-
-			// All star teams
-			"Radiant"		"824543"
-			"Dire"			"824639"
-		}		
-	}
-	"player_seats"
-	{
-
-		// iG					
-// 		Invictus Gaming	Player	ChuaN	Wong Hock Chuan	1
-// 		Invictus Gaming	Captain	Zhou	Chen Yao	2
-// 		Invictus Gaming	Player	Faith	Zeng Hongda	3
-// 		Invictus Gaming	Player	YYF	Jiang Cen	4
-// 		Invictus Gaming	Player	Ferrari_430	Luo Feichi 5
-
-		"player"
-		{
-			"displayed_name"		"Zhou"
-			"steamid"		"0x01100001055F643F"
-			"seat"		"3"
-			"teamid"		"5"
-		}
-		"player"
-		{
-			"displayed_name"		"Ferrari_430"
-			"steamid"		"0x011000010547B375"
-			"seat"		"0"
-			"teamid"		"5"
-		}
-		"player"
-		{
-			"displayed_name"		"YYF"
-			"steamid"		"0x01100001055DFA51"
-			"seat"		"1"
-			"teamid"		"5"
-		}
-		"player"
-		{
-			"displayed_name"		"ChuaN"
-			"steamid"		"0x01100001054736FD"
-			"seat"		"4"
-			"teamid"		"5"
-		}
-		"player"
-		{
-			"displayed_name"		"Faith"
-			"steamid"		"0x0110000104E8387A"
-			"seat"		"2"
-			"teamid"		"5"
-		}
-
-		// TongFu
-// 		TongFu	Player	Mu 			Zhang Pan 		1
-// 		TongFu	Player	KingJ		Yang Zhou		2
-// 		TongFu	Captain	Hao			Chen Zhihao 	3
-// 		TongFu	Player	Sansheng	Wang Zhaohui 	4
-// 		TongFu	Player	Banana		Wang Jiao		5
- 
-		"player"
-		{
-			"displayed_name"		"Hao"
-			"steamid"		"0x0110000105468863"
-			"seat"		"2"
-			"teamid"		"20"
-		}
-		"player"
-		{
-			"displayed_name"		"Mu"
-			"steamid"		"0x0110000105506FE6"
-			"seat"		"4"
-			"teamid"		"20"
-		}
-		"player"
-		{
-			"displayed_name"		"Sansheng"
-			"steamid"		"0x0110000106035CFC"
-			"seat"		"1"
-			"teamid"		"20"
-		}
-		"player"
-		{
-			"displayed_name"		"Banana"
-			"steamid"		"0x0110000105515B87"
-			"seat"		"0"
-			"teamid"		"20"
-		}
-		"player"
-		{
-			"displayed_name"		"KingJ"
-			"steamid"		"0x0110000105518DF2"
-			"seat"		"3"
-			"teamid"		"20"
-		}
-
-		// Orange
-// 		Orange	Player	Ohaiyo	Chong Xin Khoo			1
-// 		Orange	Player	Mushi	Chai Yee Fung			2
-// 		Orange	Player	kYxY	Lee Kong Yang			3
-// 		Orange	player	Net		Wai Pern Lim			4
-// 		Orange	capt	XtiNcT	Joel Chan Zhan Leong	5
-
-		"player"
-		{
-			"displayed_name"		"Mushi"
-			"steamid"		"0x01100001055B54C5"
-			"seat"		"3"
-			"teamid"		"416900"
-		}
-		"player"
-		{
-			"displayed_name"		"Ohaiyo"
-			"steamid"		"0x011000010594787B"
-			"seat"		"4"
-			"teamid"		"416900"
-		}
-		"player"
-		{
-			"displayed_name"		"kYxY"
-			"steamid"		"0x0110000105766323"
-			"seat"		"2"
-			"teamid"		"416900"
-		}
-		"player"
-		{
-			"displayed_name"		"XtiNcT"
-			"steamid"		"0x011000010553133D"
-			"seat"		"0"
-			"teamid"		"416900"
-		}
-		"player"
-		{
-			"displayed_name"		"Net"
-			"steamid"		"0x011000010551D635"
-			"seat"		"1"
-			"teamid"		"416900"
-		}
-
-		// Alliance		
-// 		Alliance	Player	AdmiralBulldog	Henrik Ahnberg	1
-// 		Alliance	Player	s4	Gustav Magnusson	2
-// 		Alliance	Player	Akke	Joakim Akterhall	3
-// 		Alliance	Player	EGM	Jerry Lundkvist	4
-// 		Alliance	Player	Loda	Jonathan Berg 5
-		"player"
-		{
-			"displayed_name"		"Akke"
-			"steamid"		"0x01100001027604FB"
-			"seat"		"2"
-			"teamid"		"111474"
-		}
-		"player"
-		{
-			"displayed_name"		"AdmiralBulldog"
-			"steamid"		"0x01100001048F0782"
-			"seat"		"4"
-			"teamid"		"111474"
-		}
-		"player"
-		{
-			"displayed_name"		"Loda"
-			"steamid"		"0x01100001060CB344"
-			"seat"		"0"
-			"teamid"		"111474"
-		}
-		"player"
-		{
-			"displayed_name"		"EGM"
-			"steamid"		"0x01100001003BC28C"
-			"seat"		"1"
-			"teamid"		"111474"
-		}
-		"player"
-		{
-			"displayed_name"		"S4"
-			"steamid"		"0x01100001027524D3"
-			"seat"		"3"
-			"teamid"		"111474"
-		}
-
-		// Fnatic
-		Fnatic	Player	Era	Adrian Kryeziu	1
-// 		Fnatic	Player	N0tail	Johan Sundstein	2
-// 		Fnatic	capt	Fly	Tal Aizik	3
-// 		Fnatic	Player	H4nn1	Kai Hanbueckers	4
-// 		Fnatic	Player	Trixi	Kalle Saarinen 5
-
-		"player"
-		{
-			"displayed_name"		"Fly"
-			"steamid"		"0x01100001059CB194"
-			"seat"		"2"
-			"teamid"		"350190"
-		}
-		"player"
-		{
-			"displayed_name"		"N0tail"
-			"steamid"		"0x01100001012C2D22"
-			"seat"		"3"
-			"teamid"		"350190"
-		}
-		"player"
-		{
-			"displayed_name"		"Era"
-			"steamid"		"76561198060583478"
-			"seat"		"4"
-			"teamid"		"350190"
-		}
-		"player"
-		{
-			"displayed_name"		"H4nn1"
-			"steamid"		"0x0110000101447E15"
-			"seat"		"1"
-			"teamid"		"350190"
-		}
-		"player"
-		{
-			"displayed_name"		"Trixi"
-			"steamid"		"0x011000010084F072"
-			"seat"		"0"
-			"teamid"		"350190"
-		}
-
-		// Liquid
-// 		Liquid	Player	Korok		Steven Ashworth	1
-// 		Liquid	Player	TC			Tyler Cook		2
-// 		Liquid	Capt	FLUFFNSTUFF	Brian Lee		3
-// 		Liquid	Player	ixmike88	Michael Ghannam	4
-// 		Liquid	Player	BuLba		Sam Sosale		5
-
-		"player"
-		{
-			"displayed_name"		"FLUFFNSTUFF"
-			"steamid"		"0x011000010278CB0B"
-			"seat"		"2"
-			"teamid"		"2163"
-		}
-		"player"
-		{
-			"displayed_name"		"ixmike88"
-			"steamid"		"0x01100001052B2AF9"
-			"seat"		"1"
-			"teamid"		"2163"
-		}
-		"player"
-		{
-			"displayed_name"		"TC"
-			"steamid"		"0x011000010407851D"
-			"seat"		"3"
-			"teamid"		"2163"
-		}
-		"player"
-		{
-			"displayed_name"		"Korok"
-			"steamid"		"0x011000010012176C"
-			"seat"		"4"
-			"teamid"		"2163"
-		}
-		"player"
-		{
-			"displayed_name"		"BuLba"
-			"steamid"		"0x0110000101CD621B"
-			"seat"		"0"
-			"teamid"		"2163"
-		}
-
-		// Navi
-// 		Natus Vincere	Player	XBOCT	Alexander Dashkevich	1
-// 		Natus Vincere	Player	KuroKy	Kuro Salehi Takhasomi	2
-// 		Natus Vincere	Captain	Puppey	Clement Ivanov			3
-// 		Natus Vincere	Player	Dendi	Danil Ishutin			4
-// 		Natus Vincere	Player	Funn1k	Gleb Lipatnikov			5
-
-		"player"
-		{
-			"displayed_name"		"XBOCT"
-			"steamid"		"0x0110000105579380"
-			"seat"		"4"
-			"teamid"		"36"
-		}
-		"player"
-		{
-			"displayed_name"		"Dendi"
-			"steamid"		"0x0110000104320BB1"
-			"seat"		"1"
-			"teamid"		"36"
-		}
-		"player"
-		{
-			"displayed_name"		"Puppey"
-			"steamid"		"0x011000010533C4A5"
-			"seat"		"2"
-			"teamid"		"36"
-		}
-		"player"
-		{
-			"displayed_name"		"Funn1k"
-			"steamid"		"0x01100001052B4A47"
-			"seat"		"0"
-			"teamid"		"36"
-		}
-		"player"
-		{
-			"displayed_name"		"KuroKy"
-			"steamid"		"0x0110000104E73A88"
-			"seat"		"3"
-			"teamid"		"36"
-		}
-
-		// Zenith
-// 		Zenith	Capt	iceiceice	Daryl Koh Pei Xiang	1
-// 		Zenith	Player	xFreedom	Nicholas Kelvin Ileto Lim	2
-// 		Zenith	Player	Ice			Chua Chee Cai 	3
-// 		Zenith	Player	YamateH		Ng Wei Poong 	4
-// 		Zenith	Player	xy-			Toh Wai Hong	5
-
-		"player"
-		{
-			"displayed_name"		"iceiceice"
-			"steamid"		"0x01100001050D8658"
-			"seat"		"4"
-			"teamid"		"2"
-		}
-		"player"
-		{
-			"displayed_name"		"xFreedom"
-			"steamid"		"0x0110000104ECD92F"
-			"seat"		"3"
-			"teamid"		"2"
-		}
-		"player"
-		{
-			"displayed_name"		"xy-"
-			"steamid"		"0x0110000105175C4A"
-			"seat"		"0"
-			"teamid"		"2"
-		}
-		"player"
-		{
-			"displayed_name"		"YamateH"
-			"steamid"		"0x0110000107371D3F"
-			"seat"		"1"
-			"teamid"		"2"
-		}
-		"player"
-		{
-			"displayed_name"		"Ice"
-			"steamid"		"0x0110000105954C07"
-			"seat"		"2"
-			"teamid"		"2"
-		}
-
-		// dignitas
-// 		Dignitas	Player	Sneyking	JingJun Wu	1
-// 		Dignitas	Player	UNiVeRsE	Saahil Arora	2
-// 		Dignitas	Capt	Waytosexy	Peter Nguyen	3
-// 		Dignitas	Player	Fogged	Ioannis Loucas	4
-// 		Dignitas	Player	Aui_2000	Kurtis Ling	5
-
-		"player"
-		{
-			"displayed_name"		"sneyking"
-			"steamid"		"0x01100001009E2E98"
-			"seat"		"4"
-			"teamid"		"142"
-		}
-		"player"
-		{
-			"displayed_name"		"Aui_2000"
-			"steamid"		"0x01100001026AB492"
-			"seat"		"0"
-			"teamid"		"142"
-		}
-		"player"
-		{
-			"displayed_name"		"Waytosexy"
-			"steamid"		"0x01100001024BB1CD"
-			"seat"		"2"
-			"teamid"		"142"
-		}
-		"player"
-		{
-			"displayed_name"		"fogged"
-			"steamid"		"0x01100001005321AC"
-			"seat"		"1"
-			"teamid"		"142"
-		}
-		"player"
-		{
-			"displayed_name"		"UNiVeRsE"
-			"steamid"		"0x011000010533BB3B"
-			"seat"		"3"
-			"teamid"		"142"
-		}
-
-		// Virtus Pro
-// 		Virtus.Pro	Player	KSi		Sergey Kuzin		1
-// 		Virtus.Pro	Capt	NS		Yaroslav Kuznetsov	2
-// 		Virtus.Pro	Player	Crazy	Oleg Kolesnichenko	3
-// 		Virtus.Pro	Player	ARS-ART	Sergey Revin		4
-// 		Virtus.Pro	Player	Illidan	Ilya Pivtcaev		5
-
-		"player"
-		{
-			"displayed_name"		"NS"
-			"steamid"		"0x011000010595EF2B"
-			"seat"		"3"
-			"teamid"		"40"
-		}
-		"player"
-		{
-			"displayed_name"		"KSi"
-			"steamid"		"0x01100001057AC24B"
-			"seat"		"4"
-			"teamid"		"40"
-		}
-		"player"
-		{
-			"displayed_name"		"Crazy"
-			"steamid"		"0x01100001052D14EA"
-			"seat"		"2"
-			"teamid"		"40"
-		}
-		"player"
-		{
-			"displayed_name"		"Illidan"
-			"steamid"		"0x0110000101918F93"
-			"seat"		"0"
-			"teamid"		"40"
-		}
-		"player"
-		{
-			"displayed_name"		"ARS-ART"
-			"steamid"		"0x01100001066A8571"
-			"seat"		"1"
-			"teamid"		"40"
-		}
-
-		// DK
-// 		DK	Captain	BurNIng	Xu Zhilei	1
-// 		DK	Player	X!!		Lei Zengrong	2
-// 		DK	Player	QQQ		Yao Yi	3
-// 		DK	Player	Super	Xie JunHao	4
-// 		DK	Player	rOtK	Bai Fan 5
-
-		"player"
-		{
-			"displayed_name"		"BurNIng"
-			"steamid"		"0x01100001056AE9BE"
-			"seat"		"4"
-			"teamid"		"7"
-		}
-		"player"
-		{
-			"displayed_name"		"Super"
-			"steamid"		"0x01100001056AC06F"
-			"seat"		"1"
-			"teamid"		"7"
-		}
-		"player"
-		{
-			"displayed_name"		"rOtk"
-			"steamid"		"0x01100001057733AB"
-			"seat"		"0"
-			"teamid"		"7"
-		}
-		"player"
-		{
-			"displayed_name"		"QQQ"
-			"steamid"		"0x01100001055421C6"
-			"seat"		"2"
-			"teamid"		"7"
-		}
-		"player"
-		{
-			"displayed_name"		"X!!"
-			"steamid"		"0x0110000105543E89"
-			"seat"		"3"
-			"teamid"		"7"
-		}
-
-		// LGD Int
-// 		LGD.int	Player	Pajkatt	Per Anders Olsson Lille	1
-// 		LGD.int	Capt	1437	Theeban Siva			2
-// 		LGD.int	Player	MiSeRy	Rasmus Filipsen			3
-// 		LGD.int	Player	God		Sergey Bragin			4
-// 		LGD.int	Player	Brax	Braxton Paulson			5
-
-		"player"
-		{
-			"displayed_name"		"Misery"
-			"steamid"		"0x0110000105355A33"
-			"seat"		"2"
-			"teamid"		"77666"
-		}
-		"player"
-		{
-			"displayed_name"		"Pajkatt"
-			"steamid"		"0x011000010533DE51"
-			"seat"		"4"
-			"teamid"		"77666"
-		}
-		"player"
-		{
-			"displayed_name"		"God"
-			"steamid"		"0x01100001053878B0"
-			"seat"		"1"
-			"teamid"		"77666"
-		}
-		"player"
-		{
-			"displayed_name"		"1437"
-			"steamid"		"0x01100001053284DA"
-			"seat"		"3"
-			"teamid"		"77666"
-		}
-		"player"
-		{
-			"displayed_name"		"Brax"
-			"steamid"		"0x0110000101E58465"
-			"seat"		"0"
-			"teamid"		"77666"
-		}
-
-		// MUFC
-// 		MUFC	Player	FzFz		Cheng Hor Siew		1
-// 		MUFC	Capt	WinteR		Chan Litt-Binn 		2
-// 		MUFC	Player	T.F.G.		Daniel Wong			3
-// 		MUFC	Player	Ling		Sim Woi Cheong 		4
-// 		MUFC	Player	dabeliuteef	Jun Liong Loh		5
-
-		"player"
-		{
-			"displayed_name"		"WinteR"
-			"steamid"		"0x01100001052BE235"
-			"seat"		"3"
-			"teamid"		"497529"
-		}
-		"player"
-		{
-			"displayed_name"		"FzFz"
-			"steamid"		"0x0110000105C3A8DE"
-			"seat"		"4"
-			"teamid"		"497529"
-		}
-		"player"
-		{
-			"displayed_name"		"T.F.G."
-			"steamid"		"0x01100001056EBE76"
-			"seat"		"2"
-			"teamid"		"497529"
-		}
-		"player"
-		{
-			"displayed_name"		"Ling"
-			"steamid"		"0x0110000105522108"
-			"seat"		"1"
-			"teamid"		"497529"
-		}
-		"player"
-		{
-			"displayed_name"		"dabeliuteef"
-			"steamid"		"0x0110000104CD7EFE"
-			"seat"		"0"
-			"teamid"		"497529"
-		}
-
-		// Mousesports
-// 		mousesports	player	Black^		Dominik Reitmeier	1
-// 		mousesports	player	paS			Pascal Lohmeier		2
-// 		mousesports	Captain	syndereN	Troels Nielsen		3
-// 		mousesports	player	FATA-		Adrian Trinks		4
-// 		mousesports	player	qojqva		Max Broecker		5
-
-		"player"
-		{
-			"displayed_name"		"Black^"
-			"steamid"		"0x011000010144D957"
-			"seat"		"4"
-			"teamid"		"26"
-		}
-		"player"
-		{
-			"displayed_name"		"syndereN"
-			"steamid"		"0x0110000100415581"
-			"seat"		"2"
-			"teamid"		"26"
-		}
-		"player"
-		{
-			"displayed_name"		"FATA-"
-			"steamid"		"0x01100001052C73C4"
-			"seat"		"1"
-			"teamid"		"26"
-		}
-		"player"
-		{
-			"displayed_name"		"paS"
-			"steamid"		"0x0110000101DA38F7"
-			"seat"		"3"
-			"teamid"		"26"
-		}
-		"player"
-		{
-			"displayed_name"		"qojqva"
-			"steamid"		"0x01100001052B8706"
-			"seat"		"0"
-			"teamid"		"26"
-		}
-
-		// LGD China
-// 		LGD.cn	Player	Yao		Yao Zhengzheng	1
-// 		LGD.cn	Capt	xiao8	Zhang Ning		2
-// 		LGD.cn	Player	DDC		Leong Fat-Meng	3
-// 		LGD.cn	Player	Sylar	Liu Jiajun		4
-// 		LGD.cn	Player	DD		Xie Bin			5
-		"player"
-		{
-			"displayed_name"		"xiao8"
-			"steamid"		"0x0110000105E4E8E9"
-			"seat"		"3"
-			"teamid"		"15"
-		}
-		"player"
-		{
-			"displayed_name"		"DDC"
-			"steamid"		"0x0110000106CF278B"
-			"seat"		"2"
-			"teamid"		"15"
-		}
-		"player"
-		{
-			"displayed_name"		"Yao"
-			"steamid"		"0x0110000105E4C23A"
-			"seat"		"4"
-			"teamid"		"15"
-		}
-		"player"
-		{
-			"displayed_name"		"Sylar"
-			"steamid"		"0x011000010675C76C"
-			"seat"		"1"
-			"teamid"		"15"
-		}
-		"player"
-		{
-			"displayed_name"		"DD"
-			"steamid"		"0x011000010553B3C4"
-			"seat"		"0"
-			"teamid"		"15"
-		}
-
-		// Quantic
-// 		Quantic	player	Sockshka	Titouan Merloz		1
-// 		Quantic	Player	Funzii		Thibault Calonne	2
-// 		Quantic	Captain	Goblak		Artur Kostenko		3
-// 		Quantic	Player	7ckngMad	Sebastien Debs		4
-// 		Quantic	Player	Silent		Airat Gaziev		5
-
-		"player"
-		{
-			"displayed_name"		"7ckngMad"
-			"steamid"		"0x011000010542E985"
-			"seat"		"1"
-			"teamid"		"680683"
-		}
-		"player"
-		{
-			"displayed_name"		"Funzii"
-			"steamid"		"0x0110000101BFA780"
-			"seat"		"3"
-			"teamid"		"680683"
-		}
-		"player"
-		{
-			"displayed_name"		"Sockshka"
-			"steamid"		"0x0110000100FFE0C7"
-			"seat"		"4"
-			"teamid"		"680683"
-		}
-		"player"
-		{
-			"displayed_name"		"Silent"
-			"steamid"		"0x011000010595CF40"
-			"seat"		"0"
-			"teamid"		"680683"
-		}
-		"player"
-		{
-			"displayed_name"		"Goblak"
-			"steamid"		"0x01100001055020F7"
-			"seat"		"2"
-			"teamid"		"680683"
-		}
-
-		// Rattlesnake
-// 		Rattlesnake	Player	Icy		Wang Peng 	1
-// 		Rattlesnake	Captain	Luo		Luo Yinqi	2
-// 		Rattlesnake	Player	LaNm	Zhang Zhicheng 	3
-// 		Rattlesnake	Player	Sag		Li Guo 	4
-// 		Rattlesnake	Player	Kabu	Zhao Kai 5
-
-		"player"
-		{
-			"displayed_name"		"Kabu"
-			"steamid"		"0x011000010546BADB"
-			"seat"		"0"
-			"teamid"		"496774"
-		}
-		"player"
-		{
-			"displayed_name"		"LaNm"
-			"steamid"		"0x0110000105547F8C"
-			"seat"		"2"
-			"teamid"		"496774"
-		}
-		"player"
-		{
-			"displayed_name"		"Sag"
-			"steamid"		"0x0110000105528FFD"
-			"seat"		"1"
-			"teamid"		"496774"
-		}
-		"player"
-		{
-			"displayed_name"		"Icy"
-			"steamid"		"0x0110000105EDA5D8"
-			"seat"		"4"
-			"teamid"		"496774"
-		}
-		"player"
-		{
-			"displayed_name"		"Luo"
-			"steamid"		"0x011000010551CC74"
-			"seat"		"3"
-			"teamid"		"496774"
-		}
-	}
-}
+"ti_2013_podseats.txt"਍笀ഀഀ
+	// HOME appears at the top of the screen, mapped to the pods on stage RIGHT ( house LEFT )਍ഀഀ
+	// AWAY appears at the bottom of the screen, mapped to the pods on stage LEFT ( house RIGHT )਍ऀ∀栀漀洀攀开琀攀愀洀猀∀ഀഀ
+	{਍ऀऀ⼀⼀ 䴀漀瘀攀 琀攀愀洀猀 栀攀爀攀 琀漀 栀愀瘀攀 琀栀攀洀 愀瀀瀀攀愀爀 愀猀 䠀伀䴀䔀ഀഀ
+		"Alliance"		"111474"਍ऀऀ∀吀漀渀最䘀甀簀∀ऀऀ∀㈀　∀ഀഀ
+		"Virtus.Pro"		"40"਍ऀऀഀഀ
+		// Move teams inside this block to have them appear as AWAY਍ऀऀ∀渀漀琀开栀漀洀攀∀ഀഀ
+		{਍ऀऀऀ∀一愀琀甀猀 嘀椀渀挀攀爀攀∀ऀऀ∀㌀㘀∀ऀऀऀഀഀ
+			"Virtus.Pro"		"40"਍ऀऀऀ∀䤀渀瘀椀挀琀甀猀 䜀愀洀椀渀最∀ऀऀ∀㔀∀ऀऀऀഀഀ
+			"Orange.Neolution Esports"		"416900"			਍ऀऀऀ∀䘀渀愀琀椀挀∀ऀऀ∀㌀㔀　㄀㤀　∀ഀഀ
+			"Team Liquid"		"2163"਍ऀऀऀ∀娀攀渀椀琀栀∀ऀऀ∀㈀∀ഀഀ
+			"Team Dignitas"		"142"			਍ऀऀऀ∀䐀䬀∀ऀऀ∀㜀∀ഀഀ
+			"LGD-GAMING.int"		"77666"਍ऀऀऀ∀䤀渀瘀愀猀椀漀渀 䴀唀䘀䌀∀ऀऀ∀㐀㤀㜀㔀㈀㤀∀ഀഀ
+			"mousesports"		"26"਍ऀऀऀ∀䰀䜀䐀 䜀愀洀椀渀最∀ऀऀ∀㄀㔀∀ഀഀ
+			"Quantic Gaming"		"680683"਍ऀऀऀ∀刀愀琀琀氀攀猀渀愀欀攀∀ऀऀ∀㐀㤀㘀㜀㜀㐀∀ഀഀ
+਍ऀऀऀ⼀⼀ 䄀氀氀 猀琀愀爀 琀攀愀洀猀ഀഀ
+			"Radiant"		"824543"਍ऀऀऀ∀䐀椀爀攀∀ऀऀऀ∀㠀㈀㐀㘀㌀㤀∀ഀഀ
+		}		਍ऀ紀ഀഀ
+	"player_seats"਍ऀ笀ഀഀ
+਍ऀऀ⼀⼀ 椀䜀ऀऀऀऀऀഀഀ
+// 		Invictus Gaming	Player	ChuaN	Wong Hock Chuan	1਍⼀⼀ ऀऀ䤀渀瘀椀挀琀甀猀 䜀愀洀椀渀最ऀ䌀愀瀀琀愀椀渀ऀ娀栀漀甀ऀ䌀栀攀渀 夀愀漀ऀ㈀ഀഀ
+// 		Invictus Gaming	Player	Faith	Zeng Hongda	3਍⼀⼀ ऀऀ䤀渀瘀椀挀琀甀猀 䜀愀洀椀渀最ऀ倀氀愀礀攀爀ऀ夀夀䘀ऀ䨀椀愀渀最 䌀攀渀ऀ㐀ഀഀ
+// 		Invictus Gaming	Player	Ferrari_430	Luo Feichi 5਍ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Zhou"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀䘀㘀㐀㌀䘀∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㔀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䘀攀爀爀愀爀椀开㐀㌀　∀ഀഀ
+			"steamid"		"0x011000010547B375"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀　∀ഀഀ
+			"teamid"		"5"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"YYF"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀䐀䘀䄀㔀㄀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㔀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䌀栀甀愀一∀ഀഀ
+			"steamid"		"0x01100001054736FD"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"5"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Faith"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㐀䔀㠀㌀㠀㜀䄀∀ഀഀ
+			"seat"		"2"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㔀∀ഀഀ
+		}਍ഀഀ
+		// TongFu਍⼀⼀ ऀऀ吀漀渀最䘀甀ऀ倀氀愀礀攀爀ऀ䴀甀 ऀऀऀ娀栀愀渀最 倀愀渀 ऀऀ㄀ഀഀ
+// 		TongFu	Player	KingJ		Yang Zhou		2਍⼀⼀ ऀऀ吀漀渀最䘀甀ऀ䌀愀瀀琀愀椀渀ऀ䠀愀漀ऀऀऀ䌀栀攀渀 娀栀椀栀愀漀 ऀ㌀ഀഀ
+// 		TongFu	Player	Sansheng	Wang Zhaohui 	4਍⼀⼀ ऀऀ吀漀渀最䘀甀ऀ倀氀愀礀攀爀ऀ䈀愀渀愀渀愀ऀऀ圀愀渀最 䨀椀愀漀ऀऀ㔀ഀഀ
+ ਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䠀愀漀∀ഀഀ
+			"steamid"		"0x0110000105468863"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"20"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Mu"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀　㘀䘀䔀㘀∀ഀഀ
+			"seat"		"4"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀　∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀匀愀渀猀栀攀渀最∀ഀഀ
+			"steamid"		"0x0110000106035CFC"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㄀∀ഀഀ
+			"teamid"		"20"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Banana"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀㄀㔀䈀㠀㜀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀　∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䬀椀渀最䨀∀ഀഀ
+			"steamid"		"0x0110000105518DF2"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㌀∀ഀഀ
+			"teamid"		"20"਍ऀऀ紀ഀഀ
+਍ऀऀ⼀⼀ 伀爀愀渀最攀ഀഀ
+// 		Orange	Player	Ohaiyo	Chong Xin Khoo			1਍⼀⼀ ऀऀ伀爀愀渀最攀ऀ倀氀愀礀攀爀ऀ䴀甀猀栀椀ऀ䌀栀愀椀 夀攀攀 䘀甀渀最ऀऀऀ㈀ഀഀ
+// 		Orange	Player	kYxY	Lee Kong Yang			3਍⼀⼀ ऀऀ伀爀愀渀最攀ऀ瀀氀愀礀攀爀ऀ一攀琀ऀऀ圀愀椀 倀攀爀渀 䰀椀洀ऀऀऀ㐀ഀഀ
+// 		Orange	capt	XtiNcT	Joel Chan Zhan Leong	5਍ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Mushi"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀䈀㔀㐀䌀㔀∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀㄀㘀㤀　　∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀伀栀愀椀礀漀∀ഀഀ
+			"steamid"		"0x011000010594787B"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"416900"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"kYxY"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㜀㘀㘀㌀㈀㌀∀ഀഀ
+			"seat"		"2"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀㄀㘀㤀　　∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀堀琀椀一挀吀∀ഀഀ
+			"steamid"		"0x011000010553133D"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀　∀ഀഀ
+			"teamid"		"416900"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Net"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀㄀䐀㘀㌀㔀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀㄀㘀㤀　　∀ഀഀ
+		}਍ഀഀ
+		// Alliance		਍⼀⼀ ऀऀ䄀氀氀椀愀渀挀攀ऀ倀氀愀礀攀爀ऀ䄀搀洀椀爀愀氀䈀甀氀氀搀漀最ऀ䠀攀渀爀椀欀 䄀栀渀戀攀爀最ऀ㄀ഀഀ
+// 		Alliance	Player	s4	Gustav Magnusson	2਍⼀⼀ ऀऀ䄀氀氀椀愀渀挀攀ऀ倀氀愀礀攀爀ऀ䄀欀欀攀ऀ䨀漀愀欀椀洀 䄀欀琀攀爀栀愀氀氀ऀ㌀ഀഀ
+// 		Alliance	Player	EGM	Jerry Lundkvist	4਍⼀⼀ ऀऀ䄀氀氀椀愀渀挀攀ऀ倀氀愀礀攀爀ऀ䰀漀搀愀ऀ䨀漀渀愀琀栀愀渀 䈀攀爀最 㔀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Akke"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㈀㜀㘀　㐀䘀䈀∀ഀഀ
+			"seat"		"2"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㄀㄀㄀㐀㜀㐀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䄀搀洀椀爀愀氀䈀甀氀氀搀漀最∀ഀഀ
+			"steamid"		"0x01100001048F0782"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"111474"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Loda"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㘀　䌀䈀㌀㐀㐀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㄀㄀㄀㐀㜀㐀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䔀䜀䴀∀ഀഀ
+			"steamid"		"0x01100001003BC28C"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㄀∀ഀഀ
+			"teamid"		"111474"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"S4"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㈀㜀㔀㈀㐀䐀㌀∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㄀㄀㄀㐀㜀㐀∀ഀഀ
+		}਍ഀഀ
+		// Fnatic਍ऀऀ䘀渀愀琀椀挀ऀ倀氀愀礀攀爀ऀ䔀爀愀ऀ䄀搀爀椀愀渀 䬀爀礀攀稀椀甀ऀ㄀ഀഀ
+// 		Fnatic	Player	N0tail	Johan Sundstein	2਍⼀⼀ ऀऀ䘀渀愀琀椀挀ऀ挀愀瀀琀ऀ䘀氀礀ऀ吀愀氀 䄀椀稀椀欀ऀ㌀ഀഀ
+// 		Fnatic	Player	H4nn1	Kai Hanbueckers	4਍⼀⼀ ऀऀ䘀渀愀琀椀挀ऀ倀氀愀礀攀爀ऀ吀爀椀砀椀ऀ䬀愀氀氀攀 匀愀愀爀椀渀攀渀 㔀ഀഀ
+਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䘀氀礀∀ഀഀ
+			"steamid"		"0x01100001059CB194"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"350190"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"N0tail"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㄀㈀䌀㈀䐀㈀㈀∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㌀㔀　㄀㤀　∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䔀爀愀∀ഀഀ
+			"steamid"		"76561198060583478"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"350190"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"H4nn1"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㄀㐀㐀㜀䔀㄀㔀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㌀㔀　㄀㤀　∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀吀爀椀砀椀∀ഀഀ
+			"steamid"		"0x011000010084F072"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀　∀ഀഀ
+			"teamid"		"350190"਍ऀऀ紀ഀഀ
+਍ऀऀ⼀⼀ 䰀椀焀甀椀搀ഀഀ
+// 		Liquid	Player	Korok		Steven Ashworth	1਍⼀⼀ ऀऀ䰀椀焀甀椀搀ऀ倀氀愀礀攀爀ऀ吀䌀ऀऀऀ吀礀氀攀爀 䌀漀漀欀ऀऀ㈀ഀഀ
+// 		Liquid	Capt	FLUFFNSTUFF	Brian Lee		3਍⼀⼀ ऀऀ䰀椀焀甀椀搀ऀ倀氀愀礀攀爀ऀ椀砀洀椀欀攀㠀㠀ऀ䴀椀挀栀愀攀氀 䜀栀愀渀渀愀洀ऀ㐀ഀഀ
+// 		Liquid	Player	BuLba		Sam Sosale		5਍ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"FLUFFNSTUFF"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㈀㜀㠀䌀䈀　䈀∀ഀഀ
+			"seat"		"2"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀㄀㘀㌀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀椀砀洀椀欀攀㠀㠀∀ഀഀ
+			"steamid"		"0x01100001052B2AF9"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㄀∀ഀഀ
+			"teamid"		"2163"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"TC"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㐀　㜀㠀㔀㄀䐀∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀㄀㘀㌀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䬀漀爀漀欀∀ഀഀ
+			"steamid"		"0x011000010012176C"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"2163"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"BuLba"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㄀䌀䐀㘀㈀㄀䈀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀㄀㘀㌀∀ഀഀ
+		}਍ഀഀ
+		// Navi਍⼀⼀ ऀऀ一愀琀甀猀 嘀椀渀挀攀爀攀ऀ倀氀愀礀攀爀ऀ堀䈀伀䌀吀ऀ䄀氀攀砀愀渀搀攀爀 䐀愀猀栀欀攀瘀椀挀栀ऀ㄀ഀഀ
+// 		Natus Vincere	Player	KuroKy	Kuro Salehi Takhasomi	2਍⼀⼀ ऀऀ一愀琀甀猀 嘀椀渀挀攀爀攀ऀ䌀愀瀀琀愀椀渀ऀ倀甀瀀瀀攀礀ऀ䌀氀攀洀攀渀琀 䤀瘀愀渀漀瘀ऀऀऀ㌀ഀഀ
+// 		Natus Vincere	Player	Dendi	Danil Ishutin			4਍⼀⼀ ऀऀ一愀琀甀猀 嘀椀渀挀攀爀攀ऀ倀氀愀礀攀爀ऀ䘀甀渀渀㄀欀ऀ䜀氀攀戀 䰀椀瀀愀琀渀椀欀漀瘀ऀऀऀ㔀ഀഀ
+਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀堀䈀伀䌀吀∀ഀഀ
+			"steamid"		"0x0110000105579380"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"36"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Dendi"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㐀㌀㈀　䈀䈀㄀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㌀㘀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀倀甀瀀瀀攀礀∀ഀഀ
+			"steamid"		"0x011000010533C4A5"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"36"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Funn1k"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㈀䈀㐀䄀㐀㜀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㌀㘀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䬀甀爀漀䬀礀∀ഀഀ
+			"steamid"		"0x0110000104E73A88"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㌀∀ഀഀ
+			"teamid"		"36"਍ऀऀ紀ഀഀ
+਍ऀऀ⼀⼀ 娀攀渀椀琀栀ഀഀ
+// 		Zenith	Capt	iceiceice	Daryl Koh Pei Xiang	1਍⼀⼀ ऀऀ娀攀渀椀琀栀ऀ倀氀愀礀攀爀ऀ砀䘀爀攀攀搀漀洀ऀ一椀挀栀漀氀愀猀 䬀攀氀瘀椀渀 䤀氀攀琀漀 䰀椀洀ऀ㈀ഀഀ
+// 		Zenith	Player	Ice			Chua Chee Cai 	3਍⼀⼀ ऀऀ娀攀渀椀琀栀ऀ倀氀愀礀攀爀ऀ夀愀洀愀琀攀䠀ऀऀ一最 圀攀椀 倀漀漀渀最 ऀ㐀ഀഀ
+// 		Zenith	Player	xy-			Toh Wai Hong	5਍ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"iceiceice"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀　䐀㠀㘀㔀㠀∀ഀഀ
+			"seat"		"4"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀砀䘀爀攀攀搀漀洀∀ഀഀ
+			"steamid"		"0x0110000104ECD92F"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㌀∀ഀഀ
+			"teamid"		"2"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"xy-"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㄀㜀㔀䌀㐀䄀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀夀愀洀愀琀攀䠀∀ഀഀ
+			"steamid"		"0x0110000107371D3F"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㄀∀ഀഀ
+			"teamid"		"2"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Ice"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㤀㔀㐀䌀　㜀∀ഀഀ
+			"seat"		"2"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀∀ഀഀ
+		}਍ഀഀ
+		// dignitas਍⼀⼀ ऀऀ䐀椀最渀椀琀愀猀ऀ倀氀愀礀攀爀ऀ匀渀攀礀欀椀渀最ऀ䨀椀渀最䨀甀渀 圀甀ऀ㄀ഀഀ
+// 		Dignitas	Player	UNiVeRsE	Saahil Arora	2਍⼀⼀ ऀऀ䐀椀最渀椀琀愀猀ऀ䌀愀瀀琀ऀ圀愀礀琀漀猀攀砀礀ऀ倀攀琀攀爀 一最甀礀攀渀ऀ㌀ഀഀ
+// 		Dignitas	Player	Fogged	Ioannis Loucas	4਍⼀⼀ ऀऀ䐀椀最渀椀琀愀猀ऀ倀氀愀礀攀爀ऀ䄀甀椀开㈀　　　ऀ䬀甀爀琀椀猀 䰀椀渀最ऀ㔀ഀഀ
+਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀猀渀攀礀欀椀渀最∀ഀഀ
+			"steamid"		"0x01100001009E2E98"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"142"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Aui_2000"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㈀㘀䄀䈀㐀㤀㈀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㄀㐀㈀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀圀愀礀琀漀猀攀砀礀∀ഀഀ
+			"steamid"		"0x01100001024BB1CD"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"142"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"fogged"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　　㔀㌀㈀㄀䄀䌀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㄀㐀㈀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀唀一椀嘀攀刀猀䔀∀ഀഀ
+			"steamid"		"0x011000010533BB3B"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㌀∀ഀഀ
+			"teamid"		"142"਍ऀऀ紀ഀഀ
+਍ऀऀ⼀⼀ 嘀椀爀琀甀猀 倀爀漀ഀഀ
+// 		Virtus.Pro	Player	KSi		Sergey Kuzin		1਍⼀⼀ ऀऀ嘀椀爀琀甀猀⸀倀爀漀ऀ䌀愀瀀琀ऀ一匀ऀऀ夀愀爀漀猀氀愀瘀 䬀甀稀渀攀琀猀漀瘀ऀ㈀ഀഀ
+// 		Virtus.Pro	Player	Crazy	Oleg Kolesnichenko	3਍⼀⼀ ऀऀ嘀椀爀琀甀猀⸀倀爀漀ऀ倀氀愀礀攀爀ऀ䄀刀匀ⴀ䄀刀吀ऀ匀攀爀最攀礀 刀攀瘀椀渀ऀऀ㐀ഀഀ
+// 		Virtus.Pro	Player	Illidan	Ilya Pivtcaev		5਍ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"NS"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㤀㔀䔀䘀㈀䈀∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀　∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䬀匀椀∀ഀഀ
+			"steamid"		"0x01100001057AC24B"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"40"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Crazy"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㈀䐀㄀㐀䔀䄀∀ഀഀ
+			"seat"		"2"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀　∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䤀氀氀椀搀愀渀∀ഀഀ
+			"steamid"		"0x0110000101918F93"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀　∀ഀഀ
+			"teamid"		"40"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"ARS-ART"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㘀㘀䄀㠀㔀㜀㄀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀　∀ഀഀ
+		}਍ഀഀ
+		// DK਍⼀⼀ ऀऀ䐀䬀ऀ䌀愀瀀琀愀椀渀ऀ䈀甀爀一䤀渀最ऀ堀甀 娀栀椀氀攀椀ऀ㄀ഀഀ
+// 		DK	Player	X!!		Lei Zengrong	2਍⼀⼀ ऀऀ䐀䬀ऀ倀氀愀礀攀爀ऀ儀儀儀ऀऀ夀愀漀 夀椀ऀ㌀ഀഀ
+// 		DK	Player	Super	Xie JunHao	4਍⼀⼀ ऀऀ䐀䬀ऀ倀氀愀礀攀爀ऀ爀伀琀䬀ऀ䈀愀椀 䘀愀渀 㔀ഀഀ
+਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䈀甀爀一䤀渀最∀ഀഀ
+			"steamid"		"0x01100001056AE9BE"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"7"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Super"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㘀䄀䌀　㘀䘀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㜀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀爀伀琀欀∀ഀഀ
+			"steamid"		"0x01100001057733AB"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀　∀ഀഀ
+			"teamid"		"7"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"QQQ"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀㐀㈀㄀䌀㘀∀ഀഀ
+			"seat"		"2"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㜀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀堀℀℀∀ഀഀ
+			"steamid"		"0x0110000105543E89"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㌀∀ഀഀ
+			"teamid"		"7"਍ऀऀ紀ഀഀ
+਍ऀऀ⼀⼀ 䰀䜀䐀 䤀渀琀ഀഀ
+// 		LGD.int	Player	Pajkatt	Per Anders Olsson Lille	1਍⼀⼀ ऀऀ䰀䜀䐀⸀椀渀琀ऀ䌀愀瀀琀ऀ㄀㐀㌀㜀ऀ吀栀攀攀戀愀渀 匀椀瘀愀ऀऀऀ㈀ഀഀ
+// 		LGD.int	Player	MiSeRy	Rasmus Filipsen			3਍⼀⼀ ऀऀ䰀䜀䐀⸀椀渀琀ऀ倀氀愀礀攀爀ऀ䜀漀搀ऀऀ匀攀爀最攀礀 䈀爀愀最椀渀ऀऀऀ㐀ഀഀ
+// 		LGD.int	Player	Brax	Braxton Paulson			5਍ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Misery"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㌀㔀㔀䄀㌀㌀∀ഀഀ
+			"seat"		"2"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㜀㜀㘀㘀㘀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀倀愀樀欀愀琀琀∀ഀഀ
+			"steamid"		"0x011000010533DE51"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"77666"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"God"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㌀㠀㜀㠀䈀　∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㜀㜀㘀㘀㘀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀㄀㐀㌀㜀∀ഀഀ
+			"steamid"		"0x01100001053284DA"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㌀∀ഀഀ
+			"teamid"		"77666"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Brax"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㄀䔀㔀㠀㐀㘀㔀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㜀㜀㘀㘀㘀∀ഀഀ
+		}਍ഀഀ
+		// MUFC਍⼀⼀ ऀऀ䴀唀䘀䌀ऀ倀氀愀礀攀爀ऀ䘀稀䘀稀ऀऀ䌀栀攀渀最 䠀漀爀 匀椀攀眀ऀऀ㄀ഀഀ
+// 		MUFC	Capt	WinteR		Chan Litt-Binn 		2਍⼀⼀ ऀऀ䴀唀䘀䌀ऀ倀氀愀礀攀爀ऀ吀⸀䘀⸀䜀⸀ऀऀ䐀愀渀椀攀氀 圀漀渀最ऀऀऀ㌀ഀഀ
+// 		MUFC	Player	Ling		Sim Woi Cheong 		4਍⼀⼀ ऀऀ䴀唀䘀䌀ऀ倀氀愀礀攀爀ऀ搀愀戀攀氀椀甀琀攀攀昀ऀ䨀甀渀 䰀椀漀渀最 䰀漀栀ऀऀ㔀ഀഀ
+਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀圀椀渀琀攀刀∀ഀഀ
+			"steamid"		"0x01100001052BE235"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㌀∀ഀഀ
+			"teamid"		"497529"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"FzFz"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀䌀㌀䄀㠀䐀䔀∀ഀഀ
+			"seat"		"4"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀㤀㜀㔀㈀㤀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀吀⸀䘀⸀䜀⸀∀ഀഀ
+			"steamid"		"0x01100001056EBE76"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"497529"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Ling"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀㈀㈀㄀　㠀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀㤀㜀㔀㈀㤀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀搀愀戀攀氀椀甀琀攀攀昀∀ഀഀ
+			"steamid"		"0x0110000104CD7EFE"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀　∀ഀഀ
+			"teamid"		"497529"਍ऀऀ紀ഀഀ
+਍ऀऀ⼀⼀ 䴀漀甀猀攀猀瀀漀爀琀猀ഀഀ
+// 		mousesports	player	Black^		Dominik Reitmeier	1਍⼀⼀ ऀऀ洀漀甀猀攀猀瀀漀爀琀猀ऀ瀀氀愀礀攀爀ऀ瀀愀匀ऀऀऀ倀愀猀挀愀氀 䰀漀栀洀攀椀攀爀ऀऀ㈀ഀഀ
+// 		mousesports	Captain	syndereN	Troels Nielsen		3਍⼀⼀ ऀऀ洀漀甀猀攀猀瀀漀爀琀猀ऀ瀀氀愀礀攀爀ऀ䘀䄀吀䄀ⴀऀऀ䄀搀爀椀愀渀 吀爀椀渀欀猀ऀऀ㐀ഀഀ
+// 		mousesports	player	qojqva		Max Broecker		5਍ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Black^"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㄀㐀㐀䐀㤀㔀㜀∀ഀഀ
+			"seat"		"4"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀㘀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀猀礀渀搀攀爀攀一∀ഀഀ
+			"steamid"		"0x0110000100415581"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"26"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"FATA-"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㈀䌀㜀㌀䌀㐀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀㘀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀瀀愀匀∀ഀഀ
+			"steamid"		"0x0110000101DA38F7"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㌀∀ഀഀ
+			"teamid"		"26"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"qojqva"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㈀䈀㠀㜀　㘀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㈀㘀∀ഀഀ
+		}਍ഀഀ
+		// LGD China਍⼀⼀ ऀऀ䰀䜀䐀⸀挀渀ऀ倀氀愀礀攀爀ऀ夀愀漀ऀऀ夀愀漀 娀栀攀渀最稀栀攀渀最ऀ㄀ഀഀ
+// 		LGD.cn	Capt	xiao8	Zhang Ning		2਍⼀⼀ ऀऀ䰀䜀䐀⸀挀渀ऀ倀氀愀礀攀爀ऀ䐀䐀䌀ऀऀ䰀攀漀渀最 䘀愀琀ⴀ䴀攀渀最ऀ㌀ഀഀ
+// 		LGD.cn	Player	Sylar	Liu Jiajun		4਍⼀⼀ ऀऀ䰀䜀䐀⸀挀渀ऀ倀氀愀礀攀爀ऀ䐀䐀ऀऀ堀椀攀 䈀椀渀ऀऀऀ㔀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"xiao8"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀䔀㐀䔀㠀䔀㤀∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㄀㔀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䐀䐀䌀∀ഀഀ
+			"steamid"		"0x0110000106CF278B"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"15"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Yao"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀䔀㐀䌀㈀㌀䄀∀ഀഀ
+			"seat"		"4"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㄀㔀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀匀礀氀愀爀∀ഀഀ
+			"steamid"		"0x011000010675C76C"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㄀∀ഀഀ
+			"teamid"		"15"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"DD"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀㌀䈀㌀䌀㐀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㄀㔀∀ഀഀ
+		}਍ഀഀ
+		// Quantic਍⼀⼀ ऀऀ儀甀愀渀琀椀挀ऀ瀀氀愀礀攀爀ऀ匀漀挀欀猀栀欀愀ऀ吀椀琀漀甀愀渀 䴀攀爀氀漀稀ऀऀ㄀ഀഀ
+// 		Quantic	Player	Funzii		Thibault Calonne	2਍⼀⼀ ऀऀ儀甀愀渀琀椀挀ऀ䌀愀瀀琀愀椀渀ऀ䜀漀戀氀愀欀ऀऀ䄀爀琀甀爀 䬀漀猀琀攀渀欀漀ऀऀ㌀ഀഀ
+// 		Quantic	Player	7ckngMad	Sebastien Debs		4਍⼀⼀ ऀऀ儀甀愀渀琀椀挀ऀ倀氀愀礀攀爀ऀ匀椀氀攀渀琀ऀऀ䄀椀爀愀琀 䜀愀稀椀攀瘀ऀऀ㔀ഀഀ
+਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀㜀挀欀渀最䴀愀搀∀ഀഀ
+			"steamid"		"0x011000010542E985"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㄀∀ഀഀ
+			"teamid"		"680683"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Funzii"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㄀䈀䘀䄀㜀㠀　∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㘀㠀　㘀㠀㌀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀匀漀挀欀猀栀欀愀∀ഀഀ
+			"steamid"		"0x0110000100FFE0C7"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"680683"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Silent"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㤀㔀䌀䘀㐀　∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㘀㠀　㘀㠀㌀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䜀漀戀氀愀欀∀ഀഀ
+			"steamid"		"0x01100001055020F7"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"680683"਍ऀऀ紀ഀഀ
+਍ऀऀ⼀⼀ 刀愀琀琀氀攀猀渀愀欀攀ഀഀ
+// 		Rattlesnake	Player	Icy		Wang Peng 	1਍⼀⼀ ऀऀ刀愀琀琀氀攀猀渀愀欀攀ऀ䌀愀瀀琀愀椀渀ऀ䰀甀漀ऀऀ䰀甀漀 夀椀渀焀椀ऀ㈀ഀഀ
+// 		Rattlesnake	Player	LaNm	Zhang Zhicheng 	3਍⼀⼀ ऀऀ刀愀琀琀氀攀猀渀愀欀攀ऀ倀氀愀礀攀爀ऀ匀愀最ऀऀ䰀椀 䜀甀漀 ऀ㐀ഀഀ
+// 		Rattlesnake	Player	Kabu	Zhao Kai 5਍ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Kabu"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㐀㘀䈀䄀䐀䈀∀ഀഀ
+			"seat"		"0"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀㤀㘀㜀㜀㐀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䰀愀一洀∀ഀഀ
+			"steamid"		"0x0110000105547F8C"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㈀∀ഀഀ
+			"teamid"		"496774"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Sag"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀㈀㠀䘀䘀䐀∀ഀഀ
+			"seat"		"1"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀㤀㘀㜀㜀㐀∀ഀഀ
+		}਍ऀऀ∀瀀氀愀礀攀爀∀ഀഀ
+		{਍ऀऀऀ∀搀椀猀瀀氀愀礀攀搀开渀愀洀攀∀ऀऀ∀䤀挀礀∀ഀഀ
+			"steamid"		"0x0110000105EDA5D8"਍ऀऀऀ∀猀攀愀琀∀ऀऀ∀㐀∀ഀഀ
+			"teamid"		"496774"਍ऀऀ紀ഀഀ
+		"player"਍ऀऀ笀ഀഀ
+			"displayed_name"		"Luo"਍ऀऀऀ∀猀琀攀愀洀椀搀∀ऀऀ∀　砀　㄀㄀　　　　㄀　㔀㔀㄀䌀䌀㜀㐀∀ഀഀ
+			"seat"		"3"਍ऀऀऀ∀琀攀愀洀椀搀∀ऀऀ∀㐀㤀㘀㜀㜀㐀∀ഀഀ
+		}਍ऀ紀ഀഀ
+}਍

@@ -1,6 +1,7 @@
 criterion "Isannouncer_diretide_2012" "classname" "npc_dota_hero_announcer_diretide_2012" weight 5 required
 criterion "IsEnemyannouncer_diretide_2012" "targetclassname" "npc_dota_hero_announcer_diretide_2012" weight 5 required
 criterion "IsAllyannouncer_diretide_2012" "nearby_ally" "npc_dota_hero_announcer_diretide_2012" weight 5 required
+criterion "IsDiretide" "announce_gamemode" "7" weight 5 required
 criterion "IsAnnouncerVoice_Diretide_2012" "announcer_voice" "npc_dota_hero_announcer_diretide_2012" weight 5 required
 criterion "IsSugarRush" "announce_event" "sugar_rush" weight 5 required
 criterion "IsRoshanKilled" "announce_event" "diretide_roshan_killed" weight 5 required
@@ -10,6 +11,32 @@ criterion "IsCandyChaosEnds" "announce_event" "candy_chaos_ends" weight 5 requir
 criterion "IsDiretideMode" "gamemode" "7" weight 5 required
 criterion "IsRoshanTargetDire" "roshan_target_team" "dire" weight 5 required
 criterion "IsRoshanTargetRadiant" "roshan_target_team" "radiant" weight 5 required
+criterion "IsRoshanLevelingUp" "announce_event" "roshan_leveling_up" weight 5 required
+criterion "IsDiretideRosh10seconds" "announce_event" "hw_rosh_ten_seconds_remain" weight 5 required
+
+Response announcer_diretide_2012_CustomIsDiretideIsAnnouncerVoice_Diretide_2012
+{
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_welcome_03.vcd" nodelay noscene 
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_welcome_05.vcd" nodelay noscene 
+}
+
+Rule announcer_diretide_2012_CustomIsDiretideIsAnnouncerVoice_Diretide_2012_Rule
+{
+	criteria Custom Isannouncer_diretide_2012 IsDiretide IsAnnouncerVoice_Diretide_2012
+	response announcer_diretide_2012_CustomIsDiretideIsAnnouncerVoice_Diretide_2012
+}
+
+Response announcer_diretide_2012_CustomIsDiretideModeIsGameStartIsAnnouncerVoice_Diretide_2012
+{
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_welcome_04.vcd" nodelay noscene 
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_01.vcd" nodelay noscene 
+}
+
+Rule announcer_diretide_2012_CustomIsDiretideModeIsGameStartIsAnnouncerVoice_Diretide_2012_Rule
+{
+	criteria Custom Isannouncer_diretide_2012 IsDiretideMode IsGameStart IsAnnouncerVoice_Diretide_2012
+	response announcer_diretide_2012_CustomIsDiretideModeIsGameStartIsAnnouncerVoice_Diretide_2012
+}
 
 Response announcer_diretide_2012_CustomIsAnnouncerVoice_Diretide_2012IsPickYour
 {
@@ -1090,15 +1117,15 @@ Rule announcer_diretide_2012_CustomIsLimitedHeroesIsAnnouncerVoice_Diretide_2012
 	response announcer_diretide_2012_CustomIsLimitedHeroesIsAnnouncerVoice_Diretide_2012
 }
 
-Response announcer_diretide_2012_CustomIsDiretideModeIsGameStartIsAnnouncerVoice_Diretide_2012
+Response announcer_diretide_2012_CustomIsDiretideRosh10secondsIsAnnouncerVoice_Diretide_2012
 {
-	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_01.vcd" nodelay noscene 
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_count_pick_10.vcd" nodelay noscene 
 }
 
-Rule announcer_diretide_2012_CustomIsDiretideModeIsGameStartIsAnnouncerVoice_Diretide_2012_Rule
+Rule announcer_diretide_2012_CustomIsDiretideRosh10secondsIsAnnouncerVoice_Diretide_2012_Rule
 {
-	criteria Custom Isannouncer_diretide_2012 IsDiretideMode IsGameStart IsAnnouncerVoice_Diretide_2012
-	response announcer_diretide_2012_CustomIsDiretideModeIsGameStartIsAnnouncerVoice_Diretide_2012
+	criteria Custom Isannouncer_diretide_2012 IsDiretideRosh10seconds IsAnnouncerVoice_Diretide_2012
+	response announcer_diretide_2012_CustomIsDiretideRosh10secondsIsAnnouncerVoice_Diretide_2012
 }
 
 Response announcer_diretide_2012_CustomIsDiretideModeIsRoshanSpawnIsAnnouncerVoice_Diretide_2012
@@ -1134,6 +1161,17 @@ Rule announcer_diretide_2012_CustomIsDiretideModeIsRoshanHuntingIsRoshanTargetRa
 	response announcer_diretide_2012_CustomIsDiretideModeIsRoshanHuntingIsRoshanTargetRadiantIsAnnouncerVoice_Diretide_2012
 }
 
+Response announcer_diretide_2012_CustomIsDiretideModeIsGoodVictoryIsAnnouncerVoice_Diretide_2012
+{
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_08.vcd" nodelay noscene 
+}
+
+Rule announcer_diretide_2012_CustomIsDiretideModeIsGoodVictoryIsAnnouncerVoice_Diretide_2012_Rule
+{
+	criteria Custom Isannouncer_diretide_2012 IsDiretideMode IsGoodVictory IsAnnouncerVoice_Diretide_2012
+	response announcer_diretide_2012_CustomIsDiretideModeIsGoodVictoryIsAnnouncerVoice_Diretide_2012
+}
+
 Response announcer_diretide_2012_CustomIsDiretideModeIsSugarRushIsAnnouncerVoice_Diretide_2012
 {
 	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_09.vcd" nodelay noscene 
@@ -1147,9 +1185,21 @@ Rule announcer_diretide_2012_CustomIsDiretideModeIsSugarRushIsAnnouncerVoice_Dir
 	response announcer_diretide_2012_CustomIsDiretideModeIsSugarRushIsAnnouncerVoice_Diretide_2012
 }
 
+Response announcer_diretide_2012_CustomIsDiretideModeIsRoshanLevelingUpIsAnnouncerVoice_Diretide_2012
+{
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_12.vcd" nodelay noscene 
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_13.vcd" nodelay noscene 
+}
+
+Rule announcer_diretide_2012_CustomIsDiretideModeIsRoshanLevelingUpIsAnnouncerVoice_Diretide_2012_Rule
+{
+	criteria Custom Isannouncer_diretide_2012 IsDiretideMode IsRoshanLevelingUp IsAnnouncerVoice_Diretide_2012
+	response announcer_diretide_2012_CustomIsDiretideModeIsRoshanLevelingUpIsAnnouncerVoice_Diretide_2012
+}
+
 Response announcer_diretide_2012_CustomIsDiretideModeIsRoshanKilledIsAnnouncerVoice_Diretide_2012
 {
-	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_16.vcd" nodelay noscene then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.01
+	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_16.vcd" nodelay noscene 
 }
 
 Rule announcer_diretide_2012_CustomIsDiretideModeIsRoshanKilledIsAnnouncerVoice_Diretide_2012_Rule
@@ -1196,7 +1246,6 @@ Rule announcer_diretide_2012_Followup_GenericIsDiretideModeIsRoshanSpawnIsAnnoun
 
 Response announcer_diretide_2012_Followup_GenericIsDiretideModeIsRoshanKilledIsAnnouncerVoice_Diretide_2012
 {
-	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_17.vcd" nodelay noscene 
 	scene "scenes/announcer_diretide_2012/announcer_diretide_2012_announcer_diretide_rosh_21.vcd" nodelay noscene 
 }
 

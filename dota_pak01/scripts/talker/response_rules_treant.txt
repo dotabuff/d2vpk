@@ -34,19 +34,6 @@ Rule treant_CustomIsGameStart_Rule
 	response treant_CustomIsGameStart
 }
 
-Response treant_Custom
-{
-	scene "scenes/treant/treant_treant_failure_01.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_failure_02.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_failure_03.vcd" nodelay noscene 
-}
-
-Rule treant_Custom_Rule
-{
-	criteria Custom Istreant 
-	response treant_Custom
-}
-
 Response treant_KillIsFirstBlood
 {
 	scene "scenes/treant/treant_treant_firstblood_01.vcd" nodelay noscene 
@@ -56,6 +43,18 @@ Rule treant_KillIsFirstBlood_Rule
 {
 	criteria Kill Istreant IsFirstBlood
 	response treant_KillIsFirstBlood
+}
+
+Response treant_KillIsEnemySilencerChance_15%
+{
+	scene "scenes/treant/treant_treant_ability_naturesguise_03.vcd" nodelay noscene 
+	scene "scenes/treant/treant_treant_ability_naturesguise_04.vcd" nodelay noscene 
+}
+
+Rule treant_KillIsEnemySilencerChance_15%_Rule
+{
+	criteria Kill Istreant IsEnemySilencer Chance_15%
+	response treant_KillIsEnemySilencerChance_15%
 }
 
 Response treant_Kill
@@ -127,16 +126,15 @@ Rule treant_KillIsEnemyAxeChance_50%_Rule
 	response treant_KillIsEnemyAxeChance_50%
 }
 
-Response treant_KillIsEnemyLinaChance_50%
+Response treant_KillIsEnemyEmber_SpiritChance_50%
 {
 	scene "scenes/treant/treant_treant_rival_05.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_rival_18.vcd" nodelay noscene 
 }
 
-Rule treant_KillIsEnemyLinaChance_50%_Rule
+Rule treant_KillIsEnemyEmber_SpiritChance_50%_Rule
 {
-	criteria Kill Istreant IsEnemyLina Chance_50%
-	response treant_KillIsEnemyLinaChance_50%
+	criteria Kill Istreant IsEnemyEmber_Spirit Chance_50%
+	response treant_KillIsEnemyEmber_SpiritChance_50%
 }
 
 Response treant_KillIsEnemyBatriderChance_50%
@@ -228,49 +226,60 @@ Rule treant_KillIsEnemyTinyChance_50%_Rule
 	response treant_KillIsEnemyTinyChance_50%
 }
 
-Response treant_KillIsEnemyGyrocopterChance_25%
+Response treant_KillIsEnemyGyrocopterChance_15%
 {
 	scene "scenes/treant/treant_treant_rival_14.vcd" nodelay noscene 
 }
 
-Rule treant_KillIsEnemyGyrocopterChance_25%_Rule
+Rule treant_KillIsEnemyGyrocopterChance_15%_Rule
 {
-	criteria Kill Istreant IsEnemyGyrocopter Chance_25%
-	response treant_KillIsEnemyGyrocopterChance_25%
+	criteria Kill Istreant IsEnemyGyrocopter Chance_15%
+	response treant_KillIsEnemyGyrocopterChance_15%
 }
 
-Response treant_KillIsEnemyShredderChance_25%
+Response treant_KillIsEnemyShredderChance_15%
 {
 	scene "scenes/treant/treant_treant_rival_14.vcd" nodelay noscene 
 }
 
-Rule treant_KillIsEnemyShredderChance_25%_Rule
+Rule treant_KillIsEnemyShredderChance_15%_Rule
 {
-	criteria Kill Istreant IsEnemyShredder Chance_25%
-	response treant_KillIsEnemyShredderChance_25%
+	criteria Kill Istreant IsEnemyShredder Chance_15%
+	response treant_KillIsEnemyShredderChance_15%
 }
 
-Response treant_KillIsEnemyShredderChance_5%
+Response treant_KillIsEnemyShredderChance_1%
 {
 	scene "scenes/treant/treant_treant_rival_15.vcd" nodelay noscene 
 }
 
-Rule treant_KillIsEnemyShredderChance_5%_Rule
+Rule treant_KillIsEnemyShredderChance_1%_Rule
 {
-	criteria Kill Istreant IsEnemyShredder Chance_5%
-	response treant_KillIsEnemyShredderChance_5%
+	criteria Kill Istreant IsEnemyShredder Chance_1%
+	response treant_KillIsEnemyShredderChance_1%
 }
 
-Response treant_KillIsEnemyShredderChance_50%
+Response treant_KillIsEnemyShredderChance_40%
 {
 	scene "scenes/treant/treant_treant_rival_16.vcd" nodelay noscene 
 	scene "scenes/treant/treant_treant_rival_17.vcd" nodelay noscene 
 }
 
-Rule treant_KillIsEnemyShredderChance_50%_Rule
+Rule treant_KillIsEnemyShredderChance_40%_Rule
 {
-	criteria Kill Istreant IsEnemyShredder Chance_50%
-	response treant_KillIsEnemyShredderChance_50%
+	criteria Kill Istreant IsEnemyShredder Chance_40%
+	response treant_KillIsEnemyShredderChance_40%
+}
+
+Response treant_KillIsEnemyLinaChance_50%
+{
+	scene "scenes/treant/treant_treant_rival_18.vcd" nodelay noscene 
+}
+
+Rule treant_KillIsEnemyLinaChance_50%_Rule
+{
+	criteria Kill Istreant IsEnemyLina Chance_50%
+	response treant_KillIsEnemyLinaChance_50%
 }
 
 Response treant_Move
@@ -322,6 +331,7 @@ Response treant_Attack
 	scene "scenes/treant/treant_treant_attack_10.vcd" nodelay noscene 
 	scene "scenes/treant/treant_treant_attack_11.vcd" nodelay noscene 
 	scene "scenes/treant/treant_treant_attack_12.vcd" nodelay noscene 
+	scene "scenes/treant/treant_treant_cast_03.vcd" nodelay noscene 
 }
 
 Rule treant_Attack_Rule
@@ -342,7 +352,7 @@ Rule treant_CastExecuteIsTreantArmorChance_75%_Rule
 	response treant_CastExecuteIsTreantArmorChance_75%
 }
 
-Response treant_CastExecuteIsTreantNaturesGuise
+Response treant_CastExecuteIsTreantNaturesGuiseChance_75%
 {
 	scene "scenes/treant/treant_treant_ability_naturesguise_01.vcd" nodelay noscene 
 	scene "scenes/treant/treant_treant_ability_naturesguise_02.vcd" nodelay noscene 
@@ -350,13 +360,13 @@ Response treant_CastExecuteIsTreantNaturesGuise
 	scene "scenes/treant/treant_treant_ability_naturesguise_07.vcd" nodelay noscene 
 }
 
-Rule treant_CastExecuteIsTreantNaturesGuise_Rule
+Rule treant_CastExecuteIsTreantNaturesGuiseChance_75%_Rule
 {
-	criteria CastExecute Istreant IsTreantNaturesGuise
-	response treant_CastExecuteIsTreantNaturesGuise
+	criteria CastExecute Istreant IsTreantNaturesGuise Chance_75%
+	response treant_CastExecuteIsTreantNaturesGuiseChance_75%
 }
 
-Response treant_CastExecuteIsTreantLeechSeedChance_75%
+Response treant_CastExecuteIsTreantLeechSeedChance_50%
 {
 	scene "scenes/treant/treant_treant_ability_leechseed_01.vcd" nodelay noscene 
 	scene "scenes/treant/treant_treant_ability_leechseed_04.vcd" nodelay noscene 
@@ -364,10 +374,10 @@ Response treant_CastExecuteIsTreantLeechSeedChance_75%
 	scene "scenes/treant/treant_treant_ability_leechseed_06.vcd" nodelay noscene 
 }
 
-Rule treant_CastExecuteIsTreantLeechSeedChance_75%_Rule
+Rule treant_CastExecuteIsTreantLeechSeedChance_50%_Rule
 {
-	criteria CastExecute Istreant IsTreantLeechSeed Chance_75%
-	response treant_CastExecuteIsTreantLeechSeedChance_75%
+	criteria CastExecute Istreant IsTreantLeechSeed Chance_50%
+	response treant_CastExecuteIsTreantLeechSeedChance_50%
 }
 
 Response treant_CastExecuteIsTreantTangoIsTreantChance_25%
@@ -382,6 +392,18 @@ Rule treant_CastExecuteIsTreantTangoIsTreantChance_25%_Rule
 {
 	criteria CastExecute Istreant IsTreantTango IsTreant Chance_25%
 	response treant_CastExecuteIsTreantTangoIsTreantChance_25%
+}
+
+Response treant_CastOrder
+{
+	scene "scenes/treant/treant_treant_cast_01.vcd" nodelay noscene 
+	scene "scenes/treant/treant_treant_cast_02.vcd" nodelay noscene 
+}
+
+Rule treant_CastOrder_Rule
+{
+	criteria CastOrder Istreant 
+	response treant_CastOrder
 }
 
 Response treant_Respawn
@@ -434,6 +456,51 @@ Rule treant_LevelUp_Rule
 {
 	criteria LevelUp Istreant 
 	response treant_LevelUp
+}
+
+Response treant_ItemDropIsRareDrop
+{
+	scene "scenes/treant/treant_treant_ability_overgrowth_03.vcd" nodelay noscene 
+	scene "scenes/treant/treant_treant_drop_medium.vcd" nodelay noscene 
+}
+
+Rule treant_ItemDropIsRareDrop_Rule
+{
+	criteria ItemDrop Istreant IsRareDrop
+	response treant_ItemDropIsRareDrop
+}
+
+Response treant_ItemDropIsCommonDrop
+{
+	scene "scenes/treant/treant_treant_drop_common.vcd" nodelay noscene 
+}
+
+Rule treant_ItemDropIsCommonDrop_Rule
+{
+	criteria ItemDrop Istreant IsCommonDrop
+	response treant_ItemDropIsCommonDrop
+}
+
+Response treant_ItemDropIsUltraRareDrop
+{
+	scene "scenes/treant/treant_treant_drop_rare.vcd" nodelay noscene 
+}
+
+Rule treant_ItemDropIsUltraRareDrop_Rule
+{
+	criteria ItemDrop Istreant IsUltraRareDrop
+	response treant_ItemDropIsUltraRareDrop
+}
+
+Response treant_ItemDropIsUltraRareDropChance_10%
+{
+	scene "scenes/treant/treant_treant_freakout.vcd" nodelay noscene 
+}
+
+Rule treant_ItemDropIsUltraRareDropChance_10%_Rule
+{
+	criteria ItemDrop Istreant IsUltraRareDrop Chance_10%
+	response treant_ItemDropIsUltraRareDropChance_10%
 }
 
 Response treant_AllyNearIsAllyTidehunterEarlyGame
@@ -918,17 +985,6 @@ Rule treant_PowerupIsPowerupInvisibility_Rule
 	response treant_PowerupIsPowerupInvisibility
 }
 
-Response treant_PowerupIsPowerupInvisibilityChance_25%
-{
-	scene "scenes/treant/treant_treant_invis_02.vcd" nodelay noscene 
-}
-
-Rule treant_PowerupIsPowerupInvisibilityChance_25%_Rule
-{
-	criteria Powerup Istreant IsPowerupInvisibility Chance_25%
-	response treant_PowerupIsPowerupInvisibilityChance_25%
-}
-
 Response treant_CooldownLittleNag
 {
 	scene "scenes/treant/treant_treant_notyet_01.vcd" nodelay noscene 
@@ -1020,18 +1076,18 @@ Rule treant_Thanks_Rule
 	response treant_Thanks
 }
 
-Response treant_Pain
-{
-	scene "scenes/treant/treant_treant_underattack_01.vcd" nodelay noscene 
-}
-
-Rule treant_Pain_Rule
-{
-	criteria Pain Istreant 
-	response treant_Pain
-}
-
 Response treant_PainChance_25%
+{
+	scene "scenes/treant/treant_treant_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule treant_PainChance_25%_Rule
+{
+	criteria Pain Istreant Chance_25%
+	response treant_PainChance_25%
+}
+
+Response treant_Pain
 {
 	scene "scenes/treant/treant_treant_pain_01.vcd" nodelay noscene 
 	scene "scenes/treant/treant_treant_pain_02.vcd" nodelay noscene 
@@ -1049,10 +1105,10 @@ Response treant_PainChance_25%
 	scene "scenes/treant/treant_treant_pain_14.vcd" nodelay noscene 
 }
 
-Rule treant_PainChance_25%_Rule
+Rule treant_Pain_Rule
 {
-	criteria Pain Istreant Chance_25%
-	response treant_PainChance_25%
+	criteria Pain Istreant 
+	response treant_Pain
 }
 
 Response treant_InTheBag
@@ -1105,67 +1161,14 @@ Response treant_EmoteIsEmoteLaugh
 	scene "scenes/treant/treant_treant_laugh_07.vcd" nodelay noscene 
 	scene "scenes/treant/treant_treant_laugh_08.vcd" nodelay noscene 
 	scene "scenes/treant/treant_treant_laugh_09.vcd" nodelay noscene 
+	scene "scenes/treant/treant_treant_deny_11.vcd" nodelay noscene 
+	scene "scenes/treant/treant_treant_deny_12.vcd" nodelay noscene 
+	scene "scenes/treant/treant_treant_deny_13.vcd" nodelay noscene 
 }
 
 Rule treant_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Istreant IsEmoteLaugh
 	response treant_EmoteIsEmoteLaugh
-}
-
-Response treant_EmoteIsEmoteAnger
-{
-	scene "scenes/treant/treant_treant_anger_01.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_02.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_03.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_04.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_05.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_06.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_07.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_08.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_09.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_10.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_11.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_anger_12.vcd" nodelay noscene 
-}
-
-Rule treant_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Istreant IsEmoteAnger
-	response treant_EmoteIsEmoteAnger
-}
-
-Response treant_ItemDropIsCommonDrop
-{
-	scene "scenes/treant/treant_treant_drop_common.vcd" nodelay noscene 
-}
-
-Rule treant_ItemDropIsCommonDrop_Rule
-{
-	criteria ItemDrop Istreant IsCommonDrop
-	response treant_ItemDropIsCommonDrop
-}
-
-Response treant_ItemDropIsRareDrop
-{
-	scene "scenes/treant/treant_treant_drop_medium.vcd" nodelay noscene 
-}
-
-Rule treant_ItemDropIsRareDrop_Rule
-{
-	criteria ItemDrop Istreant IsRareDrop
-	response treant_ItemDropIsRareDrop
-}
-
-Response treant_ItemDropIsUltraRareDrop
-{
-	scene "scenes/treant/treant_treant_drop_rare.vcd" nodelay noscene 
-	scene "scenes/treant/treant_treant_freakout.vcd" nodelay noscene 
-}
-
-Rule treant_ItemDropIsUltraRareDrop_Rule
-{
-	criteria ItemDrop Istreant IsUltraRareDrop
-	response treant_ItemDropIsUltraRareDrop
 }
 

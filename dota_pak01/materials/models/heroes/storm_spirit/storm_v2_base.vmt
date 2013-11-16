@@ -1,31 +1,62 @@
 "CustomHero"
 {
-	$baseTexture "models/heroes/storm_spirit/storm_v2_base_color"
-	"$normalmap" "models/heroes/legion_commander/legion_base_normal"
+	"$baseTexture" "models/heroes/storm_spirit/storm_v2_base_color"
+	"$normalmap" "models/heroes/storm_spirit/storm_v2_base_normal"
+	"$maskmap1" "models/heroes/storm_spirit/storm_v2_base_masks1"
+	"$maskmap2" "models/heroes/storm_spirit/storm_v2_base_masks2"
+	"$detail1"  "models/heroes/storm_spirit/storm_spirit_detail"
+	
+	$SPECULAR_BLOOM_SCALE      .1
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 1
+	
+	"$nocull" "1"
 
-//	"$maskmap1" "models/heroes/lanaya/lanaya_mask1"
-//	"$maskmap2" "models/heroes/lanaya/lanaya_mask2"
-	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$DETAILFX" "53"
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 2
+	
+	$ENVMAP "models/cubemaps/glossy_blue"
+	$ENVMAPINTENSITY .75
+	$ENVMAPCOLOR "[0 .5 1]"
+	$SPECULARCOLOR "[0 .5 1]"
+	$MASKENVBYMETALNESS 1
 
-
-	$SPECULAREXPONENT 20
-	$SPECULARSCALE 3
-
-//	$SPECULARBLENDTOFULL 1
-//	$SPECULARCOLOR "[1 .8 .8]"
-	$RIMLIGHTCOLOR "[1 .5 1]"
-
-	$RIMLIGHTSCALE 2
-	$AMBIENTSCALE 1
-
-
-	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
-
-
+	$RIMLIGHTSCALE 3
 	$IgnoreBudgetCheck 1
+	$alphatest	1
+
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"Sine"
+		{
+			"resultVar" "$DETAILFX"
+			"sineperiod" "32"
+			"sinemin" "92"
+			"sinemax" "93"
+		}
+		"Sine"
+		{
+			"resultVar" "$DETAIL1BLENDFACTOR"
+			"sineperiod" ".53"
+			"sinemin" "3"
+			"sinemax" "4"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"-.3"
+			"texturescrollangle"	"$DETAILFX"
+		}
+		"TextureTransform"
+		{
+			"centerVar" 		"$detail1texturetransform"
+			"rotateVar"			"$DETAILFX"
+		}
+		
 		"invis_proxy"
 		{
 		}

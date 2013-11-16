@@ -40,6 +40,7 @@ Response vengefulspirit_Move
 	scene "scenes/vengefulspirit/vengefulspirit_vng_move_16.vcd" nodelay noscene 
 	scene "scenes/vengefulspirit/vengefulspirit_vng_move_17.vcd" nodelay noscene 
 	scene "scenes/vengefulspirit/vengefulspirit_vng_acknow_01.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_acknow_03.vcd" nodelay noscene 
 }
 
 Rule vengefulspirit_Move_Rule
@@ -75,20 +76,6 @@ Rule vengefulspirit_Attack_Rule
 	response vengefulspirit_Attack
 }
 
-Response vengefulspirit_CastOrder
-{
-	scene "scenes/vengefulspirit/vengefulspirit_vng_attack_01.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_cast_02.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_cast_03.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_cast_04.vcd" nodelay noscene 
-}
-
-Rule vengefulspirit_CastOrder_Rule
-{
-	criteria CastOrder Isvengefulspirit 
-	response vengefulspirit_CastOrder
-}
-
 Response vengefulspirit_CustomIsGameStart
 {
 	scene "scenes/vengefulspirit/vengefulspirit_vng_cast_01.vcd" nodelay noscene 
@@ -102,15 +89,28 @@ Rule vengefulspirit_CustomIsGameStart_Rule
 	response vengefulspirit_CustomIsGameStart
 }
 
-Response vengefulspirit_CastExecuteIsMagicMissileChance_25%
+Response vengefulspirit_CastOrder
+{
+	scene "scenes/vengefulspirit/vengefulspirit_vng_cast_02.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_cast_03.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_cast_04.vcd" nodelay noscene 
+}
+
+Rule vengefulspirit_CastOrder_Rule
+{
+	criteria CastOrder Isvengefulspirit 
+	response vengefulspirit_CastOrder
+}
+
+Response vengefulspirit_CastExecuteIsMagicMissileChance_5%
 {
 	scene "scenes/vengefulspirit/vengefulspirit_vng_cast_05.vcd" nodelay noscene 
 }
 
-Rule vengefulspirit_CastExecuteIsMagicMissileChance_25%_Rule
+Rule vengefulspirit_CastExecuteIsMagicMissileChance_5%_Rule
 {
-	criteria CastExecute Isvengefulspirit IsMagicMissile Chance_25%
-	response vengefulspirit_CastExecuteIsMagicMissileChance_25%
+	criteria CastExecute Isvengefulspirit IsMagicMissile Chance_5%
+	response vengefulspirit_CastExecuteIsMagicMissileChance_5%
 }
 
 Response vengefulspirit_CastExecuteIsWaveOfTerror
@@ -389,6 +389,17 @@ Rule vengefulspirit_KillIsEnemyStormSpiritChance_35%_Rule
 {
 	criteria Kill Isvengefulspirit IsEnemyStormSpirit Chance_35%
 	response vengefulspirit_KillIsEnemyStormSpiritChance_35%
+}
+
+Response vengefulspirit_KillIsEnemyEmber_SpiritChance_35%
+{
+	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_13.vcd" nodelay noscene 
+}
+
+Rule vengefulspirit_KillIsEnemyEmber_SpiritChance_35%_Rule
+{
+	criteria Kill Isvengefulspirit IsEnemyEmber_Spirit Chance_35%
+	response vengefulspirit_KillIsEnemyEmber_SpiritChance_35%
 }
 
 Response vengefulspirit_KillIsEnemyPuckChance_35%
@@ -799,22 +810,6 @@ Rule vengefulspirit_InTheBag_Rule
 	response vengefulspirit_InTheBag
 }
 
-Response vengefulspirit_EmoteIsEmoteLaugh
-{
-	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_01.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_02.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_03.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_04.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_05.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_06.vcd" nodelay noscene 
-}
-
-Rule vengefulspirit_EmoteIsEmoteLaugh_Rule
-{
-	criteria Emote Isvengefulspirit IsEmoteLaugh
-	response vengefulspirit_EmoteIsEmoteLaugh
-}
-
 Response vengefulspirit_AllyNearIsAllyDragon_KnightEarlyGame
 {
 	scene "scenes/vengefulspirit/vengefulspirit_vng_ally_01.vcd" nodelay noscene speakonce
@@ -1024,5 +1019,21 @@ Rule vengefulspirit_Thanks_Rule
 {
 	criteria Thanks Isvengefulspirit 
 	response vengefulspirit_Thanks
+}
+
+Response vengefulspirit_EmoteIsEmoteLaugh
+{
+	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_01.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_02.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_03.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_04.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_05.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_laugh_06.vcd" nodelay noscene 
+}
+
+Rule vengefulspirit_EmoteIsEmoteLaugh_Rule
+{
+	criteria Emote Isvengefulspirit IsEmoteLaugh
+	response vengefulspirit_EmoteIsEmoteLaugh
 }
 

@@ -62,6 +62,22 @@
 	"wave" 		"*vo\windrunner\wind_spawn_08.mp3"
 }
 
+"windrunner_wind_battlebegins_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_battlebegins_01.mp3"
+}
+
+"windrunner_wind_firstblood_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_firstblood_01.mp3"
+}
+
 "windrunner_wind_move_01"
 {
  	"channel" 	"CHAN_VOICE"
@@ -156,6 +172,22 @@
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
 	"wave" 		"*vo\windrunner\wind_move_12.mp3"
+}
+
+"windrunner_wind_acknow_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_acknow_01.mp3"
+}
+
+"windrunner_wind_acknow_08"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_acknow_08.mp3"
 }
 
 "windrunner_wind_attack_01"
@@ -494,92 +526,68 @@
 	"wave" 		"*vo\windrunner\wind_ability_focusfire_04.mp3"
 }
 
-"windrunner_wind_death_01"
+"windrunner_wind_level_01"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_01.mp3"
+	"wave" 		"*vo\windrunner\wind_level_01.mp3"
 }
 
-"windrunner_wind_death_03"
+"windrunner_wind_level_02"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_03.mp3"
+	"wave" 		"*vo\windrunner\wind_level_02.mp3"
 }
 
-"windrunner_wind_death_04"
+"windrunner_wind_level_03"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_04.mp3"
+	"wave" 		"*vo\windrunner\wind_level_03.mp3"
 }
 
-"windrunner_wind_death_05"
+"windrunner_wind_level_04"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_05.mp3"
+	"wave" 		"*vo\windrunner\wind_level_04.mp3"
 }
 
-"windrunner_wind_death_06"
+"windrunner_wind_level_05"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_06.mp3"
+	"wave" 		"*vo\windrunner\wind_level_05.mp3"
 }
 
-"windrunner_wind_death_07"
+"windrunner_wind_level_06"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_07.mp3"
+	"wave" 		"*vo\windrunner\wind_level_06.mp3"
 }
 
-"windrunner_wind_death_08"
+"windrunner_wind_level_07"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_08.mp3"
+	"wave" 		"*vo\windrunner\wind_level_07.mp3"
 }
 
-"windrunner_wind_death_09"
+"windrunner_wind_level_08"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_09.mp3"
-}
-
-"windrunner_wind_death_10"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_10.mp3"
-}
-
-"windrunner_wind_death_11"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_11.mp3"
-}
-
-"windrunner_wind_death_12"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_death_12.mp3"
+	"wave" 		"*vo\windrunner\wind_level_08.mp3"
 }
 
 "windrunner_wind_kill_01"
@@ -684,6 +692,350 @@
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
 	"wave" 		"*vo\windrunner\wind_killspecial_01.mp3"
+}
+
+"windrunner_wind_rivaltrax_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rivaltrax_01.mp3"
+}
+
+"windrunner_wind_rivaltrax_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rivaltrax_02.mp3"
+}
+
+"windrunner_wind_rivaltrax_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rivaltrax_03.mp3"
+}
+
+"windrunner_wind_rivaltrax_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rivaltrax_04.mp3"
+}
+
+"windrunner_wind_rival_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_01.mp3"
+}
+
+"windrunner_wind_rival_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_02.mp3"
+}
+
+"windrunner_wind_rival_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_03.mp3"
+}
+
+"windrunner_wind_rival_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_04.mp3"
+}
+
+"windrunner_wind_rival_05"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_05.mp3"
+}
+
+"windrunner_wind_rival_06"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_06.mp3"
+}
+
+"windrunner_wind_rival_07"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_07.mp3"
+}
+
+"windrunner_wind_rival_08"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_08.mp3"
+}
+
+"windrunner_wind_rival_09"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_rival_09.mp3"
+}
+
+"windrunner_wind_rival_10"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"Killed by Phoenix"
+	"wave" 		"*vo\windrunner\wind_rival_10.mp3"
+}
+
+"windrunner_wind_ally_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_ally_01.mp3"
+}
+
+"windrunner_wind_ally_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_ally_02.mp3"
+}
+
+"windrunner_wind_ally_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_ally_03.mp3"
+}
+
+"windrunner_wind_ally_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_ally_04.mp3"
+}
+
+"windrunner_wind_ally_05"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_ally_05.mp3"
+}
+
+"windrunner_wind_ally_06"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_ally_06.mp3"
+}
+
+"windrunner_wind_lasthit_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_01.mp3"
+}
+
+"windrunner_wind_lasthit_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_02.mp3"
+}
+
+"windrunner_wind_lasthit_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_03.mp3"
+}
+
+"windrunner_wind_lasthit_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_04.mp3"
+}
+
+"windrunner_wind_lasthit_05"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_05.mp3"
+}
+
+"windrunner_wind_lasthit_06"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_06.mp3"
+}
+
+"windrunner_wind_lasthit_07"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_07.mp3"
+}
+
+"windrunner_wind_lasthit_08"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_08.mp3"
+}
+
+"windrunner_wind_lasthit_09"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_09.mp3"
+}
+
+"windrunner_wind_lasthit_10"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lasthit_10.mp3"
+}
+
+"windrunner_wind_death_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_01.mp3"
+}
+
+"windrunner_wind_death_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_03.mp3"
+}
+
+"windrunner_wind_death_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_04.mp3"
+}
+
+"windrunner_wind_death_05"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_05.mp3"
+}
+
+"windrunner_wind_death_06"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_06.mp3"
+}
+
+"windrunner_wind_death_07"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_07.mp3"
+}
+
+"windrunner_wind_death_08"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_08.mp3"
+}
+
+"windrunner_wind_death_09"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_09.mp3"
+}
+
+"windrunner_wind_death_10"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_10.mp3"
+}
+
+"windrunner_wind_death_11"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_11.mp3"
+}
+
+"windrunner_wind_death_12"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_death_12.mp3"
+}
+
+"windrunner_wind_fastres_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_fastres_01.mp3"
+}
+
+"windrunner_wind_fastres_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_fastres_02.mp3"
 }
 
 "windrunner_wind_respawn_01"
@@ -798,38 +1150,6 @@
 	"wave" 		"*vo\windrunner\wind_rare_04.mp3"
 }
 
-"windrunner_wind_rivaltrax_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rivaltrax_01.mp3"
-}
-
-"windrunner_wind_rivaltrax_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rivaltrax_02.mp3"
-}
-
-"windrunner_wind_rivaltrax_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rivaltrax_03.mp3"
-}
-
-"windrunner_wind_rivaltrax_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rivaltrax_04.mp3"
-}
-
 "windrunner_wind_purch_01"
 {
  	"channel" 	"CHAN_VOICE"
@@ -870,20 +1190,172 @@
 	"wave" 		"*vo\windrunner\wind_scepter_01.mp3"
 }
 
-"windrunner_wind_immort_01"
+"windrunner_wind_blink_01"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_immort_01.mp3"
+	"wave" 		"*vo\windrunner\wind_blink_01.mp3"
 }
 
-"windrunner_wind_immort_02"
+"windrunner_wind_blink_02"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_immort_02.mp3"
+	"wave" 		"*vo\windrunner\wind_blink_02.mp3"
+}
+
+"windrunner_wind_blink_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_blink_03.mp3"
+}
+
+"windrunner_wind_blink_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_blink_04.mp3"
+}
+
+"windrunner_wind_item_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_01.mp3"
+}
+
+"windrunner_wind_item_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_02.mp3"
+}
+
+"windrunner_wind_item_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_03.mp3"
+}
+
+"windrunner_wind_item_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_04.mp3"
+}
+
+"windrunner_wind_item_05"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_05.mp3"
+}
+
+"windrunner_wind_item_06"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_06.mp3"
+}
+
+"windrunner_wind_item_07"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_07.mp3"
+}
+
+"windrunner_wind_item_08"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_08.mp3"
+}
+
+"windrunner_wind_item_09"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_09.mp3"
+}
+
+"windrunner_wind_item_10"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_10.mp3"
+}
+
+"windrunner_wind_item_11"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_11.mp3"
+}
+
+"windrunner_wind_item_12"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_12.mp3"
+}
+
+"windrunner_wind_item_13"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_13.mp3"
+}
+
+"windrunner_wind_item_14"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_item_14.mp3"
+}
+
+"windrunner_wind_bottle_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_bottle_01.mp3"
+}
+
+"windrunner_wind_bottle_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_bottle_02.mp3"
+}
+
+"windrunner_wind_bottle_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_bottle_03.mp3"
 }
 
 "windrunner_wind_deny_01"
@@ -950,196 +1422,68 @@
 	"wave" 		"*vo\windrunner\wind_deny_08.mp3"
 }
 
-"windrunner_wind_lasthit_01"
+"windrunner_wind_missing_lane_01"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_01.mp3"
+	"wave" 		"*vo\windrunner\wind_missing_lane_01.mp3"
 }
 
-"windrunner_wind_lasthit_02"
+"windrunner_wind_missing_lane_02"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_02.mp3"
+	"wave" 		"*vo\windrunner\wind_missing_lane_02.mp3"
 }
 
-"windrunner_wind_lasthit_03"
+"windrunner_wind_missing_lane_03"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_03.mp3"
+	"wave" 		"*vo\windrunner\wind_missing_lane_03.mp3"
 }
 
-"windrunner_wind_lasthit_04"
+"windrunner_wind_drop_common_01"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_04.mp3"
+	"wave" 		"*vo\windrunner\wind_drop_common_01.mp3"
 }
 
-"windrunner_wind_lasthit_05"
+"windrunner_wind_drop_medium_01"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_05.mp3"
+	"wave" 		"*vo\windrunner\wind_drop_medium_01.mp3"
 }
 
-"windrunner_wind_lasthit_06"
+"windrunner_wind_drop_rare_01"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_06.mp3"
+	"wave" 		"*vo\windrunner\wind_drop_rare_01.mp3"
 }
 
-"windrunner_wind_lasthit_07"
+"windrunner_wind_immort_01"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_07.mp3"
+	"wave" 		"*vo\windrunner\wind_immort_01.mp3"
 }
 
-"windrunner_wind_lasthit_08"
+"windrunner_wind_immort_02"
 {
  	"channel" 	"CHAN_VOICE"
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_08.mp3"
-}
-
-"windrunner_wind_lasthit_09"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_09.mp3"
-}
-
-"windrunner_wind_lasthit_10"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lasthit_10.mp3"
-}
-
-"windrunner_wind_lose_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lose_01.mp3"
-}
-
-"windrunner_wind_lose_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lose_02.mp3"
-}
-
-"windrunner_wind_lose_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lose_03.mp3"
-}
-
-"windrunner_wind_lose_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lose_04.mp3"
-}
-
-"windrunner_wind_lose_06"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lose_06.mp3"
-}
-
-"windrunner_wind_lose_07"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_lose_07.mp3"
-}
-
-"windrunner_wind_win_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_win_01.mp3"
-}
-
-"windrunner_wind_win_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_win_02.mp3"
-}
-
-"windrunner_wind_win_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_win_03.mp3"
-}
-
-"windrunner_wind_win_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_win_04.mp3"
-}
-
-"windrunner_wind_win_05"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_win_05.mp3"
-}
-
-"windrunner_wind_bottle_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_bottle_01.mp3"
-}
-
-"windrunner_wind_bottle_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_bottle_02.mp3"
-}
-
-"windrunner_wind_bottle_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_bottle_03.mp3"
+	"wave" 		"*vo\windrunner\wind_immort_02.mp3"
 }
 
 "windrunner_wind_haste_01"
@@ -1164,22 +1508,6 @@
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
 	"wave" 		"*vo\windrunner\wind_haste_03.mp3"
-}
-
-"windrunner_wind_blink_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_blink_01.mp3"
-}
-
-"windrunner_wind_blink_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_blink_02.mp3"
 }
 
 "windrunner_wind_doubdam_01"
@@ -1244,118 +1572,6 @@
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
 	"wave" 		"*vo\windrunner\wind_invis_02.mp3"
-}
-
-"windrunner_wind_level_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_level_01.mp3"
-}
-
-"windrunner_wind_level_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_level_02.mp3"
-}
-
-"windrunner_wind_level_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_level_03.mp3"
-}
-
-"windrunner_wind_level_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_level_04.mp3"
-}
-
-"windrunner_wind_level_05"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_level_05.mp3"
-}
-
-"windrunner_wind_level_06"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_level_06.mp3"
-}
-
-"windrunner_wind_level_07"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_level_07.mp3"
-}
-
-"windrunner_wind_level_08"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_level_08.mp3"
-}
-
-"windrunner_wind_pain_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_pain_01.mp3"
-}
-
-"windrunner_wind_pain_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_pain_02.mp3"
-}
-
-"windrunner_wind_pain_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_pain_03.mp3"
-}
-
-"windrunner_wind_pain_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_pain_04.mp3"
-}
-
-"windrunner_wind_pain_06"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_pain_06.mp3"
-}
-
-"windrunner_wind_pain_05"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_pain_05.mp3"
 }
 
 "windrunner_wind_notyet_01"
@@ -1500,6 +1716,214 @@
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
 	"wave" 		"*vo\windrunner\wind_nomana_09.mp3"
+}
+
+"windrunner_wind_thanks_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_thanks_01.mp3"
+}
+
+"windrunner_wind_thanks_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_thanks_02.mp3"
+}
+
+"windrunner_wind_thanks_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_thanks_03.mp3"
+}
+
+"windrunner_wind_underattack_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_underattack_01.mp3"
+}
+
+"windrunner_wind_underattack_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_underattack_02.mp3"
+}
+
+"windrunner_wind_inthebag_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_inthebag_01.mp3"
+}
+
+"windrunner_wind_inthebag_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_inthebag_02.mp3"
+}
+
+"windrunner_wind_shitwiz_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_shitwiz_01.mp3"
+}
+
+"windrunner_wind_crumwiz_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_crumwiz_01.mp3"
+}
+
+"windrunner_wind_lose_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lose_01.mp3"
+}
+
+"windrunner_wind_lose_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lose_02.mp3"
+}
+
+"windrunner_wind_lose_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lose_03.mp3"
+}
+
+"windrunner_wind_lose_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lose_04.mp3"
+}
+
+"windrunner_wind_lose_06"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lose_06.mp3"
+}
+
+"windrunner_wind_lose_07"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_lose_07.mp3"
+}
+
+"windrunner_wind_win_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_win_01.mp3"
+}
+
+"windrunner_wind_win_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_win_02.mp3"
+}
+
+"windrunner_wind_win_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_win_03.mp3"
+}
+
+"windrunner_wind_win_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_win_04.mp3"
+}
+
+"windrunner_wind_win_05"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_win_05.mp3"
+}
+
+"windrunner_wind_pain_01"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_pain_01.mp3"
+}
+
+"windrunner_wind_pain_02"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_pain_02.mp3"
+}
+
+"windrunner_wind_pain_03"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_pain_03.mp3"
+}
+
+"windrunner_wind_pain_04"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_pain_04.mp3"
+}
+
+"windrunner_wind_pain_06"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_pain_06.mp3"
+}
+
+"windrunner_wind_pain_05"
+{
+ 	"channel" 	"CHAN_VOICE"
+	"volume" 	"1.00"
+ 	"soundlevel" 	"SNDLVL_TALKING"
+	"wave" 		"*vo\windrunner\wind_pain_05.mp3"
 }
 
 "windrunner_wind_anger_01"
@@ -1652,421 +2076,5 @@
 	"volume" 	"1.00"
  	"soundlevel" 	"SNDLVL_TALKING"
 	"wave" 		"*vo\windrunner\wind_laugh_10.mp3"
-}
-
-"windrunner_wind_acknow_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_acknow_01.mp3"
-}
-
-"windrunner_wind_inthebag_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_inthebag_01.mp3"
-}
-
-"windrunner_wind_inthebag_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_inthebag_02.mp3"
-}
-
-"windrunner_wind_shitwiz_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_shitwiz_01.mp3"
-}
-
-"windrunner_wind_crumwiz_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_crumwiz_01.mp3"
-}
-
-"windrunner_wind_ally_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_ally_01.mp3"
-}
-
-"windrunner_wind_ally_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_ally_02.mp3"
-}
-
-"windrunner_wind_ally_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_ally_03.mp3"
-}
-
-"windrunner_wind_ally_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_ally_04.mp3"
-}
-
-"windrunner_wind_ally_05"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_ally_05.mp3"
-}
-
-"windrunner_wind_ally_06"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_ally_06.mp3"
-}
-
-"windrunner_wind_battlebegins_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_battlebegins_01.mp3"
-}
-
-"windrunner_wind_blink_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_blink_03.mp3"
-}
-
-"windrunner_wind_blink_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_blink_04.mp3"
-}
-
-"windrunner_wind_drop_common_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_drop_common_01.mp3"
-}
-
-"windrunner_wind_drop_medium_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_drop_medium_01.mp3"
-}
-
-"windrunner_wind_drop_rare_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_drop_rare_01.mp3"
-}
-
-"windrunner_wind_fastres_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_fastres_01.mp3"
-}
-
-"windrunner_wind_fastres_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_fastres_02.mp3"
-}
-
-"windrunner_wind_firstblood_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_firstblood_01.mp3"
-}
-
-"windrunner_wind_item_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_01.mp3"
-}
-
-"windrunner_wind_item_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_02.mp3"
-}
-
-"windrunner_wind_item_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_03.mp3"
-}
-
-"windrunner_wind_item_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_04.mp3"
-}
-
-"windrunner_wind_item_05"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_05.mp3"
-}
-
-"windrunner_wind_item_06"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_06.mp3"
-}
-
-"windrunner_wind_item_07"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_07.mp3"
-}
-
-"windrunner_wind_item_08"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_08.mp3"
-}
-
-"windrunner_wind_item_09"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_09.mp3"
-}
-
-"windrunner_wind_item_10"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_10.mp3"
-}
-
-"windrunner_wind_item_11"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_11.mp3"
-}
-
-"windrunner_wind_item_12"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_12.mp3"
-}
-
-"windrunner_wind_item_13"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_13.mp3"
-}
-
-"windrunner_wind_item_14"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_item_14.mp3"
-}
-
-"windrunner_wind_missing_lane_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_missing_lane_01.mp3"
-}
-
-"windrunner_wind_missing_lane_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_missing_lane_02.mp3"
-}
-
-"windrunner_wind_missing_lane_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_missing_lane_03.mp3"
-}
-
-"windrunner_wind_rival_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_01.mp3"
-}
-
-"windrunner_wind_rival_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_02.mp3"
-}
-
-"windrunner_wind_rival_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_03.mp3"
-}
-
-"windrunner_wind_rival_04"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_04.mp3"
-}
-
-"windrunner_wind_rival_05"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_05.mp3"
-}
-
-"windrunner_wind_rival_06"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_06.mp3"
-}
-
-"windrunner_wind_rival_07"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_07.mp3"
-}
-
-"windrunner_wind_rival_08"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_08.mp3"
-}
-
-"windrunner_wind_rival_09"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_rival_09.mp3"
-}
-
-"windrunner_wind_rival_10"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"killed by KOTL"
-	"wave" 		"*vo\windrunner\wind_rival_10.mp3"
-}
-
-"windrunner_wind_thanks_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_thanks_01.mp3"
-}
-
-"windrunner_wind_thanks_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_thanks_02.mp3"
-}
-
-"windrunner_wind_thanks_03"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_thanks_03.mp3"
-}
-
-"windrunner_wind_underattack_01"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_underattack_01.mp3"
-}
-
-"windrunner_wind_underattack_02"
-{
- 	"channel" 	"CHAN_VOICE"
-	"volume" 	"1.00"
- 	"soundlevel" 	"SNDLVL_TALKING"
-	"wave" 		"*vo\windrunner\wind_underattack_02.mp3"
 }
 

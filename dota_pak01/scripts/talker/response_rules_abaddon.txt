@@ -120,6 +120,17 @@ Rule abaddon_KillIsEnemyLegion_CommanderChance_35%_Rule
 	response abaddon_KillIsEnemyLegion_CommanderChance_35%
 }
 
+Response abaddon_KillIsEnemyEmber_SpiritChance_35%
+{
+	scene "scenes/abaddon/abaddon_abad_rival_07.vcd" nodelay noscene 
+}
+
+Rule abaddon_KillIsEnemyEmber_SpiritChance_35%_Rule
+{
+	criteria Kill Isabaddon IsEnemyEmber_Spirit Chance_35%
+	response abaddon_KillIsEnemyEmber_SpiritChance_35%
+}
+
 Response abaddon_KillIsEnemyNyx_AssassinChance_35%
 {
 	scene "scenes/abaddon/abaddon_abad_rival_08.vcd" nodelay noscene 
@@ -334,6 +345,55 @@ Rule abaddon_CastExecuteIsAbaddonBorrowedChance_50%_Rule
 	response abaddon_CastExecuteIsAbaddonBorrowedChance_50%
 }
 
+Response abaddon_DeathIsAbaddonCoilIsEnemyAbaddon
+{
+	scene "scenes/abaddon/abaddon_abad_deathcoil_08.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_deathcoil_09.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_deathcoil_10.vcd" nodelay noscene 
+}
+
+Rule abaddon_DeathIsAbaddonCoilIsEnemyAbaddon_Rule
+{
+	criteria Death Isabaddon IsAbaddonCoil IsEnemyAbaddon
+	response abaddon_DeathIsAbaddonCoilIsEnemyAbaddon
+}
+
+Response abaddon_Death
+{
+	scene "scenes/abaddon/abaddon_abad_death_01.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_02.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_03.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_04.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_05.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_06.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_07.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_08.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_09.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_10.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_11.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_12.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_13.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_14.vcd" nodelay noscene 
+	scene "scenes/abaddon/abaddon_abad_death_15.vcd" nodelay noscene 
+}
+
+Rule abaddon_Death_Rule
+{
+	criteria Death Isabaddon 
+	response abaddon_Death
+}
+
+Response abaddon_DeathIsReincarnating
+{
+	scene "scenes/abaddon/abaddon_abad_fastres_01.vcd" nodelay noscene 
+}
+
+Rule abaddon_DeathIsReincarnating_Rule
+{
+	criteria Death Isabaddon IsReincarnating
+	response abaddon_DeathIsReincarnating
+}
+
 Response abaddon_LevelUp
 {
 	scene "scenes/abaddon/abaddon_abad_levelup_01.vcd" nodelay noscene 
@@ -463,42 +523,6 @@ Rule abaddon_LastHit_Rule
 {
 	criteria LastHit Isabaddon 
 	response abaddon_LastHit
-}
-
-Response abaddon_Death
-{
-	scene "scenes/abaddon/abaddon_abad_death_01.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_02.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_03.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_04.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_05.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_06.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_07.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_08.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_09.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_10.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_11.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_12.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_13.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_14.vcd" nodelay noscene 
-	scene "scenes/abaddon/abaddon_abad_death_15.vcd" nodelay noscene 
-}
-
-Rule abaddon_Death_Rule
-{
-	criteria Death Isabaddon 
-	response abaddon_Death
-}
-
-Response abaddon_DeathIsReincarnating
-{
-	scene "scenes/abaddon/abaddon_abad_fastres_01.vcd" nodelay noscene 
-}
-
-Rule abaddon_DeathIsReincarnating_Rule
-{
-	criteria Death Isabaddon IsReincarnating
-	response abaddon_DeathIsReincarnating
 }
 
 Response abaddon_Respawn

@@ -1142,7 +1142,29 @@
 					"LegacyAbilitySecondary1"	{ "Key"	"" }
 					"LegacyAbilitySecondary2"	{ "Key"	"" }
 					"LegacyAbilityUltimate"	{ "Key"	"B" }
+				}	
+
+				"npc_dota_hero_ember_spirit"
+				{
+					// Ability
+					"LegacyAbilityPrimary1"	{ "Key"	"C" }				
+					"LegacyAbilityPrimary2"	{ "Key" "T"	}
+					"LegacyAbilityPrimary3"	{ "Key"	"E" }
+					"LegacyAbilitySecondary1"	{ "Key"	"R" }
+					"LegacyAbilitySecondary2"	{ "Key"	"" }
+					"LegacyAbilityUltimate"	{ "Key"	"F" }
 				}		
+
+				"npc_dota_hero_earth_spirit"
+				{
+					// Ability
+					"LegacyAbilityPrimary1"	{ "Key"	"D" }				
+					"LegacyAbilityPrimary2"	{ "Key" "F"	}
+					"LegacyAbilityPrimary3"	{ "Key"	"R" }
+					"LegacyAbilitySecondary1"	{ "Key"	"E" }
+					"LegacyAbilitySecondary2"	{ "Key"	"" }
+					"LegacyAbilityUltimate"	{ "Key"	"T" }
+				}	
 			}
 		}			
 
@@ -2482,7 +2504,7 @@
 					"Key"			"="
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"11"
+					"PanelRow"		"22"
 					"Description"	"#DOTA_SpectatorIncreaseReplaySpeed"
 					"Version"		"3"
 				}
@@ -2494,7 +2516,7 @@
 					"Key"			"-"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"12"
+					"PanelRow"		"23"
 					"Description"	"#DOTA_SpectatorDecreaseReplaySpeed"
 					"Version"		"3"
 				}
@@ -2506,8 +2528,20 @@
 					"Key"			"ENTER"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"13"
+					"PanelRow"		"8"
 					"Description"		"#DOTA_SpectatorChat"
+					"Version"		"3"
+				}
+
+				"SpectatorCoach_ViewToggle"
+				{
+					"Name"			"SpectatorCoach_ViewToggle"
+					"Action"		"coach_toggle_studentview"
+					"Key"			"SPACE"
+					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
+					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
+					"PanelRow"		"12"
+					"Description"	"#DOTA_SpectatorCoach_ViewToggle"
 					"Version"		"3"
 				}
 			
@@ -2518,7 +2552,7 @@
 					"Key"			"`"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"15"
+					"PanelRow"		"9"
 					"Description"	"#DOTA_SpectatorScoreboard"
 					"Version"		"2"
 				}
@@ -2530,7 +2564,7 @@
 					"Key"			"F4"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"17"
+					"PanelRow"		"13"
 					"Description"	"#DOTA_SpectatorStatsHarvest"
 					"Version"		"2"
 				}
@@ -2542,7 +2576,7 @@
 					"Key"			"F5"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"18"
+					"PanelRow"		"14"
 					"Description"	"#DOTA_SpectatorStatsItem"
 					"Version"		"2"
 				}
@@ -2554,7 +2588,7 @@
 					"Key"			"F6"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"19"
+					"PanelRow"		"15"
 					"Description"	"#DOTA_SpectatorStatsGold"
 					"Version"		"2"
 				}
@@ -2566,7 +2600,7 @@
 					"Key"			"F7"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"20"
+					"PanelRow"		"16"
 					"Description"	"#DOTA_SpectatorStatsXP"
 					"Version"		"2"
 				}
@@ -2578,7 +2612,7 @@
 					"Key"			"F8"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"21"
+					"PanelRow"		"17"
 					"Description"	"#DOTA_SpectatorStatsFantasy"
 					"Version"		"2"
 				}
@@ -2590,7 +2624,7 @@
 					"Key"			"F1"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"22"
+					"PanelRow"		"18"
 					"Description"	"#DOTA_SpectatorFOWBoth"
 					"Version"		"3"
 				}
@@ -2602,7 +2636,7 @@
 					"Key"			"F2"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"23"
+					"PanelRow"		"19"
 					"Description"	"#DOTA_SpectatorFOWRadient"
 					"Version"		"3"
 				}
@@ -2614,7 +2648,7 @@
 					"Key"			"F3"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"24"
+					"PanelRow"		"20"
 					"Description"	"#DOTA_SpectatorFOWDire"
 					"Version"		"3"
 				}
@@ -2626,7 +2660,7 @@
 					"Key"			"F10"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"14"
+					"PanelRow"		"10"
 					"Description"	"#DOTA_SpectatorBroadcasterMenu"
 					"Version"		"2"
 				}
@@ -3029,6 +3063,17 @@
 					"Action"			"shop_select_itemrow 12"
 					"Key"				"="
 					"Version"			"1"
+				}
+
+				"InspectHeroInWorld"
+				{
+					"Name"			"InspectHeroInWorld"
+					"Action"		"inspectheroinworld"
+					"Key"			"I"
+					"Panel"			"#DOTA_KEYBIND_MENU_PLAYER"
+					"PanelRow"		"13"
+					"Description"	"#DOTA_InspectHeroInWorld"
+					"Version"		"1"
 				}
 			}
 		}
@@ -4359,7 +4404,7 @@
 					"Key"			"="
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"9"
+					"PanelRow"		"22"
 					"Description"	"#DOTA_SpectatorIncreaseReplaySpeed"
 					"Version"		"2"
 				}
@@ -4371,7 +4416,7 @@
 					"Key"			"-"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"10"
+					"PanelRow"		"23"
 					"Description"	"#DOTA_SpectatorDecreaseReplaySpeed"
 					"Version"		"2"
 				}
@@ -4383,9 +4428,21 @@
 					"Key"			"ENTER"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"13"
+					"PanelRow"		"8"
 					"Description"		"#DOTA_SpectatorChat"
 					"Version"		"2"
+				}
+
+				"SpectatorCoach_ViewToggle"
+				{
+					"Name"			"SpectatorCoach_ViewToggle"
+					"Action"		"coach_toggle_studentview"
+					"Key"			"SPACE"
+					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
+					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
+					"PanelRow"		"12"
+					"Description"	"#DOTA_SpectatorCoach_ViewToggle"
+					"Version"		"3"
 				}
 			
 				"SpectatorScoreboard"
@@ -4395,7 +4452,7 @@
 					"Key"			"`"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"15"
+					"PanelRow"		"9"
 					"Description"	"#DOTA_SpectatorScoreboard"
 					"Version"		"2"
 				}
@@ -4407,7 +4464,7 @@
 					"Key"			"F4"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"17"
+					"PanelRow"		"13"
 					"Description"	"#DOTA_SpectatorStatsHarvest"
 					"Version"		"2"
 				}
@@ -4419,7 +4476,7 @@
 					"Key"			"F5"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"18"
+					"PanelRow"		"14"
 					"Description"	"#DOTA_SpectatorStatsItem"
 					"Version"		"2"
 				}
@@ -4431,7 +4488,7 @@
 					"Key"			"F6"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"19"
+					"PanelRow"		"15"
 					"Description"	"#DOTA_SpectatorStatsGold"
 					"Version"		"2"
 				}
@@ -4443,7 +4500,7 @@
 					"Key"			"F7"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"20"
+					"PanelRow"		"16"
 					"Description"	"#DOTA_SpectatorStatsXP"
 					"Version"		"2"
 				}
@@ -4455,7 +4512,7 @@
 					"Key"			"F8"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"21"
+					"PanelRow"		"17"
 					"Description"	"#DOTA_SpectatorStatsFantasy"
 					"Version"		"6"
 				}
@@ -4467,7 +4524,7 @@
 					"Key"			"F1"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"22"
+					"PanelRow"		"18"
 					"Description"	"#DOTA_SpectatorFOWBoth"
 					"Version"		"3"
 				}
@@ -4479,7 +4536,7 @@
 					"Key"			"F2"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"23"
+					"PanelRow"		"19"
 					"Description"	"#DOTA_SpectatorFOWRadient"
 					"Version"		"3"
 				}
@@ -4491,7 +4548,7 @@
 					"Key"			"F3"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"24"
+					"PanelRow"		"20"
 					"Description"	"#DOTA_SpectatorFOWDire"
 					"Version"		"3"
 				}
@@ -4503,7 +4560,7 @@
 					"Key"			"F10"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"12"
+					"PanelRow"		"10"
 					"Description"	"#DOTA_SpectatorBroadcasterMenu"
 					"Version"		"1"
 				}
@@ -4907,6 +4964,18 @@
 					"Key"				"="
 					"Version"			"1"
 				}
+
+				"InspectHeroInWorld"
+				{
+					"Name"			"InspectHeroInWorld"
+					"Action"		"inspectheroinworld"
+					"Key"			"I"
+					"Panel"			"#DOTA_KEYBIND_MENU_PLAYER"
+					"PanelRow"		"13"
+					"Description"	"#DOTA_InspectHeroInWorld"
+					"Version"		"1"
+				}
+
 			}			
 		}	
 
@@ -6236,7 +6305,7 @@
 					"Key"			"="
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"9"
+					"PanelRow"		"22"
 					"Description"	"#DOTA_SpectatorIncreaseReplaySpeed"
 					"Version"		"2"
 				}
@@ -6248,7 +6317,7 @@
 					"Key"			"-"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"10"
+					"PanelRow"		"23"
 					"Description"	"#DOTA_SpectatorDecreaseReplaySpeed"
 					"Version"		"2"
 				}
@@ -6260,9 +6329,21 @@
 					"Key"			"ENTER"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"13"
+					"PanelRow"		"8"
 					"Description"		"#DOTA_SpectatorChat"
 					"Version"		"2"
+				}
+
+				"SpectatorCoach_ViewToggle"
+				{
+					"Name"			"SpectatorCoach_ViewToggle"
+					"Action"		"coach_toggle_studentview"
+					"Key"			"SPACE"
+					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
+					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
+					"PanelRow"		"12"
+					"Description"	"#DOTA_SpectatorCoach_ViewToggle"
+					"Version"		"3"
 				}
 			
 				"SpectatorScoreboard"
@@ -6272,7 +6353,7 @@
 					"Key"			"T"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"15"
+					"PanelRow"		"9"
 					"Description"	"#DOTA_SpectatorScoreboard"
 					"Version"		"2"
 				}
@@ -6284,7 +6365,7 @@
 					"Key"			"F4"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"17"
+					"PanelRow"		"13"
 					"Description"	"#DOTA_SpectatorStatsHarvest"
 					"Version"		"2"
 				}
@@ -6296,7 +6377,7 @@
 					"Key"			"F5"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"18"
+					"PanelRow"		"14"
 					"Description"	"#DOTA_SpectatorStatsItem"
 					"Version"		"2"
 				}
@@ -6308,7 +6389,7 @@
 					"Key"			"F6"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"19"
+					"PanelRow"		"15"
 					"Description"	"#DOTA_SpectatorStatsGold"
 					"Version"		"2"
 				}
@@ -6320,7 +6401,7 @@
 					"Key"			"F7"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"20"
+					"PanelRow"		"16"
 					"Description"	"#DOTA_SpectatorStatsXP"
 					"Version"		"2"
 				}
@@ -6332,7 +6413,7 @@
 					"Key"			"F8"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"21"
+					"PanelRow"		"17"
 					"Description"	"#DOTA_SpectatorStatsFantasy"
 					"Version"		"6"
 				}
@@ -6344,7 +6425,7 @@
 					"Key"			"F1"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"22"
+					"PanelRow"		"18"
 					"Description"	"#DOTA_SpectatorFOWBoth"
 					"Version"		"3"
 				}
@@ -6356,7 +6437,7 @@
 					"Key"			"F2"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"23"
+					"PanelRow"		"19"
 					"Description"	"#DOTA_SpectatorFOWRadient"
 					"Version"		"3"
 				}
@@ -6368,7 +6449,7 @@
 					"Key"			"F3"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"24"
+					"PanelRow"		"20"
 					"Description"	"#DOTA_SpectatorFOWDire"
 					"Version"		"3"
 				}
@@ -6380,7 +6461,7 @@
 					"Key"			"F10"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"12"
+					"PanelRow"		"10"
 					"Description"	"#DOTA_SpectatorBroadcasterMenu"
 					"Version"		"1"
 				}
@@ -6783,6 +6864,17 @@
 					"Action"			"shop_select_itemrow 12"
 					"Key"				"="
 					"Version"			"1"
+				}
+
+				"InspectHeroInWorld"
+				{
+					"Name"			"InspectHeroInWorld"
+					"Action"		"inspectheroinworld"
+					"Key"			"I"
+					"Panel"			"#DOTA_KEYBIND_MENU_PLAYER"
+					"PanelRow"		"13"
+					"Description"	"#DOTA_InspectHeroInWorld"
+					"Version"		"1"
 				}
 			}			
 		}	
@@ -8110,7 +8202,7 @@
 					"Key"			"="
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"9"
+					"PanelRow"		"22"
 					"Description"	"#DOTA_SpectatorIncreaseReplaySpeed"
 					"Version"		"2"
 				}
@@ -8122,7 +8214,7 @@
 					"Key"			"-"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"10"
+					"PanelRow"		"23"
 					"Description"	"#DOTA_SpectatorDecreaseReplaySpeed"
 					"Version"		"2"
 				}
@@ -8134,9 +8226,21 @@
 					"Key"			"ENTER"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"13"
+					"PanelRow"		"8"
 					"Description"		"#DOTA_SpectatorChat"
 					"Version"		"2"
+				}
+
+				"SpectatorCoach_ViewToggle"
+				{
+					"Name"			"SpectatorCoach_ViewToggle"
+					"Action"		"coach_toggle_studentview"
+					"Key"			"SPACE"
+					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
+					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
+					"PanelRow"		"12"
+					"Description"	"#DOTA_SpectatorCoach_ViewToggle"
+					"Version"		"3"
 				}
 			
 				"SpectatorScoreboard"
@@ -8146,7 +8250,7 @@
 					"Key"			"`"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"15"
+					"PanelRow"		"9"
 					"Description"	"#DOTA_SpectatorScoreboard"
 					"Version"		"2"
 				}
@@ -8158,7 +8262,7 @@
 					"Key"			"F4"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"17"
+					"PanelRow"		"13"
 					"Description"	"#DOTA_SpectatorStatsHarvest"
 					"Version"		"2"
 				}
@@ -8170,7 +8274,7 @@
 					"Key"			"F5"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"18"
+					"PanelRow"		"14"
 					"Description"	"#DOTA_SpectatorStatsItem"
 					"Version"		"2"
 				}
@@ -8182,7 +8286,7 @@
 					"Key"			"F6"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"19"
+					"PanelRow"		"15"
 					"Description"	"#DOTA_SpectatorStatsGold"
 					"Version"		"2"
 				}
@@ -8194,7 +8298,7 @@
 					"Key"			"F7"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"20"
+					"PanelRow"		"16"
 					"Description"	"#DOTA_SpectatorStatsXP"
 					"Version"		"2"
 				}
@@ -8206,7 +8310,7 @@
 					"Key"			"F8"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"21"
+					"PanelRow"		"17"
 					"Description"	"#DOTA_SpectatorStatsFantasy"
 					"Version"		"6"
 				}
@@ -8218,7 +8322,7 @@
 					"Key"			"F1"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"22"
+					"PanelRow"		"18"
 					"Description"	"#DOTA_SpectatorFOWBoth"
 					"Version"		"3"
 				}
@@ -8230,7 +8334,7 @@
 					"Key"			"F2"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"23"
+					"PanelRow"		"19"
 					"Description"	"#DOTA_SpectatorFOWRadient"
 					"Version"		"3"
 				}
@@ -8242,7 +8346,7 @@
 					"Key"			"F3"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"24"
+					"PanelRow"		"20"
 					"Description"	"#DOTA_SpectatorFOWDire"
 					"Version"		"3"
 				}
@@ -8254,7 +8358,7 @@
 					"Key"			"F10"
 					"Panel"			"#DOTA_KEYBIND_MENU_SPECTATOR"
 					"SubPanel"		"#DOTA_KEYBIND_SPECTATOR_CONTROLS"
-					"PanelRow"		"12"
+					"PanelRow"		"10"
 					"Description"	"#DOTA_SpectatorBroadcasterMenu"
 					"Version"		"1"
 				}
@@ -8657,6 +8761,17 @@
 					"Action"			"shop_select_itemrow 12"
 					"Key"				"="
 					"Version"			"1"
+				}
+
+				"InspectHeroInWorld"
+				{
+					"Name"			"InspectHeroInWorld"
+					"Action"		"inspectheroinworld"
+					"Key"			"I"
+					"Panel"			"#DOTA_KEYBIND_MENU_PLAYER"
+					"PanelRow"		"13"
+					"Description"	"#DOTA_InspectHeroInWorld"
+					"Version"		"1"
 				}
 			}			
 		}	

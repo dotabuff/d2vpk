@@ -42,6 +42,7 @@ Rule templar_assassin_KillIsFirstBlood_Rule
 
 Response templar_assassin_Kill
 {
+	scene "scenes/templar_assassin/templar_assassin_temp_psiblades_04.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_kill_01.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_kill_02.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_kill_03.vcd" nodelay noscene 
@@ -68,6 +69,17 @@ Rule templar_assassin_Kill_Rule
 {
 	criteria Kill Istemplar_assassin 
 	response templar_assassin_Kill
+}
+
+Response templar_assassin_KillChance_1%
+{
+	scene "scenes/templar_assassin/templar_assassin_temp_refraction_04.vcd" nodelay noscene 
+}
+
+Rule templar_assassin_KillChance_1%_Rule
+{
+	criteria Kill Istemplar_assassin Chance_1%
+	response templar_assassin_KillChance_1%
 }
 
 Response templar_assassin_KillIsEnemyRikiChance_20%
@@ -221,40 +233,40 @@ Rule templar_assassin_CastOrder_Rule
 	response templar_assassin_CastOrder
 }
 
-Response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_75%
+Response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_50%
 {
 	scene "scenes/templar_assassin/templar_assassin_temp_psionictrap_01.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_psionictrap_02.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_psionictrap_03.vcd" nodelay noscene 
 }
 
-Rule templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_75%_Rule
+Rule templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_50%_Rule
 {
-	criteria CastExecute Istemplar_assassin IsAbilityTemplarAsTrapSet Chance_75%
-	response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_75%
+	criteria CastExecute Istemplar_assassin IsAbilityTemplarAsTrapSet Chance_50%
+	response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_50%
 }
 
-Response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_5%
+Response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_1%
 {
 	scene "scenes/templar_assassin/templar_assassin_temp_psionictrap_04.vcd" nodelay noscene 
 }
 
-Rule templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_5%_Rule
+Rule templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_1%_Rule
 {
-	criteria CastExecute Istemplar_assassin IsAbilityTemplarAsTrapSet Chance_5%
-	response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_5%
+	criteria CastExecute Istemplar_assassin IsAbilityTemplarAsTrapSet Chance_1%
+	response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSetChance_1%
 }
 
-Response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSpringChance_75%
+Response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSpringChance_50%
 {
 	scene "scenes/templar_assassin/templar_assassin_temp_psionictrap_05.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_psionictrap_10.vcd" nodelay noscene 
 }
 
-Rule templar_assassin_CastExecuteIsAbilityTemplarAsTrapSpringChance_75%_Rule
+Rule templar_assassin_CastExecuteIsAbilityTemplarAsTrapSpringChance_50%_Rule
 {
-	criteria CastExecute Istemplar_assassin IsAbilityTemplarAsTrapSpring Chance_75%
-	response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSpringChance_75%
+	criteria CastExecute Istemplar_assassin IsAbilityTemplarAsTrapSpring Chance_50%
+	response templar_assassin_CastExecuteIsAbilityTemplarAsTrapSpringChance_50%
 }
 
 Response templar_assassin_LevelUp
@@ -376,13 +388,23 @@ Response templar_assassin_Death
 	scene "scenes/templar_assassin/templar_assassin_temp_death_10.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_death_11.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_death_12.vcd" nodelay noscene 
-	scene "scenes/templar_assassin/templar_assassin_temp_death_13.vcd" nodelay noscene 
 }
 
 Rule templar_assassin_Death_Rule
 {
 	criteria Death Istemplar_assassin 
 	response templar_assassin_Death
+}
+
+Response templar_assassin_DeathChance_5%
+{
+	scene "scenes/templar_assassin/templar_assassin_temp_death_13.vcd" nodelay noscene 
+}
+
+Rule templar_assassin_DeathChance_5%_Rule
+{
+	criteria Death Istemplar_assassin Chance_5%
+	response templar_assassin_DeathChance_5%
 }
 
 Response templar_assassin_DeathIsReincarnating
@@ -802,6 +824,7 @@ Response templar_assassin_Thanks
 {
 	scene "scenes/templar_assassin/templar_assassin_temp_thanks_01.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_thanks_02.vcd" nodelay noscene 
+	scene "scenes/templar_assassin/templar_assassin_temp_thanks_03.vcd" nodelay noscene 
 }
 
 Rule templar_assassin_Thanks_Rule
@@ -810,9 +833,30 @@ Rule templar_assassin_Thanks_Rule
 	response templar_assassin_Thanks
 }
 
+Response templar_assassin_ThanksChance_5%
+{
+	scene "scenes/templar_assassin/templar_assassin_temp_thanks_05.vcd" nodelay noscene 
+}
+
+Rule templar_assassin_ThanksChance_5%_Rule
+{
+	criteria Thanks Istemplar_assassin Chance_5%
+	response templar_assassin_ThanksChance_5%
+}
+
+Response templar_assassin_PainChance_25%
+{
+	scene "scenes/templar_assassin/templar_assassin_temp_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule templar_assassin_PainChance_25%_Rule
+{
+	criteria Pain Istemplar_assassin Chance_25%
+	response templar_assassin_PainChance_25%
+}
+
 Response templar_assassin_Pain
 {
-	scene "scenes/templar_assassin/templar_assassin_temp_underattack_01.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_pain_01.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_pain_02.vcd" nodelay noscene 
 	scene "scenes/templar_assassin/templar_assassin_temp_pain_03.vcd" nodelay noscene 

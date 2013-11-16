@@ -273,6 +273,7 @@
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
 			"mixer"
 			{
 				"mixgroup" "Weapons"
@@ -281,9 +282,13 @@
 			{
 				"input_radius"  "300"
 			}
+			"usat_stop_time"
+			{
+				"input2" "4.5"
+			}
 			"volume_fade_out"
 			{
-				"input_Max" "1.0"
+				"input_Max" "0.5"
 			}
 		}
 	}
@@ -293,7 +298,7 @@
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_78dB"
+	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
 	"wave"			"weapons/hero/batrider/batrider_flaming_lasso_end.wav"
 	"operator_stacks"

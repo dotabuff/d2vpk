@@ -48,31 +48,6 @@ Rule undying_CustomIsGameStart_Rule
 	response undying_CustomIsGameStart
 }
 
-Response undying_Custom
-{
-	scene "scenes/undying/undying_undying_failure_01.vcd" nodelay noscene 
-	scene "scenes/undying/undying_undying_failure_03.vcd" nodelay noscene 
-	scene "scenes/undying/undying_undying_failure_04.vcd" nodelay noscene 
-	scene "scenes/undying/undying_undying_failure_05.vcd" nodelay noscene 
-}
-
-Rule undying_Custom_Rule
-{
-	criteria Custom Isundying 
-	response undying_Custom
-}
-
-Response undying_CustomChance_15%
-{
-	scene "scenes/undying/undying_undying_failure_02.vcd" nodelay noscene 
-}
-
-Rule undying_CustomChance_15%_Rule
-{
-	criteria Custom Isundying Chance_15%
-	response undying_CustomChance_15%
-}
-
 Response undying_CustomIsGameStartIsGolem
 {
 	scene "scenes/undying/undying_undying_big_begin_01.vcd" nodelay noscene 
@@ -150,224 +125,224 @@ Rule undying_Kill_Rule
 	response undying_Kill
 }
 
-Response undying_KillIsEnemyGyrocopterChance_25%
+Response undying_KillIsEnemyGyrocopterChance_20%
 {
 	scene "scenes/undying/undying_undying_rival_01.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyGyrocopterChance_25%_Rule
+Rule undying_KillIsEnemyGyrocopterChance_20%_Rule
 {
-	criteria Kill Isundying IsEnemyGyrocopter Chance_25%
-	response undying_KillIsEnemyGyrocopterChance_25%
+	criteria Kill Isundying IsEnemyGyrocopter Chance_20%
+	response undying_KillIsEnemyGyrocopterChance_20%
 }
 
-Response undying_KillIsEnemyBatriderChance_25%
-{
-	scene "scenes/undying/undying_undying_rival_01.vcd" nodelay noscene 
-}
-
-Rule undying_KillIsEnemyBatriderChance_25%_Rule
-{
-	criteria Kill Isundying IsEnemyBatrider Chance_25%
-	response undying_KillIsEnemyBatriderChance_25%
-}
-
-Response undying_KillIsEnemyViperChance_25%
+Response undying_KillIsEnemyBatriderChance_20%
 {
 	scene "scenes/undying/undying_undying_rival_01.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyViperChance_25%_Rule
+Rule undying_KillIsEnemyBatriderChance_20%_Rule
 {
-	criteria Kill Isundying IsEnemyViper Chance_25%
-	response undying_KillIsEnemyViperChance_25%
+	criteria Kill Isundying IsEnemyBatrider Chance_20%
+	response undying_KillIsEnemyBatriderChance_20%
 }
 
-Response undying_KillIsEnemyJakiroChance_25%
+Response undying_KillIsEnemyViperChance_20%
 {
 	scene "scenes/undying/undying_undying_rival_01.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyJakiroChance_25%_Rule
+Rule undying_KillIsEnemyViperChance_20%_Rule
 {
-	criteria Kill Isundying IsEnemyJakiro Chance_25%
-	response undying_KillIsEnemyJakiroChance_25%
+	criteria Kill Isundying IsEnemyViper Chance_20%
+	response undying_KillIsEnemyViperChance_20%
 }
 
-Response undying_KillIsEnemyAlchemistChance_25%
+Response undying_KillIsEnemyJakiroChance_20%
+{
+	scene "scenes/undying/undying_undying_rival_01.vcd" nodelay noscene 
+}
+
+Rule undying_KillIsEnemyJakiroChance_20%_Rule
+{
+	criteria Kill Isundying IsEnemyJakiro Chance_20%
+	response undying_KillIsEnemyJakiroChance_20%
+}
+
+Response undying_KillIsEnemyAlchemistChance_5%
 {
 	scene "scenes/undying/undying_undying_rival_02.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyAlchemistChance_25%_Rule
+Rule undying_KillIsEnemyAlchemistChance_5%_Rule
 {
-	criteria Kill Isundying IsEnemyAlchemist Chance_25%
-	response undying_KillIsEnemyAlchemistChance_25%
+	criteria Kill Isundying IsEnemyAlchemist Chance_5%
+	response undying_KillIsEnemyAlchemistChance_5%
 }
 
-Response undying_KillIsEnemySpirit_BreakerChance_25%
+Response undying_KillIsEnemySpirit_BreakerChance_20%
 {
 	scene "scenes/undying/undying_undying_rival_03.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemySpirit_BreakerChance_25%_Rule
+Rule undying_KillIsEnemySpirit_BreakerChance_20%_Rule
 {
-	criteria Kill Isundying IsEnemySpirit_Breaker Chance_25%
-	response undying_KillIsEnemySpirit_BreakerChance_25%
+	criteria Kill Isundying IsEnemySpirit_Breaker Chance_20%
+	response undying_KillIsEnemySpirit_BreakerChance_20%
 }
 
-Response undying_KillIsEnemyPudgeChance_50%
+Response undying_KillIsEnemyPudgeChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_04.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyPudgeChance_50%_Rule
+Rule undying_KillIsEnemyPudgeChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyPudge Chance_50%
-	response undying_KillIsEnemyPudgeChance_50%
+	criteria Kill Isundying IsEnemyPudge Chance_35%
+	response undying_KillIsEnemyPudgeChance_35%
 }
 
-Response undying_KillIsEnemyKunkkaChance_15%
+Response undying_KillIsEnemyKunkkaChance_5%
 {
 	scene "scenes/undying/undying_undying_rival_05.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyKunkkaChance_15%_Rule
+Rule undying_KillIsEnemyKunkkaChance_5%_Rule
 {
-	criteria Kill Isundying IsEnemyKunkka Chance_15%
-	response undying_KillIsEnemyKunkkaChance_15%
+	criteria Kill Isundying IsEnemyKunkka Chance_5%
+	response undying_KillIsEnemyKunkkaChance_5%
 }
 
-Response undying_KillIsEnemyBounty_HunterChance_50%
+Response undying_KillIsEnemyBounty_HunterChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_07.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyBounty_HunterChance_50%_Rule
+Rule undying_KillIsEnemyBounty_HunterChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyBounty_Hunter Chance_50%
-	response undying_KillIsEnemyBounty_HunterChance_50%
+	criteria Kill Isundying IsEnemyBounty_Hunter Chance_35%
+	response undying_KillIsEnemyBounty_HunterChance_35%
 }
 
-Response undying_KillIsEnemyLionChance_50%
+Response undying_KillIsEnemyLionChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_08.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyLionChance_50%_Rule
+Rule undying_KillIsEnemyLionChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyLion Chance_50%
-	response undying_KillIsEnemyLionChance_50%
+	criteria Kill Isundying IsEnemyLion Chance_35%
+	response undying_KillIsEnemyLionChance_35%
 }
 
-Response undying_KillIsEnemyTinkerChance_50%
+Response undying_KillIsEnemyTinkerChance_5%
 {
 	scene "scenes/undying/undying_undying_rival_09.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyTinkerChance_50%_Rule
+Rule undying_KillIsEnemyTinkerChance_5%_Rule
 {
-	criteria Kill Isundying IsEnemyTinker Chance_50%
-	response undying_KillIsEnemyTinkerChance_50%
+	criteria Kill Isundying IsEnemyTinker Chance_5%
+	response undying_KillIsEnemyTinkerChance_5%
 }
 
-Response undying_KillIsEnemySkeleton_KingChance_30%
-{
-	scene "scenes/undying/undying_undying_rival_10.vcd" nodelay noscene 
-}
-
-Rule undying_KillIsEnemySkeleton_KingChance_30%_Rule
-{
-	criteria Kill Isundying IsEnemySkeleton_King Chance_30%
-	response undying_KillIsEnemySkeleton_KingChance_30%
-}
-
-Response undying_KillIsEnemySandKingChance_30%
+Response undying_KillIsEnemySkeleton_KingChance_25%
 {
 	scene "scenes/undying/undying_undying_rival_10.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemySandKingChance_30%_Rule
+Rule undying_KillIsEnemySkeleton_KingChance_25%_Rule
 {
-	criteria Kill Isundying IsEnemySandKing Chance_30%
-	response undying_KillIsEnemySandKingChance_30%
+	criteria Kill Isundying IsEnemySkeleton_King Chance_25%
+	response undying_KillIsEnemySkeleton_KingChance_25%
 }
 
-Response undying_KillIsEnemyNecrolyteChance_50%
+Response undying_KillIsEnemySandKingChance_25%
+{
+	scene "scenes/undying/undying_undying_rival_10.vcd" nodelay noscene 
+}
+
+Rule undying_KillIsEnemySandKingChance_25%_Rule
+{
+	criteria Kill Isundying IsEnemySandKing Chance_25%
+	response undying_KillIsEnemySandKingChance_25%
+}
+
+Response undying_KillIsEnemyNecrolyteChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_11.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyNecrolyteChance_50%_Rule
+Rule undying_KillIsEnemyNecrolyteChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyNecrolyte Chance_50%
-	response undying_KillIsEnemyNecrolyteChance_50%
+	criteria Kill Isundying IsEnemyNecrolyte Chance_35%
+	response undying_KillIsEnemyNecrolyteChance_35%
 }
 
-Response undying_KillIsEnemyLife_StealerChance_50%
+Response undying_KillIsEnemyLife_StealerChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_12.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyLife_StealerChance_50%_Rule
+Rule undying_KillIsEnemyLife_StealerChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyLife_Stealer Chance_50%
-	response undying_KillIsEnemyLife_StealerChance_50%
+	criteria Kill Isundying IsEnemyLife_Stealer Chance_35%
+	response undying_KillIsEnemyLife_StealerChance_35%
 }
 
-Response undying_KillIsEnemyClinkzChance_50%
+Response undying_KillIsEnemyClinkzChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_13.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyClinkzChance_50%_Rule
+Rule undying_KillIsEnemyClinkzChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyClinkz Chance_50%
-	response undying_KillIsEnemyClinkzChance_50%
+	criteria Kill Isundying IsEnemyClinkz Chance_35%
+	response undying_KillIsEnemyClinkzChance_35%
 }
 
-Response undying_KillIsEnemyRazorChance_50%
+Response undying_KillIsEnemyRazorChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_14.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyRazorChance_50%_Rule
+Rule undying_KillIsEnemyRazorChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyRazor Chance_50%
-	response undying_KillIsEnemyRazorChance_50%
+	criteria Kill Isundying IsEnemyRazor Chance_35%
+	response undying_KillIsEnemyRazorChance_35%
 }
 
-Response undying_KillIsEnemyDeath_ProphetChance_50%
+Response undying_KillIsEnemyDeath_ProphetChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_15.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyDeath_ProphetChance_50%_Rule
+Rule undying_KillIsEnemyDeath_ProphetChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyDeath_Prophet Chance_50%
-	response undying_KillIsEnemyDeath_ProphetChance_50%
+	criteria Kill Isundying IsEnemyDeath_Prophet Chance_35%
+	response undying_KillIsEnemyDeath_ProphetChance_35%
 }
 
-Response undying_KillIsEnemyLichChance_50%
+Response undying_KillIsEnemyLichChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_16.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyLichChance_50%_Rule
+Rule undying_KillIsEnemyLichChance_35%_Rule
 {
-	criteria Kill Isundying IsEnemyLich Chance_50%
-	response undying_KillIsEnemyLichChance_50%
+	criteria Kill Isundying IsEnemyLich Chance_35%
+	response undying_KillIsEnemyLichChance_35%
 }
 
-Response undying_KillIsEnemyOgre_MagiChance_25%
+Response undying_KillIsEnemyOgre_MagiChance_15%
 {
 	scene "scenes/undying/undying_undying_rival_17.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyOgre_MagiChance_25%_Rule
+Rule undying_KillIsEnemyOgre_MagiChance_15%_Rule
 {
-	criteria Kill Isundying IsEnemyOgre_Magi Chance_25%
-	response undying_KillIsEnemyOgre_MagiChance_25%
+	criteria Kill Isundying IsEnemyOgre_Magi Chance_15%
+	response undying_KillIsEnemyOgre_MagiChance_15%
 }
 
 Response undying_KillIsFirstBloodIsGolem
@@ -409,224 +384,224 @@ Rule undying_KillIsGolem_Rule
 	response undying_KillIsGolem
 }
 
-Response undying_KillIsEnemyGyrocopterChance_25%IsGolem
+Response undying_KillIsEnemyGyrocopterChance_20%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_01.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyGyrocopterChance_25%IsGolem_Rule
+Rule undying_KillIsEnemyGyrocopterChance_20%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyGyrocopter Chance_25% IsGolem
-	response undying_KillIsEnemyGyrocopterChance_25%IsGolem
+	criteria Kill Isundying IsEnemyGyrocopter Chance_20% IsGolem
+	response undying_KillIsEnemyGyrocopterChance_20%IsGolem
 }
 
-Response undying_KillIsEnemyBatriderChance_25%IsGolem
-{
-	scene "scenes/undying/undying_undying_big_rival_01.vcd" nodelay noscene 
-}
-
-Rule undying_KillIsEnemyBatriderChance_25%IsGolem_Rule
-{
-	criteria Kill Isundying IsEnemyBatrider Chance_25% IsGolem
-	response undying_KillIsEnemyBatriderChance_25%IsGolem
-}
-
-Response undying_KillIsEnemyViperChance_25%IsGolem
+Response undying_KillIsEnemyBatriderChance_20%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_01.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyViperChance_25%IsGolem_Rule
+Rule undying_KillIsEnemyBatriderChance_20%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyViper Chance_25% IsGolem
-	response undying_KillIsEnemyViperChance_25%IsGolem
+	criteria Kill Isundying IsEnemyBatrider Chance_20% IsGolem
+	response undying_KillIsEnemyBatriderChance_20%IsGolem
 }
 
-Response undying_KillIsEnemyJakiroChance_25%IsGolem
+Response undying_KillIsEnemyViperChance_20%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_01.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyJakiroChance_25%IsGolem_Rule
+Rule undying_KillIsEnemyViperChance_20%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyJakiro Chance_25% IsGolem
-	response undying_KillIsEnemyJakiroChance_25%IsGolem
+	criteria Kill Isundying IsEnemyViper Chance_20% IsGolem
+	response undying_KillIsEnemyViperChance_20%IsGolem
 }
 
-Response undying_KillIsEnemyAlchemistChance_25%IsGolem
+Response undying_KillIsEnemyJakiroChance_20%IsGolem
+{
+	scene "scenes/undying/undying_undying_big_rival_01.vcd" nodelay noscene 
+}
+
+Rule undying_KillIsEnemyJakiroChance_20%IsGolem_Rule
+{
+	criteria Kill Isundying IsEnemyJakiro Chance_20% IsGolem
+	response undying_KillIsEnemyJakiroChance_20%IsGolem
+}
+
+Response undying_KillIsEnemyAlchemistChance_5%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_02.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyAlchemistChance_25%IsGolem_Rule
+Rule undying_KillIsEnemyAlchemistChance_5%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyAlchemist Chance_25% IsGolem
-	response undying_KillIsEnemyAlchemistChance_25%IsGolem
+	criteria Kill Isundying IsEnemyAlchemist Chance_5% IsGolem
+	response undying_KillIsEnemyAlchemistChance_5%IsGolem
 }
 
-Response undying_KillIsEnemySpirit_BreakerChance_25%IsGolem
+Response undying_KillIsEnemySpirit_BreakerChance_20%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_03.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemySpirit_BreakerChance_25%IsGolem_Rule
+Rule undying_KillIsEnemySpirit_BreakerChance_20%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemySpirit_Breaker Chance_25% IsGolem
-	response undying_KillIsEnemySpirit_BreakerChance_25%IsGolem
+	criteria Kill Isundying IsEnemySpirit_Breaker Chance_20% IsGolem
+	response undying_KillIsEnemySpirit_BreakerChance_20%IsGolem
 }
 
-Response undying_KillIsEnemyPudgeChance_50%IsGolem
+Response undying_KillIsEnemyPudgeChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_04.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyPudgeChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyPudgeChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyPudge Chance_50% IsGolem
-	response undying_KillIsEnemyPudgeChance_50%IsGolem
+	criteria Kill Isundying IsEnemyPudge Chance_35% IsGolem
+	response undying_KillIsEnemyPudgeChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyKunkkaChance_15%IsGolem
+Response undying_KillIsEnemyKunkkaChance_5%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_05.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyKunkkaChance_15%IsGolem_Rule
+Rule undying_KillIsEnemyKunkkaChance_5%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyKunkka Chance_15% IsGolem
-	response undying_KillIsEnemyKunkkaChance_15%IsGolem
+	criteria Kill Isundying IsEnemyKunkka Chance_5% IsGolem
+	response undying_KillIsEnemyKunkkaChance_5%IsGolem
 }
 
-Response undying_KillIsEnemyBounty_HunterChance_50%IsGolem
+Response undying_KillIsEnemyBounty_HunterChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_07.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyBounty_HunterChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyBounty_HunterChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyBounty_Hunter Chance_50% IsGolem
-	response undying_KillIsEnemyBounty_HunterChance_50%IsGolem
+	criteria Kill Isundying IsEnemyBounty_Hunter Chance_35% IsGolem
+	response undying_KillIsEnemyBounty_HunterChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyLionChance_50%IsGolem
+Response undying_KillIsEnemyLionChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_08.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyLionChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyLionChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyLion Chance_50% IsGolem
-	response undying_KillIsEnemyLionChance_50%IsGolem
+	criteria Kill Isundying IsEnemyLion Chance_35% IsGolem
+	response undying_KillIsEnemyLionChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyTinkerChance_50%IsGolem
+Response undying_KillIsEnemyTinkerChance_5%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_09.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyTinkerChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyTinkerChance_5%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyTinker Chance_50% IsGolem
-	response undying_KillIsEnemyTinkerChance_50%IsGolem
+	criteria Kill Isundying IsEnemyTinker Chance_5% IsGolem
+	response undying_KillIsEnemyTinkerChance_5%IsGolem
 }
 
-Response undying_KillIsEnemySkeleton_KingChance_30%IsGolem
-{
-	scene "scenes/undying/undying_undying_big_rival_10.vcd" nodelay noscene 
-}
-
-Rule undying_KillIsEnemySkeleton_KingChance_30%IsGolem_Rule
-{
-	criteria Kill Isundying IsEnemySkeleton_King Chance_30% IsGolem
-	response undying_KillIsEnemySkeleton_KingChance_30%IsGolem
-}
-
-Response undying_KillIsEnemySandKingChance_30%IsGolem
+Response undying_KillIsEnemySkeleton_KingChance_25%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_10.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemySandKingChance_30%IsGolem_Rule
+Rule undying_KillIsEnemySkeleton_KingChance_25%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemySandKing Chance_30% IsGolem
-	response undying_KillIsEnemySandKingChance_30%IsGolem
+	criteria Kill Isundying IsEnemySkeleton_King Chance_25% IsGolem
+	response undying_KillIsEnemySkeleton_KingChance_25%IsGolem
 }
 
-Response undying_KillIsEnemyNecrolyteChance_50%IsGolem
+Response undying_KillIsEnemySandKingChance_25%IsGolem
+{
+	scene "scenes/undying/undying_undying_big_rival_10.vcd" nodelay noscene 
+}
+
+Rule undying_KillIsEnemySandKingChance_25%IsGolem_Rule
+{
+	criteria Kill Isundying IsEnemySandKing Chance_25% IsGolem
+	response undying_KillIsEnemySandKingChance_25%IsGolem
+}
+
+Response undying_KillIsEnemyNecrolyteChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_11.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyNecrolyteChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyNecrolyteChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyNecrolyte Chance_50% IsGolem
-	response undying_KillIsEnemyNecrolyteChance_50%IsGolem
+	criteria Kill Isundying IsEnemyNecrolyte Chance_35% IsGolem
+	response undying_KillIsEnemyNecrolyteChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyLife_StealerChance_50%IsGolem
+Response undying_KillIsEnemyLife_StealerChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_12.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyLife_StealerChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyLife_StealerChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyLife_Stealer Chance_50% IsGolem
-	response undying_KillIsEnemyLife_StealerChance_50%IsGolem
+	criteria Kill Isundying IsEnemyLife_Stealer Chance_35% IsGolem
+	response undying_KillIsEnemyLife_StealerChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyClinkzChance_50%IsGolem
+Response undying_KillIsEnemyClinkzChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_13.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyClinkzChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyClinkzChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyClinkz Chance_50% IsGolem
-	response undying_KillIsEnemyClinkzChance_50%IsGolem
+	criteria Kill Isundying IsEnemyClinkz Chance_35% IsGolem
+	response undying_KillIsEnemyClinkzChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyRazorChance_50%IsGolem
+Response undying_KillIsEnemyRazorChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_14.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyRazorChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyRazorChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyRazor Chance_50% IsGolem
-	response undying_KillIsEnemyRazorChance_50%IsGolem
+	criteria Kill Isundying IsEnemyRazor Chance_35% IsGolem
+	response undying_KillIsEnemyRazorChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyDeath_ProphetChance_50%IsGolem
+Response undying_KillIsEnemyDeath_ProphetChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_15.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyDeath_ProphetChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyDeath_ProphetChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyDeath_Prophet Chance_50% IsGolem
-	response undying_KillIsEnemyDeath_ProphetChance_50%IsGolem
+	criteria Kill Isundying IsEnemyDeath_Prophet Chance_35% IsGolem
+	response undying_KillIsEnemyDeath_ProphetChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyLichChance_50%IsGolem
+Response undying_KillIsEnemyLichChance_35%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_16.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyLichChance_50%IsGolem_Rule
+Rule undying_KillIsEnemyLichChance_35%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyLich Chance_50% IsGolem
-	response undying_KillIsEnemyLichChance_50%IsGolem
+	criteria Kill Isundying IsEnemyLich Chance_35% IsGolem
+	response undying_KillIsEnemyLichChance_35%IsGolem
 }
 
-Response undying_KillIsEnemyOgre_MagiChance_25%IsGolem
+Response undying_KillIsEnemyOgre_MagiChance_15%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_rival_17.vcd" nodelay noscene 
 }
 
-Rule undying_KillIsEnemyOgre_MagiChance_25%IsGolem_Rule
+Rule undying_KillIsEnemyOgre_MagiChance_15%IsGolem_Rule
 {
-	criteria Kill Isundying IsEnemyOgre_Magi Chance_25% IsGolem
-	response undying_KillIsEnemyOgre_MagiChance_25%IsGolem
+	criteria Kill Isundying IsEnemyOgre_Magi Chance_15% IsGolem
+	response undying_KillIsEnemyOgre_MagiChance_15%IsGolem
 }
 
 Response undying_Move
@@ -865,7 +840,7 @@ Rule undying_CastOrderIsGolem_Rule
 	response undying_CastOrderIsGolem
 }
 
-Response undying_CastExecuteIsUndyingDecay
+Response undying_CastExecuteIsUndyingDecayChance_50%
 {
 	scene "scenes/undying/undying_undying_decay_03.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_decay_04.vcd" nodelay noscene 
@@ -876,13 +851,13 @@ Response undying_CastExecuteIsUndyingDecay
 	scene "scenes/undying/undying_undying_decay_10.vcd" nodelay noscene 
 }
 
-Rule undying_CastExecuteIsUndyingDecay_Rule
+Rule undying_CastExecuteIsUndyingDecayChance_50%_Rule
 {
-	criteria CastExecute Isundying IsUndyingDecay
-	response undying_CastExecuteIsUndyingDecay
+	criteria CastExecute Isundying IsUndyingDecay Chance_50%
+	response undying_CastExecuteIsUndyingDecayChance_50%
 }
 
-Response undying_CastExecuteIsUndyingSoulRip
+Response undying_CastExecuteIsUndyingSoulRipChance_50%
 {
 	scene "scenes/undying/undying_undying_soulrip_02.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_soulrip_03.vcd" nodelay noscene 
@@ -890,10 +865,10 @@ Response undying_CastExecuteIsUndyingSoulRip
 	scene "scenes/undying/undying_undying_soulrip_07.vcd" nodelay noscene 
 }
 
-Rule undying_CastExecuteIsUndyingSoulRip_Rule
+Rule undying_CastExecuteIsUndyingSoulRipChance_50%_Rule
 {
-	criteria CastExecute Isundying IsUndyingSoulRip
-	response undying_CastExecuteIsUndyingSoulRip
+	criteria CastExecute Isundying IsUndyingSoulRip Chance_50%
+	response undying_CastExecuteIsUndyingSoulRipChance_50%
 }
 
 Response undying_CastExecuteIsUndyingTombstone
@@ -919,7 +894,7 @@ Rule undying_CastExecuteIsUndyingTombstone_Rule
 	response undying_CastExecuteIsUndyingTombstone
 }
 
-Response undying_CastExecuteIsUndyingDecayIsGolem
+Response undying_CastExecuteIsUndyingDecayChance_50%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_decay_03.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_big_decay_04.vcd" nodelay noscene 
@@ -930,13 +905,13 @@ Response undying_CastExecuteIsUndyingDecayIsGolem
 	scene "scenes/undying/undying_undying_big_decay_10.vcd" nodelay noscene 
 }
 
-Rule undying_CastExecuteIsUndyingDecayIsGolem_Rule
+Rule undying_CastExecuteIsUndyingDecayChance_50%IsGolem_Rule
 {
-	criteria CastExecute Isundying IsUndyingDecay IsGolem
-	response undying_CastExecuteIsUndyingDecayIsGolem
+	criteria CastExecute Isundying IsUndyingDecay Chance_50% IsGolem
+	response undying_CastExecuteIsUndyingDecayChance_50%IsGolem
 }
 
-Response undying_CastExecuteIsUndyingSoulRipIsGolem
+Response undying_CastExecuteIsUndyingSoulRipChance_50%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_soulrip_02.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_big_soulrip_03.vcd" nodelay noscene 
@@ -944,10 +919,10 @@ Response undying_CastExecuteIsUndyingSoulRipIsGolem
 	scene "scenes/undying/undying_undying_big_soulrip_07.vcd" nodelay noscene 
 }
 
-Rule undying_CastExecuteIsUndyingSoulRipIsGolem_Rule
+Rule undying_CastExecuteIsUndyingSoulRipChance_50%IsGolem_Rule
 {
-	criteria CastExecute Isundying IsUndyingSoulRip IsGolem
-	response undying_CastExecuteIsUndyingSoulRipIsGolem
+	criteria CastExecute Isundying IsUndyingSoulRip Chance_50% IsGolem
+	response undying_CastExecuteIsUndyingSoulRipChance_50%IsGolem
 }
 
 Response undying_CastExecuteIsUndyingTombstoneIsGolem
@@ -1134,15 +1109,15 @@ Rule undying_AllyNearIsAllyAlchemistChance_25%EarlyGame_Rule
 	response undying_AllyNearIsAllyAlchemistChance_25%EarlyGame
 }
 
-Response undying_AllyNearIsAllyInvokerChance_5%EarlyGame
+Response undying_AllyNearIsAllyInvokerChance_1%EarlyGame
 {
 	scene "scenes/undying/undying_undying_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule undying_AllyNearIsAllyInvokerChance_5%EarlyGame_Rule
+Rule undying_AllyNearIsAllyInvokerChance_1%EarlyGame_Rule
 {
-	criteria AllyNear Isundying IsAllyInvoker Chance_5% EarlyGame
-	response undying_AllyNearIsAllyInvokerChance_5%EarlyGame
+	criteria AllyNear Isundying IsAllyInvoker Chance_1% EarlyGame
+	response undying_AllyNearIsAllyInvokerChance_1%EarlyGame
 }
 
 Response undying_LastHit
@@ -1264,6 +1239,18 @@ Rule undying_Select_Rule
 	response undying_Select
 }
 
+Response undying_SelectChance_1%
+{
+	scene "scenes/undying/undying_undying_gummy_vit_01.vcd" nodelay noscene 
+	scene "scenes/undying/undying_undying_gummy_vit_04.vcd" nodelay noscene 
+}
+
+Rule undying_SelectChance_1%_Rule
+{
+	criteria Select Isundying Chance_1%
+	response undying_SelectChance_1%
+}
+
 Response undying_SelectIsGolem
 {
 	scene "scenes/undying/undying_undying_big_rare_02.vcd" nodelay noscene 
@@ -1277,15 +1264,27 @@ Rule undying_SelectIsGolem_Rule
 	response undying_SelectIsGolem
 }
 
-Response undying_PurchaseIsExpensiveItemChance_10%
+Response undying_SelectChance_1%IsGolem
+{
+	scene "scenes/undying/undying_undying_big_gummy_vit_01.vcd" nodelay noscene 
+	scene "scenes/undying/undying_undying_big_gummy_vit_04.vcd" nodelay noscene 
+}
+
+Rule undying_SelectChance_1%IsGolem_Rule
+{
+	criteria Select Isundying Chance_1% IsGolem
+	response undying_SelectChance_1%IsGolem
+}
+
+Response undying_PurchaseIsExpensiveItemChance_5%
 {
 	scene "scenes/undying/undying_undying_purch_02.vcd" nodelay noscene speakonce
 }
 
-Rule undying_PurchaseIsExpensiveItemChance_10%_Rule
+Rule undying_PurchaseIsExpensiveItemChance_5%_Rule
 {
-	criteria Purchase Isundying IsExpensiveItem Chance_10%
-	response undying_PurchaseIsExpensiveItemChance_10%
+	criteria Purchase Isundying IsExpensiveItem Chance_5%
+	response undying_PurchaseIsExpensiveItemChance_5%
 }
 
 Response undying_PurchaseIsExpensiveItem
@@ -1446,15 +1445,15 @@ Rule undying_PurchaseIsGhostScepter_Rule
 	response undying_PurchaseIsGhostScepter
 }
 
-Response undying_PurchaseIsExpensiveItemChance_10%IsGolem
+Response undying_PurchaseIsExpensiveItemChance_5%IsGolem
 {
 	scene "scenes/undying/undying_undying_big_purch_02.vcd" nodelay noscene speakonce
 }
 
-Rule undying_PurchaseIsExpensiveItemChance_10%IsGolem_Rule
+Rule undying_PurchaseIsExpensiveItemChance_5%IsGolem_Rule
 {
-	criteria Purchase Isundying IsExpensiveItem Chance_10% IsGolem
-	response undying_PurchaseIsExpensiveItemChance_10%IsGolem
+	criteria Purchase Isundying IsExpensiveItem Chance_5% IsGolem
+	response undying_PurchaseIsExpensiveItemChance_5%IsGolem
 }
 
 Response undying_PurchaseIsExpensiveItemIsGolem
@@ -2283,9 +2282,19 @@ Rule undying_ThanksIsGolem_Rule
 	response undying_ThanksIsGolem
 }
 
+Response undying_PainChance_25%
+{
+	scene "scenes/undying/undying_undying_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule undying_PainChance_25%_Rule
+{
+	criteria Pain Isundying Chance_25%
+	response undying_PainChance_25%
+}
+
 Response undying_Pain
 {
-	scene "scenes/undying/undying_undying_underattack_01.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_pain_01.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_pain_02.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_pain_03.vcd" nodelay noscene 
@@ -2314,9 +2323,19 @@ Rule undying_Pain_Rule
 	response undying_Pain
 }
 
+Response undying_PainIsGolemChance_15%
+{
+	scene "scenes/undying/undying_undying_big_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule undying_PainIsGolemChance_15%_Rule
+{
+	criteria Pain Isundying IsGolem Chance_15%
+	response undying_PainIsGolemChance_15%
+}
+
 Response undying_PainIsGolem
 {
-	scene "scenes/undying/undying_undying_big_underattack_01.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_big_pain_01.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_big_pain_02.vcd" nodelay noscene 
 	scene "scenes/undying/undying_undying_big_pain_03.vcd" nodelay noscene 

@@ -343,18 +343,18 @@ Rule medusa_CastOrder_Rule
 	response medusa_CastOrder
 }
 
-Response medusa_CastExecuteIsMedManaShieldChance_15%
+Response medusa_CastExecuteIsMedManaShieldChance_20%
 {
-	scene "scenes/medusa/medusa_medus_manashield_02.vcd" nodelay noscene 
-	scene "scenes/medusa/medusa_medus_manashield_03.vcd" nodelay noscene 
-	scene "scenes/medusa/medusa_medus_manashield_04.vcd" nodelay noscene 
-	scene "scenes/medusa/medusa_medus_manashield_06.vcd" nodelay noscene 
+	scene "scenes/medusa/medusa_medus_manashield_02.vcd" nodelay noscene weapondelay 20
+	scene "scenes/medusa/medusa_medus_manashield_03.vcd" nodelay noscene weapondelay 20
+	scene "scenes/medusa/medusa_medus_manashield_04.vcd" nodelay noscene weapondelay 20
+	scene "scenes/medusa/medusa_medus_manashield_06.vcd" nodelay noscene weapondelay 20
 }
 
-Rule medusa_CastExecuteIsMedManaShieldChance_15%_Rule
+Rule medusa_CastExecuteIsMedManaShieldChance_20%_Rule
 {
-	criteria CastExecute Ismedusa IsMedManaShield Chance_15%
-	response medusa_CastExecuteIsMedManaShieldChance_15%
+	criteria CastExecute Ismedusa IsMedManaShield Chance_20%
+	response medusa_CastExecuteIsMedManaShieldChance_20%
 }
 
 Response medusa_CastExecuteIsMedMysticSnakeChance_75%

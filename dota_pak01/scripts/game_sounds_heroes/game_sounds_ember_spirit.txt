@@ -1,0 +1,609 @@
+
+"Hero_EmberSpirit.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5, 0.8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/whoosh01.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh02.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh03.wav"
+		"wave"	")weapons/hero/shared/small_blade/whoosh04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_EmberSpirit.PreAttack.Flame"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.PreAttack.Flame"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+ 		"wave"	"weapons/hero/ember_spirit/preattack01.wav"
+		"wave"	"weapons/hero/ember_spirit/preattack02.wav"
+		"wave"	"weapons/hero/ember_spirit/preattack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.07"
+			"input_max" "0.15"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/shared/small_blade/attack_long01.wav"
+		"wave"	")weapons/hero/shared/small_blade/attack_long02.wav"
+		"wave"	")weapons/hero/shared/small_blade/attack_long03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_EmberSpirit.Attack.Rip"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_EmberSpirit.Attack.Ring"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.Attack.Ring"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.1, 0.9"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/shared/small_blade/ring01.wav"
+		"wave"	")weapons/hero/shared/small_blade/ring02.wav"
+		"wave"	")weapons/hero/shared/small_blade/ring03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+
+"Hero_EmberSpirit.Attack.Rip"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"physics/damage/npc/rip01.wav"
+		"wave"			"physics/damage/npc/rip02.wav"
+		"wave"			"physics/damage/npc/rip03.wav"
+		"wave"			"physics/damage/npc/rip04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+	}
+}
+
+
+"Hero_EmberSpirit.SearingChains.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"wave"			"weapons\hero\ember_spirit\searing_chains_cast.wav"
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.SearingChains.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90, 110"
+	"rndwave"
+	{
+		"wave"			")weapons\hero\ember_spirit\searing_chains_target01.wav"
+		"wave"			")weapons\hero\ember_spirit\searing_chains_target02.wav"
+	}
+
+	"operator_stacks"
+	{	
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.SearingChains.Burn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			"weapons\hero\ember_spirit\searing_chains01.wav"
+		"wave"			"weapons\hero\ember_spirit\searing_chains02.wav"
+	}
+
+	"operator_stacks"
+	{	
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.SleightOfFist.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/ember_spirit/sleight_of_fist_cast.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"source_info"
+			{
+				"source"   "emitter"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.SleightOfFist.Damage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/shared/small_blade/attack_long01.wav"
+		"wave"	")weapons/hero/shared/small_blade/attack_long02.wav"
+		"wave"	")weapons/hero/shared/small_blade/attack_long03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_EmberSpirit.PreAttack.Flame"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.FlameGuard.Cast"
+{
+    "channel"		"CHAN_STATIC"
+    "volume"		"0.6"
+    "soundlevel"	"SNDLVL_81dB"
+    "pitch"			"95,105"
+    "wave" 			")weapons/hero/ember_spirit/flame_guard_cast.wav"
+    "operator_stacks"
+    {
+        "update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+    }
+}
+
+"Hero_EmberSpirit.FlameGuard.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")weapons/hero/ember_spirit/flame_guard_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"usat_stop_time"
+			{
+				"input2" "21.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.5"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.FireRemnant.Cast"
+{
+    "channel"		"CHAN_STATIC"
+    "volume"		"1.0"
+    "soundlevel"	"SNDLVL_81dB"
+    "pitch"			"95, 105"
+    "wave" 			")weapons/hero/ember_spirit/fire_remnant_cast.wav"
+     "operator_stacks"
+    {
+        "update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"source_info"
+			{
+				"source"   "emitter"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.8"
+			}
+		}
+    }
+}
+
+"Hero_EmberSpirit.FireRemnant.Create"
+{
+    "channel"		"CHAN_STATIC"
+    "volume"		"1.0"
+    "soundlevel"	"SNDLVL_81dB"
+    "rndwave"
+	{
+ 		"wave"	")weapons/hero/ember_spirit/remnant_create01.wav"
+		"wave"	")weapons/hero/ember_spirit/remnant_create02.wav"
+		"wave"	")weapons/hero/ember_spirit/remnant_create03.wav"
+	}
+    "operator_stacks"
+    {
+        "start_stack"
+        {
+			"import_stack" "dota_attack_block_dist"
+// 			"play_second_layer"
+// 			{
+// 			"input_execute"	"1"
+// 			"entry_name" "Hero_EmberSpirit.Remnant.Appear"
+// 			}
+        }
+    }
+}
+
+"Hero_EmberSpirit.Remnant.Appear"
+{
+    "channel"		"CHAN_STATIC"
+    "volume"		"0.0"
+    "soundlevel"	"SNDLVL_78dB"
+    "rndwave"
+	{
+ 		"wave"	")weapons/hero/ember_spirit/fire_remnant01.wav"
+		"wave"	")weapons/hero/ember_spirit/fire_remnant02.wav"
+		"wave"	")weapons/hero/ember_spirit/fire_remnant03.wav"
+	}
+    "operator_stacks"
+    {
+        "start_stack"
+        {
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.1"
+			}
+        }
+    }
+}
+
+"Hero_EmberSpirit.FireRemnant.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"125"
+	"wave"			")weapons/hero/doom_bringer/scorched_earth.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"usat_stop_time"
+			{
+				"input2" "10.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.FireRemnant.Explode"
+{
+    "channel"		"CHAN_STATIC"
+    "volume"		"1"
+    "soundlevel"	"SNDLVL_81dB"
+    "pitch"			"95,105"
+    "rndwave"
+	{
+ 		"wave"	")weapons/hero/ember_spirit/remnant_create01.wav"
+		"wave"	")weapons/hero/ember_spirit/remnant_create02.wav"
+		"wave"	")weapons/hero/ember_spirit/remnant_create03.wav"
+	}
+    "operator_stacks"
+    {
+        "update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+    }
+}
+
+"Hero_EmberSpirit.FireRemnant.Stop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/ember_spirit/fire_remnant_stop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"Hero_EmberSpirit.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2, 0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_EmberSpirit.IdleLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			")weapons/hero/doom_bringer/idle_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.3"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_EmberSpirit.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.35"
+	"soundlevel"  	"SNDLVL_75dB"
+	"rndwave"
+	{
+		"wave"			"physics\deaths\common\body_impact_light_01.wav"
+		"wave"			"physics\deaths\common\body_impact_light_02.wav"
+		"wave"			"physics\deaths\common\body_impact_light_03.wav"
+		"wave"			"physics\deaths\common\body_impact_light_04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+

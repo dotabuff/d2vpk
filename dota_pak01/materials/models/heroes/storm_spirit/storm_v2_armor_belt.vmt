@@ -1,0 +1,59 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/storm_spirit/storm_v2_armor_belt_color"
+	"$normalmap" "models/heroes/storm_spirit/storm_v2_armor_belt_normal"
+	"$maskmap1" "models/heroes/storm_spirit/storm_v2_armor_belt_masks1"
+	"$maskmap2" "models/heroes/storm_spirit/storm_v2_armor_belt_masks2"
+	"$detail1"  "models/heroes/storm_spirit/storm_spirit_detail"
+	
+	$SPECULAR_BLOOM_SCALE      .1
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 3
+	
+	"$DETAILFX" "53"
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 2
+	
+	$ENVMAP "models/cubemaps/glossy_blue"
+	$ENVMAPINTENSITY .75
+	$ENVMAPCOLOR "[0 .5 1]"
+	$SPECULARCOLOR "[0 .5 1]"
+	$MASKENVBYMETALNESS 1
+
+	$RIMLIGHTSCALE 3
+	$IgnoreBudgetCheck 1
+	$alphatest	1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar" "$DETAILFX"
+			"sineperiod" "32"
+			"sinemin" "92"
+			"sinemax" "93"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"-.3"
+			"texturescrollangle"	"$DETAILFX"
+		}
+		"TextureTransform"
+		{
+			"centerVar" 		"$detail1texturetransform"
+			"rotateVar"			"$DETAILFX"
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

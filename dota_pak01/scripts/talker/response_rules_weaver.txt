@@ -2,6 +2,7 @@ criterion "Isweaver" "classname" "npc_dota_hero_weaver" weight 5 required
 criterion "IsEnemyweaver" "targetclassname" "npc_dota_hero_weaver" weight 5 required
 criterion "IsAllyweaver" "nearby_ally" "npc_dota_hero_weaver" weight 5 required
 criterion "IsAbilitySwarm" "abilityname" "weaver_the_swarm" weight 5 required
+criterion "IsAbilityShukuchi" "abilityname" "weaver_shukuchi" weight 5 required
 
 Response weaver_Spawn
 {
@@ -41,6 +42,18 @@ Rule weaver_KillIsFirstBlood_Rule
 	response weaver_KillIsFirstBlood
 }
 
+Response weaver_KillIsAbilityShukuchiChance_20%
+{
+	scene "scenes/weaver/weaver_weav_ability_shukuchi_02.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_ability_shukuchi_04.vcd" nodelay noscene 
+}
+
+Rule weaver_KillIsAbilityShukuchiChance_20%_Rule
+{
+	criteria Kill Isweaver IsAbilityShukuchi Chance_20%
+	response weaver_KillIsAbilityShukuchiChance_20%
+}
+
 Response weaver_Kill
 {
 	scene "scenes/weaver/weaver_weav_kill_01.vcd" nodelay noscene 
@@ -55,6 +68,7 @@ Response weaver_Kill
 	scene "scenes/weaver/weaver_weav_kill_10.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_kill_11.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_kill_12.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_rival_04.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_laugh_01.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_laugh_02.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_laugh_03.vcd" nodelay noscene 
@@ -71,6 +85,50 @@ Rule weaver_Kill_Rule
 {
 	criteria Kill Isweaver 
 	response weaver_Kill
+}
+
+Response weaver_KillIsEnemyShredderChance_20%
+{
+	scene "scenes/weaver/weaver_weav_rival_01.vcd" nodelay noscene 
+}
+
+Rule weaver_KillIsEnemyShredderChance_20%_Rule
+{
+	criteria Kill Isweaver IsEnemyShredder Chance_20%
+	response weaver_KillIsEnemyShredderChance_20%
+}
+
+Response weaver_KillIsEnemyQueenofPainChance_20%
+{
+	scene "scenes/weaver/weaver_weav_rival_02.vcd" nodelay noscene 
+}
+
+Rule weaver_KillIsEnemyQueenofPainChance_20%_Rule
+{
+	criteria Kill Isweaver IsEnemyQueenofPain Chance_20%
+	response weaver_KillIsEnemyQueenofPainChance_20%
+}
+
+Response weaver_KillIsEnemyRattletrapChance_20%
+{
+	scene "scenes/weaver/weaver_weav_rival_03.vcd" nodelay noscene 
+}
+
+Rule weaver_KillIsEnemyRattletrapChance_20%_Rule
+{
+	criteria Kill Isweaver IsEnemyRattletrap Chance_20%
+	response weaver_KillIsEnemyRattletrapChance_20%
+}
+
+Response weaver_KillIsEnemyNyx_AssassinChance_20%
+{
+	scene "scenes/weaver/weaver_weav_rival_05.vcd" nodelay noscene 
+}
+
+Rule weaver_KillIsEnemyNyx_AssassinChance_20%_Rule
+{
+	criteria Kill Isweaver IsEnemyNyx_Assassin Chance_20%
+	response weaver_KillIsEnemyNyx_AssassinChance_20%
 }
 
 Response weaver_Move
@@ -116,6 +174,11 @@ Response weaver_Attack
 	scene "scenes/weaver/weaver_weav_attack_09.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_attack_10.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_attack_11.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_ability_gemin_01.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_ability_gemin_02.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_ability_gemin_03.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_ability_gemin_04.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_ability_gemin_05.vcd" nodelay noscene 
 }
 
 Rule weaver_Attack_Rule
@@ -137,20 +200,19 @@ Rule weaver_CastOrder_Rule
 	response weaver_CastOrder
 }
 
-Response weaver_CastExecuteIsAbilitySwarm
+Response weaver_CastExecuteIsAbilitySwarmChance_75%
 {
 	scene "scenes/weaver/weaver_weav_ability_swarm_01.vcd" nodelay noscene 
-	scene "scenes/weaver/weaver_weav_ability_swarm_02.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_ability_swarm_03.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_ability_swarm_04.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_ability_swarm_05.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_ability_swarm_06.vcd" nodelay noscene 
 }
 
-Rule weaver_CastExecuteIsAbilitySwarm_Rule
+Rule weaver_CastExecuteIsAbilitySwarmChance_75%_Rule
 {
-	criteria CastExecute Isweaver IsAbilitySwarm
-	response weaver_CastExecuteIsAbilitySwarm
+	criteria CastExecute Isweaver IsAbilitySwarm Chance_75%
+	response weaver_CastExecuteIsAbilitySwarmChance_75%
 }
 
 Response weaver_LevelUp
@@ -296,7 +358,7 @@ Rule weaver_PurchaseIsUltimateScepter_Rule
 
 Response weaver_PurchaseIsRadiance
 {
-	scene "scenes/weaver/weaver_weav_item_01.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_item_01.vcd" nodelay noscene speakonce
 }
 
 Rule weaver_PurchaseIsRadiance_Rule
@@ -307,7 +369,7 @@ Rule weaver_PurchaseIsRadiance_Rule
 
 Response weaver_PurchaseIsSphere
 {
-	scene "scenes/weaver/weaver_weav_item_02.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_item_02.vcd" nodelay noscene speakonce
 }
 
 Rule weaver_PurchaseIsSphere_Rule
@@ -318,7 +380,7 @@ Rule weaver_PurchaseIsSphere_Rule
 
 Response weaver_PurchaseIsVanguard
 {
-	scene "scenes/weaver/weaver_weav_item_03.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_item_03.vcd" nodelay noscene speakonce
 }
 
 Rule weaver_PurchaseIsVanguard_Rule
@@ -338,36 +400,6 @@ Rule weaver_Bottling_Rule
 {
 	criteria Bottling Isweaver 
 	response weaver_Bottling
-}
-
-Response weaver_MissingIsLaneTop
-{
-}
-
-Rule weaver_MissingIsLaneTop_Rule
-{
-	criteria Missing Isweaver IsLaneTop
-	response weaver_MissingIsLaneTop
-}
-
-Response weaver_MissingIsLaneMid
-{
-}
-
-Rule weaver_MissingIsLaneMid_Rule
-{
-	criteria Missing Isweaver IsLaneMid
-	response weaver_MissingIsLaneMid
-}
-
-Response weaver_MissingIsLaneBot
-{
-}
-
-Rule weaver_MissingIsLaneBot_Rule
-{
-	criteria Missing Isweaver IsLaneBot
-	response weaver_MissingIsLaneBot
 }
 
 Response weaver_Deny
@@ -641,9 +673,19 @@ Rule weaver_Thanks_Rule
 	response weaver_Thanks
 }
 
+Response weaver_PainChance_25%
+{
+	scene "scenes/weaver/weaver_weav_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule weaver_PainChance_25%_Rule
+{
+	criteria Pain Isweaver Chance_25%
+	response weaver_PainChance_25%
+}
+
 Response weaver_Pain
 {
-	scene "scenes/weaver/weaver_weav_underattack_01.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_pain_01.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_pain_02.vcd" nodelay noscene 
 	scene "scenes/weaver/weaver_weav_pain_03.vcd" nodelay noscene 
@@ -721,21 +763,5 @@ Rule weaver_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isweaver IsEmoteLaugh
 	response weaver_EmoteIsEmoteLaugh
-}
-
-Response weaver_EmoteIsEmoteAnger
-{
-	scene "scenes/weaver/weaver_weav_anger_01.vcd" nodelay noscene 
-	scene "scenes/weaver/weaver_weav_anger_02.vcd" nodelay noscene 
-	scene "scenes/weaver/weaver_weav_anger_03.vcd" nodelay noscene 
-	scene "scenes/weaver/weaver_weav_anger_04.vcd" nodelay noscene 
-	scene "scenes/weaver/weaver_weav_anger_05.vcd" nodelay noscene 
-	scene "scenes/weaver/weaver_weav_anger_06.vcd" nodelay noscene 
-}
-
-Rule weaver_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isweaver IsEmoteAnger
-	response weaver_EmoteIsEmoteAnger
 }
 

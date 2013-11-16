@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/storm_spirit/storm_v2_base_color"
+	"$normalmap" "models/heroes/storm_spirit/storm_v2_base_normal"
+	"$maskmap1" "models/heroes/storm_spirit/storm_v2_base_masks1"
+	"$maskmap2" "models/heroes/storm_spirit/storm_v2_base_masks2"
+
+	//$SPECULAREXPONENT 10
+	//$SPECULARSCALE 150
+
+	//$RIMLIGHTSCALE	300
+	//$AMBIENTSCALE 150
+	
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	//$additive 1
+        $ALLOWDIFFUSEMODULATION 1
+
+	//"$detail1"  "models/heroes/statuseffects/electric"
+	//$DETAIL1BLENDMODE 2
+	//$DETAIL1SCALE 7
+	//$DETAIL1BLENDFACTOR 8
+
+	"Proxies"
+	{
+		"UseCombinedTexture"
+		{
+		}
+	}
+}
+
+
+

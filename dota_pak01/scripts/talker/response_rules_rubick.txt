@@ -50,17 +50,28 @@ criterion "IsRubickHawk" "beastname" "beast_hawk" weight 5 required
 criterion "IsRubickBoar" "beastname" "beast_boar" weight 5 required
 criterion "RubickPrimalRoar" "abilityname" "beastmaster_primal_roar" weight 5 required
 criterion "IsRubickBloodThirst" "bloodthirst" "1" weight 5 required
+criterion "RubickRupture" "abilityname" "bloodseeker_rupture" weight 5 required
 criterion "IsRubickPrimalSplitDone" "primalstate" "2" weight 5 required
 criterion "IsRubickSpiderling" "beastname" "spiderling" weight 5 required
+criterion "RubickStampede" "abilityname" "centaur_stampede" weight 5 required
+criterion "RubickHookshot" "abilityname" "rattletrap_hookshot" weight 5 required
+criterion "IsRubickHookshotHit" "hookshot_hit" "1" weight 5 required
+criterion "IsRubickHookshotReachedTarget" "hookshot_target_reached" "1" weight 5 required
 criterion "RubickFreezingField" "abilityname" "crystal_maiden_freezing_field" weight 5 required
 criterion "RubickExorcism" "abilityname" "death_prophet_exorcism" weight 5 required
 criterion "IsRubickExorcismEnd" "exorcismend" "1" weight 5 required
 criterion "RubickStaticStorm" "abilityname" "disruptor_static_storm" weight 5 required
 criterion "RubickDoom" "abilityname" "doom_bringer_doom" weight 5 required
+criterion "RubickMagnetize" "abilityname" "earth_spirit_magnetize" weight 5 required
 criterion "RubickEchoSlam" "abilityname" "earthshaker_echo_slam" weight 5 required
 criterion "IsRubickMegaEchoSlam" "echoslam_count" ">=5" weight 5 required
 criterion "IsRubickGoodEchoSlam" "echoslam_count" ">1,<=3" weight 5 required
 criterion "IsRubickFailEchoSlam" "echoslam_count" "<=0" weight 5 required
+criterion "RubickFireRemnant" "abilityname" "ember_spirit_activate_fire_remnant" weight 5 required
+criterion "IsRubickChains" "abilityname" "ember_spirit_searing_chains" weight 5 required
+criterion "IsRubickChainsGood" "searing_chains_hero" "yes" weight 5 required
+criterion "IsRubickFist" "abilityname" "ember_spirit_sleight_of_fist" weight 5 required
+criterion "IsRubickFirstGood" "sleight_of_fist_start" "yes" weight 5 required
 criterion "RubickEarthSplitter" "abilityname" "elder_titan_earth_splitter" weight 5 required
 criterion "IsRubickEidolonsCreated" "eidolons" "1" weight 5 required
 criterion "RubickBlackHole" "abilityname" "enigma_black_hole" weight 5 required
@@ -82,6 +93,7 @@ criterion "RubickDuel" "abilityname" "legion_commander_duel" weight 5 required
 criterion "RubickPulseNova" "abilityname" "leshrac_pulse_nova" weight 5 required
 criterion "RubickChainFrost" "abilityname" "lich_chain_frost" weight 5 required
 criterion "IsRubickRage" "abilityname" "life_stealer_rage" weight 5 required
+criterion "RubickInfest" "abilityname" "life_stealer_infest" weight 5 required
 criterion "RubickLagunaBlade" "abilityname" "lina_laguna_blade" weight 5 required
 criterion "RubickFingerofDeath" "abilityname" "lion_finger_of_death" weight 5 required
 criterion "RubickEclipse" "abilityname" "luna_eclipse" weight 5 required
@@ -97,16 +109,16 @@ criterion "IsRubickMulti_1" "multicastcount" "1" weight 5 required
 criterion "IsRubickMulti_2" "multicastcount" "2" weight 5 required
 criterion "IsRubickMulti_3" "multicastcount" "3" weight 5 required
 criterion "RubickSanitysEclipse" "abilityname" "obsidian_destroyer_sanity_eclipse" weight 5 required
+criterion "IsRubickRot" "abilityname" "pudge_rot" weight 5 required
 criterion "IsRubickMeatHook" "abilityname" "pudge_meat_hook" weight 5 required
 criterion "IsRubickHookCatchHero" "hookedtarget" "1" weight 5 required
 criterion "IsRubickHookCatchCreep" "hookedtarget" "2" weight 5 required
 criterion "IsRubickHookCatchNothing" "hookedtarget" "0" weight 5 required
+criterion "RubickDismember" "abilityname" "pudge_dismember" weight 5 required
 criterion "RubickDreamCoil" "abilityname" "puck_dream_coil" weight 5 required
 criterion "RubickLifeDrain" "abilityname" "pugna_life_drain" weight 5 required
 criterion "RubickSonicWave" "abilityname" "queenofpain_sonic_wave" weight 5 required
 criterion "QUEEN" "OF" "PAIN" weight 5 required
-criterion "IsRubickHookshotHit" "hookshot_hit" "1" weight 5 required
-criterion "IsRubickHookshotReachedTarget" "hookshot_target_reached" "1" weight 5 required
 criterion "RubickEyeoftheStorm" "abilityname" "razor_eye_of_the_storm" weight 5 required
 criterion "IsRubickFailEpicenter" "failepicenter" "1.0" weight 5 required
 criterion "RubickEpicenter" "abilityname" "sandking_epicenter" weight 5 required
@@ -252,6 +264,28 @@ Rule rubick_CustomIsRubickIsRubickPrimalSplitDone_Rule
 	response rubick_CustomIsRubickIsRubickPrimalSplitDone
 }
 
+Response rubick_CustomIsRubickIsRubickHookshotReachedTarget
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickHookshotReachedTarget_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickHookshotReachedTarget
+	response rubick_CustomIsRubickIsRubickHookshotReachedTarget
+}
+
+Response rubick_CustomIsRubickIsRubickHookshotHit
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickHookshotHit_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickHookshotHit
+	response rubick_CustomIsRubickIsRubickHookshotHit
+}
+
 Response rubick_CustomIsRubickIsRubickExorcismEnd
 {
 	scene "" nodelay noscene 
@@ -297,6 +331,38 @@ Rule rubick_CustomIsRubickIsRubickFailEchoSlam_Rule
 {
 	criteria Custom Isrubick IsRubick IsRubickFailEchoSlam
 	response rubick_CustomIsRubickIsRubickFailEchoSlam
+}
+
+Response rubick_CustomIsRubickChainsGood
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_40.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_45.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickChainsGood_Rule
+{
+	criteria Custom Isrubick IsRubickChainsGood
+	response rubick_CustomIsRubickChainsGood
+}
+
+Response rubick_CustomIsRubickFirstGood
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_40.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_45.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickFirstGood_Rule
+{
+	criteria Custom Isrubick IsRubickFirstGood
+	response rubick_CustomIsRubickFirstGood
 }
 
 Response rubick_CustomIsRubickIsRubickEidolonsCreated
@@ -529,28 +595,6 @@ Rule rubick_CustomIsRubickIsRubickHookCatchNothing_Rule
 {
 	criteria Custom Isrubick IsRubick IsRubickHookCatchNothing
 	response rubick_CustomIsRubickIsRubickHookCatchNothing
-}
-
-Response rubick_CustomIsRubickIsRubickHookshotReachedTarget
-{
-	scene "" nodelay noscene 
-}
-
-Rule rubick_CustomIsRubickIsRubickHookshotReachedTarget_Rule
-{
-	criteria Custom Isrubick IsRubick IsRubickHookshotReachedTarget
-	response rubick_CustomIsRubickIsRubickHookshotReachedTarget
-}
-
-Response rubick_CustomIsRubickIsRubickHookshotHit
-{
-	scene "" nodelay noscene 
-}
-
-Rule rubick_CustomIsRubickIsRubickHookshotHit_Rule
-{
-	criteria Custom Isrubick IsRubick IsRubickHookshotHit
-	response rubick_CustomIsRubickIsRubickHookshotHit
 }
 
 Response rubick_CustomIsRubickIsRubickFailEpicenter
@@ -936,6 +980,39 @@ Rule rubick_KillIsRubickIsEnemyBeastmasterChance_30%RubickPrimalRoar_Rule
 	response rubick_KillIsRubickIsEnemyBeastmasterChance_30%RubickPrimalRoar
 }
 
+Response rubick_KillIsRubickIsEnemyBloodseekerChance_30%RubickRupture
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyBloodseekerChance_30%RubickRupture_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyBloodseeker Chance_30% RubickRupture
+	response rubick_KillIsRubickIsEnemyBloodseekerChance_30%RubickRupture
+}
+
+Response rubick_KillIsRubickIsEnemyCentaurChance_30%RubickStampede
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyCentaurChance_30%RubickStampede_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyCentaur Chance_30% RubickStampede
+	response rubick_KillIsRubickIsEnemyCentaurChance_30%RubickStampede
+}
+
+Response rubick_KillIsRubickIsEnemyRattletrapChance_30%RubickHookshot
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyRattletrapChance_30%RubickHookshot_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyRattletrap Chance_30% RubickHookshot
+	response rubick_KillIsRubickIsEnemyRattletrapChance_30%RubickHookshot
+}
+
 Response rubick_KillIsRubickIsEnemyCrystalMaidenChance_30%RubickFreezingField
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
@@ -980,6 +1057,17 @@ Rule rubick_KillIsRubickIsEnemyDoom_BringerChance_30%RubickDoom_Rule
 	response rubick_KillIsRubickIsEnemyDoom_BringerChance_30%RubickDoom
 }
 
+Response rubick_KillIsRubickIsEnemyEarth_SpiritChance_30%RubickMagnetize
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyEarth_SpiritChance_30%RubickMagnetize_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyEarth_Spirit Chance_30% RubickMagnetize
+	response rubick_KillIsRubickIsEnemyEarth_SpiritChance_30%RubickMagnetize
+}
+
 Response rubick_KillIsRubickIsEnemyEarthshakerChance_30%RubickEchoSlam
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
@@ -1002,6 +1090,17 @@ Rule rubick_KillIsRubickIsEnemyElder_TitanChance_30%RubickEarthSplitter_Rule
 	response rubick_KillIsRubickIsEnemyElder_TitanChance_30%RubickEarthSplitter
 }
 
+Response rubick_KillIsRubickIsEnemyEmber_SpiritChance_30%RubickFireRemnant
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyEmber_SpiritChance_30%RubickFireRemnant_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyEmber_Spirit Chance_30% RubickFireRemnant
+	response rubick_KillIsRubickIsEnemyEmber_SpiritChance_30%RubickFireRemnant
+}
+
 Response rubick_KillIsRubickIsEnemyEnigmaChance_30%RubickBlackHole
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
@@ -1011,17 +1110,6 @@ Rule rubick_KillIsRubickIsEnemyEnigmaChance_30%RubickBlackHole_Rule
 {
 	criteria Kill Isrubick IsRubick IsEnemyEnigma Chance_30% RubickBlackHole
 	response rubick_KillIsRubickIsEnemyEnigmaChance_30%RubickBlackHole
-}
-
-Response rubick_KillIsRubickIsEnemyFurionChance_30%RubickWrathofNature
-{
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
-}
-
-Rule rubick_KillIsRubickIsEnemyFurionChance_30%RubickWrathofNature_Rule
-{
-	criteria Kill Isrubick IsRubick IsEnemyFurion Chance_30% RubickWrathofNature
-	response rubick_KillIsRubickIsEnemyFurionChance_30%RubickWrathofNature
 }
 
 Response rubick_KillIsRubickIsEnemyGyrocopterChance_30%RubickCallDown
@@ -1101,6 +1189,17 @@ Rule rubick_KillIsRubickIsEnemyLichChance_30%RubickChainFrost_Rule
 	response rubick_KillIsRubickIsEnemyLichChance_30%RubickChainFrost
 }
 
+Response rubick_KillIsRubickIsEnemyLife_StealerChance_30%RubickInfest
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyLife_StealerChance_30%RubickInfest_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyLife_Stealer Chance_30% RubickInfest
+	response rubick_KillIsRubickIsEnemyLife_StealerChance_30%RubickInfest
+}
+
 Response rubick_KillIsRubickIsEnemyLinaChance_30%RubickLagunaBlade
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
@@ -1145,6 +1244,17 @@ Rule rubick_KillIsRubickIsEnemyMagnataurChance_30%RubickReversePolarity_Rule
 	response rubick_KillIsRubickIsEnemyMagnataurChance_30%RubickReversePolarity
 }
 
+Response rubick_KillIsRubickIsEnemyFurionChance_30%RubickWrathofNature
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyFurionChance_30%RubickWrathofNature_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyFurion Chance_30% RubickWrathofNature
+	response rubick_KillIsRubickIsEnemyFurionChance_30%RubickWrathofNature
+}
+
 Response rubick_KillIsRubickIsEnemyNecrolyteChance_30%RubickReapersScythe
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
@@ -1187,6 +1297,17 @@ Rule rubick_KillIsRubickIsEnemyPuckChance_30%RubickDreamCoil_Rule
 {
 	criteria Kill Isrubick IsRubick IsEnemyPuck Chance_30% RubickDreamCoil
 	response rubick_KillIsRubickIsEnemyPuckChance_30%RubickDreamCoil
+}
+
+Response rubick_KillIsRubickIsEnemyPudgeChance_30%RubickDismember
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyPudgeChance_30%RubickDismember_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyPudge Chance_30% RubickDismember
+	response rubick_KillIsRubickIsEnemyPudgeChance_30%RubickDismember
 }
 
 Response rubick_KillIsRubickIsEnemyPugnaChance_30%RubickLifeDrain
@@ -1409,6 +1530,39 @@ Rule rubick_KillIsRubickChance_3%RubickPrimalRoar_Rule
 	response rubick_KillIsRubickChance_3%RubickPrimalRoar
 }
 
+Response rubick_KillIsRubickChance_3%RubickRupture
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickRupture_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickRupture
+	response rubick_KillIsRubickChance_3%RubickRupture
+}
+
+Response rubick_KillIsRubickChance_3%RubickStampede
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickStampede_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickStampede
+	response rubick_KillIsRubickChance_3%RubickStampede
+}
+
+Response rubick_KillIsRubickChance_3%RubickHookshot
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickHookshot_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickHookshot
+	response rubick_KillIsRubickChance_3%RubickHookshot
+}
+
 Response rubick_KillIsRubickChance_3%RubickFreezingField
 {
 	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
@@ -1453,6 +1607,17 @@ Rule rubick_KillIsRubickChance_3%RubickDoom_Rule
 	response rubick_KillIsRubickChance_3%RubickDoom
 }
 
+Response rubick_KillIsRubickChance_3%RubickMagnetize
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickMagnetize_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickMagnetize
+	response rubick_KillIsRubickChance_3%RubickMagnetize
+}
+
 Response rubick_KillIsRubickChance_3%RubickEchoSlam
 {
 	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
@@ -1475,6 +1640,17 @@ Rule rubick_KillIsRubickChance_3%RubickEarthSplitter_Rule
 	response rubick_KillIsRubickChance_3%RubickEarthSplitter
 }
 
+Response rubick_KillIsRubickChance_3%RubickFireRemnant
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickFireRemnant_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickFireRemnant
+	response rubick_KillIsRubickChance_3%RubickFireRemnant
+}
+
 Response rubick_KillIsRubickChance_3%RubickBlackHole
 {
 	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
@@ -1484,17 +1660,6 @@ Rule rubick_KillIsRubickChance_3%RubickBlackHole_Rule
 {
 	criteria Kill Isrubick IsRubick Chance_3% RubickBlackHole
 	response rubick_KillIsRubickChance_3%RubickBlackHole
-}
-
-Response rubick_KillIsRubickChance_3%RubickWrathofNature
-{
-	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
-}
-
-Rule rubick_KillIsRubickChance_3%RubickWrathofNature_Rule
-{
-	criteria Kill Isrubick IsRubick Chance_3% RubickWrathofNature
-	response rubick_KillIsRubickChance_3%RubickWrathofNature
 }
 
 Response rubick_KillIsRubickChance_3%RubickCallDown
@@ -1574,6 +1739,17 @@ Rule rubick_KillIsRubickChance_3%RubickChainFrost_Rule
 	response rubick_KillIsRubickChance_3%RubickChainFrost
 }
 
+Response rubick_KillIsRubickChance_3%RubickInfest
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickInfest_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickInfest
+	response rubick_KillIsRubickChance_3%RubickInfest
+}
+
 Response rubick_KillIsRubickChance_3%RubickLagunaBlade
 {
 	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
@@ -1618,6 +1794,17 @@ Rule rubick_KillIsRubickChance_3%RubickReversePolarity_Rule
 	response rubick_KillIsRubickChance_3%RubickReversePolarity
 }
 
+Response rubick_KillIsRubickChance_3%RubickWrathofNature
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickWrathofNature_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickWrathofNature
+	response rubick_KillIsRubickChance_3%RubickWrathofNature
+}
+
 Response rubick_KillIsRubickChance_3%RubickReapersScythe
 {
 	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
@@ -1660,6 +1847,17 @@ Rule rubick_KillIsRubickChance_3%RubickDreamCoil_Rule
 {
 	criteria Kill Isrubick IsRubick Chance_3% RubickDreamCoil
 	response rubick_KillIsRubickChance_3%RubickDreamCoil
+}
+
+Response rubick_KillIsRubickChance_3%RubickDismember
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickDismember_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickDismember
+	response rubick_KillIsRubickChance_3%RubickDismember
 }
 
 Response rubick_KillIsRubickChance_3%RubickLifeDrain
@@ -1941,15 +2139,15 @@ Rule rubick_KillIsEnemySkywrath_MageChance_50%_Rule
 	response rubick_KillIsEnemySkywrath_MageChance_50%
 }
 
-Response rubick_KillIsEnemyKeeper_of_the_lightChance_50%
+Response rubick_KillIsEnemyKeeper_of_the_LightChance_50%
 {
 	scene "scenes/rubick/rubick_rubick_rival_16.vcd" nodelay noscene 
 }
 
-Rule rubick_KillIsEnemyKeeper_of_the_lightChance_50%_Rule
+Rule rubick_KillIsEnemyKeeper_of_the_LightChance_50%_Rule
 {
-	criteria Kill Isrubick IsEnemyKeeper_of_the_light Chance_50%
-	response rubick_KillIsEnemyKeeper_of_the_lightChance_50%
+	criteria Kill Isrubick IsEnemyKeeper_of_the_Light Chance_50%
+	response rubick_KillIsEnemyKeeper_of_the_LightChance_50%
 }
 
 Response rubick_KillIsEnemyCrystalMaidenChance_50%
@@ -1963,6 +2161,17 @@ Rule rubick_KillIsEnemyCrystalMaidenChance_50%_Rule
 	response rubick_KillIsEnemyCrystalMaidenChance_50%
 }
 
+Response rubick_KillIsEnemyAncient_ApparitionChance_50%
+{
+	scene "scenes/rubick/rubick_rubick_rival_17.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsEnemyAncient_ApparitionChance_50%_Rule
+{
+	criteria Kill Isrubick IsEnemyAncient_Apparition Chance_50%
+	response rubick_KillIsEnemyAncient_ApparitionChance_50%
+}
+
 Response rubick_KillIsEnemyLinaChance_50%
 {
 	scene "scenes/rubick/rubick_rubick_rival_18.vcd" nodelay noscene 
@@ -1972,6 +2181,17 @@ Rule rubick_KillIsEnemyLinaChance_50%_Rule
 {
 	criteria Kill Isrubick IsEnemyLina Chance_50%
 	response rubick_KillIsEnemyLinaChance_50%
+}
+
+Response rubick_KillIsEnemyEmber_SpiritChance_50%
+{
+	scene "scenes/rubick/rubick_rubick_rival_18.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsEnemyEmber_SpiritChance_50%_Rule
+{
+	criteria Kill Isrubick IsEnemyEmber_Spirit Chance_50%
+	response rubick_KillIsEnemyEmber_SpiritChance_50%
 }
 
 Response rubick_Move
@@ -2536,6 +2756,28 @@ Rule rubick_CastExecuteIsRubickIsRubickItem_Rule
 	response rubick_CastExecuteIsRubickIsRubickItem
 }
 
+Response rubick_CastExecuteIsRubickChains
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CastExecuteIsRubickChains_Rule
+{
+	criteria CastExecute Isrubick IsRubickChains
+	response rubick_CastExecuteIsRubickChains
+}
+
+Response rubick_CastExecuteIsRubickFist
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CastExecuteIsRubickFist_Rule
+{
+	criteria CastExecute Isrubick IsRubickFist
+	response rubick_CastExecuteIsRubickFist
+}
+
 Response rubick_CastExecuteIsRubickIsRubickSplitShot
 {
 	scene "" nodelay noscene 
@@ -2560,12 +2802,12 @@ Rule rubick_CastExecuteIsRubickIsRubickManaShield_Rule
 
 Response rubick_CastExecuteIsRubickIsRubickManaShieldChance_20%
 {
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_40.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_45.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_40.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_45.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene weapondelay 5
 }
 
 Rule rubick_CastExecuteIsRubickIsRubickManaShieldChance_20%_Rule
@@ -2585,6 +2827,22 @@ Rule rubick_CastExecuteIsRubickIsRubickMeatHook_Rule
 	response rubick_CastExecuteIsRubickIsRubickMeatHook
 }
 
+Response rubick_CastExecuteIsRubickIsRubickRot
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_40.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_45.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene weapondelay 5
+}
+
+Rule rubick_CastExecuteIsRubickIsRubickRot_Rule
+{
+	criteria CastExecute Isrubick IsRubick IsRubickRot
+	response rubick_CastExecuteIsRubickIsRubickRot
+}
+
 Response rubick_CastExecuteIsRubickIsRubickBerserker
 {
 	scene "" nodelay noscene 
@@ -2596,20 +2854,20 @@ Rule rubick_CastExecuteIsRubickIsRubickBerserker_Rule
 	response rubick_CastExecuteIsRubickIsRubickBerserker
 }
 
-Response rubick_CastExecuteIsRubickIsRubickBerserkerChance_15%
+Response rubick_CastExecuteIsRubickIsRubickBerserkerChance_20%
 {
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_40.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_45.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_40.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_45.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene weapondelay 5
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene weapondelay 5
 }
 
-Rule rubick_CastExecuteIsRubickIsRubickBerserkerChance_15%_Rule
+Rule rubick_CastExecuteIsRubickIsRubickBerserkerChance_20%_Rule
 {
-	criteria CastExecute Isrubick IsRubick IsRubickBerserker Chance_15%
-	response rubick_CastExecuteIsRubickIsRubickBerserkerChance_15%
+	criteria CastExecute Isrubick IsRubick IsRubickBerserker Chance_20%
+	response rubick_CastExecuteIsRubickIsRubickBerserkerChance_20%
 }
 
 Response rubick_CastExecuteIsRubickIsRubickReadyPunch
@@ -2804,6 +3062,18 @@ Rule rubick_DeathIsReincarnating_Rule
 {
 	criteria Death Isrubick IsReincarnating
 	response rubick_DeathIsReincarnating
+}
+
+Response rubick_DeathIsEnemyRubick
+{
+	scene "scenes/rubick/rubick_rubick_failure_02.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_failure_03.vcd" nodelay noscene 
+}
+
+Rule rubick_DeathIsEnemyRubick_Rule
+{
+	criteria Death Isrubick IsEnemyRubick
+	response rubick_DeathIsEnemyRubick
 }
 
 Response rubick_Select

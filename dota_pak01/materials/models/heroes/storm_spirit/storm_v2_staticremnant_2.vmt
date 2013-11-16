@@ -1,0 +1,65 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/storm_spirit/storm_v2_base_color"
+	"$normalmap" "models/heroes/storm_spirit/storm_v2_base_normal"
+	"$maskmap1" "models/heroes/storm_spirit/storm_v2_base_masks1"
+	"$maskmap2" "models/heroes/storm_spirit/storm_v2_base_masks2"
+
+	$IgnoreBudgetCheck 1
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$SPECULAR_BLOOM_SCALE 4
+	$SPECULAREXPONENT 3
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[0 .5 1]"
+	
+	"$colorwarp" "models/heroes/statusEffects/colorwarp_staticremnant"
+	"$colorwarpintensity" ".4"
+
+	"$detail1"  "models/heroes/statuseffects/electric"
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 7
+	$DETAIL1BLENDFACTOR 8
+
+	"$detail2"  "models/heroes/statuseffects/electric"
+	$DETAIL2BLENDMODE 1
+	$DETAIL2SCALE 4
+	$DETAIL2BLENDFACTOR 1.1
+	$DETAIL2BLENDTOFULL .125
+
+	$RIMLIGHTSCALE 31
+	$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTCOLOR "[0 .3 1]"
+	
+	"$additive" "1"
+
+	"$cloakPassEnabled" "1"
+	$cloakfactor .255
+
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar" "$RIMLIGHTSCALE"
+			"sineperiod" ".113"
+			"sinemin" "2"
+			"sinemax" "31"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	".5"
+			"texturescrollangle"	"53"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail2texturetransform"
+			"texturescrollrate"	".1255"
+			"texturescrollangle"	"59"
+		}
+		"UseCombinedTexture"
+		{
+		}
+	}
+}

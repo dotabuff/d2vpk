@@ -1380,7 +1380,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Burns…doesn't it.
+Burns...doesn't it.
 }
 WORDS
 {
@@ -2174,7 +2174,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Death…from above.
+Death...from above.
 }
 WORDS
 {
@@ -2415,7 +2415,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Did you wonder what death was like?  Here it is.
+Did you wonder what death was like? Here it is.
 }
 WORDS
 {
@@ -2839,6 +2839,54 @@ WORD Visage 2.544 3.488
 122 z 2.896 3.008 1
 601 ax 3.008 3.264 1
 676 jh 3.264 3.488 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\viper\vipe_rare_02.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Feathers are for the weak.
+}
+WORDS
+{
+WORD Feathers 0.128 1.136
+{
+102 f 0.128 0.256 1
+603 eh 0.256 0.832 1
+240 dh 0.832 0.848 1
+602 er 0.848 0.864 1
+122 z 0.864 1.136 1
+}
+WORD are 1.568 1.712
+{
+593 aa 1.568 1.696 1
+633 r 1.696 1.712 1
+}
+WORD for 1.712 1.888
+{
+102 f 1.712 1.808 1
+602 er 1.808 1.888 1
+}
+WORD the 1.888 1.968
+{
+240 dh 1.888 1.952 1
+652 ah 1.952 1.968 1
+}
+WORD weak 1.968 2.352
+{
+119 w 1.968 2.128 1
+105 iy 2.128 2.336 1
+107 k 2.336 2.352 1
 }
 }
 EMPHASIS
@@ -3587,7 +3635,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I'm spitting…blood.
+I'm spitting...blood.
 }
 WORDS
 {
@@ -3718,7 +3766,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Vipe…out.
+Vipe...out.
 }
 WORDS
 {
@@ -3748,7 +3796,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Lead…poisoning.
+Lead...poisoning.
 }
 WORDS
 {
@@ -4033,7 +4081,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I spread my wings…anew.
+I spread my wings...anew.
 }
 WORDS
 {
@@ -4314,7 +4362,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I am no sorcerer's familiar.  Rather, I'll take a sorcerer as my pet.
+I am no sorcerer's familiar. Rather, I'll take a sorcerer as my pet.
 }
 WORDS
 {
@@ -4398,54 +4446,6 @@ WORD pet 6.160 6.192
 {
 112 p 6.160 6.176 1
 116 t 6.176 6.192 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\viper\vipe_rare_02.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Feather's are for the weak.
-}
-WORDS
-{
-WORD Feather's 0.128 1.136
-{
-102 f 0.128 0.256 1
-603 eh 0.256 0.832 1
-240 dh 0.832 0.848 1
-602 er 0.848 0.864 1
-122 z 0.864 1.136 1
-}
-WORD are 1.568 1.712
-{
-593 aa 1.568 1.696 1
-633 r 1.696 1.712 1
-}
-WORD for 1.712 1.888
-{
-102 f 1.712 1.808 1
-602 er 1.808 1.888 1
-}
-WORD the 1.888 1.968
-{
-240 dh 1.888 1.952 1
-652 ah 1.952 1.968 1
-}
-WORD weak 1.968 2.352
-{
-119 w 1.968 2.128 1
-105 iy 2.128 2.336 1
-107 k 2.336 2.352 1
 }
 }
 EMPHASIS
@@ -4914,7 +4914,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Orb of venom.  I need this why?
+Orb of venom. I need this why?
 }
 WORDS
 {
@@ -5482,7 +5482,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Now I fly no more…forever.
+Now I fly no more...forever.
 }
 WORDS
 {
@@ -6923,19 +6923,15 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag!
+It's in the bag!
 }
 WORDS
 {
-WORD It 0.176 0.208
+WORD It's 0.176 0.448
 {
-618 ih 0.176 0.192 1
-116 t 0.192 0.208 1
-}
-WORD s 0.208 0.448
-{
-603 eh 0.208 0.336 1
-115 s 0.336 0.448 1
+618 ih 0.176 0.336 1
+116 t 0.336 0.352 1
+115 s 0.352 0.448 1
 }
 WORD in 0.448 0.880
 {

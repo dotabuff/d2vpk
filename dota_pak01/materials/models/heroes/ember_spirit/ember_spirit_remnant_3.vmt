@@ -1,0 +1,56 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\ember_spirit\ember_spirit_color"
+	"$normalmap" "models\heroes\ember_spirit\ember_spirit_normal"
+	"$maskmap1" "models\heroes\ember_spirit\ember_spirit_masks1"
+	"$maskmap2" "models\heroes\ember_spirit\ember_spirit_masks2"
+	"$detail1"  "models\heroes\ember_spirit\ember_spirit_detail"
+ 
+ 
+ 	$SPECULAR_BLOOM_SCALE      2.5
+	$DETAILSCALEVAR 1
+ 
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[2.5 6.8 15.4]"
+	
+	$RIMLIGHTSCALE 5
+	$RIMLIGHTCOLOR "[1 .2 0]"
+
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+	$alphatest 1
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1.5
+
+	//$ENVMAP "models/cubemaps/glossy_orange"
+	//$ENVMAPINTENSITY 1
+	//$MASKENVBYMETALNESS 1	
+
+	"$colorwarp" "models/heroes/statusEffects/colorwarp_redchrome"
+	"$colorwarpintensity" ".25"
+
+	"$detail2"  "models\heroes\StatusEffects\burning"
+	$DETAIL2BLENDMODE 2
+	$DETAIL2SCALE 4.25
+	$DETAIL2BLENDFACTOR 2
+	
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.1"
+			"texturescrollangle"	"85"
+			"texturescale" .75	
+		}
+		"UseCombinedTexture"
+		{
+		}	
+	}
+
+}

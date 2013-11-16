@@ -89,28 +89,28 @@ Rule tidehunter_CastOrder_Rule
 	response tidehunter_CastOrder
 }
 
-Response tidehunter_KillIsAbilityGushChance_50%
+Response tidehunter_KillIsAbilityGushChance_25%
 {
 	scene "scenes/tidehunter/tidehunter_tide_ability_gush_01.vcd" nodelay noscene 
 	scene "scenes/tidehunter/tidehunter_tide_ability_gush_02.vcd" nodelay noscene 
 }
 
-Rule tidehunter_KillIsAbilityGushChance_50%_Rule
+Rule tidehunter_KillIsAbilityGushChance_25%_Rule
 {
-	criteria Kill Istidehunter IsAbilityGush Chance_50%
-	response tidehunter_KillIsAbilityGushChance_50%
+	criteria Kill Istidehunter IsAbilityGush Chance_25%
+	response tidehunter_KillIsAbilityGushChance_25%
 }
 
-Response tidehunter_KillIsAbilityRavageChance_50%
+Response tidehunter_KillIsAbilityRavageChance_25%
 {
 	scene "scenes/tidehunter/tidehunter_tide_ability_ravage_01.vcd" nodelay noscene 
 	scene "scenes/tidehunter/tidehunter_tide_ability_ravage_02.vcd" nodelay noscene 
 }
 
-Rule tidehunter_KillIsAbilityRavageChance_50%_Rule
+Rule tidehunter_KillIsAbilityRavageChance_25%_Rule
 {
-	criteria Kill Istidehunter IsAbilityRavage Chance_50%
-	response tidehunter_KillIsAbilityRavageChance_50%
+	criteria Kill Istidehunter IsAbilityRavage Chance_25%
+	response tidehunter_KillIsAbilityRavageChance_25%
 }
 
 Response tidehunter_Kill
@@ -605,6 +605,20 @@ Rule tidehunter_LastHit_Rule
 	response tidehunter_LastHit
 }
 
+Response tidehunter_Defeat
+{
+	scene "scenes/tidehunter/tidehunter_tide_death_01.vcd" nodelay noscene 
+	scene "scenes/tidehunter/tidehunter_tide_lose_01.vcd" nodelay noscene 
+	scene "scenes/tidehunter/tidehunter_tide_lose_02.vcd" nodelay noscene 
+	scene "scenes/tidehunter/tidehunter_tide_lose_03.vcd" nodelay noscene 
+}
+
+Rule tidehunter_Defeat_Rule
+{
+	criteria Defeat Istidehunter 
+	response tidehunter_Defeat
+}
+
 Response tidehunter_Death
 {
 	scene "scenes/tidehunter/tidehunter_tide_death_02.vcd" nodelay noscene 
@@ -815,19 +829,6 @@ Rule tidehunter_Deny_Rule
 	response tidehunter_Deny
 }
 
-Response tidehunter_Defeat
-{
-	scene "scenes/tidehunter/tidehunter_tide_lose_01.vcd" nodelay noscene 
-	scene "scenes/tidehunter/tidehunter_tide_lose_02.vcd" nodelay noscene 
-	scene "scenes/tidehunter/tidehunter_tide_lose_03.vcd" nodelay noscene 
-}
-
-Rule tidehunter_Defeat_Rule
-{
-	criteria Defeat Istidehunter 
-	response tidehunter_Defeat
-}
-
 Response tidehunter_Victory
 {
 	scene "scenes/tidehunter/tidehunter_tide_win_01.vcd" nodelay noscene 
@@ -1030,7 +1031,7 @@ Rule tidehunter_InTheBag_Rule
 	response tidehunter_InTheBag
 }
 
-Response tidehunter_PainChance_25%
+Response tidehunter_Pain
 {
 	scene "scenes/tidehunter/tidehunter_tide_pain_01.vcd" nodelay noscene 
 	scene "scenes/tidehunter/tidehunter_tide_pain_02.vcd" nodelay noscene 
@@ -1039,21 +1040,21 @@ Response tidehunter_PainChance_25%
 	scene "scenes/tidehunter/tidehunter_tide_pain_05.vcd" nodelay noscene 
 }
 
-Rule tidehunter_PainChance_25%_Rule
-{
-	criteria Pain Istidehunter Chance_25%
-	response tidehunter_PainChance_25%
-}
-
-Response tidehunter_Pain
-{
-	scene "scenes/tidehunter/tidehunter_tide_underattack_01.vcd" nodelay noscene 
-}
-
 Rule tidehunter_Pain_Rule
 {
 	criteria Pain Istidehunter 
 	response tidehunter_Pain
+}
+
+Response tidehunter_PainChance_25%
+{
+	scene "scenes/tidehunter/tidehunter_tide_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule tidehunter_PainChance_25%_Rule
+{
+	criteria Pain Istidehunter Chance_25%
+	response tidehunter_PainChance_25%
 }
 
 Response tidehunter_ItemDropIsCommonDrop

@@ -176,15 +176,15 @@ Rule ogre_magi_Kill_Rule
 	response ogre_magi_Kill
 }
 
-Response ogre_magi_KillIsEnemyUrsaChance_35%
+Response ogre_magi_KillIsEnemyUrsaChance_5%
 {
 	scene "scenes/ogre_magi/ogre_magi_ogmag_rival_01.vcd" nodelay noscene 
 }
 
-Rule ogre_magi_KillIsEnemyUrsaChance_35%_Rule
+Rule ogre_magi_KillIsEnemyUrsaChance_5%_Rule
 {
-	criteria Kill Isogre_magi IsEnemyUrsa Chance_35%
-	response ogre_magi_KillIsEnemyUrsaChance_35%
+	criteria Kill Isogre_magi IsEnemyUrsa Chance_5%
+	response ogre_magi_KillIsEnemyUrsaChance_5%
 }
 
 Response ogre_magi_KillIsEnemyFaceless_VoidChance_35%
@@ -934,6 +934,7 @@ Response ogre_magi_Thanks
 {
 	scene "scenes/ogre_magi/ogre_magi_ogmag_thanks_01.vcd" nodelay noscene 
 	scene "scenes/ogre_magi/ogre_magi_ogmag_thanks_02.vcd" nodelay noscene 
+	scene "scenes/ogre_magi/ogre_magi_ogmag_thanks_03.vcd" nodelay noscene 
 }
 
 Rule ogre_magi_Thanks_Rule
@@ -945,6 +946,16 @@ Rule ogre_magi_Thanks_Rule
 Response ogre_magi_PainChance_25%
 {
 	scene "scenes/ogre_magi/ogre_magi_ogmag_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule ogre_magi_PainChance_25%_Rule
+{
+	criteria Pain Isogre_magi Chance_25%
+	response ogre_magi_PainChance_25%
+}
+
+Response ogre_magi_Pain
+{
 	scene "scenes/ogre_magi/ogre_magi_ogmag_pain_01.vcd" nodelay noscene 
 	scene "scenes/ogre_magi/ogre_magi_ogmag_pain_02.vcd" nodelay noscene 
 	scene "scenes/ogre_magi/ogre_magi_ogmag_pain_03.vcd" nodelay noscene 
@@ -955,10 +966,10 @@ Response ogre_magi_PainChance_25%
 	scene "scenes/ogre_magi/ogre_magi_ogmag_pain_08.vcd" nodelay noscene 
 }
 
-Rule ogre_magi_PainChance_25%_Rule
+Rule ogre_magi_Pain_Rule
 {
-	criteria Pain Isogre_magi Chance_25%
-	response ogre_magi_PainChance_25%
+	criteria Pain Isogre_magi 
+	response ogre_magi_Pain
 }
 
 Response ogre_magi_InTheBag
@@ -1028,21 +1039,6 @@ Rule ogre_magi_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isogre_magi IsEmoteLaugh
 	response ogre_magi_EmoteIsEmoteLaugh
-}
-
-Response ogre_magi_EmoteIsEmoteAnger
-{
-	scene "scenes/ogre_magi/ogre_magi_ogmag_anger_01.vcd" nodelay noscene 
-	scene "scenes/ogre_magi/ogre_magi_ogmag_anger_02.vcd" nodelay noscene 
-	scene "scenes/ogre_magi/ogre_magi_ogmag_anger_03.vcd" nodelay noscene 
-	scene "scenes/ogre_magi/ogre_magi_ogmag_anger_04.vcd" nodelay noscene 
-	scene "scenes/ogre_magi/ogre_magi_ogmag_anger_05.vcd" nodelay noscene 
-}
-
-Rule ogre_magi_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isogre_magi IsEmoteAnger
-	response ogre_magi_EmoteIsEmoteAnger
 }
 
 Response ogre_magi_Select

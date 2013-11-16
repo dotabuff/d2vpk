@@ -218,6 +218,10 @@
 	{
 	}
 	
+	"dota_starting_position_changed"
+	{
+	}
+
 	"dota_money_changed"
 	{
 	}
@@ -241,7 +245,13 @@
 	"dota_inventory_changed"
 	{
 	}
-
+	
+	"dota_item_picked_up"
+	{
+		"itemname"	"string"
+		"PlayerID"	"short"
+	}
+	
 	"dota_inventory_item_changed"
 	{
 		"entityIndex"	"short"
@@ -321,6 +331,12 @@
 	{
 	}
 	"fantasy_updated"
+	{
+	}
+	"fantasy_league_changed"
+	{
+	}
+	"fantasy_score_info_changed"
 	{
 	}
 	"game_rules_state_change"
@@ -408,6 +424,11 @@
 	{
 		"abilityname"	"string"
 	}
+	"dota_ability_channel_finished"
+	{
+		"abilityname"	"string"
+		"interrupted"	"bool"
+	}
 	"dota_player_killed"
 	{
 		"PlayerID"		"short"
@@ -469,9 +490,14 @@
 		"eventtype"		"short"		// EDOTAHeroChaseEventType
 	}
 
-	"dota_quest_complete"
+	"dota_quest_started"
 	{
-		"pQuest"		"local"		// CDotaBaseQuest
+		"questIndex"	"long"			// entity index
+	}
+
+	"dota_quest_completed"
+	{
+		"questIndex"	"long"			// entity index
 	}
 	
 	"gameui_activated"
@@ -718,11 +744,25 @@
 		"buffersize" "long"
 		"address" "string"
 	}
+	"hero_selector_preview_set"
+	{
+		"setindex" "short"
+	}
 
 	"antiaddiction_toast"
 	{
 		"message"	"string"
 		"duration"	"float"
+	}
+	"hero_picker_shown"
+	{
+	}
+	"hero_picker_hidden"
+	{
+	}
+
+	"dota_local_quickbuy_changed"
+	{
 	}
 }
 

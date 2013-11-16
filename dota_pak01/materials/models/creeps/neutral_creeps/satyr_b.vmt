@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	$baseTexture "models\creeps\neutral_creeps\satyr_b_color"
+	"$normalmap" "models\creeps\neutral_creeps\satyr_b_normal"
+	"$maskmap1" "models\creeps\neutral_creeps\satyr_b_masks1"
+	"$maskmap2" "models\creeps\neutral_creeps\satyr_b_masks2"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 8
+	$SPECULARCOLOR "[.8 .7 1]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTEXPONENT 10
+	$AMBIENTSCALE 1
+
+	$ignorebudgetcheck 1
+
+// Status Effects
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}

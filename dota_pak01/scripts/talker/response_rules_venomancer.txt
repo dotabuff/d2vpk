@@ -87,31 +87,28 @@ Rule venomancer_CastOrder_Rule
 	response venomancer_CastOrder
 }
 
-Response venomancer_CastExecuteIsVenomPlagueWardChance_50%
+Response venomancer_CastExecuteIsVenomPlagueWardChance_25%
 {
-	scene "scenes/venomancer/venomancer_venm_ability_ward_01.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_ward_02.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_ward_03.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_ward_04.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_ward_05.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_ward_06.vcd" nodelay noscene 
+	scene "scenes/venomancer/venomancer_venm_ability_ward_01.vcd" nodelay noscene respeakdelay 60
+	scene "scenes/venomancer/venomancer_venm_ability_ward_02.vcd" nodelay noscene respeakdelay 60
+	scene "scenes/venomancer/venomancer_venm_ability_ward_03.vcd" nodelay noscene respeakdelay 60
+	scene "scenes/venomancer/venomancer_venm_ability_ward_04.vcd" nodelay noscene respeakdelay 60
+	scene "scenes/venomancer/venomancer_venm_ability_ward_05.vcd" nodelay noscene respeakdelay 60
+	scene "scenes/venomancer/venomancer_venm_ability_ward_06.vcd" nodelay noscene respeakdelay 60
 }
 
-Rule venomancer_CastExecuteIsVenomPlagueWardChance_50%_Rule
+Rule venomancer_CastExecuteIsVenomPlagueWardChance_25%_Rule
 {
-	criteria CastExecute Isvenomancer IsVenomPlagueWard Chance_50%
-	response venomancer_CastExecuteIsVenomPlagueWardChance_50%
+	criteria CastExecute Isvenomancer IsVenomPlagueWard Chance_25%
+	response venomancer_CastExecuteIsVenomPlagueWardChance_25%
 }
 
 Response venomancer_CastExecuteIsVenomPoisonNova
 {
-	scene "scenes/venomancer/venomancer_venm_ability_nova_01.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_nova_02.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_03.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_04.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_05.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_06.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_nova_07.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_08.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_09.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_10.vcd" nodelay noscene 
@@ -120,11 +117,8 @@ Response venomancer_CastExecuteIsVenomPoisonNova
 	scene "scenes/venomancer/venomancer_venm_ability_nova_13.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_14.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_15.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_nova_16.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_17.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_nova_18.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_19.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_ability_nova_20.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_ability_nova_21.vcd" nodelay noscene 
 }
 
@@ -192,28 +186,28 @@ Rule venomancer_Kill_Rule
 	response venomancer_Kill
 }
 
-Response venomancer_KillIsEnemyViperChance_50%
+Response venomancer_KillIsEnemyViperChance_35%
 {
 	scene "scenes/venomancer/venomancer_venm_rival_01.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_rival_02.vcd" nodelay noscene 
 }
 
-Rule venomancer_KillIsEnemyViperChance_50%_Rule
+Rule venomancer_KillIsEnemyViperChance_35%_Rule
 {
-	criteria Kill Isvenomancer IsEnemyViper Chance_50%
-	response venomancer_KillIsEnemyViperChance_50%
+	criteria Kill Isvenomancer IsEnemyViper Chance_35%
+	response venomancer_KillIsEnemyViperChance_35%
 }
 
-Response venomancer_KillIsEnemyNecrolyteChance_50%
+Response venomancer_KillIsEnemyNecrolyteChance_35%
 {
 	scene "scenes/venomancer/venomancer_venm_rival_03.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_rival_04.vcd" nodelay noscene 
 }
 
-Rule venomancer_KillIsEnemyNecrolyteChance_50%_Rule
+Rule venomancer_KillIsEnemyNecrolyteChance_35%_Rule
 {
-	criteria Kill Isvenomancer IsEnemyNecrolyte Chance_50%
-	response venomancer_KillIsEnemyNecrolyteChance_50%
+	criteria Kill Isvenomancer IsEnemyNecrolyte Chance_35%
+	response venomancer_KillIsEnemyNecrolyteChance_35%
 }
 
 Response venomancer_KillIsFirstBlood
@@ -405,36 +399,6 @@ Rule venomancer_Bottling_Rule
 {
 	criteria Bottling Isvenomancer 
 	response venomancer_Bottling
-}
-
-Response venomancer_MissingIsLaneTop
-{
-}
-
-Rule venomancer_MissingIsLaneTop_Rule
-{
-	criteria Missing Isvenomancer IsLaneTop
-	response venomancer_MissingIsLaneTop
-}
-
-Response venomancer_MissingIsLaneMid
-{
-}
-
-Rule venomancer_MissingIsLaneMid_Rule
-{
-	criteria Missing Isvenomancer IsLaneMid
-	response venomancer_MissingIsLaneMid
-}
-
-Response venomancer_MissingIsLaneBot
-{
-}
-
-Rule venomancer_MissingIsLaneBot_Rule
-{
-	criteria Missing Isvenomancer IsLaneBot
-	response venomancer_MissingIsLaneBot
 }
 
 Response venomancer_Deny
@@ -682,10 +646,19 @@ Rule venomancer_Thanks_Rule
 	response venomancer_Thanks
 }
 
+Response venomancer_PainChance_25%
+{
+	scene "scenes/venomancer/venomancer_venm_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule venomancer_PainChance_25%_Rule
+{
+	criteria Pain Isvenomancer Chance_25%
+	response venomancer_PainChance_25%
+}
+
 Response venomancer_Pain
 {
-	scene "scenes/venomancer/venomancer_venm_underattack_01.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_underattack_02.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_pain_01.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_pain_02.vcd" nodelay noscene 
 	scene "scenes/venomancer/venomancer_venm_pain_03.vcd" nodelay noscene 
@@ -730,21 +703,5 @@ Rule venomancer_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isvenomancer IsEmoteLaugh
 	response venomancer_EmoteIsEmoteLaugh
-}
-
-Response venomancer_EmoteIsEmoteAnger
-{
-	scene "scenes/venomancer/venomancer_venm_anger_01.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_anger_02.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_anger_03.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_anger_04.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_anger_05.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_anger_06.vcd" nodelay noscene 
-}
-
-Rule venomancer_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isvenomancer IsEmoteAnger
-	response venomancer_EmoteIsEmoteAnger
 }
 

@@ -1,0 +1,56 @@
+"CustomHero"
+{
+	"$baseTexture" "models/particle/earth_spirit_rockspike_color"
+	"$normalmap" "models/particle/earth_spirit_rockspike_normal"
+	"$detail1" "models/heroes/earth_spirit/earth_spirit_energy"
+	"$diffusewarp" "models/heroes/earth_spirit/earth_spirit_lightwarp"
+	"$maskmap1" "models/particle/earth_spirit_rockspike_mask1"
+	"$maskmap2" "models/particle/earth_spirit_rockspike_mask2"
+	"$fresnelwarp" "models/heroes/earth_spirit/earth_spirit_fresnelranges"
+
+	$MASKENVBYMETALNESS 1
+	$ENVMAP "models/cubemaps/cube_earthspirit"
+	$ENVMAPINTENSITY 1
+
+	$SPECULAR_BLOOM_SCALE      0.01
+	$SPECULAREXPONENT 15	
+	$SPECULARSCALE 2	
+	$SPECULARCOLOR "[1 0.9 1]"
+	$RIMLIGHTCOLOR "[0.9 0.8 0.4]"
+	//$SPECULARBLENDTOFULL 1
+	$ignorebudgetcheck 1
+	$RIMLIGHTSCALE 2
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 20
+	$DETAIL1BLENDFACTOR 2
+//	$DETAIL1BLENDTOFULL 0
+	$alphatest 1
+
+	"$cloakPassEnabled" "1"
+	$CLOAK_BLUR_AMOUNT        0.001
+
+	//$cloakintensity 0.001   //blend % with original base color
+	//$cloakfactor 0.001        //
+	//$refractamount 0.00     //level of refraction
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.25"
+			"texturescrollangle"	 "0.25"	
+		}
+
+
+		//"invis_proxy"
+		//{
+		//}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

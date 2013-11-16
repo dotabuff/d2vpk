@@ -10,10 +10,10 @@ criterion "IsRattletrapHookshotReachedTarget" "hookshot_target_reached" "1" weig
 
 Response rattletrap_Spawn
 {
-	scene "scenes/rattletrap/rattletrap_ratt_spawn_01.vcd" nodelay noscene 
 	scene "scenes/rattletrap/rattletrap_ratt_spawn_02.vcd" nodelay noscene 
 	scene "scenes/rattletrap/rattletrap_ratt_spawn_03.vcd" nodelay noscene 
 	scene "scenes/rattletrap/rattletrap_ratt_spawn_04.vcd" nodelay noscene 
+	scene "scenes/rattletrap/rattletrap_ratt_spawn_05.vcd" nodelay noscene 
 }
 
 Rule rattletrap_Spawn_Rule

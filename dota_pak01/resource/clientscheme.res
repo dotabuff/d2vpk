@@ -600,7 +600,7 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"42"
+				"tall"		"28"
 				"weight"	"500"
 			}
 		}
@@ -609,7 +609,7 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"42"
+				"tall"		"28"
 				"weight"	"500"
 				"italic"	"1"
 			}
@@ -619,7 +619,7 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"42"
+				"tall"		"28"
 				"weight"	"900"
 			}
 		}
@@ -628,7 +628,7 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"42"
+				"tall"		"28"
 				"weight"	"900"
 				"italic"	"1"
 			}
@@ -638,7 +638,7 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"26"
+				"tall"		"14"
 				"tall_hidef"	"38"
 				"weight"	"900"
 				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A

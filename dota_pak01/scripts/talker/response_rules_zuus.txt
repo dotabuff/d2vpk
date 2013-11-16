@@ -33,54 +33,15 @@ Rule zuus_CustomIsGameStart_Rule
 	response zuus_CustomIsGameStart
 }
 
-Response zuus_Move
+Response zuus_KillIsFirstBlood
 {
-	scene "scenes/zuus/zuus_zuus_move_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_move_02.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_move_03.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_move_04.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_move_05.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_move_06.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_move_07.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_move_09.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_move_10.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_firstblood_01.vcd" nodelay noscene 
 }
 
-Rule zuus_Move_Rule
+Rule zuus_KillIsFirstBlood_Rule
 {
-	criteria Move Iszuus 
-	response zuus_Move
-}
-
-Response zuus_Attack
-{
-	scene "scenes/zuus/zuus_zuus_attack_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_attack_02.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_attack_03.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_attack_04.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_attack_05.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_attack_06.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_attack_07.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_attack_08.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_attack_09.vcd" nodelay noscene 
-}
-
-Rule zuus_Attack_Rule
-{
-	criteria Attack Iszuus 
-	response zuus_Attack
-}
-
-Response zuus_CastOrder
-{
-	scene "scenes/zuus/zuus_zuus_cast_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_cast_02.vcd" nodelay noscene 
-}
-
-Rule zuus_CastOrder_Rule
-{
-	criteria CastOrder Iszuus 
-	response zuus_CastOrder
+	criteria Kill Iszuus IsFirstBlood
+	response zuus_KillIsFirstBlood
 }
 
 Response zuus_KillIsThunderGodsWrath
@@ -150,6 +111,7 @@ Response zuus_Kill
 	scene "scenes/zuus/zuus_zuus_kill_14.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_kill_15.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_laugh_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_laugh_02.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_laugh_03.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_laugh_04.vcd" nodelay noscene 
 }
@@ -329,7 +291,7 @@ Rule zuus_KillIsEnemyDrowRangerChance_20%_Rule
 
 Response zuus_KillIsEnemyInvokerChance_20%
 {
-	scene "scenes/zuus/zuus_zuus_rival_18.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_rival_18.vcd" nodelay noscene IsProfanity
 	scene "scenes/zuus/zuus_zuus_rival_19.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_rival_20.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_rival_21.vcd" nodelay noscene 
@@ -341,15 +303,54 @@ Rule zuus_KillIsEnemyInvokerChance_20%_Rule
 	response zuus_KillIsEnemyInvokerChance_20%
 }
 
-Response zuus_KillIsFirstBlood
+Response zuus_Move
 {
-	scene "scenes/zuus/zuus_zuus_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_02.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_03.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_04.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_05.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_06.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_07.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_09.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_move_10.vcd" nodelay noscene 
 }
 
-Rule zuus_KillIsFirstBlood_Rule
+Rule zuus_Move_Rule
 {
-	criteria Kill Iszuus IsFirstBlood
-	response zuus_KillIsFirstBlood
+	criteria Move Iszuus 
+	response zuus_Move
+}
+
+Response zuus_Attack
+{
+	scene "scenes/zuus/zuus_zuus_attack_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_attack_02.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_attack_03.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_attack_04.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_attack_05.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_attack_06.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_attack_07.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_attack_08.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_attack_09.vcd" nodelay noscene 
+}
+
+Rule zuus_Attack_Rule
+{
+	criteria Attack Iszuus 
+	response zuus_Attack
+}
+
+Response zuus_CastOrder
+{
+	scene "scenes/zuus/zuus_zuus_cast_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_cast_02.vcd" nodelay noscene 
+}
+
+Rule zuus_CastOrder_Rule
+{
+	criteria CastOrder Iszuus 
+	response zuus_CastOrder
 }
 
 Response zuus_Defeat
@@ -386,7 +387,6 @@ Rule zuus_Death_Rule
 
 Response zuus_DeathIsReincarnating
 {
-	scene "scenes/zuus/zuus_zuus_laugh_02.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_fastres_01.vcd" nodelay noscene 
 }
 
@@ -414,133 +414,6 @@ Rule zuus_Respawn_Rule
 {
 	criteria Respawn Iszuus 
 	response zuus_Respawn
-}
-
-Response zuus_Select
-{
-	scene "scenes/zuus/zuus_zuus_rare_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_rare_02.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_rare_03.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_rare_04.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_rare_05.vcd" nodelay noscene 
-}
-
-Rule zuus_Select_Rule
-{
-	criteria Select Iszuus 
-	response zuus_Select
-}
-
-Response zuus_PurchaseIsExpensiveItem
-{
-	scene "scenes/zuus/zuus_zuus_purch_01.vcd" nodelay noscene speakonce
-	scene "scenes/zuus/zuus_zuus_purch_02.vcd" nodelay noscene speakonce
-	scene "scenes/zuus/zuus_zuus_purch_03.vcd" nodelay noscene speakonce
-}
-
-Rule zuus_PurchaseIsExpensiveItem_Rule
-{
-	criteria Purchase Iszuus IsExpensiveItem
-	response zuus_PurchaseIsExpensiveItem
-}
-
-Response zuus_PurchaseIsUltimateScepter
-{
-	scene "scenes/zuus/zuus_zuus_scepter_01.vcd" nodelay noscene speakonce
-	scene "scenes/zuus/zuus_zuus_scepter_02.vcd" nodelay noscene speakonce
-}
-
-Rule zuus_PurchaseIsUltimateScepter_Rule
-{
-	criteria Purchase Iszuus IsUltimateScepter
-	response zuus_PurchaseIsUltimateScepter
-}
-
-Response zuus_PurchaseIsSheepStick
-{
-	scene "scenes/zuus/zuus_zuus_item_01.vcd" nodelay noscene speakonce
-}
-
-Rule zuus_PurchaseIsSheepStick_Rule
-{
-	criteria Purchase Iszuus IsSheepStick
-	response zuus_PurchaseIsSheepStick
-}
-
-Response zuus_PurchaseIsForceStaff
-{
-	scene "scenes/zuus/zuus_zuus_item_02.vcd" nodelay noscene speakonce
-}
-
-Rule zuus_PurchaseIsForceStaff_Rule
-{
-	criteria Purchase Iszuus IsForceStaff
-	response zuus_PurchaseIsForceStaff
-}
-
-Response zuus_PurchaseIsVeilofDiscord
-{
-	scene "scenes/zuus/zuus_zuus_item_03.vcd" nodelay noscene speakonce
-}
-
-Rule zuus_PurchaseIsVeilofDiscord_Rule
-{
-	criteria Purchase Iszuus IsVeilofDiscord
-	response zuus_PurchaseIsVeilofDiscord
-}
-
-Response zuus_PurchaseIsRefresher
-{
-	scene "scenes/zuus/zuus_zuus_item_04.vcd" nodelay noscene speakonce
-}
-
-Rule zuus_PurchaseIsRefresher_Rule
-{
-	criteria Purchase Iszuus IsRefresher
-	response zuus_PurchaseIsRefresher
-}
-
-Response zuus_PurchaseIsBlinkDagger
-{
-	scene "scenes/zuus/zuus_zuus_blink_01.vcd" nodelay noscene speakonce
-	scene "scenes/zuus/zuus_zuus_blink_02.vcd" nodelay noscene speakonce
-}
-
-Rule zuus_PurchaseIsBlinkDagger_Rule
-{
-	criteria Purchase Iszuus IsBlinkDagger
-	response zuus_PurchaseIsBlinkDagger
-}
-
-Response zuus_Immortality
-{
-	scene "scenes/zuus/zuus_zuus_immort_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_immort_02.vcd" nodelay noscene 
-}
-
-Rule zuus_Immortality_Rule
-{
-	criteria Immortality Iszuus 
-	response zuus_Immortality
-}
-
-Response zuus_Deny
-{
-	scene "scenes/zuus/zuus_zuus_deny_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_deny_02.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_deny_03.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_deny_04.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_deny_05.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_deny_06.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_deny_07.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_deny_08.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_deny_09.vcd" nodelay noscene 
-}
-
-Rule zuus_Deny_Rule
-{
-	criteria Deny Iszuus 
-	response zuus_Deny
 }
 
 Response zuus_LastHit
@@ -593,19 +466,39 @@ Rule zuus_ItemDropIsRareDrop_Rule
 	response zuus_ItemDropIsRareDrop
 }
 
-Response zuus_Victory
+Response zuus_Deny
 {
-	scene "scenes/zuus/zuus_zuus_win_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_win_02.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_win_03.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_win_04.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_win_05.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_02.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_03.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_04.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_05.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_06.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_07.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_08.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_deny_09.vcd" nodelay noscene 
 }
 
-Rule zuus_Victory_Rule
+Rule zuus_Deny_Rule
 {
-	criteria Victory Iszuus 
-	response zuus_Victory
+	criteria Deny Iszuus 
+	response zuus_Deny
+}
+
+Response zuus_LevelUp
+{
+	scene "scenes/zuus/zuus_zuus_level_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_level_02.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_level_03.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_level_04.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_level_05.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_level_06.vcd" nodelay noscene 
+}
+
+Rule zuus_LevelUp_Rule
+{
+	criteria LevelUp Iszuus 
+	response zuus_LevelUp
 }
 
 Response zuus_Bottling
@@ -620,6 +513,33 @@ Rule zuus_Bottling_Rule
 {
 	criteria Bottling Iszuus 
 	response zuus_Bottling
+}
+
+Response zuus_Select
+{
+	scene "scenes/zuus/zuus_zuus_rare_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_rare_02.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_rare_03.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_rare_04.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_rare_05.vcd" nodelay noscene 
+}
+
+Rule zuus_Select_Rule
+{
+	criteria Select Iszuus 
+	response zuus_Select
+}
+
+Response zuus_Immortality
+{
+	scene "scenes/zuus/zuus_zuus_immort_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_immort_02.vcd" nodelay noscene 
+}
+
+Rule zuus_Immortality_Rule
+{
+	criteria Immortality Iszuus 
+	response zuus_Immortality
 }
 
 Response zuus_PowerupIsPowerupHaste
@@ -666,15 +586,15 @@ Rule zuus_PowerupIsPowerupIllusion_Rule
 	response zuus_PowerupIsPowerupIllusion
 }
 
-Response zuus_PowerupIsPowerupIllusionChance_25%
+Response zuus_PowerupIsPowerupIllusionChance_1%
 {
 	scene "scenes/zuus/zuus_zuus_illus_02.vcd" nodelay noscene 
 }
 
-Rule zuus_PowerupIsPowerupIllusionChance_25%_Rule
+Rule zuus_PowerupIsPowerupIllusionChance_1%_Rule
 {
-	criteria Powerup Iszuus IsPowerupIllusion Chance_25%
-	response zuus_PowerupIsPowerupIllusionChance_25%
+	criteria Powerup Iszuus IsPowerupIllusion Chance_1%
+	response zuus_PowerupIsPowerupIllusionChance_1%
 }
 
 Response zuus_PowerupIsPowerupInvisibility
@@ -688,36 +608,85 @@ Rule zuus_PowerupIsPowerupInvisibility_Rule
 	response zuus_PowerupIsPowerupInvisibility
 }
 
-Response zuus_LevelUp
+Response zuus_PurchaseIsExpensiveItem
 {
-	scene "scenes/zuus/zuus_zuus_level_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_level_02.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_level_03.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_level_04.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_level_05.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_level_06.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_purch_01.vcd" nodelay noscene speakonce
+	scene "scenes/zuus/zuus_zuus_purch_02.vcd" nodelay noscene speakonce
+	scene "scenes/zuus/zuus_zuus_purch_03.vcd" nodelay noscene speakonce
 }
 
-Rule zuus_LevelUp_Rule
+Rule zuus_PurchaseIsExpensiveItem_Rule
 {
-	criteria LevelUp Iszuus 
-	response zuus_LevelUp
+	criteria Purchase Iszuus IsExpensiveItem
+	response zuus_PurchaseIsExpensiveItem
 }
 
-Response zuus_Pain
+Response zuus_PurchaseIsUltimateScepter
 {
-	scene "scenes/zuus/zuus_zuus_pain_01.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_pain_02.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_pain_03.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_pain_04.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_pain_05.vcd" nodelay noscene 
-	scene "scenes/zuus/zuus_zuus_underattack_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_scepter_01.vcd" nodelay noscene speakonce
+	scene "scenes/zuus/zuus_zuus_scepter_02.vcd" nodelay noscene speakonce
 }
 
-Rule zuus_Pain_Rule
+Rule zuus_PurchaseIsUltimateScepter_Rule
 {
-	criteria Pain Iszuus 
-	response zuus_Pain
+	criteria Purchase Iszuus IsUltimateScepter
+	response zuus_PurchaseIsUltimateScepter
+}
+
+Response zuus_PurchaseIsBlinkDagger
+{
+	scene "scenes/zuus/zuus_zuus_blink_01.vcd" nodelay noscene speakonce
+	scene "scenes/zuus/zuus_zuus_blink_02.vcd" nodelay noscene speakonce
+}
+
+Rule zuus_PurchaseIsBlinkDagger_Rule
+{
+	criteria Purchase Iszuus IsBlinkDagger
+	response zuus_PurchaseIsBlinkDagger
+}
+
+Response zuus_PurchaseIsSheepStick
+{
+	scene "scenes/zuus/zuus_zuus_item_01.vcd" nodelay noscene speakonce
+}
+
+Rule zuus_PurchaseIsSheepStick_Rule
+{
+	criteria Purchase Iszuus IsSheepStick
+	response zuus_PurchaseIsSheepStick
+}
+
+Response zuus_PurchaseIsForceStaff
+{
+	scene "scenes/zuus/zuus_zuus_item_02.vcd" nodelay noscene speakonce
+}
+
+Rule zuus_PurchaseIsForceStaff_Rule
+{
+	criteria Purchase Iszuus IsForceStaff
+	response zuus_PurchaseIsForceStaff
+}
+
+Response zuus_PurchaseIsVeilofDiscord
+{
+	scene "scenes/zuus/zuus_zuus_item_03.vcd" nodelay noscene speakonce
+}
+
+Rule zuus_PurchaseIsVeilofDiscord_Rule
+{
+	criteria Purchase Iszuus IsVeilofDiscord
+	response zuus_PurchaseIsVeilofDiscord
+}
+
+Response zuus_PurchaseIsRefresher
+{
+	scene "scenes/zuus/zuus_zuus_item_04.vcd" nodelay noscene speakonce
+}
+
+Rule zuus_PurchaseIsRefresher_Rule
+{
+	criteria Purchase Iszuus IsRefresher
+	response zuus_PurchaseIsRefresher
 }
 
 Response zuus_CooldownLittleNag
@@ -809,9 +778,34 @@ Rule zuus_InTheBag_Rule
 	response zuus_InTheBag
 }
 
+Response zuus_PainChance_25%
+{
+	scene "scenes/zuus/zuus_zuus_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule zuus_PainChance_25%_Rule
+{
+	criteria Pain Iszuus Chance_25%
+	response zuus_PainChance_25%
+}
+
+Response zuus_Pain
+{
+	scene "scenes/zuus/zuus_zuus_pain_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_pain_02.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_pain_03.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_pain_04.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_pain_05.vcd" nodelay noscene 
+}
+
+Rule zuus_Pain_Rule
+{
+	criteria Pain Iszuus 
+	response zuus_Pain
+}
+
 Response zuus_Thanks
 {
-	scene "scenes/zuus/zuus_zuus_thanks_01.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_thanks_02.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_thanks_03.vcd" nodelay noscene 
 	scene "scenes/zuus/zuus_zuus_thanks_04.vcd" nodelay noscene 
@@ -854,6 +848,21 @@ Rule zuus_MissingIsLaneBot_Rule
 {
 	criteria Missing Iszuus IsLaneBot
 	response zuus_MissingIsLaneBot
+}
+
+Response zuus_Victory
+{
+	scene "scenes/zuus/zuus_zuus_win_01.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_win_02.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_win_03.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_win_04.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_win_05.vcd" nodelay noscene 
+}
+
+Rule zuus_Victory_Rule
+{
+	criteria Victory Iszuus 
+	response zuus_Victory
 }
 
 Response zuus_EmoteIsEmoteLaugh

@@ -1,0 +1,54 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/earth_spirit/earth_spirit_arm_color"
+	"$normalmap" "models/heroes/earth_spirit/earth_spirit_arm_normal"
+	"$detail1" "models/heroes/earth_spirit/earth_spirit_energy"
+	"$diffusewarp" "models/heroes/earth_spirit/earth_spirit_lightwarp"
+	"$maskmap1" "models/heroes/earth_spirit/earth_spirit_arm_mask1"
+	"$maskmap2" "models/heroes/earth_spirit/earth_spirit_arm_mask2"
+	"$fresnelwarp" "models/heroes/earth_spirit/earth_spirit_fresnelranges"
+
+
+	$MASKENVBYMETALNESS 1
+	$ENVMAP "models/cubemaps/cube_earthspirit"
+	$ENVMAPINTENSITY 1
+
+	$SPECULAR_BLOOM_SCALE      0.4
+	$SPECULAREXPONENT 20	
+	$SPECULARSCALE 8	
+	$SPECULARCOLOR "[0.4 0.9 0.4]"
+	$RIMLIGHTCOLOR "[0.1 0.8 0.1]"
+
+	$ignorebudgetcheck 1
+	$RIMLIGHTSCALE 5	
+	$AMBIENTSCALE 1
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 5
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+	$alphatest 1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.04"
+			"texturescrollangle"	"12"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

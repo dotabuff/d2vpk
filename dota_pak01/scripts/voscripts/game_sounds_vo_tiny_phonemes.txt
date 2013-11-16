@@ -706,50 +706,6 @@ voice_duck 0
 }
 }
 
-*vo\tiny\tiny_move_13.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Come on, Little Roc.
-}
-WORDS
-{
-WORD Come 0.032 0.208
-{
-107 k 0.032 0.144 1
-652 ah 0.144 0.192 1
-109 m 0.192 0.208 1
-}
-WORD on 0.208 0.288
-{
-593 aa 0.208 0.224 1
-110 n 0.224 0.288 1
-}
-WORD Little 0.288 1.552
-{
-108 l 0.288 0.304 1
-618 ih 0.304 0.752 1
-116 t 0.752 0.768 1
-601 ax 0.768 1.328 1
-108 l 1.328 1.552 1
-}
-WORD Roc 1.552 2.016
-{
-633 r 1.552 1.632 1
-593 aa 1.632 1.728 1
-107 k 1.728 2.016 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
 *vo\tiny\tiny_move_14.mp3
 {
 VERSION 1.0
@@ -1161,57 +1117,6 @@ voice_duck 0
 }
 }
 
-*vo\tiny\tiny_attack_09.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Let's get em, Little Roc!
-}
-WORDS
-{
-WORD Let's 0.112 0.640
-{
-108 l 0.112 0.128 1
-603 eh 0.128 0.448 1
-116 t 0.448 0.480 1
-115 s 0.480 0.640 1
-}
-WORD get 0.640 0.944
-{
-103 g 0.640 0.832 1
-618 ih 0.832 0.928 1
-116 t 0.928 0.944 1
-}
-WORD em 0.944 1.552
-{
-603 eh 0.944 1.200 1
-109 m 1.200 1.552 1
-}
-WORD Little 1.552 2.096
-{
-108 l 1.552 1.568 1
-618 ih 1.568 1.744 1
-116 t 1.744 1.760 1
-601 ax 1.760 1.904 1
-108 l 1.904 2.096 1
-}
-WORD Roc 2.208 2.320
-{
-633 r 2.208 2.224 1
-593 aa 2.224 2.304 1
-107 k 2.304 2.320 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
 *vo\tiny\tiny_attack_10.mp3
 {
 VERSION 1.0
@@ -1416,52 +1321,6 @@ WORD coming 1.088 1.792
 109 m 1.312 1.712 1
 618 ih 1.712 1.776 1
 331 ng 1.776 1.792 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\tiny\tiny_cast_03.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Stay close, Little Roc!
-}
-WORDS
-{
-WORD Stay 0.032 0.816
-{
-115 s 0.032 0.112 1
-116 t 0.112 0.464 1
-101 ey 0.464 0.816 1
-}
-WORD close 0.816 1.056
-{
-107 k 0.816 0.832 1
-108 l 0.832 0.848 1
-111 ow 0.848 0.864 1
-122 z 0.864 1.056 1
-}
-WORD Little 1.088 1.200
-{
-108 l 1.088 1.104 1
-618 ih 1.104 1.152 1
-116 t 1.152 1.168 1
-601 ax 1.168 1.184 1
-108 l 1.184 1.200 1
-}
-WORD Roc 1.200 1.392
-{
-633 r 1.200 1.344 1
-593 aa 1.344 1.376 1
-107 k 1.376 1.392 1
 }
 }
 EMPHASIS
@@ -2458,7 +2317,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Stone cold…
+Stone cold...
 }
 WORDS
 {
@@ -2491,7 +2350,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-A millstone around my neck…
+A millstone around my neck...
 }
 WORDS
 {
@@ -2615,96 +2474,6 @@ WORD fall 3.584 4.176
 102 f 3.584 3.600 1
 596 ao 3.600 3.616 1
 108 l 3.616 4.176 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\tiny\tiny_death_12.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Fly away, Little Roc…
-}
-WORDS
-{
-WORD Fly 0.176 0.544
-{
-102 f 0.176 0.192 1
-108 l 0.192 0.512 1
-105 iy 0.512 0.544 1
-}
-WORD away 0.544 0.608
-{
-601 ax 0.544 0.560 1
-119 w 0.560 0.576 1
-101 ey 0.576 0.608 1
-}
-WORD Little 0.608 1.504
-{
-108 l 0.608 0.832 1
-618 ih 0.832 1.136 1
-116 t 1.136 1.152 1
-601 ax 1.152 1.488 1
-108 l 1.488 1.504 1
-}
-WORD Roc 1.504 1.696
-{
-633 r 1.504 1.664 1
-593 aa 1.664 1.680 1
-107 k 1.680 1.696 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\tiny\tiny_death_13.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Come back, Little Roc!
-}
-WORDS
-{
-WORD Come 0.080 0.192
-{
-107 k 0.080 0.160 1
-652 ah 0.160 0.176 1
-109 m 0.176 0.192 1
-}
-WORD back 0.752 1.360
-{
-98 b 0.752 0.768 1
-230 ae 0.768 1.088 1
-107 k 1.088 1.360 1
-}
-WORD Little 1.360 2.000
-{
-108 l 1.360 1.376 1
-618 ih 1.376 1.568 1
-116 t 1.568 1.616 1
-601 ax 1.616 1.664 1
-108 l 1.664 2.000 1
-}
-WORD Roc 2.128 2.352
-{
-633 r 2.128 2.144 1
-593 aa 2.144 2.160 1
-107 k 2.160 2.352 1
 }
 }
 EMPHASIS
@@ -3282,71 +3051,6 @@ voice_duck 0
 }
 }
 
-*vo\tiny\tiny_respawn_02.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Tiny and Little Roc, back in action!
-}
-WORDS
-{
-WORD Tiny 0.144 0.768
-{
-116 t 0.144 0.240 1
-593 ay 0.240 0.432 1
-110 n 0.432 0.448 1
-105 iy 0.448 0.768 1
-}
-WORD and 0.848 1.216
-{
-601 ax 0.848 0.960 1
-110 n 0.960 1.200 1
-100 d 1.200 1.216 1
-}
-WORD Little 1.216 1.872
-{
-108 l 1.216 1.232 1
-618 ih 1.232 1.328 1
-116 t 1.328 1.344 1
-601 ax 1.344 1.440 1
-108 l 1.440 1.872 1
-}
-WORD Roc 1.872 2.000
-{
-633 r 1.872 1.888 1
-593 aa 1.888 1.904 1
-107 k 1.904 2.000 1
-}
-WORD back 2.400 2.784
-{
-98 b 2.400 2.544 1
-230 ae 2.544 2.768 1
-107 k 2.768 2.784 1
-}
-WORD in 2.960 3.216
-{
-618 ih 2.960 3.136 1
-110 n 3.136 3.216 1
-}
-WORD action 3.216 4.288
-{
-230 ae 3.216 3.440 1
-107 k 3.440 3.472 1
-643 sh 3.472 3.696 1
-601 ax 3.696 3.888 1
-110 n 3.888 4.288 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
 *vo\tiny\tiny_respawn_03.mp3
 {
 VERSION 1.0
@@ -3383,56 +3087,6 @@ WORD grindstone 0.688 1.904
 116 t 1.248 1.312 1
 111 ow 1.312 1.616 1
 110 n 1.616 1.904 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\tiny\tiny_respawn_04.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Little Roc, you came back!
-}
-WORDS
-{
-WORD Little 0.176 0.688
-{
-108 l 0.176 0.192 1
-618 ih 0.192 0.288 1
-116 t 0.288 0.304 1
-601 ax 0.304 0.320 1
-108 l 0.320 0.688 1
-}
-WORD Roc 0.688 0.832
-{
-633 r 0.688 0.704 1
-593 aa 0.704 0.720 1
-107 k 0.720 0.832 1
-}
-WORD you 1.072 1.328
-{
-106 y 1.072 1.136 1
-117 uw 1.136 1.328 1
-}
-WORD came 1.328 1.856
-{
-107 k 1.328 1.472 1
-101 ey 1.472 1.696 1
-109 m 1.696 1.856 1
-}
-WORD back 1.952 2.576
-{
-98 b 1.952 2.016 1
-230 ae 2.016 2.400 1
-107 k 2.400 2.576 1
 }
 }
 EMPHASIS
@@ -3557,7 +3211,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-One stone…I got two birds in mind.
+One stone...I got two birds in mind.
 }
 WORDS
 {
@@ -3676,7 +3330,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Why do they call it the Mineral Kingdom?  We don't even have a king.
+Why do they call it the Mineral Kingdom? We don't even have a king.
 }
 WORDS
 {
@@ -3763,111 +3417,6 @@ WORD king 4.480 4.928
 107 k 4.480 4.496 1
 618 ih 4.496 4.800 1
 331 ng 4.800 4.928 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\tiny\tiny_rare_02.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-No matter how I grow and change, Little Roc remains a steadfast friend.
-}
-WORDS
-{
-WORD No 0.176 0.336
-{
-110 n 0.176 0.208 1
-111 ow 0.208 0.336 1
-}
-WORD matter 0.336 0.624
-{
-109 m 0.336 0.384 1
-230 ae 0.384 0.512 1
-116 t 0.512 0.544 1
-602 er 0.544 0.624 1
-}
-WORD how 0.624 0.752
-{
-104 hh 0.624 0.736 1
-593 aw 0.736 0.752 1
-}
-WORD I 0.752 0.800
-{
-593 ay 0.752 0.800 1
-}
-WORD grow 0.800 1.616
-{
-103 g 0.800 0.816 1
-633 r 0.816 0.832 1
-111 ow 0.832 1.616 1
-}
-WORD and 1.616 1.808
-{
-601 ax 1.616 1.664 1
-110 n 1.664 1.776 1
-100 d 1.776 1.808 1
-}
-WORD change 1.808 2.416
-{
-679 ch 1.808 1.904 1
-101 ey 1.904 2.128 1
-110 n 2.128 2.352 1
-676 jh 2.352 2.416 1
-}
-WORD Little 2.800 3.456
-{
-108 l 2.800 2.816 1
-618 ih 2.816 2.928 1
-116 t 2.928 2.976 1
-601 ax 2.976 3.072 1
-108 l 3.072 3.456 1
-}
-WORD Roc 3.616 3.696
-{
-633 r 3.616 3.664 1
-593 aa 3.664 3.680 1
-107 k 3.680 3.696 1
-}
-WORD remains 3.696 4.448
-{
-633 r 3.696 3.712 1
-618 ih 3.712 4.224 1
-109 m 4.224 4.240 1
-101 ey 4.240 4.272 1
-110 n 4.272 4.368 1
-122 z 4.368 4.448 1
-}
-WORD a 4.640 4.752
-{
-101 ey 4.640 4.752 1
-}
-WORD steadfast 4.752 5.840
-{
-115 s 4.752 4.928 1
-116 t 4.928 5.024 1
-603 eh 5.024 5.184 1
-100 d 5.184 5.248 1
-102 f 5.248 5.456 1
-230 ae 5.456 5.680 1
-115 s 5.680 5.760 1
-116 t 5.760 5.840 1
-}
-WORD friend 5.968 6.768
-{
-102 f 5.968 5.984 1
-633 r 5.984 6.400 1
-603 eh 6.400 6.416 1
-110 n 6.416 6.608 1
-100 d 6.608 6.768 1
 }
 }
 EMPHASIS
@@ -3967,7 +3516,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Was I a splinter from a golem's heel?  A chip from the Oracular Visage of Garthos?  I shall not rest until I know from whence I came.
+Was I a splinter from a golem's heel? A chip from the Oracular Visage of Garthos? I shall not rest until I know from whence I came.
 }
 WORDS
 {
@@ -4812,50 +4361,6 @@ voice_duck 0
 }
 }
 
-*vo\tiny\tiny_deny_11.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Little Roc says no.
-}
-WORDS
-{
-WORD Little 0.096 0.720
-{
-108 l 0.096 0.608 1
-618 ih 0.608 0.672 1
-116 t 0.672 0.688 1
-601 ax 0.688 0.704 1
-108 l 0.704 0.720 1
-}
-WORD Roc 0.720 0.768
-{
-633 r 0.720 0.736 1
-593 aa 0.736 0.752 1
-107 k 0.752 0.768 1
-}
-WORD says 0.960 1.504
-{
-115 s 0.960 1.152 1
-603 eh 1.152 1.328 1
-122 z 1.328 1.504 1
-}
-WORD no 1.504 1.936
-{
-110 n 1.504 1.616 1
-111 ow 1.616 1.936 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
 *vo\tiny\tiny_lasthit_01.mp3
 {
 VERSION 1.0
@@ -5181,7 +4686,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Stony silence…forever.
+Stony silence...forever.
 }
 WORDS
 {
@@ -5351,55 +4856,6 @@ WORD honor 2.752 3.328
 593 aa 2.752 2.960 1
 110 n 2.960 3.024 1
 602 er 3.024 3.328 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\tiny\tiny_win_04.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-We did it, Little Roc!
-}
-WORDS
-{
-WORD We 0.032 0.144
-{
-119 w 0.032 0.112 1
-105 iy 0.112 0.144 1
-}
-WORD did 0.144 0.240
-{
-100 d 0.144 0.160 1
-618 ih 0.160 0.224 1
-100 d 0.224 0.240 1
-}
-WORD it 0.240 0.592
-{
-618 ih 0.240 0.256 1
-116 t 0.256 0.592 1
-}
-WORD Little 0.592 1.184
-{
-108 l 0.592 0.624 1
-618 ih 0.624 0.800 1
-116 t 0.800 0.928 1
-601 ax 0.928 1.168 1
-108 l 1.168 1.184 1
-}
-WORD Roc 1.184 1.584
-{
-633 r 1.184 1.344 1
-593 aa 1.344 1.568 1
-107 k 1.568 1.584 1
 }
 }
 EMPHASIS
@@ -6132,55 +5588,6 @@ WORD Landslide 0.176 1.184
 108 l 1.136 1.152 1
 618 ih 1.152 1.168 1
 100 d 1.168 1.184 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\tiny\tiny_level_06.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Look at me, Little Roc!
-}
-WORDS
-{
-WORD Look 0.096 0.704
-{
-108 l 0.096 0.304 1
-650 uh 0.304 0.640 1
-107 k 0.640 0.704 1
-}
-WORD at 0.784 1.152
-{
-230 ae 0.784 1.008 1
-116 t 1.008 1.152 1
-}
-WORD me 1.152 1.248
-{
-109 m 1.152 1.216 1
-105 iy 1.216 1.248 1
-}
-WORD Little 1.248 1.792
-{
-108 l 1.248 1.264 1
-618 ih 1.264 1.520 1
-116 t 1.520 1.536 1
-601 ax 1.536 1.776 1
-108 l 1.776 1.792 1
-}
-WORD Roc 1.792 2.432
-{
-633 r 1.792 2.000 1
-593 aa 2.000 2.144 1
-107 k 2.144 2.432 1
 }
 }
 EMPHASIS
@@ -7155,50 +6562,6 @@ voice_duck 0
 }
 }
 
-*vo\tiny\tiny_nomana_10.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Little Roc says no.
-}
-WORDS
-{
-WORD Little 0.112 0.784
-{
-108 l 0.112 0.624 1
-618 ih 0.624 0.736 1
-116 t 0.736 0.752 1
-601 ax 0.752 0.768 1
-108 l 0.768 0.784 1
-}
-WORD Roc 0.784 0.832
-{
-633 r 0.784 0.800 1
-593 aa 0.800 0.816 1
-107 k 0.816 0.832 1
-}
-WORD says 0.976 1.504
-{
-115 s 0.976 1.168 1
-603 eh 1.168 1.344 1
-122 z 1.344 1.504 1
-}
-WORD no 1.504 1.936
-{
-110 n 1.504 1.632 1
-111 ow 1.632 1.936 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
 *vo\tiny\tiny_anger_01.mp3
 {
 VERSION 1.0
@@ -7317,57 +6680,6 @@ WORD Yeeww 0.128 0.752
 106 y 0.128 0.160 1
 105 iy 0.160 0.560 1
 119 w 0.560 0.752 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\tiny\tiny_anger_06.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-You leave Little Roc alone!
-}
-WORDS
-{
-WORD You 0.128 0.160
-{
-106 y 0.128 0.144 1
-117 uw 0.144 0.160 1
-}
-WORD leave 0.160 0.720
-{
-108 l 0.160 0.464 1
-105 iy 0.464 0.496 1
-118 v 0.496 0.720 1
-}
-WORD Little 0.720 1.136
-{
-108 l 0.720 0.736 1
-618 ih 0.736 0.800 1
-116 t 0.800 0.864 1
-601 ax 0.864 0.960 1
-108 l 0.960 1.136 1
-}
-WORD Roc 1.472 1.600
-{
-633 r 1.472 1.568 1
-593 aa 1.568 1.584 1
-107 k 1.584 1.600 1
-}
-WORD alone 1.600 2.000
-{
-601 ax 1.600 1.632 1
-108 l 1.632 1.648 1
-111 ow 1.648 1.808 1
-110 n 1.808 2.000 1
 }
 }
 EMPHASIS
@@ -7737,7 +7049,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-He her ah ha ha ha!  
+He her ah ha ha ha! 
 }
 WORDS
 {
@@ -7846,18 +7158,14 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag! 
+It's in the bag! 
 }
 WORDS
 {
-WORD It 0.048 0.224
+WORD It's 0.048 0.304
 {
 618 ih 0.048 0.208 1
-116 t 0.208 0.224 1
-}
-WORD s 0.224 0.304
-{
-603 eh 0.224 0.240 1
+116 t 0.208 0.240 1
 115 s 0.240 0.304 1
 }
 WORD in 0.304 0.544
@@ -9572,7 +8880,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-First Blood…from a stone. Ha ha ha ha!
+First Blood...from a stone. Ha ha ha ha!
 }
 WORDS
 {
@@ -9846,6 +9154,694 @@ WORD these 2.560 2.832
 240 dh 2.560 2.576 1
 105 iy 2.576 2.608 1
 122 z 2.608 2.832 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_move_13.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Come on, Little Roc.
+}
+WORDS
+{
+WORD Come 0.032 0.208
+{
+107 k 0.032 0.144 1
+652 ah 0.144 0.192 1
+109 m 0.192 0.208 1
+}
+WORD on 0.208 0.288
+{
+593 aa 0.208 0.224 1
+110 n 0.224 0.288 1
+}
+WORD Little 0.288 1.552
+{
+108 l 0.288 0.304 1
+618 ih 0.304 0.752 1
+116 t 0.752 0.768 1
+601 ax 0.768 1.328 1
+108 l 1.328 1.552 1
+}
+WORD Roc 1.552 2.016
+{
+633 r 1.552 1.632 1
+593 aa 1.632 1.728 1
+107 k 1.728 2.016 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_attack_09.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Let's get em, Little Roc!
+}
+WORDS
+{
+WORD Let's 0.112 0.640
+{
+108 l 0.112 0.128 1
+603 eh 0.128 0.448 1
+116 t 0.448 0.480 1
+115 s 0.480 0.640 1
+}
+WORD get 0.640 0.944
+{
+103 g 0.640 0.832 1
+618 ih 0.832 0.928 1
+116 t 0.928 0.944 1
+}
+WORD em 0.944 1.552
+{
+603 eh 0.944 1.200 1
+109 m 1.200 1.552 1
+}
+WORD Little 1.552 2.096
+{
+108 l 1.552 1.568 1
+618 ih 1.568 1.744 1
+116 t 1.744 1.760 1
+601 ax 1.760 1.904 1
+108 l 1.904 2.096 1
+}
+WORD Roc 2.208 2.320
+{
+633 r 2.208 2.224 1
+593 aa 2.224 2.304 1
+107 k 2.304 2.320 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_cast_03.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Stay close, Little Roc!
+}
+WORDS
+{
+WORD Stay 0.032 0.816
+{
+115 s 0.032 0.112 1
+116 t 0.112 0.464 1
+101 ey 0.464 0.816 1
+}
+WORD close 0.816 1.056
+{
+107 k 0.816 0.832 1
+108 l 0.832 0.848 1
+111 ow 0.848 0.864 1
+122 z 0.864 1.056 1
+}
+WORD Little 1.088 1.200
+{
+108 l 1.088 1.104 1
+618 ih 1.104 1.152 1
+116 t 1.152 1.168 1
+601 ax 1.168 1.184 1
+108 l 1.184 1.200 1
+}
+WORD Roc 1.200 1.392
+{
+633 r 1.200 1.344 1
+593 aa 1.344 1.376 1
+107 k 1.376 1.392 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_death_12.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Fly away, Little Roc...
+}
+WORDS
+{
+WORD Fly 0.176 0.544
+{
+102 f 0.176 0.192 1
+108 l 0.192 0.512 1
+105 iy 0.512 0.544 1
+}
+WORD away 0.544 0.608
+{
+601 ax 0.544 0.560 1
+119 w 0.560 0.576 1
+101 ey 0.576 0.608 1
+}
+WORD Little 0.608 1.504
+{
+108 l 0.608 0.832 1
+618 ih 0.832 1.136 1
+116 t 1.136 1.152 1
+601 ax 1.152 1.488 1
+108 l 1.488 1.504 1
+}
+WORD Roc 1.504 1.696
+{
+633 r 1.504 1.664 1
+593 aa 1.664 1.680 1
+107 k 1.680 1.696 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_death_13.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Come back, Little Roc!
+}
+WORDS
+{
+WORD Come 0.080 0.192
+{
+107 k 0.080 0.160 1
+652 ah 0.160 0.176 1
+109 m 0.176 0.192 1
+}
+WORD back 0.752 1.360
+{
+98 b 0.752 0.768 1
+230 ae 0.768 1.088 1
+107 k 1.088 1.360 1
+}
+WORD Little 1.360 2.000
+{
+108 l 1.360 1.376 1
+618 ih 1.376 1.568 1
+116 t 1.568 1.616 1
+601 ax 1.616 1.664 1
+108 l 1.664 2.000 1
+}
+WORD Roc 2.128 2.352
+{
+633 r 2.128 2.144 1
+593 aa 2.144 2.160 1
+107 k 2.160 2.352 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_respawn_02.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Tiny and Little Roc, back in action!
+}
+WORDS
+{
+WORD Tiny 0.144 0.768
+{
+116 t 0.144 0.240 1
+593 ay 0.240 0.432 1
+110 n 0.432 0.448 1
+105 iy 0.448 0.768 1
+}
+WORD and 0.848 1.216
+{
+601 ax 0.848 0.960 1
+110 n 0.960 1.200 1
+100 d 1.200 1.216 1
+}
+WORD Little 1.216 1.872
+{
+108 l 1.216 1.232 1
+618 ih 1.232 1.328 1
+116 t 1.328 1.344 1
+601 ax 1.344 1.440 1
+108 l 1.440 1.872 1
+}
+WORD Roc 1.872 2.000
+{
+633 r 1.872 1.888 1
+593 aa 1.888 1.904 1
+107 k 1.904 2.000 1
+}
+WORD back 2.400 2.784
+{
+98 b 2.400 2.544 1
+230 ae 2.544 2.768 1
+107 k 2.768 2.784 1
+}
+WORD in 2.960 3.216
+{
+618 ih 2.960 3.136 1
+110 n 3.136 3.216 1
+}
+WORD action 3.216 4.288
+{
+230 ae 3.216 3.440 1
+107 k 3.440 3.472 1
+643 sh 3.472 3.696 1
+601 ax 3.696 3.888 1
+110 n 3.888 4.288 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_respawn_04.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Little Roc, you came back!
+}
+WORDS
+{
+WORD Little 0.176 0.688
+{
+108 l 0.176 0.192 1
+618 ih 0.192 0.288 1
+116 t 0.288 0.304 1
+601 ax 0.304 0.320 1
+108 l 0.320 0.688 1
+}
+WORD Roc 0.688 0.832
+{
+633 r 0.688 0.704 1
+593 aa 0.704 0.720 1
+107 k 0.720 0.832 1
+}
+WORD you 1.072 1.328
+{
+106 y 1.072 1.136 1
+117 uw 1.136 1.328 1
+}
+WORD came 1.328 1.856
+{
+107 k 1.328 1.472 1
+101 ey 1.472 1.696 1
+109 m 1.696 1.856 1
+}
+WORD back 1.952 2.576
+{
+98 b 1.952 2.016 1
+230 ae 2.016 2.400 1
+107 k 2.400 2.576 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_rare_02.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+No matter how I grow and change, Little Roc remains a steadfast friend.
+}
+WORDS
+{
+WORD No 0.176 0.336
+{
+110 n 0.176 0.208 1
+111 ow 0.208 0.336 1
+}
+WORD matter 0.336 0.624
+{
+109 m 0.336 0.384 1
+230 ae 0.384 0.512 1
+116 t 0.512 0.544 1
+602 er 0.544 0.624 1
+}
+WORD how 0.624 0.752
+{
+104 hh 0.624 0.736 1
+593 aw 0.736 0.752 1
+}
+WORD I 0.752 0.800
+{
+593 ay 0.752 0.800 1
+}
+WORD grow 0.800 1.616
+{
+103 g 0.800 0.816 1
+633 r 0.816 0.832 1
+111 ow 0.832 1.616 1
+}
+WORD and 1.616 1.808
+{
+601 ax 1.616 1.664 1
+110 n 1.664 1.776 1
+100 d 1.776 1.808 1
+}
+WORD change 1.808 2.416
+{
+679 ch 1.808 1.904 1
+101 ey 1.904 2.128 1
+110 n 2.128 2.352 1
+676 jh 2.352 2.416 1
+}
+WORD Little 2.800 3.456
+{
+108 l 2.800 2.816 1
+618 ih 2.816 2.928 1
+116 t 2.928 2.976 1
+601 ax 2.976 3.072 1
+108 l 3.072 3.456 1
+}
+WORD Roc 3.616 3.696
+{
+633 r 3.616 3.664 1
+593 aa 3.664 3.680 1
+107 k 3.680 3.696 1
+}
+WORD remains 3.696 4.448
+{
+633 r 3.696 3.712 1
+618 ih 3.712 4.224 1
+109 m 4.224 4.240 1
+101 ey 4.240 4.272 1
+110 n 4.272 4.368 1
+122 z 4.368 4.448 1
+}
+WORD a 4.640 4.752
+{
+101 ey 4.640 4.752 1
+}
+WORD steadfast 4.752 5.840
+{
+115 s 4.752 4.928 1
+116 t 4.928 5.024 1
+603 eh 5.024 5.184 1
+100 d 5.184 5.248 1
+102 f 5.248 5.456 1
+230 ae 5.456 5.680 1
+115 s 5.680 5.760 1
+116 t 5.760 5.840 1
+}
+WORD friend 5.968 6.768
+{
+102 f 5.968 5.984 1
+633 r 5.984 6.400 1
+603 eh 6.400 6.416 1
+110 n 6.416 6.608 1
+100 d 6.608 6.768 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_deny_11.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Little Roc says no.
+}
+WORDS
+{
+WORD Little 0.096 0.720
+{
+108 l 0.096 0.608 1
+618 ih 0.608 0.672 1
+116 t 0.672 0.688 1
+601 ax 0.688 0.704 1
+108 l 0.704 0.720 1
+}
+WORD Roc 0.720 0.768
+{
+633 r 0.720 0.736 1
+593 aa 0.736 0.752 1
+107 k 0.752 0.768 1
+}
+WORD says 0.960 1.504
+{
+115 s 0.960 1.152 1
+603 eh 1.152 1.328 1
+122 z 1.328 1.504 1
+}
+WORD no 1.504 1.936
+{
+110 n 1.504 1.616 1
+111 ow 1.616 1.936 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_win_04.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+We did it, Little Roc!
+}
+WORDS
+{
+WORD We 0.032 0.144
+{
+119 w 0.032 0.112 1
+105 iy 0.112 0.144 1
+}
+WORD did 0.144 0.240
+{
+100 d 0.144 0.160 1
+618 ih 0.160 0.224 1
+100 d 0.224 0.240 1
+}
+WORD it 0.240 0.592
+{
+618 ih 0.240 0.256 1
+116 t 0.256 0.592 1
+}
+WORD Little 0.592 1.184
+{
+108 l 0.592 0.624 1
+618 ih 0.624 0.800 1
+116 t 0.800 0.928 1
+601 ax 0.928 1.168 1
+108 l 1.168 1.184 1
+}
+WORD Roc 1.184 1.584
+{
+633 r 1.184 1.344 1
+593 aa 1.344 1.568 1
+107 k 1.568 1.584 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_level_06.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Look at me, Little Roc!
+}
+WORDS
+{
+WORD Look 0.096 0.704
+{
+108 l 0.096 0.304 1
+650 uh 0.304 0.640 1
+107 k 0.640 0.704 1
+}
+WORD at 0.784 1.152
+{
+230 ae 0.784 1.008 1
+116 t 1.008 1.152 1
+}
+WORD me 1.152 1.248
+{
+109 m 1.152 1.216 1
+105 iy 1.216 1.248 1
+}
+WORD Little 1.248 1.792
+{
+108 l 1.248 1.264 1
+618 ih 1.264 1.520 1
+116 t 1.520 1.536 1
+601 ax 1.536 1.776 1
+108 l 1.776 1.792 1
+}
+WORD Roc 1.792 2.432
+{
+633 r 1.792 2.000 1
+593 aa 2.000 2.144 1
+107 k 2.144 2.432 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_nomana_10.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Little Roc says no.
+}
+WORDS
+{
+WORD Little 0.112 0.784
+{
+108 l 0.112 0.624 1
+618 ih 0.624 0.736 1
+116 t 0.736 0.752 1
+601 ax 0.752 0.768 1
+108 l 0.768 0.784 1
+}
+WORD Roc 0.784 0.832
+{
+633 r 0.784 0.800 1
+593 aa 0.800 0.816 1
+107 k 0.816 0.832 1
+}
+WORD says 0.976 1.504
+{
+115 s 0.976 1.168 1
+603 eh 1.168 1.344 1
+122 z 1.344 1.504 1
+}
+WORD no 1.504 1.936
+{
+110 n 1.504 1.632 1
+111 ow 1.632 1.936 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\tiny\tiny_anger_06.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+You leave Little Roc alone!
+}
+WORDS
+{
+WORD You 0.128 0.160
+{
+106 y 0.128 0.144 1
+117 uw 0.144 0.160 1
+}
+WORD leave 0.160 0.720
+{
+108 l 0.160 0.464 1
+105 iy 0.464 0.496 1
+118 v 0.496 0.720 1
+}
+WORD Little 0.720 1.136
+{
+108 l 0.720 0.736 1
+618 ih 0.736 0.800 1
+116 t 0.800 0.864 1
+601 ax 0.864 0.960 1
+108 l 0.960 1.136 1
+}
+WORD Roc 1.472 1.600
+{
+633 r 1.472 1.568 1
+593 aa 1.568 1.584 1
+107 k 1.584 1.600 1
+}
+WORD alone 1.600 2.000
+{
+601 ax 1.600 1.632 1
+108 l 1.632 1.648 1
+111 ow 1.648 1.808 1
+110 n 1.808 2.000 1
 }
 }
 EMPHASIS

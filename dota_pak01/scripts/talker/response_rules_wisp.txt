@@ -46,6 +46,17 @@ Rule wisp_Kill_Rule
 	response wisp_Kill
 }
 
+Response wisp_KillChance_10%
+{
+	scene "scenes/wisp/wisp_laugh.vcd" nodelay noscene 
+}
+
+Rule wisp_KillChance_10%_Rule
+{
+	criteria Kill Iswisp Chance_10%
+	response wisp_KillChance_10%
+}
+
 Response wisp_Move
 {
 	scene "scenes/wisp/wisp_move.vcd" nodelay noscene 
@@ -68,16 +79,6 @@ Rule wisp_Attack_Rule
 	response wisp_Attack
 }
 
-Response wisp_CastExecute
-{
-}
-
-Rule wisp_CastExecute_Rule
-{
-	criteria CastExecute Iswisp 
-	response wisp_CastExecute
-}
-
 Response wisp_LevelUp
 {
 	scene "scenes/wisp/wisp_levelup.vcd" nodelay noscene 
@@ -87,17 +88,6 @@ Rule wisp_LevelUp_Rule
 {
 	criteria LevelUp Iswisp 
 	response wisp_LevelUp
-}
-
-Response wisp_AllyNearIsAllykeeper_of_the_lightEarlyGame
-{
-	scene "scenes/wisp/wisp_ally.vcd" nodelay noscene speakonce
-}
-
-Rule wisp_AllyNearIsAllykeeper_of_the_lightEarlyGame_Rule
-{
-	criteria AllyNear Iswisp IsAllykeeper_of_the_light EarlyGame
-	response wisp_AllyNearIsAllykeeper_of_the_lightEarlyGame
 }
 
 Response wisp_AllyNearIsAllyEnigmaEarlyGame
@@ -120,6 +110,17 @@ Rule wisp_AllyNearIsAllyChaos_KnightEarlyGame_Rule
 {
 	criteria AllyNear Iswisp IsAllyChaos_Knight EarlyGame
 	response wisp_AllyNearIsAllyChaos_KnightEarlyGame
+}
+
+Response wisp_AllyNearIsAllyKeeper_of_the_Light
+{
+	scene "scenes/wisp/wisp_ally.vcd" nodelay noscene speakonce
+}
+
+Rule wisp_AllyNearIsAllyKeeper_of_the_Light_Rule
+{
+	criteria AllyNear Iswisp IsAllyKeeper_of_the_Light
+	response wisp_AllyNearIsAllyKeeper_of_the_Light
 }
 
 Response wisp_LastHit
@@ -169,6 +170,8 @@ Rule wisp_Respawn_Rule
 Response wisp_PurchaseIsExpensiveItem
 {
 	scene "scenes/wisp/wisp_purchase_expensive.vcd" nodelay noscene speakonce
+	scene "scenes/wisp/wisp_purchase_expensive.vcd" nodelay noscene speakonce
+	scene "scenes/wisp/wisp_purchase_expensive.vcd" nodelay noscene speakonce
 }
 
 Rule wisp_PurchaseIsExpensiveItem_Rule
@@ -201,6 +204,7 @@ Rule wisp_PurchaseIsBlinkDagger_Rule
 
 Response wisp_Bottling
 {
+	scene "scenes/wisp/wisp_purchase_scepter.vcd" nodelay noscene 
 }
 
 Rule wisp_Bottling_Rule
@@ -416,6 +420,17 @@ Rule wisp_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Iswisp IsEmoteLaugh
 	response wisp_EmoteIsEmoteLaugh
+}
+
+Response wisp_ItemDrop
+{
+	scene "scenes/wisp/wisp_thanks.vcd" nodelay noscene 
+}
+
+Rule wisp_ItemDrop_Rule
+{
+	criteria ItemDrop Iswisp 
+	response wisp_ItemDrop
 }
 
 Response wisp_Select

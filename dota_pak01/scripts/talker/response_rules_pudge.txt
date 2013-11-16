@@ -164,14 +164,14 @@ Rule pudge_CastOrder_Rule
 
 Response pudge_CastExecuteIsRot
 {
-	scene "scenes/pudge/pudge_pud_ability_rot_02.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/pudge/pudge_pud_ability_rot_07.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/pudge/pudge_pud_ability_rot_08.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/pudge/pudge_pud_ability_rot_09.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/pudge/pudge_pud_ability_rot_10.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/pudge/pudge_pud_ability_rot_11.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/pudge/pudge_pud_ability_rot_12.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/pudge/pudge_pud_ability_rot_13.vcd" nodelay noscene respeakdelay 15
+	scene "scenes/pudge/pudge_pud_ability_rot_02.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_07.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_08.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_09.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_10.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_11.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_12.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_13.vcd" nodelay noscene weapondelay 10
 }
 
 Rule pudge_CastExecuteIsRot_Rule

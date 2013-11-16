@@ -80,6 +80,10 @@ Response tinker_Kill
 	scene "scenes/tinker/tinker_tink_laugh_08.vcd" nodelay noscene 
 	scene "scenes/tinker/tinker_tink_laugh_09.vcd" nodelay noscene 
 	scene "scenes/tinker/tinker_tink_laugh_10.vcd" nodelay noscene 
+	scene "scenes/tinker/tinker_tink_laugh_11.vcd" nodelay noscene 
+	scene "scenes/tinker/tinker_tink_laugh_12.vcd" nodelay noscene 
+	scene "scenes/tinker/tinker_tink_laugh_13.vcd" nodelay noscene 
+	scene "scenes/tinker/tinker_tink_laugh_14.vcd" nodelay noscene 
 }
 
 Rule tinker_Kill_Rule
@@ -88,7 +92,7 @@ Rule tinker_Kill_Rule
 	response tinker_Kill
 }
 
-Response tinker_KillIsLaser
+Response tinker_KillIsLaserChance_25%
 {
 	scene "scenes/tinker/tinker_tink_attack_11.vcd" nodelay noscene 
 	scene "scenes/tinker/tinker_tink_ability_laser_01.vcd" nodelay noscene 
@@ -96,21 +100,21 @@ Response tinker_KillIsLaser
 	scene "scenes/tinker/tinker_tink_ability_laser_04.vcd" nodelay noscene 
 }
 
-Rule tinker_KillIsLaser_Rule
+Rule tinker_KillIsLaserChance_25%_Rule
 {
-	criteria Kill Istinker IsLaser
-	response tinker_KillIsLaser
+	criteria Kill Istinker IsLaser Chance_25%
+	response tinker_KillIsLaserChance_25%
 }
 
-Response tinker_KillIsHeatSeekingMissile
+Response tinker_KillIsHeatSeekingMissileChance_25%
 {
 	scene "scenes/tinker/tinker_tink_ability_heatseekingmissile_05.vcd" nodelay noscene 
 }
 
-Rule tinker_KillIsHeatSeekingMissile_Rule
+Rule tinker_KillIsHeatSeekingMissileChance_25%_Rule
 {
-	criteria Kill Istinker IsHeatSeekingMissile
-	response tinker_KillIsHeatSeekingMissile
+	criteria Kill Istinker IsHeatSeekingMissile Chance_25%
+	response tinker_KillIsHeatSeekingMissileChance_25%
 }
 
 Response tinker_KillIsEnemyRattletrapChance_25%
@@ -420,18 +424,18 @@ Rule tinker_LastHit_Rule
 	response tinker_LastHit
 }
 
-Response tinker_LastHitIsEnemySpiderling
+Response tinker_LastHitIsEnemySpiderlingChance_15%
 {
-	scene "scenes/tinker/tinker_tink_rare_07.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_rare_08.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_rare_09.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_rare_10.vcd" nodelay noscene 
+	scene "scenes/tinker/tinker_tink_rare_07.vcd" nodelay noscene speakonce
+	scene "scenes/tinker/tinker_tink_rare_08.vcd" nodelay noscene speakonce
+	scene "scenes/tinker/tinker_tink_rare_09.vcd" nodelay noscene speakonce
+	scene "scenes/tinker/tinker_tink_rare_10.vcd" nodelay noscene speakonce
 }
 
-Rule tinker_LastHitIsEnemySpiderling_Rule
+Rule tinker_LastHitIsEnemySpiderlingChance_15%_Rule
 {
-	criteria LastHit Istinker IsEnemySpiderling
-	response tinker_LastHitIsEnemySpiderling
+	criteria LastHit Istinker IsEnemySpiderling Chance_15%
+	response tinker_LastHitIsEnemySpiderlingChance_15%
 }
 
 Response tinker_Death
@@ -507,6 +511,29 @@ Rule tinker_Select_Rule
 	response tinker_Select
 }
 
+Response tinker_Bottling
+{
+	scene "scenes/tinker/tinker_tink_bottle_01.vcd" nodelay noscene 
+}
+
+Rule tinker_Bottling_Rule
+{
+	criteria Bottling Istinker 
+	response tinker_Bottling
+}
+
+Response tinker_PurchaseIsEmptyBottleChance_10%
+{
+	scene "scenes/tinker/tinker_tink_bottle_02.vcd" nodelay noscene speakonce
+	scene "scenes/tinker/tinker_tink_relic_04.vcd" nodelay noscene speakonce
+}
+
+Rule tinker_PurchaseIsEmptyBottleChance_10%_Rule
+{
+	criteria Purchase Istinker IsEmptyBottle Chance_10%
+	response tinker_PurchaseIsEmptyBottleChance_10%
+}
+
 Response tinker_PurchaseIsExpensiveItem
 {
 	scene "scenes/tinker/tinker_tink_purch_01.vcd" nodelay noscene speakonce
@@ -518,18 +545,6 @@ Rule tinker_PurchaseIsExpensiveItem_Rule
 {
 	criteria Purchase Istinker IsExpensiveItem
 	response tinker_PurchaseIsExpensiveItem
-}
-
-Response tinker_PurchaseIsEmptyBottle
-{
-	scene "scenes/tinker/tinker_tink_bottle_02.vcd" nodelay noscene speakonce
-	scene "scenes/tinker/tinker_tink_relic_04.vcd" nodelay noscene speakonce
-}
-
-Rule tinker_PurchaseIsEmptyBottle_Rule
-{
-	criteria Purchase Istinker IsEmptyBottle
-	response tinker_PurchaseIsEmptyBottle
 }
 
 Response tinker_PurchaseIsBlinkDagger
@@ -602,47 +617,6 @@ Rule tinker_PurchaseIsSoulRing_Rule
 {
 	criteria Purchase Istinker IsSoulRing
 	response tinker_PurchaseIsSoulRing
-}
-
-Response tinker_Bottling
-{
-	scene "scenes/tinker/tinker_tink_bottle_01.vcd" nodelay noscene 
-}
-
-Rule tinker_Bottling_Rule
-{
-	criteria Bottling Istinker 
-	response tinker_Bottling
-}
-
-Response tinker_MissingIsLaneTop
-{
-}
-
-Rule tinker_MissingIsLaneTop_Rule
-{
-	criteria Missing Istinker IsLaneTop
-	response tinker_MissingIsLaneTop
-}
-
-Response tinker_MissingIsLaneMid
-{
-}
-
-Rule tinker_MissingIsLaneMid_Rule
-{
-	criteria Missing Istinker IsLaneMid
-	response tinker_MissingIsLaneMid
-}
-
-Response tinker_MissingIsLaneBot
-{
-}
-
-Rule tinker_MissingIsLaneBot_Rule
-{
-	criteria Missing Istinker IsLaneBot
-	response tinker_MissingIsLaneBot
 }
 
 Response tinker_Deny
@@ -878,10 +852,19 @@ Rule tinker_Thanks_Rule
 	response tinker_Thanks
 }
 
+Response tinker_PainChance_25%
+{
+	scene "scenes/tinker/tinker_tink_underattack_02.vcd" nodelay noscene respeakdely 120
+}
+
+Rule tinker_PainChance_25%_Rule
+{
+	criteria Pain Istinker Chance_25%
+	response tinker_PainChance_25%
+}
+
 Response tinker_Pain
 {
-	scene "scenes/tinker/tinker_tink_underattack_01.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_underattack_02.vcd" nodelay noscene 
 	scene "scenes/tinker/tinker_tink_pain_01.vcd" nodelay noscene 
 	scene "scenes/tinker/tinker_tink_pain_02.vcd" nodelay noscene 
 	scene "scenes/tinker/tinker_tink_pain_03.vcd" nodelay noscene 
@@ -936,27 +919,5 @@ Rule tinker_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Istinker IsEmoteLaugh
 	response tinker_EmoteIsEmoteLaugh
-}
-
-Response tinker_EmoteIsEmoteAnger
-{
-	scene "scenes/tinker/tinker_tink_anger_01.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_02.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_03.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_04.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_05.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_06.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_07.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_08.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_09.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_10.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_11.vcd" nodelay noscene 
-	scene "scenes/tinker/tinker_tink_anger_12.vcd" nodelay noscene 
-}
-
-Rule tinker_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Istinker IsEmoteAnger
-	response tinker_EmoteIsEmoteAnger
 }
 

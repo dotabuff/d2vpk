@@ -79,6 +79,7 @@ Response visage_Kill
 	scene "scenes/visage/visage_visa_kill_15.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_kill_16.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_kill_17.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_rare_02.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_laugh_01.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_laugh_02.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_laugh_03.vcd" nodelay noscene 
@@ -409,23 +410,13 @@ Rule visage_Attack_Rule
 	response visage_Attack
 }
 
-Response visage_CastExecuteIsVisageGraveChillChance_50%
+Response visage_CastExecuteIsVisageGraveChillChance_25%
 {
 	scene "scenes/visage/visage_visa_gravechill_04.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_gravechill_05.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_gravechill_14.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_gravechill_21.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_gravechill_22.vcd" nodelay noscene 
-}
-
-Rule visage_CastExecuteIsVisageGraveChillChance_50%_Rule
-{
-	criteria CastExecute Isvisage IsVisageGraveChill Chance_50%
-	response visage_CastExecuteIsVisageGraveChillChance_50%
-}
-
-Response visage_CastExecuteIsVisageGraveChillChance_25%
-{
-	scene "scenes/visage/visage_visa_gravechill_14.vcd" nodelay noscene 
 }
 
 Rule visage_CastExecuteIsVisageGraveChillChance_25%_Rule
@@ -449,27 +440,17 @@ Rule visage_CastExecuteIsVisageSoulAssumption_Rule
 	response visage_CastExecuteIsVisageSoulAssumption
 }
 
-Response visage_CastExecuteIsVisageSoulAssumptionChance_25%
+Response visage_CastExecuteIsVisageSoulAssumptionChance_10%
 {
 	scene "scenes/visage/visage_visa_soulassumption_01.vcd" nodelay noscene 
-}
-
-Rule visage_CastExecuteIsVisageSoulAssumptionChance_25%_Rule
-{
-	criteria CastExecute Isvisage IsVisageSoulAssumption Chance_25%
-	response visage_CastExecuteIsVisageSoulAssumptionChance_25%
-}
-
-Response visage_CastExecuteIsVisageSoulAssumptionChance_15%
-{
 	scene "scenes/visage/visage_visa_soulassumption_02.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_soulassumption_07.vcd" nodelay noscene 
 }
 
-Rule visage_CastExecuteIsVisageSoulAssumptionChance_15%_Rule
+Rule visage_CastExecuteIsVisageSoulAssumptionChance_10%_Rule
 {
-	criteria CastExecute Isvisage IsVisageSoulAssumption Chance_15%
-	response visage_CastExecuteIsVisageSoulAssumptionChance_15%
+	criteria CastExecute Isvisage IsVisageSoulAssumption Chance_10%
+	response visage_CastExecuteIsVisageSoulAssumptionChance_10%
 }
 
 Response visage_CastExecuteIsVisageSummon
@@ -486,8 +467,8 @@ Rule visage_CastExecuteIsVisageSummon_Rule
 
 Response visage_PetDeathIsVisageFamiliar1
 {
-	scene "scenes/visage/visage_visa_familiardies_01.vcd" nodelay noscene respeakdelay 30
-	scene "scenes/visage/visage_visa_familiardies_03.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/visage/visage_visa_familiardies_01.vcd" nodelay noscene weapondelay 10
+	scene "scenes/visage/visage_visa_familiardies_03.vcd" nodelay noscene weapondelay 10
 }
 
 Rule visage_PetDeathIsVisageFamiliar1_Rule
@@ -498,8 +479,8 @@ Rule visage_PetDeathIsVisageFamiliar1_Rule
 
 Response visage_PetDeathIsVisageFamiliar2
 {
-	scene "scenes/visage/visage_visa_familiardies_01.vcd" nodelay noscene respeakdelay 30
-	scene "scenes/visage/visage_visa_familiardies_03.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/visage/visage_visa_familiardies_01.vcd" nodelay noscene weapondelay 10
+	scene "scenes/visage/visage_visa_familiardies_03.vcd" nodelay noscene weapondelay 10
 }
 
 Rule visage_PetDeathIsVisageFamiliar2_Rule
@@ -510,8 +491,8 @@ Rule visage_PetDeathIsVisageFamiliar2_Rule
 
 Response visage_PetDeathIsVisageFamiliar3
 {
-	scene "scenes/visage/visage_visa_familiardies_01.vcd" nodelay noscene respeakdelay 30
-	scene "scenes/visage/visage_visa_familiardies_03.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/visage/visage_visa_familiardies_01.vcd" nodelay noscene weapondelay 10
+	scene "scenes/visage/visage_visa_familiardies_03.vcd" nodelay noscene weapondelay 10
 }
 
 Rule visage_PetDeathIsVisageFamiliar3_Rule
@@ -678,7 +659,6 @@ Rule visage_Respawn_Rule
 Response visage_Select
 {
 	scene "scenes/visage/visage_visa_rare_01.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_rare_02.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_rare_03.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_rare_04.vcd" nodelay noscene 
 }
@@ -1148,9 +1128,19 @@ Rule visage_Thanks_Rule
 	response visage_Thanks
 }
 
+Response visage_PainChance_25%
+{
+	scene "scenes/visage/visage_visa_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule visage_PainChance_25%_Rule
+{
+	criteria Pain Isvisage Chance_25%
+	response visage_PainChance_25%
+}
+
 Response visage_Pain
 {
-	scene "scenes/visage/visage_visa_underattack_01.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_pain_01.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_pain_02.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_pain_03.vcd" nodelay noscene 

@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/oracle/oracle_bracers_color"
+	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/heroes/oracle/oracle_bracers_masks1"
+	"$maskmap2" "models/heroes/oracle/oracle_bracers_masks2"
+
+
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" "1"
+
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 10
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 2 3]"
+	$alphatest 1
+	
+	$ignorebudgetcheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

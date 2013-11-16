@@ -3,6 +3,13 @@ criterion "IsEnemywarlock" "targetclassname" "npc_dota_hero_warlock" weight 5 re
 criterion "IsAllywarlock" "nearby_ally" "npc_dota_hero_warlock" weight 5 required
 criterion "IsAbilityUpheaval" "abilityname" "warlock_upheaval" weight 5 required
 criterion "IsAbilityRainOfChaos" "abilityname" "warlock_rain_of_chaos" weight 5 required
+criterion "IsWarlockGolemDiffused" "abilityname" "item_diffusal_blade" weight 5 required
+criterion "IsWarlockGolemLvl1" "creaturename" "npc_dota_warlock_golem_1" weight 5 required
+criterion "IsWarlockGolemLvl2" "creaturename" "npc_dota_warlock_golem_2" weight 5 required
+criterion "IsWarlockGolemLvl3" "creaturename" "npc_dota_warlock_golem_3" weight 5 required
+criterion "IsWarlockScepterGolemLvl1" "creaturename" "npc_dota_warlock_golem_scepter_1" weight 5 required
+criterion "IsWarlockScepterGolemLvl2" "creaturename" "npc_dota_warlock_golem_scepter_2" weight 5 required
+criterion "IsWarlockScepterGolemLvl3" "creaturename" "npc_dota_warlock_golem_scepter_3" weight 5 required
 
 Response warlock_Spawn
 {
@@ -135,9 +142,19 @@ Rule warlock_CastExecuteIsAbilityUpheaval_Rule
 	response warlock_CastExecuteIsAbilityUpheaval
 }
 
-Response warlock_CastExecuteIsAbilityRainOfChaos
+Response warlock_CastExecuteIsAbilityRainOfChaosChance_5%
 {
 	scene "scenes/warlock/warlock_warl_ability_reign_01.vcd" nodelay noscene 
+}
+
+Rule warlock_CastExecuteIsAbilityRainOfChaosChance_5%_Rule
+{
+	criteria CastExecute Iswarlock IsAbilityRainOfChaos Chance_5%
+	response warlock_CastExecuteIsAbilityRainOfChaosChance_5%
+}
+
+Response warlock_CastExecuteIsAbilityRainOfChaos
+{
 	scene "scenes/warlock/warlock_warl_ability_reign_02.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_ability_reign_03.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_ability_reign_04.vcd" nodelay noscene 
@@ -151,17 +168,17 @@ Rule warlock_CastExecuteIsAbilityRainOfChaos_Rule
 	response warlock_CastExecuteIsAbilityRainOfChaos
 }
 
-Response warlock_CastExecuteIsAbilityRainOfChaosHasScepter
+Response warlock_CastExecuteIsAbilityRainOfChaosHasScepterChance_30%
 {
 	scene "scenes/warlock/warlock_warl_doubdemon_01.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_doubdemon_05.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_doubdemon_07.vcd" nodelay noscene 
 }
 
-Rule warlock_CastExecuteIsAbilityRainOfChaosHasScepter_Rule
+Rule warlock_CastExecuteIsAbilityRainOfChaosHasScepterChance_30%_Rule
 {
-	criteria CastExecute Iswarlock IsAbilityRainOfChaos HasScepter
-	response warlock_CastExecuteIsAbilityRainOfChaosHasScepter
+	criteria CastExecute Iswarlock IsAbilityRainOfChaos HasScepter Chance_30%
+	response warlock_CastExecuteIsAbilityRainOfChaosHasScepterChance_30%
 }
 
 Response warlock_LevelUp
@@ -223,6 +240,96 @@ Rule warlock_KillIsFirstBlood_Rule
 	response warlock_KillIsFirstBlood
 }
 
+Response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl1
+{
+	scene "scenes/warlock/warlock_warl_defusal_01.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_02.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_03.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_04.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_05.vcd" nodelay noscene weapondelay 60
+}
+
+Rule warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl1_Rule
+{
+	criteria PetDeath Iswarlock IsWarlockGolemDiffused Chance_50% IsWarlockGolemLvl1
+	response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl1
+}
+
+Response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl2
+{
+	scene "scenes/warlock/warlock_warl_defusal_01.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_02.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_03.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_04.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_05.vcd" nodelay noscene weapondelay 60
+}
+
+Rule warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl2_Rule
+{
+	criteria PetDeath Iswarlock IsWarlockGolemDiffused Chance_50% IsWarlockGolemLvl2
+	response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl2
+}
+
+Response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl3
+{
+	scene "scenes/warlock/warlock_warl_defusal_01.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_02.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_03.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_04.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_05.vcd" nodelay noscene weapondelay 60
+}
+
+Rule warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl3_Rule
+{
+	criteria PetDeath Iswarlock IsWarlockGolemDiffused Chance_50% IsWarlockGolemLvl3
+	response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockGolemLvl3
+}
+
+Response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl1
+{
+	scene "scenes/warlock/warlock_warl_defusal_01.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_02.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_03.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_04.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_05.vcd" nodelay noscene weapondelay 60
+}
+
+Rule warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl1_Rule
+{
+	criteria PetDeath Iswarlock IsWarlockGolemDiffused Chance_50% IsWarlockScepterGolemLvl1
+	response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl1
+}
+
+Response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl2
+{
+	scene "scenes/warlock/warlock_warl_defusal_01.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_02.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_03.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_04.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_05.vcd" nodelay noscene weapondelay 60
+}
+
+Rule warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl2_Rule
+{
+	criteria PetDeath Iswarlock IsWarlockGolemDiffused Chance_50% IsWarlockScepterGolemLvl2
+	response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl2
+}
+
+Response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl3
+{
+	scene "scenes/warlock/warlock_warl_defusal_01.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_02.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_03.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_04.vcd" nodelay noscene weapondelay 60
+	scene "scenes/warlock/warlock_warl_defusal_05.vcd" nodelay noscene weapondelay 60
+}
+
+Rule warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl3_Rule
+{
+	criteria PetDeath Iswarlock IsWarlockGolemDiffused Chance_50% IsWarlockScepterGolemLvl3
+	response warlock_PetDeathIsWarlockGolemDiffusedChance_50%IsWarlockScepterGolemLvl3
+}
+
 Response warlock_LastHit
 {
 	scene "scenes/warlock/warlock_warl_lasthit_01.vcd" nodelay noscene 
@@ -252,7 +359,6 @@ Response warlock_Death
 	scene "scenes/warlock/warlock_warl_death_08.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_death_09.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_death_10.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_death_11.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_death_12.vcd" nodelay noscene 
 }
 
@@ -260,6 +366,17 @@ Rule warlock_Death_Rule
 {
 	criteria Death Iswarlock 
 	response warlock_Death
+}
+
+Response warlock_DeathChance_3%
+{
+	scene "scenes/warlock/warlock_warl_death_11.vcd" nodelay noscene 
+}
+
+Rule warlock_DeathChance_3%_Rule
+{
+	criteria Death Iswarlock Chance_3%
+	response warlock_DeathChance_3%
 }
 
 Response warlock_DeathIsReincarnating
@@ -322,7 +439,7 @@ Rule warlock_PurchaseIsExpensiveItem_Rule
 
 Response warlock_PurchaseIsRefresher
 {
-	scene "scenes/warlock/warlock_warl_refresh_01.vcd" nodelay noscene 
+	scene "scenes/warlock/warlock_warl_refresh_01.vcd" nodelay noscene speakonce
 }
 
 Rule warlock_PurchaseIsRefresher_Rule
@@ -333,10 +450,9 @@ Rule warlock_PurchaseIsRefresher_Rule
 
 Response warlock_PurchaseIsDivineRapier
 {
-	scene "scenes/warlock/warlock_warl_rapier_01.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_rapier_02.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_rapier_03.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_rapier_04.vcd" nodelay noscene 
+	scene "scenes/warlock/warlock_warl_rapier_02.vcd" nodelay noscene speakonce
+	scene "scenes/warlock/warlock_warl_rapier_03.vcd" nodelay noscene speakonce
+	scene "scenes/warlock/warlock_warl_rapier_04.vcd" nodelay noscene speakonce
 }
 
 Rule warlock_PurchaseIsDivineRapier_Rule
@@ -370,36 +486,6 @@ Rule warlock_Bottling_Rule
 	response warlock_Bottling
 }
 
-Response warlock_MissingIsLaneTop
-{
-}
-
-Rule warlock_MissingIsLaneTop_Rule
-{
-	criteria Missing Iswarlock IsLaneTop
-	response warlock_MissingIsLaneTop
-}
-
-Response warlock_MissingIsLaneMid
-{
-}
-
-Rule warlock_MissingIsLaneMid_Rule
-{
-	criteria Missing Iswarlock IsLaneMid
-	response warlock_MissingIsLaneMid
-}
-
-Response warlock_MissingIsLaneBot
-{
-}
-
-Rule warlock_MissingIsLaneBot_Rule
-{
-	criteria Missing Iswarlock IsLaneBot
-	response warlock_MissingIsLaneBot
-}
-
 Response warlock_Deny
 {
 	scene "scenes/warlock/warlock_warl_deny_01.vcd" nodelay noscene 
@@ -426,13 +512,23 @@ Response warlock_Defeat
 {
 	scene "scenes/warlock/warlock_warl_lose_01.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_lose_02.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_lose_03.vcd" nodelay noscene 
 }
 
 Rule warlock_Defeat_Rule
 {
 	criteria Defeat Iswarlock 
 	response warlock_Defeat
+}
+
+Response warlock_DefeatChance_10%
+{
+	scene "scenes/warlock/warlock_warl_lose_03.vcd" nodelay noscene 
+}
+
+Rule warlock_DefeatChance_10%_Rule
+{
+	criteria Defeat Iswarlock Chance_10%
+	response warlock_DefeatChance_10%
 }
 
 Response warlock_Victory
@@ -627,18 +723,18 @@ Rule warlock_Thanks_Rule
 	response warlock_Thanks
 }
 
-Response warlock_Pain
-{
-	scene "scenes/warlock/warlock_warl_underattack_01.vcd" nodelay noscene 
-}
-
-Rule warlock_Pain_Rule
-{
-	criteria Pain Iswarlock 
-	response warlock_Pain
-}
-
 Response warlock_PainChance_25%
+{
+	scene "scenes/warlock/warlock_warl_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule warlock_PainChance_25%_Rule
+{
+	criteria Pain Iswarlock Chance_25%
+	response warlock_PainChance_25%
+}
+
+Response warlock_Pain
 {
 	scene "scenes/warlock/warlock_warl_pain_01.vcd" nodelay noscene 
 	scene "scenes/warlock/warlock_warl_pain_02.vcd" nodelay noscene 
@@ -650,10 +746,10 @@ Response warlock_PainChance_25%
 	scene "scenes/warlock/warlock_warl_pain_08.vcd" nodelay noscene 
 }
 
-Rule warlock_PainChance_25%_Rule
+Rule warlock_Pain_Rule
 {
-	criteria Pain Iswarlock Chance_25%
-	response warlock_PainChance_25%
+	criteria Pain Iswarlock 
+	response warlock_Pain
 }
 
 Response warlock_InTheBag
@@ -714,20 +810,5 @@ Rule warlock_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Iswarlock IsEmoteLaugh
 	response warlock_EmoteIsEmoteLaugh
-}
-
-Response warlock_EmoteIsEmoteAnger
-{
-	scene "scenes/warlock/warlock_warl_anger_01.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_anger_02.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_anger_03.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_anger_04.vcd" nodelay noscene 
-	scene "scenes/warlock/warlock_warl_anger_05.vcd" nodelay noscene 
-}
-
-Rule warlock_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Iswarlock IsEmoteAnger
-	response warlock_EmoteIsEmoteAnger
 }
 

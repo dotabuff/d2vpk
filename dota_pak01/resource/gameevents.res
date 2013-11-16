@@ -204,6 +204,17 @@
 		"userid"	"short"
 	}
 
+	"npc_spawned"
+	{
+		"entindex"	"long"
+	}
+
+	"npc_replaced"
+	{
+		"old_entindex"	"long"
+		"new_entindex"	"long"
+	}
+
 	"entity_killed"
 	{
 		"entindex_killed" 	"long"
@@ -329,6 +340,7 @@
 	
 	"inventory_updated"
 	{
+		"itemdef"	"short"
 	}
 	"cart_updated"
 	{

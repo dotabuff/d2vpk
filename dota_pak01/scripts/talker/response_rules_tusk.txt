@@ -97,6 +97,7 @@ Response tusk_CustomIsTuskPunch
 	scene "scenes/tusk/tusk_tusk_superpunch_attack_57.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_superpunch_attack_58.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_superpunch_attack_59.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_60.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_superpunch_attack_61.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_superpunch_attack_64.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_superpunch_attack_65.vcd" nodelay noscene 
@@ -162,6 +163,31 @@ Rule tusk_KillIsFirstBlood_Rule
 	response tusk_KillIsFirstBlood
 }
 
+Response tusk_KillIsTuskIceShardsChance_15%
+{
+	scene "scenes/tusk/tusk_tusk_iceshards_04.vcd" nodelay noscene 
+}
+
+Rule tusk_KillIsTuskIceShardsChance_15%_Rule
+{
+	criteria Kill Istusk IsTuskIceShards Chance_15%
+	response tusk_KillIsTuskIceShardsChance_15%
+}
+
+Response tusk_KillIsTuskSnowballChance_25%
+{
+	scene "scenes/tusk/tusk_tusk_snowball_11.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_14.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_15.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_16.vcd" nodelay noscene 
+}
+
+Rule tusk_KillIsTuskSnowballChance_25%_Rule
+{
+	criteria Kill Istusk IsTuskSnowball Chance_25%
+	response tusk_KillIsTuskSnowballChance_25%
+}
+
 Response tusk_Kill
 {
 	scene "scenes/tusk/tusk_tusk_kill_01.vcd" nodelay noscene 
@@ -184,6 +210,7 @@ Response tusk_Kill
 	scene "scenes/tusk/tusk_tusk_kill_21.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_kill_22.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_kill_23.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_kill_26.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_deny_11.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_laugh_01.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_laugh_02.vcd" nodelay noscene 

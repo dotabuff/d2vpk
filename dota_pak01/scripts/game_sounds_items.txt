@@ -279,6 +279,15 @@
 	"wave"			")items\dota_item_blade_mail.wav"
 }
 
+"DOTA_Item.BladeMail.Damage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_90"
+	"pitch"			"95, 105"
+	"wave"			")items\blade_mail_damage.wav"
+}
+
 "DOTA_Item.BladeMail.Deactivate"
 {
 	"channel"		"CHAN_STATIC"
@@ -293,6 +302,24 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items\item_diffusalblade.wav"
+}
+
+"DOTA_Item.DiffusalBlade.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items\item_diffusalblade.wav"
+}
+
+"DOTA_Item.DiffusalBlade.Kill"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
 	"pitch"			"95, 105"
 	"wave"			")items\item_diffusalblade.wav"
 }

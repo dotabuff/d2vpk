@@ -129,7 +129,7 @@
 "RoshanDT.Footstep"
 {
 	"channel"		"CHAN_BODY"
-	"volume"		"1"
+	"volume"		"0.6, 0.8"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"rndwave"
@@ -146,7 +146,7 @@
 			"import_stack" "dota_update_default"
 			"mixer"
 			{
-				"mixgroup" "Weapons"
+				"mixgroup" "Physics"
 			}
 			"speakers_spatialize"
 			{
@@ -398,6 +398,18 @@
 	"soundentry_version" "2"
 	"operator_stacks"
 	{
+		"start_stack"
+		{
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "RoshanDT.SunStrike.Charge"
+				"match_channel" "false"
+			}
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -431,7 +443,7 @@
 				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "false"
-				"match_entry" "Roshan.SunStrike.Ignite"
+				"match_entry" "RoshanDT.SunStrike.Ignite"
 				"match_channel" "false"
 			}
 		}
@@ -537,7 +549,7 @@
 			"import_stack" "dota_update_default"
 			"mixer"
 			{
-				"mixgroup" "Ultimates"
+				"mixgroup" "Weapons"
 			}
 			"speakers_spatialize"
 			{
@@ -723,37 +735,104 @@
         "channel"		"CHAN_WEAPON"
         "volume"		"0.5"
         "soundlevel"	"SNDLVL_81dB"
-        "pitch"			"95, 105"
-        "rndwave"
-		{
-			"wave" "weapons\hero\jakiro\attack_01.wav"
-			"wave" "weapons\hero\jakiro\attack_02.wav"
-			"wave" "weapons\hero\jakiro\attack_03.wav"
-		}
-		"operator_stacks"
-		{
+        "pitch"			"85"
+      	"wave"			")weapons/hero/jakiro/macropyre_cast.wav"
+	"operator_stacks"
+	{
 			"update_stack"
 			{
 				"import_stack" "dota_update_default"
 				"mixer"
 				{
-					"mixgroup" "Weapons"
+					"mixgroup" "Ultimates"
 				}
 				"speakers_spatialize"
 				{
-					"input_radius"  "600"
+					"input_radius"  "300"
 				}
 			}
-		}
+	}
 }
 
 "RoshanDT.FireBreath2"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.6"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"75"
+	"wave"			")weapons/hero/dragon_knight/dragonknight_fire.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"RoshanDT.Fireball.Start"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/nevermore/requiem_cast.wav"
+	"pitch"			"80, 90"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"RoshanDT.Fireball.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
 	"wave"			"weapons/hero/jakiro/macropyre.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"RoshanDT.Fireball.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/jakiro/liquid_fire.wav"
 	"operator_stacks"
 	{
 		"update_stack"

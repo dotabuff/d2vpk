@@ -188,6 +188,39 @@
 	}
 }
 
+"Hero_StormSpirit.BallLightning.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/storm_spirit/ball_lightning_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"usat_stop_time"
+			{
+				"input2" "10.0"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
 "Hero_StormSpirit.Footsteps"
 {
 	"channel"		"CHAN_BODY"

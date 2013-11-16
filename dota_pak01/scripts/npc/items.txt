@@ -2488,7 +2488,7 @@
 		"ItemCost"						"1750"
 		"ItemShopTags"					"damage;regen_health;regen_mana"		
 		"ItemQuality"					"common"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"				"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemShareability"				"ITEM_PARTIALLY_SHAREABLE"
 		
 		// Special	
@@ -3118,7 +3118,7 @@
 		"ItemCost"						"500"
 		"ItemShopTags"					"damage;regen_mana;armor"
 		"ItemQuality"					"rare"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemAliases"					"rob"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES"
 		
@@ -4486,6 +4486,7 @@
 		"ItemShopTags"					"int;str;agi;mana_pool;health_pool;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"ultimate"
+		//"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"		// heroes for whom this is a problem solve it in their code - ogre magi, meepo
 		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
@@ -4911,7 +4912,7 @@
 		"ItemCost"						"4700"
 		"ItemShopTags"					"int;armor;hard_to_tag"
 		"ItemQuality"					"epic"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
@@ -5982,7 +5983,7 @@
 		"ItemCost"						"5050"
 		"ItemShopTags"					"agi;str;int;attack_speed;move_speed;hard_to_tag"
 		"ItemQuality"					"epic"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
@@ -6357,7 +6358,7 @@
 		"ItemShopTags"					"damage;str;agi;attack_speed;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"sny;s&y;sy"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
@@ -6544,7 +6545,7 @@
 		"ItemCost"						"5300"
 		"ItemShopTags"					"damage;attack_speed;unique"
 		"ItemQuality"					"artifact"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
@@ -6840,7 +6841,7 @@
 		"ItemCost"						"1850"
 		"ItemShopTags"					"damage;armor;unique;hard_to_tag"
 		"ItemQuality"					"artifact"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemAliases"					"hotd"
 		
 		// Special	
@@ -7306,6 +7307,7 @@
 		"AbilityCastPoint"				"0.0"
 		"AbilityCooldown"				"8.0"
 		"AbilitySharedCooldown"			"diffusal"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -7417,7 +7419,7 @@
 		"ItemCost"						"4900"
 		"ItemShopTags"					"agi;str;int;hard_to_tag"
 		"ItemQuality"					"epic"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemAliases"					"eb"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
 		
@@ -7604,7 +7606,7 @@
 		"ItemShopTags"					"move_speed;boost_mana;mana_pool"
 		"ItemQuality"					"rare"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemAlertable"					"1"
 		"ItemAliases"					"mana;mb"
 		
@@ -8149,7 +8151,7 @@
 		"ItemCost"						"6750"
 		"ItemShopTags"					"damage;str;hard_to_tag"
 		"ItemQuality"					"epic"
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
@@ -8342,7 +8344,7 @@
 		"ItemShopTags"					""
 		"ItemQuality"					"rare"
 		"ItemShareability"				""		
-		"ItemDisassemblable"			"1"
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemAliases"					"roa"
 
 		// Sound

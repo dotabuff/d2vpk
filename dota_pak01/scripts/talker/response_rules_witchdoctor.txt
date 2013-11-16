@@ -80,20 +80,6 @@ Rule witchdoctor_CustomIsGameStart_Rule
 	response witchdoctor_CustomIsGameStart
 }
 
-Response witchdoctor_CustomIsWitchDoctorVoodooRestoration
-{
-	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_voodoo_01.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_voodoo_02.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_voodoo_05.vcd" nodelay noscene respeakdelay 15
-	scene "scenes/witchdoctor/witchdoctor_wdoc_lasthit_05.vcd" nodelay noscene respeakdelay 15
-}
-
-Rule witchdoctor_CustomIsWitchDoctorVoodooRestoration_Rule
-{
-	criteria Custom Iswitchdoctor IsWitchDoctorVoodooRestoration
-	response witchdoctor_CustomIsWitchDoctorVoodooRestoration
-}
-
 Response witchdoctor_CustomIsMaledictHighDamageIsMaledictPenultimateTick
 {
 	scene "scenes/witchdoctor/witchdoctor_wdoc_killspecial_01.vcd" nodelay noscene 
@@ -104,18 +90,6 @@ Rule witchdoctor_CustomIsMaledictHighDamageIsMaledictPenultimateTick_Rule
 {
 	criteria Custom Iswitchdoctor IsMaledictHighDamage IsMaledictPenultimateTick
 	response witchdoctor_CustomIsMaledictHighDamageIsMaledictPenultimateTick
-}
-
-Response witchdoctor_CustomIsMaledictFailToKillIsMaledictFinalTick
-{
-	scene "scenes/witchdoctor/witchdoctor_wdoc_anger_01.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_anger_07.vcd" nodelay noscene 
-}
-
-Rule witchdoctor_CustomIsMaledictFailToKillIsMaledictFinalTick_Rule
-{
-	criteria Custom Iswitchdoctor IsMaledictFailToKill IsMaledictFinalTick
-	response witchdoctor_CustomIsMaledictFailToKillIsMaledictFinalTick
 }
 
 Response witchdoctor_CastOrder
@@ -146,53 +120,23 @@ Rule witchdoctor_CastExecuteIsWitchDoctorCask_Rule
 	response witchdoctor_CastExecuteIsWitchDoctorCask
 }
 
-Response witchdoctor_CastExecuteIsWitchDoctorMaledictIsMaledictSuccessful
+Response witchdoctor_KillIsMaledictKillUnitChance_25%
 {
 	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_maledict_01.vcd" nodelay noscene 
 	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_maledict_02.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_maledict_03.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_maledict_04.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_killspecial_03.vcd" nodelay noscene 
 }
 
-Rule witchdoctor_CastExecuteIsWitchDoctorMaledictIsMaledictSuccessful_Rule
+Rule witchdoctor_KillIsMaledictKillUnitChance_25%_Rule
 {
-	criteria CastExecute Iswitchdoctor IsWitchDoctorMaledict IsMaledictSuccessful
-	response witchdoctor_CastExecuteIsWitchDoctorMaledictIsMaledictSuccessful
-}
-
-Response witchdoctor_CastExecuteIsWitchDoctorMaledictIsMaledictFail
-{
-	scene "scenes/witchdoctor/witchdoctor_wdoc_anger_02.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_anger_03.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_anger_05.vcd" nodelay noscene 
-}
-
-Rule witchdoctor_CastExecuteIsWitchDoctorMaledictIsMaledictFail_Rule
-{
-	criteria CastExecute Iswitchdoctor IsWitchDoctorMaledict IsMaledictFail
-	response witchdoctor_CastExecuteIsWitchDoctorMaledictIsMaledictFail
-}
-
-Response witchdoctor_LevelUp
-{
-	scene "scenes/witchdoctor/witchdoctor_wdoc_level_01.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_level_02.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_level_03.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_level_04.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_level_05.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_level_06.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_level_07.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_level_08.vcd" nodelay noscene 
-}
-
-Rule witchdoctor_LevelUp_Rule
-{
-	criteria LevelUp Iswitchdoctor 
-	response witchdoctor_LevelUp
+	criteria Kill Iswitchdoctor IsMaledictKillUnit Chance_25%
+	response witchdoctor_KillIsMaledictKillUnitChance_25%
 }
 
 Response witchdoctor_Kill
 {
+	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_maledict_03.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_ability_maledict_04.vcd" nodelay noscene 
 	scene "scenes/witchdoctor/witchdoctor_wdoc_kill_02.vcd" nodelay noscene 
 	scene "scenes/witchdoctor/witchdoctor_wdoc_kill_03.vcd" nodelay noscene 
 	scene "scenes/witchdoctor/witchdoctor_wdoc_kill_05.vcd" nodelay noscene 
@@ -219,15 +163,22 @@ Rule witchdoctor_Kill_Rule
 	response witchdoctor_Kill
 }
 
-Response witchdoctor_KillIsMaledictKillUnitChance_25%
+Response witchdoctor_LevelUp
 {
-	scene "scenes/witchdoctor/witchdoctor_wdoc_killspecial_03.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_level_01.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_level_02.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_level_03.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_level_04.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_level_05.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_level_06.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_level_07.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_level_08.vcd" nodelay noscene 
 }
 
-Rule witchdoctor_KillIsMaledictKillUnitChance_25%_Rule
+Rule witchdoctor_LevelUp_Rule
 {
-	criteria Kill Iswitchdoctor IsMaledictKillUnit Chance_25%
-	response witchdoctor_KillIsMaledictKillUnitChance_25%
+	criteria LevelUp Iswitchdoctor 
+	response witchdoctor_LevelUp
 }
 
 Response witchdoctor_LastHit
@@ -649,17 +600,38 @@ Response witchdoctor_Pain
 {
 	scene "scenes/witchdoctor/witchdoctor_wdoc_pain_01.vcd" nodelay noscene 
 	scene "scenes/witchdoctor/witchdoctor_wdoc_pain_02.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_pain_03.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_pain_04.vcd" nodelay noscene 
 	scene "scenes/witchdoctor/witchdoctor_wdoc_pain_06.vcd" nodelay noscene 
 	scene "scenes/witchdoctor/witchdoctor_wdoc_pain_07.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_underattack_01.vcd" nodelay noscene 
-	scene "scenes/witchdoctor/witchdoctor_wdoc_underattack_02.vcd" nodelay noscene 
 }
 
 Rule witchdoctor_Pain_Rule
 {
 	criteria Pain Iswitchdoctor 
 	response witchdoctor_Pain
+}
+
+Response witchdoctor_PainChance_1%
+{
+	scene "scenes/witchdoctor/witchdoctor_wdoc_pain_03.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_underattack_02.vcd" nodelay noscene speakonce
+}
+
+Rule witchdoctor_PainChance_1%_Rule
+{
+	criteria Pain Iswitchdoctor Chance_1%
+	response witchdoctor_PainChance_1%
+}
+
+Response witchdoctor_PainChance_25%
+{
+	scene "scenes/witchdoctor/witchdoctor_wdoc_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule witchdoctor_PainChance_25%_Rule
+{
+	criteria Pain Iswitchdoctor Chance_25%
+	response witchdoctor_PainChance_25%
 }
 
 Response witchdoctor_ItemDropIsCommonDrop

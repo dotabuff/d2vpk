@@ -308,7 +308,7 @@
 			"type"		"2"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
 			"text"		"#DOTA_Quest_Denies"
 			"player_stat_type"		"denies"
-			"player_stat_value"		"5"
+			"player_stat_value"		"3"
 			"dont_count_current_value"	"1"
 		}
 
@@ -337,6 +337,23 @@
 
 	"lasthit_training_end"
 	{
+		"player_movement_allowed"	"0"
+		"setcamera_to_follow"		"ss_roquelaire"
+
+		"npc_speech"
+		{
+			"text"			"#DOTA_Tutorial_LastHit_End"
+			"npc"			"ss_roquelaire"
+		}
+
+		"advance_event"				"lesson_started"
+		"advance_time"				"7"
+		"next_lesson"				"lasthit_training_really_end"
+	}
+
+	"lasthit_training_really_end"
+	{
+		"stop_npc_speech"			"ss_roquelaire"
 		"fade_to"					"255"
 		"finish_text"				"#DOTA_LastHitTraining_Finished"
 		"finish_tutorial"			"1"

@@ -1,6 +1,7 @@
 criterion "Isviper" "classname" "npc_dota_hero_viper" weight 5 required
 criterion "IsEnemyviper" "targetclassname" "npc_dota_hero_viper" weight 5 required
 criterion "IsAllyviper" "nearby_ally" "npc_dota_hero_viper" weight 5 required
+criterion "IsViperStrike" "abilityname" "viper_viper_strike" weight 5 required
 
 Response viper_Spawn
 {
@@ -14,6 +15,17 @@ Rule viper_Spawn_Rule
 {
 	criteria Spawn Isviper 
 	response viper_Spawn
+}
+
+Response viper_SpawnChance_1%
+{
+	scene "scenes/viper/viper_vipe_spawn_05.vcd" nodelay noscene 
+}
+
+Rule viper_SpawnChance_1%_Rule
+{
+	criteria Spawn Isviper Chance_1%
+	response viper_SpawnChance_1%
 }
 
 Response viper_CustomIsGameStart
@@ -85,26 +97,21 @@ Rule viper_CastOrder_Rule
 	response viper_CastOrder
 }
 
-Response viper_LevelUp
+Response viper_KillIsViperStrikeChance_10%
 {
-	scene "scenes/viper/viper_vipe_level_01.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_level_02.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_level_03.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_level_04.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_level_05.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_level_06.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_level_07.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_level_08.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_ability_poisattac_03.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_ability_viprstrik_01.vcd" nodelay noscene 
 }
 
-Rule viper_LevelUp_Rule
+Rule viper_KillIsViperStrikeChance_10%_Rule
 {
-	criteria LevelUp Isviper 
-	response viper_LevelUp
+	criteria Kill Isviper IsViperStrike Chance_10%
+	response viper_KillIsViperStrikeChance_10%
 }
 
 Response viper_Kill
 {
+	scene "scenes/viper/viper_vipe_ability_poisattac_04.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_kill_01.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_kill_02.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_kill_03.vcd" nodelay noscene 
@@ -152,16 +159,92 @@ Rule viper_KillIsEnemyVisageChance_20%_Rule
 	response viper_KillIsEnemyVisageChance_20%
 }
 
+Response viper_KillIsEnemySkywrath_MageChance_20%
+{
+	scene "scenes/viper/viper_vipe_rare_02.vcd" nodelay noscene 
+}
+
+Rule viper_KillIsEnemySkywrath_MageChance_20%_Rule
+{
+	criteria Kill Isviper IsEnemySkywrath_Mage Chance_20%
+	response viper_KillIsEnemySkywrath_MageChance_20%
+}
+
 Response viper_KillIsEnemyBatriderChance_20%
 {
 	scene "scenes/viper/viper_vipe_killspecial_batrider_01.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 
 }
 
 Rule viper_KillIsEnemyBatriderChance_20%_Rule
 {
 	criteria Kill Isviper IsEnemyBatrider Chance_20%
 	response viper_KillIsEnemyBatriderChance_20%
+}
+
+Response viper_KillIsEnemyBatriderChance_10%
+{
+	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 
+}
+
+Rule viper_KillIsEnemyBatriderChance_10%_Rule
+{
+	criteria Kill Isviper IsEnemyBatrider Chance_10%
+	response viper_KillIsEnemyBatriderChance_10%
+}
+
+Response viper_KillIsEnemyPuckChance_10%
+{
+	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 
+}
+
+Rule viper_KillIsEnemyPuckChance_10%_Rule
+{
+	criteria Kill Isviper IsEnemyPuck Chance_10%
+	response viper_KillIsEnemyPuckChance_10%
+}
+
+Response viper_KillIsEnemyJakiroChance_10%
+{
+	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 
+}
+
+Rule viper_KillIsEnemyJakiroChance_10%_Rule
+{
+	criteria Kill Isviper IsEnemyJakiro Chance_10%
+	response viper_KillIsEnemyJakiroChance_10%
+}
+
+Response viper_KillIsEnemySkywrath_MageChance_10%
+{
+	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 
+}
+
+Rule viper_KillIsEnemySkywrath_MageChance_10%_Rule
+{
+	criteria Kill Isviper IsEnemySkywrath_Mage Chance_10%
+	response viper_KillIsEnemySkywrath_MageChance_10%
+}
+
+Response viper_KillIsEnemyVisageChance_10%
+{
+	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 
+}
+
+Rule viper_KillIsEnemyVisageChance_10%_Rule
+{
+	criteria Kill Isviper IsEnemyVisage Chance_10%
+	response viper_KillIsEnemyVisageChance_10%
+}
+
+Response viper_KillIsEnemyOutworld_DestroyerChance_10%
+{
+	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 
+}
+
+Rule viper_KillIsEnemyOutworld_DestroyerChance_10%_Rule
+{
+	criteria Kill Isviper IsEnemyOutworld_Destroyer Chance_10%
+	response viper_KillIsEnemyOutworld_DestroyerChance_10%
 }
 
 Response viper_KillIsFirstBlood
@@ -173,6 +256,24 @@ Rule viper_KillIsFirstBlood_Rule
 {
 	criteria Kill Isviper IsFirstBlood
 	response viper_KillIsFirstBlood
+}
+
+Response viper_LevelUp
+{
+	scene "scenes/viper/viper_vipe_level_01.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_level_02.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_level_03.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_level_04.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_level_05.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_level_06.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_level_07.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_level_08.vcd" nodelay noscene 
+}
+
+Rule viper_LevelUp_Rule
+{
+	criteria LevelUp Isviper 
+	response viper_LevelUp
 }
 
 Response viper_LastHit
@@ -197,7 +298,6 @@ Response viper_Death
 {
 	scene "scenes/viper/viper_vipe_death_01.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_death_02.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_death_03.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_death_04.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_death_05.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_death_06.vcd" nodelay noscene 
@@ -217,26 +317,37 @@ Rule viper_Death_Rule
 	response viper_Death
 }
 
-Response viper_DeathIsEnemySniperChance_25%
+Response viper_DeathIsEnemyEmber_SpiritChance_20%
+{
+	scene "scenes/viper/viper_vipe_death_03.vcd" nodelay noscene 
+}
+
+Rule viper_DeathIsEnemyEmber_SpiritChance_20%_Rule
+{
+	criteria Death Isviper IsEnemyEmber_Spirit Chance_20%
+	response viper_DeathIsEnemyEmber_SpiritChance_20%
+}
+
+Response viper_DeathIsEnemySniperChance_20%
 {
 	scene "scenes/viper/viper_vipe_death_14.vcd" nodelay noscene 
 }
 
-Rule viper_DeathIsEnemySniperChance_25%_Rule
+Rule viper_DeathIsEnemySniperChance_20%_Rule
 {
-	criteria Death Isviper IsEnemySniper Chance_25%
-	response viper_DeathIsEnemySniperChance_25%
+	criteria Death Isviper IsEnemySniper Chance_20%
+	response viper_DeathIsEnemySniperChance_20%
 }
 
-Response viper_DeathIsEnemyLinaChance_25%
+Response viper_DeathIsEnemyLinaChance_20%
 {
 	scene "scenes/viper/viper_vipe_death_15.vcd" nodelay noscene 
 }
 
-Rule viper_DeathIsEnemyLinaChance_25%_Rule
+Rule viper_DeathIsEnemyLinaChance_20%_Rule
 {
-	criteria Death Isviper IsEnemyLina Chance_25%
-	response viper_DeathIsEnemyLinaChance_25%
+	criteria Death Isviper IsEnemyLina Chance_20%
+	response viper_DeathIsEnemyLinaChance_20%
 }
 
 Response viper_DeathIsReincarnating
@@ -274,7 +385,6 @@ Rule viper_Respawn_Rule
 Response viper_Select
 {
 	scene "scenes/viper/viper_vipe_rare_01.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_rare_02.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_rare_03.vcd" nodelay noscene 
 }
 
@@ -346,7 +456,7 @@ Rule viper_PurchaseIsButterfly_Rule
 
 Response viper_PurchaseIsOrbOfVenom
 {
-	scene "scenes/viper/viper_vipe_orbofvenome_01.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_orbofvenome_01.vcd" nodelay noscene speakonce
 }
 
 Rule viper_PurchaseIsOrbOfVenom_Rule
@@ -366,36 +476,6 @@ Rule viper_Bottling_Rule
 {
 	criteria Bottling Isviper 
 	response viper_Bottling
-}
-
-Response viper_MissingIsLaneTop
-{
-}
-
-Rule viper_MissingIsLaneTop_Rule
-{
-	criteria Missing Isviper IsLaneTop
-	response viper_MissingIsLaneTop
-}
-
-Response viper_MissingIsLaneMid
-{
-}
-
-Rule viper_MissingIsLaneMid_Rule
-{
-	criteria Missing Isviper IsLaneMid
-	response viper_MissingIsLaneMid
-}
-
-Response viper_MissingIsLaneBot
-{
-}
-
-Rule viper_MissingIsLaneBot_Rule
-{
-	criteria Missing Isviper IsLaneBot
-	response viper_MissingIsLaneBot
 }
 
 Response viper_Deny
@@ -642,12 +722,25 @@ Rule viper_Thanks_Rule
 	response viper_Thanks
 }
 
+Response viper_PainChance_25%
+{
+	scene "scenes/viper/viper_vipe_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule viper_PainChance_25%_Rule
+{
+	criteria Pain Isviper Chance_25%
+	response viper_PainChance_25%
+}
+
 Response viper_Pain
 {
-	scene "scenes/viper/viper_vipe_underattack_01.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_pain_01.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_pain_02.vcd" nodelay noscene 
 	scene "scenes/viper/viper_vipe_pain_03.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_pain_04.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_pain_05.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_pain_06.vcd" nodelay noscene 
 }
 
 Rule viper_Pain_Rule
@@ -720,21 +813,5 @@ Rule viper_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isviper IsEmoteLaugh
 	response viper_EmoteIsEmoteLaugh
-}
-
-Response viper_EmoteIsEmoteAnger
-{
-	scene "scenes/viper/viper_vipe_anger_01.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_anger_02.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_anger_03.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_anger_04.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_anger_05.vcd" nodelay noscene 
-	scene "scenes/viper/viper_vipe_anger_06.vcd" nodelay noscene 
-}
-
-Rule viper_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isviper IsEmoteAnger
-	response viper_EmoteIsEmoteAnger
 }
 

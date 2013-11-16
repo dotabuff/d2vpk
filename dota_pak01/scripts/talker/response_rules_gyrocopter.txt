@@ -465,15 +465,15 @@ Rule gyrocopter_LevelUp_Rule
 	response gyrocopter_LevelUp
 }
 
-Response gyrocopter_AllyNearIsAllyViperEarlyGame
+Response gyrocopter_AllyNearIsAllyViperEarlyGameChance_3%
 {
 	scene "scenes/gyrocopter/gyrocopter_gyro_ally_01.vcd" nodelay noscene speakonce
 }
 
-Rule gyrocopter_AllyNearIsAllyViperEarlyGame_Rule
+Rule gyrocopter_AllyNearIsAllyViperEarlyGameChance_3%_Rule
 {
-	criteria AllyNear Isgyrocopter IsAllyViper EarlyGame
-	response gyrocopter_AllyNearIsAllyViperEarlyGame
+	criteria AllyNear Isgyrocopter IsAllyViper EarlyGame Chance_3%
+	response gyrocopter_AllyNearIsAllyViperEarlyGameChance_3%
 }
 
 Response gyrocopter_AllyNearIsAllyBatriderEarlyGame

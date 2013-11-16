@@ -314,6 +314,66 @@ voice_duck 0
 }
 }
 
+*vo\warlock_golem\wargol_spawn_18.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Death and destruction in my path!
+}
+WORDS
+{
+WORD Death 0.128 0.592
+{
+100 d 0.128 0.144 1
+603 eh 0.144 0.448 1
+952 th 0.448 0.592 1
+}
+WORD and 0.592 0.784
+{
+601 ax 0.592 0.704 1
+110 n 0.704 0.768 1
+100 d 0.768 0.784 1
+}
+WORD destruction 0.784 1.584
+{
+100 d 0.784 0.800 1
+618 ih 0.800 0.912 1
+115 s 0.912 1.136 1
+116 t 1.136 1.184 1
+633 r 1.184 1.200 1
+652 ah 1.200 1.376 1
+107 k 1.376 1.392 1
+643 sh 1.392 1.536 1
+601 ax 1.536 1.568 1
+110 n 1.568 1.584 1
+}
+WORD in 1.584 1.616
+{
+618 ih 1.584 1.600 1
+110 n 1.600 1.616 1
+}
+WORD my 1.616 2.256
+{
+109 m 1.616 2.016 1
+593 ay 2.016 2.256 1
+}
+WORD path 2.256 2.976
+{
+112 p 2.256 2.432 1
+230 ae 2.432 2.896 1
+952 th 2.896 2.976 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
 *vo\warlock_golem\wargol_spawn_09.mp3
 {
 VERSION 1.0
@@ -601,66 +661,6 @@ WORD come 0.304 1.744
 107 k 0.304 0.816 1
 652 ah 0.816 1.424 1
 109 m 1.424 1.744 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_spawn_18.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Death and destruction in my path!
-}
-WORDS
-{
-WORD Death 0.128 0.592
-{
-100 d 0.128 0.144 1
-603 eh 0.144 0.448 1
-952 th 0.448 0.592 1
-}
-WORD and 0.592 0.784
-{
-601 ax 0.592 0.704 1
-110 n 0.704 0.768 1
-100 d 0.768 0.784 1
-}
-WORD destruction 0.784 1.584
-{
-100 d 0.784 0.800 1
-618 ih 0.800 0.912 1
-115 s 0.912 1.136 1
-116 t 1.136 1.184 1
-633 r 1.184 1.200 1
-652 ah 1.200 1.376 1
-107 k 1.376 1.392 1
-643 sh 1.392 1.536 1
-601 ax 1.536 1.568 1
-110 n 1.568 1.584 1
-}
-WORD in 1.584 1.616
-{
-618 ih 1.584 1.600 1
-110 n 1.600 1.616 1
-}
-WORD my 1.616 2.256
-{
-109 m 1.616 2.016 1
-593 ay 2.016 2.256 1
-}
-WORD path 2.256 2.976
-{
-112 p 2.256 2.432 1
-230 ae 2.432 2.896 1
-952 th 2.896 2.976 1
 }
 }
 EMPHASIS
@@ -963,96 +963,6 @@ voice_duck 0
 }
 }
 
-*vo\warlock_golem\wargol_move_09.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-We obey!
-}
-WORDS
-{
-WORD We 0.240 0.880
-{
-119 w 0.240 0.464 1
-105 iy 0.464 0.880 1
-}
-WORD obey 1.024 2.352
-{
-111 ow 1.024 2.304 1
-98 b 2.304 2.320 1
-101 ey 2.320 2.352 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_move_10.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-We obey!
-}
-WORDS
-{
-WORD We 0.128 0.976
-{
-119 w 0.128 0.320 1
-105 iy 0.320 0.976 1
-}
-WORD obey 1.232 2.784
-{
-111 ow 1.232 2.400 1
-98 b 2.400 2.752 1
-101 ey 2.752 2.784 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_move_11.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-We obey!
-}
-WORDS
-{
-WORD We 0.192 1.008
-{
-119 w 0.192 0.432 1
-105 iy 0.432 1.008 1
-}
-WORD obey 1.008 2.432
-{
-111 ow 1.008 2.384 1
-98 b 2.384 2.400 1
-101 ey 2.400 2.432 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
 *vo\warlock_golem\wargol_move_12.mp3
 {
 VERSION 1.0
@@ -1080,43 +990,6 @@ WORD compelled 0.784 2.640
 112 p 2.592 2.608 1
 108 l 2.608 2.624 1
 100 d 2.624 2.640 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_move_13.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-We are compelled!
-}
-WORDS
-{
-WORD We 0.240 0.288
-{
-119 w 0.240 0.256 1
-105 iy 0.256 0.288 1
-}
-WORD are 0.288 0.304
-{
-602 er 0.288 0.304 1
-}
-WORD compelled 0.304 2.448
-{
-107 k 0.304 0.320 1
-601 ax 0.320 2.240 1
-109 m 2.240 2.352 1
-112 p 2.352 2.416 1
-108 l 2.416 2.432 1
-100 d 2.432 2.448 1
 }
 }
 EMPHASIS
@@ -1264,6 +1137,244 @@ WORD Aye 0.240 1.312
 {
 601 ax 0.240 1.280 1
 101 ey 1.280 1.312 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_sfx_01.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Blblblblblblb.
+}
+WORDS
+{
+WORD Blblblblblblb 0.416 4.416
+{
+98 b 0.416 0.432 1
+601 ax 0.432 0.640 1
+98 b 0.640 0.736 1
+601 ax 0.736 1.904 1
+98 b 1.904 2.240 1
+601 ax 2.240 3.008 1
+98 b 3.008 3.024 1
+601 ax 3.024 3.312 1
+98 b 3.312 3.328 1
+601 ax 3.328 3.760 1
+98 b 3.760 3.824 1
+601 ax 3.824 4.400 1
+98 b 4.400 4.416 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_sfx_02.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Mrrrrmmm.
+}
+WORDS
+{
+WORD Mrrrrmmm 1.056 1.792
+{
+109 m 1.056 1.456 1
+633 r 1.456 1.680 1
+109 m 1.680 1.792 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_sfx_03.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Grrruuh!
+}
+WORDS
+{
+WORD Grrruuh 0.272 1.376
+{
+103 g 0.272 0.464 1
+633 r 0.464 0.704 1
+106 y 0.704 0.720 1
+117 uw 0.720 1.376 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_sfx_04.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Mrrrrmmm.
+}
+WORDS
+{
+WORD Mrrrrmmm 1.136 2.496
+{
+109 m 1.136 1.824 1
+633 r 1.824 2.480 1
+109 m 2.480 2.496 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_move_09.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+We obey!
+}
+WORDS
+{
+WORD We 0.240 0.880
+{
+119 w 0.240 0.464 1
+105 iy 0.464 0.880 1
+}
+WORD obey 1.024 2.352
+{
+111 ow 1.024 2.304 1
+98 b 2.304 2.320 1
+101 ey 2.320 2.352 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_move_10.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+We obey!
+}
+WORDS
+{
+WORD We 0.128 0.976
+{
+119 w 0.128 0.320 1
+105 iy 0.320 0.976 1
+}
+WORD obey 1.232 2.784
+{
+111 ow 1.232 2.400 1
+98 b 2.400 2.752 1
+101 ey 2.752 2.784 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_move_11.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+We obey!
+}
+WORDS
+{
+WORD We 0.192 1.008
+{
+119 w 0.192 0.432 1
+105 iy 0.432 1.008 1
+}
+WORD obey 1.008 2.432
+{
+111 ow 1.008 2.384 1
+98 b 2.384 2.400 1
+101 ey 2.400 2.432 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_move_13.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+We are compelled!
+}
+WORDS
+{
+WORD We 0.240 0.288
+{
+119 w 0.240 0.256 1
+105 iy 0.256 0.288 1
+}
+WORD are 0.288 0.304
+{
+602 er 0.288 0.304 1
+}
+WORD compelled 0.304 2.448
+{
+107 k 0.304 0.320 1
+601 ax 0.320 2.240 1
+109 m 2.240 2.352 1
+112 p 2.352 2.416 1
+108 l 2.416 2.432 1
+100 d 2.432 2.448 1
 }
 }
 EMPHASIS
@@ -1443,6 +1554,49 @@ voice_duck 0
 }
 }
 
+*vo\warlock_golem\wargol_attack_06.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Fall to the Master!
+}
+WORDS
+{
+WORD Fall 0.288 0.576
+{
+102 f 0.288 0.544 1
+596 ao 0.544 0.560 1
+108 l 0.560 0.576 1
+}
+WORD to 0.576 1.344
+{
+116 t 0.576 0.592 1
+618 ih 0.592 1.344 1
+}
+WORD the 1.344 1.616
+{
+240 dh 1.344 1.360 1
+105 iy 1.360 1.616 1
+}
+WORD Master 1.616 3.424
+{
+109 m 1.616 2.400 1
+230 ae 2.400 2.640 1
+115 s 2.640 2.800 1
+116 t 2.800 2.912 1
+602 er 2.912 3.424 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
 *vo\warlock_golem\wargol_attack_04.mp3
 {
 VERSION 1.0
@@ -1496,372 +1650,6 @@ WORD us 0.368 2.272
 117 uw 0.384 1.200 1
 603 eh 1.200 1.664 1
 115 s 1.664 2.272 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_attack_06.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Fall to the Master!
-}
-WORDS
-{
-WORD Fall 0.288 0.576
-{
-102 f 0.288 0.544 1
-596 ao 0.544 0.560 1
-108 l 0.560 0.576 1
-}
-WORD to 0.576 1.344
-{
-116 t 0.576 0.592 1
-618 ih 0.592 1.344 1
-}
-WORD the 1.344 1.616
-{
-240 dh 1.344 1.360 1
-105 iy 1.360 1.616 1
-}
-WORD Master 1.616 3.424
-{
-109 m 1.616 2.400 1
-230 ae 2.400 2.640 1
-115 s 2.640 2.800 1
-116 t 2.800 2.912 1
-602 er 2.912 3.424 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_01.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Mm!
-}
-WORDS
-{
-WORD Mm 0.112 0.320
-{
-109 m 0.112 0.320 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_02.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Mm!
-}
-WORDS
-{
-WORD Mm 0.144 0.592
-{
-109 m 0.144 0.592 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_03.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Mmph!
-}
-WORDS
-{
-WORD Mmph 0.096 0.208
-{
-109 m 0.096 0.192 1
-112 p 0.192 0.208 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_04.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Omph!
-}
-WORDS
-{
-WORD Omph 0.128 0.608
-{
-111 ow 0.128 0.288 1
-109 m 0.288 0.512 1
-102 f 0.512 0.608 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_05.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Bluuh!
-}
-WORDS
-{
-WORD Bluuh 0.064 0.208
-{
-98 b 0.064 0.080 1
-601 ax 0.080 0.096 1
-106 y 0.096 0.112 1
-117 uw 0.112 0.208 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_06.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Bluf!
-}
-WORDS
-{
-WORD Bluf 0.080 0.480
-{
-98 b 0.080 0.096 1
-108 l 0.096 0.128 1
-117 uw 0.128 0.336 1
-102 f 0.336 0.480 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_07.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Bloof!
-}
-WORDS
-{
-WORD Bloof 0.240 0.624
-{
-98 b 0.240 0.256 1
-108 l 0.256 0.272 1
-650 uh 0.272 0.528 1
-102 f 0.528 0.624 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_08.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Bluf!
-}
-WORDS
-{
-WORD Bluf 0.096 0.400
-{
-98 b 0.096 0.112 1
-108 l 0.112 0.128 1
-117 uw 0.128 0.288 1
-102 f 0.288 0.400 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_09.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Bluf!
-}
-WORDS
-{
-WORD Bluf 0.112 0.400
-{
-98 b 0.112 0.128 1
-108 l 0.128 0.176 1
-117 uw 0.176 0.320 1
-102 f 0.320 0.400 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_10.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Oof!
-}
-WORDS
-{
-WORD Oof 0.112 0.416
-{
-117 uw 0.112 0.400 1
-102 f 0.400 0.416 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_11.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Pluf!
-}
-WORDS
-{
-WORD Pluf 0.064 0.368
-{
-112 p 0.064 0.208 1
-108 l 0.208 0.240 1
-117 uw 0.240 0.352 1
-102 f 0.352 0.368 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_12.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Kaf!
-}
-WORDS
-{
-WORD Kaf 0.064 0.272
-{
-107 k 0.064 0.208 1
-102 f 0.208 0.272 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_hit_13.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Oof!
-}
-WORDS
-{
-WORD Oof 0.192 0.448
-{
-117 uw 0.192 0.432 1
-102 f 0.432 0.448 1
 }
 }
 EMPHASIS
@@ -2196,6 +1984,34 @@ voice_duck 0
 }
 }
 
+*vo\warlock_golem\wargol_death_15.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Accursed!
+}
+WORDS
+{
+WORD Accursed 0.304 3.440
+{
+230 ae 0.304 1.264 1
+107 k 1.264 1.456 1
+106 y 1.456 1.472 1
+602 er 1.472 3.408 1
+115 s 3.408 3.424 1
+116 t 3.424 3.440 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
 *vo\warlock_golem\wargol_death_13.mp3
 {
 VERSION 1.0
@@ -2255,34 +2071,6 @@ WORD you 2.928 2.960
 {
 106 y 2.928 2.944 1
 117 uw 2.944 2.960 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_death_15.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Accursed!
-}
-WORDS
-{
-WORD Accursed 0.304 3.440
-{
-230 ae 0.304 1.264 1
-107 k 1.264 1.456 1
-106 y 1.456 1.472 1
-602 er 1.472 3.408 1
-115 s 3.408 3.424 1
-116 t 3.424 3.440 1
 }
 }
 EMPHASIS
@@ -2363,81 +2151,6 @@ WORD up 3.264 3.744
 {
 652 ah 3.264 3.728 1
 112 p 3.728 3.744 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_timeout_03.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Our time is up!
-}
-WORDS
-{
-WORD Our 0.160 0.512
-{
-593 aw 0.160 0.416 1
-602 er 0.416 0.512 1
-}
-WORD time 0.608 1.472
-{
-116 t 0.608 0.848 1
-593 ay 0.848 1.072 1
-109 m 1.072 1.472 1
-}
-WORD is 1.808 2.352
-{
-618 ih 1.808 1.952 1
-122 z 1.952 2.352 1
-}
-WORD up 3.184 3.664
-{
-652 ah 3.184 3.648 1
-112 p 3.648 3.664 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_timeout_04.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Out of time!
-}
-WORDS
-{
-WORD Out 0.304 0.400
-{
-593 aw 0.304 0.384 1
-116 t 0.384 0.400 1
-}
-WORD of 0.400 0.784
-{
-601 ax 0.400 0.480 1
-118 v 0.480 0.784 1
-}
-WORD time 0.944 2.208
-{
-116 t 0.944 1.120 1
-593 ay 1.120 1.664 1
-109 m 1.664 2.208 1
 }
 }
 EMPHASIS
@@ -2572,6 +2285,404 @@ WORD master 3.712 4.272
 115 s 4.224 4.240 1
 116 t 4.240 4.256 1
 602 er 4.256 4.272 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_timeout_03.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Our time is up!
+}
+WORDS
+{
+WORD Our 0.160 0.512
+{
+593 aw 0.160 0.416 1
+602 er 0.416 0.512 1
+}
+WORD time 0.608 1.472
+{
+116 t 0.608 0.848 1
+593 ay 0.848 1.072 1
+109 m 1.072 1.472 1
+}
+WORD is 1.808 2.352
+{
+618 ih 1.808 1.952 1
+122 z 1.952 2.352 1
+}
+WORD up 3.184 3.664
+{
+652 ah 3.184 3.648 1
+112 p 3.648 3.664 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_timeout_04.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Out of time!
+}
+WORDS
+{
+WORD Out 0.304 0.400
+{
+593 aw 0.304 0.384 1
+116 t 0.384 0.400 1
+}
+WORD of 0.400 0.784
+{
+601 ax 0.400 0.480 1
+118 v 0.480 0.784 1
+}
+WORD time 0.944 2.208
+{
+116 t 0.944 1.120 1
+593 ay 1.120 1.664 1
+109 m 1.664 2.208 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_01.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Mm!
+}
+WORDS
+{
+WORD Mm 0.112 0.320
+{
+109 m 0.112 0.320 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_02.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Mm!
+}
+WORDS
+{
+WORD Mm 0.144 0.592
+{
+109 m 0.144 0.592 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_03.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Mmph!
+}
+WORDS
+{
+WORD Mmph 0.096 0.208
+{
+109 m 0.096 0.192 1
+112 p 0.192 0.208 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_04.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Omph!
+}
+WORDS
+{
+WORD Omph 0.128 0.608
+{
+111 ow 0.128 0.288 1
+109 m 0.288 0.512 1
+102 f 0.512 0.608 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_05.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Bluuh!
+}
+WORDS
+{
+WORD Bluuh 0.064 0.208
+{
+98 b 0.064 0.080 1
+601 ax 0.080 0.096 1
+106 y 0.096 0.112 1
+117 uw 0.112 0.208 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_06.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Bluf!
+}
+WORDS
+{
+WORD Bluf 0.080 0.480
+{
+98 b 0.080 0.096 1
+108 l 0.096 0.128 1
+117 uw 0.128 0.336 1
+102 f 0.336 0.480 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_07.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Bloof!
+}
+WORDS
+{
+WORD Bloof 0.240 0.624
+{
+98 b 0.240 0.256 1
+108 l 0.256 0.272 1
+650 uh 0.272 0.528 1
+102 f 0.528 0.624 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_08.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Bluf!
+}
+WORDS
+{
+WORD Bluf 0.096 0.400
+{
+98 b 0.096 0.112 1
+108 l 0.112 0.128 1
+117 uw 0.128 0.288 1
+102 f 0.288 0.400 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_09.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Bluf!
+}
+WORDS
+{
+WORD Bluf 0.112 0.400
+{
+98 b 0.112 0.128 1
+108 l 0.128 0.176 1
+117 uw 0.176 0.320 1
+102 f 0.320 0.400 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_10.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Oof!
+}
+WORDS
+{
+WORD Oof 0.112 0.416
+{
+117 uw 0.112 0.400 1
+102 f 0.400 0.416 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_11.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Pluf!
+}
+WORDS
+{
+WORD Pluf 0.064 0.368
+{
+112 p 0.064 0.208 1
+108 l 0.208 0.240 1
+117 uw 0.240 0.352 1
+102 f 0.352 0.368 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_12.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Kaf!
+}
+WORDS
+{
+WORD Kaf 0.064 0.272
+{
+107 k 0.064 0.208 1
+102 f 0.208 0.272 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\warlock_golem\wargol_hit_13.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Oof!
+}
+WORDS
+{
+WORD Oof 0.192 0.448
+{
+117 uw 0.192 0.432 1
+102 f 0.432 0.448 1
 }
 }
 EMPHASIS
@@ -3971,117 +4082,6 @@ WORD ha 2.240 2.944
 101 ey 2.240 2.880 1
 679 ch 2.880 2.896 1
 101 ey 2.896 2.944 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_sfx_01.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Blblblblblblb.
-}
-WORDS
-{
-WORD Blblblblblblb 0.416 4.416
-{
-98 b 0.416 0.432 1
-601 ax 0.432 0.640 1
-98 b 0.640 0.736 1
-601 ax 0.736 1.904 1
-98 b 1.904 2.240 1
-601 ax 2.240 3.008 1
-98 b 3.008 3.024 1
-601 ax 3.024 3.312 1
-98 b 3.312 3.328 1
-601 ax 3.328 3.760 1
-98 b 3.760 3.824 1
-601 ax 3.824 4.400 1
-98 b 4.400 4.416 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_sfx_02.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Mrrrrmmm.
-}
-WORDS
-{
-WORD Mrrrrmmm 1.056 1.792
-{
-109 m 1.056 1.456 1
-633 r 1.456 1.680 1
-109 m 1.680 1.792 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_sfx_03.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Grrruuh!
-}
-WORDS
-{
-WORD Grrruuh 0.272 1.376
-{
-103 g 0.272 0.464 1
-633 r 0.464 0.704 1
-106 y 0.704 0.720 1
-117 uw 0.720 1.376 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\warlock_golem\wargol_sfx_04.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Mrrrrmmm.
-}
-WORDS
-{
-WORD Mrrrrmmm 1.136 2.496
-{
-109 m 1.136 1.824 1
-633 r 1.824 2.480 1
-109 m 2.480 2.496 1
 }
 }
 EMPHASIS

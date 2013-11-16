@@ -3858,10 +3858,10 @@
 			"operator" "get_convar"
 			"convar" "snd_gain"
 		}
-		"snd_op_test_convar"
+		"snd_gamevolume_convar"
 		{
 			"operator" "get_convar"
-			"convar" "snd_op_test_convar"
+			"convar" "snd_gamevolume"
 		}
 
 		//////////////////////
@@ -3905,11 +3905,11 @@
 			"input1" "@snd_gain_convar.output"
 			"input2" "@volume_apply_mixer.output"	
 		}
-		"volume_apply_test_convar"
+		"volume_apply_gamevolume_convar"
 		{
 			"operator" "math_float"
 			"apply" "mult"	
-			"input1" "1.0"
+			"input1" "@snd_gamevolume_convar.output"
 			"input2" "@volume_apply_snd_gain_convar.output"	
 		}
 
@@ -3917,7 +3917,7 @@
 		{
 			"operator" "math_float"
 			"apply"	"mult"
-			"input1" "@volume_apply_test_convar.output"
+			"input1" "@volume_apply_gamevolume_convar.output"
 			"input2" "@occlusion.output"
 		}
 		// this calculates the loudest volume of the ss clients
@@ -4109,10 +4109,10 @@
 			"operator" "get_convar"
 			"convar" "snd_gain"
 		}
-		"snd_op_test_convar"
+		"snd_gamevolume_convar"
 		{
 			"operator" "get_convar"
-			"convar" "snd_op_test_convar"
+			"convar" "snd_gamevolume"
 		}
 
 		//////////////////////
@@ -4194,7 +4194,7 @@
 			"input6" "@volume_fade_out.output"
 			"input7" "@volume_move_filter.output"
 			"input8" "@volume_add_local_player.output"
-			"input9" "1.0"
+			"input9" "@snd_gamevolume_convar.output"
 			"input10" "1.0"
 			"input11" "1.0"
 			"input12" "1.0"
@@ -4375,10 +4375,10 @@
 			"operator" "get_convar"
 			"convar" "snd_gain"
 		}
-		"snd_op_test_convar"
+		"snd_gamevolume_convar"
 		{
 			"operator" "get_convar"
-			"convar" "snd_op_test_convar"
+			"convar" "snd_gamevolume"
 		}
 
 		//////////////////////
@@ -4459,7 +4459,7 @@
 			"input5" "@volume_fade_in.output"
 			"input6" "@volume_fade_out.output"
 			"input7" "@volume_move_filter.output"
-			"input8" "1.0"
+			"input8" "@snd_gamevolume_convar.output"
 			"input9" "1.0"
 			"input10" "1.0"
 			"input11" "1.0"
@@ -4599,6 +4599,30 @@
 		}
 	}
 	
+	"dota_update_clamped"
+	{
+		"import_stack" "dota_update_default"
+		
+		"volume_accumulate"
+		{
+			"operator" "math_float_accumulate12"
+			"apply"	"mult"
+			"input1" "@source_info.output_volume"
+			"input2" "@mixer.output_volume"
+			"input3" "@snd_gain_convar.output"
+			"input4" "1.0"
+			"input5" "@volume_fade_in.output"
+			"input6" "@volume_fade_out.output"
+			"input7" "@volume_move_filter.output"
+			"input8" "@volume_add_local_player.output"
+			"input9" "@snd_gamevolume_convar.output"
+			"input10" "1.0"
+			"input11" "1.0"
+			"input12" "1.0"
+		}
+	}
+
+
 	"dota_update_vo_default"
 	{
 
@@ -4663,10 +4687,10 @@
 			"convar" "snd_gain"
 		}
 		// test convar for... "testing", do not use in any permanent fashion
-		"snd_op_test_convar"
+		"snd_gamevoice_convar"
 		{
 			"operator" "get_convar"
-			"convar" "snd_op_test_convar"
+			"convar" "snd_gamevoicevolume"
 		}
 
 		//////////////////////
@@ -4777,7 +4801,7 @@
 			"input7" "@snd_gain_convar.output"
 //			"input8" "@occlusion.output"
 			"input8" "1.0"
-			"input9" "1.0"
+			"input9" "@snd_gamevoice_convar.output"
 			"input10" "1.0"
 			"input11" "1.0"
 			"input12" "1.0"
@@ -5413,6 +5437,19 @@
 			"input1" "@mixer_ui.output_volume"
 			"input2" "0.4"
 		}
+		"snd_gamevolume_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gamevolume"
+		}
+		"apply_gamevolume"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@level_apply_mixer_ui.output"
+			"input2" "@snd_gamevolume_convar.output"
+		}
+
 		
 		"speakers_limit_ui" // applies volume to just L and R
 		{
@@ -5425,7 +5462,7 @@
 			"left_rear"    "0.0"
 			"right_rear"   "0.0"
 				
-			"input2[*]" "@level_apply_mixer_ui.output"	
+			"input2[*]" "@apply_gamevolume.output"	
 		}
 			
 		"speakers_output_ui" 
@@ -5454,6 +5491,18 @@
 			"input2" "1"
 		}
 		
+		"snd_gamevolume_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gamevolume"
+		}
+		"apply_gamevolume"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@level_apply_mixer_spectui.output"
+			"input2" "@snd_gamevolume_convar.output"
+		}
 		"speakers_limit_spectui"
 		{
 			"operator"     "math_speakers"
@@ -5465,7 +5514,7 @@
 			"left_rear"    "0.0"
 			"right_rear"   "0.0"
 				
-			"input2[*]" "@level_apply_mixer_spectui.output"	
+			"input2[*]" "@apply_gamevolume.output"	
 		}
 			
 		"speakers_output_spectui"
@@ -5492,6 +5541,18 @@
 			"input1" "@mixer_inv.output_volume"
 			"input2" "0.2"
 		}
+		"snd_gamevolume_convar"
+		{
+			"operator" "get_convar"
+			"convar" "snd_gamevolume"
+		}
+		"apply_gamevolume"
+		{
+			"operator" "math_float"
+			"apply" "mult"	
+			"input1" "@level_apply_mixer_inv.output"
+			"input2" "@snd_gamevolume_convar.output"
+		}
 		
 		"speakers_limit_inv"
 		{
@@ -5504,7 +5565,7 @@
 			"left_rear"    "0.0"
 			"right_rear"   "0.0"
 				
-			"input2[*]" "@level_apply_mixer_inv.output"	
+			"input2[*]" "@apply_gamevolume.output"	
 		}
 			
 		"speakers_output_inv"

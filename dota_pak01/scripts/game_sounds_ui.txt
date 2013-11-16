@@ -199,7 +199,7 @@
 
 "General.Coins"
 {
-	"channel"		"CHAN_ITEM"
+	"channel"		"CHAN_BODY"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
 
@@ -207,25 +207,25 @@
 
 	"wave"			"ui/coins.wav" 
 	
-	"operator_stacks"
-	{
-		"start_stack"
-		{
-			"import_stack" "dota_poly_limiting_start"
-			"limit_sound"
-			{
-				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
-				"match_entity" "false"	
-				"match_substring" "true"
-				"match_entry" "General.Coins"
-				"match_channel" "true"
-			}
-		}
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-		}
-	}
+// 	"operator_stacks"
+// 	{
+// 		"start_stack"
+// 		{
+// 			"import_stack" "dota_poly_limiting_start"
+// 			"limit_sound"
+// 			{
+// 				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+// 				"match_entity" "false"	
+// 				"match_substring" "false"
+// 				"match_entry" "General.Coins"
+// 				"match_channel" "false"
+// 			}
+// 		}
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_clamped"
+// 		}
+// 	}
 }
 
 "General.CoinsBig"
@@ -1060,20 +1060,20 @@
 "General.LevelUp"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.8"
+	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"ui/power_up_06.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Ultimates"
-			}
-		}
-	}
+// 	"operator_stacks"
+// 	{
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_clamped"
+// 			"mixer"
+// 			{
+// 				"mixgroup" "UI"
+// 			}
+// 		}
+// 	}
 }
 
 "General.MaleLevelUp"
@@ -1089,7 +1089,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"1"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"ui/power_up_06.wav"
+	"wave"			"ui/levelup_female.wav"
 }
 
 "General.AbilityLearned"
@@ -2043,6 +2043,7 @@
 		}
 	}
 }
+
 "ui.shortwhoosh"
 {
 	"volume"		"0.3"
@@ -2864,7 +2865,165 @@
 	}
 }
 
-// Invenntory ======================================
+
+// Crafting ======================================
+
+"ui.crafting_mech"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/mech_open.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.crafting_gem_drop"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/gem_drop.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.crafting_confirm_socket"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/confirm_socket.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.crafting_gem_applied"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/gem_applied.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.crafting_newslot"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/new_slot.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.crafting_gem_create"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/gem_create.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.crafting_item_applied"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/gem_applied.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.crafting_slotslide"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/crafting_slide.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.crafting_pulse"
+{
+	"volume"		"0.7"
+	"wave"  "ui/crafting/crafting_pulse.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+// Inventory ======================================
+
+"ui.set_preview"
+{
+	"volume"		"0.65"
+	"wave"  "ui/inventory/set_preview.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+"ui.set_applied"
+{
+	"volume"		"0.65"
+	"wave"  "ui/inventory/set_applied.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
 
 "ui.inv_sort"
 {
@@ -3985,4 +4144,22 @@
 		"wave"  "ui/book/spirit3.wav"
 		"wave"  "ui/book/spirit4.wav"
 	}
+}
+
+"InspectorCam.Activate"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"			"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"pitch"			"100"
+	"wave"			")ui/camera_move.wav"
+}
+
+"ui.hero_showcase_failed"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.6"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_NONE"
+	"wave"  		"ui/menu/browser_click_common.wav"
 }

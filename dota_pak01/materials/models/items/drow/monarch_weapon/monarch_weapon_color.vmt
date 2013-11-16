@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$baseTexture" "models\items\drow\monarch_weapon\monarch_weapon_color"
+	"$normalmap" "models\items\drow\monarch_weapon\monarch_weapon_normal"
+	"$maskmap1" "models\items\drow\monarch_weapon\monarch_weapon_mask1"
+	"$maskmap2" "models\items\drow\monarch_weapon\monarch_weapon_mask2"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+//	"$envmap" "env_cubemap"
+//	"$envmapintensity" 1
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 4
+	$SPECULARCOLOR "0 3 2"
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTSCALE	.5
+	$alphatest 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -66,6 +66,7 @@ Response troll_warlord_Kill
 	scene "scenes/troll_warlord/troll_warlord_troll_laugh_01.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_laugh_02.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_laugh_03.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_laugh_04.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_laugh_05.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_laugh_07.vcd" nodelay noscene 
 }
@@ -79,7 +80,6 @@ Rule troll_warlord_Kill_Rule
 Response troll_warlord_Kill
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_kill_05.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_rival_27.vcd" nodelay noscene 
 }
 
 Rule troll_warlord_Kill_Rule
@@ -264,6 +264,17 @@ Rule troll_warlord_KillIsEnemyAxeChance_25%_Rule
 	response troll_warlord_KillIsEnemyAxeChance_25%
 }
 
+Response troll_warlord_KillChance_5%
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_rival_27.vcd" nodelay noscene 
+}
+
+Rule troll_warlord_KillChance_5%_Rule
+{
+	criteria Kill Istroll_warlord Chance_5%
+	response troll_warlord_KillChance_5%
+}
+
 Response troll_warlord_Move
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_move_01.vcd" nodelay noscene 
@@ -350,9 +361,9 @@ Rule troll_warlord_LearnIsTrollTranceChance_5%_Rule
 
 Response troll_warlord_LearnIsTrollFervorChance_25%
 {
-	scene "scenes/troll_warlord/troll_warlord_troll_fervor_01.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_fervor_03.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_fervor_05.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_fervor_01.vcd" nodelay noscene speakonce
+	scene "scenes/troll_warlord/troll_warlord_troll_fervor_03.vcd" nodelay noscene speakonce
+	scene "scenes/troll_warlord/troll_warlord_troll_fervor_05.vcd" nodelay noscene speakonce
 }
 
 Rule troll_warlord_LearnIsTrollFervorChance_25%_Rule
@@ -361,16 +372,16 @@ Rule troll_warlord_LearnIsTrollFervorChance_25%_Rule
 	response troll_warlord_LearnIsTrollFervorChance_25%
 }
 
-Response troll_warlord_CastExecuteIsTrollBerserkerChance_15%
+Response troll_warlord_CastExecuteIsTrollBerserkerChance_20%
 {
-	scene "scenes/troll_warlord/troll_warlord_troll_battletrance_06.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_beserker_03.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_battletrance_06.vcd" nodelay noscene weapondelay 20
+	scene "scenes/troll_warlord/troll_warlord_troll_beserker_03.vcd" nodelay noscene weapondelay 20
 }
 
-Rule troll_warlord_CastExecuteIsTrollBerserkerChance_15%_Rule
+Rule troll_warlord_CastExecuteIsTrollBerserkerChance_20%_Rule
 {
-	criteria CastExecute Istroll_warlord IsTrollBerserker Chance_15%
-	response troll_warlord_CastExecuteIsTrollBerserkerChance_15%
+	criteria CastExecute Istroll_warlord IsTrollBerserker Chance_20%
+	response troll_warlord_CastExecuteIsTrollBerserkerChance_20%
 }
 
 Response troll_warlord_CastExecuteIsTrollAxesMeleeChance_25%
@@ -397,26 +408,26 @@ Rule troll_warlord_CastExecuteIsTrollAxesRangedChance_25%_Rule
 	response troll_warlord_CastExecuteIsTrollAxesRangedChance_25%
 }
 
-Response troll_warlord_CastExecuteIsTrollAxesRangedChance_5%
+Response troll_warlord_CastExecuteIsTrollAxesRangedChance_1%
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_whirlingaxes_05.vcd" nodelay noscene 
 }
 
-Rule troll_warlord_CastExecuteIsTrollAxesRangedChance_5%_Rule
+Rule troll_warlord_CastExecuteIsTrollAxesRangedChance_1%_Rule
 {
-	criteria CastExecute Istroll_warlord IsTrollAxesRanged Chance_5%
-	response troll_warlord_CastExecuteIsTrollAxesRangedChance_5%
+	criteria CastExecute Istroll_warlord IsTrollAxesRanged Chance_1%
+	response troll_warlord_CastExecuteIsTrollAxesRangedChance_1%
 }
 
-Response troll_warlord_CastExecuteIsTrollAxesMeleeChance_5%
+Response troll_warlord_CastExecuteIsTrollAxesMeleeChance_1%
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_whirlingaxes_05.vcd" nodelay noscene 
 }
 
-Rule troll_warlord_CastExecuteIsTrollAxesMeleeChance_5%_Rule
+Rule troll_warlord_CastExecuteIsTrollAxesMeleeChance_1%_Rule
 {
-	criteria CastExecute Istroll_warlord IsTrollAxesMelee Chance_5%
-	response troll_warlord_CastExecuteIsTrollAxesMeleeChance_5%
+	criteria CastExecute Istroll_warlord IsTrollAxesMelee Chance_1%
+	response troll_warlord_CastExecuteIsTrollAxesMeleeChance_1%
 }
 
 Response troll_warlord_LevelUp
@@ -441,24 +452,62 @@ Rule troll_warlord_LevelUp_Rule
 	response troll_warlord_LevelUp
 }
 
-Response troll_warlord_AllyNearEarlyGameChance_25%
+Response troll_warlord_DefeatChance_10%
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_failure_04.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_lose_04.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_lose_06.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_lose_08.vcd" nodelay noscene 
+}
+
+Rule troll_warlord_DefeatChance_10%_Rule
+{
+	criteria Defeat Istroll_warlord Chance_10%
+	response troll_warlord_DefeatChance_10%
+}
+
+Response troll_warlord_Defeat
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_lose_01.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_lose_02.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_lose_10.vcd" nodelay noscene 
+}
+
+Rule troll_warlord_Defeat_Rule
+{
+	criteria Defeat Istroll_warlord 
+	response troll_warlord_Defeat
+}
+
+Response troll_warlord_AllyNearEarlyGameChance_15%
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_01.vcd" nodelay noscene speakonce
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule troll_warlord_AllyNearEarlyGameChance_25%_Rule
+Rule troll_warlord_AllyNearEarlyGameChance_15%_Rule
 {
-	criteria AllyNear Istroll_warlord EarlyGame Chance_25%
-	response troll_warlord_AllyNearEarlyGameChance_25%
+	criteria AllyNear Istroll_warlord EarlyGame Chance_15%
+	response troll_warlord_AllyNearEarlyGameChance_15%
 }
 
-Response troll_warlord_AllyNearEarlyGameChance_20%
+Response troll_warlord_AllyNearEarlyGameChance_10%
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_02.vcd" nodelay noscene speakonce
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_05.vcd" nodelay noscene speakonce
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_09.vcd" nodelay noscene speakonce
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_12.vcd" nodelay noscene speakonce
+}
+
+Rule troll_warlord_AllyNearEarlyGameChance_10%_Rule
+{
+	criteria AllyNear Istroll_warlord EarlyGame Chance_10%
+	response troll_warlord_AllyNearEarlyGameChance_10%
+}
+
+Response troll_warlord_AllyNearEarlyGameChance_20%
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_ally_03.vcd" nodelay noscene speakonce
 }
 
 Rule troll_warlord_AllyNearEarlyGameChance_20%_Rule
@@ -467,18 +516,7 @@ Rule troll_warlord_AllyNearEarlyGameChance_20%_Rule
 	response troll_warlord_AllyNearEarlyGameChance_20%
 }
 
-Response troll_warlord_AllyNearEarlyGameChance_30%
-{
-	scene "scenes/troll_warlord/troll_warlord_troll_ally_03.vcd" nodelay noscene speakonce
-}
-
-Rule troll_warlord_AllyNearEarlyGameChance_30%_Rule
-{
-	criteria AllyNear Istroll_warlord EarlyGame Chance_30%
-	response troll_warlord_AllyNearEarlyGameChance_30%
-}
-
-Response troll_warlord_AllyNearEarlyGameChance_10%
+Response troll_warlord_AllyNearEarlyGameChance_5%
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_04.vcd" nodelay noscene speakonce
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_06.vcd" nodelay noscene speakonce
@@ -487,10 +525,10 @@ Response troll_warlord_AllyNearEarlyGameChance_10%
 	scene "scenes/troll_warlord/troll_warlord_troll_ally_11.vcd" nodelay noscene speakonce
 }
 
-Rule troll_warlord_AllyNearEarlyGameChance_10%_Rule
+Rule troll_warlord_AllyNearEarlyGameChance_5%_Rule
 {
-	criteria AllyNear Istroll_warlord EarlyGame Chance_10%
-	response troll_warlord_AllyNearEarlyGameChance_10%
+	criteria AllyNear Istroll_warlord EarlyGame Chance_5%
+	response troll_warlord_AllyNearEarlyGameChance_5%
 }
 
 Response troll_warlord_LastHit
@@ -533,7 +571,6 @@ Response troll_warlord_Death
 	scene "scenes/troll_warlord/troll_warlord_troll_unknown_01.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_unknown_02.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_lose_03.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_lose_05.vcd" nodelay noscene 
 }
 
 Rule troll_warlord_Death_Rule
@@ -551,6 +588,17 @@ Rule troll_warlord_DeathIsReincarnating_Rule
 {
 	criteria Death Istroll_warlord IsReincarnating
 	response troll_warlord_DeathIsReincarnating
+}
+
+Response troll_warlord_DeathChance_3%
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_lose_05.vcd" nodelay noscene 
+}
+
+Rule troll_warlord_DeathChance_3%_Rule
+{
+	criteria Death Istroll_warlord Chance_3%
+	response troll_warlord_DeathChance_3%
 }
 
 Response troll_warlord_Respawn
@@ -888,26 +936,26 @@ Rule troll_warlord_PowerupIsPowerupInvisibility_Rule
 	response troll_warlord_PowerupIsPowerupInvisibility
 }
 
-Response troll_warlord_PowerupIsPowerupInvisibilityChance_40%
+Response troll_warlord_PowerupIsPowerupInvisibilityChance_5%
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_invis_02.vcd" nodelay noscene 
 }
 
-Rule troll_warlord_PowerupIsPowerupInvisibilityChance_40%_Rule
+Rule troll_warlord_PowerupIsPowerupInvisibilityChance_5%_Rule
 {
-	criteria Powerup Istroll_warlord IsPowerupInvisibility Chance_40%
-	response troll_warlord_PowerupIsPowerupInvisibilityChance_40%
+	criteria Powerup Istroll_warlord IsPowerupInvisibility Chance_5%
+	response troll_warlord_PowerupIsPowerupInvisibilityChance_5%
 }
 
-Response troll_warlord_PowerupIsPowerupInvisibilityChance_25%
+Response troll_warlord_PowerupIsPowerupInvisibilityChance_20%
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_invis_03.vcd" nodelay noscene 
 }
 
-Rule troll_warlord_PowerupIsPowerupInvisibilityChance_25%_Rule
+Rule troll_warlord_PowerupIsPowerupInvisibilityChance_20%_Rule
 {
-	criteria Powerup Istroll_warlord IsPowerupInvisibility Chance_25%
-	response troll_warlord_PowerupIsPowerupInvisibilityChance_25%
+	criteria Powerup Istroll_warlord IsPowerupInvisibility Chance_20%
+	response troll_warlord_PowerupIsPowerupInvisibilityChance_20%
 }
 
 Response troll_warlord_CooldownLittleNag
@@ -1002,13 +1050,22 @@ Rule troll_warlord_Thanks_Rule
 	response troll_warlord_Thanks
 }
 
-Response troll_warlord_Victory
+Response troll_warlord_VictoryChance_5%
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_thanks_05.vcd" nodelay noscene 
+}
+
+Rule troll_warlord_VictoryChance_5%_Rule
+{
+	criteria Victory Istroll_warlord Chance_5%
+	response troll_warlord_VictoryChance_5%
+}
+
+Response troll_warlord_Victory
+{
 	scene "scenes/troll_warlord/troll_warlord_troll_lose_07.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_win_01.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_win_02.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_win_03.vcd" nodelay noscene 
 }
 
 Rule troll_warlord_Victory_Rule
@@ -1017,12 +1074,41 @@ Rule troll_warlord_Victory_Rule
 	response troll_warlord_Victory
 }
 
+Response troll_warlord_VictoryChance_10%
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_win_03.vcd" nodelay noscene 
+}
+
+Rule troll_warlord_VictoryChance_10%_Rule
+{
+	criteria Victory Istroll_warlord Chance_10%
+	response troll_warlord_VictoryChance_10%
+}
+
+Response troll_warlord_PainChance_25%
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule troll_warlord_PainChance_25%_Rule
+{
+	criteria Pain Istroll_warlord Chance_25%
+	response troll_warlord_PainChance_25%
+}
+
+Response troll_warlord_PainChance_1%
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_underattack_03.vcd" nodelay noscene speakonce
+}
+
+Rule troll_warlord_PainChance_1%_Rule
+{
+	criteria Pain Istroll_warlord Chance_1%
+	response troll_warlord_PainChance_1%
+}
+
 Response troll_warlord_Pain
 {
-	scene "scenes/troll_warlord/troll_warlord_troll_underattack_01.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_underattack_02.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_underattack_03.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_underattack_04.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_pain_01.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_pain_02.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_pain_03.vcd" nodelay noscene 
@@ -1039,15 +1125,15 @@ Rule troll_warlord_Pain_Rule
 	response troll_warlord_Pain
 }
 
-Response troll_warlord_EmoteIsEmoteLaughChance_15%
+Response troll_warlord_EmoteIsEmoteLaughChance_1%
 {
-	scene "scenes/troll_warlord/troll_warlord_troll_unknown_04.vcd" nodelay noscene speakonce
+	scene "scenes/troll_warlord/troll_warlord_troll_unknown_04.vcd" nodelay noscene 
 }
 
-Rule troll_warlord_EmoteIsEmoteLaughChance_15%_Rule
+Rule troll_warlord_EmoteIsEmoteLaughChance_1%_Rule
 {
-	criteria Emote Istroll_warlord IsEmoteLaugh Chance_15%
-	response troll_warlord_EmoteIsEmoteLaughChance_15%
+	criteria Emote Istroll_warlord IsEmoteLaugh Chance_1%
+	response troll_warlord_EmoteIsEmoteLaughChance_1%
 }
 
 Response troll_warlord_EmoteIsEmoteLaugh
@@ -1074,22 +1160,6 @@ Rule troll_warlord_InTheBag_Rule
 {
 	criteria InTheBag Istroll_warlord 
 	response troll_warlord_InTheBag
-}
-
-Response troll_warlord_Defeat
-{
-	scene "scenes/troll_warlord/troll_warlord_troll_lose_01.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_lose_02.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_lose_04.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_lose_06.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_lose_08.vcd" nodelay noscene 
-	scene "scenes/troll_warlord/troll_warlord_troll_lose_10.vcd" nodelay noscene 
-}
-
-Rule troll_warlord_Defeat_Rule
-{
-	criteria Defeat Istroll_warlord 
-	response troll_warlord_Defeat
 }
 
 Response troll_warlord_ItemDropIsCommonDrop

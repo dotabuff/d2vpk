@@ -1,0 +1,75 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\ember_spirit\ember_spirit_color"
+	"$normalmap" "models\heroes\ember_spirit\ember_spirit_normal"
+	"$maskmap1" "models\heroes\ember_spirit\ember_spirit_masks1"
+	"$maskmap2" "models\heroes\ember_spirit\ember_spirit_masks2"
+	"$detail1"  "models\heroes\ember_spirit\ember_spirit_detail"
+ 
+	"$DETAILFX" "50"
+ 
+ 	$SPECULAR_BLOOM_SCALE      2.4
+	$DETAILSCALEVAR 1
+ 
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[5.5 1.8 0.4]"
+	
+	$RIMLIGHTSCALE 5
+	$RIMLIGHTCOLOR "[1 .2 0]"
+
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+	$alphatest 0
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR .45
+
+	//$ENVMAP "models/cubemaps/glossy_orange"
+	//$ENVMAPINTENSITY 18
+	//$MASKENVBYMETALNESS 1	
+	
+
+	"$colorwarp" "models/heroes/statusEffects/colorwarp_redchrome"
+	"$colorwarpintensity" ".75"
+
+	"$detail2"  "models\heroes\StatusEffects\burning"
+	$DETAIL2BLENDMODE 2
+	$DETAIL2SCALE 3.25
+	$DETAIL2BLENDFACTOR .5
+
+	$translucent 0
+	$additive 0
+
+       // $ALLOWDIFFUSEMODULATION 1
+
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar" "$DETAILFX"
+			"sineperiod" "2.3"
+			"sinemin" "-.1"
+			"sinemax" ".12"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.1"
+			"texturescrollangle"	"$DETAILFX"
+			"texturescale" .75	
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail2texturetransform"
+			"texturescrollrate"	"0.13"
+			"texturescrollangle"	"$DETAILFX"
+			"texturescale" .65	
+		}
+		"UseCombinedTexture"
+		{
+		}	
+	}
+
+}

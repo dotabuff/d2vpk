@@ -279,7 +279,6 @@ Response disruptor_Move
 	scene "scenes/disruptor/disruptor_dis_move_07.vcd" nodelay noscene 
 	scene "scenes/disruptor/disruptor_dis_move_08.vcd" nodelay noscene 
 	scene "scenes/disruptor/disruptor_dis_move_09.vcd" nodelay noscene 
-	scene "scenes/disruptor/disruptor_dis_move_10.vcd" nodelay noscene 
 	scene "scenes/disruptor/disruptor_dis_move_11.vcd" nodelay noscene 
 	scene "scenes/disruptor/disruptor_dis_move_12.vcd" nodelay noscene 
 }
@@ -288,6 +287,17 @@ Rule disruptor_Move_Rule
 {
 	criteria Move Isdisruptor 
 	response disruptor_Move
+}
+
+Response disruptor_MoveChance_5%
+{
+	scene "scenes/disruptor/disruptor_dis_move_10.vcd" nodelay noscene 
+}
+
+Rule disruptor_MoveChance_5%_Rule
+{
+	criteria Move Isdisruptor Chance_5%
+	response disruptor_MoveChance_5%
 }
 
 Response disruptor_Attack
@@ -349,20 +359,20 @@ Rule disruptor_CastExecuteIsAbilityDisruptorGlimpseChance_75%_Rule
 	response disruptor_CastExecuteIsAbilityDisruptorGlimpseChance_75%
 }
 
-Response disruptor_CastExecuteIsAbilityDisruptorKineticFieldChance_15%
+Response disruptor_CastExecuteIsAbilityDisruptorKineticFieldChance_10%
 {
 	scene "scenes/disruptor/disruptor_dis_kineticfield_01.vcd" nodelay noscene 
+	scene "scenes/disruptor/disruptor_dis_kineticfield_02.vcd" nodelay noscene 
 }
 
-Rule disruptor_CastExecuteIsAbilityDisruptorKineticFieldChance_15%_Rule
+Rule disruptor_CastExecuteIsAbilityDisruptorKineticFieldChance_10%_Rule
 {
-	criteria CastExecute Isdisruptor IsAbilityDisruptorKineticField Chance_15%
-	response disruptor_CastExecuteIsAbilityDisruptorKineticFieldChance_15%
+	criteria CastExecute Isdisruptor IsAbilityDisruptorKineticField Chance_10%
+	response disruptor_CastExecuteIsAbilityDisruptorKineticFieldChance_10%
 }
 
 Response disruptor_CastExecuteIsAbilityDisruptorKineticFieldChance_75%
 {
-	scene "scenes/disruptor/disruptor_dis_kineticfield_02.vcd" nodelay noscene 
 	scene "scenes/disruptor/disruptor_dis_kineticfield_03.vcd" nodelay noscene 
 	scene "scenes/disruptor/disruptor_dis_kineticfield_04.vcd" nodelay noscene 
 }

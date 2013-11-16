@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/tidehunter/blink_dagger_tide/blink_dagger_eel_tide_color"
+	"$normalmap" "models/items/tidehunter/blink_dagger_tide/blink_dagger_eel_tide_normal"
+	"$maskmap1" "models/items/tidehunter/blink_dagger_tide/blink_dagger_eel_tide_masks1"
+	"$maskmap2" "models/items/tidehunter/blink_dagger_tide/blink_dagger_eel_tide_masks2"
+	"$alphatest" "1"
+
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 3
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1.2 1.1 1.6]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

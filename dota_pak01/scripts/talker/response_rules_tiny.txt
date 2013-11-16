@@ -3,7 +3,6 @@ criterion "IsEnemytiny" "targetclassname" "npc_dota_hero_tiny" weight 5 required
 criterion "IsAllytiny" "nearby_ally" "npc_dota_hero_tiny" weight 5 required
 criterion "IsGrow" "abilityname" "tiny_grow" weight 5 required
 criterion "IsToss" "abilityname" "tiny_toss" weight 5 required
-criterion "IsTossKill" "abilityname" "tiny_toss" weight 5 required
 
 Response tiny_Spawn
 {
@@ -12,6 +11,7 @@ Response tiny_Spawn
 	scene "scenes/tiny/tiny_tiny_spawn_06.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_spawn_07.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_spawn_08.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_spawn_09.vcd" nodelay noscene 
 }
 
 Rule tiny_Spawn_Rule
@@ -77,16 +77,28 @@ Rule tiny_CustomIsGameStart_Rule
 	response tiny_CustomIsGameStart
 }
 
-Response tiny_CustomIsToss
+Response tiny_CustomIsTossChance_75%
 {
 	scene "scenes/tiny/tiny_tiny_ability_toss_01.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_ability_toss_02.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_ability_toss_12.vcd" nodelay noscene 
 }
 
-Rule tiny_CustomIsToss_Rule
+Rule tiny_CustomIsTossChance_75%_Rule
 {
-	criteria Custom Istiny IsToss
-	response tiny_CustomIsToss
+	criteria Custom Istiny IsToss Chance_75%
+	response tiny_CustomIsTossChance_75%
+}
+
+Response tiny_CustomIsTossChance_5%
+{
+	scene "scenes/tiny/tiny_tiny_ability_toss_03.vcd" nodelay noscene 
+}
+
+Rule tiny_CustomIsTossChance_5%_Rule
+{
+	criteria Custom Istiny IsToss Chance_5%
+	response tiny_CustomIsTossChance_5%
 }
 
 Response tiny_CastOrder
@@ -100,16 +112,16 @@ Rule tiny_CastOrder_Rule
 	response tiny_CastOrder
 }
 
-Response tiny_KillIsTossKill
+Response tiny_KillIsTossChance_25%
 {
 	scene "scenes/tiny/tiny_tiny_ability_toss_04.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_ability_toss_06.vcd" nodelay noscene 
 }
 
-Rule tiny_KillIsTossKill_Rule
+Rule tiny_KillIsTossChance_25%_Rule
 {
-	criteria Kill Istiny IsTossKill
-	response tiny_KillIsTossKill
+	criteria Kill Istiny IsToss Chance_25%
+	response tiny_KillIsTossChance_25%
 }
 
 Response tiny_Kill
@@ -286,18 +298,35 @@ Rule tiny_KillIsFirstBlood_Rule
 	response tiny_KillIsFirstBlood
 }
 
-Response tiny_LearnIsGrow
+Response tiny_LevelUp
 {
+	scene "scenes/tiny/tiny_tiny_ability_toss_11.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_ability_grow_01.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_ability_grow_02.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_ability_grow_03.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_ability_grow_04.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_level_01.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_level_02.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_level_04.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_level_05.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_level_07.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_level_08.vcd" nodelay noscene 
 }
 
-Rule tiny_LearnIsGrow_Rule
+Rule tiny_LevelUp_Rule
 {
-	criteria Learn Istiny IsGrow 
-	response tiny_LearnIsGrow
+	criteria LevelUp Istiny 
+	response tiny_LevelUp
+}
+
+Response tiny_LearnIsGrowChance_5%
+{
+	scene "scenes/tiny/tiny_tiny_ability_grow_04.vcd" nodelay noscene speakonce
+}
+
+Rule tiny_LearnIsGrowChance_5%_Rule
+{
+	criteria Learn Istiny IsGrow  Chance_5%
+	response tiny_LearnIsGrowChance_5%
 }
 
 Response tiny_Death
@@ -364,10 +393,10 @@ Rule tiny_Select_Rule
 
 Response tiny_PurchaseIsExpensiveItem
 {
-	scene "scenes/tiny/tiny_tiny_purch_01.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_purch_02.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_purch_03.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_purch_04.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_purch_01.vcd" nodelay noscene speakonce
+	scene "scenes/tiny/tiny_tiny_purch_02.vcd" nodelay noscene speakonce
+	scene "scenes/tiny/tiny_tiny_purch_03.vcd" nodelay noscene speakonce
+	scene "scenes/tiny/tiny_tiny_purch_04.vcd" nodelay noscene speakonce
 }
 
 Rule tiny_PurchaseIsExpensiveItem_Rule
@@ -674,22 +703,6 @@ Rule tiny_PowerupIsPowerupInvisibility_Rule
 	response tiny_PowerupIsPowerupInvisibility
 }
 
-Response tiny_LevelUp
-{
-	scene "scenes/tiny/tiny_tiny_level_01.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_level_02.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_level_04.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_level_05.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_level_07.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_level_08.vcd" nodelay noscene 
-}
-
-Rule tiny_LevelUp_Rule
-{
-	criteria LevelUp Istiny 
-	response tiny_LevelUp
-}
-
 Response tiny_Pain
 {
 	scene "scenes/tiny/tiny_tiny_pain_01.vcd" nodelay noscene 
@@ -700,13 +713,23 @@ Response tiny_Pain
 	scene "scenes/tiny/tiny_tiny_pain_06.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_pain_07.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_pain_08.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_underattack_01.vcd" nodelay noscene 
 }
 
 Rule tiny_Pain_Rule
 {
 	criteria Pain Istiny 
 	response tiny_Pain
+}
+
+Response tiny_PainChance_25%
+{
+	scene "scenes/tiny/tiny_tiny_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule tiny_PainChance_25%_Rule
+{
+	criteria Pain Istiny Chance_25%
+	response tiny_PainChance_25%
 }
 
 Response tiny_CooldownLittleNag
@@ -859,20 +882,5 @@ Rule tiny_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Istiny IsEmoteLaugh
 	response tiny_EmoteIsEmoteLaugh
-}
-
-Response tiny_EmoteIsEmoteAnger
-{
-	scene "scenes/tiny/tiny_tiny_anger_01.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_anger_02.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_anger_03.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_anger_04.vcd" nodelay noscene 
-	scene "scenes/tiny/tiny_tiny_anger_05.vcd" nodelay noscene 
-}
-
-Rule tiny_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Istiny IsEmoteAnger
-	response tiny_EmoteIsEmoteAnger
 }
 

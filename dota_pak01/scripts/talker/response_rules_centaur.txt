@@ -112,19 +112,9 @@ Rule centaur_Kill_Rule
 	response centaur_Kill
 }
 
-Response centaur_KillIsEnemySkeleton_KingChance_15%
-{
-	scene "scenes/centaur/centaur_cent_rival_01.vcd" nodelay noscene 
-}
-
-Rule centaur_KillIsEnemySkeleton_KingChance_15%_Rule
-{
-	criteria Kill Iscentaur IsEnemySkeleton_King Chance_15%
-	response centaur_KillIsEnemySkeleton_KingChance_15%
-}
-
 Response centaur_KillIsEnemySkeleton_KingChance_25%
 {
+	scene "scenes/centaur/centaur_cent_rival_01.vcd" nodelay noscene 
 	scene "scenes/centaur/centaur_cent_rival_02.vcd" nodelay noscene 
 }
 
@@ -237,6 +227,17 @@ Rule centaur_KillIsEnemyLionChance_25%_Rule
 {
 	criteria Kill Iscentaur IsEnemyLion Chance_25%
 	response centaur_KillIsEnemyLionChance_25%
+}
+
+Response centaur_KillIsEnemyEmber_SpiritChance_25%
+{
+	scene "scenes/centaur/centaur_cent_rival_22.vcd" nodelay noscene 
+}
+
+Rule centaur_KillIsEnemyEmber_SpiritChance_25%_Rule
+{
+	criteria Kill Iscentaur IsEnemyEmber_Spirit Chance_25%
+	response centaur_KillIsEnemyEmber_SpiritChance_25%
 }
 
 Response centaur_KillIsEnemyBroodmotherChance_25%

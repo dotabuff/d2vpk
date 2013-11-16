@@ -327,7 +327,7 @@ Rule omniknight_CastOrder_Rule
 	response omniknight_CastOrder
 }
 
-Response omniknight_CastExecuteIsAbilityPurificationChance_75%
+Response omniknight_CastExecuteIsAbilityPurificationChance_50%
 {
 	scene "scenes/omniknight/omniknight_omni_ability_purif_01.vcd" nodelay noscene 
 	scene "scenes/omniknight/omniknight_omni_ability_purif_02.vcd" nodelay noscene 
@@ -338,21 +338,21 @@ Response omniknight_CastExecuteIsAbilityPurificationChance_75%
 	scene "scenes/omniknight/omniknight_omni_ability_purif_08.vcd" nodelay noscene 
 }
 
-Rule omniknight_CastExecuteIsAbilityPurificationChance_75%_Rule
+Rule omniknight_CastExecuteIsAbilityPurificationChance_50%_Rule
 {
-	criteria CastExecute Isomniknight IsAbilityPurification Chance_75%
-	response omniknight_CastExecuteIsAbilityPurificationChance_75%
+	criteria CastExecute Isomniknight IsAbilityPurification Chance_50%
+	response omniknight_CastExecuteIsAbilityPurificationChance_50%
 }
 
-Response omniknight_CastExecuteIsAbilityPurificationChance_10%
+Response omniknight_CastExecuteIsAbilityPurificationChance_5%
 {
 	scene "scenes/omniknight/omniknight_omni_ability_purif_03.vcd" nodelay noscene 
 }
 
-Rule omniknight_CastExecuteIsAbilityPurificationChance_10%_Rule
+Rule omniknight_CastExecuteIsAbilityPurificationChance_5%_Rule
 {
-	criteria CastExecute Isomniknight IsAbilityPurification Chance_10%
-	response omniknight_CastExecuteIsAbilityPurificationChance_10%
+	criteria CastExecute Isomniknight IsAbilityPurification Chance_5%
+	response omniknight_CastExecuteIsAbilityPurificationChance_5%
 }
 
 Response omniknight_CastExecuteIsAbilityRepel

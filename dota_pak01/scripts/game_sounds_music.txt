@@ -4753,6 +4753,48 @@
 	}
 }
 
+"DOTAMusic_Diretide_Finale"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/DOTA2_Music_Stinger_Ganked_01.wav"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_music_type_tracker"
+				
+			"add_music_value"
+			{
+				"input2" "2048" //Lose
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "2048" //Lose
+			}	
+		}
+	}
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////
 

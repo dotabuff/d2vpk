@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	"$baseTexture" "models\heroes\wraith_king\wraith_king_shoulder"
+	"$normalmap" "models\heroes\wraith_king\wraith_king_shoulder_normal"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models\heroes\wraith_king\wraith_king_shoulder_mask1"
+	"$maskmap2" "models\heroes\wraith_king\wraith_king_shoulder_mask2"
+	"$detail1"  "models\heroes\wraith_king\wraith_king_detail"
+
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 19
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+	$SPECULAR_BLOOM_SCALE      .6
+
+	$RIMLIGHTSCALE 6
+	$rimlightcolor "[1 4 1]"
+
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+//	$alphatest 1
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+
+
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.1
+			"texturescrollangle"	90
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -16,15 +16,15 @@ Rule ursa_Spawn_Rule
 	response ursa_Spawn
 }
 
-Response ursa_SpawnChance_10%
+Response ursa_SpawnChance_1%
 {
 	scene "scenes/ursa/ursa_ursa_spawn_05.vcd" nodelay noscene 
 }
 
-Rule ursa_SpawnChance_10%_Rule
+Rule ursa_SpawnChance_1%_Rule
 {
-	criteria Spawn Isursa Chance_10%
-	response ursa_SpawnChance_10%
+	criteria Spawn Isursa Chance_1%
+	response ursa_SpawnChance_1%
 }
 
 Response ursa_ItemDropIsUltraRareDrop
@@ -470,15 +470,15 @@ Rule ursa_LastHit_Rule
 	response ursa_LastHit
 }
 
-Response ursa_LastHitChance_10%
+Response ursa_LastHitChance_5%
 {
 	scene "scenes/ursa/ursa_ursa_lasthit_08.vcd" nodelay noscene 
 }
 
-Rule ursa_LastHitChance_10%_Rule
+Rule ursa_LastHitChance_5%_Rule
 {
-	criteria LastHit Isursa Chance_10%
-	response ursa_LastHitChance_10%
+	criteria LastHit Isursa Chance_5%
+	response ursa_LastHitChance_5%
 }
 
 Response ursa_AllyNearIsAllyFurionEarlyGame
@@ -595,7 +595,6 @@ Response ursa_Respawn
 	scene "scenes/ursa/ursa_ursa_respawn_10.vcd" nodelay noscene 
 	scene "scenes/ursa/ursa_ursa_respawn_11.vcd" nodelay noscene 
 	scene "scenes/ursa/ursa_ursa_respawn_12.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_respawn_13.vcd" nodelay noscene 
 	scene "scenes/ursa/ursa_ursa_respawn_14.vcd" nodelay noscene 
 	scene "scenes/ursa/ursa_ursa_respawn_15.vcd" nodelay noscene 
 	scene "scenes/ursa/ursa_ursa_respawn_16.vcd" nodelay noscene 
@@ -605,6 +604,17 @@ Rule ursa_Respawn_Rule
 {
 	criteria Respawn Isursa 
 	response ursa_Respawn
+}
+
+Response ursa_RespawnChance_1%
+{
+	scene "scenes/ursa/ursa_ursa_respawn_13.vcd" nodelay noscene 
+}
+
+Rule ursa_RespawnChance_1%_Rule
+{
+	criteria Respawn Isursa Chance_1%
+	response ursa_RespawnChance_1%
 }
 
 Response ursa_PurchaseIsExpensiveItem
@@ -647,7 +657,7 @@ Rule ursa_PurchaseIsBlinkDagger_Rule
 
 Response ursa_PurchaseIsBlackKingBar
 {
-	scene "scenes/ursa/ursa_ursa_items_01.vcd" nodelay noscene 
+	scene "scenes/ursa/ursa_ursa_items_01.vcd" nodelay noscene speakonce
 }
 
 Rule ursa_PurchaseIsBlackKingBar_Rule
@@ -658,7 +668,7 @@ Rule ursa_PurchaseIsBlackKingBar_Rule
 
 Response ursa_PurchaseIsHeart
 {
-	scene "scenes/ursa/ursa_ursa_items_02.vcd" nodelay noscene 
+	scene "scenes/ursa/ursa_ursa_items_02.vcd" nodelay noscene speakonce
 }
 
 Rule ursa_PurchaseIsHeart_Rule
@@ -669,7 +679,7 @@ Rule ursa_PurchaseIsHeart_Rule
 
 Response ursa_PurchaseIsButterfly
 {
-	scene "scenes/ursa/ursa_ursa_items_03.vcd" nodelay noscene 
+	scene "scenes/ursa/ursa_ursa_items_03.vcd" nodelay noscene speakonce
 }
 
 Rule ursa_PurchaseIsButterfly_Rule
@@ -680,7 +690,7 @@ Rule ursa_PurchaseIsButterfly_Rule
 
 Response ursa_PurchaseIsInvisSword
 {
-	scene "scenes/ursa/ursa_ursa_items_04.vcd" nodelay noscene 
+	scene "scenes/ursa/ursa_ursa_items_04.vcd" nodelay noscene speakonce
 }
 
 Rule ursa_PurchaseIsInvisSword_Rule
@@ -691,7 +701,7 @@ Rule ursa_PurchaseIsInvisSword_Rule
 
 Response ursa_PurchaseIsSangeAndYasha
 {
-	scene "scenes/ursa/ursa_ursa_items_05.vcd" nodelay noscene 
+	scene "scenes/ursa/ursa_ursa_items_05.vcd" nodelay noscene speakonce
 }
 
 Rule ursa_PurchaseIsSangeAndYasha_Rule
@@ -702,7 +712,7 @@ Rule ursa_PurchaseIsSangeAndYasha_Rule
 
 Response ursa_PurchaseIsSphere
 {
-	scene "scenes/ursa/ursa_ursa_items_06.vcd" nodelay noscene 
+	scene "scenes/ursa/ursa_ursa_items_06.vcd" nodelay noscene speakonce
 }
 
 Rule ursa_PurchaseIsSphere_Rule
@@ -713,10 +723,10 @@ Rule ursa_PurchaseIsSphere_Rule
 
 Response ursa_PurchaseIsVladmirs
 {
-	scene "scenes/ursa/ursa_ursa_items_07.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_items_09.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_items_10.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_items_11.vcd" nodelay noscene 
+	scene "scenes/ursa/ursa_ursa_items_07.vcd" nodelay noscene speakonce
+	scene "scenes/ursa/ursa_ursa_items_09.vcd" nodelay noscene speakonce
+	scene "scenes/ursa/ursa_ursa_items_10.vcd" nodelay noscene speakonce
+	scene "scenes/ursa/ursa_ursa_items_11.vcd" nodelay noscene speakonce
 }
 
 Rule ursa_PurchaseIsVladmirs_Rule
@@ -736,36 +746,6 @@ Rule ursa_Bottling_Rule
 {
 	criteria Bottling Isursa 
 	response ursa_Bottling
-}
-
-Response ursa_MissingIsLaneTop
-{
-}
-
-Rule ursa_MissingIsLaneTop_Rule
-{
-	criteria Missing Isursa IsLaneTop
-	response ursa_MissingIsLaneTop
-}
-
-Response ursa_MissingIsLaneMid
-{
-}
-
-Rule ursa_MissingIsLaneMid_Rule
-{
-	criteria Missing Isursa IsLaneMid
-	response ursa_MissingIsLaneMid
-}
-
-Response ursa_MissingIsLaneBot
-{
-}
-
-Rule ursa_MissingIsLaneBot_Rule
-{
-	criteria Missing Isursa IsLaneBot
-	response ursa_MissingIsLaneBot
 }
 
 Response ursa_Deny
@@ -801,15 +781,15 @@ Rule ursa_Immortality_Rule
 	response ursa_Immortality
 }
 
-Response ursa_ImmortalityChance_5%
+Response ursa_ImmortalityChance_25%
 {
 	scene "scenes/ursa/ursa_ursa_immort_02.vcd" nodelay noscene 
 }
 
-Rule ursa_ImmortalityChance_5%_Rule
+Rule ursa_ImmortalityChance_25%_Rule
 {
-	criteria Immortality Isursa Chance_5%
-	response ursa_ImmortalityChance_5%
+	criteria Immortality Isursa Chance_25%
+	response ursa_ImmortalityChance_25%
 }
 
 Response ursa_PowerupIsPowerupHaste
@@ -823,15 +803,15 @@ Rule ursa_PowerupIsPowerupHaste_Rule
 	response ursa_PowerupIsPowerupHaste
 }
 
-Response ursa_PowerupIsPowerupHasteChance_5%
+Response ursa_PowerupIsPowerupHasteChance_25%
 {
 	scene "scenes/ursa/ursa_ursa_haste_02.vcd" nodelay noscene 
 }
 
-Rule ursa_PowerupIsPowerupHasteChance_5%_Rule
+Rule ursa_PowerupIsPowerupHasteChance_25%_Rule
 {
-	criteria Powerup Isursa IsPowerupHaste Chance_5%
-	response ursa_PowerupIsPowerupHasteChance_5%
+	criteria Powerup Isursa IsPowerupHaste Chance_25%
+	response ursa_PowerupIsPowerupHasteChance_25%
 }
 
 Response ursa_PowerupIsPowerupDoubleDamage
@@ -867,15 +847,15 @@ Rule ursa_PowerupIsPowerupIllusion_Rule
 	response ursa_PowerupIsPowerupIllusion
 }
 
-Response ursa_PowerupIsPowerupIllusionChance_5%
+Response ursa_PowerupIsPowerupIllusionChance_25%
 {
 	scene "scenes/ursa/ursa_ursa_illus_02.vcd" nodelay noscene 
 }
 
-Rule ursa_PowerupIsPowerupIllusionChance_5%_Rule
+Rule ursa_PowerupIsPowerupIllusionChance_25%_Rule
 {
-	criteria Powerup Isursa IsPowerupIllusion Chance_5%
-	response ursa_PowerupIsPowerupIllusionChance_5%
+	criteria Powerup Isursa IsPowerupIllusion Chance_25%
+	response ursa_PowerupIsPowerupIllusionChance_25%
 }
 
 Response ursa_PowerupIsPowerupInvisibility
@@ -939,18 +919,18 @@ Rule ursa_Thanks_Rule
 	response ursa_Thanks
 }
 
-Response ursa_Pain
-{
-	scene "scenes/ursa/ursa_ursa_underattack_01.vcd" nodelay noscene 
-}
-
-Rule ursa_Pain_Rule
-{
-	criteria Pain Isursa 
-	response ursa_Pain
-}
-
 Response ursa_PainChance_25%
+{
+	scene "scenes/ursa/ursa_ursa_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule ursa_PainChance_25%_Rule
+{
+	criteria Pain Isursa Chance_25%
+	response ursa_PainChance_25%
+}
+
+Response ursa_Pain
 {
 	scene "scenes/ursa/ursa_ursa_pain_07.vcd" nodelay noscene 
 	scene "scenes/ursa/ursa_ursa_pain_08.vcd" nodelay noscene 
@@ -974,10 +954,10 @@ Response ursa_PainChance_25%
 	scene "scenes/ursa/ursa_ursa_pain_29.vcd" nodelay noscene 
 }
 
-Rule ursa_PainChance_25%_Rule
+Rule ursa_Pain_Rule
 {
-	criteria Pain Isursa Chance_25%
-	response ursa_PainChance_25%
+	criteria Pain Isursa 
+	response ursa_Pain
 }
 
 Response ursa_InTheBag
@@ -1045,31 +1025,6 @@ Rule ursa_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isursa IsEmoteLaugh
 	response ursa_EmoteIsEmoteLaugh
-}
-
-Response ursa_EmoteIsEmoteAnger
-{
-	scene "scenes/ursa/ursa_ursa_anger_01.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_02.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_03.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_04.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_05.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_06.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_07.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_08.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_09.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_10.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_11.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_13.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_14.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_15.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_anger_16.vcd" nodelay noscene 
-}
-
-Rule ursa_EmoteIsEmoteAnger_Rule
-{
-	criteria Emote Isursa IsEmoteAnger
-	response ursa_EmoteIsEmoteAnger
 }
 
 Response ursa_Select

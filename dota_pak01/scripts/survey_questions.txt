@@ -1,0 +1,34 @@
+"survey_questions"
+{
+	"0"
+	{	
+		// legacy match quality
+		"enabled"		"0"
+	}
+
+	"1"
+	{
+		// match quality
+		"enabled"		"1"
+		"responsestyle"		"lowhigh"
+	}
+
+	"2"
+	{
+		// quality as teammate
+		"enabled"		"1"
+		"responsestyle"		"lowhigh"
+	}
+	
+	"3"
+	{
+		// quality of teammates
+		"enabled"		"0"
+		"responsestyle"		"lowhigh"
+	}
+	// when you add a new response style "thinfat", you have to create the response strings in dota_english.txt
+	// the only part of the token that changes is the 'thinfat' string
+	// "DOTA_Survey_response_thinfat_Very_Low"	"Super Thin"
+	// ..
+	// "DOTA_Survey_response_thinfat_Very_Good"	"Extremely Fat"
+}

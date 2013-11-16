@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\abyssal_underlord\abyssal_underlord_color"
+	"$normalmap" "models\development\flatnormal"
+	"$maskmap1" "models\heroes\abyssal_underlord\abyssal_underlord_masks1"
+	"$maskmap2" "models\heroes\abyssal_underlord\abyssal_underlord_masks2"
+
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE .5
+	$SPECULARBLENDTOFULL 1
+
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+//	$alphatest 1
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

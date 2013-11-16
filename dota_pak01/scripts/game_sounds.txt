@@ -757,7 +757,18 @@
 	}
 	"operator_stacks"
 	{
-		
+		"start_stack"
+		{
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Building_RadiantTower.Destruction.Distant"
+				"match_channel" "false"
+			}
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -832,7 +843,18 @@
 	}
 	"operator_stacks"
 	{
-		
+		"start_stack"
+		{
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Building_DireTower.Destruction.Distant"
+				"match_channel" "false"
+			}
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -2771,7 +2793,7 @@
 "DireTideGameStart.DireSide"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1.0"
+	"volume"		"0.0"
 	"soundlevel"  	"SNDLVL_96dB"
 	"wave"			"ambient/diretide/diretide_begins_dire.wav"
 	"operator_stacks"
@@ -2811,7 +2833,7 @@
 "DireTideGameStart.RadiantSide"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1.0"
+	"volume"		"0.0"
 	"soundlevel"  	"SNDLVL_96dB"
 	"wave"			"ambient/diretide/diretide_begins_radiant.wav"
 	"operator_stacks"

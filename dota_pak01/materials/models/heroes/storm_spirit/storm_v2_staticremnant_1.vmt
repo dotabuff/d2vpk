@@ -1,0 +1,77 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/storm_spirit/storm_v2_base_color"
+	"$normalmap" "models/heroes/storm_spirit/storm_v2_base_normal"
+	"$maskmap1" "models/heroes/storm_spirit/storm_v2_base_masks1"
+	"$maskmap2" "models/heroes/storm_spirit/storm_v2_base_masks2"
+	
+	"$DETAILFX" "53"
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 4
+	$DETAIL1BLENDFACTOR 2
+	
+//	$ENVMAP "models/cubemaps/glossy_blue"
+	$ENVMAPINTENSITY 5.75
+	$ENVMAPCOLOR "[0 .5 1]"
+	$MASKENVBYMETALNESS 1
+
+	$RIMLIGHTSCALE 31
+	$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTCOLOR "[0 .3 1]"
+	$IgnoreBudgetCheck 1
+	$alphatest	0
+
+
+	"$colorwarp" "models/heroes/statusEffects/colorwarp_black"
+	"$colorwarpintensity" ".5"
+	"$detail1"  "models/heroes/razor/razor_electric.vtf"
+	"$additive" "0"
+	$translucent 1
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAR_BLOOM_SCALE      4
+	$SPECULAREXPONENT 1
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[0 .5 1]"
+	$REFRACTAMOUNT 0
+	
+	$SELFILLUMBLENDTOFULL 1
+
+	"$cloakPassEnabled" "1"
+	$cloakfactor .325
+	$CLOAKCOLORTINT "[.5 1 4]"
+
+	"$detail2"  "models/heroes/statuseffects/electric"
+	$DETAIL2BLENDMODE 1
+	$DETAIL2SCALE 4
+	$DETAIL2BLENDFACTOR .6
+	$DETAIL2BLENDTOFULL .125
+
+	
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar" "$cloakfactor"
+			"sineperiod" ".25"
+			"sinemin" ".275"
+			"sinemax" ".365"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	".5"
+			"texturescrollangle"	"53"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail2texturetransform"
+			"texturescrollrate"	".1455"
+			"texturescrollangle"	"57"
+		}
+		"UseCombinedTexture"
+		{
+		}
+	}
+}

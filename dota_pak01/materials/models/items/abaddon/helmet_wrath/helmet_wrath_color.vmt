@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/abaddon/helmet_wrath/helmet_wrath_color"
+	"$normalmap" "models/items/abaddon/helmet_wrath/helmet_wrath_normal"
+//	"$detail1" "models/items/abaddon/feathers/abaddon_detail"
+	"$maskmap1" "models/items/abaddon/helmet_wrath/helmet_wrath_mask1"
+	"$maskmap2" "models/items/abaddon/helmet_wrath/helmet_wrath_mask2"
+	
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 60
+	$SPECULARSCALE 10
+	
+	
+	
+	$RIMLIGHTSCALE 3
+	$IgnoreBudgetCheck 1
+	$alphatest	1
+	
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 3
+	$DETAIL1BLENDFACTOR 1
+	$DETAIL1BLENDTOFULL 0
+	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.3"
+			"texturescrollangle"	"270"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

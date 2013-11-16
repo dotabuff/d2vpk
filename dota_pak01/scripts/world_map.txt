@@ -66,5 +66,24 @@
 			"LessonName"							"dota_overview"
 			"VisibleWhenOtherLocationComplete"		"2"
 		}
+		"8"
+		{
+			"X"								"-1"
+			"Y"								"-1"
+			"MapName"						"dota_training"
+			"LessonName"					"lasthit_training"
+			"VisibleWhenOtherLocationComplete"		"3"
+			"PlayableWhenOtherLocationComplete"		"3"
+		}
+		
+		"9"
+		{
+			"X"								"-1"
+			"Y"								"-1"
+			"MapName"						"dota_training"
+			"LessonName"					"lasthit"
+			"VisibleWhenOtherLocationComplete"		"8"
+			"PlayableWhenOtherLocationComplete"		"8"
+		}
 	}
 }
