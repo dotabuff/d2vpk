@@ -482,17 +482,6 @@ Rule meepo_AllyNearEarlyGameIsAllyEarthshaker_Rule
 	response meepo_AllyNearEarlyGameIsAllyEarthshaker
 }
 
-Response meepo_AllyNearEarlyGameIsAllyWindrunner
-{
-	scene "scenes/meepo/meepo_meepo_ally_04.vcd" nodelay noscene speakonce
-}
-
-Rule meepo_AllyNearEarlyGameIsAllyWindrunner_Rule
-{
-	criteria AllyNear Ismeepo EarlyGame IsAllyWindrunner
-	response meepo_AllyNearEarlyGameIsAllyWindrunner
-}
-
 Response meepo_AllyNearEarlyGameIsAllyBounty_Hunter
 {
 	scene "scenes/meepo/meepo_meepo_ally_05.vcd" nodelay noscene speakonce

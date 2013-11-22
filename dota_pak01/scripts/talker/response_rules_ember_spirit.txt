@@ -608,6 +608,17 @@ Rule ember_spirit_AllyNearIsAllyStormSpiritEarlyGame_Rule
 	response ember_spirit_AllyNearIsAllyStormSpiritEarlyGame
 }
 
+Response ember_spirit_AllyNearIsAllyEarth_SpiritEarlyGame
+{
+	scene "scenes/ember_spirit/ember_spirit_embr_ally_05.vcd" nodelay noscene speakonce
+}
+
+Rule ember_spirit_AllyNearIsAllyEarth_SpiritEarlyGame_Rule
+{
+	criteria AllyNear Isember_spirit IsAllyEarth_Spirit EarlyGame
+	response ember_spirit_AllyNearIsAllyEarth_SpiritEarlyGame
+}
+
 Response ember_spirit_AllyNearIsAllyClinkzEarlyGame
 {
 	scene "scenes/ember_spirit/ember_spirit_embr_ally_06.vcd" nodelay noscene speakonce

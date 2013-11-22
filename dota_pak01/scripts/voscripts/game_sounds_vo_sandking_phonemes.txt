@@ -2658,7 +2658,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Stricken!  
+Stricken! 
 }
 WORDS
 {
@@ -3700,7 +3700,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-The King is dead.  Long live the King.
+The King is dead. Long live the King.
 }
 WORDS
 {
@@ -6023,7 +6023,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Wisest to wait awhile.  
+Wisest to wait awhile. 
 }
 WORDS
 {
@@ -8890,19 +8890,15 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag!
+It's in the bag!
 }
 WORDS
 {
-WORD It 0.208 0.384
+WORD It's 0.208 0.464
 {
 618 ih 0.208 0.368 1
 116 t 0.368 0.384 1
-}
-WORD s 0.384 0.464
-{
-603 eh 0.384 0.400 1
-115 s 0.400 0.464 1
+115 s 0.384 0.464 1
 }
 WORD in 0.464 0.624
 {
@@ -8935,18 +8931,14 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag!
+It's in the bag!
 }
 WORDS
 {
-WORD It 0.208 0.432
+WORD It's 0.208 0.464
 {
 618 ih 0.208 0.368 1
-116 t 0.368 0.432 1
-}
-WORD s 0.432 0.464
-{
-603 eh 0.432 0.448 1
+116 t 0.368 0.448 1
 115 s 0.448 0.464 1
 }
 WORD in 0.464 0.736
@@ -8980,24 +8972,20 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag!
+It's in the bag!
 }
 WORDS
 {
-WORD It 0.176 0.256
+WORD It's 0.496 0.944
 {
-618 ih 0.176 0.192 1
-116 t 0.192 0.256 1
+618 ih 0.496 0.672 1
+116 t 0.672 0.752 1
+115 s 0.752 0.944 1
 }
-WORD s 0.256 0.336
+WORD in 0.944 0.976
 {
-603 eh 0.256 0.320 1
-115 s 0.320 0.336 1
-}
-WORD in 0.496 0.720
-{
-618 ih 0.496 0.656 1
-110 n 0.656 0.720 1
+618 ih 0.944 0.960 1
+110 n 0.960 0.976 1
 }
 WORD the 1.136 1.696
 {
@@ -9477,51 +9465,6 @@ WORD arrows 2.800 3.488
 633 r 2.800 2.992 1
 111 ow 2.992 3.264 1
 122 z 3.264 3.488 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\sandking\sand_rival_07.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Windrunner, winding down.
-}
-WORDS
-{
-WORD Windrunner 0.224 1.200
-{
-119 w 0.224 0.368 1
-618 ih 0.368 0.464 1
-110 n 0.464 0.480 1
-100 d 0.480 0.496 1
-633 r 0.496 0.640 1
-652 ah 0.640 1.168 1
-110 n 1.168 1.184 1
-602 er 1.184 1.200 1
-}
-WORD winding 1.408 2.112
-{
-119 w 1.408 1.488 1
-618 ih 1.488 1.664 1
-110 n 1.664 2.032 1
-100 d 2.032 2.080 1
-618 ih 2.080 2.096 1
-331 ng 2.096 2.112 1
-}
-WORD down 2.112 2.288
-{
-100 d 2.112 2.128 1
-593 aw 2.128 2.272 1
-110 n 2.272 2.288 1
 }
 }
 EMPHASIS

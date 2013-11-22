@@ -1,0 +1,35 @@
+
+"CustomHero"
+{
+	"$basetexture" "models\heroes\dazzle\dazzle_head_color"
+	"$normalmap" "models/heroes/dazzle/dazzle_head_normal"
+	"$maskmap1" "models/heroes/dazzle/dazzle_head_masks1"
+	"$maskmap2" "models/heroes/dazzle/dazzle_head_masks2"
+
+
+	"$alphatest" "1"
+	 $IgnoreBudgetCheck 1  
+
+
+
+	$AMBIENTSCALE 1
+	$SPECULAREXPONENT 50
+	$SPECULARSCALE 6
+	//$SPECULARCOLOR "1 1 1"
+	//$RIMLIGHTCOLOR ".8 1 1"
+	$RIMLIGHTSCALE 1	
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

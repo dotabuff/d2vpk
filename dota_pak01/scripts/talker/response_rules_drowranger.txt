@@ -108,7 +108,6 @@ Response drowranger_KillChance_20%IsEnemyWindrunner
 {
 	scene "scenes/drowranger/drowranger_drow_rival_03.vcd" nodelay noscene 
 	scene "scenes/drowranger/drowranger_drow_rival_04.vcd" nodelay noscene 
-	scene "scenes/drowranger/drowranger_drow_rival_05.vcd" nodelay noscene 
 	scene "scenes/drowranger/drowranger_drow_rival_06.vcd" nodelay noscene 
 }
 
@@ -355,17 +354,6 @@ Rule drowranger_LevelUpChance_5%_Rule
 {
 	criteria LevelUp Isdrowranger Chance_5%
 	response drowranger_LevelUpChance_5%
-}
-
-Response drowranger_AllyNearEarlyGameIsAllyWindrunner
-{
-	scene "scenes/drowranger/drowranger_drow_ally_01.vcd" nodelay noscene speakonce
-}
-
-Rule drowranger_AllyNearEarlyGameIsAllyWindrunner_Rule
-{
-	criteria AllyNear Isdrowranger EarlyGame IsAllyWindrunner
-	response drowranger_AllyNearEarlyGameIsAllyWindrunner
 }
 
 Response drowranger_AllyNearEarlyGameIsAllyFurion

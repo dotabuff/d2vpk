@@ -423,17 +423,6 @@ Rule keeper_of_the_light_AllyNearIsAllyDrowRangerEarlyGame_Rule
 	response keeper_of_the_light_AllyNearIsAllyDrowRangerEarlyGame
 }
 
-Response keeper_of_the_light_AllyNearIsAllyWindrunnerEarlyGame
-{
-	scene "scenes/keeper_of_the_light/keeper_of_the_light_keep_ally_09.vcd" nodelay noscene speakonce
-}
-
-Rule keeper_of_the_light_AllyNearIsAllyWindrunnerEarlyGame_Rule
-{
-	criteria AllyNear Iskeeper_of_the_light IsAllyWindrunner EarlyGame
-	response keeper_of_the_light_AllyNearIsAllyWindrunnerEarlyGame
-}
-
 Response keeper_of_the_light_AllyNearIsAllyBroodmotherEarlyGame
 {
 	scene "scenes/keeper_of_the_light/keeper_of_the_light_keep_ally_10.vcd" nodelay noscene speakonce

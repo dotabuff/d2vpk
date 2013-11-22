@@ -120,17 +120,6 @@ Rule luna_KillIsEnemySilencerChance_20%_Rule
 	response luna_KillIsEnemySilencerChance_20%
 }
 
-Response luna_KillIsEnemyWindrunnerChance_20%
-{
-	scene "scenes/luna/luna_luna_rival_04.vcd" nodelay noscene 
-}
-
-Rule luna_KillIsEnemyWindrunnerChance_20%_Rule
-{
-	criteria Kill Isluna IsEnemyWindrunner Chance_20%
-	response luna_KillIsEnemyWindrunnerChance_20%
-}
-
 Response luna_KillIsEnemyNight_StalkerChance_20%
 {
 	scene "scenes/luna/luna_luna_rival_05.vcd" nodelay noscene 

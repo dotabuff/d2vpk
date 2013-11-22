@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/pudge/shape_pudge_hookthrown_color"
+	"$normalmap" "models/heroes/pudge/shape_pudge_hookthrown_normal"
+//	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+	"$maskmap1" "models/heroes/pudge/shape_pudge_hookthrown_mask1"
+	"$maskmap2" "models/heroes/pudge/shape_pudge_hookthrown_mask2"
+
+	$alphatest 1
+	$SPECULAR_BLOOM_SCALE      1
+	$SPECULAREXPONENT 30	
+	$SPECULARSCALE 10	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 10
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1
+//	$DETAIL1BLENDTOFULL 1
+	
+	$FRESNELWARP "models/heroes/pudge/pudge_fresnelranges"
+	
+	
+	$ignorez 1
+}

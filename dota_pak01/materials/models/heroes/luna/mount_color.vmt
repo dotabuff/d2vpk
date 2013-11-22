@@ -5,23 +5,16 @@
 	"$maskmap1" "models/heroes/luna/mount_masks1"
 	"$maskmap2" "models/heroes/luna/mount_masks2"
 	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
-	"$FRESNELWARP" "models/heroes/luna/luna_fresnelranges"
+	//"$FRESNELWARP" "models/heroes/luna/luna_fresnelranges"
 
 	$SPECULAREXPONENT 20
-	$SPECULARSCALE 2
+	$SPECULARSCALE 20
 	$SPECULARCOLOR "[.8 1 1]"
-	$RIMLIGHTCOLOR "[1 1 1]"
-	//$SPECULARBLENDTOFULL 1
+	$RIMLIGHTCOLOR "[.8 1 1]"
+	$RIMLIGHTSCALE 4
+	$AMBIENTSCALE 1
 
-	$RIMLIGHTSCALE 1.2
-	//$RIMAMBIENCE 1
-
-	//$AMBIENTSCALE 1
-//	$ENVMAP "models/cubemaps/glossy"
-//	$MASKENVBYMETALNESS 0
-
-//	$ENVMAPINTENSITY 0.5
-
+	
 	$IgnoreBudgetCheck 1	
 	"$cloakPassEnabled" "1"
 	

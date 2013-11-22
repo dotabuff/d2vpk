@@ -289,18 +289,6 @@ Rule death_prophet_KillIsEnemyFurionChance_25%_Rule
 	response death_prophet_KillIsEnemyFurionChance_25%
 }
 
-Response death_prophet_KillIsEnemyNecrolyteChance_25%
-{
-	scene "scenes/death_prophet/death_prophet_dpro_rival_09.vcd" nodelay noscene 
-	scene "scenes/death_prophet/death_prophet_dpro_rival_10.vcd" nodelay noscene 
-}
-
-Rule death_prophet_KillIsEnemyNecrolyteChance_25%_Rule
-{
-	criteria Kill Isdeath_prophet IsEnemyNecrolyte Chance_25%
-	response death_prophet_KillIsEnemyNecrolyteChance_25%
-}
-
 Response death_prophet_KillIsEnemyLichChance_25%
 {
 	scene "scenes/death_prophet/death_prophet_dpro_rival_11.vcd" nodelay noscene 
@@ -332,17 +320,6 @@ Rule death_prophet_KillIsEnemyWarlockChance_25%_Rule
 {
 	criteria Kill Isdeath_prophet IsEnemyWarlock Chance_25%
 	response death_prophet_KillIsEnemyWarlockChance_25%
-}
-
-Response death_prophet_KillIsEnemyWindrunnerChance_25%
-{
-	scene "scenes/death_prophet/death_prophet_dpro_rival_15.vcd" nodelay noscene 
-}
-
-Rule death_prophet_KillIsEnemyWindrunnerChance_25%_Rule
-{
-	criteria Kill Isdeath_prophet IsEnemyWindrunner Chance_25%
-	response death_prophet_KillIsEnemyWindrunnerChance_25%
 }
 
 Response death_prophet_KillIsEnemyPhantom_AssassinChance_25%

@@ -249,6 +249,17 @@ Rule brewmaster_KillIsEnemyEmber_SpiritChance_35%_Rule
 	response brewmaster_KillIsEnemyEmber_SpiritChance_35%
 }
 
+Response brewmaster_KillIsEnemyEarth_SpiritChance_35%
+{
+	scene "scenes/brewmaster/brewmaster_brew_rival_26.vcd" nodelay noscene 
+}
+
+Rule brewmaster_KillIsEnemyEarth_SpiritChance_35%_Rule
+{
+	criteria Kill Isbrewmaster IsEnemyEarth_Spirit Chance_35%
+	response brewmaster_KillIsEnemyEarth_SpiritChance_35%
+}
+
 Response brewmaster_KillIsEnemyChaos_KnightChance_35%
 {
 	scene "scenes/brewmaster/brewmaster_brew_rival_28.vcd" nodelay noscene 
@@ -454,6 +465,17 @@ Rule brewmaster_DeathIsEnemyStormSpiritChance_25%_Rule
 {
 	criteria Death Isbrewmaster IsEnemyStormSpirit Chance_25%
 	response brewmaster_DeathIsEnemyStormSpiritChance_25%
+}
+
+Response brewmaster_DeathIsEnemyEarth_SpiritChance_15%
+{
+	scene "scenes/brewmaster/brewmaster_brew_rival_27.vcd" nodelay noscene 
+}
+
+Rule brewmaster_DeathIsEnemyEarth_SpiritChance_15%_Rule
+{
+	criteria Death Isbrewmaster IsEnemyEarth_Spirit Chance_15%
+	response brewmaster_DeathIsEnemyEarth_SpiritChance_15%
 }
 
 Response brewmaster_DeathIsEnemyChaos_KnightChance_15%

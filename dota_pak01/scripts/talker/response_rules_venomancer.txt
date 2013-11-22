@@ -198,18 +198,6 @@ Rule venomancer_KillIsEnemyViperChance_35%_Rule
 	response venomancer_KillIsEnemyViperChance_35%
 }
 
-Response venomancer_KillIsEnemyNecrolyteChance_35%
-{
-	scene "scenes/venomancer/venomancer_venm_rival_03.vcd" nodelay noscene 
-	scene "scenes/venomancer/venomancer_venm_rival_04.vcd" nodelay noscene 
-}
-
-Rule venomancer_KillIsEnemyNecrolyteChance_35%_Rule
-{
-	criteria Kill Isvenomancer IsEnemyNecrolyte Chance_35%
-	response venomancer_KillIsEnemyNecrolyteChance_35%
-}
-
 Response venomancer_KillIsFirstBlood
 {
 	scene "scenes/venomancer/venomancer_venm_firstblood_01.vcd" nodelay noscene 

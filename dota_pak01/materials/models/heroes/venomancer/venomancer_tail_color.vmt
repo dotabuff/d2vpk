@@ -2,26 +2,51 @@
 {
 	"$baseTexture" "models/heroes/venomancer/venomancer_tail_color"
 	"$normalmap" "models/heroes/venomancer/venomancer_tail_normal"
-	"$diffusewarp" "models/heroes/drow/diffusewarp"
 	"$maskmap1" "models/heroes/venomancer/venomancer_tail_masks1"
 	"$maskmap2" "models/heroes/venomancer/venomancer_tail_masks2"
 
 
-	$SPECULAREXPONENT 25
-	$AMBIENTSCALE 1
-	$SPECULARSCALE 1		
 
-	$RIMLIGHTSCALE	1
-	$RIMLIGHTCOLOR	"[1 1 1]"
+//	"$detail1" "models/heroes/venomancer/venomancer_motion"
 	
-	$FRESNELWARP "models/heroes/pudge/pudge_fresnelranges"
 
 
+	$SPECULAR_BLOOM_SCALE 0
+	$SPECULAREXPONENT 80	
+	$SPECULARSCALE 15
+ // $SPECULARCOLOR "[0.7 0.9 1]"	
+	$RIMLIGHTCOLOR "[0.9 0.9 0.2]"
+
+	$RIMLIGHTSCALE 2
+
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR 1
 
 	
+
+
+
+  	$IgnoreBudgetCheck 1
+
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.1
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.1
+			"texturescrollangle"	0
+		}
+		
 		"invis_proxy"
 		{
 		}
@@ -29,6 +54,4 @@
 		{
 		}
 	}
-
 }
-

@@ -391,6 +391,17 @@ Rule vengefulspirit_KillIsEnemyStormSpiritChance_35%_Rule
 	response vengefulspirit_KillIsEnemyStormSpiritChance_35%
 }
 
+Response vengefulspirit_KillIsEnemyEarth_SpiritChance_35%
+{
+	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_13.vcd" nodelay noscene 
+}
+
+Rule vengefulspirit_KillIsEnemyEarth_SpiritChance_35%_Rule
+{
+	criteria Kill Isvengefulspirit IsEnemyEarth_Spirit Chance_35%
+	response vengefulspirit_KillIsEnemyEarth_SpiritChance_35%
+}
+
 Response vengefulspirit_KillIsEnemyEmber_SpiritChance_35%
 {
 	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_13.vcd" nodelay noscene 

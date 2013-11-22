@@ -162,17 +162,6 @@ Rule morphling_Kill_Rule
 	response morphling_Kill
 }
 
-Response morphling_KillIsEnemyNecrolyteChance_25%
-{
-	scene "scenes/morphling/morphling_mrph_rival_01.vcd" nodelay noscene 
-}
-
-Rule morphling_KillIsEnemyNecrolyteChance_25%_Rule
-{
-	criteria Kill Ismorphling IsEnemyNecrolyte Chance_25%
-	response morphling_KillIsEnemyNecrolyteChance_25%
-}
-
 Response morphling_KillIsEnemyLinaChance_25%
 {
 	scene "scenes/morphling/morphling_mrph_rival_02.vcd" nodelay noscene 

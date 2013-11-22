@@ -429,17 +429,6 @@ Rule magnataur_LevelUp_Rule
 	response magnataur_LevelUp
 }
 
-Response magnataur_AllyNearIsAllyWindrunnerEarlyGame
-{
-	scene "scenes/magnataur/magnataur_magn_rival_12.vcd" nodelay noscene speakonce
-}
-
-Rule magnataur_AllyNearIsAllyWindrunnerEarlyGame_Rule
-{
-	criteria AllyNear Ismagnataur IsAllyWindrunner EarlyGame
-	response magnataur_AllyNearIsAllyWindrunnerEarlyGame
-}
-
 Response magnataur_AllyNearIsAllySpirit_BreakerEarlyGame
 {
 	scene "scenes/magnataur/magnataur_magn_ally_01.vcd" nodelay noscene speakonce

@@ -141,17 +141,6 @@ Rule batrider_KillIsEnemyDrowRangerChance_35%_Rule
 	response batrider_KillIsEnemyDrowRangerChance_35%
 }
 
-Response batrider_KillIsEnemyWindrunnerChance_35%
-{
-	scene "scenes/batrider/batrider_bat_rival_04.vcd" nodelay noscene 
-}
-
-Rule batrider_KillIsEnemyWindrunnerChance_35%_Rule
-{
-	criteria Kill Isbatrider IsEnemyWindrunner Chance_35%
-	response batrider_KillIsEnemyWindrunnerChance_35%
-}
-
 Response batrider_KillIsEnemyVengefulSpiritChance_35%
 {
 	scene "scenes/batrider/batrider_bat_rival_05.vcd" nodelay noscene 
@@ -283,17 +272,6 @@ Rule batrider_KillIsEnemyPudgeChance_35%_Rule
 {
 	criteria Kill Isbatrider IsEnemyPudge Chance_35%
 	response batrider_KillIsEnemyPudgeChance_35%
-}
-
-Response batrider_KillIsEnemyNecrolyteChance_35%
-{
-	scene "scenes/batrider/batrider_bat_rival_20.vcd" nodelay noscene 
-}
-
-Rule batrider_KillIsEnemyNecrolyteChance_35%_Rule
-{
-	criteria Kill Isbatrider IsEnemyNecrolyte Chance_35%
-	response batrider_KillIsEnemyNecrolyteChance_35%
 }
 
 Response batrider_KillIsEnemyFaceless_VoidChance_35%

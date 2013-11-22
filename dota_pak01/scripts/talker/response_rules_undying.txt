@@ -268,17 +268,6 @@ Rule undying_KillIsEnemySandKingChance_25%_Rule
 	response undying_KillIsEnemySandKingChance_25%
 }
 
-Response undying_KillIsEnemyNecrolyteChance_35%
-{
-	scene "scenes/undying/undying_undying_rival_11.vcd" nodelay noscene 
-}
-
-Rule undying_KillIsEnemyNecrolyteChance_35%_Rule
-{
-	criteria Kill Isundying IsEnemyNecrolyte Chance_35%
-	response undying_KillIsEnemyNecrolyteChance_35%
-}
-
 Response undying_KillIsEnemyLife_StealerChance_35%
 {
 	scene "scenes/undying/undying_undying_rival_12.vcd" nodelay noscene 
@@ -525,17 +514,6 @@ Rule undying_KillIsEnemySandKingChance_25%IsGolem_Rule
 {
 	criteria Kill Isundying IsEnemySandKing Chance_25% IsGolem
 	response undying_KillIsEnemySandKingChance_25%IsGolem
-}
-
-Response undying_KillIsEnemyNecrolyteChance_35%IsGolem
-{
-	scene "scenes/undying/undying_undying_big_rival_11.vcd" nodelay noscene 
-}
-
-Rule undying_KillIsEnemyNecrolyteChance_35%IsGolem_Rule
-{
-	criteria Kill Isundying IsEnemyNecrolyte Chance_35% IsGolem
-	response undying_KillIsEnemyNecrolyteChance_35%IsGolem
 }
 
 Response undying_KillIsEnemyLife_StealerChance_35%IsGolem
@@ -1019,17 +997,6 @@ Rule undying_AllyNearIsAllyDeath_ProphetEarlyGame_Rule
 {
 	criteria AllyNear Isundying IsAllyDeath_Prophet EarlyGame
 	response undying_AllyNearIsAllyDeath_ProphetEarlyGame
-}
-
-Response undying_AllyNearIsAllyNecrolyteEarlyGame
-{
-	scene "scenes/undying/undying_undying_ally_02.vcd" nodelay noscene speakonce
-}
-
-Rule undying_AllyNearIsAllyNecrolyteEarlyGame_Rule
-{
-	criteria AllyNear Isundying IsAllyNecrolyte EarlyGame
-	response undying_AllyNearIsAllyNecrolyteEarlyGame
 }
 
 Response undying_AllyNearIsAllyLife_StealerEarlyGame

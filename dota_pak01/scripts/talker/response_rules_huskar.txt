@@ -117,18 +117,6 @@ Rule huskar_KillIsEnemyAntimageChance_20%_Rule
 	response huskar_KillIsEnemyAntimageChance_20%
 }
 
-Response huskar_KillIsEnemyNecrolyteChance_20%
-{
-	scene "scenes/huskar/huskar_husk_rival_06.vcd" nodelay noscene 
-	scene "scenes/huskar/huskar_husk_rival_07.vcd" nodelay noscene 
-}
-
-Rule huskar_KillIsEnemyNecrolyteChance_20%_Rule
-{
-	criteria Kill Ishuskar IsEnemyNecrolyte Chance_20%
-	response huskar_KillIsEnemyNecrolyteChance_20%
-}
-
 Response huskar_KillIsEnemyBloodseekerChance_20%
 {
 	scene "scenes/huskar/huskar_husk_rival_08.vcd" nodelay noscene 

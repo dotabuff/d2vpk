@@ -145,17 +145,6 @@ Rule life_stealer_KillIsEnemySkeleton_KingChance_25%_Rule
 	response life_stealer_KillIsEnemySkeleton_KingChance_25%
 }
 
-Response life_stealer_KillIsEnemyNecrolyteChance_25%
-{
-	scene "scenes/life_stealer/life_stealer_lifest_rival_05.vcd" nodelay noscene 
-}
-
-Rule life_stealer_KillIsEnemyNecrolyteChance_25%_Rule
-{
-	criteria Kill Islife_stealer IsEnemyNecrolyte Chance_25%
-	response life_stealer_KillIsEnemyNecrolyteChance_25%
-}
-
 Response life_stealer_KillIsEnemyPudgeChance_25%
 {
 	scene "scenes/life_stealer/life_stealer_lifest_rival_06.vcd" nodelay noscene 

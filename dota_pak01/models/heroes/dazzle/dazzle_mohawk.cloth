@@ -1,0 +1,41 @@
+// file    : dazzle_mohawk.cloth
+// author  : alexanderm
+// date    : 07 Oct 2013, 02:53PM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.3"
+        AnimationVertexAttraction        "0.2"
+        BendSpringConstant               "50.0"
+        BendSpringDamping                "0.9"
+        BonePrefix                       "hair_"
+        columns                          "1"
+        damping                          "1.0"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.7"
+        gravity                          "0 0 -1"
+        gravity_scale                    "20.0"
+        LocalForce                       "0.15"
+        LocalRotation                    "1.0"
+        name                             "hair"
+        R0                               "fixed"
+        R1                               "mass  1"
+        R2                               "mass  1"
+        R3                               "mass  1.5"
+        R4                               "mass  2"
+        rows                             "5"
+        ShearSpringConstant              "20.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "20.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+}
+
+// eof

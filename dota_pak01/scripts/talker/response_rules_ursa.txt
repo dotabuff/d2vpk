@@ -525,17 +525,6 @@ Rule ursa_AllyNearIsAllyEnchantressEarlyGame_Rule
 	response ursa_AllyNearIsAllyEnchantressEarlyGame
 }
 
-Response ursa_AllyNearIsAllyWindrunnerEarlyGame
-{
-	scene "scenes/ursa/ursa_ursa_ally_07.vcd" nodelay noscene speakonce
-}
-
-Rule ursa_AllyNearIsAllyWindrunnerEarlyGame_Rule
-{
-	criteria AllyNear Isursa IsAllyWindrunner EarlyGame
-	response ursa_AllyNearIsAllyWindrunnerEarlyGame
-}
-
 Response ursa_AllyNearIsAllyTinyEarlyGame
 {
 	scene "scenes/ursa/ursa_ursa_ally_08.vcd" nodelay noscene speakonce

@@ -1,0 +1,79 @@
+// file    : luna_mount.cloth
+// author  : jameso
+// date    : 06 Sep 2013, 04:36PM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "2.5"
+        AnimationVertexAttraction        "1"
+        BendSpringConstant               "1.0"
+        BendSpringDamping                "0.9"
+        columns                          "3"
+        damping                          "25"
+        ExternalForceScale               "0.5"
+        FixedPointDamping                "0.80"
+        gravity                          "0 0 -1"
+        gravity_scale                    "100"
+        LocalForce                       "0.4"
+        LocalRotation                    "1"
+        mapping
+        {
+            FrontMane0_JNT               "R0C1"
+            FrontMane1_JNT               "R1C1"
+            LfFrontMane0_JNT             "R0C2"
+            LfFrontMane1_JNT             "R1C2"
+            RtFrontMane0_JNT             "R0C0"
+            RtFrontMane1_JNT             "R1C0"
+        }
+        R0C0                             "fixed"
+        R0C1                             "fixed"
+        R0C2                             "fixed"
+        R1C0                             "0.75"
+        R1C1                             "1.0"
+        R1C2                             "0.85"
+        rows                             "2"
+        ShearSpringConstant              "1.0"
+        ShearSpringDamping               "0.8"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.0"
+        StructSpringConstant             "10.0"
+        StructSpringDamping              "0.7"
+        WorldFriction                    "0.1"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.5"
+        AnimationVertexAttraction        "0.1"
+        BendSpringConstant               "1.0"
+        BendSpringDamping                "0.9"
+        columns                          "1"
+        damping                          "12.5"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.9"
+        gravity                          "0 0 -1"
+        gravity_scale                    "250"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            Mane0_JNT                    "R0C0"
+            Mane1_JNT                    "R1C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        rows                             "2"
+        ShearSpringConstant              "1.0"
+        ShearSpringDamping               "0.8"
+        SpringStretchiness               "0.1"
+        StretchForce                     "1.1"
+        StructSpringConstant             "10.0"
+        StructSpringDamping              "0.7"
+        WorldFriction                    "0.1"
+    }
+}
+
+// eof

@@ -943,17 +943,6 @@ Rule mirana_AllyNearIsAllyLunaEarlyGame_Rule
 	response mirana_AllyNearIsAllyLunaEarlyGame
 }
 
-Response mirana_AllyNearIsAllyWindrunnerEarlyGame
-{
-	scene "scenes/mirana/mirana_mir_ally_02.vcd" nodelay noscene speakonce
-}
-
-Rule mirana_AllyNearIsAllyWindrunnerEarlyGame_Rule
-{
-	criteria AllyNear Ismirana IsAllyWindrunner EarlyGame
-	response mirana_AllyNearIsAllyWindrunnerEarlyGame
-}
-
 Response mirana_AllyNearIsAllyDrowRangerEarlyGame
 {
 	scene "scenes/mirana/mirana_mir_ally_03.vcd" nodelay noscene speakonce
