@@ -11301,7 +11301,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_View"							"View"
 		"DOTA_Ignore"						"Ignore"
 		"DOTA_HasNewItems_Title"			"You have new items!"
-		"DOTA_HasNewItems_Text"				"You have received new items. Press view to review them now or press ignore and they will be added to your Armory."
+		"DOTA_HasNewItems_Text"				"You have received new items. Press view to go to the armory to review your new items."
 		"DOTA_KillEaterLevel_Text"			"Your %s1 has increased in level! It is now %s2!"
 		"DOTA_KillEaterLevel_Title"			"Your item has leveled up!"
 		"DOTA_Event_KillEater_Leveled_Chat"   "%s1's <font color='#FFD700'>%s2</font> has reached a new rank: <font color='#FFD700'>%s3</font>!"
@@ -11340,6 +11340,9 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_Socketing_Search_Market_For_Gems"			"Search for Gems on the Market"
 		"DOTA_Socketing_Search_Market_Short"			"Search Now"
 		"DOTA_Socketing_Search_Market_Button"			"Search the Market"
+		
+		"DOTA_Socketing_Not_Tradable_Header"			"Socketing Untradable Item"
+		"DOTA_Socketing_Not_Tradable_Body"				"This item is not tradable. Any gems added to it will also become not tradable."
 
 		"DOTA_Socketing_Use_Item_Title"					"Add a Socket?"
 		"DOTA_Socketing_Use_Item_Body"					"Use a %s1 to add a socket to this item? You own %s2"
@@ -11365,6 +11368,9 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 
 		"DOTA_Socketing_Legacy_Title"					"LEGACY WARNING"
 		"DOTA_Socketing_Legacy_Body"					"Changing the color or effect of this item WILL REMOVE it's Legacy quality! This is not reversible. Continue?"
+
+		"DOTA_Reset_Gem_Count_Option"					"Reset Inscribed Count"
+		"DOTA_Reset_Gem_Counts"							"Resetting a gem will return any Inscribed counts to 0. Counts removed in this way cannot be recovered. Are you sure you want to continue?"
 		
 		"DOTA_popup_purchase_and_use"					"Purchase and Use"
 		
@@ -11485,6 +11491,12 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_Filter_Field_ItemName"		"Name"
 		"DOTA_Filter_Field_ItemDesc"		"Description"
 		"DOTA_Filter_Field_NumSockets"		"Number of Sockets"
+		"DOTA_Filter_Field_Equipped"		"Is Equipped"
+
+		"DOTA_Yes"							"Yes"
+
+		"DOTA_Filter_Is_Equipped"			"Is Equipped"	
+		"DOTA_Filter_Is_Not_Equipped"		"Is Not Equipped"	
 
 		// Filter Operators
 		"DOTA_Filter_Operator_Equal"				"is"
@@ -12588,21 +12600,25 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"RefurbishItem_Yes"						"Yes, Wipe It"
 		"RefurbishItem_No"						"No, Leave It"
 		
-		"NewItemMethod_Dropped"					"You Found:"
+		"NewItemMethod_Dropped"					"You Earned a Drop:"
 		"NewItemMethod_Crafted"					"You Crafted:"
 		"NewItemMethod_Traded"					"You Traded for:"
-		"NewItemMethod_Purchased"				"You Purchased:"
-		"NewItemMethod_FoundInCrate"			"You Unboxed:"
+		"NewItemMethod_Purchased"				"You Purchased from the Dota Store:"
+		"NewItemMethod_FoundInCrate"			"You Unlocked:"
 		"NewItemMethod_Gifted"					"You Received a Gift:"
+		"NewItemMethod_Support"					"Customer Support Granted You:"
 		"NewItemMethod_Promotion"				"You Received a Store Promotion Item:"
 		"NewItemMethod_Earned"					"You Earned:"
 		"NewItemMethod_Refunded"				"You Were Refunded:"
-		"NewItemMethod_Support"					"Customer Support Granted You:"
+		"NewItemMethod_GiftWrapped"				"You Gift Wrapped:"
 		"NewItemMethod_CollectionReward"		"You Redeemed a Collection Reward:"
 		"NewItemMethod_PreviewItem"				"You are now Testing:"
 		"NewItemMethod_PreviewItemPurchased"	"You Purchased:"
 		"NewItemMethod_PeriodicScoreReward"		"You Earned:"
-		"NewItemMethod_ConsumptionOutput"		"You Crafting V2'd:"
+		"NewItemMethod_TournamentDrop"			"You Received a Tournament Prize:"
+		"NewItemMethod_RecipeOutput"			"You Crafted:"
+		"NewItemMethod_CommunityMarketPurchase"	"You Purchased from the Steam Community Market:"
+		"NewItemMethod_GemExtract"				"You Extracted:"
 		
 		"Item_Found"						"%s1 has found: <font color='%s2'>%s3</font> %s4"
 		"Item_Crafted"						"%s1 has crafted: <font color='%s2'>%s3</font> %s4"
@@ -14472,7 +14488,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_CraftingTooltip_Title_Output_Random_Item"			"Random %s1 Item"
 		"DOTA_CraftingTooltip_Desc_Output_Random_Item"			"A random item of %s1 rarity will be produced."
 
-		"Dota_Economy_Skip_Reward"			"Skip"
+		"Dota_Economy_Acknowledge"			"Accept"
 		"Dota_Economy_Reward_Subtitle"		"%s1 slot item for %s2"
 
 		"DOTA_PlayerName_ixmike"			"Liquid`ixmike88"
