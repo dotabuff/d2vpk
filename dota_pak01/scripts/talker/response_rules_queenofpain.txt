@@ -210,16 +210,25 @@ Rule queenofpain_KillIsEnemySilencerChance_20%_Rule
 
 Response queenofpain_KillIsEnemySkeleton_KingChance_20%
 {
-	scene "scenes/queenofpain/queenofpain_pain_rival_12.vcd" nodelay noscene 
 	scene "scenes/queenofpain/queenofpain_pain_rival_13.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_rival_14.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_rival_15.vcd" nodelay noscene 
 }
 
 Rule queenofpain_KillIsEnemySkeleton_KingChance_20%_Rule
 {
 	criteria Kill Isqueenofpain IsEnemySkeleton_King Chance_20%
 	response queenofpain_KillIsEnemySkeleton_KingChance_20%
+}
+
+Response queenofpain_KillIsEnemyClinkzChance_20%
+{
+	scene "scenes/queenofpain/queenofpain_pain_rival_14.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_rival_15.vcd" nodelay noscene 
+}
+
+Rule queenofpain_KillIsEnemyClinkzChance_20%_Rule
+{
+	criteria Kill Isqueenofpain IsEnemyClinkz Chance_20%
+	response queenofpain_KillIsEnemyClinkzChance_20%
 }
 
 Response queenofpain_KillIsEnemyLegion_CommanderChance_20%

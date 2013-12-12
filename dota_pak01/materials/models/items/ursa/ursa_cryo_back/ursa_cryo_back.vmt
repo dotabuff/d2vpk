@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/ursa/ursa_cryo_back/ursa_cryo_back_color"
+	"$normalmap"		"models/items/ursa/ursa_cryo_back/ursa_cryo_back_normal"
+	"$maskmap1"		"models/items/ursa/ursa_cryo_back/ursa_cryo_back_mask1"
+	"$maskmap2"		"models/items/ursa/ursa_cryo_back/ursa_cryo_back_mask2"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"32"
+	"$SPECULARSCALE"		"5"
+	"$AmbientScale"		"0.200000"
+	"$RIMLIGHTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$DETAIL1"		"models/heroes/sven/sven_glow"
+	"$DETAIL1BLENDMODE"		"1"
+	"$DETAIL1SCALE"		"15"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.500000"
+			"texturescrollangle"		"83"
+		}
+	}
+}

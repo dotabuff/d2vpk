@@ -98,6 +98,17 @@ Rule weaver_KillIsEnemyShredderChance_20%_Rule
 	response weaver_KillIsEnemyShredderChance_20%
 }
 
+Response weaver_KillIsEnemySkeleton_KingChance_20%
+{
+	scene "scenes/weaver/weaver_weav_rival_01.vcd" nodelay noscene 
+}
+
+Rule weaver_KillIsEnemySkeleton_KingChance_20%_Rule
+{
+	criteria Kill Isweaver IsEnemySkeleton_King Chance_20%
+	response weaver_KillIsEnemySkeleton_KingChance_20%
+}
+
 Response weaver_KillIsEnemyQueenofPainChance_20%
 {
 	scene "scenes/weaver/weaver_weav_rival_02.vcd" nodelay noscene 

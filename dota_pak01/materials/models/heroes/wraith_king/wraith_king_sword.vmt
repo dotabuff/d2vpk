@@ -5,16 +5,19 @@
 //	"$diffusewarp" "models/heroes/drow/diffusewarp"
 	"$maskmap1" "models\heroes\wraith_king\wraith_king_sword_mask1"
 	"$maskmap2" "models\heroes\wraith_king\wraith_king_sword_mask2"
-	"$detail1"  "models\heroes\wraith_king\wraith_king_detail"
+//	"$detail1"  "models\heroes\wraith_king\wraith_king_detail"
 
 
 	$SPECULAREXPONENT 20
-	$SPECULARSCALE 19
+	$SPECULARSCALE 40
 //	$SPECULARBLENDTOFULL 1
 //	$SPECULARCOLOR "[1 .8 .8]"
-	$SPECULAR_BLOOM_SCALE      .6
+	$SPECULAR_BLOOM_SCALE      .5
+	$SPECULAR_BLOOM_COLOR "[0 1 .3]"
+	$SPECULAR_BLOOM_SHIFT 0
 
-	$RIMLIGHTSCALE 6
+
+	$RIMLIGHTSCALE 8
 	$rimlightcolor "[1 4 1]"
 
 	$AMBIENTSCALE 1
@@ -25,8 +28,9 @@
 
 
 
-	$DETAIL1BLENDMODE 2
-	$DETAIL1SCALE 1
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 8
+//	$DETAIL1FACTOR 12
 
 
 
@@ -39,8 +43,8 @@
 		"TextureScroll"	
 		{
 			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
-			"texturescrollrate"	.1
-			"texturescrollangle"	90
+			"texturescrollrate"	-.05
+			"texturescrollangle"	57
 		}
 		"invis_proxy"
 		{

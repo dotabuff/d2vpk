@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	"$basetexture" "models\props_gameplay\salve_blue"
+
+//	"$specTexture" "models/props_gameplay/salve_spec"
+//	"$SPECULAR_BLOOM"		4.0
+
+	"$normalmap" "models\props_gameplay\salve_normal"
+//	"$detail1"  "models\props_gameplay\item_pulse.vtf"
+ 	"$maskmap1" "models\props_gameplay\salve_mask1"
+	"$maskmap2" "models\props_gameplay\salve_mask2"
+
+	
+	$SPECULAREXPONENT 75
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 1 1]"
+
+	$SPECULAR_BLOOM_SCALE  .4
+	$SPECULAR_BLOOM_COLOR "[1 1 1]"
+	$SPECULAR_BLOOM_SHIFT 0
+
+	$RIMLIGHTCOLOR "[2 .3 .1]"
+	$RIMLIGHTSCALE 1
+
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+
+//	$DETAIL1BLENDMODE 1
+//	$DETAIL1SCALE 2
+//	$DETAIL1BLENDFACTOR .2
+//	$DETAIL1BLENDTOFULL 
+
+
+
+
+//	"Proxies"
+//	{
+//		"TextureScroll"		
+//		{
+//			"texturescrollvar"	"$detail1texturetransform"
+//			"texturescrollrate"	".8"
+//			"texturescrollangle"	"90"
+//		}
+//
+//	}
+
+
+
+}

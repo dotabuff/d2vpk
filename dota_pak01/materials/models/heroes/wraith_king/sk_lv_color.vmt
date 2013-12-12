@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/wraith_king/sk_lv_color"
+	"$normalmap" "models/heroes/wraith_king/sk_lv_normal"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models/heroes/wraith_king/sk_lv_masks1"
+	"$maskmap2" "models/heroes/wraith_king/sk_lv_masks2"
+
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 4
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+	$alphatest 1
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

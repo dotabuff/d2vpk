@@ -103,17 +103,6 @@ Rule omniknight_KillIsEnemyDoom_BringerChance_50%_Rule
 	response omniknight_KillIsEnemyDoom_BringerChance_50%
 }
 
-Response omniknight_KillIsEnemySkeleton_KingChance_50%
-{
-	scene "scenes/omniknight/omniknight_omni_rival_04.vcd" nodelay noscene 
-}
-
-Rule omniknight_KillIsEnemySkeleton_KingChance_50%_Rule
-{
-	criteria Kill Isomniknight IsEnemySkeleton_King Chance_50%
-	response omniknight_KillIsEnemySkeleton_KingChance_50%
-}
-
 Response omniknight_KillIsEnemyLife_StealerChance_50%
 {
 	scene "scenes/omniknight/omniknight_omni_rival_05.vcd" nodelay noscene 

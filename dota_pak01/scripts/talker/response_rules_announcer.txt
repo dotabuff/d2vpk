@@ -1070,6 +1070,17 @@ Rule announcer_CustomIsLimitedHeroes_Rule
 	response announcer_CustomIsLimitedHeroes
 }
 
+Response announcer_CustomIsCustomMode
+{
+	scene "scenes/announcer/announcer_announcer_choose_hero.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsCustomMode_Rule
+{
+	criteria Custom Isannouncer IsCustomMode
+	response announcer_CustomIsCustomMode
+}
+
 Response announcer_CustomIsTenSecondsRemaining
 {
 	scene "scenes/announcer/announcer_announcer_count_pick_10.vcd" nodelay noscene 

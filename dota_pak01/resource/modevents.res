@@ -429,6 +429,11 @@
 		"abilityname"	"string"
 		"interrupted"	"bool"
 	}
+	"dota_holdout_revive_complete"
+	{
+		"caster" "short"
+		"target" "short"
+	}
 	"dota_player_killed"
 	{
 		"PlayerID"		"short"
@@ -649,6 +654,11 @@
 		"playerid2"		"byte"
 	}
 
+	// reset the purchased / checked off state of suggested items in the store
+	"dota_reset_suggested_items"
+	{
+	}
+
 	"dota_item_alerted"
 	{
 		"userid"		"short"
@@ -677,6 +687,7 @@
 	"dota_hud_skin_changed"
 	{
 		"skin"	"string"
+		"style"	"byte"
 	}
 
 	"dota_inventory_player_got_item"
@@ -762,6 +773,26 @@
 	}
 
 	"dota_local_quickbuy_changed"
+	{
+	}
+	"show_center_message"
+	{
+		"message"				"string"
+		"duration"				"float"
+		"clear_message_queue"	"bool"
+	}
+	"hud_flip_changed"
+	{
+		"flipped"	"bool"
+	}
+	"frosty_points_updated"
+	{
+	}
+	"defeated"
+	{
+		"entindex"	"short"
+	}
+	"reset_defeated"
 	{
 	}
 }

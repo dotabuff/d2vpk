@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	"$basetexture" "models\props_gameplay\gold_bag"
+
+//	"$specTexture" "models/props_gameplay/boots_of_speed_spec"
+//	"$SPECULAR_BLOOM"		4.0
+
+	"$normalmap" "models\props_gameplay\gold_bag_normal"
+//	"$detail1"  "models\props_gameplay\item_pulse.vtf"
+ 	"$maskmap1" "models\props_gameplay\gold_bag_mask1"
+	"$maskmap2" "models\props_gameplay\gold_bag_mask2"
+
+	
+	$SPECULAREXPONENT 75
+	$SPECULARSCALE 55
+	$SPECULARCOLOR "[1 1.25 1]"
+
+	$SPECULAR_BLOOM_SCALE  .6
+	$SPECULAR_BLOOM_COLOR "[0 1 .3]"
+	$SPECULAR_BLOOM_SHIFT 0
+
+	$RIMLIGHTCOLOR "[2 .3 .1]"
+	$RIMLIGHTSCALE 1
+
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+
+//	$DETAIL1BLENDMODE 1
+//	$DETAIL1SCALE 2
+//	$DETAIL1BLENDFACTOR .2
+//	$DETAIL1BLENDTOFULL 
+
+
+
+
+//	"Proxies"
+//	{
+//		"TextureScroll"		
+//		{
+//			"texturescrollvar"	"$detail1texturetransform"
+//			"texturescrollrate"	".8"
+//			"texturescrollangle"	"90"
+//		}
+//
+//	}
+
+
+
+}

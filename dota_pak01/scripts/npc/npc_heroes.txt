@@ -942,7 +942,7 @@
 		"Team"						"Good"
 		"HeroID"					"5"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"BotImplemented"			"1"
-		"ModelScale"					".93"
+		"ModelScale"					".95"
 		"HeroGlowColor" 			"82 236 255"
 		"CMEnabled"					"1"
 		"NameAliases"				"cm"
@@ -963,8 +963,8 @@
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"17"									// Damage range min.
-		"AttackDamageMax"			"23"									// Damage range max.
+		"AttackDamageMin"			"19"									// Damage range min.
+		"AttackDamageMax"			"25"									// Damage range max.
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.55"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
@@ -977,7 +977,7 @@
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"16"									// Base strength
 		"AttributeStrengthGain"		"1.7"									// Strength bonus per level.
-		"AttributeBaseIntelligence"	"21"									// Base intelligence
+		"AttributeBaseIntelligence"	"19"									// Base intelligence
 		"AttributeIntelligenceGain"	"2.9"									// Intelligence bonus per level.
 		"AttributeBaseAgility"		"16"									// Base agility
 		"AttributeAgilityGain"		"1.6"									// Agility bonus per level.
@@ -1171,7 +1171,7 @@
 		"Rolelevels"				"2"
 		"Team"						"Good"	//neutral
 		"HeroID"					"6"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
-		"ModelScale"				".93"
+		"ModelScale"				"0.97"
 		"HeroGlowColor" 			"1 60 246"
 		"CMEnabled"					"1"
 		"url"					"Drow_Ranger"
@@ -3004,7 +3004,7 @@
 				"SlotName"	"weapon"
 				"SlotText"	"#LoadoutSlot_Weapon"
 				"TextureWidth"		"256"
-				"TextureHeight"		"128"
+				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"350"
 				"MaxPolygonsLOD1"	"350"
 			}		
@@ -3014,7 +3014,7 @@
 				"SlotName" 	"head"
 				"SlotText"	"#LoadoutSlot_Head"
 				"TextureWidth"		"256"
-				"TextureHeight"		"128"
+				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"550"
 				"MaxPolygonsLOD1"	"300"
 			}
@@ -3024,7 +3024,7 @@
 				"SlotName" 	"offhand_weapon"
 				"SlotText"	"#LoadoutSlot_offhand_weapon"
 				"TextureWidth"		"256"
-				"TextureHeight"		"128"
+				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"350"
 				"MaxPolygonsLOD1"	"350"
 			}
@@ -3045,7 +3045,7 @@
 				"SlotText"	"#LoadoutSlot_shoulder"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"550"
+				"MaxPolygonsLOD0"	"800"
 				"MaxPolygonsLOD1"	"400"
 			}			
 			"5"	
@@ -3054,7 +3054,7 @@
 				"SlotName" 	"back"
 				"SlotText"	"#LoadoutSlot_back"
 				"TextureWidth"		"256"
-				"TextureHeight"		"128"
+				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
 				"MaxPolygonsLOD1"	"400"
 			}
@@ -3070,7 +3070,7 @@
 				"SlotName"	"belt"
 				"SlotText"	"#LoadoutSlot_Belt"
 				"TextureWidth"		"256"
-				"TextureHeight"		"256"
+				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"600"
 				"MaxPolygonsLOD1"	"400"
 			}
@@ -3774,8 +3774,8 @@
 				"SlotText"	"#LoadoutSlot_Head"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"750"
-				"MaxPolygonsLOD1"	"450"				
+				"MaxPolygonsLOD0"	"500"
+				"MaxPolygonsLOD1"	"300"				
 			}
 			"1"	
 			{
@@ -3784,50 +3784,26 @@
 				"SlotText"	"#LoadoutSlot_Armor"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"450"
-				"MaxPolygonsLOD1"	"350"				
+				"MaxPolygonsLOD0"	"1400"
+				"MaxPolygonsLOD1"	"1200"				
 			}
 			"2"	
-			{
-				"SlotIndex"	"2"
-				"SlotName" 	"belt"
-				"SlotText"	"#LoadoutSlot_Belt"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"650"
-				"MaxPolygonsLOD1"	"450"				
-			}		
-			"3"	
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"arms"
 				"SlotText"	"#LoadoutSlot_Arms"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"500"
-				"MaxPolygonsLOD1"	"450"				
+				"MaxPolygonsLOD0"	"600"
+				"MaxPolygonsLOD1"	"500"				
 			}			
-			"4"	
-			{
-				"SlotIndex"	"4"
-				"SlotName" 	"neck"
-				"SlotText"	"#LoadoutSlot_Neck"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"500"
-				"MaxPolygonsLOD1"	"250"				
-			}
-			"5"
+			"3"
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"misc"
-				"SlotText"	"#LoadoutSlot_Misc"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"150"
-				"MaxPolygonsLOD1"	"150"				
+				"SlotText"	"#LoadoutSlot_Misc"				
 			}	
-			"6"
+			"4"
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"taunt"
@@ -8582,7 +8558,7 @@
 		"Rolelevels"			"2,1,1,1"
 		"Team"						"Bad"
 		"HeroID"					"40"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
-		"ModelScale" 				"0.74"
+		"ModelScale" 				"0.70"
 		"HeroGlowColor" 			"252 172 18"
 		"PickSound"					"venomancer_venm_spawn_01"
 		"BanSound"					"venomancer_venm_anger_01"
@@ -8629,7 +8605,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"290"									// Speed.
+		"MovementSpeed"				"285"									// Speed.
 		"MovementTurnRate"			"0.4"									// Turning rate.
 		
 		"HealthBarOffset"			"150"
@@ -8651,50 +8627,46 @@
 		{
 			"0"
 			{
-				"SlotIndex"	"0"
-				"SlotName"	"weapon"
-				"SlotText"	"#LoadoutSlot_Weapon"
-				"TextureWidth"		"256"
+				"SlotIndex"	"0"   //default item is body wings
+				"SlotName"	"weapon"  //needs to change to shoulder when new veno item defs are submitted
+				"SlotText"	"#LoadoutSlot_Weapon"  //needs to change to shoulder when new veno item degs are submitted
+				"TextureWidth"		"512"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1300"
-				"MaxPolygonsLOD1"	"650"
+				"MaxPolygonsLOD0"	"1900"
+				"MaxPolygonsLOD1"	"1350"
 			}
 			"1"	
 			{
-				"SlotIndex"	"1"
+				"SlotIndex"	"1"  //default item is jaw, disabled for workshop
 				"SlotName" 	"head"
 				"SlotText"	"#LoadoutSlot_Head"
-				"TextureWidth"		"256"
-				"TextureHeight"		"128"
-				"MaxPolygonsLOD0"	"500"
-				"MaxPolygonsLOD1"	"250"
 			}
 			"2"	
 			{
-				"SlotIndex"	"2"
-				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_Back"
-				"TextureWidth"		"256"
-				"TextureHeight"		"128"
-				"MaxPolygonsLOD0"	"300"
-				"MaxPolygonsLOD1"	"300"
+				"SlotIndex"	"2"  //default item is tail
+				"SlotName"	"back"  //needs to change to tail slot when new veno item defs are checked in
+				"SlotText"	"#LoadoutSlot_Back"	//needs to change to tail slot when new veno item defs are checked in
+				"TextureWidth"		"128"  //need to increase texture space for workshop
+				"TextureHeight"		"64"
+				"MaxPolygonsLOD0"	"430"
+				"MaxPolygonsLOD1"	"240"
 			}
 			"3"	
 			{
-				"SlotIndex"	"3"
-				"SlotName" 	"shoulder"
-				"SlotText"	"#LoadoutSlot_Shoulder"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1300"
-				"MaxPolygonsLOD1"	"500"
+				"SlotIndex"	"3"		//default items are arms/limbs
+				"SlotName" 	"shoulder"  //needs to change to weapon slot when new veno item defs are checked in
+				"SlotText"	"#LoadoutSlot_Shoulder"  //needs to change to weapon slot when new veno item defs are checked in
+				"TextureWidth"		"256"  //need to increase texture space for workshop
+				"TextureHeight"		"128"
+				"MaxPolygonsLOD0"	"1070"
+				"MaxPolygonsLOD1"	"670"
 			}
 			"4"
 			{
 				"SlotIndex"	"4"
 				"SlotName"	"misc"
 				"SlotText"	"#LoadoutSlot_Misc"
-				"TextureWidth"		"256"
+				"TextureWidth"		"256"  //will decrease texture space for workshop or eliminate slot entirely
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
 				"MaxPolygonsLOD1"	"300"
@@ -9013,14 +8985,15 @@
 	}
 	
 	//=================================================================================================================
-	// HERO: Skeleton King
+	// HERO: Skeleton King or Wraith King
 	//=================================================================================================================
 	"npc_dota_hero_skeleton_king"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------	
-		"Model"					"models/heroes/skeleton_king/skeleton_king.mdl"				// Model.
+		"Model"					"models/heroes/wraith_king/wraith_king.mdl"				// Model.
 		"Portrait"				"vgui/hud/heroportraits/portrait_skeletonking"		// Small image for hero selection
+		"IdleExpression"				"scenes/skeleton_king/skeleton_king_exp_idle_01.vcd"		// custom facial animation idle
 		"SoundSet"				"Hero_SkeletonKing"							// Name of sound set.
 		"Enabled"				"0"
 		//"LowViolence"				"1"
@@ -9034,8 +9007,8 @@
 		"HeroGlowColor" 		"226 224 36"										
 		"CMEnabled"					"1"
 		"BotImplemented"		"1"
-		"PickSound"					"skeleton_king_skel_spawn_01"
-		"BanSound"					"skeleton_king_skel_anger_06"
+		"PickSound"					"skeleton_king_wraith_spawn_01"
+		"BanSound"					"skeleton_king_wraith_anger_04"
 		"NameAliases"			"sk;snk"
 		"url"			"Skeleton_King"
 		"new_player_enable"			"1"
@@ -9088,29 +9061,7 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_skeletonking.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_skeleton_king.txt"
 
-		// Additional data needed to render the out of game portrait
-		"RenderablePortrait"
-		{
-			"Particles"
-			{
-				"skeletonking_eyes"
-				{
-					"0"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_left_eye"
-					}
-					"1"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_right_eye"
-					}
-				}	
-			}
-		}	
-
-		
-
+	
 		"ItemSlots"
 			{
 				"0"
@@ -9168,6 +9119,12 @@
 					"SlotIndex"	"5"
 					"SlotName"	"taunt"
 					"SlotText"	"#LoadoutSlot_Taunt"	
+				}
+				"6"
+				{
+					"SlotIndex"	"6"
+					"SlotName"	"misc"
+					"SlotText"	"#LoadoutSlot_Misc"	
 				}
 			}	
 		"Bot"
@@ -9553,7 +9510,7 @@
 		"Rolelevels"			"3,1"
 		"Team"					"Bad"
 		"HeroID"				"44"									// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
-		"ModelScale"					".84"
+		"ModelScale"					".86"
 		"HeroGlowColor" 			"154 97 133"
 		"PickSound"					"phantom_assassin_phass_spawn_01"
 		"BanSound"					"phantom_assassin_phass_anger_08"
@@ -12372,7 +12329,7 @@
 		"HeroID"		"59"	// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"	".79"
 		"HeroGlowColor" 			"73 155 153"	  
-		"CMEnabled"					"0"
+		"CMEnabled"					"1"
 		"PickSound"					"huskar_husk_spawn_01"
 		"BanSound"					"huskar_husk_anger_03"
 		"url"					"Huskar"
@@ -15039,43 +14996,62 @@
 			"0"
 			{
 				"SlotIndex"	"0"
-				"SlotName"	"weapon"
+				"SlotName"	"weapon"  					//default is wings, wing guns and tail
 				"SlotText"	"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1290"
+				"MaxPolygonsLOD1"	"990"
 			}		
 			 
 			"1"	
 			{
 				"SlotIndex"	"1"
-				"SlotName" 	"head"
+				"SlotName" 	"head"  						//default is goggles, cap and scarf
 				"SlotText"	"#LoadoutSlot_Head"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"600"
+				"MaxPolygonsLOD1"	"330"
 			}
 			
 			"2"
 			{
 				"SlotIndex"	"2"
-				"SlotName" 	"armor"
-				"SlotText"	"#LoadoutSlot_Armor"
+				"SlotName" 	"back"  						//default is bottles and back of plane
+				"SlotText"	"#LoadoutSlot_Back"
+				"TextureWidth"		"512"
+				"TextureHeight"		"128"
+				"MaxPolygonsLOD0"	"1780"
+				"MaxPolygonsLOD1"	"1710"
 			}
 			"4"	
 			{
 				"SlotIndex"	"4"
-				"SlotName" 	"misc"
+				"SlotName" 	"misc"  						//default is front propellor
 				"SlotText"	"#LoadoutSlot_Misc"
+				"TextureWidth"		"512"
+				"TextureHeight"		"128"
+				"MaxPolygonsLOD0"	"400"
+				"MaxPolygonsLOD1"	"320"
 			}
 			"5"
 			{
 				"SlotIndex"	"5"
-				"SlotName"	"gloves"
-				"SlotText"	"#LoadoutSlot_Gloves"
+				"SlotName"	"offhand_weapon"  	//default is bomb
+				"SlotText"	"#LoadoutSlot_Offhand_weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"300"
+				"MaxPolygonsLOD1"	"200"
 			}
 	  "6"
 			{
 				"SlotIndex"	"6"
-				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_Offhand_weapon"
+				"SlotName"	"body_head"
+				"SlotText"	"#LoadoutSlot_Body_Head"
 			}		
 		}		
-		
 		
 
 		// Additional data needed to render the out of game portrait
@@ -18694,7 +18670,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"295"									// Speed.
+		"MovementSpeed"				"290"									// Speed.
 		"MovementTurnRate"			"0.5"									// Turning rate.
 		
 		"HealthBarOffset"			"180"
@@ -18784,7 +18760,7 @@
 		"url"						"Slark"
 		"PickSound"					"slark_slark_spawn_01"
 		"BanSound"					"slark_slark_anger_02"
-		"CMEnabled"					"0"
+		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
 
 		// Abilities
@@ -19421,7 +19397,7 @@
 		"Rolelevels"				"3,1,1,1"
 		"Team"						"Bad"
 		"Portrait"					"vgui/hud/heroportraits/portrait_centaur"
-		"ModelScale" 				"0.94"
+		"ModelScale" 				"0.92"
 		"NameAliases"				"magnataur, magnus"
 		"url"						"Magnus"
 		"PickSound"					"magnataur_magn_spawn_06"
@@ -20559,7 +20535,7 @@
 		"Rolelevels"				"1,2"
 		"Team"						"Good"
 		"HeroID"					"104"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
-		"ModelScale" 				"1.0"
+		"ModelScale" 				"1.025"
 		"NameAliases"				"Tresdin,Legion"
 		"PickSound"					"legion_commander_legcom_spawn_01"
 		"BanSound"					"legion_commander_legcom_anger_07"
@@ -20608,7 +20584,37 @@
 		"ParticleFile"				"particles/units/heroes/hero_legion_commander.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_legion_commander.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_legion_commander.txt"
-
+		
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"legion_ambient"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_eyeR"
+					}
+					"2"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_eyeL"
+					}
+					"3"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
 
 		// Items
 		//------------------------------------------------------------------------------------------------------------- 
@@ -20779,7 +20785,7 @@
 				"SlotName"	"weapon"
 				"SlotText"	"#LoadoutSlot_Weapon"
 				"TextureWidth"		"256"
-				"TextureHeight"		"128"
+				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
 				"MaxPolygonsLOD1"	"300"
 			}		
@@ -20820,7 +20826,7 @@
 				"SlotName" 	"arms"
 				"SlotText"	"#LoadoutSlot_arms"
 				"TextureWidth"		"256"
-				"TextureHeight"		"128"
+				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"300"
 				"MaxPolygonsLOD1"	"250"
 			}						
@@ -20924,7 +20930,7 @@
 				"SlotText"	"#LoadoutSlot_Weapon"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"400"
+				"MaxPolygonsLOD0"	"550"
 				"MaxPolygonsLOD1"	"300"
 			}		
 			"1"
@@ -20944,7 +20950,7 @@
 				"SlotText"	"#LoadoutSlot_Head"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"500"
+				"MaxPolygonsLOD0"	"400"
 				"MaxPolygonsLOD1"	"300"
 			}
 			"3"	
@@ -20954,8 +20960,8 @@
 				"SlotText"	"#LoadoutSlot_belt"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"800"
-				"MaxPolygonsLOD1"	"400"
+				"MaxPolygonsLOD0"	"1700"
+				"MaxPolygonsLOD1"	"1400"
 			}	
 			"4"	
 			{
@@ -20964,8 +20970,8 @@
 				"SlotText"	"#LoadoutSlot_arms"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"800"
-				"MaxPolygonsLOD1"	"400"
+				"MaxPolygonsLOD0"	"900"
+				"MaxPolygonsLOD1"	"500"
 			}
 			"5"	
 			{
@@ -20973,6 +20979,13 @@
 				"SlotName" 	"body_head"
 				"SlotText"	"#LoadoutSlot_bodyhead"
 			}			
+			"6"	
+			{
+				"SlotIndex"	"5"
+				"SlotName" 	"hero_fxsummons"
+				"SlotText"	"#LoadoutSlot_fxsummons"
+				//will not enable the stone summons for the workshop yet, need to determine the best way for community to create and submit these assets
+			}
 		}
 		"RenderablePortrait"
 		{
@@ -21061,4 +21074,74 @@
 		"VisionNighttimeRange"		"800"									// Range of vision at night time.
 
 	}
+
+	//=================================================================================================================
+	// HERO: Terrorblade
+	//=================================================================================================================
+	"npc_dota_hero_terrorblade"
+	{																		
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"Model"						"models/heroes/terrorblade/terrorblade.mdl"			// Model.
+		"SoundSet"					"Hero_Terrorblade"							// Name of sound set.
+		"IdleExpression"			"scenes/terrorblade/terrorblade/exp_idle_01.vcd"		// custom facial animation idle
+		"HeroID"					"109"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
+		"Enabled"					"0"
+		"HeroUnlockOrder"			"1"
+		"Role"						"Carry"
+		"Rolelevels"				"3"
+		"Team"						"Bad"
+		"Portrait"					"vgui/hud/heroportraits/portrait_terrorblade"
+		"ModelScale" 				"1"
+		"CMEnabled"					"0"
+		"NameAliases"				"tb"
+		"url"						"Terrorblade"
+
+
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"Ability1"					"terrorblade_reflection"					// Ability 1
+		"Ability2"					"terrorblade_conjure_image"						// Ability 2
+		"Ability3"					"terrorblade_metamorphosis"					// Ability 3
+		"Ability4"					"terrorblade_sunder"					// Ability 4
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"4"										// Physical protection.
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"26"									// Damage range min.
+		"AttackDamageMax"			"32"									// Damage range max.	
+		"AttackRate"				"1.5"									// Speed of attack.
+		"AttackAnimationPoint"		"0.3"									// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
+		"AttackRange"				"128"									// Range within a target can be attacked.
+		"ProjectileModel"			""										// Particle system model for projectile.
+		"ProjectileSpeed"			"0"										// Speed of projectile.
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"15"									// Base strength
+		"AttributeStrengthGain"		"1.9"									// Strength bonus per level.
+		"AttributeBaseIntelligence"	"19"									// Base intelligence
+		"AttributeIntelligenceGain"	"1.75"									// Intelligence bonus per level.
+		"AttributeBaseAgility"		"22"									// Base agility
+		"AttributeAgilityGain"		"3.2"									// Agility bonus per level.
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementSpeed"				"315"									// Speed.
+		"MovementTurnRate"			"0.5"									// Turning rate.
+		
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"HealthBarOffset"			"140"
+
+		"ParticleFile"				"particles/units/heroes/hero_terrorblade.pcf"
+		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_terrorblade.txt"
+		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_terrorblade.txt"
+	}	
+
 }

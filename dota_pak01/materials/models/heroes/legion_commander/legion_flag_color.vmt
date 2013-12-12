@@ -2,30 +2,40 @@
 {
 	$baseTexture "models/heroes/legion_commander/legion_flag_color"
 	"$normalmap" "models/heroes/legion_commander/legion_flag_normal"
-
-//	"$maskmap1" "models/heroes/lanaya/lanaya_mask1"
-//	"$maskmap2" "models/heroes/lanaya/lanaya_mask2"
-	"$diffusewarp" "models/heroes/drow/diffusewarp"
-
-
-	$SPECULAREXPONENT 20
-	$SPECULARSCALE 3
-
-//	$SPECULARBLENDTOFULL 1
-//	$SPECULARCOLOR "[1 .8 .8]"
-	$RIMLIGHTCOLOR "[1 .5 1]"
-
-	$RIMLIGHTSCALE 2
-	$AMBIENTSCALE 1
-
-
-	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
-
-
+	"$maskmap1"  "models/heroes/legion_commander/legion_flag_masks1"
+	"$maskmap2"  "models/heroes/legion_commander/legion_flag_masks2"
+	
+	$alphatest	1
+	
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE  5
+	
+	$RIMLIGHTSCALE 5
+//	$RIMLIGHTCOLOR "[1 0 0]"
+	
 	$IgnoreBudgetCheck 1
+
+	$ENVMAP "models/cubemaps/cube_legion_commander"
+	$ENVMAPINTENSITY .5
+	$MASKENVBYMETALNESS 1	
+	
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
 		"invis_proxy"
 		{
 		}

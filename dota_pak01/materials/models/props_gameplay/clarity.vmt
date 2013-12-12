@@ -10,13 +10,19 @@
  	"$maskmap1" "models\props_gameplay\clarity_mask1"
 	"$maskmap2" "models\props_gameplay\clarity_mask2"
 
-	
-	$SPECULAREXPONENT 55
-	$SPECULARSCALE 1
+	$SPECULAREXPONENT 75
+	$SPECULARSCALE 5
 	$SPECULARCOLOR "[1 1 1]"
 
+	$SPECULAR_BLOOM_SCALE  .4
+	$SPECULAR_BLOOM_COLOR "[1 1 1]"
+	$SPECULAR_BLOOM_SHIFT 0
+
 	$RIMLIGHTCOLOR "[2 .3 .1]"
-	$RIMLIGHTSCALE 6
+	$RIMLIGHTSCALE 1
+
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
 
 //	$DETAIL1BLENDMODE 1
 //	$DETAIL1SCALE 2

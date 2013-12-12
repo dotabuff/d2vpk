@@ -1158,7 +1158,7 @@ Response earth_spirit_MissingIsLaneBot
 {
 	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_04.vcd" nodelay noscene  
 	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_05.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_06.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_06.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_MissingIsLaneBot_Rule
@@ -1169,7 +1169,7 @@ Rule earth_spirit_MissingIsLaneBot_Rule
 
 Response earth_spirit_ItemDropIsCommonDrop
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_itemcommon_01.vcd" nodelay noscene IsCommonDrop
+	scene "scenes/earth_spirit/earth_spirit_earthspi_itemcommon_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_ItemDropIsCommonDrop_Rule
@@ -1180,7 +1180,7 @@ Rule earth_spirit_ItemDropIsCommonDrop_Rule
 
 Response earth_spirit_ItemDropIsRareDrop
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_itemmoderate_01.vcd" nodelay noscene IsRareDrop
+	scene "scenes/earth_spirit/earth_spirit_earthspi_itemmoderate_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_ItemDropIsRareDrop_Rule
@@ -1191,7 +1191,7 @@ Rule earth_spirit_ItemDropIsRareDrop_Rule
 
 Response earth_spirit_ItemDropIsUltraRareDrop
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_itemrare_01.vcd" nodelay noscene IsUltraRareDrop
+	scene "scenes/earth_spirit/earth_spirit_earthspi_itemrare_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_ItemDropIsUltraRareDrop_Rule
@@ -1202,7 +1202,7 @@ Rule earth_spirit_ItemDropIsUltraRareDrop_Rule
 
 Response earth_spirit_Immortality
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_immort_01.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_immort_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_Immortality_Rule
@@ -1213,7 +1213,7 @@ Rule earth_spirit_Immortality_Rule
 
 Response earth_spirit_ImmortalityChance_25%
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_immort_02.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_immort_02.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_ImmortalityChance_25%_Rule
@@ -1429,7 +1429,7 @@ Rule earth_spirit_ThanksChance_1%_Rule
 
 Response earth_spirit_PainChance_25%
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_underattack_01.vcd" nodelay noscene resepeakdelay 120
+	scene "scenes/earth_spirit/earth_spirit_earthspi_underattack_01.vcd" nodelay noscene respeakdelay 120
 }
 
 Rule earth_spirit_PainChance_25%_Rule

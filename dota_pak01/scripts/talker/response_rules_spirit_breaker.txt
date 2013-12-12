@@ -262,15 +262,15 @@ Rule spirit_breaker_Attack_Rule
 	response spirit_breaker_Attack
 }
 
-Response spirit_breaker_AttackIsEnemySkeleton_KingChance_10%
+Response spirit_breaker_AttackIsEnemyClinkzChance_10%
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_rival_01.vcd" nodelay noscene 
 }
 
-Rule spirit_breaker_AttackIsEnemySkeleton_KingChance_10%_Rule
+Rule spirit_breaker_AttackIsEnemyClinkzChance_10%_Rule
 {
-	criteria Attack Isspirit_breaker IsEnemySkeleton_King Chance_10%
-	response spirit_breaker_AttackIsEnemySkeleton_KingChance_10%
+	criteria Attack Isspirit_breaker IsEnemyClinkz Chance_10%
+	response spirit_breaker_AttackIsEnemyClinkzChance_10%
 }
 
 Response spirit_breaker_AttackIsEnemyBroodmotherChance_10%

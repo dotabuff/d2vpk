@@ -6,7 +6,7 @@
 	"$maskmap2" "models/heroes/storm_spirit/storm_v2_base_masks2"
 	"$detail1"  "models/heroes/storm_spirit/storm_spirit_detail"
 	
-	$SPECULAR_BLOOM_SCALE      .1
+	$SPECULAR_BLOOM_SCALE      .25
 	$SPECULAREXPONENT 32
 	$SPECULARSCALE 1
 	
@@ -55,6 +55,7 @@
 		{
 			"centerVar" 		"$detail1texturetransform"
 			"rotateVar"			"$DETAILFX"
+			"resultVar" 		"$detail1texturetransform"
 		}
 		
 		"invis_proxy"

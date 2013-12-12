@@ -37,7 +37,6 @@ Response legion_commander_CustomIsLegionNoVictor
 {
 	scene "scenes/legion_commander/legion_commander_legcom_duelfailure_01.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_duelfailure_03.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_duelfailure_05.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_duelfailure_07.vcd" nodelay noscene 
 }
 
@@ -45,6 +44,17 @@ Rule legion_commander_CustomIsLegionNoVictor_Rule
 {
 	criteria Custom Islegion_commander IsLegionNoVictor
 	response legion_commander_CustomIsLegionNoVictor
+}
+
+Response legion_commander_CustomIsLegionNoVictorChance_5%
+{
+	scene "scenes/legion_commander/legion_commander_legcom_duelfailure_05.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CustomIsLegionNoVictorChance_5%_Rule
+{
+	criteria Custom Islegion_commander IsLegionNoVictor Chance_5%
+	response legion_commander_CustomIsLegionNoVictorChance_5%
 }
 
 Response legion_commander_KillIsFirstBlood

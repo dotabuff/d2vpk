@@ -1,0 +1,47 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/phoenix/phoenix_color"
+	"$normalmap" "models/heroes/phoenix/phoenix_normal"
+//	"$diffusewarp" "models/heroes/phoenix/phoenix_lightwarp"
+	"$maskmap1" "models/heroes/phoenix/phoenix_mask1"
+	"$maskmap2" "models/heroes/phoenix/phoenix_mask2"
+	"$fresnelwarp" "models/heroes/phoenix/phoenix_fresnelranges"
+
+	$alphatest 1
+	$SPECULAR_BLOOM_SCALE      0.2
+	$SPECULAREXPONENT 20	
+	$SPECULARSCALE 20	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	$ignorebudgetcheck 1
+	$RIMLIGHTSCALE 20
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1
+//	$DETAIL1BLENDTOFULL 1
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"							"$detail1texturetransform"
+			"texturescrollrate"	"0.1"
+			"texturescrollangle"	"320"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

@@ -297,17 +297,6 @@ Rule clinkz_AllyNearIsAllyLichEarlyGame_Rule
 	response clinkz_AllyNearIsAllyLichEarlyGame
 }
 
-Response clinkz_AllyNearIsAllySkeleton_KingEarlyGame
-{
-	scene "scenes/clinkz/clinkz_clinkz_rival_18.vcd" nodelay noscene speakonce
-}
-
-Rule clinkz_AllyNearIsAllySkeleton_KingEarlyGame_Rule
-{
-	criteria AllyNear Isclinkz IsAllySkeleton_King EarlyGame
-	response clinkz_AllyNearIsAllySkeleton_KingEarlyGame
-}
-
 Response clinkz_AllyNearIsAllyPugnaEarlyGame
 {
 	scene "scenes/clinkz/clinkz_clinkz_rival_19.vcd" nodelay noscene speakonce

@@ -290,6 +290,17 @@ Rule ember_spirit_KillIsEnemyJakiroChance_25%_Rule
 	response ember_spirit_KillIsEnemyJakiroChance_25%
 }
 
+Response ember_spirit_KillIsEnemySkeleton_KingChance_25%
+{
+	scene "scenes/ember_spirit/ember_spirit_embr_rival_18.vcd" nodelay noscene 
+}
+
+Rule ember_spirit_KillIsEnemySkeleton_KingChance_25%_Rule
+{
+	criteria Kill Isember_spirit IsEnemySkeleton_King Chance_25%
+	response ember_spirit_KillIsEnemySkeleton_KingChance_25%
+}
+
 Response ember_spirit_KillIsEnemyNecrolyteChance_25%
 {
 	scene "scenes/ember_spirit/ember_spirit_embr_rival_19.vcd" nodelay noscene 
@@ -1111,23 +1122,13 @@ Rule ember_spirit_PowerupIsPowerupHasteChance_25%_Rule
 Response ember_spirit_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/ember_spirit/ember_spirit_embr_doubdam_02.vcd" nodelay noscene 
+	scene "scenes/ember_spirit/ember_spirit_embr_doubdam_03.vcd" nodelay noscene 
 }
 
 Rule ember_spirit_PowerupIsPowerupDoubleDamage_Rule
 {
 	criteria Powerup Isember_spirit IsPowerupDoubleDamage
 	response ember_spirit_PowerupIsPowerupDoubleDamage
-}
-
-Response ember_spirit_PowerupIsPowerupDoubleDamage+D176
-{
-	scene "scenes/ember_spirit/ember_spirit_embr_doubdam_03.vcd" nodelay noscene 
-}
-
-Rule ember_spirit_PowerupIsPowerupDoubleDamage+D176_Rule
-{
-	criteria Powerup Isember_spirit IsPowerupDoubleDamage+D176
-	response ember_spirit_PowerupIsPowerupDoubleDamage+D176
 }
 
 Response ember_spirit_PowerupIsPowerupDoubleDamageChance_25%

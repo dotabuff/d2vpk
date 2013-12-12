@@ -38,6 +38,7 @@
 		"ControlName"		"CDOTA_MinimapPanel"
 		"bgcolor_override"	"0 0 0 0"
 		"xpos"				"0"
+		"xpos_hud_flip"		"205"
 		"ypos"				"r199"
 		"zpos"				"3"
 		"wide"				"205"		// account for inset

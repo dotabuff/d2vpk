@@ -1249,6 +1249,17 @@ Rule announcer_dlc_kleiner_CustomIsLimitedHeroesIsAnnouncerVoice_Kleiner_Rule
 	response announcer_dlc_kleiner_CustomIsLimitedHeroesIsAnnouncerVoice_Kleiner
 }
 
+Response announcer_dlc_kleiner_CustomIsCustomModeIsAnnouncerVoice_Kleiner
+{
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene 
+}
+
+Rule announcer_dlc_kleiner_CustomIsCustomModeIsAnnouncerVoice_Kleiner_Rule
+{
+	criteria Custom Isannouncer_dlc_kleiner IsCustomMode IsAnnouncerVoice_Kleiner
+	response announcer_dlc_kleiner_CustomIsCustomModeIsAnnouncerVoice_Kleiner
+}
+
 Response announcer_dlc_kleiner_CustomIsAnnounceIdleIsAnnouncerVoice_KleinerEarlyGame
 {
 	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_spectat_05.vcd" nodelay noscene speakonce

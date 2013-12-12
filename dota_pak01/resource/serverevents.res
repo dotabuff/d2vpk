@@ -21,6 +21,7 @@
 		"port"		"short"		// server port
 		"game"		"string"	// game dir 
 		"mapname"	"string"	// map name
+		"addonname" "string"    // addon name
 		"maxplayers"	"long"		// max players
 		"os"		"string"	// WIN32, LINUX
 		"dedicated"	"bool"		// true if dedicated server

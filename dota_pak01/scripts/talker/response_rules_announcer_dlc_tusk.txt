@@ -1156,6 +1156,17 @@ Rule announcer_dlc_tusk_CustomIsLimitedHeroesIsAnnouncerVoiceDLCTusk_Rule
 	response announcer_dlc_tusk_CustomIsLimitedHeroesIsAnnouncerVoiceDLCTusk
 }
 
+Response announcer_dlc_tusk_CustomIsCustomModeIsAnnouncerVoiceDLCTusk
+{
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene 
+}
+
+Rule announcer_dlc_tusk_CustomIsCustomModeIsAnnouncerVoiceDLCTusk_Rule
+{
+	criteria Custom Isannouncer_dlc_tusk IsCustomMode IsAnnouncerVoiceDLCTusk
+	response announcer_dlc_tusk_CustomIsCustomModeIsAnnouncerVoiceDLCTusk
+}
+
 Response announcer_dlc_tusk_CustomIsAfterFirstCreepSpawnIsFrostivusModeIsGreevilCampSpawnIsAnnouncerVoiceDLCTusk
 {
 	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_evil_greevils_appear_02.vcd" nodelay noscene 

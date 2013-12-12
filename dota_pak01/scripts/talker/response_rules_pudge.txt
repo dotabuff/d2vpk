@@ -279,19 +279,9 @@ Rule pudge_KillIsEnemyUndyingChance_20%_Rule
 	response pudge_KillIsEnemyUndyingChance_20%
 }
 
-Response pudge_KillIsEnemySkeleton_KingChance_20%
-{
-	scene "scenes/pudge/pudge_pud_rival_02.vcd" nodelay noscene 
-}
-
-Rule pudge_KillIsEnemySkeleton_KingChance_20%_Rule
-{
-	criteria Kill Ispudge IsEnemySkeleton_King Chance_20%
-	response pudge_KillIsEnemySkeleton_KingChance_20%
-}
-
 Response pudge_KillIsEnemyClinkzChance_20%
 {
+	scene "scenes/pudge/pudge_pud_rival_02.vcd" nodelay noscene 
 	scene "scenes/pudge/pudge_pud_rival_03.vcd" nodelay noscene 
 }
 

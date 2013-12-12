@@ -967,15 +967,15 @@ Rule sven_CooldownSuperNag_Rule
 	response sven_CooldownSuperNag
 }
 
-Response sven_CooldownSuperNagChance1%
+Response sven_CooldownSuperNagChance_1%
 {
 	scene "scenes/sven/sven_sven_notyet_13.vcd" nodelay noscene 
 }
 
-Rule sven_CooldownSuperNagChance1%_Rule
+Rule sven_CooldownSuperNagChance_1%_Rule
 {
-	criteria Cooldown Issven SuperNag Chance 1%
-	response sven_CooldownSuperNagChance1%
+	criteria Cooldown Issven SuperNag Chance_1%
+	response sven_CooldownSuperNagChance_1%
 }
 
 Response sven_NoManaMediumNag

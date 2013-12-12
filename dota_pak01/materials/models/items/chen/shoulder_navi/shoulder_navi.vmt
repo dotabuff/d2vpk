@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/chen/shoulder_navi/shoulder_navi_color"
+	"$normalmap"		"models/items/chen/shoulder_navi/shoulder_navi_normal"
+	"$maskmap1"		"models/items/chen/shoulder_navi/shoulder_navi_mask1"
+	"$maskmap2"		"models/items/chen/shoulder_navi/shoulder_navi_mask2"
+	"$alphatest"		"1"
+	"$detail1"		"models/heroes/chen/chen_motion"
+	"$FRESNELWARP"		"models/heroes/dragon_knight/knight_fresnelranges"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"3"
+	"$RIMLIGHTCOLOR"		"[1 1 .9]"
+	"$RIMLIGHTSCALE"		"2"
+	"$AMBIENTSCALE"		"1"
+	"$DETAIL1BLENDMODE"		"1"
+	"$DETAIL1SCALE"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.100000"
+			"texturescrollangle"		"90"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

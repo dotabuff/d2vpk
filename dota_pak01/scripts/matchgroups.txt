@@ -28,6 +28,14 @@
 		"display_name" "#dota_matchgroup_vie"
 	}
 
+//	"cn"
+//	{
+//		"channel"	"China"
+//		"group" "4"
+//		"display_name" "#dota_matchgroup_cn"
+			// Don't set partner type on test/rel unless you're ok with China being locked out to everyone else
+//	}
+
 	"ru"
 	{
 		"channel"	"Russia"
@@ -35,19 +43,19 @@
 		"display_name" "#dota_matchgroup_ru"
 	}
 
+//	"sa" // South America
+//	{
+//		"channel"	"South America"
+//		"group" "5"
+//		"display_name" "#dota_matchgroup_sa"
+//	}
+
 	"icn"
 	{
 		"channel"	"South Korea"
 		"group"	"6"
 		"display_name"	"#dota_matchgroup_icn"
 		"partner"	"Nexon"
-	}
-
-	"sa" // South America
-	{
-		"channel"	"South America"
-		"group" "5"
-		"display_name" "#dota_matchgroup_sa"
 	}
 
 	"sea"
@@ -62,8 +70,6 @@
 		"channel"	"China"
 		"group" "4"
 		"display_name" "#dota_matchgroup_cn"
-		// Don't set partner type on test/rel unless you're ok with China being locked out to everyone else
-
 	}
 	
 	"pwt"

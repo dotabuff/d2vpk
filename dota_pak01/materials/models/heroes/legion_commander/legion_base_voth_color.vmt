@@ -1,0 +1,51 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/legion_commander/legion_base_voth_color"
+	"$normalmap" "models/heroes/legion_commander/legion_base_voth_normal"
+	"$maskmap1"  "models/heroes/legion_commander/legion_base_voth_masks1"
+	"$maskmap2"  "models/heroes/legion_commander/legion_base_voth_masks2"
+	"$detail1"  "models\heroes\ember_spirit\ember_spirit_detail"
+	
+	$alphatest	1
+	
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE  5
+	$SPECULARCOLOR "[1 .1 .1]"
+		
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 3
+	$DETAIL1BLENDFACTOR 3 
+	
+ 	$SPECULAR_BLOOM_SCALE      .2
+	$SPECULAR_BLOOM_COLOR "[1 .01 0]"
+	$SPECULAR_BLOOM_SHIFT 1
+	
+	
+	$RIMLIGHTSCALE 5
+	$RIMLIGHTCOLOR "[1 0 0]"
+	
+	$IgnoreBudgetCheck 1
+
+	$ENVMAP "models/cubemaps/cube_legion_commander"
+	$ENVMAPINTENSITY .5
+	$MASKENVBYMETALNESS 1	
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	-.25
+			"texturescrollangle"	-93
+		}
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

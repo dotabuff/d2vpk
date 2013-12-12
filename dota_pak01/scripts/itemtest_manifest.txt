@@ -310,7 +310,16 @@
 			"heroID"		"7"
 			"tag"			"Earthshaker"
 		}
-
+		"earth_spirit"		
+		{
+			"heroID"		"107"
+			"tag"			"Earth Spirit"
+		}
+		"ember_spirit"		
+		{
+			"heroID"		"106"
+			"tag"			"Ember Spirit"
+		}
 		"enchantress"		
 		{
 			"heroID"		"58"
@@ -336,6 +345,11 @@
 					}
 				}
 			}
+		}
+		"gyrocopter"			
+		{
+			"heroID"		"72"
+			"tag"			"Gyrocopter"
 		}
 		"huskar"			
 		{
@@ -683,11 +697,11 @@
 			"heroID"		"71"
 			"tag"			"Spirit Breaker"
 		}
-//		"storm_spirit"				
-//		{
-//			"heroID"		"17"
-//			"tag"			"Storm Spirit"
-//		}
+		"storm_spirit"				
+		{
+			"heroID"		"17"
+			"tag"			"Storm Spirit"
+		}
 		"sven"				
 		{
 			"heroID"		"18"
@@ -850,14 +864,17 @@
 			"dragon_knight"            "materials/models/heroes/dragon_knight/knight_color.vmt"
 			"drow"                     "materials/models/heroes/drow/drow_base.vmt"
 			"earthshaker"								"materials/models/heroes/earthshaker/earthshaker.vmt"
+			"earth_spirit"						  "materials/models/heroes/earth_spirit/earth_spirit_base_color.vmt"
+			"ember_spirit"							"materials/models/heroes/ember_spirit/ember_spirit_color.vmt"
 			"enchantress"              "materials/models/heroes/enchantress/enchantress_body_color.vmt"
 			"faceless_void"            "materials/models/heroes/faceless_void/faceless_void_body_color.vmt"
 			"furion"                   "materials/models/heroes/furion/furion_color.vmt"
+			"gyrocopter"               "materials/models/heroes/gyro/gyro_body_color.vmt"
 			"huskar"                   "materials/models/heroes/huskar/huskar_body.vmt"
 			"invoker"                  "materials/models/heroes/invoker/invoker_color.vmt"
 			"juggernaut"               "materials/models/heroes/juggernaut/juggernaut_torso.vmt"
 			"keeper_of_the_light"      "materials/models/heroes/keeper_of_the_light/keeper_body.vmt"
-			"lanaya"         	   "materials/models/heroes/lanaya/lanaya_base.vmt"			
+			"lanaya"         	   			 "materials/models/heroes/lanaya/lanaya_base.vmt"			
 			"kunkka"                   "materials/models/heroes/kunkka/kunkka2_body.vmt"
 			"leshrac"                  "materials/models/heroes/leshrac/leshrac_color.vmt"
 			"lich"                     "materials/models/heroes/lich/lich_base.vmt"
@@ -895,13 +912,13 @@
 			"sniper"                   "materials/models/heroes/sniper/sniper_color.vmt"
 			"spectre"                  "materials/models/heroes/spectre/spectre_base.vmt"
 			"spirit_breaker"           "materials/models/heroes/spirit_breaker/spirit_breaker_body_color.vmt"
-//			"storm_spirit"             "materials/models/heroes/storm_spirit/storm_spirit_base_color.vmt"
+			"storm_spirit"             "materials/models/heroes/storm_spirit/storm_v2_base.vmt"
 			"sven"                     "materials/models/heroes/sven/sven_color.vmt"
 			"lanaya"                   "materials/models/heroes/lanaya/lanaya_base.vmt"
 			"tidehunter"               "materials/models/heroes/tidehunter/tidehunter.vmt"
 			"tuskarr"                  "materials/models/heroes/tuskarr/tusk_base_color.vmt"
 			"ursa"                     "materials/models/heroes/ursa/ursa_color.vmt"
-//			"venomancer"               "materials/models/heroes/venomancer/venomancer_body_color.vmt"
+//			"venomancer"               "materials/models/heroes/venomancer/venomancer_color.vmt"
 			"warlock"                  "materials/models/heroes/warlock/warlock_color.vmt"
 			"weaver"                   "materials/models/heroes/weaver/weaver_color.vmt"
 			"windrunner"               "materials/models/heroes/windrunner/windrunner_base.vmt"

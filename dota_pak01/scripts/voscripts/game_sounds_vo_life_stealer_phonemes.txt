@@ -6798,56 +6798,6 @@ voice_duck 0
 }
 }
 
-*vo\life_stealer\lifest_rival_04.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Skeleton King, I break you!
-}
-WORDS
-{
-WORD Skeleton 0.048 0.928
-{
-115 s 0.048 0.192 1
-107 k 0.192 0.240 1
-108 l 0.240 0.704 1
-105 iy 0.704 0.848 1
-116 t 0.848 0.912 1
-110 n 0.912 0.928 1
-}
-WORD King 0.928 1.440
-{
-107 k 0.928 0.944 1
-618 ih 0.944 1.424 1
-331 ng 1.424 1.440 1
-}
-WORD I 1.920 2.400
-{
-593 ay 1.920 2.400 1
-}
-WORD break 2.544 2.928
-{
-98 b 2.544 2.608 1
-633 r 2.608 2.736 1
-101 ey 2.736 2.848 1
-107 k 2.848 2.928 1
-}
-WORD you 2.928 3.136
-{
-106 y 2.928 3.008 1
-117 uw 3.008 3.136 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
 *vo\life_stealer\lifest_rival_06.mp3
 {
 VERSION 1.0
@@ -7139,7 +7089,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Keep your mana, Antimage. It's your life I want.
+Keep your mana, Anti-Mage. It's your life I want.
 }
 WORDS
 {
@@ -7162,15 +7112,18 @@ WORD mana 0.448 1.008
 110 n 0.688 0.704 1
 652 ah 0.704 1.008 1
 }
-WORD Antimage 1.136 2.144
+WORD Anti 1.136 1.856
 {
 230 ae 1.136 1.248 1
 110 n 1.248 1.296 1
 116 t 1.296 1.344 1
-601 ax 1.344 1.872 1
-109 m 1.872 1.920 1
-230 ae 1.920 1.952 1
-676 jh 1.952 2.144 1
+105 iy 1.344 1.856 1
+}
+WORD Mage 1.920 2.144
+{
+109 m 1.920 1.936 1
+230 ae 1.936 1.968 1
+676 jh 1.968 2.144 1
 }
 WORD It's 2.432 2.640
 {

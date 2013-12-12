@@ -379,11 +379,12 @@ criterion "IsCaptainsMode" "announce_gamemode" "2" weight 5 required
 criterion "IsRandomDraft" "announce_gamemode" "3" weight 5 required
 criterion "IsSingleDraft" "announce_gamemode" "4" weight 5 required
 criterion "IsAllRandom" "announce_gamemode" "5" weight 5 required
-criterion "IsReverseCapMode" "announce_gamemode" "8" weight 5 required
+criterion "IsReverseCaptainsMode" "announce_gamemode" "8" weight 5 required
 criterion "IsMidOnly" "announce_gamemode" "11" weight 5 required
 criterion "IsLeastPlayed" "announce_gamemode" "12" weight 5 required
 criterion "IsLimitedHeroes" "announce_gamemode" "13" weight 5 required
 criterion "IsCaptainsDraft" "announce_gamemode" "16" weight 5 required
+criterion "IsCustomMode" "announce_gamemode" "15" weight 5 required
 
 
 criterion "IsDraftBegin" "line" "announcer_announcer_type_capt_mode" weight 5 required

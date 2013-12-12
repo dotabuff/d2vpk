@@ -208,18 +208,6 @@ Rule alchemist_KillIsEnemyMorphlingChance_35%_Rule
 	response alchemist_KillIsEnemyMorphlingChance_35%
 }
 
-Response alchemist_KillIsEnemySkeleton_KingChance_35%
-{
-	scene "scenes/alchemist/alchemist_alch_rival_08.vcd" nodelay noscene 
-	scene "scenes/alchemist/alchemist_alch_rival_09.vcd" nodelay noscene 
-}
-
-Rule alchemist_KillIsEnemySkeleton_KingChance_35%_Rule
-{
-	criteria Kill Isalchemist IsEnemySkeleton_King Chance_35%
-	response alchemist_KillIsEnemySkeleton_KingChance_35%
-}
-
 Response alchemist_KillIsEnemyClinkzChance_35%
 {
 	scene "scenes/alchemist/alchemist_alch_rival_10.vcd" nodelay noscene 

@@ -1,0 +1,40 @@
+// file    : wraith_king.cloth
+// author  : alexanderm
+// date    : 04 Oct 2013, 01:35PM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.3"
+        AnimationVertexAttraction        "0.2"
+        BendSpringConstant               "20.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "cape_"
+        columns                          "2"
+        damping                          "7.5"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity                          "0 0 -1"
+        gravity_scale                    "150.0"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        R0                               "fixed"
+        R1                               "fixed"
+        R2                               "mass  1"
+        R3                               "mass  1"
+        R4                               "mass  1"
+        rows                             "5"
+        ShearSpringConstant              "10.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "10.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.3"
+    }
+}
+
+// eof

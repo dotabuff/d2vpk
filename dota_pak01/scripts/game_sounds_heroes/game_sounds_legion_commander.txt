@@ -83,8 +83,33 @@
 	"channel"		"CHAN_WEAPON"
 	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_72dB"
-	"pitch"			"95,105"
-	"wave"			")weapons\hero\phantom_lancer\spirit_lance_cast.wav"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\legion_commander\overwhelming_cast.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_LegionCommander.Overwhelming.Location"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\legion_commander\overwhelming_location.wav"
 
 	"operator_stacks"
 	{
@@ -103,13 +128,17 @@
 	}
 }
 
-"Hero_LegionCommander.Overwhelming.Target"
+"Hero_LegionCommander.Overwhelming.Hero"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.5"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_72dB"
-	"pitch"			"95,105"
-	"wave"			")weapons\hero\phantom_lancer\spirit_lance_impact.wav"
+	"pitch"			"90,100"
+	"rndwave"
+	{
+		"wave"			")weapons\hero\legion_commander\overwhelming_target01.wav"
+		"wave"			")weapons\hero\legion_commander\overwhelming_target02.wav"
+	}
 	"operator_stacks"
 	{
 		"update_stack"
@@ -127,13 +156,41 @@
 	}
 }
 
-"Hero_LegionCommander.Overwhelming.Buff"
+"Hero_LegionCommander.Overwhelming.Creep"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"110, 120"
+	"rndwave"
+	{
+		"wave"			")weapons\hero\legion_commander\overwhelming_target01.wav"
+		"wave"			")weapons\hero\legion_commander\overwhelming_target02.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+		}
+	}
+}
+
+"Hero_LegionCommander.Overwhelming.Buff"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
-	"wave"			")weapons/hero/phantom_lancer/doppelwalk.wav"
+	"wave"			")weapons\hero\legion_commander\overwhelming_buff.wav"
 	"soundentry_version" "2"
 	"operator_stacks"
 	{
@@ -155,10 +212,10 @@
 "Hero_LegionCommander.PressTheAttack"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.5"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
-	"pitch"			"125"
-	"wave"			")weapons/hero/omniknight/purification.wav"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/legion_commander/press_cast.wav"
 	"soundentry_version" "2"
 	"operator_stacks"
 	{
@@ -171,7 +228,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "300"
+				"input_radius"  "600"
 			}
 		}
 	}
@@ -183,8 +240,8 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_78dB"
-	"pitch"			"125"
-	"wave"			")weapons/hero/juggernaut/sword_swing_special.wav"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/legion_commander/moc.wav"
 	
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -198,7 +255,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "150"
+				"input_radius"  "300"
 			}
 		}
 	}
@@ -207,10 +264,10 @@
 "Hero_LegionCommander.Duel.Cast"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.5"
+	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
-	"pitch"			"80"
-	"wave"			")weapons/hero/axe/berserkers_call.wav"
+	"pitch"			"100"
+	"wave"			")weapons/hero/legion_commander/duel_cast.wav"
 	"soundentry_version" "2"
 	"operator_stacks"
 	{
@@ -229,13 +286,100 @@
 	}
 }
 
-"Hero_LegionCommander.Duel.Target"
+"Hero_LegionCommander.Duel.Cast.Arcana"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.5"
+	"volume"		"0.8"
 	"soundlevel"  	"SNDLVL_81dB"
-	"pitch"			"120"
-	"wave"	")weapons/hero/axe/berserkers_call.wav"
+	"pitch"			"100"
+	"wave"			")weapons/hero/legion_commander/duel_cast_arcana.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_LegionCommander.Duel.FP"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/legion_commander/duel_fp.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"volume_fade_in"
+			{
+				"input_Max" "0.8"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_LegionCommander.Duel"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			"weapons/hero/legion_commander/duel.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_LegionCommander.Duel.Victory"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/legion_commander/duel_victory.wav"
 	"soundentry_version" "2"
 	"operator_stacks"
 	{
@@ -248,7 +392,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "300"
+				"input_radius"  "1200"
 			}
 		}
 	}
