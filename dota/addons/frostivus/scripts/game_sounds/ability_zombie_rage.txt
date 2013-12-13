@@ -1,0 +1,28 @@
+
+"Ability.ZombieRage"
+{
+	"channel"		"CHAN_WEAPONS"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_87dB"
+	"pitch"			"95, 105"
+	"wave"			")items\black_king_bar.wav"
+}
+
+"Ability.ZombieRage.Cast"
+{
+	"channel"		"CHAN_WEAPONS"
+	"volume"		".8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/flesh_golem_cast.wav"
+}
+
+"Ability.ZombieRage.Stun"
+{
+	"channel"		"CHAN_WEAPONS"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"	")weapons/hero/vengeful_spirit/magic_missile_impact.wav"
+	"pitch"			"95,105"
+
+}

@@ -1,0 +1,1543 @@
+// Channels
+//	CHAN_AUTO		= 0,
+//	CHAN_WEAPON		= 1,
+//	CHAN_VOICE		= 2,
+//	CHAN_ITEM		= 3,
+//	CHAN_BODY		= 4,
+//	CHAN_STREAM		= 5,		// allocate stream channel from the static or dynamic area
+//	CHAN_STATIC		= 6,		// allocate channel from the static area 
+// these can be set with "channel" "2" or "channel" "chan_voice"
+
+"Hero_SkeletonKing.Reincarnate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			")wk_holdout_reincarnate.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"FragmentsAppear"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui/item_drop_gem_shop.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+"FragmentsLoop"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.25"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"fragments_loop.wav"
+}
+
+"FragmentsLoopEnd"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.5"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			")fragments_end.wav"
+}
+
+"GoldRising"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_rise_gold.wav"
+}
+
+"GoldRisingEnd"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.4"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_end_gold.wav"
+}
+
+"ExpiredGoldFalling"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.25"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_rise_missed.wav"
+}
+
+"ExpiredGoldFallingEnd"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.4"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_end.wav"
+}
+
+"KillsRising"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_rise_kills.wav"
+}
+
+"KillsRisingEnd"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.4"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_end_kills.wav"
+}
+
+// --NOT USED ANYMORE
+"GoldTick"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_bags.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"limit_goldtick_sounds"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "1.00000"
+				"match_entity" "false"             
+				"match_substring" "false"
+				"match_entry" "GoldTick"                         
+			}                  
+			"goldtick_num_compare"
+			{
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"       
+				"input1" "@limit_goldtick_sounds.output_entries_matching" // This is the percentage chance to play a null
+				"input2" "1" //match the max number of played sounds ( = input_max_entries + 1 )
+			}
+			"goldtick_block_me"
+			{
+				"input_execute" "@goldtick_num_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+// --NOT USED ANYMORE
+"KillsTick"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_bags.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"limit_killtick_sounds"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "1.00000"
+				"match_entity" "false"             
+				"match_substring" "false"
+				"match_entry" "KillsTick"                         
+			}                  
+			"killtick_num_compare"
+			{
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"       
+				"input1" "@limit_killtick_sounds.output_entries_matching" // This is the percentage chance to play a null
+				"input2" "1" //match the max number of played sounds ( = input_max_entries + 1 )
+			}
+			"killtick_block_me"
+			{
+				"input_execute" "@killtick_num_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+	
+}
+
+"ExpiredGoldAppear"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui/menu/option_toggle.wav"
+}
+
+// --NOT USED ANYMORE
+"ExpiredGoldTick"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_bagsmissed.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"limit_expgoldtick_sounds"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "1.00000"
+				"match_entity" "false"             
+				"match_substring" "false"
+				"match_entry" "ExpiredGoldTick"                         
+			}                  
+			"expgoldtick_num_compare"
+			{
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"       
+				"input1" "@limit_expgoldtick_sounds.output_entries_matching" // This is the percentage chance to play a null
+				"input2" "1" //match the max number of played sounds ( = input_max_entries + 1 )
+			}
+			"expgoldtick_block_me"
+			{
+				"input_execute" "@expgoldtick_num_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+"ExpiredGoldBad"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui/magic_immune.wav"
+}
+
+"ScoreGoldFinish"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_bags.wav"
+}
+
+"ScoreKillsFinish"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"weapons/hero/axe/attack01.wav"
+}
+
+"ScoreAppear"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui/menu/profile_open.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+"ScoreSlideUp"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"ui/menu/profile_close.wav" 
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+"ScoreSlideDown"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"wave"			"ui/menu/report_open.wav" 
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+"TowerKeptAlive"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.5"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_towers.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+"TowerFell"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.5"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_towerslost.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+"AllTowersFell"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_towerslost.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.8"	
+			}
+		}
+	}
+}
+
+"FrostivusLastHit"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NONE"
+
+	"rndwave"
+	{
+		"wave"  "last_hit_soul_01.wav"
+		"wave"  "last_hit_soul_02.wav"
+		"wave"  "last_hit_soul_03.wav"
+		"wave"  "last_hit_soul_04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"limit_lasthit_sounds"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "4.00000"
+				"match_entity" "false"             
+				"match_substring" "false"
+				"match_entry" "FrostivusLastHit"                         
+			}                  
+			"lasthit_num_compare"
+			{
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"       
+				"input1" "@limit_lasthit_sounds.output_entries_matching" // This is the percentage chance to play a null
+				"input2" "4" //match the max number of played sounds ( = input_max_entries + 1 )
+			}
+			"lasthit_block_me"
+			{
+				"input_execute" "@lasthit_num_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+	}
+}
+
+"GoldBagDrop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_90dB"
+	"pitch"			"100"
+	"wave"  		"bagdrop.wav"
+}
+
+"GoldBagPickup"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"  		"bagpickup.wav"
+}
+
+"TallyRise"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_rise.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.5"	
+			}
+		}
+	}
+}
+
+"TallyEnd"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"tally_end.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.5"	
+			}
+		}
+	}
+}
+
+
+// Frostivus Enemies
+
+"OgreSmashWhoosh"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"  "ogre_whoosh_01.wav"
+		"wave"  "ogre_whoosh_02.wav"
+	}
+}
+
+"OgreSmashImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"  ")ogre_smash_01.wav"
+		"wave"  ")ogre_smash_02.wav"
+	}
+}
+
+
+// Overwrite existing sound entries for the purposes of this mod
+
+"Hero_Slark.Pounce.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"  "minislark_leap_01.wav"
+		"wave"  "minislark_leap_02.wav"
+		"wave"  "minislark_leap_03.wav"
+		"wave"  "minislark_leap_04.wav"
+	}
+}
+
+"Hero_Slark.Pounce.Impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"  "minislark_impact_01.wav"
+		"wave"  "minislark_impact_02.wav"
+		"wave"  "minislark_impact_03.wav"
+	}
+}
+
+"Hero_Treant.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.8"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		")bigtreant_step_01.wav"
+		"wave"		")bigtreant_step_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Treant.Foley"
+			}
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Treant.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.9"
+	"soundlevel"  	"SNDLVL_110dB"
+	"wave"			"physics\deaths\specials\treeant_death.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Roshan.PreAttack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/whoosh01.wav"
+		"wave"	"weapons/hero/shared/large_blade/whoosh02.wav"
+		"wave"	"weapons/hero/shared/large_blade/whoosh03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Roshan.Grunt"
+			}
+		}
+	}
+}
+
+"Roshan.Grunt"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.1, 0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/roshan/grunt01.wav"
+		"wave"	"weapons/creep/roshan/grunt02.wav"
+		"wave"	"weapons/creep/roshan/grunt03.wav"
+		"wave"	"weapons/creep/roshan/grunt04.wav"
+		"wave"	"weapons/creep/roshan/grunt05.wav"
+		"wave"	"weapons/creep/roshan/grunt06.wav"
+	}
+}
+
+"Roshan.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7, 0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/roshan/attack01.wav"
+		"wave"	"weapons/creep/roshan/attack02.wav"
+		"wave"	"weapons/creep/roshan/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Roshan.Attack.Post"
+			}
+		}
+	}
+}
+
+"Roshan.Attack.Post"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/shared/large_blade/follow_thru01.wav"
+		"wave"		")weapons/hero/shared/large_blade/follow_thru02.wav"
+		"wave"		")weapons/hero/shared/large_blade/follow_thru03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Roshan.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\creeps\roshan\footstep01.wav"
+		"wave"		"physics\footsteps\creeps\roshan\footstep02.wav"
+		"wave"		"physics\footsteps\creeps\roshan\footstep03.wav"
+		"wave"		"physics\footsteps\creeps\roshan\footstep04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Roshan.Death"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100"
+	"wave"			"minirosh_death.wav"
+}
+
+
+"Music_Frostivus.RoundEnd"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{	
+		"wave"			"#music/stingers/01.mp3"
+		"wave"			"#music/stingers/02.mp3"
+		"wave"			"#music/stingers/03.mp3"
+		"wave"			"#music/stingers/04.mp3"
+		"wave"			"#music/stingers/05.mp3"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "buyback"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK OTHER MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+
+			"block_buyback_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "6.5" //in seconds
+				"match_substring" "false"
+				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1000"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"	
+			}
+		}
+		
+		"stop_stack"
+		{	
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK OTHER MUSIC KILLED**************"
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+
+"Music_Frostivus.WraithKing"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"#music/stingers/boss.mp3"
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "buyback"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK OTHER MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+
+			"block_buyback_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "6.5" //in seconds
+				"match_substring" "false"
+				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1000"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"	
+			}
+		}
+		
+		"stop_stack"
+		{	
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK OTHER MUSIC KILLED**************"
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+
+"Music_Frostivus.Lose"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"#music/stingers/lose.mp3"
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "buyback"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK OTHER MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+
+			"block_buyback_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "6.5" //in seconds
+				"match_substring" "false"
+				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1000"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"	
+			}
+		}
+		
+		"stop_stack"
+		{	
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK OTHER MUSIC KILLED**************"
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+
+"Music_Frostivus.Win"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"#music/stingers/win.mp3"
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "buyback"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK OTHER MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+
+			"block_buyback_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "6.5" //in seconds
+				"match_substring" "false"
+				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1000"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"	
+			}
+		}
+		
+		"stop_stack"
+		{	
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK OTHER MUSIC KILLED**************"
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+
+"Music_Frostivus.Reincarnate"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"  "SNDLVL_81dB"
+	"wave"			")music/stingers/reincarnate_03.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "stinger_low_priority"
+				"track_priority" "1"	
+			}
+		}
+	
+		"start_stack"
+		{
+			"delay_output"
+            {
+             "operator" "sys_output"
+             "input_float" "0"
+             "output" "delay"
+            }
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************REINCARNATE MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"
+			}
+		}
+	}
+}
+
+"Frostivus.Revive"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			")revive.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+"Hero_Axe.Holdout.Culling_Blade_Success"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_99dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/axe/culling_blade_success.wav"
+}
+
+"Hero_Axe.Holdout.Culling_Blade_Fail"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons/hero/axe/culling_blade_fail.wav"
+}
+
+"Hero_Juggernaut.Holdout.OmniSlash"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_99dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/juggernaut/omnislash_attack1.wav"
+		"wave"	")weapons/hero/juggernaut/omnislash_attack2.wav"
+	}
+}
+
+"Creature.FireBreath.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95, 105"
+	"wave"		    "mini_rosh_firebreath.wav"
+}
+
+"Creature.Slithereen_Crush.Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/slardar/slithereen_crush.wav"
+}
+
+"Creature.AOESpikes.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/leshrac/split_earth.wav"
+}
+
+"Hero_OgreMagi.Bloodlust.Cast.Anim"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_cast.wav"
+}
+"Hero_OgreMagi.Bloodlust.Target"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/ogre_magi/bloodlust_target.wav"
+}
+
+"Hero_OgreMagi.Bloodlust.Target.FP"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			"null.wav"
+}
+
+"Hero_Venomancer.VenomousGaleImpact"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/venomancer/venomancer_venomous_gale_impact1.wav"
+		"wave"		")weapons/hero/venomancer/venomancer_venomous_gale_impact2.wav"
+		"wave"		")weapons/hero/venomancer/venomancer_venomous_gale_impact3.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Hero_Venomancer.VenomousGaleImpact"
+				"match_channel" "false"
+			}
+		}
+	}
+}
+
+"Hero_Furion.Sprout"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/furion/sprout.wav"
+}
+
+"VictoryAchieved"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui/power_up_02.wav"
+}
+
+"Hero_SkeletonKing.FrostivusCast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			")hellfire_eruption.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_SkeletonKing.PreAttack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 1.0"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/whoosh01.wav"
+		"wave"	"weapons/hero/shared/large_blade/whoosh02.wav"
+		"wave"	"weapons/hero/shared/large_blade/whoosh03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.2"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_SkeletonKing.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8, 1.0"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"90,100"
+	"rndwave"
+	{
+ 		"wave"	")weapons/hero/skeleton_king/attack01.wav"
+		"wave"	")weapons/hero/skeleton_king/attack02.wav"
+		"wave"	")weapons/hero/skeleton_king/attack03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_SkeletonKing.Attack.Ring"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_SkeletonKing.Attack.Ring"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.1, 0.9"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"80, 90"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/ring01.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring02.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring03.wav"
+		"wave"	"weapons/hero/shared/large_blade/ring04.wav"
+		"wave"	"null.wav"
+	}
+}
+
+"WraithKing.Tombstone.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_99dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/decay_cast.wav"
+}
+
+"WraithKing.Tombstone"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_99dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/tombstone.wav"
+}
+
+"Radiant.ancient.Destruction"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_120dB"
+	"wave"			")altar_destruction.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Wraithking.End.VO"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "3000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "3000"
+			}
+		}
+	}			
+}
+
+"Wraithking.End.VO"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"vo/skeleton_king/wraith_lose_01.mp3"
+		"wave"		"vo/skeleton_king/wraith_lose_02.mp3"
+		"wave"		"vo/skeleton_king/wraith_lose_03.mp3"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "3000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Announcer"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}

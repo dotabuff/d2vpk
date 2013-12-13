@@ -1,0 +1,148 @@
+
+
+"holdout_frostivus_blanket"
+{
+	"dsp"	"1"
+	"fadetime" "1"
+
+	"playlooping"
+	{
+		"volume"		".3"
+		"pitch"		"100"
+		"wave"		"ambient/soundscapes/dire_base_loop_01.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"ambient/altar_lp.wav"
+		"origin"	"-177, -434, 1107;"
+		"soundlevel" 	"SNDLVL_90dB"
+	}
+
+	"playsoundscape"
+	{
+		"name" "random.wolf.call"
+		"volume" ".5"
+	}
+
+	"playsoundscape"
+	{
+		"name" "random.owl"
+		"volume" ".5"
+	}
+
+	"playsoundscape"
+	{
+		"name" "random.shakers"
+		"volume" ".9"
+	}
+
+	"playsoundscape"
+	{
+		"name" "random.disquiet"
+		"volume" ".5"
+	}
+
+}
+
+
+
+
+////////////////////////////////////////
+//////random soundscapes////////////////
+////////////////////////////////////////
+
+"random.shakers"
+{
+
+
+	"playrandom"
+	{
+		"volume"	"0.5, 1.0"
+		"pitch"		"95,105"
+		"time"		"20,40"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave" "ambient/soundscapes/dire_random_unstableness_01.wav"
+			"wave" "ambient/soundscapes/dire_random_unstableness_02.wav"
+			"wave" "ambient/soundscapes/dire_random_unstableness_03.wav"
+			"wave" "ambient/soundscapes/dire_random_unstableness_04.wav"
+		}
+	}
+
+
+}
+
+"random.disquiet"
+{
+
+
+	"playrandom"
+	{
+		"volume"	".3,.6"
+		"pitch"		"90,110"
+		"time"		"16,29"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave" "ambient/disquiet01.wav"
+			"wave" "ambient/disquiet02.wav"
+			"wave" "ambient/disquiet03.wav"
+		}
+	}
+
+
+}
+
+"random.owl"
+{
+
+
+	"playrandom"
+	{
+		"volume"	".3,.6"
+		"pitch"		"90,109"
+		"time"		"10,35"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave" "ambient/soundscapes/diretide/diretide_owl_01.wav"
+			"wave" "ambient/soundscapes/diretide/diretide_owl_02.wav"
+			"wave" "ambient/soundscapes/diretide/diretide_owl_03.wav"
+
+		}
+	}
+
+
+}
+
+"random.wolf.call"
+{
+
+
+	"playrandom"
+	{
+		"volume"	".6,.9"
+		"pitch"		"90,100"
+		"time"		"17,39"
+		"position"	"random"
+
+		"rndwave"
+		{
+			"wave" "ambient/soundscapes/diretide/diretide_wolf_01.wav"
+			"wave" "ambient/soundscapes/diretide/diretide_wolf_02.wav"
+			"wave" "ambient/soundscapes/diretide/diretide_wolf_03.wav"
+			"wave" "ambient/soundscapes/diretide/diretide_wolf_04.wav"
+
+		}
+	}
+
+
+}
+

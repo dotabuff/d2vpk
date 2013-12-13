@@ -1,0 +1,31 @@
+
+"Ability.SummonUndead"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/skeleton_king/mortal_strike_cast.wav"
+}
+
+"Ability.SummonUndeadSuccess"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  		"SNDLVL_81dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/death_prophet/exorcism_impact01.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact02.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact03.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact04.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact05.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact06.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact07.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact08.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact09.wav"
+		"wave"		"weapons/hero/death_prophet/exorcism_impact10.wav"
+	}
+
+}
