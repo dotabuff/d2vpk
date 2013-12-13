@@ -6,6 +6,7 @@ criterion "IsLegionPress" "abilityname" "legion_commander_press_the_attack" weig
 criterion "IsLegionMoment" "abilityname" "legion_commander_moment_of_courage" weight 5 required
 criterion "IsLegionDuel" "abilityname" "legion_commander_duel" weight 5 required
 criterion "IsLegionNoVictor" "no_victor" "yes" weight 5 required
+criterion "IsLegionEconDemon" "customresponse" "voth_domosh" weight 5 required
 
 Response legion_commander_Spawn
 {
@@ -20,6 +21,20 @@ Rule legion_commander_Spawn_Rule
 {
 	criteria Spawn Islegion_commander 
 	response legion_commander_Spawn
+}
+
+Response legion_commander_SpawnIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_spawn_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_spawn_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_spawn_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_spawn_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_SpawnIsLegionEconDemon_Rule
+{
+	criteria Spawn Islegion_commander IsLegionEconDemon
+	response legion_commander_SpawnIsLegionEconDemon
 }
 
 Response legion_commander_CustomIsGameStart
@@ -55,6 +70,41 @@ Rule legion_commander_CustomIsLegionNoVictorChance_5%_Rule
 {
 	criteria Custom Islegion_commander IsLegionNoVictor Chance_5%
 	response legion_commander_CustomIsLegionNoVictorChance_5%
+}
+
+Response legion_commander_CustomIsGameStartIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_begin_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CustomIsGameStartIsLegionEconDemon_Rule
+{
+	criteria Custom Islegion_commander IsGameStart IsLegionEconDemon
+	response legion_commander_CustomIsGameStartIsLegionEconDemon
+}
+
+Response legion_commander_CustomIsLegionNoVictorIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelfailure_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelfailure_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelfailure_07.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CustomIsLegionNoVictorIsLegionEconDemon_Rule
+{
+	criteria Custom Islegion_commander IsLegionNoVictor IsLegionEconDemon 
+	response legion_commander_CustomIsLegionNoVictorIsLegionEconDemon
+}
+
+Response legion_commander_CustomIsLegionNoVictorChance_5%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelfailure_05.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CustomIsLegionNoVictorChance_5%IsLegionEconDemon_Rule
+{
+	criteria Custom Islegion_commander IsLegionNoVictor Chance_5% IsLegionEconDemon 
+	response legion_commander_CustomIsLegionNoVictorChance_5%IsLegionEconDemon
 }
 
 Response legion_commander_KillIsFirstBlood
@@ -499,6 +549,17 @@ Rule legion_commander_KillChance_3%IsEnemyJakiro_Rule
 	response legion_commander_KillChance_3%IsEnemyJakiro
 }
 
+Response legion_commander_KillChance_3%IsEnemyDragon_Knight
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_26.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsEnemyDragon_Knight_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsEnemyDragon_Knight 
+	response legion_commander_KillChance_3%IsEnemyDragon_Knight
+}
+
 Response legion_commander_KillChance_3%IsEnemyDoom_Bringer
 {
 	scene "scenes/legion_commander/legion_commander_legcom_rival_27.vcd" nodelay noscene 
@@ -640,17 +701,6 @@ Rule legion_commander_KillChance_3%IsEnemyTinker_Rule
 {
 	criteria Kill Islegion_commander Chance_3% IsEnemyTinker
 	response legion_commander_KillChance_3%IsEnemyTinker
-}
-
-Response legion_commander_KillChance_3%IsEnemySandKing
-{
-	scene "scenes/legion_commander/legion_commander_legcom_rival_32.vcd" nodelay noscene 
-}
-
-Rule legion_commander_KillChance_3%IsEnemySandKing_Rule
-{
-	criteria Kill Islegion_commander Chance_3% IsEnemySandKing
-	response legion_commander_KillChance_3%IsEnemySandKing
 }
 
 Response legion_commander_KillChance_3%IsEnemyWeaver
@@ -807,6 +857,720 @@ Rule legion_commander_KillChance_2%IsEnemyOutworld_Destroyer_Rule
 	response legion_commander_KillChance_2%IsEnemyOutworld_Destroyer
 }
 
+Response legion_commander_KillIsFirstBloodIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_firstblood_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillIsFirstBloodIsLegionEconDemon_Rule
+{
+	criteria Kill Islegion_commander IsFirstBlood IsLegionEconDemon
+	response legion_commander_KillIsFirstBloodIsLegionEconDemon
+}
+
+Response legion_commander_KillIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_33.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_35.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_09.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_10.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_12.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_13.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_15.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_19.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_kill_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_kill_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_kill_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_kill_04.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillIsLegionEconDemon_Rule
+{
+	criteria Kill Islegion_commander IsLegionEconDemon 
+	response legion_commander_KillIsLegionEconDemon
+}
+
+Response legion_commander_KillIsLegionOddsChance_10%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_16.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_17.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_kill_18.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillIsLegionOddsChance_10%IsLegionEconDemon_Rule
+{
+	criteria Kill Islegion_commander IsLegionOdds Chance_10% IsLegionEconDemon 
+	response legion_commander_KillIsLegionOddsChance_10%IsLegionEconDemon
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyKunkka
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_05.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyKunkka_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyKunkka
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyKunkka
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyMedusa
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_06.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyMedusa_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyMedusa
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyMedusa
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyLuna
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_07.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyLuna_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyLuna
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyLuna
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAxe
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_08.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAxe_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyAxe
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAxe
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyRubick
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_09.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyRubick_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyRubick
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyRubick
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyFaceless_Void
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_10.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyFaceless_Void_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyFaceless_Void
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyFaceless_Void
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyChen
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_11.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyChen_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyChen
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyChen
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyDoom_Bringer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_13.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyDoom_Bringer_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyDoom_Bringer
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyDoom_Bringer
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyNevermore
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_13.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyNevermore_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyNevermore
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyNevermore
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyShadow_Demon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_13.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyShadow_Demon_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyShadow_Demon
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyShadow_Demon
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyDark_Seer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_14.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_15.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyDark_Seer_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyDark_Seer
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyDark_Seer
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAbaddon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_16.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAbaddon_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyAbaddon
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAbaddon
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyElder_Titan
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_21.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyElder_Titan_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyElder_Titan
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyElder_Titan
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyUndying
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_22.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyUndying_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyUndying
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyUndying
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRiki
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_24.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRiki_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyRiki
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRiki
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTemplar_Assassin
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_24.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTemplar_Assassin_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyTemplar_Assassin
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTemplar_Assassin
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyBounty_Hunter
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_24.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyBounty_Hunter_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyBounty_Hunter
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyBounty_Hunter
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyPhantom_Assassin
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_24.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyPhantom_Assassin_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyPhantom_Assassin
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyPhantom_Assassin
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNyx_Assassin
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_24.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_32.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNyx_Assassin_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyNyx_Assassin
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNyx_Assassin
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyCrystalMaiden
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyCrystalMaiden_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyCrystalMaiden
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyCrystalMaiden
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyShadowShaman
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyShadowShaman_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyShadowShaman
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyShadowShaman
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLina
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLina_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyLina
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLina
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRubick
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRubick_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyRubick
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRubick
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyOgre_Magi
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyOgre_Magi_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyOgre_Magi
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyOgre_Magi
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySkywrath_Mage
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemySkywrath_Mage_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemySkywrath_Mage
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySkywrath_Mage
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyKeeper_of_the_Light
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyKeeper_of_the_Light_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyKeeper_of_the_Light
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyKeeper_of_the_Light
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLich
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_33.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLich_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyLich
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLich
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLion
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLion_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyLion
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLion
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWarlock
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWarlock_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyWarlock
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWarlock
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDazzle
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDazzle_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyDazzle
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDazzle
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyInvoker
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyInvoker_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyInvoker
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyInvoker
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyPuck
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_26.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyPuck_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyPuck
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyPuck
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyJakiro
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_26.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyJakiro_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyJakiro
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyJakiro
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDragon_Knight
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_26.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDragon_Knight_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyDragon_Knight
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDragon_Knight
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyMedusa
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyMedusa_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyMedusa
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyMedusa
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySlardar
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemySlardar_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemySlardar
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySlardar
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNaga_Siren
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNaga_Siren_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyNaga_Siren
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNaga_Siren
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySlark
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemySlark_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemySlark
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySlark
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTreant
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTreant_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyTreant
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTreant
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyFurion
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyFurion_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyFurion
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyFurion
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRattletrap
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_31.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRattletrap_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyRattletrap
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyRattletrap
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyShredder
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_31.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyShredder_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyShredder
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyShredder
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyGyrocopter
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_31.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyGyrocopter_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyGyrocopter
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyGyrocopter
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTinker
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_31.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTinker_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyTinker
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTinker
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWeaver
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_32.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWeaver_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyWeaver
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWeaver
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySkeleton_King
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_33.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemySkeleton_King_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemySkeleton_King
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySkeleton_King
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyUndying
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_33.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyUndying_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyUndying
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyUndying
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNecrolyte
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_33.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNecrolyte_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyNecrolyte
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyNecrolyte
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDeath_Prophet
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_33.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDeath_Prophet_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyDeath_Prophet
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDeath_Prophet
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyVengefulSpirit
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_33.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyVengefulSpirit_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyVengefulSpirit
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyVengefulSpirit
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyUrsa
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_35.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyUrsa_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyUrsa
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyUrsa
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLone_Druid
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_35.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLone_Druid_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyLone_Druid
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyLone_Druid
+}
+
+Response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyWisp
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_36.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_2%IsLegionEconDemonIsEnemyWisp_Rule
+{
+	criteria Kill Islegion_commander Chance_2% IsLegionEconDemon IsEnemyWisp
+	response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyWisp
+}
+
+Response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyMorphling
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_36.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_2%IsLegionEconDemonIsEnemyMorphling_Rule
+{
+	criteria Kill Islegion_commander Chance_2% IsLegionEconDemon IsEnemyMorphling
+	response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyMorphling
+}
+
+Response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyFaceless_Void
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_36.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_2%IsLegionEconDemonIsEnemyFaceless_Void_Rule
+{
+	criteria Kill Islegion_commander Chance_2% IsLegionEconDemon IsEnemyFaceless_Void
+	response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyFaceless_Void
+}
+
+Response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyEnchantress
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_36.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_2%IsLegionEconDemonIsEnemyEnchantress_Rule
+{
+	criteria Kill Islegion_commander Chance_2% IsLegionEconDemon IsEnemyEnchantress
+	response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyEnchantress
+}
+
+Response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyEnigma
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_36.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_2%IsLegionEconDemonIsEnemyEnigma_Rule
+{
+	criteria Kill Islegion_commander Chance_2% IsLegionEconDemon IsEnemyEnigma
+	response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyEnigma
+}
+
+Response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyOutworld_Destroyer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_36.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_2%IsLegionEconDemonIsEnemyOutworld_Destroyer_Rule
+{
+	criteria Kill Islegion_commander Chance_2% IsLegionEconDemon IsEnemyOutworld_Destroyer
+	response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyOutworld_Destroyer
+}
+
+Response legion_commander_KillIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_08.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillIsLegionEconDemon_Rule
+{
+	criteria Kill Islegion_commander IsLegionEconDemon
+	response legion_commander_KillIsLegionEconDemon
+}
+
 Response legion_commander_Move
 {
 	scene "scenes/legion_commander/legion_commander_legcom_move_01.vcd" nodelay noscene 
@@ -840,6 +1604,41 @@ Rule legion_commander_Move_Rule
 	response legion_commander_Move
 }
 
+Response legion_commander_MoveIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_08.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_09.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_10.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_12.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_13.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_14.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_16.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_17.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_18.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_22.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_25.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_26.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_move_30.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_move_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_move_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_move_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_move_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_move_05.vcd" nodelay noscene 
+}
+
+Rule legion_commander_MoveIsLegionEconDemon_Rule
+{
+	criteria Move Islegion_commander IsLegionEconDemon
+	response legion_commander_MoveIsLegionEconDemon
+}
+
 Response legion_commander_Attack
 {
 	scene "scenes/legion_commander/legion_commander_legcom_attack_01.vcd" nodelay noscene 
@@ -862,6 +1661,30 @@ Rule legion_commander_Attack_Rule
 	response legion_commander_Attack
 }
 
+Response legion_commander_AttackIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_08.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_09.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_10.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_12.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_attack_14.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_attack_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_attack_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_attack_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_AttackIsLegionEconDemon_Rule
+{
+	criteria Attack Islegion_commander IsLegionEconDemon
+	response legion_commander_AttackIsLegionEconDemon
+}
+
 Response legion_commander_CastOrder
 {
 	scene "scenes/legion_commander/legion_commander_legcom_cast_01.vcd" nodelay noscene 
@@ -873,6 +1696,18 @@ Rule legion_commander_CastOrder_Rule
 {
 	criteria CastOrder Islegion_commander 
 	response legion_commander_CastOrder
+}
+
+Response legion_commander_CastOrderIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_cast_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_cast_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastOrderIsLegionEconDemon_Rule
+{
+	criteria CastOrder Islegion_commander IsLegionEconDemon
+	response legion_commander_CastOrderIsLegionEconDemon
 }
 
 Response legion_commander_CastExecuteIsLegionOddsChance_25%
@@ -1807,6 +2642,858 @@ Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsEnemyOgre_Magi_Rule
 	response legion_commander_CastExecuteIsLegionDuelChance_5%IsEnemyOgre_Magi
 }
 
+Response legion_commander_CastExecuteIsLegionOddsChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_overwhelmingodds_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_overwhelmingodds_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_overwhelmingodds_04.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionOddsChance_25%IsLegionEconDemon_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionOdds Chance_25% IsLegionEconDemon
+	response legion_commander_CastExecuteIsLegionOddsChance_25%IsLegionEconDemon
+}
+
+Response legion_commander_CastExecuteIsLegionPressChance_75%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_presstheattack_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_presstheattack_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_presstheattack_06.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionPressChance_75%IsLegionEconDemon_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionPress Chance_75% IsLegionEconDemon
+	response legion_commander_CastExecuteIsLegionPressChance_75%IsLegionEconDemon
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duel_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duel_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duel_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duel_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duel_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duel_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duel_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duel_08.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_grunt_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemon_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemon
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyAxe
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyAxe_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyAxe
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyAxe
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBristleback
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_05.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBristleback_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyBristleback
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBristleback
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyTusk
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_06.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyTusk_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyTusk
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyTusk
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySniper
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_09.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySniper_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemySniper
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySniper
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyFaceless_Void
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_10.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyFaceless_Void_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyFaceless_Void
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyFaceless_Void
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMeepo
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_11.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMeepo_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyMeepo
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMeepo
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOgre_Magi
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_13.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOgre_Magi_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyOgre_Magi
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOgre_Magi
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_1%IsEnemyOgre_Magi
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_14.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_1%IsEnemyOgre_Magi_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_1% IsEnemyOgre_Magi
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_1%IsEnemyOgre_Magi
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyZuus
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_15.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_16.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyZuus_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyZuus
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyZuus
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyDark_Seer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_17.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyDark_Seer_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyDark_Seer
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyDark_Seer
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemySven
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_18.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemySven_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemySven
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemySven
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyShredder
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_20.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyShredder_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyShredder
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyShredder
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOutworld_Destroyer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_21.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOutworld_Destroyer_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyOutworld_Destroyer
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOutworld_Destroyer
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyAxe
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyAxe_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyAxe
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyAxe
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyBeastmaster
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyBeastmaster_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyBeastmaster
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyBeastmaster
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyCentaur
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyCentaur_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyCentaur
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyCentaur
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyDark_Seer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyDark_Seer_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyDark_Seer
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyDark_Seer
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyDisruptor
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyDisruptor_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyDisruptor
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyDisruptor
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyEarthshaker
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyEarthshaker_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyEarthshaker
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyEarthshaker
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyFurion
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyFurion_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyFurion
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyFurion
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyKeeper_of_the_Light
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyKeeper_of_the_Light_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyKeeper_of_the_Light
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyKeeper_of_the_Light
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyKunkka
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyKunkka_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyKunkka
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyKunkka
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLeshrac
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLeshrac_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyLeshrac
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLeshrac
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLone_Druid
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLone_Druid_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyLone_Druid
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLone_Druid
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyNecrolyte
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyNecrolyte_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyNecrolyte
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyNecrolyte
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyOmniknight
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyOmniknight_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyOmniknight
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyOmniknight
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyPhantom_Lancer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyPhantom_Lancer_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyPhantom_Lancer
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyPhantom_Lancer
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyRiki
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyRiki_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyRiki
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyRiki
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemySniper
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemySniper_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemySniper
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemySniper
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemySpirit_Breaker
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemySpirit_Breaker_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemySpirit_Breaker
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemySpirit_Breaker
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyStormSpirit
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyStormSpirit_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyStormSpirit
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyStormSpirit
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTinker
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTinker_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyTinker
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTinker
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTiny
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTiny_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyTiny
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTiny
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTreant
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTreant_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyTreant
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTreant
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTusk
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTusk_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyTusk
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyTusk
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyWarlock
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_22.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyWarlock_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyWarlock
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyWarlock
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyBrewmaster
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyBrewmaster_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyBrewmaster
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyBrewmaster
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyGyrocopter
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyGyrocopter_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyGyrocopter
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyGyrocopter
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLycan
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLycan_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyLycan
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyLycan
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyZuus
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_23.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyZuus_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsLegionEconDemon IsEnemyZuus
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyZuus
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyClinkz
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_24.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyClinkz_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyClinkz
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyClinkz
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDrowRanger
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_24.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDrowRanger_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyDrowRanger
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDrowRanger
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMedusa
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_24.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMedusa_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyMedusa
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMedusa
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMirana
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_24.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMirana_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyMirana
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyMirana
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWindrunner
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_24.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWindrunner_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyWindrunner
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWindrunner
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyCrystalMaiden
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyCrystalMaiden_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyCrystalMaiden
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyCrystalMaiden
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDazzle
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDazzle_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyDazzle
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDazzle
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyInvoker
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyInvoker_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyInvoker
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyInvoker
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLich
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLich_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyLich
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLich
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLina
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLina_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyLina
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLina
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLion
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLion_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyLion
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLion
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyRubick
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyRubick_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyRubick
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyRubick
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySkywrath_Mage
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySkywrath_Mage_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemySkywrath_Mage
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySkywrath_Mage
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWarlock
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWarlock_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyWarlock
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWarlock
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBroodmother
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_26.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBroodmother_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyBroodmother
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBroodmother
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyNyx_Assassin
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_26.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyNyx_Assassin_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyNyx_Assassin
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyNyx_Assassin
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySandking
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_26.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySandking_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemySandking
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemySandking
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWeaver
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_26.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWeaver_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyWeaver
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyWeaver
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyAbaddon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyAbaddon_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyAbaddon
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyAbaddon
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBatrider
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_28.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBatrider_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyBatrider
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBatrider
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyChaos_Knight
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyChaos_Knight_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyChaos_Knight
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyChaos_Knight
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyChen
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyChen_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyChen
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyChen
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDisruptor
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDisruptor_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyDisruptor
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyDisruptor
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyKeeper_of_the_Light
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyKeeper_of_the_Light_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyKeeper_of_the_Light
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyKeeper_of_the_Light
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLuna
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLuna_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyLuna
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyLuna
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyGyrocopter
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyGyrocopter_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyGyrocopter
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyGyrocopter
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyJakiro
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyJakiro_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyJakiro
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyJakiro
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyViper
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyViper_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyViper
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyViper
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyVisage
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyVisage_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyVisage
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyVisage
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBounty_Hunter
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBounty_Hunter_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyBounty_Hunter
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBounty_Hunter
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyRiki
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyRiki_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyRiki
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyRiki
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyTemplar_Assassin
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyTemplar_Assassin_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyTemplar_Assassin
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyTemplar_Assassin
+}
+
 Response legion_commander_LearnIsLegionMomentChance_25%
 {
 	scene "scenes/legion_commander/legion_commander_legcom_momentofcourage_01.vcd" nodelay noscene speakonce
@@ -1818,6 +3505,19 @@ Rule legion_commander_LearnIsLegionMomentChance_25%_Rule
 {
 	criteria Learn Islegion_commander IsLegionMoment Chance_25%
 	response legion_commander_LearnIsLegionMomentChance_25%
+}
+
+Response legion_commander_LearnIsLegionMomentChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_momentofcourage_01.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_momentofcourage_02.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_momentofcourage_03.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_LearnIsLegionMomentChance_25%IsLegionEconDemon_Rule
+{
+	criteria Learn Islegion_commander IsLegionMoment Chance_25% IsLegionEconDemon
+	response legion_commander_LearnIsLegionMomentChance_25%IsLegionEconDemon
 }
 
 Response legion_commander_LevelUp
@@ -1841,6 +3541,27 @@ Rule legion_commander_LevelUp_Rule
 {
 	criteria LevelUp Islegion_commander 
 	response legion_commander_LevelUp
+}
+
+Response legion_commander_LevelUpIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_08.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_09.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_11.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_12.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_13.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_levelup_14.vcd" nodelay noscene 
+}
+
+Rule legion_commander_LevelUpIsLegionEconDemon_Rule
+{
+	criteria LevelUp Islegion_commander IsLegionEconDemon 
+	response legion_commander_LevelUpIsLegionEconDemon
 }
 
 Response legion_commander_AllyNearEarlyGameIsEnemyAxe
@@ -2195,6 +3916,347 @@ Rule legion_commander_AllyNearEarlyGameIsEnemyShredder_Rule
 	response legion_commander_AllyNearEarlyGameIsEnemyShredder
 }
 
+Response legion_commander_AllyNearEarlyGameIsEnemyAxeIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_03.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyAxeIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyAxe IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyAxeIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_04.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%IsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyQueenofPain Chance_25% IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%IsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyPudgeIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_05.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyPudgeIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyPudge IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyPudgeIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyCentaurIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_07.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyCentaurIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyCentaur IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyCentaurIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyLinaIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_08.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyLinaIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyLina IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyLinaIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChaos_Knight
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChaos_Knight_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyChaos_Knight
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChaos_Knight
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyMirana
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyMirana_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyMirana
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyMirana
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLuna
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLuna_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyLuna
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLuna
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChen
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChen_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyChen
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChen
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDisruptor
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDisruptor_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyDisruptor
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDisruptor
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKeeper_of_the_Light
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKeeper_of_the_Light_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyKeeper_of_the_Light
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKeeper_of_the_Light
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBatrider
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBatrider_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyBatrider
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBatrider
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyAbaddon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyAbaddon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyAbaddon
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyAbaddon
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKunkka
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKunkka_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyKunkka
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKunkka
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBeastmaster
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBeastmaster_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyBeastmaster
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBeastmaster
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyOmniknight
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyOmniknight_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyOmniknight
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyOmniknight
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBrewmaster
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBrewmaster_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyBrewmaster
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBrewmaster
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyTusk
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyTusk_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyTusk
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyTusk
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLycan
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLycan_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyLycan
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLycan
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllySniper
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllySniper_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllySniper
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllySniper
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyGyrocopter
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyGyrocopter_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyGyrocopter
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyGyrocopter
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyZuus
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyZuus_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyZuus
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyZuus
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDark_Seer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDark_Seer_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyDark_Seer
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDark_Seer
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLone_Druid
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLone_Druid_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyLone_Druid
+	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLone_Druid
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyRubickIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_12.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyRubickIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyRubick IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyRubickIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyOmniknightIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_13.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyOmniknightIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyOmniknight IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyOmniknightIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyEnchantressIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_16.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyEnchantressIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyEnchantress IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyEnchantressIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyShredderIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_20.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyShredderIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyShredder IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyShredderIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsEnemyDoom_BringerIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_ally_01.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsEnemyDoom_BringerIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyDoom_Bringer IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsEnemyDoom_BringerIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsAllyNevermoreIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_ally_01.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsAllyNevermoreIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsAllyNevermore IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsAllyNevermoreIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsAllyShadow_DemonIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_ally_01.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsAllyShadow_DemonIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsAllyShadow_Demon IsLegionEconDemon 
+	response legion_commander_AllyNearEarlyGameIsAllyShadow_DemonIsLegionEconDemon
+}
+
 Response legion_commander_LastHit
 {
 	scene "scenes/legion_commander/legion_commander_legcom_lasthit_01.vcd" nodelay noscene 
@@ -2225,6 +4287,35 @@ Rule legion_commander_LastHitChance_1%_Rule
 {
 	criteria LastHit Islegion_commander Chance_1%
 	response legion_commander_LastHitChance_1%
+}
+
+Response legion_commander_LastHitIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_10.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_11.vcd" nodelay noscene 
+}
+
+Rule legion_commander_LastHitIsLegionEconDemon_Rule
+{
+	criteria LastHit Islegion_commander IsLegionEconDemon
+	response legion_commander_LastHitIsLegionEconDemon
+}
+
+Response legion_commander_LastHitChance_1%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lasthit_13.vcd" nodelay noscene 
+}
+
+Rule legion_commander_LastHitChance_1%IsLegionEconDemon_Rule
+{
+	criteria LastHit Islegion_commander Chance_1% IsLegionEconDemon
+	response legion_commander_LastHitChance_1%IsLegionEconDemon
 }
 
 Response legion_commander_Death
@@ -2261,6 +4352,43 @@ Rule legion_commander_DeathIsReincarnating_Rule
 	response legion_commander_DeathIsReincarnating
 }
 
+Response legion_commander_DeathIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_08.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_10.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_11.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_12.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_13.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_death_14.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_death_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_death_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_death_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_DeathIsLegionEconDemon_Rule
+{
+	criteria Death Islegion_commander IsLegionEconDemon
+	response legion_commander_DeathIsLegionEconDemon
+}
+
+Response legion_commander_DeathIsReincarnatingIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_fastres_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_fastres_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_DeathIsReincarnatingIsLegionEconDemon_Rule
+{
+	criteria Death Islegion_commander IsReincarnating IsLegionEconDemon
+	response legion_commander_DeathIsReincarnatingIsLegionEconDemon
+}
+
 Response legion_commander_Respawn
 {
 	scene "scenes/legion_commander/legion_commander_legcom_respawn_01.vcd" nodelay noscene 
@@ -2279,6 +4407,24 @@ Rule legion_commander_Respawn_Rule
 {
 	criteria Respawn Islegion_commander 
 	response legion_commander_Respawn
+}
+
+Response legion_commander_RespawnIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_respawn_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_respawn_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_respawn_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_respawn_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_respawn_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_respawn_11.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_respawn_13.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_respawn_14.vcd" nodelay noscene 
+}
+
+Rule legion_commander_RespawnIsLegionEconDemon_Rule
+{
+	criteria Respawn Islegion_commander IsLegionEconDemon
+	response legion_commander_RespawnIsLegionEconDemon
 }
 
 Response legion_commander_PurchaseIsExpensiveItem
@@ -2483,6 +4629,208 @@ Rule legion_commander_PurchaseIsVanguard_Rule
 	response legion_commander_PurchaseIsVanguard
 }
 
+Response legion_commander_PurchaseIsExpensiveItemIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_purch_01.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_purch_02.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_purch_03.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsExpensiveItemIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsExpensiveItem IsLegionEconDemon
+	response legion_commander_PurchaseIsExpensiveItemIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsUltimateScepterIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_scepter_01.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_scepter_02.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsUltimateScepterIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsUltimateScepter IsLegionEconDemon
+	response legion_commander_PurchaseIsUltimateScepterIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsBlinkDaggerIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_blink_01.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_blink_02.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsBlinkDaggerIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsBlinkDagger IsLegionEconDemon
+	response legion_commander_PurchaseIsBlinkDaggerIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsBlackKingBarIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_01.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsBlackKingBarIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsBlackKingBar IsLegionEconDemon
+	response legion_commander_PurchaseIsBlackKingBarIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsAssaultCuirassIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_03.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsAssaultCuirassIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsAssaultCuirass IsLegionEconDemon
+	response legion_commander_PurchaseIsAssaultCuirassIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsUrnOfShadowsIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_04.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsUrnOfShadowsIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsUrnOfShadows IsLegionEconDemon
+	response legion_commander_PurchaseIsUrnOfShadowsIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsBladeMailIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_05.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsBladeMailIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsBladeMail IsLegionEconDemon
+	response legion_commander_PurchaseIsBladeMailIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsDaedalusIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_06.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsDaedalusIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsDaedalus IsLegionEconDemon
+	response legion_commander_PurchaseIsDaedalusIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsBattleFuryIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_07.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsBattleFuryIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsBattleFury IsLegionEconDemon
+	response legion_commander_PurchaseIsBattleFuryIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsDesolatorIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_08.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsDesolatorIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsDesolatorIsLegionEconDemon
+	response legion_commander_PurchaseIsDesolatorIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsHeartIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_09.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsHeartIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsHeart IsLegionEconDemon
+	response legion_commander_PurchaseIsHeartIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsHeavensIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_10.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsHeavensIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsHeavens IsLegionEconDemon
+	response legion_commander_PurchaseIsHeavensIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsSatanicIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsSatanicIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsSatanic IsLegionEconDemon
+	response legion_commander_PurchaseIsSatanicIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsBasherIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_12.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsBasherIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsBasher IsLegionEconDemon
+	response legion_commander_PurchaseIsBasherIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsAbyssalBladeIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_13.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsAbyssalBladeIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsAbyssalBlade IsLegionEconDemon
+	response legion_commander_PurchaseIsAbyssalBladeIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsAbyssalBladeChance_15%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_14.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsAbyssalBladeChance_15%IsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsAbyssalBlade Chance_15% IsLegionEconDemon
+	response legion_commander_PurchaseIsAbyssalBladeChance_15%IsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsArmletIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_15.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsArmletIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsArmlet IsLegionEconDemon
+	response legion_commander_PurchaseIsArmletIsLegionEconDemon
+}
+
+Response legion_commander_PurchaseIsVanguardIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_items_16.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_PurchaseIsVanguardIsLegionEconDemon_Rule
+{
+	criteria Purchase Islegion_commander IsVanguard IsLegionEconDemon
+	response legion_commander_PurchaseIsVanguardIsLegionEconDemon
+}
+
 Response legion_commander_Select
 {
 	scene "scenes/legion_commander/legion_commander_legcom_rare_01.vcd" nodelay noscene 
@@ -2496,6 +4844,19 @@ Rule legion_commander_Select_Rule
 	response legion_commander_Select
 }
 
+Response legion_commander_SelectIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rare_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rare_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_rare_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_SelectIsLegionEconDemon_Rule
+{
+	criteria Select Islegion_commander IsLegionEconDemon
+	response legion_commander_SelectIsLegionEconDemon
+}
+
 Response legion_commander_Bottling
 {
 	scene "scenes/legion_commander/legion_commander_legcom_bottle_01.vcd" nodelay noscene 
@@ -2506,6 +4867,18 @@ Rule legion_commander_Bottling_Rule
 {
 	criteria Bottling Islegion_commander 
 	response legion_commander_Bottling
+}
+
+Response legion_commander_BottlingIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_bottle_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_bottle_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_BottlingIsLegionEconDemon_Rule
+{
+	criteria Bottling Islegion_commander IsLegionEconDemon
+	response legion_commander_BottlingIsLegionEconDemon
 }
 
 Response legion_commander_Deny
@@ -2529,6 +4902,29 @@ Rule legion_commander_Deny_Rule
 {
 	criteria Deny Islegion_commander 
 	response legion_commander_Deny
+}
+
+Response legion_commander_DenyIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_08.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_10.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_11.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_12.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_13.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_deny_14.vcd" nodelay noscene 
+}
+
+Rule legion_commander_DenyIsLegionEconDemon_Rule
+{
+	criteria Deny Islegion_commander IsLegionEconDemon
+	response legion_commander_DenyIsLegionEconDemon
 }
 
 Response legion_commander_MissingIsLaneTop
@@ -2562,6 +4958,39 @@ Rule legion_commander_MissingIsLaneBot_Rule
 {
 	criteria Missing Islegion_commander IsLaneBot
 	response legion_commander_MissingIsLaneBot
+}
+
+Response legion_commander_MissingIsLaneTopIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lanemissing_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_MissingIsLaneTopIsLegionEconDemon_Rule
+{
+	criteria Missing Islegion_commander IsLaneTop IsLegionEconDemon
+	response legion_commander_MissingIsLaneTopIsLegionEconDemon
+}
+
+Response legion_commander_MissingIsLaneMidIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lanemissing_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_MissingIsLaneMidIsLegionEconDemon_Rule
+{
+	criteria Missing Islegion_commander IsLaneMid IsLegionEconDemon
+	response legion_commander_MissingIsLaneMidIsLegionEconDemon
+}
+
+Response legion_commander_MissingIsLaneBotIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lanemissing_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_MissingIsLaneBotIsLegionEconDemon_Rule
+{
+	criteria Missing Islegion_commander IsLaneBot IsLegionEconDemon
+	response legion_commander_MissingIsLaneBotIsLegionEconDemon
 }
 
 Response legion_commander_ItemDropIsCommonDrop
@@ -2598,6 +5027,40 @@ Rule legion_commander_ItemDropIsUltraRareDrop_Rule
 	response legion_commander_ItemDropIsUltraRareDrop
 }
 
+Response legion_commander_ItemDropIsCommonDropIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_itemcommon_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_itemcommon_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_ItemDropIsCommonDropIsLegionEconDemon_Rule
+{
+	criteria ItemDrop Islegion_commander IsCommonDrop IsLegionEconDemon
+	response legion_commander_ItemDropIsCommonDropIsLegionEconDemon
+}
+
+Response legion_commander_ItemDropIsRareDropIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_itemmoderate_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_ItemDropIsRareDropIsLegionEconDemon_Rule
+{
+	criteria ItemDrop Islegion_commander IsRareDrop IsLegionEconDemon
+	response legion_commander_ItemDropIsRareDropIsLegionEconDemon
+}
+
+Response legion_commander_ItemDropIsUltraRareDropIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_itemrare_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_ItemDropIsUltraRareDropIsLegionEconDemon_Rule
+{
+	criteria ItemDrop Islegion_commander IsUltraRareDrop IsLegionEconDemon
+	response legion_commander_ItemDropIsUltraRareDropIsLegionEconDemon
+}
+
 Response legion_commander_Immortality
 {
 	scene "scenes/legion_commander/legion_commander_legcom_iimmort_01.vcd" nodelay noscene 
@@ -2618,6 +5081,28 @@ Rule legion_commander_ImmortalityChance_25%_Rule
 {
 	criteria Immortality Islegion_commander Chance_25%
 	response legion_commander_ImmortalityChance_25%
+}
+
+Response legion_commander_ImmortalityIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_iimmort_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_ImmortalityIsLegionEconDemon_Rule
+{
+	criteria Immortality Islegion_commander IsLegionEconDemon
+	response legion_commander_ImmortalityIsLegionEconDemon
+}
+
+Response legion_commander_ImmortalityChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_iimmort_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_ImmortalityChance_25%IsLegionEconDemon_Rule
+{
+	criteria Immortality Islegion_commander Chance_25% IsLegionEconDemon
+	response legion_commander_ImmortalityChance_25%IsLegionEconDemon
 }
 
 Response legion_commander_PowerupIsPowerupHaste
@@ -2732,6 +5217,117 @@ Rule legion_commander_PowerupIsPowerupInvisibilityChance_25%_Rule
 	response legion_commander_PowerupIsPowerupInvisibilityChance_25%
 }
 
+Response legion_commander_PowerupIsPowerupHasteIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_haste_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupHasteIsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupHaste IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupHasteIsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupHasteChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_haste_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupHasteChance_25%IsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupHaste Chance_25% IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupHasteChance_25%IsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupDoubleDamageIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_doubdam_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupDoubleDamageIsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupDoubleDamage IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupDoubleDamageIsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupDoubleDamageChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupDoubleDamageChance_25%IsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupDoubleDamage Chance_25% IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupDoubleDamageChance_25%IsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupRegenerationIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_regen_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupRegenerationIsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupRegeneration IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupRegenerationIsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupRegenerationChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_regen_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupRegenerationChance_25%IsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupRegeneration Chance_25% IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupRegenerationChance_25%IsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupIllusionIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_illus_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupIllusionIsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupIllusion IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupIllusionIsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupIllusionChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_illus_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupIllusionChance_25%IsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupIllusion Chance_25% IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupIllusionChance_25%IsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupInvisibilityIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_invis_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupInvisibilityIsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupInvisibility IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupInvisibilityIsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupInvisibilityChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_invis_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_invis_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupInvisibilityChance_25%IsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupInvisibility Chance_25% IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupInvisibilityChance_25%IsLegionEconDemon
+}
+
 Response legion_commander_CooldownLittleNag
 {
 	scene "scenes/legion_commander/legion_commander_legcom_notyet_01.vcd" nodelay noscene 
@@ -2769,6 +5365,45 @@ Rule legion_commander_CooldownSuperNag_Rule
 {
 	criteria Cooldown Islegion_commander SuperNag
 	response legion_commander_CooldownSuperNag
+}
+
+Response legion_commander_CooldownLittleNagIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_07.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CooldownLittleNagIsLegionEconDemon_Rule
+{
+	criteria Cooldown Islegion_commander LittleNag IsLegionEconDemon
+	response legion_commander_CooldownLittleNagIsLegionEconDemon
+}
+
+Response legion_commander_CooldownMediumNagIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_08.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CooldownMediumNagIsLegionEconDemon_Rule
+{
+	criteria Cooldown Islegion_commander MediumNag IsLegionEconDemon
+	response legion_commander_CooldownMediumNagIsLegionEconDemon
+}
+
+Response legion_commander_CooldownSuperNagIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_notyet_09.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CooldownSuperNagIsLegionEconDemon_Rule
+{
+	criteria Cooldown Islegion_commander SuperNag IsLegionEconDemon
+	response legion_commander_CooldownSuperNagIsLegionEconDemon
 }
 
 Response legion_commander_NoManaLittleNag
@@ -2810,6 +5445,45 @@ Rule legion_commander_NoManaSuperNag_Rule
 	response legion_commander_NoManaSuperNag
 }
 
+Response legion_commander_NoManaLittleNagIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_07.vcd" nodelay noscene 
+}
+
+Rule legion_commander_NoManaLittleNagIsLegionEconDemon_Rule
+{
+	criteria NoMana Islegion_commander LittleNag IsLegionEconDemon
+	response legion_commander_NoManaLittleNagIsLegionEconDemon
+}
+
+Response legion_commander_NoManaMediumNagIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_08.vcd" nodelay noscene 
+}
+
+Rule legion_commander_NoManaMediumNagIsLegionEconDemon_Rule
+{
+	criteria NoMana Islegion_commander MediumNag IsLegionEconDemon
+	response legion_commander_NoManaMediumNagIsLegionEconDemon
+}
+
+Response legion_commander_NoManaSuperNagIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_nomana_09.vcd" nodelay noscene 
+}
+
+Rule legion_commander_NoManaSuperNagIsLegionEconDemon_Rule
+{
+	criteria NoMana Islegion_commander SuperNag IsLegionEconDemon
+	response legion_commander_NoManaSuperNagIsLegionEconDemon
+}
+
 Response legion_commander_Thanks
 {
 	scene "scenes/legion_commander/legion_commander_legcom_thanks_01.vcd" nodelay noscene 
@@ -2821,6 +5495,18 @@ Rule legion_commander_Thanks_Rule
 {
 	criteria Thanks Islegion_commander 
 	response legion_commander_Thanks
+}
+
+Response legion_commander_ThanksIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_thanks_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_thanks_03.vcd" nodelay noscene 
+}
+
+Rule legion_commander_ThanksIsLegionEconDemon_Rule
+{
+	criteria Thanks Islegion_commander IsLegionEconDemon
+	response legion_commander_ThanksIsLegionEconDemon
 }
 
 Response legion_commander_PainChance_25%
@@ -2855,6 +5541,38 @@ Rule legion_commander_Pain_Rule
 	response legion_commander_Pain
 }
 
+Response legion_commander_PainChance_25%IsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule legion_commander_PainChance_25%IsLegionEconDemon_Rule
+{
+	criteria Pain Islegion_commander Chance_25% IsLegionEconDemon
+	response legion_commander_PainChance_25%IsLegionEconDemon
+}
+
+Response legion_commander_PainIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_08.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_09.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_10.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_11.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_12.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_pain_13.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PainIsLegionEconDemon_Rule
+{
+	criteria Pain Islegion_commander IsLegionEconDemon
+	response legion_commander_PainIsLegionEconDemon
+}
+
 Response legion_commander_InTheBag
 {
 	scene "scenes/legion_commander/legion_commander_legcom_inthebag_01.vcd" nodelay noscene 
@@ -2865,6 +5583,18 @@ Rule legion_commander_InTheBag_Rule
 {
 	criteria InTheBag Islegion_commander 
 	response legion_commander_InTheBag
+}
+
+Response legion_commander_InTheBagIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_inthebag_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_inthebag_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_InTheBagIsLegionEconDemon_Rule
+{
+	criteria InTheBag Islegion_commander IsLegionEconDemon
+	response legion_commander_InTheBagIsLegionEconDemon
 }
 
 Response legion_commander_Defeat
@@ -2879,6 +5609,20 @@ Rule legion_commander_Defeat_Rule
 {
 	criteria Defeat Islegion_commander 
 	response legion_commander_Defeat
+}
+
+Response legion_commander_DefeatIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lose_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lose_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_lose_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_lose_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_DefeatIsLegionEconDemon_Rule
+{
+	criteria Defeat Islegion_commander IsLegionEconDemon
+	response legion_commander_DefeatIsLegionEconDemon
 }
 
 Response legion_commander_Victory
@@ -2897,6 +5641,21 @@ Rule legion_commander_Victory_Rule
 	response legion_commander_Victory
 }
 
+Response legion_commander_VictoryIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_win_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_win_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_win_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_win_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_win_07.vcd" nodelay noscene 
+}
+
+Rule legion_commander_VictoryIsLegionEconDemon_Rule
+{
+	criteria Victory Islegion_commander IsLegionEconDemon
+	response legion_commander_VictoryIsLegionEconDemon
+}
+
 Response legion_commander_EmoteIsEmoteLaugh
 {
 	scene "scenes/legion_commander/legion_commander_legcom_laugh_01.vcd" nodelay noscene 
@@ -2913,5 +5672,23 @@ Rule legion_commander_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Islegion_commander IsEmoteLaugh
 	response legion_commander_EmoteIsEmoteLaugh
+}
+
+Response legion_commander_EmoteIsEmoteLaughIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_08.vcd" nodelay noscene 
+}
+
+Rule legion_commander_EmoteIsEmoteLaughIsLegionEconDemon_Rule
+{
+	criteria Emote Islegion_commander IsEmoteLaugh IsLegionEconDemon
+	response legion_commander_EmoteIsEmoteLaughIsLegionEconDemon
 }
 

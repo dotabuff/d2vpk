@@ -1417,7 +1417,7 @@
 		"CMEnabled"				"1"
 		"url"				"Earthshaker"
 		"new_player_enable"			"1"
-		"NoCombine"					"1"
+		"NoCombine"					"0"
 		"LastHitChallengeRival"		"npc_dota_hero_tiny"
 
 		// Abilities
@@ -9009,8 +9009,8 @@
 		"BotImplemented"		"1"
 		"PickSound"					"skeleton_king_wraith_spawn_01"
 		"BanSound"					"skeleton_king_wraith_anger_04"
-		"NameAliases"			"sk;snk"
-		"url"			"Skeleton_King"
+		"NameAliases"			"sk;snk;wk"
+		"url"			"Wraith_King"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_sand_king"
 
@@ -10221,7 +10221,7 @@
 		"BanSound"					"luna_luna_anger_02"
 		"url" 			"Luna"
 		"CMEnabled"					"1"
-		"NoCombine"					"1"
+		"NoCombine"					"0"
 		"LastHitChallengeRival"		"npc_dota_hero_lina"
 
 		// Abilities
@@ -20577,7 +20577,7 @@
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"320"									// Speed.
-		"MovementTurnRate"			"0.6"									// Turning rate.
+		"MovementTurnRate"			"0.5"									// Turning rate.
 		
 		"HealthBarOffset"			"200"
 		
