@@ -76,6 +76,9 @@ function FrostivusGameMode:_SetInitialValues()
 	self.flDefeatTimer = 0
 	self.flVictoryTimer = 0
 
+	self.nRestartVoteYes = 0
+	self.nRestartVoteNo = 0
+
 	self.hStatusQuest = nil
 
 	self.thinkState = Dynamic_Wrap( FrostivusGameMode, '_thinkState_Prep' )
@@ -195,9 +198,12 @@ function FrostivusGameMode:_RestartGame()
 		UTIL_RemoveImmediate( item )
 	end
 	self:_respawnTowers()
-	for i=0,4 do
-		Players:SetGold( i, STARTING_GOLD, false )
-		Players:SetGold( i, 0, true )
+	for playerID=0,4 do
+		Players:SetGold( playerID, STARTING_GOLD, false )
+		Players:SetGold( playerID, 0, true )
+		Players:SetBuybackCooldownTime( playerID, 0 )
+		Players:SetBuybackGoldLimitTime( playerID, 0 )
+		Players:ResetBuybackCostTime( playerID )
 	end
 
 	-- Reset values
@@ -322,6 +328,8 @@ function FrostivusGameMode:SkipToRound( nRoundNumber )
 	self:_populatePlayerHeroData()
 	for i,heroEntity in ipairs( HeroList:GetAllHeroes() ) do
 		Players:SetBuybackCooldownTime( heroEntity:GetPlayerID(), 0 )
+		Players:SetBuybackGoldLimitTime( heroEntity:GetPlayerID(), 0 )
+		Players:ResetBuybackCostTime( heroEntity:GetPlayerID() )
 	end
 
 	-- update custom hero, unit, ability and item values from disk
@@ -706,6 +714,8 @@ function FrostivusGameMode:_respawnTowers()
 			if fortificationAbility then
 				fortificationAbility:SetLevel( self.nRoundNumber / 2 )
 			end
+
+			building:RemoveModifierByName( "modifier_invulnerable" )
 		end
 	end
 	self.hAncient:SetHealth( self.hAncient:GetMaxHealth() )
@@ -972,6 +982,8 @@ function FrostivusGameMode:_checkRestartVotes()
 			else
 				self:_choseExitGame()
 			end
+			self.nRestartVoteYes = 0
+			self.nRestartVoteNo = 0
 			FireGameEvent( "holdout_restart_vote_end", {} )
 		end
 	end

@@ -8995,7 +8995,7 @@
 		"Portrait"				"vgui/hud/heroportraits/portrait_skeletonking"		// Small image for hero selection
 		"IdleExpression"				"scenes/skeleton_king/skeleton_king_exp_idle_01.vcd"		// custom facial animation idle
 		"SoundSet"				"Hero_SkeletonKing"							// Name of sound set.
-		"Enabled"				"0"
+		"Enabled"				"1"
 		//"LowViolence"				"1"
 		"HeroPool1"					"1"
 		"HeroUnlockOrder"		"0"
@@ -15520,6 +15520,16 @@
 			"6"
 			{
 				"SlotIndex"	"6"
+				"SlotName"	"belt"
+				"SlotText"	"#LoadoutSlot_Belt"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"760"
+				"MaxPolygonsLOD1"	"760"
+			}	
+			"7"
+			{
+				"SlotIndex"	"7"
 				"SlotName"	"taunt"
 				"SlotText"	"#LoadoutSlot_Taunt"
 			}
@@ -20539,7 +20549,7 @@
 		"NameAliases"				"Tresdin,Legion"
 		"PickSound"					"legion_commander_legcom_spawn_01"
 		"BanSound"					"legion_commander_legcom_anger_07"
-		"url" 						"LegionCommander"
+		"url" 						"Legion_Commander"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
 
 		// Abilities
