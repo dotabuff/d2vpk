@@ -593,6 +593,12 @@ end
 
 -- Think function called from C++, every second.
 function FrostivusGameMode:Think()
+	-- If the game's over, it's over.
+	if GameRules:State_Get() >= DOTA_GAMERULES_STATE_POST_GAME then
+		self._scriptBind:EndThink( "GameThink" )
+		return
+	end
+
 	-- Track game time, since the dt passed in to think is actually wall-clock time not simulation time.
 	local now = GameRules:GetGameTime()
 	if self.t0 == nil then
@@ -1026,62 +1032,18 @@ function FrostivusGameMode:_choseRestartGame()
 	GameRules:SetSafeToLeave( false )
 
 	if self.nGameEndState == VICTORIOUS then
-		-- Clean up everything on the ground; gold, tombstones, items, everything.
-		while GameRules:NumDroppedItems() > 0 do
-			local item = GameRules:GetDroppedItem(0)
-			UTIL_RemoveImmediate( item )
-		end
-
-		self:_respawnTowers()
-
-		print( "_choseRestartGame victorious!" )
-
-		PauseGame( false )
-		Convars:SetBool( "dota_pause_game_pause_silently", false )
-
-		for i,heroEntity in ipairs( HeroList:GetAllHeroes() ) do 
-			local playerEntity = heroEntity:GetPlayerOwner()
-			if playerEntity then
-				-- Keep the hero in the same place.
-				local oldPosition = heroEntity:GetOrigin()
-				playerEntity:ReplaceHeroWith( heroEntity:GetUnitName(), STARTING_GOLD, 0 )
-				playerEntity:GetAssignedHero():SetOrigin( oldPosition )
-			end
-		end
-		self:_populatePlayerHeroData()
-
 		-- increase difficulty
 		self.nDifficulty = self.nDifficulty + 1
 		local eventData = {
 			nRoundDifficulty = self.nDifficulty
 		}
 		FireGameEvent( "holdout_starting_next_difficulty", eventData )
-
-		FireGameEvent( "dota_reset_suggested_items", {} )
-
-		self.nRoundNumber = 1
-		
-		self.thinkState = Dynamic_Wrap( FrostivusGameMode, '_thinkState_Prep' )
-		self:thinkState( 0 )
-	else
-
-		print( "_choseRestartGame defeated!" )
-
-		self:_RestartGame()
-		
-		PauseGame( false )
-		Convars:SetBool( "dota_pause_game_pause_silently", false )
-
-		for i,heroEntity in ipairs( HeroList:GetAllHeroes() ) do
-			local playerEntity = heroEntity:GetPlayerOwner()
-			if playerEntity then
-				playerEntity:ReplaceHeroWith( heroEntity:GetUnitName(), 625, 0 )
-			end
-		end
 	end
 	
+	self:_RestartGame()
+	PauseGame( false )
+	Convars:SetBool( "dota_pause_game_pause_silently", false )
 	self:_showWraithKing()
-
 	self.nGameEndState = NOT_ENDED
 end
 
@@ -1314,7 +1276,6 @@ function FrostivusGameMode:_thinkState_Prep( dt )
 
 		if not self:_startNextRound( dt ) then
 			Msg( "_startNextRound returned false.\n" )
-			self._scriptBind:EndThink( "GameThink" )
 			return
 		end
 		self.thinkState = Dynamic_Wrap( FrostivusGameMode, '_thinkState_InRound' )

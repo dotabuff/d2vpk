@@ -2,7 +2,10 @@
 { 
 	"Language" "English" 
 	"Tokens" 
-	{ 
+	{
+
+		"DOTA_ItemOnSale"		"SALE!"
+		
 		"DOTA_AttackMove"		"Attack Move"
 		"DOTA_Move"			"Move"
 		"DOTA_UnitQuery"		"Query an object/unit"
@@ -489,7 +492,9 @@
 		"DOTA_Chat_NoBattlePoints_Bots"	"Battle Points will not be awarded for this match because it is against bots."
 		"DOTA_Chat_NoBattlePoints_CheatsEnabled" "Battle Points will not be awarded for this match because cheats are enabled."
 		"DOTA_Chat_NoBattlePoints_LowPriority" "You will not receive Battle Points because you are in the Low Priority Punishment Pool."
-		"DOTA_Chat_CoopBattlePointsRules"	"The standard Abandonment and AFK rules now apply to Co-op Bot games!  Battle points and end-of-game drops have also been re-enabled."
+		"DOTA_Chat_CoopBattlePointsRules"	"The standard abandonment and AFK rules now apply to Co-op Bot games!  Battle points and end-of-game drops have also been re-enabled."
+		"DOTA_Chat_Frostivus_Abandon_Reminder"	"The standard abandonment and AFK rules apply to Wraith-Night matches!  Abandoning Wraith-Night games may lead to punishment by placement in the low-priority queue." 
+		"DOTA_Chat_Ranked_Reminder"		"Abandonment is treated more severely in ranked matches.  Matchmaking Rating (MMR) will be updated for any match that progresses past first blood."
 		"DOTA_Chat_ItemGifted"			"%s1 received the gift %s2 from %s3!"
 
 		"dota_watch_totalprize"				"Total Prize Pool: $%s1 (Base : $%s2 Contributed: $%s3)"
@@ -870,6 +875,7 @@
 		"DOTA_TutorialBody_UseItemIntro"	"To use the Town Portal Scroll, left-click it then left-click your desired destination in the mini-map. Teleport is a channeling spell, so be careful not to interrupt it by giving your hero another command while you cast it."
 		
 		"DOTA_TutorialTask_UseTPScroll"		"Use your Town Portal Scroll to teleport."
+
 
 		"DOTA_TutorialTitle_StayInLane"		"Staying in Lane"
 		"DOTA_TutorialBody_StayInLane"		"Since you earn experience and gold from defeating enemy units it's important to spend time in the lane at the beginning of the game. Return to your lane to get back into combat."
@@ -8754,8 +8760,8 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"matchmaking_denied_local"									"You are unable to find a match for %s1"
 		"matchmaking_denied_party"									"%s1 will prevent your party from finding\na match for %s2"
 		"matchmaking_account_disabled"								"You have been too disruptive and will not be able to chat or join the matchmaking queue for %s1"
-		"matchmaking_low_priority_local"							"You have %s1 remaining in the low priority matchmaking pool due to abandoning games or receiving excessive player reports."
-		"matchmaking_low_priority_party"							"%s1 will only allow low priority matchmaking for %s2 due to abandoning games or receiving excessive player reports."
+		"matchmaking_low_priority_local"							"You have %s1 remaining in the low priority matchmaking pool due to abandoning games."
+		"matchmaking_low_priority_party"							"%s1 will only allow low priority matchmaking for %s2 due to abandoning games."
 		"matchmaking_match_disabled_local"							"You are prevented from matching for %s1 due to failing to ready-up or abandoning your last game"
 		"matchmaking_match_disabled_party"							"%s1 will prevent matching for %s2 due to failing to ready-up or abandoning his or her last game"
 		"returning_top_of_queue"									"Returning to matchmaking with high priority"
@@ -8767,7 +8773,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"low_priority_game"										"%s1 game"
 		"low_priority_games"									"%s1 games"
 		"hero_spawn_low_priority_header"						"Low-Priority Match"
-		"hero_spawn_low_priority_warning"						"You are in a low-priority match due to you or someone in your party abandoning games or receiving excessive reports.  While you are in low-priority, you will not receive battle points, and you will only be matched with other players in the low-priority pool."
+		"hero_spawn_low_priority_warning"						"You are in a low-priority match due to you or someone in your party abandoning games.  While you are in low-priority, you will not receive battle points, and you will only be matched with other players in the low-priority pool."
 		"limited_heroes_abandon_header"							"Limited Heroes Mode"
 		"limited_heroes_abandon_explanation"					"There is no penalty for leaving a Limited Heroes mode match, as your hero will be replaced by a bot.  Leaving any other game mode may result in placement in the low-priority pool."
 		
@@ -8841,7 +8847,8 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_RecruitInviteResponse_Accept_Header"					"RECRUITMENT ACCEPTED"
 		"DOTA_RecruitInviteResponse_Accept"							"Congratulations, you have been recruited by %s1!"
 		"DOTA_RecruitInviteSend_Header"								"RECRUITMENT REQUEST SENT"
-		"DOTA_RecruitInviteSend_Body"								"Recruitment requests have been sent to all selected friends.  The status of your requests will be reflected in the status panel."
+		"DOTA_RecruitInviteSend_Body"								"Recruitment requests have been sent to all selected friends.  The status of your requests is reflected in the status panel."
+		"DOTA_RecruitInviteSend_BodySingle"							"A Recruitment request has been sent to %s1.  The status of this request is reflected in the Friend Recruiting tab in your Profile."
 		"dota_profile_friend_invite_send"							"SEND"
 		"DOTA_SendFriendRecruitsFailed"								"Failed to recruit friends!\n\nPlease try again."
 		"dota_recruitpanel_header"									"Recruit Your Friends to Play Dota 2"
@@ -8851,6 +8858,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"dota_recruit_tooltip_recruiter"							"This player has recruited you."
 		"dota_recruit_tooltip_recruit"								"You have recruited this player."
 		"dota_recruit_tooltip_recruit_bonus"						"You have recruited this player, and when playing together will earn 50% increased Battle Points."
+		"DOTA_RecruitFriend"										"Recruit Friend"
 
 		"dota_prfile_wins_hero"										"W"
 		"dota_prfile_losses_hero"									"L"
@@ -11675,7 +11683,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_EggEssence_Confirm"		"Are you sure you want to infuse the egg with this essence? This action cannot be undone!"
 		"DOTA_UnusualPaint_Confirm"		"Are you sure you want to apply <font color='#%s1'>this color</font> to your Unusual item? The original color will be replaced. This action cannot be undone!"
 		"DOTA_LeagueNoOwnership"		"No Tournament Access"
-		"DOTA_LeagueNoOwnership_Desc"	"You don't have access to this Tournament. Would you like to go to the Dota 2 Store for more information?"
+		"DOTA_LeagueNoOwnership_Desc"	"You don't have access to this Tournament. Would you like to purchase a ticket?"
 		"DOTA_TournamentProgram_Confirm"	"Are you sure you want to activate this Tournament Program?"
 		"DOTA_Autograph_Confirm"		"Are you sure you want to attach the autograph to this item?"
 		
