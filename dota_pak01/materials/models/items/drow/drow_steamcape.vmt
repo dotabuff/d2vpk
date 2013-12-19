@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/drow/drow_steamcape_color"
+	"$normalmap" "models/items/drow/drow_steamcape_normal"
+	"$maskmap1" "models/items/drow/drow_steamcape_mask1"
+	"$maskmap2" "models/items/drow/drow_steamcape_mask2"
+
+
+
+	$SPECULAREXPONENT 70
+	$SPECULARSCALE 1.4
+	$SPECULARCOLOR "[.5 .9 1]"
+	$alphatest 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

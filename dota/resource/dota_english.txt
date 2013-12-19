@@ -5864,7 +5864,7 @@ Though victorious, the survivors saw little to celebrate: the city lay in ruins,
 		"DOTA_Tooltip_ability_earth_spirit_magnetize_damage_duration"		"DEBUFF DURATION:"
 		"DOTA_Tooltip_ability_earth_spirit_magnetize_damage_per_second"		"DAMAGE PER SECOND:"
 		"DOTA_Tooltip_ability_earth_spirit_magnetize_lore"					"At the Earth Spirit’s call, the minerals in the blood and bones of his enemies rebel against the bodies they find themselves in."
-		"npc_dota_hero_earth_spirit_bio"									"Deep amid the Upland crags and cliffs there runs a seam of sacred jade long foresworn by highland minders. From this rare material, the likeness of the great general Kaolin was carved and buried at the head of a stone funerary army ten thousand strong--a force of soldiers and holy men, jesters and acrobats, carved by crafstmen and entombed for millennia in the dark embrace of the Earth.
+		"npc_dota_hero_earth_spirit_bio"									"Deep amid the Upland crags and cliffs there runs a seam of sacred jade long foresworn by highland miners. From this rare material, the likeness of the great general Kaolin was carved and buried at the head of a stone funerary army ten thousand strong--a force of soldiers and holy men, jesters and acrobats, carved by crafstmen and entombed for millennia in the dark embrace of the Earth.
 What the craftsmen had not known was that within the strange seam of jade flowed the spirit of the Earth itself--an elemental force at one with the planet. When the force within the carved jade found itself cut off from the life's blood of the world, it gathered its strength over the course of a thousand years and dug itself free and into the light. Now the great Kaolin Earth Spirit strides the Upland roads, fighting for the spirit of the Earth; and in times of need calls forth remnants of his buried army still locked in the loving embrace of the soil."
 
 
@@ -8913,6 +8913,10 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"dota_lobby_type_coop_bot"									"Co-op Bot"
 		"dota_lobby_type_team_matchmaking"							"Team Matchmaking"
 		"dota_lobby_type_competitive"								"Ranked Match"
+		"dota_lobby_type_competitive_solo_uncalibrated"				"Ranked Match Solo (Calibrating)"
+		"dota_lobby_type_competitive_party_uncalibrated"			"Ranked Match Party (Calibrating)"
+		"dota_lobby_type_competitive_solo"							"Ranked Match Solo @%s1 %s2"
+		"dota_lobby_type_competitive_party"							"Ranked Match Party @%s1 %s2"
 		"dota_lobby_tab_tournament"									"TOURNAMENTS"
 		"dota_lobby_lan_title"										"LOCAL LOBBY"
 		"dota_lobby_default_title"									"ONLINE LOBBY"
@@ -11472,6 +11476,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		// Partners - Only localize into the partner's actual brand name in that language. 
 		// I.e.: Beyond the Summit doesn't become 'Mas alle de la Cumbre' unless they actually market themselves that way in Spanish. Which I doubt they do.
 		"DOTA_Corporation_BeyondTheSummit"	"Beyond the Summit"
+		"DOTA_Corporation_D2L"	"D2L"
 		
 		// All teams with pennants should be defined in items_partners.txt and have their names here.
 		"DOTA_Team_AbsoluteLegends"			"Absolute Legends"		
@@ -11726,6 +11731,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"Attrib_Renamed"		"This item has been renamed.\nOriginal name: \"%s1\""
 		"Attrib_CustomDesc"		"This item has a user written description."
 		"Attrib_TradableAfter"	"This item can be traded after %s1"
+		"Attrib_TradableAfterDate" "\nTradable After: %s1"
 		
 		"DOTA_GiftedItems"				"%s1 has given a gift to %s2!"
 		"DOTA_GifterText_Random"		"%recipient% was selected at random to receive a gift from %giver%!"
@@ -12273,6 +12279,8 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"StoreBanner_Text_DP_MortalCoil"		"Her beauty is deadly."
 		"StoreBanner_Header_Frostivus_Key"		"Frostivus 2013 Treasure Key"
 		"StoreBanner_Text_Frostivus_Key"		"<p style='color:#a93827; font-size:14px;'>Sales end and unopened Chests will vanish Sunday, January 12th!</p>"
+		"StoreBanner_Header_D2L_Butchers_Broilers"	"The Butcher's Broilers"
+		"StoreBanner_Text_D2L_Butchers_Broilers"	"Show support for the HyperX D2L Season 4 with these hot new Pudge weapons."
 
 		"Playtab_Quiz_Title"						"The Shopkeeper's Quiz"
 		"Playtab_Quiz_Subtitle"						"Test your Dota 2 item knowledge!"
@@ -14932,21 +14940,21 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"Present5_D5"					"Drag any Common rarity item here to satisfy this crafting recipe."
 		"Present6_T1"					"Custom HUD Skins"
 		"Present6_D1"					"These items are equipped in your Player Loadout, and change the visuals used throughout the in-game HUD."
-		"Present6_D2"					"Whenever you have a custom HUD equipped, other players in your games will be able to use it as well. Next game, try clicking the 'Shared Content' button in the top bar to see what cosmetic items other players are sharing with you!"
+		"Present6_D2"					"Whenever you have a custom HUD equipped, other players in your games will be able to use it as well. In your next game, try clicking the 'Shared Content' button in the top bar to see what cosmetic items other players are sharing with you!"
 		"Present6_T2"					"More Gems"
 		"Present6_T3"					"Shared Content"
 		"Present6_I1"					"Inscribed Wards Placed Gem"
 		"Present6_I2"					"HUD: Cruel Diretide"
 		"Present6_D3"					"This Gem will keep track of how many observer and sentry wards you've placed in games. Great for showing people how seriously you play Support roles!"
 		"Present7_T1"					"Treasure Chests"
-		"Present7_D1"					"While playing games, you'll also find various types of Treasure Chests. Each chest will show you a list of items it may contain, which often includes some of the rarest and most valuable items in Dota."
-		"Present7_D2"					"To open a Treasure Chest, you need a corresponding key. We've already given you a Welcoming Chest Key, so you can go ahead and open your Welcoming Chest by right clicking on it in the Armory. For other chests, you can purchase keys from the Dota 2 Store, or trade with other players to get them."
+		"Present7_D1"					"While playing games, you'll also find various types of Treasure Chests. Each chest will show you a list of items it may contain, which often include some of the rarest and most valuable items in Dota 2."
+		"Present7_D2"					"To open a Treasure Chest, you need a corresponding key. We've already given you a Welcoming Chest Key, so you can go ahead and open your Welcoming Chest by right-clicking on it in the Armory. For other chests, you can purchase keys from the Dota 2 Store, or trade with other players to get them."
 		"Present7_T2"					"Changing Gems"
-		"Present7_D3"					"Want to swap out a Gem in an item? Or move a Gem from one item to another, while retaining the stats on it? Use the Artificer's Hammer to remove the Gem from the item it's in, freeing up the socket to put something else in."
+		"Present7_D3"					"Want to swap out a Gem in an item? Or move a Gem from one item to another while retaining its stats? Use the Artificer's Hammer to remove the Gem from the item it's in, freeing up the socket to put something else in."
 		"Present7_D4"					"Chests"
 		"Present7_D5"					"Keys"
 		"Present8_T1"					"Custom Couriers"
-		"Present8_D1"					"The Mighty Boar you just received is a cosmetic courier, which replaces the in-game visuals for your courier. Like cosmetic wards, couriers are equipped in your Player Loadout, and take effect no matter what Hero you play. There are many custom couriers, so find one that suits your style!"
+		"Present8_D1"					"The Mighty Boar you just received is a cosmetic courier, which replaces the in-game visuals for your courier. Like cosmetic wards, couriers are equipped in your Player Loadout, and take effect no matter which Hero you play. There are many custom couriers, so find one that suits your style!"
 		"Present8_T2"					"Armory Expanders"
 		"Present8_D2"					"Running out of room in your Armory? Armory expanders permanently increase the amount of storage space you have for items. Right click on the one we've just given you and select 'Expand' to use it."
 		"Present9_T1"					"Custom Announcers"

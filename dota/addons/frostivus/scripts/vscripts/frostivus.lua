@@ -218,11 +218,8 @@ function FrostivusGameMode:_RestartGame()
 	FireGameEvent( "dota_reset_suggested_items", {} )
 
 	-- Reset voting
-	local voteCount = #self.votes
-	local iVote = 0
-	for iVote = 1, voteCount do
-		self.votes[iVote] = nil
-	end
+	self.votes = {}
+	self.flEndTime = nil
 end
 
 function FrostivusGameMode:_StartRoundConsoleCommand(...)
@@ -949,7 +946,6 @@ function FrostivusGameMode:_showFrostivusEndScreen()
 	self.nRestartVoteYes = 0
 	self.nRestartVoteNo = 0
 	self.votes = {}
-	self.flEndTime = Time() + flVoteDuration
 end
 
 function FrostivusGameMode:_voteRestartGame( nPlayerID )
@@ -971,6 +967,10 @@ function FrostivusGameMode:_voteExitGame( nPlayerID )
 end
 
 function FrostivusGameMode:_checkRestartVotes()
+	if self.flEndTime == nil then
+		self.flEndTime = Time() + flVoteDuration
+	end
+
 	if self.flEndTime then
 		local bTimesUp = Time() > self.flEndTime
 

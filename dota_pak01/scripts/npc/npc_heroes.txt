@@ -10742,8 +10742,8 @@
 				"SlotText"	"#LoadoutSlot_Weapon"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1300"
-				"MaxPolygonsLOD1"	"800"
+				"MaxPolygonsLOD0"	"1200"
+				"MaxPolygonsLOD1"	"750"
 			}		
 			"1"
 			{
@@ -10752,38 +10752,38 @@
 				"SlotText"	"#LoadoutSlot_Arms"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"400"
-				"MaxPolygonsLOD1"	"250"
+				"MaxPolygonsLOD0"	"300"
+				"MaxPolygonsLOD1"	"200"
 			}		
 			"2"
 			{
 				"SlotIndex"	"2"
-				"SlotName"	"back"
+				"SlotName"	"back"  //default is hair
 				"SlotText"	"#LoadoutSlot_Back"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"750"
-				"MaxPolygonsLOD1"	"550"
+				"MaxPolygonsLOD0"	"1200"
+				"MaxPolygonsLOD1"	"760"
 			}		
 			"3"	
 			{
 				"SlotIndex"	"3"
-				"SlotName" 	"legs"
+				"SlotName" 	"legs"  //default is skirt
 				"SlotText"	"#LoadoutSlot_Legs"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"600"
-				"MaxPolygonsLOD1"	"450"
+				"MaxPolygonsLOD0"	"360"
+				"MaxPolygonsLOD1"	"290"
 			}
 			"4"	
 			{
 				"SlotIndex"	"4"
-				"SlotName" 	"misc"
+				"SlotName" 	"misc"  //default is shoulder piece
 				"SlotText"	"#LoadoutSlot_Misc"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"400"
-				"MaxPolygonsLOD1"	"250"
+				"MaxPolygonsLOD0"	"900"
+				"MaxPolygonsLOD1"	"400"
 			}
 			"5"	
 			{
@@ -18160,6 +18160,10 @@
 		"MovementSpeed"				"320"									// Speed.
 		"MovementTurnRate"			"0.5"									// Turning rate.
 		
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealthRegen"			"0.75"									// Health regeneration rate.
+
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
@@ -20637,8 +20641,8 @@
 				"SlotText"	"#LoadoutSlot_Weapon"
 //				"TextureWidth"		"256"
 //				"TextureHeight"		"256"
-//				"MaxPolygonsLOD0"	"650"
-//				"MaxPolygonsLOD1"	"400"
+//				"MaxPolygonsLOD0"	"530"
+//				"MaxPolygonsLOD1"	"450"
 			}		
 			"1"	
 			{
@@ -20647,8 +20651,8 @@
 				"SlotText"	"#LoadoutSlot_Head"
 //				"TextureWidth"		"256"
 //				"TextureHeight"		"256"
-//				"MaxPolygonsLOD0"	"450"
-//				"MaxPolygonsLOD1"	"300"
+//				"MaxPolygonsLOD0"	"750"
+//				"MaxPolygonsLOD1"	"400"
 			}
 			"2"	
 			{
@@ -20657,8 +20661,8 @@
 				"SlotText"	"#LoadoutSlot_Back"
 //				"TextureWidth"		"256"
 //				"TextureHeight"		"256"
-//				"MaxPolygonsLOD0"	"1000"
-//				"MaxPolygonsLOD1"	"400"
+//				"MaxPolygonsLOD0"	"700"
+//				"MaxPolygonsLOD1"	"520"
 			}
 			"3"	
 			{
@@ -20667,8 +20671,8 @@
 				"SlotText"	"#LoadoutSlot_Shoulder"
 //				"TextureWidth"		"256"
 //				"TextureHeight"		"256"
-//				"MaxPolygonsLOD0"	"600"
-//				"MaxPolygonsLOD1"	"350"
+//				"MaxPolygonsLOD0"	"975"
+//				"MaxPolygonsLOD1"	"500"
 			}
 			"4"	
 			{
@@ -20676,7 +20680,7 @@
 				"SlotName" 	"arms"
 				"SlotText"	"#LoadoutSlot_arms"
 //				"TextureWidth"		"256"
-//				"TextureHeight"		"128"
+//				"TextureHeight"		"256"
 //				"MaxPolygonsLOD0"	"400"
 //				"MaxPolygonsLOD1"	"300"
 			}						
@@ -20779,6 +20783,10 @@
 				"aggressive" "0.25"
 			}
 		}
+		
+		// Status
+		//-------------------------------------------------------------------------------------------------------------
+		"StatusHealthRegen"			"0.75"									// Health regeneration rate.
 
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
