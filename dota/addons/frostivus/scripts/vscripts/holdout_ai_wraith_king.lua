@@ -79,7 +79,7 @@ function BehaviorNone:Evaluate()
 end
 
 function BehaviorNone:Begin()
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 
 	if self.newTargetTime < GameRules:GetGameTime() then
 		self.newTargetTime = GameRules:GetGameTime() + 10
@@ -96,7 +96,7 @@ function BehaviorNone:Begin()
 end
 
 function BehaviorNone:Continue()
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 end
 
 function BehaviorNone:Think(dt)
@@ -132,7 +132,7 @@ function BehaviorAttackWeakest:Evaluate()
 end
 
 function BehaviorAttackWeakest:Begin()
-	self.duration = 5
+	self.endTime = GameRules:GetGameTime() + 5
 
 	self.order =
 	{
@@ -147,14 +147,14 @@ BehaviorAttackWeakest.Continue = BehaviorAttackWeakest.Begin --if we re-enter th
 
 function BehaviorAttackWeakest:Think(dt)
 	if self.target:IsNull() or not self.target:IsAlive() then
-		self.duration = 0
+		self.endTime = GameRules:GetGameTime()
 		return
 	end
 
 	if self.ability:IsFullyCastable() then
 		self.order.OrderType = DOTA_UNIT_ORDER_CAST_POSITION
 	else
-		self.duration = 0
+		self.endTime = GameRules:GetGameTime()
 	end
 end
 
@@ -179,7 +179,7 @@ function BehaviorAttackRandom:Evaluate()
 end
 
 function BehaviorAttackRandom:Begin()
-	self.duration = 5
+	self.endTime = GameRules:GetGameTime() + 5
 
 	self.order =
 	{
@@ -195,7 +195,7 @@ BehaviorAttackRandom.Continue = BehaviorAttackRandom.Begin --if we re-enter this
 
 function BehaviorAttackRandom:Think(dt)
 	if not self.target:IsAlive() then
-		self.duration = 0
+		self.endTime = GameRules:GetGameTime()
 		return
 	end
 
@@ -226,7 +226,7 @@ function BehaviorRitualSummoning:Evaluate()
 end
 
 function BehaviorRitualSummoning:Begin()
-	self.duration = 20
+	self.endTime = GameRules:GetGameTime() + 20
 
 	self.order =
 	{
@@ -271,7 +271,7 @@ function BehaviorRitualSummoning:Think(dt)
 		end
 
 		if not livingWitch then
-			self.duration = 0
+			self.endTime = GameRules:GetGameTime()
 		end
 	end
 end
@@ -311,7 +311,7 @@ function BehaviorHellfireEruption:Evaluate()
 end
 
 function BehaviorHellfireEruption:Begin()
-	self.duration = 10
+	self.endTime = GameRules:GetGameTime() + 10
 
 	self.order =
 	{
@@ -326,7 +326,7 @@ BehaviorHellfireEruption.Continue = BehaviorHellfireEruption.Begin
 function BehaviorHellfireEruption:Think(dt)
 	-- Once we cast, we're done
 	if not self.ability:IsFullyCastable() and not self.ability:IsInAbilityPhase() then
-		self.duration = 0
+		self.endTime = GameRules:GetGameTime()
 	end
 end
 
@@ -388,7 +388,7 @@ function BehaviorSummonTombstone:Evaluate()
 end
 
 function BehaviorSummonTombstone:Begin()
-	self.duration = 10
+	self.endTime = GameRules:GetGameTime() + 10
 
 	self.order =
 	{
@@ -404,6 +404,6 @@ BehaviorSummonTombstone.Continue = BehaviorSummonTombstone.Begin
 function BehaviorSummonTombstone:Think(dt)
 	-- Once we cast, we're done
 	if not self.ability:IsFullyCastable() and not self.ability:IsInAbilityPhase() then
-		self.duration = 0
+		self.endTime = GameRules:GetGameTime()
 	end
 end

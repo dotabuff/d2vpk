@@ -40,7 +40,7 @@ function BehaviorNone:Evaluate()
 end
 
 function BehaviorNone:Begin()
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 	
 	local ancient =  Entities:FindByName( nil, "dota_goodguys_fort" )
 	
@@ -61,7 +61,7 @@ function BehaviorNone:Begin()
 end
 
 function BehaviorNone:Continue()
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 end
 
 --------------------------------------------------------------------------------------------------------
@@ -92,7 +92,7 @@ function BehaviorDismember:Evaluate()
 end
 
 function BehaviorDismember:Begin()
-	self.duration = 5
+	self.endTime = GameRules:GetGameTime() + 5
 
 	self.order =
 	{
@@ -107,7 +107,7 @@ BehaviorDismember.Continue = BehaviorDismember.Begin --if we re-enter this abili
 
 function BehaviorDismember:Think(dt)
 	if not self.target:IsAlive() then
-		self.duration = 0
+		self.endTime = GameRules:GetGameTime()
 		return
 	end
 end
@@ -147,7 +147,7 @@ function BehaviorThrowHook:Evaluate()
 end
 
 function BehaviorThrowHook:Begin()
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 
 	local targetPoint = self.target:GetOrigin() + RandomVector( 100 )
 	
@@ -200,7 +200,7 @@ end
 
 
 function BehaviorRunAway:Begin()
-	self.duration = 6
+	self.endTime = GameRules:GetGameTime() + 6
 
 	self.order =
 	{
@@ -238,7 +238,7 @@ function BehaviorRunAway:Think(dt)
 		})
 	end
 	
-	if self.urnAbility and self.urnAbility:IsFullyCastable() and self.duration < 2 then
+	if self.urnAbility and self.urnAbility:IsFullyCastable() and self.endTime < GameRules:GetGameTime() + 2 then
 		ExecuteOrderFromTable({
 			UnitIndex = thisEntity:entindex(),
 			OrderType = DOTA_UNIT_ORDER_CAST_TARGET,

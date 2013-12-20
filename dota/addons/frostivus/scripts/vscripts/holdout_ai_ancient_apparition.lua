@@ -95,11 +95,11 @@ function BehaviorOrbit:Begin()
 		self:Initialize()
 	end
 
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 end
 
 function BehaviorOrbit:Continue()
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 end
 
 function BehaviorOrbit:Think(dt)
@@ -154,14 +154,14 @@ function BehaviorLaunchOrb:Evaluate()
 end
 
 function BehaviorLaunchOrb:Begin()
-	self.duration = 5
+	self.endTime = GameRules:GetGameTime() + 5
 end
 
 BehaviorLaunchOrb.Continue = BehaviorLaunchOrb.Begin --if we re-enter this ability, we might have a different target; might as well do a full reset
 
 function BehaviorLaunchOrb:Think(dt)
 	if not self.orbAbility:IsFullyCastable() and not self.orbAbility:IsInAbilityPhase() then
-		self.duration = 0
+		self.endTime = GameRules:GetGameTime()
 	end
 end
 
@@ -188,7 +188,7 @@ function BehaviorAttackAncient:Evaluate()
 end
 
 function BehaviorAttackAncient:Begin()
-	self.duration = 5
+	self.endTime = GameRules:GetGameTime() + 5
 	local hAncient = Entities:FindByName( nil, "dota_goodguys_fort" )
 	self.order =
 	{

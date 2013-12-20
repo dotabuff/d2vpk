@@ -53,11 +53,11 @@ function BehaviorRun:Initialize()
 end
 
 function BehaviorRun:Begin()
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 end
 
 function BehaviorRun:Continue()
-	self.duration = 1
+	self.endTime = GameRules:GetGameTime() + 1
 end
 
 function BehaviorRun:Think(dt)
@@ -100,13 +100,13 @@ function BehaviorLaunchMissile:Evaluate()
 end
 
 function BehaviorLaunchMissile:Begin()
-	self.duration = 5
+	self.endTime = GameRules:GetGameTime() + 5
 end
 
 BehaviorLaunchMissile.Continue = BehaviorLaunchMissile.Begin --if we re-enter this ability, we might have a different target; might as well do a full reset
 
 function BehaviorLaunchMissile:Think(dt)
 	if not self.ability:IsFullyCastable() and not self.ability:IsInAbilityPhase() then
-		self.duration = 0
+		self.endTime = GameRules:GetGameTime()
 	end
 end

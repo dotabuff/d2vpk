@@ -71,12 +71,12 @@ function AICore:CreateBehaviorSystem( behaviors )
 
 	BehaviorSystem.currentBehavior =
 	{
-		duration = 0,
+		endTime = 0,
 		order = { OrderType = DOTA_UNIT_ORDER_NONE }
 	}
 
 	function BehaviorSystem:Think()
-		if self.currentBehavior.duration <= 0 then
+		if GameRules:GetGameTime() >= self.currentBehavior.endTime then
 			local newBehavior = self:ChooseNextBehavior()
 			if newBehavior == nil then 
 				-- Do nothing here... this covers possible problems with ChooseNextBehavior
@@ -104,8 +104,6 @@ function AICore:CreateBehaviorSystem( behaviors )
 		end
 
 		if self.currentBehavior.Think then self.currentBehavior:Think(self.thinkDuration) end
-
-		self.currentBehavior.duration = self.currentBehavior.duration - self.thinkDuration
 
 		return self.thinkDuration
 	end
