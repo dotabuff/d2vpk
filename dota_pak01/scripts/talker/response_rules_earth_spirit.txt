@@ -7,8 +7,9 @@ criterion "IsEarthSpiRollingBoulder" "abilityname" "earth_spirit_rolling_boulder
 criterion "IsEarthSpiGeoGrip" "abilityname" "earth_spirit_geomagnetic_grip" weight 5 required
 criterion "IsEarthSpiMagnetize" "abilityname" "earth_spirit_magnetize" weight 5 required
 criterion "IsEaSpRock" "targetclassname" "npc_dota_earth_spirit_stone" weight 5 required
+criterion "IsEarthSpStoneCallerLearned" "skill4_level" "1" weight 5 required
 
-Response earth_spirit_Spawn
+Response earth_spirit_LearnIsEarthSpiStoneCallerIsEarthSpStoneCallerLearned
 {
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_01.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_02.vcd" nodelay noscene 
@@ -29,10 +30,10 @@ Response earth_spirit_Spawn
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_07.vcd" nodelay noscene 
 }
 
-Rule earth_spirit_Spawn_Rule
+Rule earth_spirit_LearnIsEarthSpiStoneCallerIsEarthSpStoneCallerLearned_Rule
 {
-	criteria Spawn Isearth_spirit 
-	response earth_spirit_Spawn
+	criteria Learn Isearth_spirit IsEarthSpiStoneCaller IsEarthSpStoneCallerLearned
+	response earth_spirit_LearnIsEarthSpiStoneCallerIsEarthSpStoneCallerLearned
 }
 
 Response earth_spirit_CustomIsGameStart
@@ -479,6 +480,7 @@ Response earth_spirit_Attack
 	scene "scenes/earth_spirit/earth_spirit_earthspi_attack_08.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_attack_10.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_attack_11.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_attack_12.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_Attack_Rule
