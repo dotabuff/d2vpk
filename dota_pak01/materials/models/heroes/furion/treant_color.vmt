@@ -1,19 +1,11 @@
-
 "CustomHero"
 {
 	$baseTexture "models/heroes/furion/treant_color"
 	"$normalmap" "models/heroes/furion/treant_normal"
-//	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
-//	"$maskmap1" "models/heroes/furion/furion_mask1"
-	"$maskmap2" "models/heroes/furion/treant_color"
-//	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
-//	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
-
-	//"$envmap" "env_cubemap"
-	//"$envmapintensity" ".5"
-
-
-	$SPECULAREXPONENT 2
+	"$maskmap1" "models/heroes/furion/treant_masks1"
+	"$maskmap2" "models/heroes/furion/treant_masks2"
+	"$alphatest" "1"
+	$SPECULAREXPONENT 8
 	$SPECULARSCALE  3
 	$SPECULARCOLOR "[1 1 1]"
 	$RIMLIGHTSCALE 1
