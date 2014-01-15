@@ -24996,7 +24996,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 "[english]KillEaterEventType_Lion_ManaDrained"	"Mana Drained"
 "KillEaterEventType_OD_IntStolen"	"智力偷取量"
 "[english]KillEaterEventType_OD_IntStolen"	"Intelligence Stolen"
-"KillEaterEventType_Riki_GemCarrierKills"	"宝石信使击杀数"
+"KillEaterEventType_Riki_GemCarrierKills"	"宝石携带者击杀数"
 "[english]KillEaterEventType_Riki_GemCarrierKills"	"Gem Carriers Killed"
 "KillEaterEventType_Riki_SmokedHeroKills"	"烟雾内英雄击杀数"
 "[english]KillEaterEventType_Riki_SmokedHeroKills"	"Heroes Killed Inside Smoke"
@@ -26653,5 +26653,13 @@ Though victorious, the survivors saw little to celebrate: the city lay in ruins,
 "[english]CompendiumPageError_Points"	"Missing (or zero) 'points' specified for selection '%s1' in compendium page '%s2'"
 "CompendiumPageError_SelType"	"在手册页面‘%s2’中‘%s1’选项缺少choice_type"
 "[english]CompendiumPageError_SelType"	"Missing 'choice_type' for selection '%s1' in compendium page '%s2'"
+"CompendiumPageError_Unknown"	"内部指南逻辑错误。请联系Valve解决此问题。"
+"[english]CompendiumPageError_Unknown"	"Internal compendium logic error. Contact Valve to resolve this."
+"CompendiumPageError_ImageDL"	"未能开始下载指南图片“%s1”（%s2）"
+"[english]CompendiumPageError_ImageDL"	"Failed to start downloading compendium image '%s1' (%s2)"
+"CompendiumPageError_ImageDLErr"	"无法下载指南图片“%s”（%s2）"
+"[english]CompendiumPageError_ImageDLErr"	"Failed to download compendium image '%s' (%s2)"
+"CompendiumSel_Default"	"作出选择"
+"[english]CompendiumSel_Default"	"Make A Selection"
 }
 }
