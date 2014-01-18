@@ -9052,6 +9052,19 @@
 		"MovementSpeed"				"300"									// Speed.
 		"MovementTurnRate"			"0.4"									// Turning rate.
 		
+		"animation_transitions"
+		{
+			"ACT_DOTA_RUN"
+			{
+				"regular" "0.5"
+			}
+
+			"ACT_DOTA_IDLE"
+			{
+				"regular" "0.25"
+			}
+		}
+		
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
