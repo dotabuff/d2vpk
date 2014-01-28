@@ -120,6 +120,17 @@ Rule abaddon_KillIsEnemyLegion_CommanderChance_35%_Rule
 	response abaddon_KillIsEnemyLegion_CommanderChance_35%
 }
 
+Response abaddon_KillIsEnemyPhoenixChance_35%
+{
+	scene "scenes/abaddon/abaddon_abad_rival_05.vcd" nodelay noscene 
+}
+
+Rule abaddon_KillIsEnemyPhoenixChance_35%_Rule
+{
+	criteria Kill Isabaddon IsEnemyPhoenix Chance_35%
+	response abaddon_KillIsEnemyPhoenixChance_35%
+}
+
 Response abaddon_KillIsEnemyEmber_SpiritChance_35%
 {
 	scene "scenes/abaddon/abaddon_abad_rival_07.vcd" nodelay noscene 
@@ -193,7 +204,7 @@ Response abaddon_KillIsEnemyShadowShamanChance_35%
 
 Rule abaddon_KillIsEnemyShadowShamanChance_35%_Rule
 {
-	criteria Kill Isabaddon IsEnemyShadowShaman  Chance_35%
+	criteria Kill Isabaddon IsEnemyShadowShaman Chance_35%
 	response abaddon_KillIsEnemyShadowShamanChance_35%
 }
 
@@ -414,6 +425,17 @@ Rule abaddon_LevelUp_Rule
 {
 	criteria LevelUp Isabaddon 
 	response abaddon_LevelUp
+}
+
+Response abaddon_AllyNearIsAllyTerrorbladeEarlyGame
+{
+	scene "scenes/abaddon/abaddon_abad_ally_02.vcd" nodelay noscene speakonce
+}
+
+Rule abaddon_AllyNearIsAllyTerrorbladeEarlyGame_Rule
+{
+	criteria AllyNear Isabaddon IsAllyTerrorblade EarlyGame
+	response abaddon_AllyNearIsAllyTerrorbladeEarlyGame
 }
 
 Response abaddon_AllyNearIsAllyDazzleEarlyGame

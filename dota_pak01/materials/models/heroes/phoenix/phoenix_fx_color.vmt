@@ -1,0 +1,48 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/phoenix/phoenix_fx_color"
+	"$normalmap" "models/heroes/phoenix/phoenix_fx_normal"
+	"$detail1" "models/heroes/phoenix/phoenix_fx_detail"
+//	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	"$maskmap1" "models/heroes/phoenix/phoenix_fx_mask1"
+	"$maskmap2" "models/heroes/phoenix/phoenix_fx_mask2"
+
+	$nocull 0
+	$additive 1
+//	$SPECULAR_BLOOM_SCALE      1
+	$SPECULAREXPONENT 45	
+	$SPECULARSCALE 12		
+	$SPECULARCOLOR "[1.0 0.5 0.25]"
+	$RIMLIGHTCOLOR "[0.25 0.48 0.9]"
+	$SPECULARBLENDTOFULL .1
+	$RIMLIGHTSCALE 1
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 3
+	$DETAIL1BLENDFACTOR 2
+	$DETAIL1BLENDTOFULL 0
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.45"
+			"texturescrollangle"	"90"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

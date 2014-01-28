@@ -2,6 +2,7 @@
 {
 	"$baseTexture"		"models/items/lion/hellssight_02/hellssight_02_color"
 	"$normalmap"		"models/items/lion/hellssight_02/hellssight_02_normal"
+	"$detail1"		"models/heroes/doom/doom_burninating"
 	"$MASKMAP1"		"models/items/lion/hellssight_02/hellssight_02_mask1"
 	"$MASKMAP2"		"models/items/lion/hellssight_02/hellssight_02_mask2"
 	"$SPECULAR_BLOOM_SCALE"		"0"
@@ -11,10 +12,19 @@
 	"$SPECULARCOLOR"		"[0.7 0.9 1]"
 	"$RIMLIGHTSCALE"		"10"
 	"$AMBIENTSCALE"		"1"
+	"$ALPHATEST"		"1"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"3"
 	"$cloakPassEnabled"		"1"
-	"$ALPHATEST" 			"1"
 	"Proxies"
 	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.400000"
+			"texturescrollangle"		"55"
+		}
 		"invis_proxy"
 		{
 		}

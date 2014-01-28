@@ -1,9 +1,8 @@
 "LightmappedGeneric"
 {
 	// Original shader: BaseTimesLightmapAlphaBlend
-	"$translucent" 1
 	"$basetexture" "tools/toolscreatureclip"
-	"%compiletrigger" 1
-	"srgb?$alpha" "0.3"
-	//"srgb?$overbrightfactor" "0.75"
+	"$translucent" 1
+	"srgb?$alpha" "0.3"	
+	"%compileSkip" 1
 }

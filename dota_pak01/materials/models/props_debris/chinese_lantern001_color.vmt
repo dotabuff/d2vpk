@@ -1,0 +1,8 @@
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_debris/chinese_lantern001_color"
+	  "$SPECTEXTURE" "models/props_debris/chinese_lantern001_spec"
+	   $SPECULAR_BLOOM		.75
+		"$alphatest" "1"
+	"$fow"                          "_rt_fog_of_war"
+}

@@ -325,7 +325,7 @@ Response tiny_LearnIsGrowChance_5%
 
 Rule tiny_LearnIsGrowChance_5%_Rule
 {
-	criteria Learn Istiny IsGrow  Chance_5%
+	criteria Learn Istiny IsGrow Chance_5%
 	response tiny_LearnIsGrowChance_5%
 }
 
@@ -401,7 +401,7 @@ Response tiny_PurchaseIsExpensiveItem
 
 Rule tiny_PurchaseIsExpensiveItem_Rule
 {
-	criteria Purchase Istiny IsExpensiveItem 
+	criteria Purchase Istiny IsExpensiveItem
 	response tiny_PurchaseIsExpensiveItem
 }
 
@@ -409,11 +409,13 @@ Response tiny_PurchaseIsBlinkDagger
 {
 	scene "scenes/tiny/tiny_tiny_blink_01.vcd" nodelay noscene 
 	scene "scenes/tiny/tiny_tiny_blink_02.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_blink_03.vcd" nodelay noscene speakonce
+	scene "scenes/tiny/tiny_tiny_blink_04.vcd" nodelay noscene speakonce
 }
 
 Rule tiny_PurchaseIsBlinkDagger_Rule
 {
-	criteria Purchase Istiny IsBlinkDagger 
+	criteria Purchase Istiny IsBlinkDagger
 	response tiny_PurchaseIsBlinkDagger
 }
 
@@ -482,18 +484,6 @@ Rule tiny_PurchaseIsHeart_Rule
 {
 	criteria Purchase Istiny IsHeart
 	response tiny_PurchaseIsHeart
-}
-
-Response tiny_PurchaseIsBlinkDagger
-{
-	scene "scenes/tiny/tiny_tiny_blink_03.vcd" nodelay noscene speakonce
-	scene "scenes/tiny/tiny_tiny_blink_04.vcd" nodelay noscene speakonce
-}
-
-Rule tiny_PurchaseIsBlinkDagger_Rule
-{
-	criteria Purchase Istiny IsBlinkDagger
-	response tiny_PurchaseIsBlinkDagger
 }
 
 Response tiny_Immortality
@@ -622,7 +612,7 @@ Response tiny_PowerupIsPowerupHaste
 
 Rule tiny_PowerupIsPowerupHaste_Rule
 {
-	criteria Powerup Istiny IsPowerupHaste 
+	criteria Powerup Istiny IsPowerupHaste
 	response tiny_PowerupIsPowerupHaste
 }
 
@@ -644,7 +634,7 @@ Response tiny_PowerupIsPowerupDoubleDamage
 
 Rule tiny_PowerupIsPowerupDoubleDamage_Rule
 {
-	criteria Powerup Istiny IsPowerupDoubleDamage 
+	criteria Powerup Istiny IsPowerupDoubleDamage
 	response tiny_PowerupIsPowerupDoubleDamage
 }
 
@@ -666,7 +656,7 @@ Response tiny_PowerupIsPowerupRegeneration
 
 Rule tiny_PowerupIsPowerupRegeneration_Rule
 {
-	criteria Powerup Istiny IsPowerupRegeneration 
+	criteria Powerup Istiny IsPowerupRegeneration
 	response tiny_PowerupIsPowerupRegeneration
 }
 
@@ -677,7 +667,7 @@ Response tiny_PowerupIsPowerupIllusion
 
 Rule tiny_PowerupIsPowerupIllusion_Rule
 {
-	criteria Powerup Istiny IsPowerupIllusion 
+	criteria Powerup Istiny IsPowerupIllusion
 	response tiny_PowerupIsPowerupIllusion
 }
 
@@ -699,7 +689,7 @@ Response tiny_PowerupIsPowerupInvisibility
 
 Rule tiny_PowerupIsPowerupInvisibility_Rule
 {
-	criteria Powerup Istiny IsPowerupInvisibility 
+	criteria Powerup Istiny IsPowerupInvisibility
 	response tiny_PowerupIsPowerupInvisibility
 }
 

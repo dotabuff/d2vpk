@@ -2986,3 +2986,60 @@
 	"wave"			"npc\courier\boar\boar_death1.mp3"
 
 }
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+"ParticleDriven.Rocket.Launch"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"ambient\newyear\rocket_launch01.wav"
+		"wave"			"ambient\newyear\rocket_launch02.wav"
+		"wave"			"ambient\newyear\rocket_launch03.wav"
+	}
+
+}
+
+"ParticleDriven.Rocket.Explode"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_99dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"ambient\newyear\rocket_explode01.wav"
+		"wave"			"ambient\newyear\rocket_explode02.wav"
+	}
+}
+
+"ParticleDriven.Fountain.Loopable"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"ambient\newyear\fountain_firework.wav"
+}
+
+"ParticleDriven.Firecrackers"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"ambient\newyear\firecrackers01.wav"
+		"wave"			"ambient\newyear\firecrackers02.wav"
+		"wave"			"ambient\newyear\firecrackers03.wav"
+		"wave"			"ambient\newyear\firecrackers04.wav"
+		"wave"			"ambient\newyear\firecrackers05.wav"
+	}
+
+}

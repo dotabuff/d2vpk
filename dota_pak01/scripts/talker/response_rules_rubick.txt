@@ -33,6 +33,8 @@ criterion "StoleRepel" "stolenspell" "omniknight_repel" weight 5 required
 criterion "StoleReversePolarity" "stolenspell" "magnataur_reverse_polarity" weight 5 required
 criterion "StoleStaticStorm" "stolenspell" "disruptor_static_storm" weight 5 required
 criterion "StoleStormBolt" "stolenspell" "sven_storm_bolt" weight 5 required
+criterion "StoleSunder" "stolenspell" "terrorblade_sunder" weight 5 required
+criterion "StoleSupernova" "stolenspell" "phoenix_supernova" weight 5 required
 criterion "StoleTeleportation" "stolenspell" "furion_teleportation" weight 5 required
 criterion "StoleThunderGodsWrath" "stolenspell" "zuus_thundergods_wrath" weight 5 required
 criterion "StoleWallofReplica" "stolenspell" "dark_seer_wall_of_replica" weight 5 required
@@ -109,6 +111,7 @@ criterion "IsRubickMulti_1" "multicastcount" "1" weight 5 required
 criterion "IsRubickMulti_2" "multicastcount" "2" weight 5 required
 criterion "IsRubickMulti_3" "multicastcount" "3" weight 5 required
 criterion "RubickSanitysEclipse" "abilityname" "obsidian_destroyer_sanity_eclipse" weight 5 required
+criterion "RubickSupernova" "abilityname" "phoenix_supernova" weight 5 required
 criterion "IsRubickRot" "abilityname" "pudge_rot" weight 5 required
 criterion "IsRubickMeatHook" "abilityname" "pudge_meat_hook" weight 5 required
 criterion "IsRubickHookCatchHero" "hookedtarget" "1" weight 5 required
@@ -118,7 +121,6 @@ criterion "RubickDismember" "abilityname" "pudge_dismember" weight 5 required
 criterion "RubickDreamCoil" "abilityname" "puck_dream_coil" weight 5 required
 criterion "RubickLifeDrain" "abilityname" "pugna_life_drain" weight 5 required
 criterion "RubickSonicWave" "abilityname" "queenofpain_sonic_wave" weight 5 required
-criterion "QUEEN" "OF" "PAIN" weight 5 required
 criterion "RubickEyeoftheStorm" "abilityname" "razor_eye_of_the_storm" weight 5 required
 criterion "IsRubickFailEpicenter" "failepicenter" "1.0" weight 5 required
 criterion "RubickEpicenter" "abilityname" "sandking_epicenter" weight 5 required
@@ -136,6 +138,7 @@ criterion "RubickBallLightning" "abilityname" "storm_spirit_ball_lightning" weig
 criterion "IsRubickStaticRemnant" "abilityname" "storm_spirit_static_remnant" weight 5 required
 criterion "IsRubickBallLightningStart" "balllightning" "start" weight 5 required
 criterion "IsRubickBallLightningEnd" "balllightning" "end" weight 5 required
+criterion "RubickSunder" "abilityname" "terrorblade_sunder" weight 5 required
 criterion "RubickRavage" "abilityname" "tidehunter_ravage" weight 5 required
 criterion "RubickChakram" "abilityname" "shredder_chakram" weight 5 required
 criterion "IsRubickToss" "abilityname" "tiny_toss" weight 5 required
@@ -1288,6 +1291,17 @@ Rule rubick_KillIsRubickIsEnemyOutworld_DestroyerChance_30%RubickSanitysEclipse_
 	response rubick_KillIsRubickIsEnemyOutworld_DestroyerChance_30%RubickSanitysEclipse
 }
 
+Response rubick_KillIsRubickIsEnemyPhoenixChance_30%RubickSupernova
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyPhoenixChance_30%RubickSupernova_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyPhoenix Chance_30% RubickSupernova
+	response rubick_KillIsRubickIsEnemyPhoenixChance_30%RubickSupernova
+}
+
 Response rubick_KillIsRubickIsEnemyPuckChance_30%RubickDreamCoil
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
@@ -1838,6 +1852,17 @@ Rule rubick_KillIsRubickChance_3%RubickSanitysEclipse_Rule
 	response rubick_KillIsRubickChance_3%RubickSanitysEclipse
 }
 
+Response rubick_KillIsRubickChance_3%RubickSupernova
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickSupernova_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickSupernova
+	response rubick_KillIsRubickChance_3%RubickSupernova
+}
+
 Response rubick_KillIsRubickChance_3%RubickDreamCoil
 {
 	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
@@ -2027,15 +2052,15 @@ Rule rubick_KillIsEnemyInvokerChance_30%_Rule
 	response rubick_KillIsEnemyInvokerChance_30%
 }
 
-Response rubick_KillIsEnemyWitchDoctorChance_50%
+Response rubick_KillIsEnemyWitchDoctorChance_5%
 {
 	scene "scenes/rubick/rubick_rubick_rival_04.vcd" nodelay noscene 
 }
 
-Rule rubick_KillIsEnemyWitchDoctorChance_50%_Rule
+Rule rubick_KillIsEnemyWitchDoctorChance_5%_Rule
 {
-	criteria Kill Isrubick IsEnemyWitchDoctor Chance_50%
-	response rubick_KillIsEnemyWitchDoctorChance_50%
+	criteria Kill Isrubick IsEnemyWitchDoctor Chance_5%
+	response rubick_KillIsEnemyWitchDoctorChance_5%
 }
 
 Response rubick_KillIsEnemySilencerChance_50%
@@ -2340,6 +2365,17 @@ Rule rubick_CastExecuteIsRubickTeleUp_Rule
 	response rubick_CastExecuteIsRubickTeleUp
 }
 
+Response rubick_CastExecuteIsRubickTeleUpChance_3%
+{
+	scene "scenes/rubick/rubick_rubick_telekinesis_up_03.vcd" nodelay noscene 
+}
+
+Rule rubick_CastExecuteIsRubickTeleUpChance_3%_Rule
+{
+	criteria CastExecute Isrubick IsRubickTeleUp Chance_3%
+	response rubick_CastExecuteIsRubickTeleUpChance_3%
+}
+
 Response rubick_CastExecuteIsRubickTeleDown
 {
 	scene "scenes/rubick/rubick_rubick_telekinesis_down_01.vcd" nodelay noscene 
@@ -2608,6 +2644,17 @@ Rule rubick_CastExecuteIsRubickSpellStealIsEnemyOmniknightStoleRepel_Rule
 	response rubick_CastExecuteIsRubickSpellStealIsEnemyOmniknightStoleRepel
 }
 
+Response rubick_CastExecuteIsRubickSpellStealIsEnemyPhoenixStoleSupernova
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_12.vcd" nodelay noscene 
+}
+
+Rule rubick_CastExecuteIsRubickSpellStealIsEnemyPhoenixStoleSupernova_Rule
+{
+	criteria CastExecute Isrubick IsRubickSpellSteal IsEnemyPhoenix StoleSupernova
+	response rubick_CastExecuteIsRubickSpellStealIsEnemyPhoenixStoleSupernova
+}
+
 Response rubick_CastExecuteIsRubickSpellStealIsEnemySandkingStoleEpicenter
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_35.vcd" nodelay noscene 
@@ -2661,6 +2708,17 @@ Rule rubick_CastExecuteIsRubickSpellStealIsEnemySvenStoleStormBolt_Rule
 {
 	criteria CastExecute Isrubick IsRubickSpellSteal IsEnemySven StoleStormBolt
 	response rubick_CastExecuteIsRubickSpellStealIsEnemySvenStoleStormBolt
+}
+
+Response rubick_CastExecuteIsRubickSpellStealIsEnemyTerrorbladeStoleSunder
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_34.vcd" nodelay noscene 
+}
+
+Rule rubick_CastExecuteIsRubickSpellStealIsEnemyTerrorbladeStoleSunder_Rule
+{
+	criteria CastExecute Isrubick IsRubickSpellSteal IsEnemyTerrorblade StoleSunder
+	response rubick_CastExecuteIsRubickSpellStealIsEnemyTerrorbladeStoleSunder
 }
 
 Response rubick_CastExecuteIsRubickSpellStealIsEnemyTidehunterStoleRavage
@@ -2718,15 +2776,26 @@ Rule rubick_CastExecuteIsRubickSpellStealIsEnemyZuusStoleThunderGodsWrath_Rule
 	response rubick_CastExecuteIsRubickSpellStealIsEnemyZuusStoleThunderGodsWrath
 }
 
-Response rubick_CastExecuteIsRubickIsEnemyLegion_CommanderChance_30%RubickDuel
+Response rubick_CastExecuteIsRubickIsEnemyLegion_CommanderChance_20%RubickDuel
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
 }
 
-Rule rubick_CastExecuteIsRubickIsEnemyLegion_CommanderChance_30%RubickDuel_Rule
+Rule rubick_CastExecuteIsRubickIsEnemyLegion_CommanderChance_20%RubickDuel_Rule
 {
-	criteria CastExecute Isrubick IsRubick IsEnemyLegion_Commander Chance_30% RubickDuel
-	response rubick_CastExecuteIsRubickIsEnemyLegion_CommanderChance_30%RubickDuel
+	criteria CastExecute Isrubick IsRubick IsEnemyLegion_Commander Chance_20% RubickDuel
+	response rubick_CastExecuteIsRubickIsEnemyLegion_CommanderChance_20%RubickDuel
+}
+
+Response rubick_CastExecuteIsRubickIsEnemyTerrorbladeChance_20%RubickSunder
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_CastExecuteIsRubickIsEnemyTerrorbladeChance_20%RubickSunder_Rule
+{
+	criteria CastExecute Isrubick IsRubick IsEnemyTerrorblade Chance_20% RubickSunder
+	response rubick_CastExecuteIsRubickIsEnemyTerrorbladeChance_20%RubickSunder
 }
 
 Response rubick_CastExecute
@@ -2902,6 +2971,42 @@ Rule rubick_LevelUp_Rule
 {
 	criteria LevelUp Isrubick 
 	response rubick_LevelUp
+}
+
+Response rubick_ItemDropIsUltraRareDrop
+{
+	scene "scenes/rubick/rubick_rubick_nullfield_04.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_itemrare_01.vcd" nodelay noscene 
+}
+
+Rule rubick_ItemDropIsUltraRareDrop_Rule
+{
+	criteria ItemDrop Isrubick IsUltraRareDrop
+	response rubick_ItemDropIsUltraRareDrop
+}
+
+Response rubick_ItemDropIsCommonDrop
+{
+	scene "scenes/rubick/rubick_rubick_itemcommon_01.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_itemcommon_02.vcd" nodelay noscene 
+}
+
+Rule rubick_ItemDropIsCommonDrop_Rule
+{
+	criteria ItemDrop Isrubick IsCommonDrop
+	response rubick_ItemDropIsCommonDrop
+}
+
+Response rubick_ItemDropIsRareDrop
+{
+	scene "scenes/rubick/rubick_rubick_itemmoderate_01.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_itemmoderate_02.vcd" nodelay noscene 
+}
+
+Rule rubick_ItemDropIsRareDrop_Rule
+{
+	criteria ItemDrop Isrubick IsRareDrop
+	response rubick_ItemDropIsRareDrop
 }
 
 Response rubick_Respawn
@@ -3285,41 +3390,6 @@ Rule rubick_MissingIsLaneBot_Rule
 {
 	criteria Missing Isrubick IsLaneBot
 	response rubick_MissingIsLaneBot
-}
-
-Response rubick_ItemDropIsCommonDrop
-{
-	scene "scenes/rubick/rubick_rubick_itemcommon_01.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_itemcommon_02.vcd" nodelay noscene 
-}
-
-Rule rubick_ItemDropIsCommonDrop_Rule
-{
-	criteria ItemDrop Isrubick IsCommonDrop
-	response rubick_ItemDropIsCommonDrop
-}
-
-Response rubick_ItemDropIsRareDrop
-{
-	scene "scenes/rubick/rubick_rubick_itemmoderate_01.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_itemmoderate_02.vcd" nodelay noscene 
-}
-
-Rule rubick_ItemDropIsRareDrop_Rule
-{
-	criteria ItemDrop Isrubick IsRareDrop
-	response rubick_ItemDropIsRareDrop
-}
-
-Response rubick_ItemDropIsUltraRareDrop
-{
-	scene "scenes/rubick/rubick_rubick_itemrare_01.vcd" nodelay noscene 
-}
-
-Rule rubick_ItemDropIsUltraRareDrop_Rule
-{
-	criteria ItemDrop Isrubick IsUltraRareDrop
-	response rubick_ItemDropIsUltraRareDrop
 }
 
 Response rubick_Immortality

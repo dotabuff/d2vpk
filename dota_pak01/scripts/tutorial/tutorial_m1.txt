@@ -292,11 +292,11 @@
 		"advance_time"				"0.3"
 		"next_lesson"				"tm1_premoveto_2"
 		
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_movetogate"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_MoveTo"
+			"title"		"#DOTA_Quest_MoveTo"
 		}
 	}
 	
@@ -374,11 +374,11 @@
 
 	"tm1_premoveto_3c"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_findkeeper"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_FindKeeper"
+			"title"		"#DOTA_Quest_FindKeeper"
 		}
 		
 		"advance_event"				"lesson_started"
@@ -552,11 +552,11 @@
 		
 		"trigger_logic_relay"		"camp_relay_invade"
 
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_defendcamp"
 			"type"		"3"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_DefendCamp"
+			"title"		"#DOTA_Quest_DefendCamp"
 		}
 		
 		"advance_event"				"lesson_started"
@@ -842,11 +842,11 @@
 	{
 		"movecamera_to"				"!player"
 		
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_clearneutral"
 			"type"		"1"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_ClearNeutral"
+			"title"		"#DOTA_Quest_ClearNeutral"
 		}
 		
 		"trigger_logic_relay"		"r5_relay_disable_blocker"	// disable blocker
@@ -977,11 +977,11 @@
 	
 	"tm1_r5_creeping_return"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_returnshop"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_ReturnToShop"
+			"title"		"#DOTA_Quest_ReturnToShop"
 		}	
 		
 		"trigger_logic_relay"		"relay_r5_roquelaire_return"
@@ -1051,21 +1051,29 @@
 			"allow_movement"		"1"
 		}
 		
-		"quest_player_stat"
+		"quest"
 		{
 			"name"		"quest_earnmoney2"
-			"player_stat_type"		"gold"
-			"player_stat_value"		"185"
+
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"gold"
+				"player_stat_value"		"185"
+			}
 		}
 
-		"quest_buy_items"
+		"quest"
 		{
 			"name"		"quest_buy_circlet"
 			"type"		"1"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_EarnMoney2"
-			"item_list"
+			"title"		"#DOTA_Quest_EarnMoney2"
+
+			"subquest_buy_items"
 			{
-				"item_circlet"		"1"
+				"item_list"
+				{
+					"item_circlet"		"1"
+				}
 			}
 		}
 
@@ -1252,22 +1260,30 @@
 		
 		"trigger_logic_relay"		"relay_r6_roquelaire_restartcreeps"
 
-		"quest_player_stat"
+		"quest"
 		{
 			"name"		"quest_earnmoney3"
 			"type"		"1"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"player_stat_type"		"gold"
-			"player_stat_value"		"190"
+
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"gold"
+				"player_stat_value"		"190"
+			}
 		}
 
-		"quest_buy_items"
+		"quest"
 		{
 			"name"		"quest_buy_bracers"
 			"type"		"2"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_EarnMoney3"
-			"item_list"
+			"title"		"#DOTA_Quest_EarnMoney3"
+
+			"subquest_buy_items"
 			{
-				"item_recipe_bracer"		"1"
+				"item_list"
+				{
+					"item_recipe_bracer"		"1"
+				}
 			}
 		}
 		
@@ -1418,13 +1434,17 @@
 	{		
 		"stop_npc_speech"			"ss_roquelaire"
 
-		"quest_player_stat"
+		"quest"
 		{
 			"name"					"quest_levelult"
 			"type"					"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"					"#DOTA_Quest_LevelUlt"
-			"player_stat_type"		"level"
-			"player_stat_value"		"6"
+			"title"					"#DOTA_Quest_LevelUlt"
+
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"level"
+				"player_stat_value"		"6"
+			}
 		}
 		
 		"trigger_logic_relay"		"relay_r7_begin" // send roquelaire and open barrier
@@ -1493,11 +1513,15 @@
 			}
 		}
 		
-		"quest_player_stat"
+		"quest"
 		{
 			"name"					"quest_level5"
-			"player_stat_type"		"level"
-			"player_stat_value"		"5"
+
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"level"
+				"player_stat_value"		"5"
+			}
 		}
 
 		"advance_on_quest"			"quest_level5"
@@ -1663,11 +1687,11 @@
 			"activity"				"ACT_INVALID"
 		}
 
-		"quest_base"
+		"quest"
 		{
 			"name"					"quest_findrazor"
 			"type"					"2"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"					"#DOTA_Quest_FindRazor"
+			"title"					"#DOTA_Quest_FindRazor"
 		}
 		
 		"task_use_ability"			"dragon_knight_elder_dragon_form"

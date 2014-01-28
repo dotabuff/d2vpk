@@ -140,27 +140,36 @@
 			"allow_movement"	"1"
 		}
 		
-		"quest_player_stat"
+		"quest"
 		{
 			"name"		"quest_lasthits"
 			"type"		"2"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_LastHits"
-			"player_stat_type"		"last_hits"
-			"player_stat_value"		"15"
+			"title"		"#DOTA_Quest_LastHits"
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"last_hits"
+				"player_stat_value"		"15"
+			}
 		}
-		"quest_player_stat"
+		"quest"
 		{
 			"name"		"quest_lasthits_pt1"
 			"type"		"2"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"player_stat_type"		"last_hits"
-			"player_stat_value"		"5"
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"last_hits"
+				"player_stat_value"		"5"
+			}
 		}
-		"quest_player_stat"
+		"quest"
 		{
 			"name"		"quest_lasthits_pt2"
 			"type"		"2"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"player_stat_type"		"last_hits"
-			"player_stat_value"		"10"
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"last_hits"
+				"player_stat_value"		"10"
+			}
 		}
 
 		"advance_event"				"lesson_started"
@@ -302,14 +311,17 @@
 			"allow_movement"	"1"
 		}
 		
-		"quest_player_stat"
+		"quest"
 		{
 			"name"		"quest_denies"
 			"type"		"2"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_Denies"
-			"player_stat_type"		"denies"
-			"player_stat_value"		"3"
-			"dont_count_current_value"	"1"
+			"title"		"#DOTA_Quest_Denies"
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"denies"
+				"player_stat_value"		"3"
+				"dont_count_current_value"	"1"
+			}
 		}
 
 		"advance_event"				"lesson_started"

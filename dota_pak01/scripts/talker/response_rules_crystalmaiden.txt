@@ -830,6 +830,17 @@ Rule crystalmaiden_AllyNearIsAllyLinaEarlyGame_Rule
 	response crystalmaiden_AllyNearIsAllyLinaEarlyGame
 }
 
+Response crystalmaiden_AllyNearIsAllyPhoenixEarlyGame
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_ally_02.vcd" nodelay noscene speakonce
+}
+
+Rule crystalmaiden_AllyNearIsAllyPhoenixEarlyGame_Rule
+{
+	criteria AllyNear Iscrystalmaiden IsAllyPhoenix EarlyGame
+	response crystalmaiden_AllyNearIsAllyPhoenixEarlyGame
+}
+
 Response crystalmaiden_AllyNearIsAllyTuskEarlyGame
 {
 	scene "scenes/crystalmaiden/crystalmaiden_cm_ally_04.vcd" nodelay noscene speakonce

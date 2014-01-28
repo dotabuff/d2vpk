@@ -264,9 +264,20 @@ Rule medusa_KillIsEnemyZuusChance_50%_Rule
 	response medusa_KillIsEnemyZuusChance_50%
 }
 
-Response medusa_KillIsEnemyLichChance_50%
+Response medusa_KillIsEnemyPhoenixChance_50%
 {
 	scene "scenes/medusa/medusa_medus_rival_23.vcd" nodelay noscene 
+}
+
+Rule medusa_KillIsEnemyPhoenixChance_50%_Rule
+{
+	criteria Kill Ismedusa IsEnemyPhoenix Chance_50%
+	response medusa_KillIsEnemyPhoenixChance_50%
+}
+
+Response medusa_KillIsEnemyLichChance_50%
+{
+	scene "scenes/medusa/medusa_medus_rival_24.vcd" nodelay noscene 
 }
 
 Rule medusa_KillIsEnemyLichChance_50%_Rule

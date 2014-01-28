@@ -2723,6 +2723,65 @@
 }
 
 
+
+// Ability draft
+"ui.abilitydraft_yourturn"
+{
+	"volume"		"0.7"
+	"wave"  "ui/menu/profile_close.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.3"	
+			}
+		}
+	}
+}
+
+
+
+
+
+"ui.abilitydraft_yourpick"
+{
+	"volume"		"0.4"
+	"pitch"			"99, 101"
+	"wave"  "ui/menu/click_alt.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+		}
+	}
+}
+
+
+"ui.abilitydraft_theirpick"
+{
+	"volume"		"0.6"
+	"wave"  "ui/menu/switch_view.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.2"	
+			}
+		}
+	}
+}
+
+
 // Store Items ======================================
 "ui.inv_egg"
 {

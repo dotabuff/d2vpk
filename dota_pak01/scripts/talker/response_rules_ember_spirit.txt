@@ -156,6 +156,17 @@ Rule ember_spirit_KillIsEmberRemnantRunChance_15%_Rule
 	response ember_spirit_KillIsEmberRemnantRunChance_15%
 }
 
+Response ember_spirit_KillIsEnemyPhoenixChance_25%
+{
+	scene "scenes/ember_spirit/ember_spirit_embr_rival_02.vcd" nodelay noscene 
+}
+
+Rule ember_spirit_KillIsEnemyPhoenixChance_25%_Rule
+{
+	criteria Kill Isember_spirit IsEnemyPhoenix Chance_25%
+	response ember_spirit_KillIsEnemyPhoenixChance_25%
+}
+
 Response ember_spirit_KillIsEnemyLegion_CommanderChance_25%
 {
 	scene "scenes/ember_spirit/ember_spirit_embr_rival_03.vcd" nodelay noscene 
@@ -380,6 +391,20 @@ Rule ember_spirit_KillIsEnemyBatriderChance_10%_Rule
 {
 	criteria Kill Isember_spirit IsEnemyBatrider Chance_10%
 	response ember_spirit_KillIsEnemyBatriderChance_10%
+}
+
+Response ember_spirit_KillIsEnemyPhoenixChance_10%
+{
+	scene "scenes/ember_spirit/ember_spirit_embr_rival_20.vcd" nodelay noscene 
+	scene "scenes/ember_spirit/ember_spirit_embr_rival_21.vcd" nodelay noscene 
+	scene "scenes/ember_spirit/ember_spirit_embr_rival_22.vcd" nodelay noscene 
+	scene "scenes/ember_spirit/ember_spirit_embr_rival_23.vcd" nodelay noscene 
+}
+
+Rule ember_spirit_KillIsEnemyPhoenixChance_10%_Rule
+{
+	criteria Kill Isember_spirit IsEnemyPhoenix Chance_10%
+	response ember_spirit_KillIsEnemyPhoenixChance_10%
 }
 
 Response ember_spirit_Move

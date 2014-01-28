@@ -251,9 +251,6 @@ criterion "IsKilledTower" "killedclass" "npc_dota_tower" required
 criterion "IsEnemyLoneDruidBear" "killedClass" "npc_dota_lone_druid_bear" required
 criterion "IsEnemySpiderling" "killedClass" "npc_dota_broodmother_spiderling" required
 
-//Temp until we record
-criterion "isenemyterrorblade" "isenemyterrorblade" "1" required
-
 //ANNOUNCER STUFF
 
 criterion "Is10SecToPick" "line" "announcer_announcer_count_pick_10" weight 6 required

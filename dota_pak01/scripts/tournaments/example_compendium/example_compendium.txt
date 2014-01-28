@@ -1,0 +1,255 @@
+"example_compendium.txt"
+{
+	"timers"
+	{
+		// These timers are in epoch time. http://www.epochconverter.com/ is a good site to convert date/time into epoch time.
+		"past"				"1390853798"
+		"future"			"1390853798"
+	}
+
+	"pages"
+	{
+		"page_title"
+		{
+			"template"		"full_image"
+			"images"
+			{
+				"image1"
+				{
+					"filename"	"crystal_maiden.jpg"
+					"handle"	"90345086096881547"
+				}
+			}
+		}
+
+		"page1"
+		{
+			"template"		"title_image_1"
+			"images"
+			{
+				"image1"
+				{
+	// 				"handle"	"90345086097030000"
+					"dota_filename"	"images/heroes/Beastmaster.png"
+				}
+			}
+			"text"
+			{
+				"title"		"This title needs a localization strategy"
+			}
+		}
+
+		"page2"
+		{
+			"template"		"title_image_2"
+			"images"
+			{
+				"image1"	
+				{
+					"filename"	"banner.png"
+					"handle"	"90343288303352932"
+				}
+			}
+			"text"
+			{
+				"title"		"This title needs a localization strategy"
+				"subtitle"	"And so does this subtext"
+			}
+		}
+
+		"page3"
+		{
+			"template"		"title_image_3"
+			"images"
+			{
+				"image1"
+				{
+					"filename"	"death_prophet.jpg"
+					"handle"	"90342675071463937"
+				}
+			}
+			"text"
+			{
+				"title"		"This unlocalized text is right on top of the image"
+			}
+		}
+
+		"page4"
+		{
+			"template"		"selections_1"
+			"text"
+			{
+				"title"		"League Selections"
+				"subtitle"	"Group 1"
+			}
+			"selections"
+			{
+				"selection1"
+				{
+					"description"		"Select a Hero?"
+					"points"			"1"
+					"selection_index"	"1"
+
+					"choice_type"		"hero"
+					"choices"
+					{
+						// <HERO NAME>			<HERO ID FROM dota/scripts/npc/npc_heroes.txt>
+						//
+						// Hero names here won't actually be used, they're just here to make this file more readable (we'll use the Hero ID to find the hero's name)
+						"Axe"					"2"
+						"Phantom Lancer"		"12"
+						"Huskar"				"59"
+						"Wisp"					"91"
+					}
+				}
+				"selection2"
+				{
+					"description"		"Select a Player?"
+					"points"			"2"
+					"selection_index"	"2"
+
+					"choice_type"		"generic"
+					"choice_set"		"test_playerlist"
+					"choices"
+					{
+						"IG - Zhou"				"1"
+						"Navi - Dendi"			"2"
+						"DK - Mushi"			"3"
+						"Fnatic - H4nn1"		"4"
+					}
+				}
+				"selection3"
+				{
+					"description"		"Select a Player?"
+					"points"			"2"
+					"selection_index"	"7"
+
+					"choice_type"		"generic"
+					"choice_set"		"test_playerlist"
+					"choices"
+					{
+						"IG - Zhou"				"1"
+						"Navi - Dendi"			"2"
+						"DK - Mushi"			"3"
+						"Fnatic - H4nn1"		"4"
+					}
+				}
+				"selection4"
+				{
+					"description"		"Pick a hero from all heroes?"
+					"points"			"10"
+					"selection_index"	"3"
+
+					"choice_type"		"all_heroes"
+				}
+				"selection6"
+				{
+					"description"		"Highest GPM in a match?"
+					"points"			"3"
+					"selection_index"	"4"
+
+					"choice_type"		"generic"
+					"choices"
+					{
+						"Less than 800 GPM"					"1"
+						"Equal to or greater than 800 GPM"	"2"
+					}
+				}
+				"selection7"
+				{
+					"description"		"Highest GPM in a match?"
+					"points"			"3"
+					"selection_index"	"6"
+
+					"choice_type"		"generic"
+					"choices"
+					{
+						"Less than 800 GPM"					"1"
+						"Equal to or greater than 800 GPM"	"2"
+					}
+				}
+			}
+			"timers"
+			{
+				"timer1"		"past"
+			}
+		}
+
+		"page5"
+		{
+			"template"		"selections_1"
+			"text"
+			{
+				"title"		"Player Selections"
+				"subtitle"	"Group 1"
+			}
+			"selections"
+			{
+				"selection1"
+				{
+					"description"		"Select a Hero?"
+					"points"			"1"
+					"selection_index"	"10"
+
+					"choice_type"		"hero"
+					"choices"
+					{
+						// <HERO NAME>			<HERO ID FROM dota/scripts/npc/npc_heroes.txt>
+						//
+						// Hero names here won't actually be used, they're just here to make this file more readable (we'll use the Hero ID to find the hero's name)
+						"Axe"					"2"
+						"Phantom Lancer"		"12"
+						"Huskar"				"59"
+						"Wisp"					"91"
+					}
+				}
+				"selection2"
+				{
+					"description"		"Select a Player?"
+					"points"			"2"
+					"selection_index"	"8"
+
+					"choice_type"		"generic"
+					"choice_set"		"test_playerlist"
+					"choices"
+					{
+						"IG - Zhou"				"1"
+						"Navi - Dendi"			"2"
+						"DK - Mushi"			"3"
+						"Fnatic - H4nn1"		"4"
+					}
+				}
+				"selection5"
+				{
+					"description"		"Highest GPM in a match?"
+					"points"			"3"
+					"selection_index"	"9"
+
+					"choice_type"		"generic"
+					"choices"
+					{
+						"Less than 800 GPM"					"1"
+						"Equal to or greater than 800 GPM"	"2"
+					}
+				}
+			}
+			"timers"
+			{
+				"timer1"		"future"
+			}
+		}
+
+		"page_end"
+		{
+			"template"		"full_image"
+			"images"
+			{
+				"image1"
+				{
+					"filename"	"skywrath.jpg"
+					"handle"	"90342675071371637"
+				}
+			}
+		}
+	}
+}

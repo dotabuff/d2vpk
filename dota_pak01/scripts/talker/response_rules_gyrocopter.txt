@@ -520,6 +520,17 @@ Rule gyrocopter_AllyNearIsAllyOutworld_DestroyerEarlyGame_Rule
 	response gyrocopter_AllyNearIsAllyOutworld_DestroyerEarlyGame
 }
 
+Response gyrocopter_AllyNearIsAllyPhoenixEarlyGame
+{
+	scene "scenes/gyrocopter/gyrocopter_gyro_ally_06.vcd" nodelay noscene speakonce
+}
+
+Rule gyrocopter_AllyNearIsAllyPhoenixEarlyGame_Rule
+{
+	criteria AllyNear Isgyrocopter IsAllyPhoenix EarlyGame
+	response gyrocopter_AllyNearIsAllyPhoenixEarlyGame
+}
+
 Response gyrocopter_AllyNearIsAllySniperEarlyGame
 {
 	scene "scenes/gyrocopter/gyrocopter_gyro_ally_08.vcd" nodelay noscene speakonce

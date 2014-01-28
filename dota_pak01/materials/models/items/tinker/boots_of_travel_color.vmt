@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$basetexture" "models\items\tinker\boots_of_travel_color"
+	"$normalmap"   "models\items\tinker\boots_of_travel_normal"
+	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+	"$envmap" "env_cubemap"
+	"$maskmap1" "models\items\tinker\boots_of_travel_mask1"
+	"$maskmap2" "models\items\tinker\boots_of_travel_mask2"
+	
+	$SPECULAREXPONENT 40
+	$SPECULARSCALE 17
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 5
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+
+	"$alphatest"		"1"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

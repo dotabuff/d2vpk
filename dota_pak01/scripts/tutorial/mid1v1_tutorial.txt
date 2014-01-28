@@ -101,31 +101,40 @@
 	{
 		"fade_to"					"0"
 
-		"quest_entity_death"
+		"quest"
 		{
 			"name"							"quest_laning_attack_2"
 			"type"							"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"							"#DOTA_Quest_Laning_AttackDefend_Mid"
-			"entity_list"	
+			"title"							"#DOTA_Quest_Laning_AttackDefend_Mid"
+
+			"subquest_entity_death"
 			{
-				"npc_dota_badguys_tower1_mid"	"1"
-				"npc_dota_badguys_tower2_mid"	"1"
+				"entity_list"	
+				{
+					"npc_dota_badguys_tower1_mid"	"1"
+					"npc_dota_badguys_tower2_mid"	"1"
+				}
 			}
+
 			"win_if_completed"				"1"
 			"game_end_text"					"#DOTA_Quest_Laning_Attack_Mid_Success"
 			"quest_complete_fade_alpha"		"255"
 		}
 
-		"quest_entity_death"
+		"quest"
 		{
 			"name"							"quest_laning_defend_2"
 			"type"							"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"							""
-			"entity_list"	
+
+			"subquest_entity_death"
 			{
-				"npc_dota_goodguys_tower1_mid"	"1"
-				"npc_dota_goodguys_tower2_mid"	"1"
+				"entity_list"	
+				{
+					"npc_dota_goodguys_tower1_mid"	"1"
+					"npc_dota_goodguys_tower2_mid"	"1"
+				}
 			}
+
 			"lose_if_completed"				"1"
 			"game_end_text"					"#DOTA_Quest_Laning_Defend_Mid_Failure"
 			"quest_complete_fade_alpha"		"255"

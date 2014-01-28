@@ -1,0 +1,87 @@
+// file    : godhorse.cloth
+// author  : jameso
+// date    : 21 Jan 2014, 10:24AM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.08"
+        AnimationVertexAttraction        "0.05"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "0.5"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "25.0"
+        LocalForce                       "2.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            FlagA0_JNT                   "R0C0"
+            FlagA1_JNT                   "R1C0"
+            FlagA2_JNT                   "R2C0"
+            FlagA3_JNT                   "R3C0"
+            FlagA4_JNT                   "R4C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        R2C0                             "2.0"
+        R3C0                             "4.0"
+        R4C0                             "8.0"
+        rows                             "5"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.0"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.0"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.08"
+        AnimationVertexAttraction        "0.05"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "0.5"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "25.0"
+        LocalForce                       "2.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            FlagB0_JNT                   "R0C0"
+            FlagB1_JNT                   "R1C0"
+            FlagB2_JNT                   "R2C0"
+            FlagB3_JNT                   "R3C0"
+            FlagB4_JNT                   "R4C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        R2C0                             "2.0"
+        R3C0                             "4.0"
+        R4C0                             "8.0"
+        rows                             "5"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.0"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.0"
+    }
+}
+
+// eof

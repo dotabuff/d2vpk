@@ -7,33 +7,22 @@ criterion "IsEarthSpiRollingBoulder" "abilityname" "earth_spirit_rolling_boulder
 criterion "IsEarthSpiGeoGrip" "abilityname" "earth_spirit_geomagnetic_grip" weight 5 required
 criterion "IsEarthSpiMagnetize" "abilityname" "earth_spirit_magnetize" weight 5 required
 criterion "IsEaSpRock" "targetclassname" "npc_dota_earth_spirit_stone" weight 5 required
-criterion "IsEarthSpStoneCallerLearned" "skill4_level" "1" weight 5 required
 
-Response earth_spirit_LearnIsEarthSpiStoneCallerIsEarthSpStoneCallerLearned
+Response earth_spirit_Spawn
 {
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_01.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_02.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_03.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_04.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_05.vcd" nodelay noscene 
-}
-
-Rule earth_spirit_Spawn_Rule
-{
-	criteria Spawn Isearth_spirit  
-	response earth_spirit_Spawn
-}
-
-Response earth_spirit_Spawn
-{
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_06.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_spawn_07.vcd" nodelay noscene 
 }
 
-Rule earth_spirit_LearnIsEarthSpiStoneCallerIsEarthSpStoneCallerLearned_Rule
+Rule earth_spirit_Spawn_Rule
 {
-	criteria Learn Isearth_spirit IsEarthSpiStoneCaller IsEarthSpStoneCallerLearned
-	response earth_spirit_LearnIsEarthSpiStoneCallerIsEarthSpStoneCallerLearned
+	criteria Spawn Isearth_spirit 
+	response earth_spirit_Spawn
 }
 
 Response earth_spirit_CustomIsGameStart
@@ -111,18 +100,6 @@ Response earth_spirit_Kill
 {
 	scene "scenes/earth_spirit/earth_spirit_earthspi_magnetize_01.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_magnetize_03.vcd" nodelay noscene 
-	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_06.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_07.vcd" nodelay noscene  
-}
-
-Rule earth_spirit_Kill_Rule
-{
-	criteria Kill Isearth_spirit 
-	response earth_spirit_Kill
-}
-
-Response earth_spirit_Kill
-{
 	scene "scenes/earth_spirit/earth_spirit_earthspi_kill_01.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_kill_03.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_kill_04.vcd" nodelay noscene 
@@ -146,11 +123,13 @@ Response earth_spirit_Kill
 	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_03.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_04.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_05.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_06.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_07.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_Kill_Rule
 {
-	criteria Kill Isearth_spirit  
+	criteria Kill Isearth_spirit 
 	response earth_spirit_Kill
 }
 
@@ -247,6 +226,18 @@ Rule earth_spirit_KillIsEnemyWispChance_25%_Rule
 {
 	criteria Kill Isearth_spirit IsEnemyWisp Chance_25%
 	response earth_spirit_KillIsEnemyWispChance_25%
+}
+
+Response earth_spirit_KillIsEnemyTerrorbladeChance_25%
+{
+	scene "scenes/earth_spirit/earth_spirit_earthspi_rival_16.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_rival_17.vcd" nodelay noscene 
+}
+
+Rule earth_spirit_KillIsEnemyTerrorbladeChance_25%_Rule
+{
+	criteria Kill Isearth_spirit IsEnemyTerrorblade Chance_25%
+	response earth_spirit_KillIsEnemyTerrorbladeChance_25%
 }
 
 Response earth_spirit_KillIsEnemyTuskChance_25%
@@ -448,16 +439,6 @@ Response earth_spirit_Move
 	scene "scenes/earth_spirit/earth_spirit_earthspi_move_20.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_move_21.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_move_22.vcd" nodelay noscene 
-}
-
-Rule earth_spirit_Move_Rule
-{
-	criteria Move Isearth_spirit  
-	response earth_spirit_Move
-}
-
-Response earth_spirit_Move
-{
 	scene "scenes/earth_spirit/earth_spirit_earthspi_move_23.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_move_24.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_move_25.vcd" nodelay noscene 
@@ -485,7 +466,7 @@ Response earth_spirit_Attack
 
 Rule earth_spirit_Attack_Rule
 {
-	criteria Attack Isearth_spirit  
+	criteria Attack Isearth_spirit 
 	response earth_spirit_Attack
 }
 
@@ -520,7 +501,7 @@ Response earth_spirit_Deny
 
 Rule earth_spirit_Deny_Rule
 {
-	criteria Deny Isearth_spirit  
+	criteria Deny Isearth_spirit 
 	response earth_spirit_Deny
 }
 
@@ -532,7 +513,7 @@ Response earth_spirit_CastOrder
 
 Rule earth_spirit_CastOrder_Rule
 {
-	criteria CastOrder Isearth_spirit  
+	criteria CastOrder Isearth_spirit 
 	response earth_spirit_CastOrder
 }
 
@@ -602,7 +583,7 @@ Response earth_spirit_LevelUp
 
 Rule earth_spirit_LevelUp_Rule
 {
-	criteria LevelUp Isearth_spirit  
+	criteria LevelUp Isearth_spirit 
 	response earth_spirit_LevelUp
 }
 
@@ -832,16 +813,6 @@ Response earth_spirit_LastHit
 	scene "scenes/earth_spirit/earth_spirit_earthspi_lasthit_08.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_lasthit_09.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_lasthit_10.vcd" nodelay noscene 
-}
-
-Rule earth_spirit_LastHit_Rule
-{
-	criteria LastHit Isearth_spirit  
-	response earth_spirit_LastHit
-}
-
-Response earth_spirit_LastHit
-{
 	scene "scenes/earth_spirit/earth_spirit_earthspi_lasthit_11.vcd" nodelay noscene 
 }
 
@@ -867,13 +838,13 @@ Response earth_spirit_Death
 
 Rule earth_spirit_Death_Rule
 {
-	criteria Death Isearth_spirit  
+	criteria Death Isearth_spirit 
 	response earth_spirit_Death
 }
 
 Response earth_spirit_DeathIsReincarnating
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_fastres_01.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_fastres_01.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_fastres_02.vcd" nodelay noscene 
 }
 
@@ -895,16 +866,6 @@ Response earth_spirit_Respawn
 	scene "scenes/earth_spirit/earth_spirit_earthspi_respawn_08.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_respawn_09.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_respawn_10.vcd" nodelay noscene 
-}
-
-Rule earth_spirit_Respawn_Rule
-{
-	criteria Respawn Isearth_spirit  
-	response earth_spirit_Respawn
-}
-
-Response earth_spirit_Respawn
-{
 	scene "scenes/earth_spirit/earth_spirit_earthspi_respawn_11.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_respawn_12.vcd" nodelay noscene 
 }
@@ -1129,14 +1090,14 @@ Response earth_spirit_Bottling
 
 Rule earth_spirit_Bottling_Rule
 {
-	criteria Bottling Isearth_spirit  
+	criteria Bottling Isearth_spirit 
 	response earth_spirit_Bottling
 }
 
 Response earth_spirit_MissingIsLaneTop
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_01.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_02.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_01.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_02.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_MissingIsLaneTop_Rule
@@ -1147,7 +1108,7 @@ Rule earth_spirit_MissingIsLaneTop_Rule
 
 Response earth_spirit_MissingIsLaneMid
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_03.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_03.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_MissingIsLaneMid_Rule
@@ -1158,8 +1119,8 @@ Rule earth_spirit_MissingIsLaneMid_Rule
 
 Response earth_spirit_MissingIsLaneBot
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_04.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_05.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_04.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_05.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_lanemissing_06.vcd" nodelay noscene 
 }
 
@@ -1209,7 +1170,7 @@ Response earth_spirit_Immortality
 
 Rule earth_spirit_Immortality_Rule
 {
-	criteria Immortality Isearth_spirit  
+	criteria Immortality Isearth_spirit 
 	response earth_spirit_Immortality
 }
 
@@ -1226,7 +1187,7 @@ Rule earth_spirit_ImmortalityChance_25%_Rule
 
 Response earth_spirit_PowerupIsPowerupHaste
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_haste_01.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_haste_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupHaste_Rule
@@ -1237,7 +1198,7 @@ Rule earth_spirit_PowerupIsPowerupHaste_Rule
 
 Response earth_spirit_PowerupIsPowerupHasteChance_25%
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_haste_02.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_haste_02.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupHasteChance_25%_Rule
@@ -1248,7 +1209,7 @@ Rule earth_spirit_PowerupIsPowerupHasteChance_25%_Rule
 
 Response earth_spirit_PowerupIsPowerupDoubleDamage
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_doubdam_01.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_doubdam_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupDoubleDamage_Rule
@@ -1259,7 +1220,7 @@ Rule earth_spirit_PowerupIsPowerupDoubleDamage_Rule
 
 Response earth_spirit_PowerupIsPowerupDoubleDamageChance_25%
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_doubdam_02.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_doubdam_02.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupDoubleDamageChance_25%_Rule
@@ -1270,7 +1231,7 @@ Rule earth_spirit_PowerupIsPowerupDoubleDamageChance_25%_Rule
 
 Response earth_spirit_PowerupIsPowerupRegeneration
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_regen_01.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_regen_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupRegeneration_Rule
@@ -1281,7 +1242,7 @@ Rule earth_spirit_PowerupIsPowerupRegeneration_Rule
 
 Response earth_spirit_PowerupIsPowerupRegenerationChance_25%
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_regen_02.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_regen_02.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupRegenerationChance_25%_Rule
@@ -1292,7 +1253,7 @@ Rule earth_spirit_PowerupIsPowerupRegenerationChance_25%_Rule
 
 Response earth_spirit_PowerupIsPowerupIllusion
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_illus_01.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_illus_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupIllusion_Rule
@@ -1303,7 +1264,7 @@ Rule earth_spirit_PowerupIsPowerupIllusion_Rule
 
 Response earth_spirit_PowerupIsPowerupInvisibility
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_invis_01.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_invis_01.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupInvisibility_Rule
@@ -1314,8 +1275,8 @@ Rule earth_spirit_PowerupIsPowerupInvisibility_Rule
 
 Response earth_spirit_PowerupIsPowerupInvisibilityChance_25%
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_invis_02.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_invis_03.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_invis_02.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_invis_03.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_PowerupIsPowerupInvisibilityChance_25%_Rule
@@ -1326,9 +1287,9 @@ Rule earth_spirit_PowerupIsPowerupInvisibilityChance_25%_Rule
 
 Response earth_spirit_CooldownLittleNag
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_01.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_04.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_07.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_01.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_04.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_07.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_CooldownLittleNag_Rule
@@ -1339,9 +1300,9 @@ Rule earth_spirit_CooldownLittleNag_Rule
 
 Response earth_spirit_CooldownMediumNag
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_02.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_05.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_08.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_02.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_05.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_08.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_CooldownMediumNag_Rule
@@ -1352,9 +1313,9 @@ Rule earth_spirit_CooldownMediumNag_Rule
 
 Response earth_spirit_CooldownSuperNag
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_03.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_06.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_09.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_03.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_06.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_notyet_09.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_CooldownSuperNag_Rule
@@ -1365,9 +1326,9 @@ Rule earth_spirit_CooldownSuperNag_Rule
 
 Response earth_spirit_NoManaLittleNag
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_01.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_04.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_07.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_01.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_04.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_07.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_NoManaLittleNag_Rule
@@ -1378,9 +1339,9 @@ Rule earth_spirit_NoManaLittleNag_Rule
 
 Response earth_spirit_NoManaMediumNag
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_02.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_05.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_08.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_02.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_05.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_08.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_NoManaMediumNag_Rule
@@ -1391,9 +1352,9 @@ Rule earth_spirit_NoManaMediumNag_Rule
 
 Response earth_spirit_NoManaSuperNag
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_03.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_06.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_09.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_03.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_06.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_nomana_09.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_NoManaSuperNag_Rule
@@ -1414,7 +1375,7 @@ Response earth_spirit_Thanks
 
 Rule earth_spirit_Thanks_Rule
 {
-	criteria Thanks Isearth_spirit  
+	criteria Thanks Isearth_spirit 
 	response earth_spirit_Thanks
 }
 
@@ -1459,7 +1420,7 @@ Response earth_spirit_Pain
 
 Rule earth_spirit_Pain_Rule
 {
-	criteria Pain Isearth_spirit  
+	criteria Pain Isearth_spirit 
 	response earth_spirit_Pain
 }
 
@@ -1483,7 +1444,7 @@ Response earth_spirit_Defeat
 
 Rule earth_spirit_Defeat_Rule
 {
-	criteria Defeat Isearth_spirit  
+	criteria Defeat Isearth_spirit 
 	response earth_spirit_Defeat
 }
 
@@ -1496,7 +1457,7 @@ Response earth_spirit_Victory
 
 Rule earth_spirit_Victory_Rule
 {
-	criteria Victory Isearth_spirit  
+	criteria Victory Isearth_spirit 
 	response earth_spirit_Victory
 }
 
@@ -1507,8 +1468,8 @@ Response earth_spirit_EmoteIsEmoteLaugh
 	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_03.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_04.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_05.vcd" nodelay noscene 
-	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_06.vcd" nodelay noscene  
-	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_07.vcd" nodelay noscene  
+	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_06.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_laugh_07.vcd" nodelay noscene 
 }
 
 Rule earth_spirit_EmoteIsEmoteLaugh_Rule

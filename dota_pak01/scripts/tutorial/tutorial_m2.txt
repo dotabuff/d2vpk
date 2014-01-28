@@ -227,11 +227,11 @@
 	
 	"tm2_r1_givequest"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_m2_defeattide"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_M2_DefeatTide"
+			"title"		"#DOTA_Quest_M2_DefeatTide"
 		}
 	
 		"advance_event"				"event_r1_tango" // walked towards creep
@@ -377,13 +377,17 @@
 			"duration"				"10"
 		}
 
-		"quest_player_stat"
+		"quest"
 		{
 			"name"		"quest_m2_leveltwo"
 			"type"		"2"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_M2_LevelTwo"
-			"player_stat_type"		"level"
-			"player_stat_value"		"2"
+			"title"		"#DOTA_Quest_M2_LevelTwo"
+
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"level"
+				"player_stat_value"		"2"
+			}
 		}
 		
 		"advance_event"				"lesson_started"
@@ -573,11 +577,11 @@
 			"allow_movement"		"1"
 		}
 		
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_m2_towerdefend"
 			"type"		"3"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_M2_TowerDefend"
+			"title"		"#DOTA_Quest_M2_TowerDefend"
 		}
 		
 		"advance_time"				"10"
@@ -665,11 +669,15 @@
 		}
 	
 
-		"quest_player_stat"
+		"quest"
 		{
 			"name"					"quest_level3"
-			"player_stat_type"		"level"
-			"player_stat_value"		"3"
+
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"level"
+				"player_stat_value"		"3"
+			}
 		}
 	
 		"advance_on_quest"			"quest_level3"
@@ -718,11 +726,15 @@
 			"duration"				"10"
 		}
 
-		"quest_player_stat"
+		"quest"
 		{
 			"name"					"quest_level4"
-			"player_stat_type"		"level"
-			"player_stat_value"		"4"
+
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"level"
+				"player_stat_value"		"4"
+			}
 		}
 
 		"advance_on_quest"			"quest_level4"
@@ -905,11 +917,11 @@
 	
 	"tm2_r2_stashquest"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_m2_tobase"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_M2_ReturnToBase"
+			"title"		"#DOTA_Quest_M2_ReturnToBase"
 		}
 
 		"advance_event"				"event_player_entered_base"
@@ -1018,11 +1030,11 @@
 			"allow_movement"		"1"
 		}
 		
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_m2_levelult"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_M2_Assassinate"
+			"title"		"#DOTA_Quest_M2_Assassinate"
 		}
 		
 		"advance_event"				"player_exit_base"
@@ -1377,13 +1389,17 @@
 			"duration"				"8"
 		}
 
-		"quest_player_stat"
+		"quest"
 		{
 			"name"		"quest_levelsix"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_M2_LevelSix"
-			"player_stat_type"		"level"
-			"player_stat_value"		"6"
+			"title"		"#DOTA_Quest_M2_LevelSix"
+
+			"subquest_player_stat"
+			{
+				"player_stat_type"		"level"
+				"player_stat_value"		"6"
+			}
 		}
 		
 		"trigger_logic_relay"		"relay_r5_levelult"
@@ -1525,11 +1541,11 @@
 	
 	"tm2_r7_teleportquest"
 	{
-		"quest_base"
+		"quest"
 		{
 			"name"		"quest_teleport"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_M2_Teleport"
+			"title"		"#DOTA_Quest_M2_Teleport"
 		}
 		
 		"task_get_item_on_player" // item on player

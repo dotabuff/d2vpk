@@ -536,6 +536,7 @@
 		"directory"		"boar"
 		"vmt"			"materials/models/heroes/beastmaster/beastmaster_beast_color.vmt"
 		"unit"			"npc_dota_beastmaster_boar"
+		"loadout_slot"	"ability3"
 
 		"models"
 		{
@@ -579,16 +580,19 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Spawn"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_spawn.dmx"
 					}
 					"Idle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_idle.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_run.dmx"
 					}
 					"Attack"
 					{
@@ -597,22 +601,26 @@
 						"desc_attack_point" "1"
 						"anim_length"	"1.0"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_attack.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_death.dmx"
 					}
 					"Disabled"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Disabled"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_stun.dmx"
 					}
 					"Flail"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Flail"
 						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_flail.dmx"
 					}
 					"IdleRare"
 					{
@@ -625,6 +633,7 @@
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_portrait.dmx"
 					}
 					"PortraitIdleRare"
 					{
@@ -638,6 +647,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_turn_center.dmx"
 					}
 					"TurnPoseLeft"
 					{
@@ -645,6 +655,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_turn_left.dmx"
 					}
 					"TurnPoseRight"
 					{
@@ -652,6 +663,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/beastmaster/beast_turn_right.dmx"
 					}
 
 					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
@@ -721,32 +733,38 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Spawn"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_spawn.dmx"
 					}
 					"Idle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_idle.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_fly.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_death.dmx"
 					}
 					"Disabled"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Disabled"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_stun.dmx"
 					}
 					"Flail"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Flail"
 						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_flail.dmx"
 					}
 					"IdleRare"
 					{
@@ -759,6 +777,7 @@
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_portrait.dmx"
 					}
 					"PortraitIdleRare"
 					{
@@ -772,6 +791,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_turn_center.dmx"
 					}
 					"TurnPoseLeft"
 					{
@@ -779,6 +799,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_turn_left.dmx"
 					}
 					"TurnPoseRight"
 					{
@@ -786,6 +807,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/beastmaster/bird_turn_right.dmx"
 					}
 
 					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
@@ -817,7 +839,7 @@
 			"0"
 			{
 				"name"		"#DOTA_Import_Bear"
-				"qc_template"	"scripts/itemtest/itemtest_qc_template_bear.txt"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_ld_bear.txt"
 				"preview_reference"	"models/heroes/lone_druid/spirit_bear.mdl"
 
 				"materials"
@@ -854,56 +876,66 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Spawn"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_spawn.dmx"
 					}
 					"Idle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_idle.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_death.dmx"
 					}
 					"Disabled"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Disabled"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_death.dmx"
 					}
 					"Flail"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Flail"
 						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_flail.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_run.dmx"
 					}
 					"RunOutOfRange"
 					{
 						"name"		"#DOTA_ItemTest_Animation_RunOutOfRange"
 						"description"	"#DOTA_ItemTest_Animation_RunOutOfRange_Desc_SB"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_run_or.dmx"
 					}
 					"RunInjured"
 					{
 						"name"			"#DOTA_ItemTest_Animation_RunInjured"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_run_injured.dmx"
 					}
 					"RunHaste"
 					{
 						"name"			"#DOTA_ItemTest_Animation_RunHaste"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_run_haste.dmx"
 					}
 					"IdleOutOfRange"
 					{
 						"name"		"#DOTA_ItemTest_Animation_IdleOutOfRange"
 						"description"	"#DOTA_ItemTest_Animation_IdleOutOfRange_Desc_SB"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_idle_or.dmx"
 					}
 					"AttackA"
 					{
@@ -912,6 +944,7 @@
 						"desc_attack_point" "1"
 						"anim_length"	"1.1"
 						"ui_block"		"2"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_attack.dmx"
 					}
 					"AttackB"
 					{
@@ -921,6 +954,7 @@
 						"anim_length"	"1.1"
 						"optional"		"1"
 						"ui_block"		"2"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_attackb.dmx"
 					}
 					"Attack2A"
 					{
@@ -930,6 +964,7 @@
 						"anim_length"	"1.1"
 						"optional"		"1"
 						"ui_block"		"2"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_attackc.dmx"
 					}
 					"Attack2B"
 					{
@@ -945,6 +980,7 @@
 						"name"		"#DOTA_ItemTest_Animation_IdleRare"
 						"optional"	"1"
 						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_idle_rare.dmx"
 					}
 					"PortraitIdle"
 					{
@@ -958,6 +994,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
 						"optional"	"1"
 						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_turn_center.dmx"
 					}
 					"TurnPoseLeft"
 					{
@@ -965,6 +1002,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
 						"optional"	"1"
 						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_turn_left.dmx"
 					}
 					"TurnPoseRight"
 					{
@@ -972,6 +1010,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
 						"optional"	"1"
 						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/lone_druid/sb_turn_right.dmx"
 					}
 
 					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
@@ -1019,6 +1058,7 @@
 		"directory"		"spiderling"
 		"vmt"			"materials/models/heroes/broodmother/spiderling.vmt"
 		"unit"			"npc_dota_broodmother_spiderling"
+		"loadout_slot"	"ability1"
 
 		"models"
 		{
@@ -1056,16 +1096,19 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Spawn"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/broodmother/spiderling_spawn.dmx"
 					}
 					"Idle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/broodmother/spiderling_idle.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/broodmother/spiderling_run.dmx"
 					}
 					"Attack"
 					{
@@ -1074,22 +1117,26 @@
 						"desc_attack_point" "1"
 						"anim_length"	"0.8"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/broodmother/spiderling_attack.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/broodmother/spiderling_death.dmx"
 					}
 					"Disabled"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Disabled"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/broodmother/spiderling_stun.dmx"
 					}
 					"Flail"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Flail"
 						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/broodmother/spiderling_flail.dmx"
 					}
 					"IdleRare"
 					{
@@ -1107,7 +1154,7 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
 						"optional"	"1"
-						"ui_block"	"1"
+						"ui_block"	"2"
 					}
 					"TurnPoseCenter"
 					{
@@ -1133,8 +1180,8 @@
 					"Die2"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die2"
-						"optional"	"1"
-						"ui_block"	"2"
+						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/broodmother/spiderling_death2.dmx"
 					}
 
 					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
@@ -1218,16 +1265,19 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Spawn"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lycan/summons_wolf_spawn.dmx"
 					}
 					"Idle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_idle.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_run.dmx"
 					}
 					"Attack"
 					{
@@ -1236,40 +1286,47 @@
 						"desc_attack_point" "1"
 						"anim_length"	"1"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_attack.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_death.dmx"
 					}
 					"Disabled"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Disabled"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_stun.dmx"
 					}
 					"Flail"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Flail"
 						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_flail.dmx"
 					}
 					"IdleRare"
 					{
 						"name"		"#DOTA_ItemTest_Animation_IdleRare"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_idle_shake.dmx"
 					}
 					"PortraitIdle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_portrait.dmx"
 					}
 					"PortraitIdleRare"
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_portrait_alt.dmx"
 					}
 					"TurnPoseCenter"
 					{
@@ -1277,6 +1334,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_turn_center.dmx"
 					}
 					"TurnPoseLeft"
 					{
@@ -1284,6 +1342,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_turn_left.dmx"
 					}
 					"TurnPoseRight"
 					{
@@ -1291,25 +1350,28 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_turn_right.dmx"
 					}
 					"Die2"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die2"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_death_alt.dmx"
 					}
 					"Ability1"
 					{
 						"name"		"#DOTA_Import_Wolves_Anim_Ability1"
 						"description" "#DOTA_Import_Wolves_Anim_Ability1_Desc"
 						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/lycan/summons_wolf_idle_howl.dmx"
 					}
 					"Ability2"
 					{
 						"name"		"#DOTA_Import_Wolves_Anim_Ability2"
 						"description" "#DOTA_Import_Wolves_Anim_Ability2_Desc"
 						"ui_block"	"3"
-						//"gesture"	"ACT_DOTA_RUN"
+						"default"		"scripts/itemtest/default_content/lycan/summon_wolves_howl.dmx"
 					}
 
 					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
@@ -1389,20 +1451,23 @@
 
 				"animations"
 				{
-					"Spawn"
-					{
-						"name"		"#DOTA_ItemTest_Animation_Spawn"
-						"ui_block"	"0"
-					}
+//					"Spawn"
+//					{
+//						"name"		"#DOTA_ItemTest_Animation_Spawn"
+//						"ui_block"	"0"
+//						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_idle.dmx"
+//					}
 					"Idle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_idle.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_run.dmx"
 					}
 					"Attack"
 					{
@@ -1411,22 +1476,26 @@
 						"desc_attack_point" "1"
 						"anim_length"	"1"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_attack.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_death.dmx"
 					}
 					"Disabled"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Disabled"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_stun.dmx"
 					}
 					"Flail"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Flail"
 						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_flail.dmx"
 					}
 					"IdleRare"
 					{
@@ -1439,12 +1508,14 @@
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_portrait.dmx"
 					}
 					"PortraitIdleRare"
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_portrait_headturn.dmx"
 					}
 					"TurnPoseCenter"
 					{
@@ -1452,6 +1523,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_turn_center.dmx"
 					}
 					"TurnPoseLeft"
 					{
@@ -1459,6 +1531,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_turn_left.dmx"
 					}
 					"TurnPoseRight"
 					{
@@ -1466,25 +1539,35 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_turn_right.dmx"
 					}
 					"Die2"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die2"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_death_back.dmx"
 					}
 					"Ability1"
 					{
 						"name"		"#DOTA_Import_Wolves_Anim_Ability1"
 						"description" "#DOTA_Import_Wolves_Anim_Ability1_Desc"
 						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_cast1_summonWolves.dmx"
 					}
 					"Ability2"
 					{
 						"name"		"#DOTA_Import_Wolves_Anim_Ability2"
 						"description" "#DOTA_Import_Wolves_Anim_Ability2_Desc"
 						"ui_block"	"3"
-						//"gesture"	"ACT_DOTA_RUN"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_cast2_howl.dmx"
+					}
+					"Die_Special"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die_Special"
+						"optional"	"1"
+						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/lycan/lycan_wolf_death_forward.dmx"
 					}
 
 					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
@@ -1847,11 +1930,13 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_idle.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_run.dmx"
 					}
 					"Attack"
 					{
@@ -1860,22 +1945,27 @@
 						"desc_attack_point" "1"
 						"anim_length"	"1"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_attack.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_die.dmx"
 					}
+//page 2
 					"Disabled"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Disabled"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_stun.dmx"
 					}
 					"Flail"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Flail"
 						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_flail.dmx"
 					}
 					"Attack2"
 					{
@@ -1885,12 +1975,14 @@
 						"anim_length"	"1"
 						"optional"	"1"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_attackalt.dmx"
 					}
 					"PortraitIdle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_capture.dmx"
 					}
 					"PortraitIdleRare"
 					{
@@ -1898,6 +1990,7 @@
 						"optional"	"1"
 						"ui_block"	"1"
 					}
+//page 3
 					"TurnPoseCenter"
 					{
 						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
@@ -1924,12 +2017,50 @@
 						"name"		"#DOTA_ItemTest_Animation_Die2"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_deathalt.dmx"
 					}
 					"IdleRare"
 					{
 						"name"		"#DOTA_ItemTest_Animation_IdleRare"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_idleroar.dmx"
+					}
+//page 4
+					"IdleAlt"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"optional"	"1"
+						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_idleAlt.dmx"
+					}
+					"IdleAlt2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"optional"	"1"
+						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_idleAlt1.dmx"
+					}
+					"IdleAlt3"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"optional"	"1"
+						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_idleAlt2.dmx"
+					}
+					"RunAlt"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"optional"	"1"
+						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_runAlt.dmx"
+					}
+					"RunAlt2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Run"
+						"optional"	"1"
+						"ui_block"	"3"
+						"default"		"scripts/itemtest/default_content/natures_prophet/treant_runAlt1.dmx"
 					}
 
 					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
@@ -2011,11 +2142,13 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/invoker/forge_spirit_idle.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/invoker/forge_spirit_run.dmx"
 					}
 					"Attack"
 					{
@@ -2024,11 +2157,13 @@
 						"desc_attack_point" "1"
 						"anim_length"	".8"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/invoker/forge_spirit_attack.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/invoker/forge_spirit_death.dmx"
 					}
 					"Disabled"
 					{
@@ -2170,16 +2305,19 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Spawn"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_spawn.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_death.dmx"
 					}
 					"Die2"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die2"
 						"optional"	"1"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_death2.dmx"
 						"ui_block"	"0"
 					}
 					"PortraitIdle"
@@ -2187,6 +2325,7 @@
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
 						"optional"	"1"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_portrait.dmx"
 					}
 					"PortraitIdleRare"
 					{
@@ -2199,30 +2338,35 @@
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"description"	"#DOTA_ItemTest_Animation_Center_Desc"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_idle.dmx"
 					}
 					"BackLeftIdle"
 					{
 						"name"			"#DOTA_ItemTest_Animation_BackLeftIdle"
 						"description"	"#DOTA_ItemTest_Animation_BackLeft_Desc"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_idle180.dmx"
 					}
 					"LeftIdle"
 					{
 						"name"			"#DOTA_ItemTest_Animation_LeftIdle"
 						"description"	"#DOTA_ItemTest_Animation_Left_Desc"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_idle90.dmx"
 					}
 					"RightIdle"
 					{
 						"name"			"#DOTA_ItemTest_Animation_RightIdle"
 						"description"	"#DOTA_ItemTest_Animation_Right_Desc"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_idle_minus90.dmx"
 					}
 					"BackRightIdle"
 					{
 						"name"			"#DOTA_ItemTest_Animation_BackRightIdle"
 						"description"	"#DOTA_ItemTest_Animation_BackRight_Desc"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_idle_minus180.dmx"
 					}
 					"Attack"
 					{
@@ -2231,6 +2375,7 @@
 						"desc_attack_point" "1"
 						"anim_length"	".83"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_attack.dmx"
 					}
 					"BackLeftAttack"
 					{
@@ -2239,6 +2384,7 @@
 						"desc_attack_point" "1"
 						"anim_length"	".83"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_attack180.dmx"
 					}
 					"LeftAttack"
 					{
@@ -2247,6 +2393,7 @@
 						"desc_attack_point" "1"
 						"anim_length"	".83"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_attack90.dmx"
 					}
 					"RightAttack"
 					{
@@ -2255,6 +2402,7 @@
 						"desc_attack_point" "1"
 						"anim_length"	".83"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_attack_minus90.dmx"
 					}
 					"BackRightAttack"
 					{
@@ -2263,6 +2411,7 @@
 						"desc_attack_point" "1"
 						"anim_length"	".83"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/shadow_shaman/ss_totem_attack_minus180.dmx"
 					}
 
 					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
@@ -2293,6 +2442,7 @@
 		"name"			"#DOTA_Import_Warlock_Golem"
 		"description"	"#DOTA_Import_Warlock_Golem_Desc"
 		"directory"		"golem"
+		"loadout_slot"	"ability4"
 		"vmt"			"materials/models/heroes/warlock_demon/warlock_demon_color.vmt"
 		"unit"			"npc_dota_warlock_golem_1"
 
@@ -2343,11 +2493,13 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_idle.dmx"
 					}
 					"Run"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_run.dmx"
 					}
 					"Attack"
 					{
@@ -2356,22 +2508,26 @@
 						"desc_attack_point" "1"
 						"anim_length"	"1"
 						"ui_block"		"0"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_attack.dmx"
 					}
 					"Die"
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_death.dmx"
 					}
 					"Disabled"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Disabled"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_stun.dmx"
 					}
 					"Flail"
 					{
 						"name"			"#DOTA_ItemTest_Animation_Flail"
 						"description"	"#DOTA_ItemTest_Animation_Flail_Desc"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_flail.dmx"
 					}
 					"Attack2"
 					{
@@ -2381,12 +2537,14 @@
 						"anim_length"	"1"
 						"optional"	"1"
 						"ui_block"		"1"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_attack_alt.dmx"
 					}
 					"PortraitIdle"
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
 						"optional"	"1"
 						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_portrait.dmx"
 					}
 					"PortraitIdleRare"
 					{
@@ -2400,6 +2558,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_turn_center.dmx"
 					}
 					"TurnPoseLeft"
 					{
@@ -2407,6 +2566,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_turn_left.dmx"
 					}
 					"TurnPoseRight"
 					{
@@ -2414,6 +2574,7 @@
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/warlock/warlock_demon_turn_right.dmx"
 					}
 					"Die2"
 					{
@@ -2509,11 +2670,13 @@
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/death_prophet/ghost_idle.dmx"
 					}
 					"Run2"
 					{
 						"name"		"#DOTA_ItemTest_Animation_RunRare"
 						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/death_prophet/ghost_run.dmx"
 					}
 					"TurnPoseCenter"
 					{

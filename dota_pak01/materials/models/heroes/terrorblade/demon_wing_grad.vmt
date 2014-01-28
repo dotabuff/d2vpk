@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\terrorblade\demon_wing_grad"
+
+	"$normalmap" "models\development\flatnormal"
+	"$maskmap1" "models\heroes\terrorblade\demon_wing_grad_masks1"
+	"$maskmap2" "models\heroes\terrorblade\demon_wing_grad_masks2"
+
+	$translucent 1
+
+
+
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 5
+
+
+	$IgnoreBudgetCheck 1
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.1"
+			"texturescrollangle"	"$DETAILFX"
+			"texturescale" .75	
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

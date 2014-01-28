@@ -350,6 +350,17 @@ Rule enigma_KillIsEnemyChaos_KnightChance_25%_Rule
 	response enigma_KillIsEnemyChaos_KnightChance_25%
 }
 
+Response enigma_KillIsEnemyPhoenixChance_25%
+{
+	scene "scenes/enigma/enigma_enig_rival_25.vcd" nodelay noscene 
+}
+
+Rule enigma_KillIsEnemyPhoenixChance_25%_Rule
+{
+	criteria Kill Isenigma IsEnemyPhoenix Chance_25%
+	response enigma_KillIsEnemyPhoenixChance_25%
+}
+
 Response enigma_KillIsEnemyViperChance_15%
 {
 	scene "scenes/enigma/enigma_enig_rival_26.vcd" nodelay noscene 
@@ -425,6 +436,17 @@ Rule enigma_KillIsEnemyOutworld_DestroyerChance_15%_Rule
 {
 	criteria Kill Isenigma IsEnemyOutworld_Destroyer Chance_15%
 	response enigma_KillIsEnemyOutworld_DestroyerChance_15%
+}
+
+Response enigma_KillIsEnemyPhoenixChance_15%
+{
+	scene "scenes/enigma/enigma_enig_rival_26.vcd" nodelay noscene 
+}
+
+Rule enigma_KillIsEnemyPhoenixChance_15%_Rule
+{
+	criteria Kill Isenigma IsEnemyPhoenix Chance_15%
+	response enigma_KillIsEnemyPhoenixChance_15%
 }
 
 Response enigma_KillIsEnemySkywrath_MageChance_15%
@@ -970,6 +992,17 @@ Rule enigma_AllyNearIsAllyTinyEarlyGame_Rule
 {
 	criteria AllyNear Isenigma IsAllyTiny EarlyGame
 	response enigma_AllyNearIsAllyTinyEarlyGame
+}
+
+Response enigma_AllyNearIsAllyPhoenixEarlyGame
+{
+	scene "scenes/enigma/enigma_enig_ally_12.vcd" nodelay noscene speakonce
+}
+
+Rule enigma_AllyNearIsAllyPhoenixEarlyGame_Rule
+{
+	criteria AllyNear Isenigma IsAllyPhoenix EarlyGame
+	response enigma_AllyNearIsAllyPhoenixEarlyGame
 }
 
 Response enigma_AllyNearIsAllyOmniknightEarlyGame

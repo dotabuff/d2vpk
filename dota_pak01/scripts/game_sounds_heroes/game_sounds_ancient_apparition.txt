@@ -134,25 +134,15 @@
 "Hero_Ancient_Apparition.IceVortexCast"
 {
 	"channel"		"CHAN_WEAPON"
-	"volume"		"0.5"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
 	"wave"			")weapons/hero/ancient_apparition/ice_vortex_cast.wav"
-	
-	"soundentry_version" "2"
 	"operator_stacks"
 	{
-		"update_stack"
+		"start_stack"
 		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Weapons"
-			}
-			"speakers_spatialize"
-			{
-				"input_radius"  "100"
-			}
+			"import_stack" "dota_attack_block_dist"
 		}
 	}
 }
@@ -160,12 +150,16 @@
 "Hero_Ancient_Apparition.IceVortex"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.25"
+	"volume"		"0.1"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
 	"wave"			"weapons/hero/ancient_apparition/ice_vortex_lp.wav"
 	"operator_stacks"
 	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -177,7 +171,7 @@
 			}
 			"mixer"
 			{
-				"mixgroup" "Weapons"
+				"mixgroup" "ambient"
 			}
 
 			"speakers_spatialize"
@@ -187,7 +181,7 @@
 			
 			"usat_stop_time"
 			{
-				"input2" "13.0"
+				"input2" "17.0"
 			}
 
 			"volume_fade_out"

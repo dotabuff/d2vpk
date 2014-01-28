@@ -1,0 +1,60 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/storm_spirit/festive_dress_of_good_fortune/festive_dress_of_good_fortune_color"
+	"$normalmap"		"models/items/storm_spirit/festive_dress_of_good_fortune/festive_dress_of_good_fortune_normal"
+	"$maskmap1"		"models/items/storm_spirit/festive_dress_of_good_fortune/festive_dress_of_good_fortune_mask1"
+	"$maskmap2"		"models/items/storm_spirit/festive_dress_of_good_fortune/festive_dress_of_good_fortune_mask2"
+	"$detail1"		"models/heroes/storm_spirit/storm_spirit_detail"
+	"$SPECULAR_BLOOM_SCALE"		"0.250000"
+	"$SPECULAREXPONENT"		"32"
+	"$SPECULARSCALE"		"1"
+	"$nocull"		"1"
+	"$DETAILFX"		"53"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"2"
+	"$ENVMAP"		"models/cubemaps/glossy_blue"
+	"$ENVMAPINTENSITY"		"0.750000"
+	"$ENVMAPCOLOR"		"[0 .5 1]"
+	"$SPECULARCOLOR"		"[0 .5 1]"
+	"$MASKENVBYMETALNESS"		"1"
+	"$RIMLIGHTSCALE"		"3"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar"		"$DETAILFX"
+			"sineperiod"		"32"
+			"sinemin"		"92"
+			"sinemax"		"93"
+		}
+		"Sine"
+		{
+			"resultVar"		"$DETAIL1BLENDFACTOR"
+			"sineperiod"		"0.530000"
+			"sinemin"		"3"
+			"sinemax"		"4"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"-0.300000"
+			"texturescrollangle"		"$DETAILFX"
+		}
+		"TextureTransform"
+		{
+			"centerVar"		"$detail1texturetransform"
+			"rotateVar"		"$DETAILFX"
+			"resultVar"		"$detail1texturetransform"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

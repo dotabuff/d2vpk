@@ -393,6 +393,11 @@
 		"Winner"		"byte"
 	}
 
+	"player_reconnected"
+	{
+		"PlayerID"		"short"
+	}
+
 	"nommed_tree"
 	{
 		"PlayerID"		"short"
@@ -793,6 +798,14 @@
 		"entindex"	"short"
 	}
 	"reset_defeated"
+	{
+	}
+
+	"booster_state_updated"
+	{
+	}
+
+	"event_points_updated"
 	{
 	}
 }

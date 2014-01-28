@@ -53,6 +53,7 @@ Response troll_warlord_Kill
 	scene "scenes/troll_warlord/troll_warlord_troll_kill_02.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_kill_03.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_kill_04.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_kill_05.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_kill_06.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_kill_07.vcd" nodelay noscene 
 	scene "scenes/troll_warlord/troll_warlord_troll_kill_08.vcd" nodelay noscene 
@@ -74,17 +75,6 @@ Response troll_warlord_Kill
 Rule troll_warlord_Kill_Rule
 {
 	criteria Kill Istroll_warlord 
-	response troll_warlord_Kill
-}
-
-Response troll_warlord_Kill
-{
-	scene "scenes/troll_warlord/troll_warlord_troll_kill_05.vcd" nodelay noscene 
-}
-
-Rule troll_warlord_Kill_Rule
-{
-	criteria Kill Istroll_warlord  
 	response troll_warlord_Kill
 }
 

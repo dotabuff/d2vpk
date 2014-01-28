@@ -41,17 +41,6 @@ Rule antimage_Move_Rule
 	response antimage_Move
 }
 
-Response antimage_MoveIsEnemyTerrorBladeChance_25%
-{
-	scene "scenes/antimage/antimage_anti_brother_06.vcd" nodelay noscene 
-}
-
-Rule antimage_MoveIsEnemyTerrorBladeChance_25%_Rule
-{
-	criteria Move Isantimage IsEnemyTerrorBlade Chance_25%
-	response antimage_MoveIsEnemyTerrorBladeChance_25%
-}
-
 Response antimage_Attack
 {
 	scene "scenes/antimage/antimage_anti_attack_01.vcd" nodelay noscene 
@@ -69,18 +58,6 @@ Rule antimage_Attack_Rule
 {
 	criteria Attack Isantimage 
 	response antimage_Attack
-}
-
-Response antimage_AttackIsEnemyTerrorBladeChance_25%
-{
-	scene "scenes/antimage/antimage_anti_brother_04.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_brother_05.vcd" nodelay noscene 
-}
-
-Rule antimage_AttackIsEnemyTerrorBladeChance_25%_Rule
-{
-	criteria Attack Isantimage IsEnemyTerrorBlade Chance_25%
-	response antimage_AttackIsEnemyTerrorBladeChance_25%
 }
 
 Response antimage_CustomIsGameStart
@@ -242,19 +219,6 @@ Rule antimage_KillIsEnemyZuusChance_25%_Rule
 	response antimage_KillIsEnemyZuusChance_25%
 }
 
-Response antimage_KillIsEnemyTerrorBladeChance_25%
-{
-	scene "scenes/antimage/antimage_anti_brother_01.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_brother_02.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_brother_03.vcd" nodelay noscene 
-}
-
-Rule antimage_KillIsEnemyTerrorBladeChance_25%_Rule
-{
-	criteria Kill Isantimage IsEnemyTerrorBlade Chance_25%
-	response antimage_KillIsEnemyTerrorBladeChance_25%
-}
-
 Response antimage_KillIsFirstBlood
 {
 	scene "scenes/antimage/antimage_anti_firstblood_01.vcd" nodelay noscene 
@@ -314,18 +278,24 @@ Rule antimage_ItemDropIsCommonDrop_Rule
 	response antimage_ItemDropIsCommonDrop
 }
 
-Response antimage_DeathIsEnemyTerrorBladeChance_25%
+Response antimage_LastHit
 {
-	scene "scenes/antimage/antimage_anti_brother_07.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_brother_08.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_brother_09.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_brother_10.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_08.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_lasthit_10.vcd" nodelay noscene 
 }
 
-Rule antimage_DeathIsEnemyTerrorBladeChance_25%_Rule
+Rule antimage_LastHit_Rule
 {
-	criteria Death Isantimage IsEnemyTerrorBlade Chance_25%
-	response antimage_DeathIsEnemyTerrorBladeChance_25%
+	criteria LastHit Isantimage 
+	response antimage_LastHit
 }
 
 Response antimage_Death
@@ -362,26 +332,6 @@ Rule antimage_DeathIsReincarnating_Rule
 {
 	criteria Death Isantimage IsReincarnating
 	response antimage_DeathIsReincarnating
-}
-
-Response antimage_LastHit
-{
-	scene "scenes/antimage/antimage_anti_lasthit_01.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_02.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_04.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_05.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_06.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_07.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_08.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_09.vcd" nodelay noscene 
-	scene "scenes/antimage/antimage_anti_lasthit_10.vcd" nodelay noscene 
-}
-
-Rule antimage_LastHit_Rule
-{
-	criteria LastHit Isantimage 
-	response antimage_LastHit
 }
 
 Response antimage_Respawn

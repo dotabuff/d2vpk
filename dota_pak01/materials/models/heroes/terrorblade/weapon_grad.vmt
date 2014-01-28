@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\terrorblade\weapon_grad"
+	"$normalmap" "models\heroes\terrorblade\weapons_normal"
+//	"$maskmap1" "models\heroes\terrorblade\weapons_masks1"
+//	"$maskmap2" "models\heroes\terrorblade\weapons_masks2"
+	$additive 1
+//$translucent 1
+
+//	$SPECULAREXPONENT 32
+//	$SPECULARSCALE 5
+//	$SPECULARBLENDTOFULL 1
+
+//	$ENVMAP "models/cubemaps/glossy_blue"
+	$ENVMAPINTENSITY 2.5
+	$MASKENVBYMETALNESS 1	
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+//	$alphatest 1
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

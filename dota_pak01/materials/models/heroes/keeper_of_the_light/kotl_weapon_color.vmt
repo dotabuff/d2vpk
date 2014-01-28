@@ -1,0 +1,53 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/keeper_of_the_light/kotl_weapon_color"
+	"$normalmap" "models\heroes/keeper_of_the_light/kotl_weapon_normal"
+//	"$detail1"  "models/heroes/sven/sven_glow" 
+	"$maskmap1" "models\heroes\keeper_of_the_light\kotl_weapon_masks1"
+	"$maskmap2" "models\heroes\keeper_of_the_light\kotl_weapon_masks2"
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	$FRESNELWARP "models/heroes/sven/sven_fresnelranges"
+	
+//	"$detail1" "models/heroes/rubick/rubick_motion"
+
+
+	$SPECULAR_BLOOM_SCALE      1
+	$SPECULAREXPONENT 23	
+	$SPECULARSCALE 5	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE .5
+	$IgnoreBudgetCheck 1
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 6
+	$DETAIL1BLENDFACTOR 1
+	$alphatest 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.2
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,520 @@
+
+"Hero_Terrorblade.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		".6, .7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons\hero\terrorblade\melee_pre_attack_01.wav"
+		"wave"	")weapons\hero\terrorblade\melee_pre_attack_02.wav"
+		"wave"	")weapons\hero\terrorblade\melee_pre_attack_03.wav"
+		"wave"	")weapons\hero\terrorblade\melee_pre_attack_04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.15"
+			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		".5, .6"
+	"soundlevel"  	"SNDLVL_76dB"
+	"pitch"			"90,105"
+	"rndwave"
+	{
+		"wave"	")weapons\hero\terrorblade\melee_impacts_01.wav"
+		"wave"	")weapons\hero\terrorblade\melee_impacts_02.wav"
+		"wave"	")weapons\hero\terrorblade\melee_impacts_03.wav"
+		"wave"	")weapons\hero\terrorblade\melee_impacts_04.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Terrorblade.Attack.Ring"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Terrorblade.Attack.Rip"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.Attack.Ring"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".4, .6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")weapons\hero\terrorblade\melee_ring_01.wav"
+		"wave"	")weapons\hero\terrorblade\melee_ring_02.wav"
+		"wave"	"null.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"volume_adjust_local_player"
+			{
+			"input2" "0.3" // this adds to local player volume only, 0.0 = mult x 1.
+ 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.Attack.Rip"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".4, .6"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			")weapons\hero\terrorblade\melee_rip_01.wav"
+		"wave"			")weapons\hero\terrorblade\melee_rip_02.wav"
+		"wave"			")weapons\hero\terrorblade\melee_rip_03.wav"
+		"wave"	"null.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.05"
+			"input_max" "0.12"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade_Morphed.preAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.9, 1"
+	"soundlevel"  	"SNDLVL_77dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			")weapons\hero\terrorblade\ranged_pre_attack_01.wav"
+		"wave"			")weapons\hero\terrorblade\ranged_pre_attack_02.wav"
+		"wave"			")weapons\hero\terrorblade\ranged_pre_attack_03.wav"
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_Terrorblade_Morphed.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.9, 1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			")weapons\hero\terrorblade\ranged_attack_01.wav"
+		"wave"			")weapons\hero\terrorblade\ranged_attack_02.wav"
+		"wave"			")weapons\hero\terrorblade\ranged_attack_03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Terrorblade_Morphed.projectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9, 1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"			")weapons\hero\terrorblade\ranged_impacts_01.wav"
+		"wave"			")weapons\hero\terrorblade\ranged_impacts_02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Hero_Terrorblade.Reflection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100, 110"
+	"wave"			")weapons\hero\terrorblade\reflection.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.ConjureImage"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\terrorblade\conjuration.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.Metamorphosis"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_82dB"
+	"pitch"			"100"
+	"wave"			")weapons\hero\terrorblade\morph.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.Sunder.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".77"
+	"soundlevel"  	"SNDLVL_79dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\terrorblade\sunder_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.Sunder.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.95"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90, 110"
+	"wave"			")weapons\hero\terrorblade\sunder_target.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.00"
+			"input_max" "0.12"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"110, 115"
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/abaddon/footstep_01.wav"
+		"wave"		"physics/footsteps/hero/abaddon/footstep_02.wav"
+		"wave"		"physics/footsteps/hero/abaddon/footstep_03.wav"
+		"wave"		"physics/footsteps/hero/abaddon/footstep_04.wav"
+		"wave"		"physics/footsteps/hero/abaddon/footstep_05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Terrorblade.Foley"
+			}
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+
+"Hero_Terrorblade.Foley"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_65dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/abaddon/foley_01.wav"
+		"wave"		"weapons/hero/abaddon/foley_02.wav"
+		"wave"		"weapons/hero/abaddon/foley_03.wav"
+		"wave"		"weapons/hero/abaddon/foley_04.wav"
+		"wave"		"weapons/hero/abaddon/foley_05.wav"
+	}	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"weapons/hero/abaddon/death.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+"Hero_Terrorblade.morph_Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\warlock_golem\step01.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\step02.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\step03.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\step04.wav"
+		"wave"		"physics\footsteps\hero\warlock_golem\step05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Terrorblade.Foley"
+			}
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+
+"Hero_Terrorblade.morph_Foley"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.2"
+	"soundlevel"  	"SNDLVL_65dB"
+	"pitch"			"85, 95"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/abaddon/foley_01.wav"
+		"wave"		"weapons/hero/abaddon/foley_02.wav"
+		"wave"		"weapons/hero/abaddon/foley_03.wav"
+		"wave"		"weapons/hero/abaddon/foley_04.wav"
+		"wave"		"weapons/hero/abaddon/foley_05.wav"
+	}	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Hero_Terrorblade.morph_Death"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 95"
+	"wave"			"physics\deaths\specials\spectre_death.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}

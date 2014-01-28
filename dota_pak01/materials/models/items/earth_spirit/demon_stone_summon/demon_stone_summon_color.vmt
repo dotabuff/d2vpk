@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/earth_spirit/demon_stone_summon/demon_stone_summon_full_color"
+	"$normalmap" "models/items/earth_spirit/demon_stone_summon/demon_stone_summon_full_normal"
+//	"$detail1" "models/items/doom/doom_burninating"
+//	"$diffusewarp" "models/items/earth_spirit/earth_spirit_lightwarp"		//original summons
+	"$maskmap1" "models/items/earth_spirit/demon_stone_summon/demon_stone_summon_full_mask1"
+	"$maskmap2" "models/items/earth_spirit/demon_stone_summon/demon_stone_summon_full_mask2"
+	"$fresnelwarp" "models/items/earth_spirit/stonesummon_fresnelranges"		//original summons
+
+	$MASKENVBYMETALNESS 1
+	$ENVMAP "models/cubemaps/cube_earthspirit"
+	$ENVMAPINTENSITY 5
+
+	$SPECULAR_BLOOM_SCALE      0.1
+	$SPECULAREXPONENT 10	
+	$SPECULARSCALE 2	
+	$SPECULARCOLOR "[0.9 0.9 1]"
+	$RIMLIGHTCOLOR "[0.6 0.8 0.2]"
+
+	$ignorebudgetcheck 1
+	$RIMLIGHTSCALE 3
+	$AMBIENTSCALE 1
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR 2
+//	$DETAIL1BLENDTOFULL 0
+	$alphatest 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"55"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

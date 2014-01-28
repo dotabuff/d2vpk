@@ -277,9 +277,22 @@ Rule vengefulspirit_KillIsEnemyOutworld_DestroyerChance_15%_Rule
 	response vengefulspirit_KillIsEnemyOutworld_DestroyerChance_15%
 }
 
+Response vengefulspirit_KillIsEnemyPhoenixChance_15%
+{
+	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_01.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_05.vcd" nodelay noscene 
+}
+
+Rule vengefulspirit_KillIsEnemyPhoenixChance_15%_Rule
+{
+	criteria Kill Isvengefulspirit IsEnemyPhoenix Chance_15%
+	response vengefulspirit_KillIsEnemyPhoenixChance_15%
+}
+
 Response vengefulspirit_KillIsEnemySkywrath_MageChance_15%
 {
 	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_01.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_05.vcd" nodelay noscene 
 }
 
 Rule vengefulspirit_KillIsEnemySkywrath_MageChance_15%_Rule
@@ -319,18 +332,6 @@ Rule vengefulspirit_KillIsEnemyJakiroChance_35%_Rule
 {
 	criteria Kill Isvengefulspirit IsEnemyJakiro Chance_35%
 	response vengefulspirit_KillIsEnemyJakiroChance_35%
-}
-
-Response vengefulspirit_KillIsEnemySkywrath_MageChance_35%
-{
-	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_05.vcd" nodelay noscene 
-	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_16.vcd" nodelay noscene 
-}
-
-Rule vengefulspirit_KillIsEnemySkywrath_MageChance_35%_Rule
-{
-	criteria Kill Isvengefulspirit IsEnemySkywrath_Mage Chance_35%
-	response vengefulspirit_KillIsEnemySkywrath_MageChance_35%
 }
 
 Response vengefulspirit_KillIsEnemyViperChance_35%
@@ -422,6 +423,17 @@ Rule vengefulspirit_KillIsEnemyPuckChance_35%_Rule
 {
 	criteria Kill Isvengefulspirit IsEnemyPuck Chance_35%
 	response vengefulspirit_KillIsEnemyPuckChance_35%
+}
+
+Response vengefulspirit_KillIsEnemySkywrath_MageChance_35%
+{
+	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_16.vcd" nodelay noscene 
+}
+
+Rule vengefulspirit_KillIsEnemySkywrath_MageChance_35%_Rule
+{
+	criteria Kill Isvengefulspirit IsEnemySkywrath_Mage Chance_35%
+	response vengefulspirit_KillIsEnemySkywrath_MageChance_35%
 }
 
 Response vengefulspirit_Respawn

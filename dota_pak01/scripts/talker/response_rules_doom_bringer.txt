@@ -282,6 +282,17 @@ Rule doom_bringer_KillIsEnemyNevermoreChance_25%_Rule
 	response doom_bringer_KillIsEnemyNevermoreChance_25%
 }
 
+Response doom_bringer_KillIsEnemyTerrorbladeChance_25%
+{
+	scene "scenes/doom_bringer/doom_bringer_doom_rival_14.vcd" nodelay noscene 
+}
+
+Rule doom_bringer_KillIsEnemyTerrorbladeChance_25%_Rule
+{
+	criteria Kill Isdoom_bringer IsEnemyTerrorblade Chance_25%
+	response doom_bringer_KillIsEnemyTerrorbladeChance_25%
+}
+
 Response doom_bringer_KillIsFirstBlood
 {
 	scene "scenes/doom_bringer/doom_bringer_doom_firstblood_01.vcd" nodelay noscene 

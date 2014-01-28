@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	"$basetexture" "models\courier\godhorse\godhorse"
+	"$normalmap" "models\courier\godhorse\godhorse_normal"
+	"$maskmap1" "models\courier\godhorse\godhorse_masks1"
+	"$maskmap2" "models\courier\godhorse\godhorse_masks2"
+//	"$specularwarp" "models/heroes/nyx/nyx_lightwarp"
+
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"	
+	
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR	"[1 1 1]"
+
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}

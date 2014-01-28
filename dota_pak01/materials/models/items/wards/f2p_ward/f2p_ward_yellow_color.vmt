@@ -1,0 +1,64 @@
+"CustomHero"
+{
+	$baseTexture "models/items/wards/f2p_ward/f2p_ward_yellow_color.vtf"
+	"$normalmap" "models/items/wards/f2p_ward/f2p_ward_normal"
+
+	"$maskmap1" "models/items/wards/f2p_ward/f2p_ward_mask1"
+	"$maskmap2" "models/items/wards/f2p_ward/f2p_ward_mask2"
+
+
+	//"$alphatest" "1"
+
+
+	
+	//$ENVMAP "models/cubemaps/glossy"
+	//$ENVMAPINTENSITY 1
+	//$ENVMAPBLENTOFULL 1
+	//$MASKENVBYMETALNESS 1
+
+
+	//$SPECULAR_BLOOM_SCALE 20
+	$SPECULAREXPONENT 35
+  $SPECULARSCALE 30
+  $RIMLIGHTSCALE 5
+	
+	
+  //$SPECULARCOLOR "[0.2 0.6 0.4]"	
+	//$RIMLIGHTCOLOR "[1 1 0]"	
+	//$AMBIENTSCALE 1
+	
+
+
+	
+
+	
+
+
+
+  $IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	130
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	0
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

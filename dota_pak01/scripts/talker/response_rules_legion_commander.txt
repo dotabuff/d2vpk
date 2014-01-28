@@ -92,7 +92,7 @@ Response legion_commander_CustomIsLegionNoVictorIsLegionEconDemon
 
 Rule legion_commander_CustomIsLegionNoVictorIsLegionEconDemon_Rule
 {
-	criteria Custom Islegion_commander IsLegionNoVictor IsLegionEconDemon 
+	criteria Custom Islegion_commander IsLegionNoVictor IsLegionEconDemon
 	response legion_commander_CustomIsLegionNoVictorIsLegionEconDemon
 }
 
@@ -103,7 +103,7 @@ Response legion_commander_CustomIsLegionNoVictorChance_5%IsLegionEconDemon
 
 Rule legion_commander_CustomIsLegionNoVictorChance_5%IsLegionEconDemon_Rule
 {
-	criteria Custom Islegion_commander IsLegionNoVictor Chance_5% IsLegionEconDemon 
+	criteria Custom Islegion_commander IsLegionNoVictor Chance_5% IsLegionEconDemon
 	response legion_commander_CustomIsLegionNoVictorChance_5%IsLegionEconDemon
 }
 
@@ -281,6 +281,19 @@ Rule legion_commander_KillChance_25%IsEnemyShadow_Demon_Rule
 	response legion_commander_KillChance_25%IsEnemyShadow_Demon
 }
 
+Response legion_commander_KillChance_25%IsEnemyTerrorblade
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_12.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_rival_13.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_rival_17.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsEnemyTerrorblade_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsEnemyTerrorblade
+	response legion_commander_KillChance_25%IsEnemyTerrorblade
+}
+
 Response legion_commander_KillChance_25%IsEnemyDark_Seer
 {
 	scene "scenes/legion_commander/legion_commander_legcom_rival_14.vcd" nodelay noscene 
@@ -302,6 +315,17 @@ Rule legion_commander_KillChance_25%IsEnemyAbaddon_Rule
 {
 	criteria Kill Islegion_commander Chance_25% IsEnemyAbaddon
 	response legion_commander_KillChance_25%IsEnemyAbaddon
+}
+
+Response legion_commander_KillChance_25%IsEnemyPhoenix
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_19.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsEnemyPhoenix_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsEnemyPhoenix
+	response legion_commander_KillChance_25%IsEnemyPhoenix
 }
 
 Response legion_commander_KillChance_25%IsEnemySkywrath_Mage
@@ -556,7 +580,7 @@ Response legion_commander_KillChance_3%IsEnemyDragon_Knight
 
 Rule legion_commander_KillChance_3%IsEnemyDragon_Knight_Rule
 {
-	criteria Kill Islegion_commander Chance_3% IsEnemyDragon_Knight 
+	criteria Kill Islegion_commander Chance_3% IsEnemyDragon_Knight
 	response legion_commander_KillChance_3%IsEnemyDragon_Knight
 }
 
@@ -591,6 +615,17 @@ Rule legion_commander_KillChance_3%IsEnemyShadow_Demon_Rule
 {
 	criteria Kill Islegion_commander Chance_3% IsEnemyShadow_Demon
 	response legion_commander_KillChance_3%IsEnemyShadow_Demon
+}
+
+Response legion_commander_KillChance_3%IsEnemyTerrorblade
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_27.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsEnemyTerrorblade_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsEnemyTerrorblade
+	response legion_commander_KillChance_3%IsEnemyTerrorblade
 }
 
 Response legion_commander_KillChance_3%IsEnemyMedusa
@@ -890,11 +925,19 @@ Response legion_commander_KillIsLegionEconDemon
 	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_kill_02.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_kill_03.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_kill_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_01.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_02.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_03.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_04.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_05.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_06.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_08.vcd" nodelay noscene 
 }
 
 Rule legion_commander_KillIsLegionEconDemon_Rule
 {
-	criteria Kill Islegion_commander IsLegionEconDemon 
+	criteria Kill Islegion_commander IsLegionEconDemon
 	response legion_commander_KillIsLegionEconDemon
 }
 
@@ -907,7 +950,7 @@ Response legion_commander_KillIsLegionOddsChance_10%IsLegionEconDemon
 
 Rule legion_commander_KillIsLegionOddsChance_10%IsLegionEconDemon_Rule
 {
-	criteria Kill Islegion_commander IsLegionOdds Chance_10% IsLegionEconDemon 
+	criteria Kill Islegion_commander IsLegionOdds Chance_10% IsLegionEconDemon
 	response legion_commander_KillIsLegionOddsChance_10%IsLegionEconDemon
 }
 
@@ -1021,6 +1064,17 @@ Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyShadow_Demon_Rule
 	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyShadow_Demon
 }
 
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyTerrorblade
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_13.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyTerrorblade_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyTerrorblade
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyTerrorblade
+}
+
 Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyDark_Seer
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_14.vcd" nodelay noscene 
@@ -1042,6 +1096,17 @@ Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAbaddon_Rule
 {
 	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyAbaddon
 	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAbaddon
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyPhoenix
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_19.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyPhoenix_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyPhoenix
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyPhoenix
 }
 
 Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyElder_Titan
@@ -1553,24 +1618,6 @@ Rule legion_commander_KillChance_2%IsLegionEconDemonIsEnemyOutworld_Destroyer_Ru
 	response legion_commander_KillChance_2%IsLegionEconDemonIsEnemyOutworld_Destroyer
 }
 
-Response legion_commander_KillIsLegionEconDemon
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_01.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_02.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_03.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_04.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_05.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_06.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_07.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_dem_laugh_08.vcd" nodelay noscene 
-}
-
-Rule legion_commander_KillIsLegionEconDemon_Rule
-{
-	criteria Kill Islegion_commander IsLegionEconDemon
-	response legion_commander_KillIsLegionEconDemon
-}
-
 Response legion_commander_Move
 {
 	scene "scenes/legion_commander/legion_commander_legcom_move_01.vcd" nodelay noscene 
@@ -1821,6 +1868,18 @@ Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyDoom_Bringer_Rule
 {
 	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsEnemyDoom_Bringer
 	response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyDoom_Bringer
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyTerrorblade
+{
+	scene "scenes/legion_commander/legion_commander_legcom_duelhero_07.vcd" nodelay noscene 
+	scene "scenes/legion_commander/legion_commander_legcom_duelhero_20.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyTerrorblade_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsEnemyTerrorblade
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyTerrorblade
 }
 
 Response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyJuggernaut
@@ -2576,6 +2635,17 @@ Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyVisage_Rule
 	response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyVisage
 }
 
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyPhoenix
+{
+	scene "scenes/legion_commander/legion_commander_legcom_duelhero_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyPhoenix_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsEnemyPhoenix
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyPhoenix
+}
+
 Response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyBounty_Hunter
 {
 	scene "scenes/legion_commander/legion_commander_legcom_duelhero_30.vcd" nodelay noscene 
@@ -2818,6 +2888,17 @@ Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyS
 {
 	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyShredder
 	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyShredder
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyTerrorblade
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_20.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyTerrorblade_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyTerrorblade
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyTerrorblade
 }
 
 Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOutworld_Destroyer
@@ -3461,6 +3542,17 @@ Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyV
 	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyVisage
 }
 
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyPhoenix
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_29.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyPhoenix_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsLegionEconDemon IsEnemyPhoenix
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyPhoenix
+}
+
 Response legion_commander_CastExecuteIsLegionDuelChance_15%IsLegionEconDemonIsEnemyBounty_Hunter
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_30.vcd" nodelay noscene 
@@ -3560,74 +3652,74 @@ Response legion_commander_LevelUpIsLegionEconDemon
 
 Rule legion_commander_LevelUpIsLegionEconDemon_Rule
 {
-	criteria LevelUp Islegion_commander IsLegionEconDemon 
+	criteria LevelUp Islegion_commander IsLegionEconDemon
 	response legion_commander_LevelUpIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyAxe
+Response legion_commander_AllyNearEarlyGameIsAllyAxe
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_03.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyAxe_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyAxe_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyAxe
-	response legion_commander_AllyNearEarlyGameIsEnemyAxe
+	criteria AllyNear Islegion_commander EarlyGame IsAllyAxe
+	response legion_commander_AllyNearEarlyGameIsAllyAxe
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%
+Response legion_commander_AllyNearEarlyGameIsAllyQueenofPainChance_25%
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_04.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyQueenofPainChance_25%_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyQueenofPain Chance_25%
-	response legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%
+	criteria AllyNear Islegion_commander EarlyGame IsAllyQueenofPain Chance_25%
+	response legion_commander_AllyNearEarlyGameIsAllyQueenofPainChance_25%
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyPudge
+Response legion_commander_AllyNearEarlyGameIsAllyPudge
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_05.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyPudge_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyPudge_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyPudge
-	response legion_commander_AllyNearEarlyGameIsEnemyPudge
+	criteria AllyNear Islegion_commander EarlyGame IsAllyPudge
+	response legion_commander_AllyNearEarlyGameIsAllyPudge
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyPhantom_Lancer
+Response legion_commander_AllyNearEarlyGameIsAllyPhantom_Lancer
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_06.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyPhantom_Lancer_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyPhantom_Lancer_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyPhantom_Lancer
-	response legion_commander_AllyNearEarlyGameIsEnemyPhantom_Lancer
+	criteria AllyNear Islegion_commander EarlyGame IsAllyPhantom_Lancer
+	response legion_commander_AllyNearEarlyGameIsAllyPhantom_Lancer
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyCentaur
+Response legion_commander_AllyNearEarlyGameIsAllyCentaur
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_07.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyCentaur_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyCentaur_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyCentaur
-	response legion_commander_AllyNearEarlyGameIsEnemyCentaur
+	criteria AllyNear Islegion_commander EarlyGame IsAllyCentaur
+	response legion_commander_AllyNearEarlyGameIsAllyCentaur
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyLina
+Response legion_commander_AllyNearEarlyGameIsAllyLina
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_08.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyLina_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyLina_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyLina
-	response legion_commander_AllyNearEarlyGameIsEnemyLina
+	criteria AllyNear Islegion_commander EarlyGame IsAllyLina
+	response legion_commander_AllyNearEarlyGameIsAllyLina
 }
 
 Response legion_commander_AllyNearEarlyGameChance_5%IsAllyChaos_Knight
@@ -3839,389 +3931,400 @@ Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyLone_Druid_Rule
 	response legion_commander_AllyNearEarlyGameChance_5%IsAllyLone_Druid
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyRubick
+Response legion_commander_AllyNearEarlyGameIsAllyRubick
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_12.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyRubick_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyRubick_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyRubick
-	response legion_commander_AllyNearEarlyGameIsEnemyRubick
+	criteria AllyNear Islegion_commander EarlyGame IsAllyRubick
+	response legion_commander_AllyNearEarlyGameIsAllyRubick
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyOmniknight
+Response legion_commander_AllyNearEarlyGameIsAllyOmniknight
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_13.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyOmniknight_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyOmniknight_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyOmniknight
-	response legion_commander_AllyNearEarlyGameIsEnemyOmniknight
+	criteria AllyNear Islegion_commander EarlyGame IsAllyOmniknight
+	response legion_commander_AllyNearEarlyGameIsAllyOmniknight
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyChen
+Response legion_commander_AllyNearEarlyGameIsAllyChen
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_14.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyChen_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyChen_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyChen
-	response legion_commander_AllyNearEarlyGameIsEnemyChen
+	criteria AllyNear Islegion_commander EarlyGame IsAllyChen
+	response legion_commander_AllyNearEarlyGameIsAllyChen
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyDark_Seer
+Response legion_commander_AllyNearEarlyGameIsAllyDark_Seer
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_15.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyDark_Seer_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyDark_Seer_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyDark_Seer
-	response legion_commander_AllyNearEarlyGameIsEnemyDark_Seer
+	criteria AllyNear Islegion_commander EarlyGame IsAllyDark_Seer
+	response legion_commander_AllyNearEarlyGameIsAllyDark_Seer
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyEnchantress
+Response legion_commander_AllyNearEarlyGameIsAllyEnchantress
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_16.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyEnchantress_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyEnchantress_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyEnchantress
-	response legion_commander_AllyNearEarlyGameIsEnemyEnchantress
+	criteria AllyNear Islegion_commander EarlyGame IsAllyEnchantress
+	response legion_commander_AllyNearEarlyGameIsAllyEnchantress
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyTusk
+Response legion_commander_AllyNearEarlyGameIsAllyTusk
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_17.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyTusk_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyTusk_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyTusk
-	response legion_commander_AllyNearEarlyGameIsEnemyTusk
+	criteria AllyNear Islegion_commander EarlyGame IsAllyTusk
+	response legion_commander_AllyNearEarlyGameIsAllyTusk
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyShredder
+Response legion_commander_AllyNearEarlyGameIsAllyShredder
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_20.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyShredder_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyShredder_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyShredder
-	response legion_commander_AllyNearEarlyGameIsEnemyShredder
+	criteria AllyNear Islegion_commander EarlyGame IsAllyShredder
+	response legion_commander_AllyNearEarlyGameIsAllyShredder
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyAxeIsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameIsAllyAxeIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_03.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyAxeIsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyAxeIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyAxe IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyAxeIsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyAxe IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyAxeIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%IsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameIsAllyQueenofPainChance_25%IsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_04.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%IsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyQueenofPainChance_25%IsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyQueenofPain Chance_25% IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyQueenofPainChance_25%IsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyQueenofPain Chance_25% IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyQueenofPainChance_25%IsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyPudgeIsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameIsAllyPudgeIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_05.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyPudgeIsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyPudgeIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyPudge IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyPudgeIsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyPudge IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyPudgeIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyCentaurIsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameIsAllyCentaurIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_07.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyCentaurIsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyCentaurIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyCentaur IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyCentaurIsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyCentaur IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyCentaurIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyLinaIsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameIsAllyLinaIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_08.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyLinaIsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyLinaIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyLina IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyLinaIsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyLina IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyLinaIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChaos_Knight
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
-}
-
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChaos_Knight_Rule
-{
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyChaos_Knight
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChaos_Knight
-}
-
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyMirana
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyChaos_KnightIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyMirana_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyChaos_KnightIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyMirana
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyMirana
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyChaos_Knight IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyChaos_KnightIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLuna
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
-}
-
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLuna_Rule
-{
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyLuna
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLuna
-}
-
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChen
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyMiranaIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChen_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyMiranaIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyChen
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyChen
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyMirana IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyMiranaIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDisruptor
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
-}
-
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDisruptor_Rule
-{
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyDisruptor
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDisruptor
-}
-
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKeeper_of_the_Light
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyLunaIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKeeper_of_the_Light_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyLunaIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyKeeper_of_the_Light
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKeeper_of_the_Light
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyLuna IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyLunaIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBatrider
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
-}
-
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBatrider_Rule
-{
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyBatrider
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBatrider
-}
-
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyAbaddon
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyChenIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyAbaddon_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyChenIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyAbaddon
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyAbaddon
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyChen IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyChenIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKunkka
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyDisruptorIsLegionEconDemon
 {
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKunkka_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyDisruptorIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyKunkka
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyKunkka
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyDisruptor IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyDisruptorIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBeastmaster
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyKeeper_of_the_LightIsLegionEconDemon
 {
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBeastmaster_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyKeeper_of_the_LightIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyBeastmaster
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBeastmaster
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyKeeper_of_the_Light IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyKeeper_of_the_LightIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyOmniknight
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyBatriderIsLegionEconDemon
 {
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyOmniknight_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyBatriderIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyOmniknight
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyOmniknight
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyBatrider IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyBatriderIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBrewmaster
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyAbaddonIsLegionEconDemon
 {
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBrewmaster_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyAbaddonIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyBrewmaster
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyBrewmaster
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyAbaddon IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyAbaddonIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyTusk
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
-}
-
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyTusk_Rule
-{
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyTusk
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyTusk
-}
-
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLycan
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyKunkkaIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLycan_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyKunkkaIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyLycan
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLycan
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyKunkka IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyKunkkaIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllySniper
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
-}
-
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllySniper_Rule
-{
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllySniper
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllySniper
-}
-
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyGyrocopter
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyBeastmasterIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyGyrocopter_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyBeastmasterIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyGyrocopter
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyGyrocopter
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyBeastmaster IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyBeastmasterIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyZuus
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
-}
-
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyZuus_Rule
-{
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyZuus
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyZuus
-}
-
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDark_Seer
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyOmniknightIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDark_Seer_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyOmniknightIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyDark_Seer
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyDark_Seer
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyOmniknight IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyOmniknightIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLone_Druid
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyBrewmasterIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLone_Druid_Rule
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyBrewmasterIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsLegionEconDemon IsAllyLone_Druid
-	response legion_commander_AllyNearEarlyGameChance_5%IsLegionEconDemonIsAllyLone_Druid
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyBrewmaster IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyBrewmasterIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyRubickIsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyTuskIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyTuskIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyTusk IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyTuskIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyLycanIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyLycanIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyLycan IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyLycanIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllySniperIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllySniperIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllySniper IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllySniperIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyGyrocopterIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyGyrocopterIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyGyrocopter IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyGyrocopterIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyZuusIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyZuusIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyZuus IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyZuusIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyDark_SeerIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyDark_SeerIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyDark_Seer IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyDark_SeerIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameChance_5%IsAllyLone_DruidIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_11.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameChance_5%IsAllyLone_DruidIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame Chance_5% IsAllyLone_Druid IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameChance_5%IsAllyLone_DruidIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsAllyRubickIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_12.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyRubickIsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyRubickIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyRubick IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyRubickIsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyRubick IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyRubickIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyOmniknightIsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameIsAllyOmniknightIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_13.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyOmniknightIsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyOmniknightIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyOmniknight IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyOmniknightIsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyOmniknight IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyOmniknightIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyEnchantressIsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameIsAllyEnchantressIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_16.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyEnchantressIsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyEnchantressIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyEnchantress IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyEnchantressIsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyEnchantress IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyEnchantressIsLegionEconDemon
 }
 
-Response legion_commander_AllyNearEarlyGameIsEnemyShredderIsLegionEconDemon
+Response legion_commander_AllyNearEarlyGameIsAllyTuskIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_17.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsAllyTuskIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsAllyTusk IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyTuskIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsAllyShredderIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_20.vcd" nodelay noscene speakonce
 }
 
-Rule legion_commander_AllyNearEarlyGameIsEnemyShredderIsLegionEconDemon_Rule
+Rule legion_commander_AllyNearEarlyGameIsAllyShredderIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyShredder IsLegionEconDemon 
-	response legion_commander_AllyNearEarlyGameIsEnemyShredderIsLegionEconDemon
+	criteria AllyNear Islegion_commander EarlyGame IsAllyShredder IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyShredderIsLegionEconDemon
 }
 
 Response legion_commander_AllyNearEarlyGameIsEnemyDoom_BringerIsLegionEconDemon
@@ -4231,7 +4334,7 @@ Response legion_commander_AllyNearEarlyGameIsEnemyDoom_BringerIsLegionEconDemon
 
 Rule legion_commander_AllyNearEarlyGameIsEnemyDoom_BringerIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsEnemyDoom_Bringer IsLegionEconDemon 
+	criteria AllyNear Islegion_commander EarlyGame IsEnemyDoom_Bringer IsLegionEconDemon
 	response legion_commander_AllyNearEarlyGameIsEnemyDoom_BringerIsLegionEconDemon
 }
 
@@ -4242,7 +4345,7 @@ Response legion_commander_AllyNearEarlyGameIsAllyNevermoreIsLegionEconDemon
 
 Rule legion_commander_AllyNearEarlyGameIsAllyNevermoreIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsAllyNevermore IsLegionEconDemon 
+	criteria AllyNear Islegion_commander EarlyGame IsAllyNevermore IsLegionEconDemon
 	response legion_commander_AllyNearEarlyGameIsAllyNevermoreIsLegionEconDemon
 }
 
@@ -4253,8 +4356,19 @@ Response legion_commander_AllyNearEarlyGameIsAllyShadow_DemonIsLegionEconDemon
 
 Rule legion_commander_AllyNearEarlyGameIsAllyShadow_DemonIsLegionEconDemon_Rule
 {
-	criteria AllyNear Islegion_commander EarlyGame IsAllyShadow_Demon IsLegionEconDemon 
+	criteria AllyNear Islegion_commander EarlyGame IsAllyShadow_Demon IsLegionEconDemon
 	response legion_commander_AllyNearEarlyGameIsAllyShadow_DemonIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsAllyTerrorbladeIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_econ_ally_01.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsAllyTerrorbladeIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsAllyTerrorblade IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyTerrorbladeIsLegionEconDemon
 }
 
 Response legion_commander_LastHit

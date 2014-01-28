@@ -159,14 +159,18 @@
 			"dota_camera_lerp_duration"		"2.0"
 		}
 
-		"quest_entity_death"
+		"quest"
 		{
 			"name"							"quest_laning_defend"
 			"type"							"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"							"#DOTA_Quest_Laning_Defend"
-			"entity_list"	
+			"title"							"#DOTA_Quest_Laning_Defend"
+
+			"subquest_entity_death"
 			{
-				"npc_dota_goodguys_tower1_mid"	"1"
+				"entity_list"	
+				{
+					"npc_dota_goodguys_tower1_mid"	"1"
+				}
 			}
 
 			"lose_if_completed"				"1"
@@ -197,15 +201,20 @@
 
 	"mid1v1_tier1_tutorial_show_dire_msg"
 	{
-		"quest_entity_death"
+		"quest"
 		{
 			"name"							"quest_laning_attack_defend"
 			"type"							"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"							"#DOTA_Quest_Laning_Attack"
-			"entity_list"	
+			"title"							"#DOTA_Quest_Laning_Attack"
+			
+			"subquest_entity_death"
 			{
-				"npc_dota_badguys_tower1_mid"	"1"
+				"entity_list"
+				{
+					"npc_dota_badguys_tower1_mid"	"1"
+				}
 			}
+
 			"win_if_completed"				"1"
 			"game_end_text"					"#DOTA_Quest_Laning_Attack_Success"
 			"quest_complete_fade_alpha"		"255"
@@ -257,39 +266,50 @@
 		"add_teleportation_target"		"dota_goodguys_fort"
 		"add_teleportation_target"		"ent_dota_fountain_good"
 
-		"quest_buy_items"
+		"quest"
 		{
 			"name"		"quest_laning_buy_initial_items"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_Laning_BuyInitialItems"
-			"item_list"
+			"title"		"#DOTA_Quest_Laning_BuyInitialItems"
+
+			"subquest_buy_items"
 			{
-				"item_tango"		"1"
-				"item_flask"		"1"
-				"item_slippers"		"1"
-				"item_branches"		"1"
-				"item_branches"		"1"
+				"item_list"
+				{
+					"item_tango"		"1"
+					"item_flask"		"1"
+					"item_slippers"		"1"
+					"item_branches"		"1"
+					"item_branches"		"1"
+				}
 			}
 		}
 
-		"quest_buy_items"
+		"quest"
 		{
 			"name"		"quest_laning_buy_courier"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_Laning_BuyCourier"
-			"item_list"
+			"title"		"#DOTA_Quest_Laning_BuyCourier"
+			
+			"subquest_buy_items"
 			{
-				"item_courier"		"1"
+				"item_list"
+				{
+					"item_courier"		"1"
+				}
 			}
 		}
 
-		"quest_tutorial_event"
+		"quest"
 		{
 			"name"		"quest_laning_select_initial_ability"
 			"type"		"0"		// 0 = point, 1 = gold, 2 = sword, 3 = shield
-			"text"		"#DOTA_Quest_Laning_SelectInitialAbility"
+			"title"		"#DOTA_Quest_Laning_SelectInitialAbility"
 			
-			"tutorial_event"	"dota_player_learned_ability"
+			"subquest_tutorial_event"
+			{
+				"tutorial_event"	"dota_player_learned_ability"
+			}
 		}
 	}
 }

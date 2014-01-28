@@ -290,6 +290,50 @@ Rule windrunner_LevelUp_Rule
 	response windrunner_LevelUp
 }
 
+Response windrunner_DeathIsEnemyPhoenixChance_5%
+{
+	scene "scenes/windrunner/windrunner_wind_rival_10.vcd" nodelay noscene 
+}
+
+Rule windrunner_DeathIsEnemyPhoenixChance_5%_Rule
+{
+	criteria Death Iswindrunner IsEnemyPhoenix Chance_5%
+	response windrunner_DeathIsEnemyPhoenixChance_5%
+}
+
+Response windrunner_Death
+{
+	scene "scenes/windrunner/windrunner_wind_death_01.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_03.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_04.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_05.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_06.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_07.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_08.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_09.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_10.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_11.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_death_12.vcd" nodelay noscene 
+}
+
+Rule windrunner_Death_Rule
+{
+	criteria Death Iswindrunner 
+	response windrunner_Death
+}
+
+Response windrunner_DeathIsReincarnating
+{
+	scene "scenes/windrunner/windrunner_wind_fastres_01.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_fastres_02.vcd" nodelay noscene 
+}
+
+Rule windrunner_DeathIsReincarnating_Rule
+{
+	criteria Death Iswindrunner IsReincarnating
+	response windrunner_DeathIsReincarnating
+}
+
 Response windrunner_AllyNearIsAllyClinkzEarlyGame
 {
 	scene "scenes/windrunner/windrunner_wind_ally_01.vcd" nodelay noscene speakonce
@@ -374,39 +418,6 @@ Rule windrunner_LastHit_Rule
 {
 	criteria LastHit Iswindrunner 
 	response windrunner_LastHit
-}
-
-Response windrunner_Death
-{
-	scene "scenes/windrunner/windrunner_wind_death_01.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_03.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_04.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_05.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_06.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_07.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_08.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_09.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_10.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_11.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_death_12.vcd" nodelay noscene 
-}
-
-Rule windrunner_Death_Rule
-{
-	criteria Death Iswindrunner 
-	response windrunner_Death
-}
-
-Response windrunner_DeathIsReincarnating
-{
-	scene "scenes/windrunner/windrunner_wind_fastres_01.vcd" nodelay noscene 
-	scene "scenes/windrunner/windrunner_wind_fastres_02.vcd" nodelay noscene 
-}
-
-Rule windrunner_DeathIsReincarnating_Rule
-{
-	criteria Death Iswindrunner IsReincarnating
-	response windrunner_DeathIsReincarnating
 }
 
 Response windrunner_Respawn

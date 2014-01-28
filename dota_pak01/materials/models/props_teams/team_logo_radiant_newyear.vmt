@@ -1,0 +1,16 @@
+"GlobalLitSimple"
+{
+	$baseTexture "models/props_teams/team_logo_radiant_newyear"
+	$specTexture "models/props_teams/team_logo_radiant_newyear_spec"
+	"$specular_intensity" "2"
+	"$specular_BLOOM" "1"
+	"$alphatest" "1"
+	"$fow"                          "_rt_fog_of_war"
+
+	"Proxies"
+	{
+		"CustomTextureTeamBaseLogoOnProp"
+		{
+		}
+	}
+}

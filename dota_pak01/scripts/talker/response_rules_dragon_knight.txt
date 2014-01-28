@@ -300,6 +300,10 @@ Response dragon_knight_KillIsInDragonForm
 	scene "scenes/dragon_knight/dragon_knight_dragon_kill_10.vcd" nodelay noscene 
 	scene "scenes/dragon_knight/dragon_knight_dragon_kill_11.vcd" nodelay noscene 
 	scene "scenes/dragon_knight/dragon_knight_dragon_kill_13.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_09.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_10.vcd" nodelay noscene 
 }
 
 Rule dragon_knight_KillIsInDragonForm_Rule
@@ -354,20 +358,6 @@ Rule dragon_knight_KillIsInDragonFormIsFirstBlood_Rule
 {
 	criteria Kill Isdragon_knight IsInDragonForm IsFirstBlood
 	response dragon_knight_KillIsInDragonFormIsFirstBlood
-}
-
-Response dragon_knight_KillIsInDragonForm
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_09.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_10.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsInDragonForm_Rule
-{
-	criteria Kill Isdragon_knight IsInDragonForm 
-	response dragon_knight_KillIsInDragonForm
 }
 
 Response dragon_knight_DeathIsEnemyJakiroChance_50%
@@ -1132,7 +1122,7 @@ Response dragon_knight_ThanksIsInDragonForm
 
 Rule dragon_knight_ThanksIsInDragonForm_Rule
 {
-	criteria Thanks Isdragon_knight IsInDragonForm 
+	criteria Thanks Isdragon_knight IsInDragonForm
 	response dragon_knight_ThanksIsInDragonForm
 }
 
@@ -1208,7 +1198,7 @@ Response dragon_knight_InTheBagIsInDragonForm
 
 Rule dragon_knight_InTheBagIsInDragonForm_Rule
 {
-	criteria InTheBag Isdragon_knight IsInDragonForm 
+	criteria InTheBag Isdragon_knight IsInDragonForm
 	response dragon_knight_InTheBagIsInDragonForm
 }
 
@@ -1295,7 +1285,7 @@ Response dragon_knight_EmoteIsEmoteLaughIsInDragonForm
 
 Rule dragon_knight_EmoteIsEmoteLaughIsInDragonForm_Rule
 {
-	criteria Emote Isdragon_knight IsEmoteLaugh IsInDragonForm 
+	criteria Emote Isdragon_knight IsEmoteLaugh IsInDragonForm
 	response dragon_knight_EmoteIsEmoteLaughIsInDragonForm
 }
 

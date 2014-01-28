@@ -371,6 +371,28 @@ Rule bristleback_KillIsEnemyWispChance_20%_Rule
 	response bristleback_KillIsEnemyWispChance_20%
 }
 
+Response bristleback_KillIsEnemyPhoenixChance_20%
+{
+	scene "scenes/bristleback/bristleback_bristle_rival_41.vcd" nodelay noscene 
+}
+
+Rule bristleback_KillIsEnemyPhoenixChance_20%_Rule
+{
+	criteria Kill Isbristleback IsEnemyPhoenix Chance_20%
+	response bristleback_KillIsEnemyPhoenixChance_20%
+}
+
+Response bristleback_KillIsEnemyTerrorbladeChance_20%
+{
+	scene "scenes/bristleback/bristleback_bristle_rival_42.vcd" nodelay noscene 
+}
+
+Rule bristleback_KillIsEnemyTerrorbladeChance_20%_Rule
+{
+	criteria Kill Isbristleback IsEnemyTerrorblade Chance_20%
+	response bristleback_KillIsEnemyTerrorbladeChance_20%
+}
+
 Response bristleback_KillIsEnemyInvokerChance_20%
 {
 	scene "scenes/bristleback/bristleback_bristle_rival_43.vcd" nodelay noscene 
@@ -858,7 +880,7 @@ Rule bristleback_AllyNearIsAllySniperEarlyGame_Rule
 
 Response bristleback_VictoryChance_10%
 {
-	scene "scenes/bristleback/bristleback_bristle_ally_02.vcd" nodelay noscene  
+	scene "scenes/bristleback/bristleback_bristle_ally_02.vcd" nodelay noscene 
 }
 
 Rule bristleback_VictoryChance_10%_Rule

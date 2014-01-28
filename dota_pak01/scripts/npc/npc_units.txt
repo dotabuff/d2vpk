@@ -7959,7 +7959,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"6"			// Physical protection.
+		"ArmorPhysical"				"4"			// Physical protection.
 		"MagicalResistance"				"40"		// Magical protection.
 
 		// Attack
@@ -8056,7 +8056,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"8"			// Physical protection.
+		"ArmorPhysical"				"4"			// Physical protection.
 		"MagicalResistance"				"40"		// Magical protection.
 
 		// Attack
@@ -8085,8 +8085,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"59"		// Experience earn.
-		"BountyGoldMin"				"125"		// Gold earned min.
-		"BountyGoldMax"				"125"		// Gold earned max.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -8149,7 +8149,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"10"		// Physical protection.
+		"ArmorPhysical"				"4"		// Physical protection.
 		"MagicalResistance"				"40"		// Magical protection.
 
 		// Attack
@@ -8178,8 +8178,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"59"		// Experience earn.
-		"BountyGoldMin"				"150"		// Gold earned min.
-		"BountyGoldMax"				"150"		// Gold earned max.
+		"BountyGoldMin"				"200"		// Gold earned min.
+		"BountyGoldMax"				"200"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -8242,7 +8242,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"6"			// Physical protection.
+		"ArmorPhysical"				"4"			// Physical protection.
 		"MagicalResistance"				"40"		// Magical protection.
 
 		// Attack
@@ -8335,7 +8335,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"8"			// Physical protection.
+		"ArmorPhysical"				"4"			// Physical protection.
 		"MagicalResistance"				"40"		// Magical protection.
 
 		// Attack
@@ -8364,8 +8364,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"59"		// Experience earn.
-		"BountyGoldMin"				"125"		// Gold earned min.
-		"BountyGoldMax"				"125"		// Gold earned max.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -8428,7 +8428,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"10"		// Physical protection.
+		"ArmorPhysical"				"4"		// Physical protection.
 		"MagicalResistance"				"40"		// Magical protection.
 
 		// Attack
@@ -8457,8 +8457,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"59"		// Experience earn.
-		"BountyGoldMin"				"150"		// Gold earned min.
-		"BountyGoldMax"				"150"		// Gold earned max.
+		"BountyGoldMin"				"200"		// Gold earned min.
+		"BountyGoldMax"				"200"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -8617,8 +8617,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"0"			// Experience earn.
-		"BountyGoldMin"				"175"		// Gold earned min.
-		"BountyGoldMax"				"175"		// Gold earned max.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 			// Status
 		//----------------------------------------------------------------
@@ -10175,8 +10175,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"1789"		// Experience earn.
-		"BountyGoldMin"				"105"		// Gold earned min.
-		"BountyGoldMax"				"600"		// Gold earned max.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"400"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -12829,8 +12829,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"200"		// Range of vision during day light.
-		"VisionNighttimeRange"		"200"		// Range of vision at night time.
+		"VisionDaytimeRange"		"0"		// Range of vision during day light.
+		"VisionNighttimeRange"		"0"		// Range of vision at night time.
 
 		// Team
 		//----------------------------------------------------------------
@@ -13414,7 +13414,7 @@
 		// Abilities
 		//----------------------------------------------------------------
 		"Ability1"					"lycan_summon_wolves_critical_strike"			// Ability 1
-		"Ability2"					""			// Ability 2
+		"Ability2"					"lycan_summon_wolves_invisibility"			// Ability 2
 		"Ability3"					""			// Ability 3
 		"Ability4"					""			// Ability 4
 
@@ -13528,7 +13528,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"320"		// Base health.
-		"StatusHealthRegen"			"0.5"		// Health regeneration rate.
+		"StatusHealthRegen"			"15"		// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.		 
 		
@@ -13859,7 +13859,7 @@
 		"ModelScale"				"0.66"
 		"Level"						"2"
 		"IsSummoned"				"0"
-		"IsAncient"					"1"
+		"IsAncient"					"0"
 		"UnitLabel"					"visage_familiars"
 		"SelectOnSpawn"				"1"
 		"AutoAttacksByDefault"		"0"
@@ -13870,7 +13870,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"visage_summon_familiars_stone_form"			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability2"					"neutral_spell_immunity"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -13881,7 +13881,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"0"			// Physical protection.
-		"MagicalResistance"				"96.25"		// Magical protection.
+		"MagicalResistance"				"0"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
@@ -13943,7 +13943,7 @@
 		"ModelScale"				"0.66"
 		"Level"						"2"
 		"IsSummoned"				"0"
-		"IsAncient"					"1"
+		"IsAncient"					"0"
 		"UnitLabel"					"visage_familiars"
 		"SelectOnSpawn"				"1"
 		"AutoAttacksByDefault"		"0"
@@ -13954,7 +13954,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"visage_summon_familiars_stone_form"			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability2"					"neutral_spell_immunity"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -13965,7 +13965,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"1"			// Physical protection.
-		"MagicalResistance"				"96.25"		// Magical protection.
+		"MagicalResistance"				"0"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
@@ -14027,7 +14027,7 @@
 		"ModelScale"				"0.66"
 		"Level"						"2"
 		"IsSummoned"				"0"
-		"IsAncient"					"1"
+		"IsAncient"					"0"
 		"UnitLabel"					"visage_familiars"
 		"SelectOnSpawn"				"1"
 		"AutoAttacksByDefault"		"0"
@@ -14037,7 +14037,7 @@
 		//----------------------------------------------------------------
 		
 		"Ability1"					"visage_summon_familiars_stone_form"			// Ability 1.
-		"Ability2"					""			// Ability 2.
+		"Ability2"					"neutral_spell_immunity"			// Ability 2.
 		"Ability3"					""			// Ability 3.
 		"Ability4"					""			// Ability 4.
 		"Ability5"					""			// Ability 5.
@@ -14048,7 +14048,7 @@
 		// Armor
 		//----------------------------------------------------------------
 		"ArmorPhysical"				"2"			// Physical protection.
-		"MagicalResistance"				"96.25"		// Magical protection.
+		"MagicalResistance"				"0"		// Magical protection.
 
 		// Attack
 		//----------------------------------------------------------------
@@ -16373,5 +16373,155 @@
 		"VisionNighttimeRange"		"800"		// Range of vision at night time.
 	}
 
+	//=================================================================================
+
+	"npc_dota_phoenix_sun"
+	{										
+		// General
+		//----------------------------------------------------------------
+		"Model"						"models/heroes/phoenix/phoenix_egg.mdl"	// Model.
+		"BaseClass"					"npc_dota_base_additive"
+		"SoundSet"					"Phoenix_Sun"			// Name of sound set.
+		"Level"						"0"
+		"ModelScale"				"1"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Bounds
+		//----------------------------------------------------------------
+		"HealthBarOffset"			"450"		
+		"RingRadius"					"85"				 		
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"			// Experience earn.
+		"BountyGoldMin"				"20"		// Gold earned min.
+		"BountyGoldMax"				"20"		// Gold earned max.
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"		// Speed.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"		// Base health.
+		"StatusHealthRegen"			"0.0"		// Health regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"		// Range of vision during day light.
+		"VisionNighttimeRange"		"800"		// Range of vision at night time.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"							// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+	}
+
+	//=================================================================================
+	"npc_dota_target_dummy"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_target_dummy"	// Class of entity of link to.
+		"Model"						"models/props_gameplay/donkey.mdl"	// Model.
+		"SoundSet"					""					// Name of sound set.
+		"Level"						"0"
+		"ModelScale"				"1"
+		"IsNeutralUnitType"			"1"
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"120"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"350"		// Speed
+		"MovementTurnRate"			"0.5"		// Turning rate.
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1
+		"Ability2"					""			// Ability 2
+		"Ability3"					""			// Ability 3
+		"Ability4"					""			// Ability 4
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+		"MagicalResistance"			"0"			// Magical protection.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"5000"		// Base health.
+		"StatusHealthRegen"			"0"			// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1"		// Range of vision during day light.
+		"VisionNighttimeRange"		"1"		// Range of vision at night time.
+	}
+
+	//=================================================================================
+	"npc_dota_looping_sound"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_looping_sound"	// Class of entity of link to.
+		"Model"						"models/development/invisiblebox.mdl"	// Model.
+		"SoundSet"					"0"					// Name of sound set.
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"VisionDaytimeRange"		"0"		// Range of vision during day light.
+		"VisionNighttimeRange"		"0"		// Range of vision at night time.
+	}
+	//=================================================================================
+	"npc_dota_invisible_vision_source"
+	{										
+		"Model"						"models/development/invisiblebox.mdl"
+		"BaseClass"					"npc_dota_base_additive"
+		"SoundSet"					"0"			// Name of sound set.
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"
+		"VisionDaytimeRange"		"200"
+		"VisionNighttimeRange"		"200"
+	}
 }
 		
