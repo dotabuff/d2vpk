@@ -17555,7 +17555,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"					"5418"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -18032,7 +18032,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5410"							// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -25701,6 +25701,11 @@
 				"var_type"					"FIELD_FLOAT"
 				"turn_rate"					"20"
 			}
+			"11"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"tooltip_duration"	"6"
+			}
 		}
 	}
 
@@ -25712,7 +25717,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5627"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -25727,7 +25732,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5628"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -25796,6 +25801,11 @@
 				"var_type"			"FIELD_INTEGER"
 				"max_hero_attacks"	"5 7 10"
 			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"tooltip_duration"	"6"
+			}
 		}
 	}
 
@@ -25814,7 +25824,7 @@
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"1200"
+		"AbilityCastRange"				"1400"
 		"AbilityCastPoint"				"0.01 0.01 0.01 0.01"
 		
 		// Time		
@@ -25857,12 +25867,12 @@
 			"06"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"attackspeed_slow"	"-150"
+				"attackspeed_slow"	"-80 -100 -120 -140"
 			}
 			"07"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"dps"				"20 40 60 80"
+				"dps"				"15 35 55 75"
 			}
 			"08"
 			{

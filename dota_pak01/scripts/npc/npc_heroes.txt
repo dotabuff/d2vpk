@@ -19115,6 +19115,7 @@
 		"NoCombine"					"0"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_windrunner"
+		"AbilityDraftDisabled"		"1"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -21275,8 +21276,8 @@
 		"HeroID"					"110"											// unique ID number for this hero.  Do not change this once established or it will invalidate colle1cted stats.
 		"Enabled"					"1"
 		"HeroUnlockOrder"				"1"
-		"Role"						"Carry"
-		"Rolelevels"					"3"
+		"Role"						"Initiator,Disabler,Nuker"
+		"Rolelevels"					"3,2,3"
 		"Team"						"Good"
 		"Portrait"					"vgui/hud/heroportraits/portrait_phoenix"
 		"ModelScale" 					"0.95"
@@ -21331,7 +21332,7 @@
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"285"									// Speed.
-		"MovementTurnRate"			"0.7"									// Turning rate.
+		"MovementTurnRate"			"1.0"									// Turning rate.
 		
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"			"240"

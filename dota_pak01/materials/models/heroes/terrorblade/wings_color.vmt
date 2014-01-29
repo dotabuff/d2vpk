@@ -8,18 +8,18 @@
 	
 	$alphatest 1
 
-	$SPECULAREXPONENT 18
-	$SPECULARSCALE 12
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 8
 	//$SPECULARCOLOR "[.2 .9 1]"
-	$SPECULARCOLOR "[1 .2 .1]"
+	$SPECULARCOLOR "[1 .3 .1]"
 
 	$DETAIL1BLENDMODE 2 
 	$DETAIL1SCALE 7
-	$DETAIL1BLENDFACTOR 2
+	$DETAIL1BLENDFACTOR 1
 
-	$ENVMAP "models/cubemaps/glossy_terrorblade"
-	$ENVMAPINTENSITY 1
-	$MASKENVBYMETALNESS 1	
+	$ENVMAP "models/cubemaps/irridecent"
+	$ENVMAPINTENSITY 2.5
+	//$MASKENVBYMETALNESS 1	
 
 	$RIMLIGHTSCALE 2
 	$RIMLIGHTCOLOR "[0 1 1]"
@@ -35,7 +35,7 @@
 		"TextureScroll"		
 		{
 			"texturescrollvar"	"$detail1texturetransform"
-			"texturescrollrate"	"-.1"
+			"texturescrollrate"	"-.05"
 			"texturescrollangle"	"83"
 		}
 		"invis_proxy"

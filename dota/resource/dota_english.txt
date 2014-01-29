@@ -396,7 +396,7 @@
 
 		"DOTA_Ability_Ping_Ready"		"[ALLIES] %s1: %s2 %s3Ready"
 		"DOTA_Ability_Ping_Mana"		"[ALLIES] %s1: %s2 %s3Not Enough Mana"
-		"DOTA_Ability_Ping_Cooldown"	"[ALLIES] %s1: %s2 %s3In Cooldown ( %s4 seconds remain )"		
+		"DOTA_Ability_Ping_Cooldown"	"[ALLIES] %s1: %s2 %s3On Cooldown ( %s4 seconds remain )"		
 
 		// Video
 		"DOTAUI_AspectNormal"			"4:3"
@@ -2169,7 +2169,8 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_lion_finger_of_death_damage_scepter"						"SCEPTER DAMAGE:"
 		"DOTA_Tooltip_ability_lion_finger_of_death_mana_cost_scepter"					"SCEPTER MANA COST:"
 		"DOTA_Tooltip_ability_lion_finger_of_death_cooldown_scepter"					"SCEPTER COOLDOWN:"
-		"DOTA_Tooltip_ability_lion_finger_of_death_aghanim_description"					"Increases damage, while decreasing mana cost. Decreases cooldown."
+		"DOTA_Tooltip_ability_lion_finger_of_death_splash_radius_scepter"				"SCEPTER AOE:"
+		"DOTA_Tooltip_ability_lion_finger_of_death_aghanim_description"					"Increases damage, while decreasing mana cost. Decreases cooldown. Adds AOE."
 		"npc_dota_hero_lion_bio"														"Once a Grandmaster of the Demon Witch tradition of sorcery, Lion earned fame among his brethren for fighting on the side of light and righteousness. But adulation corrupts. With powers surpassed only by his ambition, the mage was seduced by a demon and turned to evil, trading his soul for prestige. After committing horrible crimes that marred his soul, he was abandoned. The demon betrayed him, striking better deals with his enemies. Such was Lion’s rage that he followed the demon back to hell and slew it, ripping it limb from limb, taking its demonic hand for his own. However, such demonoplasty comes at a cost. Lion was transfigured by the process, his body transformed into something unrecognizable. He rose from hell, rage incarnate, slaying even those who had once called him master, and laying waste to the lands where he had once been so adored. He survives now as the sole practitioner of the Demon Witch tradition, and those who present themselves as acolytes or students are soon relieved of their mana and carried off by the faintest gust of wind."
 		"npc_dota_hero_lion_hype"														"Summon shards of demonic stone that send enemies flying, then impale them as they fall!\n\nTransform foes into frogs!\n\nDrain mana from those who oppose you!\n\nTurn the dastards inside out with the touch of a finger!"
 		
@@ -3284,12 +3285,12 @@ There are stories that say he was once a great alchemist who tried to unlock the
 		
 		//TINKER
 		"DOTA_Tooltip_ability_tinker_laser"												"Laser"
-		"DOTA_Tooltip_ability_tinker_laser_Description"									"Fires an intense energy beam, dealing damage and blinding the target for 3 seconds, causing it to miss all physical attacks."
+		"DOTA_Tooltip_ability_tinker_laser_Description"									"Fires an intense energy beam, dealing damage and blinding the target for 3 seconds, causing it to miss all physical attacks. Its range is doubled with Aghanim's Scepter."
 		"DOTA_Tooltip_ability_tinker_laser_Lore"										"Boush perfected this rock cutting laser in his subterranean laboratory, never considering its combat utility."
 		"DOTA_Tooltip_ability_tinker_laser_Note0"										"The damage is dealt immediately while the miss effect is delayed until the projectile hits."
 		"DOTA_Tooltip_ability_tinker_laser_miss_rate"									"%MISS RATE:"
 		"DOTA_Tooltip_ability_tinker_heat_seeking_missile"								"Heat-Seeking Missile"
-		"DOTA_Tooltip_ability_tinker_heat_seeking_missile_Description"					"Launches a pair of rockets at the nearest visible enemy heroes within 2500 range."
+		"DOTA_Tooltip_ability_tinker_heat_seeking_missile_Description"					"Launches a pair of rockets at the nearest visible enemy heroes within 2500 range. The number of missile targets is doubled with Aghanim's Scepter."
 		"DOTA_Tooltip_ability_tinker_heat_seeking_missile_Lore"							"The last contraption Boush was able to save was a retrofitted rocket launcher with a homing mechanism."
 		"DOTA_Tooltip_ability_tinker_heat_seeking_missile_Note0"						"Does not hit ethereal units."
 		"DOTA_Tooltip_ability_tinker_heat_seeking_missile_targets"						"TARGETS:"
@@ -3304,6 +3305,7 @@ There are stories that say he was once a great alchemist who tried to unlock the
 		"DOTA_Tooltip_ability_tinker_rearm_Description"									"CHANNELED - Resets the cooldown on most of Tinker's items and abilities."
 		"DOTA_Tooltip_ability_tinker_rearm_Lore"										"A new battery here, another set of rockets there, Boush continually improves on existing technology."
 		"DOTA_Tooltip_ability_tinker_rearm_Note0"										"Rearm works on all items except Black King Bar, Arcane Boots, Helm of the Dominator, Hand of Midas, Refresher Orb, Linken's Sphere, and Necronomicon."
+		"DOTA_Tooltip_ability_tinker_rearm_aghanim_description"							"Doubles Laser cast range and Heat-Seeking missile count."
 		"DOTA_Tooltip_ability_tinker_rearm_channel_tooltip"								"TIME TO REARM:"
 		"npc_dota_hero_tinker_bio"														"Boush the Tinker's diminutive race is known for its intelligence, its cunning, and its prickly relationship with magic. As a matter of pride, they survive by their wits, and use only those powers of nature that may be unlocked through rational methodologies. Even this forbearance has led to a great deal of trouble, as Boush can attest. Once a key investigator of natural law, Boush the Tinker led a vast intellectual investigation into the workings of nature, founding a subterranean laboratory in the rumored, mist-wreathed wastes of the Violet Plateau. While scorning mages for the dangers they visit upon the world, Boush and his Tinker associates haughtily wrenched open a portal to some realm beyond comprehension and ushered in some nightmares of their own. A black mist rose from the cavernous interior of the Violet Plateau, shrouding it in permanent darkness from which sounds of horror perpetually emanate. Boush escaped with only his wits and the contraptions he carried, the sole Tinker to survive the Violet Plateau Incident. "
 		"npc_dota_hero_tinker_hype"														"Blind enemies with intense beams of laser light!\n\nFire rockets at nearby fighters!\n\nRearm instantly and call down a horde of automatons on your foes!"
@@ -4845,7 +4847,7 @@ As much drinking competition as mortal combat, Mangix for nine days drank and fo
 		"DOTA_Tooltip_ability_shadow_demon_soul_catcher_radius"						"RADIUS:"
 		"DOTA_Tooltip_ability_shadow_demon_soul_catcher_tooltip_duration"			"DURATION:"
 		"DOTA_Tooltip_ability_shadow_demon_shadow_poison"							"Shadow Poison"
-		"DOTA_Tooltip_ability_shadow_demon_shadow_poison_Description"				"Deals damage in a line, and afflicts enemy units with a poison effect. The poison deals 1/2/4/8 times the stack damage based on the number of stacks on the target, up to 4 stacks. Additional stacks cause 50 damage each.  This deferred damage is dealt when Shadow Poison's duration is expired, or the Release sub-ability is used."
+		"DOTA_Tooltip_ability_shadow_demon_shadow_poison_Description"				"Deals damage in a line, and afflicts enemy units with a poison effect. The poison deals 1/2/4/8 times the stack damage based on the number of stacks on the target, up to 5 stacks. Additional stacks cause 50 damage each.  This deferred damage is dealt when Shadow Poison's duration is expired, or the Release sub-ability is used."
 		"DOTA_Tooltip_ability_shadow_demon_shadow_poison_Lore"						"The ever growing influence of the Shadow Demon can pollute the most valiant and pure of heroes."
 		"DOTA_Tooltip_ability_shadow_demon_shadow_poison_Note0"						"Shadow Poison can affect units under Disruption."
 		"DOTA_Tooltip_ability_shadow_demon_shadow_poison_stack_damage"				"STACK DAMAGE:"
@@ -5903,7 +5905,7 @@ Though victorious, the survivors saw little to celebrate: the city lay in ruins,
 		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_radius"			"RADIUS:"
 		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_speed"			"SPEED:"
 		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_rock_speed"		"SPEED(STONE):"
-		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_damage"			"DAMAGE:"w
+		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_damage"			"DAMAGE:"
 		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_rock_damage"		"DAMAGE(STONE):"
 		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_distance"		"DISTANCE:"
 		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_rock_distance"	"DISTANCE(STONE):"
@@ -5976,7 +5978,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_Tooltip_ability_phoenix_icarus_dive_burn_duration"			"BURN DURATION:"
 		"DOTA_Tooltip_ability_phoenix_icarus_dive_damage_per_second"		"DAMAGE PER SECOND:"
 		"DOTA_Tooltip_ability_phoenix_icarus_dive_slow_movement_speed_pct"	"%MOVE SLOW:"
-		"DOTA_Tooltip_ability_phoenix_icarus_dive_Note0"					"Icarus Dive has a 2 second travel duration."
+		"DOTA_Tooltip_ability_phoenix_icarus_dive_Note0"					"Icarus Dive has a 2 second travel duration, and can be cancelled by casting the ability again while in flight."
 		
 		"DOTA_Tooltip_ability_phoenix_icarus_dive_stop"							"Stop Icarus Dive"
 		"DOTA_Tooltip_ability_phoenix_icarus_dive_stop_Description"				"Immediately cancels the dive."
@@ -6006,7 +6008,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_Tooltip_ability_phoenix_sun_ray_Description"				"Drawing from his own inner fire, Phoenix expels a huge beam of light at the cost of his own life energy. The beam damages enemies for a percentage of their life and heals allies for half the amount. Damage scales up to twice the initial damage as the beam fires."
 		"DOTA_Tooltip_ability_phoenix_sun_ray_Lore"						"The vent through which such stellar energy flows is mere atoms wide."
 		"DOTA_Tooltip_ability_phoenix_sun_ray_hp_cost_perc_per_second"	"%HP COST PER SECOND:"
-		"DOTA_Tooltip_ability_phoenix_sun_ray_AbilityDuration"			"DURATION:"
+		"DOTA_Tooltip_ability_phoenix_sun_ray_tooltip_duration"			"DURATION:"
 		"DOTA_Tooltip_ability_phoenix_sun_ray_beam_range"				"RANGE:"
 		"DOTA_Tooltip_ability_phoenix_sun_ray_radius"					"WIDTH:"
 		"DOTA_Tooltip_ability_phoenix_sun_ray_base_dmg"					"DAMAGE PER SECOND:"
@@ -6026,7 +6028,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_Tooltip_ability_phoenix_supernova_Description"				"The Phoenix willingly ends his current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area."
 		"DOTA_Tooltip_ability_phoenix_supernova_Lore"						"The solar crucible of a Supernova may be fatal, yet from its flames arise new beacons to wander infinity."
 		"DOTA_Tooltip_ability_phoenix_supernova_aura_radius"				"RADIUS:"
-		"DOTA_Tooltip_ability_phoenix_supernova_AbilityDuration"			"DURATION:"
+		"DOTA_Tooltip_ability_phoenix_supernova_tooltip_duration"			"DURATION:"
 		"DOTA_Tooltip_ability_phoenix_supernova_damage_per_sec"				"DAMAGE PER SECOND:"
 		"DOTA_Tooltip_ability_phoenix_supernova_stun_duration"				"STUN DURATION:"
 		"DOTA_Tooltip_ability_phoenix_supernova_max_hero_attacks"			"ATTACKS TO DESTROY:"
@@ -10438,7 +10440,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		
 		"DOTA_Tooltip_ability_item_shivas_guard_Description"					"Active: Arctic Blast - Emits a freezing wave that does %blast_damage% damage to enemies and slows their movement by %blast_movement_speed%%% for %blast_debuff_duration% seconds.\nPassive: Freezing Aura - Reduces attack speed on enemies.\n\nMultiple instances of Freezing Aura do not stack."
 		"DOTA_Tooltip_ability_item_shivas_guard_Lore"							"Said to have belonged to a goddess, today it retains much of its former power."
-		"DOTA_Tooltip_ability_item_shivas_guard_Note0"							"The wave extends at a speed of 300 to a max size of 719."
+		"DOTA_Tooltip_ability_item_shivas_guard_Note0"							"The wave extends at a speed of 350 to a max size of 900."
 		"DOTA_Tooltip_ability_item_shivas_guard_Note1"							"The Arctic Blast follows its caster."
 		"DOTA_Tooltip_ability_item_shivas_guard_aura_attack_speed"				"AURA SLOW:"
 		"DOTA_Tooltip_ability_item_shivas_guard_bonus_intellect"				"+$int"
@@ -10492,7 +10494,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		
 		"DOTA_Tooltip_ability_item_tpscroll_Description"						"Use: Teleport - Teleports you to a target friendly building."
 		
-		"DOTA_Tooltip_ability_item_tranquil_boots_Description"					"Passive: Break - Whenever you attack or get attacked you lose the HP regeneration and 25 Movement Speed for 13 seconds."
+		"DOTA_Tooltip_ability_item_tranquil_boots_Description"					"Passive: Break - Whenever you attack or get attacked you lose the HP regeneration and 30 Movement Speed for 13 seconds."
 		"DOTA_Tooltip_ability_item_tranquil_boots_Lore"							"While they increase the longevity of the wearer, this boot is not particularly reliable."
 		"DOTA_Tooltip_ability_item_tranquil_boots_bonus_movement_speed"			"+$move_speed"
 		"DOTA_Tooltip_ability_item_tranquil_boots_bonus_armor"					"+$armor"
@@ -10615,7 +10617,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_ability_item_ring_of_aquila_aura_mana_regen"			"AURA MANA REGEN:"
 		"DOTA_Tooltip_ability_item_ring_of_aquila_aura_bonus_armor"			"AURA BONUS ARMOR:"
 
-		"DOTA_Tooltip_ability_item_shadow_amulet_Description"					"Active: Fade - Go invisible over 1.5 seconds. If you move, you will become visible."
+		"DOTA_Tooltip_ability_item_shadow_amulet_Description"					"Active: Fade - Grants invisibility to you or target allied hero over 1.5 seconds. Moving breaks the invisibility."
 		"DOTA_Tooltip_ability_item_shadow_amulet_Lore"							""
 		"DOTA_Tooltip_ability_item_shadow_amulet_bonus_attack_speed"			"+$attack"
 
@@ -11852,10 +11854,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"ExamineItem"					"Peek inside"
 		"examine_chest_may_contain"		"This chest may contain any one of the following items:"
 		"examine_chest_may_contain_multi"		"This chest contains several of the following items:"
-		"examine_chest_required"		"REQUIRED TO UNLOCK"
-		"examine_chest_bonus_item"		"With a chance of one of these bonus items:"
-		"examine_chest_purchase_key"	"Purchase Key And Open"
-		"examine_chest_unlock"			"Use Key"
+		"examine_chest_required"		"REQUIRED TO OPEN"
+		"examine_chest_bonus_item"		"Also contains one of these bonus items:"
+		"examine_chest_purchase_key"	"Purchase And Open"
+		"examine_chest_unlock"			"Open Treasure"
 		"examine_chest_mystery"			"Rare Special Item"
 		"examine_chest_mystery_desc"	"This chest may contain an exceedingly rare special item"
 		"DOTA_ShowCraftingUI"			"Crafting"
@@ -11863,7 +11865,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"RecoverGems"					"Recover Gems"
 		"SocketItem"					"Socket Item"
 		
-		"Econ_Tool_CrateKey_Title"		"Unlock Treasure Chest"
+		"Econ_Tool_CrateKey_Title"		"Open Treasure"
 		"ToolNoTargetItems"		"You have nothing that this tool can be applied to."
 		"BackpackApplyTool"		"Select the item to apply the %s1 to:"
 		"ApplyOnItem"			"Use With..."
@@ -11983,13 +11985,15 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_UseItem_Success"	"The item was used successfully!"
 		"DOTA_UseItem_Error"	"The item was not able to be used at this time! You may not meet the requirements to use this item."
 		"DOTA_UseItem_GiftNoPlayers" "There are no other players to give a gift to!"
+		"DOTA_UseItemNotification_Title_Success" "Item Use Succeeded"
 		"DOTA_UseItemNotification_Title" "Item Use Failed"
 		"DOTA_UseItemNotification_ButtonOne" "OK"
 		"DOTA_UseItemNotification_ButtonTwo" "Ignore"
 		"DOTA_UseItem_DropRateBonusAlreadyGranted" "You already have a drop rate bonus active of greater quality on this account. Your Battle Point Booster has not been used."
 		"DOTA_UseItem_NotInLowPriorityPool" "You aren't in the low priority punishment queue. Your Repentant Soul has not been used."
 		"DOTA_UseItem_NotHighEnoughLevel" "Your Dota Profile isn't high enough level to use this yet."
-		
+		"DOTA_UseItem_EventPointsGranted"	"The currency was successfully added."
+				
 		"Econ_Revolving_Loot_List"						"This chest contains one of the following items:"
 		"Econ_Revolving_Loot_List_Multi"				"This chest contains several of the following items:"
 		"Econ_Revolving_Loot_List_Rare_Item"			"or an Exceedingly Rare Special Item!"
@@ -12565,8 +12569,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Text_Storm_Spirit_Gifts_Fortune"			"Fortune favors the blue."
 		"StoreBanner_Header_Ember_Spirit_Gifts_Prosperity"		"Ember Spirit: Flames of Prosperity Set"
 		"StoreBanner_Text_Ember_Spirit_Gifts_Prosperity"			"In war, none prosper like the flames."
-		//"StoreBanner_Header_Fortunes_Favor"		"Fortune's Favor"
-		//"StoreBanner_Text_Fortunes_Favor"		"150% drop rate on Ingots, unlocks Jade token drops."
+		"StoreBanner_Header_Fortunes_Favor"		"Fortune's Favor"
+		"StoreBanner_Text_Fortunes_Favor"		"200% drop rate on Ingots, unlocks Jade token drops."
 		"StoreBanner_Header_Vermilion_Renewal_Seal"		"Seal of Vermilion Renewal"
 		"StoreBanner_Text_Vermilion_Renewal_Seal"		"Unseal the gifts of the New Bloom Festival"
 		
@@ -12915,7 +12919,34 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"KillEaterEventType_Horrors_Witnessed"		"Horrors Witnessed"
 
-	
+		"KillEaterEvent_TemplarAssassin_MeldKills"			"Meld Kills"
+		"KillEaterEvent_TemplarAssassin_HeroesSlowed"		"Heroes Trap Slowed"
+		"KillEaterEvent_TemplarAssassin_DamageAbsorbed"		"Refraction Damage Absorbed"
+
+		"KillEaterEvent_Sniper_AssassinationKills"			"Assassination Kills"
+		"KillEaterEvent_Sniper_ShrapnelTowerDamage"			"Shrapnel Tower Damage"
+		"KillEaterEvent_Sniper_HeadshotStuns"				"Headshot Stuns"
+
+		"KillEaterEvent_EarthSpirit_SmashStuns"				"Smash Stuns"
+		"KillEaterEvent_EarthSpirit_GripSilences"			"Grip Silences"
+		"KillEaterEvent_EarthSpirit_SpeedingBoulders"		"Speeding Boulders"
+
+		"KillEaterEvent_ShadowShaman_ShackleKills"			"Shackled Enemies Killed"
+		"KillEaterEvent_ShadowShaman_HexKills"				"Hexed Enemies Killed"
+		"KillEaterEvent_ShadowShaman_WardsSummoned"			"Serpent Wards Summoned"
+
+		"KillEaterEvent_Centaur_EnemiesStomped"				"Enemies Stomped"
+		"KillEaterEvent_Centaur_DoubleEdgeKills"			"Double Edge Kills"
+		"KillEaterEvent_Centaur_ReturnKills"				"Return Kills"
+
+		"KillEaterEvent_EmberSpirit_EnemiesChained"			"Enemies Chained"
+		"KillEaterEvent_EmberSpirit_SleightOfFistMultiKills"	"Multi-Hero Sleight of Fist Kills"
+		"KillEaterEvent_EmberSpirit_FlameGuardDamageAbsorbed"	"Flame Guard Damage Absorbed"
+
+		"KillEaterEvent_LegionCommander_TripleHeroOdds"		"Triple-Hero Overwhelming Odds"
+		"KillEaterEvent_LegionCommander_MomentOfCourageLifeStolen"	"Moment of Courage Life Stolen"
+		"KillEaterEvent_LegionCommander_SecondsSpentDueling"	"Seconds Spent Dueling"
+
 		"KillEaterRank0"			"Inscribed"
 		"KillEaterRank1"			"Unremarkable"
 		"KillEaterRank2"			"Blooded"
@@ -13133,7 +13164,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"NewItemMethod_Crafted"					"You Crafted:"
 		"NewItemMethod_Traded"					"You Traded for:"
 		"NewItemMethod_Purchased"				"You Purchased from the Dota Store:"
-		"NewItemMethod_FoundInCrate"			"You Unlocked:"
+		"NewItemMethod_FoundInCrate"			"You Received:"
 		"NewItemMethod_Gifted"					"You Received a Gift:"
 		"NewItemMethod_Support"					"Customer Support Granted You:"
 		"NewItemMethod_Promotion"				"You Received a Store Promotion Item:"
@@ -13161,7 +13192,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Item_CollectionReward"				"%s1 has redeemed a collection reward: <font color='%s2'>%s3</font> %s4"
 		"Item_PeriodicScoreReward"			"%s1 has earned: <font color='%s2'>%s3</font> %s4"
 
-		"Econ_Additional_Crate_Drop"		"In addition, this crate has a chance of containing an extra bonus item:"
+		"Econ_Additional_Crate_Drop"		"In addition, this contains an extra bonus item:"
 
 		"dota_stat_dropdown"				"GAME STATS"
 		"dota_stat_dropdown_level"			"HERO LEVEL"
@@ -13378,7 +13409,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"wraith_king_progress_tooltip"	"While Your King devotes himself to the rite of transformation, he will be absent from mundane affairs. While his subjects lament the absence of their King, they may play a critical role in his restoration. Each soul collected during Wraith-Night will count toward his global resurrection, and ensure the coronation of the Wraith King."
 		"frosty_points"					"PHANTOM FRAGMENTS"
 		"gold_frosty_points"			"SHINING FRAGMENTS"
-		"DOTA_Find_Frostivus_Match"		"WRAITH-NIGHT"
+		"DOTA_Find_Frostivus_Match"		"REDEEM FRAGMENTS"
 		"frostivus_game_mode_name"		"Wraith-Night"
 		"DOTA_Frostivus_Altar"			"Wraith King Altar"
 		"frostivus_get_booster"			"BUY FAVOR"
@@ -14913,7 +14944,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_triumphant_timelord"		"Triumphant Timelord"
 		"DOTA_Anim_Mod_Good_Fortune"		"Good Fortune Remnants"
 		"DOTA_Anim_Mod_Prosperity"		"Prosperity Remnants"
-
+		"DOTA_Anim_Mod_SwordonShoulder"		"The Knight's Repose"
 		"Invalid_AbilityMod"	"Invalid"
 		"DOTA_Ability_Mod_Illuminate_Northlight"	"Northlight Illuminance"
 		
@@ -14923,6 +14954,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Bans"					"Bans"
 		"DOTA_Picks"				"Picks"
 
+//DOTA_ITEM_STYLES
 		// TEMP, Add item editor support for these fields and move to items_english.txt
 		"Wraps_Of_The_Wicked_Succubus_Style0"		"Small Wraps"
 		"Wraps_Of_The_Wicked_Succubus_Style1"		"Medium Wraps"
@@ -15342,7 +15374,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Spring_Learn_About_Event"		"About the New Bloom Festival  >"
 		"DOTA_Spring_Learn_About_Tokens"	"Learn about Tokens >"
 
-		"dota_spring_flamesalt_explain"		"Earn Flamesalt Ingots as you play Dota 2 throughout the New Bloom event. Redeem Ingots for fireworks and lanterns to use while fighting off the Year Beast."
+		"dota_spring_flamesalt_explain"		"Earn Flamesalt Ingots as you play Dota 2 throughout the New Bloom event. Exchange Ingots for weapons to help you fight the Year Beast and earn rewards based on how well you did."
 		"dota_spring_jadetoken_explain"		"Purchase a Fortune's Favor to earn Jade Tokens that can be traded for special New Bloom items."
 
 		"dota_spring_flamesalt_ingot"		"Flamesalt Ingot"
@@ -15411,7 +15443,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_create_dialog_2"				"Let’s have a look."
 		"dota_create_dialog_3"				"Need something opened?"
 		"dota_create_dialog_4"				"I’ll get my tools."
-		"dota_create_dialog_5"				"The one’s tricky..."
+		"dota_create_dialog_5"				"This one’s tricky..."
 		"dota_create_dialog_6"				"It’ll be just a moment."
 		"dota_create_dialog_7"				"Ah! I see how it works."
 		"dota_create_dialog_8"				"Almost got it."

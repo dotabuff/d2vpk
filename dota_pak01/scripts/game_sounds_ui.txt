@@ -2782,6 +2782,24 @@
 }
 
 
+
+"ui.abilitydraft_open"
+{
+	"volume"		"0.4"
+	"wave"  "ui/abilitydraft.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.2"	
+			}
+		}
+	}
+}
 // Store Items ======================================
 "ui.inv_egg"
 {
@@ -2869,6 +2887,24 @@
 	}
 }
 
+
+"ui.blacksmith_background"
+{
+	"volume"		"1"
+	"wave"  "ui/blacksmith.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.3"	
+			}
+		}
+	}
+}
 
 // Store ======================================
 
@@ -3962,6 +3998,9 @@
 		}
 	}
 }
+
+
+
 
 // International Passport ======================================
 

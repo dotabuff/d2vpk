@@ -408,13 +408,17 @@
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "20000.0"
+			}
 			"mixer"
 			{
 				"mixgroup" "Ultimates"
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "1200"
+				"input_radius"  "3000"
 			}
 		}
 	}
