@@ -3771,7 +3771,7 @@
 			"02"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"channel_time"		"2.5 3.25 4.0 4.75"
+				"channel_time"		"2.75 3.5 4.25 5.0"
 			}
 			"03"
 			{
@@ -25433,7 +25433,7 @@
 		"ID"							"5622"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CUSTOM"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 
