@@ -7,17 +7,17 @@ ClothSystem
 		rows			5
 		BonePrefix		"DB_hair_"
 		
-		"damping"		"0.374000"
+		"damping"		"0.8"
 		"gravity"		"0 0 -1"
 		"gravity_scale"		"100.000000"            //359.00
 		"WorldFriction"		"0.300000"
-		"LocalForce"		"0.100000"              //1.0
-		"LocalRotation"		"0.000000"              //1.0
-		"FixedPointDamping"	"0.900000"              //0.1
-		"StretchForce"		"10.000000"
+		"LocalForce"		"0.500000"              //1.0
+		"LocalRotation"		"1.000000"              //1.0
+		"FixedPointDamping"	"0.500000"              //0.1
+		"StretchForce"		"2.000000"
 		"SpringStretchiness"		"0.100000"
-		"AnimationForceAttraction"		"0.300000"
-		"AnimationVertexAttraction"		"4.000000"
+		"AnimationForceAttraction"		"0.500000"
+		"AnimationVertexAttraction"		"1.000000"
 		"ExternalForceScale"		"1.000000"
 		"StructSpringConstant"		"10.000000"
 		"StructSpringDamping"		"0.500000"
@@ -26,10 +26,10 @@ ClothSystem
 		"BendSpringConstant"		"10.000000"
 		"BendSpringDamping"		"0.000000"
 		R0			"fixed"
-		R1			"mass 1"
-		R2			"mass 1"
-		R3			"mass 1"
-		R4			"mass 15"
+		R1			"mass 2"
+		R2			"mass 2"
+		R3			"mass 2"
+		R4			"mass 3"
 	}
 }
 

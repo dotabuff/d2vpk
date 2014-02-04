@@ -312,6 +312,22 @@
 		{
 			"heroID"		"107"
 			"tag"			"Earth Spirit"
+			"particle_attachments"
+			{
+	      "weapon"      
+				{
+					"add_to_item_def"
+	 				{
+						"visuals"
+						{
+	          	"attached_particlesystem0"
+		          {
+								"system"        "espirit_ambient_weapon"
+		          }
+						}
+					}
+				}
+			}
 		}
 		"ember_spirit"		
 		{
