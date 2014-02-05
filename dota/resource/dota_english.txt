@@ -182,8 +182,12 @@
 
 		// Frostivus
 		"DOTA_Vassals"			"The Vassals"
-		"game_mode_15"			"WRAITH-NIGHT"
 		
+		// Nian
+		"DOTA_Defenders"				"The Defenders"
+		"game_mode_15"					"New Bloom"
+		"dota_watch_recentgame_status"	"BATTLED THE YEAR BEAST"
+
 		// Spectating/Replays
 		"DOTA_GoodGuys"			"The Radiant"
 		"DOTA_BadGuys"			"The Dire"
@@ -393,6 +397,9 @@
 		"dota_chatwheel_message_Regret"				"I immediately regret my decision"
 		"dota_chatwheel_message_Relax"				"Relax, you're doing fine"
 		"dota_chatwheel_message_MissingHero"		"%s1 is missing!"
+		"dota_chatwheel_message_ReturnedHero"		"%s1 has returned!"
+
+		"DOTA_Item_WillPurchaseAlert"		"[ALLIES] %s1: I will purchase %s2 %s3"
 
 		"DOTA_Ability_Ping_Ready"		"[ALLIES] %s1: %s2 %s3Ready"
 		"DOTA_Ability_Ping_Mana"		"[ALLIES] %s1: %s2 %s3Not Enough Mana"
@@ -2007,7 +2014,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_mirana_arrow_description"									"Fires an arrow with deadly precision, dealing large damage and stunning the first enemy unit it strikes. Stun duration increases based on distance to target, ranging from 0.5 to 5 seconds. Bonus damage up to 100 is applied based on distance to target."
 		"DOTA_Tooltip_ability_mirana_arrow_Lore"										"Lunar energies make the Princess of the Moon's arrows more deadly than most."
 		"DOTA_Tooltip_ability_mirana_arrow_Note0"										"For every 150 distance the arrow travels, the stun duration upon impact increases by 0.5 seconds."
-		"DOTA_Tooltip_ability_mirana_arrow_Note1"										"Sacred Arrow hits invisible units, but only deals damage; no stun is applied."
+		"DOTA_Tooltip_ability_mirana_arrow_Note1"										"Sacred Arrow can hit invisible units."
 		"DOTA_Tooltip_ability_mirana_arrow_arrow_range"									"RANGE:"
 		"DOTA_Tooltip_ability_mirana_arrow_arrow_min_stun"								"MINIMUM STUN:"
 		"DOTA_Tooltip_ability_mirana_arrow_arrow_max_stun"								"MAXIMUM STUN:"
@@ -2020,7 +2027,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_mirana_invis_fade_delay"									"FADE DELAY:"
 		"DOTA_Tooltip_ability_mirana_invis_duration"									"DURATION:"
 		"DOTA_Tooltip_ability_mirana_leap"												"Leap"
-		"DOTA_Tooltip_ability_mirana_leap_Description"									"Mirana leaps forward into battle, empowering allied units with a ferocious roar upon landing, granting attack and movement speed. Speed bonus lasts 10 seconds."
+		"DOTA_Tooltip_ability_mirana_leap_Description"									"Mirana leaps forward into battle, empowering allied units with a ferocious roar that grants bonus attack and movement speed. Speed bonus lasts 10 seconds."
 		"DOTA_Tooltip_ability_mirana_leap_Lore"											"Both friend and foe alike recognize Mirana's iconic white beast in the heat of battle."
 		"DOTA_Tooltip_ability_mirana_leap_Note0"										"You can use Leap to dodge incoming projectiles."
 		"DOTA_Tooltip_ability_mirana_leap_leap_distance"								"DISTANCE:"
@@ -2472,12 +2479,15 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_nevermore_dark_lord_Note0"								"Stacks fully with other armor reduction abilities and aura."
 		"DOTA_Tooltip_ability_nevermore_dark_lord_presence_armor_reduction"				"REDUCTION:"
 		"DOTA_Tooltip_ability_nevermore_dark_lord_presence_radius"						"RADIUS:"
+		
 		"DOTA_Tooltip_ability_nevermore_requiem"										"Requiem of Souls"
-		"DOTA_Tooltip_ability_nevermore_requiem_Description"							"Captured souls are used to deal massive damage, as well as slowing and reducing the attack damage of nearby enemy units. Requiem of Souls creates one wave of damage for every 2 souls stored by Necromastery.  The closest enemy units are hit the hardest.  Requiem has a 1 second cast time before it is activated.  Requiem of Souls is automatically cast when Shadow Fiend dies, independent of its cooldown."
-		"DOTA_Tooltip_ability_nevermore_requiem_requiem_reduction"						"%SLOW:"
+		"DOTA_Tooltip_ability_nevermore_requiem_Description"							"Captured souls are used to deal massive damage, as well as slowing and reducing the attack damage of nearby enemy units. Requiem of Souls creates one wave of damage for every 2 souls stored by Necromastery.  The closest enemy units are hit the hardest.  Requiem has a 1 second cast time before it is activated.  Requiem of Souls is automatically cast when Shadow Fiend dies, independent of its cooldown."		
+		"DOTA_Tooltip_ability_nevermore_requiem_requiem_reduction_ms"					"%SLOW:"
+		"DOTA_Tooltip_ability_nevermore_requiem_requiem_slow_duration"					"SLOW DURATION:"
 		"DOTA_Tooltip_ability_nevermore_requiem_requiem_reduction_tooltip"				"%DAMAGE REDUCTION:"
 		"DOTA_Tooltip_ability_nevermore_requiem_Lore"									"The captured souls of those past slain are released to ravage their former allies."
 		"DOTA_Tooltip_ability_nevermore_requiem_Note0"									"One line is generated around Nevermore, 1 per 2 souls, for a maximum of 18 lines."
+		
 		"npc_dota_hero_nevermore_bio"													"It is said that Nevermore the Shadow Fiend has the soul of a poet, and in fact he has thousands of them. Over the ages he has claimed the souls of poets, priests, emperors, beggars, slaves, philosophers, criminals and (naturally) heroes; no sort of soul escapes him. What he does with them is unknown. No one has ever peered into the Abysm whence Nevermore reaches out like an eel from among astral rocks. Does he devour them one after another? Does he mount them along the halls of an eldritch temple, or pickle the souls in necromantic brine? Is he merely a puppet, pushed through the dimensional rift by a demonic puppeteer? Such is his evil, so intense his aura of darkness, that no rational mind may penetrate it. Of course, if you really want to know where the stolen souls go, there's one sure way to find out: Add your soul to his collection. Or just wait for Nevermore."
 		"npc_dota_hero_nevermore_hype"													"Cast a spell of desecration on your enemy's territories!\n\nEntrap the souls of enemy fighters, then sic them on their former friends!\n\nSummon the Dark Lord to fill your foes with a weakling's dread!"
 		
@@ -2907,7 +2917,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_warlock_shadow_word_Note0"								"A hero affected by Shadow Word may be denied once it falls below 25% of its maximum health."
 		"DOTA_Tooltip_ability_warlock_shadow_word_duration"								"DURATION:"
 		"DOTA_Tooltip_ability_warlock_upheaval"											"Upheaval"
-		"DOTA_Tooltip_ability_warlock_upheaval_Description"								"CHANNELED - A powerful slowing current that grows stronger as it's channelled. Lasts up to 12 seconds, slowing enemies up to 84%%.  Enemies are slowed for 3 seconds after leaving the area or the spell ends."
+		"DOTA_Tooltip_ability_warlock_upheaval_Description"								"CHANNELED - A powerful slowing current that grows stronger as it's channelled. Lasts up to 16 seconds, slowing enemies up to 84%%.  Enemies are slowed for 3 seconds after leaving the area or the spell ends."
 		"DOTA_Tooltip_ability_warlock_upheaval_Lore"									"Demnok manipulates space-time, impairing entire armies."
 		"DOTA_Tooltip_ability_warlock_upheaval_Note0"									"The slow increase is based on length of the channel, not the duration an enemy was standing in the area."
 		"DOTA_Tooltip_ability_warlock_upheaval_slow_rate"								"%SLOW RATE:"
@@ -3420,12 +3430,12 @@ On his day of summoning, when he was to gain full standing in his village, Sharp
 		"DOTA_Tooltip_ability_beastmaster_wild_axes_range"								"RANGE:"
 		"DOTA_Tooltip_ability_beastmaster_wild_notes"									"Notes:\n\nWild Axes destroys trees."
 		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild"								"Call of the Wild"
-		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_Description"					"Beastmaster calls a watchful Hawk.  Previous summons are removed upon casting.\n\nLevel 1: Summons a Scout Hawk.\nLevel 2: Summons a Scout Hawk.\nLevel 3: Summons a Greater Hawk.\nLevel 4: Summons a Greater Hawk."
+		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_Description"					"Beastmaster calls a watchful Hawk. \n\nLevel 1: Summons a Scout Hawk.\nLevel 2: Summons a Scout Hawk.\nLevel 3: Summons a Greater Hawk.\nLevel 4: Summons a Greater Hawk."
 		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_Lore"						"After befriending the strange beast of his childhood, Beastmaster has learned to call to animals in times of need."
-		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_Note0"						"The Greater Hawk has an Invisibility ability that becomes active after it hasn't moved for 5 seconds."
+		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_Note0"						"The Greater Hawk has an Invisibility ability that becomes active after it hasn't moved for 4 seconds."
 		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_hawk_duration"				"HAWK DURATION:"
 		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_boar"								"Call of the Wild"
-		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_boar_Description"					"Beastmaster calls a powerful Boar.  Previous summons are removed upon casting.\n\nLevel 1: Not Available.\nLevel 2: Summons a Lesser Boar.\nLevel 3: Summons a Lesser Boar.\nLevel 4: Summons a Greater Boar."
+		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_boar_Description"					"Beastmaster calls a powerful Boar. \n\nLevel 1: Not Available.\nLevel 2: Summons a Lesser Boar.\nLevel 3: Summons a Lesser Boar.\nLevel 4: Summons a Greater Boar."
 		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_boar_Lore"						"After befriending the strange beast of his childhood, Beastmaster has learned to call to animals in times of need."
 		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_boar_Note0"						"The Boar has a poisonous attack that slows movement and attack speed by 20% (35% for Greater Boar)."
 		"DOTA_Tooltip_ability_beastmaster_call_of_the_wild_boar_boar_duration"				"BOAR DURATION:"
@@ -3661,7 +3671,6 @@ Over the coming months, the boy Karroch sneaked food and medicinal draughts to t
 		"DOTA_Tooltip_ability_viper_corrosive_skin_Description"							"Viper exudes an infectious toxin that damages and slows any enemy that damages it. The acid exudate also increases Viper's resistance to spells."
 		"DOTA_Tooltip_ability_viper_corrosive_skin_Lore"								"It is not unusual for sword and shield alike to corrode in the very hands of those who attack the Netherdrake."
 		"DOTA_Tooltip_ability_viper_corrosive_skin_Note0"								"Stacks multiplicatively with other spell resistance sources."
-		"DOTA_Tooltip_ability_viper_corrosive_skin_Note1"								"Corrosive Skin takes effect before enemy attacks are actually released."
 		"DOTA_Tooltip_ability_viper_corrosive_skin_duration"							"DURATION:"
 		"DOTA_Tooltip_ability_viper_corrosive_skin_damage"								"DAMAGE OVER TIME:"
 		"DOTA_Tooltip_ability_viper_corrosive_skin_bonus_movement_speed"				"%MOVE SLOW:"
@@ -4204,7 +4213,7 @@ In the vicious battle that followed, Chen’s clan was outmatched.  The armored 
 		"DOTA_Tooltip_ability_spectre_spectral_dagger_bonus_movespeed"		"%MOVEMENT SPEED CHANGE:"
 		"DOTA_Tooltip_ability_spectre_spectral_dagger_hero_path_duration"	"DURATION:"
 		"DOTA_Tooltip_ability_spectre_desolate"								"Desolate"
-		"DOTA_Tooltip_ability_spectre_desolate_Description"					"Deals bonus pure damage when Spectre attacks an enemy hero with no nearby allied units."
+		"DOTA_Tooltip_ability_spectre_desolate_Description"					"Deals bonus pure damage when Spectre attacks an enemy hero who is alone."
 		"DOTA_Tooltip_ability_spectre_desolate_Lore"						"Often times, warriors find themselves alone with a vision of Mercurial - the fated question is if it is the true Spectre."
 		"DOTA_Tooltip_ability_spectre_desolate_Note0"						"Damage is dealt before Spectre's attack."
 		"DOTA_Tooltip_ability_spectre_desolate_Note1"						"Spectre's illusions also have Desolate."
@@ -4601,7 +4610,6 @@ You can dodge projectiles and abilities while transforming.
 		"DOTA_Tooltip_ability_silencer_glaives_of_wisdom"							"Glaives of Wisdom"
 		"DOTA_Tooltip_ability_silencer_glaives_of_wisdom_Lore"						"Although lacking in traditional incantations, Nortrom's pedigree of the Aeol Drias gives him uncanny wisdom, which he applies to physical combat."
 		"DOTA_Tooltip_ability_silencer_glaives_of_wisdom_Description"				"Silencer enchants his glaives with his wisdom, dealing additional damage based on his Intelligence. \n\nGlaives of Wisdom is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers. "
-		"DOTA_Tooltip_ability_silencer_glaives_of_wisdom_Note0"						"Silencer will permanently steal 2 Intelligence from any enemy hero that dies within 900 range."
 		"DOTA_Tooltip_ability_silencer_glaives_of_wisdom_intellect_damage_pct"		"%INT TO DAMAGE:"
 		"DOTA_Tooltip_ability_silencer_last_word"									"Last Word"
 		"DOTA_Tooltip_ability_silencer_last_word_Lore"								"Nortrom ensures that spells uttered by his opponents will be their last."
@@ -5278,6 +5286,7 @@ Once most highly esteemed of her race, Slithice for many years commanded a batta
 		"DOTA_Tooltip_ability_keeper_of_the_light_mana_leak_mana_leak_pct"		"%MANA LEAK PERCENT:"
 		"DOTA_Tooltip_ability_keeper_of_the_light_mana_leak_duration"			"LEAK DURATION:"
 		"DOTA_Tooltip_ability_keeper_of_the_light_mana_leak_stun_duration"		"STUN DURATION:"
+		"DOTA_Tooltip_ability_keeper_of_the_light_mana_leak_cast_range_tooltip"	"CAST RANGE:"
 		"DOTA_Tooltip_ability_keeper_of_the_light_chakra_magic"					"Chakra Magic"
 		"DOTA_Tooltip_ability_keeper_of_the_light_chakra_magic_Description"		"Restores mana to the target unit."
 		"DOTA_Tooltip_ability_keeper_of_the_light_chakra_magic_Lore"			"In the same vein, Ezalor bestows his harmony among others."
@@ -5798,7 +5807,7 @@ No sooner had the defeated regained consciousness than the cries for double-or-n
 		"DOTA_Tooltip_ability_elder_titan_natural_order_armor_reduction_pct"	"%BASE ARMOR REDUCTION:"
 		"DOTA_Tooltip_ability_elder_titan_natural_order_magic_resistance_pct"	"%BASE RESIST REDUCTION:"
 		"DOTA_Tooltip_ability_elder_titan_earth_splitter"						"Earth Splitter"
-		"DOTA_Tooltip_ability_elder_titan_earth_splitter_Description"			"Sends forth a jagged crack in front of Elder Titan.  After 3 seconds, the crack implodes, slowing them while dealing damage based on the maximum life of units caught in the area."
+		"DOTA_Tooltip_ability_elder_titan_earth_splitter_Description"			"Sends forth a jagged crack in front of Elder Titan. After 3 seconds, the crack implodes, slowing movement while dealing damage to each enemy based on their maximum life."
 		"DOTA_Tooltip_ability_elder_titan_earth_splitter_Lore"					"That which he created, the titan tears asunder."
 		"DOTA_Tooltip_ability_elder_titan_earth_splitter_crack_width"			"CRACK WIDTH:"
 		"DOTA_Tooltip_ability_elder_titan_earth_splitter_crack_distance"		"RANGE:"
@@ -6041,7 +6050,7 @@ By this ageless crucible the star that mortals would come to call Phoenix collap
 		"DOTA_Tooltip_ability_terrorblade_reflection_Lore"									"In the fractal prison of Foulfell, Terrorblade learned the truth of this old tale: you are your own worst enemy.  Now it is a lesson he teaches others."
 		"DOTA_Tooltip_ability_terrorblade_reflection_illusion_duration"						"DURATION:"
 		"DOTA_Tooltip_ability_terrorblade_reflection_illusion_outgoing_tooltip"				"%ILLUSION DAMAGE:"
-		"DOTA_Tooltip_ability_terrorblade_reflection_move_slow"								"%MOVEMENT SLOW:"
+		"DOTA_Tooltip_ability_terrorblade_reflection_move_slow"								"%SLOW:"
 		"DOTA_Tooltip_ability_terrorblade_reflection_Note0"									"Reflections are untargetable, invulnernable illusions."
 		"DOTA_Tooltip_ability_terrorblade_reflection_Note1"									"Reflections can only attack their source."
 		"DOTA_Tooltip_ability_terrorblade_conjure_image"									"Conjure Image"
@@ -6315,6 +6324,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Watch_Hero_Filter"		"Hero Filter"
 		"DOTA_Watch_Team_Filter"		"Team Games"
 		"DOTA_Watch_Xmas_Filter"		"Wraith-Night"
+
+		"DOTA_Watch_NewBloom_Filter"	"New Bloom Festival"
 		"dota_version_current"			"Latest"
 		"dota_version_stable"			"Tournament"
 		"UI_ENTER_LOBBY_PASSWORD"		"ENTER LOBBY PASSWORD"
@@ -7673,7 +7684,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_alchemist_acid_spray"						"Acid Spray"
 		"DOTA_Tooltip_modifier_alchemist_acid_spray_Description"			"Taking periodic damage, armor reduced by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
 		"DOTA_Tooltip_modifier_alchemist_chemical_rage"						"Chemical Rage"
-		"DOTA_Tooltip_modifier_alchemist_chemical_rage_Description"			"Reducing attack time to %fMODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT%, increasing health regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%, increasing health regen by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%, increasing mana regen to %fMODIFIER_PROPERTY_BASE_MANA_REGEN%, increasing movespeed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%."
+		"DOTA_Tooltip_modifier_alchemist_chemical_rage_Description"			"Reducing attack time to %fMODIFIER_PROPERTY_BASE_ATTACK_TIME_CONSTANT%, increasing health regeneration by %dMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT%, increasing mana regen to %fMODIFIER_PROPERTY_BASE_MANA_REGEN%, increasing movespeed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT%."
 
 		"DOTA_Tooltip_modifier_invoker_quas_instance"							"Quas"
 		"DOTA_Tooltip_modifier_invoker_quas_instance_Description"				"Health regeneration increased by %fMODIFIER_PROPERTY_HEALTH_REGEN_CONSTANT% per second."
@@ -7713,7 +7724,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_silencer_glaives_of_wisdom"					"Glaives of Wisdom"
 		"DOTA_Tooltip_modifier_silencer_glaives_of_wisdom_Description"		"Total intelligence stolen"
 		"DOTA_Tooltip_modifier_silencer_int_steal"							"Stolen Intelligence"
-		"DOTA_Tooltip_modifier_silencer_int_steal_Description"			"Total intelligence stolen"
+		"DOTA_Tooltip_modifier_silencer_int_steal_Description"			"Silencer will permanently steal 2 Intelligence from any enemy hero that dies within 900 range."
 		"DOTA_Tooltip_modifier_silencer_global_silence"						"Global Silence"
 		"DOTA_Tooltip_modifier_silencer_global_silence_Description"			"All heroes are silenced."
 
@@ -8099,7 +8110,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_item_pipe_barrier_Description"	"Magic shield that blocks %dMODIFIER_PROPERTY_INCOMING_SPELL_DAMAGE_CONSTANT% incoming spell damage"
 		
 		"DOTA_Tooltip_modifier_item_radiance_debuff"				"Burn Damage"
-		"DOTA_Tooltip_modifier_item_radiance_debuff_Description"	"Taking 45 damage per second from Radiance"
+		"DOTA_Tooltip_modifier_item_radiance_debuff_Description"	"Taking 50 damage per second from Radiance"
 
 		"DOTA_Tooltip_modifier_item_ring_of_basilius_aura_bonus"				"Ring of Basilius Aura"
 		"DOTA_Tooltip_modifier_item_ring_of_basilius_aura_bonus_Description"	"Mana regeneration increased by %fMODIFIER_PROPERTY_MANA_REGEN_CONSTANT_UNIQUE% and armor increased by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE%"
@@ -8237,7 +8248,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_tango_heal_Description"			"Restoring 7.3 HP per second"
 
 		"DOTA_Tooltip_modifier_item_dustofappearance"					"Dust of Appearance"
-		"DOTA_Tooltip_modifier_item_dustofappearance_Description"		"Can be seen by enemies when invisible. Slowed by 15% when invisibile."
+		"DOTA_Tooltip_modifier_item_dustofappearance_Description"		"Can be seen by enemies when invisible. Slowed by 15% when invisible."
 		
 		"DOTA_Tooltip_modifier_tower_truesight_aura"			"True Sight"
 		"DOTA_Tooltip_modifier_tower_truesight_aura_Description"			"Reveals nearby invisible units."
@@ -8588,7 +8599,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Hero_Selection_Suggest_Hero_Text5"	"Suggested by: %s1, %s2, %s3, %s4, and %s5"
 
 		"DOTA_Hero_Selection_TT_Random_Title"		"Random Selection"
-		"DOTA_Hero_Selection_TT_Random_Text"		"Allow the game to randomly select a hero for you. You will be granted a bonus of 250 extra starting gold."
+		"DOTA_Hero_Selection_TT_Random_Text"		"Allow the game to randomly select a hero for you. You will be granted a bonus of 200 extra starting gold."
 		"DOTA_Hero_Selection_TT_Repick_Title"		"Repick your Hero"
 		"DOTA_Hero_Selection_TT_Repick_Text"		"Go back and select a different hero. You forfeit 100 of your starting gold, and you lose any extra gold you earned by randoming. You may only repick once per game."
 		"DOTA_Hero_Selection_TT_Suggest_Title"		"Suggest Hero"
@@ -9140,6 +9151,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_profile_show_match_history"								"MATCH HISTORY"
 		"dota_persona_panel_title"										"PLAYER DETAILS"
 		"dota_downloading_replay"										"Downloading..."
+		"dota_decompressing_replay"										"Decompressing..."
 		"replay_download_failed"										"REPLAY DOWNLOAD FAILED"
 		"replay_download_fail_code"										"Download Error: %s1"
 		"replay_download_open_failed"									"Unable to open replay file.  Please ensure no other processes have this file open."
@@ -10102,7 +10114,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_ability_item_gem_Note0"									"Disabled while on a courier."
 		"DOTA_Tooltip_ability_item_gem_Note1"									"Gives vision in a 1100 radius."
 
-		"DOTA_Tooltip_ability_item_ghost_Description"							"Active: Ghost Form - Enter ghost form, unable to attack or be attacked, but take %extra_spell_damage_percent%%% extra magic damage. Using a Teleport Scroll or Boots of Travel dispels Ghost Form."
+		"DOTA_Tooltip_ability_item_ghost_Description"							"Active: Ghost Form - Enter ghost form and become unable to attack or be attacked, but take %extra_spell_damage_percent%%% extra magic damage. Using a Teleport Scroll dispels Ghost Form."
 		"DOTA_Tooltip_ability_item_ghost_Note0"								"Ends if you become magic immune, and will have no effect if you are already magic immune."
 		"DOTA_Tooltip_ability_item_ghost_Note1"								"Shares cooldown with Ethereal Blade."
 		"DOTA_Tooltip_ability_item_ghost_duration"							"GHOST DURATION:"
@@ -10447,7 +10459,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_ability_item_shivas_guard_bonus_intellect"				"+$int"
 		"DOTA_Tooltip_ability_item_shivas_guard_bonus_armor"					"+$armor"
 		
-		"DOTA_Tooltip_ability_item_skadi_Description"							"Passive: Cold Attack - Attacks slow the movement and attack speed of the target.\n\nEye of Skadi is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.  On ranged heroes, Eye of Skadi can be combined with Lifesteal Attack Modifiers."
+		"DOTA_Tooltip_ability_item_skadi_Description"							"Passive: Cold Attack - Attacks slow the movement and attack speed of the target.\n\nEye of Skadi is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.  Eye of Skadi can be combined with Lifesteal Attack Modifiers."
 		"DOTA_Tooltip_ability_item_skadi_Lore"									"Extremely rare artifact, guarded by the azure dragons."
 		"DOTA_Tooltip_ability_item_skadi_Note0"									"Lasts 5 seconds with melee Eye of Skadi, 3 seconds with ranged Eye of Skadi."
 		"DOTA_Tooltip_ability_item_skadi_cold_movement_speed"					"%MOVE SLOW:"
@@ -12044,6 +12056,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"exalted"						"Exalted"
 		"frozen"						"Frozen"
 		"corrupted"						"Corrupted"
+		"lucky"							"Auspicious"
 
 		// Prefabs
 		"item"							"Item"
@@ -12577,6 +12590,20 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Text_Fortunes_Favor"		"200% drop rate on Ingots, unlocks Jade token drops."
 		"StoreBanner_Header_Vermilion_Renewal_Seal"		"Seal of Vermilion Renewal"
 		"StoreBanner_Text_Vermilion_Renewal_Seal"		"Unseal the gifts of the New Bloom Festival"
+		"StoreBanner_Header_Gyro_Dragon_Emperor"		"Gyrocopter: Armaments of the Dragon Emperor Set"
+		"StoreBanner_Text_Gyro_Dragon_Emperor"			"Reign of Fire."
+		"StoreBanner_Header_Sven_Iron_Drakken"			"Sven: The Iron Drakken Set"
+		"StoreBanner_Text_Sven_Iron_Drakken"			"From the forges of the Iron Drakken."
+		"StoreBanner_Header_Luna_Blessings_Lucentyr"	"Luna: Blessings of Lucentyr Set"
+		"StoreBanner_Text_Luna_Blessings_Lucentyr"		"Count your blessings by the light of the moon."
+		"StoreBanner_Header_Pudge_Delicacies_Butchery"	"Pudge: Delicacies of Butchery Set"
+		"StoreBanner_Text_Pudge_Delicacies_Butchery"	"Not for tender palates."
+		"StoreBanner_Header_Jugg_Wandering_Demon"		"Juggernaut: Wandering Demon of the Plains Set"
+		"StoreBanner_Text_Jugg_Wandering_Demon"			"The mask behind the mask."
+		"StoreBanner_Header_Invoker_Eastern_Range"		"Invoker: Garbs of the Eastern Range Set"
+		"StoreBanner_Text_Invoker_Eastern_Range"		"Glorious Invocation."
+		"StoreBanner_Header_Necro_Immemorial_Emperor"	"Necrophos: Immemorial Emperor Set"
+		"StoreBanner_Text_Necro_Immemorial_Emperor"		"The immemorial Mage."
 		
 		"StoreBanner_Header_HUD_Familiar_Woods"		"HUD: Familiar Woods"
 		"StoreBanner_Text_HUD_Familiar_Woods"		"A trusted friend on a well-worn path. Includes 2 styles."
@@ -12589,6 +12616,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Header_HUD_Temple_Wall"		"HUD: Temple"
 		"StoreBanner_Text_HUD_Temple_Wall"		"That's a wrap (in red ribbon)."
 
+		"StoreBanner_Header_Courier_God_Horse"		"Redhoof and Jadehoof Couriers"
+		"StoreBanner_Text_Courier_God_Horse"		"Earn these exclusive couriers by performing in the top 10% of players in the fight against the Year Beast"
+		
 		"Playtab_Quiz_Title"						"The Shopkeeper's Quiz"
 		"Playtab_Quiz_Subtitle"						"Test your Dota 2 item knowledge!"
 		// Pennants
@@ -13337,6 +13367,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Attrib_DiretideTag"					"Diretide %s1"
 		"Attrib_DiretideCycle"					"Roshan Cycle %s1"
 		"Attrib_FrostivusTag"					"Frostivus %s1"
+		"Attrib_NewBloomTag"					"New Bloom %s1"
 		"Attrib_SithilStash"					"Sithil's Summer Stash %s1"
 		"Attrib_CustomBaseAttackFX"				"This item modifies the hero's base attack effects."
 		"Attrib_CustomSlarkPounce"				"This weapon has a custom Pounce animation."
@@ -13414,7 +13445,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"wraith_king_progress_tooltip"	"While Your King devotes himself to the rite of transformation, he will be absent from mundane affairs. While his subjects lament the absence of their King, they may play a critical role in his restoration. Each soul collected during Wraith-Night will count toward his global resurrection, and ensure the coronation of the Wraith King."
 		"frosty_points"					"PHANTOM FRAGMENTS"
 		"gold_frosty_points"			"SHINING FRAGMENTS"
-		"DOTA_Find_Frostivus_Match"		"REDEEM FRAGMENTS"
+		"DOTA_Find_Frostivus_Match"		"WRAITH-NIGHT"
 		"frostivus_game_mode_name"		"Wraith-Night"
 		"DOTA_Frostivus_Altar"			"Wraith King Altar"
 		"frostivus_get_booster"			"BUY FAVOR"
@@ -14950,8 +14981,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_Good_Fortune"		"Good Fortune Remnants"
 		"DOTA_Anim_Mod_Prosperity"		"Prosperity Remnants"
 		"DOTA_Anim_Mod_SwordonShoulder"		"The Knight's Repose"
+		"DOTA_Anim_Mod_abysm"			"Horns of Inner Abysm"
 		"Invalid_AbilityMod"	"Invalid"
 		"DOTA_Ability_Mod_Illuminate_Northlight"	"Northlight Illuminance"
+		"DOTA_Anim_Mod_lucentyr"	"Liveliness of Lucentyr"
 		
 		"Invalid_Soul"	"Invalid"
 		"DOTA_Soul_Gem_Raving_Aristocrat"	"Raving Aristocrat"
@@ -15093,25 +15126,25 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Mane_of_the_Demon_Stone_Style0"		"Mane of the Demon Stone"
 		"DOTA_Item_Mane_of_the_Demon_Stone_Style1"		"Conical Hat of the Demon Stone"
 
-		//"DOTA_Item_Immemorial_Emperor_Style0"				"Screen with Red"
-		//"DOTA_Item_Immemorial_Emperor_Style1"				"Screen with Black"
-		//"DOTA_Item_Immemorial_Emperors_Scythe_Style0"		"Scythe with Red"
-		//"DOTA_Item_Immemorial_Emperors_Scythe_Style1"		"Scythe with Black"
-		//"DOTA_Item_Immemorial_Emperors_Mantle_Style0"		"Mantle with Red"
-		//"DOTA_Item_Immemorial_Emperors_Mantle_Style1"		"Mantle with Black"
-		//"DOTA_Item_Immemorial_Emperors_Coronet_Style0"		"Coronet with Red"
-		//"DOTA_Item_Immemorial_Emperors_Coronet_Style1"		"Coronet with Black"
+		"DOTA_Item_Immemorial_Emperor_Style0"				"Screen with Red"
+		"DOTA_Item_Immemorial_Emperor_Style1"				"Screen with Black"
+		"DOTA_Item_Immemorial_Emperors_Scythe_Style0"		"Scythe with Red"
+		"DOTA_Item_Immemorial_Emperors_Scythe_Style1"		"Scythe with Black"
+		"DOTA_Item_Immemorial_Emperors_Mantle_Style0"		"Mantle with Red"
+		"DOTA_Item_Immemorial_Emperors_Mantle_Style1"		"Mantle with Black"
+		"DOTA_Item_Immemorial_Emperors_Coronet_Style0"		"Coronet with Red"
+		"DOTA_Item_Immemorial_Emperors_Coronet_Style1"		"Coronet with Black"
 
-		//"DOTA_Item_Blade_of_the_Wandering_Demon_Style0"		"Blade with Green"
-		//"DOTA_Item_Blade_of_the_Wandering_Demon_Style1"		"Blade with Blue"
-		//"DOTA_Item_Mask_of_the_Wandering_Demon_Style0"		"Mask Only"
-		//"DOTA_Item_Mask_of_the_Wandering_Demon_Style1"		"Mask with Hat"
-		//"DOTA_Item_Duangua_of_the_Wandering_Demon_Style0"	"Duangua with Green"
-		//"DOTA_Item_Duangua_of_the_Wandering_Demon_Style1"	"Duangua with Blue"
-		//"DOTA_Item_Faulds_of_the_Wandering_Demon_Style0"	"Faulds with Green"
-		//"DOTA_Item_Faulds_of_the_Wandering_Demon_Style1"	"Faulds with Blue"
-		//"DOTA_Item_Bracers_of_the_Wandering_Demon_Style0"	"Bracers with Green"
-		//"DOTA_Item_Bracers_of_the_Wandering_Demon_Style1"	"Bracers with Blue"
+		"DOTA_Item_Blade_of_the_Wandering_Demon_Style0"		"Blade with Green"
+		"DOTA_Item_Blade_of_the_Wandering_Demon_Style1"		"Blade with Blue"
+		"DOTA_Item_Mask_of_the_Wandering_Demon_Style0"		"Mask Only"
+		"DOTA_Item_Mask_of_the_Wandering_Demon_Style1"		"Mask with Hat"
+		"DOTA_Item_Duangua_of_the_Wandering_Demon_Style0"	"Duangua with Green"
+		"DOTA_Item_Duangua_of_the_Wandering_Demon_Style1"	"Duangua with Blue"
+		"DOTA_Item_Faulds_of_the_Wandering_Demon_Style0"	"Faulds with Green"
+		"DOTA_Item_Faulds_of_the_Wandering_Demon_Style1"	"Faulds with Blue"
+		"DOTA_Item_Bracers_of_the_Wandering_Demon_Style0"	"Bracers with Green"
+		"DOTA_Item_Bracers_of_the_Wandering_Demon_Style1"	"Bracers with Blue"
 
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
 
@@ -15346,7 +15379,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Present7_D2"					"To open a Treasure, you need a corresponding key or seal. We've already given you a Welcoming Chest Key, so you can go ahead and open your Welcoming Chest by right-clicking on it in the Armory. For other treasures, you can purchase keys from the Dota 2 Store, or trade with other players to get them."
 		"Present7_T2"					"Changing Gems"
 		"Present7_D3"					"Want to swap out a Gem in an item? Or move a Gem from one item to another while retaining its stats? Use the Artificer's Hammer to remove the Gem from the item it's in, freeing up the socket to put something else in."
-		"Present7_D4"					"Tresaures"
+		"Present7_D4"					"Treasures"
 		"Present7_D5"					"Keys"
 		"Present8_T1"					"Custom Couriers"
 		"Present8_D1"					"The Mighty Boar you just received is a cosmetic courier, which replaces the in-game visuals for your courier. Like cosmetic wards, couriers are equipped in your Player Loadout, and take effect no matter which Hero you play. There are many custom couriers, so find one that suits your style!"
@@ -15382,6 +15415,12 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_SelUsed"	"Selection '%s1' in compendium page '%s2' doesn't have a unique 'selection_index'" 
 		"CompendiumPageError_Timer"		"Timer '%s1' has an invalid epoch time"
 		"CompendiumSel_Default"			"Make A Selection"
+		"CompendiumGC_DataErr"			"Invalid webapi call: missing league ID, admin ID, or data file."
+		"CompendiumGC_KVFile"			"Invalid format for the Compendium data file. Must be a KeyValues based text file."
+		"CompendiumGC_InvalidSel"		"Invalid selection index in Compendium data file. Selection indices must be greater than zero, and not match any other selection index."
+		"CompendiumGC_DBErr"			"Failed to write to the league database. Try again later."
+		"CompendiumGC_NotAdmin"			"You don't have admin rights to that league.'"
+		"CompendiumGC_Ok"				"Compendium updated."
 		
 		"DOTA_AbilityDraft_Round" "Round %s1"
 		"DOTA_AbilityDraft_Start_Timer" "Ability Draft %s1 Starts In:"
@@ -15398,7 +15437,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_SpringBoosterPurchaseHeader"	"Purchase and activate Fortune's Favor?"
 		"DOTA_SpringBoosterPurchaseDesc"	"Activate Fortune's Favor to earn Jade Tokens in addition to bonus Flamesalt Ingots."
 
-		"DOTA_Spring_Learn_About_Event"		"About the New Bloom Festival  >"
+		"DOTA_Spring_Learn_About_Event"		"About the Festival  >"
 		"DOTA_Spring_Learn_About_Tokens"	"Learn about Tokens >"
 
 		"dota_spring_flamesalt_explain"		"Earn Flamesalt Ingots as you play Dota 2 throughout the New Bloom event. Exchange Ingots for weapons to help you fight the Year Beast and earn rewards based on how well you did."
@@ -15411,7 +15450,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"DOTA_YEAR_BEAST_RETURNS_IN"		"THE YEAR BEAST RETURNS IN"
 
-		"DOTA_Year_Beast_Is_Here"			"THE YEAR BEAST HAS COME"
+		"DOTA_Year_Beast_Is_Here"			"THE YEAR BEAST HAS COME!"
 		"DOTA_Spring_Time_Remaining"		"TO FACE ITS MIGHT"
 		"dota_spring_fight_beast"			"FIGHT THE BEAST"
 		
@@ -15422,20 +15461,32 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"dota_econ_offering_springtext2"	"May the Eight Shades of Fortune Smile Upon You"
 
-		"dota_econ_offering_springtext3"	"Items given to your Offering are forever removed from your Armory. Your Offering will be collected on two occasions, and wealth will be left in its place."
-		"dota_watch_livegame_status"		"BATTLING THE YEAR BEAST"
+		"dota_econ_offering_springtext3"	"Items given to your Offering are forever removed from your Armory. Your Offering will be collected on two occasions, and wealth will be left in its place."		
+
 		
+
+		"dota_watch_livegame_status"		"BATTLING THE YEAR BEAST"
+
+		"dota_watch_recentgame_status"		"BATTLED THE YEAR BEAST"
+		
+		"dota_spring_pract01"				"PRACTICE BATTLE!"
 		"dota_spring_intro_text01"			"BATTLE THE YEAR BEAST!"
-		"dota_spring_intro_text02"			"Inflict as much damage as you can to the Year Beast. The more damage you do, the better loot you get! /n/nIf the Year Beast grabs someone, shoot a Firework at him to break them free!"
+		"dota_spring_intro_text02"			"Inflict as much damage as you can to the Year Beast. The more damage you do, the better loot you get! \n\nIf the Year Beast grabs someone, shoot a Firework at him to break them free!"
 		"dota_spring_intro_text03"			"Your currency will be converted to gold."
 		"dota_spring_intro_text04"			"Unspent gold will be converted back to currency after the match."
 		"dota_spring_intro_text05"			"Flamesalt Ingots"
 		"dota_spring_intro_text06"			"Gold Coins"
 		
-		
+		"NIAN_SELECT_MODE"					"Select Your Mode"
+		"nian_battle_real"					"FIGHT THE BEAST"
+		"nian_battle_real_desc"				"Battle The Beast for real! In this mode, your Ingots will be converted to Gold and used to buy equipment for the fight. Any unspent gold will be converted back into ingots when the fight is over. Deal more damage in this mode to earn great rewards!"
+		"nian_battle_practice"				"PRACTICE"
+		"nian_battle_practice_desc"			"Practice against the beast to hone your skills. You will be supplied with ample gold for the fight. No rewards will be earned in this mode."
 
+		"dota_spring_intro_text02_practice"	"Inflict as much damage as you can to the Year Beast.\n\nIf the Year Beast grabs someone, shoot a Firework at him to break them free!"
+		"dota_spring_intro_text03_practice"	""
+		"dota_spring_intro_text04_practice"	"All players receive a fixed amount of gold in Practice mode."
 		
-
 		"dota_redeem_springtext1"			"Flamesalt Ingots"
 
 		"dota_redeem_springtext2"			"Flamesalt Ingots are harvested by playing regular matches, and are used to purchase equipment when fighting the Year Beast. You can increase your Flamesalt Ingot harvest rate, as well as earn Jade Tokens, by activating Fortune's Favor."
@@ -15446,7 +15497,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"dota_redeem_springtext5"			"Jade Tokens"
 
-		"dota_redeem_springtext6"			"Redeem Jade Tokens for Bloom Bounties"
+		"dota_redeem_springtext6"			"Redeem Jade Tokens for Bloom Bounties below:"
 
 		"DOTA_Booster_Title"				"Battle Point Booster"
 		"DOTA_Booster_Explain"				"Earn 80% more Battle Points ( and grant an additional 16% bonus to anyone you play with ). Lasts for 500 minutes of match time."
@@ -15487,5 +15538,20 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_create_dialog_17"				"Ha! That was easy."
 		"dota_create_dialog_18"				"Enjoy!"
 
+		"dota_nian_endgame_loot"			"Loot Received:"
+		"dota_nian_endgame_title"			"The Year Beast has Fled"
+		"dota_nian_endgame_damage_done"		"Total Beast Damage"
+		
+		"dota_nian_award_late"				"Due to high server load, match signout has been delayed. Jade Tokens will be automatically awarded to you when match signout is complete."
+
+		"NianRank0"							"Rank: F"
+		"NianRank1"							"Rank: D"
+		"NianRank2"							"Rank: C"
+		"NianRank3"							"Rank: B"
+		"NianRank4"							"Rank: A"
+		"NianRank5"							"Rank: S"
+		"NianRank6"							"Rank: SS"
+		"NianRank7"							"Rank: SSS"
+		"NianRank8"							"Rank: X"
 	}
 }

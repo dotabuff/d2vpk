@@ -664,15 +664,6 @@
 	{
 	}
 
-	"dota_item_alerted"
-	{
-		"userid"		"short"
-		"itemid"		"short"
-		"xpos"		"float"
-		"ypos"		"float"
-		"server"	"bool"
-	}
-
 	"halloween_high_score_received"
 	{
     "round"   "short"
@@ -807,6 +798,16 @@
 
 	"event_points_updated"
 	{
+	}
+
+	"local_player_event_points"
+	{
+		"points"	"short"
+	}
+
+	"custom_game_difficulty"
+	{
+		"difficulty"	"byte"
 	}
 }
 

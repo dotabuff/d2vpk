@@ -49,7 +49,7 @@
 		"ItemQuality"					"component"
 		"ItemAliases"					"blink dagger"
 		"SideShop"						"1"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -1131,7 +1131,7 @@
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"1"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -1864,7 +1864,7 @@
 		"ItemShopTags"					"teleport;move_speed"
 		"ItemQuality"					"common"
 		"ItemAliases"					"bot;boots of travel"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -1923,7 +1923,7 @@
 		"ItemShopTags"					"damage;move_speed;hard_to_tag"
 		"ItemQuality"					"common"
 		"ItemAliases"					"phase boots"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -2342,7 +2342,7 @@
 		"ItemShopTags"					"attack_speed;move_speed;int;agi;str"
 		"ItemQuality"					"common"
 		"ItemAliases"					"power treads"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -2418,7 +2418,7 @@
 		"ItemShopTags"					"attack_speed;hard_to_tag"
 		"ItemQuality"					"common"
 		"ItemAliases"					"hand of midas"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -2993,7 +2993,7 @@
 		"ItemShopTags"					"lifesteal;damage;armor;regen_mana"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"vladmir's offering;vlads"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -3554,7 +3554,7 @@
 		"ItemShopTags"					"int;regen_mana;agi;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"hex;sheepstick;scythe of vyse"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -3643,7 +3643,7 @@
 		"ItemShopTags"					"int;attack_speed;damage;regen_mana;damage;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"orchid malevolence"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -3735,7 +3735,7 @@
 		"ItemShopTags"					"int;regen_mana;move_speed;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"cyclone euls;eul's scepter of divinity"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -3814,7 +3814,7 @@
 		"ItemShopTags"					"int;damage;attack_speed;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"fs;force staff"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -3971,7 +3971,7 @@
 		"AbilitySharedCooldown"			"dagon"
 		"MaxUpgradeLevel"				"5"
 		"ItemBaseLevel"					"1"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4028,7 +4028,7 @@
 		"AbilitySharedCooldown"			"dagon"
 		"MaxUpgradeLevel"				"5"
 		"ItemBaseLevel"					"2"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4085,7 +4085,7 @@
 		"AbilitySharedCooldown"			"dagon"
 		"MaxUpgradeLevel"				"5"
 		"ItemBaseLevel"					"3"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4142,7 +4142,7 @@
 		"AbilitySharedCooldown"			"dagon"
 		"MaxUpgradeLevel"				"5"
 		"ItemBaseLevel"					"4"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4199,7 +4199,7 @@
 		"AbilitySharedCooldown"			"dagon"
 		"MaxUpgradeLevel"				"5"
 		"ItemBaseLevel"					"5"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4328,7 +4328,7 @@
 		"ItemShopTags"					"int;str;hard_to_tag;see_invis"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"necronomicon 1"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"MaxUpgradeLevel"				"3"
 		"ItemBaseLevel"					"1"
 
@@ -4402,7 +4402,7 @@
 		"ItemShopTags"					"int;str;hard_to_tag;see_invis"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"necronomicon 2"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"MaxUpgradeLevel"				"3"
 		"ItemBaseLevel"					"2"
 	
@@ -4476,7 +4476,7 @@
 		"ItemShopTags"					"int;str;hard_to_tag;see_invis"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"necronomicon 3"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"MaxUpgradeLevel"				"3"
 		"ItemBaseLevel"					"3"
 		
@@ -4568,7 +4568,7 @@
 		"ItemQuality"					"rare"
 		"ItemAliases"					"ultimate;aghanim's scepter"
 		//"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"		// heroes for whom this is a problem solve it in their code - ogre magi, meepo
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -4639,7 +4639,7 @@
 		"ItemShopTags"					"regen_health;regen_mana;damage;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"refresher orb"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -4715,7 +4715,7 @@
 		"ItemShopTags"					"attack_speed;armor;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"ac;assault cuirass"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -4799,7 +4799,7 @@
 		"ItemShopTags"					"str;regen_health;health_pool"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"hot;heart of tarrasque"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -4874,7 +4874,7 @@
 		"ItemQuality"					"epic"
 		"ItemAliases"					"bkb;black king bar"
 		"ItemSellable"					"0"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -4996,7 +4996,7 @@
 		"ItemQuality"					"epic"
 		"ItemAliases"					"shiva's guard"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5099,7 +5099,7 @@
 		"ItemAliases"					"bs;bloodstone"
 		"ItemInitialCharges"			"8"
 		"ItemDisplayCharges"			"1"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5220,7 +5220,7 @@
 		"ItemShopTags"					"regen_health;regen_mana;str;agi;int;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"ls;linken's sphere"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5295,7 +5295,7 @@
 		"ItemShopTags"					"regen_health;block;health_pool"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"vanguard"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5375,7 +5375,7 @@
 		"ItemShopTags"					"damage;armor;int;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"blade mail"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5512,7 +5512,7 @@
 		"ItemShopTags"					"regen_health;magic_resist"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"hood of defiance"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5636,7 +5636,7 @@
 		"ItemShopTags"					"damage;attack_speed;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"mkb;monkey king bar"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5711,7 +5711,7 @@
 		"ItemShopTags"					"damage"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"radiance"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5775,7 +5775,7 @@
 		"ItemShopTags"					"agi;damage;evasion;attack_speed"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"bfly;butterfly"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5845,7 +5845,7 @@
 		"ItemShopTags"					"damage;crit"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"daedalus"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5915,7 +5915,7 @@
 		"ItemShopTags"					"damage;str;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"skull basher"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -5994,7 +5994,7 @@
 		"ItemShopTags"					"damage;health_regen;mana_regen;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"bf;battle fury"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -6076,7 +6076,7 @@
 		"ItemQuality"					"epic"
 		"ItemAliases"					"manta style"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -6274,7 +6274,7 @@
 		"ItemShopTags"					"damage;attack_speed;armor;regen_health;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"armlet of mordiggian"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -6373,7 +6373,7 @@
 		"ItemShopTags"					"damage;attack_speed;movespeed;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"sb;invis;shadow blade"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -6453,7 +6453,7 @@
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"sny;s&y;sy;sange and yasha"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -6552,7 +6552,7 @@
 		"ItemShopTags"					"damage;str;armor;unique;hard_to_tag"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"satanic"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -6642,7 +6642,7 @@
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"mjollnir"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -6766,7 +6766,7 @@
 		"ItemShopTags"					"agi;str;int;hard_to_tag;mana_pool;health_pool;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"eos;eye of skadi"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -7009,7 +7009,7 @@
 		"ItemShopTags"					"damage;attack_speed;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"maelstrom"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -7094,7 +7094,7 @@
 		"ItemShopTags"					"damage;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"desolator"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -7227,7 +7227,7 @@
 		"ItemShopTags"					"unique;hard_to_tag"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"mom;mask of madness"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -7325,7 +7325,7 @@
 		"AbilityCastPoint"				"0.0"
 		"AbilityCooldown"				"8.0"
 		"AbilitySharedCooldown"			"diffusal"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -7523,7 +7523,7 @@
 		"ItemQuality"					"epic"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemAliases"					"eb;ethereal blade"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -7623,7 +7623,7 @@
 		"ItemShopTags"					"regen_health;boost_mana"
 		"ItemQuality"					"common"
 		"ItemAliases"					"soul ring"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Sound
 		//-------------------------------------------------------------------------------------------------------------			
@@ -7709,7 +7709,7 @@
 		"ItemShopTags"					"move_speed;boost_mana;mana_pool"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"mana;mb;arcane boots"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
 		"ItemAlertable"					"1"
 		
@@ -7835,7 +7835,7 @@
 		"ItemAliases"					"drum of endurance"
 		"ItemInitialCharges"			"5"
 		"ItemDisplayCharges"			"1"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -7933,7 +7933,7 @@
 		"ItemShopTags"					"armor;regen_mana;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"medallion of courage"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -8072,7 +8072,7 @@
 		"ItemShopTags"					"int;armor;regen_health;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"vod;veil of discord"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -8177,7 +8177,7 @@
 		"ItemShopTags"					"int;armor;regen_health"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"rod of atos"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -8261,7 +8261,7 @@
 		"ItemQuality"					"epic"
 		"ItemAliases"					"abyssal blade"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -8358,7 +8358,7 @@
 		"ItemShopTags"					"str;damage;evasion"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"heaven's halberd"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -8551,7 +8551,7 @@
 		"ItemQuality"					"rare"
 		"ItemAliases"					"tranquil boots"
 		"ItemHideCharges"		     	"1"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -9116,7 +9116,7 @@
 		"ItemShopTags"					"damage"
 		"ItemQuality"					"epic"
 		"ItemShareability"				"ITEM_NOT_SHAREABLE"
-		"ItemDeclarations"				"DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
 		"ItemSellable"					"0"
 		"ItemKillable"					"0"
 		"ItemPurchasable"				"0"

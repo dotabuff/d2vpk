@@ -333,6 +333,66 @@
 		{
 			"heroID"		"106"
 			"tag"			"Ember Spirit"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"bone"		"RtWeapon0_JNT"
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"ember_spirit_ambient_sword_primary"
+							}
+							"attached_particlesystem1"
+							{
+								"system"		"ember_spirit_ambient_sword_primary_blade"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/models/heroes/ember_spirit/weapon1.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+				"offhand_weapon"
+				{
+					"bone"		"LfWeapon0_JNT"
+
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"ember_spirit_ambient_sword_offhand"
+							}
+							"attached_particlesystem1"
+							{
+								"system"		"ember_spirit_ambient_sword_offhand_blade"
+							}
+							"asset_modifier0"
+							{
+								"type"        "particle_snapshot"
+								"asset"       "particles/models/heroes/ember_spirit/weapon2.psf"
+								"modifier"    "<PSFFILE>"
+							}
+						}
+					}
+					"replace_keys"
+					{
+						"<PSFFILE>"		"1"
+					}
+				}
+			}
 		}
 		"enchantress"		
 		{

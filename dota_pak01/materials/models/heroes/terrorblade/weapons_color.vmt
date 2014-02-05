@@ -4,17 +4,22 @@
 	"$normalmap" "models\heroes\terrorblade\weapons_normal"
 	"$maskmap1" "models\heroes\terrorblade\weapons_masks1"
 	"$maskmap2" "models\heroes\terrorblade\weapons_masks2"
+	"$detail1"  "models/heroes/terrorblade/terrorblade_detail"
+	
 	$alphatest 1
 
-	$SPECULAREXPONENT 32
-	$SPECULARSCALE 5
-//	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENT 18
+	$SPECULARSCALE 8
+	//$SPECULARCOLOR "[.2 .9 1]"
+	$SPECULARCOLOR "[1 .5 .1]"
 
-//	$ENVMAP "models/cubemaps/glossy_blue"
-	$ENVMAPINTENSITY 2.5
-	$MASKENVBYMETALNESS 1	
+	$DETAIL1BLENDMODE 2 
+	$DETAIL1SCALE 7
+	$DETAIL1BLENDFACTOR 1
 
-	$RIMLIGHTSCALE 1
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[0 1 1]"
+
 	$AMBIENTSCALE 1
 	$IgnoreBudgetCheck 1
 
@@ -23,6 +28,12 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"-.05"
+			"texturescrollangle"	"83"
+		}
 		"invis_proxy"
 		{
 		}

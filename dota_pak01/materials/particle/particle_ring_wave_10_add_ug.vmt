@@ -1,8 +1,7 @@
-"UnlitGeneric"
+"SpriteCard"  //Note : This was originall unlitgeneric, which breaks things.
 {
 	"$basetexture" "particle\Particle_Ring_Wave_10.vtf"
 	//$translucent 1
 	$additive 1
-	$vertexcolor 1
-	$vertexalpha 1
+	$overbrightfactor 1.5  // Added this because for whatever reason UG appeared brighter
 }

@@ -1,8 +1,8 @@
 // file    : rubick.cloth
-// author  : jameso
-// date    : 21 Aug 2013, 11:56AM
+// author  : alexanderm
+// date    : 04 Feb 2014, 09:38AM
 // 
-// cloth data generated via TweakCloth (0.3.0) -- edit at your own risk!
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
 
 ClothSystem
 {
@@ -16,7 +16,7 @@ ClothSystem
         columns                          "1"
         damping                          "0.6"
         ExternalForceScale               "1.0"
-        FixedPointDamping                "0.25"
+        FixedPointDamping                "0.1"
         gravity                          "0 0 -1	"
         gravity_scale                    "100.0"
         LocalForce                       "0.6"
@@ -26,11 +26,11 @@ ClothSystem
         R2                               "0.5"
         R3                               "0.7"
         rows                             "4"
-        ShearSpringConstant              "20.0"
+        ShearSpringConstant              "7.0"
         ShearSpringDamping               "0.5"
         SpringStretchiness               "0.2"
         StretchForce                     "0.2"
-        StructSpringConstant             "20.0"
+        StructSpringConstant             "7.0"
         StructSpringDamping              "0.7"
         WorldFriction                    "0.3"
     }
@@ -53,11 +53,11 @@ ClothSystem
         R1                               "0.3"
         R2                               "0.5"
         rows                             "3"
-        ShearSpringConstant              "20.0"
+        ShearSpringConstant              "7.0"
         ShearSpringDamping               "0.5"
         SpringStretchiness               "0.2"
         StretchForce                     "0.2"
-        StructSpringConstant             "20.0"
+        StructSpringConstant             "7.0"
         StructSpringDamping              "0.7"
         WorldFriction                    "0.3"
     }
@@ -80,11 +80,11 @@ ClothSystem
         R1                               "0.3"
         R2                               "0.5"
         rows                             "3"
-        ShearSpringConstant              "20.0"
+        ShearSpringConstant              "7.0"
         ShearSpringDamping               "0.5"
         SpringStretchiness               "0.2"
         StretchForce                     "0.2"
-        StructSpringConstant             "20.0"
+        StructSpringConstant             "7.0"
         StructSpringDamping              "0.7"
         WorldFriction                    "0.3"
     }
@@ -107,11 +107,11 @@ ClothSystem
         R1                               "0.3"
         R2                               "0.5"
         rows                             "3"
-        ShearSpringConstant              "20.0"
+        ShearSpringConstant              "7.0"
         ShearSpringDamping               "0.5"
         SpringStretchiness               "0.2"
         StretchForce                     "0.2"
-        StructSpringConstant             "20.0"
+        StructSpringConstant             "7.0"
         StructSpringDamping              "0.7"
         WorldFriction                    "0.3"
     }

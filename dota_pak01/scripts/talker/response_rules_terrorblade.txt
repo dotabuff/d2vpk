@@ -6,6 +6,7 @@ criterion "IsTerrorConjure" "abilityname" "terrorblade_conjure_image" weight 5 r
 criterion "IsTerrorMetamorph" "abilityname" "terrorblade_metamorphosis" weight 5 required
 criterion "IsTerrorSunder" "abilityname" "terrorblade_sunder" weight 5 required
 criterion "IsTerrorDemonForm" "metamorphosis" "1" weight 5 required
+criterion "IsTerrorEconShards" "customresponse" "shards" weight 5 required
 
 Response terrorblade_Spawn
 {
@@ -37,6 +38,36 @@ Rule terrorblade_SpawnIsTerrorDemonForm_Rule
 	response terrorblade_SpawnIsTerrorDemonForm
 }
 
+Response terrorblade_SpawnIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_spawn_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_spawn_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_spawn_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_spawn_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_spawn_05.vcd" nodelay noscene 
+}
+
+Rule terrorblade_SpawnIsTerrorEconShards_Rule
+{
+	criteria Spawn Isterrorblade IsTerrorEconShards
+	response terrorblade_SpawnIsTerrorEconShards
+}
+
+Response terrorblade_SpawnIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_spawn_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_spawn_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_spawn_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_spawn_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_spawn_05.vcd" nodelay noscene 
+}
+
+Rule terrorblade_SpawnIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Spawn Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_SpawnIsTerrorEconShardsIsTerrorDemonForm
+}
+
 Response terrorblade_CustomIsGameStart
 {
 	scene "scenes/terrorblade/terrorblade_terr_battlebegins_01.vcd" nodelay noscene 
@@ -59,6 +90,30 @@ Rule terrorblade_CustomIsTerrorDemonFormIsGameStart_Rule
 {
 	criteria Custom Isterrorblade IsTerrorDemonForm IsGameStart
 	response terrorblade_CustomIsTerrorDemonFormIsGameStart
+}
+
+Response terrorblade_CustomIsTerrorEconShardsIsGameStart
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_battlebegins_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_battlebegins_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CustomIsTerrorEconShardsIsGameStart_Rule
+{
+	criteria Custom Isterrorblade IsTerrorEconShards IsGameStart
+	response terrorblade_CustomIsTerrorEconShardsIsGameStart
+}
+
+Response terrorblade_CustomIsTerrorEconShardsIsTerrorDemonFormIsGameStart
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_battlebegins_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_battlebegins_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CustomIsTerrorEconShardsIsTerrorDemonFormIsGameStart_Rule
+{
+	criteria Custom Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsGameStart
+	response terrorblade_CustomIsTerrorEconShardsIsTerrorDemonFormIsGameStart
 }
 
 Response terrorblade_KillIsFirstBlood
@@ -863,6 +918,808 @@ Rule terrorblade_KillIsTerrorDemonFormIsEnemyShadow_DemonChance_10%_Rule
 	response terrorblade_KillIsTerrorDemonFormIsEnemyShadow_DemonChance_10%
 }
 
+Response terrorblade_KillIsTerrorEconShardsIsFirstBlood
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_firstblood_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_firstblood_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_firstblood_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsFirstBlood_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsFirstBlood
+	response terrorblade_KillIsTerrorEconShardsIsFirstBlood
+}
+
+Response terrorblade_KillIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_kill_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_15.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_16.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_17.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShards_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards
+	response terrorblade_KillIsTerrorEconShards
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyBaneChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyBaneChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyBane Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyBaneChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyDoom_BringerChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyDoom_BringerChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyDoom_Bringer Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyDoom_BringerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyPudgeChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyPudgeChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyPudge Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyPudgeChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyOmniknightChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_10.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyOmniknightChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyOmniknight Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyOmniknightChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyChenChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_12.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyChenChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyChen Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyChenChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyFurionChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_07.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyFurionChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyFurion Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyFurionChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemySlardarChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_08.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemySlardarChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemySlardar Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemySlardarChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyLunaChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyLunaChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyLuna Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyLunaChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyMedusaChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_27.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyMedusaChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyMedusa Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyMedusaChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemySkywrath_MageChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_15.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemySkywrath_MageChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemySkywrath_Mage Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemySkywrath_MageChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyRattletrapChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_16.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyRattletrapChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyRattletrap Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyRattletrapChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyNevermoreChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_17.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_18.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_19.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyNevermoreChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyNevermore Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyNevermoreChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyUndyingChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_20.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyUndyingChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyUndying Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyUndyingChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyUndyingChance_5%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_21.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_22.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyUndyingChance_5%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyUndying Chance_5%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyUndyingChance_5%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyZuusChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_23.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyZuusChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyZuus Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyZuusChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyNight_StalkerChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_24.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyNight_StalkerChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyNight_Stalker Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyNight_StalkerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyBloodseekerChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_25.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyBloodseekerChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyBloodseeker Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyBloodseekerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyNecrolyteChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_26.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyNecrolyteChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyNecrolyte Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyNecrolyteChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyShadow_DemonChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_28.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyShadow_DemonChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyShadow_Demon Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyShadow_DemonChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyWindrunnerChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_29.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyWindrunnerChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyWindrunner Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyWindrunnerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyStormSpiritChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_31.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_32.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyStormSpiritChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyStormSpirit Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyStormSpiritChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyShredderChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_33.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyShredderChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyShredder Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyShredderChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyEarth_SpiritChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_34.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyEarth_SpiritChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyEarth_Spirit Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyEarth_SpiritChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyLionChance_5%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_36.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_37.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyLionChance_5%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyLion Chance_5%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyLionChance_5%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyWarlockChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_38.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_39.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_42.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyWarlockChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyWarlock Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyWarlockChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyNaga_SirenChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_40.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyNaga_SirenChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyNaga_Siren Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyNaga_SirenChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemySkeleton_KingChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_41.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemySkeleton_KingChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemySkeleton_King Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemySkeleton_KingChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemySandKingChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_43.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemySandKingChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemySandKing Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemySandKingChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyDoom_BringerChance_10%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_18.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyDoom_BringerChance_10%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyDoom_Bringer Chance_10%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyDoom_BringerChance_10%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyNevermoreChance_10%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_18.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyNevermoreChance_10%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyNevermore Chance_10%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyNevermoreChance_10%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsEnemyShadow_DemonChance_10%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_18.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyShadow_DemonChance_10%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyShadow_Demon Chance_10%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyShadow_DemonChance_10%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsFirstBlood
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_firstblood_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_firstblood_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_firstblood_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsFirstBlood_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsFirstBlood
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsFirstBlood
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_kill_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_15.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_16.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_17.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonForm
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyBaneChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyBaneChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyBane Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyBaneChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyDoom_BringerChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyDoom_BringerChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyDoom_Bringer Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyDoom_BringerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyPudgeChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyPudgeChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyPudge Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyPudgeChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyOmniknightChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_10.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyOmniknightChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyOmniknight Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyOmniknightChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyChenChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_12.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyChenChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyChen Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyChenChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyFurionChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_07.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyFurionChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyFurion Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyFurionChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySlardarChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_08.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySlardarChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemySlardar Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySlardarChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyLunaChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyLunaChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyLuna Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyLunaChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyMedusaChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_27.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyMedusaChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyMedusa Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyMedusaChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySkywrath_MageChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_15.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySkywrath_MageChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemySkywrath_Mage Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySkywrath_MageChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyRattletrapChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_16.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyRattletrapChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyRattletrap Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyRattletrapChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNevermoreChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_17.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_18.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_19.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNevermoreChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyNevermore Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNevermoreChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyUndyingChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_20.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyUndyingChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyUndying Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyUndyingChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyUndyingChance_5%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_21.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_22.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyUndyingChance_5%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyUndying Chance_5%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyUndyingChance_5%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyZuusChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_23.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyZuusChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyZuus Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyZuusChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNight_StalkerChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_24.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNight_StalkerChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyNight_Stalker Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNight_StalkerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyBloodseekerChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_25.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyBloodseekerChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyBloodseeker Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyBloodseekerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNecrolyteChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_26.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNecrolyteChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyNecrolyte Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNecrolyteChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShadow_DemonChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_28.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShadow_DemonChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyShadow_Demon Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShadow_DemonChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWindrunnerChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_29.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWindrunnerChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyWindrunner Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWindrunnerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyStormSpiritChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_31.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_32.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyStormSpiritChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyStormSpirit Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyStormSpiritChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShredderChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_33.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShredderChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyShredder Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShredderChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyEarth_SpiritChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_34.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyEarth_SpiritChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyEarth_Spirit Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyEarth_SpiritChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyLionChance_5%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_36.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_37.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyLionChance_5%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyLion Chance_5%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyLionChance_5%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWarlockChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_38.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_39.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_42.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWarlockChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyWarlock Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWarlockChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNaga_SirenChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_40.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNaga_SirenChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyNaga_Siren Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNaga_SirenChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySkeleton_KingChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_41.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySkeleton_KingChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemySkeleton_King Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySkeleton_KingChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySandKingChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_43.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySandKingChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemySandKing Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemySandKingChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyDoom_BringerChance_10%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_18.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyDoom_BringerChance_10%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyDoom_Bringer Chance_10%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyDoom_BringerChance_10%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNevermoreChance_10%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_18.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNevermoreChance_10%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyNevermore Chance_10%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyNevermoreChance_10%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShadow_DemonChance_10%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_18.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShadow_DemonChance_10%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyShadow_Demon Chance_10%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyShadow_DemonChance_10%
+}
+
 Response terrorblade_Move
 {
 	scene "scenes/terrorblade/terrorblade_terr_move_02.vcd" nodelay noscene 
@@ -914,6 +1771,57 @@ Rule terrorblade_MoveIsTerrorDemonForm_Rule
 	response terrorblade_MoveIsTerrorDemonForm
 }
 
+Response terrorblade_MoveIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_move_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_movedemon_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_movedemon_15.vcd" nodelay noscene 
+}
+
+Rule terrorblade_MoveIsTerrorEconShards_Rule
+{
+	criteria Move Isterrorblade IsTerrorEconShards
+	response terrorblade_MoveIsTerrorEconShards
+}
+
+Response terrorblade_MoveIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_move_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_move_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_move_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_MoveIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Move Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_MoveIsTerrorEconShardsIsTerrorDemonForm
+}
+
 Response terrorblade_Respawn
 {
 	scene "scenes/terrorblade/terrorblade_terr_movedemon_14.vcd" nodelay noscene 
@@ -958,6 +1866,50 @@ Rule terrorblade_RespawnIsTerrorDemonForm_Rule
 	response terrorblade_RespawnIsTerrorDemonForm
 }
 
+Response terrorblade_RespawnIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_movedemon_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_respawn_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_RespawnIsTerrorEconShards_Rule
+{
+	criteria Respawn Isterrorblade IsTerrorEconShards
+	response terrorblade_RespawnIsTerrorEconShards
+}
+
+Response terrorblade_RespawnIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_movedemon_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_respawn_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_RespawnIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Respawn Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_RespawnIsTerrorEconShardsIsTerrorDemonForm
+}
+
 Response terrorblade_Attack
 {
 	scene "scenes/terrorblade/terrorblade_terr_attack_01.vcd" nodelay noscene 
@@ -999,6 +1951,49 @@ Rule terrorblade_AttackIsTerrorDemonForm_Rule
 {
 	criteria Attack Isterrorblade IsTerrorDemonForm
 	response terrorblade_AttackIsTerrorDemonForm
+}
+
+Response terrorblade_AttackIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_attack_10.vcd" nodelay noscene 
+}
+
+Rule terrorblade_AttackIsTerrorEconShards_Rule
+{
+	criteria Attack Isterrorblade IsTerrorEconShards
+	response terrorblade_AttackIsTerrorEconShards
+}
+
+Response terrorblade_AttackIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_08.vcd" nodelay noscene 
+}
+
+Rule terrorblade_AttackIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Attack Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_AttackIsTerrorEconShardsIsTerrorDemonForm
 }
 
 Response terrorblade_CastExecuteIsTerrorSunder
@@ -1126,18 +2121,18 @@ Rule terrorblade_CastExecuteIsTerrorDemonFormIsTerrorSunder_Rule
 	response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorSunder
 }
 
-Response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_1%
+Response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_1%
 {
 	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_01.vcd" nodelay noscene 
 }
 
-Rule terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_1%_Rule
+Rule terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_1%_Rule
 {
-	criteria CastExecute Isterrorblade IsTerrorMetamorph IsTerrorReflection Chance_1%
-	response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_1%
+	criteria CastExecute Isterrorblade IsTerrorDemonForm IsTerrorReflection Chance_1%
+	response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_1%
 }
 
-Response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_25%
+Response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_25%
 {
 	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_02.vcd" nodelay noscene 
 	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_03.vcd" nodelay noscene 
@@ -1146,35 +2141,35 @@ Response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_25%
 	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_07.vcd" nodelay noscene 
 }
 
-Rule terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_25%_Rule
+Rule terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_25%_Rule
 {
-	criteria CastExecute Isterrorblade IsTerrorMetamorph IsTerrorReflection Chance_25%
-	response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_25%
+	criteria CastExecute Isterrorblade IsTerrorDemonForm IsTerrorReflection Chance_25%
+	response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_25%
 }
 
-Response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_3%
+Response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_3%
 {
 	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_06.vcd" nodelay noscene 
 }
 
-Rule terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_3%_Rule
+Rule terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_3%_Rule
 {
-	criteria CastExecute Isterrorblade IsTerrorMetamorph IsTerrorReflection Chance_3%
-	response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorReflectionChance_3%
+	criteria CastExecute Isterrorblade IsTerrorDemonForm IsTerrorReflection Chance_3%
+	response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorReflectionChance_3%
 }
 
-Response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_3%
+Response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_3%
 {
 	scene "scenes/terrorblade/terrorblade_terr_morph_conjureimage_01.vcd" nodelay noscene 
 }
 
-Rule terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_3%_Rule
+Rule terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_3%_Rule
 {
-	criteria CastExecute Isterrorblade IsTerrorMetamorph IsTerrorConjure Chance_3%
-	response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_3%
+	criteria CastExecute Isterrorblade IsTerrorDemonForm IsTerrorConjure Chance_3%
+	response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_3%
 }
 
-Response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_25%
+Response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_25%
 {
 	scene "scenes/terrorblade/terrorblade_terr_morph_conjureimage_02.vcd" nodelay noscene 
 	scene "scenes/terrorblade/terrorblade_terr_morph_demon_09.vcd" nodelay noscene 
@@ -1182,21 +2177,21 @@ Response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_25%
 	scene "scenes/terrorblade/terrorblade_terr_morph_demon_11.vcd" nodelay noscene 
 }
 
-Rule terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_25%_Rule
+Rule terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_25%_Rule
 {
-	criteria CastExecute Isterrorblade IsTerrorMetamorph IsTerrorConjure Chance_25%
-	response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_25%
+	criteria CastExecute Isterrorblade IsTerrorDemonForm IsTerrorConjure Chance_25%
+	response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_25%
 }
 
-Response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_2%
+Response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_2%
 {
 	scene "scenes/terrorblade/terrorblade_terr_morph_conjureimage_03.vcd" nodelay noscene 
 }
 
-Rule terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_2%_Rule
+Rule terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_2%_Rule
 {
-	criteria CastExecute Isterrorblade IsTerrorMetamorph IsTerrorConjure Chance_2%
-	response terrorblade_CastExecuteIsTerrorMetamorphIsTerrorConjureChance_2%
+	criteria CastExecute Isterrorblade IsTerrorDemonForm IsTerrorConjure Chance_2%
+	response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorConjureChance_2%
 }
 
 Response terrorblade_CastExecuteIsTerrorMetamorph
@@ -1233,6 +2228,238 @@ Rule terrorblade_CastExecuteIsTerrorDemonFormIsTerrorSunderChance_3%_Rule
 	response terrorblade_CastExecuteIsTerrorDemonFormIsTerrorSunderChance_3%
 }
 
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorSunder
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_demonattack_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorSunder_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorSunder
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorSunder
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_1%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_reflection_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_1%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorReflection Chance_1%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_1%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_20%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_reflection_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_reflection_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_reflection_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_reflection_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_reflection_07.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_20%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorReflection Chance_20%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_20%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_3%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_reflection_06.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_3%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorReflection Chance_3%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorReflectionChance_3%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_3%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_conjureimage_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_3%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorConjure Chance_3%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_3%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_20%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_conjureimage_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_demon_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_20%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorConjure Chance_20%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_20%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_2%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_conjureimage_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_2%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorConjure Chance_2%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorConjureChance_2%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorSunderChance_3%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_sunder_06.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorSunderChance_3%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorSunder Chance_3%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorSunderChance_3%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorSunder
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_demonattack_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorSunder_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsTerrorSunder
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorSunder
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_1%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_1%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsTerrorReflection Chance_1%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_1%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_07.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_25%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsTerrorReflection Chance_25%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_25%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_3%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_reflection_06.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_3%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsTerrorReflection Chance_3%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorReflectionChance_3%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_3%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_conjureimage_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_3%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsTerrorConjure Chance_3%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_3%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_conjureimage_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_25%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsTerrorConjure Chance_25%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_25%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_2%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_conjureimage_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_2%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsTerrorConjure Chance_2%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorConjureChance_2%
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorMetamorph
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_metamorphosis_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_demon_14.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorMetamorph_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorMetamorph
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorMetamorph
+}
+
+Response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorSunderChance_3%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_sunder_06.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorSunderChance_3%_Rule
+{
+	criteria CastExecute Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsTerrorSunder Chance_3%
+	response terrorblade_CastExecuteIsTerrorEconShardsIsTerrorDemonFormIsTerrorSunderChance_3%
+}
+
 Response terrorblade_CastOrder
 {
 	scene "scenes/terrorblade/terrorblade_terr_cast_01.vcd" nodelay noscene 
@@ -1257,6 +2484,32 @@ Rule terrorblade_CastOrderIsTerrorDemonForm_Rule
 {
 	criteria CastOrder Isterrorblade IsTerrorDemonForm
 	response terrorblade_CastOrderIsTerrorDemonForm
+}
+
+Response terrorblade_CastOrderIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_cast_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_cast_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_cast_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastOrderIsTerrorEconShards_Rule
+{
+	criteria CastOrder Isterrorblade IsTerrorEconShards
+	response terrorblade_CastOrderIsTerrorEconShards
+}
+
+Response terrorblade_CastOrderIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_cast_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_cast_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_cast_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CastOrderIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria CastOrder Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_CastOrderIsTerrorEconShardsIsTerrorDemonForm
 }
 
 Response terrorblade_LevelUp
@@ -1301,26 +2554,68 @@ Rule terrorblade_LevelUpIsTerrorDemonForm_Rule
 	response terrorblade_LevelUpIsTerrorDemonForm
 }
 
-Response terrorblade_AllyNearIsAllyTimbersawChance_1%EarlyGame
+Response terrorblade_LevelUpIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_04.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_levelup_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_LevelUpIsTerrorEconShards_Rule
+{
+	criteria LevelUp Isterrorblade IsTerrorEconShards
+	response terrorblade_LevelUpIsTerrorEconShards
+}
+
+Response terrorblade_LevelUpIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_04.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_levelup_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_LevelUpIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria LevelUp Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_LevelUpIsTerrorEconShardsIsTerrorDemonForm
+}
+
+Response terrorblade_AllyNearIsAllyShredderChance_1%EarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_ally_01.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsAllyTimbersawChance_1%EarlyGame_Rule
+Rule terrorblade_AllyNearIsAllyShredderChance_1%EarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsAllyTimbersaw Chance_1% EarlyGame
-	response terrorblade_AllyNearIsAllyTimbersawChance_1%EarlyGame
+	criteria AllyNear Isterrorblade IsAllyShredder Chance_1% EarlyGame
+	response terrorblade_AllyNearIsAllyShredderChance_1%EarlyGame
 }
 
-Response terrorblade_AllyNearIsAllyTimbersawChance_5%EarlyGame
+Response terrorblade_AllyNearIsAllyShredderChance_5%EarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_ally_02.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsAllyTimbersawChance_5%EarlyGame_Rule
+Rule terrorblade_AllyNearIsAllyShredderChance_5%EarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsAllyTimbersaw Chance_5% EarlyGame
-	response terrorblade_AllyNearIsAllyTimbersawChance_5%EarlyGame
+	criteria AllyNear Isterrorblade IsAllyShredder Chance_5% EarlyGame
+	response terrorblade_AllyNearIsAllyShredderChance_5%EarlyGame
 }
 
 Response terrorblade_AllyNearIsAllyDragon_KnightChance_50%EarlyGame
@@ -1345,15 +2640,15 @@ Rule terrorblade_AllyNearIsAllyJakiroChance_50%EarlyGame_Rule
 	response terrorblade_AllyNearIsAllyJakiroChance_50%EarlyGame
 }
 
-Response terrorblade_AllyNearIsAllyTimbersawEarlyGame
+Response terrorblade_AllyNearIsAllyShredderEarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_ally_04.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsAllyTimbersawEarlyGame_Rule
+Rule terrorblade_AllyNearIsAllyShredderEarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsAllyTimbersaw EarlyGame
-	response terrorblade_AllyNearIsAllyTimbersawEarlyGame
+	criteria AllyNear Isterrorblade IsAllyShredder EarlyGame
+	response terrorblade_AllyNearIsAllyShredderEarlyGame
 }
 
 Response terrorblade_AllyNearIsAllySkywrath_MageChance_5%EarlyGame
@@ -1379,15 +2674,15 @@ Rule terrorblade_AllyNearIsAllySkywrath_MageEarlyGame_Rule
 	response terrorblade_AllyNearIsAllySkywrath_MageEarlyGame
 }
 
-Response terrorblade_AllyNearIsAllyDoomChance_20%EarlyGame
+Response terrorblade_AllyNearIsAllyDoom_BringerChance_20%EarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_ally_10.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsAllyDoomChance_20%EarlyGame_Rule
+Rule terrorblade_AllyNearIsAllyDoom_BringerChance_20%EarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsAllyDoom Chance_20% EarlyGame
-	response terrorblade_AllyNearIsAllyDoomChance_20%EarlyGame
+	criteria AllyNear Isterrorblade IsAllyDoom_Bringer Chance_20% EarlyGame
+	response terrorblade_AllyNearIsAllyDoom_BringerChance_20%EarlyGame
 }
 
 Response terrorblade_AllyNearIsAllyShadow_DemonEarlyGame
@@ -1501,6 +2796,206 @@ Rule terrorblade_AllyNearIsAllyPhoenixEarlyGame_Rule
 	response terrorblade_AllyNearIsAllyPhoenixEarlyGame
 }
 
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderChance_1%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_01.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderChance_1%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyShredder Chance_1% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderChance_1%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderChance_5%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_02.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderChance_5%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyShredder Chance_5% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderChance_5%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_50%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_50%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyDragon_Knight Chance_50% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_50%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_50%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_50%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyJakiro Chance_50% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_50%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_04.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyShredder EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageChance_5%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_06.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_08.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageChance_5%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllySkywrath_Mage Chance_5% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageChance_5%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_07.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllySkywrath_Mage EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerChance_20%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_10.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerChance_20%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyDoom_Bringer Chance_20% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerChance_20%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyShadow_DemonEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_13.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyShadow_DemonEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyShadow_Demon EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyShadow_DemonEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyLionEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_14.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyLionEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyLion EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyLionEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllySpirit_BreakerEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_15.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllySpirit_BreakerEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllySpirit_Breaker EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllySpirit_BreakerEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyWarlockEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_16.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyWarlockEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyWarlock EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyWarlockEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyNevermoreEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_17.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyNevermoreEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyNevermore EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyNevermoreEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyChaos_KnightEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_18.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyChaos_KnightEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyChaos_Knight EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyChaos_KnightEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyClinkzEarlyGameEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_19.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyClinkzEarlyGameEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyClinkz EarlyGame EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyClinkzEarlyGameEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyCentaurChance_25%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_20.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_21.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyCentaurChance_25%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyCentaur Chance_25% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyCentaurChance_25%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyEnchantressChance_15%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_22.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyEnchantressChance_15%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyEnchantress Chance_15% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyEnchantressChance_15%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyPhoenixEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_23.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyPhoenixEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyPhoenix EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyPhoenixEarlyGame
+}
+
 Response terrorblade_LastHit
 {
 	scene "scenes/terrorblade/terrorblade_terr_lasthit_01.vcd" nodelay noscene 
@@ -1539,6 +3034,46 @@ Rule terrorblade_LastHitIsTerrorDemonForm_Rule
 {
 	criteria LastHit Isterrorblade IsTerrorDemonForm
 	response terrorblade_LastHitIsTerrorDemonForm
+}
+
+Response terrorblade_LastHitIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_10.vcd" nodelay noscene 
+}
+
+Rule terrorblade_LastHitIsTerrorEconShards_Rule
+{
+	criteria LastHit Isterrorblade IsTerrorEconShards
+	response terrorblade_LastHitIsTerrorEconShards
+}
+
+Response terrorblade_LastHitIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_10.vcd" nodelay noscene 
+}
+
+Rule terrorblade_LastHitIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria LastHit Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_LastHitIsTerrorEconShardsIsTerrorDemonForm
 }
 
 Response terrorblade_Death
@@ -1605,6 +3140,72 @@ Rule terrorblade_DeathIsTerrorDemonFormIsReincarnating_Rule
 {
 	criteria Death Isterrorblade IsTerrorDemonForm IsReincarnating
 	response terrorblade_DeathIsTerrorDemonFormIsReincarnating
+}
+
+Response terrorblade_DeathIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_death_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_DeathIsTerrorEconShards_Rule
+{
+	criteria Death Isterrorblade IsTerrorEconShards
+	response terrorblade_DeathIsTerrorEconShards
+}
+
+Response terrorblade_DeathIsTerrorEconShardsIsReincarnating
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_fastres_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_fastres_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_DeathIsTerrorEconShardsIsReincarnating_Rule
+{
+	criteria Death Isterrorblade IsTerrorEconShards IsReincarnating
+	response terrorblade_DeathIsTerrorEconShardsIsReincarnating
+}
+
+Response terrorblade_DeathIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_death_11.vcd" nodelay noscene 
+}
+
+Rule terrorblade_DeathIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Death Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_DeathIsTerrorEconShardsIsTerrorDemonForm
+}
+
+Response terrorblade_DeathIsTerrorEconShardsIsTerrorDemonFormIsReincarnating
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_fastres_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_fastres_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_DeathIsTerrorEconShardsIsTerrorDemonFormIsReincarnating_Rule
+{
+	criteria Death Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsReincarnating
+	response terrorblade_DeathIsTerrorEconShardsIsTerrorDemonFormIsReincarnating
 }
 
 Response terrorblade_PurchaseIsExpensiveItem
@@ -2125,6 +3726,524 @@ Rule terrorblade_PurchaseIsTerrorDemonFormIsSphere_Rule
 	response terrorblade_PurchaseIsTerrorDemonFormIsSphere
 }
 
+Response terrorblade_PurchaseIsTerrorEconShardsIsExpensiveItem
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_purch_01.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_purch_02.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_purch_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsExpensiveItem_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsExpensiveItem
+	response terrorblade_PurchaseIsTerrorEconShardsIsExpensiveItem
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsUltimateScepter
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_scepter_01.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_scepter_02.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_scepter_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsUltimateScepter_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsUltimateScepter
+	response terrorblade_PurchaseIsTerrorEconShardsIsUltimateScepter
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsBlinkDagger
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_blink_01.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_blink_02.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_blink_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsBlinkDagger_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsBlinkDagger
+	response terrorblade_PurchaseIsTerrorEconShardsIsBlinkDagger
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsHeart
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_01.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsHeart_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsHeart
+	response terrorblade_PurchaseIsTerrorEconShardsIsHeart
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsMaskOfMadness
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_02.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsMaskOfMadness_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsMaskOfMadness
+	response terrorblade_PurchaseIsTerrorEconShardsIsMaskOfMadness
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsBlackKingBar
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_04.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsBlackKingBar_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsBlackKingBar
+	response terrorblade_PurchaseIsTerrorEconShardsIsBlackKingBar
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsSatanic
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_06.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsSatanic_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsSatanic
+	response terrorblade_PurchaseIsTerrorEconShardsIsSatanic
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsMonkeyKingBar
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_07.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsMonkeyKingBar_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsMonkeyKingBar
+	response terrorblade_PurchaseIsTerrorEconShardsIsMonkeyKingBar
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsSoulRingChance_10%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_08.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsSoulRingChance_10%_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsSoulRing Chance_10%
+	response terrorblade_PurchaseIsTerrorEconShardsIsSoulRingChance_10%
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsButterfly
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_09.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsButterfly_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsButterfly
+	response terrorblade_PurchaseIsTerrorEconShardsIsButterfly
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsSangeAndYasha
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_10.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsSangeAndYasha_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsSangeAndYasha
+	response terrorblade_PurchaseIsTerrorEconShardsIsSangeAndYasha
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsAssaultCuirass
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_11.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsAssaultCuirass_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsAssaultCuirass
+	response terrorblade_PurchaseIsTerrorEconShardsIsAssaultCuirass
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsManta
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_12.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsManta_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsManta
+	response terrorblade_PurchaseIsTerrorEconShardsIsManta
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsDesolator
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_13.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsDesolator_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsDesolator
+	response terrorblade_PurchaseIsTerrorEconShardsIsDesolator
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsRadiance
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_15.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsRadiance_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsRadiance
+	response terrorblade_PurchaseIsTerrorEconShardsIsRadiance
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsShiva
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_16.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsShiva_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsShiva
+	response terrorblade_PurchaseIsTerrorEconShardsIsShiva
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsBladeMail
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_17.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsBladeMail_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsBladeMail
+	response terrorblade_PurchaseIsTerrorEconShardsIsBladeMail
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsHeavens
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_19.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsHeavens_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsHeavens
+	response terrorblade_PurchaseIsTerrorEconShardsIsHeavens
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsVanguard
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_20.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsVanguard_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsVanguard
+	response terrorblade_PurchaseIsTerrorEconShardsIsVanguard
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsSkadi
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_21.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsSkadi_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsSkadi
+	response terrorblade_PurchaseIsTerrorEconShardsIsSkadi
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsDaedalus
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_22.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsDaedalus_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsDaedalus
+	response terrorblade_PurchaseIsTerrorEconShardsIsDaedalus
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsDrums
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_23.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsDrums_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsDrums
+	response terrorblade_PurchaseIsTerrorEconShardsIsDrums
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsSphere
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_items_24.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsSphere_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsSphere
+	response terrorblade_PurchaseIsTerrorEconShardsIsSphere
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsExpensiveItem
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_purch_01.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_morph_purch_02.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_morph_purch_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsExpensiveItem_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsExpensiveItem
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsExpensiveItem
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsUltimateScepter
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_scepter_01.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_morph_scepter_02.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_morph_scepter_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsUltimateScepter_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsUltimateScepter
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsUltimateScepter
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBlinkDagger
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_blink_01.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_morph_blink_02.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_morph_blink_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBlinkDagger_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsBlinkDagger
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBlinkDagger
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsHeart
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_01.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsHeart_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsHeart
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsHeart
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsMaskOfMadness
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsMaskOfMadness_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsMaskOfMadness
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsMaskOfMadness
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBlackKingBar
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_04.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBlackKingBar_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsBlackKingBar
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBlackKingBar
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSatanic
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_05.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSatanic_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsSatanic
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSatanic
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsMonkeyKingBar
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_07.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsMonkeyKingBar_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsMonkeyKingBar
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsMonkeyKingBar
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSoulRing
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_08.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSoulRing_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsSoulRing
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSoulRing
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsButterfly
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_09.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsButterfly_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsButterfly
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsButterfly
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSangeAndYasha
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_10.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSangeAndYasha_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsSangeAndYasha
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSangeAndYasha
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsAssaultCuirass
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_11.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsAssaultCuirass_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsAssaultCuirass
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsAssaultCuirass
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsManta
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_12.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsManta_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsManta
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsManta
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDesolator
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_14.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDesolator_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsDesolator
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDesolator
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsRadiance
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_15.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsRadiance_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsRadiance
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsRadiance
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsShiva
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_16.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsShiva_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsShiva
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsShiva
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBladeMail
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_17.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBladeMail_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsBladeMail
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsBladeMail
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsHeavens
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_18.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsHeavens_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsHeavens
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsHeavens
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsVanguard
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_20.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsVanguard_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsVanguard
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsVanguard
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSkadi
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_21.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSkadi_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsSkadi
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSkadi
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDaedalus
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_22.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDaedalus_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsDaedalus
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDaedalus
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDrums
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_23.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDrums_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsDrums
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsDrums
+}
+
+Response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSphere
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_items_24.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSphere_Rule
+{
+	criteria Purchase Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsSphere
+	response terrorblade_PurchaseIsTerrorEconShardsIsTerrorDemonFormIsSphere
+}
+
 Response terrorblade_Bottling
 {
 	scene "scenes/terrorblade/terrorblade_terr_bottle_01.vcd" nodelay noscene 
@@ -2149,6 +4268,32 @@ Rule terrorblade_BottlingIsTerrorDemonForm_Rule
 {
 	criteria Bottling Isterrorblade IsTerrorDemonForm
 	response terrorblade_BottlingIsTerrorDemonForm
+}
+
+Response terrorblade_BottlingIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_bottle_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_bottle_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_bottle_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_BottlingIsTerrorEconShards_Rule
+{
+	criteria Bottling Isterrorblade IsTerrorEconShards
+	response terrorblade_BottlingIsTerrorEconShards
+}
+
+Response terrorblade_BottlingIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_bottle_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_bottle_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_bottle_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_BottlingIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Bottling Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_BottlingIsTerrorEconShardsIsTerrorDemonForm
 }
 
 Response terrorblade_Deny
@@ -2219,6 +4364,74 @@ Rule terrorblade_DenyIsTerrorDemonForm_Rule
 	response terrorblade_DenyIsTerrorDemonForm
 }
 
+Response terrorblade_DenyIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_15.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_16.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_17.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_18.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_19.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_20.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_21.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_22.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_23.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_deny_24.vcd" nodelay noscene 
+}
+
+Rule terrorblade_DenyIsTerrorEconShards_Rule
+{
+	criteria Deny Isterrorblade IsTerrorEconShards
+	response terrorblade_DenyIsTerrorEconShards
+}
+
+Response terrorblade_DenyIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_14.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_15.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_16.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_17.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_18.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_19.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_20.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_21.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_22.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_23.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_deny_24.vcd" nodelay noscene 
+}
+
+Rule terrorblade_DenyIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Deny Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_DenyIsTerrorEconShardsIsTerrorDemonForm
+}
+
 Response terrorblade_MissingIsLaneTop
 {
 	scene "scenes/terrorblade/terrorblade_terr_lanemissing_01.vcd" nodelay noscene 
@@ -2283,6 +4496,72 @@ Rule terrorblade_MissingIsTerrorDemonFormIsLaneBot_Rule
 {
 	criteria Missing Isterrorblade IsTerrorDemonForm IsLaneBot
 	response terrorblade_MissingIsTerrorDemonFormIsLaneBot
+}
+
+Response terrorblade_MissingIsTerrorEconShardsIsLaneTop
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_lanemissing_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_MissingIsTerrorEconShardsIsLaneTop_Rule
+{
+	criteria Missing Isterrorblade IsTerrorEconShards IsLaneTop
+	response terrorblade_MissingIsTerrorEconShardsIsLaneTop
+}
+
+Response terrorblade_MissingIsTerrorEconShardsIsLaneMid
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_lanemissing_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_MissingIsTerrorEconShardsIsLaneMid_Rule
+{
+	criteria Missing Isterrorblade IsTerrorEconShards IsLaneMid
+	response terrorblade_MissingIsTerrorEconShardsIsLaneMid
+}
+
+Response terrorblade_MissingIsTerrorEconShardsIsLaneBot
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_lanemissing_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_MissingIsTerrorEconShardsIsLaneBot_Rule
+{
+	criteria Missing Isterrorblade IsTerrorEconShards IsLaneBot
+	response terrorblade_MissingIsTerrorEconShardsIsLaneBot
+}
+
+Response terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneTop
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_lanemissing_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneTop_Rule
+{
+	criteria Missing Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsLaneTop
+	response terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneTop
+}
+
+Response terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneMid
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_lanemissing_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneMid_Rule
+{
+	criteria Missing Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsLaneMid
+	response terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneMid
+}
+
+Response terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneBot
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_lanemissing_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneBot_Rule
+{
+	criteria Missing Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsLaneBot
+	response terrorblade_MissingIsTerrorEconShardsIsTerrorDemonFormIsLaneBot
 }
 
 Response terrorblade_ItemDropIsCommonDrop
@@ -2353,9 +4632,78 @@ Rule terrorblade_ItemDropIsTerrorDemonFormIsUltraRareDrop_Rule
 	response terrorblade_ItemDropIsTerrorDemonFormIsUltraRareDrop
 }
 
+Response terrorblade_ItemDropIsTerrorEconShardsIsCommonDrop
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_itemdrop_common_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ItemDropIsTerrorEconShardsIsCommonDrop_Rule
+{
+	criteria ItemDrop Isterrorblade IsTerrorEconShards IsCommonDrop
+	response terrorblade_ItemDropIsTerrorEconShardsIsCommonDrop
+}
+
+Response terrorblade_ItemDropIsTerrorEconShardsIsRareDrop
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_itemdrop_moderate_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_itemdrop_moderate_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ItemDropIsTerrorEconShardsIsRareDrop_Rule
+{
+	criteria ItemDrop Isterrorblade IsTerrorEconShards IsRareDrop
+	response terrorblade_ItemDropIsTerrorEconShardsIsRareDrop
+}
+
+Response terrorblade_ItemDropIsTerrorEconShardsIsUltraRareDrop
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_itemdrop_rare_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ItemDropIsTerrorEconShardsIsUltraRareDrop_Rule
+{
+	criteria ItemDrop Isterrorblade IsTerrorEconShards IsUltraRareDrop
+	response terrorblade_ItemDropIsTerrorEconShardsIsUltraRareDrop
+}
+
+Response terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsCommonDrop
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_itemdrop_common_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsCommonDrop_Rule
+{
+	criteria ItemDrop Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsCommonDrop
+	response terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsCommonDrop
+}
+
+Response terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsRareDrop
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_itemdrop_moderate_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_itemdrop_moderate_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsRareDrop_Rule
+{
+	criteria ItemDrop Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsRareDrop
+	response terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsRareDrop
+}
+
+Response terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsUltraRareDrop
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_itemdrop_rare_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsUltraRareDrop_Rule
+{
+	criteria ItemDrop Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsUltraRareDrop
+	response terrorblade_ItemDropIsTerrorEconShardsIsTerrorDemonFormIsUltraRareDrop
+}
+
 Response terrorblade_Immortality
 {
 	scene "scenes/terrorblade/terrorblade_terr_immort_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_immort_01.vcd" nodelay noscene 
 }
 
 Rule terrorblade_Immortality_Rule
@@ -2395,6 +4743,39 @@ Rule terrorblade_ImmortalityIsTerrorDemonFormChance_25%_Rule
 {
 	criteria Immortality Isterrorblade IsTerrorDemonForm Chance_25%
 	response terrorblade_ImmortalityIsTerrorDemonFormChance_25%
+}
+
+Response terrorblade_ImmortalityIsTerrorEconShardsChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_immort_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ImmortalityIsTerrorEconShardsChance_25%_Rule
+{
+	criteria Immortality Isterrorblade IsTerrorEconShards Chance_25%
+	response terrorblade_ImmortalityIsTerrorEconShardsChance_25%
+}
+
+Response terrorblade_ImmortalityIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_immort_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ImmortalityIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Immortality Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_ImmortalityIsTerrorEconShardsIsTerrorDemonForm
+}
+
+Response terrorblade_ImmortalityIsTerrorEconShardsIsTerrorDemonFormChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_immort_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ImmortalityIsTerrorEconShardsIsTerrorDemonFormChance_25%_Rule
+{
+	criteria Immortality Isterrorblade IsTerrorEconShards IsTerrorDemonForm Chance_25%
+	response terrorblade_ImmortalityIsTerrorEconShardsIsTerrorDemonFormChance_25%
 }
 
 Response terrorblade_PowerupIsPowerupHaste
@@ -2621,6 +5002,230 @@ Rule terrorblade_PowerupIsTerrorDemonFormIsPowerupInvisibilityChance_25%_Rule
 	response terrorblade_PowerupIsTerrorDemonFormIsPowerupInvisibilityChance_25%
 }
 
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupHaste
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_haste_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupHaste_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupHaste
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupHaste
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupHasteChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_haste_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupHasteChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupHaste Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupHasteChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupDoubleDamageChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_doubdam_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_doubdam_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_doubdam_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupDoubleDamageChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupDoubleDamage Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupDoubleDamageChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupDoubleDamage
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupDoubleDamage
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupDoubleDamage
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupRegeneration
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_regen_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupRegeneration_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupRegeneration
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupRegeneration
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupRegenerationChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_regen_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupRegenerationChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupRegeneration Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupRegenerationChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupIllusion
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_illus_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupIllusion_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupIllusion
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupIllusion
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupIllusionChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_illus_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupIllusionChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupIllusion Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupIllusionChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupInvisibility
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_iinvis_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupInvisibility_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupInvisibility
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupInvisibility
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupInvisibilityChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_iinvis_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupInvisibilityChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupInvisibility Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupInvisibilityChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupHaste
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_haste_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupHaste_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupHaste
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupHaste
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupHasteChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_haste_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupHasteChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupHaste Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupHasteChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupDoubleDamageChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_doubdam_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_doubdam_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_doubdam_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupDoubleDamageChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupDoubleDamage Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupDoubleDamageChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupDoubleDamage
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupDoubleDamage
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupDoubleDamage
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupRegeneration
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_regen_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupRegeneration_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupRegeneration
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupRegeneration
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupRegenerationChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_regen_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupRegenerationChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupRegeneration Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupRegenerationChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupIllusion
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_illus_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupIllusion_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupIllusion
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupIllusion
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupIllusionChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_illus_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupIllusionChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupIllusion Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupIllusionChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupInvisibility
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_iinvis_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupInvisibility_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupInvisibility
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupInvisibility
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupInvisibilityChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_iinvis_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupInvisibilityChance_25%_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupInvisibility Chance_25%
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupInvisibilityChance_25%
+}
+
 Response terrorblade_CooldownLittleNag
 {
 	scene "scenes/terrorblade/terrorblade_terr_notyet_01.vcd" nodelay noscene 
@@ -2697,6 +5302,84 @@ Rule terrorblade_CooldownIsTerrorDemonFormSuperNag_Rule
 {
 	criteria Cooldown Isterrorblade IsTerrorDemonForm SuperNag
 	response terrorblade_CooldownIsTerrorDemonFormSuperNag
+}
+
+Response terrorblade_CooldownIsTerrorEconShardsLittleNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_07.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CooldownIsTerrorEconShardsLittleNag_Rule
+{
+	criteria Cooldown Isterrorblade IsTerrorEconShards LittleNag
+	response terrorblade_CooldownIsTerrorEconShardsLittleNag
+}
+
+Response terrorblade_CooldownIsTerrorEconShardsMediumNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_08.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CooldownIsTerrorEconShardsMediumNag_Rule
+{
+	criteria Cooldown Isterrorblade IsTerrorEconShards MediumNag
+	response terrorblade_CooldownIsTerrorEconShardsMediumNag
+}
+
+Response terrorblade_CooldownIsTerrorEconShardsSuperNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_notyet_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CooldownIsTerrorEconShardsSuperNag_Rule
+{
+	criteria Cooldown Isterrorblade IsTerrorEconShards SuperNag
+	response terrorblade_CooldownIsTerrorEconShardsSuperNag
+}
+
+Response terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormLittleNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_07.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormLittleNag_Rule
+{
+	criteria Cooldown Isterrorblade IsTerrorEconShards IsTerrorDemonForm LittleNag
+	response terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormLittleNag
+}
+
+Response terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormMediumNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_08.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormMediumNag_Rule
+{
+	criteria Cooldown Isterrorblade IsTerrorEconShards IsTerrorDemonForm MediumNag
+	response terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormMediumNag
+}
+
+Response terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormSuperNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_notyet_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormSuperNag_Rule
+{
+	criteria Cooldown Isterrorblade IsTerrorEconShards IsTerrorDemonForm SuperNag
+	response terrorblade_CooldownIsTerrorEconShardsIsTerrorDemonFormSuperNag
 }
 
 Response terrorblade_NoManaLittleNag
@@ -2777,6 +5460,84 @@ Rule terrorblade_NoManaIsTerrorDemonFormSuperNag_Rule
 	response terrorblade_NoManaIsTerrorDemonFormSuperNag
 }
 
+Response terrorblade_NoManaIsTerrorEconShardsLittleNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_07.vcd" nodelay noscene 
+}
+
+Rule terrorblade_NoManaIsTerrorEconShardsLittleNag_Rule
+{
+	criteria NoMana Isterrorblade IsTerrorEconShards LittleNag
+	response terrorblade_NoManaIsTerrorEconShardsLittleNag
+}
+
+Response terrorblade_NoManaIsTerrorEconShardsMediumNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_08.vcd" nodelay noscene 
+}
+
+Rule terrorblade_NoManaIsTerrorEconShardsMediumNag_Rule
+{
+	criteria NoMana Isterrorblade IsTerrorEconShards MediumNag
+	response terrorblade_NoManaIsTerrorEconShardsMediumNag
+}
+
+Response terrorblade_NoManaIsTerrorEconShardsSuperNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_nomana_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_NoManaIsTerrorEconShardsSuperNag_Rule
+{
+	criteria NoMana Isterrorblade IsTerrorEconShards SuperNag
+	response terrorblade_NoManaIsTerrorEconShardsSuperNag
+}
+
+Response terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormLittleNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_07.vcd" nodelay noscene 
+}
+
+Rule terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormLittleNag_Rule
+{
+	criteria NoMana Isterrorblade IsTerrorEconShards IsTerrorDemonForm LittleNag
+	response terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormLittleNag
+}
+
+Response terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormMediumNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_08.vcd" nodelay noscene 
+}
+
+Rule terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormMediumNag_Rule
+{
+	criteria NoMana Isterrorblade IsTerrorEconShards IsTerrorDemonForm MediumNag
+	response terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormMediumNag
+}
+
+Response terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormSuperNag
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_nomana_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormSuperNag_Rule
+{
+	criteria NoMana Isterrorblade IsTerrorEconShards IsTerrorDemonForm SuperNag
+	response terrorblade_NoManaIsTerrorEconShardsIsTerrorDemonFormSuperNag
+}
+
 Response terrorblade_Thanks
 {
 	scene "scenes/terrorblade/terrorblade_terr_thanks_01.vcd" nodelay noscene 
@@ -2801,6 +5562,32 @@ Rule terrorblade_ThanksIsTerrorDemonForm_Rule
 {
 	criteria Thanks Isterrorblade IsTerrorDemonForm
 	response terrorblade_ThanksIsTerrorDemonForm
+}
+
+Response terrorblade_ThanksIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_thanks_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_thanks_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_thanks_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ThanksIsTerrorEconShards_Rule
+{
+	criteria Thanks Isterrorblade IsTerrorEconShards
+	response terrorblade_ThanksIsTerrorEconShards
+}
+
+Response terrorblade_ThanksIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_thanks_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_thanks_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_thanks_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_ThanksIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Thanks Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_ThanksIsTerrorEconShardsIsTerrorDemonForm
 }
 
 Response terrorblade_PainChance_25%
@@ -2873,6 +5660,76 @@ Rule terrorblade_PainIsTerrorDemonForm_Rule
 	response terrorblade_PainIsTerrorDemonForm
 }
 
+Response terrorblade_PainIsTerrorEconShardsChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule terrorblade_PainIsTerrorEconShardsChance_25%_Rule
+{
+	criteria Pain Isterrorblade IsTerrorEconShards Chance_25%
+	response terrorblade_PainIsTerrorEconShardsChance_25%
+}
+
+Response terrorblade_PainIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_pain_14.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PainIsTerrorEconShards_Rule
+{
+	criteria Pain Isterrorblade IsTerrorEconShards
+	response terrorblade_PainIsTerrorEconShards
+}
+
+Response terrorblade_PainIsTerrorEconShardsIsTerrorDemonFormChance_15%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_underattack_01.vcd" nodelay noscene respeakdelay 180
+}
+
+Rule terrorblade_PainIsTerrorEconShardsIsTerrorDemonFormChance_15%_Rule
+{
+	criteria Pain Isterrorblade IsTerrorEconShards IsTerrorDemonForm Chance_15%
+	response terrorblade_PainIsTerrorEconShardsIsTerrorDemonFormChance_15%
+}
+
+Response terrorblade_PainIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_09.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_10.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_11.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_12.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_13.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_pain_14.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PainIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Pain Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_PainIsTerrorEconShardsIsTerrorDemonForm
+}
+
 Response terrorblade_InTheBag
 {
 	scene "scenes/terrorblade/terrorblade_terr_inthebag_01.vcd" nodelay noscene 
@@ -2893,6 +5750,28 @@ Rule terrorblade_InTheBagIsTerrorDemonForm_Rule
 {
 	criteria InTheBag Isterrorblade IsTerrorDemonForm
 	response terrorblade_InTheBagIsTerrorDemonForm
+}
+
+Response terrorblade_InTheBagIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_inthebag_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_InTheBagIsTerrorEconShards_Rule
+{
+	criteria InTheBag Isterrorblade IsTerrorEconShards
+	response terrorblade_InTheBagIsTerrorEconShards
+}
+
+Response terrorblade_InTheBagIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_inthebag_01.vcd" nodelay noscene 
+}
+
+Rule terrorblade_InTheBagIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria InTheBag Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_InTheBagIsTerrorEconShardsIsTerrorDemonForm
 }
 
 Response terrorblade_Select
@@ -2917,6 +5796,30 @@ Rule terrorblade_SelectIsTerrorDemonForm_Rule
 {
 	criteria Select Isterrorblade IsTerrorDemonForm
 	response terrorblade_SelectIsTerrorDemonForm
+}
+
+Response terrorblade_SelectIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rare_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_rare_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_SelectIsTerrorEconShards_Rule
+{
+	criteria Select Isterrorblade IsTerrorEconShards
+	response terrorblade_SelectIsTerrorEconShards
+}
+
+Response terrorblade_SelectIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rare_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_rare_02.vcd" nodelay noscene 
+}
+
+Rule terrorblade_SelectIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Select Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_SelectIsTerrorEconShardsIsTerrorDemonForm
 }
 
 Response terrorblade_Defeat
@@ -2947,6 +5850,34 @@ Rule terrorblade_DefeatIsTerrorDemonForm_Rule
 	response terrorblade_DefeatIsTerrorDemonForm
 }
 
+Response terrorblade_DefeatIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_lose_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lose_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lose_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lose_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_DefeatIsTerrorEconShards_Rule
+{
+	criteria Defeat Isterrorblade IsTerrorEconShards
+	response terrorblade_DefeatIsTerrorEconShards
+}
+
+Response terrorblade_DefeatIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_lose_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lose_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lose_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_lose_04.vcd" nodelay noscene 
+}
+
+Rule terrorblade_DefeatIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Defeat Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_DefeatIsTerrorEconShardsIsTerrorDemonForm
+}
+
 Response terrorblade_Victory
 {
 	scene "scenes/terrorblade/terrorblade_terr_win_01.vcd" nodelay noscene 
@@ -2971,6 +5902,32 @@ Rule terrorblade_VictoryIsTerrorDemonForm_Rule
 {
 	criteria Victory Isterrorblade IsTerrorDemonForm
 	response terrorblade_VictoryIsTerrorDemonForm
+}
+
+Response terrorblade_VictoryIsTerrorEconShards
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_win_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_win_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_win_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_VictoryIsTerrorEconShards_Rule
+{
+	criteria Victory Isterrorblade IsTerrorEconShards
+	response terrorblade_VictoryIsTerrorEconShards
+}
+
+Response terrorblade_VictoryIsTerrorEconShardsIsTerrorDemonForm
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_win_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_win_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_win_03.vcd" nodelay noscene 
+}
+
+Rule terrorblade_VictoryIsTerrorEconShardsIsTerrorDemonForm_Rule
+{
+	criteria Victory Isterrorblade IsTerrorEconShards IsTerrorDemonForm
+	response terrorblade_VictoryIsTerrorEconShardsIsTerrorDemonForm
 }
 
 Response terrorblade_EmoteIsEmoteLaugh
@@ -3009,5 +5966,43 @@ Rule terrorblade_EmoteIsTerrorDemonFormIsEmoteLaugh_Rule
 {
 	criteria Emote Isterrorblade IsTerrorDemonForm IsEmoteLaugh
 	response terrorblade_EmoteIsTerrorDemonFormIsEmoteLaugh
+}
+
+Response terrorblade_EmoteIsTerrorEconShardsIsEmoteLaugh
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_laugh_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_EmoteIsTerrorEconShardsIsEmoteLaugh_Rule
+{
+	criteria Emote Isterrorblade IsTerrorEconShards IsEmoteLaugh
+	response terrorblade_EmoteIsTerrorEconShardsIsEmoteLaugh
+}
+
+Response terrorblade_EmoteIsTerrorEconShardsIsTerrorDemonFormIsEmoteLaugh
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_01.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_02.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_03.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_04.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_05.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_07.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_08.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_morph_laugh_09.vcd" nodelay noscene 
+}
+
+Rule terrorblade_EmoteIsTerrorEconShardsIsTerrorDemonFormIsEmoteLaugh_Rule
+{
+	criteria Emote Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEmoteLaugh
+	response terrorblade_EmoteIsTerrorEconShardsIsTerrorDemonFormIsEmoteLaugh
 }
 

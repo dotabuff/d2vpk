@@ -2958,45 +2958,50 @@
 			}
 			"03"
 			{
-				"var_type"			"FIELD_INTEGER"
-				"requiem_reduction_damage"	"-50"
+				"var_type"				"FIELD_INTEGER"
+				"requiem_slow_duration"	"5.0"
 			}
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"requiem_reduction_tooltip"	"-50"
+				"requiem_reduction_damage"	"-50"
 			}
 			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"requiem_reduction_radius"	"700 700 700"
+				"requiem_reduction_tooltip"	"-50"
 			}
 			"06"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"requiem_soul_conversion"	"2 2 2"
+				"requiem_reduction_radius"	"700 700 700"
 			}
 			"07"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"requiem_line_width_start"	"75 100 125"
+				"requiem_soul_conversion"	"2 2 2"
 			}
 			"08"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"requiem_line_width_end"	"400 425 450"
+				"requiem_line_width_start"	"75 100 125"
 			}
 			"09"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"requiem_line_speed"	"700 700 700"
+				"requiem_line_width_end"	"400 425 450"
 			}
 			"10"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"requiem_line_speed"	"700 700 700"
+			}
+			"11"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"soul_death_release"	"0.5"
 			}
-		
+					
 		}
 	}
 	
@@ -20645,6 +20650,11 @@
 				"var_type"					"FIELD_FLOAT"
 				"stun_duration"				"1.5 2.0 2.5 3.0"
 			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cast_range_tooltip"		"550 700 850 1000"
+			}
 		}
 	}	
 
@@ -25348,7 +25358,7 @@
 			"02"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"illusion_incoming_damage"			"300.0"
+				"illusion_incoming_damage"			"200.0"
 			}
 			"03"
 			{
