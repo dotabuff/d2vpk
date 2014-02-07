@@ -5,20 +5,24 @@
 //	"$normalmap" "models\development\flatnormal"
 	"$maskmap1" "models\heroes\terrorblade\demon_masks1"
 	"$maskmap2" "models\heroes\terrorblade\demon_masks2"
-
-
+	"$detail1"  "models/heroes/terrorblade/terrorblade_detail"
+//test
+	$DefaultGemColor "[.1 .5 1]"
+	
 	$SPECULAREXPONENT 32
 	$SPECULARSCALE 5
-//	$SPECULARBLENDTOFULL 1
-	$SPECULARCOLOR "[.1 .6 1]"
 
 	$ENVMAP "models/cubemaps/glossy"
-	$ENVMAPINTENSITY 4
+	$ENVMAPINTENSITY 14
 	$MASKENVBYMETALNESS 0	
 
 	$RIMLIGHTSCALE 1
 	//$RIMLIGHTCOLOR "[.1 .6 1]"
 
+	$DETAIL1BLENDMODE 2 
+	$DETAIL1SCALE 7
+	$DETAIL1BLENDFACTOR 3
+	
 	$AMBIENTSCALE 1
 //	$IgnoreBudgetCheck 1
 	$alphatest 1
@@ -27,11 +31,27 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"-.05"
+			"texturescrollangle"	"83"
+		}
 		"invis_proxy"
 		{
 		}
 		"status_proxy"
 		{
+		}
+		"color_gem_proxy"
+		{
+			"resultVar" "$detail1tint"
+			"defaultVar" "$DefaultGemColor"
+		}
+		"color_gem_proxy"
+		{
+			"resultVar" "$SPECULARCOLOR"
+			"defaultVar" "$DefaultGemColor"
 		}
 	}
 

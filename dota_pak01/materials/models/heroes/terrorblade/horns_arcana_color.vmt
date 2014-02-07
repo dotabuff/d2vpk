@@ -1,0 +1,56 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\terrorblade\horns_arcana_color"
+	"$normalmap" "models\heroes\terrorblade\horns_arcana_normal"
+	"$maskmap1" "models\heroes\terrorblade\horns_arcana_masks1"
+	"$maskmap2" "models\heroes\terrorblade\horns_arcana_masks2"
+	"$detail1"  "models/heroes/terrorblade/terrorblade_detail"
+	
+	"$colorwarp" "models/heroes/statusEffects/colorwarp_tb_arcana"
+	"$colorwarpintensity" "1"
+	
+	$alphatest 1
+	$IgnoreBudgetCheck 1
+
+	$ENVMAP "models/cubemaps/glossy_white"
+	$ENVMAPINTENSITY 9
+	//$MASKENVBYMETALNESS 1	
+	
+	$SPECULAREXPONENT 18
+	$SPECULARSCALE 22
+	$SPECULARCOLOR "[.4 .6	1]"
+	//$SPECULARCOLOR "[1 .15 .21]"
+
+	$DETAIL1BLENDMODE 2 
+	$DETAIL1SCALE 7
+	$DETAIL1BLENDFACTOR 1
+
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[1 .265 .41]"
+
+	$AMBIENTSCALE 1
+		
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"-.05"
+			"texturescrollangle"	"83"
+		}
+		//"Equals"
+		//{
+		//}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"color_gem_proxy"
+		{
+			"resultVar" "$SPECULARCOLOR"
+		}
+	}
+}
