@@ -802,7 +802,8 @@
 
 	"local_player_event_points"
 	{
-		"points"	"short"
+		"points"			"short"
+		"conversion_rate"	"short"
 	}
 
 	"custom_game_difficulty"
