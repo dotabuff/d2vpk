@@ -9622,6 +9622,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_PartyFull_Header"											"Party"
 		"DOTA_PartyFull_Message"										"Your party is full."
 		"DOTA_SignOnMessage_Header"										"Message"
+		"DOTA_Ingots_Header"											"Insufficient Ingots"
+		"DOTA_Ingots_Message"											"Not all party members have sufficient Ingots:\n %s1"
 		"DOTA_PartyNeedsCompendiums"									"All members of your party need Compendiums to participate in Compendium Matchmaking"
 		"DOTA_TeamMatchmaking"											"Team Matchmaking"
 		"DOTA_TeamMatchmaking_Description_NoTeam"						"Create or join a team to play games in Team Matchmaking."
@@ -11571,6 +11573,15 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		
 		"DOTA_PageUnavailable"				"Page Currently Unavailable"
 		"DOTA_PageUnavailableExplanation"	"I'm sure that someone is working hard to fix the problem...<br>Why not queue for a match instead?"
+
+		"Notifications_New"					"New Notifications"
+		"Notifications_All"					"View All Notifications"
+		"Notifications_Requesting"			"Retrieving Notifications..."
+		"Notifications_Failed"				"Failed to Retrieve Notifications."
+		"Notification_Item"					"You have received an item: %s1%s2%s3"
+		"Notification_Action_Taken"			"We’ve recently taken action against one or more players you’ve previously reported for bad conduct. You have received an additional report submission to use. Thanks for your help in making the Dota 2 community a friendlier place."
+		
+
 
 		//-------------------------------------------------------------------------------------------
 		// Economy
@@ -15477,20 +15488,29 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_spring_pract01"				"PRACTICE BATTLE!"
 		"dota_spring_intro_text01"			"BATTLE THE YEAR BEAST!"
 		"dota_spring_intro_text02"			"Inflict as much damage as you can to the Year Beast. The more damage you do, the better loot you get! \n\nIf the Year Beast grabs someone, shoot a Firework at him to break them free!"
-		"dota_spring_intro_text03"			"Your currency will be converted to gold."
-		"dota_spring_intro_text04"			"Unspent gold will be converted back to currency after the match."
+		"dota_spring_intro_text03"			""
+		"dota_spring_intro_text04"			"All players receive a fixed amount of gold."
 		"dota_spring_intro_text05"			"Flamesalt Ingots"
 		"dota_spring_intro_text06"			"Gold Coins"
 		
 		"NIAN_SELECT_MODE"					"Select Your Mode"
 		"nian_battle_real"					"FIGHT THE BEAST"
-		"nian_battle_real_desc"				"Battle The Beast for real! In this mode, your Ingots will be converted to Gold and used to buy equipment for the fight. Any unspent gold will be converted back into ingots when the fight is over. Deal more damage in this mode to earn great rewards!"
+		"nian_battle_real_desc"				"Battle The Beast for real! In this mode, you can select how many Ingots you want to spend. Your starting in-game gold and Jade Tokens rewards increase based on how much damage you do the Beast and how many Ingots you've decided to spend.\n\nAll members of your party must have enough Ingots to spend on the selected mode."
 		"nian_battle_practice"				"PRACTICE"
-		"nian_battle_practice_desc"			"Practice against the beast to hone your skills. You will be supplied with ample gold for the fight. No rewards will be earned in this mode."
+		"nian_battle_practice_desc"			"Practice against the beast to hone your skills. No Jade Tokens will be awareded in this mode. You can select how much starting gold to recieve."
+		"nian_battle_0"						"Practice"
+		"nian_battle_1"						"150"
+		"nian_battle_2"						"450"
+		"nian_battle_3"						"1000"
+		"nian_battle_4"						"2500"
+		"nian_battle_1_gold"				"6000"
+		"nian_battle_2_gold"				"18000"
+		"nian_battle_3_gold"				"40000"
+		"nian_battle_4_gold"				"100000"
 
 		"dota_spring_intro_text02_practice"	"Inflict as much damage as you can to the Year Beast.\n\nIf the Year Beast grabs someone, shoot a Firework at him to break them free!"
 		"dota_spring_intro_text03_practice"	""
-		"dota_spring_intro_text04_practice"	"All players receive a fixed amount of gold in Practice mode."
+		"dota_spring_intro_text04_practice"	"All players receive a fixed amount of gold."
 		
 		"dota_redeem_springtext1"			"Flamesalt Ingots"
 
