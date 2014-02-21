@@ -329,6 +329,11 @@
 				}
 			}
 		}
+		"elder_titan"		
+		{
+			"heroID"		"103"
+			"tag"			"Elder Titan"
+		}
 		"ember_spirit"		
 		{
 			"heroID"		"106"
@@ -539,6 +544,11 @@
 			"heroID"		"48"
 			"tag"			"Luna"
 		}
+		"lifestealer"		
+		{
+			"heroID"		"54"
+			"tag"			"Lifestealer"
+		}
 		"lycan"		
 		{
 			"heroID"		"77"
@@ -650,6 +660,11 @@
 		{
 			"heroID"		"12"
 			"tag"			"Phantom Lancer"
+		}
+		"puck"		
+		{
+			"heroID"		"13"
+			"tag"			"Puck"
 		}
 		"pudge"		
 		{
@@ -781,7 +796,6 @@
 			"heroID"		"18"
 			"tag"			"Sven"
 		}
-//  Templar Assassin
 		"lanaya"
 		{
 			"heroID"		"46"
@@ -792,6 +806,11 @@
 			"heroID"		"29"
 			"tag"			"Tidehunter"
 		}
+		"treant"		
+		{
+			"heroID"		"83"
+			"tag"			"Treant Protector"
+		}
 		"ursa"				
 		{
 			"heroID"		"70"
@@ -801,6 +820,11 @@
 		{
 			"heroID"		"100"
 			"tag"			"Tusk"
+		}
+		"vengefulspirit"		
+		{
+			"heroID"		"20"
+			"tag"			"Vengeful Spirit"
 		}
 //		"venomancer"		
 //		{
@@ -918,21 +942,21 @@
 
 		"classes"
 		{
-			"abaddon"                "materials/models/heroes/abaddon/abaddon_body.vmt"
+			"abaddon"                  "materials/models/heroes/abaddon/abaddon_body.vmt"
 			"alchemist"                "materials/models/heroes/alchemist/alchemist_body_color.vmt"
 			"antimage"                 "materials/models/heroes/antimage/antimage.vmt"
 			"axe"                      "materials/models/heroes/axe/axe_body_color.vmt"
-			"batrider"              	"materials/models/heroes/batrider/batrider_color.vmt"			
+			"batrider"                 "materials/models/heroes/batrider/batrider_color.vmt"			
 			"beastmaster"              "materials/models/heroes/beastmaster/beastmaster_color.vmt"
 			"blood_seeker"             "materials/models/heroes/blood_seeker/blood_seeker_color.vmt"
 			"bounty_hunter"            "materials/models/heroes/bounty_hunter/bountyhunter_body.vmt"
 			"brewmaster"               "materials/models/heroes/brewmaster/brewmaster_color.vmt"
 			"bristleback"              "materials/models/heroes/bristleback/bristleback_color.vmt"
 			"broodmother"              "materials/models/heroes/broodmother/broodmother_body.vmt"
-			"centaur"									 "materials/models/heroes/centaur/centaur_color.vmt"
+			"centaur"		   "materials/models/heroes/centaur/centaur_color.vmt"
 			"chaos_knight"	           "materials/models/heroes/chaos_knight/body.vmt"
-			"chen"	           	   		"materials/models/heroes/chen/chen_color.vmt"
-			"clinkz"									"materials/models/heroes/clinkz/clinkz_body.vmt"
+			"chen"	           	   "materials/models/heroes/chen/chen_color.vmt"
+			"clinkz"		   "materials/models/heroes/clinkz/clinkz_body.vmt"
 			"crystal_maiden"           "materials/models/heroes/crystal_maiden/crystal_maiden.vmt"
 			"dark_seer"                "materials/models/heroes/dark_seer/dark_seer_body.vmt"
 			"dazzle"                   "materials/models/heroes/dazzle/dazzle_base.vmt"
@@ -941,9 +965,10 @@
 			"doom"                     "materials/models/heroes/doom/doom_color.vmt"
 			"dragon_knight"            "materials/models/heroes/dragon_knight/knight_color.vmt"
 			"drow"                     "materials/models/heroes/drow/drow_base.vmt"
-			"earthshaker"								"materials/models/heroes/earthshaker/earthshaker.vmt"
-			"earth_spirit"						  "materials/models/heroes/earth_spirit/earth_spirit_base_color.vmt"
-			"ember_spirit"							"materials/models/heroes/ember_spirit/ember_spirit_color.vmt"
+			"earthshaker"		   "materials/models/heroes/earthshaker/earthshaker.vmt"
+			"earth_spirit"		   "materials/models/heroes/earth_spirit/earth_spirit_base_color.vmt"
+			"elder_titan"			"materials/models/heroes/elder_titan/elder_titan_color.vmt"
+			"ember_spirit"		   "materials/models/heroes/ember_spirit/ember_spirit_color.vmt"
 			"enchantress"              "materials/models/heroes/enchantress/enchantress_body_color.vmt"
 			"faceless_void"            "materials/models/heroes/faceless_void/faceless_void_body_color.vmt"
 			"furion"                   "materials/models/heroes/furion/furion_color.vmt"
@@ -952,11 +977,12 @@
 			"invoker"                  "materials/models/heroes/invoker/invoker_color.vmt"
 			"juggernaut"               "materials/models/heroes/juggernaut/juggernaut_torso.vmt"
 			"keeper_of_the_light"      "materials/models/heroes/keeper_of_the_light/keeper_body.vmt"
-			"lanaya"         	   			 "materials/models/heroes/lanaya/lanaya_base.vmt"			
+			"lanaya"         	   "materials/models/heroes/lanaya/lanaya_base.vmt"			
 			"kunkka"                   "materials/models/heroes/kunkka/kunkka2_body.vmt"
 			"legion_commander"         "materials/models/heroes/legion_commander/legion_base_color.vmt"
 			"leshrac"                  "materials/models/heroes/leshrac/leshrac_color.vmt"
 			"lich"                     "materials/models/heroes/lich/lich_base.vmt"
+			"lifestealer"		   "materials/models/heroes/life_stealer/lifestealer_base.vmt"
 			"lina"                     "materials/models/heroes/lina/lina_base.vmt"
 			"lion"                     "materials/models/heroes/lion/lion_body.vmt"
 			"lone_druid"               "materials/models/heroes/lone_druid/lonedruid_base.vmt"
@@ -973,6 +999,7 @@
 			"omniknight"               "materials/models/heroes/omniknight/omniknight_color.vmt"
 			"phantom_assassin"	   "materials/models/heroes/phantom_assassin/phantom_assassin_body_color.vmt"
 			"phantom_lancer"	   "materials/models/heroes/phantom_lancer/phantom_lancer_body_color.vmt"
+			"puck"				"materials/models/heroes/puck/puck_color.vmt"
 			"pudge"               	   "materials/models/heroes/pudge/pudge_body_color.vmt"
 			"pugna"               	   "materials/models/heroes/pugna/pugna_color.vmt"
 			"queenofpain"              "materials/models/heroes/queenofpain/queenofpain_color.vmt"
@@ -993,9 +1020,11 @@
 			"storm_spirit"             "materials/models/heroes/storm_spirit/storm_v2_base.vmt"
 			"sven"                     "materials/models/heroes/sven/sven_color.vmt"
 			"lanaya"                   "materials/models/heroes/lanaya/lanaya_base.vmt"
+			"treant"			"materials/models/heroes/treant_protector/treantprotector_body_color.vmt"
 			"tidehunter"               "materials/models/heroes/tidehunter/tidehunter.vmt"
 			"tuskarr"                  "materials/models/heroes/tuskarr/tusk_base_color.vmt"
 			"ursa"                     "materials/models/heroes/ursa/ursa_color.vmt"
+			"vengefulspirit"	   "materials/models/heroes/vengeful/vengeful_body_color.vmt"
 //			"venomancer"               "materials/models/heroes/venomancer/venomancer_color.vmt"
 			"warlock"                  "materials/models/heroes/warlock/warlock_color.vmt"
 			"weaver"                   "materials/models/heroes/weaver/weaver_color.vmt"

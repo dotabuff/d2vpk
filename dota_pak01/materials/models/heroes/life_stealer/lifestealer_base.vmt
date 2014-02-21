@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/life_stealer/lifestealer_base.vtf"
+	"$normalmap" "models/heroes/life_stealer/lifestealer_base_normal"
+	"$maskmap1" "models/heroes/life_stealer/lifestealer_base_masks1"
+	"$maskmap2" "models/heroes/life_stealer/lifestealer_base_masks2"
+
+
+	$alphatest 1
+
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 0.4	
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 1
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+	$FRESNELWARP "models/heroes/life_stealer/lifestealer_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

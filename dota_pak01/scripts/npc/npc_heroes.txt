@@ -4397,59 +4397,30 @@
 				"SlotText"	"#LoadoutSlot_Head"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1200"
+				"MaxPolygonsLOD0"	"1000"
 				"MaxPolygonsLOD1"	"650"
 			}
 			"2"	
 			{
 				"SlotIndex"	"2"
-				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_Back"
-				"TextureWidth"		"256"
-				"TextureHeight"		"128"
-				"MaxPolygonsLOD0"	"350"
-				"MaxPolygonsLOD1"	"250"
+				"SlotName" 	"shoulder"
+				"SlotText"	"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"512"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1400"
+				"MaxPolygonsLOD1"	"900"
 			}
 			"3"	
 			{
 				"SlotIndex"	"3"
-				"SlotName" 	"shoulder"
-				"SlotText"	"#LoadoutSlot_Shoulder"
-				"TextureWidth"		"256"
-				"TextureHeight"		"128"
-				"MaxPolygonsLOD0"	"750"
-				"MaxPolygonsLOD1"	"500"
-			}
-			"4"	
-			{
-				"SlotIndex"	"4"
-				"SlotName" 	"arms"
-				"SlotText"	"#LoadoutSlot_Offhand_Arms"
-				"TextureWidth"		"256"
-				"TextureHeight"		"128"
-				"MaxPolygonsLOD0"	"350"
-				"MaxPolygonsLOD1"	"250"
-			}
-			"5"	
-			{
-				"SlotIndex"	"5"
 				"SlotName" 	"legs"
 				"SlotText"	"#LoadoutSlot_Offhand_Legs"
-				"TextureWidth"		"256"
-				"TextureHeight"		"128"
-				"MaxPolygonsLOD0"	"350"
-				"MaxPolygonsLOD1"	"250"
-			}
-			"6"	
-			{
-				"SlotIndex"	"6"
-				"SlotName" 	"belt"
-				"SlotText"	"#LoadoutSlot_Offhand_Belt"
-				"TextureWidth"		"256"
+				"TextureWidth"		"512"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"350"
-				"MaxPolygonsLOD1"	"250"
+				"MaxPolygonsLOD0"	"800"
+				"MaxPolygonsLOD1"	"400"
 			}
+
 		}
 	
 	
@@ -11429,7 +11400,7 @@
 		"PickSound"					"life_stealer_lifest_spawn_01"
 		"BanSound"					"life_stealer_lifest_anger_05"
 		"url"					"Lifestealer"
-		"NoCombine"					"1"
+		//"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_skeleton_king"
 
 		// Abilities
@@ -11526,19 +11497,42 @@
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
 				"SlotText"	"#LoadoutSlot_Head"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1000"
+				"MaxPolygonsLOD1"	"650"
 			}
 			"2"
 			{
 				"SlotIndex"	"2"
-				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
-			}				
+				"SlotName"	"back"
+				"SlotText"	"#LoadoutSlot_Back"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1000"
+				"MaxPolygonsLOD1"	"650"
+			}
 			"3"
 			{
 				"SlotIndex"	"3"
-				"SlotName"	"taunt"
-				"SlotText"	"#LoadoutSlot_Taunt"
+				"SlotName"	"arms"
+				"SlotText"	"#LoadoutSlot_Arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"900"
+				"MaxPolygonsLOD1"	"650"
 			}
+			"4"
+			{
+				"SlotIndex"	"4"
+				"SlotName"	"belt"
+				"SlotText"	"#LoadoutSlot_Belt"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"450"
+				"MaxPolygonsLOD1"	"250"
+			}				
+
 		}
 		"Bot"
 		{

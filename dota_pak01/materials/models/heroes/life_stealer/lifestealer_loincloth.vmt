@@ -6,22 +6,20 @@
 	"$maskmap2" "models/heroes/life_stealer/lifestealer_loincloth_masks2"
 //	"$diffusewarp" "models/heroes/drow/diffusewarp"
 
+	$alphatest 1
 
 
-//	$ENVMAP "models/cubemaps/glossy"
-//	$ENVMAPINTENSITY 1	
-//	$MASKENVBYMETALNESS 1
-//	$METALNESSBLENDTOFULL 0
 
-	$SPECULAREXPONENT 30
+
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 0.4	
+	$SPECULAREXPONENT 10
 	$SPECULARSCALE 1
-	$SPECULARCOLOR "[1 1 1]"
+
 	$RIMLIGHTSCALE 1
-	$RIMLIGHTCOLOR "[0.7 0.3 0.3]"
 	$AMBIENTSCALE 1
 
-
-	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+	$FRESNELWARP "models/heroes/life_stealer/lifestealer_fresnelranges"
 
 
 
