@@ -6481,6 +6481,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"fantasy_league_matchups_wait"				"Retrieving Matchups..."
 		"fantasy_league_matchups_error"				"Error retrieving matchups."
+		"fantasy_league_matchups_preseason"			"Matchups will be assigned after the Fantasy Draft is completed."
 
 		"fantasy_league_messages_wait"				"Retrieving Messages..."
 		"fantasy_league_messages_error"				"Error retrieving messages."
@@ -6493,6 +6494,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"fantasy_league_teams_roster_swap_wait"		"Updating Roster..."
 		"fantasy_league_teams_roster_swap_error"	"Failed to update Roster."
+
+		"fantasy_league_teams_roster_wait"			"Retrieving Roster..."
+		"fantasy_league_teams_roster_error"			"Failed to retrieve Roster."
+
 
 		"fantasy_league_create_invalid"				"You are not currently able to create a fantasy league."
 		"fantasy_league_join_invalid"				"You are not currently invited to join any fantasy leagues."
@@ -6618,10 +6623,11 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"fantasy_league_draft_unscheduled"			"Draft is Unscheduled"
 		"fantasy_league_draft_unscheduled_long"		"When your Fantasy League Commissioner sets the Draft time, it will appear here!"
-		"fantasy_league_draft_unscheduled_commish"	"Edit the Fantasy League settings to set a Draft time."
-		"fantasy_league_draft_upcoming"				"Draft is Upcoming"
-		"fantasy_league_draft_open"					"League Draft is Open!"
-		"fantasy_league_draft_live"					"League Draft is Live!"
+		"fantasy_league_draft_unscheduled_commish"	"As the Commissioner, you can set the time for the Live Draft in the Settings panel."
+		"fantasy_league_draft_unscheduled"			"Fantasy Draft is not yet Scheduled"
+		"fantasy_league_draft_upcoming"				"Fantasy Draft is Upcoming"
+		"fantasy_league_draft_live"					"Fantasy Draft is Live!"
+		"fantasy_league_draft_upcoming"				"Fantasy Draft is Upcoming"
 		"fantasy_league_draft_time_label"			"Draft is scheduled for %s1 at %s2.\n\nLeague members and settings will be locked and you will be able to enter the draft %s3 minutes before it begins."
 		"fantasy_league_draft_countdown_d"			"Draft begins in %s1 Days, %s2 Hours, %s3 Minutes, %s4 Seconds."
 		"fantasy_league_draft_countdown_h"			"Draft begins in %s1 Hours, %s2 Minutes, %s3 Seconds."
@@ -6631,6 +6637,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"fantasy_league_draft_details"				"%s1 minutes prior to the start of the draft, teams and settings will be locked."
 		"fantasy_draft_completed"					"Fantasy Draft Completed"
 		"fantasy_draft_completed_details"			"You can now set your lineup, browse matchups, drop players, and pick up free agents.  Good luck!"
+		"fantasy_league_draft_members"				"Joined Members"
+		"fantasy_team_open"							"Open Slot"
 
 		"fantasy_draft_header_pre_draft"			"Pre-Draft"
 		"fantasy_draft_header_drafting"				"Live Draft"
