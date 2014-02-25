@@ -6618,8 +6618,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"fantasy_league_daily_matchup"				"Day %s1"
 		"fantasy_league_weekly_matchup"				"Week %s1"
 
-		"fantasy_draft_interrupted"					"Reconnecting to the Dota 2 network"
-		"fantasy_draft_interrupted_details"			"The draft will resume when connection is re-established to the Dota 2 network."
+		"fantasy_draft_interrupted"					"Reconnecting"
+		"fantasy_draft_interrupted_details"			"The draft will automatically resume shortly."
 
 		"fantasy_league_draft_unscheduled"			"Draft is Unscheduled"
 		"fantasy_league_draft_unscheduled_long"		"When your Fantasy League Commissioner sets the Draft time, it will appear here!"
@@ -14195,8 +14195,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_AntiAddiction_Level1_Warning_RED" "Here's a warning level 1 RED"
 
 		"DOTA_AntiAddiction_Level2_Warning_GREEN_chat" "Here's a warning level 2 GREEN in chat"
-		"DOTA_AntiAddiction_Level2_Warning_GREEN" "Here's a warning GREEN"
-		"DOTA_AntiAddiction_Level2_Warning_RED" "Here's a warning level 2 RED"
+		"DOTA_AntiAddiction_Level2_Warning_GREEN" "Since your account information is not complete, for safety reasons, your gains ingame will be halved after 3 hours, and will be zero after another 2 hours, please add your information and relogin."
+		"DOTA_AntiAddiction_Level2_Warning_RED" "You have been under subhealthy game hours, we suggest you to exit and have a rest. For your incomplete account information, please add your information to clear safety issues and relogin."
+		"DOTA_AntiAddiction_CompleteInfoNow"	"Enter Information"
+		"DOTA_AntiAddiction_CompleteInfoNotNow"	"Not Now"
 
 		"DOTA_AntiAddiction_Reminder_Warning1"	"You've been online for %s1"
 		"DOTA_AntiAddiction_Reminder_Warning2"	"You've been online for %s1"
@@ -14205,7 +14207,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_AntiAddiction_Initial_With_ID_18Plus"		"Last time online: %s1\nLast IP Address: %s2"
 		"DOTA_AntiAddiction_Initial_With_ID_Under_18"	"You are under 18. The anti addiction system is in effect.\nLast time online: %s1\nLast IP Address: %s2"
 		"DOTA_AntiAddiction_Initial_No_ID"				"Your account is not registered.\nLast time online: %s1\nLast IP Address: %s2"
+		"DOTA_AntiAddiction_Initial_No_ID_Popup"		"Your account is not fully registered. Would you like to enter your information now?"
 		"DOTA_AntiAddiction_Initial_DateFormat"			"%s1Y%s2M%s3D  %s4:%s5:%s6"
+		"DOTA_AntiAddiction_NoInfo_Popup"				"Since your account information is not complete, for safety reasons, your gains ingame will be halved after 3 hours, and will be zero after another 2 hours, please add your information and relogin."
 
 		"Econ_Store_PurchaseType_Rental_1Day"			"%s1 (1-Day Rental)"
 		"Econ_Store_PurchaseType_Rental_3Day"			"%s1 (3-Day Rental)"
