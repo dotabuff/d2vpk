@@ -5,17 +5,17 @@
 		"name"		"broke_leg"
 		"columns"		"1"
 		"rows"		"4"
-		"damping"		"0.385000"				// 0.98
+		"damping"		"0.85000"				// 0.98
 		"gravity"		"0 0 -1"
-		"gravity_scale"		"600.000000"		// 500.00
+		"gravity_scale"		"100.000000"		// 500.00
 		"WorldFriction"		"0.200000"		//0.0
 		"LocalForce"		"1.000000"
 		"LocalRotation"		"1.0000"
-		"FixedPointDamping"		"0.165000"
+		"FixedPointDamping"		"0.0000"
 		"StretchForce"		"1"			// 1.0
-		"SpringStretchiness"		"0.2"		// 0.0
-		"AnimationForceAttraction"		"4"
-		"AnimationVertexAttraction"		"5"
+		"SpringStretchiness"		"0.0"		// 0.0
+		"AnimationForceAttraction"		"1.2"
+		"AnimationVertexAttraction"		"6"
 		"ExternalForceScale"		"1.000000"
 		"StructSpringConstant"		"10.000000"
 		"StructSpringDamping"		"0.100000"
@@ -24,9 +24,9 @@
 		"BendSpringConstant"		"10.000000"
 		"BendSpringDamping"		"0.500000"
 		"R0"		"fixed"
-		"R1"		"world | mass 1.0"			// 1.0
-		"R2"		"world | mass 1.0"			// 1.0
-		"R3"		"world | mass 8.0"			// 1.0
+		"R1"		"mass 1.0"			// 1.0
+		"R2"		"mass 1.0"			// 1.0
+		"R3"		"mass 5.0"			// 1.0
 		"BonePrefix"		"broke_"
 	}
 	
