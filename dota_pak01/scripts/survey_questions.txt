@@ -4,6 +4,7 @@
 	{	
 		// legacy match quality
 		"enabled"		"0"
+		"icon"			""
 	}
 
 	"1"
@@ -11,6 +12,7 @@
 		// match quality
 		"enabled"		"1"
 		"responsestyle"		"lowhigh"
+		"icon"			"match_quality"
 	}
 
 	"2"
@@ -18,6 +20,7 @@
 		// quality as teammate
 		"enabled"		"1"
 		"responsestyle"		"lowhigh"
+		"icon"			"self_cooperation"
 	}
 	
 	"3"
@@ -25,6 +28,7 @@
 		// quality of teammates
 		"enabled"		"1"
 		"responsestyle"		"lowhigh"
+		"icon"			"teammate_cooperation"
 	}
 	// when you add a new response style "thinfat", you have to create the response strings in dota_english.txt
 	// the only part of the token that changes is the 'thinfat' string
