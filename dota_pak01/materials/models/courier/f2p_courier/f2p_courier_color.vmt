@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/f2p_courier/f2p_courier_color.vtf"
+	"$normalmap" "models/courier/f2p_courier/f2p_courier_normal"
+
+	"$maskmap1" "models/courier/f2p_courier/f2p_courier_masks1"
+	"$maskmap2" "models/courier/f2p_courier/f2p_courier_masks2"
+
+
+	"$alphatest" "1"
+
+
+	
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 1
+	$MASKENVBYMETALNESS 1
+
+	$SPECULAR_BLOOM_SCALE 1
+	$SPECULAREXPONENT 5	
+	$SPECULARSCALE 5	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+
+
+	$RIMLIGHTSCALE 4
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+
+
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

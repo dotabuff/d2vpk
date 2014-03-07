@@ -385,3 +385,46 @@
 		}
 	}
 }
+
+"Hero_Sven.IronWill"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/omniknight/attack01.wav"
+		"wave"			"weapons/hero/omniknight/attack02.wav"
+		"wave"			"weapons/hero/omniknight/attack03.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Sven.Attack.Impact"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+// 			"volume_adjust_local_player"
+// 			{
+// 			"input2" "0.0" // this adds to local player volume only, 0.0 = mult x 1.
+// 			}
+			"mixer"
+			{
+				"mixgroup" "BaseAttacks"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}

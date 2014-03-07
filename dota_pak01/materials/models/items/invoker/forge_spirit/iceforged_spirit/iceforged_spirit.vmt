@@ -2,22 +2,22 @@
 {
 	"$baseTexture"		"models/items/invoker/forge_spirit/iceforged_spirit/iceforged_spirit_color"
 	"$normalmap"		"models/items/invoker/forge_spirit/iceforged_spirit/iceforged_spirit_normal"
-	"$detail1"		"models/heroes/invoker/forge_spirit_motion"
-	"$SPECULAREXPONENTBLENDTOFULL"		"1"
+	"$maskmap1"			"models/items/invoker/forge_spirit/iceforged_spirit/iceforged_spirit_mask1"
+	"$maskmap2"			"models/items/invoker/forge_spirit/iceforged_spirit/iceforged_spirit_mask2"	
+	"$detail1"			"models/heroes/invoker/forge_spirit_motion"
+
 	"$SPECULAREXPONENT"		"25"
 	"$SPECULARSCALE"		"10"
-	"$AMBIENTSCALE"		"0"
 	"$SPECULARCOLOR"		"[1 0 0]"
 	"$SPECULAR_BLOOM_SCALE"		"0"
-//	"$RIMLIGHTBLENDTOFULL"		"1"
+
 	"$RIMLIGHTSCALE"		"2"
-	"$RIMAMBIENTS"		"1"
+	"$RIMAMBIENTS"			"1"
 	"$RIMLIGHTCOLOR"		"[1 0 0]"
+
 	"$DETAIL1BLENDMODE"		"4"
-	"$DETAIL1SCALE"		"1"
-//	"$DETAIL1BLENDTOFULL"		"1"
-//	"$SPECULARBLENDTOFULL"		"1"
-//	"$SELFILLUMBLENDTOFULL"		"1"
+	"$DETAIL1SCALE"			"1"
+
 	"Proxies"
 	{
 		"TextureScroll"
@@ -39,6 +39,5 @@
 		{
 		}
 	}
-	"$maskmap1"		"models/items/invoker/forge_spirit/iceforged_spirit/iceforged_spirit_mask1"
-	"$maskmap2"		"models/items/invoker/forge_spirit/iceforged_spirit/iceforged_spirit_mask2"
+
 }

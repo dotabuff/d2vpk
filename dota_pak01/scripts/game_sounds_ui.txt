@@ -1379,6 +1379,44 @@
 	}
 }
 
+"Waitingforplayers_Boost_Hit"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/stingers/stinger_short.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_vo_clamped"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+	}
+}
+
+"Waitingforplayers_Boost_Shared"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"			"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"#items/mek_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_vo_clamped"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+	}
+}
+
 // Loot drop sound effects (played for all players) ======================================
 
 "Loot_Drop_Sfx_Common"

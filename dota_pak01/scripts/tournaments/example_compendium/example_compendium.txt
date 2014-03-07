@@ -1,89 +1,255 @@
+// To test in game, use the test_compendium <this file> command
+// Note that you'll need to surround the file name with quotes.
+// i.e.     test_compendium "u:/compendium/example_compendium.txt"
+//
+// When testing, put all images into the same directory as this file, and they'll be found automatically.
+// Note that selections won't actually be saved when you're testing.
+
 "example_compendium.txt"
 {
 	"timers"
 	{
 		// These timers are in epoch time. http://www.epochconverter.com/ is a good site to convert date/time into epoch time.
-		"past"				"1390853798"
-		"future"			"1390853798"
+		"past"				"1392417000"
+		"future"			"1492457000"
 	}
 
 	"pages"
 	{
+		// This is a list of pages, as many as you'd like, in the order they appear in the compendium. 
+		// Each must have a unique name.
+		// Page parameters:
+		//		"template"		- Template to use for the page. See below for examples. "blank" gives you an empty page.
+		//		"images"		- List of images on the page.
+		//		"text"			- List of text blocks on the page.
+		//		"selections"	- List of dropdown selections on the page.
+		//		"timers"		- The timer used to lock selections on this page, if any.
+		//		"video"			- Details for an embedded youtube video on the page.
+		//
+		// Any page element (image/text/etc) that is left unspecified will just be hidden.
+		
 		"page_title"
 		{
+			// The full_image template is a page with a single image that covers the entire page.
+			//		Elements that must be specified:
+			//			"image1"
+			//
 			"template"		"full_image"
 			"images"
 			{
 				"image1"
 				{
 					"filename"	"crystal_maiden.jpg"
-					"handle"	"90345086096881547"
 				}
 			}
 		}
 
-		"page1"
+		"imagesandtext"
 		{
+			// The title_image_1 template is a page with title text at the top, and a large image below.
+			//		Elements that must be specified:
+			//			"title"
+			//			"image1"
+			//
 			"template"		"title_image_1"
 			"images"
 			{
 				"image1"
 				{
-	// 				"handle"	"90345086097030000"
+					// "dota_filename" allows you to specify that the image should be an image that's part of Dota's existing image set.
+					// These filenames must be relative to the dota game directory. See https://developer.valvesoftware.com/wiki/VPK for
+					// information on how to inspect Dota's .pak files and find the list of existing images.
 					"dota_filename"	"images/heroes/Beastmaster.png"
 				}
 			}
 			"text"
 			{
-				"title"		"This title needs a localization strategy"
+				"title"		"THIS IS SOME TITLE TEXT"
 			}
 		}
 
-		"page2"
+		"imagesandtext_with_custom_examples"
 		{
+			// The title_image_1 template is a page with title text at the top, and a large image below.
+			//		Elements that must be specified:
+			//			"title"
+			//			"image1"
+			//
+			"template"		"title_image_1"
+			"images"
+			{
+				"image1"
+				{
+					"filename"	"death_prophet.jpg"
+				}
+
+				// These two images are custom images. You can specify as many as you like, as long as they have
+				// unique names (i.e. custom1, custom2, custom3, etc).
+				// Custom image parameters:
+				//		"x"		- Image X position. Pages are 664x610.
+				//		"y"		- Image Y position. Pages are 664x610.
+				//		"w"		- Image width.
+				//		"h"		- Image height.
+				//		"depth" - Either "front" or "back" ("front" if unspecified). Front images will be placed in front of existing content in the template. Back will be behind.
+				//
+				"custom1"
+				{
+					"filename"	"crystal_maiden.jpg"
+					"x"			"0"
+					"y"			"0"
+					"w"			"300"
+					"h"			"120"
+					"depth"		"back"
+				}
+				"custom2"
+				{
+					"dota_filename"	"images/heroes/Beastmaster.png"
+					"x"			"350"
+					"y"			"10"
+					"w"			"300"
+					"h"			"120"
+					"depth"		"front"
+				}
+			}
+			"text"
+			{
+				"title"		"THIS IS SOME TITLE TEXT"
+
+				// These two pieces of text are custom text blocks. You can specify as many as you like, as long as they have
+				// unique names (i.e. custom1, custom2, custom3, etc).
+				// Custom text parameters:
+				//		"text"  - Text to display.
+				//		"font"	- Must be one of these fonts: "text", "textbold", "title".
+				//		"size"	- Font size.
+				//		"x"		- Text X position. Pages are 664x610.
+				//		"y"		- Text Y position. Pages are 664x610.
+				//		"w"		- Text width. Make sure you leave enough room for other languages (good rule of thumb is to leave 2x the amount required for english)
+				//		"h"		- Text height.
+				//		"align" - Must be one of these: "left", "right", "center" ("left" if unspecified).
+				//		"depth" - Either "front" or "back" ("front" if unspecififed). Front text will be placed in front of existing content in the template. Back will be behind.
+				//		"color" - RGB values of the text ("255 255 255" if unspecified).
+				//
+
+				"custom1"
+				{
+					"text"		"Text font left front WHITE"
+					"font"		"text"
+					"size"		"20"
+					"x"			"0"
+					"y"			"120"
+					"w"			"400"
+					"h"			"200"
+					"align"		"left"
+					"depth"		"front"
+				}
+				"custom2"
+				{
+					"text"		"Title font right front GREEN"
+					"font"		"title"
+					"size"		"20"
+					"x"			"0"
+					"y"			"140"
+					"w"			"664"
+					"h"			"200"
+					"align"		"right"
+					"depth"		"front"
+					"color"		"0 255 0"
+				}
+				"custom3"
+				{
+					"text"		"Bold Text font center front RED"
+					"font"		"textbold"
+					"size"		"20"
+					"x"			"0"
+					"y"			"200"
+					"w"			"664"
+					"h"			"200"
+					"align"		"center"
+					"depth"		"front"
+					"color"		"255 0 0"
+				}
+			}
+		}
+
+		"imagesandtext2"
+		{
+			// The title_image_2 template is a page with title text at the top, a large image below, and some smaller subtext beneath.
+			//		Elements that must be specified:
+			//			"title"
+			//			"subtitle"
+			//			"image1"
+			//
 			"template"		"title_image_2"
 			"images"
 			{
 				"image1"	
 				{
 					"filename"	"banner.png"
-					"handle"	"90343288303352932"
 				}
 			}
 			"text"
 			{
-				"title"		"This title needs a localization strategy"
-				"subtitle"	"And so does this subtext"
+				"title"		"THIS IS A LONG TITLE TO SHOW THAT IT WORD WRAPS"
+				"subtitle"	"This is some subtext"
 			}
 		}
 
-		"page3"
+		"imagesandtext3"
 		{
+			// The title_image_3 template is a page with a full page image, and text that sits on top.
+			//		Elements that must be specified:
+			//			"title"
+			//			"image1"
+			//
 			"template"		"title_image_3"
 			"images"
 			{
 				"image1"
 				{
 					"filename"	"death_prophet.jpg"
-					"handle"	"90342675071463937"
 				}
 			}
 			"text"
 			{
-				"title"		"This unlocalized text is right on top of the image"
+				"title"		"This text is right on top of the image"
 			}
 		}
 
-		"page4"
+		"example_selection"
 		{
+			// The selections_1 template is a page with a title, section, and up to 7 dropdown selections. At the bottom is a timer.
+			//		Elements that must be specified:
+			//			"title"
+			//			"subtitle"
+			//			"selection1"
+			//			"selection2"
+			//			"selection3"
+			//			"selection4"
+			//			"selection5"
+			//			"selection6"
+			//			"selection7"
+			//
 			"template"		"selections_1"
 			"text"
 			{
-				"title"		"League Selections"
-				"subtitle"	"Group 1"
+				"title"		"EXAMPLE SELECTION PAGE"
+				"subtitle"	"GROUP 1"
 			}
 			"selections"
 			{
+				// Selection parameters:
+				//	"description"		- Text that appears above the selection
+				//	"points"			- Number of points this selection is worth, if any.
+				//	"selection_index"	- Must be unique within your entire compendium. Used to store selections on the backend.
+				//  "choice_type"		- Must be one of "generic", "hero", "all_heroes". 
+				//			Generic selections have no logic, will simply list your choices.
+				//			Hero dropdowns should be used whenever the choices are heroes.
+				//			All Hero dropdowns will automatically be filled out with all the existing heroes so you don't need to list them manually.
+				//	"choices"			- The list of choices in the dropdown. The values should be unique indices (or hero IDs if it's a Hero dropdown)
+				//	"selection_set"		- A string that, if matching other selections in the compendium, ensures that no two selections in the set are ever set to the same choice.
+				//						  Choices are compared using the values of all the choices in each selection in the set, not the choice description (i.e. it uses the hero IDs in Hero dropdowns, not the Hero names)
+				//
+
 				"selection1"
 				{
 					"description"		"Select a Hero?"
@@ -105,14 +271,12 @@
 				"selection2"
 				{
 					"description"		"Select a Player?"
-					"points"			"2"
 					"selection_index"	"2"
 
 					"choice_type"		"generic"
-					"choice_set"		"test_playerlist"
 					"choices"
 					{
-						"IG - Zhou"				"1"
+						"IG - ChuaN"			"1"
 						"Navi - Dendi"			"2"
 						"DK - Mushi"			"3"
 						"Fnatic - H4nn1"		"4"
@@ -125,10 +289,9 @@
 					"selection_index"	"7"
 
 					"choice_type"		"generic"
-					"choice_set"		"test_playerlist"
 					"choices"
 					{
-						"IG - Zhou"				"1"
+						"IG - ChuaN"			"1"
 						"Navi - Dendi"			"2"
 						"DK - Mushi"			"3"
 						"Fnatic - H4nn1"		"4"
@@ -171,11 +334,11 @@
 			}
 			"timers"
 			{
-				"timer1"		"past"
+				"timer1"		"future"
 			}
 		}
 
-		"page5"
+		"example_selections2"
 		{
 			"template"		"selections_1"
 			"text"
@@ -202,21 +365,65 @@
 						"Huskar"				"59"
 						"Wisp"					"91"
 					}
+
+					"result"
+					{
+						// The answer must match the value of one of the choices above.
+						"answer"			"12"
+					}
 				}
 				"selection2"
 				{
 					"description"		"Select a Player?"
-					"points"			"2"
 					"selection_index"	"8"
 
 					"choice_type"		"generic"
-					"choice_set"		"test_playerlist"
 					"choices"
 					{
-						"IG - Zhou"				"1"
+						"IG - ChuaN"			"1"
 						"Navi - Dendi"			"2"
 						"DK - Mushi"			"3"
 						"Fnatic - H4nn1"		"4"
+					}
+
+					"result"
+					{
+						// The answer must match the value of one of the choices above.
+						"answer"			"3"
+						
+						// If this block exists, the "view info" button will appear alongside the result. When the player clicks on it, it'll show a popup
+						// dialog with more information about the result, including the result itself, extra information, and a link to a replay.
+						// Info dialog parameters:
+						//		"info"				- A text string containing extra information about this result. Can contain HTML tags like <br> for newlines.
+						//		"match_id"			- If set to the ID of a match, the "View Match" button will be shown in the dialog. Clicking on it will load the replay of that match.
+						//		"result_override"	- If left unset, the result will shown as the matching "choices" entry. i.e. if "answer" is 2, the result will be shown as "Navi - Dendi"
+						//							  If set to something, this will be shown as the result instead.
+						//
+						"info_dialog"
+						{
+							"info"				"Mushi earned lots of points!<br>ChuaN, H4nn1, and Dendi all came second!"
+							"match_id"			"194956462"
+						}
+					}
+				}
+				"selection3"
+				{
+					"description"		"Pick a hero from all heroes?"
+					"points"			"10"
+					"selection_index"	"11"
+
+					"choice_type"		"all_heroes"
+
+					"result"
+					{
+						// The answer must match the value of one of the choices above.
+						"answer"			"1"
+
+						"info_dialog"
+						{
+							"result_override"	"This result has been overridden"
+							"info"				"This information string is an example of extra information."
+						}
 					}
 				}
 				"selection5"
@@ -231,11 +438,164 @@
 						"Less than 800 GPM"					"1"
 						"Equal to or greater than 800 GPM"	"2"
 					}
+
+					"result"
+					{
+						// The answer must match the value of one of the choices above.
+						"answer"			"1"
+
+						"info_dialog"
+						{
+							"info"				"Bob came first with 2000 GPM.<br>Bill was second, with 1999 GPM."
+							"match_id"			"194956462"
+						}
+					}
+				}
+			}
+			"timers"
+			{
+				"timer1"		"past"
+			}
+		}
+		"example_selections3"
+		{
+			// This example uses the "selection_set" key on ensure that no choice is selected more than once
+			// in all the selections on this page. Great for selecting X players from a list for a show match, for instance.
+			"template"		"selections_1"
+			"text"
+			{
+				"title"		"Showmatch Vote"
+				"subtitle"	"Select the players you'd like to see play in the match"
+			}
+			"selections"
+			{
+				"selection1"
+				{
+					"description"		"Player 1"
+					"selection_index"	"20"
+					"selection_set"		"showmatch_players"
+
+					"choice_type"		"generic"
+					"choices"
+					{
+						"IG - ChuaN"			"1"
+						"Navi - Dendi"			"2"
+						"DK - Mushi"			"3"
+						"Fnatic - H4nn1"		"4"
+						"Alliance - Lod[A]"		"5"
+					}
+				}
+				"selection2"
+				{
+					"description"		"Player 2"
+					"selection_index"	"21"
+					"selection_set"		"showmatch_players"
+
+					"choice_type"		"generic"
+					"choices"
+					{
+						"IG - ChuaN"			"1"
+						"Navi - Dendi"			"2"
+						"DK - Mushi"			"3"
+						"Fnatic - H4nn1"		"4"
+						"Alliance - Lod[A]"		"5"
+					}
+				}
+				"selection3"
+				{
+					"description"		"Player 3"
+					"selection_index"	"22"
+					"selection_set"		"showmatch_players"
+
+					"choice_type"		"generic"
+					"choices"
+					{
+						"IG - ChuaN"			"1"
+						"Navi - Dendi"			"2"
+						"DK - Mushi"			"3"
+						"Fnatic - H4nn1"		"4"
+						"Alliance - Lod[A]"		"5"
+					}
+				}
+				"selection4"
+				{
+					"description"		"Player 4"
+					"selection_index"	"23"
+					"selection_set"		"showmatch_players"
+
+					"choice_type"		"generic"
+					"choices"
+					{
+						"IG - ChuaN"			"1"
+						"Navi - Dendi"			"2"
+						"DK - Mushi"			"3"
+						"Fnatic - H4nn1"		"4"
+						"Alliance - Lod[A]"		"5"
+					}
+				}
+				"selection5"
+				{
+					"description"		"Player 5"
+					"selection_index"	"24"
+					"selection_set"		"showmatch_players"
+
+					"choice_type"		"generic"
+					"choices"
+					{
+						"IG - ChuaN"			"1"
+						"Navi - Dendi"			"2"
+						"DK - Mushi"			"3"
+						"Fnatic - H4nn1"		"4"
+						"Alliance - Lod[A]"		"5"
+					}
 				}
 			}
 			"timers"
 			{
 				"timer1"		"future"
+			}
+		}
+		"example_video"
+		{
+			// The video_page template is a page with title text at the top, an embedded video below, and some smaller subtext beneath.
+			//		Elements that must be specified:
+			//			"title"
+			//			"subtitle"
+			//			"video"
+			//
+
+			"template"		"video_page"
+			"text"
+			{
+				"title"		"Embedded video example"
+				"subtitle"	"See above"
+			}
+			"video"
+			{
+				// The "url" should be the embedded Youtube link. The "ch_url" should be the embedded Youku link, used for Chinese customers.
+				// The best way to generate these URLs is to click on the Share option under your video and extract the URL.
+				// It's recommended that you have the following on Youtube links: 
+				//			?autoplay=1&fs=0&modestbranding=1&rel=0&showinfo=0
+				// It's recommended that you have the following on Youku links (after the video ID): 
+				//			&isAutoPlay=true
+				"url"		"http://youtube.googleapis.com/v/Eqk9C1wVT0U?autoplay=1&fs=0&modestbranding=1&rel=0&showinfo=0"
+				"ch_url"	"http://static.youku.com/v1.0.0401/v/swf/loader.swf?VideoIDS=XNjc3MTU2Mzk2&isAutoPlay=true"
+			}
+		}
+		"example_videoposition"
+		{
+			// The blank template is a page with no existing elements.
+
+			"template"		"blank"
+			"video"
+			{
+				// This is an example of a custom video. In addition to the URLs, you need to specify the x & y position.
+
+				"url"		"http://youtube.googleapis.com/v/-8HBr1EGX1I?autoplay=1&fs=0&modestbranding=1&rel=0&showinfo=0"
+				"ch_url"	"http://static.youku.com/v1.0.0401/v/swf/loader.swf?VideoIDS=XNjc3MTU2Mzk2&isAutoPlay=true"
+				"x"		"10"
+				"y"		"250"
+				// Videos are fixed size, sorry: 640x360.
 			}
 		}
 
@@ -247,7 +607,6 @@
 				"image1"
 				{
 					"filename"	"skywrath.jpg"
-					"handle"	"90342675071371637"
 				}
 			}
 		}

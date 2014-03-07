@@ -3,40 +3,35 @@
 	$baseTexture "models/items/wards/f2p_ward/f2p_ward_blue_color.vtf"
 	"$normalmap" "models/items/wards/f2p_ward/f2p_ward_normal"
 
-	"$maskmap1" "models/items/wards/f2p_ward/f2p_ward_mask1"
-	"$maskmap2" "models/items/wards/f2p_ward/f2p_ward_mask2"
+	"$maskmap1" "models/items/wards/f2p_ward/f2p_ward_masks1"
+	"$maskmap2" "models/items/wards/f2p_ward/f2p_ward_masks2"
 
 
 	//"$alphatest" "1"
 
 
 	
-	//$ENVMAP "models/cubemaps/glossy"
-	//$ENVMAPINTENSITY 1
-	//$ENVMAPBLENTOFULL 1
-	//$MASKENVBYMETALNESS 1
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 1
+	$MASKENVBYMETALNESS 1
+
+	$SPECULAR_BLOOM_SCALE 1
+	$SPECULAREXPONENT 5	
+	$SPECULARSCALE 5	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
 
 
-	//$SPECULAR_BLOOM_SCALE 20
-	$SPECULAREXPONENT 35
-  $SPECULARSCALE 30
-  $RIMLIGHTSCALE 5
-	
-	
-  //$SPECULARCOLOR "[0.2 0.6 0.4]"	
-	//$RIMLIGHTCOLOR "[1 1 0]"	
-	//$AMBIENTSCALE 1
-	
+	$RIMLIGHTSCALE 2
 
-
-	
-
-	
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
 
 
 
-  $IgnoreBudgetCheck 1
-
+	$IgnoreBudgetCheck 1
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
