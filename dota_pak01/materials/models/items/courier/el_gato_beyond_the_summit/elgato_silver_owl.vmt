@@ -1,32 +1,30 @@
-CustomHero
+"CustomHero"
 {
-$baseTexture "models/items/courier/el_gato_beyond_the_summit/elgato_silver_color"
-$normalmap "models/items/courier/el_gato_beyond_the_summit/elgato_silver_normal"
-$maskmap1 "models/items/courier/el_gato_beyond_the_summit/elgato_silver_color_mask1"
-$maskmap2 "models/items/courier/el_gato_beyond_the_summit/elgato_silver_color_mask2"
+	$baseTexture "models/items/courier/el_gato_beyond_the_summit/elgato_silver_color"
+	$normalmap "models/items/courier/el_gato_beyond_the_summit/elgato_silver_normal"
+	$maskmap1 "models/items/courier/el_gato_beyond_the_summit/elgato_silver_mask1"
+	$maskmap2 "models/items/courier/el_gato_beyond_the_summit/elgato_silver_mask2"
 
-$alphatest 1
+	$alphatest 1
 
+	$SPECULAREXPONENT 35
+	$SPECULARSCALE 2 
+	$SPECULARCOLOR "[1 2 3]"
 
-$SPECULAREXPONENT 35
-$SPECULARSCALE 2 
-$SPECULARCOLOR "[1 2 3]"
+	$ENVMAP "models/cubemaps/default_gray"
+	$ENVMAPINTENSITY 7
 
-$ENVMAP "models/cubemaps/default_gray"
-$ENVMAPINTENSITY 7
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR "[1 1 1]"
 
-$RIMLIGHTSCALE	1
-$RIMLIGHTCOLOR "[1 1 1]"
-
-"$cloakPassEnabled" "1"
-"Proxies"
-{
-"invis_proxy"
-{
-}
-"status_proxy"
-{
-}
-}
-
+	"$cloakPassEnabled" "1"
+	"Proxies"
+		{
+				"invis_proxy"
+				{
+				}
+				"status_proxy"
+				{
+				}
+		}
 }

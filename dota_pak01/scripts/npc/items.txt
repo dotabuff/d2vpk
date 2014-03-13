@@ -6464,43 +6464,43 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"16"
+				"maim_chance"			"16"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"16"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"16"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"16"
-			}
-			"05"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"movement_speed_percent_bonus"	"16"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"maim_chance"			"16"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"maim_slow_movement"	"-32"
-			}
-			"08"
+			}			
+			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"maim_slow_attack"		"-32"
 			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"16"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"16"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_agility"			"16"
+			}			
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"	"16"
+			}
+			"08"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"movement_speed_percent_bonus"	"16"
+			}			
 			"09"
 			{
 				"var_type"				"FIELD_FLOAT"
@@ -6861,33 +6861,33 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"10"
+				"maim_chance"			"15"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"16"
+				"maim_movement_speed"	"-20"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"maim_chance"			"15"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"maim_movement_speed"	"-20"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"maim_attack_speed"		"-20"
 			}
-			"06"
+			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"maim_duration"			"4.0"
 			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"10"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"16"
+			}			
 		}
 	}
 
@@ -8083,12 +8083,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"6"
+				"debuff_radius"			"600"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"6"
+				"resist_debuff"			"-25"
 			}
 			"03"
 			{
@@ -8098,33 +8098,33 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"debuff_radius"			"600"
+				"bonus_intellect"		"6"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"resist_debuff"			"-25"
-			}
-			"06"
-			{
-				"var_type"					"FIELD_FLOAT"
-				"resist_debuff_duration"	"25.0"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"bonus_strength"		"6"
 			}
-			"08"
+			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_agility"			"6"
 			}
-			"09"
+			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_damage"			"6"
 			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"6"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"resist_debuff_duration"	"25.0"
+			}			
 		}
 	}
 
@@ -8370,38 +8370,38 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"25"
+				"bonus_evasion"				"25"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"20"
+				"maim_chance"			"15"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"maim_chance"			"15"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"maim_movement_speed"	"-20"
-			}
-			"05"
+			}			
+			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"maim_attack_speed"		"-20"
 			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_damage"			"25"
+			}
 			"06"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"maim_duration"			"4.0"
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"		"20"
 			}
 			"07"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_evasion"				"25"
-			}
+				"var_type"				"FIELD_FLOAT"
+				"maim_duration"			"4.0"
+			}			
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
@@ -8411,8 +8411,7 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"disarm_melee"				"3.0"
-			}
-				
+			}				
 		}
 	}
 	

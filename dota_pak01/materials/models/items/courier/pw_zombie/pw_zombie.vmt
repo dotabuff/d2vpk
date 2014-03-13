@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/courier/pw_zombie/pw_zombie_color"
+	"$normalmap"		"models/items/courier/pw_zombie/pw_zombie_normal"
+	"$maskmap1"		"models/items/courier/pw_zombie/pw_zombie_mask1"
+	"$maskmap2"		"models/items/courier/pw_zombie/pw_zombie_mask2"
+	
+	$SPECULAR_BLOOM_SCALE   5
+	$SPECULAR_BLOOM_COLOR "[0 .2 1]"
+	$SPECULAR_BLOOM_SHIFT 1
+	
+	"$ALPHATEST"		"1"
+	"$SPECULAREXPONENT"		"16"
+	"$SPECULARSCALE"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
