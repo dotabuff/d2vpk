@@ -6701,6 +6701,12 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_FantasyLeagueDraftEdit_Finish_Header"	"Draft Completed"
 		"DOTA_FantasyLeagueDraftEdit_Finish"		"The Fantasy draft for %s1 has completed.\n\nGood luck!"
 
+		"DOTA_PlayerInfo_Error_Header"				"Error Submitting Player Information"
+		"DOTA_PlayerInfo_Error_Submission"			"Submission of player information failed.  Please try again."
+		"DOTA_PlayerInfo_Error_NoName"				"You must specify a name when submitting player information."
+		"DOTA_PlayerInfo_Error_InvalidCountry"		"Invalid country specified."
+		
+
 		"fantasy_draft_chat_line"				"%s1 (%s2) has drafted %s3."
 		
 		"fantasy_team_lineup"					"Lineup"
@@ -6770,6 +6776,21 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"fantasy_available"					"Available"
 
 		"fantasy_scheduled"					"Scheduled"
+
+		"official_player_info_header"		"Official Player Information"
+		"player_info_name"					"Please enter your display name.  It should be recognizable to players throughout the world, and should not include any team or sponsor affiliations."
+		"player_info_country"				"You may enter your country of residence."
+		"player_info_official_team"			"If you play for a Dota Team in an official capacity, please select it.  This team's tag will be prefixed on your name."
+		"player_info_sponsor"				"You can enter any sponsor names here.  These sponsors will be appended to your name."
+		"player_info_preview"				"This is how your name will be displayed:"
+		"player_info_role"					"If you play a specific role, please select it.  Core includes players who play carry, mid, and off-lane."
+		"player_info_warning"				"This information can only be edited once every two weeks, so please make sure it is accurate!"
+		"player_info_wait"					"Retrieving Official Player Info..."
+		"player_info_locked"				"This information is currently locked."
+		"player_info_submitted_wait"		"Submitting information..."
+		"player_info_submitted_success"		"Success!\n\nThank you for submitting your information.  You are now eligible for ranked leaderboards."
+		"player_info_submitted_fail"		"Failed to submit player information.  Please try again."
+
 
 		"Guild_FeaturedGamesDescription"	"A selection of the best games recently played by Guild parties."
 
@@ -11683,12 +11704,14 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Notification_Action_Taken"				"We’ve recently taken action against one or more players you’ve previously reported for bad conduct. You have received an additional report submission to use. Thanks for your help in making the Dota 2 community a friendlier place."
 		"Notification_ViewItemDetails"			"View Item"
 		"Notification_ViewDetails"				"View Details"
+		"Notification_EnterDetails"				"Enter Details"
 		"Notification_RecruitAccepted"			"<font color='#FFD700'>%s1</font> has accepted your recruitment request.  Play games with your recruits to increase your Recruitment Level and earn bonus Battle Points!"
 		"Notification_FantasyDraftSet"			"The Live Draft for your Fantasy League '%s1' has been set for <font color='#FFD700'>%s2</font>."
 		"Notification_FantasyOwnerJoined"		"<font color='#FFD700'>%s1</font> has joined your Fantasy League '%s2'."
 		"Notification_FantasyInvited"			"You have been invited to join Fantasy League '%s1'."
 		"Notification_FantasyCreate"			"You can now create a Fantasy League for the tournament '%s1'."
 		"Notification_FantasyCreateUnKnown"		"You can now create a new Fantasy League."
+		"Notification_NeedOfficialInfoForLeaderboard"	"Congratulations!  You are one of the best Dota 2 players in the world.  To be eligible to appear on the world leaderboards, you must enter your official player information."
 
 
 
@@ -11835,6 +11858,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		// I.e.: Beyond the Summit doesn't become 'Mas alle de la Cumbre' unless they actually market themselves that way in Spanish. Which I doubt they do.
 		"DOTA_Corporation_BeyondTheSummit"	"Beyond the Summit"
 		"DOTA_Corporation_D2L"	"D2L"
+		"DOTA_Corporation_DotaCinema"	"Dota Cinema"
 		
 		"DOTA_LocalReconnect_Title"				"Attempt Reconnect"
 		"DOTA_LocalReconnect_Body"				"The Dota 2 Network is slow to respond. Do you want to try reconnecting to your previous game?"
@@ -12737,6 +12761,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Text_Lion_CurseoftheMalignantCorruption"		"With grim resolve..."
 		"StoreBanner_Header_DP_WitchoftheOutlands"	"Death Prophet: Witch of the Outlands Set"
 		"StoreBanner_Text_DP_WitchoftheOutlands"		"Let me tell your fate!"
+		"StoreBanner_Header_Pudge_ChainsoftheBlackDeath"	"Pudge: Chains of the Black Death"
+		"StoreBanner_Text_Pudge_ChainsoftheBlackDeath"		"Time for a little chop chop."
 		
 		"StoreBanner_Header_HUD_Familiar_Woods"		"HUD: Familiar Woods"
 		"StoreBanner_Text_HUD_Familiar_Woods"		"A trusted friend on a well-worn path. Includes 2 styles."
@@ -13137,11 +13163,25 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"KillEaterEvent_Puck_GoodCoils"		"Triple-Hero Dream Coils"
 		"KillEaterEvent_Puck_GoodWaningRifts"	"Triple-Hero Waning Rifts"
-		"KillEaterEvent_Puck_OrbDamage"	"Damage done with Illusory Orb"
+		"KillEaterEvent_Puck_OrbKills"	"Kills with Illusory Orb"
 
 		"KillEaterEvent_VengefulSpirit_EnemiesStunned"		"Enemies Stunned"
 		"KillEaterEvent_VengefulSpirit_EnemiesSwapped"	"Enemies Swapped"
 		"KillEaterEvent_VengefulSpirit_MultiTerrors"	"Triple-Hero Wave of Terrors"
+
+		"KillEaterEvent_Lifestealer_RageKills"		"Kills while Raged"
+		"KillEaterEvent_Lifestealer_OpenWoundsKills"	"Enemies killed with Open Wounds"
+		"KillEaterEvent_Lifestealer_InfestKills"	"Enemies killed leaving Infest"
+		"KillEaterEvent_GamesPlayed"			"Games Played"
+
+		"KillEaterEvent_ElderTitan_GoodSplitters"		"Triple-Hero Earth Splitters"
+		"KillEaterEvent_ElderTitan_SpiritKills"	"Enemies killed by Astral Spirit"
+		"KillEaterEvent_ElderTitan_GoodStomps"	"Triple-Hero Echo Stomp"
+
+		"KillEaterEvent_Clockwerk_2Cogs"		"Double-Hero Power Cog Traps"
+		"KillEaterEvent_Clockwerk_BlindHooks"	"Blind Hooks"
+		"KillEaterEvent_Clockwerk_RocketKills"	"Rocket Flare Kills"
+		"KillEaterEvent_Clockwerk_BlindRocketKills"	"Blind Rocket Flare Kills"
 
 		"KillEaterRank0"			"Inscribed"
 		"KillEaterRank1"			"Unremarkable"
@@ -15333,6 +15373,16 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Bracers_of_the_Wandering_Demon_Style1"	"Bracers with Blue"
 		"DOTA_Item_Crown_of_Hells_Helm_Style0"			"Closed Helmet"
 		"DOTA_Item_Crown_of_Hells_Helm_Style1"			"Open Helmet"
+		"DOTA_Item_Black_Death_Offhand_Style0"			"Axe of the Black Death Executioner"
+		"DOTA_Item_Black_Death_Offhand_Style1"			"Shovel of the Black Death"
+		"DOTA_Item_Black_Death_Weapon_Style0"			"Cuff Hook of the Black Death"
+		"DOTA_Item_Black_Death_Weapon_Style1"			"Makeshift Hook of the Black Death"
+		"DOTA_Item_Black_Death_Shoulder_Style0"			"Shoulder of the Black Death Executioner"
+		"DOTA_Item_Black_Death_Shoulder_Style1"			"Barbed Shoulder of the Black Death"
+		"DOTA_Item_Black_Death_Head_Style0"				"Tiny Tassels of the Black Death"
+		"DOTA_Item_Black_Death_Head_Style1"				"Small Tassels of the Black Death"
+		"DOTA_Item_Black_Death_Head_Style2"				"Medium Tassels of the Black Death"
+		"DOTA_Item_Black_Death_Head_Style3"				"Large Tasseels of the Black Death"
 
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
 
@@ -15596,6 +15646,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_CTFont"	"Invalid font '%s1' specified in compendium page '%s2'. Valid fonts:\ntext, textbold, title"
 		"CompendiumPageError_CTAlign"	"Invalid alignment '%s1' specified in compendium page '%s2'. Valid alignments:\n left, right, center"
 		"CompendiumPageError_CTDepth"	"Invalid depth '%s1'. Valid depths:\n front, back"
+		"CompendiumPageError_CTPoints"	"Invalid selection index '%s1' in 'points' section of custom text '%s2'."
+		"CompendiumPageError_CTPoints2"	"Invalid selection index '%s1' in 'points' section of custom text '%s2'. No selection found with that index."
 		"CompendiumPageError_SelDesc"	"Couldn't find a 'description' key for selection '%s1' in compendium page '%s2'"
 		"CompendiumPageError_Points"	"Missing (or zero) 'points' specified for selection '%s1' in compendium page '%s2'"
 		"CompendiumPageError_SelType"	"Missing 'choice_type' for selection '%s1' in compendium page '%s2'"

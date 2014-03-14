@@ -339,6 +339,10 @@
 	"fantasy_score_info_changed"
 	{
 	}
+	"player_info_updated"
+	{
+		"accountID"		"uint32"
+	}
 	"game_rules_state_change"
 	{
 	}
