@@ -11859,6 +11859,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Corporation_BeyondTheSummit"	"Beyond the Summit"
 		"DOTA_Corporation_D2L"	"D2L"
 		"DOTA_Corporation_DotaCinema"	"Dota Cinema"
+		"DOTA_PlayerName_Dendi"	"Danil 'Dendi' Ishutin"
+		"DOTA_PlayerName_Fear"	"Clinton 'Fear' Loomis"
+		"DOTA_PlayerName_HyHy"	"Benedict 'HyHy' Lim"
 		
 		"DOTA_LocalReconnect_Title"				"Attempt Reconnect"
 		"DOTA_LocalReconnect_Body"				"The Dota 2 Network is slow to respond. Do you want to try reconnecting to your previous game?"
@@ -12017,8 +12020,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"examine_chest_guaranteed_item"		"Opening this treasure will earn you this item:"
 		"examine_chest_purchase_key"	"Purchase And Open"
 		"examine_chest_unlock"			"Open Treasure"
-		"examine_chest_mystery"			"Rare Special Item"
-		"examine_chest_mystery_desc"	"This treasure may contain an exceedingly rare special item"
+		"examine_chest_unusual_courier"			"Unusual Courier"
+		"examine_chest_unusual_courier_desc"	"A random courier with random color and special effect gems."
 		"DOTA_ShowCraftingUI"			"Crafting"
 		"DOTA_ShowSocketingUI"			"Socketing"
 		"RecoverGems"					"Recover Gems"
@@ -12156,11 +12159,13 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 				
 		"Econ_Revolving_Loot_List"						"This treasure contains one of the following items:"
 		"Econ_Revolving_Loot_List_Also"					"This treasure also contains one of the following items:"
-		"Econ_Revolving_Loot_List_Multi"				"This treasure contains several of the following items:"
-		"Econ_Revolving_Loot_List_Rare_Item"			"or an Exceedingly Rare Special Item!"
-		"Econ_Revolving_Loot_List_Hero"					"This treasure contains one of several items for the following heroes:"
+		"Econ_Revolving_Loot_List_Multi"				"This treasure contains one of each these items:"
 		"Econ_Crate_Locks_Remaining"					"Number of locks remaining: %s1"
 		"Econ_Crate_Hero_Items"							"     %s1"
+		"Econ_Guaranteed_Crate_Drop"					"Opening this treasure will reward you with:"
+		"Econ_Additional_Crate_Drop"					"In addition, this treasure has a chance of containing:"
+		
+		"DOTA_UnusualCourier_Desc"						"Unusual Courier"
 	
 		"DOTA_SortBackpack"	"Sort Armory:"
 		"DOTA_SortBackpack_Position" " by Position"
@@ -12315,7 +12320,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		// Store UI
 		"Store_New_Items"			"New!"
-		"Store_Heroes"				"Heroes"
+		"Store_Heroes"				"Hero Sets"
 		"Store_Gear"				"Gear"
 		"Store_Tools"				"Tools"
 		"Store_Taunts"				"Taunts"
@@ -12799,8 +12804,26 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Header_kunkka_bundle"		"Kunkka Loading Screen Bundle"
 		"StoreBanner_Text_kunkka_bundle"		"Three loading screens from longtime Dota community artist Kunkka"
 		
-		"Playtab_Quiz_Title"						"The Shopkeeper's Quiz"
-		"Playtab_Quiz_Subtitle"						"Test your Dota 2 item knowledge!"
+		"StoreBanner_Header_TreasureOfRadiantArms"	"Treasure of Radiant Arms"
+		"StoreBanner_Text_TreasureOfRadiantArms"	"Unseal a different set each time and collect them all"
+		
+		"StoreBanner_Header_TreasureOfDireArms"		"Treasure of Dire Arms"
+		"StoreBanner_Text_TreasureOfDireArms"		"Unseal a different set each time and collect them all"
+		
+		"StoreBanner_Header_MurderOfCrows"		"Pudge: Murder of Crows"
+		"StoreBanner_Text_MurderOfCrows"		"Shoulda' kept your beak out of this"
+		
+		"StoreBanner_Header_ForgeOfIronWill"		"Sven: Forge of Iron Will"
+		"StoreBanner_Text_ForgeOfIronWill"		"An iron mask for an iron will"
+		
+		"StoreBanner_Header_CrownOfHells"		"Doom: Crown of Hells"
+		"StoreBanner_Text_CrownOfHells"			"Upon my crown, I'll gore thee"
+		
+		"StoreBanner_Header_FreeToPlayPack"		"Free to Play Collector's Pack"
+		"StoreBanner_Text_FreeToPlayPack"		"The Director's Cut"
+		
+		"Playtab_Quiz_Title"				"The Shopkeeper's Quiz"
+		"Playtab_Quiz_Subtitle"				"Test your Dota 2 item knowledge!"
 		// Pennants
 		"dota_title_pennant"				"DOTA Team Pennant"
 		"dota_desc_pennant_radiant"			"This is the total value of pennants equipped by spectators watching this match. Pennants and pennant upgrades can be purchased in the store and then equipped in the 'fan slot' via the loadout panel. Equipping a pennant makes you eligible for item drops while you spectate your team’s matches live during the International, and other tournaments Valve may designate in the future."
@@ -13425,9 +13448,6 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Item_GiftWrapped"					"%s1 has wrapped a gift: <font color='%s2'>%s3</font> %s4"
 		"Item_CollectionReward"				"%s1 has redeemed a collection reward: <font color='%s2'>%s3</font> %s4"
 		"Item_PeriodicScoreReward"			"%s1 has earned: <font color='%s2'>%s3</font> %s4"
-
-		"Econ_Guaranteed_Crate_Drop"		"Opening this treasure will reward you with:"
-		"Econ_Additional_Crate_Drop"		"In addition, this treasure may contain an extra bonus item:"
 
 		"dota_stat_dropdown"				"GAME STATS"
 		"dota_stat_dropdown_level"			"HERO LEVEL"
@@ -15191,7 +15211,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_f2p_doom"	"Crown of Hells!"
 		"DOTA_Anim_Mod_fear"	"Free to Fear"
 		"DOTA_Anim_Mod_bot"	"Booties of Travel!"
-		"DOTA_Anim_Mod_ftp_dendi"	"Dance of Dendi"
+		"DOTA_Anim_Mod_ftp_dendi_back"	"Crow's Feet"
 		
 		"Invalid_Soul"	"Invalid"
 		"DOTA_Soul_Gem_Raving_Aristocrat"	"Raving Aristocrat"
@@ -15373,6 +15393,14 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Bracers_of_the_Wandering_Demon_Style1"	"Bracers with Blue"
 		"DOTA_Item_Crown_of_Hells_Helm_Style0"			"Closed Helmet"
 		"DOTA_Item_Crown_of_Hells_Helm_Style1"			"Open Helmet"
+		"DOTA_Item_Incantations_Weapon_Style0"			"Head Opener of Incantations"
+		"DOTA_Item_Incantations_Weapon_Style1"			"Pillar of Incantations"
+		"DOTA_Item_Fallen_Princess_Head_Style0"			"Helm of the Fallen Princess"
+		"DOTA_Item_Fallen_Princess_Head_Style1"			"Hair of the Fallen Princess"
+		"DOTA_Item_Fallen_Princess_Head_Style2"			"Crown of the Fallen Princess"
+		"DOTA_Item_Fallen_Princess_Shoulders_Style0"	"Warrior Wings of the Fallen Princess"
+		"DOTA_Item_Fallen_Princess_Shoulders_Style1"	"Feathered Wings of the Fallen Princess"
+		"DOTA_Item_Fallen_Princess_Shoulders_Style2"	"Feathered Wings of the Fallen Princess"
 		"DOTA_Item_Black_Death_Offhand_Style0"			"Axe of the Black Death Executioner"
 		"DOTA_Item_Black_Death_Offhand_Style1"			"Shovel of the Black Death"
 		"DOTA_Item_Black_Death_Weapon_Style0"			"Cuff Hook of the Black Death"
@@ -15914,11 +15942,15 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_profile_recruit_points_label"								"Recruitment Points: %s1"
 		"dota_recruitpanel_recruits"								"Track the status of your recruits and pending recruitment requests.\nYou will earn recruitment points when a recruit reaches level 10 and level 50."
 		"dota_recruits_count"			"Recruits: %s1"
+		"dota_redeem_event_points_title"		"Redeem Points: %s1"
 
 		"DOTA_AddFriend_ErrorCode_0" "An error occurred. Make sure the friend information is correct and try again"
 		"DOTA_AddFriend_ErrorCode_1" "An error occurred. Make sure the friend information is correct and try again"
 		"DOTA_AddFriend_ErrorCode_2" "Friends Information is in the wrong format"
 		"DOTA_AddFriend_ErrorCode_3" "No Perfect World Account found"
 		"DOTA_AddFriend_ErrorCode_4" "No Dota 2 Account found"
+		"Crate_Open_Have_Key"	"You Own 1"
+		"Crate_Open_Buy_Key"	"Buy and Open"
+		"Crate_Open_Now"		"Open Now"
 	}
 }
