@@ -5687,10 +5687,15 @@
 			}
 			"03"
 			{
+				"var_type"						"FIELD_INTEGER"
+				"crush_attack_slow_tooltip"		"-20"
+			}
+			"04"
+			{
 				"var_type"						"FIELD_FLOAT"
 				"crush_extra_slow_duration"		"2.0"
 			}
-			"04"
+			"05"
 			{
 				"var_type"						"FIELD_FLOAT"
 				"stun_duration"					"1.0 1.5 2.0 2.5"
@@ -21369,6 +21374,11 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"slow"			"-100"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"attackslow_tooltip"			"-100"
 			}
 		}
 	}
