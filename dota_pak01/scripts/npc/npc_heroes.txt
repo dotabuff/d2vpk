@@ -10895,7 +10895,7 @@
 		"BanSound"					"rattletrap_ratt_anger_06"
 		"CMEnabled"					"1"
 		"url"					"Clockwerk"
-		"NoCombine"					"1"
+//		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_sand_king"
 
 		// Abilities
@@ -10983,12 +10983,22 @@
 					"SlotText"	"#LoadoutSlot_Armor"
 					"TextureWidth"		"512"
 					"TextureHeight"		"512"
-					"MaxPolygonsLOD0"	"2300"
-					"MaxPolygonsLOD1"	"1300"						
+					"MaxPolygonsLOD0"	"2000"
+					"MaxPolygonsLOD1"	"1100"						
 				}
 				"3"
 				{
-					"SlotIndex"	"3"		//cogs
+					"SlotIndex"	"3"		//rocket
+					"SlotName"	"misc"
+					"SlotText"	"#LoadoutSlot_Misc"
+					"TextureWidth"		"256"
+					"TextureHeight"		"256"
+					"MaxPolygonsLOD0"	"400"
+					"MaxPolygonsLOD1"	"230"					
+				}
+				"4"
+				{
+					"SlotIndex"	"4"		//cogs
 					"SlotName"	"ability2"
 					"SlotText"	"#LoadoutSlot_Ability2"
 					"TextureWidth"		"256"

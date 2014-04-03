@@ -842,13 +842,13 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_movement_speed"		"5 15 25 35"
+				"invis_threshold_pct"	"25"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"invis_threshold_pct"	"25"
-			}
+				"bonus_movement_speed"		"5 15 25 35"
+			}			
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
@@ -2679,15 +2679,20 @@
 			}
 			"02"
 			{
-				"var_type"						"FIELD_INTEGER"
+				"var_type"						"FIELD_FLOAT"
 				"illusion_damage_out_pct"		"-50 -50 -50"
 			}
 			"03"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"illusion_damage_in_pct"		"0 0 0"
+				"illusion_incoming_dmg_pct_tooltip"		"100 100 100"
 			}
 			"04"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"illusion_damage_in_pct"		"0 0 0"
+			}
+			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
 				"tooltip_cast_range"			"700 1100 1500"
@@ -13572,7 +13577,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"0 0 0 0"
+		"AbilityDamage"					"0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------

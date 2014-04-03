@@ -814,5 +814,11 @@
 	{
 		"difficulty"	"byte"
 	}
+	"prizepool_received"
+	{
+		"success"			"bool"
+		"prizepool"			"uint64"
+		"leagueid"			"uint64"
+	}
 }
 

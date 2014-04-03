@@ -1,0 +1,32 @@
+"CustomHero"
+{
+	"$baseTexture" 	"models/items/rattletrap/cog_tesla/cog_tesla_color"
+	"$normalmap" 	"models/items/rattletrap/cog_tesla/cog_tesla_normal"
+	$MASKMAP1 	"models/items/rattletrap/cog_tesla/cog_tesla_masks1"
+	$MASKMAP2 	"models/items/rattletrap/cog_tesla/cog_tesla_masks2"
+
+//	"$specularwarp" "models/heroes/nyx/nyx_lightwarp"
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges_two"
+
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 5
+
+	$ENVMAP "models/cubemaps/glossy_terrorblade"
+	$ENVMAPINTENSITY 14
+	$MASKENVBYMETALNESS 0	
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

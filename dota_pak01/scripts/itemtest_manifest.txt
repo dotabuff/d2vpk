@@ -699,6 +699,34 @@
 			"heroID"		"15"
 			"tag"			"Razor"
 		}
+		"rattletrap"				
+		{
+			"heroID"		"51"
+			"tag"			"Clockwerk"
+			"particle_attachments"
+			{
+				"weapon"	
+				{
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"skip_model_combine"		"1"
+						}
+					}
+				}
+				"misc"	
+				{
+					"add_to_item_def"
+					{
+						"visuals"
+						{
+							"skip_model_combine"		"1"
+						}
+					}
+				}
+			}
+		}
 		"rikimaru"				
 		{
 			"heroID"		"32"
@@ -1003,6 +1031,7 @@
 			"pudge"               	   "materials/models/heroes/pudge/pudge_body_color.vmt"
 			"pugna"               	   "materials/models/heroes/pugna/pugna_color.vmt"
 			"queenofpain"              "materials/models/heroes/queenofpain/queenofpain_color.vmt"
+			"rattletrap"               "materials/models/heroes/rattletrap/rattletrap_color.vmt"
 			"razor"                    "materials/models/heroes/razor/razor_color.vmt"
 			"rikimaru"                 "materials/models/heroes/rikimaru/rikimaru_color.vmt"
 			"rubick"                   "materials/models/heroes/rubick/rubick_body.vmt"

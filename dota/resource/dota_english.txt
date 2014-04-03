@@ -492,6 +492,7 @@
 		"DOTA_Chat_PlayerAbandonedAFK"			"%s1 has been removed from the game due to inactivity and will be assessed with an abandon."
 		"DOTA_Chat_PlayerAbandonedDisconnectedTooLong"	"%s1 has been disconnected for too long and will be assessed with an abandon."
 		"DOTA_Chat_PlayerLeftLimitedHero"	"%s1 left the game.  Their hero will be replaced by a bot."  
+		"DOTA_Chat_AbandonedRankedBeforeFirstBloodParty"	"When a player abandons a ranked game before first blood, their entire party receives a loss, even though stats are not otherwise recorded."
 		"DOTA_Chat_AbandonLimitedHeroExplanation"	"There are no punishments for leaving Limited Heroes mode games, but abandoning games in all other game modes may lead to punishment by placement in the low-priority queue."
 		"DOTA_Chat_MatchWillNotBeScored"	"No stats will be recorded for this match."
 		"DOTA_Chat_MatchWillNotBeScoredRanked"	"No stats will be recorded for this match.  Matchmaking rating (MMR) will not be updated."
@@ -2481,7 +2482,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_nevermore_dark_lord_presence_radius"						"RADIUS:"
 		
 		"DOTA_Tooltip_ability_nevermore_requiem"										"Requiem of Souls"
-		"DOTA_Tooltip_ability_nevermore_requiem_Description"							"Captured souls are used to deal massive damage, as well as slowing and reducing the attack damage of nearby enemy units. Requiem of Souls creates one wave of damage for every 2 souls stored by Necromastery.  The closest enemy units are hit the hardest.  Requiem has a 1 second cast time before it is activated.  Requiem of Souls is automatically cast when Shadow Fiend dies, independent of its cooldown."		
+		"DOTA_Tooltip_ability_nevermore_requiem_Description"							"Captured souls are used to deal massive damage, as well as slowing and reducing the attack damage of nearby enemy units. Requiem of Souls creates one wave of damage for every 2 souls stored by Necromastery.  The closest enemy units are hit the hardest.  Requiem of Souls has a 1.67 second cast time before it is activated.  Requiem of Souls is automatically cast when Shadow Fiend dies, independent of its cooldown."
 		"DOTA_Tooltip_ability_nevermore_requiem_requiem_reduction_ms"					"%SLOW:"
 		"DOTA_Tooltip_ability_nevermore_requiem_requiem_slow_duration"					"SLOW DURATION:"
 		"DOTA_Tooltip_ability_nevermore_requiem_requiem_reduction_tooltip"				"%DAMAGE REDUCTION:"
@@ -2642,10 +2643,12 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_morphling_morph_str_morph_cooldown"						"SHIFT RATE:"
 		"DOTA_Tooltip_ability_morphling_morph_str_bonus_attributes"						"BONUS STRENGTH:"
 		"DOTA_Tooltip_ability_morphling_replicate"										"Replicate"
-		"DOTA_Tooltip_ability_morphling_replicate_Description"							"Morphling replicates any hero, friend or foe, although only dealing 50%% the original hero's damage.  At any time, Morphling can instantly take the position of the Replicate."
+		"DOTA_Tooltip_ability_morphling_replicate_Description"							"Morphling replicates any hero, friend or foe, dealing 50%% of the original Hero's outgoing damage while taking 100%% of any incoming damage.  At any time, Morphling can instantly take the position of the Replicate for 150 mana."
 		"DOTA_Tooltip_ability_morphling_replicate_Lore"									"Staring into Morphling produces a reflection that mimics the beholder."
 		"DOTA_Tooltip_ability_morphling_replicate_Note0"								"You can't target yourself with Replicate."
 		"DOTA_Tooltip_ability_morphling_replicate_duration"								"DURATION:"
+		"DOTA_Tooltip_ability_morphling_replicate_illusion_damage_out_pct"				"%OUTGOING DAMAGE:"
+		"DOTA_Tooltip_ability_morphling_replicate_illusion_incoming_dmg_pct_tooltip"				"%INCOMING DAMAGE:"
 		"DOTA_Tooltip_ability_morphling_replicate_tooltip_cast_range"					"CAST RANGE:"
 		"DOTA_Tooltip_ability_morphling_morph_replicate"								"Morph Replicate"
 		"DOTA_Tooltip_ability_morphling_morph_replicate_Description"					"Morphling switches into his replication, instantly taking its position."
@@ -2660,18 +2663,19 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_bloodseeker_bloodrage_duration"							"DURATION:"
 		"DOTA_Tooltip_ability_bloodseeker_bloodrage_damage_increase_pct"				"%DAMAGE INCREASE:"
 		"DOTA_Tooltip_ability_bloodseeker_blood_bath"									"Blood Bath"
-		"DOTA_Tooltip_ability_bloodseeker_blood_bath_Description"						"Bloodseeker revels in combat, gaining health with every unit he kills or an enemy hero dies within a 325 radius of Bloodseeker.  The health gained is a percentage of the killed unit's maximum HP."
+		"DOTA_Tooltip_ability_bloodseeker_blood_bath_Description"						"Bloodseeker revels in combat, regaining health with every unit he kills or whenever an enemy Hero dies within a 325 radius of Bloodseeker.  The health gained is a percentage of the killed unit's maximum HP."
 		"DOTA_Tooltip_ability_bloodseeker_blood_bath_Lore"								"Flayed ones bathing in the blood of the recently fallen is a terrifying sight on the field of battle."
 		"DOTA_Tooltip_ability_bloodseeker_blood_bath_Note0"								"Denied creeps and heroes will also trigger Bloodbath, but illusions will not."
 		"DOTA_Tooltip_ability_bloodseeker_blood_bath_health_bonus_pct"					"%HERO KILL:"
 		"DOTA_Tooltip_ability_bloodseeker_blood_bath_health_bonus_creep_pct"			"%UNIT KILL:"
 		"DOTA_Tooltip_ability_bloodseeker_thirst"										"Thirst"
-		"DOTA_Tooltip_ability_bloodseeker_thirst_Description"							"Enables Bloodseeker to sense enemy Heroes with health below a certain percentage, giving him vision of that unit, increased movement speed and increased damage. Bonuses stack per Hero.  Bloodseeker gains True Sight of enemy heroes below half their visiblity threshold."
+		"DOTA_Tooltip_ability_bloodseeker_thirst_Description"							"Enables Bloodseeker to sense enemy Heroes with health below a certain percentage wherever they are, giving him vision of that unit, increased movement speed and increased damage. Bonuses stack per Hero.  Bloodseeker gains True Sight of enemy Heroes below half their visiblity threshold."
 		"DOTA_Tooltip_ability_bloodseeker_thirst_Lore"									"Strygwyr becomes frenzied when blood is spilled."
 		"DOTA_Tooltip_ability_bloodseeker_thirst_Note0"									"Not triggered by Illusions."
-		"DOTA_Tooltip_ability_bloodseeker_thirst_bonus_damage"							"DAMAGE:"
-		"DOTA_Tooltip_ability_bloodseeker_thirst_bonus_movement_speed"					"%MOVEMENT SPEED:"
 		"DOTA_Tooltip_ability_bloodseeker_thirst_visibility_threshold_pct"				"%VISIBILITY HEALTH:"
+		"DOTA_Tooltip_ability_bloodseeker_thirst_invis_threshold_pct"					"%TRUE SIGHT HEALTH:"
+		"DOTA_Tooltip_ability_bloodseeker_thirst_bonus_movement_speed"					"%MOVEMENT SPEED:"
+		"DOTA_Tooltip_ability_bloodseeker_thirst_bonus_damage"							"DAMAGE:"		
 		"DOTA_Tooltip_ability_bloodseeker_rupture"										"Rupture"
 		"DOTA_Tooltip_ability_bloodseeker_rupture_Description"							"Causes an enemy unit's skin to rupture, dealing massive damage. If the unit moves while under the effect of Rupture, it takes a percentage of the distance traveled as damage.  The damage is dealt through magic immunity."
 		"DOTA_Tooltip_ability_bloodseeker_rupture_Lore"									"When the Bloodseeker hunts you, injuries become fatalities."
@@ -4124,7 +4128,7 @@ It is said that on the dawn of the First Day, all the night creatures perished. 
 		"DOTA_Tooltip_ability_jakiro_ice_path_path_radius"					"RADIUS:"
 		"DOTA_Tooltip_ability_jakiro_ice_path_damage"						"DAMAGE:"
 		"DOTA_Tooltip_ability_jakiro_liquid_fire"							"Liquid Fire"
-		"DOTA_Tooltip_ability_jakiro_liquid_fire_Description"				"Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks."
+		"DOTA_Tooltip_ability_jakiro_liquid_fire_Description"				"Jakiro burns his enemies in an area of effect with fire added to his attack, while slowing their attacks.\n\nLiquid Fire is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 		"DOTA_Tooltip_ability_jakiro_liquid_fire_Lore"						"The left maw of Jakiro opens, laying waste to any in its path."
 		"DOTA_Tooltip_ability_jakiro_liquid_fire_Note0"						"Works on both units and buildings."
 		"DOTA_Tooltip_ability_jakiro_liquid_fire_slow_attack_speed_pct"		"ATTACK SLOW:"
@@ -5385,7 +5389,7 @@ Once most highly esteemed of her race, Slithice for many years commanded a batta
 		"DOTA_Tooltip_ability_wisp_relocate"									"Relocate"
 		"DOTA_Tooltip_ability_wisp_relocate_Lore"								"Io is the embodiment of the mystery of the universe."
 		"DOTA_Tooltip_ability_wisp_relocate_Description"						"Teleport yourself and any tethered ally to any location on the map. After the spell expires you and any tethered ally will return to where you teleported from."
-		"DOTA_Tooltip_ability_wisp_relocate_Note0"								"Enemies receive a visual indicator on the minimap of the target location during the cast delay."
+		"DOTA_Tooltip_ability_wisp_relocate_Note0"								"Enemies receive a visual indicator in the world and on the minimap of the target location during the cast delay."
 		"DOTA_Tooltip_ability_wisp_relocate_Note1"								"If Io is disabled during the cast delay, Relocate is cancelled."
 		"DOTA_Tooltip_ability_wisp_relocate_Note2"								"If an allied hero is Tethered, that hero will teleported along with you. You can break the tether at any time to prevent that hero from teleporting with you."
 		"DOTA_Tooltip_ability_wisp_relocate_cast_delay"							"CAST DELAY:"
@@ -6032,7 +6036,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_Tooltip_ability_phoenix_launch_fire_spirit_attackspeed_slow"		"ATTACK SPEED SLOW:"
 
 		"DOTA_Tooltip_ability_phoenix_sun_ray"							"Sun Ray"
-		"DOTA_Tooltip_ability_phoenix_sun_ray_Description"				"Drawing from his own inner fire, Phoenix expels a huge beam of light at the cost of his own life energy. The beam damages enemies for a percentage of their life and heals allies for half the amount. Damage scales up to twice the initial damage as the beam fires."
+		"DOTA_Tooltip_ability_phoenix_sun_ray_Description"				"Drawing from its own inner fire, Phoenix expels a huge beam of light at the cost of its own life energy. The beam damages enemies for a percentage of their life and heals allies for half the amount. Damage scales up to twice the initial damage as the beam fires."
 		"DOTA_Tooltip_ability_phoenix_sun_ray_Lore"						"The vent through which such stellar energy flows is mere atoms wide."
 		"DOTA_Tooltip_ability_phoenix_sun_ray_hp_cost_perc_per_second"	"%HP COST PER SECOND:"
 		"DOTA_Tooltip_ability_phoenix_sun_ray_tooltip_duration"			"DURATION:"
@@ -6052,7 +6056,7 @@ What the craftsmen had not known was that within the strange seam of jade flowed
 		"DOTA_Tooltip_ability_phoenix_sun_ray_toggle_move_Lore"					"SQAWRK!"
 
 		"DOTA_Tooltip_ability_phoenix_supernova"							"Supernova"
-		"DOTA_Tooltip_ability_phoenix_supernova_Description"				"The Phoenix willingly ends his current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area."
+		"DOTA_Tooltip_ability_phoenix_supernova_Description"				"The Phoenix willingly ends its current life for the chance to be reborn. Transforms into a burning sun that scorches enemies in a huge area. The sun can be destroyed by attacks from enemy Heroes. After %tooltip_duration% seconds the sun explodes, stunning all nearby enemies while restoring Phoenix to full health and mana with refreshed abilities."
 		"DOTA_Tooltip_ability_phoenix_supernova_Lore"						"The solar crucible of a Supernova may be fatal, yet from its flames arise new beacons to wander infinity."
 		"DOTA_Tooltip_ability_phoenix_supernova_aura_radius"				"RADIUS:"
 		"DOTA_Tooltip_ability_phoenix_supernova_tooltip_duration"			"DURATION:"
@@ -6087,7 +6091,7 @@ By this ageless crucible the star that mortals would come to call Phoenix collap
 		"DOTA_Tooltip_ability_terrorblade_metamorphosis_tooltip_attack_range"				"ATTACK RANGE:"
 		"DOTA_Tooltip_ability_terrorblade_metamorphosis_bonus_damage"						"BONUS DAMAGE:"
 		"DOTA_Tooltip_ability_terrorblade_sunder"											"Sunder"
-		"DOTA_Tooltip_ability_terrorblade_sunder_Description"								"Severs the soul from both Terrorblade and a target hero, then exchanges them, carrying part of the units' life forces. The percentage hit points of each unit are switched with the souls. Some hit points must remain."
+		"DOTA_Tooltip_ability_terrorblade_sunder_Description"								"Severs the soul from both Terrorblade and a target Hero, then exchanges them, carrying a percentage of each units' life force. The target Hero is also dealt a ministun. Some hit points must remain."
 		"DOTA_Tooltip_ability_terrorblade_sunder_Lore"										"You didn't need that life, did you?  The demon marauder steals that which you hold most dear."
 		"DOTA_Tooltip_ability_terrorblade_sunder_hit_point_minimum_pct"						"%MINIMUM HP SWAP:"
 		"npc_dota_hero_terrorblade_bio"									"Terrorblade is the demon marauder--an outlaw hellion whom even other demons fear. A cosmic iconoclast, he stole from the Demon Lords, ignored the codified rites that should have bound his behavior, and broke every law of the seven Infernal Regions. For his crimes, he was taught this lesson: even Hell has a hell. A short, brutal trial ensued, with many dead on all sides, and he was finally incarcerated in Foulfell, a hidden dimension where demonkind imprison their own.
@@ -8148,7 +8152,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_item_mekansm_spell_Description"	"Armor increased by %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE_ACTIVE%"
 		
 		"DOTA_Tooltip_modifier_item_mjollnir_static"				"Mjollnir Static Charge"
-		"DOTA_Tooltip_modifier_item_mjollnir_static_Description"	"When attacked, there is a 20%% chance that lightning will strike attacker and 2 other nearby enemies"
+		"DOTA_Tooltip_modifier_item_mjollnir_static_Description"	"When attacked, there is a 20%% chance that lightning will strike attacker and 4 other nearby enemies."
 		
 		"DOTA_Tooltip_modifier_necronomicon_archer_aura"				"Archer Aura"
 		"DOTA_Tooltip_modifier_necronomicon_archer_aura_Description"	"Movement speed increased by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%.\nAttack Speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT_SECONDARY%."
@@ -9252,6 +9256,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_safe_to_abandon"											"This game is safe to leave."
 		"dota_safe_to_abandon_inline"									"GAME IS SAFE TO LEAVE"
 		"dota_safe_to_abandon_match_not_scored"							"This game will not be scored.  It is now safe to leave."
+		"dota_safe_to_abandon_match_not_scored_network"					"Poor network conditions have been detected, and this game will not be scored.  It is now safe to leave."
+		"dota_party_forfeited_match"									"Your party has forfeited the game and will receive a loss."
 
 		"dota_leaver_consequence_header_failure_to_reconnect"			"Failure to reconnect will result in the following consequences:"
 		"dota_leaver_consequence_header_leave_match"					"Leaving this match will result in the following consequences:"
@@ -10346,14 +10352,17 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_ability_item_mithril_hammer_Lore"					"A hammer forged of pure mithril."
 		"DOTA_Tooltip_ability_item_mithril_hammer_bonus_damage"					"+$damage"
 		
-		"DOTA_Tooltip_ability_item_mjollnir_Description"						"Active: Static Charge - Places a charged shield on a target unit\nPassive: Chain Lightning - Grants a chance to release Chain Lighting on attack, dealing damage to multiple targets.\n\nMjollnir is a Unique Attack Modifier that stacks with other Unique Attack Modifiers, but overrides them when Chain Lightning occurs."
+		"DOTA_Tooltip_ability_item_mjollnir_Description"						"Active: Static Charge - Places a charged shield on a target unit which has a %static_chance%%% chance to release a bolt of lightning at an attacker and %static_strikes% nearby enemies.\nPassive: Chain Lightning - Grants a chance on attack to release a Chain Lightning that hits %chain_strikes% targets, dealing damage.\n\nMjollnir is a Unique Attack Modifier that stacks with other Unique Attack Modifiers, but overrides them when Chain Lightning occurs."
 		"DOTA_Tooltip_ability_item_mjollnir_Lore"								"Thor’s magical hammer, made for him by the dwarves Brok and Eitri."
-		"DOTA_Tooltip_ability_item_mjollnir_Note0"								"Static Charge cannot trigger more than one per second."
-		"DOTA_Tooltip_ability_item_mjollnir_Note1"								"Static Charge's lightning deals 200 magical damage, the damage source and secondary targets cannot be more than 900 range away, the 3 targets hit must be in a cone with 125 starting radius, 475 distance and 300 final radius."
-		"DOTA_Tooltip_ability_item_mjollnir_chain_chance"						"%CHANCE TO CHAIN:"
-		"DOTA_Tooltip_ability_item_mjollnir_chain_damage"						"CHAIN DAMAGE:"
+		"DOTA_Tooltip_ability_item_mjollnir_Note0"								"Static Charge cannot trigger more than once per second."
+		"DOTA_Tooltip_ability_item_mjollnir_Note1"								"Static Charge's lightning deals magical damage, the damage source and secondary targets cannot be more than 900 range away, the 3 targets hit must be in a cone with 125 starting radius, 475 distance and 300 final radius."
 		"DOTA_Tooltip_ability_item_mjollnir_bonus_damage"						"+$damage"
-		"DOTA_Tooltip_ability_item_mjollnir_bonus_attack_speed"					"+$attack"
+		"DOTA_Tooltip_ability_item_mjollnir_bonus_attack_speed"					"+$attack"		"DOTA_Tooltip_ability_item_mjollnir_static_chance"						"%STATIC CHANCE:"
+		"DOTA_Tooltip_ability_item_mjollnir_static_duration"					"STATIC DURATION:"
+		"DOTA_Tooltip_ability_item_mjollnir_static_damage"						"STATIC DAMAGE:"		
+		"DOTA_Tooltip_ability_item_mjollnir_chain_chance"						"%CHAIN CHANCE:"
+		"DOTA_Tooltip_ability_item_mjollnir_chain_damage"						"CHAIN DAMAGE:"
+
 		
 		"DOTA_Tooltip_ability_item_monkey_king_bar_Description"					"Passive: Mini-Bash - Gives a chance to minibash and deal bonus damage.\nPassive: True Strike - Prevents your attacks from missing."
 		"DOTA_Tooltip_ability_item_monkey_king_bar_Lore"					"A powerful staff used by a master warrior."
@@ -12194,7 +12203,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Econ_Guaranteed_Crate_Drop"					"Opening this treasure will reward you with:"
 		"Econ_Additional_Crate_Drop"					"In addition, this treasure has a chance of containing:"
 		
-		"DOTA_UnusualCourier_Desc"						"Unusual Courier"
+		"DOTA_UnusualCourier"							"Unusual Courier"
+		"DOTA_UnusualCourier_Desc"						"Random courier w/ special FX and colors."
 	
 		"DOTA_SortBackpack"	"Sort Armory:"
 		"DOTA_SortBackpack_Position" " by Position"
@@ -12343,6 +12353,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_UseStyle"										"Select Style"
 		
 		"DOTA_Item_Unnamed_New_Item"						"Unnamed New Item"
+		
+		"DOTA_Item_Shadow_Flame_Genuine"					"Genuine Shadow Flame"
+		"DOTA_Item_Shadow_Flame_Genuine_Desc"				"A genuine version of Shadow Flame for Dazzle."
+
 
 		// Economy UI
 		"DOTA_Loadout_SelectHero"							"Select a Hero"
@@ -12851,6 +12865,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Header_FreeToPlayPack"		"Free to Play Collector's Pack"
 		"StoreBanner_Text_FreeToPlayPack"		"The Director's Cut"
 		
+		"StoreBanner_Header_ClockwerkAnnouncerPack"	"Clockwerk Announcer Pack"
+		"StoreBanner_Text_ClockwerkAnnouncerPack"	"Test your metal! Comes with the Telebolt Projecktor cog item for Clockwerk!"
+		
 		"Playtab_Quiz_Title"				"The Shopkeeper's Quiz"
 		"Playtab_Quiz_Subtitle"				"Test your Dota 2 item knowledge!"
 		// Pennants
@@ -12964,6 +12981,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Attrib_Particle159"						"Bleak Hallucination"
 		"Attrib_Particle163"						"Ionic Vapor"
 		"Attrib_Particle185"						"New Bloom Celebration"
+		"Attrib_Particle196"						"Butterfly Romp"
+		"Attrib_Particle205"						"Touch of Frost"
+		"Attrib_Particle206"						"Touch of Flame"
 				
 		// Rarity Names
 		"Rarity_Common"								"Common"
@@ -14305,6 +14325,15 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Announcer_Preview_Lina_Killing_Spree_02"	"Sick burn!"
 		"DOTA_Announcer_Preview_Lina_Killing_Spree_03"	"Monster kill!"
 		
+		"DOTA_Announcer_Preview_Clockwerk_01"	"Welcome to Dota!"
+		"DOTA_Announcer_Preview_Clockwerk_02"	"Your middle tower is under attack"
+		"DOTA_Announcer_Preview_Clockwerk_03"	"The enemy's top barracks have fallen"
+		"DOTA_Announcer_Preview_Clockwerk_04"	"Radiant victory!"
+		
+		"DOTA_Announcer_Preview_Clockwerk_Killing_Spree_01"	"Rampage!"
+		"DOTA_Announcer_Preview_Clockwerk_Killing_Spree_02"	"Godlike!"
+		"DOTA_Announcer_Preview_Clockwerk_Killing_Spree_03"	"Catastrophic!"
+		
 		"DOTA_AASystem_Green" "Accumulated online game time: %s1. You are currently playing within healthy time-limits. Enjoy the game!"
 		"DOTA_AASystem_Yellow" "Accumulated online game time: %s1. You have exceeded healthy game time limits. Please take care to rest!"
 		"DOTA_AASystem_Red" "Accumulated online game time: %s1. You have exceeded healthy game time limits. It is reccomended that you sign offline and rest!"
@@ -15210,6 +15239,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"UnusualPristinePlatinum"	"Pristine Platinum"
 		"UnusualVermilionRenewal"	"Vermillion Renewal"
 		"UnusualAbysm"				"Reflection's Shade"
+		"UnusualPlushShagbark"		"Plushy Shag"
+		"UnusualLavaRoshan"			"Pyroclastic Flow"
+		"UnusualIceRoshan"			"Glacial Flow"
 			
 		"Econ_MarketTooltipFormat"			"%s1 available on the Steam Community Market starting at %s2."
 		
@@ -15244,6 +15276,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_bot"	"Booties of Travel!"
 		"DOTA_Anim_Mod_ftp_dendi_back"	"Crow's Feet"
 		"DOTA_Anim_Mod_twister"		"Twister"
+		"DOTA_Anim_Mod_telebolt"	"Teleboltin'!"
 		
 		"Invalid_Soul"	"Invalid"
 		"DOTA_Soul_Gem_Raving_Aristocrat"	"Raving Aristocrat"
@@ -15443,6 +15476,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Black_Death_Head_Style1"				"Small Tassels of the Black Death"
 		"DOTA_Item_Black_Death_Head_Style2"				"Medium Tassels of the Black Death"
 		"DOTA_Item_Black_Death_Head_Style3"				"Large Tasseels of the Black Death"
+		"DOTA_Item_Shadow_Flame_Back_Style0"				"Shadow Flame Headdress"
+		"DOTA_Item_Shadow_Flame_Back_Style1"				"Shadow Flame Mohawk"
 
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
 
@@ -15703,6 +15738,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_Selection" "Couldn't find a selection called '%s1' in compendium page '%s2'"
 		"CompendiumPageError_CustomText" "Error in custom text block '%s1' in compendium page '%s2'"
 		"CompendiumPageError_CustomImg" "Error in custom image block '%s1'"
+		"CompendiumPageError_CustomBar" "Error in custom progressbar block '%s1' in compendium page '%s2'"
 		"CompendiumPageError_CTFont"	"Invalid font '%s1' specified in compendium page '%s2'. Valid fonts:\ntext, textbold, title"
 		"CompendiumPageError_CTAlign"	"Invalid alignment '%s1' specified in compendium page '%s2'. Valid alignments:\n left, right, center"
 		"CompendiumPageError_CTDepth"	"Invalid depth '%s1'. Valid depths:\n front, back"
@@ -15711,9 +15747,11 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_SelDesc"	"Couldn't find a 'description' key for selection '%s1' in compendium page '%s2'"
 		"CompendiumPageError_Points"	"Missing (or zero) 'points' specified for selection '%s1' in compendium page '%s2'"
 		"CompendiumPageError_SelType"	"Missing 'choice_type' for selection '%s1' in compendium page '%s2'"
+		"CompendiumPageError_BarType"	"Missing 'data' for progressbar '%s1' in compendium page '%s2'"
 		"CompendiumPageError_SelTimer"	"Unknown timer named '%s1' in compendium page '%s2'"
 		"CompendiumPageError_SelNoTimer" "No timers found in compendium page '%s1' (it has selections, which need a timer)"
 		"CompendiumPageError_SelUnknown"	"Invalid 'choice_type' of '%s1' for selection '%s2'"
+		"CompendiumPageError_BarUnknown"	"Invalid 'data' of '%s1' for selection '%s2'"
 		"CompendiumPageError_SelChoices" "Missing 'choices' block for selection '%s1' in compendium page '%s2'"
 		"CompendiumPageError_NoHero"	"Couldn't find Hero with a Hero ID of '%s1' for selection '%s2'"
 		"CompendiumPageError_Unknown"	"Internal compendium logic error. Contact Valve to resolve this."
