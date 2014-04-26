@@ -1,15 +1,24 @@
 "frontpage_layout"
 {
-	"frontpage_sale"
+	//================
+	// 3 column
+	//================
+	"frontpage_top_banner"
 	{
-		// system
 		"priority"	"100"
 	}
 
 	"frontpage_event"
 	{
-		// system
 		"priority"	"10"
+	}
+	
+	//================
+	// 2 column
+	//================
+	"frontpage_store"
+	{
+		"priority"	"20"
 	}
 
 	"frontpage_workshop"
@@ -17,9 +26,12 @@
 		"priority"	"15"
 	}
 
-	"frontpage_store"
+	//================
+	// 1 column
+	//================
+	"frontpage_sale"
 	{
-		"priority"	"10"
+		"priority"	"20"
 	}
 
 	"frontpage_updates"

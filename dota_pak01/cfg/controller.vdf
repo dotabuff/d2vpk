@@ -1,0 +1,96 @@
+"controller_mappings"
+{
+	"buttons"
+	{
+		"button_0"			"kb:key_x"
+		"button_1"			"kb:key_b"
+		"button_2"			"kb:key_z"
+		"button_3"			"kb:key_v"
+
+		"right_trigger" 	"mouse:right_button"
+		"left_trigger"		"mouse:left_button"
+		"right_bumper"		"mouse:left_button"
+		"left_bumper"		"kb:key_q"
+
+		"button_escape"		"kb:key_esc"
+		"button_menu"		""
+
+		"backside_left"		"kb:key_a"
+		"backside_right"	"kb:key_h"
+	}
+
+	"touchscreen"
+	{
+		"touch_button_0"			"kb:key_w"
+		"touch_button_1"			"kb:key_e"
+		"touch_button_2"			"kb:key_r"
+		"touch_button_3"			"kb:key_q"
+	}
+
+	"pads"
+	{
+		"left_stick_up"		""
+		"left_stick_right"	""
+		"left_stick_down"	""
+		"left_stick_left"	""
+		"left_stick_click"	""
+
+		"left_north"		""
+		"left_northeast"	""
+		"left_east"		""
+		"left_southeast"	""
+		"left_south"		""
+		"left_southwest"	""
+		"left_west"		""
+		"left_northwest"	""
+
+		"left_double_tap"	""
+		"left_outer_edge"	""
+		"left_click"		""
+
+		"right_north"		""
+		"right_northeast"	""
+		"right_east"		""
+		"right_southeast"	""
+		"right_south"		""
+		"right_southwest"	""
+		"right_west"		""
+		"right_northwest"	""
+	
+		"right_double_tap"	""
+		"right_outer_edge"	""
+		"right_click"		""
+
+		// Extra descriptions for pads as a whole rather than just individual directions
+		pad_rollup_descriptions
+		{
+			"left_pad"	"Movement"
+			"right_pad"	"Look"
+		}
+	}
+
+	"settings"
+	{
+		"mouse_sensitivity"		"9"
+	}
+
+	"mode_overrides"
+	{
+		"menu"
+		{
+			"left_north"		""
+			"left_east"			""
+			"left_south"		""
+			"left_west"			""
+		}
+	}
+
+	"metadata"
+	{
+		"title"	""
+		"description" ""
+	}
+}
+
+	
+

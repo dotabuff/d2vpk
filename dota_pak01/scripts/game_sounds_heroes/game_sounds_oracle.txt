@@ -1,0 +1,209 @@
+
+"Hero_Oracle.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_Oracle.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/necrolyte/attack1.wav"
+		"wave"		"weapons/hero/necrolyte/attack2.wav"
+		"wave"		"weapons/hero/necrolyte/attack3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Oracle.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_65dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/necrolyte/attack_impact1.wav"
+		"wave"		"weapons/hero/necrolyte/attack_impact2.wav"
+		"wave"		"weapons/hero/necrolyte/attack_impact3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Hero_Oracle.DeathPulse"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/necrolyte/death_pulse.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Oracle.ReapersScythe.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"  		")weapons/hero/necrolyte/reapers_scythe.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Oracle.ReapersScythe.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"  		")weapons/hero/necrolyte/scythe_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Oracle.IdleLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_69dB"
+	"wave"			"physics/movement/hero/necrolyte/idle_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.2"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+"Oracle.Staff"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_66dB"
+	"pitch"			"95,105"
+	"volume"		"0.5"
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\necrolyte\staff01.wav"
+		"wave"		"physics\footsteps\hero\necrolyte\staff02.wav"
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+	}
+
+ 	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Hero_Oracle.Death"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_null_start"
+		}
+	}
+}

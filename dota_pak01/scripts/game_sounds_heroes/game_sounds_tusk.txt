@@ -138,7 +138,7 @@
 "Hero_Tusk.Snowball.Cast"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"wave"			")weapons/hero/tusk/snowball_cast.wav"
@@ -154,11 +154,73 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "600"
+				"input_radius"  "300"
 			}
 			"volume_fade_out"
 			{
 				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Tusk.Snowball.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/tusk/snowball_lp.wav"
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_in"
+			{
+				"input_max" "2.0"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"usat_stop_time"
+			{
+				"input2" "10.0"
+			}
+		}
+	}
+}
+
+"Hero_Tusk.Snowball.Ally"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/tusk/snowball_ally.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
 			}
 		}
 	}
@@ -182,7 +244,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "600"
+				"input_radius"  "300"
 			}
 		}
 	}

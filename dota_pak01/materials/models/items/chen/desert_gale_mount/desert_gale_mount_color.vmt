@@ -1,0 +1,55 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/chen/desert_gale_mount/desert_gale_mount_color"
+	"$normalmap" "models/items/chen/desert_gale_mount/desert_gale_mount_normal"
+	"$maskmap1" "models/items/chen/desert_gale_mount/desert_gale_mount_masks1"
+	"$maskmap2" "models/items/chen/desert_gale_mount/desert_gale_mount_masks2"
+   	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+$alphatest 1
+	"$detail1" "models/heroes/chen/chen_motion"
+
+        $FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 3
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULARCOLOR "[1 1 .5]"
+	//$SPECULAREXPONENTBLENDTOFULL 1
+	
+	//$RIMLIGHTBLENDTOFULL 1
+	$RIMLIGHTCOLOR "[1 1 .9]"
+	$RIMLIGHTSCALE 2
+	$AMBIENTSCALE 1
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+	//$DETAIL1BLENDFACTOR 0
+	//$DETAIL1BLENDTOFULL 0
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.10
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

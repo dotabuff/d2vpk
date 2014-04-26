@@ -260,6 +260,39 @@
 	}
 }
 
+"Hero_ChaosKnight.Phantasm.Plus"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/chaos_knight/phantasm_plus.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.1"
+			"input_max" "0.3"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
 "Hero_ChaosKnight.Footstep"
 {
 	"channel"		"CHAN_BODY"

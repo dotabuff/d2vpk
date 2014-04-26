@@ -16,6 +16,7 @@
 //   short  : signed int, 16 bit
 //   long   : signed int, 32 bit
 //   float  : float, 32 bit
+//   uint64 : unsigned int 64 bit
 //   local  : any data, but not networked to clients
 //
 // following key names are reserved:
@@ -250,6 +251,8 @@
 	{
 		"itemname"	"string"
 		"PlayerID"	"short"
+		"ItemEntityIndex"  "short"
+		"HeroEntityIndex" "short"
 	}
 	
 	"dota_inventory_item_changed"
@@ -341,7 +344,6 @@
 	}
 	"player_info_updated"
 	{
-		"accountID"		"uint32"
 	}
 	"game_rules_state_change"
 	{
@@ -814,11 +816,40 @@
 	{
 		"difficulty"	"byte"
 	}
+
+	"tree_cut"
+	{
+		"tree_x"		"float"
+		"tree_y"		"float"
+	}
+
+	"ugc_details_arrived"
+	{
+		"published_file_id"		"uint64"
+	}
+	"ugc_subscribed"
+	{
+		"published_file_id"		"uint64"
+	}
+	"ugc_unsubscribed"
+	{
+		"published_file_id"		"uint64"
+	}
 	"prizepool_received"
 	{
 		"success"			"bool"
 		"prizepool"			"uint64"
 		"leagueid"			"uint64"
+	}
+	"microtransaction_success"
+	{
+		"txnid"				"uint64"
+	}
+
+	"dota_rubick_ability_steal"
+	{
+		"abilityIndex"	"short"
+		"abilityLevel"	"byte"
 	}
 }
 

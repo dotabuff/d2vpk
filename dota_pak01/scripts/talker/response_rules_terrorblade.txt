@@ -2651,6 +2651,17 @@ Rule terrorblade_AllyNearIsAllyShredderEarlyGame_Rule
 	response terrorblade_AllyNearIsAllyShredderEarlyGame
 }
 
+Response terrorblade_AllyNearIsAllyTechiesEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_ally_05.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsAllyTechiesEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsAllyTechies EarlyGame
+	response terrorblade_AllyNearIsAllyTechiesEarlyGame
+}
+
 Response terrorblade_AllyNearIsAllySkywrath_MageChance_5%EarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_ally_06.vcd" nodelay noscene speakonce
@@ -2849,6 +2860,17 @@ Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderEarlyGame_Rule
 {
 	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyShredder EarlyGame
 	response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderEarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyTechiesEarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_05.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyTechiesEarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyTechies EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyTechiesEarlyGame
 }
 
 Response terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageChance_5%EarlyGame

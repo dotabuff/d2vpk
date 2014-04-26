@@ -1353,12 +1353,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"buff_duration"			"30"
+				"buff_duration"			"40"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"total_mana"			"100"
+				"total_mana"			"135"
 			}
 		}
 	}
@@ -1469,7 +1469,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"41"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"Model"							"models/props_gameplay/bottle_blue.mdl"
@@ -1528,7 +1528,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"42"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
@@ -1587,7 +1587,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"43"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
@@ -1925,7 +1925,7 @@
 		"ItemShopTags"					"damage;move_speed;hard_to_tag"
 		"ItemQuality"					"common"
 		"ItemAliases"					"phase boots"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -2344,7 +2344,7 @@
 		"ItemShopTags"					"attack_speed;move_speed;int;agi;str"
 		"ItemQuality"					"common"
 		"ItemAliases"					"power treads"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -3191,7 +3191,7 @@
 		"ItemQuality"					"rare"
 		"ItemAliases"					"rob;ring of basilius"
 		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_ALWAYS"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES"
+
 		
 		// Sound
 		//-------------------------------------------------------------------------------------------------------------			
@@ -3286,7 +3286,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"health_regen"			"11"
+				"health_regen"			"8"
 			}
 			"02"
 			{
@@ -3317,6 +3317,16 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"tooltip_resist"			"30"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"750"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_health_regen"		"4"
 			}
 		}
 	}
@@ -3590,7 +3600,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"sheep_movement_speed"	"100"
+				"sheep_movement_speed"	"140"
 			}
 		}
 	}
@@ -5165,7 +5175,7 @@
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"heal_on_death_base"	"400"
+				"heal_on_death_base"	"500"
 			}
 			"08"
 			{
@@ -6419,7 +6429,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"windwalk_duration"		"12.0"
+				"windwalk_duration"		"14.0"
 			}
 			"04"
 			{
@@ -6733,7 +6743,7 @@
 			"12"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"chain_damage"			"160"
+				"chain_damage"			"150"
 			}
 			"13"
 			{
@@ -7345,6 +7355,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -7650,7 +7661,7 @@
 		"ItemShopTags"					"regen_health;boost_mana"
 		"ItemQuality"					"common"
 		"ItemAliases"					"soul ring"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Sound
 		//-------------------------------------------------------------------------------------------------------------			
@@ -8192,7 +8203,7 @@
 
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12"
+		"AbilityCooldown"				"10"
 		"AbilityCastRange"				"1200"
 		"AbilityCastPoint"				"0.0"
 
@@ -8577,7 +8588,7 @@
 		"ItemQuality"					"rare"
 		"ItemAliases"					"tranquil boots"
 		"ItemHideCharges"		     	"1"
-		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------

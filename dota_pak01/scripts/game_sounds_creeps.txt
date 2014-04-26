@@ -1771,7 +1771,7 @@
 
 			"block_dist"
 			{
-				"input2" "1000"
+				"input2" "2000"
 			}
 		}
 	}
@@ -2089,7 +2089,7 @@
 
 			"block_dist"
 			{
-				"input2" "1000"
+				"input2" "2000"
 			}
 		}
 	}
@@ -2386,156 +2386,3 @@
 	}
 }
 
-///////////////////////////////////////////////////////////////////////////////
-//Old sound entries
-///////////////////////////////////////////////////////////////////////////////
-
-//	"Creep_Good_Melee.Death"
-//	{
-//		"channel"		"CHAN_BODY"
-//		"volume"		"0.2"
-//		"soundlevel"	"SNDLVL_75dB"
-//		"rndwave"
-//		{
-//			"wave"			"physics\deaths\common\body_impact_light_01.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_02.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_03.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_04.wav"
-//		}
-//		"operator_stacks"
-//		{
-//			"start_stack"
-//			{
-//				"import_stack" "start_block_at_distance"
-//				"block_dist"
-//				{
-//					"input2" "2000"
-//				}
-//			}
-//		}
-//	}
-
-//	"Creep_Good_Ranged.Death"
-//	{
-//		"channel"		"CHAN_BODY"
-//		"volume"		"0.2"
-//		"soundlevel"	"SNDLVL_75dB"
-//		"rndwave"
-//		{
-//			"wave"			"physics\deaths\common\body_impact_light_01.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_02.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_03.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_04.wav"
-//		}
-//		"operator_stacks"
-//		{
-//			"start_stack"
-//			{
-//				"import_stack" "start_block_at_distance"
-//				"block_dist"
-//				{
-//					"input2" "2000"
-//				}
-//			}
-//		}
-//	}
-
-//	"Creep_Bad_Melee.Death"
-//	{
-//		"channel"		"CHAN_BODY"
-//		"volume"		"0.2"
-//		"soundlevel"  	"SNDLVL_81dB"
-//		"rndwave"
-//		{
-//			"wave"			"physics\deaths\common\body_impact_light_01.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_02.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_03.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_04.wav"
-//		}
-//		"operator_stacks"
-//		{
-//			"start_stack"
-//			{
-//				"import_stack" "start_block_at_distance"
-//				"block_dist"
-//				{
-//					"input2" "2000"
-//				}
-//			}
-//		}
-//	}
-
-//	"Creep_Bad_Range.Death"
-//	{
-//		"channel"		"CHAN_BODY"
-//		"volume"		"0.2"
-//		"soundlevel"	"SNDLVL_72dB"
-//		"rndwave"
-//		{
-//			"wave"			"physics\deaths\common\body_impact_light_01.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_02.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_03.wav"
-//			"wave"			"physics\deaths\common\body_impact_light_04.wav"
-//		}
-//		"operator_stacks"
-//		{
-//			"start_stack"
-//			{
-//				"import_stack" "start_block_at_distance"
-//				"block_dist"
-//				{
-//					"input2" "2000"
-//				}
-//			}
-//		}
-//	}
-
-//  "Necronomicon_Warrior.Death"
-//  {
-//	  "channel"		"CHAN_BODY"
-//	  "volume"		"0.2"
-//	  "soundlevel"	"SNDLVL_72dB"
-//	  "rndwave"
-//	  {
-//	  	  "wave"			"physics\deaths\common\body_impact_light_01.wav"
-//		  "wave"			"physics\deaths\common\body_impact_light_02.wav"
-//		  "wave"			"physics\deaths\common\body_impact_light_03.wav"
-//		  "wave"			"physics\deaths\common\body_impact_light_04.wav"
-//	  }
-//	  "operator_stacks"
-//	  {
-//		  "start_stack"
-//		  {
-//			  "import_stack" "start_block_at_distance"
-//			  "block_dist"
-//			  {
-//				  "input2" "2000"
-//			  }
-//		  }
-//	  }
-//  }
-//
-//  "Necronomicon_Archer.Death"
-//  {
-//	  "channel"		"CHAN_BODY"
-//	  "volume"		"0.2"
-//	  "soundlevel"	"SNDLVL_72dB"
-//	  "rndwave"
-//	  {
-//		  "wave"			"physics\deaths\common\body_impact_light_01.wav"
-//		  "wave"			"physics\deaths\common\body_impact_light_02.wav"
-//		  "wave"			"physics\deaths\common\body_impact_light_03.wav"
-//		  "wave"			"physics\deaths\common\body_impact_light_04.wav"
-//	  }
-//	  "operator_stacks"
-//	  {
-//		  "start_stack"
-//		  {
-//			  "import_stack" "start_block_at_distance"
-//			  "block_dist"
-//			  {
-//				  "input2" "2000"
-//			  }
-//		  }
-//	  }
-//  }

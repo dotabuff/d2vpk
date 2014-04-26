@@ -76,6 +76,30 @@
 	}
 }
 
+"Hero_Nevermore.RequiemOfSoulsCast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/nevermore/requiem_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
 "Hero_Nevermore.RequiemOfSouls"
 {
 	"channel"		"CHAN_STATIC"
@@ -100,26 +124,22 @@
 	}
 }
 
-"Hero_Nevermore.RequiemOfSoulsCast"
+"Hero_Nevermore.RequiemOfSouls.Damage"
 {
-	"channel"		"CHAN_WEAPON"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
-	"wave"  		")weapons/hero/nevermore/requiem_cast.wav"
-	"soundentry_version" "2"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/nevermore/attack01.wav"
+		"wave"		"weapons/hero/nevermore/attack02.wav"
+	}
 	"operator_stacks"
 	{
-		"update_stack"
+		"start_stack"
 		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Ultimates"
-			}
-			"speakers_spatialize"
-			{
-				"input_radius"  "300"
-			}
+			"import_stack" "dota_attack_block_dist"
 		}
 	}
 }

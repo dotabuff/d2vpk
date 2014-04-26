@@ -554,6 +554,11 @@
 			"heroID"		"77"
 			"tag"			"Lycanthrope"
 		}
+		"magnataur"		
+		{
+			"heroID"		"97"
+			"tag"			"Magnus"
+		}
 		"medusa"		
 		{
 			"heroID"		"94"
@@ -829,10 +834,20 @@
 			"heroID"		"46"
 			"tag"			"Templar Assassin"
 		}
+		"terrorblade"		
+		{
+			"heroID"		"109"
+			"tag"			"Terrorblade"
+		}
 		"tidehunter"		
 		{
 			"heroID"		"29"
 			"tag"			"Tidehunter"
+		}
+		"shredder"		
+		{
+			"heroID"		"98"
+			"tag"			"Timbersaw"
 		}
 		"treant"		
 		{
@@ -854,11 +869,11 @@
 			"heroID"		"20"
 			"tag"			"Vengeful Spirit"
 		}
-//		"venomancer"		
-//		{
-//			"heroID"		"40"
-//			"tag"			"Venomancer"
-//		}
+		"venomancer"		
+		{
+			"heroID"		"40"
+			"tag"			"Venomancer"
+		}
 		"warlock"		
 		{
 			"heroID"		"37"
@@ -885,16 +900,14 @@
 			"tag"			"Wraith King"
 		}
 
-
-
 		"wards"		
 		{
-			"heroID"		"999"
+			"heroID"		"999"				//this is set high to be above the highest hero id which will filter these from hero dropdowns
 			"tag"			"Wards"
 		}
 		"courier"
 		{
-			"heroID"		"1000"
+			"heroID"		"1000"			//this is set high to be above the highest hero id which will filter these from hero dropdowns
 			"tag"			"Courier"
 		}
 	}
@@ -1016,6 +1029,7 @@
 			"lone_druid"               "materials/models/heroes/lone_druid/lonedruid_base.vmt"
 			"luna"                     "materials/models/heroes/luna/luna_body_color.vmt"
 			"lycan"               	   "materials/models/heroes/lycan/lycan_body_color.vmt"
+			"magnataur"                "materials/models/heroes/magnataur/magnataur_body_color.vmt"
 			"medusa"                    "materials/models/heroes/medusa/medusa_body_color.vmt"
 			"meepo"                    "materials/models/heroes/meepo/meepo_color.vmt"
 			"mirana"		   "materials/models/heroes/mirana/mirana_color.vmt"
@@ -1049,12 +1063,14 @@
 			"storm_spirit"             "materials/models/heroes/storm_spirit/storm_v2_base.vmt"
 			"sven"                     "materials/models/heroes/sven/sven_color.vmt"
 			"lanaya"                   "materials/models/heroes/lanaya/lanaya_base.vmt"
-			"treant"			"materials/models/heroes/treant_protector/treantprotector_body_color.vmt"
+			"terrorblade"		   "materials/models/heroes/terrorblade/terrorblade_color.vmt"
+			"treant"		   "materials/models/heroes/treant_protector/treantprotector_body_color.vmt"
 			"tidehunter"               "materials/models/heroes/tidehunter/tidehunter.vmt"
+			"shredder"                 "materials/models/heroes/shredder/timbersaw_base.vmt"
 			"tuskarr"                  "materials/models/heroes/tuskarr/tusk_base_color.vmt"
 			"ursa"                     "materials/models/heroes/ursa/ursa_color.vmt"
 			"vengefulspirit"	   "materials/models/heroes/vengeful/vengeful2_body_color.vmt"
-//			"venomancer"               "materials/models/heroes/venomancer/venomancer_color.vmt"
+			"venomancer"               "materials/models/heroes/venomancer/venomancer_color.vmt"
 			"warlock"                  "materials/models/heroes/warlock/warlock_color.vmt"
 			"weaver"                   "materials/models/heroes/weaver/weaver_color.vmt"
 			"windrunner"               "materials/models/heroes/windrunner/windrunner_base.vmt"

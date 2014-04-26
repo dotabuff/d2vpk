@@ -1,0 +1,400 @@
+
+"Hero_Techies.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"weapons/hero/techies/preattack.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+	}
+}
+
+"Hero_Techies.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"weapons/hero/techies/attack.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Techies.ProjectileImpact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/techies/projectile_impact01.wav"
+		"wave"	"weapons/hero/techies/projectile_impact02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Techies.LandMine.Plant"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"	        "weapons/hero/techies/land_mine_plant.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+
+"Hero_Techies.LandMine.Detonate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/techies/land_mine01.wav"
+		"wave"		")weapons/hero/techies/land_mine02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "15000"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Techies.Debris"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "NoDuck"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Techies.Debris"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/techies/debris01.wav"
+		"wave"		")weapons/hero/techies/debris02.wav"
+		"wave"		")weapons/hero/techies/debris03.wav"
+	}
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+			"delay_output"
+			{
+			"input_float" "0.8"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"Hero_Techies.StasisTrap.Plant"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/techies/stasis_trap_plant.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Techies.StasisTrap.Stun"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/techies/stasis_trap.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "NoDuck"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Techies.Suicide"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/techies/suicide.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "15000"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Techies.Debris"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "QuickDuck.HalfSecond"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "NoDuck"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"Hero_Techies.RemoteMine.Plant"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"99, 101"
+	"wave"	        "weapons/hero/techies/remote_mine_plant.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Techies.RemoteMine.Detonate"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_150dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/techies/remote_mine01.wav"
+		"wave"		"weapons/hero/techies/remote_mine02.wav"
+		"wave"		"weapons/hero/techies/remote_mine03.wav"
+		"wave"		"weapons/hero/techies/remote_mine04.wav"
+		"wave"		"weapons/hero/techies/remote_mine05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "15000"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Techies.Debris"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "QuickDuck.HalfSecond"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "NoDuck"
+			}
+			"volume_falloff_linear"
+			{
+				"input_max" "12000.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Techies.Footsteps"
+{
+	"channel"	"CHAN_BODY"
+	"volume"	"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\shared\general01.wav"
+		"wave"		"physics\footsteps\hero\shared\general02.wav"
+		"wave"		"physics\footsteps\hero\shared\general03.wav"
+		"wave"		"physics\footsteps\hero\shared\general04.wav"
+		"wave"		"physics\footsteps\hero\shared\general05.wav"
+		"wave"		"physics\footsteps\hero\shared\general06.wav"
+		"wave"		"physics\footsteps\hero\shared\general07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+
+"Hero_Techies.IdleLoop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_72dB"
+	"wave"			"physics/movement/hero/techies/idle_loop.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.01"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}

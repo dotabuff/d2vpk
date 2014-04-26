@@ -681,7 +681,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  		"SNDLVL_85dB"
-	"pitch"			"95,100"
+	"pitch"			"95,105"
 	"rndwave"			
 	{
 		"wave"			")physics/damage/engines/dire_base_destruction_01.wav"
@@ -690,12 +690,16 @@
 	}
 	"operator_stacks"
 	{
-		"start_stack"
+		"update_stack"
 		{
-			"import_stack" "start_block_at_distance"
-			"block_dist"
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
 			{
-				"input2" "3000"
+				"input_max" "6000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
 			}
 		}
 	}
@@ -3046,4 +3050,19 @@
 		"wave"			"ambient\newyear\firecrackers09.wav"
 	}
 
+}
+
+"QuickDuck.HalfSecond"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"half_sec_qd.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
 }

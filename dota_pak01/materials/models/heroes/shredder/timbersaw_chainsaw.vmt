@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	$baseTexture "models\heroes\shredder\timbersaw_chainsaw_color"
+	"$normalmap" "models\heroes\shredder\timbersaw_chainsaw_normal"
+//    	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$maskmap1" "models\heroes\shredder\timbersaw_chainsaw_masks1"
+	"$maskmap2" "models\heroes\shredder\timbersaw_chainsaw_masks2"
+
+	"$detail1" "models\heroes\shredder\shredder_motion"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 8
+//	$SPECULARCOLOR "[.3 .75 1]"
+
+	$ENVMAP "models/cubemaps/glossy"
+	"$envmapintensity" "1"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+
+	
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+	$alphatest 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.20
+			"texturescrollangle"	270
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

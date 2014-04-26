@@ -211,6 +211,17 @@ Rule gyrocopter_KillIsEnemyRattletrapChance_20%_Rule
 	response gyrocopter_KillIsEnemyRattletrapChance_20%
 }
 
+Response gyrocopter_KillIsEnemyTechiesChance_20%
+{
+	scene "scenes/gyrocopter/gyrocopter_gyro_rival_11.vcd" nodelay noscene 
+}
+
+Rule gyrocopter_KillIsEnemyTechiesChance_20%_Rule
+{
+	criteria Kill Isgyrocopter IsEnemyTechies Chance_20%
+	response gyrocopter_KillIsEnemyTechiesChance_20%
+}
+
 Response gyrocopter_KillIsEnemyInvokerChance_20%
 {
 	scene "scenes/gyrocopter/gyrocopter_gyro_rival_13.vcd" nodelay noscene 

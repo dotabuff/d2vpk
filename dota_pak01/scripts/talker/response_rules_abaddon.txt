@@ -427,6 +427,17 @@ Rule abaddon_LevelUp_Rule
 	response abaddon_LevelUp
 }
 
+Response abaddon_AllyNearIsAllyTechiesEarlyGame
+{
+	scene "scenes/abaddon/abaddon_abad_ally_01.vcd" nodelay noscene speakonce
+}
+
+Rule abaddon_AllyNearIsAllyTechiesEarlyGame_Rule
+{
+	criteria AllyNear Isabaddon IsAllyTechies EarlyGame
+	response abaddon_AllyNearIsAllyTechiesEarlyGame
+}
+
 Response abaddon_AllyNearIsAllyTerrorbladeEarlyGame
 {
 	scene "scenes/abaddon/abaddon_abad_ally_02.vcd" nodelay noscene speakonce

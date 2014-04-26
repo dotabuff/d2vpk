@@ -209,6 +209,17 @@ Rule slark_KillIsEnemyBounty_HunterChance_20%_Rule
 	response slark_KillIsEnemyBounty_HunterChance_20%
 }
 
+Response slark_KillIsEnemyTechiesChance_5%
+{
+	scene "scenes/slark/slark_slark_rival_14.vcd" nodelay noscene 
+}
+
+Rule slark_KillIsEnemyTechiesChance_5%_Rule
+{
+	criteria Kill Isslark IsEnemyTechies Chance_5%
+	response slark_KillIsEnemyTechiesChance_5%
+}
+
 Response slark_Move
 {
 	scene "scenes/slark/slark_slark_move_01.vcd" nodelay noscene 

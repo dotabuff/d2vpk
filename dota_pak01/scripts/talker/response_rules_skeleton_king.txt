@@ -379,6 +379,17 @@ Rule skeleton_king_KillIsEnemyTerrorbladeChance_25%_Rule
 	response skeleton_king_KillIsEnemyTerrorbladeChance_25%
 }
 
+Response skeleton_king_KillIsEnemyTechiesChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_wraith_rival_26.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyTechiesChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyTechies Chance_25%
+	response skeleton_king_KillIsEnemyTechiesChance_25%
+}
+
 Response skeleton_king_KillIsFirstBlood
 {
 	scene "scenes/skeleton_king/skeleton_king_wraith_firstblood_01.vcd" nodelay noscene 

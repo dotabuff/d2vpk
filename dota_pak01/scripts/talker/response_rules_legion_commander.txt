@@ -317,6 +317,17 @@ Rule legion_commander_KillChance_25%IsEnemyAbaddon_Rule
 	response legion_commander_KillChance_25%IsEnemyAbaddon
 }
 
+Response legion_commander_KillChance_25%IsEnemyTechies
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_18.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsEnemyTechies_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsEnemyTechies
+	response legion_commander_KillChance_25%IsEnemyTechies
+}
+
 Response legion_commander_KillChance_25%IsEnemyPhoenix
 {
 	scene "scenes/legion_commander/legion_commander_legcom_rival_19.vcd" nodelay noscene 
@@ -738,6 +749,17 @@ Rule legion_commander_KillChance_3%IsEnemyTinker_Rule
 	response legion_commander_KillChance_3%IsEnemyTinker
 }
 
+Response legion_commander_KillChance_3%IsEnemyTechies
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_31.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsEnemyTechies_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsEnemyTechies
+	response legion_commander_KillChance_3%IsEnemyTechies
+}
+
 Response legion_commander_KillChance_3%IsEnemyWeaver
 {
 	scene "scenes/legion_commander/legion_commander_legcom_rival_32.vcd" nodelay noscene 
@@ -1096,6 +1118,17 @@ Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAbaddon_Rule
 {
 	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyAbaddon
 	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyAbaddon
+}
+
+Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyTechies
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_18.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_25%IsLegionEconDemonIsEnemyTechies_Rule
+{
+	criteria Kill Islegion_commander Chance_25% IsLegionEconDemon IsEnemyTechies
+	response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyTechies
 }
 
 Response legion_commander_KillChance_25%IsLegionEconDemonIsEnemyPhoenix
@@ -1462,6 +1495,17 @@ Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTinker_Rule
 {
 	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyTinker
 	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTinker
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTechies
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_31.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTechies_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyTechies
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyTechies
 }
 
 Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWeaver
@@ -2710,6 +2754,17 @@ Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsEnemyOgre_Magi_Rule
 {
 	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsEnemyOgre_Magi
 	response legion_commander_CastExecuteIsLegionDuelChance_5%IsEnemyOgre_Magi
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_5%IsEnemyTechies
+{
+	scene "scenes/legion_commander/legion_commander_legcom_duelhero_32.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_5%IsEnemyTechies_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_5% IsEnemyTechies
+	response legion_commander_CastExecuteIsLegionDuelChance_5%IsEnemyTechies
 }
 
 Response legion_commander_CastExecuteIsLegionOddsChance_25%IsLegionEconDemon

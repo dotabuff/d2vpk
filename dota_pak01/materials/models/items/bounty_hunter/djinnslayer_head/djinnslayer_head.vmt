@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/bounty_hunter/djinnslayer_head/djinnslayer_head_color"
+	"$normalmap"		"models/items/bounty_hunter/djinnslayer_head/djinnslayer_head_normal"
+	"$maskmap1"		"models/items/bounty_hunter/djinnslayer_head/djinnslayer_head_mask1"
+	"$maskmap2"		"models/items/bounty_hunter/djinnslayer_head/djinnslayer_head_mask2"
+	"$alphatest"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"7"
+	"$SPECULARCOLOR"		"[.7 1 1]"
+	"$RIMLIGHTCOLOR"		"[.8 1 1]"
+	"\\$SPECULARBLENDTOFULL"		"1"
+	"\\$SPECULAREXPONENTBLENDTOFULL"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$DETAIL1BLENDTOFULL"		"0"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"5.500000"
+			"texturescrollangle"		"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

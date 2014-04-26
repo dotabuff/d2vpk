@@ -1,7 +1,7 @@
 criterion "Isearth_spirit" "classname" "npc_dota_hero_earth_spirit" weight 5 required
 criterion "IsEnemyearth_spirit" "targetclassname" "npc_dota_hero_earth_spirit" weight 5 required
 criterion "IsAllyearth_spirit" "nearby_ally" "npc_dota_hero_earth_spirit" weight 5 required
-criterion "IsEarthSpiStoneCaller" "abilityname" "earth_spirit_stone_caller" weight 5 required
+criterion "IsEarthSpiStoneRemnant" "stoneremnantcast" "yes" weight 5 required
 criterion "IsEarthSpiBoulderSmash" "abilityname" "earth_spirit_boulder_smash" weight 5 required
 criterion "IsEarthSpiRollingBoulder" "abilityname" "earth_spirit_rolling_boulder" weight 5 required
 criterion "IsEarthSpiGeoGrip" "abilityname" "earth_spirit_geomagnetic_grip" weight 5 required
@@ -35,6 +35,25 @@ Rule earth_spirit_CustomIsGameStart_Rule
 {
 	criteria Custom Isearth_spirit IsGameStart
 	response earth_spirit_CustomIsGameStart
+}
+
+Response earth_spirit_CustomIsEarthSpiStoneRemnant
+{
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_05.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_07.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_10.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_11.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_12.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_14.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_happy_03.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_happy_04.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_happy_05.vcd" nodelay noscene weapondelay 5
+}
+
+Rule earth_spirit_CustomIsEarthSpiStoneRemnant_Rule
+{
+	criteria Custom Isearth_spirit IsEarthSpiStoneRemnant
+	response earth_spirit_CustomIsEarthSpiStoneRemnant
 }
 
 Response earth_spirit_KillIsFirstBloodChance_10%
@@ -515,25 +534,6 @@ Rule earth_spirit_CastOrder_Rule
 {
 	criteria CastOrder Isearth_spirit 
 	response earth_spirit_CastOrder
-}
-
-Response earth_spirit_CastExecuteIsEarthSpiStoneCaller
-{
-	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_05.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_07.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_10.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_11.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_12.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_14.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_happy_03.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_happy_04.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_happy_05.vcd" nodelay noscene weapondelay 5
-}
-
-Rule earth_spirit_CastExecuteIsEarthSpiStoneCaller_Rule
-{
-	criteria CastExecute Isearth_spirit IsEarthSpiStoneCaller
-	response earth_spirit_CastExecuteIsEarthSpiStoneCaller
 }
 
 Response earth_spirit_CastExecuteIsEarthSpiGeoGripChance_75%

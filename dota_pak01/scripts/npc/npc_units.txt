@@ -7992,7 +7992,7 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"59"		// Experience earn.
+		"BountyXP"					"100"		// Experience earn.
 		"BountyGoldMin"				"100"		// Gold earned min.
 		"BountyGoldMax"				"100"		// Gold earned max.
 
@@ -8003,7 +8003,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"330"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -8084,7 +8084,7 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"59"		// Experience earn.
+		"BountyXP"					"150"		// Experience earn.
 		"BountyGoldMin"				"150"		// Gold earned min.
 		"BountyGoldMax"				"150"		// Gold earned max.
 
@@ -8096,7 +8096,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"360"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -8177,7 +8177,7 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"59"		// Experience earn.
+		"BountyXP"					"200"		// Experience earn.
 		"BountyGoldMin"				"200"		// Gold earned min.
 		"BountyGoldMax"				"200"		// Gold earned max.
 
@@ -8189,7 +8189,7 @@
 		// Movement
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
-		"MovementSpeed"				"390"		// Speed
+		"MovementSpeed"				"350"		// Speed
 		"MovementTurnRate"			"0.5"		// Turning rate.
 
 		// Status
@@ -8270,7 +8270,7 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"59"		// Experience earn.
+		"BountyXP"					"100"		// Experience earn.
 		"BountyGoldMin"				"100"		// Gold earned min.
 		"BountyGoldMax"				"100"		// Gold earned max.
 
@@ -8363,7 +8363,7 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"59"		// Experience earn.
+		"BountyXP"					"150"		// Experience earn.
 		"BountyGoldMin"				"150"		// Gold earned min.
 		"BountyGoldMax"				"150"		// Gold earned max.
 
@@ -8456,7 +8456,7 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"59"		// Experience earn.
+		"BountyXP"					"200"		// Experience earn.
 		"BountyGoldMin"				"200"		// Gold earned min.
 		"BountyGoldMax"				"200"		// Gold earned max.
 
@@ -8754,7 +8754,7 @@
 		"AttackDamageMin"			"0"			// Damage range min.
 		"AttackDamageMax"			"0"			// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"				"0.25"		// Speed of attack.
+		"AttackRate"				"0.22"		// Speed of attack.
 		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"700"		// Range within a target can be acquired.
 		"AttackRange"				"700"		// Range within a target can be attacked.
@@ -10156,7 +10156,7 @@
 
 		// Armor
 		//----------------------------------------------------------------
-		"ArmorPhysical"				"3"			// Physical protection.
+		"ArmorPhysical"				"4"			// Physical protection.
 		"MagicalResistance"				"75"									// Magical protection (percentage).
 
 		// Attack
@@ -11900,8 +11900,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"44"		// Experience earn.
-		"BountyGoldMin"				"70"		// Gold earned min.
-		"BountyGoldMax"				"70"		// Gold earned max.
+		"BountyGoldMin"				"75"		// Gold earned min.
+		"BountyGoldMax"				"75"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -11925,7 +11925,7 @@
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
 		
 		// Vision
@@ -11971,8 +11971,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"44"		// Experience earn.
-		"BountyGoldMin"				"90"		// Gold earned min.
-		"BountyGoldMax"				"90"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"100"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -11996,7 +11996,7 @@
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
 		
 		// Vision
@@ -12042,8 +12042,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"44"		// Experience earn.
-		"BountyGoldMin"				"110"		// Gold earned min.
-		"BountyGoldMax"				"110"		// Gold earned max.
+		"BountyGoldMin"				"125"		// Gold earned min.
+		"BountyGoldMax"				"125"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -12067,7 +12067,7 @@
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
 		
 		// Vision
@@ -12113,8 +12113,8 @@
 		// Bounty
 		//----------------------------------------------------------------
 		"BountyXP"					"44"		// Experience earn.
-		"BountyGoldMin"				"130"		// Gold earned min.
-		"BountyGoldMax"				"130"		// Gold earned max.
+		"BountyGoldMin"				"150"		// Gold earned min.
+		"BountyGoldMax"				"150"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -12138,7 +12138,7 @@
 		//----------------------------------------------------------------
 		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
-		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRONG"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
 		
 		// Vision
@@ -12189,9 +12189,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"5"		// Gold earned min.
-		"BountyGoldMax"				"7"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -12266,9 +12266,9 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"25"		// Experience earn.
-		"BountyGoldMin"				"5"		// Gold earned min.
-		"BountyGoldMax"				"7"		// Gold earned max.
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -13677,7 +13677,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"1800"		// Base health.
-		"StatusHealthRegen"			"2"			// Health regeneration rate.
+		"StatusHealthRegen"			"3"			// Health regeneration rate.
 		"StatusMana"				"0"		// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
 		
@@ -13753,7 +13753,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"2300"		// Base health.
-		"StatusHealthRegen"			"2"			// Health regeneration rate.
+		"StatusHealthRegen"			"4"			// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
 		
@@ -13828,7 +13828,7 @@
 		// Status
 		//----------------------------------------------------------------
 		"StatusHealth"				"2700"		// Base health.
-		"StatusHealthRegen"			"2"			// Health regeneration rate.
+		"StatusHealthRegen"			"5"			// Health regeneration rate.
 		"StatusMana"				"0"		// Base mana.
 		"StatusManaRegen"			"0.0"		// Mana regeneration rate.		 
 		

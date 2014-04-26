@@ -149,6 +149,32 @@
 	}
 }
 
+"Hero_Spirit_Breaker.GreaterBash.Creep"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"105, 115"
+	"wave"			")weapons/hero/spirit_breaker/greater_bash.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Hero_Spirit_Breaker.GreaterBash.Creep"
+				"match_channel" "false"
+			}
+		}
+	}
+}
+
+
 
 "Hero_Spirit_Breaker.NetherStrike.Begin"
 {

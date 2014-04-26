@@ -3,6 +3,7 @@ criterion "IsEnemytusk" "targetclassname" "npc_dota_hero_tusk" weight 5 required
 criterion "IsAllytusk" "nearby_ally" "npc_dota_hero_tusk" weight 5 required
 criterion "IsTuskIceShards" "abilityname" "tusk_ice_shards" weight 5 required
 criterion "IsTuskSnowball" "abilityname" "tusk_snowball" weight 5 required
+criterion "IsTuskSnowballLaunch" "abilityname" "tusk_launch_snowball" weight 5 required
 criterion "IsTuskFrozenSigil" "abilityname" "tusk_frozen_sigil" weight 5 required
 criterion "IsTuskReadyPunch" "abilityname" "tusk_walrus_punch" weight 5 required
 criterion "IsTuskPunch" "punch_hero" "yes" weight 5 required
@@ -176,7 +177,7 @@ Rule tusk_KillIsTuskIceShardsChance_15%_Rule
 
 Response tusk_KillIsTuskSnowballChance_25%
 {
-	scene "scenes/tusk/tusk_tusk_snowball_11.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_11.vcd" nodelay noscene Weapondelay 2
 	scene "scenes/tusk/tusk_tusk_snowball_14.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_snowball_15.vcd" nodelay noscene 
 	scene "scenes/tusk/tusk_tusk_snowball_16.vcd" nodelay noscene 
@@ -527,19 +528,32 @@ Rule tusk_CastExecuteIsTuskIceShardsChance_75%_Rule
 
 Response tusk_CastExecuteIsTuskSnowballChance_75%
 {
-	scene "scenes/tusk/tusk_tusk_snowball_01.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_snowball_02.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_snowball_03.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_snowball_04.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_snowball_05.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_snowball_08.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_snowball_09.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_01.vcd" nodelay noscene Weapondelay 2
+	scene "scenes/tusk/tusk_tusk_snowball_02.vcd" nodelay noscene Weapondelay 2
+	scene "scenes/tusk/tusk_tusk_snowball_04.vcd" nodelay noscene Weapondelay 2
+	scene "scenes/tusk/tusk_tusk_snowball_05.vcd" nodelay noscene Weapondelay 2
+	scene "scenes/tusk/tusk_tusk_snowball_09.vcd" nodelay noscene Weapondelay 2
 }
 
 Rule tusk_CastExecuteIsTuskSnowballChance_75%_Rule
 {
 	criteria CastExecute Istusk IsTuskSnowball Chance_75%
 	response tusk_CastExecuteIsTuskSnowballChance_75%
+}
+
+Response tusk_CastExecuteIsTuskSnowballLaunchChance_25%
+{
+	scene "scenes/tusk/tusk_tusk_snowball_03.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_06.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_07.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_08.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_snowball_10.vcd" nodelay noscene 
+}
+
+Rule tusk_CastExecuteIsTuskSnowballLaunchChance_25%_Rule
+{
+	criteria CastExecute Istusk IsTuskSnowballLaunch Chance_25%
+	response tusk_CastExecuteIsTuskSnowballLaunchChance_25%
 }
 
 Response tusk_CastExecuteIsTuskFrozenSigil
@@ -1352,15 +1366,15 @@ Rule tusk_Pain_Rule
 	response tusk_Pain
 }
 
-Response tusk_InTheBagChance_10%
+Response tusk_InTheBagChance_15%
 {
 	scene "scenes/tusk/tusk_tusk_inthebag_01.vcd" nodelay noscene 
 }
 
-Rule tusk_InTheBagChance_10%_Rule
+Rule tusk_InTheBagChance_15%_Rule
 {
-	criteria InTheBag Istusk Chance_10%
-	response tusk_InTheBagChance_10%
+	criteria InTheBag Istusk Chance_15%
+	response tusk_InTheBagChance_15%
 }
 
 Response tusk_InTheBag

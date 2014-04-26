@@ -226,6 +226,30 @@
 	}
 }
 
+"DOTA_Item.Dagon5.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_87dB"
+	"pitch"			"90"
+	"wave"			")items/dagon.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
 
 "DOTA_Item.Refresher.Activate" //local
 {
@@ -485,7 +509,7 @@
 {
 	"channel"		"CHAN_STATIC"
 	"volume"			"1"
-	"soundlevel"  	"SNDLVL_81dB"
+	"soundlevel"  	"SNDLVL_84dB"
 	"pitch"			"95, 105"
 	"wave"			")items\rod_of_atos.wav"
 }
@@ -787,6 +811,22 @@
 			{
 				"input_Max" "1.0"
 			}
+		}
+	}
+}
+
+"DOTA_Item.Daedelus.Crit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/daedelus.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
 		}
 	}
 }

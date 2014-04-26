@@ -1382,9 +1382,9 @@
 "Waitingforplayers_Boost_Hit"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_short.wav"
+	"wave"			"ui/ui_ability_ulti_available_01.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1392,7 +1392,7 @@
 			"import_stack" "dota_update_vo_clamped"
 			"mixer"
 			{
-				"mixgroup" "Stingers"
+				"mixgroup" "UI"
 			}
 		}
 	}
@@ -1401,9 +1401,9 @@
 "Waitingforplayers_Boost_Shared"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"			"1.0"
+	"volume"			"0.5"
 	"soundlevel"  	"SNDLVL_NONE"
-	"wave"			"#items/mek_cast.wav"
+	"wave"			"ui/ui_message_popup_fast_01.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1411,7 +1411,7 @@
 			"import_stack" "dota_update_vo_clamped"
 			"mixer"
 			{
-				"mixgroup" "Stingers"
+				"mixgroup" "UI"
 			}
 		}
 	}

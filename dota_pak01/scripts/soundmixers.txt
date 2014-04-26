@@ -26,6 +26,7 @@
 
 	"ambient"				"ambient"			""			""				""			""			"50"		"1"		"0"		"90"	"90"
 	"Ping"					"ui/ping"			""			""				""			""			"50"		"0"		"0"		"90"	"90"
+	"QuickDuck"				"half_sec_qd.wav"	""			""				""			""			"50"		"0"		"0"		"90"	"90"
 
 	"VOFX"			"vo/phoenix/phoenix_bird_"	""			""				""			""			"60"		"0"		"0"		"90"	"90"
 	"Silencer"			"global_silence_effect"	""			""				""			""			"60"		"0"		"0"		"90"	"90"
@@ -40,6 +41,7 @@
 	"Placeholder"			"placeholder"		""			""				""			""			"60"		"0"		"0"		"80"	"80"
 	"Creeps"				"/creep"			""			""				""			""			"40"		"1"		"0"		"80"	"90"
 	"BaseAttacks"			"attack"			""			""				""			""			"50"		"0"		"0"		"90"	"60"
+	"NoDuck"				"items/"			""			""				""			""			"50"		"0"		"0"		"90"	"60"
 	"Weapons"				"weapons"			""			""				""			""			"50"		"0"		"0"		"90"	"60"
 	
 	"Deaths"				"deaths/"			""			""				""			""			"50"		"1"		"0"		"80"	"60"
@@ -79,6 +81,7 @@
 		"voip"					"0.9"
 		"ambient"				"0.5"
 		"Ping"					"0.5"
+		"QuickDuck"				"0.5"
 		"VOFX"					"0.6"
 		"Silencer"				"0.9"
 		"Ultimates"				"0.8"
@@ -88,11 +91,12 @@
 		"VO"					"0.3"
 		"PlayerDamage"			"0.6"
 		"Stingers"				"0.6"
+		"NoDuck"				"0.7"
 		"Weapons"				"0.7"
 		"BaseAttacks"			"0.4"
 		"HeroPick"				"0.4"
 		"Music"					"0.4"
-		"Creeps"				"0.2"
+		"Creeps"				"0.3"
 		"Deaths"				"0.6"
 		"Physics"				"0.4"
 		"UI"					"0.5"
@@ -108,7 +112,7 @@
 	"VOIP"
  	{
  		//grp,		vol, lvl, dsp, solo, mute
- 		"voip"		1.0  1.0  1.0  0.25   0.0
+ 		"voip"		1.0  1.0  1.0  0.3   0.0
 		"VO"		0.5  1.0  1.0  0.0   0.0
 		"Announcer"	0.8  1.0  1.0  0.0   0.0
  	}
@@ -133,6 +137,7 @@
  		//grp,		vol, lvl, dsp, solo, mute
 		"ambient"	0.3  1.0  1.0  0.0   0.0
  		"Weapons"	0.0  1.0  1.0  0.0   1.0
+		"Techies"	0.0  1.0  1.0  0.0   1.0
 		"BaseAttacks" 0.0  1.0  1.0  0.0   1.0
 		"Creeps"	0.0  1.0  1.0  0.0   1.0
 		"Deaths"	0.0  1.0  1.0  0.0   1.0
@@ -147,7 +152,7 @@
 	"HeroesMuteCreeps"
  	{
  		//grp,		vol, lvl, dsp, solo, mute
- 		"Creeps"	0.0  0.0  0.0  0.0   1.0
+ 		"Creeps"	0.0  0.0  0.0  0.0   0.5
  	}
 
 	"Ultimates"
@@ -157,6 +162,18 @@
 		"Weapons"	0.5  1.0  1.0  0.0   0.0
 		"Creeps"	0.0  1.0  1.0  0.0   1.0
 		"Physics"	0.8  1.0  1.0  0.0   1.0
+		"Music"		0.8  1.0  1.0  0.0   0.0
+		"All"		0.5  1.0  1.0  0.0   0.0
+ 	}
+
+	"QuickDuck"
+ 	{
+ 		//grp,		vol, lvl, dsp, solo, mute
+ 		"ambient"	0.5  1.0  1.0  0.0   0.0
+		"Weapons"	0.5  1.0  1.0  0.0   0.0
+		"Ultimates"	0.5  1.0  1.0  0.0   0.0
+		"Creeps"	0.0  1.0  1.0  0.0   0.0
+		"Physics"	0.5  1.0  1.0  0.0   0.0
 		"Music"		0.8  1.0  1.0  0.0   0.0
 		"All"		0.5  1.0  1.0  0.0   0.0
  	}
@@ -224,6 +241,7 @@
   "TutorialVO"			"TutorialVO"	"0.3"		"1.0"   "1.0"   "2.5"
   "TutorialMusic"		"TutorialMusic"	"0.3"		"1.0"   "0.1"   "0.1"
   "SilencerEffect"		"Silencer"		"0.1"		"0.8"   "0.5"   "0.2"
+  "QuickDuck"			"QuickDuck"		"0.1"		"1.0"   "0.0"   "1.0"
   "HeroesMuteCreeps"	"Weapons"		"1.0"		"1.0"   "0.5"   "0.0"
   "Ultimates"			"Ultimates"		"0.4"		"1.0"   "0.3"   "1.0"
   "Announcer"			"Announcer"		"0.4"		"1.0"   "0.3"   "0.3"

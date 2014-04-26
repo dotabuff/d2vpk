@@ -113,8 +113,6 @@ Response night_stalker_Move
 	scene "scenes/night_stalker/night_stalker_nstalk_move_04.vcd" nodelay noscene 
 	scene "scenes/night_stalker/night_stalker_nstalk_move_05.vcd" nodelay noscene 
 	scene "scenes/night_stalker/night_stalker_nstalk_move_06.vcd" nodelay noscene 
-	scene "scenes/night_stalker/night_stalker_nstalk_move_07.vcd" nodelay noscene 
-	scene "scenes/night_stalker/night_stalker_nstalk_move_08.vcd" nodelay noscene 
 	scene "scenes/night_stalker/night_stalker_nstalk_move_09.vcd" nodelay noscene 
 	scene "scenes/night_stalker/night_stalker_nstalk_move_10.vcd" nodelay noscene 
 	scene "scenes/night_stalker/night_stalker_nstalk_move_11.vcd" nodelay noscene 
@@ -128,6 +126,18 @@ Rule night_stalker_Move_Rule
 {
 	criteria Move Isnight_stalker 
 	response night_stalker_Move
+}
+
+Response night_stalker_MoveChance_5%
+{
+	scene "scenes/night_stalker/night_stalker_nstalk_move_07.vcd" nodelay noscene 
+	scene "scenes/night_stalker/night_stalker_nstalk_move_08.vcd" nodelay noscene 
+}
+
+Rule night_stalker_MoveChance_5%_Rule
+{
+	criteria Move Isnight_stalker Chance_5%
+	response night_stalker_MoveChance_5%
 }
 
 Response night_stalker_Attack
