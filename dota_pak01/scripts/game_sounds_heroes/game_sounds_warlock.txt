@@ -224,6 +224,11 @@
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"source_info"
+			{
+				"source"   "emitter"
+			}
 			"mixer"
 			{
 				"mixgroup" "Weapons"
@@ -231,6 +236,39 @@
 			"speakers_spatialize"
 			{
 				"input_radius"  "900"
+			}
+			"usat_stop_time"
+			{
+				"input2" "16.0"
+			}
+
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Warlock.Upheaval.Stop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"null.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"speed_stop_entry"
+			{
+				"input_execute" "1"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Hero_Warlock.Upheaval"
 			}
 		}
 	}

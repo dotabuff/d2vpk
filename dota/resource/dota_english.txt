@@ -55,7 +55,8 @@
 		"DOTA_AttributesUp"		"LEVEL %s1"
 		"DOTA_Abilities"		"ABILITIES"
 		"DOTA_Items"			"EQUIPPED ITEMS"
-		"DOTA_Shop"			"SHOP"
+		"DOTA_Shop"			"Open Shop"
+		"DOTA_HUDShop"	"SHOP"
 		"DOTA_AttribArmor"		"Armor"
 		"DOTA_AttribDamage"		"Damage"
 		"DOTA_More"			"MORE"
@@ -8092,6 +8093,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"DOTA_Tooltip_modifier_abaddon_borrowed_time"					"Borrowed Time"
 		"DOTA_Tooltip_modifier_abaddon_borrowed_time_Description"		"All damage taken by Abaddon heals him instead."
+		"DOTA_Tooltip_modifier_abaddon_borrowed_time_damage_redirect"					"Borrowed Time Redirect"
+		"DOTA_Tooltip_modifier_abaddon_borrowed_time_damage_redirect_Description"		"35%% of all damage taken is being redirected to Abaddon."		
 		"DOTA_Tooltip_modifier_abaddon_aphotic_shield"					"Aphotic Shield"
 		"DOTA_Tooltip_modifier_abaddon_aphotic_shield_Description"		"Absorbing damage; upon absorbing the max damage, explodes and deals damage in an area."
 		"DOTA_Tooltip_modifier_abaddon_frostmourne_debuff"				"Curse of Avernus"
@@ -8124,6 +8127,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_ember_spirit_flame_guard_Description"		"Absorbing magic damage, and dealing magic damage in an area of effect."
 		"DOTA_Tooltip_modifier_ember_spirit_fire_remnant_charge_counter"	"Fire Remnant Charges"
 		"DOTA_Tooltip_modifier_ember_spirit_fire_remnant_charge_counter_Description"	"You can activate a Fire Remnant whenever there is a charge available."
+		"DOTA_Tooltip_modifier_ember_spirit_fire_remnant_timer"	"Fire Remnant Duration"
+		"DOTA_Tooltip_modifier_ember_spirit_fire_remnant_timer_Description"	"Fire Remnants expire after 45 seconds."
 		"DOTA_Tooltip_modifier_ember_spirit_fire_remnant"					"Fire Remnant"
 		"DOTA_Tooltip_modifier_ember_spirit_fire_remnant_Description"		"Charging to a Fire Remnant."
 
@@ -8271,8 +8276,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_item_satanic_unholy"				"Unholy Rage"
 		"DOTA_Tooltip_modifier_item_satanic_unholy_Description"			"Lifesteal increased by 175%%"
 		
-		"DOTA_Tooltip_modifier_cyclone"							"Cyclone"
-		"DOTA_Tooltip_modifier_cyclone_Description"				"Swept up in a cyclone, you are invulnerable and unable to act."
+		"DOTA_Tooltip_modifier_eul_cyclone"							"Cyclone"
+		"DOTA_Tooltip_modifier_eul_cyclone_Description"				"Swept up in a cyclone, you are invulnerable and unable to act."
 		
 		"DOTA_Tooltip_modifier_sheepstick_debuff"				"Pigged"
 		"DOTA_Tooltip_modifier_sheepstick_debuff_Description"	"You are a pig. Cannot attack or cast spells."
@@ -13018,6 +13023,18 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		
 		"StoreBanner_Header_ClockwerkAnnouncerPack"	"Clockwerk Announcer Pack"
 		"StoreBanner_Text_ClockwerkAnnouncerPack"	"Test your metal! Comes with the Telebolt Projecktor cog item for Clockwerk!"
+		
+		"StoreBanner_Header_BindingsOfDeepMagma"	"Bindings of Deep Magma"
+		"StoreBanner_Text_BindingsOfDeepMagma"		"From heat below comes strength above"
+		
+		"StoreBanner_Header_DemonicVessel"		"Arsenal of the Demonic Vessel"
+		"StoreBanner_Text_DemonicVessel"		"Let them all fear the curse"
+		
+		"StoreBanner_Header_TreasureOfSinisterArcanery"		"Treasure of Sinister Arcanery"
+		"StoreBanner_Text_TreasureOfSinisterArcanery"		"Unveil an eldritch gift"
+
+		"StoreBanner_Header_TreasureOfTheCosmicAbyss"		"Treasure of the Cosmic Abyss"
+		"StoreBanner_Text_TreasureOfTheCosmicAbyss"		"Gifts from the endless expanse"
 		
 		"Playtab_Quiz_Title"				"The Shopkeeper's Quiz"
 		"Playtab_Quiz_Subtitle"				"Test your Dota 2 item knowledge!"

@@ -242,6 +242,35 @@
 	}
 }
 
+"hero_jakiro.macropyre.scepter"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/jakiro/macropyre_aghs.mp3"
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
 "hero_jakiro.wing_movement"
 {
 		"channel"         "CHAN_BODY"

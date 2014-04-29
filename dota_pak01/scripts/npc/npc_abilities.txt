@@ -14999,7 +14999,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5353"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_ALERT_TARGET"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_ALERT_TARGET | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		
@@ -22868,7 +22868,7 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5524"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 	
 		// Casting
@@ -25323,7 +25323,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		
-		"AbilityCastRange"				"800"
+		"AbilityCastRange"				"750"
 		"AbilityCastPoint"				"0.6"
 		
 		// Time		
@@ -25449,7 +25449,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"teleport_delay"				"6.0 5.0 4.0"
+				"teleport_delay"				"5.0 4.0 3.0"
 			}
 		}
 	}
@@ -26119,7 +26119,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"650"
 		"AbilityCastPoint"				"0.3"
-		"AbilityChannelTime"			"2.5"
+		"AbilityChannelTime"			"3.0"
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -26136,7 +26136,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"75 150 225 300"
+				"damage"				"75 150 225 305"
 			}
 			"02"
 			{
@@ -26156,7 +26156,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"maximum_purge_duration"			"2.5"
+				"maximum_purge_duration"			"3.0"
 			}
 			"06"
 			{
@@ -26185,7 +26185,7 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"12.0"
+		"AbilityCooldown"				"14.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -26217,7 +26217,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5639"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"	
 
 		// Casting
