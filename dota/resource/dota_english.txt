@@ -6,7 +6,7 @@
 
 		"DOTA_ItemOnSale"		"SALE!"
 		
-		"DOTA_AttackMove"		"Attack Move"
+		"DOTA_AttackMove"		"Attack Move / Force Attack"
 		"DOTA_Move"			"Move"
 		"DOTA_UnitQuery"		"Query an object/unit"
 		"DOTA_ExecuteAbility0"		"Ability 1"
@@ -407,6 +407,48 @@
 		"DOTA_Item_Ping_Mana"		"[ALLIES] %s1: <font color='%s2'>%s3</font> %s4Not Enough Mana"
 		"DOTA_Item_Ping_Cooldown"	"[ALLIES] %s1: <font color='%s2'>%s3</font> %s4On Cooldown ( %s5 seconds remain )"			
 
+		
+		// HotKey Tooltips
+		
+		"DOTA_Hotkeys_Tooltip_LearnAbility"  "Enter Learn Ability mode when you have skillpoints to spend."
+		"DOTA_Hotkeys_Tooltip_LearnStats"  "Add two points to each of your stats when you have skillpoints to spend."
+		"DOTA_Hotkeys_Tooltip_HeroAttack"  "Move to a location but attack any enemy unit you see on the way / Attack a friendly unit if it's deniable."
+		"DOTA_Hotkeys_Tooltip_HeroMove"  "Move to a location, or follow a unit without attacking it."
+		"DOTA_Hotkeys_Tooltip_HeroStop"  "Interrupt your current action."
+		"DOTA_Hotkeys_Tooltip_HeroHold"  "Interrupt your current action and hold your position."
+		"DOTA_Hotkeys_Tooltip_HeroSelect"  "Select your Hero."
+		"DOTA_Hotkeys_Tooltip_SelectAll"  "Select all units under your control."
+		"DOTA_Hotkeys_Tooltip_SelectAllOthers"  "Select all other units you control. (Your Hero will not be selected.)"
+		"DOTA_Hotkeys_Tooltip_CourierSelect"  "Select the Courier."
+		"DOTA_Hotkeys_Tooltip_CourierDeliver"  "Have the Courier deliver the items from your stash to you."
+		"DOTA_Hotkeys_Tooltip_CourierHaste"  "Activate a speed boost on your courier when available."
+		"DOTA_Hotkeys_Tooltip_UseActionItem"  "Use Action Item."
+		"DOTA_Hotkeys_Tooltip_HeroTaunt"  "Use your Hero Taunt.  Available as an equippable item."
+		"DOTA_Hotkeys_Tooltip_ShopToggle"  "Open the Shop Panel."
+		"DOTA_Hotkeys_Tooltip_PurchaseQuickbuy"  "Purchase the next item in your Quickbuy area  if you can afford it."
+		"DOTA_Hotkeys_Tooltip_PurchaseSticky"  "Purchase the item that is in the Sticky area if you can afford it."
+		"DOTA_Hotkeys_Tooltip_GrabStashItems"  "Transfer all items from your Stash to your Hero."
+		"DOTA_Hotkeys_Tooltip_RecentEvent"  "Move the camera to the most recent event in the world."
+		"DOTA_Hotkeys_Tooltip_InspectHeroInWorld"  "View a unit from an up-close perspective."
+		"DOTA_Hotkeys_Tooltip_ChatTeam"  "Send a message to everyone on your team."
+		"DOTA_Hotkeys_Tooltip_ChatGlobal"  "Send a message to everyone in your current game. (Will add a SHIFT modifier to the Chat Team hotkey)"
+		"DOTA_Hotkeys_Tooltip_ChatVoice"  "Use your microphone to communicate with voice chat."
+		"DOTA_Hotkeys_Tooltip_ChatWheel"  "Opens Chat Wheel for easy communication of commonly used phrases."
+		"DOTA_Hotkeys_Tooltip_CameraGrip"  "Hold down and drag on the world to move the camera. Also bound to the middle mouse button."
+		"DOTA_Hotkeys_Tooltip_ActivateGlyph"  "Activates the Glyph of Fortification to make your team's structures invulnerable for 5 seconds."
+		"DOTA_Hotkeys_Tooltip_ScoreboardToggle"  "Open the in-game scoreboard."
+		"DOTA_Hotkeys_Tooltip_Pause"  "Pause and Unpause a game in progress."
+		"DOTA_Hotkeys_Tooltip_ScreenshotSettings"  "Take a screenshot of the current game view."
+		"DOTA_Hotkeys_Tooltip_Console"  "Open the console. (For advanced users only)"
+		"DOTA_Hotkeys_Tooltip_ControlGroupCycle"  "Cycle through each unit of a selected group."
+		"DOTA_Hotkeys_Tooltip_Group"  "Select a preset control group of units. To define a control group, select the desired units and holding CTRL + one of these group hotkeys."
+		"DOTA_Hotkeys_Tooltip_Legacy"  "Use all hotkeys associated with the Dota 1.  Ability hotkeys will vary per Hero."
+		"DOTA_Hotkeys_Tooltip_Quickcast"  "A Quickcast ability will trigger as soon as the hotkey is pressed at the current location of the mouse cursor."
+		"DOTA_Hotkeys_Tooltip_Autocast"  "Toggle to automatically cast an ability when it is ready.  Applies to a limited number of abilities."
+		"DOTA_Hotkeys_Tooltip_Cast"  "Hotkeys to cast a Hero ability."
+		"DOTA_Hotkeys_Tooltip_ItemCast"  "Hotkeys to use an item in your inventory."
+		"DOTA_Hotkeys_Tooltip_ItemQuickcast"  "A Quickcast item will trigger as soon as the hotkey is pressed at the current location of the mouse cursor."
+				
 		// Video
 		"DOTAUI_AspectNormal"			"4:3"
 		"DOTAUI_AspectWide16x9"			"16:9"
@@ -11239,7 +11281,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Date_Format_Day_Month_Year"							"%s1 %s2 %s3"					// 18 April 2014
 		"DOTA_Date_Format_Day_Month_Year_Hour_Minute_24"			"%s1 %s2 %s3, %s4:%s5"			// 18 April 2014, 17:30
 		"DOTA_Date_Format_Day_Month_Year_Hour_Minute_12"			"%s1 %s2 %s3, %s4:%s5 %s6"		// 18 April 2014, 5:30 PM
-		"DOTA_Date_Format_Day_Month_Year_Hour_Minute_Second_24"		"%s1 %s2 %s3, %s4:%s5"			// 18 April 2014, 17:30:18
+		"DOTA_Date_Format_Day_Month_Year_Hour_Minute_Second_24"		"%s1 %s2 %s3, %s4:%s5:%s6"		// 18 April 2014, 17:30:18
 		"DOTA_Date_Format_Day_Month_Year_Hour_Minute_Second_12"		"%s1 %s2 %s3, %s4:%s5:%s6 %s7"	// 18 April 2014, 5:30:18 PM
 		"DOTA_Date_Format_Hour_Minute_24"							"%s1:%s2"						// 17:30
 		"DOTA_Date_Format_Hour_Minute_12"							"%s1:%s2 %s3"					// 5:30 PM
