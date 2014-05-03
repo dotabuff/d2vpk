@@ -1241,7 +1241,6 @@
 					"PanelRow"		"1"
 					"Description"	"#DOTA_MoveForward"
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}
 				
 				"CameraDown"
@@ -1253,7 +1252,6 @@
 					"PanelRow"		"2"
 					"Description"	"#DOTA_MoveBack"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 				
 				"CameraLeft"
@@ -1265,7 +1263,6 @@
 					"PanelRow"		"3"
 					"Description"	"#DOTA_MoveLeft"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}		
 
 				"CameraRight"
@@ -1277,7 +1274,6 @@
 					"PanelRow"		"4"
 					"Description"	"#DOTA_MoveRight"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"CameraGrip"
@@ -1290,7 +1286,6 @@
 					"Description"	"#DOTA_CameraGrip"
 					// MOUSE3 is also bound!					
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}
 				
 				"RecentEvent"
@@ -1302,7 +1297,6 @@
 					"PanelRow"		"7"
 					"Description"	"#DOTA_RecentEvent"
 					"Version"		"3"
-					"PanelParent"		"page1"
 				}	
 
 				"ScoreboardToggle"
@@ -1314,7 +1308,6 @@
 					"PanelRow"			"9"
 					"Description"		"#DOTA_Scoreboard"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ActivateGlyph"
@@ -1326,7 +1319,6 @@
 					"PanelRow"		"11"
 					"Description"	"#DOTA_ActivateGlyph"
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}	
 				
 				//=============================================================
@@ -1344,7 +1336,6 @@
 					"PanelRow"			"1"
 					"Description"		"#DOTA_ChatTeam"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ChatGlobal"
@@ -1357,7 +1348,6 @@
 					"Dependency"		"ChatTeam"
 					"DependencyText"	"SHIFT-"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ChatTeam2"
@@ -1393,7 +1383,6 @@
 					"Description"	"#DOTA_Voice"
 					// MOUSE4 is also bound!
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ChatWheel"
@@ -1405,7 +1394,6 @@
 					"PanelRow"		"4"
 					"Description"	"#DOTA_ChatWheel"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ChatWheelCare"
@@ -1417,7 +1405,6 @@
 					"PanelRow"		"16"
 					"Description"	"#dota_chatwheel_label_Care"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelGetBack"
@@ -1429,7 +1416,6 @@
 					"PanelRow"		"17"
 					"Description"	"#dota_chatwheel_label_GetBack"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelNeedWards"
@@ -1441,7 +1427,6 @@
 					"PanelRow"		"18"
 					"Description"	"#dota_chatwheel_label_NeedWards"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelStun"
@@ -1453,7 +1438,6 @@
 					"PanelRow"		"19"
 					"Description"	"#dota_chatwheel_label_Stun"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelHelp"
@@ -1465,7 +1449,6 @@
 					"PanelRow"		"20"
 					"Description"	"#dota_chatwheel_label_Help"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelGetPush"
@@ -1477,7 +1460,6 @@
 					"PanelRow"		"21"
 					"Description"	"#dota_chatwheel_label_Push"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelGoodJob"
@@ -1489,7 +1471,6 @@
 					"PanelRow"		"22"
 					"Description"	"#dota_chatwheel_label_GoodJob"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelMissing"
@@ -1501,7 +1482,6 @@
 					"PanelRow"		"23"
 					"Description"	"#dota_chatwheel_label_Missing"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelMissingTop"
@@ -1513,7 +1493,6 @@
 					"PanelRow"		"24"
 					"Description"	"#dota_chatwheel_label_Missing_Top"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelMissingMiddle"
@@ -1525,7 +1504,6 @@
 					"PanelRow"		"25"
 					"Description"	"#dota_chatwheel_label_Missing_Mid"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				"ChatWheelMissingBottom"
@@ -1537,7 +1515,6 @@
 					"PanelRow"		"26"
 					"Description"	"#dota_chatwheel_label_Missing_Bottom"
 					"Version"		"1"
-					"PanelParent"		"Chat.phraseBindings"
 				}
 
 				//=============================================================
@@ -1555,7 +1532,6 @@
 					"PanelRow"		"1"
 					"Description"	"#DOTA_AttackMove"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"HeroMove"
@@ -1567,7 +1543,6 @@
 					"PanelRow"		"2"
 					"Description"	"#DOTA_Move"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 				
 				"HeroStop"
@@ -1579,7 +1554,6 @@
 					"PanelRow"		"3"
 					"Description"	"#DOTA_UnitStop"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"HeroHold"
@@ -1591,7 +1565,6 @@
 					"PanelRow"		"4"
 					"Description"	"#DOTA_UnitHold"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"HeroSelect"
@@ -1603,7 +1576,6 @@
 					"PanelRow"		"6"
 					"Description"	"#DOTA_HeroSelect"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 				
 				"SelectAll"
@@ -1615,7 +1587,6 @@
 					"PanelRow"		"7"
 					"Description"	"#DOTA_SelectAll"
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}							
 
 				"SelectAllOthers"
@@ -1627,7 +1598,6 @@
 					"PanelRow"		"8"
 					"Description"	"#DOTA_SelectAllOthers"
 					"Version"		"4"
-					"PanelParent"		"page1"
 				}	
 
 
@@ -1640,7 +1610,6 @@
 					"PanelRow"		"10"
 					"Description"	"#DOTA_SelectCourier"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 				
 				"CourierDeliver"
@@ -1652,7 +1621,6 @@
 					"PanelRow"		"11"
 					"Description"	"#DOTA_CourierDeliver"
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}	 
 				
 				"CourierHaste"
@@ -1664,7 +1632,6 @@
 					"PanelRow"		"12"
 					"Description"	"#DOTA_CourierHaste"
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}	   
 
 				"UseActionItem"
@@ -1676,7 +1643,6 @@
 					"Panel"			"#DOTA_KEYBIND_MENU_UNITACTIONS"
 					"PanelRow"		"14"
 					"Version"		"4"
-					"PanelParent"		"page1"
 				}
 
 				"HeroTaunt"
@@ -1688,7 +1654,6 @@
 					"Panel"			"#DOTA_KEYBIND_MENU_UNITACTIONS"
 					"PanelRow"		"15"
 					"Version"		"4"
-					"PanelParent"		"page1"
 				}
 
 
@@ -1701,7 +1666,6 @@
 					"PanelRow"		"16"
 					"Description"	"#DOTA_ControlGroup1"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 				
 				"ControlGroup2"
@@ -1713,7 +1677,6 @@
 					"PanelRow"		"17"
 					"Description"	"#DOTA_ControlGroup2"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 				
 				"ControlGroup3"
@@ -1725,7 +1688,6 @@
 					"PanelRow"		"18"
 					"Description"	"#DOTA_ControlGroup3"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ControlGroup4"
@@ -1737,7 +1699,6 @@
 					"PanelRow"		"19"
 					"Description"	"#DOTA_ControlGroup4"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ControlGroup5"
@@ -1749,7 +1710,6 @@
 					"PanelRow"		"20"
 					"Description"	"#DOTA_ControlGroup5"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ControlGroup6"
@@ -1761,7 +1721,6 @@
 					"PanelRow"		"21"
 					"Description"	"#DOTA_ControlGroup6"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"ControlGroup7"
@@ -1817,7 +1776,6 @@
 					"PanelRow"		"26"
 					"Description"	"#DOTA_ControlGroupCycle"
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}
 
 				//=============================================================
@@ -1836,7 +1794,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"1"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroCast"
 				}				
 
 				"AbilityPrimary2"
@@ -1849,7 +1806,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"2"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroCast"
 				}
 
 				"AbilityPrimary3"
@@ -1862,7 +1818,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"3"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroCast"
 				}
 
 				"AbilitySecondary1"
@@ -1875,7 +1830,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"4"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroCast"
 				}
 
 				"AbilitySecondary2"
@@ -1888,7 +1842,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"5"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroCast"
 				}
 
 				"AbilityUltimate"
@@ -1901,7 +1854,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"6"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroCast"
 				}
 
 				"AbilityPrimary1AutoCast"
@@ -1915,7 +1867,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"13"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroAutocast"
 				}				
 
 				"AbilityPrimary2AutoCast"
@@ -1929,7 +1880,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"14"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroAutocast"
 				}
 
 				"AbilityPrimary3AutoCast"
@@ -1943,7 +1893,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"15"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroAutocast"
 				}
 
 				"AbilitySecondary1AutoCast"
@@ -1957,7 +1906,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"16"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroAutocast"
 				}
 
 				"AbilitySecondary2AutoCast"
@@ -1971,7 +1919,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"17"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroAutocast"
 				}
 
 				"AbilityUltimateAutoCast"
@@ -1985,7 +1932,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"18"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroAutocast"
 				}
 
 				"AbilityPrimary1QuickCast"
@@ -1998,7 +1944,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"19"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroQuickcast"
 				}				
 
 				"AbilityPrimary2QuickCast"
@@ -2011,7 +1956,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"20"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroQuickcast"
 				}
 
 				"AbilityPrimary3QuickCast"
@@ -2024,7 +1968,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"21"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroQuickcast"
 				}
 
 				"AbilitySecondary1QuickCast"
@@ -2037,7 +1980,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"22"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroQuickcast"
 				}
 
 				"AbilitySecondary2QuickCast"
@@ -2050,7 +1992,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"23"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroQuickcast"
 				}
 
 				"AbilityUltimateQuickCast"
@@ -2063,7 +2004,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"24"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityHero.heroQuickcast"
 				}
 				
 				"LearnAbilities"
@@ -2076,7 +2016,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"8"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"LearnStats"
@@ -2089,7 +2028,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_HERO"
 					"PanelRow"		"9"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}		
 
 				"CourierAbility1"
@@ -2102,7 +2040,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_COURIER"
 					"PanelRow"		"1"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityCourier"
 				}				
 
 				"CourierAbility2"
@@ -2115,7 +2052,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_COURIER"
 					"PanelRow"		"2"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityCourier"
 				}
 
 				"CourierAbility3"
@@ -2128,7 +2064,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_COURIER"
 					"PanelRow"		"3"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityCourier"
 				}
 
 				"CourierAbility4"
@@ -2141,7 +2076,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_COURIER"
 					"PanelRow"		"4"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityCourier"
 				}
 
 				"CourierAbility5"
@@ -2154,7 +2088,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_COURIER"
 					"PanelRow"		"5"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityCourier"
 				}
 
 				"CourierAbility6"
@@ -2167,7 +2100,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_COURIER"
 					"PanelRow"		"6"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityCourier"
 				}
 
 				"NeutralAbility1"
@@ -2180,7 +2112,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_NEUTRAL"
 					"PanelRow"		"1"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityNeutral"
 				}				
 
 				"NeutralAbility2"
@@ -2193,7 +2124,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_NEUTRAL"
 					"PanelRow"		"2"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityNeutral"
 				}
 
 				"NeutralAbility3"
@@ -2206,7 +2136,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_NEUTRAL"
 					"PanelRow"		"3"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityNeutral"
 				}
 
 				"NeutralAbility4"
@@ -2219,7 +2148,6 @@
 					"SubPanel"		"#DOTA_KEYBIND_ABILITY_NEUTRAL"
 					"PanelRow"		"4"
 					"Version"		"1"
-					"PanelParent"		"page1.abilityNeutral"
 				}
 
 				"LegacyAbilityPrimary1"
@@ -2291,7 +2219,6 @@
 					"PanelRow"		"1"
 					"Description"	"#DOTA_Inventory1"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsCast"
 				}
 
 				"Inventory2"
@@ -2303,7 +2230,6 @@
 					"PanelRow"		"2"
 					"Description"	"#DOTA_Inventory2"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsCast"
 				}
 
 				"Inventory3"
@@ -2315,7 +2241,6 @@
 					"PanelRow"		"3"
 					"Description"	"#DOTA_Inventory3"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsCast"
 				}
 				
 				"Inventory4"
@@ -2327,7 +2252,6 @@
 					"PanelRow"		"4"
 					"Description"	"#DOTA_Inventory4"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsCast"
 				}
 				
 				"Inventory5"
@@ -2339,7 +2263,6 @@
 					"PanelRow"		"5"
 					"Description"	"#DOTA_Inventory5"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsCast"
 				}
 				
 				"Inventory6"
@@ -2351,7 +2274,6 @@
 					"PanelRow"		"6"
 					"Description"	"#DOTA_Inventory6"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsCast"
 				}
 
 				"Inventory1QuickCast"
@@ -2363,7 +2285,6 @@
 					"Panel"			"#DOTA_KEYBIND_MENU_ITEMS"
 					"PanelRow"		"16"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsQuickcast"
 				}
 
 				"Inventory2QuickCast"
@@ -2375,7 +2296,6 @@
 					"Panel"			"#DOTA_KEYBIND_MENU_ITEMS"
 					"PanelRow"		"17"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsQuickcast"
 				}
 
 				"Inventory3QuickCast"
@@ -2387,7 +2307,6 @@
 					"Panel"			"#DOTA_KEYBIND_MENU_ITEMS"
 					"PanelRow"		"18"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsQuickcast"
 				}
 
 				"Inventory4QuickCast"
@@ -2399,7 +2318,6 @@
 					"Panel"			"#DOTA_KEYBIND_MENU_ITEMS"
 					"PanelRow"		"19"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsQuickcast"
 				}
 
 				"Inventory5QuickCast"
@@ -2411,7 +2329,6 @@
 					"Panel"			"#DOTA_KEYBIND_MENU_ITEMS"
 					"PanelRow"		"20"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsQuickcast"
 				}
 
 				"Inventory6QuickCast"
@@ -2423,7 +2340,6 @@
 					"Panel"			"#DOTA_KEYBIND_MENU_ITEMS"
 					"PanelRow"		"21"
 					"Version"		"1"
-					"PanelParent"		"page1.itemsQuickcast"
 				}
 				
 				"ShopToggle"
@@ -2435,7 +2351,6 @@
 					"PanelRow"		"8"
 					"Description"	"#DOTA_Shop"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"PurchaseQuickbuy"
@@ -2447,7 +2362,6 @@
 					"PanelRow"		"9"
 					"Description"	"#DOTA_PurchaseQuickbuy"
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}
 
 				"PurchaseSticky"
@@ -2459,7 +2373,6 @@
 					"PanelRow"		"10"
 					"Description"	"#DOTA_PurchaseSticky"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"GrabStashItems"
@@ -2471,7 +2384,6 @@
 					"PanelRow"		"12"
 					"Description"	"#DOTA_GrabStashItems"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 
@@ -2491,7 +2403,6 @@
 					"Description"	"#DOTA_Console"
 					"PreGameBind"	"1"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 
 				"Pause"
@@ -2503,7 +2414,6 @@
 					"PanelRow"		"2"
 					"Description"	"#DOTA_Pause"
 					"Version"		"2"
-					"PanelParent"		"page1"
 				}	
 				
 				
@@ -2516,7 +2426,6 @@
 					"PanelRow"		"3"
 					"Description"	"#DOTA_Screenshot"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 				
 				"Escape"
@@ -2546,7 +2455,6 @@
 					"PanelRow"		"1"
 					"Description"	"#DOTA_SpectatorForward"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 				
 				"SpectatorCameraDown"
@@ -2559,7 +2467,6 @@
 					"PanelRow"		"2"
 					"Description"	"#DOTA_SpectatorBack"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorCameraLeft"
@@ -2572,7 +2479,6 @@
 					"PanelRow"		"3"
 					"Description"	"#DOTA_SpectatorLeft"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorCameraRight"
@@ -2585,7 +2491,6 @@
 					"PanelRow"		"4"
 					"Description"	"#DOTA_SpectatorRight"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorCameraGrip"
@@ -2599,7 +2504,6 @@
 					"Description"	"#DOTA_SpectatorGrip"
 					// MOUSE3 is also bound!					
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorPause"
@@ -2612,7 +2516,6 @@
 					"PanelRow"		"7"
 					"Description"	"#DOTA_SpectatorPause"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorSelect"
@@ -2625,7 +2528,6 @@
 					"PanelRow"		"9"
 					"Description"	"#DOTA_SpectatorSelect"
 					"Version"		"3"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorIncreaseReplaySpeed"
@@ -2638,7 +2540,6 @@
 					"PanelRow"		"22"
 					"Description"	"#DOTA_SpectatorIncreaseReplaySpeed"
 					"Version"		"3"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDecreaseReplaySpeed"
@@ -2651,7 +2552,6 @@
 					"PanelRow"		"23"
 					"Description"	"#DOTA_SpectatorDecreaseReplaySpeed"
 					"Version"		"3"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorChat"
@@ -2664,7 +2564,6 @@
 					"PanelRow"		"8"
 					"Description"		"#DOTA_SpectatorChat"
 					"Version"		"3"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorCoach_ViewToggle"
@@ -2677,7 +2576,6 @@
 					"PanelRow"		"12"
 					"Description"	"#DOTA_SpectatorCoach_ViewToggle"
 					"Version"		"3"
-					"PanelParent"		"page2"
 				}
 			
 				"SpectatorScoreboard"
@@ -2690,7 +2588,6 @@
 					"PanelRow"		"9"
 					"Description"	"#DOTA_SpectatorScoreboard"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorStatsHarvest"
@@ -2703,7 +2600,6 @@
 					"PanelRow"		"13"
 					"Description"	"#DOTA_SpectatorStatsHarvest"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorStatsItem"
@@ -2716,7 +2612,6 @@
 					"PanelRow"		"14"
 					"Description"	"#DOTA_SpectatorStatsItem"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorStatsGold"
@@ -2729,7 +2624,6 @@
 					"PanelRow"		"15"
 					"Description"	"#DOTA_SpectatorStatsGold"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorStatsXP"
@@ -2742,7 +2636,6 @@
 					"PanelRow"		"16"
 					"Description"	"#DOTA_SpectatorStatsXP"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorStatsFantasy"
@@ -2755,7 +2648,6 @@
 					"PanelRow"		"17"
 					"Description"	"#DOTA_SpectatorStatsFantasy"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorFOWBoth"
@@ -2768,7 +2660,6 @@
 					"PanelRow"		"18"
 					"Description"	"#DOTA_SpectatorFOWBoth"
 					"Version"		"3"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorFOWRadient"
@@ -2781,7 +2672,6 @@
 					"PanelRow"		"19"
 					"Description"	"#DOTA_SpectatorFOWRadient"
 					"Version"		"3"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorFOWDire"
@@ -2794,7 +2684,6 @@
 					"PanelRow"		"20"
 					"Description"	"#DOTA_SpectatorFOWDire"
 					"Version"		"3"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorBroadcasterMenu"
@@ -2807,7 +2696,6 @@
 					"PanelRow"		"10"
 					"Description"	"#DOTA_SpectatorBroadcasterMenu"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 				
 				"SpectatorDropdown_KDA"
@@ -2820,7 +2708,6 @@
 					"PanelRow"		"1"
 					"Description"	"#DOTA_SpectatorDropdown_KDA"
 					"Version"		"1"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_Lasthits_Denies"
@@ -2833,7 +2720,6 @@
 					"PanelRow"		"2"
 					"Description"	"#DOTA_SpectatorDropdown_Lasthits_Denies"
 					"Version"		"1"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_Level"
@@ -2846,7 +2732,6 @@
 					"PanelRow"		"3"
 					"Description"	"#DOTA_SpectatorDropdown_Level"
 					"Version"		"1"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_XP_Per_Min"
@@ -2859,7 +2744,6 @@
 					"PanelRow"		"4"
 					"Description"	"#DOTA_SpectatorDropdown_XP_Per_Min"
 					"Version"		"1"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_Gold"
@@ -2872,7 +2756,6 @@
 					"PanelRow"		"5"
 					"Description"	"#DOTA_SpectatorDropdown_Gold"
 					"Version"		"1"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_NetWorth"
@@ -2885,7 +2768,6 @@
 					"PanelRow"		"6"
 					"Description"	"#DOTA_SpectatorDropdown_NetWorth"
 					"Version"		"1"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_Fantasy"
@@ -2898,7 +2780,6 @@
 					"PanelRow"		"9"
 					"Description"	"#DOTA_SpectatorDropdown_Fantasy"
 					"Version"		"1"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_TotalGold"
@@ -2936,7 +2817,6 @@
 					"PanelRow"		"8"
 					"Description"	"#DOTA_SpectatorDropdown_Buyback"
 					"Version"		"1"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_Sort"
@@ -2949,7 +2829,6 @@
 					"PanelRow"		"13"
 					"Description"	"#DOTA_SpectatorDropdown_Sort"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				"SpectatorDropdown_Close"
@@ -2962,7 +2841,6 @@
 					"PanelRow"		"14"
 					"Description"	"#DOTA_SpectatorDropdown_Close"
 					"Version"		"2"
-					"PanelParent"		"page2"
 				}
 
 				//=============================================================
@@ -3230,7 +3108,6 @@
 					"PanelRow"		"13"
 					"Description"	"#DOTA_InspectHeroInWorld"
 					"Version"		"1"
-					"PanelParent"		"page1"
 				}
 			}
 		}
