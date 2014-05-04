@@ -33,5 +33,3 @@ Dir.glob("#{dota}/**/*_dir.vpk") do |vpk|
 
   sh 'git', 'add', target
 end
-
-system('git', 'commit', '-v')
