@@ -3125,7 +3125,6 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_dazzle_poison_touch_Description"							"Casts a poisonous spell on an enemy unit, causing damage and slowness over time, and eventual paralysis. Slow increases per level.\n\nLevel 1 slows the target by 33%% during the set time.\n\nLevel 2 slows the target by 33%% for 2 seconds, then by 66%% for 1 second.\n\nLevel 3 slows the target by 33%%, 66%%, and 100%%, for one second respectively.\n\nLevel 4 slows the target by 33%%, then slows the target by 66%% for 1 second, then stuns the target for 1 second."
 		"DOTA_Tooltip_ability_dazzle_poison_touch_Lore"									"One of the few Dezun rites used for offensive purposes, the paralytic enchantment often proves useful."
 		"DOTA_Tooltip_ability_dazzle_poison_touch_Note0"								"The damage is not reduced by damage block abilities."
-		"DOTA_Tooltip_ability_dazzle_poison_touch_Note1"								"The initial ministun will cancel channeling."
 		"DOTA_Tooltip_ability_dazzle_poison_touch_set_time"								"SET TIME:"
 		"DOTA_Tooltip_ability_dazzle_poison_touch_duration_tooltip"						"DURATION:"
 		"DOTA_Tooltip_ability_dazzle_shallow_grave"										"Shallow Grave"
@@ -6545,10 +6544,13 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_FANTASY_TEAMS"				"Fantasy Teams"
 		"DOTA_FANTASY_PLAYERS"				"Fantasy Players"
 
-		"Fantasy_League_Create_Header"		"Create a New Fantasy League"
-		"Fantasy_League_Join_Header"		"Join an Existing Fantasy League"
-		"fantasy_league_join_details"		"Create a fantasy team in the selected fantasy league."
-
+		"Fantasy_League_Create_Header"				"Create a New Fantasy League"
+		"Fantasy_League_Join_Header"				"Join an Existing Fantasy League"
+		"fantasy_league_join_pw_details"			"Join a Fantasy League by entering its League ID and Password."
+		"fantasy_league_join_invite_details"		"or Join a Fantasy League to which you've been directly invited."
+		"fantasy_league_join_pw_enter_league_id"	"Enter Fantasy League ID"
+		"fantasy_league_join_pw_enter_pw"			"Enter Fantasy League Password"
+		
 		"DOTA_FantasyLeagueCreate_Wait_Header"	"Please Wait"
 		"DOTA_FantasyLeagueCreate_Wait"			"Creating Fantasy League..."
 
@@ -6641,11 +6643,12 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"fantasy_league_settings"					"Settings"
 		"fantasy_league_invites"					"Invites"
 
-		"fantasy_league_invite_guild"				"Guild Invitation"
-		"fantasy_league_invite_guild_details"		"All eligible members of the specified guild will be able to join this fantasy league, until all open slots are filled."
-
-		"fantasy_league_invite_friends"				"Friend Invitations"
-		"fantasy_league_invite_friends_details"		"Specify individual friends that you'd like to invite to this fantasy league.  Only eligible friends are listed."
+		"fantasy_league_set_password"				"Set Fantasy League Password"
+		"fantasy_league_set_password_details"		"Anyone can use this Fantasy League ID and the password to join."
+		"fantasy_league_set_password_id"			"Fantasy League ID:"
+		"fantasy_league_set_password_password"		"Password:"
+		"fantasy_league_invite_friends"				"or Invite Friends Directly"
+		"fantasy_league_invite_friends_details"		"Specify individual friends that you'd like to invite to this Fantasy League.\n\nIndividually-invited friends do not need a password."
 		"fantasy_league_invite_friends_wait"		"Retreiving friend invitations..."
 		"fantasy_joined"							"Joined"
 
@@ -6769,7 +6772,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"fantasy_draft_avg_healing"					"Avg Healing"
 		"fantasy_draft_avg_tower_kills"				"Avg Tower Kills"
 		"fantasy_draft_avg_rosh_kills"				"Avg Roshan Kills"
-		"fantasy_draft_avg_score"					"Avg Score"
+		"fantasy_draft_avg_score"					"Avg Weekly Score"
 		"fantasy_draft_role"						"Role"
 		"fantasy_draft_your_pick"					"Your Pick!"
 		"fantasy_draft_owner"						"Owner"
@@ -6900,11 +6903,11 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"player_info_sponsor"				"You can enter any sponsor names here.  These sponsors will be appended to your name."
 		"player_info_preview"				"This is how your name will be displayed:"
 		"player_info_role"					"If you play a specific role, please select it.  Core includes players who play carry, mid, and off-lane."
-		"player_info_warning"				"This information can only be edited once every two weeks, so please make sure it is accurate!"
+		"player_info_warning"				"This information can only be edited once every two weeks, so please make sure it is accurate before clicking OK!"
 		"player_info_wait"					"Retrieving Official Player Info..."
 		"player_info_locked"				"\nThis information is currently locked."
 		"player_info_submitted_wait"		"Submitting information..."
-		"player_info_submitted_success"		"Success!\n\nThank you for submitting your information.  You are now eligible for ranked leaderboards."
+		"player_info_submitted_success"		"Success!\n\nThank you for submitting your information."
 		"player_info_submitted_fail"		"Failed to submit player information.  Please try again."
 		"player_info_standin"				"Standin."
 
@@ -12151,6 +12154,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_AddFriendYours"			"*Your ID is %s1"
 		"DOTA_AddFriendAskFriends"		"*Ask your friends for their ID"
 		"DOTA_AddFriendAskFriends_PW"	"*Ask your friends for their ID, email or phone number"
+
+		"DOTA_EditOfficialInfo"				"Edit Official Info"
 
 		"DOTA_Backpack_Search"				"Search"
 		"DOTA_Backpack_All_Items"			"All Items"
