@@ -2621,7 +2621,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_skeleton_king_mortal_strike_crit_chance"					"%CRITICAL CHANCE:"
 		"DOTA_Tooltip_ability_skeleton_king_mortal_strike_crit_mult"					"%CRITICAL DAMAGE:"
 		"DOTA_Tooltip_ability_skeleton_king_reincarnation"								"Reincarnation"
-		"DOTA_Tooltip_ability_skeleton_king_reincarnation_Description"					"Wraith King's members regroup after death, allowing him to resurrect when killed in battle.  Upon death, enemy units in the area will be slowed by 75%%."
+		"DOTA_Tooltip_ability_skeleton_king_reincarnation_Description"					"Wraith King's members regroup after death, allowing him to resurrect when killed in battle.  Upon death, enemy units in a %slow_radius% radius will be slowed."
 		"DOTA_Tooltip_ability_skeleton_king_reincarnation_Lore"							"Conspirators against the Wraith King wonder why he never stays dead."
 		"DOTA_Tooltip_ability_skeleton_king_reincarnation_Note0"						"Wraith King won't revive if he doesn't have enough mana."
 		"DOTA_Tooltip_ability_skeleton_king_reincarnation_Note1"						"If Wraith King has an Aegis and Reincarnation off cooldown, Reincarnation will trigger first."
@@ -5404,7 +5404,7 @@ Once most highly esteemed of her race, Slithice for many years commanded a batta
 		"DOTA_Tooltip_ability_keeper_of_the_light_blinding_light_miss_duration"			"DURATION:"
 		"DOTA_Tooltip_ability_keeper_of_the_light_blinding_light_miss_rate"			"%MISS CHANCE:"
 		"DOTA_Tooltip_ability_keeper_of_the_light_spirit_form_illuminate"					"Illuminate"
-		"DOTA_Tooltip_ability_keeper_of_the_light_spirit_form_illuminate_Description"		"Channels a ball of light energy, building power the longer it's channeled.  Once released, the ball deals damage and gives vision in a line.  The longer it is channeled, the more damage dealt."
+		"DOTA_Tooltip_ability_keeper_of_the_light_spirit_form_illuminate_Description"		"Channels a ball of light energy, building power the longer it's channeled.  Once released, the ball deals damage and gives vision in a line.  The longer it is channeled, the more damage is dealt.\n\nUpgradable by Aghanim's Scepter, allowing Illuminate to heal allies for 75%% of its damage values during daytime."
 		"DOTA_Tooltip_ability_keeper_of_the_light_spirit_form_illuminate_Lore"				"Ezalor's hidden light reveals itself in marvelous fashion."
 		"DOTA_Tooltip_ability_keeper_of_the_light_spirit_form_illuminate_Note0"				"Gives increasing vision over the channeling time."
 		"DOTA_Tooltip_ability_keeper_of_the_light_spirit_form_illuminate_Note1"				"Damages mechanical units."
@@ -13084,6 +13084,12 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Header_TreasureOfTheCosmicAbyss"		"Treasure of the Cosmic Abyss"
 		"StoreBanner_Text_TreasureOfTheCosmicAbyss"		"Gifts from the endless expanse"
 		
+		"StoreBanner_Header_TreasureOfTheBottledCloud"		"Treasure of the Bottled Cloud"
+		"StoreBanner_Text_TreasureOfTheBottledCloud"		"Claim heavenly gifts!"
+		
+		"StoreBanner_Header_TreasureOfMoltenSteel"		"Treasure of Molten Steel"
+		"StoreBanner_Text_TreasureOfMoltenSteel"		"Forge your destiny!"
+		
 		"Playtab_Quiz_Title"				"The Shopkeeper's Quiz"
 		"Playtab_Quiz_Subtitle"				"Test your Dota 2 item knowledge!"
 		// Pennants
@@ -15852,6 +15858,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_PlayerName_Sing"			"Sing"
 		"DOTA_PlayerName_BZZ"			"BZZ"
 		"DOTA_PlayerName_CaspeRRR"		"CaspeRRR"
+		"DOTA_PlayerName_Yol"	"RoX.KIS.yol"
 
 		// Voice Credits
 		"DOTA_Credits_Tab"				"ACKNOWLEDGEMENTS"
