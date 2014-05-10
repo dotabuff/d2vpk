@@ -458,7 +458,17 @@ criterion "IsSevenSpree" "streak" "7" weight 9 required
 criterion "IsEightSpree" "streak" "8" weight 9 required
 criterion "IsNineSpree" "streak" "9" weight 9 required
 criterion "IsMaxSpree" "streak" ">9" weight 9 required
+criterion "IsTenSpree" "streak" "10" weight 9 required
+criterion "IsFifteenSpree" "streak" "15" weight 9 required
 criterion "IsTwentySpree" "streak" "20" weight 9 required
+criterion "IsThirtySpree" "streak" "30" weight 9 required
+criterion "IsFiftySpree" "streak" "50" weight 9 required
+criterion "IsSixtySpree" "streak" "60" weight 9 required
+criterion "IsSeventySpree" "streak" "70" weight 9 required
+criterion "IsNinetySpree" "streak" "90" weight 9 required
+criterion "IsHundredSpree" "streak" "100" weight 9 required
+criterion "IsTwoHundredSpree" "streak" "200" weight 9 required
+
 
 criterion "IsFirstBlood" "firstblood" "1" weight 50 required
 criterion "IsDoubleKill" "multiplekillcount" "2" weight 10 required
@@ -470,6 +480,15 @@ criterion "IsOwnage" "team_kill_streak" ">4" weight 8 required
 criterion "IsOwnage6" "team_kill_streak" "6" weight 8 required
 criterion "IsOwnage10" "team_kill_streak" "10" weight 8 required
 criterion "IsOwnage15" "team_kill_streak" "15" weight 8 required
+criterion "IsOwnageLimited" "team_kill_streak" ">4,<15" weight 8 required
+
+
+//Stanley Parable Killing Spree Special Stuff
+criterion "IsSeventyTwoSpree" "streak" "72" weight 9 required
+criterion "IsNinetyNineSpree" "streak" "99" weight 9 required
+criterion "IsEightyFivetoNinetySpree" "streak" ">84,<90" weight 9 required
+criterion "IsOneOhOneSpree" "streak" "100" weight 9 required
+
 
 
 //Announcer Lines

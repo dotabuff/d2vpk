@@ -4,6 +4,7 @@
 	{	
 		// legacy match quality
 		"enabled"		"0"
+		"surveytype"		"short" 	// 1 question with an icon
 		"icon"			""
 	}
 
@@ -11,6 +12,7 @@
 	{
 		// match quality
 		"enabled"		"1"
+		"surveytype"		"short"
 		"responsestyle"		"lowhigh"
 		"icon"			"match_quality"
 	}
@@ -19,6 +21,7 @@
 	{
 		// quality as teammate
 		"enabled"		"1"
+		"surveytype"		"short"
 		"responsestyle"		"lowhigh"
 		"icon"			"self_cooperation"
 	}
@@ -27,8 +30,18 @@
 	{
 		// quality of teammates
 		"enabled"		"1"
+		"surveytype"		"short"
 		"responsestyle"		"lowhigh"
 		"icon"			"teammate_cooperation"
+	}
+	"4"
+	{
+		// teammate evaluation
+		"enabled"		"0"
+		"surveytype"		"long"		// 3 questions
+		"q0responsestyle"	"lowhigh"
+		"q1responsestyle"	"lowhigh"
+		"q2responsestyle"	"lowhigh"
 	}
 	// when you add a new response style "thinfat", you have to create the response strings in dota_english.txt
 	// the only part of the token that changes is the 'thinfat' string

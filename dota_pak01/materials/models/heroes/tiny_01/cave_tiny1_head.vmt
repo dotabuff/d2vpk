@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/tiny_01/cave_tiny1_head"
+	"$normalmap" "models/heroes/tiny_01/tiny1_head_normal"
+
+	"$alphatest" "1"
+
+
+	"$maskmap1" "models/heroes/tiny_01/tiny1_head_masks1"
+	"$maskmap2" "models/heroes/tiny_01/tiny1_head_masks2"
+
+	
+	
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 1.5
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1.5
+	$RIMLIGHTCOLOR "[.75 1 1]"
+
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

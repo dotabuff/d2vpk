@@ -804,6 +804,9 @@
 
 	"event_points_updated"
 	{
+		"event_id"			"short"
+		"points"			"short"
+		"premium_points"	"short"
 	}
 
 	"local_player_event_points"

@@ -1074,6 +1074,11 @@
 				"var_type"			"FIELD_FLOAT"
 				"knockback_duration"		"0.5"
 			}
+			"07"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"knockback_height"		"0"
+			}
 		}
 	}
 
@@ -26119,7 +26124,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastRange"				"650"
 		"AbilityCastPoint"				"0.3"
-		"AbilityChannelTime"			"3.0"
+		"AbilityChannelTime"			"2.5"
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
@@ -26136,7 +26141,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage"				"75 150 225 305"
+				"damage"				"75 150 225 300"
 			}
 			"02"
 			{
@@ -26156,7 +26161,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"maximum_purge_duration"			"3.0"
+				"maximum_purge_duration"			"2.5"
 			}
 			"06"
 			{
@@ -26185,7 +26190,7 @@
 		
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"14.0"
+		"AbilityCooldown"				"12.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -26218,7 +26223,7 @@
 		"ID"							"5639"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"	
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"	
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------

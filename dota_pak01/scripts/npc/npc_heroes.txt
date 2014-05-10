@@ -17636,78 +17636,38 @@
 				"SlotText"	"#LoadoutSlot_Head"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1000"
-				"MaxPolygonsLOD1"	"550"
+				"MaxPolygonsLOD0"	"1200"
+				"MaxPolygonsLOD1"	"700"
 			}
-			"1"
+			"1"	
 			{
 				"SlotIndex"	"1"
-				"SlotName"	"back"
-				"SlotText"	"#LoadoutSlot_Back"
-				"TextureWidth"		"256"
+				"SlotName" 	"armor"
+				"SlotText"	"#LoadoutSlot_Armor"
+				"TextureWidth"		"512"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"250"
-				"MaxPolygonsLOD1"	"150"
+				"MaxPolygonsLOD0"	"2000"
+				"MaxPolygonsLOD1"	"1250"
 			}
-			"2"
+			"2"	
 			{
 				"SlotIndex"	"2"
-				"SlotName"	"arms"
-				"SlotText"	"#LoadoutSlot_Arms"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"500"
-				"MaxPolygonsLOD1"	"250"
-			}
-			"3"
-			{
-				"SlotIndex"	"3"
-				"SlotName"	"shoulder"
-				"SlotText"	"#LoadoutSlot_Shoulder"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"850"
-				"MaxPolygonsLOD1"	"400"
-			}
-			"4"	
-			{
-				"SlotIndex"	"4"
 				"SlotName" 	"ability3"
 				"SlotText"	"#LoadoutSlot_Ability3"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1000"
-				"MaxPolygonsLOD1"	"550"
+				"MaxPolygonsLOD0"	"4500"
+				"MaxPolygonsLOD1"	"3000"
 			}
-			"5"	
+			"3"	
 			{
-				"SlotIndex"	"5"
-				"SlotName" 	"summon"
-				"SlotText"	"#LoadoutSlot_Summon"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1000"
-				"MaxPolygonsLOD1"	"550"
-			}
-			"6"	
-			{
-				"SlotIndex"	"6"
-				"SlotName" 	"armor"
-				"SlotText"	"#LoadoutSlot_Armor"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1000"
-				"MaxPolygonsLOD1"	"550"
-			}
-			"7"	
-			{
-				"SlotIndex"	"7"
+				"SlotIndex"	"3"
 				"SlotName" 	"ability4"
 				"SlotText"	"#LoadoutSlot_Ability4"
-				"TextureWidth"		"256"
-				"TextureHeight"		"256"
-				"MaxPolygonsLOD0"	"1000"
-				"MaxPolygonsLOD1"	"550"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"	"6000"
+				"MaxPolygonsLOD1"	"4000"
 			}
 		}
 
@@ -21541,10 +21501,10 @@
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"18"									// Base strength
 		"AttributeStrengthGain"		"1.9"									// Strength bonus per level.
-		"AttributeBaseIntelligence"	"15"									// Base intelligence
-		"AttributeIntelligenceGain"	"1.7"									// Intelligence bonus per level.
-		"AttributeBaseAgility"		"23"									// Base agility
-		"AttributeAgilityGain"		"2.9"									// Agility bonus per level.
+		"AttributeBaseIntelligence"	"23"									// Base intelligence
+		"AttributeIntelligenceGain"	"2.9"									// Intelligence bonus per level.
+		"AttributeBaseAgility"		"15"									// Base agility
+		"AttributeAgilityGain"		"1.7"									// Agility bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------

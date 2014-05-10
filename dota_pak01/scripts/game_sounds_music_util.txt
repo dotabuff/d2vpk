@@ -1,0 +1,2711 @@
+// used code
+// tobin
+"DotaMusic.WorldMap"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null_lp.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"set_worldmap_flag"
+			{
+				"operator" "set_opvar_float"
+				"opvar" "dota_worldmap_flag"
+				"input" "3.5"	
+			}
+			"stop_gamestartup"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "DotaMusic.GameStartup"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" 	"update_stop_and_play_at_time"
+			"uspat_play_entry"
+			{
+				"entry_name" "DotaMusic.WorldMap.Actual"
+
+			}
+			"uspat_stop_time"
+			{
+				"input1" "@uspat_elapsed_time.output_entry_elapsed"
+				"input2" "4.0"
+			}
+		}
+	}
+}
+
+"DOTAMusic.MainLoop" //A loop that runs at all times and does a bunch of music-related utility stuff
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"music\null_lp.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		
+		"start_stack"
+		{
+            // "init_current_music_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            // {
+				// "operator" "set_opvar_float"
+				// "execute_once" "true"
+				// "opvar" "current_music"
+				// "input" "0.0"
+			// }
+			
+			"get_mainloop_flag"
+			{
+				"operator" "get_opvar_float"
+				"execute_once" "true"
+				"opvar" "dota_music_mainloop_flag"
+			}
+			
+            "turn_debug_printing_on" //set the opvar to 0.0 unless you are debugging
+            {
+				"operator" "set_opvar_float"
+				"execute_once" "true"
+				"opvar" "debug_print_music"
+				"input" "0.0"
+			}
+
+			"block_start"
+			{	
+				"input_execute" "@get_mainloop_flag.output"
+				//"input_execute" "@percent_null.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+			
+			"set_mainloop_flag"
+			{
+				"operator" "set_opvar_float"
+				"execute_once" "true"
+				"opvar" "dota_music_mainloop_flag"
+				"input" "1.0"			
+			}
+		}
+		
+		"update_stack"
+		{	
+		
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}      
+			
+			"get_currently_playing_music" //Keeping track of what music is playing at a given moment
+			{
+				"operator" "get_opvar_float"
+				"opvar" "current_music"
+			} 		
+			
+			//BLOCKSTART //BATTLE SMOOTH
+			//////////////////////////////////
+			// BEGIN BATTLE SCORE SMOOTHING //////
+			//////////////////////////////////		
+			
+			"import_stack" "dota_opvar_smoothing_update"
+			
+			////////////////////////
+			//SPECTATOR MODE SHIT //
+			////////////////////////
+			
+			"get_spectator_score_opvar"
+			{
+				"opvar" "music_spectator_priority"
+			}
+			
+			///////////////////////
+			//END SPECTATOR MODE //
+			///////////////////////
+			
+			"get_live_value_opvar" //Get the current from-the-game battle score
+			{
+				"opvar" "music_intensity"
+			}
+			
+			"get_smooth_value_opvar" //get our smoothed version of the battle score
+			{
+				"opvar" "dota_battle_score_smooth"
+			}		
+		
+			"get_live_value_opvar_tutorial" //Get the current from-the-game battle score
+			{
+				"opvar" "music_intensity_tutorial" 
+			}	
+				
+			"remap_travel_distance_to_time"
+			{
+				"input_X1" "0.1"	
+				"input_Y1" "0.001"	
+				"input_X2" "5.0"	
+				"input_Y2" "0.6"
+				"input_X3" "10.0"	
+				"input_Y3" "3.0"	
+				"input_X4" "30.0"	
+				"input_Y4" "2.75"	
+			}		
+		
+			"remap_travel_distance_to_time_falling"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.1"	
+				"input_X2" "0.1"	
+				"input_Y2" "0.5"	
+				"input_X3" "5.0"	
+				"input_Y3" "6"	
+				"input_X4" "15.0"	
+				"input_Y4" "7"	
+			}
+			
+			"set_opvar" //set the current smooth opvar val
+			{
+				"opvar" "dota_battle_score_smooth"
+			}
+		
+			"remap_smooth_to_one_dot_zero"
+			{
+				"operator" "math_curve_2d_4knot"
+				"curve_type" "linear"	
+				"input" "@opvar_value_ramp.output"
+				"input_X1" "0.0"	
+				"input_Y1" "0.0"	
+				"input_X2" "7.0"	
+				"input_Y2" "0.75"	
+				"input_X3" "25.0"	
+				"input_Y3" "1.0"	
+				"input_X4" "25.0"	
+				"input_Y4" "1.0"	
+			}
+			
+			"set_music_intensity_remap_opvar"
+			{
+				"operator" "set_opvar_float"
+				"opvar" "dota_battle_score_smooth_remap"
+				"input" "@remap_smooth_to_one_dot_zero.output"
+			}
+			
+			"battle_music_score_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@get_smooth_value_opvar.output"	
+			}
+			
+			"battle_music_score_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "not_equal"		
+				"input1" "@battle_music_score_delta.output"
+				"input2" "0.0"
+			}
+			
+			"battle_music_score_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "0.0"
+				// "input1" "@battle_music_score_delta_compare.output"
+				"input2" "@get_debug_printing_opvar.output"
+			}	
+			
+			"****PRINT_BATTLE_RAMP****" //print the smooth val
+			{
+				"input_execute" "@battle_music_score_delta_compare_and.output"
+				"operator" "util_print_float"
+				"input" "@remap_smooth_to_one_dot_zero.output"  //"input" "@get_smooth_value_opvar.output"
+			}	
+			
+			////////////////////////////////////////////////////////
+			
+			
+			"spectator_music_score_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@get_spectator_score_opvar.output"	
+			}
+			
+			"spectator_music_score_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "not_equal"		
+				"input1" "@spectator_music_score_delta.output"
+				"input2" "0.0"
+			}
+			
+			"spectator_music_score_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@spectator_music_score_delta_compare.output"
+				"input2" "@get_debug_printing_opvar.output"
+			}	
+			
+			"****PRINT_SPECTATOR_SCORE****" //print the smooth val
+			{
+				"input_execute" "@spectator_music_score_delta_compare_and.output"
+				"operator" "util_print_float"
+				"input" "@get_spectator_score_opvar.output"  //"input" "@get_smooth_value_opvar.output"
+			}	
+			
+			//////////////////////////////////////////////////////////////
+			
+			//BLOCKEND
+			
+			//BLOCKSTART //SPECIAL CASE SPECTATOR STUFF
+			//get_current_spectator_status
+			//get_currently_playing_music
+			//get_current_game_time
+			
+			"get_music_game_state"
+			{
+				"operator" "get_opvar_float"
+				"execute_once" "false"
+				"opvar" "music_game_state"
+			}
+			
+			// "****MUSIC_GAME_STATE****" //print the smooth val
+			// {
+				// "input_execute" "@get_debug_printing_opvar.output"
+				// "operator" "util_print_float"
+				// "input" "@get_music_game_state.output"  //"input" "@get_smooth_value_opvar.output"
+			// }
+			
+			// "****MUSIC_PREGAME_TIME****" //print the smooth val
+			// {
+				// "input_execute" "@get_debug_printing_opvar.output"
+				// "operator" "util_print_float"
+				// "input" "@get_current_pregame_time.output"  //"input" "@get_smooth_value_opvar.output"
+			// }
+			
+			"spectator_music_current_music_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@get_currently_playing_music.output"
+				"input2" "0.0"
+			}
+			
+			"spectator_music_should_play_hero_picker_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@get_music_game_state.output"
+				"input2" "2.0"
+			}
+			
+			"spectator_music_should_play_prehorn_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@get_music_game_state.output"
+				"input2" "4.0"
+			}
+			
+			"spectator_music_no_music_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@get_current_spectator_status.output"
+				"input2" "@spectator_music_current_music_compare.output"
+			}
+			
+			"spectator_music_should_play_hero_picker_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@spectator_music_no_music_and.output"
+				"input2" "@spectator_music_should_play_hero_picker_compare.output"
+			}
+			
+			"spectator_music_should_play_prehorn_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@spectator_music_no_music_and.output"
+				"input2" "@spectator_music_should_play_prehorn_compare.output"
+			}	
+			
+			"spectator_music_time_for_prehorn_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "less_than"		
+				"input1" "@get_current_pregame_time.output"
+				"input2" "70.0"
+			}
+			
+			"spectator_music_should_play_prehorn_time_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@spectator_music_should_play_prehorn_and.output"
+				"input2" "@spectator_music_time_for_prehorn_compare.output"
+			}	
+			
+			"play_hero_picker_entry" //play explore music
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "true"
+				"input_execute"	"@spectator_music_should_play_hero_picker_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.HeroPicker" //Replace with the sound you want to play.
+			}
+			
+			"play_prehorn_entry" //play explore music
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "true"
+				"input_execute"	"@spectator_music_should_play_prehorn_time_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.Prehorn" //Replace with the sound you want to play.
+			}
+			
+			//BLOCKEND
+			
+			//BLOCKSTART //CURRENT MUSIC DEBUG
+			//////////////////////////////////////
+			// CURRENT MUSIC DEBUG ///////////////
+			//////////////////////////////////////       
+			
+			"current_music_floor_max"
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "max"		
+				"input1" "@get_currently_playing_music.output"
+				"input2" "0.0"
+			}	
+						
+			"set_currently_playing_music_floor" //If the opvar drops below 0.0, set it to 0.0.  This should never happen and is only here as a fail-safe.
+			{
+				"operator" "set_opvar_float"
+				"opvar" "current_music"
+				"input" "@current_music_floor_max.output"
+			}   
+			// 0) NONE
+			// 2) Explore
+			// 4) Battle
+			// 8) DO NOT USE!!!! //Possible to have 2 battle musics!
+			// 16) Dead
+			// 32) Respawn - Transition out of Dead
+			// 64) Buyback - Transition out of Dead
+			// 128) Roshan
+			// 256) Gank
+			// 512) Ganked
+			// 1024) Win
+			// 2048) Lose
+			// 4096) Prehorn
+			// 8192) Smoked
+			// 16384) Chasing
+			// 32768) Chased
+			// 65536) Hero Picker
+			// 131072) Explore Picker
+			// 262144)
+			// 524288)
+			// 1048576)
+			// 2097152)
+			
+			
+			"music_type_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@current_music_floor_max.output"	
+			}
+			
+			"music_type_delta_abs"
+			{
+				"input_execute"	"1.0"	
+				"operator" 	"math_func1"
+				"function"	"fabs"		
+				"input1" 	"@music_type_delta.output"
+			}	
+			
+			"music_type_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "greater_than"		
+				"input1" "@music_type_delta_abs.output"
+				"input2" "0.0"
+			}
+			
+			"music_type_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@music_type_delta_compare.output"
+				"input2" "@get_debug_printing_opvar.output"
+			}	
+			
+			"**************MUSIC_TYPE_PRINT**************" //print the smooth val
+			{
+				"input_execute" "@music_type_delta_compare_and.output"
+				"operator" "util_print_float"
+				"input" "@current_music_floor_max.output"
+			}
+			//BLOCKEND
+			
+			//////////////////////////////////////////////////
+			// BEGIN MUSIC PICKING "STATE MACHINE" ///////////
+			//////////////////////////////////////////////////
+			
+			//BLOCKSTART //EXPLORE STATE
+			////////////////////////////////////
+			// STATE: Explore Music ////////////
+			////////////////////////////////////
+			"start_explore_timer" //if no other music is playing, we kick off our timer
+			{
+				"operator" "math_float"
+				"apply" "equals"	
+				"input1" "@current_music_floor_max.output"
+				"input2" "0.0"
+			}
+			
+			"stop_explore_timer" //if other music is playing, we don't try to play explore
+			{
+				"operator" "math_float"
+				"apply" "greater_than"	
+				"input1" "@current_music_floor_max.output"
+				"input2" "1.0"
+			}
+			
+			"get_explore_played_opvar" //Keeping track of what music is playing at a given moment
+			{
+				"operator" "get_opvar_float"
+				"opvar" "explore_was_played"
+			}
+			
+			"stop_explore_timer_max" //we have to test if explore music was _just_ played becuase otherwise we get into a weird state
+			{
+				"operator" "math_float"
+				"apply" "max"	
+				"input1" "@stop_explore_timer.output"
+				"input2" "@get_explore_played_opvar.output"
+			}
+			
+			"explore_timer_ramp"  //wait 5 seconds before trying to play explore music
+			{
+				"operator" "util_timer_ramp"
+				"input_start" "@start_explore_timer.output"
+				"input_stop" "@stop_explore_timer.output"
+				"input_start_value" "5.0"
+				"input_end_value" "0.0"
+				"input_duration" "5.0"
+			}			
+			
+			"other_music_playing_compare"  //make sure no other music is playing
+			{
+				"operator" "math_float"
+				"apply" "equals"	
+				"input1" "@explore_timer_ramp.output"
+				"input2" "0.0"
+			}			
+			
+			"other_music_playing_compare_min"  //make sure no other music is playing
+			{
+				"operator" "math_float"
+				"apply" "min"	
+				"input1" "@other_music_playing_compare.output"
+				"input2" "@start_explore_timer.output"
+			}
+			
+			"set_explore_played_opvar" //if we're going to play explore music, set this opvar.
+			{
+				"operator" "set_opvar_float"
+				"execute_once" "false"
+				"opvar" "explore_was_played"
+				"input" "@other_music_playing_compare_min.output"
+			}
+			
+			"play_explore_entry" //play explore music
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute"	"@other_music_playing_compare_min.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateExploreMusic" //Replace with the sound you want to play.
+			}
+
+            // "stop_ramp_execution" //debug
+            // {
+				// "operator" "set_convar"
+				// "input_execute"	"@other_music_playing_compare_min.output"
+				// "convar" "snd_sos_exec_when_paused"
+				// "input" "0"
+			// }			
+			//BLOCKEND
+			
+			//BLOCKSTART //BATTLE MUSIC STATE
+			////////////////////////////////////
+			// STATE: Battle Music /////////////
+			////////////////////////////////////	
+			"state_battle_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "state_battle_music_request"	
+			}
+			
+			// "**************BATTLE MUSIC REQUESTED**************" 
+			// {
+				// "execute_once" "false"
+				// "input_execute" "@state_battle_music_request_opvar.output"
+				// "operator" "util_print_float"
+				// "input" "@state_battle_music_request_opvar.output"
+			// }
+			
+			"play_battle_epic_entry" //play explore music
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute" "@state_battle_music_request_opvar.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateBattleMusic" //Replace with the sound you want to play.
+			}			
+			
+			"set_battle_played_opvar" //if we're going to play explore music, set this opvar.
+			{
+				"input_execute" "@state_battle_music_request_opvar.output"
+				"operator" "set_opvar_float"
+				"opvar" "state_battle_music_request"
+				"input" "0.0"
+			}
+			//BLOCKEND
+			
+			//BLOCKSTART //DEAD MUSIC STATE
+			////////////////////////////////////
+			// STATE: Death Music ///////////////
+			////////////////////////////////////	
+			"state_death_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "state_death_music_request"	
+			}
+			
+			// "**************DEATH MUSIC REQUESTED**************" 
+			// {
+				// "execute_once" "false"
+				// "input_execute" "@state_death_music_request_opvar.output"
+				// "operator" "util_print_float"
+				// "input" "@state_death_music_request_opvar.output"
+			// }
+			
+			"play_death_entry" //play explore music
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute" "@state_death_music_request_opvar.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateHeroDeath" //Replace with the sound you want to play.
+			}			
+			
+			"set_death_played_opvar" //if we're going to play explore music, set this opvar.
+			{
+				"input_execute" "@state_death_music_request_opvar.output"
+				"operator" "set_opvar_float"
+				"opvar" "state_death_music_request"
+				"input" "0.0"
+			}
+			
+			
+			//BLOCKEND
+			
+			//BLOCKSTART //GANK MUSIC STATE
+			////////////////////////////////////
+			// STATE: Gank Music ///////////////
+			////////////////////////////////////
+			
+			"state_gank_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_probability_ganker"	
+			}	
+			
+			"gank_music_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@state_gank_music_request_opvar.output"	
+			}
+			
+			"gank_music_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "not_equal"		
+				"input1" "@gank_music_delta.output"
+				"input2" "0.0"
+			}
+			
+			"gank_music_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@gank_music_delta_compare.output"
+				"input2" "@get_debug_printing_opvar.output"
+			}	
+			
+			//Gank Player unused currently
+			
+// 			"gank_music_value_compare" 
+// 			{
+// 				"input_execute"	"1.0"	
+// 				"operator" "math_float"
+// 				"apply" "greater_than"		
+// 				"input1" "@state_gank_music_request_opvar.output"
+// 				"input2" "0.15"
+// 			}
+			
+// 			"gank_music_player_compare_and" 
+// 			{
+// 				"input_execute"	"1.0"	
+// 				"operator" "math_float"
+// 				"apply" "min"		
+// 				"input1" "@gank_music_delta_compare.output"
+// 				"input2" "@gank_music_value_compare.output"
+// 			}
+			
+// 			"gank_music_player" //play 
+// 			{
+// 				"input_execute"	"@gank_music_player_compare_and.output"
+// 				"operator" "sys_start_entry"
+// 				"execute_once" "false"
+// 				"input_start" "1"
+// 				"entry_name" "DOTAMusic.StateGankMusic" //Replace with the sound you want to play.
+// 			}	
+			
+// 			"**************GANK_MUSIC_PRCT**************" //print the smooth val
+// 			{
+// 				"input_execute" "@gank_music_delta_compare_and.output"
+// 				"operator" "util_print_float"
+// 				"input" "@state_gank_music_request_opvar.output"
+// 			}
+			//BLOCKEND
+			
+			//BLOCKSTART //GANKED MUSIC STATE
+			////////////////////////////////////
+			// STATE: Ganked Music /////////////
+			////////////////////////////////////
+			"state_ganked_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_probability_gank"	
+			}		
+			
+			"ganked_music_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@state_ganked_music_request_opvar.output"	
+			}
+			
+			"ganked_music_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "not_equal"		
+				"input1" "@ganked_music_delta.output"
+				"input2" "0.0"
+			}
+			
+			"ganked_music_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@ganked_music_delta_compare.output"
+				"input2" "@get_debug_printing_opvar.output"
+			}	
+			
+			//Ganked Player
+			
+			"ganked_music_value_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "greater_than"		
+				"input1" "@state_ganked_music_request_opvar.output"
+				"input2" "0.15"
+			}
+			
+			"ganked_music_player_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@ganked_music_delta_compare.output"
+				"input2" "@ganked_music_value_compare.output"
+			}
+			
+			"ganked_music_player" //play 
+			{
+				"input_execute"	"@ganked_music_player_compare_and.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateGankedMusic" //Replace with the sound you want to play.
+			}	
+						
+			"**************GANKED_MUSIC_PRCT**************" //print the smooth val
+			{
+				"input_execute" "@ganked_music_delta_compare_and.output"
+				"operator" "util_print_float"
+				"input" "@state_ganked_music_request_opvar.output"
+			}
+			//BLOCKEND
+			
+			//BLOCKSTART //WIN MUSIC STATE
+			////////////////////////////////////
+			// STATE: Win Music ////////////////
+			////////////////////////////////////
+			"state_win_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "state_win_music_request"	
+			}		
+			//BLOCKEND
+			
+			//BLOCKSTART //LOSE MUSIC STATE
+			////////////////////////////////////
+			// STATE: Lose Music ///////////////
+			////////////////////////////////////	
+			"state_lose_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "state_lose_music_request"	
+			}	
+			//BLOCKEND
+			
+			//BLOCKSTART //PREHORN MUSIC STATE
+			////////////////////////////////////
+			// STATE: Prehorn Music ////////
+			////////////////////////////////////	
+			"state_prehorn_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "state_prehorn_music_request"	
+			}	
+			//BLOCKEND
+			
+			//BLOCKSTART //SMOKED MUSIC STATE
+			////////////////////////////////////
+			// STATE: Smoked Music ////////////
+			////////////////////////////////////
+			"state_smoked_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_smoke_request"	
+			}	
+			
+			"state_smoked_music_end_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_smoke_end_state"	
+			}	
+			
+			"smoke_music_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@state_smoked_music_request_opvar.output"	
+			}
+			
+			"smoke_popped_music_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "not_equal"		
+				"input1" "@smoke_music_delta.output"
+				"input2" "0.0"
+			}
+			
+			//SMOKE POPPED			
+			
+			"smoke_popped_music_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@state_smoked_music_request_opvar.output"
+				"input2" "1.0"
+			}
+			
+			"smoke_popped_music_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@smoke_popped_music_delta_compare.output"
+				"input2" "@smoke_popped_music_compare.output"
+			}				
+			
+			"play_smoke_popped_entry" 
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute" "@smoke_popped_music_delta_compare_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateSmokePopped" //Replace with the sound you want to play.
+			}	
+			
+			//SMOKE ENDED (ENEMY HERO)			
+			
+			"smoke_ended_hero_music_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@state_smoked_music_end_opvar.output"
+				"input2" "3.0"
+			}
+			
+			"smoke_ended_hero_music_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@smoke_popped_music_delta_compare.output"
+				"input2" "@smoke_ended_hero_music_compare.output"
+			}				
+			
+			"play_smoke_ended_hero_entry" 
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute" "@smoke_ended_hero_music_delta_compare_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateSmokeEndedHero" //Replace with the sound you want to play.
+			}
+			
+			//SMOKE ENDED (TOWER)			
+			
+			"smoke_ended_tower_music_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@state_smoked_music_end_opvar.output"
+				"input2" "2.0"
+			}
+			
+			"smoke_ended_tower_music_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@smoke_popped_music_delta_compare.output"
+				"input2" "@smoke_ended_tower_music_compare.output"
+			}				
+			
+			"play_smoke_ended_tower_entry" 
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute" "@smoke_ended_tower_music_delta_compare_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateSmokeEndedTower" //Replace with the sound you want to play.
+			}	
+			
+			//SMOKE ENDED (ATTACKED CREEP)			
+			
+			"smoke_ended_creep_music_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@state_smoked_music_end_opvar.output"
+				"input2" "1.0"
+			}
+			
+			"smoke_ended_creep_music_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@smoke_popped_music_delta_compare.output"
+				"input2" "@smoke_ended_creep_music_compare.output"
+			}				
+			
+			"play_smoke_ended_creep_entry" 
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute" "@smoke_ended_creep_music_delta_compare_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateSmokeEndedCreep" //Replace with the sound you want to play.
+			}	
+			
+			
+			//SMOKE PRINTING
+			"smoke_music_delta_printing_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@smoke_popped_music_delta_compare.output"
+				"input2" "@get_debug_printing_opvar.output"
+			}	
+			
+			"**************SMOKE_MUSIC_PRINT**************" //print the smooth val
+			{
+				"input_execute" "@smoke_music_delta_printing_compare_and.output"
+				"operator" "util_print_float"
+				"input" "@state_smoked_music_request_opvar.output"
+			}
+			
+			"**************SMOKE_MUSIC_END_PRINT**************" //print the smooth val
+			{
+				"input_execute" "@smoke_music_delta_printing_compare_and.output"
+				"operator" "util_print_float"
+				"input" "@state_smoked_music_end_opvar.output"
+			}
+			//BLOCKEND
+			
+			//BLOCKSTART //CHASING MUSIC STATE
+			////////////////////////////////////
+			// STATE: Chasing Music ////////////
+			////////////////////////////////////	
+			"state_chasing_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "state_chasing_music_request"	
+			}	
+			//BLOCKEND
+			
+			//BLOCKSTART //CHASED MUSIC STATE
+			////////////////////////////////////
+			// STATE: Chased Music /////////////
+			////////////////////////////////////	
+			"state_chased_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "state_chased_music_request"	
+			}	
+			//BLOCKEND
+			
+			//BLOCKSTART //ROSHAN MUSIC STATE
+			////////////////////////////////////
+			// STATE: Roshan Music ////////////
+			////////////////////////////////////
+			"state_roshan_music_attack_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_roshan_attack_state"	
+			}	
+			
+			"state_roshan_music_health_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_roshan_health_state"	
+			}
+			
+			//FOR DEBUG PRINTING
+			"roshan_music_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@state_roshan_music_attack_opvar.output"	
+			}
+			
+			"roshan_music_health_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@state_roshan_music_health_opvar.output"	
+			}
+			
+			"roshan_music_delta_abs"
+			{
+				"input_execute"	"1.0"	
+				"operator" 	"math_func1"
+				"function"	"fabs"		
+				"input1" 	"@roshan_music_delta.output"
+			}	
+			
+			"roshan_music_health_delta_abs"
+			{
+				"input_execute"	"1.0"	
+				"operator" 	"math_func1"
+				"function"	"fabs"		
+				"input1" 	"@roshan_music_health_delta.output"
+			}	
+			
+			"roshan_music_delta_compare_or" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "max"		
+				"input1" "@roshan_music_delta_abs.output"
+				"input2" "@roshan_music_health_delta_abs.output"
+			}
+			
+			"roshan_music_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "greater_than"		
+				"input1" "@roshan_music_delta_compare_or.output"
+				"input2" "0.0"
+			}
+			
+			"roshan_music_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@roshan_music_delta_compare.output"
+				"input2" "@get_debug_printing_opvar.output"
+			}	
+			
+			"**************ROSHAN_MUSIC_ATTACK_PRINT**************" //print the smooth val
+			{
+				"input_execute" "@roshan_music_delta_compare_and.output"
+				"operator" "util_print_float"
+				"input" "@state_roshan_music_attack_opvar.output"
+			}
+			
+			"**************ROSHAN_MUSIC_HEALTH_PRINT**************" //print the smooth val
+			{
+				"input_execute" "@roshan_music_delta_compare_and.output"
+				"operator" "util_print_float"
+				"input" "@state_roshan_music_health_opvar.output"
+			}
+			// END DEBUG PRINTING 
+			
+			//ROSHAN ATTACKED
+				
+			"roshan_music_attacked_delta" 
+			{
+				"operator" "math_delta"
+				"input" "@state_roshan_music_attack_opvar.output"	
+			}
+			
+			"roshan_music_attacked_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "not_equal"		
+				"input1" "@roshan_music_attacked_delta.output"
+				"input2" "0.0"
+			}
+			
+			"roshan_music_attacked_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@state_roshan_music_attack_opvar.output"
+				"input2" "1.0"
+			}
+			
+			"roshan_music_attacked_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@roshan_music_attacked_compare.output"
+				"input2" "@roshan_music_attacked_delta_compare.output"
+			}	
+			
+			"roshan_music_attacked_health_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "less_than"		
+				"input1" "@state_roshan_music_health_opvar.output"
+				"input2" "100.0"
+			}
+			
+			"roshan_music_attacked_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@roshan_music_attacked_health_compare.output"
+				"input2" "@roshan_music_attacked_delta_compare_and.output"
+			}	
+			
+			"roshan_music_attacked_already_playing" //make sure we're not already playing rosh music
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "less_than"		
+				"input1" "@get_currently_playing_music.output"
+				"input2" "128" //ROSHAN 
+			}			
+						
+			"roshan_music_attacked_greater_than_equal" //are we playing battle music (or higher ID)?
+			{
+				"operator" "math_float"
+				"apply"	"greater_than_or_equal" 
+				"input1" "@get_currently_playing_music.output"
+				"input2" "256" //higher than battle
+			}	
+						
+			"roshan_music_attacked_playing_or" //are we playing battle music (or higher ID)?
+			{
+				"operator" "math_float"
+				"apply"	"max"
+				"input1" "@roshan_music_attacked_greater_than_equal.output"
+				"input2" "@roshan_music_attacked_already_playing.output"
+			}	
+						
+			"roshan_music_attacked_play_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@roshan_music_attacked_playing_or.output"
+				"input2" "@roshan_music_attacked_compare_and.output"
+			}	
+			
+			"play_roshan_attacked_entry" 
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute" "@roshan_music_attacked_play_compare_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateRoshanMusic" //Replace with the sound you want to play.
+			}	
+			
+			//ROSHAN KILLED
+			
+			"roshan_music_killed_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "not_equal"		
+				"input1" "@roshan_music_attacked_delta.output"
+				"input2" "0.0"
+			}
+			
+			"roshan_music_killed_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@state_roshan_music_attack_opvar.output"
+				"input2" "2.0"
+			}
+			
+			"roshan_music_killed_delta_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@roshan_music_killed_delta_compare.output"
+				"input2" "@roshan_music_killed_compare.output"
+			}	
+			
+			"roshan_music_killed_health_compare" // probably not needed
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "less_than_or_equal"		
+				"input1" "@state_roshan_music_health_opvar.output"
+				"input2" "5.0" //sometimes it doesn't get set to zero
+			}
+			
+			"roshan_music_killed_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@roshan_music_killed_health_compare.output"
+				"input2" "@roshan_music_killed_delta_compare_and.output"
+			}	
+			
+			"play_roshan_killed_entry" 
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute" "@roshan_music_killed_compare_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.StateRoshanKilled" //Replace with the sound you want to play.
+			}	
+			
+			//ROSHAN NOT KILLED, PLAYER LEFT			
+			
+			"roshan_music_retreated_delta_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "not_equal"		
+				"input1" "@roshan_music_attacked_delta.output"
+				"input2" "0.0"
+			}		
+			
+			"roshan_music_retreated_compare" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "equals"		
+				"input1" "@state_roshan_music_attack_opvar.output"
+				"input2" "0.0"
+			}
+			
+			"roshan_music_retreated_compare_and" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@roshan_music_retreated_compare.output"
+				"input2" "@roshan_music_retreated_delta_compare.output"
+			}	
+			
+			"roshan_music_stop"
+			{
+				"input_execute"	"@roshan_music_retreated_compare_and.output"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "DOTAMusic.BattleMusic_Roshan_01" //We allow no instances of Explore when the death stinger knells		
+			}			
+
+			"speakers_limit"
+			{
+				"operator"      "math_speakers"
+				"apply"	       "mult"
+				"left_front"   "1.0"	
+				"right_front"  "1.0"	
+				"center"       "0.0"	
+				"lfe"          "0.0"	
+				"left_rear"    "0.8"
+				"right_rear"   "0.8"	
+				
+				"input2[*]" "0.01"		
+			}
+
+			"speakers_output"
+			{
+				"operator" "sys_output"
+				"input_speakers" "@speakers_limit.output" 
+				"output" "speakers"
+			}
+			
+			//BLOCKEND
+		}
+		
+		"stop_stack"
+		{		
+			"set_mainloop_flag"
+			{
+				"operator" "set_opvar_float"
+				"execute_once" "true"
+				"opvar" "dota_music_mainloop_flag"
+				"input" "0.0"			
+			}
+		}
+	}
+}
+
+// used code
+// stub for code, does nothing
+"DOTAMusic.Explore01" //abstraction layer for explore music calls from code.
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav" 
+	// "operator_stacks"
+	// {
+		
+		// "start_stack"
+		// {
+			
+			// "play_explore_picker_entry"
+			// {
+				// "operator" "sys_start_entry"
+				// "execute_once" "false"
+				// "input_execute"	"1.0"
+				// "input_start" "1"
+				// "entry_name" "DOTAMusic.StateExploreMusic" //Replace with the sound you want to play.
+			// }
+		// }
+	// }
+}
+
+
+// used code
+// util
+"DOTAMusic.BattleMusic_Epic" //Battle music request from the game
+{
+	"channel"	 "CHAN_STATIC"
+	"volume"	 "0.60" 
+	"soundlevel" "SNDLVL_NONE"
+	// "pitch"		 "PITCH_NORM"
+
+	"wave"  "music\null.wav"
+
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"set_battle_request_opvar"
+			{
+				"operator" "set_opvar_float"
+				"opvar" "state_battle_music_request"
+				"input" "1.0"
+			}
+		}
+	}
+}
+// no code, called in main loop
+// util
+"DOTAMusic.StateBattleMusic"
+{
+	"channel"	 "CHAN_STATIC"
+	"volume"	 "0.60"
+	"soundlevel" "SNDLVL_NONE"
+	"wave"  "music\null.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_check_music_not_playing"
+			
+			"play_battle_epic_entry" //play explore music
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute"	"@music_playing_and.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.BattleMusic_Epic_Picker" //Replace with the sound you want to play.
+			}
+		}
+	}
+}
+	
+// used code
+// util matches played piece
+"DOTAMusic.BattleMusic_Epic_End"
+{
+	"channel"	 "CHAN_STATIC"
+	"volume"	 "0.60"
+	"soundlevel" "SNDLVL_NONE"
+	// "pitch"		 "PITCH_NORM"
+
+	"wave"  "music\null.wav"	
+
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"get_battle_choice_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" "dota_battle_music_choice"
+			}	
+			
+			"import_stack" "CS_random_music_entry_start_2"
+			
+					
+			"random_variation_picker" //use for random volume if needed
+			{
+				"input_execute" "0.0"
+			}
+		
+			"compare_1"
+			{			
+				"input1" "@get_battle_choice_opvar.output"
+			}
+		
+			"compare_2"
+			{			
+				"input1" "@get_battle_choice_opvar.output"
+			}
+		
+			"compare_3"
+			{			
+				"input1" "@get_battle_choice_opvar.output"
+			}	
+			
+			"play_variation_1"
+			{
+				"entry_name" "DOTAMusic.BattleMusic_Epic_End_01" 
+			}
+			
+			"play_variation_2"
+			{
+				"entry_name" "DOTAMusic.BattleMusic_Epic_End_02" 
+			}
+			
+			"play_variation_3"
+			{
+				"entry_name" "DOTAMusic.BattleMusic_Epic_End_03" 
+			}
+			
+			// "block_entries"
+			// {
+				// "operator" "sys_block_entries"
+				// "input_active" "1.0"	
+				// "input_duration" "1.0"
+				// "match_substring" "false"
+				// "match_entry" "DOTAMusic.BattleMusic_Epic_End"
+				// "match_channel" "false"
+				// "match_entity" "false"
+			// }
+		}
+	}
+}
+// no code, call main loop
+// util
+"DOTAMusic.StateRoshanMusic"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_check_music_not_playing"
+			
+			"play_roshan_battlemusic_entry" //play 
+			{
+				"input_execute"	"@music_playing_and.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.BattleMusic_Roshan_01" //Replace with the sound you want to play.
+			}	
+			
+		}
+	}
+}
+// no code, called main loop
+// util
+"DOTAMusic.StateRoshanKilled"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_check_music_not_playing"
+			
+			"play_roshan_battlemusic_end_entry" //play 
+			{
+				"input_execute"	"@music_playing_and.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.BattleMusic_Roshan_End" //Replace with the sound you want to play.
+			}	
+		}
+	}
+}
+// no code, called main loop
+// util
+"DOTAMusic.StateSmokePopped"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_check_music_not_playing"
+			
+			"play_smoke_popped_entry" //play 
+			{
+				"input_execute"	"@music_playing_and.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.SmokePopped" //Replace with the sound you want to play.
+			}				
+		}
+	}
+}
+// no code, called main loop
+// util
+"DOTAMusic.StateSmokeEndedHero"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_check_music_not_playing"
+			
+			"play_roshan_battlemusic_entry" //play 
+			{
+				"input_execute"	"@music_playing_and.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.SmokeEndedHero" //Replace with the sound you want to play.
+			}	
+			
+		}
+	}
+}
+// no code, called in main
+// util
+"DOTAMusic.StateSmokeEndedTower"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_check_music_not_playing"
+			
+			"play_smoke_ended_tower_entry" //play 
+			{
+				"input_execute"	"@music_playing_and.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.SmokeEndedTower" //Replace with the sound you want to play.
+			}	
+			
+		}
+	}
+}
+// called in main loop
+// util
+"DOTAMusic.StateSmokeEndedCreep"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_check_music_not_playing"
+			
+			"play_smoke_ended_creep_entry" //play 
+			{
+				"input_execute"	"@music_playing_and.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.SmokeEndedCreep" //Replace with the sound you want to play.
+			}			
+		}
+	}
+}
+//BLOCKSTART //LANING MUSIC TUTORIAL
+// called from explore_picker
+// util
+"DOTAMusic.LaningMusicTutorial_01" //Laning 01 music master
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.05"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null_lp.wav"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "1"	
+			}
+		}
+		
+		"prestart_stack" 
+		{
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "2" //Explore
+			}
+		}
+		
+		"start_stack"
+		{
+			
+			// "import_stack" "dota_random_delay_start"
+			
+			// "get_random_delay"
+			// {
+				// "input_min" "10.0"
+				// "input_max" "20.0"	
+			// }
+			
+			// "tutorial_opvar_check_01"
+			// {
+				// "input_execute" "1.0" //enable map checking here
+			// }	
+		
+			// "get_random_delay_tutorial"
+			// {	
+				// "input_min" "3.0"
+				// "input_max" "5.0"	
+			// }
+			
+			// "set_explore_delay_opvar"
+			// {
+				// "operator" 	"set_opvar_float"
+				// "opvar" 	"laning_01_random_delay_opvar"
+				// "input"		"@tutorial_opvar_switch.output"
+			// }
+			
+	            // "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+	            // {
+				// "operator" "get_opvar_float"
+				// "opvar" "debug_print_music"
+			// }
+			
+			// "**************TUTORIAL_OPVAR_CHECK**************" 
+			// {
+				// "input_execute"	"@get_debug_printing_opvar.output"
+				// "operator" "util_print_float"
+				// "input" "@tutorial_opvar_check_01.output"
+			// }
+			// "**************LANING_MUSIC_DELAY**************" 
+			// {
+				// "input_execute"	"@get_debug_printing_opvar.output"
+				// "operator" "util_print_float"
+				// "input" "@tutorial_opvar_switch.output"
+			// }
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_stereo"
+			
+			"mixer"
+			{
+				"mixgroup" "Music"
+			}
+			
+			"import_stack" "dota_update_start_3layer_delay"
+			
+			"get_random_delay"
+			{
+				"input_min" "10.0"
+				"input_max" "20.0"	
+			}
+			
+			"tutorial_opvar_check_01"
+			{
+				"input_execute" "1.0" //enable map checking here
+			}	
+		
+			"get_random_delay_tutorial"
+			{	
+				"input_min" "3.0"
+				"input_max" "5.0"	
+			}
+			
+			"layer1"
+			{
+				"execute_once" "true"
+				"entry_name" "DOTAMusic.LaningMusicTutorial_01_Layer_01"
+			}
+			
+			"layer2"
+			{	
+				"execute_once" "true"
+				"entry_name" "DOTAMusic.LaningMusicTutorial_01_Layer_02"
+			}
+			
+			"layer3"
+			{
+				"execute_once" "true"
+				"entry_name" "DOTAMusic.LaningMusicTutorial_01_Layer_03"
+			}
+			
+			"update_track"
+			{
+				"operator" "track_update"
+				// "autoqueue_entry_at_end_point" "DOTAMusic.StateExploreMusic"
+				"stop_channel_on_track" "false"	//this is OK explore music is working 
+			}
+		}
+		
+		"stop_stack"
+		{
+			
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "2" //Explore
+			}	
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************LANING_MUSIC_KILLED**************" 
+			{
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+			"import_stack" "dota_stop_4layer"
+			
+			"4layer_stop"
+			{
+				"match_entry" "DOTAMusic.LaningMusicTutorial_01_Layer"
+			}
+			
+			"4layer_stop_self"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"stop_this_entry" "true"	
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.LaningMusicTutorial"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+		}
+	}
+}
+// called from explore_picker
+// util
+"DOTAMusic.LaningMusicTutorial_02" //Laning 01 music master
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.05"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null_lp.wav"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "1"	
+			}
+		}
+		
+		"prestart_stack" 
+		{
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "2" //Explore
+			}
+		}
+		
+		"start_stack"
+		{
+			
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_stereo"
+			
+			"mixer"
+			{
+				"mixgroup" "Music"
+			}
+			
+			"import_stack" "dota_update_start_3layer_delay"
+			
+			"get_random_delay"
+			{
+				"input_min" "10.0"
+				"input_max" "20.0"	
+			}
+			
+			"tutorial_opvar_check_01"
+			{
+				"input_execute" "1.0" //enable map checking here
+			}	
+		
+			"get_random_delay_tutorial"
+			{	
+				"input_min" "3.0"
+				"input_max" "5.0"	
+			}
+			
+			"layer1"
+			{
+				"execute_once" "true"
+				"entry_name" "DOTAMusic.LaningMusicTutorial_02_Layer_01"
+			}
+			
+			"layer2"
+			{	
+				"execute_once" "true"
+				"entry_name" "DOTAMusic.LaningMusicTutorial_02_Layer_02"
+			}
+			
+			//"layer3"
+			//{
+			//	"execute_once" "true"
+			//	"entry_name" "DOTAMusic.LaningMusicTutorial_01_Layer_03"
+			//}
+			
+			"update_track"
+			{
+				"operator" "track_update"
+				// "autoqueue_entry_at_end_point" "DOTAMusic.StateExploreMusic"
+				"stop_channel_on_track" "false"	//this is OK explore music is working 
+			}
+		}
+		
+		"stop_stack"
+		{
+			
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "2" //Explore
+			}	
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************LANING_MUSIC_KILLED**************" 
+			{
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+			"import_stack" "dota_stop_4layer"
+			
+			"4layer_stop"
+			{
+				"match_entry" "DOTAMusic.LaningMusicTutorial_02_Layer"
+			}
+			
+			"4layer_stop_self"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"stop_this_entry" "true"	
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.LaningMusicTutorial"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+		}
+	}
+}
+
+//BLOCKSTART //EXPLORE MUSIC TUTORIAL
+
+"DOTAMusic.ExploreMusicTutorial_01" //Laning 01 music master
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.05"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null_lp.wav"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "1"	
+			}
+		}
+		
+		"prestart_stack" 
+		{
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "2" //Explore
+			}
+		}
+		
+		"start_stack"
+		{
+			
+			// "import_stack" "dota_random_delay_start"
+			
+			// "get_random_delay"
+			// {
+				// "input_min" "10.0"
+				// "input_max" "20.0"	
+			// }
+			
+			// "tutorial_opvar_check_01"
+			// {
+				// "input_execute" "1.0" //enable map checking here
+			// }
+		
+			// "get_random_delay_tutorial"
+			// {	
+				// "input_min" "3.0"
+				// "input_max" "5.0"	
+			// }
+			
+			// "set_explore_delay_opvar"
+			// {
+				// "operator" 	"set_opvar_float"
+				// "opvar" 	"explore_random_delay_opvar"
+				// "input"		"@tutorial_opvar_switch.output"
+			// }
+			
+            // "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            // {
+				// "operator" "get_opvar_float"
+				// "opvar" "debug_print_music"
+			// }
+			
+			// "**************TUTORIAL_OPVAR_CHECK**************" 
+			// {
+				// "input_execute"	"@get_debug_printing_opvar.output"
+				// "operator" "util_print_float"
+				// "input" "@tutorial_opvar_check_01.output"
+			// }
+			
+			// "**************EXPLORE_MUSIC_DELAY**************" 
+			// {
+				// "input_execute"	"@get_debug_printing_opvar.output"
+				// "operator" "util_print_float"
+				// "input" "@tutorial_opvar_switch.output"
+			// }
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_stereo"
+			
+			"mixer"
+			{
+				"mixgroup" "Music"
+			}
+			
+			"import_stack" "dota_update_start_3layer_delay"
+			
+			"get_random_delay"
+			{
+				"input_min" "10.0"
+				"input_max" "20.0"	
+			}
+			
+			"tutorial_opvar_check_01"
+			{
+				"input_execute" "1.0" //enable map checking here
+			}	
+		
+			"get_random_delay_tutorial"
+			{	
+				"input_min" "3.0"
+				"input_max" "5.0"	
+			}
+			
+			"layer1"
+			{
+				"execute_once" "true"
+				"entry_name" "DOTAMusic.ExploreMusicTutorial_01_Layer_01"
+			}
+			
+			"layer2"
+			{	
+				"execute_once" "true"
+				"entry_name" "DOTAMusic.ExploreMusicTutorial_01_Layer_02"
+			}
+			
+			"layer3"
+			{
+				"execute_once" "true"
+				"entry_name" "DOTAMusic.ExploreMusicTutorial_01_Layer_03"
+			}
+			
+			"update_track"
+			{
+				"operator" "track_update"
+				// "autoqueue_entry_at_end_point" "DOTAMusic.StateExploreMusic"
+				"stop_channel_on_track" "false"	//this is OK explore music is working 
+			}
+		}
+		
+		"stop_stack"
+		{
+			
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "2" //Explore
+			}	
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************LANING_MUSIC_KILLED**************" 
+			{
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+			"import_stack" "dota_stop_4layer"
+			
+			"4layer_stop"
+			{
+				"match_entry" "DOTAMusic.ExploreMusicTutorial_01_Layer"
+			}
+			
+			"4layer_stop_self"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"stop_this_entry" "true"	
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.ExploreMusicTutorial"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+		}
+	}
+}
+
+"DOTAMusic.StateExploreMusic"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav" 
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "1"	
+			}
+		}
+		
+		"start_stack"
+		{
+			// "import_stack" "dota_random_delay_start"
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "131072" //Explore Picker
+			}
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}   
+			
+			"**************NOW_IN_EXPLORE_START_STACK**************" 
+			{
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+		}
+		
+		"update_stack"
+		{
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}   
+			
+			"**************NOW_IN_EXPLORE_UPDATE_STACK**************" 
+			{
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+			"import_stack" "dota_update_music_stereo"
+
+			"speakers_limit"
+			{				
+				"input2[*]" "0.01"		
+			}
+		}
+		
+		"stop_stack"
+		{
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}   
+			
+			"**************NOW_IN_EXPLORE_STOP_STACK**************" 
+			{
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+			"get_currently_playing_music_explore" //Keeping track of what music is playing at a given moment
+			{
+				"operator" "get_opvar_float"
+				"opvar" "current_music"
+			}
+			
+			"get_day_night_phase"
+			{
+				"operator" 	"get_opvar_float"
+				"opvar" 	"music_is_daytime"
+			}
+		
+			"other_music_playing_compare"  //make sure no other music is playing
+			{
+				"operator" "math_float"
+				"apply" "equals"	
+				"input1" "@get_currently_playing_music_explore.output"
+				"input2" "131072"
+			}
+			
+			"explore_day_variant"
+			{
+				"operator" "math_float"
+				"apply" "equals"	
+				"input1" "@get_day_night_phase.output"
+				"input2" "1"			
+			}
+			
+			"explore_night_variant"
+			{
+				"operator" "math_float"
+				"apply" "equals"	
+				"input1" "@get_day_night_phase.output"
+				"input2" "0"			
+			}
+		
+			"explore_day_night_variant_compare_day"  //make sure no other music is playing
+			{
+				"operator" "math_float"
+				"apply" "min"	
+				"input1" "@other_music_playing_compare.output"
+				"input2" "@explore_day_variant.output"
+			}
+		
+			"explore_day_night_variant_compare_night"  //make sure no other music is playing
+			{
+				"operator" "math_float"
+				"apply" "min"	
+				"input1" "@other_music_playing_compare.output"
+				"input2" "@explore_night_variant.output"
+			}
+			
+			"play_explore_entry_day"
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute"	"@explore_day_night_variant_compare_day.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.ExploreMusic_Picker_Day" //Replace with the sound you want to play.
+			}
+			
+			"play_explore_entry_night"
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_execute"	"@explore_day_night_variant_compare_night.output"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.ExploreMusic_Picker_Night" //Replace with the sound you want to play.
+			}
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+		
+			"other_music_playing_compare_and"  //make sure no other music is playing
+			{
+				"operator" "math_float"
+				"apply" "min"	
+				"input1" "@other_music_playing_compare.output"
+				"input2" "@get_debug_printing_opvar.output"
+			}
+			
+			"**************EXPLORE MUSIC PICKED**************" 
+			{
+				"input_execute"	"@other_music_playing_compare_and.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "131072" //Explore Picker
+			}
+		}
+	}
+
+}
+
+"DOTAMusic.ExploreMusic_Picker_Day"
+{
+	"channel"	 "CHAN_STATIC"
+	"volume"	 "0.1"
+	"soundlevel" "SNDLVL_NONE"
+	// "pitch"		 "PITCH_NORM"
+
+	"wave"  "music\null.wav"	
+
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{	
+		
+			// "tutorial_check_01"
+			// {
+				// "input_execute" "1.0" //enable map checking here
+				// "operator" "get_map_name"
+				// "map_name" "tutorial" //your map name here	
+				// "match_substring" "true"
+			// }		 
+			
+			"import_stack" "CS_random_music_entry_start_2"	
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************EXPLORE MUSIC PICKER STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+			
+			"get_no_repeat_opvar" 
+			{
+				"opvar" "dota_music_explore_no_repeat"
+			}
+			
+			"random_variation_picker" //use for random volume if needed
+			{
+				"input_min" "@get_no_repeat_opvar.output_opvar_exists"	
+				"input_max" "2.0"	//high value here.	
+			}
+		
+			"identity_for_comparing" //using this like a variable, since we have no variables atm.
+			{		
+				"input1" "@mod_added_num.output"
+			}
+			 
+			// "play_variation_1"
+			// {
+				// "entry_name" "DOTAMusic.LaningMusic_01"
+			// }
+			
+			// "play_variation_2"
+			// {
+				// "entry_name" "DOTAMusic.ExploreMusic_02"
+			// }
+			 
+			"play_variation_1"
+			{
+				"entry_name" "DOTAMusic.LaningMusicTutorial_01"
+			}
+			
+			"play_variation_2"
+			{
+				"entry_name" "DOTAMusic.ExploreMusicTutorial_01"
+			}
+			
+			"play_variation_3"
+			{
+				"entry_name" "DOTAMusic.LaningMusicTutorial_02" 
+			}
+			
+			"set_no_repeat_opvar"
+			{
+				"opvar" "dota_music_explore_no_repeat"
+			}
+		}
+	}
+}
+
+"DOTAMusic.ExploreMusic_Picker_Night"
+{
+	"channel"	 "CHAN_STATIC"
+	"volume"	 "0.1"
+	"soundlevel" "SNDLVL_NONE"
+	// "pitch"		 "PITCH_NORM"
+
+	"wave"  "music\null.wav"	
+
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "CS_random_music_entry_start_2"	
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************EXPLORE MUSIC PICKER STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+			
+			"get_no_repeat_opvar" 
+			{
+				"opvar" "dota_music_explore_night_no_repeat"
+			}
+			
+			"random_variation_picker" //use for random volume if needed
+			{
+				"input_min" "@get_no_repeat_opvar.output_opvar_exists"	
+				"input_max" "2.0"	//high value here.	
+			}
+		
+			"identity_for_comparing" //using this like a variable, since we have no variables atm.
+			{		
+				"input1" "@mod_added_num.output"
+			}
+			 
+			// "play_variation_1"
+			// {
+				// "entry_name" "DOTAMusic.LaningMusic_01"
+			// }
+			
+			// "play_variation_2"
+			// {
+				// "entry_name" "DOTAMusic.ExploreMusic_02"
+			// }
+			 
+			"play_variation_1"
+			{
+				"entry_name" "DOTAMusic.LaningMusicTutorial_01"
+			}
+			
+			"play_variation_2"
+			{
+				"entry_name" "DOTAMusic.ExploreMusicTutorial_01"
+			}
+			
+			 "play_variation_3"
+			 {
+				 "entry_name" "DOTAMusic.LaningMusicTutorial_02" 
+			 }
+			
+			"set_no_repeat_opvar"
+			{
+				"opvar" "dota_music_explore_night_no_repeat"
+			}
+		}
+	}
+}
+
+
+"DOTAMusic.BattleMusic_Epic_Picker"
+{
+	"channel"	 "CHAN_STATIC"
+	"volume"	 "0.60"
+	"soundlevel" "SNDLVL_NONE"
+	// "pitch"		 "PITCH_NORM"
+
+	"wave"  "music\null.wav"	
+
+
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"import_stack" "CS_random_music_entry_start_2"	
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BATTLE MUSIC PICKER STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+			
+			"get_no_repeat_opvar" 
+			{
+				"opvar" "dota_music_epic_no_repeat"
+			}
+			
+			"random_variation_picker" //use for random volume if needed
+			{
+				"input_min" "@get_no_repeat_opvar.output_opvar_exists"	
+			}
+		
+			"identity_for_comparing" //using this like a variable, since we have no variables atm.
+			{		
+				"input1" "@mod_added_num.output"
+			}
+			 
+			"play_variation_1"
+			{
+				"entry_name" "DOTAMusic.BattleMusic_Epic_01" 
+			}
+			
+			"play_variation_2"
+			{
+				"entry_name" "DOTAMusic.BattleMusic_Epic_02" 
+			}
+			
+			"play_variation_3"
+			{
+				"entry_name" "DOTAMusic.BattleMusic_Epic_03" 
+			}
+			
+			"set_no_repeat_opvar"
+			{
+				"opvar" "dota_music_epic_no_repeat"
+			}
+			
+			"set_battle_choice_opvar"
+			{
+				"operator" "set_opvar_float"
+				"opvar" "dota_battle_music_choice"
+				"input" "@identity_for_comparing.output"
+			}
+			
+			// "block_entries"
+			// {
+				// "operator" "sys_block_entries"
+				// "input_active" "1.0"	
+				// "input_duration" "1.0"
+				// "match_substring" "false"
+				// "match_entry" "DOTAMusic.BattleMusic_Epic_Picker"
+				// "match_channel" "false"
+				// "match_entity" "false"
+			// }
+		}
+	}
+}
+
+
+"DOTAMusic.StateGankedMusic"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"gank_music_request_opvar" 
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_probability_gank"	
+			}	
+			
+			"gank_music_sm_compare_less" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "less_than"		
+				"input1" "@gank_music_request_opvar.output"
+				"input2" "0.55"
+			}	
+			
+			"gank_music_md_compare_greater" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"		
+				"input1" "@gank_music_request_opvar.output"
+				"input2" "0.55"
+			}
+			
+			"gank_music_md_compare_less" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "less_than"		
+				"input1" "@gank_music_request_opvar.output"
+				"input2" "0.8"
+			}
+			
+			"gank_music_md_compare_min" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "min"		
+				"input1" "@gank_music_md_compare_greater.output"
+				"input2" "@gank_music_md_compare_less.output"
+			}
+			
+			"gank_music_lg_compare_greater" 
+			{
+				"input_execute"	"1.0"	
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"		
+				"input1" "@gank_music_request_opvar.output"
+				"input2" "0.8"
+			}
+			
+			"play_ganked_entry_sm" //play 
+			{
+				"input_execute"	"@gank_music_sm_compare_less.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.GankedMusicSm" //Replace with the sound you want to play.
+			}
+			
+			"play_ganked_entry_md" //play 
+			{
+				"input_execute"	"@gank_music_md_compare_min.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.GankedMusicMd" //Replace with the sound you want to play.
+			}
+			
+			"play_ganked_entry_lg" //play 
+			{
+				"input_execute"	"@gank_music_lg_compare_greater.output"
+				"operator" "sys_start_entry"
+				"execute_once" "false"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.GankedMusicLg" //Replace with the sound you want to play.
+			}	
+			
+            "get_debug_printing_opvar"
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************GANKED_MUSIC_REQUESTED**************" //print the smooth val
+			{
+				"input_execute" "@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "@gank_music_request_opvar.output"
+			}	
+			
+			"block_ganked_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_substring" "false"
+				"match_entry" "DOTAMusic.StateGankedMusic"
+				"match_channel" "false"
+				"match_entity" "false"
+			}		
+		}
+	}
+}
+"DOTAMusic_Hero.Death"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"	"music/null.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{	
+			"set_death_request_opvar"
+			{
+				"operator" "set_opvar_float"
+				"opvar" "state_death_music_request"
+				"input" "1.0"
+			}	
+		}
+	}
+}

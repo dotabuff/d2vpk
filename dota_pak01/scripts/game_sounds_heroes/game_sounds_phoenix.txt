@@ -114,7 +114,7 @@
 "Hero_Phoenix.FireSpirits.Loop"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.3"
+	"volume"		"0.25"
 	"soundlevel"  	"SNDLVL_65dB"
 	"pitch"			"95, 105"
 	"wave"			")weapons/hero/phoenix/fire_spirits_loop.wav"
@@ -173,7 +173,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.3"
 	"soundlevel"  	"SNDLVL_81dB"
-	"pitch"			"90"
+	"pitch"			"120"
 	"wave"			"weapons/hero/batrider/batrider_sticky_napalm_impact_01.wav"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -427,7 +427,7 @@
 "Hero_Phoenix.Flap"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.9"
+	"volume"		"0.6"
 	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"95, 105"
 	"wave"			")physics\movement\hero\phoenix\wings.wav"
@@ -443,7 +443,7 @@
  			"volume_move"
 			{
 				"input_max" "100.0"
-				"input_map_min" "0.2"
+				"input_map_min" "0.1"
 			}
 			"volume_falloff_linear"
 			{

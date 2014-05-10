@@ -1,0 +1,974 @@
+//BLOCKSTART //TEST SCRIPTS
+"Dave.TestMusSetOpVarMin"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null_lp.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_debug_opvar_smooth"
+			
+			"get_debug_opvar" //Get the current from-the-game battle score
+			{
+				"opvar" "music_intensity"
+			}
+		
+			"set_debug_opvar"
+			{
+				"opvar" "music_intensity" //same as above
+			}	
+		
+			"debug_battle_score_ramp" //ramp from the current smoothed battle score to the new game score
+			{
+				"input_end_value" "0.0"
+			}			
+		}
+	} 
+}
+
+"Dave.TestMusSetOpVarLow"
+{  
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"music\null_lp.wav"
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_debug_opvar_smooth"
+			
+			"get_debug_opvar" //Get the current from-the-game battle score
+			{
+				"opvar" "music_intensity"
+			}
+		
+			"set_debug_opvar"
+			{
+				"opvar" "music_intensity" //same as above
+			}	
+		
+			"debug_battle_score_ramp" //ramp from the current smoothed battle score to the new game score
+			{
+				"input_end_value" "0.33"
+			}			
+		}
+	} 
+}
+
+"Dave.TestMusSetOpVarMed"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null_lp.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_debug_opvar_smooth"
+			
+			"get_debug_opvar" //Get the current from-the-game battle score
+			{
+				"opvar" "music_intensity"
+			}
+		
+			"set_debug_opvar"
+			{
+				"opvar" "music_intensity" //same as above
+			}	
+		
+			"debug_battle_score_ramp" //ramp from the current smoothed battle score to the new game score
+			{
+				"input_end_value" "0.67"
+			}			
+		}
+	} 
+}
+
+"Dave.TestMusSetOpVarHi"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null_lp.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_debug_opvar_smooth"
+			
+			"get_debug_opvar" //Get the current from-the-game battle score
+			{
+				"opvar" "music_intensity"
+			}
+		
+			"set_debug_opvar"
+			{
+				"opvar" "music_intensity" //same as above
+			}	
+		
+			"debug_battle_score_ramp" //ramp from the current smoothed battle score to the new game score
+			{
+				"input_end_value" "1.0"
+			}			
+		}
+	} 
+}
+
+"Dave.TestTracks"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+
+			"play_entry_02"
+			{
+				"operator" "sys_start_entry"
+				"input_start" "1"	
+				"entry_name" "DOTAMusic.BattleMusic_Epic_Picker"
+			}
+
+			"play_entry_01"
+			{
+				"operator" "sys_start_entry"
+				"input_start" "1"	
+				"entry_name" "DOTAMusic.StateHeroDeath"	
+			}
+		}
+	}
+}
+
+"Dave.TestImporting"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_random_delay_start"
+			
+			"get_random_delay"
+			{
+				"input_min" "0.1"
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Dave.TestSmoke"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"inc_opvar"
+			{
+ 				"operator" "increment_opvar_float"
+ 				"opvar" "dota_test_smoke"
+				"input" "10.0"
+			}
+			
+			"print_inc_opvar"
+			{
+				"operator" "util_print_float"
+				"input" "@inc_opvar.output"
+			}
+		}
+	}
+}
+
+"Dave.TestSmokeOffStinger"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"inc_opvar"
+			{
+ 				"operator" "increment_opvar_float"
+ 				"opvar" "dota_test_smoke"
+				"input" "-10.0"
+			}
+			
+			"print_inc_opvar"
+			{
+				"operator" "util_print_float"
+				"input" "@inc_opvar.output"
+			}
+		}
+	}
+}
+
+"Dave.TestSmokeOffAttack"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"inc_opvar"
+			{
+ 				"operator" "increment_opvar_float"
+ 				"opvar" "dota_test_smoke"
+				"input" "-100.0"
+			}
+			
+			"print_inc_opvar"
+			{
+				"operator" "util_print_float"
+				"input" "@inc_opvar.output"
+			}
+		}
+	}
+}
+
+"Dave.TestLogicSwitch"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"test_switch"
+			{
+				"operator" "get_opvar_float"
+				"opvar" "test_logic_switch_opvar"
+			}
+		
+			"inc_opvar"
+			{
+ 				"operator" "increment_opvar_float"
+ 				"opvar" "dota_test_logic"
+				"input" "1.0"
+			}
+			
+			"test_logic_switch"
+			{
+				"operator" "math_logic_switch"
+				"input1" "1.0"
+				"input2" "@inc_opvar.output"
+				"input_switch" "@test_switch.output"
+			}
+			
+			"print_inc_opvar"
+			{
+				"operator" "util_print_float"
+				"input" "@test_logic_switch.output"
+			}
+		}
+	}
+}
+
+"Dave.TestIncrement"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			
+			"inc_opvar"
+			{
+ 				"operator" "increment_opvar_float"
+ 				"opvar" "dota_test_increment"
+				"input" "-2.5"
+			}
+			
+			"print_inc_opvar"
+			{
+				"operator" "util_print_float"
+				"input" "@inc_opvar.output"
+			}
+		}
+	}
+}
+
+"Mike.TestRandomSeeding"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"random"
+			{
+				"operator" "math_random"
+				"input_min" "0.0"
+				"input_max" "1.0"
+				"input_seed" "1.0"
+			}
+			"****PRINTRANDOM"
+			{
+				"operator" "util_print_float"
+				"input" "@random.output"
+			}
+			
+		}
+	} 
+}
+
+"Mike.TestTimer"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/stingers/respawn.mp3"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"elapsed_time"
+			{
+				"operator" "get_entry_time"
+			}
+			"start_timer"
+			{
+				"operator" "math_float"
+				"apply" "greater_than"	
+				"input1" "@elapsed_time.output_entry_elapsed"
+				"input2" "1.0"
+			}
+			"stop_timer"
+			{
+				"operator" "math_float"
+				"apply" "greater_than"	
+				"input1" "@elapsed_time.output_entry_elapsed"
+				"input2" "5.0"
+			}
+			"timer"
+			{
+				"operator" "util_timer"
+				"input_start" "@start_timer.output"
+				"input_stop" "@stop_timer.output"
+			}
+			"****PRINTTIMER"
+			{
+				"operator" "util_print_float"
+				"input" "@timer.output"
+			}
+			
+		}
+	} 
+}
+"Mike.TestTimerRamp"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#music/stingers/respawn.mp3"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+
+			"get_convar"
+			{
+				"operator" "get_convar"
+				"convar" "snd_op_test_convar"
+			}
+
+			"elapsed_time"
+			{
+				"operator" "get_entry_time"
+			}
+
+			"start_timer"
+			{
+				"operator" "math_float"
+				"apply" "greater_than"	
+				"input1" "@elapsed_time.output_entry_elapsed"
+				"input2" "3.0"
+			}
+			"stop_timer"
+			{
+				"operator" "math_float"
+				"apply" "greater_than"	
+				"input1" "@elapsed_time.output_entry_elapsed"
+				"input2" "15.0"
+			}
+			"timer_ramp"
+			{
+				"operator" "util_timer_ramp"
+				"input_start" "1"
+				"input_stop" "@get_convar.output"
+				"input_start_value" "15.0"
+				"input_end_value" "10.0"
+				"input_duration" "10.0"
+			}
+			"****PRINTTIMER_2"
+			{
+				"operator" "util_print_float"
+				"input" "@timer.output"
+			}
+		}
+	} 
+}
+
+
+
+
+/////////////////////
+// BEGIN BATTLE SCORE SMOOTHING //////
+//////////////////////////////////                      
+"Mike.TestDF"
+{  
+
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#ui/stingers/respawn.mp3"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+
+ 			"get_battle_score_opvar" //Get the current from-the-game battle score
+ 			{
+ 				"operator" "get_opvar_float"
+ 				"opvar" "dota_music_intensity"
+ 			}
+   	   	   	
+            "get_battle_score_smooth_opvar" //get our smoothed version of the battle score
+            {
+                    "operator" "get_opvar_float"
+                    "opvar" "dota_battle_score_smooth"
+            }
+             
+            "battle_score_delta" //Detect if the game-side battle score has changed
+            {
+                    "operator" "math_delta"
+                    "input" "@get_battle_score_opvar.output"        
+            }
+            
+            "battle_score_delta_invert"
+            {
+                    "operator" "math_float"
+                    "apply" "sub"   
+                    "input1" "1.0"
+                    "input2" "@battle_score_delta.output"
+            }
+            
+            // find the difference between the current value and our target value, 
+            // and get a time value based on that
+            
+            "battle_score_difference"
+            {
+                    "operator" "math_float"
+                    "apply" "sub"   
+                    "input1" "@get_battle_score_opvar.output"
+                    "input2" "@get_battle_score_smooth_opvar.output"
+            }                       
+            
+            "abs_travel_distance"
+            {
+                    "operator" "math_func1"
+                    "function"      "fabs"
+                    "input1" "@battle_score_difference.output"
+            }                       
+            
+            "remap_travel_distance_to_time"
+            {
+                    "operator" "math_remap_float"
+                    "input" "@abs_travel_distance.output"
+                    "input_min" "0.0"
+                    "input_max" "1.0"
+                    "input_map_min" "0.0"
+                    "input_map_max" "5.0"
+                    "default_to_max" "false"        
+            }
+                                    
+            "battle_score_ramp" //ramp from the current smoothed battle score to the new game score
+            {
+                    "operator" "util_timer_ramp"
+                    "input_start" "1"
+                    "input_stop" "@battle_score_delta.output"
+                    "input_start_value" "@get_battle_score_smooth_opvar.output"
+                    "input_end_value" "@get_battle_score_opvar.output"
+                    "input_duration" "1000"
+            }               
+                                    
+            "set_opvar" //set the current smooth opvar val
+            {
+                    "operator" "set_opvar_float"
+                    "opvar" "dota_battle_score_smooth"
+                    "input" "@battle_score_ramp.output"
+			}
+
+            "stop_execution" //set the current smooth opvar val
+            {
+                    "operator" "set_convar"
+                    "convar" "snd_sos_exec_when_paused"
+                    "input" "0"
+			}
+		}
+	}	
+}
+
+"Mike.TestSetConvar"
+{  
+
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#ui/stingers/respawn.mp3"
+
+	"soundentry_version" "2"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+            "stop_execution" //set the current smooth opvar val
+            {
+				"operator" "set_convar"
+                "convar" "snd_sos_exec_when_paused"
+                "input" "0"
+			}
+		}
+	}	
+}
+
+"Mike.TestCurve4"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"#ui/stingers/respawn.mp3"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"elapsed_time"
+			{
+				"operator" "get_entry_time"
+			}
+			"start_timer"
+			{
+				"operator" "math_float"
+				"apply" "greater_than"	
+				"input1" "@elapsed_time.output_entry_elapsed"
+				"input2" "1.0"
+			}
+			"stop_timer"
+			{
+				"operator" "math_float"
+				"apply" "greater_than"	
+				"input1" "@elapsed_time.output_entry_elapsed"
+				"input2" "15.0"
+			}
+			"timer"
+			{
+				"operator" "util_timer"
+				"input_start" "@start_timer.output"
+				"input_stop" "@stop_timer.output"
+			}
+			"curve4_1"
+			{
+				"operator" "math_curve_2d_4knot"
+				"curve_type" "linear"	
+				"input" "@timer.output"
+				"input_X1" "1.0"	
+				"input_Y1" "4.0"	
+				"input_X2" "2.0"	
+				"input_Y2" "3.0"	
+				"input_X3" "3.0"	
+				"input_Y3" "2.0"	
+				"input_X4" "4.0"	
+				"input_Y4" "1.0"	
+
+			}
+
+			"****PRINTCURVE"
+			{
+				"operator" "util_print_float"
+				"input" "@curve4_1.output"
+			}
+			
+		}
+	} 
+}
+
+"MikeTEST.Stoptrack1"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"	"*#music\valve_dota_music_001\music\ui_hero_select.wav"
+
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"track_name" "track_to_be_stopped_1"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo"
+			"mixer"
+			{
+				"mixgroup" "Music"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+	}
+}
+"MikeTEST.Stoptrack2"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.5"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"	"*#music\valve_dota_music_001\music\ui_hero_select.wav"
+
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"track_name" "track_to_be_stopped_2"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo"
+			"mixer"
+			{
+				"mixgroup" "Music"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+			}
+		}
+	}
+}
+
+"Mike.Stop1"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+//	"wave"			"#ui/stingers/respawn.mp3"
+	"wave"			"null.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"stop_track"
+			{
+				"operator" "track_stop"
+				"track_name" "track_to_be_stopped_1"
+			}
+		}
+	} 
+}
+"Mike.Stop2"
+{  
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3"
+	"soundlevel"	"SNDLVL_NONE"
+//	"wave"			"#ui/stingers/respawn.mp3"
+	"wave"			"null.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"stop_track"
+			{
+				"operator" "track_stop"
+				"track_name" "track_to_be_stopped_2"
+			}
+		}
+	} 
+}
+
+// "frostivus_win_Stinger"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.6"
+// 	"soundlevel"  "SNDLVL_81dB"
+// 	"pitch"			"PITCH_NORM"
+// 
+// 	"wave"			"#music/stingers/greevil_stingers/Frostivus_2013_Win.mp3"
+// 
+// 	"soundentry_version" "2"
+// 	"operator_stacks"
+// 	{	
+// 		"soundentry_operator_data"
+// 		{
+// 			"track_data"
+// 			{
+// 				"start_point" "0.00"
+// 				"track_name" "main"
+// 				"track_priority" "60"	
+// 			}
+// 		}
+// 		
+// 		"start_stack"
+// 		{
+// 			"delay_output"
+//             {
+//              "operator" "sys_output"
+//              "input_float" "1.0"
+//              "output" "delay"
+//             }
+// 			
+// 			"import_stack" "dota_start_music_type_tracker"
+// 			
+// 			"stop_death_track"
+// 			{
+// 				"operator" "track_stop"
+// 				"track_name" "dead"
+// 			}
+// 			
+// 			"stop_stinger_track"
+// 			{
+// 				"operator" "track_stop"
+// 				"track_name" "stinger_high_priority"
+// 			}
+// 				
+// 			"add_music_value"
+// 			{
+// 				"input2" "32" //Respawn Value
+// 			}
+// 			
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+// 			
+// 			"**************RESPAWN MUSIC STARTED**************" 
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}
+// 		}
+// 		
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_default"
+// 			"mixer"
+// 			{
+// 				"mixgroup" "Ultimates"
+// 			}
+// // 			"speakers_spatialize"
+// // 			{
+// // 				"input_radius"  "1000"
+// // 			}
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "true"	
+// 			}
+// 			
+// 			"stop_death_track"
+// 			{
+// 				"operator" "track_stop"
+// 				"track_name" "dead"
+// 			}
+// 		}
+// 		
+// 		"stop_stack"
+// 		{	
+// 			"import_stack" "dota_stop_music_type_tracker"
+// 			
+// 			"remove_music_value"
+// 			{
+// 				"input2" "32" //Respawn
+// 			}	
+// 			
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+// 			
+// 			"**************RESPAWN MUSIC KILLED**************" 
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}
+// 		}
+// 	}
+// }
+// 
+// "frostivus_lose_Stinger"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.6"
+// 	"soundlevel"  "SNDLVL_81dB"
+// 	"pitch"			"PITCH_NORM"
+// 
+// 	"wave"			"#music/stingers/greevil_stingers/Frostivus_2013_Lose.mp3"
+// 
+// 	"soundentry_version" "2"
+// 	"operator_stacks"
+// 	{	
+// 		"soundentry_operator_data"
+// 		{
+// 			"track_data"
+// 			{
+// 				"start_point" "0.00"
+// 				"track_name" "main"
+// 				"track_priority" "60"	
+// 			}
+// 		}
+// 		
+// 		"start_stack"
+// 		{
+// 			"delay_output"
+//             {
+//              "operator" "sys_output"
+//              "input_float" "1.0"
+//              "output" "delay"
+//             }
+// 			
+// 			"import_stack" "dota_start_music_type_tracker"
+// 			
+// 			"stop_death_track"
+// 			{
+// 				"operator" "track_stop"
+// 				"track_name" "dead"
+// 			}
+// 			
+// 			"stop_stinger_track"
+// 			{
+// 				"operator" "track_stop"
+// 				"track_name" "stinger_high_priority"
+// 			}
+// 				
+// 			"add_music_value"
+// 			{
+// 				"input2" "32" //Respawn Value
+// 			}
+// 			
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+// 			
+// 			"**************RESPAWN MUSIC STARTED**************" 
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}
+// 		}
+// 		
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_default"
+// 			"mixer"
+// 			{
+// 				"mixgroup" "Ultimates"
+// 			}
+// // 			"speakers_spatialize"
+// // 			{
+// // 				"input_radius"  "1000"
+// // 			}
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "true"	
+// 			}
+// 			
+// 			"stop_death_track"
+// 			{
+// 				"operator" "track_stop"
+// 				"track_name" "dead"
+// 			}
+// 		}
+// 		
+// 		"stop_stack"
+// 		{	
+// 			"import_stack" "dota_stop_music_type_tracker"
+// 			
+// 			"remove_music_value"
+// 			{
+// 				"input2" "32" //Respawn
+// 			}	
+// 			
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+// 			
+// 			"**************RESPAWN MUSIC KILLED**************" 
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}
+// 		}
+// 	}
+// }
+
+//BLOCKEND

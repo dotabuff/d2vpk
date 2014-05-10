@@ -1,0 +1,498 @@
+// stingers
+X "DOTAMusic_Hero.Respawn" // stinger
+"dota_update_default" // does some fanciness as well
+
+X"DOTAMusic.StateHeroDeath" // all kinds of madness in here
+"dota_update_death_music"
+
+? buy backs
+"DOTAMusic_Hero.BuyBack" // stinger
+"dota_update_default" // does some fanciness as well
+"DOTAMusic_Hero.BuyBackOther" //other buys back
+"dota_update_default" // does some fanciness as well
+"DOTAMusic_Hero.BuyBackOtherRadiant" //other buys back
+"dota_update_default" // does some fanciness as well
+"DOTAMusic_Hero.BuyBackOtherDire" //other buys back
+
+"DOTAMusic_Hero.Reincarnate" // plays spatialized when hero reincarnates - SK's ulti or Aegis holder
+"dota_update_default"
+
+GANKED happens:
+"DOTAMusic.StateGankedMusic"
+
+"DOTAMusic.GankedMusicSm" // has audio
+"import_stack" "dota_update_default"		
+
+"DOTAMusic.GankedMusicMd" // has audio
+"import_stack" "dota_update_default"	
+
+"DOTAMusic.GankedMusicLg" // has audio
+"import_stack" "dota_update_default"	
+
+GANK DOES NOT:
+"DOTAMusic.StateGankMusic"
+
+"DOTAMusic.GankMusicSm" //0.15 - 0.45 // has audio
+"import_stack" "dota_update_default"		
+
+"DOTAMusic.GankMusicMd" //0.45 - 0.8 // has audio
+"import_stack" "dota_update_default"	
+
+
+"DOTAMusic.GankMusicLg" //0.8 - 1.0 // has audio
+"import_stack" "dota_update_default"	
+
+TOWER FALLS (doesn't currently happen)
+
+"DOTAMusic_Stinger_Our_Radiant_Tower_Fallen" // blocks itself for 15 sec
+"start_barracks_cooldown"
+"DOTAMusic_Stinger_Our_Dire_Tower_Fallen"
+"DOTAMusic_Stinger_Their_Radiant_Tower_Fallen"
+"DOTAMusic_Stinger_Their_Dire_Tower_Fallen"
+
+// does nothing
+"DOTAMusic_barracks_fall_01"
+"DOTAMusic_barracks_fall_02"
+"DOTAMusic_barracks_fall_03"
+"DOTAMusic_barracks_fall_04"
+
+VICTORY/DEFEAT: needs separation from tail
+
+"DOTAMusic_Victory_Radiant"
+"import_stack" "dota_update_default"
+"DOTAMusic_Victory_Dire"
+"import_stack" "dota_update_default"
+"DOTAMusic_Defeat_Dire"
+"import_stack" "dota_update_default"
+"DOTAMusic_Defeat_Radiant"
+"import_stack" "dota_start_music_type_tracker"
+"DOTAMusic_Diretide_Finale"
+"import_stack" "dota_update_default"
+
+"DOTAMusic_Hero.DeathMode" // fanciness
+"import_stack" "dota_update_death_music"
+
+
+
+MUSIC:
+
+"DotaMusic.GameStartup"
+"dota_update_music_stereo" // does tricky stuff if worldmap
+"DotaMusic.GameStartup.Secondary" // ditto
+"DotaMusic.WorldMap" // stops game startup and starts worldmap... trickyness
+"DotaMusic.WorldMap.Actual" // worldmap simple entry
+"DOTAMusic.MainLoop" //A loop that runs at all times and does a bunch of music-related utility stuff
+"DOTAMusic.MainLoopTutorial" //A loop that runs at all times and does a bunch of music-related utility stuff
+"DOTAMusic.Prehorn"
+"import_stack" "dota_update_music_stereo"
+
+"DOTAMusic_Stinger.003"
+"DOTAMusic_Stinger.004"
+"DOTAMusic_Stinger.005"
+"DOTAMusic_Stinger.006"
+"DOTAMusic_Stinger.007"
+"DOTAMusic_Stinger.008"
+"DOTAMusic_Stinger.009"
+
+
+// events
+"greevil_eventstart_Stinger"
+"greevil_eventend_Stinger"
+"greevil_receive_present_Stinger"
+"greevil_camp_respawn_Stinger"
+"greevil_mega_spawn_Stinger"
+"greevil_loot_spawn_Stinger"
+"greevil_loot_death_Stinger"
+"diretide_eventstart_Stinger"
+"diretide_select_target_Stinger"
+"diretide_sugarrush_Stinger"
+"diretide_roshdeath_Stinger"
+
+
+//MUSIC
+"DOTAMusic.HeroPicker"
+"import_stack" "dota_update_music_stereo"
+"DOTAMusic.HeroPicker.INTERNATIONAL"
+"import_stack" "dota_update_music_stereo"
+
+"DOTAMusic.StateExploreMusic" // just a program
+"DOTAMusic.ExploreMusic_Picker_Day" // variation selection day
+"DOTAMusic.ExploreMusic_Picker_Night" // variation selection night
+
+
+
+"DOTAMusic.LaningMusicTutorial_01" //Laning 01 music master
+
+"DOTAMusic.LaningMusicTutorial_01_Layer_01"
+"DOTAMusic.LaningMusicTutorial_01_Layer_02"
+"DOTAMusic.LaningMusicTutorial_01_Layer_03"
+
+"DOTAMusic.LaningMusicTutorial_02" //Laning 01 music master
+
+"DOTAMusic.LaningMusicTutorial_02_Layer_01"
+"DOTAMusic.LaningMusicTutorial_02_Layer_02"
+
+"DOTAMusic.ExploreMusicTutorial_01" //Laning 01 music master
+
+"DOTAMusic.ExploreMusicTutorial_01_Layer_01"
+"DOTAMusic.ExploreMusicTutorial_01_Layer_02"
+"DOTAMusic.ExploreMusicTutorial_01_Layer_03"
+
+
+"DOTAMusic.BattleMusic_Epic" //Battle music request from the game
+"DOTAMusic.StateBattleMusic"
+"DOTAMusic.BattleMusic_Epic_Picker"
+"DOTAMusic.BattleMusic_Epic_End"
+
+"DOTAMusic.BattleMusic_Epic_01"
+"DOTAMusic.BattleMusic_Epic_End_01"
+"DOTAMusic.BattleMusic_Epic_02"
+"DOTAMusic.BattleMusic_Epic_End_02"
+"DOTAMusic.BattleMusic_Epic_03"
+"DOTAMusic.BattleMusic_Epic_End_03"
+
+
+"DOTAMusic.BattleMusic_Epic_End_PreHorn" // uses prestart
+"wave"			"*#music\DOTA2_Music_Battle_001_End.mp3"
+"dota_update_music_stereo"
+
+ROSHAN:
+
+"DOTAMusic.StateRoshanMusic"
+
+"DOTAMusic.BattleMusic_Roshan_01"
+"import_stack" "dota_opvar_smoothing_update"
+
+"DOTAMusic.StateRoshanKilled"
+
+
+"DOTAMusic.BattleMusic_Roshan_End"
+"import_stack" "dota_update_music_stereo"
+
+SMOKE:
+
+"DOTAMusic.StateSmokePopped"
+
+"DOTAMusic.SmokePopped" // has audio
+"import_stack" "dota_update_music_stereo"
+
+"DOTAMusic.StateSmokeEndedHero"
+
+"DOTAMusic.SmokeEndedHero" // has audio
+"import_stack" "dota_update_music_stereo"
+
+"DOTAMusic.StateSmokeEndedTower"
+
+"DOTAMusic.SmokeEndedTower" // has audio
+"import_stack" "dota_update_music_stereo"
+
+"DOTAMusic.StateSmokeEndedCreep"
+
+"DOTAMusic.SmokeEndedCreep" // has audio
+"import_stack" "dota_update_music_stereo"
+
+
+//BLOCKSTART //Tutorial
+"Tutorial_1.Intro" //When the tutorial first starts
+"Tutorial.Start" 
+"Tutorial.End" //At the end of the tutorial
+
+"Tutorial.Shopkeeper_01" //When you first meet the shopkeeper
+"Tutorial.Shopkeeper_02" //When you complete your first big item (bracer ATM)
+"Tutorial.Quest.complete_01" //stinger When you complete mini quests within the tutorial
+"Tutorial.KOTL" //when you meet Keeper of the Light
+"Tutorial.Razor" //When you make Razor appear
+"Tutorial.Tidehunter.Appear"
+"Tutorial.Tidehunter.Escape"
+"Tutorial.Tidehunter.Death"
+"DOTAMusic.Tutorial_Ducker"
+
+
+"Spectator.HeroDeath" //When a hero dies
+"Spectator.RoshanFight" //Fighting Roshan // has audio
+"Spectator.RoshanFightToggle"
+"Spectator.RoshanFightClient"
+"Spectator.RoshanDeath"
+"Spectator.AncientKilled" //When you first meet the shopkeeper // has audio
+
+
+/////////////////////// UNUSED ////////////////////////////
+
+"DOTAMusic.ExploreMusic_01"
+"import_stack" "dota_update_music_stereo"
+
+
+"DOTAMusic.ExploreMusic_02" //Layered explore music master
+
+"DOTAMusic.ExploreMusic_Layered_001_Layer01_pt1"
+"DOTAMusic.ExploreMusic_Layered_001_Layer01_pt2"
+"DOTAMusic.ExploreMusic_Layered_001_Layer01_pt3"
+"DOTAMusic.ExploreMusic_Layered_001_Layer01_pt4"
+"DOTAMusic.ExploreMusic_Layered_001_Layer02_pt1"
+"DOTAMusic.ExploreMusic_Layered_001_Layer02_pt2"
+"DOTAMusic.ExploreMusic_Layered_001_Layer02_pt3"
+"DOTAMusic.ExploreMusic_Layered_001_Layer02_pt4"
+"DOTAMusic.ExploreMusic_Layered_001_Layer03_pt1"
+"DOTAMusic.ExploreMusic_Layered_001_Layer03_pt2"
+"DOTAMusic.ExploreMusic_Layered_001_Layer03_pt3"
+"DOTAMusic.ExploreMusic_Layered_001_Layer03_pt4"
+
+"DOTAMusic.ExploreMusic_03" //Layered explore music master
+
+"DOTAMusic.ExploreMusic_Layered_002_Layer01_pt1"
+"DOTAMusic.ExploreMusic_Layered_002_Layer01_pt2"
+"DOTAMusic.ExploreMusic_Layered_002_Layer01_pt3"
+"DOTAMusic.ExploreMusic_Layered_002_Layer01_pt4"
+"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt1"
+"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt2"
+"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt3"
+"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt4"
+"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt5"
+"DOTAMusic.ExploreMusic_Layered_002_Layer03_pt1"
+"DOTAMusic.ExploreMusic_Layered_002_Layer03_pt2"
+"DOTAMusic.ExploreMusic_Layered_002_Layer03_pt3"
+"DOTAMusic.ExploreMusic_Layered_002_Layer03_pt4"
+
+
+"DOTAMusic.LaningMusic_01" //Laning 01 music master
+
+"DOTAMusic.LaningMusic_01_Layer_01_pt_01"
+"DOTAMusic.LaningMusic_01_Layer_01_pt_02"
+"DOTAMusic.LaningMusic_01_Layer_01_pt_03"
+"DOTAMusic.LaningMusic_01_Layer_01_pt_04"
+"DOTAMusic.LaningMusic_01_Layer_01_pt_05"
+"DOTAMusic.LaningMusic_01_Layer_02_pt_01"
+"DOTAMusic.LaningMusic_01_Layer_02_pt_02"
+"DOTAMusic.LaningMusic_01_Layer_02_pt_03"
+"DOTAMusic.LaningMusic_01_Layer_02_pt_04"
+"DOTAMusic.LaningMusic_01_Layer_02_pt_05"
+"DOTAMusic.LaningMusic_01_Layer_03_pt_01"
+"DOTAMusic.LaningMusic_01_Layer_03_pt_02"
+"DOTAMusic.LaningMusic_01_Layer_03_pt_03"
+"DOTAMusic.LaningMusic_01_Layer_03_pt_04"
+"DOTAMusic.LaningMusic_01_Layer_03_pt_05"
+"DOTAMusic.LaningMusic_01_Layer_03_pt_06"
+
+
+
+//arcana stingers
+
+"DOTAMusic.StateHeroDeath.Terrorblade"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"	"#music/stingers/arcana/tb/death.mp3"
+
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "stinger_high_priority"
+				//"sync_track_name" "main"
+				"track_priority" "50"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "1.118"
+					}
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************TRANSITION TO DEATH MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+			"limit_sound_explore"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "DOTAMusic.Explore" //We allow no instances of Explore when the death stinger knells		
+			}
+			
+			"limit_sound_laning"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "DOTAMusic.Laning"
+			}
+			
+			"limit_sound_battle"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "DOTAMusic.BattleMusic" //We allow no instances of battle when the death stinger knells		
+			}
+			
+			"stop_main_track"
+			{
+				"operator" "track_stop"
+				"track_name" "main"
+			}
+		}
+			
+		"update_stack"
+		{
+			"import_stack" "dota_update_death_music"
+			"mixer"
+			{
+				"mixgroup" "Music"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"autoqueue_entry_at_end_point" "DOTAMusic_Hero.DeathMode"
+				"stop_channel_on_track" "true"	
+			}
+		}
+	}
+}
+
+"DOTAMusic_Hero.Respawn.Terrorblade"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/arcana/tb/respawn.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			"delay_output"
+            {
+             "operator" "sys_output"
+             "input_float" "1.0"
+             "output" "delay"
+            }
+			
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"stop_death_track"
+			{
+				"operator" "track_stop"
+				"track_name" "dead"
+			}
+			
+			"stop_stinger_track"
+			{
+				"operator" "track_stop"
+				"track_name" "stinger_high_priority"
+			}
+				
+			"add_music_value"
+			{
+				"input2" "32" //Respawn Value
+			}
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************RESPAWN MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1000"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"	
+			}
+			
+			"stop_death_track"
+			{
+				"operator" "track_stop"
+				"track_name" "dead"
+			}
+		}
+		
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "32" //Respawn
+			}	
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************RESPAWN MUSIC KILLED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}

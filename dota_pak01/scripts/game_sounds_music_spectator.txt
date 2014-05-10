@@ -1,0 +1,249 @@
+//BLOCKSTART //Spectator Mode
+// game/server/dota/npc/dota_npc_hero.cpp
+// util
+"Spectator.HeroDeath" //When a hero dies
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.2"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	// "wave"	"#music/stingers/died.mp3"
+	"wave"	"music/null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{	
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}  
+			
+			"NOW_IN_SPECTATOR_HERO_DEATH"
+			{
+				"operator" "util_print_float"
+				"input_execute" "@get_debug_printing_opvar.output"
+				"input"	"1.0"
+			}
+			
+			"tutorial_opvar_debug"
+			{
+				"operator"	"set_opvar_float"
+				"opvar"	"music_spectator_hero_death"
+				"input" "1.0"
+			}
+			
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "10.0"
+				"match_entry" "Spectator.HeroDeath"
+				// "match_sound" "npc\dog\dog_idlemode_loop1.wav"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+			
+			// "limit_sound_explore"
+			// {
+				// "operator" "sys_stop_entries"
+				// "input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				// "match_entity" "false"	
+				// "match_substring" "true"
+				// "match_entry" "DOTAMusic.Explore"
+			// }
+			
+			// "limit_sound_laning"
+			// {
+				// "operator" "sys_stop_entries"
+				// "input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				// "match_entity" "false"	
+				// "match_substring" "true"
+				// "match_entry" "DOTAMusic.Laning"
+			// }
+		}
+	}
+}
+// game/shared/dota/units/dota_unit_roshan.cpp
+// game/client/dota/dota_hltvcamera.cpp
+// util
+"Spectator.RoshanFight" //Fighting Roshan
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	//"wave"			"*#music\DOTA2_Music_Battle_004_End.mp3"
+	"wave"				"music/null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{	
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}  
+			
+			"NOW_IN_SPECTATOR_ROSHAN_FIGHT"
+			{
+				"operator" "util_print_float"
+				"input_execute" "@get_debug_printing_opvar.output"
+				"input"	"1.0"
+			}
+			
+			"get_roshan_attackers"
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_spectator_roshan_attackers"
+			}
+			
+			"roshan_attackers_compare"
+			{	
+				"operator" "math_float"
+				"apply" "less_than"
+				"input_execute"	"1.0"			
+				"input1" "@get_roshan_attackers.output"
+				"input2" "1.0"
+			}
+				
+			"block_start" //if no one is attacking Roshan, don't music.
+			{	
+				"input_execute" "@roshan_attackers_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+	}	
+}
+
+// game/shared/dota/units/dota_unit_roshan.cpp
+// debug
+"Spectator.RoshanFightToggle"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{	
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}  
+			
+			"NOW_IN_SPECTATOR_ROSHAN_TOGGLE"
+			{
+				"operator" "util_print_float"
+				"input_execute" "@get_debug_printing_opvar.output"
+				"input"	"1.0"
+			}
+		}
+	}
+}
+
+// game/client/dota/dota_hltvcamera.cpp
+// debug
+"Spectator.RoshanFightClient"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{	
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}  
+			
+			"NOW_IN_SPECTATOR_ROSHAN_FIGHT_CLIENT"
+			{
+				"operator" "util_print_float"
+				"input_execute" "@get_debug_printing_opvar.output"
+				"input"	"1.0"
+			}
+		}
+	}
+}
+
+// game/shared/dota/units/dota_unit_roshan.cpp
+// debug
+"Spectator.RoshanDeath"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{	
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}  
+			
+			"NOW_IN_SPECTATOR_ROSHAN_DEATH"
+			{
+				"operator" "util_print_float"
+				"input_execute" "@get_debug_printing_opvar.output"
+				"input"	"1.0"
+			}
+		}
+	}
+}
+
+// game/client/dota/dota_hltvcamera.cpp
+// stingers
+"Spectator.AncientKilled" //When you first meet the shopkeeper
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	
+	"rndwave"
+	{
+		"wave"			"#music/stingers/DOTA2_Music_Victory_Radiant_Comp.mp3"
+		"wave"			"#music/stingers/DOTA2_Music_Victory_Dire.mp3"
+	}	
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{	
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}  
+			
+			"NOW_IN_SPECTATOR_ANCIENT_KILLED"
+			{
+				"operator" "util_print_float"
+				"input_execute" "@get_debug_printing_opvar.output"
+				"input"	"1.0"
+			}
+		}
+	}
+}
+	
+
+//BLOCKEND
+

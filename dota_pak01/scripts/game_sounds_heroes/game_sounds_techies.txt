@@ -254,6 +254,31 @@
 	}
 }
 
+"Hero_Techies.RemoteMine.Toss"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/techies/stasis_trap_plant.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
+}
+
 "Hero_Techies.RemoteMine.Plant"
 {
 	"channel"		"CHAN_WEAPON"

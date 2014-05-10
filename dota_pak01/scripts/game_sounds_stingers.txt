@@ -1,0 +1,918 @@
+// playgamesound DOTAMusic_Hero.Respawn; playgamesound DOTAMusic_Hero.BuyBack; playgamesound DOTAMusic_Hero.Reincarnate; playgamesound DOTAMusic_Stinger.003;
+// playgamesound DOTAMusic_Stinger.004; playgamesound DOTAMusic_Stinger.005; playgamesound DOTAMusic_Stinger.006; playgamesound DOTAMusic_Stinger.007;
+// playgamesound DOTAMusic_Stinger.008; playgamesound DOTAMusic_Stinger.009; playgamesound DOTAMusic_Victory_Radiant; playgamesound DOTAMusic_Victory_Dire;
+// playgamesound DOTAMusic_Defeat_Dire; playgamesound DOTAMusic_Defeat_Radiant;
+
+"DOTAMusic_Hero.Respawn"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/respawn.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			"delay_output"
+            {
+             "operator" "sys_output"
+             "input_float" "1.0"
+             "output" "delay"
+            }
+			
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"stop_death_track"
+			{
+				"operator" "track_stop"
+				"track_name" "dead"
+			}
+			
+			"stop_stinger_track"
+			{
+				"operator" "track_stop"
+				"track_name" "stinger_high_priority"
+			}
+				
+			"add_music_value"
+			{
+				"input2" "32" //Respawn Value
+			}
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************RESPAWN MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1000"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"	
+			}
+			
+			"stop_death_track"
+			{
+				"operator" "track_stop"
+				"track_name" "dead"
+			}
+		}
+		
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "32" //Respawn
+			}	
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************RESPAWN MUSIC KILLED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+
+"DOTAMusic_Hero.BuyBack" //player buys back
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		".8"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			"stop_death_track"
+			{
+				"operator" "track_stop"
+				"track_name" "dead"
+			}
+			
+			"stop_stinger_track"
+			{
+				"operator" "track_stop"
+				"track_name" "stinger_high_priority"
+			}
+			
+			"import_stack" "dota_start_music_type_tracker"
+				
+			"add_music_value"
+			{
+				"input2" "64" //Buyback
+			}
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1000"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"	
+			}
+			
+			"stop_death_track"
+			{
+				"operator" "track_stop"
+				"track_name" "dead"
+			}
+		}
+		
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "64" //Buyback
+			}	
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BUYBACK MUSIC KILLED**************"
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+
+// "DOTAMusic_Hero.BuyBackOther" //other buys back
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		".8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+
+// 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
+// 	"soundentry_version" "2"
+// 	"operator_stacks"
+// 	{	
+// 		"soundentry_operator_data"
+// 		{
+// 			"track_data"
+// 			{
+// 				"start_point" "0.00"
+// 				"track_name" "buyback"
+// 				"track_priority" "60"	
+// 			}
+// 		}
+		
+// 		"start_stack"
+// 		{
+			
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+			
+// 			"**************BUYBACK OTHER MUSIC STARTED**************" 
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}	
+
+// 			"block_buyback_entries"
+// 			{
+// 				"operator" "sys_block_entries"
+// 				"input_active" "1.0"	
+// 				"input_duration" "6.5" //in seconds
+// 				"match_substring" "false"
+// 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+// 				"match_channel" "false"
+// 				"match_entity" "false"
+// 			}
+// 		}
+		
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_default"
+// 			"mixer"
+// 			{
+// 				"mixgroup" "Stingers"
+// 			}
+// 			"speakers_spatialize"
+// 			{
+// 				"input_radius"  "1000"
+// 			}
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "true"	
+// 			}
+// 		}
+		
+// 		"stop_stack"
+// 		{	
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+			
+// 			"**************BUYBACK OTHER MUSIC KILLED**************"
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}
+// 		}
+// 	}
+// }
+
+// "DOTAMusic_Hero.BuyBackOtherRadiant" //other buys back
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		".8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+
+// 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
+// 	"soundentry_version" "2"
+// 	"operator_stacks"
+// 	{	
+// 		"soundentry_operator_data"
+// 		{
+// 			"track_data"
+// 			{
+// 				"start_point" "0.00"
+// 				"track_name" "buyback"
+// 				"track_priority" "60"	
+// 			}
+// 		}
+		
+// 		"start_stack"
+// 		{
+			
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+			
+// 			"**************BUYBACK OTHER RADIANT MUSIC STARTED**************" 
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}	
+
+// 			"block_buyback_entries"
+// 			{
+// 				"operator" "sys_block_entries"
+// 				"input_active" "1.0"	
+// 				"input_duration" "6.5" //in seconds
+// 				"match_substring" "false"
+// 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+// 				"match_channel" "false"
+// 				"match_entity" "false"
+// 			}
+// 		}
+		
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_default"
+// 			"mixer"
+// 			{
+// 				"mixgroup" "Stingers"
+// 			}
+// 			"speakers_spatialize"
+// 			{
+// 				"input_radius"  "1000"
+// 			}
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "true"	
+// 			}
+// 		}
+		
+// 		"stop_stack"
+// 		{	
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+			
+// 			"**************BUYBACK OTHER MUSIC KILLED**************"
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}
+// 		}
+// 	}
+// }
+
+// "DOTAMusic_Hero.BuyBackOtherDire" //other buys back
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		".8"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+
+// 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
+// 	"soundentry_version" "2"
+// 	"operator_stacks"
+// 	{	
+// 		"soundentry_operator_data"
+// 		{
+// 			"track_data"
+// 			{
+// 				"start_point" "0.00"
+// 				"track_name" "buyback"
+// 				"track_priority" "60"	
+// 			}
+// 		}
+		
+// 		"start_stack"
+// 		{
+			
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+			
+// 			"**************BUYBACK OTHER DIRE MUSIC STARTED**************" 
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}	
+
+// 			"block_buyback_entries"
+// 			{
+// 				"operator" "sys_block_entries"
+// 				"input_active" "1.0"	
+// 				"input_duration" "6.5" //in seconds
+// 				"match_substring" "false"
+// 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+// 				"match_channel" "false"
+// 				"match_entity" "false"
+// 			}
+// 		}
+		
+// 		"update_stack"
+// 		{
+// 			"import_stack" "dota_update_default"
+// 			"mixer"
+// 			{
+// 				"mixgroup" "Stingers"
+// 			}
+// 			"speakers_spatialize"
+// 			{
+// 				"input_radius"  "1000"
+// 			}
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "true"	
+// 			}
+// 		}
+		
+// 		"stop_stack"
+// 		{	
+//             "get_debug_printing_opvar" 
+//             {
+// 				"operator" "get_opvar_float"
+// 				"opvar" "debug_print_music"
+// 			}
+			
+// 			"**************BUYBACK OTHER MUSIC KILLED**************"
+// 			{
+// 				"execute_once" "false"
+// 				"input_execute"	"@get_debug_printing_opvar.output"
+// 				"operator" "util_print_float"
+// 				"input" "1.0"
+// 			}
+// 		}
+// 	}
+// }
+
+///////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+"DOTAMusic_Hero.Reincarnate" // plays spatialized when hero reincarnates - SK's ulti or Aegis holder
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.7"
+	"soundlevel"  "SNDLVL_81dB"
+	"wave"			")music/stingers/reincarnate.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "stinger_low_priority"
+				"track_priority" "1"	
+			}
+		}
+	
+		"start_stack"
+		{
+			"delay_output"
+            {
+             "operator" "sys_output"
+             "input_float" "1.25"
+             "output" "delay"
+            }
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************REINCARNATE MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"
+			}
+		}
+	}
+}
+
+
+
+"DOTAMusic_Stinger.003"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DotA2_Music_Stinger_003.mp3"
+}
+
+"DOTAMusic_Stinger.004"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DotA2_Music_Stinger_004.mp3"
+}
+"DOTAMusic_Stinger.005"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DotA2_Music_Stinger_005.mp3"
+}
+"DOTAMusic_Stinger.006"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DotA2_Music_Stinger_006.mp3"
+}
+
+"DOTAMusic_Stinger.007"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.4"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DotA2_Music_Stinger_007.mp3"
+}
+
+"DOTAMusic_Stinger.008"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DotA2_Music_Stinger_008.mp3"
+}
+
+"DOTAMusic_Stinger.009"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DotA2_Music_Stinger_009.mp3"
+}
+
+
+
+// "DOTAMusic_Stinger_Our_Radiant_Tower_Fallen"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.4"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+// 	"rndwave"
+// 	{
+// 	"wave"			"music\null.wav"
+// 	}
+// 	"operator_stacks"
+// 	{
+// 		"start_stack"
+// 		{
+// 			"import_stack"	"start_barracks_cooldown"
+// 			"block_entries"
+// 			{
+// 				"input_duration" "15.0"
+// 				"match_entry" "DOTAMusic_Stinger_Our_Radiant_Tower_Fallen"
+// 			}
+// 		}
+// 	}
+// }
+
+// "DOTAMusic_Stinger_Our_Dire_Tower_Fallen"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.4"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+// 	"wave"			"music\null.wav"
+// 	"operator_stacks"
+// 	{
+// 		"start_stack"
+// 		{
+// 			"import_stack"	"start_barracks_cooldown"
+// 			"block_entries"
+// 			{
+// 				"input_duration" "15.0"
+// 				"match_entry" "DOTAMusic_Stinger_Our_Dire_Tower_Fallen"
+// 			}
+// 		}
+// 	}
+// }
+
+// "DOTAMusic_Stinger_Their_Radiant_Tower_Fallen"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.4"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+// 	"wave"			"music\null.wav"
+// 	"operator_stacks"
+// 	{
+// 		"start_stack"
+// 		{
+// 			"import_stack"	"start_barracks_cooldown"
+// 			"block_entries"
+// 			{
+// 				"input_duration" "15.0"
+// 				"match_entry" "DOTAMusic_Stinger_Their_Radiant_Tower_Fallen"
+// 			}
+// 		}
+// 	}
+// }
+
+// "DOTAMusic_Stinger_Their_Dire_Tower_Fallen"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.4"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+// 	"wave"			"music\null.wav"
+// 	"operator_stacks"
+// 	{
+// 		"start_stack"
+// 		{
+// 			"import_stack"	"start_barracks_cooldown"
+// 			"block_entries"
+// 			{
+// 				"input_duration" "15.0"
+// 				"match_entry" "DOTAMusic_Stinger_Their_Dire_Tower_Fallen"
+// 			}
+// 		}
+// 	}
+// }
+
+
+// "DOTAMusic_barracks_fall_01"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.6"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+
+// 	"wave"			"music\null.wav"
+// }
+// "DOTAMusic_barracks_fall_02"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.6"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+
+// 	"wave"			"music\null.wav"
+// }
+// "DOTAMusic_barracks_fall_03"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.6"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+
+// 	"wave"			"music\null.wav"
+// }
+// "DOTAMusic_barracks_fall_04"
+// {
+// 	"channel"		"CHAN_AUTO"
+// 	"volume"		"0.6"
+// 	"soundlevel"	"SNDLVL_NONE"
+// 	"pitch"			"PITCH_NORM"
+
+// 	"wave"			"music\null.wav"
+// }
+//BLOCKEND
+
+"DOTAMusic_Victory_Radiant"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DOTA2_Music_Victory_Radiant_Comp.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_music_type_tracker"
+				
+			"add_music_value"
+			{
+				"input2" "1024" //Win
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "1024" //Win
+			}	
+		}
+	}
+}
+
+"DOTAMusic_Victory_Dire"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DOTA2_Music_Victory_Dire.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_music_type_tracker"
+				
+			"add_music_value"
+			{
+				"input2" "1024" //Win
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "1024" //Win
+			}	
+		}
+	}
+}
+
+"DOTAMusic_Defeat_Dire"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/DIRE_Lose.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_music_type_tracker"
+				
+			"add_music_value"
+			{
+				"input2" "2048" //Lose
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "2048" //Lose
+			}	
+		}
+	}
+}
+
+"DOTAMusic_Defeat_Radiant"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/stingers/Radiant_Lose.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_music_type_tracker"
+				
+			"add_music_value"
+			{
+				"input2" "2048" //Lose
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "2048" //Lose
+			}	
+		}
+	}
+}
