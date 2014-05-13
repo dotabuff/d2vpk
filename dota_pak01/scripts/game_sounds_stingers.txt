@@ -224,266 +224,266 @@
 	}
 }
 
-// "DOTAMusic_Hero.BuyBackOther" //other buys back
-// {
-// 	"channel"		"CHAN_AUTO"
-// 	"volume"		".8"
-// 	"soundlevel"	"SNDLVL_NONE"
-// 	"pitch"			"PITCH_NORM"
+ "DOTAMusic_Hero.BuyBackOther" //other buys back
+ {
+ 	"channel"		"CHAN_AUTO"
+ 	"volume"		".8"
+ 	"soundlevel"	"SNDLVL_NONE"
+ 	"pitch"			"PITCH_NORM"
 
-// 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
-// 	"soundentry_version" "2"
-// 	"operator_stacks"
-// 	{	
-// 		"soundentry_operator_data"
-// 		{
-// 			"track_data"
-// 			{
-// 				"start_point" "0.00"
-// 				"track_name" "buyback"
-// 				"track_priority" "60"	
-// 			}
-// 		}
+ 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
+ 	"soundentry_version" "2"
+ 	"operator_stacks"
+ 	{	
+ 		"soundentry_operator_data"
+ 		{
+ 			"track_data"
+ 			{
+ 				"start_point" "0.00"
+ 				"track_name" "buyback"
+ 				"track_priority" "60"	
+ 			}
+ 		}
+	
+ 		"start_stack"
+ 		{
 		
-// 		"start_stack"
-// 		{
-			
-//             "get_debug_printing_opvar" 
-//             {
-// 				"operator" "get_opvar_float"
-// 				"opvar" "debug_print_music"
-// 			}
-			
-// 			"**************BUYBACK OTHER MUSIC STARTED**************" 
-// 			{
-// 				"execute_once" "false"
-// 				"input_execute"	"@get_debug_printing_opvar.output"
-// 				"operator" "util_print_float"
-// 				"input" "1.0"
-// 			}	
+             "get_debug_printing_opvar" 
+             {
+ 				"operator" "get_opvar_float"
+ 				"opvar" "debug_print_music"
+ 			}
+		
+ 			"**************BUYBACK OTHER MUSIC STARTED**************" 
+ 			{
+ 				"execute_once" "false"
+ 				"input_execute"	"@get_debug_printing_opvar.output"
+ 				"operator" "util_print_float"
+ 				"input" "1.0"
+ 			}	
 
-// 			"block_buyback_entries"
-// 			{
-// 				"operator" "sys_block_entries"
-// 				"input_active" "1.0"	
-// 				"input_duration" "6.5" //in seconds
-// 				"match_substring" "false"
-// 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
-// 				"match_channel" "false"
-// 				"match_entity" "false"
-// 			}
-// 		}
+ 			"block_buyback_entries"
+ 			{
+ 				"operator" "sys_block_entries"
+ 				"input_active" "1.0"	
+ 				"input_duration" "6.5" //in seconds
+ 				"match_substring" "false"
+ 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+ 				"match_channel" "false"
+ 				"match_entity" "false"
+ 			}
+ 		}
+	
+ 		"update_stack"
+ 		{
+ 			"import_stack" "dota_update_default"
+ 			"mixer"
+ 			{
+ 				"mixgroup" "Stingers"
+ 			}
+ 			"speakers_spatialize"
+ 			{
+ 				"input_radius"  "1000"
+ 			}
+ 			"update_track"
+ 			{
+ 				"operator" "track_update"
+ 				"stop_channel_on_track" "true"	
+ 			}
+ 		}
+	
+ 		"stop_stack"
+ 		{	
+             "get_debug_printing_opvar" 
+             {
+ 				"operator" "get_opvar_float"
+ 				"opvar" "debug_print_music"
+ 			}
 		
-// 		"update_stack"
-// 		{
-// 			"import_stack" "dota_update_default"
-// 			"mixer"
-// 			{
-// 				"mixgroup" "Stingers"
-// 			}
-// 			"speakers_spatialize"
-// 			{
-// 				"input_radius"  "1000"
-// 			}
-// 			"update_track"
-// 			{
-// 				"operator" "track_update"
-// 				"stop_channel_on_track" "true"	
-// 			}
-// 		}
-		
-// 		"stop_stack"
-// 		{	
-//             "get_debug_printing_opvar" 
-//             {
-// 				"operator" "get_opvar_float"
-// 				"opvar" "debug_print_music"
-// 			}
-			
-// 			"**************BUYBACK OTHER MUSIC KILLED**************"
-// 			{
-// 				"execute_once" "false"
-// 				"input_execute"	"@get_debug_printing_opvar.output"
-// 				"operator" "util_print_float"
-// 				"input" "1.0"
-// 			}
-// 		}
-// 	}
-// }
+ 			"**************BUYBACK OTHER MUSIC KILLED**************"
+ 			{
+ 				"execute_once" "false"
+ 				"input_execute"	"@get_debug_printing_opvar.output"
+ 				"operator" "util_print_float"
+ 				"input" "1.0"
+ 			}
+ 		}
+ 	}
+ }
 
-// "DOTAMusic_Hero.BuyBackOtherRadiant" //other buys back
-// {
-// 	"channel"		"CHAN_AUTO"
-// 	"volume"		".8"
-// 	"soundlevel"	"SNDLVL_NONE"
-// 	"pitch"			"PITCH_NORM"
+ "DOTAMusic_Hero.BuyBackOtherRadiant" //other buys back
+ {
+ 	"channel"		"CHAN_AUTO"
+ 	"volume"		".8"
+ 	"soundlevel"	"SNDLVL_NONE"
+ 	"pitch"			"PITCH_NORM"
 
-// 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
-// 	"soundentry_version" "2"
-// 	"operator_stacks"
-// 	{	
-// 		"soundentry_operator_data"
-// 		{
-// 			"track_data"
-// 			{
-// 				"start_point" "0.00"
-// 				"track_name" "buyback"
-// 				"track_priority" "60"	
-// 			}
-// 		}
+ 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
+ 	"soundentry_version" "2"
+ 	"operator_stacks"
+ 	{	
+ 		"soundentry_operator_data"
+ 		{
+ 			"track_data"
+ 			{
+ 				"start_point" "0.00"
+ 				"track_name" "buyback"
+ 				"track_priority" "60"	
+ 			}
+ 		}
+	
+ 		"start_stack"
+ 		{
 		
-// 		"start_stack"
-// 		{
-			
-//             "get_debug_printing_opvar" 
-//             {
-// 				"operator" "get_opvar_float"
-// 				"opvar" "debug_print_music"
-// 			}
-			
-// 			"**************BUYBACK OTHER RADIANT MUSIC STARTED**************" 
-// 			{
-// 				"execute_once" "false"
-// 				"input_execute"	"@get_debug_printing_opvar.output"
-// 				"operator" "util_print_float"
-// 				"input" "1.0"
-// 			}	
+             "get_debug_printing_opvar" 
+             {
+ 				"operator" "get_opvar_float"
+ 				"opvar" "debug_print_music"
+ 			}
+		
+ 			"**************BUYBACK OTHER RADIANT MUSIC STARTED**************" 
+ 			{
+ 				"execute_once" "false"
+ 				"input_execute"	"@get_debug_printing_opvar.output"
+ 				"operator" "util_print_float"
+ 				"input" "1.0"
+ 			}	
 
-// 			"block_buyback_entries"
-// 			{
-// 				"operator" "sys_block_entries"
-// 				"input_active" "1.0"	
-// 				"input_duration" "6.5" //in seconds
-// 				"match_substring" "false"
-// 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
-// 				"match_channel" "false"
-// 				"match_entity" "false"
-// 			}
-// 		}
+ 			"block_buyback_entries"
+ 			{
+ 				"operator" "sys_block_entries"
+ 				"input_active" "1.0"	
+ 				"input_duration" "6.5" //in seconds
+ 				"match_substring" "false"
+ 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+ 				"match_channel" "false"
+ 				"match_entity" "false"
+ 			}
+ 		}
+	
+ 		"update_stack"
+ 		{
+ 			"import_stack" "dota_update_default"
+ 			"mixer"
+ 			{
+ 				"mixgroup" "Stingers"
+ 			}
+ 			"speakers_spatialize"
+ 			{
+ 				"input_radius"  "1000"
+ 			}
+ 			"update_track"
+ 			{
+ 				"operator" "track_update"
+ 				"stop_channel_on_track" "true"	
+ 			}
+ 		}
+	
+ 		"stop_stack"
+ 		{	
+             "get_debug_printing_opvar" 
+             {
+ 				"operator" "get_opvar_float"
+ 				"opvar" "debug_print_music"
+ 			}
 		
-// 		"update_stack"
-// 		{
-// 			"import_stack" "dota_update_default"
-// 			"mixer"
-// 			{
-// 				"mixgroup" "Stingers"
-// 			}
-// 			"speakers_spatialize"
-// 			{
-// 				"input_radius"  "1000"
-// 			}
-// 			"update_track"
-// 			{
-// 				"operator" "track_update"
-// 				"stop_channel_on_track" "true"	
-// 			}
-// 		}
-		
-// 		"stop_stack"
-// 		{	
-//             "get_debug_printing_opvar" 
-//             {
-// 				"operator" "get_opvar_float"
-// 				"opvar" "debug_print_music"
-// 			}
-			
-// 			"**************BUYBACK OTHER MUSIC KILLED**************"
-// 			{
-// 				"execute_once" "false"
-// 				"input_execute"	"@get_debug_printing_opvar.output"
-// 				"operator" "util_print_float"
-// 				"input" "1.0"
-// 			}
-// 		}
-// 	}
-// }
+ 			"**************BUYBACK OTHER MUSIC KILLED**************"
+ 			{
+ 				"execute_once" "false"
+ 				"input_execute"	"@get_debug_printing_opvar.output"
+ 				"operator" "util_print_float"
+ 				"input" "1.0"
+ 			}
+ 		}
+ 	}
+ }
 
-// "DOTAMusic_Hero.BuyBackOtherDire" //other buys back
-// {
-// 	"channel"		"CHAN_AUTO"
-// 	"volume"		".8"
-// 	"soundlevel"	"SNDLVL_NONE"
-// 	"pitch"			"PITCH_NORM"
+ "DOTAMusic_Hero.BuyBackOtherDire" //other buys back
+ {
+ 	"channel"		"CHAN_AUTO"
+ 	"volume"		".8"
+ 	"soundlevel"	"SNDLVL_NONE"
+ 	"pitch"			"PITCH_NORM"
 
-// 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
-// 	"soundentry_version" "2"
-// 	"operator_stacks"
-// 	{	
-// 		"soundentry_operator_data"
-// 		{
-// 			"track_data"
-// 			{
-// 				"start_point" "0.00"
-// 				"track_name" "buyback"
-// 				"track_priority" "60"	
-// 			}
-// 		}
+ 	"wave"			"#music/stingers/DotA2_Music_Stinger_010.mp3"
+ 	"soundentry_version" "2"
+ 	"operator_stacks"
+ 	{	
+ 		"soundentry_operator_data"
+ 		{
+ 			"track_data"
+ 			{
+ 				"start_point" "0.00"
+ 				"track_name" "buyback"
+ 				"track_priority" "60"	
+ 			}
+ 		}
+	
+ 		"start_stack"
+ 		{
 		
-// 		"start_stack"
-// 		{
-			
-//             "get_debug_printing_opvar" 
-//             {
-// 				"operator" "get_opvar_float"
-// 				"opvar" "debug_print_music"
-// 			}
-			
-// 			"**************BUYBACK OTHER DIRE MUSIC STARTED**************" 
-// 			{
-// 				"execute_once" "false"
-// 				"input_execute"	"@get_debug_printing_opvar.output"
-// 				"operator" "util_print_float"
-// 				"input" "1.0"
-// 			}	
+             "get_debug_printing_opvar" 
+             {
+ 				"operator" "get_opvar_float"
+ 				"opvar" "debug_print_music"
+ 			}
+		
+ 			"**************BUYBACK OTHER DIRE MUSIC STARTED**************" 
+ 			{
+ 				"execute_once" "false"
+ 				"input_execute"	"@get_debug_printing_opvar.output"
+ 				"operator" "util_print_float"
+ 				"input" "1.0"
+ 			}	
 
-// 			"block_buyback_entries"
-// 			{
-// 				"operator" "sys_block_entries"
-// 				"input_active" "1.0"	
-// 				"input_duration" "6.5" //in seconds
-// 				"match_substring" "false"
-// 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
-// 				"match_channel" "false"
-// 				"match_entity" "false"
-// 			}
-// 		}
+ 			"block_buyback_entries"
+ 			{
+ 				"operator" "sys_block_entries"
+ 				"input_active" "1.0"	
+ 				"input_duration" "6.5" //in seconds
+ 				"match_substring" "false"
+ 				"match_entry" "DOTAMusic_Hero.BuyBackOther" //The sound entry to use
+ 				"match_channel" "false"
+ 				"match_entity" "false"
+ 			}
+ 		}
+	
+ 		"update_stack"
+ 		{
+ 			"import_stack" "dota_update_default"
+ 			"mixer"
+ 			{
+ 				"mixgroup" "Stingers"
+ 			}
+ 			"speakers_spatialize"
+ 			{
+ 				"input_radius"  "1000"
+ 			}
+ 			"update_track"
+ 			{
+ 				"operator" "track_update"
+ 				"stop_channel_on_track" "true"	
+ 			}
+ 		}
+	
+ 		"stop_stack"
+ 		{	
+             "get_debug_printing_opvar" 
+             {
+ 				"operator" "get_opvar_float"
+ 				"opvar" "debug_print_music"
+ 			}
 		
-// 		"update_stack"
-// 		{
-// 			"import_stack" "dota_update_default"
-// 			"mixer"
-// 			{
-// 				"mixgroup" "Stingers"
-// 			}
-// 			"speakers_spatialize"
-// 			{
-// 				"input_radius"  "1000"
-// 			}
-// 			"update_track"
-// 			{
-// 				"operator" "track_update"
-// 				"stop_channel_on_track" "true"	
-// 			}
-// 		}
-		
-// 		"stop_stack"
-// 		{	
-//             "get_debug_printing_opvar" 
-//             {
-// 				"operator" "get_opvar_float"
-// 				"opvar" "debug_print_music"
-// 			}
-			
-// 			"**************BUYBACK OTHER MUSIC KILLED**************"
-// 			{
-// 				"execute_once" "false"
-// 				"input_execute"	"@get_debug_printing_opvar.output"
-// 				"operator" "util_print_float"
-// 				"input" "1.0"
-// 			}
-// 		}
-// 	}
-// }
+ 			"**************BUYBACK OTHER MUSIC KILLED**************"
+ 			{
+ 				"execute_once" "false"
+ 				"input_execute"	"@get_debug_printing_opvar.output"
+ 				"operator" "util_print_float"
+ 				"input" "1.0"
+ 			}
+ 		}
+ 	}
+ }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////

@@ -577,6 +577,12 @@
 		"positive_total"		"short"
 		"negative_total"		"short"
 	}
+	"scaleform_file_download_complete"
+	{
+		"success"			"bool"
+		"local_filename"	"string"
+		"remote_url"		"string"
+	}
 
 	"item_purchased"
 	{

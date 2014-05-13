@@ -6597,14 +6597,14 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"fantasy_league_create_season"				"Fantasy Season %s1"
 		"fantasy_league_create_desc"				"First, select a name for your Fantasy League.\n  Then select a password that other players can use to join your League."
 		"fantasy_league_create_name"				"Fantasy League Name"
-		"fantasy_league_create_password"			"Password"
+		"fantasy_league_create_password"			"Fantasy League Password"
 		
 		"fantasy_league_join_header"				"1. Find a Fantasy League"
 		"fantasy_league_join_desc"					"You can find a Fantasy League by supplying its Fantasy League ID and Password.\nThe commissioner of the Fantasy League will have this information."
 		"fantasy_league_join_pw_details"			"Join a Fantasy League by entering its League ID and Password."
 		"fantasy_league_join_invite_details"		"or Join a Fantasy League to which you've been directly invited."
 		"fantasy_league_join_pw_enter_league_id"	"Fantasy League ID"
-		"fantasy_league_join_pw_enter_pw"			"Password"
+		"fantasy_league_join_pw_enter_pw"			"Fantasy League Password"
 		"fantasy_league_find"						"Find"
 		"fantasy_league_find_not_found"				"Fantasy League Not Found."
 		"fantasy_league_find_already_member"		"You are already a member of this Fantasy League."
@@ -6700,7 +6700,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 
 		"fantasy_league_id"							"Fantasy League ID #"
-		"fantasy_league_password"					"Password"
+		"fantasy_league_password"					"Fantasy League Password"
 		"fantasy_league_max_teams"					"Maximum Players in Fantasy League"
 		"fantasy_league_draft_time"					"Draft Time"
 		"fantasy_league_draft_pick_time"			"Time Limit per Draft Pick"
@@ -16083,6 +16083,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"EconOpen_BaseString"			"UNLOCKING THE LOOT"
 		"EconOpen_Gift"					"UNWRAPPING YOUR GIFT"
 
+		"CompDL"						"Downloading Compendium..."
 		"CouldntDLCompendium"			"Failed to download compendium. Please try again later."
 		"CouldntSaveCompendium"			"Failed to save Compendium selections. Please try again later."
 		"CouldntFindCompendium"			"Couldn't load the compendium test file: %s1"
@@ -17188,7 +17189,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Crate_Open_Have_Key"	"You Own 1"
 		"Crate_Open_Buy_Key"	"Buy and Open"
 		"Crate_Open_Now"		"Open Now"
-		"Crate_No_Dupe"			"Each time you open this treasure you will receive one of these items. You will not receive duplicates."
+		"Crate_No_Dupe"			"Each time you open this treasure you will receive %s1 of these items. You will not receive duplicates."
 		"Crate_Random_Bonus"	"Random Bonus Rewards"
 		"Crate_Very_Rare"		"Very Rare"
 		"Crate_Extremely_Rare"	"Extremely Rare"
