@@ -7,17 +7,22 @@ dota = "#{ENV["HOME"]}/.steam/steam/SteamApps/common/dota\ 2\ beta"
 sh 'mkdir', '-p', 'dota/resource'
 sh 'cp', '-r', "#{dota}/dota/resource/", 'dota/'
 
-Dir.glob('dota/resource/*.txt') do |txt|
-  file = `file "#{txt}"`
+convert = ->(path){
+  return if path =~ /ti_2013_podseats\.txt/
+  file = `file "#{path}"`
   if file =~ /UTF-16 Unicode text/
-    sh 'iconv', '--verbose', '-f', 'utf-16', '-t', 'utf-8', '-o', "#{txt}.utf8", txt
-    sh 'mv', "#{txt}.utf8", txt
+    sh 'iconv', '--verbose', '-f', 'utf-16', '-t', 'utf-8', '-o', "#{path}.utf8", path
+    sh 'mv', "#{path}.utf8", path
   else
     p file
   end
   if file =~ /with CRLF(, CR)? line terminators/
-    sh 'dos2unix', '-q', txt
+    sh 'dos2unix', '-q', path
   end
+}
+
+Dir.glob('**/*.{vdf,res,txt}') do |txt|
+  convert.(txt)
 end
 
 sh 'git', 'add', 'dota'
@@ -29,7 +34,7 @@ Dir.glob("#{dota}/**/*_dir.vpk") do |vpk|
 
   sh './d2vpk', vpk, target
 
-  Dir.glob("#{target}/**/*.{vdf,res,txt}"){|f| sh 'dos2unix', '-q', f }
+  Dir.glob("#{target}/**/*.{vdf,res,txt}"){|f| convert.(f) }
 
   sh 'git', 'add', target
 end
