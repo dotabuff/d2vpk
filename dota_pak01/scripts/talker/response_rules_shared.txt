@@ -480,14 +480,14 @@ criterion "IsOwnage" "team_kill_streak" ">4" weight 8 required
 criterion "IsOwnage6" "team_kill_streak" "6" weight 8 required
 criterion "IsOwnage10" "team_kill_streak" "10" weight 8 required
 criterion "IsOwnage15" "team_kill_streak" "15" weight 8 required
-criterion "IsOwnageLimited" "team_kill_streak" ">4,<15" weight 8 required
+criterion "IsOwnageLimited" "team_kill_streak" ">4,<20" weight 8 required
 
 
 //Stanley Parable Killing Spree Special Stuff
 criterion "IsSeventyTwoSpree" "streak" "72" weight 9 required
 criterion "IsNinetyNineSpree" "streak" "99" weight 9 required
 criterion "IsEightyFivetoNinetySpree" "streak" ">84,<90" weight 9 required
-criterion "IsOneOhOneSpree" "streak" "100" weight 9 required
+criterion "IsOneOhTwoSpree" "streak" "102" weight 9 required
 
 
 
