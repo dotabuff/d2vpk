@@ -6557,7 +6557,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_FantasyLeagueCreate_Error_Header"			"Error"
 		"DOTA_FantasyLeagueCreate_Error_NoPermission"	"You don't have permission to create that fantasy league."
 		"DOTA_FantasyLeagueCreate_Error_BadSeasonID"	"Bad Season ID specified."
-		"DOTA_FantasyLeagueCreate_Error_BadName"		"Invalid Fantasy League name."
+		"DOTA_FantasyLeagueCreate_Error_BadLeagueName"	"Invalid Fantasy League name."
+		"DOTA_FantasyLeagueCreate_Error_BadTeamName"	"Invalid Fantasy League name."
 		"DOTA_FantasyLeagueCreate_Error_NoTicket"		"You do not own a Fantasy Ticket."
 		"DOTA_FantasyLeagueCreate_Error_Unspecified"	"Unknown Error.  Please try again."
 		"DOTA_FantasyLeagueCreate_Error_NoName"			"You must specify a name for your Fantasy League."
@@ -6580,6 +6581,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_FantasyTeamCreate_Error_BadFantasyLeagueID"	"Invalid fantasy league."
 		"DOTA_FantasyTeamCreate_Error_BadPassword"			"Invalid password."
 		"DOTA_FantasyTeamCreate_Error_NoTicket"				"You do not own a Fantasy Ticket."
+		"DOTA_FantasyTeamCreate_Error_Locked"				"This Fantasy League is locked."
 		"DOTA_FantasyTeamCreate_Error_BadName"				"Invalid name."
 		"DOTA_FantasyTeamCreate_Error_Full"					"Fantasy League is Full."
 		"DOTA_FantasyTeamCreate_Error_AlreadyMember"		"You are already a member of this Fantasy League."
@@ -6587,6 +6589,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"DOTA_FantasyTeamCreate_Success_Header"			"Success"
 		"DOTA_FantasyTeamCreate_Success"				"Created Fantasy Team \"%s1\"."
+
+		"Fantasy_KickConfirm_Header"				"Kick Player from Fantasy League?"
+		"Fantasy_KickConfirm"						"The player will be removed from the Fantasy League.  They will need to consume another Fantasy Ticket if they want to re-join.\n\nRemove them?"
 
 		"fantasy_league_name"						"League Name"
 		"fantasy_league_commish"					"Commissioner"
@@ -6612,6 +6617,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"fantasy_league_find_error"					"Error Finding this Fantasy League.  Please try again."
 		"fantasy_league_find_searching"				"Searching..."
 		"fantasy_league_find_bad_password"			"Incorrect password."
+		"fantasy_league_find_locked"				"Fantasy League is Locked."
 		"fantasy_league_find_found_name"			"Fantasy League Name: <font color='#EDEFD5'>%s1</font>"
 		"fantasy_league_find_found_run_by"			"Commissioner: <font color='#EDEFD5'>%s1</font>"
 		
@@ -9400,12 +9406,16 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"compendium_level"												"LEVEL"
 		"compendium_not_activated_other_user"							"This player has not activated their International 2014 Compendium"
 		"compendium_activate_button"									"BUY NOW - %s1"
-		"compendium_activate_title"										"ACTIVATE\nYOUR COMPENDIUM"
+		"compendium_activate_title"										"THE COMPENDIUM"
 		"compendium_activate_details"									"Earn rewards, level up, collect player cards, and more! It's the next-best thing to being there."
 		"compendium_activate_no_thanks"									"No Thanks, but I would like to preview it"
 		"compendium_to_next_level"										"TO NEXT LEVEL"
 		"compendium_preview_mode"										"PREVIEW MODE ONLY"
 		"compendium_preview_click"										"Click Here to Activate!"
+		"compendium_available_title"									"THE COMPENDIUM"
+		"compendium_available_descrip1"									"Immortal Treasures  -  Mini-Pudge Courier  -  Massive Booster"
+		"compendium_available_descrip2"									"Loading Screens - HUD Skin - Level Up Rewards\nChat Emoticons - Plus Much More"
+		"compendium_available_click_for_details"						"Click for Details"
 		"dota_num_players_searching"									"PLAYERS SEARCHING: %s1"
 		"dota_search_range"												"SEARCH RANGE"
 		"dota_num_matching_players"										"MATCHING PLAYERS: %s1 of 10"
@@ -11103,18 +11113,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"DOTA_RPSTATUS_STARTGAME"		"Starting..."
 		
-		"DOTA_NewPlayerQuestion_Title"				"WELCOME TO DOTA 2"
-
-		"DOTA_PlayerOriginQuestion_Question"       "To improve your game experience, what kind of games have you played?"
-
-		"DOTA_PlayerOriginQuestion_BeginnerButton" "I'm a beginner."
-		"DOTA_PlayerOriginQuestion_RTSButton"      "I've played RTS games."
-		"DOTA_PlayerOriginQuestion_MOBAButton"     "I've played MOBA games."
 		"DOTA_PlayerOriginQuestion_DotaButton"    "I've played the original Dota."
-		"DOTA_PlayerOriginQuestion_Dota2Button"    "I've played Dota 2."
 
-		"DOTA_PlayerOriginQuestion_ConfirmationTitle"     "THANKS FOR RESPONDING"
-		"DOTA_PlayerOriginQuestion_ConfirmationTutorial"  "As a player new to Dota, you may be interested in the tutorials under Play > Training. They're a great first step towards dominating other players around the globe."
 		"DOTA_PlayerOriginQuestion_ConfirmationSettings"  "Your keybindings and options are now set to the most commonly used settings for players with your experience.  You can customize these at any time by clicking on the settings icon."
 
 		"DOTA_GameEnd_PointsEarned"		"You have earned <font color='#7AD1F2'>%s1</font> points!"
@@ -11991,7 +11991,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Notifications_New"						"New Notifications"
 		"Notifications_All"						"Notifications"
 		"Notifications_Description"				"This is a list of all of your Notifications."
-		"Notifications_ViewAll"					"View All"
+		"Notifications_ViewAll"					"View Old Notifications"
 		"Notifications_Requesting"				"Retrieving Notifications..."
 		"Notifications_Failed"					"Failed to Retrieve Notifications."
 		"Notifications_No_New"					"No New Notifications."
@@ -12025,6 +12025,17 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Notification_CompendiumGoal10"			"Because of the community's contributions, the 1v1 Mid Matchmaking stretch goal has been reached!"
 		"Notification_CompendiumGoal11"			"Because of the community's contributions, the Environmental Effects stretch goal has been reached!"
 		"Notification_CompendiumGoal12"			"Because of the community's contributions, the Customized Buildings stretch goal has been reached!"
+ 		"Notification_CompendiumMessage0"		"We've updated the All Star Match and Solo Championship selections to include players from the Qualifier teams. Who should take the stage to do battle?"
+ 		"Notification_CompendiumMessage1"		"The Arcana Wars continue! Which hero will emerge triumphant and receive the next Arcana?"
+ 		"Notification_CompendiumMessage2"		"The North American Qualifier has ended. Congratulations to both teams, and good luck in Seattle!"
+ 		"Notification_CompendiumMessage3"		"The South East Asia Qualifier has concluded. Congratulations to both teams, and best of luck in Seattle!"
+ 		"Notification_CompendiumMessage4"		"The China Qualifier has finished. Congratulations to both teams, and good luck in Seattle!"
+ 		"Notification_CompendiumMessage5"		"The Europe Qualifier has completed. Congratulations to both teams, and best of luck in Seattle!"
+ 		"Notification_CompendiumMessage6"		"The Qualifier Predictions will end in 24 hours. Hurry up and get your picks in!"
+  		"Notification_CompendiumMessage7"		"Voting for the Solo Championship participants will end in 24 hours. Who will become the next Solo Champion?"
+  		"Notification_CompendiumMessage8"		"Voting for the Arcana Showdown will end in 24 hours. Which hero will receive the next Arcana?"
+  		"Notification_CompendiumMessage9"		"Voting for the All Star Match will end in 24 hours.  This is serious business!"
+  		"Notification_CompendiumMessage10"		"Voting for the Solo Championship competitors has been added to the Compendium."
 
 
 
@@ -12203,7 +12214,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Team_TongFu"					"TongFu"
 		"DOTA_Team_WorldElite"				"World Elite"
 		"DOTA_Team_Zenith"					"Zenith"		
-		"DOTA_Team_Cloud9"					"Cloud9"		
+		"DOTA_Team_Cloud9"					"Cloud9"
+		"DOTA_Team_Zephyr"					"Zephyr"
 
 		"DOTA_ProGear_Econ_Tooltip"			"%s1 Pro Gear"
 		
@@ -13170,6 +13182,16 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"StoreBanner_Header_2014_Compendium"		"The International Compendium"
 		"StoreBanner_Text_2014_Compendium"			"Level up and earn rewards, compete in new challenges, and more!"
+		
+		"StoreBanner_Header_stanley_parable_announcer_pack"		"The Stanley Parable Announcer Pack"
+		"StoreBanner_Text_stanley_parable_announcer_pack"			"Do you really have a choice in the matter?"
+		
+		"StoreBanner_Header_TreasureOfTheClovenWorld"			"Treasure of the Cloven World"
+		"StoreBanner_Text_TreasureOfTheClovenWorld"			"The world's gate swings wide."
+		
+		"StoreBanner_Header_TreasureOfTheDiligentArtisan"		"Treasure of the Diligent Artisan"
+		"StoreBanner_Text_TreasureOfTheDiligentArtisan"			"There is artistry even in war."
+		
 		
 		"Playtab_Quiz_Title"				"The Shopkeeper's Quiz"
 		"Playtab_Quiz_Subtitle"				"Test your Dota 2 item knowledge!"
@@ -15728,6 +15750,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Alliance_Hud_Style1"						"Rainy"
 
 		"DOTA_WatchOwnedTournamentCheck"			"Sort owned Tournaments first"
+		"DOTA_WatchAutoSpectateLeague"				"Auto Spectate Games"
 
 		"Shawl_of_Resonant_Vibrance_Style0"			"Gathering Shawl"
 		"Shawl_of_Resonant_Vibrance_Style1"			"Converging Shawl"
@@ -16317,7 +16340,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_status_dangerous_instruction"	"Enter the word '%s1' in the box below to continue"
 		"dota_status_dangerous_confirm"		"CONFIRM"
 
-		"dota_waitingforplayers_boost_earn_local_player"	"Your Battle Points rate: %s1%"
+		"dota_waitingforplayers_boost_earn_local_player"	"Your Battle Points rate: %s1"
 		"dota_waitingforplayers_boost_earn"	"Battle Points earn rate: %s1%"
 		"dota_waitingforplayers_bonus"		"Bonus: +%s1%"
 
@@ -17275,5 +17298,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_ImmediatePurchase_InsufficientFundsPW"	"There are insufficient funds in your Perfect World account to complete the purchase. Please recharge your account and try again."
 		"DOTA_ImmediatePurchase_Success_Title"	"Success"
 		"DOTA_ImmediatePurchase_Success_Text"	"Purchase completed successfully! Your items will appear in the Armory shortly."
+		"DOTA_RequestingBalance_Title"	"Requesting Balance"
+		"DOTA_RequestingBalance_Text"	"Requesting your Perfect World account balance..."
 	}
 }
