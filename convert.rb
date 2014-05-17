@@ -9,6 +9,7 @@ require_relative "./vdf"
 %w[
   dota/resource/items_*.txt
   dota_pak01/scripts/items/items_game.txt
+  dota_pak01/scripts/regions.txt
 ].each do |glob|
   Dir.glob glob do |source|
     p source
