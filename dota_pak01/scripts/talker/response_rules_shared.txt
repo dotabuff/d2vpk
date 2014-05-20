@@ -383,6 +383,7 @@ criterion "IsLeastPlayed" "announce_gamemode" "12" weight 5 required
 criterion "IsLimitedHeroes" "announce_gamemode" "13" weight 5 required
 criterion "IsCaptainsDraft" "announce_gamemode" "16" weight 5 required
 criterion "IsCustomMode" "announce_gamemode" "15" weight 5 required
+criterion "IsAbilityDraft" "announce_gamemode" "18" weight 5 required
 
 
 criterion "IsDraftBegin" "line" "announcer_announcer_type_capt_mode" weight 5 required
