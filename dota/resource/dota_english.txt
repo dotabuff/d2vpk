@@ -6563,6 +6563,15 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_FantasyLeagueCreate_Error_Unspecified"	"Unknown Error.  Please try again."
 		"DOTA_FantasyLeagueCreate_Error_NoName"			"You must specify a name for your Fantasy League."
 
+		"DOTA_FantasyLeagueLeave_Success_Header"		"Success"
+		"DOTA_FantasyLeagueLeave_Success"				"You have successfully left '%s1'."
+
+		"DOTA_FantasyLeagueLeave_Error_Header"			"Error"
+		"DOTA_FantasyLeagueLeave_Error_Unknown"			"Unknown Error, please try again."
+		"DOTA_FantasyLeagueLeave_Error_NotMember"		"Not a member of this Fantasy League."
+		"DOTA_FantasyLeagueLeave_Error_InvalidLeague"	"Invalid League."
+		"DOTA_FantasyLeagueLeave_Error_DraftActive"		"You cannot leave a Fantasy League while the draft is active."
+
 		"fantasy_league_created"						"Fantasy League Created"
 		"fantasy_league_created_details"				"You have successfully created <font color='#FFFFFF'>%s1</font>!\n\nYou can invite other players to this league using the following information:\nFantasy League ID: <font color='#EDEFD5'>%s2</font>\nPassword: <font color='#EDEFD5'>%s3</font>\n\nThis information can also be found in your Fantasy League's settings panel."
 
@@ -6592,6 +6601,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"Fantasy_KickConfirm_Header"				"Kick Player from Fantasy League?"
 		"Fantasy_KickConfirm"						"The player will be removed from the Fantasy League.  They will need to consume another Fantasy Ticket if they want to re-join.\n\nRemove them?"
+
+		"Fantasy_LeaveLeagueConfirm_Header"			"Leave Fantasy League?"
+		"Fantasy_LeaveLeagueConfirm"				"Are you sure you want to leave '%s1'?\n\n <font color='#FF0000'>THIS CANNOT BE REVERSED</font>"
 
 		"fantasy_league_name"						"League Name"
 		"fantasy_league_commish"					"Commissioner"
@@ -6887,6 +6899,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"fantasy_players_to_drop"				"Dropping"
 		"fantasy_players_pending_add_drop"		"Pending Player Transaction"
 		"fantasy_league_teams_add_drop_cancel_wait"	"Canceling Transaction..."
+
+		"fantasy_leave_league"					"Leave Fantasy League"
 
 		"Fantasy_Team_Add_Player"				"Add and Drop a Player"
 		"fantasy_team_add_drop_details"			"You can request to add a player to your Team, which requires you to drop another player.  Player add requests are executed in the opposite order of team standing, so lower-ranked teams get higher priority.\n\nIf successful, this will take effect in tomorrow's roster."
@@ -8812,6 +8826,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Hero_Selection_AdvFilter_Attack_Melee"		"Melee"
 		"DOTA_Hero_Selection_AdvFilter_Attack_Ranged"		"Ranged"
 		"DOTA_Hero_Selection_AdvFilter_MyHero_Favorites"	"Your Favorites"
+		"DOTA_Hero_Selection_AdvFilter_MyHero_HeroQuest"    "10 Hero Challenge"
 		"DOTA_Hero_Selection_AdvFilter_MyHero_LeastUsed"	"Your Least Used"
 		"DOTA_Hero_Selection_AdvFilter_MyHero_BestAs"		"Your Best"
 		"DOTA_Hero_Selection_AdvFilter_MyHero_Recent"		"Your Recently Played"
@@ -8839,6 +8854,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Hero_Selection_TT_Suggest_Text"		"Tell your team that you think it's a good idea for someone to play this hero. You can suggest up to 2 heroes at a time."
 		"DOTA_Hero_Selection_TT_Favorite_Title"		"Favorite Hero"
 		"DOTA_Hero_Selection_TT_Favorite_Text"		"Mark this hero as one of your favorites."
+		"DOTA_Hero_Selection_TT_HeroQuest_Title"    "10 Hero Challenge"
+		"DOTA_Hero_Selection_TT_HeroQuest_Text"     "This hero is part of your 10 Hero Challenge."
 
 		"DOTA_Hero_Selection_Layout_Edit_Title"		"Customize Layout"
 		"DOTA_Hero_Selection_Layout_Save_Title"		"Save Changes"
@@ -16131,6 +16148,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_Image"		"Couldn't find an image called '%s1' in compendium page '%s2'"
 		"CompendiumPageError_Text"		"Couldn't find a text block called '%s1' in compendium page '%s2'"
 		"CompendiumPageError_Video"		"Couldn't find a video called '%s1' in compendium page '%s2'"
+		"CompendiumPageError_Scrollbar" "Couldn't find a scrollbar called '%s1' in compendium page '%s2'"
 		"CompendiumPageError_Selection" "Couldn't find a selection called '%s1' in compendium page '%s2'"
 		"CompendiumPageError_CustomText" "Error in custom text block '%s1' in compendium page '%s2'"
 		"CompendiumPageError_CustomImg" "Error in custom image block '%s1'"
@@ -16146,6 +16164,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_SelType"	"Missing 'choice_type' for selection '%s1' in compendium page '%s2'"
 		"CompendiumPageError_BarType"	"Missing 'data' for progressbar '%s1' in compendium page '%s2'"
 		"CompendiumPageError_NoTime"	"Missing or invalid 'time' specified for selection '%s1' in '%s2'"
+		"CompendiumPageError_ElementType" "Missing or invalid 'elementtype' for element '%s1' in compendium page '%s2'"
 		"CompendiumPageError_SelTimer"	"Unknown timer named '%s1' in compendium page '%s2'"
 		"CompendiumPageError_BadElement" "Unknown SF element named '%s1' in compendium page '%s2'"
 		"CompendiumPageError_SelNoTimer" "No timers found in compendium page '%s1' (it has selections, which need a timer)"
@@ -16177,6 +16196,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_UnknownAction"		"Object '%s1' references unknown action '%s2'"
 		"CompendiumPageError_DupeKey"	"Keyvalues block '%s1' contains multiple keys with the same name of '%s2'."
 		"CompendiumError_Template"		"Couldn't find a template named '%s1'"
+		"CompendiumError_DupeTemplate"	"Found multiple templates named '%s1'"
+		"CompendiumError_NoDefines"		"Template '%s1' requires defines, but instance '%s2' of it doesn't have a 'defines' block."
+		"CompendiumError_MissingDef"	"Derived instance '%s1' doesn't contain a define called '%s2', but the template it derives from requires it."
+		"CompendiumError_BadDef"		"Template '%s1' contains a required define named '%s2' that doesn't start with '%def', which is required."
 		"CompendiumSel_Default"			"Make A Selection"
 		"CompendiumGC_DataErr"			"Invalid webapi call: missing league ID, admin ID, or data file."
 		"CompendiumGC_KVFile"			"Invalid format for the Compendium data file. Must be a KeyValues based text file."
@@ -16344,6 +16367,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_waitingforplayers_boost_earn_local_player"	"Your Battle Points rate: %s1"
 		"dota_waitingforplayers_boost_earn"	"Battle Points earn rate: %s1%"
 		"dota_waitingforplayers_bonus"		"Bonus: +%s1%"
+		"dota_waitingforplayers_sharing"	"is sharing a Battle Point Bonus:"
 
 		"DOTA_Premium_League_Description_JoinDota" "The first season of the joinDOTA League features over 2500 teams across the world competing in various divisions for the grand prize! Each purchase of this ticket will added $0.75 to the total prize pool!"
 		"DOTA_Premium_League_Description_MLG"	"MLG's first International Dota 2 competition will feature the world's best teams from Europe, China and North America competing for a growing prize pool starting at $50,000."
@@ -17267,9 +17291,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Compendium_popup_stretchgoal2"		"A stretch goal award is now available to all Compendium users!"
 		"Compendium_popup_viewnow"			"VIEW NOW"
 		"Compendium_popup_nocompendium"		"It appears that you don't have a Compendium yet!"
-		"Compendium_popup_notrightnow"		"Not right now, thank you"
-		
-		
+		"Compendium_popup_notrightnow"		"Not right now, thank you"								
+		"Compendium_tenhero_challenge1"		"10 HERO CHALLENGE"
+
 		"Compendium_ConfirmRerollHeroesDesc"	"You may only reroll your Heroes once. Only uncompleted Heroes will be rerolled."
 		"Compendium_RerollYes"					"Yes, reroll my Heroes"
 		

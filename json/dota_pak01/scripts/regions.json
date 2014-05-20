@@ -968,7 +968,7 @@
     "Austria": {
       "region": "9",
       "matchgroup": "8",
-      "disable_proxies": "1",
+      "proxy_allow": "none",
       "latitude": "48.1200",
       "longitude": "16.2200",
       "display_name": "#dota_region_austria",
@@ -985,7 +985,7 @@
       "longitude": "151.211111",
       "display_name": "#dota_region_australia",
       "ip_range": "103.10.125.0/24",
-      "disable_proxies": "1",
+      "proxy_allow": "leagueonly",
       "division": "se_asia",
       "clusters": [
         "171"
@@ -997,7 +997,7 @@
       "latitude": "-33.925278",
       "longitude": "18.423889",
       "display_name": "#dota_region_southafrica",
-      "disable_proxies": "1",
+      "proxy_allow": "leagueonly",
       "division": "europe",
       "alert_at_capacity": "0",
       "ip_range": [
