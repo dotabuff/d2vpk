@@ -12053,6 +12053,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
   		"Notification_CompendiumMessage8"		"Voting for the Arcana Showdown will end in 24 hours. Which hero will receive the next Arcana?"
   		"Notification_CompendiumMessage9"		"Voting for the All Star Match will end in 24 hours.  This is serious business!"
   		"Notification_CompendiumMessage10"		"Voting for the Solo Championship competitors has been added to the Compendium."
+  		"Notification_CompendiumPoints"			"Congratulations!  You have had %s1 Points added to your Compendium."
 
 
 
@@ -12392,6 +12393,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"ToolActionCancel"		"Cancel"
 		"RefurbishItem"			"Refurbish"
 		"InfuseEgg"				"Infuse Egg"
+		"CompendiumPoints"		"Apply to Compendium"
 		"UsingTool"				"Using %s1 on %s2."
 		"AutographItem"			"Apply Autograph"
 		"ToolUseReminder"		"Remember, once you have used a tool, it's gone!"
@@ -12482,6 +12484,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_GifterText_Title"			"Gifts have been given!"
 		
 		"DOTA_TournamentDrop"				"%s1 has received a prize for witnessing %s2!"
+		"DOTA_TournamentDropCountSingle"	"%s1 viewer has received a prize for witnessing %s2!"
+		"DOTA_TournamentDropCountMultiple"	"%s1 viewers have received a prize for witnessing %s2!"
 		"DOTA_TournamentDrop_FirstBlood"	"first blood"
 		"DOTA_TournamentDrop_GameEnd"		"glorious victory"
 		"DOTA_TournamentDrop_KillStreak"	"a multi-kill"
@@ -15888,6 +15892,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Sempiternal_Head_Style1"				"Trinity Hat"
 		"DOTA_Item_Axe_of_the_Savage_God_Style0"			"Axe"
 		"DOTA_Item_Axe_of_the_Savage_God_Style1"			"Sword"
+		"DOTA_Item_Esl_Lifestealer_Helm_Style0"				"Helm of Madness"
+		"DOTA_Item_Esl_Lifestealer_Helm_Style1"				"Crown of Madness"
 		
 		
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
@@ -17292,25 +17298,6 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"Compendium_ConfirmRerollHeroesDesc"	"You may only reroll your Heroes once. Only uncompleted Heroes will be rerolled."
 		"Compendium_RerollYes"					"Yes, reroll my Heroes"
-		
-		"DOTA_NewPlayerQuestion_Title"				"WELCOME TO DOTA 2"
-
-		"DOTA_PlayerOriginQuestion_Question"       "To improve your game experience, please share your familiarity with Dota 2 and similar games:"
-
-		"DOTA_PlayerOriginQuestion_BeginnerButton" "I'm a beginner."
-		"DOTA_PlayerOriginQuestion_RTSButton"      "I've played RTS games."
-		"DOTA_PlayerOriginQuestion_MOBAButton"     "I've played a game similar to Dota 2."
-		"DOTA_PlayerOriginQuestion_Dota2Button"    "I've played Dota 2."
-		"DOTA_PlayerOriginQuestion_MOBAExplanation" "Select the game you are most comfortable with:"
-
-		"DOTA_OtherGames_LOL"    "League of Legends"
-		"DOTA_OtherGames_DOTA"    "Dota Classic"
-		"DOTA_OtherGames_HON"    "Heroes of Newerth"
-		"DOTA_OtherGames_Smite"    "Smite"
-		"DOTA_OtherGames_Other"    "Another Game"
-
-		"DOTA_PlayerOriginQuestion_ConfirmationTitle"     "THANKS FOR RESPONDING"
-		"DOTA_PlayerOriginQuestion_ConfirmationTutorial"  "As a player new to Dota, you may be interested in the tutorials under Play > Training. They're a great first step towards dominating other players around the globe."
 		
 		"RequestBalanceBadAccount"		"Failed to request account balance: account not found."
 		"RequestBalanceAccountNotLinked"	"Failed to request account balance: your account is not linked to Perfect World."

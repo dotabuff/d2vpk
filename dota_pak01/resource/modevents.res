@@ -659,10 +659,8 @@
 
 	"dota_tournament_item_event"
 	{
-		"winner_name"			"string"
+		"winner_count"			"short"
 		"event_type"			"short"
-		"inhall"				"bool"
-		"itemdef"				"short"
 	}
 
 	"dota_hero_swap"

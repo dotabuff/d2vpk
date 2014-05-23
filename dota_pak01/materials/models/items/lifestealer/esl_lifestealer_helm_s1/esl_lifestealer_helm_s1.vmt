@@ -1,0 +1,25 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/lifestealer/esl_lifestealer_helm_s1/esl_lifestealer_helm_s1_color"
+	"$normalmap"		"models/items/lifestealer/esl_lifestealer_helm_s1/esl_lifestealer_helm_s1_normal"
+	"$maskmap1"		"models/items/lifestealer/esl_lifestealer_helm_s1/esl_lifestealer_helm_s1_mask1"
+	"$maskmap2"		"models/items/lifestealer/esl_lifestealer_helm_s1/esl_lifestealer_helm_s1_mask2"
+	"$alphatest"		"1"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$ENVMAPINTENSITY"		"0.400000"
+	"$SPECULAREXPONENT"		"10"
+	"$SPECULARSCALE"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$FRESNELWARP"		"models/heroes/life_stealer/lifestealer_fresnelranges"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
