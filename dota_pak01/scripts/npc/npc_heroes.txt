@@ -7990,7 +7990,7 @@
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
-		"HealthBarOffset"			"165"
+		"HealthBarOffset"			"195"
 		
 		// Precache
 		//-------------------------------------------------------------------------------------------------------------
@@ -10714,6 +10714,16 @@
 			"6"
 			{
 				"SlotIndex"	"6"
+				"SlotName"	"shapeshift"
+				"SlotText"	"#LoadoutSlot_Elder_Dragon"	
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"800"
+				"MaxPolygonsLOD1"	"500"
+			}
+			"7"
+			{
+				"SlotIndex"	"7"
 				"SlotName"	"taunt"
 				"SlotText"	"#LoadoutSlot_Taunt"	
 			}

@@ -1,0 +1,33 @@
+
+
+"CustomHero"
+{
+	"$baseTexture" "models/items/hex/sheep_hex/sheep_hex_color"
+	"$normalmap" "models/items/hex/sheep_hex/sheep_hex_normal"
+	"$maskmap1" "models/items/hex/sheep_hex/sheep_hex_masks1"
+	"$maskmap2" "models/items/hex/sheep_hex/sheep_hex_masks2"
+
+	$SPECULAREXPONENT 13
+	$SPECULARSCALE 2
+	$RIMLIGHTSCALE 1
+	
+	$ignorebudgetcheck 1
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.6"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

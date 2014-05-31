@@ -1,0 +1,45 @@
+
+
+"CustomHero"
+{
+	"$baseTexture" "models/items/lion/fish_stick/fish_stick_color"
+	"$detail1" "models/items/lion/fish_stick/detail_water"
+	"$normalmap" "models/items/lion/fish_stick/fish_stick_normal"
+	"$maskmap1" "models/items/lion/fish_stick/fish_stick_masks1"
+	"$maskmap2" "models/items/lion/fish_stick/fish_stick_masks2"
+
+	$SPECULAREXPONENT 12
+	$SPECULARSCALE 15
+//	$SPECULARCOLOR "[.7 .6 1]"
+	$SPECULARCOLOR "[1 1 .6]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 1 .5]"
+	
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR 1.5
+	$DETAIL1BLENDTOFULL 0
+
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" "5"
+	
+	$ignorebudgetcheck 1
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.09"
+			"texturescrollangle"	"90"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

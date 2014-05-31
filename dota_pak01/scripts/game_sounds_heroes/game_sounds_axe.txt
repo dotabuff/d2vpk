@@ -158,6 +158,32 @@
 	}
 }
 
+"Hero_Axe.BerserkersCall.Start"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"vo\axe\axe_ability_berserk_05.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "10.0"
+			"match_substring" "false"
+			"match_entry" "Hero_Axe.BerserkersCall.Start"
+			// "match_sound" "npc\dog\dog_idlemode_loop1.wav"
+			"match_channel" "false"
+			"match_entity" "false"
+			}
+		}
+	}
+}
 
 "Hero_Axe.Berserkers_Call"
 {
@@ -378,6 +404,50 @@
 		"start_stack"
 		{
 			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+//////////////
+
+"Hero_Axe.BerserkersCall.Item.Shoutmask"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/axe/berserkers_shoutmask.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "10.0"
+			"match_substring" "false"
+			"match_entry" "Hero_Axe.BerserkersCall.Item.Shoutmask"
+			// "match_sound" "npc\dog\dog_idlemode_loop1.wav"
+			"match_channel" "false"
+			"match_entity" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.2"
+			}
 		}
 	}
 }

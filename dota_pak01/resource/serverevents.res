@@ -109,4 +109,10 @@
 		"userid"	"short"		// user ID on server
 		"text"		"string"	// the say text
 	}
+
+	"player_full_update"
+	{
+		"userid"	"short"		// user ID on server
+		"count"		"short"		// Number of this full update
+	}
 }

@@ -1,0 +1,23 @@
+"CustomHero"
+{
+	"$baseTexture" 	"models/items/dragon_knight/dragon_immortal_1/dragon_immortal_fx"
+	"$normalmap" 	"models/items/dragon_knight/dragon_immortal_1/dragon_immortal_fx_normal"
+	"$maskmap1" 	"models/items/dragon_knight/dragon_immortal_1/dragon_immortal_fx_masks1"	
+	"$maskmap2" 	"models/items/dragon_knight/dragon_immortal_1/dragon_immortal_fx_masks2"	
+	
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE 10
+	//$alphatest 1
+	//$additive 1
+	$translucent 1
+
+	$SPECULARCOLOR "[2 .1 .1]"
+	$SPECULAR_BLOOM_SCALE  .5
+	$SPECULAR_BLOOM_COLOR "[2 .1 .1]"
+	$SPECULAR_BLOOM_SHIFT 0
+
+	$rimlightcolor "[2 .1 .1]"
+
+	$RIMLIGHTSCALE 8
+
+}

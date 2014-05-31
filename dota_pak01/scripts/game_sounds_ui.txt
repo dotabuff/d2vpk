@@ -1246,21 +1246,10 @@
 
 "Loot_Drop_Stinger_Common"
 {
-	"channel"		"CHAN_ITEM"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_01.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/stinger_loot_01.wav"
 }
 
 "Loot_Drop_Stinger_Uncommon"
@@ -1268,18 +1257,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"1"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_02.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/stinger_loot_02.wav"
 }
 
 "Loot_Drop_Stinger_Rare"
@@ -1287,18 +1265,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"1"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_03.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/stinger_loot_03.wav"
 }
 
 "Loot_Drop_Stinger_Mythical"
@@ -1306,94 +1273,40 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"1"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_04.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/stinger_loot_04.wav"
+
 }
 
 "Loot_Drop_Stinger_Legendary"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_05.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/stinger_loot_05.wav"
 }
 
 "Loot_Drop_Stinger_Ancient"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_06.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/stinger_loot_06.wav"
 }
 
 "Loot_Drop_Stinger_Immortal"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_07.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/stinger_loot_07.wav"
 }
 
 "Loot_Drop_Stinger_Arcana"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.6"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/arcana_loot.mp3"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/arcana_loot.mp3"
 }
 
 "Loot_Drop_Stinger_Short"
@@ -1401,18 +1314,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"1"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_short.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
+	"wave"			")ui/stingers/stinger_short.wav"
 }
 
 "Waitingforplayers_Boost_Hit"
@@ -1460,7 +1362,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_01.wav"
+	"wave"			"null.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1479,7 +1381,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_02.wav"
+	"wave"			"null.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1498,7 +1400,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_03.wav"
+	"wave"			"null.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1517,7 +1419,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_04.wav"
+	"wave"			"null.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1536,7 +1438,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_05.wav"
+	"wave"			"null.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1555,7 +1457,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_06.wav"
+	"wave"			"null.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1574,7 +1476,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_07.wav"
+	"wave"			"null.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1593,7 +1495,7 @@
 	"channel"		"CHAN_ITEM"
 	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/stinger_loot_07.wav"
+	"wave"			"null.wav"
 	"operator_stacks"
 	{
 		"update_stack"

@@ -1,0 +1,60 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/windrunner/windrunner_color"
+	"$normalmap" "models/heroes/windrunner/windrunner_normal"
+	"$maskmap1" "models/heroes/windrunner/windrunner_masks1"
+	"$maskmap2" "models/heroes/windrunner/windrunner_masks2"
+	"$diffusewarp" "models/heroes/windrunner/windrunner_lightwarp"
+ 
+ 
+ 	$SPECULAR_BLOOM_SCALE      2.5
+	$DETAILSCALEVAR 1
+ 
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[2.5 6.8 0.4]"
+	
+	$RIMLIGHTSCALE 5
+	$RIMLIGHTCOLOR "[1 1 0]"
+
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+	$alphatest 0
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1.5
+
+	//$ENVMAP "models/cubemaps/glossy_orange"
+	//$ENVMAPINTENSITY 1
+	//$MASKENVBYMETALNESS 1	
+
+	"$colorwarp" "models/heroes/statusEffects/colorwarp_goldenglow"
+	"$colorwarpintensity" ".5"
+	"$detail2"  "models\heroes\StatusEffects\burning"
+	//"$detail2"  "models\heroes\StatusEffects\shadow_shackle"
+	$DETAIL2BLENDMODE 2
+	$DETAIL2SCALE 24.25
+	$DETAIL2BLENDFACTOR 1
+	
+	
+	"$cloakPassEnabled" "1"
+        $translucent       1
+	//$additive 1
+       //$ALLOWDIFFUSEMODULATION 1
+
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail2texturetransform"
+			"texturescrollrate"	"0.1"
+			"texturescrollangle"	"85"
+			"texturescale" .75	
+		}
+		"UseCombinedTexture"
+		{
+		}	
+	}
+
+}

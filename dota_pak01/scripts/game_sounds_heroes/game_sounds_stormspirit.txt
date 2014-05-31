@@ -253,6 +253,33 @@
 	}
 }
 
+"Hero_StormSpirit.Orchid_BallLightning"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_81dB"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/storm_spirit/ball_orchid_01.wav"
+		"wave"		")weapons/hero/storm_spirit/ball_orchid_02.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "450"
+			}
+		}
+	}
+}
 
 "Hero_StormSpirit.Death"
 {
@@ -267,3 +294,5 @@
 		}
 	}
 }
+
+

@@ -380,3 +380,34 @@
 		}
 	}
 }
+
+
+"Hero_Tinker.MechaBoots.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+
+	"wave"			")weapons/hero/tinker/mecha_boots_lp.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_fade_in"
+			{
+				"input_max" "0.0"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "0.5"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	$baseTexture "models/items/warlock/hand_of_glory/hand_of_glory_color"
+	$normalmap "models/items/warlock/hand_of_glory/hand_of_glory_normal"
+
+	$maskmap1 "models/items/warlock/hand_of_glory/hand_of_glory_mask1"
+	$maskmap2 "models/items/warlock/hand_of_glory/hand_of_glory_mask2"
+	"$fresnelwarp" "models/heroes/earth_spirit/earth_spirit_fresnelranges"
+
+
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "1 1 1"
+	$RIMLIGHTCOLOR "1 1 1"
+	$RIMLIGHTSCALE 5
+	$RIMLIGHTEXPONENT 1
+
+	$SPECULAR_BLOOM_SCALE      0.1
+	$alphatest 1	
+
+	//$ambientscale 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

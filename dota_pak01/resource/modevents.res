@@ -858,5 +858,29 @@
 		"abilityIndex"	"short"
 		"abilityLevel"	"byte"
 	}
+
+	"compendium_event_actions_loaded"
+	{
+		"account_id"       "uint64"
+		"league_id"        "uint64"
+		"local_test"       "bool"
+		"original_points"  "uint64"
+	}
+	"compendium_selections_loaded"
+	{
+		"account_id"  "uint64"
+		"league_id"   "uint64"
+		"local_test"  "bool"
+	}
+	"compendium_set_selection_failed"
+	{	
+		"account_id"  "uint64"
+		"league_id"   "uint64"
+		"local_test"  "bool"
+	}
+
+	"community_cached_names_updated"
+	{
+	}
 }
 

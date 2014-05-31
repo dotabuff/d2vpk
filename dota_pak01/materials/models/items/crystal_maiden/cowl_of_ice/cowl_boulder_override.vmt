@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	"$baseTexture" "models/particle/cracked_boulder_color"
+	"$normalmap" "models/particle/cracked_boulder_normal"
+	"$detail1"  "models/heroes/statusEffects/frozen"
+	"$maskmap1" "models/particle/cracked_boulder_mask1"
+	"$maskmap2" "models/particle/cracked_boulder_mask2"
+
+//	"$diffusewarp" "models/particle/cracked_boulder_diffusewarp"
+//	$FRESNELWARP "models/particle/cracked_boulder_fresnelranges"
+
+	$SPECULAREXPONENT 10
+	$SPECULARBLENDTOFULL 1
+	$SPECULARCOLOR "[.25 .25 1]"
+	$SPECULARSCALE 40
+	
+	$RIMLIGHTCOLOR "[0.24 0.24 1]"
+	$RIMLIGHTSCALE 30
+	//$SPECULAR_BLOOM_SCALE	10
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1.5
+
+	"$cloakPassEnabled" "1"
+	$CLOAK_BLUR_AMOUNT        1.5
+
+	"$colorwarp" "models/heroes/statusEffects/colorwarp_frost"
+	"$colorwarpintensity" "1.5"
+
+	//$cloakintensity 0.25   //blend % with original base color
+	//$cloakfactor 0.25       
+	//$refractamount 0.25     //level of refraction
+
+        $translucent       1
+
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.25"
+			"texturescrollangle"	 "0.25"	
+		}
+		"UseCombinedTexture"
+		{
+		}	
+	}
+}

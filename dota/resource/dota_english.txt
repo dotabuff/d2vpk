@@ -3108,12 +3108,13 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_puck_phase_shift_Note2"									"Puck is invulnerable during Phase Shift."
 		"DOTA_Tooltip_ability_puck_phase_shift_duration"								"DURATION:"
 		"DOTA_Tooltip_ability_puck_dream_coil"											"Dream Coil"
-		"DOTA_Tooltip_ability_puck_dream_coil_Description"								"Creates a coil of volatile magic that latches onto enemy Heroes, stunning them for .5 seconds and damaging them.  If the enemy hero stretches the coil by moving too far away, it snaps, deals damage again and stuns.\n\nUpgradable by Aghanim's Scepter."
+		"DOTA_Tooltip_ability_puck_dream_coil_Description"								"Creates a coil of volatile magic that latches onto enemy Heroes, stunning them for .5 seconds and damaging them.  If the enemy hero stretches the coil by moving too far away, it snaps, stunning and dealing additional damage.\n\nUpgradable by Aghanim's Scepter."
 		"DOTA_Tooltip_ability_puck_dream_coil_Lore"										"The Faerie Dragon sows confusion by forcing its enemies to vividly dream about their own mortality."
+		"DOTA_Tooltip_ability_puck_dream_coil_coil_duration"							"COIL DURATION:"
+		"DOTA_Tooltip_ability_puck_dream_coil_coil_init_damage_tooltip"							"INITIAL DAMAGE:"
 		"DOTA_Tooltip_ability_puck_dream_coil_coil_break_radius"						"BREAK RADIUS:"
 		"DOTA_Tooltip_ability_puck_dream_coil_coil_stun_duration"						"BREAK STUN:"
 		"DOTA_Tooltip_ability_puck_dream_coil_coil_break_damage"						"BREAK DAMAGE:"
-		"DOTA_Tooltip_ability_puck_dream_coil_coil_duration"							"COIL DURATION:"
 		"DOTA_Tooltip_ability_puck_dream_coil_coil_duration_scepter"					"SCEPTER COIL DURATION:"
 		"DOTA_Tooltip_ability_puck_dream_coil_coil_break_damage_scepter"				"SCEPTER BREAK DAMAGE:"
 		"DOTA_Tooltip_ability_puck_dream_coil_aghanim_description"						"Increases damage from coil breaks and increases coil duration."
@@ -3690,10 +3691,9 @@ Over the coming months, the boy Karroch sneaked food and medicinal draughts to t
 		//TEMPLAR ASSASSIN
 		"DOTA_Tooltip_ability_templar_assassin_refraction"								"Refraction"
 		"DOTA_Tooltip_ability_templar_assassin_refraction_Lore"							"Manipulating her psionic veil, Lanaya bends nature's law to her will."
-		"DOTA_Tooltip_ability_templar_assassin_refraction_Description"					"Templar Assassin becomes highly elusive, avoiding damage while gaining a bonus to her damage.  These effects are separate, and have a limited number of instances"
+		"DOTA_Tooltip_ability_templar_assassin_refraction_Description"					"Templar Assassin becomes highly elusive, avoiding damage and gaining a bonus to her damage.  The damage and avoidance effects are separate, and have a limited number of instances."
 		"DOTA_Tooltip_ability_templar_assassin_refraction_Note0"						"Damage as HP Removal bypasses Refraction (it won't reduce the charges)."
-		"DOTA_Tooltip_ability_templar_assassin_refraction_Note1"						"The damage and block instances are separate."
-		"DOTA_Tooltip_ability_templar_assassin_refraction_Note2"						"Only instances of 5 or more damage will trigger Refraction."
+		"DOTA_Tooltip_ability_templar_assassin_refraction_Note1"						"Only instances of 5 or more damage will trigger Refraction."
 		"DOTA_Tooltip_ability_templar_assassin_refraction_instances"					"INSTANCES:"
 		"DOTA_Tooltip_ability_templar_assassin_refraction_bonus_damage"					"BONUS DAMAGE:"
 		"DOTA_Tooltip_ability_templar_assassin_refraction_duration"						"DURATION:"
@@ -4227,12 +4227,11 @@ It is said that on the dawn of the First Day, all the night creatures perished. 
 		"DOTA_Tooltip_ability_batrider_flamebreak_stun_duration"			"STUN DURATION:"
 		"DOTA_Tooltip_ability_batrider_flamebreak_explosion_radius"			"RADIUS:"
 		"DOTA_Tooltip_ability_batrider_firefly"								"Firefly"
-		"DOTA_Tooltip_ability_batrider_firefly_Description"					"Batrider takes to the skies, laying down a flaming trail from the air.  While flying, the trail of fire destroys trees and damages enemies in its path, and Batrider gains the movement capabilities of a flying unit."
+		"DOTA_Tooltip_ability_batrider_firefly_Description"					"Batrider takes to the skies, laying down a flaming trail from the air.  While flying, the trail of fire destroys trees and damages enemies in its path, and Batrider gains unobstructed movement and vision."
 		"DOTA_Tooltip_ability_batrider_firefly_Lore"						"When an enemy escapes into the Yama Raskav Jungle, most would cut through the brush to find the fugitive.  Batrider just chooses to destroy the jungle along with his foes."
 		"DOTA_Tooltip_ability_batrider_firefly_Note0"						"During this the Batrider can fly above units, trees and impassable terrain."
 		"DOTA_Tooltip_ability_batrider_firefly_Note1"						"If duration ends when above impassable terrain, the Batrider can get stuck."
-		"DOTA_Tooltip_ability_batrider_firefly_Note2"						"The fire destroys trees."
-		"DOTA_Tooltip_ability_batrider_firefly_Note3"						"The trail persists through Batrider's death."
+		"DOTA_Tooltip_ability_batrider_firefly_Note2"						"The trail persists through Batrider's death."
 		"DOTA_Tooltip_ability_batrider_firefly_damage_per_second"			"DAMAGE OVER TIME:"
 		"DOTA_Tooltip_ability_batrider_firefly_radius"						"RADIUS:"
 		"DOTA_Tooltip_ability_batrider_firefly_duration"					"DURATION:"
@@ -4853,7 +4852,8 @@ Raised with other young mages in a hidden cantonment among the hills of the Hazh
 		"DOTA_Tooltip_ability_brewmaster_thunder_clap_Lore"							"A slam of Mangix' mighty keg starts the festivities."
 		"DOTA_Tooltip_ability_brewmaster_thunder_clap_Description"					"Slams the ground, dealing damage and slowing the movement speed and attack rate of nearby enemy land units."
 		"DOTA_Tooltip_ability_brewmaster_thunder_clap_radius"						"RADIUS:"
-		"DOTA_Tooltip_ability_brewmaster_thunder_clap_duration"						"DURATION:"
+		"DOTA_Tooltip_ability_brewmaster_thunder_clap_duration"						"HERO DURATION:"
+		"DOTA_Tooltip_ability_brewmaster_thunder_clap_duration_creeps"						"CREEP DURATION:"
 		"DOTA_Tooltip_ability_brewmaster_thunder_clap_damage"						"DAMAGE:"
 		"DOTA_Tooltip_ability_brewmaster_thunder_clap_movement_slow"				"%MOVEMENT SLOW:"
 		"DOTA_Tooltip_ability_brewmaster_thunder_clap_attack_speed_slow"			"ATTACK SLOW:"
@@ -4861,7 +4861,8 @@ Raised with other young mages in a hidden cantonment among the hills of the Hazh
 		"DOTA_Tooltip_ability_brewmaster_drunken_haze_Lore"							"The Order of the Oyo's solution to all problems - another round!"
 		"DOTA_Tooltip_ability_brewmaster_drunken_haze_Description"					"Drenches a small area in alcohol, causing their movement speed to be reduced, and causing their attacks to have a chance to miss."
 		"DOTA_Tooltip_ability_brewmaster_drunken_haze_Note0"						"Drunken Haze cannot be disjointed."
-		"DOTA_Tooltip_ability_brewmaster_drunken_haze_duration"						"DURATION:"
+		"DOTA_Tooltip_ability_brewmaster_drunken_haze_duration"						"HERO DURATION:"
+		"DOTA_Tooltip_ability_brewmaster_drunken_haze_duration_creeps"						"CREEP DURATION:"
 		"DOTA_Tooltip_ability_brewmaster_drunken_haze_movement_slow"				"%MOVEMENT SLOW:"
 		"DOTA_Tooltip_ability_brewmaster_drunken_haze_miss_chance"					"%MISS CHANCE:"
 		"DOTA_Tooltip_ability_brewmaster_drunken_haze_radius"						"RADIUS:"
@@ -6026,6 +6027,7 @@ Though victorious, the survivors saw little to celebrate: the city lay in ruins,
 		"DOTA_Tooltip_ability_earth_spirit_rolling_boulder_attack_slow"		"ATTACK SLOW:"
 		"DOTA_Tooltip_ability_earth_spirit_geomagnetic_grip"				"Geomagnetic Grip"
 		"DOTA_Tooltip_ability_earth_spirit_geomagnetic_grip_Description"	"Earth Spirit pulls the target allied unit or Stone Remnant to his location.  Enemies struck by the flying target will be silenced, and take damage if the flying target is a Stone Remnant."
+		"DOTA_Tooltip_ability_earth_spirit_geomagnetic_grip_Note0"							"Will not work on a unit inside Chronosphere, Duel, or Black Hole."
 		"DOTA_Tooltip_ability_earth_spirit_geomagnetic_grip_Lore"			"Like calls to like. Even the minerals found in the blood and bones of living beings are not immune to the call of the Earth Spirit."
 		"DOTA_Tooltip_ability_earth_spirit_geomagnetic_grip_radius"			"RADIUS:"
 		"DOTA_Tooltip_ability_earth_spirit_geomagnetic_grip_rock_damage"	"STONE DAMAGE:"
@@ -8397,7 +8399,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_item_urn_heal"					"Soul Release"
 		"DOTA_Tooltip_modifier_item_urn_heal_Description"		"Regenerating %0fMODIFIER_PROPERTY_TOOLTIP% HP per second"
 		"DOTA_Tooltip_modifier_item_urn_damage"					"Soul Release"
-		"DOTA_Tooltip_modifier_item_urn_damage_Description"		"Taking 25 magic damage per second"
+		"DOTA_Tooltip_modifier_item_urn_damage_Description"		"Taking 25 damage per second."
 		
 		"DOTA_Tooltip_modifier_item_vladmir_aura"				"Vladmir's Aura"
 		"DOTA_Tooltip_modifier_item_vladmir_aura_Description"	"Under the effects of Vladmir's Aura"
@@ -8500,6 +8502,11 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_modifier_lina_fiery_soul"						"Fiery Soul"
 		"DOTA_Tooltip_modifier_lina_fiery_soul_Description"			"Attack Speed increased by %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% and Movement Speed by %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
 		
+		"DOTA_Tooltip_modifier_aegis_regen"						"Aegis Regeneration"
+		"DOTA_Tooltip_modifier_aegis_regen_description"						"The Aegis of the Immortal has expired. Quickly restoring health and mana."
+		
+		
+		
 		
 		
 		"DOTA_Tooltip_modifier_backdoor_protection_active"		"Backdoor Protection"
@@ -8558,7 +8565,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		// Ghost: Frost Attack
 
 		"DOTA_Tooltip_ability_ghost_frost_attack"											"Frost Attack"
-		"DOTA_Tooltip_ability_ghost_frost_attack_Description"								"The Ghost launches an eerie attack that chills his enemies to their bones."
+		"DOTA_Tooltip_ability_ghost_frost_attack_Description"								"The Ghost launches an eerie attack that chills her enemies to their bones."
 		"DOTA_Tooltip_ability_ghost_frost_attack_movespeed_slow"							"%MOVE SLOW:"
 		"DOTA_Tooltip_ability_ghost_frost_attack_attackspeed_slow"							"ATTACK SLOW:"
 		"DOTA_Tooltip_ability_ghost_frost_attack_duration"									"DURATION:"
@@ -9420,6 +9427,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_finding_team_match_time_only"								"Finding Team Match... [%s1]"
 		"featured_match_passport_message"								"Purchase a Compendium to be eligible to play the featured match of the week!"
 		"buypassport"													"Buy Compendium"
+		"compendium_promo_immortals"					"Eleven New Immortal Items"
+		"compendium_promo_immortals_desc"			"Available now with the Compendium"
 		"compendium_level"												"LEVEL"
 		"compendium_not_activated_other_user"							"This player has not activated their International 2014 Compendium"
 		"compendium_activate_button"									"BUY NOW - %s1"
@@ -10486,7 +10495,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_ability_item_gem_Note0"									"Disabled while on a courier."
 		"DOTA_Tooltip_ability_item_gem_Note1"									"Gives vision in a 1100 radius."
 
-		"DOTA_Tooltip_ability_item_ghost_Description"							"Active: Ghost Form - Enter ghost form and become unable to attack or be attacked, but take %extra_spell_damage_percent%%% extra magic damage. Using a Teleport Scroll dispels Ghost Form."
+		"DOTA_Tooltip_ability_item_ghost_Description"							"Active: Ghost Form - Enter ghost form and become unable to attack or be attacked, but take 40%% extra magic damage. Using a Teleport Scroll dispels Ghost Form."
 		"DOTA_Tooltip_ability_item_ghost_Note0"								"Ends if you become magic immune, and will have no effect if you are already magic immune."
 		"DOTA_Tooltip_ability_item_ghost_Note1"								"Shares cooldown with Ethereal Blade."
 		"DOTA_Tooltip_ability_item_ghost_duration"							"GHOST DURATION:"
@@ -11425,6 +11434,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"watch_or_filter_by_label"			"Or, filter by"
 						
 		//Match Details 
+		"MD_GOLD_and_XP"					"GOLD AND XP"
+		"MD_The_Radiant"					"The Radiant"
+		"MD_The_Dire"						"The Dire"
 		"MD_MATCH_LABEL"					"MATCH ID"
 		"MD_DATE_LABEL"						"DATE"
 		"MD_DURATION_LABEL"					"DURATION"
@@ -11436,7 +11448,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"MD_GOLD_L"							"GOLD"
 		"MD_LAST_HITS_L"					"LAST HITS"
 		"MD_DENIES_L"						"DENIES"
-		"MD_GOLD/MIN_L"						"GOLD/MIN"
+		"MD_GOLD/MIN_L"						"GOLD/MIN"
+		"MD_GOLD_EARNED"					"GOLD EARNED"
+		"MD_GOLD_CURRENT"					"CURRENT GOLD"
 		"MD_XP/MIN_L"						"XP/MIN"
 		"MD_KILLS_L"						"KILLS"
 		"MD_DEATHS_L"						"DEATHS"
@@ -12007,7 +12021,6 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"Notifications_New"						"New Notifications"
 		"Notifications_All"						"Notifications"
-		"Notifications_Description"				"This is a list of all of your Notifications."
 		"Notifications_ViewAll"					"View Old Notifications"
 		"Notifications_Requesting"				"Retrieving Notifications..."
 		"Notifications_Failed"					"Failed to Retrieve Notifications."
@@ -12054,6 +12067,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
   		"Notification_CompendiumMessage9"		"Voting for the All Star Match will end in 24 hours.  This is serious business!"
   		"Notification_CompendiumMessage10"		"Voting for the Solo Championship competitors has been added to the Compendium."
   		"Notification_CompendiumPoints"			"Congratulations!  You have had %s1 Points added to your Compendium."
+		"Notification_FantasyMatchupResultsWin"		"Congratulations!  You have defeated %s1 this week by a score of %s2 to %s3 in Fantasy League %s4."
+		"Notification_FantasyMatchupResultsLoss"	"Unfortunately, you were defeated by %s1 this week by a score of %s2 to %s3 in Fantasy League %s4."
+		"Notification_FantasyMatchupResultsTie"		"You've managed to tie %s1 this week with a score of %s2 to %s3 in Fantasy League %s4."
 
 
 
@@ -12190,7 +12206,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Socketing_Finalize_Body"					"Gems inserted into an item will be bound to the item and can only be removed with an Artificer's Hammer. Continue?"
 
 		"DOTA_Socketing_Legacy_Title"					"LEGACY WARNING"
-		"DOTA_Socketing_Legacy_Body"					"Changing the color or effect of this item WILL REMOVE it's Legacy quality! This is not reversible. Continue?"
+		"DOTA_Socketing_Legacy_Body"					"Changing the color or effect of this item WILL REMOVE it's Legacy quality! This is not reversible. Continue?"
+		
+		"DOTA_noSocketsMsg"								"Add a Socket"
 
 		"DOTA_Reset_Gem_Count_Option"					"Reset Inscribed Count"
 		"DOTA_Reset_Gem_Counts"							"Resetting a gem will return any Inscribed counts to 0. Counts removed in this way cannot be recovered. Are you sure you want to continue?"
@@ -12236,6 +12254,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Team_Zephyr"					"Zephyr"
 		"DOTA_Team_MVPPhoenix"				"MVP Phoenix"
 		"DOTA_Team_ViciGaming"				"ViCi Gaming"
+		"DOTA_Team_Titan"					"Titan"
+		"DOTA_Team_Team_Empire"				"Team Empire"
+		"DOTA_Team_Newbee"					"NewBee"
 
 		"DOTA_ProGear_Econ_Tooltip"			"%s1 Pro Gear"
 		
@@ -12664,6 +12685,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"LoadoutSlot_Shapeshift"							"Shapeshift"
 		"LoadoutSlot_Wolves"								"Wolves"
 		"LoadoutSlot_loading_screen"						"Loading Screen"
+		"LoadoutSlot_Elder_Dragon"							"Elder Dragon Form"
 
 		"TF_Style_Desc"										"Style: %s1" // Yes, it should be prefixed "TF_"
 		"DOTA_UnlockStyle"									"Unlock Style"
@@ -13602,6 +13624,16 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"KillEaterEvent_Clockwerk_RocketKills"	"Rocket Flare Kills"
 		"KillEaterEvent_Clockwerk_BlindRocketKills"	"Blind Rocket Flare Kills"
 
+		"KillEaterEvent_StormSpirit_BallDamage"			"Ball Lightning Damage"
+		"KillEaterEvent_StormSpirit_BallKills"			"Ball Lightning Kills"
+		"KillEaterEvent_StormSpirit_DoubleRemnantKills"	"Static Remnant Double Kills"
+		"KillEaterEvent_StormSpirit_VortexKills"		"Electric Vortex Kills"
+		
+		"KillEaterEvent_Tinker_Rearms"					"Rearms"
+		"KillEaterEvent_Tinker_TPsToBase"				"Teleports to Base"
+		"KillEaterEvent_Tinker_DoubleMissileKills"		"Heat-Seeking Missle Double Kills"
+		"KillEaterEvent_Tinker_LaserKills"				"Laser Kills"
+
 		"KillEaterEvent_GamesPlayed"			"Games Played"
 
 		"KillEaterEvent_DreamLeague_DreamPoints"	"Dreams Imposed"
@@ -13956,6 +13988,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_Player_Card_Favorite_Heroes"		"Tournament Picks in 2013"
 		"DOTA_Tooltip_Player_Card_Featured_Match"		"Featured Match ID: %s1"
 		"DOTA_Tooltip_Player_Card_Description"			"Name: %s1\nAge: %s2\nCountry: %s3\nTeam: %s4\nRole: %s5"
+		"DOTA_Tooltip_Player_Card_International_Champion_2011"	"International Champion 2011"
+		"DOTA_Tooltip_Player_Card_International_Champion_2012"	"International Champion 2012"
+		"DOTA_Tooltip_Player_Card_International_Champion_2013"	"International Champion 2013"
 
 		"DOTA_EggEssenceResponse"				"Madness! The egg cannot possibly contain more energy of this type.\nTry using a different kind of essence."
 		"DOTA_EggEssenceResponse_Corrupted"		"The egg has become irreversibly corrupted by darkness.\nYou cannot imbue it any further."
@@ -14205,6 +14240,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"DOTA_Chat_PlayerKilledXmas"						"%s1 just pwned %s2's head!"
 		"DOTA_Chat_PlayerKilledAssistXmas"					"%s1 was just killed!"
+
+		"DOTA_Chat_HeroesRemaining"							"Team %s2 has %s1 hero respawns remaining!"
 
 		"DOTA_Tooltip_ability_greevil_magic_missile"								"Greevil Missile"
 		"DOTA_Tooltip_ability_greevil_magic_missile_Description"					"BLUE ESSENCE\nFires a greevilish magic missile at an enemy unit, stunning and dealing damage."
@@ -15203,6 +15240,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Goal_Reached"				"COMPLETED!"
 		"DOTA_TIP_PP_ContributionDesc"	"Want to contribute more to the prize pool? Why not pick up an extra Compendium for a friend?  Don't forget you can check out your friend's predictions by clicking on the Compendium in their profile."
 		"DOTA_BuyCompendium"			"Buy Another Compendium"		
+		"DOTA_BuyCompendiumQuick"		"Buy Compendium"		
+		"DOTA_BuyCompendiumPoints"		"Buy 2400 Points"		
 		
 		// Team Cup
 		"DOTA_TIP_TC_Title"				"TEAM CUP"
@@ -15680,7 +15719,17 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_ftp_dendi_back"	"Crow's Feet"
 		"DOTA_Anim_Mod_twister"		"Twister"
 		"DOTA_Anim_Mod_telebolt"	"Teleboltin'!"
-		
+		"DOTA_Anim_Mod_glory"		"Glorious!"
+		"DOTA_Anim_Mod_MGC"		"Muh Keen Gun"
+		"DOTA_Anim_Mod_moth"		"Krobelus"
+		"DOTA_Anim_Mod_windy"		"Sylvan Cascade!"
+		"DOTA_Anim_Mod_iron"		"Iron Tail!"
+		"DOTA_Anim_Mod_everylasting_array"	"Everlasting Array"
+		"DOTA_Anim_Mod_fishstick"	"Fish!"
+		"DOTA_Anim_Mod_dragonterror"	"Dragonterror"
+		"DOTA_Anim_Mod_rampant"	"Rampant Outrage"
+		"DOTA_Anim_Mod_glacier"	"Yulsaria's Glacier"
+
 		"Invalid_Soul"	"Invalid"
 		"DOTA_Soul_Gem_Raving_Aristocrat"	"Raving Aristocrat"
 
@@ -15999,6 +16048,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Dota_Economy_Acknowledge"			"Accept"
 		"Dota_Economy_Acknowledge_All_Purchases"		"Accept All Purchases"
 		"Dota_Economy_Acknowledge_All_Trades"		"Accept All Trades"
+		"Dota_Economy_Acknowledge_All_Count"		"Accept All (%s1)"
 		"Dota_Economy_Reward_Subtitle"		"%s1 slot item for %s2"
 
 		"DOTA_PlayerName_ixmike"			"Liquid`ixmike88"
@@ -16197,8 +16247,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_SelVal"	"Selection '%s1' in compendium page '%s2' has choices with the same values" 
 		"CompendiumPageError_SelValInv" "Selection '%s1' in compendium page '%s2' has a choice with a value <= 0. Choice values must be greater than 0." 
 		"CompendiumPageError_SelTTVal"	"Selection '%s1' in compendium page '%s2' has a tooltip_data entry with a value that isn't in its choices list." 
-		"CompendiumPageError_NoAnswer"	"Selection '%s1' in compendium page '%s2' has no 'answer' key in its 'result' section"
-		"CompendiumPageError_MissAnswer" "Selection '%s1' in compendium page '%s2' has an 'answer' key that doesn't match any of its choices"
+		"CompendiumPageError_NoAnswer"	"Selection '%s1' in compendium page '%s2' has no 'answer' or 'answers' key in its 'result' section"
+		"CompendiumPageError_MissAnswer" "Selection '%s1' in compendium page '%s2' has an 'answer' or 'answers' key that doesn't match any of its choices"
 		"CompendiumPageError_Timer"		"Timer '%s1' has an invalid epoch time"
 		"CompendiumPageError_UnknownAction"		"Object '%s1' references unknown action '%s2'"
 		"CompendiumPageError_DupeKey"	"Keyvalues block '%s1' contains multiple keys with the same name of '%s2'."
@@ -17296,6 +17346,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Compendium_popup_notrightnow"		"Not right now, thank you"								
 		"Compendium_tenhero_challenge1"		"10 HERO CHALLENGE"
 
+		
+		"Compendium_LiveGame_Seal"			"LIVE GAME!"
+		
 		"Compendium_ConfirmRerollHeroesDesc"	"You may only reroll your Heroes once. Only uncompleted Heroes will be rerolled."
 		"Compendium_RerollYes"					"Yes, reroll my Heroes"
 		
@@ -17305,6 +17358,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"RequestBalanceFailedTimeout" "Timed out waiting for response to account balance request. Please try again later."
 		"DOTA_CurrentBalance"	"Balance: %s1"
 		"DOTA_ItemPrice"	"Item Price: %s1"
+		"DOTA_ItemPrice_ImmediatePurchase"	"Buy Now: %s1"
 		"DOTA_RechargeAccount"	"Recharge Account"
 		"DOTA_PurchaseItem"	"Purchase Item"
 		"DOTA_PurchaseInProgress_Title"	"Purchase In Progress"
@@ -17332,12 +17386,14 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Compendium_StretchGoal12"	"Special Environmental Effects"
 		"DOTA_Compendium_StretchGoal13"	"Base Customization"
 
-		"Compendium_LiveGame_Seal"			"LIVE GAME!"
+		"Compendium_LiveGame_InProgress"	"Live Game In Progress!"
 
-		"DOTA_Compendium_Compendium_Popup_StretchgoalReached"		"Compendium Unlocked"
+		"DOTA_Compendium_Compendium_Popup_StretchgoalReached"		"Reward Released"
 		"DOTA_Compendium_Compendium_Popup_StretchgoalReached_Desc"	"A Stretch Goal reward is now available to all Compendium users!"
 		"DOTA_Compendium_Compendium_Popup_StretchgoalReachedView"	"Awesome!"
-		"DOTA_Compendium_Compendium_Popup_StretchgoalNoCompendium"		"It appears that you don't have a Compendium yet"
+		"DOTA_Compendium_Compendium_Popup_StretchgoalNoCompendium"		"It appears that you don't have a Compendium yet"
+		
+		"DOTA_Compendium_Profile_False"    "This player has not activated their International 2014 Compendium"
 
 
 	}

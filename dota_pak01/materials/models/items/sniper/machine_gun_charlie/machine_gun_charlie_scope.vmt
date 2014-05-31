@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	$baseTexture  "models/items/sniper/machine_gun_charlie/machine_gun_charlie_scope"
+	"$normalmap"  "models/items/sniper/machine_gun_charlie/machine_gun_charlie_scope_normal"
+	"$maskmap1"		"models/items/sniper/machine_gun_charlie/machine_gun_charlie_scope_masks1"
+	"$maskmap2"		"models/items/sniper/machine_gun_charlie/machine_gun_charlie_scope_masks2"
+	
+//  "$maskmap1" "models/heroes/nyx/helmet_masks1"
+//  "$maskmap2" "models/heroes/nyx/helmet_masks2"
+	
+	"$specularwarp" "models/items/sniper/machine_gun_charlie/machine_gun_charlie_scope_lightwarp"
+//	"$specularwarp" "models/heroes/nyx/nyx_lightwarp"
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 4
+	
+	//"$envmap" "models/cubemaps/glossy"
+	//"$envmapintensity" "1"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+//	$alphatest 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

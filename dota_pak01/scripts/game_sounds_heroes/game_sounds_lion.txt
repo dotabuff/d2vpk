@@ -135,6 +135,22 @@
 	}
 }
 
+"Hero_Lion.Hex.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"wave"			"ambient/frog.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
 "Hero_Lion.ManaDrain"
 {
 	"channel"		"CHAN_STATIC"
@@ -255,6 +271,62 @@
 		"start_stack"
 		{
 			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+//
+
+"Hero_Lion.Hex.Fishstick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/lion/fishstick_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Lion.Fishstick.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			"ambient/fish/fish.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"General.Fish_flap"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_80dB"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"		"ambient\fish\fish_flap_01.wav"
+		"wave"		"ambient\fish\fish_flap_02.wav"
+		"wave"		"ambient\fish\fish_flap_03.wav"
+		"wave"		"ambient\fish\fish_flap_04.wav"
+		"wave"		"ambient\fish\fish_flap_05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
 		}
 	}
 }

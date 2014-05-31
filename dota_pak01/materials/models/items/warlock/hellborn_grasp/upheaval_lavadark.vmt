@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	$baseTexture "models/items/warlock/hellborn_grasp/upheaval_lavadark_color"
+	$normalmap "models/items/warlock/hellborn_grasp/upheaval_lavadark_normal"
+
+	$maskmap1 "models/items/warlock/hellborn_grasp/upheaval_lavadark_mask1"
+	$maskmap2 "models/items/warlock/hellborn_grasp/upheaval_lavadark_mask2"
+	"$fresnelwarp" "models/heroes/earth_spirit/earth_spirit_fresnelranges"
+
+
+
+	$SPECULAREXPONENT 6
+	$SPECULARSCALE 8
+	$SPECULARCOLOR "0.4 0.4 1"
+	$RIMLIGHTCOLOR "0.4 0.4 1"
+	$RIMLIGHTSCALE 8
+	$RIMLIGHTEXPONENT 1
+
+	$SPECULAR_BLOOM_SCALE      0.1
+	$alphatest 1	
+
+	//$ambientscale 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

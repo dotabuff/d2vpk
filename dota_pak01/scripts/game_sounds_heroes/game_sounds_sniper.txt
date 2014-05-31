@@ -11,13 +11,14 @@
 		}
 	}
 }
-
+	
 "Hero_Sniper.attack"
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_78dB"
 	"pitch"			"95,105"
+
 	"wave"			"weapons/hero/sniper/sniper_attack.wav"
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -28,11 +29,11 @@
 		}
 	}
 }
-
+	
 "Hero_Sniper.ProjectileImpact"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95,105"
 	"rndwave"
@@ -63,6 +64,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
+
 	"wave"			"weapons/hero/sniper/sniper_assassinate_load.wav"
 }
 
@@ -72,9 +74,8 @@
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
-
 	"wave"	"weapons/hero/sniper/assasinate_projectile.wav"
-
+	
 	"soundentry_version" "2"
 	"operator_stacks"
 	{
@@ -276,6 +277,125 @@
 			"block_dist"
 			{
 				"input2" "2000"
+			}
+		}
+	}
+}
+
+// Ma keen gun Cosmetic Weapon
+
+"Hero_Sniper.MKG_attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/sniper/mkg_attack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Sniper.MKG_impact"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/sniper/mkg_impact_01.wav"
+		"wave"		"weapons/hero/sniper/mkg_impact_02.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+		}
+	}
+}
+
+"Ability.MKG_AssassinateLoad"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/sniper/mkg_as_load.wav"
+}
+
+"Hero_Sniper.MKG_deathshot"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"150"
+	"wave"			"weapons/hero/sniper/mkg_attack.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Sniper.MKG_ShrapnelShoot"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/sniper/mkg_shrapnel_fire.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+		}
+	}
+}
+
+"Hero_Sniper.MKG_ShrapnelShatter"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"weapons/hero/sniper/mkg_shrapnel_shatter.wav"
+	
+	"soundentry_version" "1"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
 			}
 		}
 	}
