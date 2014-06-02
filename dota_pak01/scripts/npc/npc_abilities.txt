@@ -870,7 +870,7 @@
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"AbilityUnitDamageType"			"DAMAGE_TYPE_HP_REMOVAL"	
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -1072,7 +1072,7 @@
 			"06"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"knockback_duration"		"0.5"
+				"knockback_duration"		"0.6 0.7 0.8 0.9"
 			}
 			"07"
 			{
@@ -1228,7 +1228,7 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"50 50 50 50"		
+		"AbilityManaCost"				"50"		
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -1322,17 +1322,17 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"echo_slam_damage_range"	"525"
+				"echo_slam_damage_range"	"575"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"echo_slam_echo_search_range" "550"
+				"echo_slam_echo_search_range" "575"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"echo_slam_echo_range"		"500"
+				"echo_slam_echo_range"		"575"
 			}
 			"04"
 			{
@@ -1496,7 +1496,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"omni_slash_damage"			"175 250"
+				"omni_slash_damage"			"200 225"
 			}
 			"02"
 			{
@@ -1851,7 +1851,7 @@
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"7.0 7.0 7.0 7.0"
-		"AbilityDuration"				"1.6 1.6 1.6 1.6"
+		"AbilityDuration"				"1.6 1.7 1.8 1.9"
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
@@ -1880,7 +1880,7 @@
 			"03"
 			{
 				"var_type"						"FIELD_FLOAT"
-				"light_strike_array_stun_duration"	"1.6"
+				"light_strike_array_stun_duration"	"1.6 1.7 1.8 1.9"
 			}
 		}
 	}
@@ -2236,7 +2236,7 @@
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityDamage"					"90 180 270 360"
+		"AbilityDamage"					"50 140 230 320"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -2269,7 +2269,7 @@
 			"05"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"arrow_min_stun"	"0.5"
+				"arrow_min_stun"	"0.01"
 			}
 			"06"
 			{
@@ -2279,7 +2279,7 @@
 			"07"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"arrow_bonus_damage"	"100"
+				"arrow_bonus_damage"	"140"
 			}
 			"08"
 			{
@@ -5536,12 +5536,12 @@
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"sight_duration"		"3.0 3.0 3.0 3.0"
+				"sight_duration"		"4.5"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"spread_aoe"	"250"
+				"spread_aoe"	"325"
 			}
 		}
 	}
@@ -5772,7 +5772,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"40 60 80 100"
+				"bonus_damage"			"60 80 100 120"
 			}
 			"03"
 			{
@@ -6659,7 +6659,7 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"150"
+		"AbilityManaCost"				"75 100 125"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -7199,8 +7199,8 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"13.0 13.0 13.0 13.0"
-		"AbilityDuration"				"6.0 6.0 6.0 6.0"
+		"AbilityCooldown"				"11"
+		"AbilityDuration"				"6.0"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -7498,7 +7498,7 @@
 			"03"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"8.0 8.0 8.0 8.0"
+				"duration"					"11"
 			}
 		}
 	}
@@ -8153,6 +8153,11 @@
 			{
 				"var_type"				"FIELD_FLOAT"
 				"respawn"		"0.3"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"respawn_constant"		"0"
 			}
 		}
 	}
@@ -8848,7 +8853,7 @@
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"435"
+		"AbilityCastRange"				"450 475 500 525"
 		"AbilityCastPoint"				"0.452 0.452 0.452 0.452"
 		
 		// Time		
@@ -8888,7 +8893,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cast_range_tooltip"		"435"
+				"cast_range_tooltip"		"450 475 500 525"
 			}
 		}
 	}
@@ -9760,7 +9765,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_attack_speed"	"100 100 100 100"
+				"bonus_attack_speed"	"130"
 			}
 			
 			"02"
@@ -11445,12 +11450,12 @@
 			"03"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage"			"66 100 144"
+				"damage"			"80 120 160"
 			}
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage_scepter"	"100 150 200"
+				"damage_scepter"	"100 160 220"
 			}
 		}
 	}
@@ -12303,12 +12308,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"speed_bonus"			"-7 -14 -21 -28"
+				"speed_bonus"			"-10 -18 -26 -34"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"attack_bonus_tooltip"	"-7 -14 -21 -28"
+				"attack_bonus_tooltip"	"-10 -18 -26 -34"
 			}
 			"03"
 			{
@@ -13302,7 +13307,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"duration"					"15.0 20.0 25.0 30.0"
+				"duration"					"20.0 25.0 30.0 35.0"
 			}
 			"02"
 			{
@@ -14532,7 +14537,7 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"60 50 40 30"
+		"AbilityManaCost"				"60"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -14827,7 +14832,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"movement_speed_pct"	"-18 -22 -26 -30"
+				"movement_speed_pct"	"-15 -20 -25 -30"
 			}
 			"03"
 			{
@@ -16160,25 +16165,21 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"initial_freeze_damage"	"60.0"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
 				"freeze_duration"		"0.4"
 			}
-			"04"
+			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"freeze_cooldown"		"0.77 0.74 0.71 0.69 0.66 0.63 0.60"
 				"levelkey"				"quaslevel"	
 			}
-			"05"
+			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"freeze_damage"			"30.0"
+				"freeze_damage"			"7 14 21 28 35 42 49"
+				"levelkey"				"quaslevel"	
 			}
-			"06"
+			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"damage_trigger"		"10.0"
@@ -17236,7 +17237,7 @@
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"50.0 45 40 35"
-		"AbilityDuration"				"12"
+		"AbilityDuration"				"10"
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -17253,12 +17254,12 @@
 			"01"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"howl_duration"		"12.0"		
+				"howl_duration"		"10.0"		
 			}
 			"02"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"hero_bonus_damage"	"20 30 40 50"
+				"hero_bonus_damage"	"14 26 38 50"
 			}
 			"03"
 			{
@@ -18969,7 +18970,7 @@
 			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"leech_damage"					"24 36 48 60"
+				"leech_damage"					"15 30 45 60"
 			}		
 			"03"
 			{
@@ -19257,7 +19258,6 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -19338,7 +19338,7 @@
 			"04"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"fireblast_mana_cost"	"30 70 110"
+				"fireblast_mana_cost"	"20 40 60"
 			}
 
 			"05"
@@ -23427,7 +23427,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"21"
+		"AbilityCooldown"				"21 20 19 18"
 
 
 		// Cost
@@ -23574,7 +23574,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30.0 24.0 18.0"
+		"AbilityCooldown"				"25 20 15"
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
@@ -23787,7 +23787,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"resist_debuff"			"-18 -24 -30 -36"
+				"resist_debuff"			"-30 -35 -40 -45"
 			}
 			"02"
 			{
@@ -24102,7 +24102,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"stomp_damage"					"80 85 90 95"
+				"stomp_damage"					"80 90 100 110"
 			}
 			"05"
 			{
@@ -24153,7 +24153,7 @@
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"stomp_damage"					"80 85 90 95"
+				"stomp_damage"					"80 90 100 110"
 			}
 		}
 	}

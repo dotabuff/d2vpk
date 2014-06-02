@@ -2349,7 +2349,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_juggernaut_blade_dance_blade_dance_crit_mult"				"%CRITICAL DAMAGE:"
 		"DOTA_Tooltip_ability_juggernaut_blade_dance_blade_dance_crit_chance"			"%CRITICAL CHANCE:"
 		"DOTA_Tooltip_ability_juggernaut_omni_slash"									"Omnislash"
-		"DOTA_Tooltip_ability_juggernaut_omni_slash_Description"						"Juggernaut leaps towards the target enemy unit with a damaging attack, and then slashes other nearby enemy units, dealing between 175-250 damage per slash.  Juggernaut is invulnerable for the duration.\n\nUpgradable by Aghanim's Scepter."
+		"DOTA_Tooltip_ability_juggernaut_omni_slash_Description"						"Juggernaut leaps towards the target enemy unit with a damaging attack, and then slashes other nearby enemy units, dealing between 200-225 damage per slash.  Juggernaut is invulnerable for the duration.\n\nUpgradable by Aghanim's Scepter."
 		"DOTA_Tooltip_ability_juggernaut_omni_slash_Lore"								"'The fruits of discipline; with practice comes strength.'"
 		"DOTA_Tooltip_ability_juggernaut_omni_slash_Note0"								"Interrupts channeling spells of the primary target."
 		"DOTA_Tooltip_ability_juggernaut_omni_slash_Note1"								"Can target magic immune units."
@@ -3019,7 +3019,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_zuus_arc_lightning_Lore"									"Arc Lightning is Zeus' favorite spell to use against puny mortals."
 		"DOTA_Tooltip_ability_zuus_arc_lightning_jump_count"							"JUMPS:"
 		"DOTA_Tooltip_ability_zuus_lightning_bolt"										"Lightning Bolt"
-		"DOTA_Tooltip_ability_zuus_lightning_bolt_Description"							"Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius. Can be cast on the ground, affecting the closest enemy hero in 250 range."
+		"DOTA_Tooltip_ability_zuus_lightning_bolt_Description"							"Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius. Can be cast on the ground, affecting the closest enemy hero in %spread_aoe% range."
 		"DOTA_Tooltip_ability_zuus_lightning_bolt_sight_radius_day"						"SIGHT RADIUS:"
 		"DOTA_Tooltip_ability_zuus_lightning_bolt_sight_duration"						"SIGHT DURATION:"
 		"DOTA_Tooltip_ability_zuus_lightning_bolt_Lore"									"A shocking punishment for rebellious heathen."
@@ -4212,7 +4212,7 @@ It is said that on the dawn of the First Day, all the night creatures perished. 
 
 		//BATRIDER
 		"DOTA_Tooltip_ability_batrider_sticky_napalm"						"Sticky Napalm"
-		"DOTA_Tooltip_ability_batrider_sticky_napalm_Description"			"Drenches an area in sticky oil, amplifying damage from Batrider's attacks and abilities and slowing the movement speed and turn rate of enemies in the area.  Additional casts of Sticky Napalm continue to increase damage, up to 10 stacks."
+		"DOTA_Tooltip_ability_batrider_sticky_napalm_Description"			"Drenches an area in sticky oil, amplifying damage from Batrider's attacks and abilities and slowing the movement speed and turn rate of enemies in the area.  Additional casts of Sticky Napalm continue to increase damage, up to 10 stacks.  The extra damage is halved against creeps."
 		"DOTA_Tooltip_ability_batrider_sticky_napalm_Lore"					"It's not uncommon to hear the Rider cackle while he increases the flammability of his opponents."
 		"DOTA_Tooltip_ability_batrider_sticky_napalm_Note0"					"All damage from Batrider gets amplified, except for Radiance and Orb of Venom."
 		"DOTA_Tooltip_ability_batrider_sticky_napalm_damage"				"EXTRA DAMAGE:"
@@ -4594,10 +4594,9 @@ You can dodge projectiles and abilities while transforming.
 		"DOTA_Tooltip_ability_invoker_cold_snap_Lore"								"Sadron's Protracted Frisson."
 		"DOTA_Tooltip_ability_invoker_cold_snap_Note0"								"The freeze stun only triggers on damage greater than 10 after reductions."
 		"DOTA_Tooltip_ability_invoker_cold_snap_duration"							"DURATION:"
-		"DOTA_Tooltip_ability_invoker_cold_snap_initial_freeze_damage"				"INITIAL DAMAGE:"
+		"DOTA_Tooltip_ability_invoker_cold_snap_freeze_damage"				"FREEZE DAMAGE:"
 		"DOTA_Tooltip_ability_invoker_cold_snap_freeze_duration"					"FREEZE DURATION:"
 		"DOTA_Tooltip_ability_invoker_cold_snap_freeze_cooldown"					"FREEZE COOLDOWN:"
-		"DOTA_Tooltip_ability_invoker_cold_snap_freeze_damage"						"BONUS DAMAGE:"
 		"DOTA_Tooltip_ability_invoker_ghost_walk"									"Ghost Walk"
 		"DOTA_Tooltip_ability_invoker_ghost_walk_Description"						"Invoker manipulates the ice and electrical energies around him, rendering his body invisible. The elemental imbalance created as a consequence slows nearby enemies based on the level of <font color='#7998b5'>Quas</font>, and slows Invoker as well based on the level of <font color='#d671a9'>Wex</font>."
 		"DOTA_Tooltip_ability_invoker_ghost_walk_Lore"								"Myrault's Hinder-Gast."
@@ -5018,6 +5017,7 @@ Upon his steed Armageddon he rides, wading into battle with maniacal frenzy, dra
 		"DOTA_Tooltip_ability_ogre_magi_bloodlust_Lore"								"'Running’s not as fun as hitting… Not one bit fun.'"
 		"DOTA_Tooltip_ability_ogre_magi_bloodlust_Note0"							"When multicast, nearby allies will be selected randomly in an 575 area of effect to receive Bloodlust."
 		"DOTA_Tooltip_ability_ogre_magi_bloodlust_Note1"							"Can affect siege units."
+		"DOTA_Tooltip_ability_ogre_magi_bloodlust_Note2"							"Can be cast on magic immune allies."
 		"DOTA_Tooltip_ability_ogre_magi_bloodlust_duration"							"DURATION:"
 		"DOTA_Tooltip_ability_ogre_magi_bloodlust_bonus_attack_speed"				"ATTACK SPEED:"
 		"DOTA_Tooltip_ability_ogre_magi_bloodlust_bonus_movement_speed"				"%MOVE SPEED:"
@@ -8833,7 +8833,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Hero_Selection_AdvFilter_Attack_Melee"		"Melee"
 		"DOTA_Hero_Selection_AdvFilter_Attack_Ranged"		"Ranged"
 		"DOTA_Hero_Selection_AdvFilter_MyHero_Favorites"	"Your Favorites"
-		"DOTA_Hero_Selection_AdvFilter_MyHero_HeroQuest"    "10 Hero Challenge"
+		"DOTA_Hero_Selection_AdvFilter_MyHero_HeroQuest"    "Hero Challenge"
 		"DOTA_Hero_Selection_AdvFilter_MyHero_LeastUsed"	"Your Least Used"
 		"DOTA_Hero_Selection_AdvFilter_MyHero_BestAs"		"Your Best"
 		"DOTA_Hero_Selection_AdvFilter_MyHero_Recent"		"Your Recently Played"
@@ -8863,6 +8863,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Hero_Selection_TT_Favorite_Text"		"Mark this hero as one of your favorites."
 		"DOTA_Hero_Selection_TT_HeroQuest_Title"    "10 Hero Challenge"
 		"DOTA_Hero_Selection_TT_HeroQuest_Text"     "This hero is part of your 10 Hero Challenge."
+		"DOTA_Hero_Selection_TT_DailyHeroQuest_Title"    "Daily Hero Challenge"
+		"DOTA_Hero_Selection_TT_DailyHeroQuest_Text"     "This hero is part of your Daily Hero Challenge."
 
 		"DOTA_Hero_Selection_Layout_Edit_Title"		"Customize Layout"
 		"DOTA_Hero_Selection_Layout_Save_Title"		"Save Changes"
@@ -11434,9 +11436,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"watch_or_filter_by_label"			"Or, filter by"
 						
 		//Match Details 
-		"MD_GOLD_and_XP"					"GOLD AND XP"
-		"MD_The_Radiant"					"The Radiant"
-		"MD_The_Dire"						"The Dire"
+		"MD_GOLD_and_XP"					"GOLD AND XP"
+		"MD_The_Radiant"					"The Radiant"
+		"MD_The_Dire"						"The Dire"
 		"MD_MATCH_LABEL"					"MATCH ID"
 		"MD_DATE_LABEL"						"DATE"
 		"MD_DURATION_LABEL"					"DURATION"
@@ -11448,8 +11450,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"MD_GOLD_L"							"GOLD"
 		"MD_LAST_HITS_L"					"LAST HITS"
 		"MD_DENIES_L"						"DENIES"
-		"MD_GOLD/MIN_L"						"GOLD/MIN"
-		"MD_GOLD_EARNED"					"GOLD EARNED"
+		"MD_GOLD/MIN_L"						"GOLD/MIN"
+		"MD_GOLD_EARNED"					"GOLD EARNED"
 		"MD_GOLD_CURRENT"					"CURRENT GOLD"
 		"MD_XP/MIN_L"						"XP/MIN"
 		"MD_KILLS_L"						"KILLS"
@@ -12206,8 +12208,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Socketing_Finalize_Body"					"Gems inserted into an item will be bound to the item and can only be removed with an Artificer's Hammer. Continue?"
 
 		"DOTA_Socketing_Legacy_Title"					"LEGACY WARNING"
-		"DOTA_Socketing_Legacy_Body"					"Changing the color or effect of this item WILL REMOVE it's Legacy quality! This is not reversible. Continue?"
-		
+		"DOTA_Socketing_Legacy_Body"					"Changing the color or effect of this item WILL REMOVE it's Legacy quality! This is not reversible. Continue?"
+		
 		"DOTA_noSocketsMsg"								"Add a Socket"
 
 		"DOTA_Reset_Gem_Count_Option"					"Reset Inscribed Count"
@@ -16239,6 +16241,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_ImgSelIdx"	"Invalid 'selection_index' of '%s1' in image '%s2'."
 		"CompendiumPageError_ImgShowSelIdx"	"Invalid 'show_selection_index' of '%s1' in image '%s2'."
 		"CompendiumPageError_ImgSelVal"	"Invalid selection choice '%s1' in 'show_selection_images' section of image '%s2'."
+		"CompendiumPageError_ImgBadStyle" "Bad image style '%s1 for image '%s2'."
 		"CompendiumPageError_DynTxtSel"	"Text '%s1' on page '%s2' contains invalid % selection_X %. No preregistered selection with that index." 
 		"CompendiumPageError_NoTxtList"	"Couldn't find a textlist named '%s1' on page '%s2'" 
 		"CompendiumPageError_TOCPage"	"table_of_contents_page page '%s1' doesn't exist." 
@@ -17345,10 +17348,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Compendium_popup_nocompendium"		"It appears that you don't have a Compendium yet!"
 		"Compendium_popup_notrightnow"		"Not right now, thank you"								
 		"Compendium_tenhero_challenge1"		"10 HERO CHALLENGE"
-
-		
-		"Compendium_LiveGame_Seal"			"LIVE GAME!"
-		
+		"Compendium_dailyhero_challenge"	"DAILY HERO CHALLENGE"
+		"Compendium_LiveGame_Seal"			"LIVE GAME!"
+		
 		"Compendium_ConfirmRerollHeroesDesc"	"You may only reroll your Heroes once. Only uncompleted Heroes will be rerolled."
 		"Compendium_RerollYes"					"Yes, reroll my Heroes"
 		
@@ -17385,16 +17387,26 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Compendium_StretchGoal11"	"1v1 Mid-Only Match Making"
 		"DOTA_Compendium_StretchGoal12"	"Special Environmental Effects"
 		"DOTA_Compendium_StretchGoal13"	"Base Customization"
+		"DOTA_Compendium_StretchGoal14"	"Daily Hero Challenge"
+		"DOTA_Compendium_StretchGoal15"	"Alternate Voice Vote"
+		"DOTA_Compendium_StretchGoal16"	"Favorite Hero Challenge"
+		"DOTA_Compendium_StretchGoal17"	"Model Update Vote"
+		"DOTA_Compendium_StretchGoal18"	"Multi-Kill Banner"
+		"DOTA_Compendium_StretchGoal19"	"Afterparty Broadcast"
+		"DOTA_Compendium_StretchGoal20"	"New Upgraded Creeps"
+		"DOTA_Compendium_StretchGoal21"	"A-Z Challenge Support"
+		"DOTA_Compendium_StretchGoal22"	"Victory Prediction Taunt"
 
 		"Compendium_LiveGame_InProgress"	"Live Game In Progress!"
 
 		"DOTA_Compendium_Compendium_Popup_StretchgoalReached"		"Reward Released"
 		"DOTA_Compendium_Compendium_Popup_StretchgoalReached_Desc"	"A Stretch Goal reward is now available to all Compendium users!"
 		"DOTA_Compendium_Compendium_Popup_StretchgoalReachedView"	"Awesome!"
-		"DOTA_Compendium_Compendium_Popup_StretchgoalNoCompendium"		"It appears that you don't have a Compendium yet"
-		
+		"DOTA_Compendium_Compendium_Popup_StretchgoalNoCompendium"		"It appears that you don't have a Compendium yet"
 		"DOTA_Compendium_Profile_False"    "This player has not activated their International 2014 Compendium"
 
+		"DOTA_Compendium_DailyHero_TimeRemaining" "TIME UNTIL NEXT ROLL"
+		"DOTA_Compendium_DailyHero_RollAvailable" "ROLL FOR A NEW HERO"
 
 	}
 }

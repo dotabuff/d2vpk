@@ -314,3 +314,53 @@
 		}
 	}
 }
+
+////////////////////////////////////////////////////////////////////////////
+
+"Hero_DeathProphet.CarrionSwarm.Mortis"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/death_prophet/swarm_cast_mortis.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "800"
+			}
+		}
+	}
+}
+
+"Hero_DeathProphet.CarrionSwarm.Damage.Mortis"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90, 110"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/death_prophet/impact_mortis01.wav"
+		"wave"		"weapons/hero/death_prophet/impact_mortis02.wav"
+		"wave"		"weapons/hero/death_prophet/impact_mortis03.wav"
+		"wave"		"weapons/hero/death_prophet/impact_mortis04.wav"
+		"wave"		"weapons/hero/death_prophet/impact_mortis05.wav"
+		"wave"		"weapons/hero/death_prophet/impact_mortis06.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
