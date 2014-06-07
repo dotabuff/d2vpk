@@ -1,0 +1,32 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/lone_druid/iron_claw_weapon/iron_claw_weapon_color"
+	"$normalmap"		"models/items/lone_druid/iron_claw_weapon/iron_claw_weapon_normal"
+	"$diffusewarp"		"models/heroes/sven/sven_diffusewarp"
+	"$alphatest"		"1"
+	"$detail1"		"models/heroes/lone_druid/ld_body_glow"
+	"$maskmap1"		"models/items/lone_druid/iron_claw_weapon/iron_claw_weapon_mask1"
+	"$maskmap2"		"models/items/lone_druid/iron_claw_weapon/iron_claw_weapon_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAREXPONENT"		"23"
+	"$SPECULARSCALE"		"22"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$RIMLIGHTSCALE"		"10"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"5"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

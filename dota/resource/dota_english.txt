@@ -4396,7 +4396,7 @@ Six times his name was tolled from the great bell of Vashundol. Six and sixty ti
 		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_Note1"						"Kill will be granted to the source of the damage that triggers the shatter."
 		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_Note2"						"The instant kill doesn't work on illusions or Meepo clones."
 		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_Note3"						"The HP Freeze prevents most kinds of healing, including the fountain."
-		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_Note4"						"The frozen debuff can be purged."
+		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_Note4"						"The frozen debuff cannot be purged."
 		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_damage"						"DAMAGE:"
 		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_frostbite_duration"			"FROSTBITE DURATION:"
 		"DOTA_Tooltip_ability_ancient_apparition_ice_blast_dot_damage"					"FROSTBITE DAMAGE:"
@@ -12667,6 +12667,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"LoadoutSlot_Taunt"									"Taunt"
 		"LoadoutSlot_Courier"								"Courier"
 		"LoadoutSlot_Announcer"								"Announcer"
+		"LoadoutSlot_HeroicStatue"							"Heroic Statue"
 		"LoadoutSlot_Mega_Kills"							"Mega-Kill Announcer"
 		"LoadoutSlot_Fan"									"Fan"
 		"LoadoutSlot_Action_Item"							"Action Item"
@@ -13238,6 +13239,12 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		
 		"StoreBanner_Header_TreasureOfTheDiligentArtisan"		"Treasure of the Diligent Artisan"
 		"StoreBanner_Text_TreasureOfTheDiligentArtisan"			"There is artistry even in war."
+		
+		"StoreBanner_Header_TreasureOfTheTrappersPelt"			"Treasure of the Trapper's Pelt"
+		"StoreBanner_Text_TreasureOfTheTrappersPelt"			"Wealth from the wild!"
+		
+		"StoreBanner_Header_TreasureOfTheSilverStorm"			"Treasure of the Silver Storm"
+		"StoreBanner_Text_TreasureOfTheSilverStorm"			"Claim a bolt of fortune!"
 		
 		
 		"Playtab_Quiz_Title"				"The Shopkeeper's Quiz"
@@ -15728,7 +15735,6 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_iron"		"Iron Tail!"
 		"DOTA_Anim_Mod_everylasting_array"	"Everlasting Array"
 		"DOTA_Anim_Mod_fishstick"	"Fish!"
-		"DOTA_Anim_Mod_dragonterror"	"Dragonterror"
 		"DOTA_Anim_Mod_rampant"	"Rampant Outrage"
 		"DOTA_Anim_Mod_glacier"	"Yulsaria's Glacier"
 
@@ -15943,8 +15949,15 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Sempiternal_Head_Style1"				"Trinity Hat"
 		"DOTA_Item_Axe_of_the_Savage_God_Style0"			"Axe"
 		"DOTA_Item_Axe_of_the_Savage_God_Style1"			"Sword"
+		"DOTA_Item_Acolyte_of_Vengeance_Mask_Style0"			"Mask"
+		"DOTA_Item_Acolyte_of_Vengeance_Mask_Style1"			"Hood"
+		"DOTA_Item_Acolyte_of_Vengeance_Mask_Style2"			"Hooded Mask"
 		"DOTA_Item_Esl_Lifestealer_Helm_Style0"				"Helm of Madness"
 		"DOTA_Item_Esl_Lifestealer_Helm_Style1"				"Crown of Madness"
+		"DOTA_Item_Golden_Siblings_Dagger_Style0"			"Dagger"
+		"DOTA_Item_Golden_Siblings_Dagger_Style1"			"Broken Childhood"
+		"DOTA_Item_Staff_of_the_Infinite_Waves_Style0"			"Sea Serpent"
+		"DOTA_Item_Staff_of_the_Infinite_Waves_Style1"			"Trident"
 		
 		
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
@@ -17346,7 +17359,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Store_ItemType_Treasure_Seal"		"Treasure Seal"	
 			
 		"Compendium_popup_nocompendium"		"It appears that you don't have a Compendium yet!"
-		"Compendium_popup_notrightnow"		"Not right now, thank you"								
+
+		"Compendium_popup_notrightnow"		"View Next >"
+		
+		
 		"Compendium_tenhero_challenge1"		"10 HERO CHALLENGE"
 		"Compendium_dailyhero_challenge"	"DAILY HERO CHALLENGE"
 		"Compendium_LiveGame_Seal"			"LIVE GAME!"

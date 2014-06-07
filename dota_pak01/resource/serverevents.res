@@ -88,7 +88,7 @@
 	"player_disconnect"			// a client was disconnected
 	{
 		"userid"	"short"		// user ID on server
-		"reason"	"string"	// "self", "kick", "ban", "cheat", "error"
+		"reason"	"short"	// see networkdisconnect enum protobuf
 		"name"		"string"	// player name
 		"networkid"	"string"	// player network (i.e steam) id
 	}
