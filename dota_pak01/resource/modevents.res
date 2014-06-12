@@ -882,5 +882,17 @@
 	"community_cached_names_updated"
 	{
 	}
+
+	"spec_item_pickup"
+	{
+		"player_id"		"short"
+		"item_name"		"string"
+		"purchase"		"bool"
+	}
+
+	"spec_aegis_reclaim_time"
+	{
+		"reclaim_time"	"float"
+	}
 }
 

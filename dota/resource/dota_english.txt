@@ -6244,13 +6244,18 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_Ability_item_cyclone"				"Eul's Scepter of Divinity"
 		"DOTA_Tooltip_Ability_item_dagon"				"Dagon"
 		"DOTA_Tooltip_Ability_item_dagon_2"				"Dagon"
+		"DOTA_Tooltip_Ability_item_dagon_2L"			"Dagon (level 2)"
 		"DOTA_Tooltip_Ability_item_dagon_3"				"Dagon"
+		"DOTA_Tooltip_Ability_item_dagon_3L"			"Dagon (level 3)"
 		"DOTA_Tooltip_Ability_item_dagon_4"				"Dagon"
+		"DOTA_Tooltip_Ability_item_dagon_4L"			"Dagon (level 4)"
 		"DOTA_Tooltip_Ability_item_dagon_5"				"Dagon"
+		"DOTA_Tooltip_Ability_item_dagon_5L"			"Dagon (level 5)"
 		"DOTA_Tooltip_Ability_item_demon_edge"				"Demon Edge"
 		"DOTA_Tooltip_Ability_item_desolator"				"Desolator"
 		"DOTA_Tooltip_Ability_item_diffusal_blade"			"Diffusal Blade"
 		"DOTA_Tooltip_Ability_item_diffusal_blade_2"			"Diffusal Blade"
+		"DOTA_Tooltip_Ability_item_diffusal_blade_2L"		"Diffusal Blade (level 2)"
 		"DOTA_Tooltip_Ability_item_dust"				"Dust of Appearance"
 		"DOTA_Tooltip_Ability_item_eagle"				"Eaglesong"
 		"DOTA_Tooltip_Ability_item_energy_booster"			"Energy Booster"
@@ -6287,7 +6292,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_Ability_item_mystic_staff"			"Mystic Staff"
 		"DOTA_Tooltip_Ability_item_necronomicon"			"Necronomicon"
 		"DOTA_Tooltip_Ability_item_necronomicon_2"			"Necronomicon"
+		"DOTA_Tooltip_Ability_item_necronomicon_2L"			"Necronomicon (level 2)"
 		"DOTA_Tooltip_Ability_item_necronomicon_3"			"Necronomicon"
+		"DOTA_Tooltip_Ability_item_necronomicon_3L"			"Necronomicon (level 3)"
 		"DOTA_Tooltip_Ability_item_null_talisman"			"Null Talisman"
 		"DOTA_Tooltip_Ability_item_oblivion_staff"			"Oblivion Staff"
 		"DOTA_Tooltip_Ability_item_ogre_axe"				"Ogre Club"
@@ -9614,7 +9621,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"keybind_template_WASD"											"WASD"
 		"keybind_template_LEGACY"										"Legacy"
 		"keybind_template_MMO"											"MMO"
-		"keybind_template_MOBA"											"MOBA"
+		"keybind_template_LOL"											"League of Legends"
+		"keybind_template_HON"											"Heroes of Newerth"
+		"keybind_template_SMITE"										"Smite"
 		"or"																			"or"
 		
 		"UI_U"																			"U"
@@ -11141,8 +11150,24 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"DOTA_RPSTATUS_STARTGAME"		"Starting..."
 		
-		"DOTA_PlayerOriginQuestion_DotaButton"    "I've played the original Dota."
+		"DOTA_NewPlayerQuestion_Title"				"WELCOME TO DOTA 2"
 
+		"DOTA_PlayerOriginQuestion_Question"       "To improve your game experience, what is the closest type of game to Dota 2 you have played before?"
+
+		"DOTA_PlayerOriginQuestion_BeginnerButton" "I'm a beginner."
+		"DOTA_PlayerOriginQuestion_RTSButton"      "I've played RTS games."
+		"DOTA_PlayerOriginQuestion_MOBAButton"     "I've played a game similar to Dota 2."
+		"DOTA_PlayerOriginQuestion_Dota2Button"    "I've played Dota 2."
+		"DOTA_PlayerOriginQuestion_MOBAExplanation" "Select the game you are most comfortable with:"
+
+		"DOTA_OtherGames_LOL"    "League of Legends"
+		"DOTA_OtherGames_DOTA"    "DotA 1"
+		"DOTA_OtherGames_HON"    "Heroes of Newerth"
+		"DOTA_OtherGames_Smite"    "Smite"
+		"DOTA_OtherGames_Other"    "Another Game"
+
+		"DOTA_PlayerOriginQuestion_ConfirmationButton"    "LET'S PLAY"
+		"DOTA_PlayerOriginQuestion_ConfirmationTutorial"  "As a player new to Dota, you may be interested in the tutorials under the Training section of the Play tab. They're a great first step towards dominating other players around the globe."
 		"DOTA_PlayerOriginQuestion_ConfirmationSettings"  "Your keybindings and options are now set to the most commonly used settings for players with your experience.  You can customize these at any time by clicking on the settings icon."
 
 		"DOTA_GameEnd_PointsEarned"		"You have earned <font color='#7AD1F2'>%s1</font> points!"
@@ -12259,6 +12284,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Team_Titan"					"Titan"
 		"DOTA_Team_Team_Empire"				"Team Empire"
 		"DOTA_Team_Newbee"					"NewBee"
+		"DOTA_Team_CIS_Game"				"CIS Game"
+		"DOTA_Team_NaVi_NA"					"NaVi NA"
+		"DOTA_Team_Virtus_Pro"				"Virtus.pro"
+		"DOTA_Team_Arrow_Gaming"			"Arrow Gaming"
 
 		"DOTA_ProGear_Econ_Tooltip"			"%s1 Pro Gear"
 		
@@ -12713,7 +12742,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Store_Abilities"			"Abilities"
 		"Store_Featured"			"Featured"
 		"Store_Items"				"Items"
-		"Store_Treasure_Keys"		"Treasure Keys"
+		"Store_Treasure_Keys"		"Treasures"
 		"Store_Announcers"			"Announcers"
 		"Store_Couriers"			"Couriers"
 		"Store_Wards"				"Wards"
@@ -16074,6 +16103,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_PlayerName_BZZ"			"BZZ"
 		"DOTA_PlayerName_CaspeRRR"		"CaspeRRR"
 		"DOTA_PlayerName_Yol"	"RoX.KIS.yol"
+		"DOTA_PlayerName_Ohaiyo"	"Ohaiyo"
 
 		// Voice Credits
 		"DOTA_Credits_Tab"				"ACKNOWLEDGEMENTS"
@@ -16267,6 +16297,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"CompendiumPageError_MissAnswer" "Selection '%s1' in compendium page '%s2' has an 'answer' or 'answers' key that doesn't match any of its choices"
 		"CompendiumPageError_Timer"		"Timer '%s1' has an invalid epoch time"
 		"CompendiumPageError_UnknownAction"		"Object '%s1' references unknown action '%s2'"
+		"CompendiumPageError_SameElement"	"Visibility system found multiple elements named '%s1' on page '%s2'"
 		"CompendiumPageError_DupeKey"	"Keyvalues block '%s1' contains multiple keys with the same name of '%s2'."
 		"CompendiumError_Template"		"Couldn't find a template named '%s1'"
 		"CompendiumError_DupeTemplate"	"Found multiple templates named '%s1'"
@@ -17424,5 +17455,21 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Compendium_DailyHero_TimeRemaining" "TIME UNTIL NEXT ROLL"
 		"DOTA_Compendium_DailyHero_RollAvailable" "ROLL FOR A NEW HERO"
 
+		"DOTA_CIGO_Timescale"			"Timescale"
+		"DOTA_CIGO_GPM"					"GPM"
+		"DOTA_CIGO_XPM"					"XPM"
+		"DOTA_CIGO_GPMAVG"				"Average GPM"
+		"DOTA_CIGO_XPMAVG"				"Average XPM"
+		"DOTA_CIGO_History"				"Graphs showing your average performance with this Hero will appear in subsequent games."
+		"DOTA_CIGO_Finished"			"FINISHED"
+		"DOTA_CIGO_Discard"				"Ignore Game"
+		"DOTA_CIGO_DiscardAYS"			"Ignoring this game will cause it not to contribute to your overall averages."
+		"DOTA_CIGO_Discarded"			"Game being ignored. Stats will not be saved."
+		"DOTA_CIGO_Starting"			"WAITING FOR GAME START"
+		"DOTA_CIGO_FirstKill"			"Average Time of First Kill: %s1"
+		"DOTA_CIGO_FirstDeath"			"Average Time of First Death: %s1"
+		"DOTA_CIGO_Item"				"%s1 purchased: %s2"
+		"DOTA_CIGO_GraphDesc"			"The graph displays your current GPM & XPM, and previous game averages with this Hero. Average times for events will appear along the bottom."
+		"DOTA_CIGO_GraphControls"		"Settings"
 	}
 }

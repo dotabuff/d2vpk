@@ -4237,3 +4237,77 @@
 	"soundlevel"		"SNDLVL_NONE"
 	"wave"  		"ui/menu/browser_click_common.wav"
 }
+
+"ui.npd_check"
+{
+	"volume"		"0.6"
+	"wave"  "ui/menu/chat_open.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.2"	
+			}
+		}
+	}
+}
+
+"ui.npd_select"
+{
+	"volume"		"1"
+	"wave"  "ui/menu/shortwhoosh.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.2"	
+			}
+		}
+	}
+}
+
+"ui.npd_play"
+{
+	"volume"		"1"
+	"wave"  "ui/menu/profile_open.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.1"	
+			}
+		}
+	}
+}
+
+"ui.npd_character_entrance"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_75dB"
+
+	"wave"			")ui/shop_slide_down.wav" 
+}
+
+"ui.npd_welcome"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*/vo/announcer/announcer_welcome_01.mp3" 
+}
