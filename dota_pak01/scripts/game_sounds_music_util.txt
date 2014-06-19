@@ -23,7 +23,7 @@
 				"input_max_entries" "0.000000"
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "DotaMusic.GameStartup"
+				"match_entry" "valve_dota_001.music.ui_startup"
 			}
 		}
 		"update_stack"
@@ -31,7 +31,7 @@
 			"import_stack" 	"update_stop_and_play_at_time"
 			"uspat_play_entry"
 			{
-				"entry_name" "DotaMusic.WorldMap.Actual"
+				"entry_name" "valve_dota_001.music.ui_world_map"
 
 			}
 			"uspat_stop_time"
@@ -373,7 +373,7 @@
 				"execute_once" "true"
 				"input_execute"	"@spectator_music_should_play_hero_picker_and.output"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.HeroPicker" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.ui_hero_select" //Replace with the sound you want to play.
 			}
 			
 			"play_prehorn_entry" //play explore music
@@ -382,7 +382,7 @@
 				"execute_once" "true"
 				"input_execute"	"@spectator_music_should_play_prehorn_time_and.output"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.Prehorn" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.countdown" //Replace with the sound you want to play.
 			}
 			
 			//BLOCKEND
@@ -549,7 +549,7 @@
 				"execute_once" "false"
 				"input_execute"	"@other_music_playing_compare_min.output"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.StateExploreMusic" //Replace with the sound you want to play.
+				"entry_name" "DOTAMusic.StateLaningMusic" //Replace with the sound you want to play.
 			}
 
             // "stop_ramp_execution" //debug
@@ -621,7 +621,7 @@
 				"execute_once" "false"
 				"input_execute" "@state_death_music_request_opvar.output"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.StateHeroDeath" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.killed" //Replace with the sound you want to play.
 			}			
 			
 			"set_death_played_opvar" //if we're going to play explore music, set this opvar.
@@ -1281,7 +1281,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "DOTAMusic.BattleMusic_Roshan_01" //We allow no instances of Explore when the death stinger knells		
+				"match_entry" "valve_dota_001.music.roshan" //We allow no instances of Explore when the death stinger knells		
 			}			
 
 			"speakers_limit"
@@ -1341,7 +1341,7 @@
 				// "execute_once" "false"
 				// "input_execute"	"1.0"
 				// "input_start" "1"
-				// "entry_name" "DOTAMusic.StateExploreMusic" //Replace with the sound you want to play.
+				// "entry_name" "DOTAMusic.StateLaningMusic" //Replace with the sound you want to play.
 			// }
 		// }
 	// }
@@ -1350,7 +1350,7 @@
 
 // used code
 // util
-"DOTAMusic.BattleMusic_Epic" //Battle music request from the game
+"valve_dota_001.music.battle" //Battle music request from the game
 {
 	"channel"	 "CHAN_STATIC"
 	"volume"	 "0.60" 
@@ -1396,7 +1396,7 @@
 				"execute_once" "false"
 				"input_execute"	"@music_playing_and.output"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.BattleMusic_Epic_Picker" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.battle_picker" //Replace with the sound you want to play.
 			}
 		}
 	}
@@ -1404,7 +1404,7 @@
 	
 // used code
 // util matches played piece
-"DOTAMusic.BattleMusic_Epic_End"
+"valve_dota_001.music.battle_end"
 {
 	"channel"	 "CHAN_STATIC"
 	"volume"	 "0.60"
@@ -1450,17 +1450,17 @@
 			
 			"play_variation_1"
 			{
-				"entry_name" "DOTAMusic.BattleMusic_Epic_End_01" 
+				"entry_name" "valve_dota_001.music.battle_01_end" 
 			}
 			
 			"play_variation_2"
 			{
-				"entry_name" "DOTAMusic.BattleMusic_Epic_End_02" 
+				"entry_name" "valve_dota_001.music.battle_02_end" 
 			}
 			
 			"play_variation_3"
 			{
-				"entry_name" "DOTAMusic.BattleMusic_Epic_End_03" 
+				"entry_name" "valve_dota_001.music.battle_03_end" 
 			}
 			
 			// "block_entries"
@@ -1469,7 +1469,7 @@
 				// "input_active" "1.0"	
 				// "input_duration" "1.0"
 				// "match_substring" "false"
-				// "match_entry" "DOTAMusic.BattleMusic_Epic_End"
+				// "match_entry" "valve_dota_001.music.battle_end"
 				// "match_channel" "false"
 				// "match_entity" "false"
 			// }
@@ -1497,7 +1497,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.BattleMusic_Roshan_01" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.roshan" //Replace with the sound you want to play.
 			}	
 			
 		}
@@ -1524,7 +1524,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.BattleMusic_Roshan_End" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.roshan_end" //Replace with the sound you want to play.
 			}	
 		}
 	}
@@ -1550,7 +1550,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.SmokePopped" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.smoke" //Replace with the sound you want to play.
 			}				
 		}
 	}
@@ -1576,7 +1576,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.SmokeEndedHero" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.smoke_end_hero" //Replace with the sound you want to play.
 			}	
 			
 		}
@@ -1603,7 +1603,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.SmokeEndedTower" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.smoke_end_tower" //Replace with the sound you want to play.
 			}	
 			
 		}
@@ -1630,7 +1630,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.SmokeEndedCreep" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.smoke_end_creep" //Replace with the sound you want to play.
 			}			
 		}
 	}
@@ -1638,7 +1638,7 @@
 //BLOCKSTART //LANING MUSIC TUTORIAL
 // called from explore_picker
 // util
-"DOTAMusic.LaningMusicTutorial_01" //Laning 01 music master
+"valve_dota_001.music.laning_01" //Laning 01 music master
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.05"
@@ -1747,25 +1747,24 @@
 			"layer1"
 			{
 				"execute_once" "true"
-				"entry_name" "DOTAMusic.LaningMusicTutorial_01_Layer_01"
+				"entry_name" "valve_dota_001.music.laning_01_layer_01"
 			}
 			
 			"layer2"
 			{	
 				"execute_once" "true"
-				"entry_name" "DOTAMusic.LaningMusicTutorial_01_Layer_02"
+				"entry_name" "valve_dota_001.music.laning_01_layer_02"
 			}
 			
 			"layer3"
 			{
 				"execute_once" "true"
-				"entry_name" "DOTAMusic.LaningMusicTutorial_01_Layer_03"
+				"entry_name" "valve_dota_001.music.laning_01_layer_03"
 			}
 			
 			"update_track"
 			{
 				"operator" "track_update"
-				// "autoqueue_entry_at_end_point" "DOTAMusic.StateExploreMusic"
 				"stop_channel_on_track" "false"	//this is OK explore music is working 
 			}
 		}
@@ -1797,7 +1796,7 @@
 			
 			"4layer_stop"
 			{
-				"match_entry" "DOTAMusic.LaningMusicTutorial_01_Layer"
+				"match_entry" "valve_dota_001.music.laning_01_layer"
 			}
 			
 			"4layer_stop_self"
@@ -1806,7 +1805,7 @@
 				"input_execute" "1.0"
 				"stop_this_entry" "true"	
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" "DOTAMusic.LaningMusicTutorial"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -1815,7 +1814,7 @@
 }
 // called from explore_picker
 // util
-"DOTAMusic.LaningMusicTutorial_02" //Laning 01 music master
+"valve_dota_001.music.laning_02" //Laning 01 music master
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.05"
@@ -1880,25 +1879,24 @@
 			"layer1"
 			{
 				"execute_once" "true"
-				"entry_name" "DOTAMusic.LaningMusicTutorial_02_Layer_01"
+				"entry_name" "valve_dota_001.music.laning_02_layer_01"
 			}
 			
 			"layer2"
 			{	
 				"execute_once" "true"
-				"entry_name" "DOTAMusic.LaningMusicTutorial_02_Layer_02"
+				"entry_name" "valve_dota_001.music.laning_02_layer_02"
 			}
 			
 			//"layer3"
 			//{
 			//	"execute_once" "true"
-			//	"entry_name" "DOTAMusic.LaningMusicTutorial_01_Layer_03"
+			//	"entry_name" "valve_dota_001.music.laning_01_layer_03"
 			//}
 			
 			"update_track"
 			{
 				"operator" "track_update"
-				// "autoqueue_entry_at_end_point" "DOTAMusic.StateExploreMusic"
 				"stop_channel_on_track" "false"	//this is OK explore music is working 
 			}
 		}
@@ -1930,7 +1928,7 @@
 			
 			"4layer_stop"
 			{
-				"match_entry" "DOTAMusic.LaningMusicTutorial_02_Layer"
+				"match_entry" "valve_dota_001.music.laning_02_layer"
 			}
 			
 			"4layer_stop_self"
@@ -1939,7 +1937,7 @@
 				"input_execute" "1.0"
 				"stop_this_entry" "true"	
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" "DOTAMusic.LaningMusicTutorial"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -1949,7 +1947,7 @@
 
 //BLOCKSTART //EXPLORE MUSIC TUTORIAL
 
-"DOTAMusic.ExploreMusicTutorial_01" //Laning 01 music master
+"valve_dota_001.music.laning_03" //Laning 01 music master
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.05"
@@ -2059,25 +2057,24 @@
 			"layer1"
 			{
 				"execute_once" "true"
-				"entry_name" "DOTAMusic.ExploreMusicTutorial_01_Layer_01"
+				"entry_name" "valve_dota_001.music.laning_03_layer_01"
 			}
 			
 			"layer2"
 			{	
 				"execute_once" "true"
-				"entry_name" "DOTAMusic.ExploreMusicTutorial_01_Layer_02"
+				"entry_name" "valve_dota_001.music.laning_03_layer_02"
 			}
 			
 			"layer3"
 			{
 				"execute_once" "true"
-				"entry_name" "DOTAMusic.ExploreMusicTutorial_01_Layer_03"
+				"entry_name" "valve_dota_001.music.laning_03_layer_03"
 			}
 			
 			"update_track"
 			{
 				"operator" "track_update"
-				// "autoqueue_entry_at_end_point" "DOTAMusic.StateExploreMusic"
 				"stop_channel_on_track" "false"	//this is OK explore music is working 
 			}
 		}
@@ -2109,7 +2106,7 @@
 			
 			"4layer_stop"
 			{
-				"match_entry" "DOTAMusic.ExploreMusicTutorial_01_Layer"
+				"match_entry" "valve_dota_001.music.laning_03_layer"
 			}
 			
 			"4layer_stop_self"
@@ -2118,7 +2115,7 @@
 				"input_execute" "1.0"
 				"stop_this_entry" "true"	
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" "DOTAMusic.ExploreMusicTutorial"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -2126,7 +2123,7 @@
 	}
 }
 
-"DOTAMusic.StateExploreMusic"
+"DOTAMusic.StateLaningMusic"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.5"
@@ -2267,7 +2264,7 @@
 				"execute_once" "false"
 				"input_execute"	"@explore_day_night_variant_compare_day.output"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.ExploreMusic_Picker_Day" //Replace with the sound you want to play.
+				"entry_name" "DOTAMusic.LaningMusic_Picker_Day" //Replace with the sound you want to play.
 			}
 			
 			"play_explore_entry_night"
@@ -2276,7 +2273,7 @@
 				"execute_once" "false"
 				"input_execute"	"@explore_day_night_variant_compare_night.output"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.ExploreMusic_Picker_Night" //Replace with the sound you want to play.
+				"entry_name" "DOTAMusic.LaningMusic_Picker_Night" //Replace with the sound you want to play.
 			}
 			
             "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
@@ -2311,7 +2308,7 @@
 
 }
 
-"DOTAMusic.ExploreMusic_Picker_Day"
+"DOTAMusic.LaningMusic_Picker_Day"
 {
 	"channel"	 "CHAN_STATIC"
 	"volume"	 "0.1"
@@ -2367,29 +2364,19 @@
 				"input1" "@mod_added_num.output"
 			}
 			 
-			// "play_variation_1"
-			// {
-				// "entry_name" "DOTAMusic.LaningMusic_01"
-			// }
-			
-			// "play_variation_2"
-			// {
-				// "entry_name" "DOTAMusic.ExploreMusic_02"
-			// }
-			 
 			"play_variation_1"
 			{
-				"entry_name" "DOTAMusic.LaningMusicTutorial_01"
+				"entry_name" "valve_dota_001.music.laning_01"
 			}
 			
 			"play_variation_2"
 			{
-				"entry_name" "DOTAMusic.ExploreMusicTutorial_01"
+				"entry_name" "valve_dota_001.music.laning_03"
 			}
 			
 			"play_variation_3"
 			{
-				"entry_name" "DOTAMusic.LaningMusicTutorial_02" 
+				"entry_name" "valve_dota_001.music.laning_02" 
 			}
 			
 			"set_no_repeat_opvar"
@@ -2400,7 +2387,7 @@
 	}
 }
 
-"DOTAMusic.ExploreMusic_Picker_Night"
+"DOTAMusic.LaningMusic_Picker_Night"
 {
 	"channel"	 "CHAN_STATIC"
 	"volume"	 "0.1"
@@ -2448,29 +2435,19 @@
 				"input1" "@mod_added_num.output"
 			}
 			 
-			// "play_variation_1"
-			// {
-				// "entry_name" "DOTAMusic.LaningMusic_01"
-			// }
-			
-			// "play_variation_2"
-			// {
-				// "entry_name" "DOTAMusic.ExploreMusic_02"
-			// }
-			 
 			"play_variation_1"
 			{
-				"entry_name" "DOTAMusic.LaningMusicTutorial_01"
+				"entry_name" "valve_dota_001.music.laning_01"
 			}
 			
 			"play_variation_2"
 			{
-				"entry_name" "DOTAMusic.ExploreMusicTutorial_01"
+				"entry_name" "valve_dota_001.music.laning_03"
 			}
 			
 			 "play_variation_3"
 			 {
-				 "entry_name" "DOTAMusic.LaningMusicTutorial_02" 
+				 "entry_name" "valve_dota_001.music.laning_02" 
 			 }
 			
 			"set_no_repeat_opvar"
@@ -2482,7 +2459,7 @@
 }
 
 
-"DOTAMusic.BattleMusic_Epic_Picker"
+"valve_dota_001.music.battle_picker"
 {
 	"channel"	 "CHAN_STATIC"
 	"volume"	 "0.60"
@@ -2531,17 +2508,17 @@
 			 
 			"play_variation_1"
 			{
-				"entry_name" "DOTAMusic.BattleMusic_Epic_01" 
+				"entry_name" "valve_dota_001.music.battle_01" 
 			}
 			
 			"play_variation_2"
 			{
-				"entry_name" "DOTAMusic.BattleMusic_Epic_02" 
+				"entry_name" "valve_dota_001.music.battle_02" 
 			}
 			
 			"play_variation_3"
 			{
-				"entry_name" "DOTAMusic.BattleMusic_Epic_03" 
+				"entry_name" "valve_dota_001.music.battle_03" 
 			}
 			
 			"set_no_repeat_opvar"
@@ -2555,17 +2532,6 @@
 				"opvar" "dota_battle_music_choice"
 				"input" "@identity_for_comparing.output"
 			}
-			
-			// "block_entries"
-			// {
-				// "operator" "sys_block_entries"
-				// "input_active" "1.0"	
-				// "input_duration" "1.0"
-				// "match_substring" "false"
-				// "match_entry" "DOTAMusic.BattleMusic_Epic_Picker"
-				// "match_channel" "false"
-				// "match_entity" "false"
-			// }
 		}
 	}
 }
@@ -2640,7 +2606,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.GankedMusicSm" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.ganked_sml" //Replace with the sound you want to play.
 			}
 			
 			"play_ganked_entry_md" //play 
@@ -2649,7 +2615,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.GankedMusicMd" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.ganked_med" //Replace with the sound you want to play.
 			}
 			
 			"play_ganked_entry_lg" //play 
@@ -2658,7 +2624,7 @@
 				"operator" "sys_start_entry"
 				"execute_once" "false"
 				"input_start" "1"
-				"entry_name" "DOTAMusic.GankedMusicLg" //Replace with the sound you want to play.
+				"entry_name" "valve_dota_001.music.ganked_lg" //Replace with the sound you want to play.
 			}	
 			
             "get_debug_printing_opvar"

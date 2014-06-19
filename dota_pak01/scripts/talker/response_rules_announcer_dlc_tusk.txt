@@ -1026,7 +1026,7 @@ Rule announcer_dlc_tusk_CustomIsGoodVictoryIsAnnouncerVoiceDLCTusk_Rule
 
 Response announcer_dlc_tusk_CustomIsAllPickIsAnnouncerVoiceDLCTusk
 {
-	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_all_pick.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_all_pick.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_tusk_CustomIsAllPickIsAnnouncerVoiceDLCTusk_Rule
@@ -1037,7 +1037,7 @@ Rule announcer_dlc_tusk_CustomIsAllPickIsAnnouncerVoiceDLCTusk_Rule
 
 Response announcer_dlc_tusk_CustomIsAllRandomIsAnnouncerVoiceDLCTusk
 {
-	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_all_random.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_all_random.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_tusk_CustomIsAllRandomIsAnnouncerVoiceDLCTusk_Rule
@@ -1081,7 +1081,7 @@ Rule announcer_dlc_tusk_CustomIsReverseCaptainsModeIsDraftBeginIsAnnouncerVoiceD
 
 Response announcer_dlc_tusk_CustomIsRandomDraftIsAnnouncerVoiceDLCTusk
 {
-	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_random_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_random_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_tusk_CustomIsRandomDraftIsAnnouncerVoiceDLCTusk_Rule
@@ -1092,13 +1092,24 @@ Rule announcer_dlc_tusk_CustomIsRandomDraftIsAnnouncerVoiceDLCTusk_Rule
 
 Response announcer_dlc_tusk_CustomIsSingleDraftIsAnnouncerVoiceDLCTusk
 {
-	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_single_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_single_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_tusk_CustomIsSingleDraftIsAnnouncerVoiceDLCTusk_Rule
 {
 	criteria Custom Isannouncer_dlc_tusk IsSingleDraft IsAnnouncerVoiceDLCTusk
 	response announcer_dlc_tusk_CustomIsSingleDraftIsAnnouncerVoiceDLCTusk
+}
+
+Response announcer_dlc_tusk_CustomIsDeathMatchIsAnnouncerVoiceDLCTusk
+{
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_type_death_match.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_tusk_CustomIsDeathMatchIsAnnouncerVoiceDLCTusk_Rule
+{
+	criteria Custom Isannouncer_dlc_tusk IsDeathMatch IsAnnouncerVoiceDLCTusk
+	response announcer_dlc_tusk_CustomIsDeathMatchIsAnnouncerVoiceDLCTusk
 }
 
 Response announcer_dlc_tusk_CustomIsTenSecondsRemainingIsAnnouncerVoiceDLCTusk
@@ -1125,7 +1136,7 @@ Rule announcer_dlc_tusk_CustomIsFiveSecondsRemainingIsAnnouncerVoiceDLCTusk_Rule
 
 Response announcer_dlc_tusk_CustomIsMidOnlyIsAnnouncerVoiceDLCTusk
 {
-	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_tusk_CustomIsMidOnlyIsAnnouncerVoiceDLCTusk_Rule
@@ -1136,7 +1147,7 @@ Rule announcer_dlc_tusk_CustomIsMidOnlyIsAnnouncerVoiceDLCTusk_Rule
 
 Response announcer_dlc_tusk_CustomIsLeastPlayedIsAnnouncerVoiceDLCTusk
 {
-	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_tusk_CustomIsLeastPlayedIsAnnouncerVoiceDLCTusk_Rule
@@ -1147,7 +1158,7 @@ Rule announcer_dlc_tusk_CustomIsLeastPlayedIsAnnouncerVoiceDLCTusk_Rule
 
 Response announcer_dlc_tusk_CustomIsLimitedHeroesIsAnnouncerVoiceDLCTusk
 {
-	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_tusk_CustomIsLimitedHeroesIsAnnouncerVoiceDLCTusk_Rule
@@ -1158,13 +1169,24 @@ Rule announcer_dlc_tusk_CustomIsLimitedHeroesIsAnnouncerVoiceDLCTusk_Rule
 
 Response announcer_dlc_tusk_CustomIsCustomModeIsAnnouncerVoiceDLCTusk
 {
-	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_tusk_CustomIsCustomModeIsAnnouncerVoiceDLCTusk_Rule
 {
 	criteria Custom Isannouncer_dlc_tusk IsCustomMode IsAnnouncerVoiceDLCTusk
 	response announcer_dlc_tusk_CustomIsCustomModeIsAnnouncerVoiceDLCTusk
+}
+
+Response announcer_dlc_tusk_CustomIsOneVsOneIsAnnouncerVoiceDLCTusk
+{
+	scene "scenes/announcer_dlc_tusk/announcer_dlc_tusk_tusk_ann_choose_hero.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_tusk_CustomIsOneVsOneIsAnnouncerVoiceDLCTusk_Rule
+{
+	criteria Custom Isannouncer_dlc_tusk IsOneVsOne IsAnnouncerVoiceDLCTusk
+	response announcer_dlc_tusk_CustomIsOneVsOneIsAnnouncerVoiceDLCTusk
 }
 
 Response announcer_dlc_tusk_CustomIsAfterFirstCreepSpawnIsFrostivusModeIsGreevilCampSpawnIsAnnouncerVoiceDLCTusk

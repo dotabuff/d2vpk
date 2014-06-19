@@ -1207,8 +1207,8 @@ Rule announcer_dlc_pflax_CustomIsGoodVictoryIsPlayerTeam_DireChance_15%IsAnnounc
 
 Response announcer_dlc_pflax_CustomIsAllPickIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_pick_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_pick_03.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_pick_02.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_CustomIsAllPickIsAnnouncerVoice_Pflax_Rule
@@ -1219,9 +1219,9 @@ Rule announcer_dlc_pflax_CustomIsAllPickIsAnnouncerVoice_Pflax_Rule
 
 Response announcer_dlc_pflax_CustomIsAllRandomIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_random_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_random_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_random_03.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_random_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_random_02.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_random_03.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_CustomIsAllRandomIsAnnouncerVoice_Pflax_Rule
@@ -1254,10 +1254,22 @@ Rule announcer_dlc_pflax_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Pflax_
 	response announcer_dlc_pflax_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Pflax
 }
 
+Response announcer_dlc_pflax_CustomIsDeathMatchIsAnnouncerVoice_Pflax
+{
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_death_match_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_death_match_03.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_pflax_CustomIsDeathMatchIsAnnouncerVoice_Pflax_Rule
+{
+	criteria Custom Isannouncer_dlc_pflax IsDeathMatch IsAnnouncerVoice_Pflax
+	response announcer_dlc_pflax_CustomIsDeathMatchIsAnnouncerVoice_Pflax
+}
+
 Response announcer_dlc_pflax_CustomIsRandomDraftIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_random_draft_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_random_draft_03.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_random_draft_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_random_draft_03.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_CustomIsRandomDraftIsAnnouncerVoice_Pflax_Rule
@@ -1268,8 +1280,8 @@ Rule announcer_dlc_pflax_CustomIsRandomDraftIsAnnouncerVoice_Pflax_Rule
 
 Response announcer_dlc_pflax_CustomIsSingleDraftIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_single_draft_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_single_draft_03.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_single_draft_02.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_single_draft_03.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_CustomIsSingleDraftIsAnnouncerVoice_Pflax_Rule
@@ -1280,9 +1292,9 @@ Rule announcer_dlc_pflax_CustomIsSingleDraftIsAnnouncerVoice_Pflax_Rule
 
 Response announcer_dlc_pflax_CustomIsMidOnlyIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_one.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_three.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_two.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_one.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_three.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_two.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_CustomIsMidOnlyIsAnnouncerVoice_Pflax_Rule
@@ -1306,9 +1318,9 @@ Rule announcer_dlc_pflax_CustomIsReverseCaptainsModeIsDraftBeginIsAnnouncerVoice
 
 Response announcer_dlc_pflax_CustomIsLeastPlayedIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_one.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_three.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_two.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_one.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_three.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_two.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_CustomIsLeastPlayedIsAnnouncerVoice_Pflax_Rule
@@ -1319,7 +1331,7 @@ Rule announcer_dlc_pflax_CustomIsLeastPlayedIsAnnouncerVoice_Pflax_Rule
 
 Response announcer_dlc_pflax_CustomIsLimitedHeroesIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_choose_hero_01.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_choose_hero_01.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_CustomIsLimitedHeroesIsAnnouncerVoice_Pflax_Rule
@@ -1330,13 +1342,24 @@ Rule announcer_dlc_pflax_CustomIsLimitedHeroesIsAnnouncerVoice_Pflax_Rule
 
 Response announcer_dlc_pflax_CustomIsCustomModeIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_choose_hero_01.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_choose_hero_01.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_CustomIsCustomModeIsAnnouncerVoice_Pflax_Rule
 {
 	criteria Custom Isannouncer_dlc_pflax IsCustomMode IsAnnouncerVoice_Pflax
 	response announcer_dlc_pflax_CustomIsCustomModeIsAnnouncerVoice_Pflax
+}
+
+Response announcer_dlc_pflax_CustomIsOneVsOneIsAnnouncerVoice_Pflax
+{
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_choose_hero_01.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_pflax_CustomIsOneVsOneIsAnnouncerVoice_Pflax_Rule
+{
+	criteria Custom Isannouncer_dlc_pflax IsOneVsOne IsAnnouncerVoice_Pflax
+	response announcer_dlc_pflax_CustomIsOneVsOneIsAnnouncerVoice_Pflax
 }
 
 Response announcer_dlc_pflax_CustomIsAllPickIsAnnouncerVoice_PflaxChance_50%
@@ -2817,7 +2840,7 @@ Rule announcer_dlc_pflax_Followup_GenericIsGoodVictoryIsPlayerTeam_RadiantChance
 
 Response announcer_dlc_pflax_Followup_GenericIsAllPickIsAnnouncerVoice_PflaxChance_25%
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_pick_02.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_pick_02.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_Followup_GenericIsAllPickIsAnnouncerVoice_PflaxChance_25%_Rule
@@ -2828,7 +2851,7 @@ Rule announcer_dlc_pflax_Followup_GenericIsAllPickIsAnnouncerVoice_PflaxChance_2
 
 Response announcer_dlc_pflax_Followup_GenericIsAllPickIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_pick_03.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_Followup_GenericIsAllPickIsAnnouncerVoice_Pflax_Rule
@@ -2839,9 +2862,9 @@ Rule announcer_dlc_pflax_Followup_GenericIsAllPickIsAnnouncerVoice_Pflax_Rule
 
 Response announcer_dlc_pflax_Followup_GenericIsMidOnlyIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_one.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_three.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_two.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_one.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_three.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_all_mid_two.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_Followup_GenericIsMidOnlyIsAnnouncerVoice_Pflax_Rule
@@ -2852,7 +2875,7 @@ Rule announcer_dlc_pflax_Followup_GenericIsMidOnlyIsAnnouncerVoice_Pflax_Rule
 
 Response announcer_dlc_pflax_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_one.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_one.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Pflax_Rule
@@ -2863,8 +2886,8 @@ Rule announcer_dlc_pflax_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Pflax_Rul
 
 Response announcer_dlc_pflax_Followup_GenericIsLeastPlayedIsAnnouncerVoice_PflaxChance_25%
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_three.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_two.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_three.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_least_played_two.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_Followup_GenericIsLeastPlayedIsAnnouncerVoice_PflaxChance_25%_Rule
@@ -2875,7 +2898,7 @@ Rule announcer_dlc_pflax_Followup_GenericIsLeastPlayedIsAnnouncerVoice_PflaxChan
 
 Response announcer_dlc_pflax_Followup_GenericIsLimitedHeroesIsAnnouncerVoice_Pflax
 {
-	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_choose_hero_01.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_pflax/announcer_dlc_pflax_announcer_choose_hero_01.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_pflax_Followup_GenericIsLimitedHeroesIsAnnouncerVoice_Pflax_Rule

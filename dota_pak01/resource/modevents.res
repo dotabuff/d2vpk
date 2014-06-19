@@ -644,6 +644,10 @@
 	{
 	}
 
+	"profile_opened"
+	{
+	}
+
 	"profile_closed"
 	{
 	}
@@ -743,6 +747,10 @@
 	}
 
 	"matchmaking_status_visibility_changed"
+	{
+	}
+
+	"practice_lobby_visibility_changed"
 	{
 	}
 

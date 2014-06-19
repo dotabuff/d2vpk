@@ -138,14 +138,14 @@
 			{
 				"operator" "sys_start_entry"
 				"input_start" "1"	
-				"entry_name" "DOTAMusic.BattleMusic_Epic_Picker"
+				"entry_name" "valve_dota_001.music.battle_picker"
 			}
 
 			"play_entry_01"
 			{
 				"operator" "sys_start_entry"
 				"input_start" "1"	
-				"entry_name" "DOTAMusic.StateHeroDeath"	
+				"entry_name" "valve_dota_001.music.killed"	
 			}
 		}
 	}
@@ -359,7 +359,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.3"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/respawn.mp3"
+	"wave"			"#music/valve_dota_001/stingers/respawn.mp3"
 
 	"operator_stacks"
 	{
@@ -403,7 +403,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.3"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"#music/stingers/respawn.mp3"
+	"wave"			"#music/valve_dota_001/stingers/respawn.mp3"
 
 	"operator_stacks"
 	{
@@ -644,7 +644,7 @@
 	"channel"	"CHAN_AUTO"
 	"volume"	"0.5"
 	"soundlevel"  "SNDLVL_NONE"
-	"wave"	"*#music\valve_dota_music_001\music\ui_hero_select.wav"
+	"wave"	"*#music\valve_dota_001\music\ui_hero_select.wav"
 
 	"operator_stacks"
 	{
@@ -674,7 +674,7 @@
 	"channel"	"CHAN_AUTO"
 	"volume"	"0.5"
 	"soundlevel"  "SNDLVL_NONE"
-	"wave"	"*#music\valve_dota_music_001\music\ui_hero_select.wav"
+	"wave"	"*#music\valve_dota_001\music\ui_hero_select.wav"
 
 	"operator_stacks"
 	{

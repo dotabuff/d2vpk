@@ -1,15 +1,15 @@
 "CustomHero"
 {
 	$baseTexture "models/items/undying/idol_of_ruination/ruin_wight_color"
-	"$normalmap" "models/items/undying/idol_of_ruination/idol_of_ruination_normal"
-	"$maskmap1" "models/items/undying/idol_of_ruination/idol_of_ruination_mask1"
-	"$maskmap2" "models/items/undying/idol_of_ruination/idol_of_ruination_mask2"
+	"$normalmap" "models/items/undying/idol_of_ruination/ruin_wight_normal"
+	"$maskmap1" "models/items/undying/idol_of_ruination/ruin_wight_mask1"
+	"$maskmap2" "models/items/undying/idol_of_ruination/ruin_wight_mask2"
 //	"$diffusewarp" "models/heroes/razor/razor_lightwarp"
 	"$detail1" "models/heroes/undying/undying_tower_glow.vtf"
-	$IgnoreBudgetCheck 1
+
 	$alphatest 1
-	$SPECULAREXPONENT 64
-	$SPECULARSCALE .1
+	$SPECULAREXPONENT 12
+	$SPECULARSCALE 22
 	$SPECULARCOLOR "[1 1 1]"
 
 

@@ -9929,6 +9929,11 @@
 				"var_type"					"FIELD_INTEGER"
 				"bonus_armor"				"-2 -4 -6 -8"
 			}
+			"03"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"armor_reduction_duration_tooltip"				"10"
+			}
 		}
 	}
 	
@@ -16210,26 +16215,26 @@
 		{
 			"01"
 			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"100.0"
+			}
+			"02"
+			{
 				"var_type"				"FIELD_INTEGER"
 				"area_of_effect"		"400"
 			}
-			"02"
+			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"enemy_slow"			"-20 -25 -30 -35 -40 -45 -50"
 				"levelkey"				"quaslevel"
 			}
-			"03"
+			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"self_slow"				"-30 -20 -10 0 10 20 30"
 				"levelkey"				"wexlevel"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"100.0"
-			}
+			}			
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
@@ -16448,19 +16453,19 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"travel_distance"		"465 615 780 930 1095 1245 1410"
-				"levelkey"				"wexlevel"
+				"area_of_effect"		"275"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"travel_speed"			"300"
+				"travel_distance"		"465 615 780 930 1095 1245 1410"
+				"levelkey"				"wexlevel"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"area_of_effect"		"275"
-			}
+				"travel_speed"			"300"
+			}			
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
@@ -16522,13 +16527,13 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"area_of_effect"		"175"
+				"var_type"				"FIELD_FLOAT"
+				"delay"					"1.7"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"delay"					"1.7"
+				"var_type"				"FIELD_INTEGER"
+				"area_of_effect"		"175"
 			}
 			"03"
 			{
@@ -16683,33 +16688,33 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"damage_per_second"		"6 12 18 24 30 36 42"
-				"levelkey"				"exortlevel"
+				"slow_duration"			"2.0"
 			}
 			"04"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"wall_place_distance"	"200"
+				"var_type"				"FIELD_FLOAT"
+				"damage_per_second"		"6 12 18 24 30 36 42"
+				"levelkey"				"exortlevel"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"num_wall_elements"		"15"
+				"wall_place_distance"	"200"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"wall_element_spacing"	"80"
+				"num_wall_elements"		"15"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"wall_element_radius"	"105"
+				"wall_element_spacing"	"80"
 			}
 			"08"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"slow_duration"			"2.0"
+				"var_type"				"FIELD_INTEGER"
+				"wall_element_radius"	"105"
 			}
 		}
 	}
@@ -21480,38 +21485,38 @@
 			}
 			"03"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"stun_duration"				"0.75 1.25 1.75 2.25"
+				"var_type"					"FIELD_INTEGER"
+				"latch_distance"			"700 700 700 700"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"latch_distance"			"700 700 700 700"
-			}
-			"05"
-			{
-				"var_type"					"FIELD_INTEGER"
 				"latch_speed"				"1000 1000 1000 1000"
 			}
-			"06"
+			"05"
 			{
 				"var_type"					"FIELD_FLOAT"
 				"tether_duration"			"12.0 12.0 12.0 12.0"
 			}
-			"07"
+			"06"
 			{
 				"var_type"					"FIELD_FLOAT"
 				"tether_heal_amp"			"1.5"
 			}
-			"08"
+			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"slow"			"-100"
 			}
-			"09"
+			"08"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"attackslow_tooltip"			"-100"
+			}
+			"09"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"stun_duration"				"0.75 1.25 1.75 2.25"
 			}
 		}
 	}
@@ -25696,6 +25701,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5623"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -25781,6 +25787,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5625"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -25856,6 +25863,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5626"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -26067,7 +26075,7 @@
 			"01"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"hp_cost_perc"		"15"
+				"hp_cost_perc"		"20"
 			}
 			"02"
 			{
@@ -26097,7 +26105,7 @@
 			"07"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"dps"				"15 35 55 75"
+				"dps"				"10 30 50 70"
 			}
 			"08"
 			{

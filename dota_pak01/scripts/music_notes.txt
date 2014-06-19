@@ -1,98 +1,98 @@
 // stingers
-X "DOTAMusic_Hero.Respawn" // stinger
+X "DMTemp_Hero.Respawn" // stinger
 "dota_update_default" // does some fanciness as well
 
-X"DOTAMusic.StateHeroDeath" // all kinds of madness in here
+X"valve_dota_001.music.killed" // all kinds of madness in here
 "dota_update_death_music"
 
 ? buy backs
-"DOTAMusic_Hero.BuyBack" // stinger
+"DMTemp_Hero.BuyBack" // stinger
 "dota_update_default" // does some fanciness as well
-"DOTAMusic_Hero.BuyBackOther" //other buys back
+"DMTemp_Hero.BuyBackOther" //other buys back
 "dota_update_default" // does some fanciness as well
-"DOTAMusic_Hero.BuyBackOtherRadiant" //other buys back
+"DMTemp_Hero.BuyBackOtherRadiant" //other buys back
 "dota_update_default" // does some fanciness as well
-"DOTAMusic_Hero.BuyBackOtherDire" //other buys back
+"DMTemp_Hero.BuyBackOtherDire" //other buys back
 
-"DOTAMusic_Hero.Reincarnate" // plays spatialized when hero reincarnates - SK's ulti or Aegis holder
+"DMTemp_Hero.Reincarnate" // plays spatialized when hero reincarnates - SK's ulti or Aegis holder
 "dota_update_default"
 
 GANKED happens:
-"DOTAMusic.StateGankedMusic"
+"DMTemp.StateGankedMusic"
 
-"DOTAMusic.GankedMusicSm" // has audio
+"valve_dota_001.music.ganked_sml" // has audio
 "import_stack" "dota_update_default"		
 
-"DOTAMusic.GankedMusicMd" // has audio
+"valve_dota_001.music.ganked_med" // has audio
 "import_stack" "dota_update_default"	
 
-"DOTAMusic.GankedMusicLg" // has audio
+"valve_dota_001.music.ganked_lg" // has audio
 "import_stack" "dota_update_default"	
 
 GANK DOES NOT:
-"DOTAMusic.StateGankMusic"
+"DMTemp.StateGankMusic"
 
-"DOTAMusic.GankMusicSm" //0.15 - 0.45 // has audio
+"DMTemp.GankMusicSm" //0.15 - 0.45 // has audio
 "import_stack" "dota_update_default"		
 
-"DOTAMusic.GankMusicMd" //0.45 - 0.8 // has audio
+"DMTemp.GankMusicMd" //0.45 - 0.8 // has audio
 "import_stack" "dota_update_default"	
 
 
-"DOTAMusic.GankMusicLg" //0.8 - 1.0 // has audio
+"DMTemp.GankMusicLg" //0.8 - 1.0 // has audio
 "import_stack" "dota_update_default"	
 
 TOWER FALLS (doesn't currently happen)
 
-"DOTAMusic_Stinger_Our_Radiant_Tower_Fallen" // blocks itself for 15 sec
+"DMTemp_Stinger_Our_Radiant_Tower_Fallen" // blocks itself for 15 sec
 "start_barracks_cooldown"
-"DOTAMusic_Stinger_Our_Dire_Tower_Fallen"
-"DOTAMusic_Stinger_Their_Radiant_Tower_Fallen"
-"DOTAMusic_Stinger_Their_Dire_Tower_Fallen"
+"DMTemp_Stinger_Our_Dire_Tower_Fallen"
+"DMTemp_Stinger_Their_Radiant_Tower_Fallen"
+"DMTemp_Stinger_Their_Dire_Tower_Fallen"
 
 // does nothing
-"DOTAMusic_barracks_fall_01"
-"DOTAMusic_barracks_fall_02"
-"DOTAMusic_barracks_fall_03"
-"DOTAMusic_barracks_fall_04"
+"DMTemp_barracks_fall_01"
+"DMTemp_barracks_fall_02"
+"DMTemp_barracks_fall_03"
+"DMTemp_barracks_fall_04"
 
 VICTORY/DEFEAT: needs separation from tail
 
-"DOTAMusic_Victory_Radiant"
+"DMTemp_Victory_Radiant"
 "import_stack" "dota_update_default"
-"DOTAMusic_Victory_Dire"
+"DMTemp_Victory_Dire"
 "import_stack" "dota_update_default"
-"DOTAMusic_Defeat_Dire"
+"DMTemp_Defeat_Dire"
 "import_stack" "dota_update_default"
-"DOTAMusic_Defeat_Radiant"
+"DMTemp_Defeat_Radiant"
 "import_stack" "dota_start_music_type_tracker"
-"DOTAMusic_Diretide_Finale"
+"DMTemp_Diretide_Finale"
 "import_stack" "dota_update_default"
 
-"DOTAMusic_Hero.DeathMode" // fanciness
+"valve_dota_001.music.dead" // fanciness
 "import_stack" "dota_update_death_music"
 
 
 
 MUSIC:
 
-"DotaMusic.GameStartup"
+"DMTemp.GameStartup"
 "dota_update_music_stereo" // does tricky stuff if worldmap
-"DotaMusic.GameStartup.Secondary" // ditto
-"DotaMusic.WorldMap" // stops game startup and starts worldmap... trickyness
-"DotaMusic.WorldMap.Actual" // worldmap simple entry
-"DOTAMusic.MainLoop" //A loop that runs at all times and does a bunch of music-related utility stuff
-"DOTAMusic.MainLoopTutorial" //A loop that runs at all times and does a bunch of music-related utility stuff
-"DOTAMusic.Prehorn"
+"valve_dota_001.music.ui_main" // ditto
+"DMTemp.WorldMap" // stops game startup and starts worldmap... trickyness
+"valve_dota_001.music.ui_world_map" // worldmap simple entry
+"DMTemp.MainLoop" //A loop that runs at all times and does a bunch of music-related utility stuff
+"DMTemp.MainLoopTutorial" //A loop that runs at all times and does a bunch of music-related utility stuff
+"valve_dota_001.music.countdown"
 "import_stack" "dota_update_music_stereo"
 
-"DOTAMusic_Stinger.003"
-"DOTAMusic_Stinger.004"
-"DOTAMusic_Stinger.005"
-"DOTAMusic_Stinger.006"
-"DOTAMusic_Stinger.007"
-"DOTAMusic_Stinger.008"
-"DOTAMusic_Stinger.009"
+"DMTemp_Stinger.003"
+"DMTemp_Stinger.004"
+"DMTemp_Stinger.005"
+"DMTemp_Stinger.006"
+"DMTemp_Stinger.007"
+"DMTemp_Stinger.008"
+"DMTemp_Stinger.009"
 
 
 // events
@@ -110,85 +110,85 @@ MUSIC:
 
 
 //MUSIC
-"DOTAMusic.HeroPicker"
+"valve_dota_001.music.ui_hero_select"
 "import_stack" "dota_update_music_stereo"
-"DOTAMusic.HeroPicker.INTERNATIONAL"
+"DMTemp.HeroPicker.INTERNATIONAL"
 "import_stack" "dota_update_music_stereo"
 
-"DOTAMusic.StateExploreMusic" // just a program
-"DOTAMusic.ExploreMusic_Picker_Day" // variation selection day
-"DOTAMusic.ExploreMusic_Picker_Night" // variation selection night
+"DMTemp.StateLaningMusic" // just a program
+"DMTemp.LaningMusic_Picker_Day" // variation selection day
+"DMTemp.LaningMusic_Picker_Night" // variation selection night
 
 
 
-"DOTAMusic.LaningMusicTutorial_01" //Laning 01 music master
+"DMTemp.LaningMusicTutorial_01" //Laning 01 music master
 
-"DOTAMusic.LaningMusicTutorial_01_Layer_01"
-"DOTAMusic.LaningMusicTutorial_01_Layer_02"
-"DOTAMusic.LaningMusicTutorial_01_Layer_03"
+"DMTemp.LaningMusicTutorial_01_Layer_01"
+"DMTemp.LaningMusicTutorial_01_Layer_02"
+"DMTemp.LaningMusicTutorial_01_Layer_03"
 
-"DOTAMusic.LaningMusicTutorial_02" //Laning 01 music master
+"DMTemp.LaningMusicTutorial_02" //Laning 01 music master
 
-"DOTAMusic.LaningMusicTutorial_02_Layer_01"
-"DOTAMusic.LaningMusicTutorial_02_Layer_02"
+"DMTemp.LaningMusicTutorial_02_Layer_01"
+"DMTemp.LaningMusicTutorial_02_Layer_02"
 
-"DOTAMusic.ExploreMusicTutorial_01" //Laning 01 music master
+"DMTemp.LaningMusicTutorial_01" //Laning 01 music master
 
-"DOTAMusic.ExploreMusicTutorial_01_Layer_01"
-"DOTAMusic.ExploreMusicTutorial_01_Layer_02"
-"DOTAMusic.ExploreMusicTutorial_01_Layer_03"
-
-
-"DOTAMusic.BattleMusic_Epic" //Battle music request from the game
-"DOTAMusic.StateBattleMusic"
-"DOTAMusic.BattleMusic_Epic_Picker"
-"DOTAMusic.BattleMusic_Epic_End"
-
-"DOTAMusic.BattleMusic_Epic_01"
-"DOTAMusic.BattleMusic_Epic_End_01"
-"DOTAMusic.BattleMusic_Epic_02"
-"DOTAMusic.BattleMusic_Epic_End_02"
-"DOTAMusic.BattleMusic_Epic_03"
-"DOTAMusic.BattleMusic_Epic_End_03"
+"DMTemp.LaningMusicTutorial_01_Layer_01"
+"DMTemp.LaningMusicTutorial_01_Layer_02"
+"DMTemp.LaningMusicTutorial_01_Layer_03"
 
 
-"DOTAMusic.BattleMusic_Epic_End_PreHorn" // uses prestart
+"DMTemp.BattleMusic_Epic" //Battle music request from the game
+"DMTemp.StateBattleMusic"
+"DMTemp.BattleMusic_Epic_Picker"
+"DMTemp.BattleMusic_Epic_End"
+
+"valve_dota_001.music.battle_01"
+"valve_dota_001.music.battle_01_end"
+"valve_dota_001.music.battle_02"
+"valve_dota_001.music.battle_02_end"
+"valve_dota_001.music.battle_03"
+"valve_dota_001.music.battle_03_end"
+
+
+"valve_dota_001.music.battle_end_countdown" // uses prestart
 "wave"			"*#music\DOTA2_Music_Battle_001_End.mp3"
 "dota_update_music_stereo"
 
 ROSHAN:
 
-"DOTAMusic.StateRoshanMusic"
+"DMTemp.StateRoshanMusic"
 
-"DOTAMusic.BattleMusic_Roshan_01"
+"valve_dota_001.music.roshan"
 "import_stack" "dota_opvar_smoothing_update"
 
-"DOTAMusic.StateRoshanKilled"
+"DMTemp.StateRoshanKilled"
 
 
-"DOTAMusic.BattleMusic_Roshan_End"
+"valve_dota_001.music.roshan_end"
 "import_stack" "dota_update_music_stereo"
 
 SMOKE:
 
-"DOTAMusic.StateSmokePopped"
+"DMTemp.StateSmokePopped"
 
-"DOTAMusic.SmokePopped" // has audio
+"valve_dota_001.music.smoke" // has audio
 "import_stack" "dota_update_music_stereo"
 
-"DOTAMusic.StateSmokeEndedHero"
+"DMTemp.StateSmokeEndedHero"
 
-"DOTAMusic.SmokeEndedHero" // has audio
+"valve_dota_001.music.smoke_end_hero" // has audio
 "import_stack" "dota_update_music_stereo"
 
-"DOTAMusic.StateSmokeEndedTower"
+"DMTemp.StateSmokeEndedTower"
 
-"DOTAMusic.SmokeEndedTower" // has audio
+"valve_dota_001.music.smoke_end_tower" // has audio
 "import_stack" "dota_update_music_stereo"
 
-"DOTAMusic.StateSmokeEndedCreep"
+"DMTemp.StateSmokeEndedCreep"
 
-"DOTAMusic.SmokeEndedCreep" // has audio
+"valve_dota_001.music.smoke_end_creep" // has audio
 "import_stack" "dota_update_music_stereo"
 
 
@@ -205,7 +205,7 @@ SMOKE:
 "Tutorial.Tidehunter.Appear"
 "Tutorial.Tidehunter.Escape"
 "Tutorial.Tidehunter.Death"
-"DOTAMusic.Tutorial_Ducker"
+"DMTemp.Tutorial_Ducker"
 
 
 "Spectator.HeroDeath" //When a hero dies
@@ -218,66 +218,66 @@ SMOKE:
 
 /////////////////////// UNUSED ////////////////////////////
 
-"DOTAMusic.ExploreMusic_01"
+"DMTemp.LaningMusic_01"
 "import_stack" "dota_update_music_stereo"
 
 
-"DOTAMusic.ExploreMusic_02" //Layered explore music master
+"DMTemp.LaningMusic_02" //Layered explore music master
 
-"DOTAMusic.ExploreMusic_Layered_001_Layer01_pt1"
-"DOTAMusic.ExploreMusic_Layered_001_Layer01_pt2"
-"DOTAMusic.ExploreMusic_Layered_001_Layer01_pt3"
-"DOTAMusic.ExploreMusic_Layered_001_Layer01_pt4"
-"DOTAMusic.ExploreMusic_Layered_001_Layer02_pt1"
-"DOTAMusic.ExploreMusic_Layered_001_Layer02_pt2"
-"DOTAMusic.ExploreMusic_Layered_001_Layer02_pt3"
-"DOTAMusic.ExploreMusic_Layered_001_Layer02_pt4"
-"DOTAMusic.ExploreMusic_Layered_001_Layer03_pt1"
-"DOTAMusic.ExploreMusic_Layered_001_Layer03_pt2"
-"DOTAMusic.ExploreMusic_Layered_001_Layer03_pt3"
-"DOTAMusic.ExploreMusic_Layered_001_Layer03_pt4"
+"DMTemp.LaningMusic_Layered_001_Layer01_pt1"
+"DMTemp.LaningMusic_Layered_001_Layer01_pt2"
+"DMTemp.LaningMusic_Layered_001_Layer01_pt3"
+"DMTemp.LaningMusic_Layered_001_Layer01_pt4"
+"DMTemp.LaningMusic_Layered_001_Layer02_pt1"
+"DMTemp.LaningMusic_Layered_001_Layer02_pt2"
+"DMTemp.LaningMusic_Layered_001_Layer02_pt3"
+"DMTemp.LaningMusic_Layered_001_Layer02_pt4"
+"DMTemp.LaningMusic_Layered_001_Layer03_pt1"
+"DMTemp.LaningMusic_Layered_001_Layer03_pt2"
+"DMTemp.LaningMusic_Layered_001_Layer03_pt3"
+"DMTemp.LaningMusic_Layered_001_Layer03_pt4"
 
-"DOTAMusic.ExploreMusic_03" //Layered explore music master
+"DMTemp.LaningMusic_03" //Layered explore music master
 
-"DOTAMusic.ExploreMusic_Layered_002_Layer01_pt1"
-"DOTAMusic.ExploreMusic_Layered_002_Layer01_pt2"
-"DOTAMusic.ExploreMusic_Layered_002_Layer01_pt3"
-"DOTAMusic.ExploreMusic_Layered_002_Layer01_pt4"
-"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt1"
-"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt2"
-"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt3"
-"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt4"
-"DOTAMusic.ExploreMusic_Layered_002_Layer02_pt5"
-"DOTAMusic.ExploreMusic_Layered_002_Layer03_pt1"
-"DOTAMusic.ExploreMusic_Layered_002_Layer03_pt2"
-"DOTAMusic.ExploreMusic_Layered_002_Layer03_pt3"
-"DOTAMusic.ExploreMusic_Layered_002_Layer03_pt4"
+"DMTemp.LaningMusic_Layered_002_Layer01_pt1"
+"DMTemp.LaningMusic_Layered_002_Layer01_pt2"
+"DMTemp.LaningMusic_Layered_002_Layer01_pt3"
+"DMTemp.LaningMusic_Layered_002_Layer01_pt4"
+"DMTemp.LaningMusic_Layered_002_Layer02_pt1"
+"DMTemp.LaningMusic_Layered_002_Layer02_pt2"
+"DMTemp.LaningMusic_Layered_002_Layer02_pt3"
+"DMTemp.LaningMusic_Layered_002_Layer02_pt4"
+"DMTemp.LaningMusic_Layered_002_Layer02_pt5"
+"DMTemp.LaningMusic_Layered_002_Layer03_pt1"
+"DMTemp.LaningMusic_Layered_002_Layer03_pt2"
+"DMTemp.LaningMusic_Layered_002_Layer03_pt3"
+"DMTemp.LaningMusic_Layered_002_Layer03_pt4"
 
 
-"DOTAMusic.LaningMusic_01" //Laning 01 music master
+"DMTemp.LaningMusic_01" //Laning 01 music master
 
-"DOTAMusic.LaningMusic_01_Layer_01_pt_01"
-"DOTAMusic.LaningMusic_01_Layer_01_pt_02"
-"DOTAMusic.LaningMusic_01_Layer_01_pt_03"
-"DOTAMusic.LaningMusic_01_Layer_01_pt_04"
-"DOTAMusic.LaningMusic_01_Layer_01_pt_05"
-"DOTAMusic.LaningMusic_01_Layer_02_pt_01"
-"DOTAMusic.LaningMusic_01_Layer_02_pt_02"
-"DOTAMusic.LaningMusic_01_Layer_02_pt_03"
-"DOTAMusic.LaningMusic_01_Layer_02_pt_04"
-"DOTAMusic.LaningMusic_01_Layer_02_pt_05"
-"DOTAMusic.LaningMusic_01_Layer_03_pt_01"
-"DOTAMusic.LaningMusic_01_Layer_03_pt_02"
-"DOTAMusic.LaningMusic_01_Layer_03_pt_03"
-"DOTAMusic.LaningMusic_01_Layer_03_pt_04"
-"DOTAMusic.LaningMusic_01_Layer_03_pt_05"
-"DOTAMusic.LaningMusic_01_Layer_03_pt_06"
+"DMTemp.LaningMusic_01_Layer_01_pt_01"
+"DMTemp.LaningMusic_01_Layer_01_pt_02"
+"DMTemp.LaningMusic_01_Layer_01_pt_03"
+"DMTemp.LaningMusic_01_Layer_01_pt_04"
+"DMTemp.LaningMusic_01_Layer_01_pt_05"
+"DMTemp.LaningMusic_01_Layer_02_pt_01"
+"DMTemp.LaningMusic_01_Layer_02_pt_02"
+"DMTemp.LaningMusic_01_Layer_02_pt_03"
+"DMTemp.LaningMusic_01_Layer_02_pt_04"
+"DMTemp.LaningMusic_01_Layer_02_pt_05"
+"DMTemp.LaningMusic_01_Layer_03_pt_01"
+"DMTemp.LaningMusic_01_Layer_03_pt_02"
+"DMTemp.LaningMusic_01_Layer_03_pt_03"
+"DMTemp.LaningMusic_01_Layer_03_pt_04"
+"DMTemp.LaningMusic_01_Layer_03_pt_05"
+"DMTemp.LaningMusic_01_Layer_03_pt_06"
 
 
 
 //arcana stingers
 
-"DOTAMusic.StateHeroDeath.Terrorblade"
+"valve_dota_001.music.killed.Terrorblade"
 {
 	"channel"		"CHAN_AUTO"
 	"volume"		"1.0"
@@ -338,7 +338,7 @@ SMOKE:
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "DOTAMusic.Explore" //We allow no instances of Explore when the death stinger knells		
+				"match_entry" "DMTemp.Explore" //We allow no instances of Explore when the death stinger knells		
 			}
 			
 			"limit_sound_laning"
@@ -347,7 +347,7 @@ SMOKE:
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "DOTAMusic.Laning"
+				"match_entry" "DMTemp.Laning"
 			}
 			
 			"limit_sound_battle"
@@ -356,7 +356,7 @@ SMOKE:
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "DOTAMusic.BattleMusic" //We allow no instances of battle when the death stinger knells		
+				"match_entry" "DMTemp.BattleMusic" //We allow no instances of battle when the death stinger knells		
 			}
 			
 			"stop_main_track"
@@ -376,14 +376,14 @@ SMOKE:
 			"update_track"
 			{
 				"operator" "track_update"
-				"autoqueue_entry_at_end_point" "DOTAMusic_Hero.DeathMode"
+				"autoqueue_entry_at_end_point" "valve_dota_001.music.dead"
 				"stop_channel_on_track" "true"	
 			}
 		}
 	}
 }
 
-"DOTAMusic_Hero.Respawn.Terrorblade"
+"DMTemp_Hero.Respawn.Terrorblade"
 {
 	"channel"		"CHAN_AUTO"
 	"volume"		"0.8"

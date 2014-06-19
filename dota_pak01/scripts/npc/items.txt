@@ -1308,13 +1308,13 @@
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"extra_spell_damage_percent"	"-40"
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0"
 			}
 			"03"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"4.0"
+				"var_type"				"FIELD_INTEGER"
+				"extra_spell_damage_percent"	"-40"
 			}
 		}
 	}
@@ -7606,13 +7606,13 @@
 			}
 			"08"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"ethereal_damage_bonus"	"-40"
+				"var_type"				"FIELD_FLOAT"
+				"duration_ally"				"4.0"
 			}
 			"09"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"duration_ally"				"4.0"
+				"var_type"				"FIELD_INTEGER"
+				"ethereal_damage_bonus"	"-40"
 			}
 		}
 	}
@@ -8121,48 +8121,48 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"debuff_radius"			"600"
+				"bonus_health_regen"	"6"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"resist_debuff"			"-25"
+				"bonus_intellect"		"6"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_health_regen"	"6"
+				"bonus_strength"		"6"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"6"
+				"bonus_agility"			"6"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"6"
+				"bonus_damage"			"6"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"6"
+				"bonus_armor"			"6"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"6"
+				"debuff_radius"			"600"
 			}
 			"08"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"6"
+				"var_type"					"FIELD_FLOAT"
+				"resist_debuff_duration"	"25.0"
 			}
 			"09"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"resist_debuff_duration"	"25.0"
-			}			
+				"var_type"				"FIELD_INTEGER"
+				"resist_debuff"			"-25"
+			}
 		}
 	}
 

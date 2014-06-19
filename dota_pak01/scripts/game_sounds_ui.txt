@@ -4057,6 +4057,50 @@
 	}
 }
 
+// Compendium Sounds ======================================
+
+"compendium_levelup"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"ui/compendium_levelup.wav" 
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"speakers_limit_ui"
+			{
+				"input2[*]" "0.2"	
+			}
+		}
+	}
+}
+
+"compendium_points"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_75dB"
+	"wave"			"ui/compendium_points.wav" 
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"speakers_limit_ui"
+			{
+				"input2[*]" "0.2"	
+			}
+		}
+	}
+}
+
 
 //////////////////////////Test Here//////////////////////////////////
 

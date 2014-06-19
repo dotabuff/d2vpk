@@ -8,7 +8,7 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
 
-	// "wave"	"#music/stingers/died.mp3"
+	// "wave"	"#music/valve_dota_001/stingers/died.mp3"
 	"wave"	"music/null.wav"
 	
 	"operator_stacks"
@@ -45,24 +45,7 @@
 				"match_channel" "false"
 				"match_entity" "false"
 			}
-			
-			// "limit_sound_explore"
-			// {
-				// "operator" "sys_stop_entries"
-				// "input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				// "match_entity" "false"	
-				// "match_substring" "true"
-				// "match_entry" "DOTAMusic.Explore"
-			// }
-			
-			// "limit_sound_laning"
-			// {
-				// "operator" "sys_stop_entries"
-				// "input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				// "match_entity" "false"	
-				// "match_substring" "true"
-				// "match_entry" "DOTAMusic.Laning"
-			// }
+
 		}
 	}
 }
@@ -220,8 +203,8 @@
 	
 	"rndwave"
 	{
-		"wave"			"#music/stingers/DOTA2_Music_Victory_Radiant_Comp.mp3"
-		"wave"			"#music/stingers/DOTA2_Music_Victory_Dire.mp3"
+		"wave"			"#music/valve_dota_001/stingers/DOTA2_Music_Victory_Radiant_Comp.mp3"
+		"wave"			"#music/valve_dota_001/stingers/DOTA2_Music_Victory_Dire.mp3"
 	}	
 	
 	"operator_stacks"

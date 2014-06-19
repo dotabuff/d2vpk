@@ -1422,7 +1422,7 @@ Rule announcer_dlc_trine_CustomIsLateNightIsLimitedHeroesIsAnnouncerVoice_TrineC
 
 Response announcer_dlc_trine_CustomIsMidOnlyIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_mid.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_mid.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_CustomIsMidOnlyIsAnnouncerVoice_Trine_Rule
@@ -1433,7 +1433,7 @@ Rule announcer_dlc_trine_CustomIsMidOnlyIsAnnouncerVoice_Trine_Rule
 
 Response announcer_dlc_trine_CustomIsAllPickIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_pick.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_pick.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_CustomIsAllPickIsAnnouncerVoice_Trine_Rule
@@ -1444,7 +1444,7 @@ Rule announcer_dlc_trine_CustomIsAllPickIsAnnouncerVoice_Trine_Rule
 
 Response announcer_dlc_trine_CustomIsAllRandomIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_random.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_random.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_CustomIsAllRandomIsAnnouncerVoice_Trine_Rule
@@ -1475,9 +1475,20 @@ Rule announcer_dlc_trine_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Trine_
 	response announcer_dlc_trine_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Trine
 }
 
+Response announcer_dlc_trine_CustomIsDeathMatchIsAnnouncerVoice_Trine
+{
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_death_match.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_trine_CustomIsDeathMatchIsAnnouncerVoice_Trine_Rule
+{
+	criteria Custom Isannouncer_dlc_trine IsDeathMatch IsAnnouncerVoice_Trine
+	response announcer_dlc_trine_CustomIsDeathMatchIsAnnouncerVoice_Trine
+}
+
 Response announcer_dlc_trine_CustomIsLeastPlayedIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_least_played.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_least_played.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_CustomIsLeastPlayedIsAnnouncerVoice_Trine_Rule
@@ -1488,7 +1499,7 @@ Rule announcer_dlc_trine_CustomIsLeastPlayedIsAnnouncerVoice_Trine_Rule
 
 Response announcer_dlc_trine_CustomIsRandomDraftIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_random_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_random_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_CustomIsRandomDraftIsAnnouncerVoice_Trine_Rule
@@ -1510,7 +1521,7 @@ Rule announcer_dlc_trine_CustomIsReverseCaptainsModeIsDraftBeginIsAnnouncerVoice
 
 Response announcer_dlc_trine_CustomIsSingleDraftIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_single_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_single_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_CustomIsSingleDraftIsAnnouncerVoice_Trine_Rule
@@ -1521,8 +1532,8 @@ Rule announcer_dlc_trine_CustomIsSingleDraftIsAnnouncerVoice_Trine_Rule
 
 Response announcer_dlc_trine_CustomIsLimitedHeroesIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_draft_choose_hero_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_choose_wisely.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_draft_choose_hero_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_choose_wisely.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_CustomIsLimitedHeroesIsAnnouncerVoice_Trine_Rule
@@ -1533,14 +1544,26 @@ Rule announcer_dlc_trine_CustomIsLimitedHeroesIsAnnouncerVoice_Trine_Rule
 
 Response announcer_dlc_trine_CustomIsCustomModeIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_draft_choose_hero_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_choose_wisely.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_draft_choose_hero_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_choose_wisely.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_CustomIsCustomModeIsAnnouncerVoice_Trine_Rule
 {
 	criteria Custom Isannouncer_dlc_trine IsCustomMode IsAnnouncerVoice_Trine
 	response announcer_dlc_trine_CustomIsCustomModeIsAnnouncerVoice_Trine
+}
+
+Response announcer_dlc_trine_CustomIsOneVsOneIsAnnouncerVoice_Trine
+{
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_draft_choose_hero_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_choose_wisely.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_trine_CustomIsOneVsOneIsAnnouncerVoice_Trine_Rule
+{
+	criteria Custom Isannouncer_dlc_trine IsOneVsOne IsAnnouncerVoice_Trine
+	response announcer_dlc_trine_CustomIsOneVsOneIsAnnouncerVoice_Trine
 }
 
 Response announcer_dlc_trine_CustomIsTenSecondsRemainingIsAnnouncerVoice_Trine
@@ -2838,7 +2861,7 @@ Rule announcer_dlc_trine_Followup_GenericIsGameStartChance_50%IsAnnouncerVoice_T
 
 Response announcer_dlc_trine_Followup_GenericIsAllPickIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_pick.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_pick.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_Followup_GenericIsAllPickIsAnnouncerVoice_Trine_Rule
@@ -2849,7 +2872,7 @@ Rule announcer_dlc_trine_Followup_GenericIsAllPickIsAnnouncerVoice_Trine_Rule
 
 Response announcer_dlc_trine_Followup_GenericIsMidOnlyIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_mid.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_all_mid.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_Followup_GenericIsMidOnlyIsAnnouncerVoice_Trine_Rule
@@ -2860,7 +2883,7 @@ Rule announcer_dlc_trine_Followup_GenericIsMidOnlyIsAnnouncerVoice_Trine_Rule
 
 Response announcer_dlc_trine_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_least_played.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_least_played.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Trine_Rule
@@ -2871,8 +2894,8 @@ Rule announcer_dlc_trine_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Trine_Rul
 
 Response announcer_dlc_trine_Followup_GenericIsLimitedHeroesIsAnnouncerVoice_Trine
 {
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_choose_wisely.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_draft_choose_hero_01.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_type_choose_wisely.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_trine/announcer_dlc_trine_announcer_draft_choose_hero_01.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_trine_Followup_GenericIsLimitedHeroesIsAnnouncerVoice_Trine_Rule

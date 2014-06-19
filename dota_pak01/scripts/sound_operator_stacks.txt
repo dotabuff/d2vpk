@@ -434,7 +434,7 @@
 			"syncpoint_list" "syncpoints_1"
 			"input_min_time_to_next_sync" 	"@this_entry_syncpoints.output_first_syncpoint"
 			"input_max_time_to_next_sync" 	"1000"
-			"match_entry" "DOTAMusic.BattleMusic"
+			"match_entry" "valve_dota_001.music.battle"
 		}
 		
 		// output our resulting delay value
@@ -1961,12 +1961,13 @@
 			"input2" "0.0"
 		}
 
+		// all use cases have fadeout at 2.0 secs, making default!
 		"volume_fade_out"
 		{
 			"operator" "math_remap_float"
 			"input" "@elapsed_time.output_stop_elapsed"
 			"input_min" "0.0"
-			"input_max" "0.0"
+			"input_max" "2.0"
 			"input_map_min" "0.0"
 			"input_map_max" "1.0"
 			"default_to_max" "false"	
@@ -2184,6 +2185,15 @@
 			"operator" "sys_output"
 			"output"   "stop_hold"
 			"input_float" "@stoptime_elapsed_trigger.output"	
+		}
+	}
+	"dota_update_music_4layer_track_update"
+	{
+		"import_stack" "dota_update_music_4layer"
+		"update_track"
+		{
+			"operator" "track_update"
+			"stop_channel_on_track" "false"
 		}
 	}
 
@@ -2630,7 +2640,24 @@
 			"input_float" "@stoptime_elapsed_trigger.output"	
 		}
 	}	
-
+	"dota_update_music_stereo_worldmap_fadeout"
+	{
+		"import_stack" "dota_update_music_stereo"
+		"volume_fade_out"
+		{
+			"input_max" "@get_worldmap_flag.output"
+		}
+	}
+	"dota_update_music_stereo_track_update"
+	{
+		"import_stack" "dota_update_music_stereo"
+		"update_track"
+		{
+			"operator" "track_update"
+			"stop_channel_on_track" "true"	
+		}
+	}
+	
 // 	"update_music_stereo"
 // 	{
 // 		"save_restore_output"
@@ -3140,9 +3167,8 @@
 			"output"   "stop_hold"
 			"input_float" "@stoptime_elapsed_trigger.output"	
 		}
-	}	
-
-"dota_update_death_music" //WHY DOES THIS WORK?
+	}
+	"dota_update_death_music" //WHY DOES THIS WORK?
 	{
 
 		//////////////////////
@@ -3402,8 +3428,16 @@
 			"output" "speakers"
 		}
 	}
-
-
+	"dota_update_death_music_track_update"
+	{
+		"import_stack" "dota_update_death_music"
+		"update_track"
+		{
+			"operator" "track_update"
+			"stop_channel_on_track" "false"  
+		}
+	}
+	
 
 // 	"update_music_spatial_stop_dist"
 // 	{
@@ -4309,6 +4343,39 @@
 			"operator" "sys_output"
 			"input_speakers" "@speakers_limit.output"
 			"output" "speakers"
+		}
+	}
+
+	"dota_update_default_ganked_music"
+	{
+		"gank_music_request_opvar" 
+		{
+			"operator" "get_opvar_float"
+			"opvar" "music_probability_ganker"	
+		}
+		"remap_gank_opvar_value"
+		{
+			"operator" "math_curve_2d_4knot"
+			"curve_type" "linear"	
+			"input" "@gank_music_request_opvar.output"
+			"input_X1" "0.8"	
+			"input_Y1" "0.25"	
+			"input_X2" "0.9"	
+			"input_Y2" "0.5"	
+			"input_X3" "1.0"	
+			"input_Y3" "1.0"	
+			"input_X4" "1.0"	
+			"input_Y4" "1.0"	
+		}
+
+		"import_stack" "dota_update_default"	
+		"mixer"
+		{
+			"mixgroup" "Music"
+		}
+		"volume_accumulate"
+		{
+			"input12" "@remap_gank_opvar_value.output"
 		}
 	}
 
@@ -8009,6 +8076,31 @@
 		}
 	
 	}
+	"dota_stop_not_worldmap"
+	{
+		"get_worldmap_flag"
+		{
+			"operator" "get_opvar_float"
+			"execute_once" "true"
+			"opvar" "dota_worldmap_flag"
+		}
+		"not_worldmap"
+		{
+			"operator" "math_float"
+			"apply" "equals"
+			"input1" "@get_worldmap_flag.output"
+			"input2" "0.0"	
+		}
+		"repeat_secondary_ui_entry"
+		{
+			"input_execute" "@not_worldmap.output"
+			"operator" "sys_start_entry"
+			"execute_once" "false"
+			"input_start" "1"
+			"entry_name" "valve_dota_001.music.ui_main" //Replace with the sound you want to play.
+		}
+	}
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////

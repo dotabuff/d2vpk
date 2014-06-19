@@ -1098,7 +1098,7 @@ Rule announcer_dlc_juggernaut_CustomIsGoodVictoryIsAnnouncerVoice_Juggernaut_Rul
 
 Response announcer_dlc_juggernaut_CustomIsAllPickIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_all_pick.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_all_pick.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsAllPickIsAnnouncerVoice_Juggernaut_Rule
@@ -1109,7 +1109,7 @@ Rule announcer_dlc_juggernaut_CustomIsAllPickIsAnnouncerVoice_Juggernaut_Rule
 
 Response announcer_dlc_juggernaut_CustomIsAllRandomIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_all_random.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_all_random.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsAllRandomIsAnnouncerVoice_Juggernaut_Rule
@@ -1153,7 +1153,7 @@ Rule announcer_dlc_juggernaut_CustomIsReverseCaptainsModeIsDraftBeginIsAnnouncer
 
 Response announcer_dlc_juggernaut_CustomIsRandomDraftIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_random_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_random_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsRandomDraftIsAnnouncerVoice_Juggernaut_Rule
@@ -1164,7 +1164,7 @@ Rule announcer_dlc_juggernaut_CustomIsRandomDraftIsAnnouncerVoice_Juggernaut_Rul
 
 Response announcer_dlc_juggernaut_CustomIsSingleDraftIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_single_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_single_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsSingleDraftIsAnnouncerVoice_Juggernaut_Rule
@@ -1173,9 +1173,20 @@ Rule announcer_dlc_juggernaut_CustomIsSingleDraftIsAnnouncerVoice_Juggernaut_Rul
 	response announcer_dlc_juggernaut_CustomIsSingleDraftIsAnnouncerVoice_Juggernaut
 }
 
+Response announcer_dlc_juggernaut_CustomIsDeathMatchIsAnnouncerVoice_Juggernaut
+{
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_type_death_match.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_juggernaut_CustomIsDeathMatchIsAnnouncerVoice_Juggernaut_Rule
+{
+	criteria Custom Isannouncer_dlc_juggernaut IsDeathMatch IsAnnouncerVoice_Juggernaut
+	response announcer_dlc_juggernaut_CustomIsDeathMatchIsAnnouncerVoice_Juggernaut
+}
+
 Response announcer_dlc_juggernaut_CustomIsTenSecondsRemainingIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_count_pick_10.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_count_pick_10.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsTenSecondsRemainingIsAnnouncerVoice_Juggernaut_Rule
@@ -1186,7 +1197,7 @@ Rule announcer_dlc_juggernaut_CustomIsTenSecondsRemainingIsAnnouncerVoice_Jugger
 
 Response announcer_dlc_juggernaut_CustomIsFiveSecondsRemainingIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_count_pick_5.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_count_pick_5.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsFiveSecondsRemainingIsAnnouncerVoice_Juggernaut_Rule
@@ -1197,7 +1208,7 @@ Rule announcer_dlc_juggernaut_CustomIsFiveSecondsRemainingIsAnnouncerVoice_Jugge
 
 Response announcer_dlc_juggernaut_CustomIsMidOnlyIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsMidOnlyIsAnnouncerVoice_Juggernaut_Rule
@@ -1208,7 +1219,7 @@ Rule announcer_dlc_juggernaut_CustomIsMidOnlyIsAnnouncerVoice_Juggernaut_Rule
 
 Response announcer_dlc_juggernaut_CustomIsLeastPlayedIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsLeastPlayedIsAnnouncerVoice_Juggernaut_Rule
@@ -1219,7 +1230,7 @@ Rule announcer_dlc_juggernaut_CustomIsLeastPlayedIsAnnouncerVoice_Juggernaut_Rul
 
 Response announcer_dlc_juggernaut_CustomIsLimitedHeroesIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsLimitedHeroesIsAnnouncerVoice_Juggernaut_Rule
@@ -1230,12 +1241,23 @@ Rule announcer_dlc_juggernaut_CustomIsLimitedHeroesIsAnnouncerVoice_Juggernaut_R
 
 Response announcer_dlc_juggernaut_CustomIsCustomModeIsAnnouncerVoice_Juggernaut
 {
-	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_juggernaut_CustomIsCustomModeIsAnnouncerVoice_Juggernaut_Rule
 {
 	criteria Custom Isannouncer_dlc_juggernaut IsCustomMode IsAnnouncerVoice_Juggernaut
 	response announcer_dlc_juggernaut_CustomIsCustomModeIsAnnouncerVoice_Juggernaut
+}
+
+Response announcer_dlc_juggernaut_CustomIsOneVsOneIsAnnouncerVoice_Juggernaut
+{
+	scene "scenes/announcer_dlc_juggernaut/announcer_dlc_juggernaut_announcer_choose_hero.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_juggernaut_CustomIsOneVsOneIsAnnouncerVoice_Juggernaut_Rule
+{
+	criteria Custom Isannouncer_dlc_juggernaut IsOneVsOne IsAnnouncerVoice_Juggernaut
+	response announcer_dlc_juggernaut_CustomIsOneVsOneIsAnnouncerVoice_Juggernaut
 }
 

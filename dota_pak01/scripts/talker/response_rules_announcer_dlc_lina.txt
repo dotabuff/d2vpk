@@ -1173,6 +1173,17 @@ Rule announcer_dlc_lina_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Lina_Ru
 	response announcer_dlc_lina_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Lina
 }
 
+Response announcer_dlc_lina_CustomIsDeathMatchIsAnnouncerVoice_Lina
+{
+	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_death_match.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_lina_CustomIsDeathMatchIsAnnouncerVoice_Lina_Rule
+{
+	criteria Custom Isannouncer_dlc_lina IsDeathMatch IsAnnouncerVoice_Lina
+	response announcer_dlc_lina_CustomIsDeathMatchIsAnnouncerVoice_Lina
+}
+
 Response announcer_dlc_lina_CustomIsLeastPlayedIsAnnouncerVoice_Lina
 {
 	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_least_played.vcd" nodelay noscene speakonce
@@ -1251,6 +1262,18 @@ Rule announcer_dlc_lina_CustomIsCustomModeIsAnnouncerVoice_Lina_Rule
 	response announcer_dlc_lina_CustomIsCustomModeIsAnnouncerVoice_Lina
 }
 
+Response announcer_dlc_lina_CustomIsOneVsOneIsAnnouncerVoice_Lina
+{
+	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_choose_hero_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_choose_hero_02.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_lina_CustomIsOneVsOneIsAnnouncerVoice_Lina_Rule
+{
+	criteria Custom Isannouncer_dlc_lina IsOneVsOne IsAnnouncerVoice_Lina
+	response announcer_dlc_lina_CustomIsOneVsOneIsAnnouncerVoice_Lina
+}
+
 Response announcer_dlc_lina_CustomIsAnnounceHeroPickChance_50%IsEnemyLinaIsAnnouncerVoice_Lina
 {
 	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_picked_lina_01.vcd" nodelay noscene speakonce
@@ -1278,8 +1301,8 @@ Rule announcer_dlc_lina_CustomIsAnnounceQuitChance_50%IsAnnouncerVoice_Lina_Rule
 
 Response announcer_dlc_lina_Followup_GenericIsAllPickIsAnnouncerVoice_Lina
 {
-	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_all_pick_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_all_pick_02.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_all_pick_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_all_pick_02.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_lina_Followup_GenericIsAllPickIsAnnouncerVoice_Lina_Rule
@@ -1290,7 +1313,7 @@ Rule announcer_dlc_lina_Followup_GenericIsAllPickIsAnnouncerVoice_Lina_Rule
 
 Response announcer_dlc_lina_Followup_GenericIsMidOnlyIsAnnouncerVoice_Lina
 {
-	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_mid_only.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_mid_only.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_lina_Followup_GenericIsMidOnlyIsAnnouncerVoice_Lina_Rule
@@ -1301,7 +1324,7 @@ Rule announcer_dlc_lina_Followup_GenericIsMidOnlyIsAnnouncerVoice_Lina_Rule
 
 Response announcer_dlc_lina_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Lina
 {
-	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_least_played.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_least_played.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_lina_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Lina_Rule
@@ -1312,7 +1335,7 @@ Rule announcer_dlc_lina_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Lina_Rule
 
 Response announcer_dlc_lina_Followup_GenericIsLimitedHeroesIsAnnouncerVoice_Lina
 {
-	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_limited_heroes.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_lina/announcer_dlc_lina_announcer_type_limited_heroes.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_lina_Followup_GenericIsLimitedHeroesIsAnnouncerVoice_Lina_Rule

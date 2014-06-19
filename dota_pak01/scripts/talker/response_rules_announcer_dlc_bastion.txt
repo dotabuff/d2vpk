@@ -1376,10 +1376,10 @@ Rule announcer_dlc_bastion_CustomIsLateNightIsLimitedHeroesIsAnnouncerVoice_Bast
 
 Response announcer_dlc_bastion_CustomIsAllPickIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_other_mode.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_other_mode.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_CustomIsAllPickIsAnnouncerVoice_Bastion_Rule
@@ -1390,11 +1390,11 @@ Rule announcer_dlc_bastion_CustomIsAllPickIsAnnouncerVoice_Bastion_Rule
 
 Response announcer_dlc_bastion_CustomIsLeastPlayedIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_least_played.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_least_played_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_pick_yr_triple.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_least_played.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_least_played_02.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_pick_yr_triple.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_CustomIsLeastPlayedIsAnnouncerVoice_Bastion_Rule
@@ -1405,7 +1405,7 @@ Rule announcer_dlc_bastion_CustomIsLeastPlayedIsAnnouncerVoice_Bastion_Rule
 
 Response announcer_dlc_bastion_CustomIsAllRandomIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_random.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_random.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_CustomIsAllRandomIsAnnouncerVoice_Bastion_Rule
@@ -1439,8 +1439,8 @@ Rule announcer_dlc_bastion_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Bast
 
 Response announcer_dlc_bastion_CustomIsRandomDraftIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_random_draft_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_random_draft_02.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_random_draft_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_random_draft_02.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_CustomIsRandomDraftIsAnnouncerVoice_Bastion_Rule
@@ -1451,8 +1451,8 @@ Rule announcer_dlc_bastion_CustomIsRandomDraftIsAnnouncerVoice_Bastion_Rule
 
 Response announcer_dlc_bastion_CustomIsSingleDraftIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_single_draft_01.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_single_draft_02.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_single_draft_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_single_draft_02.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_CustomIsSingleDraftIsAnnouncerVoice_Bastion_Rule
@@ -1461,9 +1461,21 @@ Rule announcer_dlc_bastion_CustomIsSingleDraftIsAnnouncerVoice_Bastion_Rule
 	response announcer_dlc_bastion_CustomIsSingleDraftIsAnnouncerVoice_Bastion
 }
 
+Response announcer_dlc_bastion_CustomIsDeathMatchIsAnnouncerVoice_Bastion
+{
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_death_match_01.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_death_match_02.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_bastion_CustomIsDeathMatchIsAnnouncerVoice_Bastion_Rule
+{
+	criteria Custom Isannouncer_dlc_bastion IsDeathMatch IsAnnouncerVoice_Bastion
+	response announcer_dlc_bastion_CustomIsDeathMatchIsAnnouncerVoice_Bastion
+}
+
 Response announcer_dlc_bastion_CustomIsMidOnlyIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_mid_only.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_mid_only.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_CustomIsMidOnlyIsAnnouncerVoice_Bastion_Rule
@@ -1485,9 +1497,9 @@ Rule announcer_dlc_bastion_CustomIsReverseCaptainsModeIsDraftBeginIsAnnouncerVoi
 
 Response announcer_dlc_bastion_CustomIsLimitedHeroesIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_limited_heroes.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_pick_yr_triple.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_limited_heroes.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_pick_yr_triple.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_CustomIsLimitedHeroesIsAnnouncerVoice_Bastion_Rule
@@ -1498,14 +1510,26 @@ Rule announcer_dlc_bastion_CustomIsLimitedHeroesIsAnnouncerVoice_Bastion_Rule
 
 Response announcer_dlc_bastion_CustomIsCustomModeIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_CustomIsCustomModeIsAnnouncerVoice_Bastion_Rule
 {
 	criteria Custom Isannouncer_dlc_bastion IsCustomMode IsAnnouncerVoice_Bastion
 	response announcer_dlc_bastion_CustomIsCustomModeIsAnnouncerVoice_Bastion
+}
+
+Response announcer_dlc_bastion_CustomIsOneVsOneIsAnnouncerVoice_Bastion
+{
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_bastion_CustomIsOneVsOneIsAnnouncerVoice_Bastion_Rule
+{
+	criteria Custom Isannouncer_dlc_bastion IsOneVsOne IsAnnouncerVoice_Bastion
+	response announcer_dlc_bastion_CustomIsOneVsOneIsAnnouncerVoice_Bastion
 }
 
 Response announcer_dlc_bastion_CustomIsTenSecondsRemainingIsAnnouncerVoice_Bastion
@@ -3048,8 +3072,8 @@ Rule announcer_dlc_bastion_Followup_GenericIsGoodVictoryIsPlayerTeam_DireChance_
 
 Response announcer_dlc_bastion_Followup_GenericIsAllPickIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_02.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_Followup_GenericIsAllPickIsAnnouncerVoice_Bastion_Rule
@@ -3060,7 +3084,7 @@ Rule announcer_dlc_bastion_Followup_GenericIsAllPickIsAnnouncerVoice_Bastion_Rul
 
 Response announcer_dlc_bastion_Followup_GenericIsMidOnlyIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_mid_only.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_mid_only.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_Followup_GenericIsMidOnlyIsAnnouncerVoice_Bastion_Rule
@@ -3071,9 +3095,9 @@ Rule announcer_dlc_bastion_Followup_GenericIsMidOnlyIsAnnouncerVoice_Bastion_Rul
 
 Response announcer_dlc_bastion_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_least_played.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_least_played_02.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_least_played.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_least_played_02.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Bastion_Rule
@@ -3084,8 +3108,8 @@ Rule announcer_dlc_bastion_Followup_GenericIsLeastPlayedIsAnnouncerVoice_Bastion
 
 Response announcer_dlc_bastion_Followup_GenericIsLimitedHeroesIsAnnouncerVoice_Bastion
 {
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene 
-	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_limited_heroes.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_all_pick_03.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_bastion/announcer_dlc_bastion_announcer_type_limited_heroes.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_bastion_Followup_GenericIsLimitedHeroesIsAnnouncerVoice_Bastion_Rule

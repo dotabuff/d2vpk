@@ -1478,6 +1478,17 @@ Rule announcer_dlc_glados_CustomIsSingleDraftIsAnnouncerVoice_Glados_Rule
 	response announcer_dlc_glados_CustomIsSingleDraftIsAnnouncerVoice_Glados
 }
 
+Response announcer_dlc_glados_CustomIsDeathMatchIsAnnouncerVoice_Glados
+{
+	scene "scenes/announcer_dlc_glados/announcer_dlc_glados_ann_glados_gamemode_07.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_glados_CustomIsDeathMatchIsAnnouncerVoice_Glados_Rule
+{
+	criteria Custom Isannouncer_dlc_glados IsDeathMatch IsAnnouncerVoice_Glados
+	response announcer_dlc_glados_CustomIsDeathMatchIsAnnouncerVoice_Glados
+}
+
 Response announcer_dlc_glados_CustomIsMidOnlyIsAnnouncerVoice_Glados
 {
 	scene "scenes/announcer_dlc_glados/announcer_dlc_glados_ann_glados_gamemode_09.vcd" nodelay noscene speakonce
@@ -1520,6 +1531,40 @@ Rule announcer_dlc_glados_CustomIsCustomModeIsAnnouncerVoice_Glados_Rule
 {
 	criteria Custom Isannouncer_dlc_glados IsCustomMode IsAnnouncerVoice_Glados
 	response announcer_dlc_glados_CustomIsCustomModeIsAnnouncerVoice_Glados
+}
+
+Response announcer_dlc_glados_CustomIsOneVsOneIsAnnouncerVoice_Glados
+{
+	scene "scenes/announcer_dlc_glados/announcer_dlc_glados_ann_glados_gamemode_16.vcd" nodelay noscene speakonce
+	scene "scenes/announcer_dlc_glados/announcer_dlc_glados_ann_glados_choose_hero_01.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_glados_CustomIsOneVsOneIsAnnouncerVoice_Glados_Rule
+{
+	criteria Custom Isannouncer_dlc_glados IsOneVsOne IsAnnouncerVoice_Glados
+	response announcer_dlc_glados_CustomIsOneVsOneIsAnnouncerVoice_Glados
+}
+
+Response announcer_dlc_glados_CustomIsTenSecondsRemainingIsAnnouncerVoice_Glados
+{
+	scene "scenes/announcer_dlc_glados/announcer_dlc_glados_ann_glados_count_pick_01.vcd" nodelay noscene 
+}
+
+Rule announcer_dlc_glados_CustomIsTenSecondsRemainingIsAnnouncerVoice_Glados_Rule
+{
+	criteria Custom Isannouncer_dlc_glados IsTenSecondsRemaining IsAnnouncerVoice_Glados
+	response announcer_dlc_glados_CustomIsTenSecondsRemainingIsAnnouncerVoice_Glados
+}
+
+Response announcer_dlc_glados_CustomIsFiveSecondsRemainingIsAnnouncerVoice_Glados
+{
+	scene "scenes/announcer_dlc_glados/announcer_dlc_glados_ann_glados_count_pick_02.vcd" nodelay noscene 
+}
+
+Rule announcer_dlc_glados_CustomIsFiveSecondsRemainingIsAnnouncerVoice_Glados_Rule
+{
+	criteria Custom Isannouncer_dlc_glados IsFiveSecondsRemaining IsAnnouncerVoice_Glados
+	response announcer_dlc_glados_CustomIsFiveSecondsRemainingIsAnnouncerVoice_Glados
 }
 
 Response announcer_dlc_glados_CustomIsAnnounceIdleChance_15%DuringGameIsAnnouncerVoice_Glados

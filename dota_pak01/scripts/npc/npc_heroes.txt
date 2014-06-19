@@ -112,6 +112,7 @@
 		"IdleExpression"			"scenes\default_idle.vcd"
 		"IdleSoundLoop"				""
 		"AbilityDraftDisabled"		"0"
+		"ARDMDisabled"				"0"
 
 		"HUD"
 		{
@@ -166,6 +167,7 @@
 		"NameAliases"				"am"
 		"url"				"Anti-Mage"
 		"LastHitChallengeRival"		"npc_dota_hero_bounty_hunter"
+		"HeroSelectSoundEffect"		")weapons/hero/antimage/blink_out.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -211,7 +213,22 @@
 		"ParticleFile"				"particles/units/heroes/hero_antimage.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_antimage.txt"
 		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_antimage.txt"
-
+		
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"antimage_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -329,11 +346,13 @@
 		"Team"					"Bad"
 		"HeroID"				"2"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale"			"1.0"	
+		"LoadoutScale"       "0.95"
 		"HeroGlowColor" 		"222 60 36"
 		"CMEnabled"				"1"
 		"url"					"Axe"
 		"new_player_enable"		"1"
 		"LastHitChallengeRival"	"npc_dota_hero_juggernaut"
+		"HeroSelectSoundEffect"		")weapons/hero/axe/berserkers_call.wav"
 	
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -446,7 +465,23 @@
 		"ParticleFile"				"particles/units/heroes/hero_axe.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_axe.txt"
 		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_axe.txt"
-	
+		
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"axe_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_attack1"
+					}
+				}	
+			}
+		}
+		
 		"Bot"
 		{
 			"Loadout"
@@ -540,11 +575,14 @@
 		"HeroID"					"3"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"BotImplemented"			"1"
 		"ModelScale"				"0.93"
+		"LoadoutScale"				"0.83"
 		"HeroGlowColor" 			"207 106 125"
 		"CMEnabled"					"1"
 		"url"					"Bane"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_lion"
+		"HeroSelectSoundEffect"		"weapons/hero/bane/nightmare_end.wav"
+
 		
 
 		// Abilities
@@ -727,11 +765,13 @@
 		"Team"						"Bad"
 		"HeroID"					"4"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"     				".88"
+		"LoadoutScale"		"1.1"
 		"HeroGlowColor" 			"247 60 12"
 		"CMEnabled"					"1"
 		"NameAliases"				"bs"
 		"url"				"Bloodseeker"
 		"LastHitChallengeRival"		"npc_dota_hero_juggernaut"
+		"HeroSelectSoundEffect"		")weapons\hero\bloodseeker\rupture_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -778,6 +818,23 @@
 		"ParticleFile"				"particles/units/heroes/hero_bloodseeker.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_bloodseeker.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_bloodseeker.txt"
+		
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"bloodseeker_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
 		
 		// Items
 			//-------------------------------------------------------------------------------------------------------------
@@ -938,17 +995,19 @@
 		"BanSound"					"crystalmaiden_cm_anger_08"
 		"Enabled"					"1"
 		"HeroUnlockOrder"			"0"
-		"Role"						"Support,Disabler,Nuker,LaneSupport"
+		"Role"						"Support,Disabler,Nuker,LaneSupport" 
 		"Rolelevels"				"3,2,2,1"
 		"Team"						"Good"
 		"HeroID"					"5"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"BotImplemented"			"1"
 		"ModelScale"					".95"
+		"LoadoutScale"					"1.05"
 		"HeroGlowColor" 			"82 236 255"
 		"CMEnabled"					"1"
 		"NameAliases"				"cm"
 		"url"				"Crystal_Maiden"
 		"LastHitChallengeRival"		"npc_dota_hero_lina"
+		"HeroSelectSoundEffect"		"weapons\hero\crystal_maiden\crystal_nova.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -1173,11 +1232,13 @@
 		"Team"						"Good"	//neutral
 		"HeroID"					"6"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"				"0.97"
+		"LoadoutScale"          "1.1"
 		"HeroGlowColor" 			"1 60 246"
 		"CMEnabled"					"1"
 		"url"					"Drow_Ranger"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_windrunner"
+		"HeroSelectSoundEffect"		")weapons/hero/drow_ranger/silence.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -1420,6 +1481,7 @@
 		"new_player_enable"			"1"
 		"NoCombine"					"0"
 		"LastHitChallengeRival"		"npc_dota_hero_tiny"
+		"HeroSelectSoundEffect"		")weapons/hero/earthshaker/echo_slam.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -1469,6 +1531,28 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_earthshaker.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_earthshaker.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"earthshaker_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"position" 	"250 250 250"
+					}
+				}	
+			}
+		}
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -1604,11 +1688,13 @@
 		"BotImplemented"		"1"
 		"Press"					"1"
 		"ModelScale"			".85"
+		"LoadoutScale"          "1"
 		"HeroGlowColor" 		"222 120 36"
 		"CMEnabled"				"1"
 		"url"				"Juggernaut"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_skeleton_king"
+		"HeroSelectSoundEffect"		")weapons/hero/juggernaut/healing_ward_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -1853,6 +1939,7 @@
 		"CMEnabled"				"1"
 		"url"				"Mirana"
 		"LastHitChallengeRival"		"npc_dota_hero_luna"
+		"HeroSelectSoundEffect"		")weapons/hero/mirana/leap1.wav"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -2090,6 +2177,7 @@
 		"Team"						"Bad"
 		"HeroID"					"11"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale" 				".98"
+		"LoadoutScale"				".82"
 		"HeroGlowColor" 			"240 34 18"
 		"CMEnabled"					"1"
 		"NameAliases"				"sf"
@@ -2097,6 +2185,7 @@
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_lion"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/nevermore/shadowraze.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -2326,12 +2415,14 @@
 		"Team"						"Good"
 		"HeroID"					"10"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"					".88"
+		"LoadoutScale"          "1"
 		"HeroGlowColor" 			"33 255 255"
 		"CMEnabled"					"1"
 		"url"					"Morphling"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_necrolyte"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons\hero\morphling\adaptive_strike.wav"
 		
 
 		// Abilities
@@ -2566,8 +2657,11 @@
 		"BanSound"				"phantom_lancer_plance_anger_06"
 		"CMEnabled"				"1"
 		"ModelScale"			".84"
+		"LoadoutScale"          ".97"
 		"url"			"Phantom_Lancer"
 		"LastHitChallengeRival"		"npc_dota_hero_juggernaut"
+		"HeroSelectSoundEffect"		")weapons\hero\phantom_lancer\spirit_lance_cast.wav"
+
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -2615,6 +2709,29 @@
 		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_phantom_lancer.txt"
 		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_phantom_lancer.txt"
+
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"phantom_lancer_spawn"
+				{
+					"spawn"	"1"
+
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_attack1"
+					}
+				}
+			}
+		}
 		
 		"ItemSlots"
 		{
@@ -2728,6 +2845,7 @@
 		"url"				"Puck"
 		"LastHitChallengeRival"	"npc_dota_hero_jakiro"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		"weapons/hero/puck/waning_rift.wav"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -2941,10 +3059,12 @@
 		"Team"					"Bad"
 		"HeroID"				"14"									// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"			"0.98"
+		"LoadoutScale"          ".92"
 		"HeroGlowColor"			"178 128 114"
 		"CMEnabled"				"1"
 		"url"				"Pudge"
 		"LastHitChallengeRival"	"npc_dota_hero_skeleton_king"
+		"HeroSelectSoundEffect"		")weapons/hero/pudge/dismember_swing2.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -3229,6 +3349,7 @@
 		"CMEnabled"				"1"
 		"url"				"Razor"
 		"LastHitChallengeRival"	"npc_dota_hero_zuus"
+		"HeroSelectSoundEffect"		")weapons/hero/razor/storm_cast.wav"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -3524,6 +3645,7 @@
 		"NameAliases"				"sk"
 		"url"				"Sand_King"
 		"LastHitChallengeRival"		"npc_dota_hero_skeleton_king"
+		"HeroSelectSoundEffect"		")weapons/hero/sand_king/sand_king_epicenter_spell.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -3739,6 +3861,7 @@
 		"NameAliases"				"ss"
 		"url"				"Storm_Spirit"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
+		"HeroSelectSoundEffect"		")weapons/hero/storm_spirit/ball_lightning.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -3806,8 +3929,7 @@
 				{
 					"0"
 					{
-						"type"		"follow_attachment"
-						"location"	"attach_absorigin"
+						"type"		"follow_origin"
 					}
 				}
 				"storm_spirit_loadout_hand"
@@ -3968,11 +4090,13 @@
 		"HeroID"					"18"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"BotImplemented"			"1"
 		"ModelScale"					".84"
+		"LoadoutScale"					".9"	
 		"HeroGlowColor" 			"0 50 247"
 		"CMEnabled"					"1"
 		"url"					"Sven"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_omniknight"
+		"HeroSelectSoundEffect"		")weapons/hero/sven/storm_bolt.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -4184,11 +4308,13 @@
 		"HeroID"					"19"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"BotImplemented"			"1"
 		"ModelScale"				".93"
+		"LoadoutScale"					"1"
 		"HeroGlowColor" 			"254 242 200"
 		"CMEnabled"					"1"
 		"url"					"Tiny"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
+		"HeroSelectSoundEffect"		")weapons/hero/tiny/tiny_avalanche.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -4273,9 +4399,33 @@
 			}		
 			"1"
 			{
-				"SlotIndex"	"0"
+				"SlotIndex"	"1"
 				"SlotName"	"misc"
 				"SlotText"	"#LoadoutSlot_Misc"
+			}
+			"2"
+			{
+				"SlotIndex"	"2"
+				"SlotName"	"head"
+				"SlotText"	"#LoadoutSlot_Head"
+			}
+			"3"
+			{
+				"SlotIndex"	"3"
+				"SlotName"	"arms"
+				"SlotText"	"#LoadoutSlot_Arms"
+			}
+			"4"
+			{
+				"SlotIndex"	"4"
+				"SlotName"	"offhand_weapon"
+				"SlotText"	"#LoadoutSlot_Offhand_Weapon"
+			}
+			"5"
+			{
+				"SlotIndex"	"5"
+				"SlotName"	"armor"
+				"SlotText"	"#LoadoutSlot_Armor"	
 			}		
 		}
 
@@ -4379,6 +4529,7 @@
 		"new_player_enable"			"1"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_death_prophet"
+		"HeroSelectSoundEffect"		")weapons/hero/vengeful_spirit/wave_of_terror.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -4604,11 +4755,13 @@
 		"HeroID"					"21"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"BotImplemented"			"1"
 		"ModelScale"					"0.98"
+		"LoadoutScale"			"1.1"
 		"HeroGlowColor" 			"185 220 20"
 		"CMEnabled"					"1"
 		"NameAliases"			"wr"
 		"url"			"Windranger"
 		"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+		"HeroSelectSoundEffect"		")weapons/hero/windrunner/focus_fire.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -4823,12 +4976,14 @@
 		"HeroID"					"22"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"BotImplemented"			"1"
 		"ModelScale"					".86"
+		"LoadoutScale"			"1"
 		"HeroGlowColor" 			"64 166 234"
 		"CMEnabled"					"1"
 		"url"					"Zeus"
 		"new_player_enable"			"1"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_razor"
+		"HeroSelectSoundEffect"		"weapons/hero/zuus/gods_wrath_target.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -4976,10 +5131,12 @@
 		"Team"						"Good"
 		"HeroID"					"23"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 			".84"
+		"LoadoutScale"          ".93"
 		"HeroGlowColor" 			"50 150 165"
 		"CMEnabled"					"1"
 		"url"					"Kunkka"
 		"LastHitChallengeRival"		"npc_dota_hero_tidehunter"
+		"HeroSelectSoundEffect"		"weapons/hero/kunkka/ability_ghost_ship_bell.wav"
 
 
 
@@ -5227,6 +5384,7 @@
 		"CMEnabled"					"1"
 		"url"					"Lina"
 		"LastHitChallengeRival"		"npc_dota_hero_crystal_maiden"
+		"HeroSelectSoundEffect"		")weapons/hero/lina/dragonslave01.wav"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -5459,6 +5617,7 @@
 		"url"					"Lich"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"	"npc_dota_hero_crystal_maiden"
+		"HeroSelectSoundEffect"		")weapons/hero/lich/chain_frost_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -5579,6 +5738,14 @@
 						"type"		"follow_attachment"
 						"location"	"attach_hitloc"
 					}
+				}
+				"lich_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
 				}	
 			}
 		}	
@@ -5689,6 +5856,7 @@
 		"Team"			"Bad"
 		"HeroID"		"26"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale" 				".70"
+		"LoadoutScale"          ".82"
 		"HeroGlowColor" 			"110 50 165"
 		"PickSound"					"lion_lion_spawn_01"
 		"BanSound"					"lion_lion_anger_03"
@@ -5696,6 +5864,7 @@
 		"url"					"Lion"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_witch_doctor"
+		"HeroSelectSoundEffect"		")weapons/hero/lion/finger_of_death_impact.wav"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -5917,6 +6086,7 @@
 		"NameAliases"				"ss"
 		"url"				"Shadow_Shaman"
 		"LastHitChallengeRival"		"npc_dota_hero_witch_doctor"
+		"HeroSelectSoundEffect"		")weapons/hero/shadowshaman/serpent_ward.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -6166,6 +6336,7 @@
 		"CMEnabled"					"1"
 		"url"					"Slardar"
 		"LastHitChallengeRival"		"npc_dota_hero_tidehunter"
+		"HeroSelectSoundEffect"		")weapons/hero/slardar/slithereen_crush.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -6381,11 +6552,13 @@
 		"HeroID"					"29"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"BotImplemented"			"1"
 		"ModelScale" 				".84"
+		"LoadoutScale"			"0.78"
 		"HeroGlowColor" 			"54 181 81"
 		"CMEnabled"					"1"
 		"url"					"Tidehunter"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
+		"HeroSelectSoundEffect"		"weapons/hero/tidehunter/kraken_shell.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -6600,6 +6773,7 @@
 		"url"				"Witch_Doctor"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_necrolyte"
+		"HeroSelectSoundEffect"		")weapons/hero/witch_doctor/cask_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -6827,12 +7001,14 @@
 		"Team"					"Good"
 		"HeroID"				"32"													// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale"				"0.87"		
+		"LoadoutScale"				"1.1"
 		"HeroGlowColor" 			"170 112 194"										
 		"CMEnabled"					"1"
 		"PickSound"					"riki_riki_spawn_01"
 		"BanSound"					"riki_riki_anger_04"
 		"url"					"Riki"
 		"LastHitChallengeRival"		"npc_dota_hero_bounty_hunter"
+		"HeroSelectSoundEffect"		")weapons/hero/riki/riki_smokescreen.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -7051,11 +7227,13 @@
 		"Team"						"Bad"
 		"HeroID"					"33"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale"				".81"
+		"LoadoutScale"          ".65"
 		"HeroGlowColor" 			"64 0 255"
 		"CMEnabled"					"1"
 		"url"					"Enigma"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_bane"
+		"HeroSelectSoundEffect"		")weapons/hero/enigma/malefice.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -7157,6 +7335,16 @@
 				"SlotIndex"	"2"
 				"SlotName" 	"arms"
 				"SlotText"	"#LoadoutSlot_Arms"
+			}
+			"3"
+			{
+				"SlotIndex"	"3"
+				"SlotName" 	"ability2"
+				"SlotText"	"#LoadoutSlot_Ability2"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1000"
+				"MaxPolygonsLOD1"	"1000"
 			}
 		}
 		
@@ -7264,6 +7452,7 @@
 		"BanSound"					"tinker_tink_anger_10"
 		"url"					"Tinker"
 		"LastHitChallengeRival"		"npc_dota_hero_lina"
+		"HeroSelectSoundEffect"		")weapons/hero/tinker/rearm_anim.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -7483,6 +7672,7 @@
 		"HeroID"					"35"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"BotImplemented"			"1"
 		"ModelScale" 				".84"
+		"LoadoutScale"				"1"
 		"HeroGlowColor" 			"237 154 15"
 		"PickSound"					"sniper_snip_spawn_01"
 		"BanSound"					"sniper_snip_anger_01"
@@ -7490,6 +7680,7 @@
 		"url"					"Sniper"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+		"HeroSelectSoundEffect"		"weapons/hero/sniper/sniper_assassinate_load.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -7716,6 +7907,7 @@
 		"url"						"Necrophos"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_lich"
+		"HeroSelectSoundEffect"		")weapons/hero/necrolyte/reapers_scythe.wav"
 
 
 		// Abilities
@@ -7939,6 +8131,7 @@
 		"Team"						"Bad"
 		"HeroID"					"37"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale"				"0.93"
+		"LoadoutScale"			"1"
 		"HeroGlowColor" 			"249 54 47"
 		"PickSound"					"warlock_warl_spawn_01"	
 		"BanSound"					"warlock_warl_anger_04"		  
@@ -7946,6 +8139,7 @@
 		"url"						"Warlock"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_lion"
+		"HeroSelectSoundEffect"		")weapons/hero/warlock/rain_of_chaos_buildup.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -8221,6 +8415,7 @@
 		"url"					"Beastmaster"
 		"LastHitChallengeRival"		"npc_dota_hero_skeleton_king"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/beastmaster/call_of_the_wild_boar.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -8364,6 +8559,22 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_beastmaster.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_beastmaster.txt"
 		
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"beastmaster_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"  
+					}
+				}	
+			}
+		}
+		
 		"Bot"
 		{
 			"Loadout"
@@ -8450,6 +8661,7 @@
 		"Team"						"Bad"
 		"HeroID"					"39"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale"				".84"
+		"LoadoutScale"				".92"
 		"HeroGlowColor" 			"175 41 128"
 		"CMEnabled"					"1"
 		"PickSound"					"queenofpain_pain_spawn_04"
@@ -8457,6 +8669,7 @@
 		"NameAliases"				"qop"
 		"url"				"Queen_of_Pain"
 		"LastHitChallengeRival"		"npc_dota_hero_vengefulspirit"
+		"HeroSelectSoundEffect"		")weapons/hero/queenofpain/blink_in.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -8595,6 +8808,7 @@
 		"CMEnabled"					"1"
 		"url"					"Venomancer"
 		"LastHitChallengeRival"		"npc_dota_hero_viper"
+		"HeroSelectSoundEffect"		")weapons/hero/venomancer/venomancer_poison_nova.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -8809,6 +9023,7 @@
 		"Team"						"Bad"
 		"HeroID"					"41"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale"     				".84"
+		"LoadoutScale"          ".95"
 		"HeroGlowColor" 			"217 160 255"
 		"PickSound"					"faceless_void_face_spawn_01"
 		"BanSound"					"faceless_void_face_anger_02"
@@ -8816,6 +9031,7 @@
 		"NameAliases"				"fv"
 		"url"				"Faceless_Void"
 		"LastHitChallengeRival"		"npc_dota_hero_bounty_hunter"
+		"HeroSelectSoundEffect"		")weapons/hero/faceless_void/chronosphere.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -8943,6 +9159,14 @@
 						"location"	"attach_weapon_glow"
 					}
 				}	
+				"faceless_void_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"					
+					}
+				}
 			}
 		}	
 	
@@ -9036,6 +9260,7 @@
 		"Team"					"Bad"
 		"HeroID"					"42"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale" 			"0.94"
+		"LoadoutScale"		"0.92"
 		"HeroGlowColor" 		"226 224 36"										
 		"CMEnabled"					"1"
 		"BotImplemented"		"1"
@@ -9045,6 +9270,7 @@
 		"url"			"Wraith_King"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_sand_king"
+		"HeroSelectSoundEffect"		")weapons/hero/skeleton_king/reincarnate.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -9299,6 +9525,7 @@
 		"url"			"Death_Prophet"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_dazzle"
+		"HeroSelectSoundEffect"		")weapons/hero/death_prophet/exorcism_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -9367,8 +9594,7 @@
 				{
 					"0"
 					{
-						"type"		"follow_attachment"
-						"location"	"attach_absorigin"
+						"type"		"follow_origin"
 					}
 					"1"
 					{
@@ -9380,7 +9606,18 @@
 						"type"		"follow_attachment"
 						"location"	"attach_attack2"
 					}
-				}	
+				}
+				
+				"death_prophet_spawn"
+				{
+					"spawn"	"1"
+
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}		
 			}
 		}
 
@@ -9566,6 +9803,7 @@
 		"Team"					"Bad"
 		"HeroID"				"44"									// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"					".86"
+		"LoadoutScale"          ".93"
 		"HeroGlowColor" 			"154 97 133"
 		"PickSound"					"phantom_assassin_phass_spawn_01"
 		"BanSound"					"phantom_assassin_phass_anger_08"
@@ -9573,6 +9811,7 @@
 		"CMEnabled"					"1"
 		"url"			"Phantom_Assassin"
 		"LastHitChallengeRival"		"npc_dota_hero_bounty_hunter"
+		"HeroSelectSoundEffect"		")weapons/hero/phantom_assassin/stifling_dagger_target.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -9721,12 +9960,14 @@
 		"Team"					"Bad"
 		"HeroID"				"45"									// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"				".74"
+		"LoadoutScale"          ".85"
 		"HeroGlowColor" 			"194 80 163"
 		"PickSound"					"pugna_pugna_spawn_01"
 		"BanSound"					"pugna_pugna_anger_01"
 		"CMEnabled"					"1"
 		"url"					"Pugna"
 		"LastHitChallengeRival"		"npc_dota_hero_viper"
+		"HeroSelectSoundEffect"		")weapons/hero/pugna/netherblast_precast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -9923,6 +10164,7 @@
 		"Team"					"Good"
 		"HeroID"				"46"									// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale" 				".88"
+		"LoadoutScale"		".92"
 		"HeroGlowColor" 			"242 200 198"
 		"PickSound"					"templar_assassin_temp_spawn_02"
 		"BanSound"					"templar_assassin_temp_anger_03"
@@ -9930,6 +10172,7 @@
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_omniknight"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/templar_assassin/trap_spawn.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -10110,6 +10353,7 @@
 		"new_player_enable"			"1"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_jakiro"
+		"HeroSelectSoundEffect"		"weapons\hero\viper\viper_strike_impact.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -10279,6 +10523,7 @@
 		"CMEnabled"					"1"
 		"NoCombine"					"0"
 		"LastHitChallengeRival"		"npc_dota_hero_lina"
+		"HeroSelectSoundEffect"		")weapons/hero/luna/luna_lucentbeam_impact.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -10509,6 +10754,7 @@
 		"url"			"Dragon_Knight"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_sven"
+		"HeroSelectSoundEffect"		")weapons/hero/dragon_knight/dragonknight_elderdragon_form.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -10566,6 +10812,23 @@
 		"ParticleFile"				"particles/units/heroes/hero_dragon_knight.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_dragon_knight.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_dragon_knight.txt"
+
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"dragon_knight_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
 
 		"Bot"
 		{
@@ -10749,12 +11012,14 @@
 		"Team"			"Bad"
 		"HeroID"		"50"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"					".79"	
+		"LoadoutScale"          ".85"
 		"HeroGlowColor" 			"222 60 236"	
 		"PickSound"					"dazzle_dazz_spawn_01"
 		"BanSound"					"dazzle_dazz_anger_05"
 		"CMEnabled"					"1"
 		"url"					"Dazzle"
 		"LastHitChallengeRival"		"npc_dota_hero_witch_doctor"
+		"HeroSelectSoundEffect"		")weapons/hero/dazzle/shadow_wave.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -10862,7 +11127,24 @@
 		"ParticleFile"			"particles/units/heroes/hero_dazzle.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_dazzle.txt"
 		"VoiceFile"			"scripts/voscripts/game_sounds_vo_dazzle.txt"
-	
+
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"dazzle_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_attack1"
+					}
+				}	
+			}
+		}	
+		
 		"Bot"
 		{
 			"Loadout"
@@ -10965,6 +11247,7 @@
 		"Team"			"Good"
 		"HeroID"		"51"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale" 				".88"
+		"LoadoutScale"          "1.1"
 		"HeroGlowColor" 			"252 220 64"
 		"PickSound"					"rattletrap_ratt_spawn_05"
 		"BanSound"					"rattletrap_ratt_anger_06"
@@ -10972,6 +11255,7 @@
 		"url"					"Clockwerk"
 //		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_sand_king"
+		"HeroSelectSoundEffect"		"weapons/hero/rattletrap/hookshot_damage.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -11027,6 +11311,28 @@
 		"ParticleFile"			"particles/units/heroes/hero_rattletrap.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_rattletrap.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"clock_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		// Items
 			//-------------------------------------------------------------------------------------------------------------
 			"ItemSlots"
@@ -11116,12 +11422,14 @@
 		"Team"			"Bad"
 		"HeroID"		"52"											// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"					".84"
+		"LoadoutScale"          ".75"
 		"HeroGlowColor" 			"12 157 179"
 		"PickSound"					"leshrac_lesh_spawn_01"
 		"BanSound"					"leshrac_lesh_anger_06"
 		"CMEnabled"					"1"
 		"url"					"Leshrac"
 		"LastHitChallengeRival"		"npc_dota_hero_lion"
+		"HeroSelectSoundEffect"		")weapons/hero/leshrac/split_earth.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -11305,6 +11613,7 @@
 		"Team"				"Good"
 		"HeroID"			"53"											// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"				".79"
+		"LoadoutScale"          ".75"
 		"HeroGlowColor" 			"216 255 100"
 		"PickSound"					"furion_furi_spawn_01"
 		"BanSound"					"furion_furi_anger_02"
@@ -11312,6 +11621,7 @@
 		"NameAliases"				"np"
 		"url"				"Natures_Prophet"
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
+		"HeroSelectSoundEffect"		")weapons/hero/furion/teleport_in.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -11491,6 +11801,7 @@
 		"url"					"Lifestealer"
 		//"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_skeleton_king"
+		"HeroSelectSoundEffect"		")weapons\hero\lifestealer\consume.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -11692,6 +12003,7 @@
 		"Team"			"Bad"
 		"HeroID"		"55"											// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"				".74"
+		"LoadoutScale"          ".85"
 		"HeroGlowColor" 			"203 86 255"
 		"PickSound"					"dark_seer_dkseer_spawn_01"
 		"BanSound"					"dark_seer_dkseer_anger_01"
@@ -11699,6 +12011,7 @@
 		"NameAliases"				"ds"
 		"url"					"Dark_Seer"
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
+		"HeroSelectSoundEffect"		")weapons\hero\dark_seer\dota_dark_seer_surge.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -11757,6 +12070,14 @@
 					{
 						"type"		"follow_origin"
 						"location"	"attach_hitloc"  //Note : shouldn't need this
+					}
+				}
+				"dark_seer_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
 					}
 				}
 			}
@@ -11859,6 +12180,7 @@
 		"Team"			"Bad"
 		"HeroID"		"56"											// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"				".65"
+		"LoadoutScale"          ".75"
 		"HeroGlowColor" 			"205 58 0"
 		"CMEnabled"					"1"
 		"PickSound"					"clinkz_clinkz_spawn_01"
@@ -11866,6 +12188,7 @@
 		"url"					"Clinkz"
 		"new_player_enable"			"1"
 		"LastHitChallengeRival"		"npc_dota_hero_windrunner"
+		"HeroSelectSoundEffect"		")weapons/hero/clinkz/windwalk.wav"
 
 
 		// Abilities
@@ -11929,6 +12252,19 @@
 						"location"	"attach_hitloc"
 					}
 				}	
+				"clinkz_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}
 			}
 		}
 
@@ -12038,12 +12374,14 @@
 		"Team"			"Good"
 		"HeroID"		"57"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"					".74"
+		"LoadoutScale"          ".81"
 		"HeroGlowColor" 			"120 205 255"	   
 		"CMEnabled"					"1"
 		"PickSound"					"omniknight_omni_spawn_01"
 		"BanSound"					"omniknight_omni_anger_04"
 		"url"					"Omniknight"
 		"LastHitChallengeRival"		"npc_dota_hero_dragon_knight"
+		"HeroSelectSoundEffect"		")weapons/hero/omniknight/guardian_cast.wav"
 
 
 		// Abilities
@@ -12278,12 +12616,14 @@
 		"Team"			"Good"
 		"HeroID"		"58"	// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"	"0.74"
+		"LoadoutScale"          "0.78"
 		"HeroGlowColor" 			"216 114 11"
 		"PickSound"					"enchantress_ench_spawn_01"
 		"BanSound"					"enchantress_ench_anger_03"
 		"CMEnabled"					"1"
 		"url"					"Enchantress"
 		"LastHitChallengeRival"		"npc_dota_hero_drow_ranger"
+		"HeroSelectSoundEffect"		")weapons/hero/enchantress/enchant_creep.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -12397,6 +12737,31 @@
 		"ParticleFile"			"particles/units/heroes/hero_enchantress.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_enchantress.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"enchantress_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+				"enchantress_loadoutB"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_hitloc"
+					}	
+				}
+			}
+		}
+		
 		"Bot"
 		{
 			"HeroType"		"DOTA_BOT_PUSH_SUPPORT | DOTA_BOT_GANKER"
@@ -12437,6 +12802,7 @@
 		"BanSound"					"huskar_husk_anger_03"
 		"url"					"Huskar"
 		"LastHitChallengeRival"		"npc_dota_hero_dazzle"
+		"HeroSelectSoundEffect"		")weapons\hero\huskar\life_break.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -12486,7 +12852,23 @@
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_huskar.txt"
 		"ParticleFile"			"particles/units/heroes/hero_huskar.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_huskar.txt"
+
+	// Additional data needed to render the out of game portrait
 		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"huskar_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
 		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
@@ -12623,6 +13005,7 @@
 		"Team"				"Bad"
 		"HeroID"			"60"											// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"		".74"
+		"LoadoutScale"          ".84"
 		"HeroGlowColor" 			"70 105 255"
 		"PickSound"					"night_stalker_nstalk_spawn_01"
 		"BanSound"					"night_stalker_nstalk_anger_07"
@@ -12630,6 +13013,7 @@
 		"NameAliases"				"ns"
 		"url"				"Night_Stalker"
 		"LastHitChallengeRival"		"npc_dota_hero_juggernaut"
+		"HeroSelectSoundEffect"		")weapons\hero\nightstalker\dota_nightstalker_void.wav"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -12796,6 +13180,7 @@
 		"NameAliases"		"bm"
 		"url"		"Broodmother"
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
+		"HeroSelectSoundEffect"		")weapons/hero/broodmother/web_cast.wav"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -12854,6 +13239,23 @@
 		"ParticleFile"			"particles/units/heroes/hero_broodmother.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_broodmother.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"broodmother_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		"ItemSlots"
 		{
 			"0"	
@@ -12957,12 +13359,14 @@
 		"HeroID"			"62"											// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"HeroGlowColor" 			"221 201 63"
 		"ModelScale" 		"0.84"	
+		"LoadoutScale"   "1"
 		"CMEnabled"					"1"
 		"NameAliases"				"bh"
 		"PickSound"					"bounty_hunter_bount_spawn_01"
 		"BanSound"					"bounty_hunter_bount_anger_04"
 		"url"					"Bounty_Hunter"
 		"LastHitChallengeRival"	"npc_dota_hero_skeleton_king"
+		"HeroSelectSoundEffect"		")weapons\hero\bounty_hunter\track.wav"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -13018,6 +13422,24 @@
 		"ParticleFile"			"particles/units/heroes/hero_bounty_hunter.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_bounty_hunter.txt"
 	
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"bounty_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
+		
 		"ItemSlots"
 		{
 			"0"
@@ -13201,11 +13623,13 @@
 		"HeroID"					"63"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"NewHero"					"1"
 		"ModelScale" 				"0.74"
+		"LoadoutScale"			".9"
 		"PickSound"					"weaver_weav_spawn_01"
 		"BanSound"					"weaver_weav_anger_01"
 		"CMEnabled"					"1"
 		"url"					"Weaver"
 		"LastHitChallengeRival"		"npc_dota_hero_viper"
+		"HeroSelectSoundEffect"		")weapons/hero/weaver/swarm_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -13363,6 +13787,7 @@
 		"url"					"Jakiro"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_crystal_maiden"
+		"HeroSelectSoundEffect"		")weapons/hero/jakiro/macropyre_cast.wav"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -13407,6 +13832,24 @@
 		"ParticleFile"				"particles/units/heroes/hero_jakiro.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_jakiro.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_jakiro.txt"
+		
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"jakiro_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		"ItemSlots"
 		{
 			"0"
@@ -13536,6 +13979,7 @@
 		"NameAliases"				"br"
 		"url"				"Batrider"
 		"LastHitChallengeRival"		"npc_dota_hero_lina"
+		"HeroSelectSoundEffect"		"weapons/hero/batrider/batrider_flamebreak_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -13638,7 +14082,23 @@
 		"ParticleFile"				"particles/units/heroes/hero_batrider.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_batrider.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_batrider.txt"
-
+		
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"batrider_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		"Bot"
 		{
 			"Loadout"
@@ -13734,6 +14194,7 @@
 		"Team"						"Good"
 		"HeroID"					"66"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.93"
+		"LoadoutScale"          ".82"
 		"HeroGlowColor" 			"107 74 53"
 		"PickSound"					"chen_chen_spawn_01"
 		"BanSound"					"chen_chen_anger_04"
@@ -13741,6 +14202,7 @@
 		"url"					"Chen"
 		"LastHitChallengeRival"		"npc_dota_hero_sven"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/chen/penitence_impact.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -13788,7 +14250,24 @@
 		"ParticleFile"				"particles/units/heroes/hero_chen.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_chen.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_chen.txt"
+
+	// Additional data needed to render the out of game portrait
 		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"chen_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+				
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -13984,12 +14463,14 @@
 		"Team"						"Bad"
 		"HeroID"					"67"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				".67"
+		"LoadoutScale"				".75"
 		"HeroGlowColor" 			"107 74 53"
 		"PickSound"					"spectre_spec_spawn_01"
 		"BanSound"					"spectre_spec_anger_02"
 		"CMEnabled"					"1"
 		"url"					"Spectre"
 		"LastHitChallengeRival"		"npc_dota_hero_bounty_hunter"
+		"HeroSelectSoundEffect"		")weapons/hero/spectre/haunt.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -14202,6 +14683,7 @@
 		"Team"						"Bad"
 		"HeroID"					"69"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				".86"
+		"LoadoutScale"			".7"
 		"HeroGlowColor" 			"107 74 53"
 		"PickSound"					"doom_bringer_doom_spawn_01"
 		"BanSound"					"doom_bringer_doom_anger_02"
@@ -14210,6 +14692,7 @@
 		"url"				"Doom"
 		"LastHitChallengeRival"		"npc_dota_hero_lich"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/doom_bringer/devour.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -14257,6 +14740,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_doombringer.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_doom_bringer.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"doom_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -14447,7 +14947,9 @@
 
 		"HeroID"					"68"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				".84"
+		"LoadoutScale" 				".75"
 		"HeroGlowColor" 			"53 74 107"
+		"HeroSelectSoundEffect"		")weapons/hero/ancient_apparition/ice_vortex_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -14608,12 +15110,14 @@
 		"Team"						"Good"
 		"HeroID"					"70"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				".74"
+		"LoadoutScale"			".85"
 		"HeroGlowColor" 			"107 74 53"
 		"CMEnabled"					"1"
 		"PickSound"					"ursa_ursa_spawn_01"
 		"BanSound"					"ursa_ursa_anger_04"
 		"url"					"Ursa"
 		"LastHitChallengeRival"		"npc_dota_hero_tiny"
+		"HeroSelectSoundEffect"		")weapons\hero\ursa\ursa_overpower.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -14803,6 +15307,7 @@
 		"HeroID"					"71"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				".74"
 		"HeroGlowColor" 			"53 74 107"
+		"HeroSelectSoundEffect"		"weapons/hero/spirit_breaker/charge_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -15037,6 +15542,7 @@
 		"CMEnabled"					"1"
 		"url"					"Gyrocopter"
 		"LastHitChallengeRival"		"npc_dota_hero_sniper"
+		"HeroSelectSoundEffect"		")weapons/hero/gyrocopter/call_down_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -15090,7 +15596,23 @@
 		"ParticleFile"				"particles/units/heroes/hero_gyrocopter.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_gyrocopter.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_gyrocopter.txt"
-		
+
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"gyrocopter_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+				
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -15248,11 +15770,13 @@
 		"Team"						"Good"
 		"HeroID"					"73"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.			
 		"ModelScale" 					"0.93"
+		"LoadoutScale" 				"0.82"
 		"CMEnabled"					"1"
 		"PickSound"					"alchemist_alch_spawn_01"
 		"BanSound"					"alchemist_alch_anger_05"
 		"url"					"Alchemist"
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
+		"HeroSelectSoundEffect"		")weapons/hero/alchemist/chemical_rage_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -15493,12 +16017,16 @@
 		"Team"						"Bad"
 		"HeroID"					"74"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.74"
+		"LoadoutScale"          ".8"
 		"CMEnabled"					"1"
 		"PickSound"					"invoker_invo_spawn_02"
 		"BanSound"					"invoker_invo_anger_04"
 		"url"					"Invoker"
 		"LastHitChallengeRival"		"npc_dota_hero_lina"
 		"AbilityDraftDisabled"		"1"
+		"ARDMDisabled"				"1"
+		"HeroSelectSoundEffect"		"weapons/hero/invoker/invoke.wav"
+
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -15677,11 +16205,13 @@
 		"Team"						"Good"
 		"HeroID"					"75"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 					"0.74"
+		"LoadoutScale"				".8"
 		"PickSound"					"silencer_silen_spawn_01"
 		"BanSound"					"silencer_silen_anger_07"
 		"url"					"Silencer"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_zuus"
+		"HeroSelectSoundEffect"		")weapons/hero/silencer/global_silence_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -15893,6 +16423,7 @@
 		"BanSound"					"outworld_destroyer_odest_anger_02"
 		"url"				"Outworld_Devourer"
 		"LastHitChallengeRival"		"npc_dota_hero_death_prophet"
+		"HeroSelectSoundEffect"		")weapons/hero/obsidian_destroyer/sanity_eclipse.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -16109,6 +16640,7 @@
 		"BanSound"					"lycan_lycan_anger_03"
 		"url"					"Lycan"
 		"LastHitChallengeRival"		"npc_dota_hero_skeleton_king"
+		"HeroSelectSoundEffect"		")weapons/hero/lycan/howl.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -16280,6 +16812,7 @@
 		"Team"						"Good"
 		"HeroID"					"78"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 					".79"
+		"LoadoutScale"			".85"
 		"HeroGlowColor" 			"139 1 1"
 		"NameAliases"				"bm"
 		"CMEnabled"					"1"
@@ -16287,6 +16820,7 @@
 		"BanSound"					"brewmaster_brew_anger_01"
 		"url"					"Brewmaster"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
+		"HeroSelectSoundEffect"		")weapons/hero/brewmaster/brawl_crit.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -16335,6 +16869,29 @@
 		"ParticleFile"				"particles/units/heroes/hero_brewmaster.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_brewmaster.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_brewmaster.txt"
+
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"brewmaster_spawn"
+				{
+					"spawn"	"1"
+
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_keg"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_mouth"
+					}
+				}
+			}
+		}
 
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
@@ -16455,6 +17012,7 @@
 		"Team"					"Bad"
 		"HeroID"				"79"									// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale" 			"0.84"
+		"LoadoutScale"				".77"
 		"HeroGlowColor" 		"242 200 198"
 		"NameAliases"			"sd"
 		"CMEnabled"				"1"
@@ -16463,6 +17021,7 @@
 		"url"				"Shadow_Demon"
 		"LastHitChallengeRival"	"npc_dota_hero_bane"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/shadow_demon/soul_catcher_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -16690,6 +17249,7 @@
 		"Team"						"Good"
 		"HeroID"					"80"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				".79"
+		"LoadoutScale"          ".87"
 		"NameAliases"				"ld"
 		"CMEnabled"					"1"
 		"PickSound"					"lone_druid_lone_druid_spawn_01"
@@ -16697,6 +17257,7 @@
 		"url"					"Lone_Druid"
 		"LastHitChallengeRival"		"npc_dota_hero_dragon_knight"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/lone_druid/battle_cry.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -16865,12 +17426,14 @@
 		"Team"						"Bad"
 		"HeroID"					"81"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				".79"
+		"LoadoutScale"          ".72"
 		"PickSound"					"chaos_knight_chaknight_spawn_02"
 		"BanSound"					"chaos_knight_chaknight_anger_06"
 		"CMEnabled"					"1"
 		"BotImplemented"			"1"
 		"url"					"Chaos_Knight"
 		"LastHitChallengeRival"		"npc_dota_hero_omniknight"
+		"HeroSelectSoundEffect"		")weapons/hero/chaos_knight/phantasm.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -17096,6 +17659,9 @@
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_sand_king"
 		"AbilityDraftDisabled"		"1"
+		"ARDMDisabled"				"1"
+		"HeroSelectSoundEffect"		")weapons/hero/meepo/poof_channel.wav"
+
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -17250,12 +17816,14 @@
 		"Team"						"Good"
 		"HeroID"					"83"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.84"
+		"LoadoutScale"			".75"
 		"NameAliases"				""
 		"PickSound"					"treant_treant_spawn_02"
 		"BanSound"					"treant_treant_anger_11"
 		"CMEnabled"					"1"
 		"url"					"Treant_Protector"
 		"LastHitChallengeRival"		"npc_dota_hero_tiny"
+		"HeroSelectSoundEffect"		")weapons/hero/treant/living_armor.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -17398,6 +17966,7 @@
 		"Team"						"Good"
 		"HeroID"					"84"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.93"
+		"LoadoutScale"          ".87"
 		"NameAliases"				"om"
 		"PickSound"					"ogre_magi_ogmag_spawn_01"
 		"BanSound"					"ogre_magi_ogmag_anger_04"
@@ -17405,6 +17974,7 @@
 		"url"					"Ogre_Magi"
 		"LastHitChallengeRival"		"npc_dota_hero_dragon_knight"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/ogre_magi/ignite_target.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -17564,12 +18134,14 @@
 		"Team"						"Bad"
 		"HeroID"					"85"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.93"
+		"LoadoutScale"			".87"
 		"NameAliases"				"dirge"
 		"url" 				"Undying"
 		"PickSound"					"undying_undying_spawn_01"
 		"BanSound"					"undying_undying_anger_02"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_sand_king"
+		"HeroSelectSoundEffect"		")weapons/hero/undying/flesh_golem_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -17715,6 +18287,7 @@
 		"Team"						"Good"
 		"HeroID"					"86"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.70"
+		"LoadoutScale"				".65"
 		"NameAliases"				"rubick"
 		"url"				"Rubick"
 		"PickSound"					"rubick_rubick_spawn_04"
@@ -17722,6 +18295,7 @@
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_warlock"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		"weapons/hero/rubick/spell_steal_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -17876,12 +18450,14 @@
 		"Team"						"Good"
 		"HeroID"					"87"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.79"
+		"LoadoutScale"          "0.71"
 		"NameAliases"				"disruptor"
 		"url"				"Disruptor"
 		"PickSound"					"disruptor_dis_spawn_01"
 		"BanSound"					"disruptor_dis_anger_06"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_warlock"
+		"HeroSelectSoundEffect"		")weapons/hero/disruptor/glimpse_end.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -17951,6 +18527,14 @@
 					{
 						"type"		"follow_attachment"
 						"location"	"attach_attack1"
+					}
+				}
+				"disruptor_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
 					}
 				}	
 			}
@@ -18074,6 +18658,7 @@
 		"PickSound"					"nyx_assassin_nyx_spawn_01"
 		"BanSound"					"nyx_assassin_nyx_anger_07"
 		"LastHitChallengeRival"		"npc_dota_hero_bounty_hunter"
+		"HeroSelectSoundEffect"		")weapons\hero\nyx\vendetta.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -18208,6 +18793,7 @@
 		"BanSound"					"naga_siren_naga_anger_12"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
+		"HeroSelectSoundEffect"		")weapons/hero/naga_siren/riptide03.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -18273,8 +18859,29 @@
 						"location"	"attach_lamp"
 					}
 				}	
+
+				"naga_siren_riptide"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"position"	"320 320 320"
+					}
+					"3"
+					{
+						"type"		"follow_origin"
+						"position"	"1 1 1"
+					}
+				}	
 			}
 		}	
+
+	
 
 	
 		"Bot"
@@ -18370,6 +18977,7 @@
 		"Team"						"Good"
 		"HeroID"					"90"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.80"
+		"LoadoutScale"          ".75"
 		"NameAliases"				"keeper;ezalor"
 		"url"				"Keeper_of_the_Light"
 		"PickSound"					"keeper_of_the_light_keep_spawn_01"
@@ -18377,6 +18985,7 @@
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_chaos_knight"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/keeper/spirit_form.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -18429,6 +19038,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_keeper_of_the_light.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_keeper_of_the_light.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"keeper_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -18583,6 +19209,7 @@
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_zuus"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/wisp/spirits_cast.wav"
 
 
 		// Abilities
@@ -18728,6 +19355,7 @@
 		"Team"						"Bad"
 		"HeroID"					"92"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				".67"
+		"LoadoutScale" 				".75"
 		"NameAliases"				"visage"
 		"url"						"Visage"
 		"PickSound"					"visage_visa_spawn_01"
@@ -18735,6 +19363,7 @@
 		"CMEnabled"					"1"
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_lion"
+		"HeroSelectSoundEffect"		"weapons\hero\visage\grave_chill_target.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -18866,12 +19495,14 @@
 		"Team"						"Bad"
 		"Portrait"					"vgui/hud/heroportraits/portrait_slark"
 		"ModelScale" 				"0.9"
+		"LoadoutScale"				"1"
 		"NameAliases"				"slark"
 		"url"						"Slark"
 		"PickSound"					"slark_slark_spawn_01"
 		"BanSound"					"slark_slark_anger_02"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
+		"HeroSelectSoundEffect"		")weapons/hero/slark/pounce_impact.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -19022,6 +19653,7 @@
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_zuus"
 		"CMEnabled"					"1"
+		"HeroSelectSoundEffect"		"weapons/hero/medusa/snake_shoot.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -19175,6 +19807,7 @@
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_windrunner"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/troll_warlord/battle_trance_cast.wav"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -19340,6 +19973,7 @@
 		"Team"						"Good"
 		"Portrait"					"vgui/hud/heroportraits/portrait_centaur"
 		"ModelScale" 				".74"
+		"LoadoutScale"          "0.63"
 		"NameAliases"				"centaur"
 		"url"						"Centaur Warchief"
 		"PickSound"					"centaur_cent_spawn_03"
@@ -19347,6 +19981,7 @@
 		"url"					"Centaur_Warrunner"
 		"LastHitChallengeRival"		"npc_dota_hero_chaos_knight"
 		"CMEnabled"					"1"
+		"HeroSelectSoundEffect"		")weapons/hero/centaur/stampede_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -19415,6 +20050,24 @@
 				"RequiresSetup"			"1"
 			}
 		}
+		
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"centaur_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -19509,12 +20162,14 @@
 		"Team"						"Bad"
 		"Portrait"					"vgui/hud/heroportraits/portrait_centaur"
 		"ModelScale" 				"0.92"
+		"LoadoutScale"			"0.90"
 		"NameAliases"				"magnataur, magnus"
 		"url"						"Magnus"
 		"PickSound"					"magnataur_magn_spawn_06"
 		"BanSound"					"magnataur_magn_anger_07"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_tidehunter"
+		"HeroSelectSoundEffect"		")weapons/hero/magnataur/empower_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -19665,6 +20320,7 @@
 		"BanSound"					"shredder_timb_anger_02"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_tiny"
+		"HeroSelectSoundEffect"		")weapons\hero\shredder\whirling_death_impact.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -19839,7 +20495,9 @@
 		"Rolelevels"				"3,1,1"
 		"Team"						"Good"
 		"HeroID"					"99"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
+		"BotImplemented"			"1"
 		"ModelScale" 				"0.8"
+		"LoadoutScale"          ".9"
 		"NameAliases"				"Rigwarl;bb"
 		"url" 						"Bristleback"
 		"HasAggressiveStance"		"1"	
@@ -19847,6 +20505,7 @@
 		"BanSound"					"bristleback_bristle_anger_09"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_dragon_knight"
+		"HeroSelectSoundEffect"		")weapons/hero/bristlebog/goo_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -19890,7 +20549,29 @@
 		"ParticleFile"				"particles/units/heroes/hero_bristleback.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_bristleback.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_bristleback.txt"
-
+		
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"bristleback_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_attack3"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		"ItemSlots"
 		{
 			"0"
@@ -19947,6 +20628,76 @@
 
 		"Bot"
 		{
+		"Loadout"
+			{
+				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_stout_shield"			    "ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_boots"					"ITEM_CORE"
+				"item_magic_stick"				"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_recipe_magic_wand"		"ITEM_CORE"		
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"		
+				"item_ring_of_protection"		"ITEM_CORE"
+				"item_sobi_mask"				"ITEM_CORE"
+				"item_ring_of_basilius"			"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_belt_of_strength"			"ITEM_CORE"
+				"item_gloves"					"ITEM_CORE"
+				"item_treads"					"ITEM_DERIVED"
+				"item_ring_of_health"			"ITEM_CORE"
+				"item_vitality_booster"			"ITEM_EXTENSION"
+				"item_vanguard"					"ITEM_DERIVED"
+				"item_broadsword"				"ITEM_EXTENSION"
+				"item_chainmail"				"ITEM_EXTENSION"
+				"item_robe"						"ITEM_EXTENSION"
+				"item_blade_mail"				"ITEM_DERIVED | ITEM_SELLABLE"
+				"item_reaver"					"ITEM_EXTENSION"
+				"item_vitality_booster"			"ITEM_EXTENSION"
+				"item_recipe_heart"				"ITEM_EXTENSION"
+				"item_heart"					"ITEM_DERIVED"
+				"item_platemail"				"ITEM_LUXURY"
+				"item_hyperstone"				"ITEM_LUXURY"
+				"item_chainmail"				"ITEM_LUXURY"
+				"item_recipe_assault"			"ITEM_LUXURY"
+				"item_assault"					"ITEM_DERIVED"
+				"item_platemail"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_recipe_shivas_guard"		"ITEM_LUXURY"
+				"item_shivas_guard"				"ITEM_DERIVED"
+				"item_relic"					"ITEM_EXTENSION"
+				"item_recipe_radiance"			"ITEM_EXTENSION"
+				"item_radiance"					"ITEM_DERIVED"
+			}
+			"Build"
+			{
+				"1"		"bristleback_quill_spray"
+				"2"		"bristleback_bristleback"
+				"3"		"bristleback_viscous_nasal_goo"
+				"4"		"bristleback_quill_spray"
+				"5"		"bristleback_quill_spray"
+				"6"		"bristleback_warpath"
+				"7"		"bristleback_quill_spray"
+				"8"		"bristleback_bristleback"
+				"9"		"bristleback_bristleback"
+				"10"	"bristleback_bristleback"
+				"11"	"bristleback_warpath"
+				"12"	"bristleback_viscous_nasal_goo"
+				"13"	"bristleback_viscous_nasal_goo"
+				"14"	"bristleback_viscous_nasal_goo"
+				"15"	"attribute_bonus"
+				"16"	"bristleback_warpath"
+				"17"	"attribute_bonus"
+				"18"	"attribute_bonus"
+				"19"	"attribute_bonus"
+				"20"	"attribute_bonus"
+				"21"	"attribute_bonus"
+				"22"	"attribute_bonus"
+				"23"	"attribute_bonus"
+				"24"	"attribute_bonus"
+				"25"	"attribute_bonus"
+			}
 			"HeroType"		"DOTA_BOT_TANK | DOTA_BOT_SEMI_CARRY"
 			"LaningInfo"
 			{
@@ -19979,12 +20730,14 @@
 		"Team"						"Good"
 		"HeroID"					"100"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.9"
+		"LoadoutScale"			"1"
 		"NameAliases"				"Tuskarr"
 		"url" 						"Tusk"
 		"PickSound"					"tusk_tusk_spawn_01"
 		"BanSound"					"tusk_tusk_anger_03"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
+		"HeroSelectSoundEffect"		")weapons/hero/tusk/punch_target.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -20044,8 +20797,7 @@
 					}
 					"1"
 					{
-						"type"		"follow_attachment"
-						"location"	"attach_absorigin"
+						"type"		"follow_origin"
 					}
 					"2"
 					{
@@ -20172,12 +20924,14 @@
 		"Team"					"Good"
 		"HeroID"				"101"									// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"			"0.75"
+		"LoadoutScale"			"1.0"
 		"HeroGlowColor" 		"194 80 163"
 		"PickSound"					"skywrath_mage_drag_spawn_02"
 		"BanSound"					"skywrath_mage_drag_anger_13"
 		"NoCombine"					"1"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_vengefulspirit"
+		"HeroSelectSoundEffect"		")weapons\hero\skywrath\mystic_flare_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -20327,6 +21081,7 @@
 		"Team"						"Bad"
 		"HeroID"					"102"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"0.78"
+		"LoadoutScale" 				"0.73"
 		"NameAliases"				"Abaddon"
 		"url" 						"Abaddon"
 		"PickSound"					"abaddon_abad_spawn_01"
@@ -20334,6 +21089,7 @@
 		"NoCombine"					"1"
 		"CMEnabled"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_chaos_knight"
+		"HeroSelectSoundEffect"		")weapons/hero/abaddon/borrowed_time.wav"
 
 
 		// Abilities
@@ -20494,6 +21250,7 @@
 		"Team"						"Good"
 		"HeroID"					"103"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 					"0.75"
+		"LoadoutScale"          ".62"
 		"NameAliases"					"TC,Cairne"
 		"url" 						"Elder_Titan"
 		"NoCombine"					"1"
@@ -20501,6 +21258,7 @@
 		"BanSound"					"elder_titan_elder_anger_03"
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
 		"CMEnabled"					"1"
+		"HeroSelectSoundEffect"		")weapons/hero/elder_titan/echo_stomp_cast.wav"
 		
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -20546,6 +21304,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_elder_titan.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_elder_titan.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"elder_titan_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		// Items
 		//------------------------------------------------------------------------------------------------------------- 
 		"ItemSlots"
@@ -20650,6 +21425,7 @@
 		"BanSound"					"legion_commander_legcom_anger_07"
 		"url" 						"Legion_Commander"
 		"LastHitChallengeRival"		"npc_dota_hero_kunkka"
+		"HeroSelectSoundEffect"		")weapons/hero/legion_commander/duel_victory.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -20694,36 +21470,22 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_legion_commander.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_legion_commander.txt"
 		
-		// Additional data needed to render the out of game portrait
+	// Additional data needed to render the out of game portrait
+		
 		"RenderablePortrait"
 		{
 			"Particles"
 			{
-				"legion_ambient"
+				"legion_loadout"
 				{
 					"0"
 					{
 						"type"		"follow_origin"
 						"location"	"attach_hitloc"
 					}
-					"1"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_eyeR"
-					}
-					"2"
-					{
-						"type"		"follow_attachment"
-						"location"	"attach_eyeL"
-					}
-					"3"
-					{
-						"type"		"follow_origin"
-						"location"	"attach_hitloc"
-					}
 				}	
 			}
-		}
+		}				
 
 		// Items
 		//------------------------------------------------------------------------------------------------------------- 
@@ -20812,6 +21574,7 @@
 		"Team"						"Good"
 		"HeroID"					"106"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale" 				"1.2"
+		"LoadoutScale"          "1.1"
 		"NameAliases"				"Xin,Ember"
 		"url" 						"Ember_Spirit"
 		"PickSound"					"ember_spirit_embr_spawn_01"
@@ -20819,6 +21582,7 @@
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_ember_spirit.txt"
 		"AbilityDraftDisabled"		"1"
 		"CMEnabled"					"1"
+		"HeroSelectSoundEffect"		")weapons/hero/ember_spirit/fire_remnant_stop.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -20866,6 +21630,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_ember_spirit.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_ember_spirit.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"ember_spirit_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		"animation_transitions"
 		{
 			"ACT_DOTA_RUN"
@@ -20981,6 +21762,7 @@
 		"url" 						"Earth_Spirit"
 		"NoCombine"					"0"
 		"AbilityDraftDisabled"		"1"
+		"HeroSelectSoundEffect"		")weapons/hero/earth_spirit/stone_remnant.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -21028,6 +21810,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_earth_spirit.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_earth_spirit.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"earth_spirit_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+		
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
 		"VisionDaytimeRange"		"1800"									// Range of vision during day light.
@@ -21211,12 +22010,14 @@
 		"Team"						"Bad"
 		"Portrait"					"vgui/hud/heroportraits/portrait_terrorblade"
 		"ModelScale" 				"1.1"
+		"LoadoutScale"				".9"
 		"CMEnabled"					"0"
 		"NameAliases"				"tb"
 		"url"						"Terrorblade"
 		"AbilityDraftDisabled"		"1"
 		"PickSound"					"terrorblade_terr_spawn_01"
 		"BanSound"					"terrorblade_terr_anger_03"
+		"HeroSelectSoundEffect"		")weapons\hero\terrorblade\sunder_target.wav"
 
 
 		// Abilities
@@ -21359,6 +22160,7 @@
 		"AbilityDraftDisabled"		"1"
 		"PickSound"					"phoenix_phoenix_bird_respawn"
 		"BanSound"					"phoenix_phoenix_bird_moving01"
+		"HeroSelectSoundEffect"		")weapons/hero/phoenix/icarus_dive.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------

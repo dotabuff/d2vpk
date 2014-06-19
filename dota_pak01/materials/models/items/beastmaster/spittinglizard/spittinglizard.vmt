@@ -1,0 +1,24 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items\beastmaster\spittinglizard\spittinglizard_color"
+	"$normalmap"		"models/items/beastmaster\spittinglizard\spittinglizard_normal"
+	"$maskmap1"		"models/items/beastmaster\spittinglizard\spittinglizard_mask1"
+	"$maskmap2"		"models/items/beastmaster\spittinglizard\spittinglizard_mask2"
+	"$FRESNELWARP"		"models/heroes/sven/sven_fresnelranges"
+	"$alphatest" "1"
+
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"20"
+	"$RIMLIGHTSCALE"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -528,7 +528,7 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
 
-	"wave"	"#music/stingers/arcana/tb/death.mp3"
+	"wave"	"#music/terrorblade_arcana/stingers/death.mp3"
 
 	"operator_stacks"
 	{	
@@ -576,14 +576,14 @@
 				"input" "1.0"
 			}
 			
-			"limit_sound_explore"
-			{
-				"operator" "sys_stop_entries"
-				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entity" "false"	
-				"match_substring" "true"
-				"match_entry" "DOTAMusic.Explore" //We allow no instances of Explore when the death stinger knells		
-			}
+//			"limit_sound_explore"
+//			{
+//				"operator" "sys_stop_entries"
+//				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+//				"match_entity" "false"	
+//				"match_substring" "true"
+//				"match_entry" "DOTAMusic.Explore" //We allow no instances of Explore when the death stinger knells		
+//			}
 			
 			"limit_sound_laning"
 			{
@@ -591,7 +591,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "DOTAMusic.Laning"
+				"match_entry" "valve_dota_001.music.laning"
 			}
 			
 			"limit_sound_battle"
@@ -600,7 +600,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "DOTAMusic.BattleMusic" //We allow no instances of battle when the death stinger knells		
+				"match_entry" "valve_dota_001.music.battle" //We allow no instances of battle when the death stinger knells		
 			}
 			
 			"stop_main_track"
@@ -620,7 +620,7 @@
 			"update_track"
 			{
 				"operator" "track_update"
-				"autoqueue_entry_at_end_point" "DOTAMusic_Hero.DeathMode"
+				"autoqueue_entry_at_end_point" "valve_dota_001.music.dead"
 				"stop_channel_on_track" "true"	
 			}
 		}
@@ -634,7 +634,7 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
 
-	"wave"			"#music/stingers/arcana/tb/respawn.mp3"
+	"wave"			"#music/terrorblade_arcana/stingers/respawn.mp3"
 	"soundentry_version" "2"
 	"operator_stacks"
 	{	
@@ -748,7 +748,7 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
 
-	"wave"			"#music/stingers/arcana/tb/buyback.mp3"
+	"wave"			"#music/terrorblade_arcana/stingers/buyback.mp3"
 	"soundentry_version" "2"
 	"operator_stacks"
 	{	

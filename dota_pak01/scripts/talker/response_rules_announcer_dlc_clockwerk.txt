@@ -977,7 +977,7 @@ Rule announcer_dlc_clockwerk_CustomIsGoodVictoryIsAnnouncerVoice_Clockwerk_Rule
 
 Response announcer_dlc_clockwerk_CustomIsAllPickIsAnnouncerVoice_Clockwerk
 {
-	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_all_pick.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_all_pick.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_clockwerk_CustomIsAllPickIsAnnouncerVoice_Clockwerk_Rule
@@ -988,7 +988,7 @@ Rule announcer_dlc_clockwerk_CustomIsAllPickIsAnnouncerVoice_Clockwerk_Rule
 
 Response announcer_dlc_clockwerk_CustomIsAllRandomIsAnnouncerVoice_Clockwerk
 {
-	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_all_random.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_all_random.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_clockwerk_CustomIsAllRandomIsAnnouncerVoice_Clockwerk_Rule
@@ -1021,7 +1021,7 @@ Rule announcer_dlc_clockwerk_CustomIsCaptainsModeIsDraftBeginIsAnnouncerVoice_Cl
 
 Response announcer_dlc_clockwerk_CustomIsRandomDraftIsAnnouncerVoice_Clockwerk
 {
-	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_random_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_random_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_clockwerk_CustomIsRandomDraftIsAnnouncerVoice_Clockwerk_Rule
@@ -1032,13 +1032,24 @@ Rule announcer_dlc_clockwerk_CustomIsRandomDraftIsAnnouncerVoice_Clockwerk_Rule
 
 Response announcer_dlc_clockwerk_CustomIsSingleDraftIsAnnouncerVoice_Clockwerk
 {
-	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_single_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_single_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_clockwerk_CustomIsSingleDraftIsAnnouncerVoice_Clockwerk_Rule
 {
 	criteria Custom Isannouncer_dlc_clockwerk IsSingleDraft IsAnnouncerVoice_Clockwerk
 	response announcer_dlc_clockwerk_CustomIsSingleDraftIsAnnouncerVoice_Clockwerk
+}
+
+Response announcer_dlc_clockwerk_CustomIsDeathMatchIsAnnouncerVoice_Clockwerk
+{
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_death_match.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_clockwerk_CustomIsDeathMatchIsAnnouncerVoice_Clockwerk_Rule
+{
+	criteria Custom Isannouncer_dlc_clockwerk IsDeathMatch IsAnnouncerVoice_Clockwerk
+	response announcer_dlc_clockwerk_CustomIsDeathMatchIsAnnouncerVoice_Clockwerk
 }
 
 Response announcer_dlc_clockwerk_CustomIsReverseCaptainsModeIsDraftBeginIsAnnouncerVoice_Clockwerk
@@ -1054,7 +1065,7 @@ Rule announcer_dlc_clockwerk_CustomIsReverseCaptainsModeIsDraftBeginIsAnnouncerV
 
 Response announcer_dlc_clockwerk_CustomIsMidOnlyIsAnnouncerVoice_Clockwerk
 {
-	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_all_mid.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_all_mid.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_clockwerk_CustomIsMidOnlyIsAnnouncerVoice_Clockwerk_Rule
@@ -1065,7 +1076,7 @@ Rule announcer_dlc_clockwerk_CustomIsMidOnlyIsAnnouncerVoice_Clockwerk_Rule
 
 Response announcer_dlc_clockwerk_CustomIsLeastPlayedIsAnnouncerVoice_Clockwerk
 {
-	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_least_played.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_least_played.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_clockwerk_CustomIsLeastPlayedIsAnnouncerVoice_Clockwerk_Rule
@@ -1076,7 +1087,7 @@ Rule announcer_dlc_clockwerk_CustomIsLeastPlayedIsAnnouncerVoice_Clockwerk_Rule
 
 Response announcer_dlc_clockwerk_CustomIsLimitedHeroesIsAnnouncerVoice_Clockwerk
 {
-	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_limited_heroes.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_type_limited_heroes.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_clockwerk_CustomIsLimitedHeroesIsAnnouncerVoice_Clockwerk_Rule
@@ -1087,13 +1098,24 @@ Rule announcer_dlc_clockwerk_CustomIsLimitedHeroesIsAnnouncerVoice_Clockwerk_Rul
 
 Response announcer_dlc_clockwerk_CustomIsCustomModeIsAnnouncerVoice_Clockwerk
 {
-	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_clockwerk_CustomIsCustomModeIsAnnouncerVoice_Clockwerk_Rule
 {
 	criteria Custom Isannouncer_dlc_clockwerk IsCustomMode IsAnnouncerVoice_Clockwerk
 	response announcer_dlc_clockwerk_CustomIsCustomModeIsAnnouncerVoice_Clockwerk
+}
+
+Response announcer_dlc_clockwerk_CustomIsOneVsOneIsAnnouncerVoice_Clockwerk
+{
+	scene "scenes/announcer_dlc_clockwerk/announcer_dlc_clockwerk_announcer_choose_hero.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_clockwerk_CustomIsOneVsOneIsAnnouncerVoice_Clockwerk_Rule
+{
+	criteria Custom Isannouncer_dlc_clockwerk IsOneVsOne IsAnnouncerVoice_Clockwerk
+	response announcer_dlc_clockwerk_CustomIsOneVsOneIsAnnouncerVoice_Clockwerk
 }
 
 Response announcer_dlc_clockwerk_CustomIsTenSecondsRemainingIsAnnouncerVoice_Clockwerk

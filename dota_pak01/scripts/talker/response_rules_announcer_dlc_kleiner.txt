@@ -1119,7 +1119,7 @@ Rule announcer_dlc_kleiner_CustomIsGoodVictoryIsAnnouncerVoice_Kleiner_Rule
 
 Response announcer_dlc_kleiner_CustomIsAllPickIsAnnouncerVoice_Kleiner
 {
-	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_all_pick.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_all_pick.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_kleiner_CustomIsAllPickIsAnnouncerVoice_Kleiner_Rule
@@ -1130,7 +1130,7 @@ Rule announcer_dlc_kleiner_CustomIsAllPickIsAnnouncerVoice_Kleiner_Rule
 
 Response announcer_dlc_kleiner_CustomIsAllRandomIsAnnouncerVoice_Kleiner
 {
-	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_all_random.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_all_random.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_kleiner_CustomIsAllRandomIsAnnouncerVoice_Kleiner_Rule
@@ -1174,7 +1174,7 @@ Rule announcer_dlc_kleiner_CustomIsReverseCaptainsModeIsDraftBeginIsAnnouncerVoi
 
 Response announcer_dlc_kleiner_CustomIsRandomDraftIsAnnouncerVoice_Kleiner
 {
-	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_random_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_random_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_kleiner_CustomIsRandomDraftIsAnnouncerVoice_Kleiner_Rule
@@ -1185,13 +1185,24 @@ Rule announcer_dlc_kleiner_CustomIsRandomDraftIsAnnouncerVoice_Kleiner_Rule
 
 Response announcer_dlc_kleiner_CustomIsSingleDraftIsAnnouncerVoice_Kleiner
 {
-	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_single_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_single_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_kleiner_CustomIsSingleDraftIsAnnouncerVoice_Kleiner_Rule
 {
 	criteria Custom Isannouncer_dlc_kleiner IsSingleDraft IsAnnouncerVoice_Kleiner
 	response announcer_dlc_kleiner_CustomIsSingleDraftIsAnnouncerVoice_Kleiner
+}
+
+Response announcer_dlc_kleiner_CustomIsDeathMatchIsAnnouncerVoice_Kleiner
+{
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_type_death_match.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_kleiner_CustomIsDeathMatchIsAnnouncerVoice_Kleiner_Rule
+{
+	criteria Custom Isannouncer_dlc_kleiner IsDeathMatch IsAnnouncerVoice_Kleiner
+	response announcer_dlc_kleiner_CustomIsDeathMatchIsAnnouncerVoice_Kleiner
 }
 
 Response announcer_dlc_kleiner_CustomIsTenSecondsRemainingIsAnnouncerVoice_Kleiner
@@ -1218,7 +1229,7 @@ Rule announcer_dlc_kleiner_CustomIsFiveSecondsRemainingIsAnnouncerVoice_Kleiner_
 
 Response announcer_dlc_kleiner_CustomIsMidOnlyIsAnnouncerVoice_Kleiner
 {
-	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_kleiner_CustomIsMidOnlyIsAnnouncerVoice_Kleiner_Rule
@@ -1229,7 +1240,7 @@ Rule announcer_dlc_kleiner_CustomIsMidOnlyIsAnnouncerVoice_Kleiner_Rule
 
 Response announcer_dlc_kleiner_CustomIsLeastPlayedIsAnnouncerVoice_Kleiner
 {
-	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_kleiner_CustomIsLeastPlayedIsAnnouncerVoice_Kleiner_Rule
@@ -1240,7 +1251,7 @@ Rule announcer_dlc_kleiner_CustomIsLeastPlayedIsAnnouncerVoice_Kleiner_Rule
 
 Response announcer_dlc_kleiner_CustomIsLimitedHeroesIsAnnouncerVoice_Kleiner
 {
-	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_kleiner_CustomIsLimitedHeroesIsAnnouncerVoice_Kleiner_Rule
@@ -1251,13 +1262,24 @@ Rule announcer_dlc_kleiner_CustomIsLimitedHeroesIsAnnouncerVoice_Kleiner_Rule
 
 Response announcer_dlc_kleiner_CustomIsCustomModeIsAnnouncerVoice_Kleiner
 {
-	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_kleiner_CustomIsCustomModeIsAnnouncerVoice_Kleiner_Rule
 {
 	criteria Custom Isannouncer_dlc_kleiner IsCustomMode IsAnnouncerVoice_Kleiner
 	response announcer_dlc_kleiner_CustomIsCustomModeIsAnnouncerVoice_Kleiner
+}
+
+Response announcer_dlc_kleiner_CustomIsOneVsOneIsAnnouncerVoice_Kleiner
+{
+	scene "scenes/announcer_dlc_kleiner/announcer_dlc_kleiner_announcer_choose_hero.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_kleiner_CustomIsOneVsOneIsAnnouncerVoice_Kleiner_Rule
+{
+	criteria Custom Isannouncer_dlc_kleiner IsOneVsOne IsAnnouncerVoice_Kleiner
+	response announcer_dlc_kleiner_CustomIsOneVsOneIsAnnouncerVoice_Kleiner
 }
 
 Response announcer_dlc_kleiner_CustomIsAnnounceIdleIsAnnouncerVoice_KleinerEarlyGame

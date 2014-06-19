@@ -962,7 +962,7 @@ Rule announcer_CustomIsGoodVictory_Rule
 
 Response announcer_CustomIsAllPick
 {
-	scene "scenes/announcer/announcer_announcer_type_all_pick.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_type_all_pick.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsAllPick_Rule
@@ -973,7 +973,7 @@ Rule announcer_CustomIsAllPick_Rule
 
 Response announcer_CustomIsAllRandom
 {
-	scene "scenes/announcer/announcer_announcer_type_all_random.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_type_all_random.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsAllRandom_Rule
@@ -1006,7 +1006,7 @@ Rule announcer_CustomIsCaptainsModeIsDraftBegin_Rule
 
 Response announcer_CustomIsRandomDraft
 {
-	scene "scenes/announcer/announcer_announcer_type_random_draft.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_type_random_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsRandomDraft_Rule
@@ -1017,13 +1017,24 @@ Rule announcer_CustomIsRandomDraft_Rule
 
 Response announcer_CustomIsSingleDraft
 {
-	scene "scenes/announcer/announcer_announcer_type_single_draft.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_type_single_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsSingleDraft_Rule
 {
 	criteria Custom Isannouncer IsSingleDraft
 	response announcer_CustomIsSingleDraft
+}
+
+Response announcer_CustomIsDeathMatch
+{
+	scene "scenes/announcer/announcer_announcer_type_death_match.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_CustomIsDeathMatch_Rule
+{
+	criteria Custom Isannouncer IsDeathMatch
+	response announcer_CustomIsDeathMatch
 }
 
 Response announcer_CustomIsReverseCaptainsModeIsDraftBegin
@@ -1039,7 +1050,7 @@ Rule announcer_CustomIsReverseCaptainsModeIsDraftBegin_Rule
 
 Response announcer_CustomIsMidOnly
 {
-	scene "scenes/announcer/announcer_announcer_type_mid_only.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_type_mid_only.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsMidOnly_Rule
@@ -1050,7 +1061,7 @@ Rule announcer_CustomIsMidOnly_Rule
 
 Response announcer_CustomIsLeastPlayed
 {
-	scene "scenes/announcer/announcer_announcer_type_least_played.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_type_least_played.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsLeastPlayed_Rule
@@ -1061,7 +1072,7 @@ Rule announcer_CustomIsLeastPlayed_Rule
 
 Response announcer_CustomIsLimitedHeroes
 {
-	scene "scenes/announcer/announcer_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsLimitedHeroes_Rule
@@ -1072,13 +1083,24 @@ Rule announcer_CustomIsLimitedHeroes_Rule
 
 Response announcer_CustomIsCustomMode
 {
-	scene "scenes/announcer/announcer_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsCustomMode_Rule
 {
 	criteria Custom Isannouncer IsCustomMode
 	response announcer_CustomIsCustomMode
+}
+
+Response announcer_CustomIsOneVsOne
+{
+	scene "scenes/announcer/announcer_announcer_choose_hero.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_CustomIsOneVsOne_Rule
+{
+	criteria Custom Isannouncer IsOneVsOne
+	response announcer_CustomIsOneVsOne
 }
 
 Response announcer_CustomIsTenSecondsRemaining

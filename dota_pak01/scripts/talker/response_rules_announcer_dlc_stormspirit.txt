@@ -1127,7 +1127,7 @@ Rule announcer_dlc_stormspirit_CustomIsGoodVictoryIsAnnouncerVoice_StormSpirit_R
 
 Response announcer_dlc_stormspirit_CustomIsAllPickIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_all_pick.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_all_pick.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsAllPickIsAnnouncerVoice_StormSpirit_Rule
@@ -1138,7 +1138,7 @@ Rule announcer_dlc_stormspirit_CustomIsAllPickIsAnnouncerVoice_StormSpirit_Rule
 
 Response announcer_dlc_stormspirit_CustomIsAllRandomIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_all_random.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_all_random.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsAllRandomIsAnnouncerVoice_StormSpirit_Rule
@@ -1182,7 +1182,7 @@ Rule announcer_dlc_stormspirit_CustomIsReverseCaptainsModeIsDraftBeginIsAnnounce
 
 Response announcer_dlc_stormspirit_CustomIsRandomDraftIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_random_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_random_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsRandomDraftIsAnnouncerVoice_StormSpirit_Rule
@@ -1193,7 +1193,7 @@ Rule announcer_dlc_stormspirit_CustomIsRandomDraftIsAnnouncerVoice_StormSpirit_R
 
 Response announcer_dlc_stormspirit_CustomIsSingleDraftIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_single_draft.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_single_draft.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsSingleDraftIsAnnouncerVoice_StormSpirit_Rule
@@ -1202,9 +1202,20 @@ Rule announcer_dlc_stormspirit_CustomIsSingleDraftIsAnnouncerVoice_StormSpirit_R
 	response announcer_dlc_stormspirit_CustomIsSingleDraftIsAnnouncerVoice_StormSpirit
 }
 
+Response announcer_dlc_stormspirit_CustomIsDeathMatchIsAnnouncerVoice_StormSpirit
+{
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_type_death_match.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_stormspirit_CustomIsDeathMatchIsAnnouncerVoice_StormSpirit_Rule
+{
+	criteria Custom Isannouncer_dlc_stormspirit IsDeathMatch IsAnnouncerVoice_StormSpirit
+	response announcer_dlc_stormspirit_CustomIsDeathMatchIsAnnouncerVoice_StormSpirit
+}
+
 Response announcer_dlc_stormspirit_CustomIsTenSecondsRemainingIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_count_pick_10.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_count_pick_10.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsTenSecondsRemainingIsAnnouncerVoice_StormSpirit_Rule
@@ -1215,7 +1226,7 @@ Rule announcer_dlc_stormspirit_CustomIsTenSecondsRemainingIsAnnouncerVoice_Storm
 
 Response announcer_dlc_stormspirit_CustomIsFiveSecondsRemainingIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_count_pick_5.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_count_pick_5.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsFiveSecondsRemainingIsAnnouncerVoice_StormSpirit_Rule
@@ -1226,7 +1237,7 @@ Rule announcer_dlc_stormspirit_CustomIsFiveSecondsRemainingIsAnnouncerVoice_Stor
 
 Response announcer_dlc_stormspirit_CustomIsMidOnlyIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsMidOnlyIsAnnouncerVoice_StormSpirit_Rule
@@ -1237,7 +1248,7 @@ Rule announcer_dlc_stormspirit_CustomIsMidOnlyIsAnnouncerVoice_StormSpirit_Rule
 
 Response announcer_dlc_stormspirit_CustomIsLeastPlayedIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsLeastPlayedIsAnnouncerVoice_StormSpirit_Rule
@@ -1248,7 +1259,7 @@ Rule announcer_dlc_stormspirit_CustomIsLeastPlayedIsAnnouncerVoice_StormSpirit_R
 
 Response announcer_dlc_stormspirit_CustomIsLimitedHeroesIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsLimitedHeroesIsAnnouncerVoice_StormSpirit_Rule
@@ -1259,13 +1270,24 @@ Rule announcer_dlc_stormspirit_CustomIsLimitedHeroesIsAnnouncerVoice_StormSpirit
 
 Response announcer_dlc_stormspirit_CustomIsCustomModeIsAnnouncerVoice_StormSpirit
 {
-	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene 
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_dlc_stormspirit_CustomIsCustomModeIsAnnouncerVoice_StormSpirit_Rule
 {
 	criteria Custom Isannouncer_dlc_stormspirit IsCustomMode IsAnnouncerVoice_StormSpirit
 	response announcer_dlc_stormspirit_CustomIsCustomModeIsAnnouncerVoice_StormSpirit
+}
+
+Response announcer_dlc_stormspirit_CustomIsOneVsOneIsAnnouncerVoice_StormSpirit
+{
+	scene "scenes/announcer_dlc_stormspirit/announcer_dlc_stormspirit_announcer_choose_hero.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_dlc_stormspirit_CustomIsOneVsOneIsAnnouncerVoice_StormSpirit_Rule
+{
+	criteria Custom Isannouncer_dlc_stormspirit IsOneVsOne IsAnnouncerVoice_StormSpirit
+	response announcer_dlc_stormspirit_CustomIsOneVsOneIsAnnouncerVoice_StormSpirit
 }
 
 Response announcer_dlc_stormspirit_Followup_GenericIsRoshanCheeseChance_25%IsAnnouncerVoice_StormSpirit

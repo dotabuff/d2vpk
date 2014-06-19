@@ -1,0 +1,53 @@
+"CustomHero"
+{
+	$baseTexture "models/items/undying/idol_of_ruination/idol_of_ruination_color"
+	"$normalmap" "models/items/undying/idol_of_ruination/idol_of_ruination_normal"
+	"$maskmap1" "models/items/undying/idol_of_ruination/idol_of_ruination_mask1"
+	"$maskmap2" "models/items/undying/idol_of_ruination/idol_of_ruination_mask2"
+
+//	"$diffusewarp" "models/heroes/razor/razor_lightwarp"
+
+//	"$detail1" "models/heroes/undying/undying_tower_glow.vtf"
+	$IgnoreBudgetCheck 1
+	$alphatest 1
+	$SPECULAREXPONENT 12
+	$SPECULARSCALE 22
+	$SPECULARCOLOR "[1 1 1]"
+
+
+	$RIMLIGHTSCALE	2
+	
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+//	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
+
+
+	
+//	$FRESNELWARP "models/heroes/juggernaut/juggernaut_fresnelranges"
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.1"
+			"texturescrollangle"	"90"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+
