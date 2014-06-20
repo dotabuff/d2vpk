@@ -4,8 +4,10 @@ This repository doesn't contain files with following extensions because of
 github space restrictions:
 wav, vtf, mp3, mdl, usm, vvd, dds, webm
 
+# Setup
+
+    make build
+
 # Update
 
-    go build
-    ruby sync.rb
-
+    make

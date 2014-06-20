@@ -1,5 +1,9 @@
 default: d2vpk sync convert commit
 
+build:
+	sudo apt-get install libxml2-dev
+	go get -t
+
 d2vpk:
 	go build -o d2vpk extract.go
 
@@ -10,4 +14,4 @@ convert:
 	ruby convert.rb
 
 commit:
-	git commit -v
+	git commit -m "`./d2vpk -v`"
