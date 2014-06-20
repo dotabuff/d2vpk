@@ -1078,6 +1078,14 @@
 						"location"	"attach_attack1"
 					}
 				}	
+				"maiden_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 			}
 		}
 
@@ -1294,9 +1302,21 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_drowranger.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_drowranger.txt"
 
-		// Additional data needed to render the out of game portrait
+	// Additional data needed to render the out of game portrait
+		
 		"RenderablePortrait"
 		{
+			"Particles"
+			{
+				"drow_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
 		}
 	
 		"Bot"
@@ -1751,6 +1771,25 @@
 			"model"			"models/heroes/juggernaut/jugg_healing_ward.mdl"
 		}
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"juggernaut_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
+
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -1939,7 +1978,7 @@
 		"CMEnabled"				"1"
 		"url"				"Mirana"
 		"LastHitChallengeRival"		"npc_dota_hero_luna"
-		"HeroSelectSoundEffect"		")weapons/hero/mirana/leap1.wav"
+		"HeroSelectSoundEffect"		")weapons/hero/mirana/starfall.wav"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -2003,6 +2042,24 @@
 			"resource"	"resource/UI/Heroes/default.res"
 		}
 		
+		
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"mirana_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -2422,7 +2479,7 @@
 		"NoCombine"					"1"
 		"LastHitChallengeRival"		"npc_dota_hero_necrolyte"
 		"AbilityDraftDisabled"		"1"
-		"HeroSelectSoundEffect"		")weapons\hero\morphling\adaptive_strike.wav"
+		"HeroSelectSoundEffect"		")weapons\hero\morphling\waveform.wav"
 		
 
 		// Abilities
@@ -2480,6 +2537,15 @@
 		{
 			"Particles"
 			{
+				"morphling_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+				
 				"morphling_ambient_new"
 				{
 					"1"
@@ -2915,6 +2981,19 @@
 						"location"	"attach_hitloc"  //Note : shouldn't need this
 					}
 				}
+				"puck_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"position"		"200 200 200"
+					}
+				}
 			}
 		}	
 	
@@ -3153,6 +3232,19 @@
 					{
 						"type"		"follow_origin"
 						"location"	"attach_hitloc"  //Note : shouldn't need this
+					}
+				}
+				"pudge_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"position"		"200 1 200"
 					}
 				}
 			}
@@ -3404,6 +3496,15 @@
 		{
 			"Particles"
 			{
+				"razor_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+				
 				"razor_ambient"
 				{
 					"3"
@@ -3693,7 +3794,29 @@
 		"ParticleFile"				"particles/units/heroes/hero_sandking.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_sandking.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_sandking.txt"
-				
+
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"sandking_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"position"		"100 0 0"
+					}
+				}	
+			}
+		}				
+						
 		"AbilityPreview"
 		{
 			"resource"	"resource/UI/Heroes/default.res"	
@@ -3932,6 +4055,19 @@
 						"type"		"follow_origin"
 					}
 				}
+				"storm_spirit_new_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 				"storm_spirit_loadout_hand"
 				{
 					"0"
@@ -4141,6 +4277,23 @@
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"			"150"
 
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"sven_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -4384,6 +4537,14 @@
 						"location"	"attach_hitloc"  //Note : shouldn't need this
 					}
 				}	
+				"tiny_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 			}
 		}	
 		
@@ -4632,6 +4793,15 @@
 		{
 			"Particles"
 			{
+				"vengeful_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+				
 				"vengeful_ambient"
 				{
 					"0"
@@ -4810,7 +4980,22 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_windrunner.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_windrunner.txt"
 
-	
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"windrunner_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
 	
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
@@ -5032,6 +5217,24 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_zuus.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_zuus.txt"
 
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"zeus_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 		"Bot"
 		{
 			"Loadout"
@@ -5181,6 +5384,25 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"			"150"
+
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"kunkka_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
@@ -5455,6 +5677,19 @@
 						"location"	"attach_attack2"
 					}
 				}		
+				"lina_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"position"		"150 1 1"
+					}
+				}
 			}
 		}	
 
@@ -5743,8 +5978,8 @@
 				{
 					"0"
 					{
-						"type"		"follow_origin"
-						"location"		"attach_hitloc"
+						"type"		"follow_attachment"
+						"location"		"attach_attack1"
 					}
 				}	
 			}
@@ -5919,7 +6154,30 @@
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_lion.txt"
 		"ParticleFile"			"particles/units/heroes/hero_lion.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_lion.txt"
+
+		// Additional data needed to render the out of game portrait
 		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"lion_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_attack1"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+
+	
 				"ItemSlots"
 		{
 			"0"
@@ -6148,6 +6406,14 @@
 		{
 			"Particles"
 			{
+				"shadowshaman_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 				"shadowshaman_stick"
 				{
 					"0"
@@ -6445,6 +6711,14 @@
 		{
 			"Particles"
 			{
+				"slardar_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 				"slardar_head_light"
 				{
 					"0"
@@ -6604,6 +6878,26 @@
 		"ParticleFile"				"particles/units/heroes/hero_tidehunter.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_tidehunter.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_tidehunter.txt"
+
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"tide_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
+
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -6823,6 +7117,29 @@
 		"precache"
 		{
 			"model"			"models/heroes/witchdoctor/witchdoctor_ward.mdl"
+		}
+
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"witchdoctor_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+					
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_attack1"
+					}
+				}	
+			}
 		}
 
 		// Items
@@ -7055,6 +7372,23 @@
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"			"115"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"riki_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -7227,7 +7561,7 @@
 		"Team"						"Bad"
 		"HeroID"					"33"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale"				".81"
-		"LoadoutScale"          ".65"
+		"LoadoutScale"          "1"
 		"HeroGlowColor" 			"64 0 255"
 		"CMEnabled"					"1"
 		"url"					"Enigma"
@@ -7514,6 +7848,19 @@
 						"location"	"attach_ambient"
 					}
 				}	
+				"tinker_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_attack2"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_attack3"
+					}
+				}
 			}
 		}	
 
@@ -7730,6 +8077,23 @@
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"			"110"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"sniper_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -8022,6 +8386,14 @@
 						"location"	"attach_hitloc"  //Note : shouldn't need this
 					}
 				}
+				"necrolyte_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 			}
 		}	
 		
@@ -8131,7 +8503,7 @@
 		"Team"						"Bad"
 		"HeroID"					"37"														// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
 		"ModelScale"				"0.93"
-		"LoadoutScale"			"1"
+		"LoadoutScale"			"0.87"
 		"HeroGlowColor" 			"249 54 47"
 		"PickSound"					"warlock_warl_spawn_01"	
 		"BanSound"					"warlock_warl_anger_04"		  
@@ -8202,6 +8574,20 @@
 		{
 			"Particles"
 			{
+				"warlock_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_attack1"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+				
 				"warlock_ambient_smoke"
 				{
 					"0"
@@ -8714,7 +9100,24 @@
 		"ParticleFile"				"particles/units/heroes/hero_queenofpain.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_queenofpain.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_queenofpain.txt"
+	
+		// Additional data needed to render the out of game portrait
 		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"queenofpain_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+			
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -8864,6 +9267,25 @@
 		"ParticleFile"				"particles/units/heroes/hero_venomancer.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_venomancer.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_venomancer.txt"
+
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"venomancer_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 
 		"ItemSlots"
 		{
@@ -9332,7 +9754,28 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_skeletonking.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_skeleton_king.txt"
 
-	
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"wraith_king_new_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_hitloc"
+					}
+				}	
+			}
+		}
+
 		"ItemSlots"
 			{
 				"0"
@@ -9848,7 +10291,24 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"310"									// Speed.
 		"MovementTurnRate"			"0.4"									// Turning rate.
+	
+		// Additional data needed to render the out of game portrait
 		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"phantom_assassin_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+			
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -10106,6 +10566,19 @@
 		{
 			"Particles"
 			{
+				"pugna_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_origin"
+						"position"		"150 150 150"
+					}
+				}
 				"pugna_weapon_glow"
 				{
 					"0"
@@ -10236,6 +10709,14 @@
 		{
 			"Particles"
 			{
+				"templar_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 				"templar_assassin_ambient"
 				{
 					"0"
@@ -10415,6 +10896,20 @@
 						"location"	"attach_hitloc"  //Note : shouldn't need this
 					}
 				}	
+				"viper_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+
+				}
 			}
 		}	
 
@@ -10572,6 +11067,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_luna.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_luna.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"luna_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -11496,6 +12008,14 @@
 						"location"	"attach_hitloc"  //Note : shouldn't need this
 					}
 				}
+				"leshrac_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 			}
 		}
 	
@@ -11677,6 +12197,25 @@
 		"ParticleFile"			"particles/units/heroes/hero_furion.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_furion.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"furion_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
+
 		"ItemSlots"
 		{
 			"0"
@@ -11857,6 +12396,14 @@
 		{
 			"Particles"
 			{
+				"life_stealer_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 				"life_stealer_ambient"
 				{
 					"1"
@@ -12429,6 +12976,23 @@
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_omniknight.txt"
 		"ParticleFile"			"particles/units/heroes/hero_omniknight.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_omniknight.txt"
+
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"omniknight_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
 
 		"ItemSlots"
 		{
@@ -13072,6 +13636,23 @@
 		"ParticleFile"			"particles/units/heroes/hero_night_stalker.pcf"
 		"GameSoundsFile"		"scripts/game_sounds_heroes/game_sounds_nightstalker.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"nightstalker_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -13682,6 +14263,22 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_weaver.txt"
 		"VoiceFile"				"scripts/voscripts/game_sounds_vo_weaver.txt"
 
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"weaver_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
 		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
@@ -15014,7 +15611,15 @@
 						"type"		"follow_attachment"
 						"location"	"attach_hitloc"
 					}
-				}	
+				}
+				"ancient_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}					
 			}
 		}
 
@@ -15162,6 +15767,25 @@
 		"ParticleFile"				"particles/units/heroes/hero_ursa.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_ursa.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_ursa.txt"
+
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"ursa_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 
 		"ItemSlots"
 		{
@@ -15356,6 +15980,25 @@
 		"ParticleFile"				"particles/units/heroes/hero_spirit_breaker.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_spirit_breaker.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_spirit_breaker.txt"
+
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"spirit_breaker_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 
 		// Additional data needed to render the out of game portrait
 		"RenderablePortrait"
@@ -15824,6 +16467,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_alchemist.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_alchemist.txt"
 		
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"alchemist_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}
+
 		// Vision
 		//-------------------------------------------------------------------------------------------------------------
 		"VisionNighttimeRange"		"800"									// Range of vision at night time.
@@ -16092,6 +16752,24 @@
 		{
 			"model"			"models/heroes/invoker/forge_spirit.mdl"
 		}
+
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"invoker_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+
 		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
@@ -16259,6 +16937,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_silencer.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_silencer.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"silencer_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -16488,6 +17183,14 @@
 						"location"	"attach_hitloc"
 					}
 				}	
+				"obsidian_destroyer_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_hitloc"
+					}
+				}
 			}
 		}	
 		
@@ -16687,6 +17390,28 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_lycan.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_lycan.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"lycan_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_attachement"
+						"location"		"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Precache
 		//-------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -17078,6 +17803,30 @@
 		{
 			"Particles"
 			{
+				"shadow_demon_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_attack1"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_attack2"
+					}
+					"2"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+					"3"
+					{
+						"type"		"follow_origin"
+						"position"		"3 3 3"
+					}
+				}
+				
 				"shadow_demon_ambient"
 				{
 					"1"
@@ -17311,6 +18060,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_lone_druid.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_lone_druid.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"lone_druid_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Precache
 		//-------------------------------------------------------------------------------------------------------------
 		"precache"
@@ -17660,7 +18426,7 @@
 		"LastHitChallengeRival"		"npc_dota_hero_sand_king"
 		"AbilityDraftDisabled"		"1"
 		"ARDMDisabled"				"1"
-		"HeroSelectSoundEffect"		")weapons/hero/meepo/poof_channel.wav"
+		"HeroSelectSoundEffect"		")weapons/hero/meepo/poof_appear.wav"
 
 
 		// Abilities
@@ -17713,6 +18479,23 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_meepo.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_meepo.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"meepo_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -17875,6 +18658,24 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_treant.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_treant.txt"
 
+		
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"treant_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}	
+
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -17974,7 +18775,7 @@
 		"url"					"Ogre_Magi"
 		"LastHitChallengeRival"		"npc_dota_hero_dragon_knight"
 		"AbilityDraftDisabled"		"1"
-		"HeroSelectSoundEffect"		")weapons/hero/ogre_magi/ignite_target.wav"
+		"HeroSelectSoundEffect"		")weapons/hero/ogre_magi/fireblast_cast.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -18038,6 +18839,14 @@
 						"location"	"attach_hitloc"
 					}
 				}	
+				"ogre_magi_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 			}
 		}	
 
@@ -18198,6 +19007,14 @@
 						"type"		"follow_origin"
 						"location"	"attach_hitloc"  //Note : shouldn't need this
 					}
+				}
+				"undying_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
 				}	
 			}
 		}	
@@ -18354,6 +19171,24 @@
 		{
 			"Particles"
 			{
+				"rubick_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"position"	"100 100 800"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_attack1"
+					}
+					"2"
+					{
+						"type"		"follow_origin"
+						"position"		"400 0 0"
+					}
+				}
 				"rubick_staff_ambient"
 				{
 					"0"
@@ -18706,6 +19541,24 @@
 		"ParticleFile"				"particles/units/heroes/hero_nyx_assassin.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_nyx_assassin.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_nyx_assassin.txt"
+		
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"nyx_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
 // Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -19423,6 +20276,15 @@
 		{
 			"Particles"
 			{
+				"visage_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_hitloc"
+					}
+				}
+				
 				"visage_ambient"
 				{
 					"0"
@@ -19555,6 +20417,25 @@
 		"ParticleFile"				"particles/units/heroes/hero_slark.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_slark.txt"
 		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_slark.txt"
+
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"slark_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_attachment"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
@@ -19708,7 +20589,23 @@
 		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_medusa.txt"
 		"HasAggressiveStance"		"1"										// Plays alternate idle/run animation when near enemies
 		
+	// Additional data needed to render the out of game portrait
 		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"medusa_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+				
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
 		{
@@ -19863,6 +20760,24 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_troll_warlord.txt"
 		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_troll_warlord.txt"
 			
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"troll_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
 		{
@@ -20223,6 +21138,28 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_magnataur.txt"
 		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_magnataur.txt"
 
+	// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"magnus_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+					"1"
+					{
+						"type"		"follow_attachment"
+						"location"		"attach_horn"
+					}
+				}	
+			}
+		}				
+		
 		// Items
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
@@ -20371,6 +21308,14 @@
 		{
 			"Particles"
 			{
+				"shredder_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
 				"shredder_ambient"
 				{
 					"0"
@@ -20788,6 +21733,15 @@
 		{
 			"Particles"
 			{
+				"tusk_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
+					}
+				}
+				
 				"tusk_ambient"
 				{
 					"0"
@@ -20980,6 +21934,24 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_skywrath_mage.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_skywrath_mage.txt"
 	
+		// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"skywrath_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 		// Items
 		//------------------------------------------------------------------------------------------------------------- 
 		"ItemSlots"
@@ -22074,6 +23046,25 @@
 		{
 			"model"			"models/heroes/terrorblade/demon.mdl"
 		}
+
+			// Additional data needed to render the out of game portrait
+		
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"terrorblade_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}	
+			}
+		}				
+		
+
 
 		// Items
 		//-------------------------------------------------------------------------------------------------------------

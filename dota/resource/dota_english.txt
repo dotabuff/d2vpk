@@ -8828,6 +8828,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Hero_Selection_NonHero_Show"			"GLOBAL ITEMS"
 		"DOTA_Hero_Selection_NonHero_Hide"			"HERO ITEMS"
 		
+		"DOTA_ALL_HEROES"						"ALL HEROES"
+		
 		"DOTA_Hero_Selection_PLAY"			"ENTER BATTLE AS"
 		"DOTA_Hero_Selection_LOCKIN"			"LOCK IN"
 
@@ -8970,11 +8972,15 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Hero_Selection_PipTooltip_Nuker_Sub"	"Can quickly kill enemy heroes using high damage spells with low cooldowns."
 		"DOTA_Hero_Selection_PipTooltip_Escape_Sub"	"Has the ability to quickly avoid death."
 
+		"DOTA_Hero_Selection_Grid_Edit"			"CUSTOMIZE GRID"
 		"DOTA_Hero_Selection_Tooltip_FullDeck"		"GRID VIEW (CTRL)"
 		"DOTA_Hero_Selection_Tooltip_Turntable"		"CARD VIEW (CTRL)"
 		"DOTA_Hero_Selection_Spin_Random_Hero"		"SPIN TO RANDOM HERO"
 		"DOTA_Hero_Selection_toStart"				"TIME TO GAME START"
 
+		"DOTA_Hero_Selection_Losing_Gold"			"You are losing 1 gold per second"
+		"DOTA_Hero_Selection_Losing_Gold_desc"		"The Pick phase is over and you still haven't selected your Hero."
+		
 		"DOTA_Hero_Selection_Team_Good"	"THE RADIANT"
 		"DOTA_Hero_Selection_Team_Bad"	"THE DIRE"
 		"DOTA_Hero_Selection_STR"		"STRENGTH"
@@ -17571,6 +17577,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_CIGO_DiscardAYS"			"Ignoring this game will cause it not to contribute to your overall averages."
 		"DOTA_CIGO_Discarded"			"Game being ignored. Stats will not be saved."
 		"DOTA_CIGO_Starting"			"STATS ANALYSIS WAITING FOR GAME START"
+		"DOTA_CIGO_Rejoined"			"STATS DISABLED DUE TO RECONNECTION"
 		"DOTA_CIGO_NoData"				"NO HISTORICAL DATA FOUND FOR COMPARISON"
 		"DOTA_CIGO_FirstKill"			"Average Time of First Kill: %s1"
 		"DOTA_CIGO_FirstDeath"			"Average Time of First Death: %s1"
@@ -17609,9 +17616,12 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 		"DOTA_CourierValue"		"Cargo Worth:"
 
-		"DOTA_Advertisement_Compendium_Button"		"BUY NOW - %s1"
-		"DOTA_Advertisement_Compendium_Header"		"Eleven New Immortals"
-		"DOTA_Advertisement_Compendium_SubHeader"	"Available now with the Compendium"
+		"DOTA_Advertisement_Compendium_Header"			"Eleven New Immortals"
+		"DOTA_Advertisement_Compendium_SubHeader"		"Available now with the Compendium"
+		"DOTA_Advertisement_Compendium_Button"			"BUY NOW - %s1"
+		"DOTA_Advertisement_Compendium_PointsHeader"	"Eleven New Immortals"
+		"DOTA_Advertisement_Compendium_PointsSubHeader"	"Higher Compendium Levels earn more rewards!"
+		"DOTA_Advertisement_Compendium_PointsButton"	"%s1 - %s2"
 
 		"DOTA_Advertisement_SummerTreasures_Header"		"DOTA 2 SUMMER SALE"
 		"DOTA_Advertisement_SummerTreasures_SubHeader"	"11 DAYS, 11 TREASURES"
@@ -17622,3 +17632,4 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 
 	}
 }
+
