@@ -1,4 +1,4 @@
-default: d2vpk sync convert commit
+default: d2vpk sync convert commit push
 
 build:
 	sudo apt-get install libxml2-dev
@@ -15,3 +15,6 @@ convert:
 
 commit:
 	git commit -m "`./d2vpk -v`"
+
+push:
+	git push
