@@ -4,7 +4,7 @@ build:
 	sudo apt-get install libxml2-dev
 	go get -t
 
-d2vpk:
+d2vpk: extract.go
 	go build -o d2vpk extract.go
 
 sync:
