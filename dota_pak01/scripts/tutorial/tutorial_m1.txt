@@ -835,13 +835,21 @@
 		"trigger_logic_relay"		"r5_relay_roquelaire_lead"	// send roquelaire south
 		"advance_time"				"6"
 		"advance_event"				"lesson_started"		// wait for player to enter neutral camp arena
-		"next_lesson"				"tm1_r5_roquelaireleadfinished"
+		"next_lesson"				"tm1_r5_returntoplayer"
 	}
 	
-	"tm1_r5_roquelaireleadfinished"
+	"tm1_r5_returntoplayer"
 	{
 		"movecamera_to"				"!player"
-		
+		"clear_camera_follow"			"1"
+
+		"advance_time"				"1"
+		"advance_event"				"lesson_started"
+		"next_lesson"				"tm1_r5_roquelaireleadfinished"
+	}
+
+	"tm1_r5_roquelaireleadfinished"
+	{
 		"quest"
 		{
 			"name"		"quest_clearneutral"
@@ -1117,11 +1125,19 @@
 		"advance_event"				"lesson_started"
 		"next_lesson"				"tm1_r6_roquelaireleadfinished"
 	}
-	
+
 	"tm1_r6_roquelaireleadfinished"
 	{
 		"movecamera_to"				"!player"
-		
+		"clear_camera_follow"			"1"
+
+		"advance_time"				"1"
+		"advance_event"				"lesson_started"
+		"next_lesson"				"tm1_r6_beginquest"
+	}
+	
+	"tm1_r6_beginquest"
+	{
 		"hero_levelup"
 		{
 			"hero"	"npc_dota_hero_keeper_of_the_light"
@@ -1745,7 +1761,15 @@
 	"tm1_r7_razorcamera"
 	{
 		"movecamera_to"				"!player"
-	
+		"clear_camera_follow"			"1"
+
+		"advance_time"				"1"
+		"advance_event"				"lesson_started"
+		"next_lesson"				"tm1_r7_razorspeech"
+	}
+
+	"tm1_r7_razorspeech"
+	{
 		"npc_speech"
 		{
 			"text"					"#DOTA_Tutorial_M1_RazorArrive"

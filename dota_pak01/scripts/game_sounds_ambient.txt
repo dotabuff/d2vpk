@@ -334,4 +334,21 @@
 	}
 }
 
+"lightning.thunder"
+{
+	"volume"	".5,.98"
+	"pitch"		"90,105"
+	"time"		"0,2"
+	"position"	"random"
+	"channel"		"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_105dB"
 
+	"rndwave"
+	{
+		"wave" "ambient/soundscapes/thunder_dist_01.wav"
+		"wave" "ambient/soundscapes/thunder_dist_02.wav"
+		"wave" "ambient/soundscapes/thunder_dist_03.wav"
+		"wave" "ambient/soundscapes/thunder_dist_04.wav"
+		"wave" "ambient/soundscapes/thunder_dist_05.wav"
+	}
+}
