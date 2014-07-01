@@ -336,19 +336,16 @@
 
 "lightning.thunder"
 {
-	"volume"	".5,.98"
-	"pitch"		"90,105"
-	"time"		"0,2"
-	"position"	"random"
+	"volume"	"0.8, 0.9"
 	"channel"		"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_105dB"
+	"soundlevel"	"SNDLVL_NONE"
 
 	"rndwave"
 	{
-		"wave" "ambient/soundscapes/thunder_dist_01.wav"
-		"wave" "ambient/soundscapes/thunder_dist_02.wav"
-		"wave" "ambient/soundscapes/thunder_dist_03.wav"
-		"wave" "ambient/soundscapes/thunder_dist_04.wav"
-		"wave" "ambient/soundscapes/thunder_dist_05.wav"
+		"wave" "ambient/soundscapes/rain_thunder01.mp3"
+		"wave" "ambient/soundscapes/rain_thunder02.mp3"
+		"wave" "ambient/soundscapes/rain_thunder03.mp3"
+		"wave" "ambient/soundscapes/rain_thunder04.mp3"
+		"wave" "ambient/soundscapes/rain_thunder05.mp3"
 	}
 }

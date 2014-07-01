@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\techies\techies_workshop_color"
+	"$normalmap" "models\heroes\techies\techies_normal"
+	"$maskmap1" "models\heroes\techies\techies_workshop_mask1"
+	"$maskmap2" "models\heroes\techies\techies_workshop_mask2"
+
+	$ignorebudgetcheck 1
+	//$SpecularBlendtoFull 1
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 1
+	//$SPECULARCOLOR "[1 .45 0]"
+	$RIMLIGHTCOLOR "1 1 1"
+	$RIMLIGHTSCALE 2	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

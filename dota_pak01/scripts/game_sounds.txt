@@ -2278,6 +2278,71 @@
 	}
 }
 
+///////////////////////////////////////////////////////////////////////////////
+//minipudge_courier
+///////////////////////////////////////////////////////////////////////////////
+
+"minipudge.ChainFoley"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.15, 0.35"
+	"soundlevel"  	"SNDLVL_68dB"
+	"pitch"			"95,105"
+
+	"rndwave"
+	{
+		"wave"		")physics\movement\hero\pudge\chain_movement1.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement2.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement3.wav"
+		"wave"		")physics\movement\hero\pudge\chain_movement4.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+"minipudge_Wings.Light"
+{
+	"channel"		"CHAN_BODY"
+	"soundlevel"	"SNDLVL_63dB"
+	"volume"		"0.6"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"physics/movement/wings/wingflaps_light_01.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_02.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_03.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_04.wav"
+		"wave"	"physics/movement/wings/wingflaps_light_05.wav"
+	}
+    "operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//greevil_courier
+///////////////////////////////////////////////////////////////////////////////
+
+
+
 "greevil_courier.footsteps"
 {
 	"channel"		"CHAN_BODY"

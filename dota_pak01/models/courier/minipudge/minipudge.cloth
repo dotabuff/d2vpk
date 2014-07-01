@@ -1,0 +1,48 @@
+"ClothSystem"
+{
+        "Cloth" 
+        { 
+           
+            "damping"                          "0.5" 
+            "gravity"                          "0 0 -1" 
+            "gravity_scale"                    "400.000000" 
+            "WorldFriction"                    "0.25" 
+            "LocalForce"                       "1.00000" 
+            "LocalRotation"                    "1.00000" 
+            "FixedPointDamping"                "0.4" 
+            "StretchForce"                     "0.25" 
+            "SpringStretchiness"               "0.001" 
+            "AnimationForceAttraction"         "0.0" 
+            "AnimationVertexAttraction"        "0.00000" 
+            "ExternalForceScale"               "1.000000" 
+            "mapping" 
+            { 
+                "WeaponChainBase0_JNT"       "R0C0" 
+                "WeaponChain0_JNT"       "R1C0" 
+                "WeaponChain1_JNT"       "R2C0" 
+                "WeaponChain2_JNT"       "R3C0" 
+                "WeaponChain3_JNT"       "R4C0"
+				"WeaponChain4_JNT"       "R5C0"
+				"WeaponChain5_JNT"       "R6C0"
+            } 
+			
+            R0C0                "fixed" 
+            R1C0                "world | mass 0.5" 
+            R2C0                "world | mass 0.5" 
+            R3C0                "world | mass 0.5" 
+            R4C0                "world | mass 0.5"
+			R5C0                "world | mass 0.5" 
+			R6C0                "world | mass 0.5" 
+			
+			//"StructSpringConstant"                 "10.000000" 
+            //"StructSpringDamping"                 "0.100000" 
+            //"ShearSpringConstant"                 "20.000000" 
+            //"ShearSpringDamping"                  "0.500000" 
+            //"BendSpringConstant"                  "10.000000" 
+            //"BendSpringDamping"                   "0.400000" 
+			"columns"                           "1" 
+            "rows"                 			    "7" 
+        }
+}
+
+

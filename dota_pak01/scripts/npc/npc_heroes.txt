@@ -4465,7 +4465,7 @@
 		"HeroGlowColor" 			"254 242 200"
 		"CMEnabled"					"1"
 		"url"					"Tiny"
-		"NoCombine"					"1"
+		"NoCombine"					"0"
 		"LastHitChallengeRival"		"npc_dota_hero_earthshaker"
 		"HeroSelectSoundEffect"		")weapons/hero/tiny/tiny_avalanche.wav"
 
@@ -4557,6 +4557,10 @@
 				"SlotIndex"	"0"
 				"SlotName"	"weapon"
 				"SlotText"	"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1200"
+				"MaxPolygonsLOD1"	"800"
 			}		
 			"1"
 			{
@@ -4569,24 +4573,40 @@
 				"SlotIndex"	"2"
 				"SlotName"	"head"
 				"SlotText"	"#LoadoutSlot_Head"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1350"
+				"MaxPolygonsLOD1"	"900"
 			}
 			"3"
 			{
 				"SlotIndex"	"3"
 				"SlotName"	"arms"
 				"SlotText"	"#LoadoutSlot_Arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1100"
+				"MaxPolygonsLOD1"	"750"
 			}
 			"4"
 			{
 				"SlotIndex"	"4"
 				"SlotName"	"offhand_weapon"
 				"SlotText"	"#LoadoutSlot_Offhand_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"1100"
+				"MaxPolygonsLOD1"	"750"
 			}
 			"5"
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"armor"
 				"SlotText"	"#LoadoutSlot_Armor"	
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"	"2500"
+				"MaxPolygonsLOD1"	"1650"
 			}		
 		}
 
@@ -23323,4 +23343,178 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_oracle.txt"
 		"VoiceFile" 				"scripts/voscripts/game_sounds_vo_oracle.txt"
 	}
+
+	//=================================================================================================================
+	// HERO: Techies
+	//=================================================================================================================
+	"npc_dota_hero_techies"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_hero_techies"							// Class of entity of link to.
+		"Model"						"models/heroes/techies/techies.mdl"						// Model.
+		"ModelScale" 				"0.60"
+		"SoundSet"					"Hero_Techies"										// Name of sound set.
+		"Enabled"					"1"
+		"BotImplemented"			"0"
+		"Team"						"Bad"
+		"NewHero"					"0"
+		"HeroPool1"					"0"
+		"HeroUnlockOrder"			"1"										// The higher the number the later these heros will unlock for new players.
+		"CMEnabled"					"0"
+		"CMTournamentIgnore"		"0"
+		"new_player_enable"			"0"
+		"HeroID"					"105"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
+		"VoiceFile"					"scripts/voscripts/game_sounds_vo_techies.txt"
+		"PickSound"					"techies_tech_spawn_01"
+		"BanSound"					"techies_tech_anger_23"
+		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_techies.txt"
+		"IdleSoundLoop"				"Hero_Techies.IdleLoop"
+
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityLayout"				"5"
+		"Ability1"					"techies_land_mines"										// Ability 1.
+		"Ability2"					"techies_stasis_trap"										// Ability 2.
+		"Ability3"					"techies_suicide"										// Ability 3.
+		"Ability4"					"techies_focused_detonate"										// Ability 4.
+		"Ability5"					"techies_remote_mines"										
+		"Ability6"					"attribute_bonus"						// Ability 5 - Bonuses.
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"5"									// Physical protection.
+		"MagicalResistance"			"25"									// Magical protection (percentage).
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"7"										// Damage range min.
+		"AttackDamageMax"			"9"										// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"				// Type of damage dealt. 
+		"AttackRate"				"1.7"									// Speed of attack.
+		"AttackAnimationPoint"		"0.5"									// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
+		"AttackRange"				"700"									// Range within a target can be attacked.
+		"ProjectileModel"			"techies_base_attack"							// Particle system model for projectile.
+		"ProjectileSpeed"			"900"									// Speed of projectile.
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"17"										// Base strength
+		"AttributeStrengthGain"		"2.0"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"22"										// Base intelligence
+		"AttributeIntelligenceGain"	"2.9"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"14"										// Base agility
+		"AttributeAgilityGain"		"1.3"										// Agility bonus per level.
+
+		// Bounty
+		//-------------------------------------------------------------------------------------------------------------
+		"BountyXP"					"62"									// Experience earn.
+		"BountyGoldMin"				"0"										// Gold earned min.
+		"BountyGoldMax"				"0"										// Gold earned max.
+
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		"RingRadius"				"70"
+		
+		//Particles
+		//-------------------------------------------------------------------------------------------------------------
+		"ParticleFile"				"particles/units/heroes/hero_techies.pcf"
+
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"270"									// Speed.
+		"MovementTurnRate"			"0.5"									// Turning rate.
+		"HasAggressiveStance"		"0"										// Plays alternate idle/run animation when near enemies
+		"HealthBarOffset"			"150"
+		
+		"ParticleFile"				"particles/units/heroes/hero_techies.pcf"
+
+		// Team
+		//-------------------------------------------------------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		
+		// Vision
+		//-------------------------------------------------------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"									// Range of vision during day light.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
+		
+		//Inventory
+		"HasInventory"				"1"
+	
+		// Items
+		//------------------------------------------------------------------------------------------------------------- 
+		"ItemSlots"
+		{
+			"0"
+			{
+				"SlotIndex"	"0"
+				"SlotName"	"weapon"
+				"SlotText"	"#LoadoutSlot_Weapon"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"530"
+				"MaxPolygonsLOD1"	"450"
+			}		
+			"1"	
+			{
+				"SlotIndex"	"1"
+				"SlotName" 	"head"
+				"SlotText"	"#LoadoutSlot_Head"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"750"
+				"MaxPolygonsLOD1"	"400"
+			}
+			"2"	
+			{
+				"SlotIndex"	"2"
+				"SlotName" 	"back"
+				"SlotText"	"#LoadoutSlot_Back"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"700"
+				"MaxPolygonsLOD1"	"520"
+			}
+			"3"	
+			{
+				"SlotIndex"	"3"
+				"SlotName" 	"shoulder"
+				"SlotText"	"#LoadoutSlot_Shoulder"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"975"
+				"MaxPolygonsLOD1"	"500"
+			}
+			"4"	
+			{
+				"SlotIndex"	"4"
+				"SlotName" 	"arms"
+				"SlotText"	"#LoadoutSlot_arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"400"
+				"MaxPolygonsLOD1"	"300"
+			}
+			"5"
+			{
+				"SlotIndex"	"5"
+				"SlotName"	"mount"
+				"SlotText"	"#LoadoutSlot_Mount"
+				"TextureWidth"		"512"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"2500"
+				"MaxPolygonsLOD1"	"1500"				
+			}
+
+		}
+	
+	}	
 }

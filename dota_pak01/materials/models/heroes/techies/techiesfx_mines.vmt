@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\techies\techiesfx_mines_color"
+	"$normalmap" "models\heroes\techies\techiesfx_mines_normal"
+	"$maskmap1" "models\heroes\techies\techiesfx_mines_mask1"
+	"$maskmap2" "models\heroes\techies\techiesfx_mines_mask2"
+
+	$SPECULAR_BLOOM_SCALE      0.5
+	$ignorebudgetcheck 1
+	$alphatest 1
+	//$SpecularBlendtoFull 1
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 5
+	//$SPECULARCOLOR "[1 .45 0]"
+	$RIMLIGHTCOLOR "1 1 1"
+	$RIMLIGHTSCALE 2	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

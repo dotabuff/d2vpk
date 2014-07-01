@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	$baseTexture "models/courier/minipudge/minipudgecourier_color.vtf"
+	"$normalmap" "models/courier/minipudge/minipudgecourier_normal.vtf"
+	"$maskmap1" "models/courier/minipudge/minipudgecourier_masks1.vtf"
+	"$maskmap2" "models/courier/minipudge/minipudgecourier_masks2.vtf"
+	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+
+	"$selfillum" "1"
+	
+	$IgnoreBudgetCheck 1
+	
+	$SPECULAREXPONENT 6
+	$SPECULARSCALE 3
+	$SPECULARCOLOR "[1 .8 .7]"
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}
+
