@@ -5152,7 +5152,7 @@ Upon his steed Armageddon he rides, wading into battle with maniacal frenzy, dra
 		"DOTA_Tooltip_ability_visage_summon_familiars_Description"			"Conjures up two blind Familiars to fight for Visage.  Familiars have high attack power, but each attack drains a charge of damage that recharges slowly over time.  Familiars possess the Stone Form ability, that allows them to turn into stone, stunning enemies upon landing.  While in Stone Form, Familiars are invulnerable, and rapidly regenerate their health and damage.  Familiars grant high bounty when killed.\n\nUpgradable by Aghanim's Scepter."
 		"DOTA_Tooltip_ability_visage_summon_familiars_Lore"					"Guardians of the Narrow Maze, Necro'lic's Familiars stand watch over his domain."
 		"DOTA_Tooltip_ability_visage_summon_familiars_Note0"				"Casting Summon Familiars will replace any existing Familiars."
-		"DOTA_Tooltip_ability_visage_summon_familiars_Note1"				"Each Familiar starts with 7 damage charges, and has magic immunity.  Many stuns and slows have no effect on Familiars."
+		"DOTA_Tooltip_ability_visage_summon_familiars_Note1"				"Each Familiar starts with 7 damage charges, and have 96.25% magic resistance.  Many stuns and slows have no effect on Familiars."
 		"DOTA_Tooltip_ability_visage_summon_familiars_familiar_hp"			"FAMILIAR HP:"
 		"DOTA_Tooltip_ability_visage_summon_familiars_familiar_armor"		"FAMILIAR ARMOR:"
 		"DOTA_Tooltip_ability_visage_summon_familiars_familiar_speed"		"FAMILIAR SPEED:"
@@ -10184,7 +10184,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_matchmaking_language_4"								"Korean"
 		"dota_matchmaking_language_5"								"Spanish"
 		"dota_matchmaking_language_6"								"Portuguese"
-		
+				
 		"dota_matchmaking_solo_option"								"Don't match with parties when alone"
 		"dota_matchmaking_solo_option_label"						"No parties when alone"
 
@@ -11335,19 +11335,20 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_broadcaster_recommendation_new_players" "Recommended for New Players"
 		"dota_broadcaster_recommendation_desc" 			"The caster in this channel will help introduce you to Dota 2 and its gameplay."
 
-		"DOTA_Broadcaster_Menu_Title"			"BROADCASTER MENU"
-		"DOTA_Broadcaster_SendStatPopup"		"Send Stat Popup"
-		"DOTA_Broadcaster_SendStatPopup_Title"	"SELECT STYLE AND FILL OUT DISPLAY"
-		"DOTA_Broadcaster_SelectImage"			"Select Image"
-		"DOTA_Broadcaster_TextHere"				"<Enter text here>"
-		"DOTA_Broadcaster_TextHereOptional"		"<Enter text here (or leave blank)>"
-		"DOTA_Broadcaster_ImagePicker_Title"	"SELECT IMAGE"
-		"DOTA_Broadcaster_ImagePicker_Heroes"	"HEROES"
-		"DOTA_Broadcaster_ImagePicker_Generic"	"GENERIC"
-		"DOTA_Broadcaster_ImagePicker_Items"	"ITEMS"
-		"DOTA_Broadcaster_ImagePicker_Match"	"MATCH DETAILS"
-		"DOTA_Roshan_Respawn"					"RESPAWNS IN:"
-		"DOTA_Roshan_Reclaimed"					"RECLAIMED IN:"
+		"DOTA_Broadcaster_Menu_Title"			 "BROADCASTER MENU"
+		"DOTA_Broadcaster_SendStatPopup"		 "Send Stat Popup"
+		"DOTA_Broadcaster_SendStatPopup_Title"	 "SELECT STYLE AND FILL OUT DISPLAY"
+		"DOTA_Broadcaster_SelectImage"			 "Select Image"
+		"DOTA_Broadcaster_TextHere"				 "<Enter text here>"
+		"DOTA_Broadcaster_TextHereOptional"		 "<Enter text here (or leave blank)>"
+		"DOTA_Broadcaster_TextHereShort"         "<text>"
+		"DOTA_Broadcaster_ImagePicker_Title"	 "SELECT IMAGE"
+		"DOTA_Broadcaster_ImagePicker_Heroes"	 "HEROES"
+		"DOTA_Broadcaster_ImagePicker_Generic"	 "GENERIC"
+		"DOTA_Broadcaster_ImagePicker_Items"	 "ITEMS"
+		"DOTA_Broadcaster_ImagePicker_Match"	 "MATCH DETAILS"
+		"DOTA_Roshan_Respawn"					 "RESPAWNS IN:"
+		"DOTA_Roshan_Reclaimed"					 "RECLAIMED IN:"
 
 		"DOTA_Paused"							"Game is paused"
 		"DOTA_Unpausing"						"Game is unpausing"
@@ -13363,7 +13364,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Text_2014_Compendium"			"Level up and earn rewards, compete in new challenges, and more!"
 		
 		"StoreBanner_Header_stanley_parable_announcer_pack"		"The Stanley Parable Announcer Pack"
-		"StoreBanner_Text_stanley_parable_announcer_pack"			"Do you really have a choice in the matter?"
+		"StoreBanner_Text_stanley_parable_announcer_pack"		"Do you really have a choice in the matter?"
 		
 		"StoreBanner_Header_TreasureOfTheClovenWorld"			"Treasure of the Cloven World"
 		"StoreBanner_Text_TreasureOfTheClovenWorld"			"The world's gate swings wide."
@@ -13382,6 +13383,25 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		
 		"StoreBanner_Header_TreasureOfTheShatteredHourglass"		"Treasure of the Shattered Hourglass"
 		"StoreBanner_Text_TreasureOfTheShatteredHourglass"		"Time for a new look!"
+		
+		"StoreBanner_Header_FreetoPlayBundleSale"			"Free to Play Bundle Sale"
+		"StoreBanner_Text_FreetoPlayBundleSale"			"<p style='color:#a93827; font-size:14px;'>The Free to Play Collector’s Pack and individual hero sets for players Dendi, Fear and hyhy are all 50% off until July 22!</p>"
+		
+		"StoreBanner_Header_TreasureOfTheElementalTrophy"		"Treasure of the Elemental Trophy"
+		"StoreBanner_Text_TreasureOfTheElementalTrophy"			"Claim your share of glory!"
+		
+		"StoreBanner_Header_TreasureOfTheSharpenedKeepsake"		"Treasure of the Sharpened Keepsake"
+		"StoreBanner_Text_TreasureOfTheSharpenedKeepsake"		"Seize hold of fabled treasures!"
+		
+		"StoreBanner_Header_TreasureOfTheCannonsFuse"			"Treasure of the Cannon's Fuse"
+		"StoreBanner_Text_TreasureOfTheCannonsFuse"			"A volley of heroic valuables await!"
+		
+		"StoreBanner_Header_TreasureOfTheEternalAlliance"		"Treasure of the Eternal Alliance"
+		"StoreBanner_Text_TreasureOfTheEternalAlliance"			"Reveal a champion's favor!"		
+		
+		"StoreBanner_Header_TeamEmpireBundle"				"HUD and Loading Screen: Team Empire"
+		"StoreBanner_Text_TeamEmpireBundle"				"Build your own Empire!"		
+		
 		
 		
 		"Playtab_Quiz_Title"				"The Shopkeeper's Quiz"
@@ -15892,7 +15912,6 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_SwordonShoulder"		"The Knight's Repose"
 		"DOTA_Anim_Mod_abysm"			"Horns of Inner Abysm"
 		"Invalid_AbilityMod"	"Invalid"
-		"DOTA_Ability_Mod_Illuminate_Northlight"	"Northlight Illuminance"
 		"DOTA_Anim_Mod_lucentyr"	"Liveliness of Lucentyr"
 		"DOTA_Anim_Mod_f2p_doom"	"Crown of Hells!"
 		"DOTA_Anim_Mod_fear"	"Free to Fear"
@@ -15909,6 +15928,17 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_fishstick"	"Fish!"
 		"DOTA_Anim_Mod_rampant"	"Rampant Outrage"
 		"DOTA_Anim_Mod_glacier"	"Yulsaria's Glacier"
+
+		"DOTA_Ability_Mod_Illuminate_Northlight"	"Northlight Illuminance"
+		"DOTA_Ability_Mod_Mark_Divine_Anchor"	"Mark of the Divine Anchor"
+		"DOTA_Ability_Mod_Torrent_Divine_Anchor"	"Torrent of the Divine Anchor"
+		"DOTA_Ability_Mod_Tidebringer_Divine_Anchor"	"Tidebringer of the Divine Anchor"
+		"DOTA_Ability_Mod_Epitaphic_Bonds_Trap"		"Epitaphic Trap"
+		"DOTA_Ability_Mod_Timberthaw_Chakram"	"Timberthaw Chakram"
+		"DOTA_Ability_Mod_Reminiscence_Orb"		"Orb of Reminiscence"
+		"DOTA_Ability_Mod_Reminiscence_Ambient"	"Ambience of Reminiscence"
+		"DOTA_Ability_Mod_Reminiscence_Rift"	"Rift of Reminiscence"
+		"DOTA_Ability_Mod_Reminiscence_Dreamcoil"	"Dreamcoil of Reminiscence"
 
 		"Invalid_Soul"	"Invalid"
 		"DOTA_Soul_Gem_Raving_Aristocrat"	"Raving Aristocrat"
@@ -16153,6 +16183,19 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Artisan_of_Havoc_Helmet_Style3"			"Artisan of Havoc Helmet 4"
 		"DOTA_Item_Static_Lord_Style0"					"Helm"
 		"DOTA_Item_Static_Lord_Style1"					"Patch"
+		"DOTA_Item_Sky_High_Bomb_Style0"				"Bomb"
+		"DOTA_Item_Sky_High_Bomb_Style1"				"Insignia Bomb"
+		//"DOTA_Item_Sky_High_Bomb_Missle_Style0"				"Bomb"
+		//"DOTA_Item_Sky_High_Bomb_Missle_Style1"				"Insignia Bomb"
+		"DOTA_Item_Sky_High_Helmet_Style0"				"Spikes"
+		"DOTA_Item_Sky_High_Helmet_Style1"				"Visor"
+		"DOTA_Item_Sky_High_Propeller_Style0"				"Propeller"
+		"DOTA_Item_Sky_High_Propeller_Style1"				"Insignia Propeller"
+		"DOTA_Item_The_Werebear_Style0"				"Tier 1"
+		"DOTA_Item_The_Werebear_Style1"				"Tier 2"
+		"DOTA_Item_The_Werebear_Style2"				"Tier 3"
+		"DOTA_Item_Vigilante_Fox_Loading_Screen_Style0"		"Green"
+		"DOTA_Item_Vigilante_Fox_Loading_Screen_Style1"		"Red"
 		
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
 
@@ -16276,6 +16319,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_PlayerName_NS"		"NS"
 		"DOTA_PlayerName_Funn1k"	"Funn1k"
 		"DOTA_PlayerName_Ohaiyo"	"Ohaiyo"
+		"DOTA_PlayerName_Arteezy"	"Arteezy"
+		"DOTA_PlayerName_Mushi"		"Mushi"
+		"DOTA_PlayerName_BuLba"		"BuLba"
 
 		// Voice Credits
 		"DOTA_Credits_Tab"				"ACKNOWLEDGEMENTS"
@@ -16738,7 +16784,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_tip_intermediate_24"			"When no enemy creeps are near, Towers and Barracks have Backdoor Protection, which lessens the damage they take and allows them to restore their health." 
 		"dota_tip_intermediate_25"			"Quelling Blade only does its bonus damage to creeps." 
 		"dota_tip_intermediate_26"			"The Damage Blocked values on a Stout Shield, Poor Man's Shield, and Vanguard refer to the type of Hero carrying the shield, not the type of attacker." 
-		"dota_tip_intermediate_27"			"Dagon, Necronomon, and Diffusal Blade can be upgraded by purchasing their recipes again."
+		"dota_tip_intermediate_27"			"Dagon, Necronomicon, and Diffusal Blade can be upgraded by purchasing their recipes again."
 		"dota_tip_intermediate_28"			"You can give a teammate a single ward by holding Control, clicking on the ward in your inventory, then clicking on your teammate."
 		"dota_tip_intermediate_29"			"Blink Dagger and Force Staff can be used to climb up and down cliff sides."
 		"dota_tip_intermediate_30"			"Use a Quelling Blade to cut down trees and carve your own path through the forests."		
@@ -17559,6 +17605,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Crate_Open_Buy_Key"	"Buy and Open"
 		"Crate_Open_Now"		"Open Now"
 		"Crate_Browse_Signatures"	"Browse Signatures"
+		"Crate_Select_Signature"	"Select Signature"
 		"Crate_Browse_Signatures_Text"	"OR Add an official signature to your treasure for only ..."
 		"Crate_SignatureUpsell"	"Available as an officially autographed item!"
 		"Crate_No_Dupe"			"Each time you open this treasure you will receive %s1 of these items. You will not receive duplicates."
@@ -17753,6 +17800,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_EmoticonPanel_Advertisement_NoCompendium"	"Purchase the International Compendium to unlock a pack of 25 animated chat emoticons!"
 		"DOTA_EmoticonPanel_Advertisement_NotOpened"	"You've been granted an Compendium Emoticon Pack for owning a Compendium.\n\nOpen the pack in your Armory to permanently unlock your emoticons!"
 
+		"dota_signature_chest_souvenier"	"The official souvenier of the International 2014."
 	}
 }
 

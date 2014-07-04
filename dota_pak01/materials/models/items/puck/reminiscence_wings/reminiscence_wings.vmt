@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/puck/reminiscence_wings/reminiscence_wings_color"
+	"$normalmap"		"models/items/puck/reminiscence_wings/reminiscence_wings_normal"
+	"$FRESNELWARP"		"models/heroes/puck/puck_fresnelranges"
+	"$FRESNELCOLORWARP"		"models/heroes/puck/puck_colorwarp"
+	"$maskmap1"		"models/items/puck/reminiscence_wings/reminiscence_wings_mask1"
+	"$maskmap2"		"models/items/puck/reminiscence_wings/reminiscence_wings_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$SPECULAREXPONENT"		"8"
+	"$SPECULARSCALE"		"25"
+	"$AMBIENTSCALE"		"1"
+	"$alphatest"		"1"
+	"$RIMLIGHTSCALE"		"2"
+	"$RIMLIGHTCOLOR"		"[.5 1 .5]"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

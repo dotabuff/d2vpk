@@ -370,6 +370,30 @@ Rule nyx_assassin_CastExecuteIsNyxVendettaChance_30%_Rule
 	response nyx_assassin_CastExecuteIsNyxVendettaChance_30%
 }
 
+Response nyx_assassin_Deny
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_spikedcarapace_08.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_vendetta_04.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_01.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_02.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_03.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_04.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_07.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_08.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_09.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_10.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_11.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_12.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_13.vcd" nodelay noscene 
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_15.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_Deny_Rule
+{
+	criteria Deny Isnyx_assassin 
+	response nyx_assassin_Deny
+}
+
 Response nyx_assassin_LevelUp
 {
 	scene "scenes/nyx_assassin/nyx_assassin_nyx_levelup_01.vcd" nodelay noscene 
@@ -743,31 +767,6 @@ Rule nyx_assassin_Bottling_Rule
 {
 	criteria Bottling Isnyx_assassin 
 	response nyx_assassin_Bottling
-}
-
-Response nyx_assassin_Deny
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_01.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_02.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_03.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_04.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_05.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_06.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_07.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_08.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_09.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_10.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_11.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_12.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_13.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_14.vcd" nodelay noscene 
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_deny_15.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_Deny_Rule
-{
-	criteria Deny Isnyx_assassin 
-	response nyx_assassin_Deny
 }
 
 Response nyx_assassin_MissingIsLaneTop

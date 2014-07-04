@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	$baseTexture "models/items/brewmaster/barrel_dragon_1/barrel_dragon_1_color"
+	"$normalmap" "models/items/brewmaster/barrel_dragon_1/barrel_dragon_1_normal"
+	"$maskmap1" "models/items/brewmaster/barrel_dragon_1/barrel_dragon_1_mask1"
+	"$maskmap2" "models/items/brewmaster/barrel_dragon_1/barrel_dragon_1_mask2"
+
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 5
+
+	$AMBIENTSCALE .5
+	$alphatest 1
+
+	$RIMLIGHTSCALE	1
+
+	$IgnoreBudgetCheck 1	
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

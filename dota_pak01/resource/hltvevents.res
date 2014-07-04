@@ -117,7 +117,7 @@
 		"eventtype"		"short"		// EDOTAHeroChaseEventType
 	}
 
-	"dota_combatlog"					// shot of a single entity
+	"dota_combatlog"
 	{
 		"type"				"byte"
 		"sourcename"		"short"
@@ -130,6 +130,15 @@
 		"health"			"short"
 		"timestamp"			"float"
 		"targetsourcename"	"short"
+		"timestampraw"		"float"
+		"attackerhero"		"bool"
+		"targethero"		"bool"
+	}
+
+	"dota_game_state_change"
+	{
+		"old_state"	"short"
+		"new_state"	"short"
 	}
 
 	"dota_player_pick_hero"
