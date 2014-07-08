@@ -232,10 +232,10 @@
 }
 
 
-"Hero_Undying.Tombstone.Cast"
+"Hero_Undying.Tombstone"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.8"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	//"pitch"			"95, 105"
 	"wave"			")weapons/hero/undying/tombstone.wav"
@@ -580,6 +580,46 @@
 			"mixer"
 			{
 				"mixgroup" "Creeps"
+			}
+		}
+	}
+}
+
+"Hero_Undying.Mausoleum"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	//"pitch"			"95, 105"
+	"wave"			")weapons/hero/undying/mausoleum.mp3"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "Tombstone"
+				"match_channel" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
 			}
 		}
 	}

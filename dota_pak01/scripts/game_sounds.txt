@@ -396,10 +396,9 @@
 "General.Chicken"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0"
 	"soundlevel"  	"SNDLVL_90dB"
-	"pitch"			"95,105"
-	"wave"			")ambient/chicken.wav"
+	"wave"			"null.wav" //moved to game_sounds_shadowshaman
 	"operator_stacks"
 	{
 		"start_stack"
@@ -428,10 +427,9 @@
 "General.Sheep"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0"
 	"soundlevel"  	"SNDLVL_90dB"
-	"pitch"			"95,105"
-	"wave"			")ambient/sheep.wav"
+	"wave"			"null.wav" //moved to game_sounds_shadowshaman
 	"operator_stacks"
 	{
 		"start_stack"
@@ -444,9 +442,8 @@
 "General.Frog"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0"
 	"soundlevel"  	"SNDLVL_90dB"
-	"pitch"			"95,105"
 	"wave"			"null.wav" //moved to game_sounds_lion
 	"operator_stacks"
 	{

@@ -332,3 +332,27 @@
 		}
 	}
 }
+
+"Hero_Razor.SeveringCrest.Loop"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/razor/severing_crest_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}

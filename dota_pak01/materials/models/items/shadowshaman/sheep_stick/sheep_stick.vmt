@@ -1,0 +1,44 @@
+
+"CustomHero"
+{
+	"$baseTexture" "models/items/shadowshaman/sheep_stick/sheep_stick_color"
+	"$normalmap" "models/items/shadowshaman/sheep_stick/sheep_stick_normal"
+	"$maskmap1" "models/items/shadowshaman/sheep_stick/sheep_stick_masks1"
+	"$maskmap2" "models/items/shadowshaman/sheep_stick/sheep_stick_masks2"
+
+
+	"$diffusewarp" "models/heroes/lich/lich_lightwarp"
+	$FRESNELWARP "models/heroes/lich/lich_fresnelranges"
+
+	"$envmap" "models/cubemaps/glossy_broad"
+	"$envmapintensity" "2"
+	$MASKENVBYMETALNESS 0
+
+//	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+//	$ENVMAPINTENSITY 0.5
+//	$MASKENVBYMETALNESS 1
+
+	//$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 15
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[.5 1 1]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$alphatest 1
+
+	$ignorebudgetcheck 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

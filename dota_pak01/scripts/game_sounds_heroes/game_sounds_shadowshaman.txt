@@ -101,6 +101,24 @@
 	}
 }
 
+
+"Hero_ShadowShaman.Hex.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"wave"			")ambient/chicken.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+
 "Hero_ShadowShaman.Shackles.Cast"
 {
 	"channel"		"CHAN_STATIC"
@@ -274,6 +292,22 @@
 		"start_stack"
 		{
 			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_ShadowShaman.SheepHex.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95,105"
+	"wave"			")ambient/sheep.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
 		}
 	}
 }

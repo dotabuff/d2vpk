@@ -4355,3 +4355,67 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"*/vo/announcer/announcer_welcome_01.mp3" 
 }
+
+"ui.npd_welcome_back"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*/vo/announcer/announcer_welcome_04.mp3" 
+}
+
+"ui.npd_experience"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*/vo/announcer/announcer_welcome_06.mp3" 
+}
+
+"ui.npd_experience_training_needed"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*/vo/announcer/announcer_welcome_07.mp3" 
+}
+
+"ui.npd_start_main_menu"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*/vo/announcer/announcer_welcome_08.mp3" 
+}
+
+"ui.npd_start_training"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*/vo/announcer/announcer_welcome_02.mp3" 
+}
+
+"techies_super_explosion"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			")weapons/hero/techies/super_explosion.mp3"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Solo"
+			}
+		}
+	} 
+}

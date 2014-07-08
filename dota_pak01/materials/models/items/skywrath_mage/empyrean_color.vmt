@@ -1,0 +1,48 @@
+"CustomHero"
+{
+	$baseTexture "models/items/skywrath_mage/empyrean_color"
+//	$baseTexture "models/items/skywrath_mage/empyrean_gold_color"
+	"$normalmap" "models/items/skywrath_mage/empyrean_normal"
+	"$maskmap1"  "models/items/skywrath_mage/empyrean_mask1"
+	"$maskmap2"  "models/items/skywrath_mage/empyrean_mask2"
+//	"$maskmap1"  "models/items/skywrath_mage/empyrean_gold_mask1"
+//	"$maskmap2"  "models/items/skywrath_mage/empyrean_gold_mask2"
+
+	$alphatest	1
+	
+	$SPECULAREXPONENT 32
+	$SPECULARSCALE  5
+
+
+//	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+//	$ENVMAPINTENSITY 4
+//	$MASKENVBYMETALNESS 1
+	
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	85
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,51 @@
+"CustomHero"
+{
+	$baseTexture "models/items/undying/idol_of_ruination/ruin_mummy_gold_color"
+	"$normalmap" "models/items/undying/idol_of_ruination/ruin_mummy_gold_normal"
+	"$maskmap1" "models/items/undying/idol_of_ruination/ruin_mummy_gold_mask1"
+	"$maskmap2" "models/items/undying/idol_of_ruination/ruin_mummy_gold_mask2"
+	"$detail1" "models/heroes/undying/undying_tower_glow.vtf"
+
+	$alphatest 1
+	$SPECULAREXPONENT 22
+	$SPECULARSCALE 12
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE	2
+	
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+
+
+	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	$ENVMAPINTENSITY 3
+	$MASKENVBYMETALNESS 1
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.1"
+			"texturescrollangle"	"90"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+
+}
+
+
+
+
+
+
+

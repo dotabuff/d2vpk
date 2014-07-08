@@ -197,7 +197,7 @@
 		"DOTA_Barracks"			"Barracks: %s1"
 		
 		// Captains Mode
-		"Captains Mode"			"Captains Mode"
+		"Captains Mode"			"CAPTAIN'S MODE"
 		"timeline_ban"			"BAN"
 		"timeline_pick"			"PICK"
 		
@@ -666,6 +666,7 @@
 		
 		"DOTA_Winner_GoodGuys"			"Radiant Victory"
 		"DOTA_Winner_BadGuys"			"Dire Victory"
+		"DOTA_Winner_Teamname"			"%s1 Victory"
 		"DOTA_Roshan_Killed"			"Roshan Has Been Killed"
 		"DOTA_Roshan_Wins"			"Roshan Is Victorious"
 		"DOTA_Finish_Game"			"Finish Game"
@@ -7352,6 +7353,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"lobby_slot_error_header"		"Unable to switch slot"
 		"lobby_slot_error"				"Failed to change lobby slot."
 		"lobby_slot_denied"				"You do not have permission to join this slot."
+		"lobby_slot_cameramanalready"	"Broadcaster Channels can only have one Camera man"
+		"lobby_slot_cameramanon"		"You are now flagged as a camera man"
+		"lobby_slot_cameramanoff"		"You are no longer a camera man"
 		"lobby_game_mode_required"		"CUSTOM GAME REQUIRED"
 		"lobby_game_mode_required_desc"	"This lobby requires the custom game \"%s1\""
 		"lobby_game_mode_required_subscribe"	"This lobby requires the custom game \"%s1\". Subscribe to this game mode and download it now?"
@@ -9057,12 +9061,18 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_cd_time_label"				"Time remaining for all picks"
 		"dota_CM_COMMUNICATION"				"COMMUNICATION"
 		"dota_cm_time"				"Time"
-		"dota_cm_bonus_time"				"Bonus Time"
+		"dota_cm_bonus_time"				"RESERVE TIME"
 
 		"jump_ahead"						"Jump Ahead"
 
-		"DOTA_Hero_Selection_Phase_Pick"	"PICK %s1"
-		"DOTA_Hero_Selection_Phase_Ban"		"BAN %s1"
+		"DOTA_Hero_Selection_RADIANT_Phase_Pick"					"<font color='#009900'>RADIANT</font> PICK %s1"
+		"DOTA_Hero_Selection_RADIANT_Phase_Ban"		"<font color='#009900'>RADIANT</font> BAN %s1"
+		
+		"DOTA_Hero_Selection_DIRE_Phase_Pick"	"<font color='#CC0000'>DIRE</font> PICK %s1"
+		"DOTA_Hero_Selection_DIRE_Phase_Ban"		"<font color='#CC0000'>DIRE</font> BAN %s1"
+
+		"DOTA_Hero_Selection_RADIANT"		"<font color='#006600'>RADIANT</font>"
+		"DOTA_Hero_Selection_DIRE"				"<font color='#990000'>DIRE</font>"
 
 		"DOTA_Hero_Selection_Instruction" "You have %s1 to choose a hero."
 		"DOTA_Hero_Selection_Instruction_Other" "Other players are choosing their heroes."
@@ -12846,6 +12856,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Store_Featured"			"Featured"
 		"Store_Items"				"Items"
 		"Store_Treasure_Keys"		"Treasures"
+		"Store_Autographed_Immortals"	"Autographed Treasures"
 		"Store_Announcers"			"Announcers"
 		"Store_Couriers"			"Couriers"
 		"Store_Wards"				"Wards"
@@ -13363,6 +13374,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Header_2014_Compendium"		"The International Compendium"
 		"StoreBanner_Text_2014_Compendium"			"Level up and earn rewards, compete in new challenges, and more!"
 		
+		"StoreBanner_Header_TroveCarafe"		"The Trove Carafe"
+		"StoreBanner_Text_TroveCarafe"			"Special items with custom effects fresh for the International"
+		
 		"StoreBanner_Header_stanley_parable_announcer_pack"		"The Stanley Parable Announcer Pack"
 		"StoreBanner_Text_stanley_parable_announcer_pack"		"Do you really have a choice in the matter?"
 		
@@ -13390,7 +13404,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"StoreBanner_Header_TreasureOfTheElementalTrophy"		"Treasure of the Elemental Trophy"
 		"StoreBanner_Text_TreasureOfTheElementalTrophy"			"Claim your share of glory!"
 		
-		"StoreBanner_Header_TreasureOfTheSharpenedKeepsake"		"Treasure of the Sharpened Keepsake"
+		"StoreBanner_Header_TreasureOfTheSharpenedKeepsake"		"Treasure of the Tangled Keepsake"
 		"StoreBanner_Text_TreasureOfTheSharpenedKeepsake"		"Seize hold of fabled treasures!"
 		
 		"StoreBanner_Header_TreasureOfTheCannonsFuse"			"Treasure of the Cannon's Fuse"
@@ -15928,6 +15942,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_fishstick"	"Fish!"
 		"DOTA_Anim_Mod_rampant"	"Rampant Outrage"
 		"DOTA_Anim_Mod_glacier"	"Yulsaria's Glacier"
+		"DOTA_Anim_Mod_emp"	"Empyrean"
 
 		"DOTA_Ability_Mod_Illuminate_Northlight"	"Northlight Illuminance"
 		"DOTA_Ability_Mod_Mark_Divine_Anchor"	"Mark of the Divine Anchor"
@@ -16191,9 +16206,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Sky_High_Helmet_Style1"				"Visor"
 		"DOTA_Item_Sky_High_Propeller_Style0"				"Propeller"
 		"DOTA_Item_Sky_High_Propeller_Style1"				"Insignia Propeller"
-		"DOTA_Item_The_Werebear_Style0"				"Tier 1"
-		"DOTA_Item_The_Werebear_Style1"				"Tier 2"
-		"DOTA_Item_The_Werebear_Style2"				"Tier 3"
+		"DOTA_Item_Virtus_Werebear_Style0"				"Tier 1"
+		"DOTA_Item_Virtus_Werebear_Style1"				"Tier 2"
+		"DOTA_Item_Virtus_Werebear_Style2"				"Tier 3"
 		"DOTA_Item_Vigilante_Fox_Loading_Screen_Style0"		"Green"
 		"DOTA_Item_Vigilante_Fox_Loading_Screen_Style1"		"Red"
 		
@@ -17606,7 +17621,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"Crate_Open_Now"		"Open Now"
 		"Crate_Browse_Signatures"	"Browse Signatures"
 		"Crate_Select_Signature"	"Select Signature"
-		"Crate_Browse_Signatures_Text"	"OR Add an official signature to your treasure for only ..."
+		"Crate_Browse_Signatures_Text"	"OR add an official signature to your treasure!"
+		"Crate_Signatures_Upsell"	"Available as an officially autographed item!"
 		"Crate_SignatureUpsell"	"Available as an officially autographed item!"
 		"Crate_No_Dupe"			"Each time you open this treasure you will receive %s1 of these items. You will not receive duplicates."
 		"Crate_Random_Bonus"	"Random Bonus Rewards"
@@ -17797,10 +17813,31 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Advertisement_SummerTreasures_Day"		"Day %s1 of 11"
 		"DOTA_Advertisement_SummerTreasures_Button"		"Peek Inside"
 
+		"DOTA_Advertisement_Signature_Treasure"			"Autographed %s1 - %s2"
+		"DOTA_Advertisement_Signature_TreasureHeader"	"Autographed Immortals"
+		"DOTA_Advertisement_Signature_TreasureSubHeader"	"Get new Immortal items autographed by your favorite Dota 2 personality."
+
 		"DOTA_EmoticonPanel_Advertisement_NoCompendium"	"Purchase the International Compendium to unlock a pack of 25 animated chat emoticons!"
 		"DOTA_EmoticonPanel_Advertisement_NotOpened"	"You've been granted an Compendium Emoticon Pack for owning a Compendium.\n\nOpen the pack in your Armory to permanently unlock your emoticons!"
 
-		"dota_signature_chest_souvenier"	"The official souvenier of the International 2014."
+		"dota_signature_chest_souvenier_desc"	"This individual will receive a portion of each purchase."
+
+		"dota_hero_picks_first_pick"				"First pick of %s1 at The International"
+
+		"dota_hero_picks_times_picked"				"Picked 1 time at The International"
+		"dota_hero_picks_times_picked_plural"		"Picked %s1 times at The International"
+		"dota_hero_picks_record"					"Record at The International:\n%s1-%s2"
+
+		"dota_hero_picks_team_first_pick"			"First pick of %s1 by %s2 in 6.81"
+		"dota_hero_picks_team_times_picked"			"First pick of %s1 by %s2 in 6.81"
+		"dota_hero_picks_team_times_picked_plural"			"%s1 picked by %s2 %s3 times in 6.81"
+		"dota_hero_picks_team_record"				"%s1 record with %s2:\n%s3-%s4"
+
+		"dota_hero_picks_player_times_picked_plural"		"Most often played by %s1, %s2 times"
+		"dota_hero_picks_player_times_picked"		"Most often played by %s1, 1 time"
+		"dota_hero_picks_player_record"				"Record when played by %s1:\n%s2-%s3"
+		"dota_hero_picks_player_kda"				"Average KDA when played by %s1:\n%s2"
+		"dota_hero_picks_player_gpm"				"Average GPM when played by %s1:\n%s2"
 	}
 }
 

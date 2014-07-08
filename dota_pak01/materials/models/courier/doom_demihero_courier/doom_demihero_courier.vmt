@@ -6,24 +6,49 @@
 	"$maskmap2" "models\courier\doom_demihero_courier\doom_demihero_courier_masks2"
 
 
-	$SPECULAREXPONENT 8
-	$SPECULARSCALE .5
-	$SPECULARBLENDTOFULL 1
+
+	//$ENVMAP "models/cubemaps/cube_glossy"
+	$ENVMAPINTENSITY 1
+
+	"$detail1" "models\courier\doom_demihero_courier\doom_burninating"
 
 
-	$RIMLIGHTSCALE 1
-	$AMBIENTSCALE 1
+	$SPECULAREXPONENT 17
+	$SPECULARSCALE 2.5
+	$SPECULARBLENDTOFULL 0
+	
+	$SPECULAR_BLOOM_SCALE      1
+
+//	$SPECULARCOLOR "[1 0.3 0]"
+//	$RIMLIGHTCOLOR "[1 0.5 0]"
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[0.5 0.8 0.9]"
+
+
+	$RIMLIGHTSCALE 1.5
+//	$AMBIENTSCALE .5
 	$IgnoreBudgetCheck 1
 //	$alphatest 1
 
 	
+	
+		
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.1"
+			"texturescrollangle"	"55"
+		}
 		"invis_proxy"
 		{
 		}
 		"status_proxy"
+		{
+		}
+		"hero_proxy"
 		{
 		}
 	}

@@ -55,8 +55,6 @@ Response bounty_hunter_Kill
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_05.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_06.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_07.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_08.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_09.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_10.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_11.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_12.vcd" nodelay noscene 
@@ -65,7 +63,6 @@ Response bounty_hunter_Kill
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_15.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_16.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_17.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_18.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_19.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_20.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_laugh_01.vcd" nodelay noscene 
@@ -84,6 +81,19 @@ Rule bounty_hunter_Kill_Rule
 {
 	criteria Kill Isbounty_hunter 
 	response bounty_hunter_Kill
+}
+
+Response bounty_hunter_KillChance_2%
+{
+	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_08.vcd" nodelay noscene 
+	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_09.vcd" nodelay noscene 
+	scene "scenes/bounty_hunter/bounty_hunter_bount_kill_18.vcd" nodelay noscene 
+}
+
+Rule bounty_hunter_KillChance_2%_Rule
+{
+	criteria Kill Isbounty_hunter Chance_2%
+	response bounty_hunter_KillChance_2%
 }
 
 Response bounty_hunter_KillIsEnemyHuskarChance_20%
@@ -299,21 +309,31 @@ Response bounty_hunter_Move
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_08.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_09.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_10.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_move_11.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_12.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_13.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_14.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_15.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_16.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_move_17.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_move_18.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_move_19.vcd" nodelay noscene 
 }
 
 Rule bounty_hunter_Move_Rule
 {
 	criteria Move Isbounty_hunter 
 	response bounty_hunter_Move
+}
+
+Response bounty_hunter_MoveChance_2%
+{
+	scene "scenes/bounty_hunter/bounty_hunter_bount_move_11.vcd" nodelay noscene 
+	scene "scenes/bounty_hunter/bounty_hunter_bount_move_18.vcd" nodelay noscene 
+	scene "scenes/bounty_hunter/bounty_hunter_bount_move_19.vcd" nodelay noscene 
+}
+
+Rule bounty_hunter_MoveChance_2%_Rule
+{
+	criteria Move Isbounty_hunter Chance_2%
+	response bounty_hunter_MoveChance_2%
 }
 
 Response bounty_hunter_Attack
@@ -327,17 +347,27 @@ Response bounty_hunter_Attack
 	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_07.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_08.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_09.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_10.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_11.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_12.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_13.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_14.vcd" nodelay noscene 
 }
 
 Rule bounty_hunter_Attack_Rule
 {
 	criteria Attack Isbounty_hunter 
 	response bounty_hunter_Attack
+}
+
+Response bounty_hunter_AttackChance_2%
+{
+	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_10.vcd" nodelay noscene 
+	scene "scenes/bounty_hunter/bounty_hunter_bount_attack_14.vcd" nodelay noscene 
+}
+
+Rule bounty_hunter_AttackChance_2%_Rule
+{
+	criteria Attack Isbounty_hunter Chance_2%
+	response bounty_hunter_AttackChance_2%
 }
 
 Response bounty_hunter_CastOrder
@@ -398,7 +428,6 @@ Response bounty_hunter_LevelUp
 {
 	scene "scenes/bounty_hunter/bounty_hunter_bount_level_01.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_level_02.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_level_03.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_level_04.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_level_05.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_level_06.vcd" nodelay noscene 
@@ -413,6 +442,17 @@ Rule bounty_hunter_LevelUp_Rule
 {
 	criteria LevelUp Isbounty_hunter 
 	response bounty_hunter_LevelUp
+}
+
+Response bounty_hunter_LevelUpChance_2%
+{
+	scene "scenes/bounty_hunter/bounty_hunter_bount_level_03.vcd" nodelay noscene 
+}
+
+Rule bounty_hunter_LevelUpChance_2%_Rule
+{
+	criteria LevelUp Isbounty_hunter Chance_2%
+	response bounty_hunter_LevelUpChance_2%
 }
 
 Response bounty_hunter_AllyNearIsAllyMiranaEarlyGame
@@ -498,7 +538,6 @@ Response bounty_hunter_LastHit
 	scene "scenes/bounty_hunter/bounty_hunter_bount_lasthit_01.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_lasthit_02.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_lasthit_04.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_lasthit_05.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_lasthit_06.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_lasthit_07.vcd" nodelay noscene 
@@ -513,6 +552,17 @@ Rule bounty_hunter_LastHit_Rule
 	response bounty_hunter_LastHit
 }
 
+Response bounty_hunter_LastHitChance_2%
+{
+	scene "scenes/bounty_hunter/bounty_hunter_bount_lasthit_04.vcd" nodelay noscene 
+}
+
+Rule bounty_hunter_LastHitChance_2%_Rule
+{
+	criteria LastHit Isbounty_hunter Chance_2%
+	response bounty_hunter_LastHitChance_2%
+}
+
 Response bounty_hunter_Death
 {
 	scene "scenes/bounty_hunter/bounty_hunter_bount_death_01.vcd" nodelay noscene 
@@ -525,13 +575,23 @@ Response bounty_hunter_Death
 	scene "scenes/bounty_hunter/bounty_hunter_bount_death_08.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_death_09.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_death_10.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_death_11.vcd" nodelay noscene 
 }
 
 Rule bounty_hunter_Death_Rule
 {
 	criteria Death Isbounty_hunter 
 	response bounty_hunter_Death
+}
+
+Response bounty_hunter_DeathChance_2%
+{
+	scene "scenes/bounty_hunter/bounty_hunter_bount_death_11.vcd" nodelay noscene 
+}
+
+Rule bounty_hunter_DeathChance_2%_Rule
+{
+	criteria Death Isbounty_hunter Chance_2%
+	response bounty_hunter_DeathChance_2%
 }
 
 Response bounty_hunter_DeathIsReincarnating
@@ -718,7 +778,6 @@ Response bounty_hunter_Deny
 	scene "scenes/bounty_hunter/bounty_hunter_bount_deny_04.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_deny_05.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_deny_06.vcd" nodelay noscene 
-	scene "scenes/bounty_hunter/bounty_hunter_bount_deny_07.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_deny_08.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_deny_09.vcd" nodelay noscene 
 	scene "scenes/bounty_hunter/bounty_hunter_bount_deny_10.vcd" nodelay noscene 
@@ -731,6 +790,17 @@ Rule bounty_hunter_Deny_Rule
 {
 	criteria Deny Isbounty_hunter 
 	response bounty_hunter_Deny
+}
+
+Response bounty_hunter_DenyChance_2%
+{
+	scene "scenes/bounty_hunter/bounty_hunter_bount_deny_07.vcd" nodelay noscene 
+}
+
+Rule bounty_hunter_DenyChance_2%_Rule
+{
+	criteria Deny Isbounty_hunter Chance_2%
+	response bounty_hunter_DenyChance_2%
 }
 
 Response bounty_hunter_Defeat

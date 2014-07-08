@@ -137,10 +137,10 @@
 	}
 }
 
-"Hero_EarthShaker.Fissure"
+"Hero_EarthShaker.Fissure.Cast"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"  	"SNDLVL_84dB"
 	"wave"			")weapons/hero/earthshaker/fissure.wav"
 	"soundentry_version" "2"
@@ -155,7 +155,31 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "1200"
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Fissure"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/earthshaker/fissure.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
 			}
 		}
 	}
@@ -382,6 +406,52 @@
 			"block_dist"
 			{
 				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Gravelmaw.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/earthshaker/gravelmaw_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_EarthShaker.Gravelmaw"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")weapons/hero/earthshaker/gravelmaw_end.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
 			}
 		}
 	}

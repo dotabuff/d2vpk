@@ -1094,13 +1094,24 @@ Rule announcer_CustomIsCustomMode_Rule
 
 Response announcer_CustomIsOneVsOne
 {
-	scene "scenes/announcer/announcer_announcer_choose_hero.vcd" nodelay noscene speakonce
+	scene "scenes/announcer/announcer_announcer_type_onevsone_01.vcd" nodelay noscene speakonce
 }
 
 Rule announcer_CustomIsOneVsOne_Rule
 {
 	criteria Custom Isannouncer IsOneVsOne
 	response announcer_CustomIsOneVsOne
+}
+
+Response announcer_CustomIsAbilityDraft
+{
+	scene "scenes/announcer/announcer_announcer_type_ability_draft_01.vcd" nodelay noscene speakonce
+}
+
+Rule announcer_CustomIsAbilityDraft_Rule
+{
+	criteria Custom Isannouncer IsAbilityDraft
+	response announcer_CustomIsAbilityDraft
 }
 
 Response announcer_CustomIsTenSecondsRemaining
@@ -1125,28 +1136,6 @@ Rule announcer_CustomIsFiveSecondsRemaining_Rule
 	response announcer_CustomIsFiveSecondsRemaining
 }
 
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNavi
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNavi_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamNavi
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNavi
-}
-
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDK
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDK_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamDK
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDK
-}
-
 Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamOrange
 {
 	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_04.vcd" nodelay noscene 
@@ -1156,17 +1145,6 @@ Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamOrange_Rule
 {
 	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamOrange
 	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamOrange
-}
-
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_06.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamInvictusGaming
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
 }
 
 Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamZenith
@@ -1180,17 +1158,6 @@ Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamZenith_Rule
 	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamZenith
 }
 
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLGDcn
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_12.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLGDcn_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamLGDcn
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLGDcn
-}
-
 Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamTongFu
 {
 	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_15.vcd" nodelay noscene 
@@ -1202,50 +1169,6 @@ Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamTongFu_Rule
 	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamTongFu
 }
 
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMousesports
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_17.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMousesports_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamMousesports
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMousesports
-}
-
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamAlliance
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_01.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamAlliance_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamAlliance
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamAlliance
-}
-
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamFnatic
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamFnatic_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamFnatic
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamFnatic
-}
-
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLiquid
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLiquid_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamLiquid
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLiquid
-}
-
 Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDignitas
 {
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_04.vcd" nodelay noscene 
@@ -1255,17 +1178,6 @@ Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDignitas_Rule
 {
 	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamDignitas
 	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDignitas
-}
-
-Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_05.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro_Rule
-{
-	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamVirtusPro
-	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro
 }
 
 Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamInvasionMUFC
@@ -1312,28 +1224,6 @@ Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamRattleSnake_Rule
 	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamRattleSnake
 }
 
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamNavi
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi
-}
-
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamDK
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK
-}
-
 Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamOrange
 {
 	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_04.vcd" nodelay noscene 
@@ -1343,17 +1233,6 @@ Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamOrange_Rule
 {
 	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamOrange
 	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamOrange
-}
-
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_06.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamInvictusGaming
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
 }
 
 Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamZenith
@@ -1367,17 +1246,6 @@ Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamZenith_Rule
 	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamZenith
 }
 
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_12.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamLGDcn
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
-}
-
 Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamTongFu
 {
 	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_15.vcd" nodelay noscene 
@@ -1389,50 +1257,6 @@ Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamTongFu_Rule
 	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamTongFu
 }
 
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnameban_17.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamMousesports
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports
-}
-
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_01.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamAlliance
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance
-}
-
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamFnatic
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic
-}
-
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamLiquid
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid
-}
-
 Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDignitas
 {
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_04.vcd" nodelay noscene 
@@ -1442,17 +1266,6 @@ Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDignitas_Rul
 {
 	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamDignitas
 	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDignitas
-}
-
-Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnameban_05.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro_Rule
-{
-	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamVirtusPro
-	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
 }
 
 Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvasionMUFC
@@ -1499,30 +1312,427 @@ Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamRattleSnake_
 	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamRattleSnake
 }
 
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNavi
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamAlliance
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_02.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_01.vcd" nodelay noscene 
 }
 
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNavi_Rule
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamAlliance_Rule
 {
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamNavi
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNavi
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamAlliance
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamAlliance
 }
 
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDK
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamTitan
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_03.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_02.vcd" nodelay noscene 
 }
 
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDK_Rule
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamTitan_Rule
 {
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamDK
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDK
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamTitan
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamTitan
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamEG
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_04.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamEG_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamEG
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamEG
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamFnatic
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_06.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamFnatic_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamFnatic
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamFnatic
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNewBee
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_07.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNewBee_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamNewBee
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNewBee
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamViciGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_08.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamViciGaming_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamViciGaming
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamViciGaming
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNavi
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_10.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNavi_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamNavi
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNavi
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDK
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_13.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDK_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamDK
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamDK
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_14.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamInvictusGaming
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamCloud9
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_16.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamCloud9_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamCloud9
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamCloud9
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamEmpire
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_19.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamEmpire_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamEmpire
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamEmpire
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNaviUS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_20.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNaviUS_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamNaviUS
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamNaviUS
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamArrow
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_24.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamArrow_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamArrow
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamArrow
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLiquid
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_25.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLiquid_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamLiquid
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLiquid
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_27.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamMVPPhoenix
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLGDcn
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_30.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLGDcn_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamLGDcn
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamLGDcn
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamCIS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_32.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamCIS_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamCIS
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamCIS
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMousesports
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_34.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMousesports_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamMousesports
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamMousesports
+}
+
+Response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_36.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro_Rule
+{
+	criteria Custom Isannouncer IsBanDire IsPlayerTeam_Spectator IsDireTeamVirtusPro
+	response announcer_CustomIsBanDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_01.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamAlliance
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamTitan
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_02.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamTitan_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamTitan
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamTitan
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamEG
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_04.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamEG_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamEG
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamEG
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_06.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamFnatic
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNewBee
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_07.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNewBee_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamNewBee
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNewBee
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamViciGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_08.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamViciGaming_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamViciGaming
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamViciGaming
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_10.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamNavi
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_13.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamDK
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_14.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamInvictusGaming
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamCloud9
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_16.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamCloud9_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamCloud9
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamCloud9
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamEmpire
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_19.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamEmpire_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamEmpire
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamEmpire
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNaviUS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_20.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNaviUS_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamNaviUS
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamNaviUS
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamArrow
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_24.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamArrow_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamArrow
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamArrow
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_25.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamLiquid
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_27.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamMVPPhoenix
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_30.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamLGDcn
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamCIS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_32.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamCIS_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamCIS
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamCIS
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_34.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamMousesports
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports
+}
+
+Response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_ban_36.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro_Rule
+{
+	criteria Custom Isannouncer IsBanRadiant IsPlayerTeam_Spectator IsRadiantTeamVirtusPro
+	response announcer_CustomIsBanRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
 }
 
 Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamOrange
 {
+	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_04.vcd" nodelay noscene 
 	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_04.vcd" nodelay noscene 
 }
 
@@ -1532,19 +1742,9 @@ Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamOrange_Rule
 	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamOrange
 }
 
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_06.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming_Rule
-{
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamInvictusGaming
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
-}
-
 Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamZenith
 {
+	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_10.vcd" nodelay noscene 
 	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_10.vcd" nodelay noscene 
 }
 
@@ -1554,19 +1754,9 @@ Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamZenith_Rule
 	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamZenith
 }
 
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDcn
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_12.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDcn_Rule
-{
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamLGDcn
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDcn
-}
-
 Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamTongFu
 {
+	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_15.vcd" nodelay noscene 
 	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_15.vcd" nodelay noscene 
 }
 
@@ -1576,52 +1766,9 @@ Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamTongFu_Rule
 	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamTongFu
 }
 
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMousesports
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_17.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMousesports_Rule
-{
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamMousesports
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMousesports
-}
-
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamAlliance
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_01.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamAlliance_Rule
-{
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamAlliance
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamAlliance
-}
-
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamFnatic
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamFnatic_Rule
-{
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamFnatic
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamFnatic
-}
-
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLiquid
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLiquid_Rule
-{
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamLiquid
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLiquid
-}
-
 Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDignitas
 {
+	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_04.vcd" nodelay noscene 
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_04.vcd" nodelay noscene 
 }
 
@@ -1631,19 +1778,9 @@ Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDignitas_Rule
 	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDignitas
 }
 
-Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_05.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro_Rule
-{
-	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamVirtusPro
-	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro
-}
-
 Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamInvasionMUFC
 {
+	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_06.vcd" nodelay noscene 
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_06.vcd" nodelay noscene 
 }
 
@@ -1656,6 +1793,7 @@ Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamInvasionMUFC_Rule
 Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDint
 {
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_08.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_08.vcd" nodelay noscene 
 }
 
 Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDint_Rule
@@ -1666,6 +1804,7 @@ Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDint_Rule
 
 Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamQuantic
 {
+	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_11.vcd" nodelay noscene 
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_11.vcd" nodelay noscene 
 }
 
@@ -1678,6 +1817,7 @@ Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamQuantic_Rule
 Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamRattleSnake
 {
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_12.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_12.vcd" nodelay noscene 
 }
 
 Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamRattleSnake_Rule
@@ -1686,9 +1826,284 @@ Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamRattleSnake_Rule
 	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamRattleSnake
 }
 
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamAlliance
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_01.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamAlliance_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamAlliance
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamAlliance
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamTitan
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_02.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamTitan_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamTitan
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamTitan
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamEG
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_04.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamEG_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamEG
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamEG
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamFnatic
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_06.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamFnatic_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamFnatic
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamFnatic
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNewBee
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_07.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNewBee_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamNewBee
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNewBee
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamViciGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_08.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamViciGaming_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamViciGaming
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamViciGaming
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNavi
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_10.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNavi_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamNavi
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNavi
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDK
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_13.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDK_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamDK
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamDK
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_14.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamInvictusGaming
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamCloud9
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_16.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamCloud9_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamCloud9
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamCloud9
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamEmpire
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_18.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamEmpire_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamEmpire
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamEmpire
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNaviUS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_19.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNaviUS_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamNaviUS
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamNaviUS
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamArrow
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_23.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamArrow_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamArrow
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamArrow
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLiquid
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_24.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLiquid_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamLiquid
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLiquid
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_26.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamMVPPhoenix
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDcn
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_29.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDcn_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamLGDcn
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamLGDcn
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamCIS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_31.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamCIS_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamCIS
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamCIS
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMousesports
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_33.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMousesports_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamMousesports
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamMousesports
+}
+
+Response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_35.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro_Rule
+{
+	criteria Custom Isannouncer IsPickDire IsPlayerTeam_Spectator IsDireTeamVirtusPro
+	response announcer_CustomIsPickDireIsPlayerTeam_SpectatorIsDireTeamVirtusPro
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_01.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamAlliance
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamTitan
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_02.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamTitan_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamTitan
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamTitan
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamEG
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_04.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamEG_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamEG
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamEG
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_06.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamFnatic
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNewBee
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_07.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNewBee_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamNewBee
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNewBee
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamViciGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_08.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamViciGaming_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamViciGaming
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamViciGaming
+}
+
 Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_02.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_10.vcd" nodelay noscene 
 }
 
 Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi_Rule
@@ -1699,7 +2114,7 @@ Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNavi_Rule
 
 Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_03.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_13.vcd" nodelay noscene 
 }
 
 Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK_Rule
@@ -1708,20 +2123,9 @@ Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK_Rule
 	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamDK
 }
 
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamOrange
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_04.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamOrange_Rule
-{
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamOrange
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamOrange
-}
-
 Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_06.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_14.vcd" nodelay noscene 
 }
 
 Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming_Rule
@@ -1730,75 +2134,53 @@ Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGam
 	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
 }
 
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamZenith
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamCloud9
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_10.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_16.vcd" nodelay noscene 
 }
 
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamZenith_Rule
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamCloud9_Rule
 {
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamZenith
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamZenith
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamCloud9
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamCloud9
 }
 
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamEmpire
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_12.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_18.vcd" nodelay noscene 
 }
 
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn_Rule
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamEmpire_Rule
 {
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamLGDcn
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamEmpire
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamEmpire
 }
 
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamTongFu
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNaviUS
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_15.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_19.vcd" nodelay noscene 
 }
 
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamTongFu_Rule
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNaviUS_Rule
 {
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamTongFu
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamTongFu
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamNaviUS
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamNaviUS
 }
 
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamArrow
 {
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamepick_17.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_23.vcd" nodelay noscene 
 }
 
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports_Rule
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamArrow_Rule
 {
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamMousesports
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports
-}
-
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_01.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance_Rule
-{
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamAlliance
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamAlliance
-}
-
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic_Rule
-{
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamFnatic
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamFnatic
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamArrow
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamArrow
 }
 
 Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid
 {
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_03.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_24.vcd" nodelay noscene 
 }
 
 Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid_Rule
@@ -1807,92 +2189,59 @@ Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid_Rule
 	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLiquid
 }
 
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamDignitas
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix
 {
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_04.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_26.vcd" nodelay noscene 
 }
 
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamDignitas_Rule
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix_Rule
 {
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamDignitas
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamDignitas
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamMVPPhoenix
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_29.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamLGDcn
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamCIS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_31.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamCIS_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamCIS
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamCIS
+}
+
+Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_33.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports_Rule
+{
+	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamMousesports
+	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamMousesports
 }
 
 Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
 {
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_05.vcd" nodelay noscene 
+	scene "scenes/announcer/announcer_ti4_ann_team_pick_35.vcd" nodelay noscene 
 }
 
 Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro_Rule
 {
 	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamVirtusPro
 	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
-}
-
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvasionMUFC
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_06.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvasionMUFC_Rule
-{
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamInvasionMUFC
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamInvasionMUFC
-}
-
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDint
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_08.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDint_Rule
-{
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamLGDint
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamLGDint
-}
-
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamQuantic
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_11.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamQuantic_Rule
-{
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamQuantic
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamQuantic
-}
-
-Response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamRattleSnake
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamepick_12.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamRattleSnake_Rule
-{
-	criteria Custom Isannouncer IsPickRadiant IsPlayerTeam_Spectator IsRadiantTeamRattleSnake
-	response announcer_CustomIsPickRadiantIsPlayerTeam_SpectatorIsRadiantTeamRattleSnake
-}
-
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNavi
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNavi_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamNavi
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNavi
-}
-
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDK
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDK_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamDK
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDK
 }
 
 Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamOrange
@@ -1904,17 +2253,6 @@ Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamOrange_Rule
 {
 	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamOrange
 	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamOrange
-}
-
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_06.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamInvictusGaming_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamInvictusGaming
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
 }
 
 Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamZenith
@@ -1939,50 +2277,6 @@ Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamTongFu_Rule
 	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamTongFu
 }
 
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMousesports
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_18.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMousesports_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamMousesports
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMousesports
-}
-
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamAlliance
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_01.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamAlliance_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamAlliance
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamAlliance
-}
-
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamFnatic
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamFnatic_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamFnatic
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamFnatic
-}
-
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLiquid
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLiquid_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamLiquid
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLiquid
-}
-
 Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDignitas
 {
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_04.vcd" nodelay noscene 
@@ -1992,28 +2286,6 @@ Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDignitas_Rule
 {
 	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamDignitas
 	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDignitas
-}
-
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamVirtusPro
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_05.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamVirtusPro_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamVirtusPro
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamVirtusPro
-}
-
-Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLGDcn
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_06.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLGDcn_Rule
-{
-	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamLGDcn
-	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLGDcn
 }
 
 Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLGDint
@@ -2060,28 +2332,6 @@ Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamRattlesnake_Rul
 	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamRattlesnake
 }
 
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNavi
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNavi_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamNavi
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNavi
-}
-
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDK
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDK_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamDK
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDK
-}
-
 Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamOrange
 {
 	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_04.vcd" nodelay noscene 
@@ -2091,17 +2341,6 @@ Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamOrange_Rule
 {
 	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamOrange
 	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamOrange
-}
-
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_06.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamInvictusGaming
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
 }
 
 Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamZenith
@@ -2126,50 +2365,6 @@ Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamTongFu_Rule
 	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamTongFu
 }
 
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMousesports
-{
-	scene "scenes/announcer/announcer_announcer_intl2012_teamnamevictory_18.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMousesports_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamMousesports
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMousesports
-}
-
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamAlliance
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_01.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamAlliance_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamAlliance
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamAlliance
-}
-
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamFnatic
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_02.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamFnatic_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamFnatic
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamFnatic
-}
-
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLiquid
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_03.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLiquid_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamLiquid
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLiquid
-}
-
 Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDignitas
 {
 	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_04.vcd" nodelay noscene 
@@ -2179,28 +2374,6 @@ Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDignitas_Ru
 {
 	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamDignitas
 	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDignitas
-}
-
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_05.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamVirtusPro
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
-}
-
-Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
-{
-	scene "scenes/announcer/announcer_announcer_intl2013_teamnamevictory_06.vcd" nodelay noscene 
-}
-
-Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLGDcn_Rule
-{
-	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamLGDcn
-	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
 }
 
 Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLGDint
@@ -2245,5 +2418,423 @@ Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamRattlesnake
 {
 	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamRattlesnake
 	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamRattlesnake
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamAlliance
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_01.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamAlliance_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamAlliance
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamAlliance
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamTitan
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_02.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamTitan_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamTitan
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamTitan
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamEG
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_04.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamEG_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamEG
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamEG
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamFnatic
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_06.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamFnatic_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamFnatic
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamFnatic
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNewBee
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_07.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNewBee_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamNewBee
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNewBee
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamViciGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_08.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamViciGaming_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamViciGaming
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamViciGaming
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNavi
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_10.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNavi_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamNavi
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNavi
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDK
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_13.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDK_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamDK
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamDK
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_14.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamInvictusGaming_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamInvictusGaming
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamInvictusGaming
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamCloud9
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_16.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamCloud9_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamCloud9
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamCloud9
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamEmpire
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_18.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamEmpire_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamEmpire
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamEmpire
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNaviUS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_19.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNaviUS_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamNaviUS
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamNaviUS
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamArrow
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_23.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamArrow_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamArrow
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamArrow
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLiquid
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_24.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLiquid_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamLiquid
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLiquid
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_26.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamMVPPhoenix
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMVPPhoenix
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLGDcn
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_30.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLGDcn_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamLGDcn
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamLGDcn
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamCIS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_32.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamCIS_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamCIS
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamCIS
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMousesports
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_34.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMousesports_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamMousesports
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamMousesports
+}
+
+Response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamVirtusPro
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_36.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamVirtusPro_Rule
+{
+	criteria Custom Isannouncer IsBadVictory IsPlayerTeam_Spectator IsDireTeamVirtusPro
+	response announcer_CustomIsBadVictoryIsPlayerTeam_SpectatorIsDireTeamVirtusPro
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamAlliance
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_01.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamAlliance_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamAlliance
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamAlliance
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamTitan
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_02.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamTitan_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamTitan
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamTitan
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamEG
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_04.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamEG_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamEG
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamEG
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamFnatic
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_06.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamFnatic_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamFnatic
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamFnatic
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNewBee
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_07.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNewBee_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamNewBee
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNewBee
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamViciGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_08.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamViciGaming_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamViciGaming
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamViciGaming
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNavi
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_10.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNavi_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamNavi
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNavi
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDK
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_13.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDK_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamDK
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamDK
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_14.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamInvictusGaming
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamInvictusGaming
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamCloud9
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_16.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamCloud9_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamCloud9
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamCloud9
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamEmpire
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_18.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamEmpire_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamEmpire
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamEmpire
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNaviUS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_19.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNaviUS_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamNaviUS
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamNaviUS
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamArrow
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_23.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamArrow_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamArrow
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamArrow
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLiquid
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_24.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLiquid_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamLiquid
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLiquid
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_26.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamMVPPhoenix
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMVPPhoenix
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_30.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLGDcn_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamLGDcn
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamLGDcn
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamCIS
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_32.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamCIS_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamCIS
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamCIS
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMousesports
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_34.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMousesports_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamMousesports
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamMousesports
+}
+
+Response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
+{
+	scene "scenes/announcer/announcer_ti4_ann_team_victory_36.vcd" nodelay noscene 
+}
+
+Rule announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro_Rule
+{
+	criteria Custom Isannouncer IsGoodVictory IsPlayerTeam_Spectator IsRadiantTeamVirtusPro
+	response announcer_CustomIsGoodVictoryIsPlayerTeam_SpectatorIsRadiantTeamVirtusPro
 }
 

@@ -1,0 +1,43 @@
+"CustomHero"
+{
+	$baseTexture "models/items/undying/idol_of_ruination/idol_of_ruination_gold_color"
+	"$normalmap" "models/items/undying/idol_of_ruination/idol_of_ruination_gold_normal"
+	"$maskmap1" "models/items/undying/idol_of_ruination/idol_of_ruination_gold_mask1"
+	"$maskmap2" "models/items/undying/idol_of_ruination/idol_of_ruination_gold_mask2"
+
+	$alphatest 1
+	$SPECULAREXPONENT 22
+	$SPECULARSCALE 12
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE	2
+	
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+
+
+	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	$ENVMAPINTENSITY 4
+	$MASKENVBYMETALNESS 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}
