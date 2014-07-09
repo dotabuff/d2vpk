@@ -1037,50 +1037,11 @@ Rule visage_PowerupIsPowerupInvisibilityChance_25%_Rule
 	response visage_PowerupIsPowerupInvisibilityChance_25%
 }
 
-Response visage_CooldownLittleNag
+Response visage_NoManaLittleNag
 {
 	scene "scenes/visage/visage_visa_notyet_01.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_notyet_04.vcd" nodelay noscene 
 	scene "scenes/visage/visage_visa_notyet_07.vcd" nodelay noscene 
-}
-
-Rule visage_CooldownLittleNag_Rule
-{
-	criteria Cooldown Isvisage LittleNag
-	response visage_CooldownLittleNag
-}
-
-Response visage_CooldownMediumNag
-{
-	scene "scenes/visage/visage_visa_notyet_02.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_notyet_05.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_notyet_08.vcd" nodelay noscene 
-}
-
-Rule visage_CooldownMediumNag_Rule
-{
-	criteria Cooldown Isvisage MediumNag
-	response visage_CooldownMediumNag
-}
-
-Response visage_CooldownSuperNag
-{
-	scene "scenes/visage/visage_visa_notyet_03.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_notyet_06.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_notyet_09.vcd" nodelay noscene 
-}
-
-Rule visage_CooldownSuperNag_Rule
-{
-	criteria Cooldown Isvisage SuperNag
-	response visage_CooldownSuperNag
-}
-
-Response visage_NoManaLittleNag
-{
-	scene "scenes/visage/visage_visa_nomana_01.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_nomana_04.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_nomana_07.vcd" nodelay noscene 
 }
 
 Rule visage_NoManaLittleNag_Rule
@@ -1091,9 +1052,9 @@ Rule visage_NoManaLittleNag_Rule
 
 Response visage_NoManaMediumNag
 {
-	scene "scenes/visage/visage_visa_nomana_02.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_nomana_05.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_nomana_08.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_notyet_02.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_notyet_05.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_notyet_08.vcd" nodelay noscene 
 }
 
 Rule visage_NoManaMediumNag_Rule
@@ -1104,15 +1065,54 @@ Rule visage_NoManaMediumNag_Rule
 
 Response visage_NoManaSuperNag
 {
-	scene "scenes/visage/visage_visa_nomana_03.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_nomana_06.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_nomana_09.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_notyet_03.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_notyet_06.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_notyet_09.vcd" nodelay noscene 
 }
 
 Rule visage_NoManaSuperNag_Rule
 {
 	criteria NoMana Isvisage SuperNag
 	response visage_NoManaSuperNag
+}
+
+Response visage_CooldownLittleNag
+{
+	scene "scenes/visage/visage_visa_nomana_01.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_nomana_04.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_nomana_07.vcd" nodelay noscene 
+}
+
+Rule visage_CooldownLittleNag_Rule
+{
+	criteria Cooldown Isvisage LittleNag
+	response visage_CooldownLittleNag
+}
+
+Response visage_CooldownMediumNag
+{
+	scene "scenes/visage/visage_visa_nomana_02.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_nomana_05.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_nomana_08.vcd" nodelay noscene 
+}
+
+Rule visage_CooldownMediumNag_Rule
+{
+	criteria Cooldown Isvisage MediumNag
+	response visage_CooldownMediumNag
+}
+
+Response visage_CooldownSuperNag
+{
+	scene "scenes/visage/visage_visa_nomana_03.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_nomana_06.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_nomana_09.vcd" nodelay noscene 
+}
+
+Rule visage_CooldownSuperNag_Rule
+{
+	criteria Cooldown Isvisage SuperNag
+	response visage_CooldownSuperNag
 }
 
 Response visage_Thanks
