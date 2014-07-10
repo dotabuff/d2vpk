@@ -1030,11 +1030,16 @@
 		"latitude" "48.1200"
 		"longitude" "16.2200"
 		"display_name" "#dota_region_austria"
-		"ip_range" "146.66.155.0/24"
+		"ip_range" 
+		{
+			"0" "146.66.155.0/24"
+			"1" "185.25.182.0/24"
+		}
 		"division"	"europe"
 		"clusters"
 		{
 			"0" "191"
+			"1" "192"
 		}
 	}
 
