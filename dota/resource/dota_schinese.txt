@@ -1899,7 +1899,7 @@
 "[english]DOTA_Tooltip_ability_courier_take_stash_items_Description"	"Retrieve items from stash"
 "DOTA_Tooltip_ability_necronomicon_warrior_mana_burn"	"法力损毁"
 "[english]DOTA_Tooltip_ability_necronomicon_warrior_mana_burn"	"Mana Break"
-"DOTA_Tooltip_ability_necronomicon_warrior_mana_burn_Description"	"每次攻击燃烧掉目标的魔法值，并造成相当于部分损毁魔法值的伤害"
+"DOTA_Tooltip_ability_necronomicon_warrior_mana_burn_Description"	"每次攻击燃烧掉目标的魔法值，并造成相当于损毁魔法值一定百分比的伤害"
 "[english]DOTA_Tooltip_ability_necronomicon_warrior_mana_burn_Description"	"Mana burned per hit, a portion of which is dealt as damage."
 "DOTA_Tooltip_ability_necronomicon_warrior_mana_burn_burn_amount"	"每次攻击燃烧量："
 "[english]DOTA_Tooltip_ability_necronomicon_warrior_mana_burn_burn_amount"	"BURN PER HIT:"
@@ -7307,7 +7307,7 @@ Raised with other young mages in a hidden cantonment among the hills of the Hazh
 "[english]DOTA_Tooltip_ability_item_desolator_corruption_armor"	"ARMOR REDUCTION:"
 "DOTA_Tooltip_ability_item_desolator_bonus_damage"	"+$damage"
 "[english]DOTA_Tooltip_ability_item_desolator_bonus_damage"	"+$damage"
-"DOTA_Tooltip_ability_item_diffusal_blade_Description"	"主动：净化 - 净化一个目标，移除其身上的增益/减益效果，并降低移动速度，如果目标是召唤生物则造成伤害。\n被动：反馈 - 你的攻击燃烧被攻击目标%feedback_mana_burn%点魔法，并造成与燃烧魔法量等同的物理伤害。可以升级。\n\n净魂之刃是攻击特效，不与其它攻击特效叠加。"
+"DOTA_Tooltip_ability_item_diffusal_blade_Description"	"主动：净化 - 净化一个目标，移除其身上的增益/减益效果，并降低移动速度，如果目标是召唤生物还将造成大量伤害。\n被动：反馈 - 每次攻击将燃烧目标%feedback_mana_burn%点魔法，并造成与燃烧魔法量等同的物理伤害。可以升级。\n\n净魂之刃是攻击特效，不与其它攻击特效叠加。"
 "[english]DOTA_Tooltip_ability_item_diffusal_blade_Description"	"Active: Purge - Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.\nPassive: Feedback - Your attacks burn %feedback_mana_burn% mana and deal the same amount in physical damage. Upgradable.\n\nDiffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 "DOTA_Tooltip_ability_item_diffusal_blade_Lore"	"一把直接切入敌人灵魂的魔力之刃。"
 "[english]DOTA_Tooltip_ability_item_diffusal_blade_Lore"	"An enchanted blade that allows the user to cut straight into the enemy’s soul."
@@ -7315,7 +7315,7 @@ Raised with other young mages in a hidden cantonment among the hills of the Hazh
 "[english]DOTA_Tooltip_ability_item_diffusal_blade_bonus_agility"	"+$agi"
 "DOTA_Tooltip_ability_item_diffusal_blade_bonus_intellect"	"+$int"
 "[english]DOTA_Tooltip_ability_item_diffusal_blade_bonus_intellect"	"+$int"
-"DOTA_Tooltip_ability_item_diffusal_blade_2_Description"	"主动：净化 - 净化一个目标，移除其身上的增益/减益效果，并降低移动速度，如果目标是召唤生物则造成伤害。\n被动：反馈 - 你的攻击燃烧被攻击目标%feedback_mana_burn%点魔法，并造成与燃烧魔法量等同的物理伤害。可以升级。\n\n净魂之刃是攻击特效，不与其它攻击特效叠加。"
+"DOTA_Tooltip_ability_item_diffusal_blade_2_Description"	"主动：净化 - 净化一个目标，移除其身上的增益/减益效果，并降低移动速度，如果目标是召唤生物还将造成大量伤害。\n被动：反馈 - 每次攻击将燃烧目标%feedback_mana_burn%点魔法，并造成与燃烧魔法量等同的物理伤害。可以升级。\n\n净魂之刃是攻击特效，不与其它攻击特效叠加。"
 "[english]DOTA_Tooltip_ability_item_diffusal_blade_2_Description"	"Active: Purge - Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.\nPassive: Feedback - Your attacks burn %feedback_mana_burn% mana and deal the same amount in physical damage. Upgradable.\n\nDiffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 "DOTA_Tooltip_ability_item_diffusal_blade_2_Lore"	"一把直接切入敌人灵魂的魔力之刃。"
 "[english]DOTA_Tooltip_ability_item_diffusal_blade_2_Lore"	"An enchanted blade that allows the user to cut straight into the enemy’s soul."
@@ -18512,8 +18512,6 @@ No sooner had the defeated regained consciousness than the cries for double-or-n
 "[english]DOTA_Tooltip_ability_storm_spirit_ball_lightning_Note2"	"Storm Spirit is invulnerable during Ball Lightning."
 "DOTA_Tooltip_ability_crystal_maiden_frostbite_Note0"	"受到冰封禁制的作用将无法使用闪烁类技能。"
 "[english]DOTA_Tooltip_ability_crystal_maiden_frostbite_Note0"	"Blink abilities cannot be used while under the affects of Frostbite."
-"DOTA_Tooltip_ability_crystal_maiden_frostbite_Note1"	"5级以下生物受到的技能效果将持续10秒。"
-"[english]DOTA_Tooltip_ability_crystal_maiden_frostbite_Note1"	"Lasts 10 seconds on creeps level 5 or lower."
 "DOTA_Tooltip_ability_crystal_maiden_brilliance_aura_Note0"	"与其他额外魔法回复速率叠加。"
 "[english]DOTA_Tooltip_ability_crystal_maiden_brilliance_aura_Note0"	"Stacks with other flat mana regeneration bonuses."
 "DOTA_Tooltip_ability_crystal_maiden_brilliance_aura_Note1"	"魔法回复速率加成并不是按百分比提升魔法回复速率。"
@@ -18584,8 +18582,6 @@ No sooner had the defeated regained consciousness than the cries for double-or-n
 "[english]DOTA_Tooltip_ability_puck_dream_coil_Note0"	"The initial stun and damage can be blocked by Linken's Sphere, but the target will still be affected by the coils."
 "DOTA_Tooltip_ability_dazzle_poison_touch_Note0"	"伤害格挡类技能不能减少该技能伤害。"
 "[english]DOTA_Tooltip_ability_dazzle_poison_touch_Note0"	"The damage is not reduced by damage block abilities."
-"DOTA_Tooltip_ability_dazzle_poison_touch_Note1"	"初始眩晕效果将中断持续施法。"
-"[english]DOTA_Tooltip_ability_dazzle_poison_touch_Note1"	"The initial ministun will cancel channeling."
 "DOTA_Tooltip_ability_dazzle_shallow_grave_Note0"	"在薄葬作用下生命值至少为1点，但是斧王的淘汰之刃还是可以斩杀目标英雄。"
 "[english]DOTA_Tooltip_ability_dazzle_shallow_grave_Note0"	"HP cannot go below 1 while under the effects of Shallow Grave, but Axe's Culling Blade will still kill the hero."
 "DOTA_Tooltip_ability_dazzle_shadow_wave_Note0"	"优先治疗友方英雄"
@@ -34755,5 +34751,49 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 "[english]Comp_600_PG_page_selectarcanatextvote_complete_text"	"Thank you for your votes, results will be announced before the end of The International."
 "game_mode_AllStarDraft"	"全明星征召"
 "[english]game_mode_AllStarDraft"	"All-Star Draft"
+"DOTA_CompendiumBundleUpsell_Header"	"国际邀请赛大礼包"
+"[english]DOTA_CompendiumBundleUpsell_Header"	"THE INTERNATIONAL BUNDLE"
+"DOTA_CompendiumBundleUpsell_SubHeader"	"马上购买即可获得<font color=\"#FFFFFF\">以上所有物品</font>还有更多福利"
+"[english]DOTA_CompendiumBundleUpsell_SubHeader"	"PURCHASE NOW TO GET <font color=\"#FFFFFF\">ALL OF THESE ITEMS</font> AND MORE"
+"DOTA_CompendiumBundleUpsell_1"	"2个不朽宝藏"
+"[english]DOTA_CompendiumBundleUpsell_1"	"2 Immortal Treasures"
+"DOTA_CompendiumBundleUpsell_2"	"迷你帕吉信使"
+"[english]DOTA_CompendiumBundleUpsell_2"	"Mini-Pudge Courier"
+"DOTA_CompendiumBundleUpsell_3"	"9张载入画面"
+"[english]DOTA_CompendiumBundleUpsell_3"	"9 Loading Screens"
+"DOTA_CompendiumBundleUpsell_4"	"3个天气特效"
+"[english]DOTA_CompendiumBundleUpsell_4"	"3 Environmental Effects"
+"DOTA_CompendiumBundleUpsell_5"	"25个动态聊天表情"
+"[english]DOTA_CompendiumBundleUpsell_5"	"25 Chat Emoticons"
+"DOTA_CompendiumBundleUpsell_6"	"昆卡专属信使"
+"[english]DOTA_CompendiumBundleUpsell_6"	"Kunkka's Courier"
+"DOTA_CompendiumBundleUpsell_7"	"230%战斗点数飞升"
+"[english]DOTA_CompendiumBundleUpsell_7"	"230% Battle Point Booster"
+"DOTA_CompendiumBundleUpsell_Bottom"	"大礼包内含2014年互动指南 + 1100积分"
+"[english]DOTA_CompendiumBundleUpsell_Bottom"	"BUNDLE INCLUDES 2014 COMPENDIUM + 1100 POINTS"
+"DOTA_CompendiumBundleUpsell_RightHeader"	"后续还将获得以下物品："
+"[english]DOTA_CompendiumBundleUpsell_RightHeader"	"You will also be granted these upcoming items:"
+"DOTA_CompendiumBundleUpsell_RightText"	"基地改造物品
+-
+英雄配音包
+-
+多杀标语
+-
+胜利预言嘲讽
+-
+全新配音包
+-
+工程师专属嘲讽"
+"[english]DOTA_CompendiumBundleUpsell_RightText"	"Base Customization Item
+-
+Alternate Hero Voice Pack
+-
+Multi-Kill Banner
+-
+Victory Prediction Taunt
+-
+New Music Pack
+-
+Special Techies Taunt"
 }
 }
