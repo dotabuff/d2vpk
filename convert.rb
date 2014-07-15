@@ -17,6 +17,7 @@ patches = {
   dota/resource/{items,dota}_*.txt
   dota_pak01/scripts/items/items_game.txt
   dota_pak01/scripts/regions.txt
+  dota_pak01/scripts/npc/{npc_abilities,npc_heroes,npc_units,items,activelist}.txt
 ].each do |glob|
   Dir.glob glob do |source|
     json_name = File.basename(source, '.txt') + ".json"
