@@ -16534,6 +16534,7 @@
 		"Level"						"1"
 		"ModelScale"				"1.0"
 		"SelectionGroup"			"Techies_LandMines"
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			// Hull type used for navigation/locomotion.
 
 
 		// Abilities
@@ -16571,7 +16572,7 @@
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"				"0"		// Speed.
 
 		// Status
@@ -16602,7 +16603,7 @@
 		"Level"						"1"
 		"ModelScale"				"1.0"
 		"SelectionGroup"			"Techies_LandMines"
-
+		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			// Hull type used for navigation/locomotion.
 
 		// Abilities
 		//----------------------------------------------------------------
@@ -16639,7 +16640,7 @@
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
 		"MovementSpeed"				"0"		// Speed.
 
 		// Status
@@ -16717,8 +16718,8 @@
 		
 		// Vision
 		//----------------------------------------------------------------
-		"VisionDaytimeRange"		"200"		// Range of vision during day light.
-		"VisionNighttimeRange"		"200"		// Range of vision at night time.
+		"VisionDaytimeRange"		"900"		// Range of vision during day light.
+		"VisionNighttimeRange"		"900"		// Range of vision at night time.
 
 		// Team
 		//----------------------------------------------------------------

@@ -1,27 +1,45 @@
 "CustomHero"
 {
 	"$basetexture" "models\heroes\techies\techiesfx_stasis_color"
-	"$normalmap" "models\heroes\techies\techies_normal"
+	"$normalmap" "models\heroes\techies\techiesfx_stasis_normal"
 	"$maskmap1" "models\heroes\techies\techiesfx_stasis_mask1"
 	"$maskmap2" "models\heroes\techies\techiesfx_stasis_mask2"
+	"$detail1" "models/heroes\techies\techiesfx_stasis_crackle"
 
-	$SPECULAR_BLOOM_SCALE      1
 	$ignorebudgetcheck 1
 	$alphatest 1
-	//$SpecularBlendtoFull 1
-	$SPECULAREXPONENT 20
-	$SPECULARSCALE 3
-	//$SPECULARCOLOR "[1 .45 0]"
+	$SPECULAREXPONENT 100
+	$SPECULARSCALE 4
 	$RIMLIGHTCOLOR "1 1 1"
-	$RIMLIGHTSCALE 2	
+	$RIMLIGHTSCALE 6	
+
+	$ENVMAP "models\heroes\techies\techies_metal"
+	$ENVMAPINTENSITY 5
+	$SPECULAR_BLOOM_SCALE      0.2 
+
+	$MASKENVBYMETALNESS 1
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 3
+	$DETAIL1BLENDFACTOR 2
+//	$DETAIL1BLENDTOFULL 0
 
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"0"
+		}
 		"invis_proxy"
 		{
 		}
 		"status_proxy"
+		{
+		}
+		"hero_proxy"
 		{
 		}
 	}

@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/razor/razor_helmet_blade/razor_helmet_blade_gold_color"
+	"$normalmap"		"models/items/razor/razor_helmet_blade/razor_helmet_blade_gold_normal"
+//	"$detail1"		"models/heroes/razor/razor_electric.vtf"
+	"$maskmap1"		"models/items/razor/razor_helmet_blade/razor_helmet_blade_gold_masks1"
+	"$maskmap2"		"models/items/razor/razor_helmet_blade/razor_helmet_blade_gold_masks2"
+	"$diffusewarp"		"models/heroes/razor/razor_lightwarp"
+
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+//	$alphatest 1
+
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 3
+	$RIMLIGHTSCALE 2
+	$specularcolor "[2 .8 .7]"
+	$RIMLIGHTCOLOR "[1 1 .75]"
+
+	
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

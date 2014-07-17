@@ -1,0 +1,86 @@
+"ClothSystem"
+{
+		"Cloth" 
+        { 
+           
+            "damping"                          "10" 
+            "gravity"                          "0 0 -1" 
+            "gravity_scale"                    "1500."           
+			"WorldFriction"                    "0" 
+            "LocalForce"                       ".5"             
+			"LocalRotation"                    "1" 
+            "FixedPointDamping"                ".15" 
+            "StretchForce"                     "0" 
+            "SpringStretchiness"               "0" 
+            "AnimationForceAttraction"         ".20" 
+            "AnimationVertexAttraction"        ".10" 
+            "ExternalForceScale"               "1.000000" 
+            "mapping" 
+            { 
+                tail1_0       "R0C0" 
+                tail1_1       "R1C0" 
+                tail1_2       "R2C0" 
+                tail1_3       "R3C0"
+				tail1_4       "R4C0" 				
+            } 
+			
+            R0C0                "fixed" 
+            R1C0                "10" 
+            R2C0                "10" 
+            R3C0                "10" 
+			R4C0                "10" 
+		
+			
+			"StructSpringConstant"                 "0.000000" 
+            "StructSpringDamping"                 "0.00000" 
+            "ShearSpringConstant"                 "0.000000" 
+            "ShearSpringDamping"                  "0.00000" 
+            "BendSpringConstant"                  "0.000000" 
+            "BendSpringDamping"                   "0.00000" 
+			"columns"                           "1" 
+            "rows"                 			    "5" 
+	
+        }
+		
+		"Cloth" 
+        { 
+           
+            "damping"                          "0.3850000" 
+            "gravity"                          ".5 0 1.0" 
+            "gravity_scale"                    "500.000000" 
+            "WorldFriction"                    "0.00000" 
+            "LocalForce"                       "1.00000" 
+            "LocalRotation"                    "1.00000" 
+            "FixedPointDamping"                "0.50" 
+            "StretchForce"                     "4.000000" 
+            "SpringStretchiness"               "0.00000" 
+            "AnimationForceAttraction"         "0.2" 
+            "AnimationVertexAttraction"        "0.80000" 
+            "ExternalForceScale"               "1.000000" 
+            "mapping" 
+            { 
+                donkeyHat0_0       "R0C0" 
+                donkeyHat0_1       "R1C0" 
+                donkeyHat0_2       "R2C0" 
+                donkeyHat0_3       "R3C0"  
+            } 
+			
+            R0C0                "fixed" 
+            R1C0                "world | mass 2" 
+            R2C0                "world | mass 0.5" 
+            R3C0                "world | mass 0.5" 
+		
+			
+			"StructSpringConstant"                 "10.000000" 
+            "StructSpringDamping"                 "0.100000" 
+            "ShearSpringConstant"                 "20.000000" 
+            "ShearSpringDamping"                  "0.500000" 
+            "BendSpringConstant"                  "10.000000" 
+            "BendSpringDamping"                   "0.400000" 
+			"columns"                           "1" 
+            "rows"                 			    "4" 
+        }
+		
+		
+}
+

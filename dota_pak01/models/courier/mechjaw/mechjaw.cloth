@@ -1,0 +1,41 @@
+// file    : mechjaw.cloth
+// author  : bradk
+// date    : 01 Jul 2014, 05:17PM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.5"
+        AnimationVertexAttraction        "0.6"
+        BendSpringConstant               "20.4"
+        BendSpringDamping                "0.1"
+        BonePrefix                       "Cloth_"
+        columns                          "1"
+        damping                          "0.2"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity                          "0 0 -10"
+        gravity_scale                    "10.0"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        R0                               "fixed"
+        R1                               "mass 1"
+        R2                               "mass 1"
+        R3                               "mass 2"
+        R4                               "mass 3"
+        R5                               "mass 4"
+        rows                             "6"
+        ShearSpringConstant              "200.0"
+        ShearSpringDamping               "1.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "20.0"
+        StructSpringDamping              "0.3"
+        WorldFriction                    "1.0"
+    }
+}
+
+// eof

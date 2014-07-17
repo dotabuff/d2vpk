@@ -1,0 +1,59 @@
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "1.3"
+        AnimationVertexAttraction        "6.2"
+        BendSpringConstant               "20.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "cape_fr_"
+        columns                          "2"
+        damping                          "7.5"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity                          "0 0 -1"
+        gravity_scale                    "350.0"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        R0                               "fixed"
+        R1                               "mass  3"
+        R2                               "mass  3"
+        rows                             "3"
+        ShearSpringConstant              "10.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "10.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.3"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "1.3"
+        AnimationVertexAttraction        "6.3"
+        BendSpringConstant               "20.4"
+        BendSpringDamping                "0.8"
+        columns                          "2"
+        damping                          "0.75"         
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity                          "0 0 -1"
+        gravity_scale                    "150.0"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        R0                               "fixed"
+        R1                               "mass  1"
+        R2                               "mass  3"
+        rows                             "3"
+        ShearSpringConstant              "10.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "10.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.3"
+        BonePrefix                       "cape_bk_"
+    }
+}
+

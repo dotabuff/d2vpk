@@ -5,23 +5,40 @@
 	"$maskmap1" "models\heroes\techies\techiesfx_mines_mask1"
 	"$maskmap2" "models\heroes\techies\techiesfx_mines_mask2"
 
-	$SPECULAR_BLOOM_SCALE      0.5
+
 	$ignorebudgetcheck 1
 	$alphatest 1
-	//$SpecularBlendtoFull 1
-	$SPECULAREXPONENT 20
-	$SPECULARSCALE 5
-	//$SPECULARCOLOR "[1 .45 0]"
+	$SPECULAREXPONENT 80
+	$SPECULARSCALE 8
 	$RIMLIGHTCOLOR "1 1 1"
-	$RIMLIGHTSCALE 2	
+	$RIMLIGHTSCALE 1	
+
+	$ENVMAP "models\heroes\techies\techies_metal"
+	$ENVMAPINTENSITY 3
+
+	$MASKENVBYMETALNESS 1
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 3
+//	$DETAIL1BLENDTOFULL 0
 
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"55"
+		}
 		"invis_proxy"
 		{
 		}
 		"status_proxy"
+		{
+		}
+		"hero_proxy"
 		{
 		}
 	}

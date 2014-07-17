@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$basetexture" "models\courier\donkey_crummy_wizard_2014\straps_bag_2014_color"
+	"$normalmap" "models\courier\donkey_crummy_wizard_2014\straps_bag_2014_normal"
+	"$maskmap1" "models\courier\donkey_crummy_wizard_2014\straps_bag_2014_mask1"
+	"$maskmap2" "models\courier\donkey_crummy_wizard_2014\straps_bag_2014_mask2"
+
+		"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE  10
+	$RIMLIGHTSCALE	4
+	$specularcolor "[1 1 1]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+//	"$rimlightblendtofull" "1"
+//	"$specularblendtofull" "1"
+//	"$specularexponentblendtofull" "1"
+
+
+	$IgnoreBudgetCheck 1
+
+	$AMBIENTSCALE 2
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}	

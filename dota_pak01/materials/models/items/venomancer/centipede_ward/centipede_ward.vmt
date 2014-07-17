@@ -1,0 +1,36 @@
+
+
+"CustomHero"
+{
+	"$baseTexture" "models/items/venomancer/centipede_ward/centipede_ward_color"
+	"$normalmap" "models/items/venomancer/centipede_ward/centipede_ward_normal"
+	"$maskmap1" "models/items/venomancer/centipede_ward/centipede_ward_masks1"
+	"$maskmap2" "models/items/venomancer/centipede_ward/centipede_ward_masks2"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 5
+	$RIMLIGHTSCALE 3
+	$RIMLIGHTCOLOR "[.1 .7 1]"
+	
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" "1"
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.6"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

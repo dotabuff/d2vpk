@@ -1,8 +1,7 @@
 "SpriteCard"
 {
 	"$basetexture" "particle\lens_flare\lens_flare"
-	$translucent 1
-	$overbrightfactor 2
+	"$additive" "1"
+	"$blendframes" "0"
 	$depthblend 0
-	$addself 1
 }

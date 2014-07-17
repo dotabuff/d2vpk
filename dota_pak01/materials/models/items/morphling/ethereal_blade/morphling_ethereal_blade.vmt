@@ -1,0 +1,77 @@
+"CustomHero"
+{
+	"$baseTexture"		"models\items\morphling\ethereal_blade\morphling_ethereal_blade_color"
+
+	"$maskmap1"		"models\items\morphling\ethereal_blade\morphling_ethereal_blade_masks1"
+//	"$maskmap2"		"models\items\morphling\ethereal_blade\morphling_ethereal_blade_masks2"
+
+
+	"$normalmap" "models\items\morphling\ethereal_blade\morphling_ethereal_blade_normal"
+
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+//	$FRESNELWARP "models/heroes/drow/drow_fresnelwarp"	
+
+
+
+	"$ENVMAPINTENSITY"		"2"
+	"$SPECULAREXPONENT"		"50"
+	"$SPECULARSCALE"		"15"
+	"$RIMLIGHTSCALE"		"0.500000"
+	"$rimlightcolor"		"[.2 .8 .7]"
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 4
+	$DETAIL1BLENDFACTOR 2
+	"$detail1"  "models/heroes/razor/razor_electric.vtf"
+	"$additive" "0"
+	$translucent 1
+
+	$REFRACTAMOUNT 0
+	
+	//$SELFILLUMBLENDTOFULL 1
+
+	"$cloakPassEnabled" "1"
+	$cloakfactor .325
+	$CLOAKCOLORTINT "[.5 4 2]"
+
+	"$detail2"  "models/heroes/statuseffects/electric"
+	$DETAIL2BLENDMODE 1
+	$DETAIL2SCALE 4
+	$DETAIL2BLENDFACTOR .6
+	$DETAIL2BLENDTOFULL .125
+
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.300000"
+			"texturescrollangle"		"90"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"Sine"
+		{
+			"resultVar" "$cloakfactor"
+			"sineperiod" "4.0"
+			"sinemin" "0.25"
+			"sinemax" "0.3465"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	".5"
+			"texturescrollangle"	"53"
+		}
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail2texturetransform"
+			"texturescrollrate"	".1455"
+			"texturescrollangle"	"57"
+		}
+	}
+}

@@ -475,3 +475,27 @@
 		
 	}
 }
+
+//////////////////////////////////////////////////////////////
+
+"Hero_Kunkka.InverseBayonet"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/kunkka/inverse_bayonet.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"get_random_delay"
+			{
+			"input_min" "0.01"
+			"input_max" "0.10"
+			}
+		}
+	}
+}

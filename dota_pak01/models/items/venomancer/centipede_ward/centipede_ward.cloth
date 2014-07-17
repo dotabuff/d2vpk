@@ -1,0 +1,32 @@
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "1.5"
+        AnimationVertexAttraction        "1.0"
+        BendSpringConstant               "10.0"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "antennae_L_"
+        columns                          "2"
+        damping                          "3.85"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 1"
+        gravity_scale                    "250.0"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        name                             "antennae_L"
+        R0                               "fixed"
+        R1                               "mass  1"
+        R2                               "mass  1"
+        rows                             "3"
+        ShearSpringConstant              "20.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "20.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+}
+// eof

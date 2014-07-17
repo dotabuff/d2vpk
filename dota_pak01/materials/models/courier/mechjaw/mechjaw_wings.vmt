@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$basetexture"	"models/courier/mechjaw/mechjaw_wings"
+	"$normalmap" "models/courier/mechjaw/mechjaw_wings_normal"
+	"$maskmap1" "models/courier/mechjaw/mechjaw_wings_masks1"
+	"$maskmap2" "models/courier/mechjaw/mechjaw_wings_masks2"
+//	"$specularwarp" "models/heroes/nyx/nyx_lightwarp"
+
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"	
+	
+//	$SPECULAREXPONENT 1
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR	"[1 1 1]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}
+

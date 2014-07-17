@@ -30614,17 +30614,17 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"max_mines"					"21"
+				"max_mines"					"20"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"full_damage_radius"		"200"
+				"small_radius"				"200"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"half_damage_radius"		"500"
+				"big_radius"				"500"
 			}
 			"04"
 			{
@@ -30661,7 +30661,7 @@
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"100"
+		"AbilityCastRange"				"150"
 		"AbilityCastPoint"				"1.0"
 		
 		// Time		
@@ -30742,12 +30742,12 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"full_damage_radius"		"200"
+				"small_radius"				"200"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"half_damage_radius"		"500"
+				"big_radius"				"500"
 			}
 			"03"
 			{
@@ -30804,13 +30804,13 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"400 410 425"
+				"damage"					"300 450 600"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"damage"					"300 450 600"
-			}
+				"radius"					"400 410 425"
+			}		
 			"04"
 			{
 				"var_type"					"FIELD_FLOAT"
@@ -30864,6 +30864,7 @@
 		
 		"AbilityCastRange"				"0"
 		"MaxLevel"				"1"
+		"AbilityCooldown"				"1.0 1.0 1.0"
 		
 
 		// Special
@@ -30902,7 +30903,6 @@
 				"var_type"					"FIELD_INTEGER"
 				"radius"					"400 410 425"
 			}
-			
 		}
 	}
 }

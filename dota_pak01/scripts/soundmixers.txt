@@ -22,6 +22,7 @@
 //							directory or .wav	classname																Causes  Duck to  Ducker
 //	group name				name substring		substring	chan			sndlvl_min	sndlvl_max	priority Is Ducked	Ducking	Percent	 Threshold
 //  ---------				------------------	---------	-----------		----------	----------	-------- --------	-------	-------	 ---------
+	"Solo"				"super_explosion.mp3"	""			""				""			""			"60"		"0"		"0"		"100"	"40"
 	"voip"					"?VoiceSfx"			""			""				""			""			"60"		"0"		"0"		"100"	"40"
 
 	"ambient"				"ambient"			""			""				""			""			"50"		"1"		"0"		"90"	"90"
@@ -78,6 +79,7 @@
 
 	//	group name				mix value
 	//  --------				---------
+		"Solo"					"1.0"
 		"voip"					"0.9"
 		"ambient"				"0.5"
 		"Ping"					"0.5"
@@ -229,15 +231,16 @@
 		"voip"	1.0  1.0  1.0  0.0   0.0
 	}
 	
-	"SoloCommentary"
+	"Solo"
 	{
- 		"voip"	1.0  1.0  1.0  0.9   0.0
+ 		"Solo"	1.0  1.0  1.0  0.9   0.0
 	}
 }
 
 "LayerTriggers"
 {
  // layer,				grp-trgger,		thrshld,   amnt,  attack, decay
+  "Solo"				"Solo"			"0.7"		"1.0"   "0.0"   "2.5"
   "Voip"				"voip"			"0.7"		"1.0"   "1.0"   "2.5"
   "TutorialVO"			"TutorialVO"	"0.3"		"1.0"   "1.0"   "2.5"
   "TutorialMusic"		"TutorialMusic"	"0.3"		"1.0"   "0.1"   "0.1"

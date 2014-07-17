@@ -1,20 +1,21 @@
 "CustomHero"
 {
-	"$basetexture" "models\heroes\techies\techiesfx_remote_color"
-	"$normalmap" "models\heroes\techies\techies_normal"
-	"$maskmap1" "models\heroes\techies\techiesfx_remote_mask1"
-	"$maskmap2" "models\heroes\techies\techiesfx_remote_mask2"
+	"$basetexture" 	"models\heroes\techies\techiesfx_remote_color"
+	"$normalmap" 	"models\heroes\techies\techiesfx_remote_normal"
+	"$maskmap1" 	"models\heroes\techies\techiesfx_remote_mask1"
+	"$maskmap2" 	"models\heroes\techies\techiesfx_remote_mask2"
 
 	$SPECULAR_BLOOM_SCALE      2 
 	$ignorebudgetcheck 1
 	$alphatest 1
-	//$SpecularBlendtoFull 1
 	$SPECULAREXPONENT 20
-	$SPECULARSCALE 3
-	//$SPECULARCOLOR "[1 .45 0]"
+	$SPECULARSCALE 5
 	$RIMLIGHTCOLOR "1 1 1"
 	$RIMLIGHTSCALE 2	
-
+	$ENVMAP "models\heroes\techies\techies_metal"
+	$ENVMAPINTENSITY 2
+	$MASKENVBYMETALNESS 1
+	
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{

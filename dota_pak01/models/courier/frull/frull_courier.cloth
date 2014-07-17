@@ -1,0 +1,88 @@
+ClothSystem
+{	
+	"Cloth"
+	{
+		"name"		"tail"
+		"columns"		"1"
+		"rows"		"4"
+		"damping"		"0.650000"						//0.85
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"100.000000"				//20.0
+		"WorldFriction"		"0.350000"
+		"LocalForce"		"1.000000"
+		"LocalRotation"		"1.000000"
+		"FixedPointDamping"		"0.100000"
+		"StretchForce"		"1.000000"
+		"SpringStretchiness"		"0.000000"
+		"AnimationForceAttraction"		"1.000"			//0.2
+		"AnimationVertexAttraction"		"1.0000"			//6.7
+		"ExternalForceScale"		"1.000000"
+		"StructSpringConstant"		"10.000000"			//20
+		"StructSpringDamping"		"0.600000"
+		"ShearSpringConstant"		"10.000000"			//20
+		"ShearSpringDamping"		"0.600000"
+		"BendSpringConstant"		"10.00000"			//20
+		"BendSpringDamping"		"0.800000"
+		"R0"		"fixed"
+		"R1"		"mass 1"
+		"R2"		"mass 3"
+		"R3"		"mass 5"
+		"R4"		"mass 7"
+		"BonePrefix"		"tail_"
+	}
+	"Cloth"	
+	{
+		"columns"		"1"
+		"rows"			"2"
+		"damping"		"0.2"
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"240.000000"
+		"WorldFriction"		"0.10000"
+		"LocalForce"		"1.100000"
+		"LocalRotation"		"1.200000"
+		"FixedPointDamping"	"0.200000"
+		"StretchForce"		"1.100000"
+		"SpringStretchiness"	".100000"			// 0.00
+		"AnimationForceAttraction"		".1500"
+		"AnimationVertexAttraction"		"2.50000"
+		"ExternalForceScale"	"1.00000"			// 1.0
+		"StructSpringConstant"	"10.000000"
+		"StructSpringDamping"	"0.700000"
+		"ShearSpringConstant"	"1.000000"
+		"ShearSpringDamping"	"0.800000"
+		"BendSpringConstant"	"1.000000"
+		"BendSpringDamping"	"0.900000"
+		"R0"		"fixed"
+		"R1"		"1"
+		"BonePrefix"		"jewel_"		
+	}
+	"Cloth"	
+	{
+		"columns"		"1"
+		"rows"			"4"
+		"damping"		"0.2"
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"240.000000"
+		"WorldFriction"		"0.10000"
+		"LocalForce"		"1.100000"
+		"LocalRotation"		"1.200000"
+		"FixedPointDamping"	"0.200000"
+		"StretchForce"		"1.100000"
+		"SpringStretchiness"	".100000"			// 0.00
+		"AnimationForceAttraction"		".1500"
+		"AnimationVertexAttraction"		"2.50000"
+		"ExternalForceScale"	"1.00000"			// 1.0
+		"StructSpringConstant"	"10.000000"
+		"StructSpringDamping"	"0.700000"
+		"ShearSpringConstant"	"1.000000"
+		"ShearSpringDamping"	"0.800000"
+		"BendSpringConstant"	"1.000000"
+		"BendSpringDamping"	"0.900000"
+		"R0"		"fixed"
+		"R1"		"1"
+		"R2"		"1"
+		"R3"		"1"
+		"BonePrefix"		"flag_"		
+	}
+	
+}

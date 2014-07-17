@@ -1,0 +1,282 @@
+// file    : octopus.cloth
+// author  : christinep
+// date    : 11 July 2014, 10:24AM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.3"
+        AnimationVertexAttraction        "4.0"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "1.0"
+        ExternalForceScale               "0.5"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "1.0"
+        LocalForce                       "0.3"
+        LocalRotation                    "0.0"
+        mapping
+        {
+            tentacle_L10_0_L                   "R0C0"
+            tentacle_L10_1_L                   "R1C0"
+            tentacle_L10_2_L                   "R2C0"
+            tentacle_L10_3_L                   "R3C0"
+            tentacle_L10_4_L                   "R4C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "fixed"
+        R2C0                             "world | mass 1.0"
+        R3C0                             "world | mass 2.0"
+        R4C0                             "world | mass 2.0"
+        rows                             "5"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.2"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.2"
+    }
+    
+    Cloth
+    {
+        AnimationForceAttraction         "0.2"
+        AnimationVertexAttraction        "3.0"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "1.0"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "1.0"
+        LocalForce                       "0.3"
+        LocalRotation                    "0.5"
+        mapping
+        {
+            tentacle_L2_0_A_L                   "R0C0"
+            tentacle_L2_1_A_L                   "R1C0"
+            tentacle_L2_2_A_L                   "R2C0"
+            tentacle_L2_3_A_L                   "R3C0"
+            tentacle_L2_4_A_L                   "R4C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "fixed"
+        R2C0                             "world | mass 1.0"
+        R3C0                             "world | mass 1.0"
+        R4C0                             "world | mass 2.0"
+        rows                             "5"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.2"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.2"
+    }
+    
+    Cloth
+    {
+        AnimationForceAttraction         "0.2"
+        AnimationVertexAttraction        "2.0"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "1.0"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "1.0"
+        LocalForce                       "0.3"
+        LocalRotation                    "0.5"
+        mapping
+        {
+            tentacle_L3_0_B_L                   "R0C0"
+            tentacle_L3_1_B_L                   "R1C0"
+            tentacle_L3_2_B_L                   "R2C0"
+            tentacle_L3_3_B_L                   "R3C0"
+            tentacle_L3_4_B_L                   "R4C0"
+        }
+        R0C0                             "fixed"
+        R2C0                             "world | mass 1.0"
+        R2C0                             "world | mass 1.0"
+        R3C0                             "world | mass 2.0"
+        R4C0                             "world | mass 2.0"
+        rows                             "5"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.2"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.2"
+    }
+    
+    Cloth
+    {
+        AnimationForceAttraction         "0.3"
+        AnimationVertexAttraction        "4.0"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "1.0"
+        ExternalForceScale               "0.5"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "1.0"
+        LocalForce                       "0.3"
+        LocalRotation                    "0.0"
+        mapping
+        {
+            tentacle_R1_0_R                   "R0C0"
+            tentacle_R1_1_R                   "R1C0"
+            tentacle_R1_2_R                   "R2C0"
+            tentacle_R1_3_R                   "R3C0"
+            tentacle_R1_4_R                   "R4C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "fixed"
+        R2C0                             "world | mass 1.0"
+        R3C0                             "world | mass 2.0"
+        R4C0                             "world | mass 2.0"
+        rows                             "5"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.2"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.2"
+    }
+    
+	Cloth
+    {
+        AnimationForceAttraction         "0.2"
+        AnimationVertexAttraction        "3.0"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "1.0"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "1.0"
+        LocalForce                       "0.3"
+        LocalRotation                    "0.5"
+        mapping
+        {
+            tentacle_R2_0_A_R                   "R0C0"
+            tentacle_R2_1_A_R                   "R1C0"
+            tentacle_R2_2_A_R                   "R2C0"
+            tentacle_R2_3_A_R                   "R3C0"
+            tentacle_R2_4_A_R                   "R4C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "fixed"
+        R2C0                             "world | mass 1.0"
+        R3C0                             "world | mass 1.0"
+        R4C0                             "world | mass 2.0"
+        rows                             "5"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.2"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.2"
+    }
+    
+	Cloth
+    {
+        AnimationForceAttraction         "0.2"
+        AnimationVertexAttraction        "2.0"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "1.0"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "1.0"
+        LocalForce                       "0.3"
+        LocalRotation                    "0.5"
+        mapping
+        {
+            tentacle_R3_0_B_R                   "R0C0"
+            tentacle_R3_1_B_R                   "R1C0"
+            tentacle_R3_2_B_R                   "R2C0"
+            tentacle_R3_3_B_R                   "R3C0"
+            tentacle_R3_4_B_R                   "R4C0"
+        }
+        R0C0                             "fixed"
+        R2C0                             "world | mass 1.0"
+        R2C0                             "world | mass 1.0"
+        R3C0                             "world | mass 2.0"
+        R4C0                             "world | mass 2.0"
+        rows                             "5"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.2"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.2"
+    }
+    
+    
+    
+    
+    
+        Cloth
+    {
+        AnimationForceAttraction         "0.3"
+        AnimationVertexAttraction        "0.5"
+        BendSpringConstant               "0.0"
+        BendSpringConstraint             "0.0"
+        BendSpringDamping                "0.0"
+        columns                          "1"
+        Damping                          "0.8"
+        ExternalForceScale               "0.0"
+        FixedPointDamping                "0.5"
+        gravity                          "0 0 -1"
+        gravity_scale                    "10.0"
+        LocalForce                       "0.2"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            mantle2_0                   "R0C0"
+            mantle2_1                   "R1C0"
+
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        rows                             "2"
+        ShearSpringConstant              "0.0"
+        ShearSpringConstraint            "0.0"
+        ShearSpringDamping               "0.0"
+        SpringStretchiness               "0.0"
+        StretchForce                     "0.0"
+        StructSpringConstant             "0.0"
+        StructSpringDamping              "0.0"
+        WorldFriction                    "0.0"
+    }
+}
+
+// eof

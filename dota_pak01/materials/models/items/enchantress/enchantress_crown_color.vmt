@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	$baseTexture "models/items/enchantress/enchantress_crown_color"
+	"$normalmap" "models/items/enchantress/enchantress_crown_normal"
+	"$maskmap1" "models/items/enchantress/enchantress_crown_mask1"
+	"$maskmap2" "models/items/enchantress/enchantress_crown_mask2"
+
+	"$alphatest" "1"
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 3
+
+	$RIMLIGHTSCALE .8
+	$AMBIENTSCALE 1
+
+
+	//$SPECULAREXPONENTBLENDTOFULL 1
+	//$SPECULARBLENDTOFULL 1
+	//$RIMLIGHTBLENDTOFULL 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

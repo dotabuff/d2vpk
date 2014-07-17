@@ -1567,6 +1567,9 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"npc_dota_tusk_frozen_sigil4"					"Frozen Sigil"
 		"npc_dota_elder_titan_ancestral_spirit"			"Astral Spirit"
 		"npc_dota_phoenix_sun"							"Phoenix Sun"
+		"npc_dota_techies_land_mine"					"Land Mine"
+		"npc_dota_techies_stasis_trap"					"Stasis Trap"
+		"npc_dota_techies_remote_mine"				"Remote Mine"
 		"dota_unkown"									"Unknown"
 		
 		"npc_dota_creep_badguys_melee"					"Melee Creep"
@@ -6220,15 +6223,15 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_ability_techies_land_mines"						"Land Mines"
 		"DOTA_Tooltip_ability_techies_land_mines_Description"			"Plants an invisible mine that explodes when an enemy nears.  The explosion deals less damage if the target is farther away.  When a new mine planted exceeds the mine limit, the oldest mine will explode."
 		"DOTA_Tooltip_ability_techies_land_mines_max_mines"				"MAX MINES:"
-		"DOTA_Tooltip_ability_techies_land_mines_full_damage_radius"	"FULL DAMAGE RADIUS:"
-		"DOTA_Tooltip_ability_techies_land_mines_half_damage_radius"	"HALF DAMAGE RADIUS:"
+		"DOTA_Tooltip_ability_techies_land_mines_small_radius"	"FULL DAMAGE RADIUS:"
+		"DOTA_Tooltip_ability_techies_land_mines_big_radius"	"HALF DAMAGE RADIUS:"
 		"DOTA_Tooltip_ability_techies_land_mines_damage"				"DAMAGE:"
 		"DOTA_Tooltip_ability_techies_land_mines_activation_time"		"ACTIVATION DELAY:"
 		"DOTA_Tooltip_ability_techies_land_mines_Note0"					"If destroyed by attacks the mines will still explode."
 		"DOTA_Tooltip_ability_techies_land_mines_Note1"					"Mines last until they explode."
 		"DOTA_Tooltip_ability_techies_stasis_trap"						"Stasis Trap"
 		"DOTA_Tooltip_ability_techies_stasis_trap_Description"			"Plants an invisible trap that stuns nearby enemy units when detonated."
-		"DOTA_Tooltip_ability_techies_stasis_trap_activation_time"		"ACTIVATION TIME:"
+		"DOTA_Tooltip_ability_techies_stasis_trap_activation_time"		"ACTIVATION DELAY:"
 		"DOTA_Tooltip_ability_techies_stasis_trap_activation_delay"		"DETONATION DELAY:"
 		"DOTA_Tooltip_ability_techies_stasis_trap_stun_duration"		"STUN DURATION:"
 		"DOTA_Tooltip_ability_techies_stasis_trap_activation_radius"	"TRIGGER RADIUS:"
@@ -6237,24 +6240,27 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Tooltip_ability_techies_stasis_trap_Note0"				"Stasis Traps destroy all other Stasis Traps in their area of effect when they detonate."
 		"DOTA_Tooltip_ability_techies_suicide"							"Suicide Squad, Attack!"
 		"DOTA_Tooltip_ability_techies_suicide_Description"				"Sacrifice yourself for the greater good.  Deals massive area of effect damage."
-		"DOTA_Tooltip_ability_techies_suicide_full_damage_radius"		"FULL DAMAGE RADIUS:"
-		"DOTA_Tooltip_ability_techies_suicide_half_damage_radius"		"PARTIAL DAMAGE RADIUS:"
-		"DOTA_Tooltip_ability_techies_suicide_damage"					"DAMAGE:"
+		"DOTA_Tooltip_ability_techies_suicide_small_radius"				"FULL DAMAGE RADIUS:"
+		"DOTA_Tooltip_ability_techies_suicide_big_radius"				"PARTIAL DAMAGE RADIUS:"
+		"DOTA_Tooltip_ability_techies_suicide_damage"					"FULL DAMAGE:"
 		"DOTA_Tooltip_ability_techies_suicide_partial_damage"			"PARTIAL DAMAGE:"
 		"DOTA_Tooltip_ability_techies_remote_mines"						"Remote Mines"
-		"DOTA_Tooltip_ability_techies_remote_mines_Description"			"Plants an invisible mine that will only activate when triggered.  Doesn't damage buildings."
+		"DOTA_Tooltip_ability_techies_remote_mines_Description"			"Plants an invisible mine that will only activate when triggered.  Does not damage buildings."
 		"DOTA_Tooltip_ability_techies_remote_mines_Lore"				""
 		"DOTA_Tooltip_ability_techies_remote_mines_max_mines"			"MAX MINES:"
-		"DOTA_Tooltip_ability_techies_remote_mines_radius"				"RADIUS:"
+		"DOTA_Tooltip_ability_techies_remote_mines_radius"				"EXPLOSION RADIUS:"
 		"DOTA_Tooltip_ability_techies_remote_mines_damage"				"DAMAGE:"
-		"DOTA_Tooltip_ability_techies_remote_mines_activation_time"		"ACTIVATION TIME:"
-		"DOTA_Tooltip_ability_techies_remote_mines_duration"			"DURATION:"
+		"DOTA_Tooltip_ability_techies_remote_mines_activation_time"		"ACTIVATION DELAY:"
+		"DOTA_Tooltip_ability_techies_remote_mines_duration"			"MINE DURATION:"
 		"DOTA_Tooltip_ability_techies_remote_mines_cast_range_scepter"	"SCEPTER CAST RANGE:"
-		"DOTA_Tooltip_ability_techies_remote_mines_radius_scepter"		"SCEPTER RADIUS:"
+		"DOTA_Tooltip_ability_techies_remote_mines_radius_scepter"		"SCEPTER EXPLOSION RADIUS:"
 		"DOTA_Tooltip_ability_techies_remote_mines_damage_scepter"		"SCEPTER DAMAGE:"
 		"DOTA_Tooltip_ability_techies_focused_detonate"					"Focused Detonate"
 		"DOTA_Tooltip_ability_techies_focused_detonate_Description"		"Detonates all remote mines in the target area."
 		"DOTA_Tooltip_ability_techies_focused_detonate_radius"			"RADIUS:"
+		"DOTA_Tooltip_Ability_techies_remote_mines_self_detonate"			"PINPOINT DETONATE"
+		"DOTA_Tooltip_Ability_techies_remote_mines_self_detonate_Description"			"Detonates this remote mine only."
+		"npc_dota_hero_techies_bio"									"Techies Demolitions! We put the tech in tech-nically we meant to do that."
 		
 		//-----
 
@@ -7325,7 +7331,10 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_UI_Web_Alert"				"MESSAGE FROM WEBPAGE"
 		"DOTA_UI_Web_Message"			"MESSAGE FROM WEBPAGE"
 		"DOTA_UI_Redeem"				"REDEEM"
+		"DOTA_UI_Redeem2"				"Redeem"
 		"DOTA_UI_Exchange"				"EXCHANGE"
+		
+		"DOTA_Select_Signature"			"Select a Signature to Add"
 
 		"DOTA_UI_Confirmation_Continue"	"Continue"
 		"DOTA_UI_Confirmation_Cancel"	"Cancel"
@@ -11760,7 +11769,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Workshop_SubmissionType_CustomGame"			"CUSTOM GAME MODE"
 		"DOTA_Workshop_SubmissionType_CustomGame_Desc"		"A new game mode"
 		"DOTA_Workshop_SubmissionType_Images"				"IMAGES"
-		"DOTA_Workshop_SubmissionType_Images_Desc"			"Submission types comprised only of images such as Loading Screens, HUD Skins, and Ability Icons."
+		"DOTA_Workshop_SubmissionType_Images_Desc"			"Submissions comprised of images such as Loading Screens, HUD Skins, Ability Icons and Chat Emoticons."
 		"DOTA_Workshop_SubmissionType_AbilityIcons"				"ABILITY ICONS"
 		"DOTA_Workshop_SubmissionType_AbilityIcons_Desc"			"A set of images designed to replace a Hero's ability icons."
 		"DOTA_Workshop_RetrievingInfo"		"RETRIEVING INFORMATION"
@@ -12686,6 +12695,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		
 		"DOTA_UnusualCourier"							"Unusual Courier"
 		"DOTA_UnusualCourier_Desc"						"Random courier w/ special FX and colors."
+
+		"DOTA_UnusualCourier_International_2014"		"International 2014 Courier"
+		"DOTA_UnusualCourier_International_2014_Desc"	"You might find one of three new couriers for the 2014 International randomly inserted into your treasure."
 	
 		"DOTA_SortBackpack"	"Sort Armory:"
 		"DOTA_SortBackpack_Position" " by Position"
@@ -13378,6 +13390,12 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		
 		"StoreBanner_Header_TroveCarafe"		"The Trove Carafe"
 		"StoreBanner_Text_TroveCarafe"			"Special items with custom effects fresh for the International"
+		
+		"StoreBanner_Header_LocklessLuckvase"		"The Lockless Luckvase"
+		"StoreBanner_Text_LocklessLucksave"			"A collection of elite items designed for the International"
+		
+		"StoreBanner_Header_SculptorsPillar"		"The Sculptor's Pillar"
+		"StoreBanner_Text_SculptorsPillar"			"Community creations crafted to celebrate the International"
 		
 		"StoreBanner_Header_stanley_parable_announcer_pack"		"The Stanley Parable Announcer Pack"
 		"StoreBanner_Text_stanley_parable_announcer_pack"		"Do you really have a choice in the matter?"
@@ -15901,6 +15919,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"UnusualLavaRoshan"			"Pyroclastic Flow"
 		"UnusualIceRoshan"			"Glacial Flow"
 		"UnusualPlushShagbark"		"Plushy Shag"
+		"UnusualInternational2014"	"Champion's Purple"
 			
 		"Econ_MarketTooltipFormat"			"%s1 available on the Steam Community Market starting at %s2."
 		
@@ -15944,6 +15963,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Anim_Mod_fishstick"	"Fish!"
 		"DOTA_Anim_Mod_rampant"	"Rampant Outrage"
 		"DOTA_Anim_Mod_glacier"	"Yulsaria's Glacier"
+		"DOTA_Anim_Mod_lodestar"	"Flourishing Lodestar"
 		"DOTA_Anim_Mod_emp"	"Empyrean"
 
 		"DOTA_Ability_Mod_Illuminate_Northlight"	"Northlight Illuminance"
@@ -16630,7 +16650,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_spring_intro_text02_practice"	"Inflict as much damage as you can to the Year Beast.\n\nIf the Year Beast grabs someone, shoot a Firework at him to break them free!"
 		"dota_spring_intro_text03_practice"	""
 		"dota_spring_intro_text04_practice"	"All players receive a fixed amount of gold."
-		
+				
 		"dota_redeem_springtext1"			"Flamesalt Ingots"
 
 		"dota_redeem_springtext2"			"Flamesalt Ingots are harvested by playing regular matches, and are used to purchase equipment when fighting the Year Beast. You can increase your Flamesalt Ingot harvest rate, as well as earn Jade Tokens, by activating Fortune's Favor."
@@ -16642,6 +16662,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"dota_redeem_springtext5"			"Jade Tokens"
 
 		"dota_redeem_springtext6"			"Redeem Jade Tokens for Bloom Bounties below:"
+		
+		"DOTA_Redeem_Item_Title"			"%s1 Redemption"
+		"DOTA_Redeem_Item_Text"				"Select the item you wish to purchase below."
 
 		"DOTA_Booster_Title"				"Battle Point Booster"
 		"DOTA_Booster_Explain"				"Earn 80% more Battle Points ( and grant an additional 16% bonus to anyone you play with ). Lasts for 500 minutes of match time."
@@ -17820,6 +17843,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Advertisement_Signature_Treasure"			"Autographed %s1 - %s2"
 		"DOTA_Advertisement_Signature_TreasureHeader"	"Autographed Immortals"
 		"DOTA_Advertisement_Signature_TreasureSubHeader"	"Get new Immortal items autographed by your favorite Dota 2 personality."
+		
 
 		"DOTA_CompendiumBundleUpsell_Header" "THE INTERNATIONAL BUNDLE"
 		"DOTA_CompendiumBundleUpsell_SubHeader"	"PURCHASE NOW TO GET <font color=\"#FFFFFF\">ALL OF THESE ITEMS</font> AND MORE"

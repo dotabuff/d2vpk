@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/crystal_maiden/ward_staff/ward_staff_color"
+	"$normalmap"		"models/items/crystal_maiden/ward_staff/ward_staff_normal"
+	"$maskmap1"		"models/items/crystal_maiden/ward_staff/ward_staff_mask1"
+	"$maskmap2"		"models/items/crystal_maiden/ward_staff/ward_staff_mask2"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"35"
+	"$SPECULARSCALE"		"2"
+	"$SPECULARCOLOR"		"[1 2 3]"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$cloakPassEnabled"		"1"
+	
+	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	$ENVMAPINTENSITY 3
+		$MASKENVBYMETALNESS 1
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

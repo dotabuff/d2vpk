@@ -1046,6 +1046,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"280"									// Speed.
 		"MovementTurnRate"			"0.5"									// Turning rate.
+		"HasAggressiveStance"                  "1"  
 
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
@@ -1485,7 +1486,7 @@
 		"Portrait"				"vgui/hud/heroportraits/portrait_earthshaker"	// Small image for hero selection
 		"IdleExpression"		"scenes/earthshaker/earthshaker_exp_idle_01.vcd"		// custom facial animation idle
 		"SoundSet"				"Hero_Earthshaker"							// Name of sound set.
-		"PickSound"				"earthshaker_erth_spawn_02"
+		"PickSound"				"earthshaker_erth_spawn_01"
 		"BanSound"				"earthshaker_erth_anger_02"
 		"Enabled"				"1"
 		"HeroUnlockOrder"		"1"
@@ -6358,7 +6359,7 @@
 		"HeroID"		"27"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"				".91"	
 		"HeroGlowColor" 			"255 167 38"
-		"PickSound"					"shadowshaman_shad_spawn_02"
+		"PickSound"					"shadowshaman_shad_spawn_01"
 		"BanSound"					"shadowshaman_shad_anger_01"
 		"CMEnabled"					"1"
 		"NameAliases"				"ss"
@@ -22755,6 +22756,8 @@
 		"NoCombine"					"0"
 		"AbilityDraftDisabled"		"1"
 		"HeroSelectSoundEffect"		")weapons/hero/earth_spirit/stone_remnant.wav"
+		"PickSound"					"earth_spirit_earthspi_spawn_02"
+		"BanSound"					"earth_spirit_earthspi_anger_08"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
@@ -23353,12 +23356,13 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BaseClass"					"npc_dota_hero_techies"							// Class of entity of link to.
 		"Model"						"models/heroes/techies/techies.mdl"						// Model.
+		"IdleExpression"			"scenes/techies/techies_exp_idle_01.vcd"		// custom facial animation idle
 		"ModelScale" 				"0.60"
 		"LoadoutScale"				"1"
 		"SoundSet"					"Hero_Techies"										// Name of sound set.
 		"Enabled"					"1"
 		"BotImplemented"			"0"
-		"Team"						"Bad"
+		"Team"						"Good"
 		"NewHero"					"0"
 		"HeroPool1"					"0"
 		"HeroUnlockOrder"			"1"										// The higher the number the later these heros will unlock for new players.
@@ -23420,11 +23424,31 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"RingRadius"				"70"
+
+		"StatusManaRegen"			"0.02"									// Mana regeneration rate.
 		
 		//Particles
 		//-------------------------------------------------------------------------------------------------------------
 		"ParticleFile"				"particles/units/heroes/hero_techies.pcf"
 
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+				"techies_loadout"
+				{
+					"spawn"	"1"
+
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"	"attach_hitloc"
+					}
+				}
+			}
+		}
+		
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"

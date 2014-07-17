@@ -1,0 +1,23 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/crystal_maiden/ward_staff/icecage_color"
+	"$normalmap"		"models/items/crystal_maiden/ward_staff/icecage_normal"
+	"$maskmap1"		"models\development\blankmasks1"
+	"$maskmap2"		"models\development\blankmasks2"
+	$additive 1
+	"$SPECULAREXPONENT"		"8"
+	"$SPECULARSCALE"		"2"
+	"$SPECULARCOLOR"		"[1 2 3]"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
