@@ -6,13 +6,20 @@ require 'fileutils'
 
 require_relative "./vdf"
 
+patches = {
+  'dota/resource/dota_english.txt' => {
+    %("Notes:\\n\\nHas a 0.35 seconds transformation time."\r\nYou can dodge projectiles and abilities while transforming.) =>
+      %("Notes:\\n\\nHas a 0.35 seconds transformation time.\r\nYou can dodge projectiles and abilities while transforming."),
+  }
+}
+
 %w[
-  dota/resource/items_*.txt
+  dota/resource/{items,dota}_*.txt
   dota_pak01/scripts/items/items_game.txt
   dota_pak01/scripts/regions.txt
+  dota_pak01/scripts/npc/{npc_abilities,npc_heroes,npc_units,items,activelist}.txt
 ].each do |glob|
   Dir.glob glob do |source|
-    p source
     json_name = File.basename(source, '.txt') + ".json"
     directory = File.dirname(source)
     dest_directory = File.join('json', directory)
@@ -24,6 +31,7 @@ require_relative "./vdf"
 
     begin
       txt = File.read(source)
+      [*patches[source]].each{|k, v| warn "patch failed: #{k} => #{v}" unless txt.sub!(k, v) }
       vdf = VDF.new(txt)
       res = JSON.pretty_generate(vdf.kvs)
 

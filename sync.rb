@@ -10,12 +10,15 @@ sh 'cp', '-r', "#{dota}/dota/resource/", 'dota/'
 convert = ->(path){
   return if path =~ /ti_2013_podseats\.txt/
   file = `file "#{path}"`
-  if file =~ /UTF-16 Unicode text/
+  case file
+  when /UTF-16 Unicode text/
     sh 'iconv', '--verbose', '-f', 'utf-16', '-t', 'utf-8', '-o', "#{path}.utf8", path
     sh 'mv', "#{path}.utf8", path
+  when /(UTF-8 Unicode|ASCII) text/
   else
     p file
   end
+
   if file =~ /with CRLF(, CR)? line terminators/
     sh 'dos2unix', '-q', path
   end
