@@ -20521,13 +20521,13 @@
       "AbilityManaCost": "125 150 175 205",
       "AbilitySpecial": [
         {
-          "max_mines": 21
+          "max_mines": 20
         },
         {
-          "full_damage_radius": 200
+          "small_radius": 200
         },
         {
-          "half_damage_radius": 500
+          "big_radius": 500
         },
         {
           "damage": [
@@ -20551,7 +20551,7 @@
     "techies_stasis_trap": {
       "ID": "5600",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
-      "AbilityCastRange": "100",
+      "AbilityCastRange": "150",
       "AbilityCastPoint": "1.0",
       "AbilityCooldown": "20.0 16.0 13.0 10.0",
       "AbilityManaCost": "80 110 140 160",
@@ -20598,10 +20598,10 @@
       "AbilityManaCost": "100 125 150 175",
       "AbilitySpecial": [
         {
-          "full_damage_radius": 200
+          "small_radius": 200
         },
         {
-          "half_damage_radius": 500
+          "big_radius": 500
         },
         {
           "damage": [
@@ -20638,17 +20638,17 @@
           "max_mines": 21
         },
         {
-          "radius": [
-            400,
-            410,
-            425
-          ]
-        },
-        {
           "damage": [
             300,
             450,
             600
+          ]
+        },
+        {
+          "radius": [
+            400,
+            410,
+            425
           ]
         },
         {
@@ -20688,6 +20688,7 @@
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "AbilityCastRange": "0",
       "MaxLevel": "1",
+      "AbilityCooldown": "1.0 1.0 1.0",
       "AbilitySpecial": [
         {
           "radius": 700

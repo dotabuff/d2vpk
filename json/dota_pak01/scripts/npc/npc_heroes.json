@@ -752,6 +752,7 @@
       "AttributeAgilityGain": "1.6",
       "MovementSpeed": "280",
       "MovementTurnRate": "0.5",
+      "HasAggressiveStance": "1",
       "BoundsHullName": "DOTA_HULL_SIZE_HERO",
       "HealthBarOffset": "135",
       "VoiceFile": "scripts/voscripts/game_sounds_vo_crystalmaiden.txt",
@@ -1091,7 +1092,7 @@
       "Portrait": "vgui/hud/heroportraits/portrait_earthshaker",
       "IdleExpression": "scenes/earthshaker/earthshaker_exp_idle_01.vcd",
       "SoundSet": "Hero_Earthshaker",
-      "PickSound": "earthshaker_erth_spawn_02",
+      "PickSound": "earthshaker_erth_spawn_01",
       "BanSound": "earthshaker_erth_anger_02",
       "Enabled": "1",
       "HeroUnlockOrder": "1",
@@ -4745,7 +4746,7 @@
       "HeroID": "27",
       "ModelScale": ".91",
       "HeroGlowColor": "255 167 38",
-      "PickSound": "shadowshaman_shad_spawn_02",
+      "PickSound": "shadowshaman_shad_spawn_01",
       "BanSound": "shadowshaman_shad_anger_01",
       "CMEnabled": "1",
       "NameAliases": "ss",
@@ -16939,6 +16940,8 @@
       "NoCombine": "0",
       "AbilityDraftDisabled": "1",
       "HeroSelectSoundEffect": ")weapons/hero/earth_spirit/stone_remnant.wav",
+      "PickSound": "earth_spirit_earthspi_spawn_02",
+      "BanSound": "earth_spirit_earthspi_anger_08",
       "Ability1": "earth_spirit_boulder_smash",
       "Ability2": "earth_spirit_rolling_boulder",
       "Ability3": "earth_spirit_geomagnetic_grip",
@@ -17335,12 +17338,13 @@
     "npc_dota_hero_techies": {
       "BaseClass": "npc_dota_hero_techies",
       "Model": "models/heroes/techies/techies.mdl",
+      "IdleExpression": "scenes/techies/techies_exp_idle_01.vcd",
       "ModelScale": "0.60",
       "LoadoutScale": "1",
       "SoundSet": "Hero_Techies",
       "Enabled": "1",
       "BotImplemented": "0",
-      "Team": "Bad",
+      "Team": "Good",
       "NewHero": "0",
       "HeroPool1": "0",
       "HeroUnlockOrder": "1",
@@ -17384,7 +17388,19 @@
       "BountyGoldMax": "0",
       "BoundsHullName": "DOTA_HULL_SIZE_HERO",
       "RingRadius": "70",
+      "StatusManaRegen": "0.02",
       "ParticleFile": "particles/units/heroes/hero_techies.pcf",
+      "RenderablePortrait": {
+        "Particles": {
+          "techies_loadout": {
+            "spawn": "1",
+            "0": {
+              "type": "follow_origin",
+              "location": "attach_hitloc"
+            }
+          }
+        }
+      },
       "MovementCapabilities": "DOTA_UNIT_CAP_MOVE_GROUND",
       "MovementSpeed": "270",
       "MovementTurnRate": "0.5",
