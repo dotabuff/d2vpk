@@ -2614,7 +2614,7 @@
       "[english]DOTA_Tooltip_ability_nevermore_dark_lord_presence_armor_reduction": "REDUCTION:",
       "DOTA_Tooltip_ability_nevermore_requiem": "영혼의 진혼곡",
       "[english]DOTA_Tooltip_ability_nevermore_requiem": "Requiem of Souls",
-      "DOTA_Tooltip_ability_nevermore_requiem_Description": "구속된 영혼의 힘을 사용하여 주변 적 유닛에게 막대한 피해를 주고 움직임을 둔화시킵니다. 영혼의 진혼곡이 한 번 울릴 때마다 영혼 거두기로 구속한 영혼이 둘씩 소모됩니다. 가장 가까이 있는 적 유닛이 가장 큰 피해를 받습니다. 또한, 1.67초의 시전 시간이 걸립니다. 그림자 마귀가 사망하면 영혼의 진혼곡은 쿨다운 시간과 관계없이 즉시 시전됩니다.",
+      "DOTA_Tooltip_ability_nevermore_requiem_Description": "구속된 영혼의 힘을 사용하여 주변 적 유닛의 공격력을 감소시키고 움직임을 둔화시킵니다. 영혼 거두기로 구속한 영혼 2개당 1개의 공격파를 내뿜습니다. 가장 가까이 있는 적 유닛이 가장 큰 피해를 받습니다. 또한, 1.67초의 시전 시간이 걸립니다. 그림자 마귀가 사망하면 영혼의 진혼곡은 쿨다운 시간과 관계없이 즉시 시전됩니다.",
       "[english]DOTA_Tooltip_ability_nevermore_requiem_Description": "Captured souls are used to deal massive damage, as well as slowing and reducing the attack damage of nearby enemy units. Requiem of Souls creates one wave of damage for every 2 souls stored by Necromastery.  The closest enemy units are hit the hardest.  Requiem of Souls has a 1.67 second cast time before it is activated.  Requiem of Souls is automatically cast when Shadow Fiend dies, independent of its cooldown.",
       "DOTA_Tooltip_ability_nevermore_requiem_requiem_reduction": "%둔화:",
       "[english]DOTA_Tooltip_ability_nevermore_requiem_requiem_reduction": "%SLOW:",
@@ -23754,7 +23754,7 @@
       "[english]DOTA_Archronicus_TheDeathBounty_Page2a": "Translated from Page:",
       "DOTA_Archronicus_TheDeathBounty_Page2b": "국왕 성명서",
       "[english]DOTA_Archronicus_TheDeathBounty_Page2b": "ROYAL PROCLAMATION",
-      "DOTA_Archronicus_TheDeathBounty_Page2c": "돌전당 섭정이신 우르틱 라스테 경의 명에 따라 알린다.\\n\\n향후 돌전당 부대에 속한 자들은 다음 사항을 충실히 이해해야 한다.\\n\\n1. 돌전당 부대원은 전투에서 적을 상대로 마지막 타격을 가할 때마다 보상을 받는다. 이 보상은 마지막 일격을 가한 자에게만 수여한다.\\n\\n2. 전투가 진행되는 동안 각 집단은 모든 지급액을 기록하고 분배하여 장비 구매비나 유지비를 충당할 의무가 있다.\\n\\n3. 분쟁이 발생했을 시에는 결투를 신청할 수 있다. 승자는 패배자의 할당액을 모두 차지한다.\\n\\n4. 결투에서 사망자가 나오면, 그 보상은...",
+      "DOTA_Archronicus_TheDeathBounty_Page2c": "돌의 전당 섭정이신 우르틱 라스테 경의 명에 따라 알린다.\\n\\n향후 돌의 전당 부대에 속한 자들은 다음 사항을 충실히 이해해야 한다.\\n\\n1. 돌의 전당 부대원은 전투에서 적을 상대로 마지막 타격을 가할 때마다 보상을 받는다. 이 보상은 마지막 일격을 가한 자에게만 수여한다.\\n\\n2. 전투가 진행되는 동안 각 집단은 모든 지급액을 기록하고 분배하여 장비 구매비나 유지비를 충당할 의무가 있다.\\n\\n3. 분쟁이 발생했을 시에는 결투를 신청할 수 있다. 승자는 패배자의 할당액을 모두 차지한다.\\n\\n4. 결투에서 사망자가 나오면, 그 보상은...",
       "[english]DOTA_Archronicus_TheDeathBounty_Page2c": "By order of Lord Regent Urthic Laste of Stonehall.\\n\\nHenceforth shall all fellows of the Armies of Stonehall adhere to the statements below:\\n\\n1. Fellows of the Stonehall military shall now be paid for each killing blow struck against a foe in battle. This reward shall only be granted to the fellow who strikes the killing blow.\\n\\n2. Following the course of battle, each coterie shall be responsible for the tallying and dividing of payment amongst themselves to cover expenses, including equipment purchase and upkeep.\\n\\n3. In the event of a dispute, fellows may challenge one another to duel. The victor shall be awarded the total share held by the vanquished.\\n\\n4. Should a duel conclude by the death of a fellow, recompense shall be made to...",
       "DOTA_Tutorial_Archronicus_Page8": "태초의 서 페이지",
       "[english]DOTA_Tutorial_Archronicus_Page8": "Archronicus Page",
@@ -34811,7 +34811,15 @@
       "StoreBanner_Header_SculptorsPillar": "조각가의 기둥",
       "[english]StoreBanner_Header_SculptorsPillar": "The Sculptor's Pillar",
       "StoreBanner_Text_SculptorsPillar": "The International을 위해 제작된 창작마당 아이템입니다.",
-      "[english]StoreBanner_Text_SculptorsPillar": "Community creations crafted to celebrate the International"
+      "[english]StoreBanner_Text_SculptorsPillar": "Community creations crafted to celebrate the International",
+      "StoreBanner_Header_HerosHeirloom": "영웅의 가보",
+      "[english]StoreBanner_Header_HerosHeirloom": "Hero's Heirloom",
+      "StoreBanner_Text_HerosHeirloom": "비밀 상점의 멋진 아이템을 한데 모았습니다!",
+      "[english]StoreBanner_Text_HerosHeirloom": "An awesome collection of Secret Shop items",
+      "StoreBanner_Header_ChampionsChest": "용사의 보물함",
+      "[english]StoreBanner_Header_ChampionsChest": "Champion's Chest",
+      "StoreBanner_Text_ChampionsChest": "비밀 상점의 멋진 아이템을 한 번 더 모았습니다!",
+      "[english]StoreBanner_Text_ChampionsChest": "A second awesome collection of Secret Shop items"
     }
   }
 }
