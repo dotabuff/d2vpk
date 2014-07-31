@@ -77,7 +77,16 @@
 		}
 	}
 }
-
+// used code and local
+// tobin?
+// moved
+"valve_dota_001.music.ui_world_map"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"		 "#music\valve_dota_001\music\ui_world_map.mp3"
+}
 // used code
 // moved
 "valve_dota_001.music.ui_hero_select"
@@ -485,7 +494,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" ".music.battle_0" //Stop the smoke music if you attack a creep.	
+				"match_entry" "valve_dota_001.music.battle_0" //Stop the smoke music if you attack a creep.	
 			}
 		}
 	}
@@ -691,7 +700,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" ".music.battle_0" //Stop the smoke music if you attack a creep.	
+				"match_entry" "valve_dota_001.music.battle_0" //Stop the smoke music if you attack a creep.	
 			}
 		}
 	}
@@ -884,7 +893,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" ".music.battle_0" //Stop the smoke music if you attack a creep.	
+				"match_entry" "valve_dota_001.music.battle_0" //Stop the smoke music if you attack a creep.	
 			}
 		}
 	}
@@ -1566,7 +1575,7 @@
 				"operator" "sys_stop_entries"
 				"input_execute" "1.0"
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -1679,7 +1688,7 @@
 				"operator" "sys_stop_entries"
 				"input_execute" "1.0"
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -1792,7 +1801,7 @@
 				"operator" "sys_stop_entries"
 				"input_execute" "1.0"
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -1911,7 +1920,7 @@
 				"operator" "sys_stop_entries"
 				"input_execute" "1.0"
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -2024,7 +2033,7 @@
 				"operator" "sys_stop_entries"
 				"input_execute" "1.0"
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -2152,7 +2161,7 @@
 				"operator" "sys_stop_entries"
 				"input_execute" "1.0"
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -2265,7 +2274,7 @@
 				"operator" "sys_stop_entries"
 				"input_execute" "1.0"
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -2378,7 +2387,7 @@
 				"operator" "sys_stop_entries"
 				"input_execute" "1.0"
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -2462,7 +2471,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" ".music.laning"
+				"match_entry" "valve_dota_001.music.laning"
 			}
 			
 			"limit_sound_battle"
@@ -2471,7 +2480,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" ".music.battle" //We allow no instances of battle when the death stinger knells		
+				"match_entry" "valve_dota_001.music.battle" //We allow no instances of battle when the death stinger knells		
 			}
 			
 			"stop_main_track"
@@ -2532,7 +2541,7 @@
 				"input_active" "1.0"	
 				"input_duration" "@block_entry_time_calc.output" //in seconds, you can use "@get_random.output" for a random blocking period
 				"match_substring" "true"
-				"match_entry" ".music.killed" //The sound entry to use
+				"match_entry" "valve_dota_001.music.killed" //The sound entry to use
 				"match_channel" "false"
 				"match_entity" "false"
 			}
@@ -2680,8 +2689,8 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"			"music\valve_dota_001\music\ganked_sml_01.mp3"
-		"wave"			"music\valve_dota_001\music\ganked_sml_02.mp3"
+		"wave"			"music\valve_dota_001\music\ganked_sml_01.wav"
+		"wave"			"music\valve_dota_001\music\ganked_sml_02.wav"
 	}
 	
 	"operator_stacks"
@@ -2727,8 +2736,8 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"			"music\valve_dota_001\music\ganked_med_01.mp3"
-		"wave"			"music\valve_dota_001\music\ganked_med_02.mp3"
+		"wave"			"music\valve_dota_001\music\ganked_med_01.wav"
+		"wave"			"music\valve_dota_001\music\ganked_med_02.wav"
 	}
 	
 	"operator_stacks"
@@ -2774,8 +2783,8 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"			"music\valve_dota_001\music\ganked_lg_01.mp3"
-		"wave"			"music\valve_dota_001\music\ganked_lg_02.mp3"
+		"wave"			"music\valve_dota_001\music\ganked_lg_01.wav"
+		"wave"			"music\valve_dota_001\music\ganked_lg_02.wav"
 	}
 	
 	"operator_stacks"

@@ -31,6 +31,7 @@ Response lion_Move
 	scene "scenes/lion/lion_lion_move_08.vcd" nodelay noscene 
 	scene "scenes/lion/lion_lion_move_09.vcd" nodelay noscene 
 	scene "scenes/lion/lion_lion_move_10.vcd" nodelay noscene 
+	scene "scenes/lion/lion_lion_move_11.vcd" nodelay noscene 
 	scene "scenes/lion/lion_lion_move_12.vcd" nodelay noscene 
 	scene "scenes/lion/lion_lion_move_13.vcd" nodelay noscene 
 }
@@ -39,17 +40,6 @@ Rule lion_Move_Rule
 {
 	criteria Move Islion 
 	response lion_Move
-}
-
-Response lion_MoveChance_3%
-{
-	scene "scenes/lion/lion_lion_move_11.vcd" nodelay noscene 
-}
-
-Rule lion_MoveChance_3%_Rule
-{
-	criteria Move Islion Chance_3%
-	response lion_MoveChance_3%
 }
 
 Response lion_Attack
