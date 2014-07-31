@@ -45,15 +45,15 @@ Rule skywrath_mage_Custom_Rule
 	response skywrath_mage_Custom
 }
 
-Response skywrath_mage_KillIsFirstBlood
+Response skywrath_mage_KillIsFirstBloodChance_10%
 {
 	scene "scenes/skywrath_mage/skywrath_mage_drag_firstblood_01.vcd" nodelay noscene 
 }
 
-Rule skywrath_mage_KillIsFirstBlood_Rule
+Rule skywrath_mage_KillIsFirstBloodChance_10%_Rule
 {
-	criteria Kill Isskywrath_mage IsFirstBlood
-	response skywrath_mage_KillIsFirstBlood
+	criteria Kill Isskywrath_mage IsFirstBlood Chance_10%
+	response skywrath_mage_KillIsFirstBloodChance_10%
 }
 
 Response skywrath_mage_Kill
@@ -80,9 +80,19 @@ Rule skywrath_mage_Kill_Rule
 	response skywrath_mage_Kill
 }
 
-Response skywrath_mage_KillChance_5%
+Response skywrath_mage_KillIsFirstBlood
 {
 	scene "scenes/skywrath_mage/skywrath_mage_drag_kill_02.vcd" nodelay noscene 
+}
+
+Rule skywrath_mage_KillIsFirstBlood_Rule
+{
+	criteria Kill Isskywrath_mage IsFirstBlood
+	response skywrath_mage_KillIsFirstBlood
+}
+
+Response skywrath_mage_KillChance_5%
+{
 	scene "scenes/skywrath_mage/skywrath_mage_drag_kill_09.vcd" nodelay noscene 
 	scene "scenes/skywrath_mage/skywrath_mage_drag_kill_10.vcd" nodelay noscene 
 }
@@ -540,6 +550,17 @@ Rule skywrath_mage_PurchaseIsBlinkDagger_Rule
 {
 	criteria Purchase Isskywrath_mage IsBlinkDagger
 	response skywrath_mage_PurchaseIsBlinkDagger
+}
+
+Response skywrath_mage_PurchaseIsBlinkDaggerChance_3%
+{
+	scene "scenes/skywrath_mage/skywrath_mage_drag_blink_03.vcd" nodelay noscene speakonce
+}
+
+Rule skywrath_mage_PurchaseIsBlinkDaggerChance_3%_Rule
+{
+	criteria Purchase Isskywrath_mage IsBlinkDagger Chance_3%
+	response skywrath_mage_PurchaseIsBlinkDaggerChance_3%
 }
 
 Response skywrath_mage_PurchaseIsEulScepter

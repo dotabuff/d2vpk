@@ -23,7 +23,7 @@
 				"input_max_entries" "0.000000"
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "valve_dota_001.music.ui_startup"
+				"match_entry" ".music.ui_startup"
 			}
 		}
 		"update_stack"
@@ -39,6 +39,52 @@
 				"input1" "@uspat_elapsed_time.output_entry_elapsed"
 				"input2" "4.0"
 			}
+		}
+	}
+}
+// used code and local
+// tobin?
+// moved
+"valve_dota_001.music.ui_world_map"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"		 "#music\valve_dota_001\music\ui_world_map.mp3"
+}
+"DOTAMusic.StopPrehorn" //oh god.
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.1"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"music\null.wav" 
+	"operator_stacks"
+	{		
+		"start_stack"
+		{
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}  
+			
+			// "NOW_IN_SPECTATOR_STOP_PREHORN"
+			// {
+				// "operator" "util_print_float"
+				// "input_execute" "@get_debug_printing_opvar.output"
+				// "input"	"1.0"
+			// }
+			
+			"stop_prehorn"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"stop_this_entry" "false"	
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.countdown"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}			
 		}
 	}
 }
@@ -1281,7 +1327,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "valve_dota_001.music.roshan" //We allow no instances of Explore when the death stinger knells		
+				"match_entry" ".music.roshan" //We allow no instances of Explore when the death stinger knells		
 			}			
 
 			"speakers_limit"
@@ -1461,18 +1507,7 @@
 			"play_variation_3"
 			{
 				"entry_name" "valve_dota_001.music.battle_03_end" 
-			}
-			
-			// "block_entries"
-			// {
-				// "operator" "sys_block_entries"
-				// "input_active" "1.0"	
-				// "input_duration" "1.0"
-				// "match_substring" "false"
-				// "match_entry" "valve_dota_001.music.battle_end"
-				// "match_channel" "false"
-				// "match_entity" "false"
-			// }
+			}			
 		}
 	}
 }
@@ -1796,7 +1831,7 @@
 			
 			"4layer_stop"
 			{
-				"match_entry" "valve_dota_001.music.laning_01_layer"
+				"match_entry" ".music.laning_01_layer" // substring true
 			}
 			
 			"4layer_stop_self"
@@ -1805,7 +1840,7 @@
 				"input_execute" "1.0"
 				"stop_this_entry" "true"	
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" "valve_dota_001.music.laning"
+				"match_entry" ".music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -1928,7 +1963,7 @@
 			
 			"4layer_stop"
 			{
-				"match_entry" "valve_dota_001.music.laning_02_layer"
+				"match_entry" ".music.laning_02_layer"
 			}
 			
 			"4layer_stop_self"
@@ -1937,7 +1972,7 @@
 				"input_execute" "1.0"
 				"stop_this_entry" "true"	
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" "valve_dota_001.music.laning"
+				"match_entry" ".music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}
@@ -2106,7 +2141,7 @@
 			
 			"4layer_stop"
 			{
-				"match_entry" "valve_dota_001.music.laning_03_layer"
+				"match_entry" ".music.laning_03_layer" // substring true
 			}
 			
 			"4layer_stop_self"
@@ -2115,7 +2150,7 @@
 				"input_execute" "1.0"
 				"stop_this_entry" "true"	
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" "valve_dota_001.music.laning"
+				"match_entry" ".music.laning"
 				"match_entity" "false"	
 				"match_substring" "true"
 			}

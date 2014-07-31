@@ -104,25 +104,21 @@ Rule shadowshaman_CastExecuteIsShadowShamanShockChance_75%_Rule
 	response shadowshaman_CastExecuteIsShadowShamanShockChance_75%
 }
 
-Response shadowshaman_CastExecuteIsShadowShamanVooodoo
+Response shadowshaman_CastExecuteIsShadowShamanVooodooChance_75%
 {
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_voodoo_01.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_voodoo_02.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_voodoo_03.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_voodoo_04.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_ability_voodoo_05.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_ability_voodoo_06.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_ability_voodoo_07.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_ability_voodoo_08.vcd" nodelay noscene 
 }
 
-Rule shadowshaman_CastExecuteIsShadowShamanVooodoo_Rule
+Rule shadowshaman_CastExecuteIsShadowShamanVooodooChance_75%_Rule
 {
-	criteria CastExecute Isshadowshaman IsShadowShamanVooodoo
-	response shadowshaman_CastExecuteIsShadowShamanVooodoo
+	criteria CastExecute Isshadowshaman IsShadowShamanVooodoo Chance_75%
+	response shadowshaman_CastExecuteIsShadowShamanVooodooChance_75%
 }
 
-Response shadowshaman_CastExecuteIsShadowShamanShackle
+Response shadowshaman_CastExecuteIsShadowShamanShackleChance_75%
 {
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_shackle_01.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_shackle_02.vcd" nodelay noscene 
@@ -132,12 +128,13 @@ Response shadowshaman_CastExecuteIsShadowShamanShackle
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_shackle_06.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_shackle_08.vcd" nodelay noscene 
 	scene "scenes/shadowshaman/shadowshaman_shad_ability_entrap_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_ability_entrap_03.vcd" nodelay noscene 
 }
 
-Rule shadowshaman_CastExecuteIsShadowShamanShackle_Rule
+Rule shadowshaman_CastExecuteIsShadowShamanShackleChance_75%_Rule
 {
-	criteria CastExecute Isshadowshaman IsShadowShamanShackle
-	response shadowshaman_CastExecuteIsShadowShamanShackle
+	criteria CastExecute Isshadowshaman IsShadowShamanShackle Chance_75%
+	response shadowshaman_CastExecuteIsShadowShamanShackleChance_75%
 }
 
 Response shadowshaman_CastExecuteIsShadowWards
@@ -229,15 +226,15 @@ Rule shadowshaman_Kill_Rule
 	response shadowshaman_Kill
 }
 
-Response shadowshaman_KillIsEnemywitchdoctorChance_25%
+Response shadowshaman_KillIsEnemyWitchDoctorChance_25%
 {
 	scene "scenes/shadowshaman/shadowshaman_shad_killspecial_01.vcd" nodelay noscene 
 }
 
-Rule shadowshaman_KillIsEnemywitchdoctorChance_25%_Rule
+Rule shadowshaman_KillIsEnemyWitchDoctorChance_25%_Rule
 {
-	criteria Kill Isshadowshaman IsEnemywitchdoctor Chance_25%
-	response shadowshaman_KillIsEnemywitchdoctorChance_25%
+	criteria Kill Isshadowshaman IsEnemyWitchDoctor Chance_25%
+	response shadowshaman_KillIsEnemyWitchDoctorChance_25%
 }
 
 Response shadowshaman_Death
