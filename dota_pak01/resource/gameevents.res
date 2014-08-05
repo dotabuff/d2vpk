@@ -341,6 +341,7 @@
 	"inventory_updated"
 	{
 		"itemdef"	"short"
+		"itemid"	"long"
 	}
 	"cart_updated"
 	{

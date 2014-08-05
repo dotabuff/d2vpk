@@ -1118,7 +1118,7 @@
 				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "true"
-				"match_entry" "valve_dota_001.music.roshan" //We allow no instances of Explore when the death stinger knells		
+				"match_entry" ".music.roshan" //We allow no instances of Explore when the death stinger knells		
 			}			
 
 			"speakers_limit"
@@ -1154,43 +1154,6 @@
 				"opvar" "dota_music_mainloop_flag"
 				"input" "0.0"			
 			}
-		}
-	}
-}
-
-"DOTAMusic.StopPrehorn" //oh god.
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"0.1"
-	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"music\null.wav" 
-	"operator_stacks"
-	{		
-		"start_stack"
-		{
-            "get_debug_printing_opvar" 
-            {
-				"operator" "get_opvar_float"
-				"opvar" "debug_print_music"
-			}  
-			
-			// "NOW_IN_SPECTATOR_STOP_PREHORN"
-			// {
-				// "operator" "util_print_float"
-				// "input_execute" "@get_debug_printing_opvar.output"
-				// "input"	"1.0"
-			// }
-			
-			"stop_prehorn"
-			{
-				"operator" "sys_stop_entries"
-				"input_execute" "1.0"
-				"stop_this_entry" "false"	
-				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
-				"match_entry" "valve_dota_001.music.countdown"
-				"match_entity" "false"	
-				"match_substring" "false"
-			}			
 		}
 	}
 }
@@ -1462,7 +1425,7 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
 
-	// "wave"	"music/valve_dota_001/stingers/DotA2_Music_Stinger_003.mp3"
+	// "wave"	"music/stingers/DotA2_Music_Stinger_003.mp3"
 	"wave"	"music/null"
 	
 	"operator_stacks"
@@ -1491,7 +1454,7 @@
 	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"	
-	"wave"	"#music/valve_dota_001/stingers/Quest_Complete_01.mp3"
+	"wave"	"#music/stingers/Quest_Complete_01.mp3"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -1512,7 +1475,7 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
 
-	//"wave"	"music/valve_dota_001/stingers/DotA2_Music_Stinger_008.mp3"
+	//"wave"	"music/stingers/DotA2_Music_Stinger_008.mp3"
 	"wave"	"music/null"
 	
 	"operator_stacks"
@@ -1543,8 +1506,7 @@
 	
 	"rndwave"
 	{
-		"wave"	"music/valve_dota_001/stingers/gank_2a.wav"
-		"wave" 	"music/valve_dota_001/stingers/gank_2b.wav"
+		"wave"	"music/stingers/gank_md_01.wav"
 	}
 	
 	"operator_stacks"
@@ -1573,7 +1535,7 @@
 	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
-	"wave" 			"#music/valve_dota_001/stingers/gank_2b.wav"
+	"wave" 			"#music/stingers/gank_md_01.wav"
 	
 	"operator_stacks"
 	{
@@ -1601,7 +1563,7 @@
 	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
-	"wave" 			"music/valve_dota_001/stingers/DotA2_Music_Stinger_007.mp3"
+	"wave" 			"music/stingers/DotA2_Music_Stinger_007.mp3"
 	
 	"operator_stacks"
 	{
@@ -1629,7 +1591,7 @@
 	"volume"		"1.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
-	"wave" 			"music/valve_dota_001/stingers/gank_1a.wav"
+	"wave" 			"music/stingers/gank_sm_01.wav"
 	
 	"operator_stacks"
 	{
