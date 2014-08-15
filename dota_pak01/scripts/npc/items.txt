@@ -3215,22 +3215,22 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_radius"			"900"
+				"bonus_armor"			"1"
 			}
 			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"900"
+			}
+			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"aura_mana_regen"		"0.65"
 			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"aura_bonus_armor"		"2"
-			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"1"
+				"aura_bonus_armor"		"2"
 			}
 		}
 	}
@@ -8161,39 +8161,29 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"6"
+				"bonus_stats"			"6"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"		"6"
+				"bonus_damage"			"6"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"6"
+				"bonus_armor"			"6"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"			"6"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"6"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"debuff_radius"			"600"
 			}
-			"08"
+			"06"
 			{
 				"var_type"					"FIELD_FLOAT"
 				"resist_debuff_duration"	"25.0"
 			}
-			"09"
+			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"resist_debuff"			"-25"
@@ -8552,29 +8542,34 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"		"3"
+				"bonus_strength"		"3"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"6"
+				"bonus_agility"			"9"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"1"
+				"bonus_intellect"		"3"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_radius"			"900"
+				"bonus_armor"			"1"
 			}
 			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"aura_radius"			"900"
+			}
+			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"aura_mana_regen"		"0.65"
 			}
-			"07"
+			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"aura_bonus_armor"		"2"

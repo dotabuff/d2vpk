@@ -302,6 +302,22 @@
 		{
 			"heroID"		"6"
 			"tag"			"Drow Ranger"
+			"particle_attachments"
+			{
+				"weapon"      
+				{
+					"add_to_item_def"
+	 				{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"drow_bowstring"
+							}
+						}
+					}
+				}
+			}
 		}
 		"earthshaker"		
 		{
@@ -314,16 +330,16 @@
 			"tag"			"Earth Spirit"
 			"particle_attachments"
 			{
-	      "weapon"      
+				"weapon"      
 				{
 					"add_to_item_def"
 	 				{
 						"visuals"
 						{
-	          	"attached_particlesystem0"
-		          {
+							"attached_particlesystem0"
+							{
 								"system"        "espirit_ambient_weapon"
-		          }
+							}
 						}
 					}
 				}
@@ -404,22 +420,22 @@
 			"heroID"		"58"
 			"tag"			"Enchantress"
 		}
-    "faceless_void"            
-    {
+		"faceless_void"            
+		{
 			"heroID"		"41"
 			"tag"				"Faceless Void"
 			"particle_attachments"
 			{
-	      "weapon"      
+				"weapon"      
 				{
 					"add_to_item_def"
 	 				{
 						"visuals"
 						{
-	          	"attached_particlesystem0"
-		          {
+							"attached_particlesystem0"
+							{
 								"system"        "faceless_weapon_glow"
-		          }
+							}
 						}
 					}
 				}
@@ -893,6 +909,22 @@
 		{
 			"heroID"		"21"
 			"tag"			"Windrunner"
+			"particle_attachments"
+			{
+				"weapon"      
+				{
+					"add_to_item_def"
+	 				{
+						"visuals"
+						{
+							"attached_particlesystem0"
+							{
+								"system"		"windrunner_bowstring"
+							}
+						}
+					}
+				}
+			}
 		}
 		"witchdoctor"		
 		{

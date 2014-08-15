@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/shadow_demon/malicioussting_armor/malicioussting_armor_color"
+	"$normalmap"		"models/items/shadow_demon/malicioussting_armor/malicioussting_armor_normal"
+	"$detail1"		"models/heroes/shadow_demon/shadow_demon_glow.vtf"
+	"$maskmap1"		"models/items/shadow_demon/malicioussting_armor/malicioussting_armor_mask1"
+	"$maskmap2"		"models/items/shadow_demon/malicioussting_armor/malicioussting_armor_mask2"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"25"
+	"$SPECULARSCALE"		"8"
+	"$AMBIENTSCALE"		"1"
+	"$SPECULARCOLOR"		"[.6 .4 1]"
+	"$RIMLIGHTSCALE"		"2.300000"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.100000"
+			"texturescrollangle"		"90"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1577,6 +1577,9 @@
           "bonus_damage": 6
         },
         {
+          "bonus_armor": 1
+        },
+        {
           "aura_radius": 900
         },
         {
@@ -1584,9 +1587,6 @@
         },
         {
           "aura_bonus_armor": 2
-        },
-        {
-          "bonus_armor": 1
         }
       ]
     },
@@ -4299,13 +4299,7 @@
           "bonus_health_regen": 6
         },
         {
-          "bonus_intellect": 6
-        },
-        {
-          "bonus_strength": 6
-        },
-        {
-          "bonus_agility": 6
+          "bonus_stats": 6
         },
         {
           "bonus_damage": 6
@@ -4497,10 +4491,13 @@
           "bonus_damage": 9
         },
         {
-          "bonus_all_stats": 3
+          "bonus_strength": 3
         },
         {
-          "bonus_agility": 6
+          "bonus_agility": 9
+        },
+        {
+          "bonus_intellect": 3
         },
         {
           "bonus_armor": 1

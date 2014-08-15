@@ -1255,7 +1255,7 @@
 "Loot_Drop_Stinger_Uncommon"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_02.wav"
 }
@@ -1263,7 +1263,7 @@
 "Loot_Drop_Stinger_Rare"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_03.wav"
 }
@@ -1271,42 +1271,122 @@
 "Loot_Drop_Stinger_Mythical"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_04.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "4.0"
+			"match_substring" "true"
+			"match_entry" "Loot_Drop_Stinger"
+			"match_channel" "false"
+			"match_entity" "false"
+			}			
+		}
+	}
 
 }
 
 "Loot_Drop_Stinger_Legendary"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.7"
+	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_05.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "3.0"
+			"match_substring" "true"
+			"match_entry" "Loot_Drop_Stinger"
+			"match_channel" "false"
+			"match_entity" "false"
+			}			
+		}
+	}
 }
 
 "Loot_Drop_Stinger_Ancient"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.7"
+	"volume"		"0.4"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_06.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "3.0"
+			"match_substring" "true"
+			"match_entry" "Loot_Drop_Stinger"
+			"match_channel" "false"
+			"match_entity" "false"
+			}			
+		}
+	}
 }
 
 "Loot_Drop_Stinger_Immortal"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.7"
+	"volume"		"0.4"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_07.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "5.0"
+			"match_substring" "true"
+			"match_entry" "Loot_Drop_Stinger"
+			"match_channel" "false"
+			"match_entity" "false"
+			}			
+		}
+	}
 }
 
 "Loot_Drop_Stinger_Arcana"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.6"
+	"volume"		"0.4"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/arcana_loot.mp3"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "12.0"
+			"match_substring" "true"
+			"match_entry" "Loot_Drop_Stinger"
+			"match_channel" "false"
+			"match_entity" "false"
+			}			
+		}
+	}
 }
 
 "Loot_Drop_Stinger_Short"
@@ -1360,134 +1440,57 @@
 "Loot_Drop_Sfx_Common"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1.0"
+	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"null.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
 }
 
 "Loot_Drop_Sfx_Uncommon"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.5"
+	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"null.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
 }
 
 "Loot_Drop_Sfx_Rare"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.5"
+	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"null.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
 }
 
 "Loot_Drop_Sfx_Mythical"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.5"
+	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"null.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
 }
 
 "Loot_Drop_Sfx_Legendary"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.5"
+	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"null.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
 }
 
 "Loot_Drop_Sfx_Ancient"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.5"
+	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"null.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
 }
 
 "Loot_Drop_Sfx_Immortal"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.5"
+	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"null.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
 }
 
 "Loot_Drop_Sfx_Arcana"
@@ -1496,17 +1499,6 @@
 	"volume"		"0.0"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"null.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_vo_clamped"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-		}
-	}
 }
 
 // this sound plays when cheap loot is dropped for other players (with a small quick animation)
@@ -4267,7 +4259,7 @@
 "InspectorCam.Activate"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"			"1.0"
+	"volume"			"0.6"
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"			"100"
 	"wave"			")ui/camera_move.wav"
