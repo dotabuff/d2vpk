@@ -11522,6 +11522,8 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Date_Format_Hour_Minute_24"							"%s1:%s2"						// 17:30
 		"DOTA_Date_Format_Hour_Minute_12"							"%s1:%s2 %s3"					// 5:30 PM
 		"DOTA_Date_Format_DayOfWeek"								"%s1"							// Wednesday
+		"DOTA_Date_Format_DayOfWeek_Day_Month_Hour_Minute_24"		"%s1, %s2 %s3, %s4:%s5"			// Wednesday, 18 April, 17:30
+		"DOTA_Date_Format_DayOfWeek_Day_Month_Hour_Minute_12"		"%s1, %s2 %s3, %s4:%s5 %s6"		// Wednesday, 18 April, 5:30 PM
 
 		"dota_series_bo3"					"Best of 3"
 		"dota_series_bo5"					"Best of 5"
@@ -12607,7 +12609,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DescTool_Invalid"		"Descriptions cannot contain leading or trailing spaces."
 		"DOTA_UseFail_NotInGame" "You must be in a game and use your 'action item' key to use this item."
 		"DOTA_UseFail_FantasyTicket" "Fantasy Tickets are automatically consumed when you create or join a Fantasy League."
-		"DOTA_BackpackExpander_Confirm" "Are you sure you want to expand your Armory by 120 slots? The Armory expander will be destroyed upon use."
+		"DOTA_BackpackExpander_Confirm" "Are you sure you want to expand your Armory? The Armory expander will be destroyed upon use."
 		"DOTA_XPBonus_Confirm" "Are you sure you want to consume this Battle Points Booster item? Your rate will increase to %s1 for %s2 days. You will be notified when the bonus period ends. The item will be destroyed upon use."
 		"DOTA_XPBonus_Confirm_Hours" "Are you sure you want to consume this Battle Points Booster item? Your rate will increase to %s1 for %s2 hours. You will be notified when the bonus period ends. The item will be destroyed upon use."
 		"DOTA_XPBonus_Confirm_Date" "Are you sure you want to consume this Battle Points Booster item? Your rate will increase to %s1 until %s2. The item will be destroyed upon use."
@@ -16307,6 +16309,9 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"DOTA_Item_Wandering_Harlequins_Crest_Style1"	"Green"
 		"DOTA_Item_Lucent_Gate_Head_Style0" 	"Head"
 		"DOTA_Item_Lucent_Gate_Head_Style1"	"Horns"
+		"DOTA_Item_Sinister_Lightning_Style0"	"Style One"
+		"DOTA_Item_Sinister_Lightning_Style1"	"Style Two"
+		"DOTA_Item_Sinister_Lightning_Style2"	"Style Three"
 		
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
 
@@ -16328,6 +16333,7 @@ But Foulfell is no normal prison. In this dark mirror of reality, demons are sen
 		"NEXON_CybercafeTimeLeft"	"You have %s1 minutes left in your Nexon cyber café subscription time."
 		"NEXON_CybercafeBonus"		"Earning %s1% bonus Battle Points for playing at %s2: %s3."
 		"NEXON_CybercafeTimedReward" "%s1 has been awarded a %s2 for playing at %s3!"
+		"NEXON_CybercafeBonusNoName" "Earning %s1% bonus Battle Points for playing at cyber café: %s2."
 
 		"DOTA_GGPopup_Title"		"GAME WILL END"
 		"DOTA_GGPopup_Desc"			"You will lose in"
