@@ -152,7 +152,7 @@
 			"import_stack" "dota_poly_limiting_start"
 			"limit_sound"
 			{
-				"input_max_entries" "8.000000" //A sound will not stop itself from playing.
+				"input_max_entries" "6.000000" //A sound will not stop itself from playing.
 				"match_entity" "false"	
 				"match_substring" "false"
 				"match_entry" "DOTA_Item.Mekansm.Target"
@@ -678,18 +678,18 @@
 
 "DOTA_Item.Armlet.Activate"
 {
-	"channel"		"CHAN_STATIC"
-	"volume"			"0.9"
-	"soundlevel"  	"SNDLVL_75dB"
+	"channel"		"CHAN_ITEM"
+	"volume"			"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95, 105"
 	"wave"			")items/item_armlet_activate.wav"
 }
 
 "DOTA_Item.Armlet.DeActivate"
 {
-	"channel"		"CHAN_STATIC"
-	"volume"			"0.8"
-	"soundlevel"  	"SNDLVL_75dB"
+	"channel"		"CHAN_ITEM"
+	"volume"			"0.3"
+	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95, 105"
 	"wave"			")items/item_armlet_deactivate.wav"
 }
@@ -818,15 +818,23 @@
 "DOTA_Item.Daedelus.Crit"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_84dB"
+	"volume"		"0.6, 0.8"
+	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"95, 105"
 	"wave"			")items/daedelus.wav"
 	"operator_stacks"
 	{
 		"start_stack"
 		{
-			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_preattack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
 		}
 	}
 }
@@ -834,15 +842,71 @@
 "DOTA_Item.SkullBasher"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_84dB"
-	"pitch"			"95, 105"
+	"volume"		"0.6, 0.8"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 100"
 	"wave"			"items/skull_basher.wav"
 	"operator_stacks"
 	{
 		"start_stack"
 		{
-			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_preattack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"DOTA_Item.BattleFury"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 0.7"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100, 110"
+	"wave"			")items/blade_fury.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"DOTA_Item.MKB.Minibash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"110, 120"
+	"wave"			"items/skull_basher.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
 		}
 	}
 }

@@ -257,7 +257,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"128"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"350"
@@ -344,7 +344,8 @@
 		"Role"					"Durable,Initiator,Disabler,Jungler"
 		"Rolelevels"			"3,2,1,1"
 		"Team"					"Bad"
-		"HeroID"				"2"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
+		"HeroID"				"2"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
+		"BotImplemented"		"1"
 		"ModelScale"			"1.0"	
 		"LoadoutScale"       "0.95"
 		"HeroGlowColor" 		"222 60 36"
@@ -418,7 +419,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -489,12 +490,16 @@
 				"item_stout_shield"				"ITEM_CORE"
 				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
-				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
-				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
-				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
+				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
+				"item_magic_stick"				"ITEM_CORE"
+				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_ring_of_health"			"ITEM_CORE"
 				"item_vitality_booster"			"ITEM_CORE"
+				"item_vanguard"					"ITEM_DERIVED"
 				"item_blades_of_attack"			"ITEM_CORE"
 				"item_blades_of_attack"			"ITEM_CORE"
 				"item_phase_boots"				"ITEM_DERIVED"
@@ -507,23 +512,27 @@
 				"item_vitality_booster"			"ITEM_LUXURY"
 				"item_recipe_heart"				"ITEM_LUXURY"
 				"item_heart"					"ITEM_DERIVED"
+				"item_platemail"				"ITEM_LUXURY"
+				"item_mystic_staff"				"ITEM_LUXURY"
+				"item_recipe_shivas_guard"		"ITEM_LUXURY"
+				"item_shivas_guard"				"ITEM_DERIVED"
 			}
 			"Build"
 			{
 				"1"		"axe_counter_helix"
-				"2"		"axe_berserkers_call"
-				"3"		"axe_counter_helix"
-				"4"		"axe_berserkers_call"
-				"5"		"axe_counter_helix"
+				"2"		"axe_battle_hunger"
+				"3"		"axe_battle_hunger"
+				"4"		"axe_counter_helix"
+				"5"		"axe_battle_hunger"
 				"6"		"axe_culling_blade"
-				"7"		"axe_counter_helix"
-				"8"		"axe_berserkers_call"
-				"9"		"axe_berserkers_call"
-				"10"	"axe_battle_hunger"
+				"7"		"axe_battle_hunger"
+				"8"		"axe_counter_helix"
+				"9"		"axe_counter_helix"
+				"10"	"axe_berserkers_call"
 				"11"	"axe_culling_blade"
-				"12"	"axe_battle_hunger"
-				"13"	"axe_battle_hunger"
-				"14"	"axe_battle_hunger"
+				"12"	"axe_berserkers_call"
+				"13"	"axe_berserkers_call"
+				"14"	"axe_berserkers_call"
 				"15"	"attribute_bonus"
 				"16"	"axe_culling_blade"
 				"17"	"attribute_bonus"
@@ -854,7 +863,7 @@
 				{
 					"SlotIndex"	"1"
 					"SlotName" 	"head"
-					"SlotText"	"#LoadoutSlot_Head"
+					"SlotText"	"#LoadoutSlot_Head_Accessory"
 					"TextureWidth"		"256"
 					"TextureHeight"		"256"
 					"MaxPolygonsLOD0"	"1400"
@@ -864,7 +873,7 @@
 				{
 					"SlotIndex"	"2"
 					"SlotName"	"offhand_weapon"
-					"SlotText"	"#LoadoutSlot_OffHand"
+					"SlotText"	"#LoadoutSlot_OffHand_Weapon"
 					"TextureWidth"		"256"
 					"TextureHeight"		"256"
 					"MaxPolygonsLOD0"	"350"
@@ -1139,7 +1148,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -1449,7 +1458,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"650"
@@ -1459,7 +1468,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName" 	"misc" //default is quiver
-				"SlotText"	"#LoadoutSlot_Misc"
+				"SlotText"	"#LoadoutSlot_Quiver"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"300"
@@ -1582,7 +1591,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName"	"weapon"
-				"SlotText"	"#LoadoutSlot_Weapon"
+				"SlotText"	"#LoadoutSlot_Earthshaker_Totem"
 				"TextureWidth"		"512"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"850"
@@ -1592,7 +1601,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -1855,14 +1864,8 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"ability2"
-				"SlotText"	"#LoadoutSlot_Ability2"	
+				"SlotText"	"#LoadoutSlot_Juggernaut_HealingWard"	
 				"no_import"	"1"
-			}
-			"7"
-			{
-				"SlotIndex"	"7"
-				"SlotName"	"ability_ultimate"
-				"SlotText"	"#LoadoutSlot_Ability_Ultimate"	
 			}
 		}
 
@@ -2079,7 +2082,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -2129,7 +2132,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"misc"
-				"SlotText"	"#LoadoutSlot_Misc"	
+				"SlotText"	"#LoadoutSlot_Quiver"	
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"250"
@@ -2320,6 +2323,14 @@
 					{
 						"type"		"follow_origin"
 						"location"	"attach_hitloc"  //Note : shouldn't need this
+					}
+				}
+				"nevermore_loadout"
+				{
+					"0"
+					{
+						"type"		"follow_origin"
+						"location"		"attach_hitloc"
 					}
 				}
 			}
@@ -2585,7 +2596,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -2853,7 +2864,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 		}
 		
@@ -3010,17 +3021,11 @@
 		// Items
 		"ItemSlots"
 		{
-			"0"
-			{
-				"SlotIndex"	"0"
-				"SlotName"	"weapon"
-				"SlotText"	"#LoadoutSlot_Weapon"
-			}		
 			"1"	
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"550"
@@ -3040,7 +3045,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_back"
+				"SlotText"	"#LoadoutSlot_Wings"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"700"
@@ -3138,6 +3143,7 @@
 		"Rolelevels"			"3,1"
 		"Team"					"Bad"
 		"HeroID"				"14"									// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
+		"BotImplemented"		"1"
 		"ModelScale"			"0.98"
 		"LoadoutScale"          ".92"
 		"HeroGlowColor"			"178 128 114"
@@ -3280,7 +3286,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"550"
@@ -3310,7 +3316,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName" 	"shoulder"
-				"SlotText"	"#LoadoutSlot_shoulder"
+				"SlotText"	"#LoadoutSlot_LeftArm"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -3865,7 +3871,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1700"
@@ -4117,7 +4123,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -4615,7 +4621,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName"	"arms"
-				"SlotText"	"#LoadoutSlot_Arms"
+				"SlotText"	"#LoadoutSlot_LeftArm"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1100"
@@ -4625,7 +4631,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_Offhand_Weapon"
+				"SlotText"	"#LoadoutSlot_RightArm"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1100"
@@ -4635,7 +4641,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"armor"
-				"SlotText"	"#LoadoutSlot_Armor"	
+				"SlotText"	"#LoadoutSlot_Body"	
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"2500"
@@ -4810,7 +4816,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1000"
@@ -4830,7 +4836,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"legs"
-				"SlotText"	"#LoadoutSlot_Offhand_Legs"
+				"SlotText"	"#LoadoutSlot_Legs"
 				"TextureWidth"		"512"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -5068,7 +5074,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1200"
@@ -5098,7 +5104,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName" 	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_Offhand_Weapon"
+				"SlotText"	"#LoadoutSlot_Quiver"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"350"
@@ -5475,7 +5481,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -5525,7 +5531,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName" 	"neck"
-				"SlotText"	"#LoadoutSlot_Neck"
+				"SlotText"	"#LoadoutSlot_Misc"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"350"
@@ -5755,7 +5761,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -6247,7 +6253,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"128"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -6257,7 +6263,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName"	"arms"
-				"SlotText"	"#LoadoutSlot_Arms"
+				"SlotText"	"#LoadoutSlot_LeftArm"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"850"
@@ -6267,7 +6273,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName"	"back"
-				"SlotText"	"#LoadoutSlot_Back"
+				"SlotText"	"#LoadoutSlot_Armor"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"650"
@@ -6490,7 +6496,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -6540,13 +6546,13 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			"6"	
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"summon"
-				"SlotText"	"#LoadoutSlot_Summon"	
+				"SlotText"	"#LoadoutSlot_ShadowShaman_SerpentWards"	
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"750"
@@ -6722,7 +6728,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"550"
@@ -6999,7 +7005,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"	
+				"SlotText"	"#LoadoutSlot_Head_Accessory"	
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -7213,7 +7219,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"500"
@@ -7253,7 +7259,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"summon"
-				"SlotText"	"#LoadoutSlot_Summon"
+				"SlotText"	"#LoadoutSlot_WitchDoctor_DeathWard"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"3000"
@@ -7370,6 +7376,7 @@
 		"Rolelevels"				"2,1"
 		"Team"					"Good"
 		"HeroID"				"32"													// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.	
+		"BotImplemented"		"1"
 		"ModelScale"				"0.87"		
 		"LoadoutScale"				"1.1"
 		"HeroGlowColor" 			"170 112 194"										
@@ -7470,7 +7477,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"550"
@@ -7727,7 +7734,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"ability2"
-				"SlotText"	"#LoadoutSlot_Ability2"
+				"SlotText"	"#LoadoutSlot_Enigma_Eidolons"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1000"
@@ -7925,7 +7932,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName"	"weapon"
-				"SlotText"	"#LoadoutSlot_Weapon"
+				"SlotText"	"#LoadoutSlot_RightArm"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1200"
@@ -7935,7 +7942,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_Offhand_Weapon"
+				"SlotText"	"#LoadoutSlot_LeftArm"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1200"
@@ -7945,13 +7952,13 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			"3"
 			{
 				"SlotIndex"	"3"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -8165,7 +8172,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -8378,7 +8385,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -8388,7 +8395,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Beard"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -8675,7 +8682,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"300"
@@ -8705,7 +8712,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName"	"ability_ultimate"
-				"SlotText"	"#LoadoutSlot_Ability_Ultimate"	
+				"SlotText"	"#LoadoutSlot_Warlock_Golem"	
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"6500"
@@ -8716,7 +8723,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_Offhand_weapon"
+				"SlotText"	"#LoadoutSlot_Warlock_Lantern"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1500"
@@ -8736,7 +8743,7 @@
 			{
 				"SlotIndex"	"7"
 				"SlotName"	"belt"
-				"SlotText"	"#LoadoutSlot_Belt"
+				"SlotText"	"#LoadoutSlot_Warlock_EvilPurse"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"250"
@@ -8929,7 +8936,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"900"
@@ -8969,7 +8976,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"ability2"
-				"SlotText"	"#LoadoutSlot_Ability2"
+				"SlotText"	"#LoadoutSlot_Beastmaster_Hawk"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1000"
@@ -8979,7 +8986,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName" 	"summon"
-				"SlotText"	"#LoadoutSlot_Summon"
+				"SlotText"	"#LoadoutSlot_Beastmaster_Boar"
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"4000"
@@ -9189,7 +9196,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"850"
@@ -9356,7 +9363,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"		
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"705"
@@ -9376,7 +9383,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"arms"
-				"SlotText"	"#LoadoutSlot_Arms"		//stinger limbs
+				"SlotText"	"#LoadoutSlot_Venomancer_StingerLimbs"		//stinger limbs
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"1075"
@@ -9402,7 +9409,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"ability3"			//ward
-				"SlotText"	"#LoadoutSlot_Ability3"	
+				"SlotText"	"#LoadoutSlot_Venomancer_PlagueWard"	
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1500"
@@ -9583,7 +9590,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -9845,7 +9852,7 @@
 				{
 					"SlotIndex"	"1"
 					"SlotName" 	"head"
-					"SlotText"	"#LoadoutSlot_Head"
+					"SlotText"	"#LoadoutSlot_Head_Accessory"
 					"TextureWidth"		"256"
 					"TextureHeight"		"128"
 					"MaxPolygonsLOD0"	"800"
@@ -10126,7 +10133,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -10146,7 +10153,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			"3"	
 			{
@@ -10182,7 +10189,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"ability_ultimate"
-				"SlotText"	"#LoadoutSlot_AbilityUltimate"
+				"SlotText"	"#LoadoutSlot_Death_Spirits"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -10381,7 +10388,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1200"
@@ -10424,7 +10431,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			
 		}
@@ -10553,7 +10560,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"650"
@@ -10593,7 +10600,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName" 	"ability3"
-				"SlotText"	"#LoadoutSlot_Ability3"
+				"SlotText"	"#LoadoutSlot_Pugna_NetherWard"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -10809,7 +10816,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -11155,7 +11162,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -11165,7 +11172,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_Shield"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"500"
@@ -11195,7 +11202,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}				
 			"6"
 			{
@@ -11493,7 +11500,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -11503,7 +11510,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_Shield"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -11936,7 +11943,7 @@
 				{
 					"SlotIndex"	"3"		//rocket
 					"SlotName"	"misc"
-					"SlotText"	"#LoadoutSlot_Misc"
+					"SlotText"	"#LoadoutSlot_Clockwerk_Rocket"
 					"TextureWidth"		"256"
 					"TextureHeight"		"256"
 					"MaxPolygonsLOD0"	"400"
@@ -11946,7 +11953,7 @@
 				{
 					"SlotIndex"	"4"		//cogs
 					"SlotName"	"ability2"
-					"SlotText"	"#LoadoutSlot_Ability2"
+					"SlotText"	"#LoadoutSlot_Clockwerk_Cogs"
 					"TextureWidth"		"256"
 					"TextureHeight"		"256"
 					"MaxPolygonsLOD0"	"800"
@@ -12090,7 +12097,7 @@
 				{
 					"SlotIndex"	"1"
 					"SlotName" 	"head"
-					"SlotText"	"#LoadoutSlot_Head"
+					"SlotText"	"#LoadoutSlot_Head_Accessory"
 					"TextureWidth"		"256"
 					"TextureHeight"		"256"
 					"MaxPolygonsLOD0"	"1000"
@@ -12285,7 +12292,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"450"
@@ -12341,7 +12348,7 @@
 			{
 				"SlotIndex"	"7"
 				"SlotName"	"ability3"
-				"SlotText"	"#LoadoutSlot_Ability3"	
+				"SlotText"	"#LoadoutSlot_NaturesProphet_Treants"	
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"2400"
@@ -12496,7 +12503,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1000"
@@ -12696,7 +12703,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"350"
@@ -12716,7 +12723,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName"	"belt"
-				"SlotText"	"#LoadoutSlot_Belt"
+				"SlotText"	"#LoadoutSlot_Legs"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"350"
@@ -12887,13 +12894,13 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			"2"	
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -13063,7 +13070,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"	
+				"SlotText"	"#LoadoutSlot_Head_Accessory"	
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"700"
@@ -13103,7 +13110,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"body_head"			
-				"SlotText"	"#LoadoutSlot_Body_Head"				
+				"SlotText"	"#LoadoutSlot_Head"				
 			}
 			"6"
 			{
@@ -13306,7 +13313,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1400"
@@ -13505,7 +13512,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1250"
@@ -13515,7 +13522,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_OffHand_Weapon"
 				"TextureWidth"		"128"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"300"
@@ -13896,7 +13903,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"250"
@@ -13906,7 +13913,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			"2"	
 			{
@@ -13948,7 +13955,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"ability1"
-				"SlotText"	"#LoadoutSlot_Ability1"
+				"SlotText"	"#LoadoutSlot_Broodmother_Spiderling"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1000"
@@ -14090,7 +14097,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"	
+				"SlotText"	"#LoadoutSlot_Head_Accessory"	
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"550"
@@ -14100,7 +14107,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName"	"shoulder"
-				"SlotText"	"#LoadoutSlot_Shoulder"
+				"SlotText"	"#LoadoutSlot_Misc"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"600"
@@ -14341,7 +14348,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Weaver_Antennae"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -14689,7 +14696,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1400"
@@ -14936,7 +14943,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -15195,7 +15202,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -15425,7 +15432,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1000"
@@ -15455,7 +15462,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_Back"
+				"SlotText"	"#LoadoutSlot_Wings"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"900"
@@ -15846,7 +15853,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName"	"weapon"
-				"SlotText"	"#LoadoutSlot_Weapon"
+				"SlotText"	"#LoadoutSlot_Claws"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"600"
@@ -15892,7 +15899,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -16076,7 +16083,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"550"
@@ -16096,7 +16103,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			"4"	
 			{
@@ -16317,7 +16324,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName"	"weapon"  					//default is wings, wing guns and tail
-				"SlotText"	"#LoadoutSlot_Weapon"
+				"SlotText"	"#LoadoutSlot_Gyrocopter_Guns"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1290"
@@ -16328,7 +16335,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"  						//default is goggles, cap and scarf
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -16349,7 +16356,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName" 	"misc"  						//default is front propellor
-				"SlotText"	"#LoadoutSlot_Misc"
+				"SlotText"	"#LoadoutSlot_Gyrocopter_Propeller"
 				"TextureWidth"		"512"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"400"
@@ -16359,7 +16366,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"offhand_weapon"  	//default is bomb
-				"SlotText"	"#LoadoutSlot_Offhand_weapon"
+				"SlotText"	"#LoadoutSlot_Gyrocopter_MissileCompartment"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"300"
@@ -16369,13 +16376,13 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}		
 			"7"
 			{
 				"SlotIndex"	"7"
 				"SlotName" 	"ability2"
-				"SlotText"	"#LoadoutSlot_Ability2"
+				"SlotText"	"#LoadoutSlot_Gyrocopter_HomingMissile"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"300"
@@ -16569,13 +16576,13 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			"3"	
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_Back"
+				"SlotText"	"#LoadoutSlot_Alchemist_TinyArmor"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1200"
@@ -16595,7 +16602,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"neck"
-				"SlotText"	"#LoadoutSlot_Neck"
+				"SlotText"	"#LoadoutSlot_Alchemist_TinyHead"
 				"TextureWidth"		"128"
 				"TextureHeight"		"64"
 				"MaxPolygonsLOD0"	"350"
@@ -16615,7 +16622,7 @@
 			{
 				"SlotIndex"	"7"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand_Weapon"
+				"SlotText"	"#LoadoutSlot_Alchemist_Flask"
 				"TextureWidth"		"128"
 				"TextureHeight"		"64"
 				"MaxPolygonsLOD0"	"300"
@@ -16832,7 +16839,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"650"
@@ -16852,7 +16859,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 			"3"	
 			{
@@ -16878,7 +16885,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"summon"
-				"SlotText"	"#LoadoutSlot_Summon"
+				"SlotText"	"#LoadoutSlot_Invoker_ForgeSpirit"
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"1800"
@@ -17025,7 +17032,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_Shield"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"350"
@@ -17035,7 +17042,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"450"
@@ -17045,7 +17052,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"shoulder"
-				"SlotText"	"#LoadoutSlot_Shoulder"
+				"SlotText"	"#LoadoutSlot_Armor"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1050"
@@ -17266,7 +17273,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"back"
-				"SlotText"	"#LoadoutSlot_Back"
+				"SlotText"	"#LoadoutSlot_Wings"
 				"TextureWidth"		"256"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"750"
@@ -17276,7 +17283,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -17302,7 +17309,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 		}
 
@@ -17480,7 +17487,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -17553,7 +17560,7 @@
 			{
 				"SlotIndex"	"7"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_Body_Head"
+				"SlotText"	"#LoadoutSlot_Head"
 			}
 		}
 		"Bot"
@@ -17689,7 +17696,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_Brewmaster_Barrel"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -18059,6 +18066,7 @@
 		"url"					"Lone_Druid"
 		"LastHitChallengeRival"		"npc_dota_hero_dragon_knight"
 		"AbilityDraftDisabled"		"1"
+		"ARDMDisabled"				"1"
 		"HeroSelectSoundEffect"		")weapons/hero/lone_druid/battle_cry.wav"
 
 		// Abilities
@@ -18145,7 +18153,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName" 	"head"			
-				"SlotText"	"#LoadoutSlot_head"	
+				"SlotText"	"#LoadoutSlot_head_Accessory"	
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1000"
@@ -18175,7 +18183,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_Back"
+				"SlotText"	"#LoadoutSlot_Armor"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -18185,7 +18193,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName" 	"ability_ultimate"
-				"SlotText"	"#LoadoutSlot_AbilityUltimate"
+				"SlotText"	"#LoadoutSlot_LoneDruid_TrueForm"
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"5000"
@@ -18195,7 +18203,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"summon"
-				"SlotText"	"#LoadoutSlot_Summon"
+				"SlotText"	"#LoadoutSlot_LoneDruid_SpiritBear"
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"4500"
@@ -18321,7 +18329,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_Shield"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -18567,7 +18575,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"750"
@@ -18931,7 +18939,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Heads"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -19107,7 +19115,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"ability3"
-				"SlotText"	"#LoadoutSlot_Ability3"
+				"SlotText"	"#LoadoutSlot_Undying_Tombstone"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"4500"
@@ -19117,7 +19125,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"ability4"
-				"SlotText"	"#LoadoutSlot_Ability4"
+				"SlotText"	"#LoadoutSlot_Undying_FleshGolem"
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"6000"
@@ -19493,7 +19501,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"legs"
-				"SlotText"	"#LoadoutSlot_Legs"
+				"SlotText"	"#LoadoutSlot_Mount"
 				"TextureWidth"		"512"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"2150"
@@ -19630,7 +19638,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -19821,7 +19829,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"512"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1200"
@@ -19841,7 +19849,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"legs"
-				"SlotText"	"#LoadoutSlot_Legs"
+				"SlotText"	"#LoadoutSlot_Tail"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -19851,7 +19859,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_OffHand_Weapon"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -19979,7 +19987,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"800"
@@ -20508,7 +20516,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"400"
@@ -20686,7 +20694,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"600"
@@ -21054,7 +21062,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -21241,7 +21249,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -21407,7 +21415,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_OffHand_Weapon"
 				"TextureWidth"		"256"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"500"
@@ -21427,7 +21435,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"128"
 				"TextureHeight"		"128"
 				"MaxPolygonsLOD0"	"450"
@@ -21586,7 +21594,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"450"
@@ -21841,7 +21849,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"650"
@@ -21861,7 +21869,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"neck"
-				"SlotText"	"#LoadoutSlot_Neck"
+				"SlotText"	"#LoadoutSlot_Tusk_Tusks"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -21881,7 +21889,7 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"arms"
-				"SlotText"	"#LoadoutSlot_arms"
+				"SlotText"	"#LoadoutSlot_Tusk_Fist"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -21891,7 +21899,7 @@
 			{
 				"SlotIndex"	"6"
 				"SlotName"	"ability3"
-				"SlotText"	"#LoadoutSlot_Ability3"	
+				"SlotText"	"#LoadoutSlot_Tusk_FrozenSigil"	
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1000"
@@ -22023,7 +22031,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -22033,7 +22041,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_Back"
+				"SlotText"	"#LoadoutSlot_Wings"
 				"TextureWidth"		"512"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"900"
@@ -22074,12 +22082,6 @@
 				"SlotIndex"	"6"
 				"SlotName"	"taunt"
 				"SlotText"	"#LoadoutSlot_Taunt"
-			}
-			"7"
-			{
-				"SlotIndex"	"7"
-				"SlotName"	"ability3"
-				"SlotText"	"#LoadoutSlot_Ability3"	
 			}
 		}
 	
@@ -22204,7 +22206,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"550"
@@ -22364,7 +22366,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"450"
@@ -22406,17 +22408,11 @@
 				"SlotName"	"taunt"
 				"SlotText"	"#LoadoutSlot_Taunt"
 			}
-			"6"
-			{
-				"SlotIndex"	"6"
-				"SlotName"	"ability3"
-				"SlotText"	"#LoadoutSlot_Ability3"	
-			}
 			"7"
 			{
 				"SlotIndex"	"7"
 				"SlotName"	"summon"
-				"SlotText"	"#LoadoutSlot_summon"	
+				"SlotText"	"#LoadoutSlot_ElderTitan_AstralSpirit"	
 			}
 		}
 
@@ -22530,7 +22526,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"750"
@@ -22540,7 +22536,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_Back"
+				"SlotText"	"#LoadoutSlot_LegionCommander_Banners"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -22724,7 +22720,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"500"
@@ -22889,7 +22885,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -22919,13 +22915,13 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName" 	"body_head"
-				"SlotText"	"#LoadoutSlot_bodyhead"
+				"SlotText"	"#LoadoutSlot_Head"
 			}			
 			"6"	
 			{
 				"SlotIndex"	"6"
 				"SlotName" 	"ability4"
-				"SlotText"	"#LoadoutSlot_Ability4"
+				"SlotText"	"#LoadoutSlot_EarthSpirit_StoneRemnant"
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"3000"
@@ -23169,7 +23165,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName" 	"ability3" //demon
-				"SlotText"	"#LoadoutSlot_Ability3"
+				"SlotText"	"#LoadoutSlot_TerrorBlade_Demon"
 				"TextureWidth"		"512"
 				"TextureHeight"		"512"
 				"MaxPolygonsLOD0"	"6000"
@@ -23319,11 +23315,12 @@
 		"Model"						"models/heroes/oracle/oracle.mdl"				// Model.
 		"SoundSet"					"Hero_Oracle"									// Name of sound set.e
 		"HeroID"					"111"											// unique ID number for this hero.  Do not change this once established or it will invalidate colle1cted stats.
-		"Enabled"					"0"
+		"Enabled"					"1"
 		"HeroUnlockOrder"			"1"
 		"Team"						"Good"
 		"Portrait"					"vgui/hud/heroportraits/portrait_oracle"
-		"ModelScale" 				"0.9"
+		"ModelScale" 				"1.0"
+		"LoadoutScale"				"1.0"
 		"CMEnabled"					"0"
 		"NameAliases"					"ora"
 		"url"						"Oracle"
@@ -23369,7 +23366,7 @@
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"305"									// Speed.
-		"MovementTurnRate"			"1.0"									// Turning rate.
+		"MovementTurnRate"			"0.4"									// Turning rate.
 		
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
 		"HealthBarOffset"			"240"
@@ -23390,9 +23387,10 @@
 		"Model"						"models/heroes/techies/techies.mdl"						// Model.
 		"IdleExpression"			"scenes/techies/techies_exp_idle_01.vcd"		// custom facial animation idle
 		"ModelScale" 				"0.60"
-		"LoadoutScale"				"1"
+		"LoadoutScale"				".6"
 		"SoundSet"					"Hero_Techies"										// Name of sound set.
 		"Enabled"					"1"
+		"url"				"Techies"
 		"BotImplemented"			"0"
 		"Team"						"Good"
 		"NewHero"					"0"
@@ -23407,16 +23405,18 @@
 		"BanSound"					"techies_tech_anger_23"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_techies.txt"
 		"IdleSoundLoop"				"Hero_Techies.IdleLoop"
+		"HeroSelectSoundEffect"		")weapons/hero/techies/suicide.wav"
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityLayout"				"5"
-		"Ability1"					"techies_land_mines"										// Ability 1.
-		"Ability2"					"techies_stasis_trap"										// Ability 2.
-		"Ability3"					"techies_suicide"										// Ability 3.
-		"Ability4"					"techies_focused_detonate"										// Ability 4.
-		"Ability5"					"techies_remote_mines"										
-		"Ability6"					"attribute_bonus"						// Ability 5 - Bonuses.
+		"AbilityLayout"				"6"
+		"Ability1"					"techies_land_mines"									
+		"Ability2"					"techies_stasis_trap"									
+		"Ability3"					"techies_suicide"								
+		"Ability4"					"techies_focused_detonate"
+		"Ability5"					"techies_minefield_sign"								
+		"Ability6"					"techies_remote_mines"						
+		"Ability7"					"attribute_bonus"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -23475,7 +23475,7 @@
 					"0"
 					{
 						"type"		"follow_origin"
-						"location"	"attach_hitloc"
+						"location"	"attach_remote"
 					}
 				}
 			}
@@ -23514,7 +23514,7 @@
 			{
 				"SlotIndex"	"0"
 				"SlotName"	"weapon"
-				"SlotText"	"#LoadoutSlot_Weapon"
+				"SlotText"	"#LoadoutSlot_Techies_Bazooka"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"530"
@@ -23524,7 +23524,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName" 	"head"
-				"SlotText"	"#LoadoutSlot_Head"
+				"SlotText"	"#LoadoutSlot_Techies_Squee"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"750"
@@ -23534,7 +23534,7 @@
 			{
 				"SlotIndex"	"2"
 				"SlotName" 	"back"
-				"SlotText"	"#LoadoutSlot_Back"
+				"SlotText"	"#LoadoutSlot_Techies_Spoon"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"700"
@@ -23544,7 +23544,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName" 	"shoulder"
-				"SlotText"	"#LoadoutSlot_Shoulder"
+				"SlotText"	"#LoadoutSlot_Techies_Spleen"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"975"
@@ -23554,7 +23554,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName" 	"arms"
-				"SlotText"	"#LoadoutSlot_arms"
+				"SlotText"	"#LoadoutSlot_Techies_RemoteMines"
 				"TextureWidth"		"256"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -23564,14 +23564,28 @@
 			{
 				"SlotIndex"	"5"
 				"SlotName"	"mount"
-				"SlotText"	"#LoadoutSlot_Mount"
+				"SlotText"	"#LoadoutSlot_Techies_Cart"
 				"TextureWidth"		"512"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"2500"
 				"MaxPolygonsLOD1"	"1500"				
 			}
-
+			"6"
+			{
+				"SlotIndex"	"6"
+				"SlotName"	"belt"
+				"SlotText"	"#LoadoutSlot_Techies_Sign"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"400"
+				"MaxPolygonsLOD1"	"300"			
+			}
+			"7"
+			{
+				"SlotIndex"	"7"
+				"SlotName"	"taunt"
+				"SlotText"	"#LoadoutSlot_Taunt"
+			}
 		}
-	
 	}	
 }

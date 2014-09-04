@@ -33,19 +33,6 @@ Rule gyrocopter_CustomIsGameStart_Rule
 	response gyrocopter_CustomIsGameStart
 }
 
-Response gyrocopter_Custom
-{
-	scene "scenes/gyrocopter/gyrocopter_gyro_failure_01.vcd" nodelay noscene 
-	scene "scenes/gyrocopter/gyrocopter_gyro_failure_02.vcd" nodelay noscene 
-	scene "scenes/gyrocopter/gyrocopter_gyro_failure_03.vcd" nodelay noscene 
-}
-
-Rule gyrocopter_Custom_Rule
-{
-	criteria Custom Isgyrocopter 
-	response gyrocopter_Custom
-}
-
 Response gyrocopter_KillIsFirstBlood
 {
 	scene "scenes/gyrocopter/gyrocopter_gyro_first_01.vcd" nodelay noscene 

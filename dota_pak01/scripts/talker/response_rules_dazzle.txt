@@ -169,12 +169,28 @@ Rule dazzle_CastOrder_Rule
 	response dazzle_CastOrder
 }
 
+Response dazzle_CastExecuteIsDazzleShallowGraveIsEnemyDazzle
+{
+	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_01.vcd" nodelay noscene 
+	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_03.vcd" nodelay noscene 
+	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_10.vcd" nodelay noscene 
+}
+
+Rule dazzle_CastExecuteIsDazzleShallowGraveIsEnemyDazzle_Rule
+{
+	criteria CastExecute Isdazzle IsDazzleShallowGrave IsEnemyDazzle
+	response dazzle_CastExecuteIsDazzleShallowGraveIsEnemyDazzle
+}
+
 Response dazzle_CastExecuteIsDazzleShallowGrave
 {
 	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_01.vcd" nodelay noscene 
 	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_02.vcd" nodelay noscene 
 	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_03.vcd" nodelay noscene 
 	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_04.vcd" nodelay noscene 
+	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_06.vcd" nodelay noscene 
+	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_07.vcd" nodelay noscene 
+	scene "scenes/dazzle/dazzle_dazz_ability_shalgrave_09.vcd" nodelay noscene 
 }
 
 Rule dazzle_CastExecuteIsDazzleShallowGrave_Rule

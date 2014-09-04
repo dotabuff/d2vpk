@@ -221,6 +221,7 @@ Rule keeper_of_the_light_CastExecuteIsKeeperRecall_Rule
 Response keeper_of_the_light_CastExecuteIsKeeperChakraChance_15%
 {
 	scene "scenes/keeper_of_the_light/keeper_of_the_light_keep_chakramagic_02.vcd" nodelay noscene 
+	scene "scenes/keeper_of_the_light/keeper_of_the_light_keep_chakramagic_02.vcd" nodelay noscene 
 }
 
 Rule keeper_of_the_light_CastExecuteIsKeeperChakraChance_15%_Rule
@@ -239,6 +240,17 @@ Rule keeper_of_the_light_CastExecuteIsKeeperChakraChance_25%_Rule
 {
 	criteria CastExecute Iskeeper_of_the_light IsKeeperChakra Chance_25%
 	response keeper_of_the_light_CastExecuteIsKeeperChakraChance_25%
+}
+
+Response keeper_of_the_light_CastExecuteIsKeeperChakraIsEnemyKeeper_of_the_LightChance_25%
+{
+	scene "scenes/keeper_of_the_light/keeper_of_the_light_keep_chakramagic_06.vcd" nodelay noscene 
+}
+
+Rule keeper_of_the_light_CastExecuteIsKeeperChakraIsEnemyKeeper_of_the_LightChance_25%_Rule
+{
+	criteria CastExecute Iskeeper_of_the_light IsKeeperChakra IsEnemyKeeper_of_the_Light Chance_25%
+	response keeper_of_the_light_CastExecuteIsKeeperChakraIsEnemyKeeper_of_the_LightChance_25%
 }
 
 Response keeper_of_the_light_CastExecuteIsKeeperBlindingLightChance_15%

@@ -6,6 +6,7 @@ criterion "IsTechiesStasisTrap" "abilityname" "techies_stasis_trap" weight 5 req
 criterion "IsTechiesSuicide" "abilityname" "techies_suicide" weight 5 required
 criterion "IsTechiesRemoteMineSet" "abilityname" "techies_remote_mines" weight 5 required
 criterion "IsTechiesRemoteMineDet" "abilityname" "techies_focused_detonate" weight 5 required
+criterion "IsTechiesArcanaTaunt" "istechiesminitaunt" "yes" weight 5 required
 criterion "IsTechSpeakTrioHigh" "randomnum" ">=46" weight 5 required
 criterion "IsTechSpeakTrioLow" "randomnum" ">=6,<=45" weight 5 required
 criterion "IsTechSpeakTrioBarrel" "randomnum" "<=5" weight 5 required
@@ -38,6 +39,26 @@ Rule techies_CustomIsGameStart_Rule
 {
 	criteria Custom Istechies IsGameStart
 	response techies_CustomIsGameStart
+}
+
+Response techies_CustomIsTechiesArcanaTaunt
+{
+	scene "scenes/techies/techies_tech_move_26.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_move_28.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_move_45.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_move_46.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_move_48.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_move_50.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_move_54.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_attack_13.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_attack_24.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_attack_25.vcd" nodelay noscene 
+}
+
+Rule techies_CustomIsTechiesArcanaTaunt_Rule
+{
+	criteria Custom Istechies IsTechiesArcanaTaunt
+	response techies_CustomIsTechiesArcanaTaunt
 }
 
 Response techies_KillIsFirstBlood
@@ -546,6 +567,17 @@ Rule techies_DeathIsReincarnating_Rule
 	response techies_DeathIsReincarnating
 }
 
+Response techies_DeathIsTechiesSuicideIsReincarnating
+{
+	scene "scenes/techies/techies_tech_fastressuicide_01.vcd" nodelay noscene 
+}
+
+Rule techies_DeathIsTechiesSuicideIsReincarnating_Rule
+{
+	criteria Death Istechies IsTechiesSuicide IsReincarnating
+	response techies_DeathIsTechiesSuicideIsReincarnating
+}
+
 Response techies_LevelUp
 {
 	scene "scenes/techies/techies_tech_levelup_01.vcd" nodelay noscene 
@@ -716,6 +748,20 @@ Rule techies_Respawn_Rule
 {
 	criteria Respawn Istechies 
 	response techies_Respawn
+}
+
+Response techies_RespawnIsTechiesSuicideChance_75%
+{
+	scene "scenes/techies/techies_tech_respawn_ssa_01.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_respawn_ssa_02.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_respawn_ssa_03.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_respawn_ssa_04.vcd" nodelay noscene 
+}
+
+Rule techies_RespawnIsTechiesSuicideChance_75%_Rule
+{
+	criteria Respawn Istechies IsTechiesSuicide Chance_75%
+	response techies_RespawnIsTechiesSuicideChance_75%
 }
 
 Response techies_PurchaseIsExpensiveItem

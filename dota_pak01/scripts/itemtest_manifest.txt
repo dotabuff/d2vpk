@@ -302,6 +302,42 @@
 		{
 			"heroID"		"6"
 			"tag"			"Drow Ranger"
+			"required_attachments"
+			{
+				"weapon"      
+				{
+					"BowTop"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_BowTop"
+						"description"	"#DOTA_ItemTest_Attachment_BowTop_Desc"
+						"internal_name"	"bow_top"
+						"bone_name"		"Bow3_0_A_R"
+						"default_pos"	"17.00 0.00 -8.00"
+						"default_rot"	"-43 -19 109"
+						"ui_block"		"0"
+					}
+					"BowMid"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_BowMid"
+						"description"	"#DOTA_ItemTest_Attachment_BowMid_Desc"
+						"internal_name"	"bow_mid"
+						"bone_name"		"attach_bone"
+						"default_pos"	"0.00 -15.00 0.00"
+						"default_rot"	"-7 -22 -5"
+						"ui_block"		"0"
+					}
+					"BowBottom"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_BowBot"
+						"description"	"#DOTA_ItemTest_Attachment_BowBot_Desc"
+						"internal_name"	"bow_bot"
+						"bone_name"		"Bow2_0_A_L"
+						"default_pos"	"0.00 -12.00 -11.00"
+						"default_rot"	"-21 -90 90"
+						"ui_block"		"0"
+					}
+				}
+			}
 			"particle_attachments"
 			{
 				"weapon"      
@@ -328,6 +364,32 @@
 		{
 			"heroID"		"107"
 			"tag"			"Earth Spirit"
+			"required_attachments"
+			{
+				"weapon"      
+				{
+					"LowerStaff"
+					{
+						"name"		"#DOTA_ItemTest_Attachment_LowerStaff"
+						"description"	"#DOTA_ItemTest_Attachment_LowerStaff_Desc"
+						"internal_name"	"fx_staff1"
+						"bone_name"		"LwrWeapon0_JNT"
+						"default_pos"	"0.00 0.00 0.00"
+						"default_rot"	"0.00 0.00 0.00"
+						"ui_block"		"0"
+					}
+					"UpperStaff"
+					{
+						"name"		"#DOTA_ItemTest_Attachment_UpperStaff"
+						"description"	"#DOTA_ItemTest_Attachment_UpperStaff_Desc"
+						"internal_name"	"fx_staff2"
+						"bone_name"		"UprWeapon0_JNT"
+						"default_pos"	"0.00 0.00 0.00"
+						"default_rot"	"0.00 0.00 0.00"
+						"ui_block"		"0"
+					}
+				}
+			}
 			"particle_attachments"
 			{
 				"weapon"      
@@ -909,6 +971,42 @@
 		{
 			"heroID"		"21"
 			"tag"			"Windrunner"
+			"required_attachments"
+			{
+				"weapon"      
+				{
+					"BowTop"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_BowTop"
+						"description"	"#DOTA_ItemTest_Attachment_BowTop_Desc"
+						"internal_name"	"bow_top"
+						"bone_name"		"joint8"
+						"default_pos"	"22.00 1.00 -3.00"
+						"default_rot"	"0 0 0"
+						"ui_block"		"0"
+					}
+					"BowMid"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_BowMid"
+						"description"	"#DOTA_ItemTest_Attachment_BowMid_Desc"
+						"internal_name"	"bow_mid"
+						"bone_name"		"bowstring_jnt"
+						"default_pos"	"0.00 0.00 0.00"
+						"default_rot"	"0 0 0"
+						"ui_block"		"0"
+					}
+					"BowBottom"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_BowBot"
+						"description"	"#DOTA_ItemTest_Attachment_BowBot_Desc"
+						"internal_name"	"bow_bot"
+						"bone_name"		"joint3"
+						"default_pos"	"17.00 2.35 1.00"
+						"default_rot"	"0 0 0"
+						"ui_block"		"0"
+					}
+				}
+			}
 			"particle_attachments"
 			{
 				"weapon"      

@@ -242,6 +242,18 @@ Rule pudge_DeathIsReincarnating_Rule
 	response pudge_DeathIsReincarnating
 }
 
+Response pudge_DeathIsEnemyPudgeIsRot
+{
+	scene "scenes/pudge/pudge_pud_deny_05.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_11.vcd" nodelay noscene 
+}
+
+Rule pudge_DeathIsEnemyPudgeIsRot_Rule
+{
+	criteria Death Ispudge IsEnemyPudge IsRot
+	response pudge_DeathIsEnemyPudgeIsRot
+}
+
 Response pudge_Kill
 {
 	scene "scenes/pudge/pudge_pud_kill_01.vcd" nodelay noscene 
@@ -704,7 +716,6 @@ Response pudge_Deny
 	scene "scenes/pudge/pudge_pud_deny_08.vcd" nodelay noscene 
 	scene "scenes/pudge/pudge_pud_deny_09.vcd" nodelay noscene 
 	scene "scenes/pudge/pudge_pud_deny_10.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_11.vcd" nodelay noscene 
 	scene "scenes/pudge/pudge_pud_deny_12.vcd" nodelay noscene 
 }
 

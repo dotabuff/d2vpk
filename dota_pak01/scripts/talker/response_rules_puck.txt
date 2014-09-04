@@ -995,12 +995,22 @@ Response puck_Thanks
 {
 	scene "scenes/puck/puck_puck_thanks_01.vcd" nodelay noscene 
 	scene "scenes/puck/puck_puck_thanks_02.vcd" nodelay noscene 
-	scene "scenes/puck/puck_puck_thanks_03.vcd" nodelay noscene 
 }
 
 Rule puck_Thanks_Rule
 {
 	criteria Thanks Ispuck 
 	response puck_Thanks
+}
+
+Response puck_ThanksChance_5%
+{
+	scene "scenes/puck/puck_puck_thanks_03.vcd" nodelay noscene 
+}
+
+Rule puck_ThanksChance_5%_Rule
+{
+	criteria Thanks Ispuck Chance_5%
+	response puck_ThanksChance_5%
 }
 

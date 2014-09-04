@@ -8602,6 +8602,7 @@
 		"Ability4"					"courier_take_stash_items"
 		"Ability5"					"courier_transfer_items"	
 		"Ability6"					"courier_burst"		
+		"Ability7"					"courier_morph"
 
 		// Bounds
 		//----------------------------------------------------------------
@@ -16528,8 +16529,8 @@
 	{
 		// General
 		//----------------------------------------------------------------
-		"Model"						"models/heroes/lanaya/lanaya_trap_crystal_invis.mdl"	// Model.
-		"BaseClass"					"npc_dota_base_additive"
+		"Model"						"models/heroes/techies/fx_techiesfx_mine.mdl"	// Model.
+		"BaseClass"					"npc_dota_techies_mines"
 		"SoundSet"					"0"			// Name of sound set.
 		"Level"						"1"
 		"ModelScale"				"1.0"
@@ -16566,14 +16567,15 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"12"	// Experience earn.
-		"BountyGoldMin"				"1"		// Gold earned min.
-		"BountyGoldMax"				"1"		// Gold earned max.
+		"BountyXP"					"14"	// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"  // has to be move ground because something about neutral camps
 		"MovementSpeed"				"0"		// Speed.
+		"MovementTurnRate"			"0"		// Turning rate.
 
 		// Status
 		//----------------------------------------------------------------
@@ -16597,8 +16599,8 @@
 	{
 		// General
 		//----------------------------------------------------------------
-		"Model"						"models/heroes/lanaya/lanaya_trap_crystal_invis.mdl"	// Model.
-		"BaseClass"					"npc_dota_base_additive"
+		"Model"						"models/heroes/techies/fx_techiesfx_stasis.mdl"	// Model.
+		"BaseClass"					"npc_dota_techies_mines"
 		"SoundSet"					"0"			// Name of sound set.
 		"Level"						"1"
 		"ModelScale"				"1.0"
@@ -16634,14 +16636,15 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"0"	// Experience earn.
+		"BountyXP"					"6"	// Experience earn.
 		"BountyGoldMin"				"0"		// Gold earned min.
 		"BountyGoldMax"				"0"		// Gold earned max.
 
 		// Movement
 		//----------------------------------------------------------------
-		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND" // has to be move ground because something about neutral camps
 		"MovementSpeed"				"0"		// Speed.
+		"MovementTurnRate"			"0"		// Turning rate.
 
 		// Status
 		//----------------------------------------------------------------
@@ -16665,12 +16668,12 @@
 	{
 		// General
 		//----------------------------------------------------------------
-		"Model"						"models/heroes/lanaya/lanaya_trap_crystal_invis.mdl"	// Model.
-		"BaseClass"					"npc_dota_base_additive"
+		"Model"						"models/heroes/techies/fx_techies_remotebomb.mdl"	// Model.
+		"BaseClass"					"npc_dota_techies_mines"
 		"SoundSet"					"0"			// Name of sound set.
 		"Level"						"1"
 		"ModelScale"				"1.0"
-		"SelectionGroup"			"Techies_LandMines"
+		"SelectionGroup"			"Techies_RemoteMines"
 
 
 		// Abilities
@@ -16702,7 +16705,7 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyXP"					"0"	// Experience earn.
+		"BountyXP"					"6"	// Experience earn.
 		"BountyGoldMin"				"0"		// Gold earned min.
 		"BountyGoldMax"				"0"		// Gold earned max.
 
@@ -16710,6 +16713,7 @@
 		//----------------------------------------------------------------
 		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
 		"MovementSpeed"				"0"		// Speed.
+		"MovementTurnRate"			"0"		// Turning rate.
 
 		// Status
 		//----------------------------------------------------------------
@@ -16727,6 +16731,75 @@
 		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
 		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
 		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+	}
+
+	// Techies Minefield Sign
+	"npc_dota_techies_minefield_sign"
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_techies_minefield_sign"	// Class of entity of link to.
+		"Model"						"models/heroes/techies/techies_sign.mdl"	// Model.
+		"Level"						"1"
+		"ModelScale" 				"1.0"
+		"SelectionGroup"			"Techies_minefield_sign"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""			// Ability 1.
+		"Ability2"					""			// Ability 2.
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"			// Physical protection.
+		"MagicalResistance"				"0"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"			// Damage range min.
+		"AttackDamageMax"			"0"			// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.0"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"0"			// Range within a target can be acquired.
+		"AttackRange"				"0"			// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"HealthBarOffset"			"170"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"			// Type of locomotion - ground, air
+		"MovementSpeed"				"0"			// Speed
+		"MovementTurnRate"			"0"		// Turning rate.
+	
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"		// Experience earn.
+		"BountyGoldMin"				"0"		// Gold earned min.
+		"BountyGoldMax"				"0"		// Gold earned max.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"1"		// Base health.
+		"StatusHealthRegen"			"0.25"		// Health regeneration rate.
+		"StatusMana"				"0"			// Base mana.
+		"StatusManaRegen"			"0"			// Mana regeneration rate.
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"0"		// Range of vision during day light.
+		"VisionNighttimeRange"		"0"		// Range of vision at night time.
+
+		//Inventory
+		"HasInventory"				"0"
 	}
 
 }

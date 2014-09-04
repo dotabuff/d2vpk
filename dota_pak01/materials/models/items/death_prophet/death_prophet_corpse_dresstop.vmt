@@ -2,16 +2,13 @@
 {
 	"$baseTexture" "models/items/death_prophet/death_prophet_corpse_dresstop"
 	"$normalmap" "models/items/death_prophet/death_prophet_corpse_dresstop_normals"
-	"$alphatest" "1"
-
 	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
 	//$FRESNELWARP "models/heroes/dragon_knight/dragon_knight_fresnelranges"
 	"$maskmap1" "models/items/death_prophet/death_prophet_corpse_dresstop_masks1"
 	"$maskmap2" "models/items/death_prophet/death_prophet_corpse_dresstop_masks2"
-	$nocull 1
-	
-	
-	
+//	$nocull 1
+		
+	$alphatest 1
 	$SPECULAR_BLOOM_SCALE      0.3
 	$SPECULAREXPONENT 23	
 	$SPECULARSCALE 42	

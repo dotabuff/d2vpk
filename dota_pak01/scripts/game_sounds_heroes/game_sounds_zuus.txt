@@ -205,6 +205,19 @@
 	"wave"			")weapons/hero/zuus/gods_wrath_precast.wav"
 	"operator_stacks"
 	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "10.0"
+			"match_substring" "false"
+			"match_entry" "Hero_Zuus.GodsWrath.PreCast"
+			"match_channel" "false"
+			"match_entity" "true"
+			}
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"

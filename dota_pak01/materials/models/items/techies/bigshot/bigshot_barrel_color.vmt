@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$basetexture" "models\items\techies\bigshot\bigshot_barrel_color"
+	"$normalmap" "models\items\techies\bigshot\bigshot_barrel_normal"
+	"$maskmap1" "models\items\techies\bigshot\bigshot_barrel_mask1"
+	"$maskmap2" "models\items\techies\bigshot\bigshot_barrel_mask2"
+
+	$ignorebudgetcheck 1
+	$alphatest 1
+	$SPECULAREXPONENT 60
+	$SPECULARSCALE 5
+	$RIMLIGHTCOLOR "1 1 1"
+	$RIMLIGHTSCALE 2	
+	$SPECULAR_BLOOM_SCALE      0.3
+	$ENVMAP "models\heroes\techies\techies_metal"
+	$ENVMAPINTENSITY 6
+
+	$MASKENVBYMETALNESS 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

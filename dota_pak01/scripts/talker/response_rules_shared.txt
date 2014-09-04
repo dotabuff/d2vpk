@@ -128,6 +128,7 @@ criterion "IsMaelstrom" "itemname" "item_maelstrom" required
 criterion "IsMagicStick" "itemname" "item_magic_stick" required
 criterion "IsManta" "itemname" "item_manta" required
 criterion "IsMaskOfMadness" "itemname" "item_mask_of_madness" required
+criterion "IsMedallion" "itemname" "item_medallion_of_courage" required
 criterion "IsMekansm" "itemname" "item_mekansm" required
 criterion "IsMjollnir" "itemname" "item_mjollnir" required
 criterion "IsMonkeyKingBar" "itemname" "item_monkey_king_bar" required
@@ -502,7 +503,6 @@ criterion "IsOwnage6" "team_kill_streak" "6" weight 8 required
 criterion "IsOwnage10" "team_kill_streak" "10" weight 8 required
 criterion "IsOwnage15" "team_kill_streak" "15" weight 8 required
 criterion "IsOwnageLimited" "team_kill_streak" ">4,<20" weight 8 required
-
 
 //Stanley Parable Killing Spree Special Stuff
 criterion "IsSeventyTwoSpree" "streak" "72" weight 9 required

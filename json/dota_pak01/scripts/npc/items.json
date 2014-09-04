@@ -2615,7 +2615,6 @@
     "item_recipe_black_king_bar": {
       "ID": "115",
       "Model": "models/props_gameplay/recipe.mdl",
-      "FightRecapLevel": "2",
       "ItemCost": "1375",
       "ItemShopTags": "",
       "ItemRecipe": "1",
@@ -2627,6 +2626,7 @@
     "item_black_king_bar": {
       "ID": "116",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "FightRecapLevel": "2",
       "AbilityCooldown": "80 75 70 65 60 55 50",
       "ItemCost": "3975",
       "ItemShopTags": "str;damage;hard_to_tag",

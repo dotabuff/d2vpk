@@ -67,7 +67,7 @@ Rule shadow_demon_CustomIsDisruptionAllyReturn_Rule
 	response shadow_demon_CustomIsDisruptionAllyReturn
 }
 
-Response shadow_demon_CustomIsSoulCatcherSucceed
+Response shadow_demon_CustomIsSoulCatcherSucceedChance_75%
 {
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_soul_catcher_01.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_soul_catcher_02.vcd" nodelay noscene 
@@ -75,13 +75,13 @@ Response shadow_demon_CustomIsSoulCatcherSucceed
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_soul_catcher_08.vcd" nodelay noscene 
 }
 
-Rule shadow_demon_CustomIsSoulCatcherSucceed_Rule
+Rule shadow_demon_CustomIsSoulCatcherSucceedChance_75%_Rule
 {
-	criteria Custom Isshadow_demon IsSoulCatcherSucceed
-	response shadow_demon_CustomIsSoulCatcherSucceed
+	criteria Custom Isshadow_demon IsSoulCatcherSucceed Chance_75%
+	response shadow_demon_CustomIsSoulCatcherSucceedChance_75%
 }
 
-Response shadow_demon_CustomIsSoulCatcherFail
+Response shadow_demon_CustomIsSoulCatcherFailChance_75%
 {
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_soul_catcher_04.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_soul_catcher_05.vcd" nodelay noscene 
@@ -89,10 +89,10 @@ Response shadow_demon_CustomIsSoulCatcherFail
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_soul_catcher_07.vcd" nodelay noscene 
 }
 
-Rule shadow_demon_CustomIsSoulCatcherFail_Rule
+Rule shadow_demon_CustomIsSoulCatcherFailChance_75%_Rule
 {
-	criteria Custom Isshadow_demon IsSoulCatcherFail
-	response shadow_demon_CustomIsSoulCatcherFail
+	criteria Custom Isshadow_demon IsSoulCatcherFail Chance_75%
+	response shadow_demon_CustomIsSoulCatcherFailChance_75%
 }
 
 Response shadow_demon_KillIsFirstBlood
@@ -139,20 +139,19 @@ Rule shadow_demon_Kill_Rule
 	response shadow_demon_Kill
 }
 
-Response shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKillChance_20%
+Response shadow_demon_KillIsShadowDemonPoisonChance_20%
 {
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_05.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_06.vcd" nodelay noscene 
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_07.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_08.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_09.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_10.vcd" nodelay noscene 
 }
 
-Rule shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKillChance_20%_Rule
+Rule shadow_demon_KillIsShadowDemonPoisonChance_20%_Rule
 {
-	criteria Kill Isshadow_demon IsShadowDemonPoison IsShadowPoisonReleaseKill Chance_20%
-	response shadow_demon_KillIsShadowDemonPoisonIsShadowPoisonReleaseKillChance_20%
+	criteria Kill Isshadow_demon IsShadowDemonPoison Chance_20%
+	response shadow_demon_KillIsShadowDemonPoisonChance_20%
 }
 
 Response shadow_demon_KillIsEnemyNevermoreChance_50%
@@ -414,6 +413,7 @@ Rule shadow_demon_CastExecuteIsShadowDemonPurgeChance_75%_Rule
 
 Response shadow_demon_LevelUp
 {
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_ability_shadow_poison_07.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_level_up_01.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_level_up_02.vcd" nodelay noscene 
 	scene "scenes/shadow_demon/shadow_demon_shadow_demon_level_up_03.vcd" nodelay noscene 

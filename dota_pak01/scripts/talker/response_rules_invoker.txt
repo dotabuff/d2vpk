@@ -900,6 +900,17 @@ Rule invoker_Thanks_Rule
 	response invoker_Thanks
 }
 
+Response invoker_ThanksChance_5%
+{
+	scene "scenes/invoker/invoker_invo_thanks_02.vcd" nodelay noscene 
+}
+
+Rule invoker_ThanksChance_5%_Rule
+{
+	criteria Thanks Isinvoker Chance_5%
+	response invoker_ThanksChance_5%
+}
+
 Response invoker_PainChance_25%
 {
 	scene "scenes/invoker/invoker_invo_underattack_02.vcd" nodelay noscene respeakdelay 120

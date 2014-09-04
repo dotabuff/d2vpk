@@ -1165,11 +1165,11 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Seering pain.
+Searing pain.
 }
 WORDS
 {
-WORD Seering 0.096 0.864
+WORD Searing 0.096 0.864
 {
 115 s 0.096 0.320 1
 105 iy 0.320 0.528 1
@@ -2859,7 +2859,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Battle is a spring rain.  It fills shallow graves.
+Battle is a spring rain. It fills shallow graves.
 }
 WORDS
 {
@@ -3069,7 +3069,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-A popintless life for a pointless head.
+A pointless life for a pointless head.
 }
 WORDS
 {
@@ -3077,13 +3077,11 @@ WORD A 0.080 0.160
 {
 652 ah 0.080 0.160 1
 }
-WORD popintless 0.160 0.608
+WORD pointless 0.160 0.608
 {
-112 p 0.160 0.240 1
-593 aa 0.240 0.256 1
-112 p 0.256 0.272 1
-618 ih 0.272 0.336 1
-110 n 0.336 0.384 1
+112 p 0.160 0.224 1
+117 oy 0.224 0.320 1
+110 n 0.320 0.384 1
 116 t 0.384 0.416 1
 601 ax 0.416 0.432 1
 601 ax 0.432 0.480 1
@@ -3135,7 +3133,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-You lack discipline.  Now life.
+You lack discipline. Now life.
 }
 WORDS
 {
@@ -3286,7 +3284,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Couldn't see the forest…for the trees.
+Couldn't see the forest...for the trees.
 }
 WORDS
 {
@@ -3350,7 +3348,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Shot in the…dark.
+Shot in the...dark.
 }
 WORDS
 {
@@ -4081,22 +4079,23 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Bequethed to me.
+Bequeathed to me.
 }
 WORDS
 {
-WORD Bequethed 0.048 0.320
+WORD Bequeathed 0.048 0.352
 {
 98 b 0.048 0.064 1
 618 ih 0.064 0.128 1
 107 k 0.128 0.240 1
-119 w 0.240 0.272 1
-240 dh 0.272 0.304 1
-100 d 0.304 0.320 1
+119 w 0.240 0.256 1
+105 iy 0.256 0.320 1
+240 dh 0.320 0.336 1
+100 d 0.336 0.352 1
 }
-WORD to 0.320 0.608
+WORD to 0.352 0.608
 {
-116 t 0.320 0.576 1
+116 t 0.352 0.576 1
 652 ah 0.576 0.608 1
 }
 WORD me 0.608 0.992
@@ -4188,7 +4187,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Fate…finds me.
+Fate...finds me.
 }
 WORDS
 {
@@ -4226,7 +4225,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-A fate…hidden from me.
+A fate...hidden from me.
 }
 WORDS
 {
@@ -4274,7 +4273,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It cannot…be.
+It cannot...be.
 }
 WORDS
 {
@@ -4311,7 +4310,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-What trickery…is this.
+What trickery...is this.
 }
 WORDS
 {
@@ -4357,7 +4356,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-My magic…fails.
+My magic...fails.
 }
 WORDS
 {
@@ -4922,7 +4921,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-In battle, avoid what is sharp.  Puncture what is soft.
+In battle, avoid what is sharp. Puncture what is soft.
 }
 WORDS
 {
@@ -5311,7 +5310,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-If you enemy is equal, prepare for him.  If greater, elude him.  If weaker, crush him.
+If you enemy is equal, prepare for him. If greater, elude him. If weaker, crush him.
 }
 WORDS
 {
@@ -5431,7 +5430,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-We are not so different, my enemies and I.  Accept my brain is much larger.
+We are not so different, my enemies and I. Accept my brain is much larger.
 }
 WORDS
 {
@@ -8369,19 +8368,15 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag!
+It's in the bag!
 }
 WORDS
 {
-WORD It 0.192 0.752
+WORD It's 0.192 0.960
 {
 618 ih 0.192 0.736 1
 116 t 0.736 0.752 1
-}
-WORD s 0.752 0.960
-{
-603 eh 0.752 0.768 1
-115 s 0.768 0.960 1
+115 s 0.752 0.960 1
 }
 WORD in 1.040 1.536
 {

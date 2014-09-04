@@ -19,10 +19,9 @@
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
-	"pitch"			"95,105"
+	"pitch"			"100,110"
 	"soundlevel"  	"SNDLVL_75dB"
 	"wave"			"weapons/hero/techies/attack.wav"
-
 	"operator_stacks"
 	{
 		"start_stack"
@@ -43,7 +42,6 @@
 		"wave"	"weapons/hero/techies/projectile_impact01.wav"
 		"wave"	"weapons/hero/techies/projectile_impact02.wav"
 	}
-	"soundentry_version" "2"
 	"operator_stacks"
 	{
 		"start_stack"
@@ -113,7 +111,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "300"
+				"input_radius"  "600"
 			}
 		}
 	}
@@ -350,7 +348,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "300"
+				"input_radius"  "600"
 			}
 		}
 	}
@@ -421,5 +419,194 @@
 				"input_max_velocity" "1.0"
 			}
 		}
+	}
+}
+
+/////////////////////////////////////////////////////////////
+
+"Hero_Techies.Attack.Arcana"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"pitch"			"90, 100"
+	"soundlevel"  	"SNDLVL_75dB"
+	"wave"			"weapons/hero/techies/attack.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			//"delay_output"
+			//{
+			//"input_float" "0.05"
+			//}
+			//"block_dist"
+			//{
+			//	"input2" "1500"
+			//}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Techies.Snort"
+			}
+		}
+	}
+}
+
+"Hero_Techies.Snort"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4, 0.8"
+	"pitch"			"95, 105"
+	"soundlevel"  	"SNDLVL_78dB"
+	"rndwave"
+	{
+		"wave"			"weapons/hero/techies/arc_attack01.wav"
+		"wave"			"weapons/hero/techies/arc_attack02.wav"
+		"wave"			"weapons/hero/techies/arc_attack03.wav"
+		"wave"			"weapons/hero/techies/arc_attack04.wav"
+	}
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.01"
+			}
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+		}
+	}
+}
+
+"Hero_Techies.Suicide.Arcana"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/techies/arc_suicide.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "15000"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Techies.Debris"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "QuickDuck.HalfSecond"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "NoDuck"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"Hero_Techies.RemoteMine.Detonate.Arcana"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_150dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"weapons/hero/techies/remote_mine01.wav"
+		"wave"		"weapons/hero/techies/remote_mine02.wav"
+		"wave"		"weapons/hero/techies/remote_mine03.wav"
+		"wave"		"weapons/hero/techies/remote_mine04.wav"
+		"wave"		"weapons/hero/techies/remote_mine05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "15000"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Techies.Fireworks"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "QuickDuck.HalfSecond"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "NoDuck"
+			}
+			"volume_falloff_linear"
+			{
+				"input_max" "12000.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Techies.Fireworks"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"90, 110"
+	"rndwave"
+	{
+		"wave"			"ambient\newyear\rocket_launch01.wav"
+		"wave"			"ambient\newyear\rocket_launch02.wav"
+		"wave"			"ambient\newyear\rocket_launch03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "sfx_random_delay_start"
+			"block_dist"
+			{
+				"input2" "15000"
+			}
+			"get_random_delay"
+			{
+			"input_min" "0.05"
+			"input_max" "0.25"
+			}
+		}	
 	}
 }

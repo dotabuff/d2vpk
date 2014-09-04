@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$basetexture" "models\heroes\techies\techies_rubick_sign_color"
+	"$normalmap" "models\heroes\techies\techies_sign_normal"
+	"$maskmap1" "models\heroes\techies\techies_sign_mask1"
+	"$maskmap2" "models\heroes\techies\techies_sign_mask2"
+
+	$ignorebudgetcheck 1
+	$alphatest 1
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 5
+	$RIMLIGHTCOLOR "1 1 1"
+	$RIMLIGHTSCALE 2	
+
+	$ENVMAP "models\heroes\techies\techies_metal"
+	$ENVMAPINTENSITY 9
+	$MASKENVBYMETALNESS 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

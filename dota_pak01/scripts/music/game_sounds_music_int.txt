@@ -1,0 +1,72 @@
+// \src\game\client\dota\scaleform\dota_sf_hud_heroselection.cpp
+// src\game\client\dota\scaleform\dota_sf_hud_spectate_heroselection.cpp
+"DOTAMusic.HeroPicker.INTERNATIONAL"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"	"*#music/ui_hero_select_intl.wav"
+
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "1"	
+			}
+		}
+		
+		"start_stack"
+		{
+			"start_music_mainloop"
+			{
+				"operator" "sys_start_entry"
+				"execute_once" "true"
+				"input_execute"	"1.0"
+				"input_start" "1"
+				"entry_name" "DOTAMusic.MainLoop" //Replace with the sound you want to play.
+			}
+			
+			"import_stack" "dota_start_music_type_tracker"
+							
+			"set_music_type_opvar" //set the current music opvar
+			{
+				"input" "65536" //Hero Picker - doing this like this so we have a good baseline.
+			}	
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo"
+			"mixer"
+			{
+				"mixgroup" "Music"
+			}
+			
+			"update_track"
+			{
+				"operator" "track_update"
+				"stop_channel_on_track" "true"	
+			}
+
+			"volume_fade_out"
+			{
+				"input_max" "2"
+ 			}
+		}
+		
+		"stop_stack"
+		{
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "65536" //Hero Picker
+			}	
+		}
+	}
+}
+

@@ -902,5 +902,15 @@
 	{
 		"reclaim_time"	"float"
 	}
+
+	"account_trophies_changed"
+	{
+		"account_id"	"uint64"
+	}
+
+	"account_all_hero_challenge_changed"
+	{
+		"account_id"	"uint64"
+	}
 }
 

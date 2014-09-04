@@ -82,7 +82,7 @@
 			"entry_name" "Default.Null"
 		}	
 	}
-	
+
 	"dota_start_music_type_tracker"
 	{
 			
@@ -109,55 +109,116 @@
 	}
 	
 	"dota_start_check_music_not_playing"
+	{
+		"get_current_music_opvar"
 		{
-			"get_current_music_opvar"
-			{
-				"operator" "get_opvar_float"
-				"opvar" "current_music"
-			}	
+			"operator" "get_opvar_float"
+			"opvar" "current_music"
+		}	
+					
+		"music_playing_test_less_than" //are we playing battle music (or higher ID)?
+		{
+			"operator" "math_float"
+			"apply"	"less_than"
+			"input1" "@get_current_music_opvar.output"
+			"input2" "4" //battle music ID
+		}	
 						
-			"music_playing_test_less_than" //are we playing battle music (or higher ID)?
-			{
-				"operator" "math_float"
-				"apply"	"less_than"
-				"input1" "@get_current_music_opvar.output"
-				"input2" "4" //battle music ID
-			}	
-						
-			"music_playing_test_greater_than_equal" //are we playing battle music (or higher ID)?
-			{
-				"operator" "math_float"
-				"apply"	"greater_than" 
-				"input1" "@get_current_music_opvar.output"
-				"input2" "8" //higher than battle
-			}	
-						
-			"music_playing_test_not_dead" //are we dead?
-			{
-				"operator" "math_float"
-				"apply"	"not_equal" 
-				"input1" "@get_current_music_opvar.output"
-				"input2" "16" //dead
-			}	
-						
-			"music_playing_or" //are we playing battle music (or higher ID)?
-			{
-				"operator" "math_float"
-				"apply"	"max"
-				"input1" "@music_playing_test_greater_than_equal.output"
-				"input2" "@music_playing_test_less_than.output"
-			}	
-						
-			"music_playing_and" //are we playing battle music (or higher ID)?
-			{
-				"operator" "math_float"
-				"apply"	"min"
-				"input1" "@music_playing_or.output"
-				"input2" "@music_playing_test_not_dead.output"
-			}	
+		"music_playing_test_greater_than_equal" //are we playing battle music (or higher ID)?
+		{
+			"operator" "math_float"
+			"apply"	"greater_than" 
+			"input1" "@get_current_music_opvar.output"
+			"input2" "8" //higher than battle
+		}	
+					
+		"music_playing_test_not_dead" //are we dead?
+		{
+			"operator" "math_float"
+			"apply"	"not_equal" 
+			"input1" "@get_current_music_opvar.output"
+			"input2" "16" //dead
+		}	
+					
+		"music_playing_or" //are we playing battle music (or higher ID)?
+		{
+			"operator" "math_float"
+			"apply"	"max"
+			"input1" "@music_playing_test_greater_than_equal.output"
+			"input2" "@music_playing_test_less_than.output"
+		}	
+					
+		"music_playing_and" //are we playing battle music (or higher ID)?
+		{
+			"operator" "math_float"
+			"apply"	"min"
+			"input1" "@music_playing_or.output"
+			"input2" "@music_playing_test_not_dead.output"
+		}	
+	}
+
+	"dota_start_hero_select"
+	{
+		"get_spectator_music_convar"
+		{
+			"operator" 	"get_convar"
+			"convar"	"dota_music_enable_spectator_mode"
 		}
-
-
+		
+		"get_current_spectator_status"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "music_is_spectator"
+		}	
+           
+        "get_current_spectator_status_invert"
+        {
+            "operator" "math_float"
+             "apply" "sub"   
+             "input1" "1.0"
+             "input2" "@get_current_spectator_status.output"
+        }
+			
+		"check_play_spectator_music"  //Make sure the convar is set, AND we're in spectator mode
+		{
+			"operator" "math_float"
+			"apply" "min"	
+			"input1" "@get_spectator_music_convar.output"
+			"input2" "@get_current_spectator_status.output"
+		}
+			
+		"check_play_music_not_spectator"  //OR we're not in spectatir mode
+		{
+			"operator" "math_float"
+			"apply" "max"	
+			"input1" "@check_play_spectator_music.output"
+			"input2" "@get_current_spectator_status_invert.output"
+		}
+		"start_music_mainloop"
+		{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"@check_play_music_not_spectator.output"
+			"input_start" "1"
+			"entry_name" "DOTAMusic.MainLoop" //Replace with the sound you want to play.
+		}
+		"hero_select_music_stop" 
+		{
+			"execute_once" "true"
+			"input_execute"	"1.0"	
+			"operator" "sys_stop_entries"
+			"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+			"match_entity" "false"	
+			"match_substring" "true"
+			"match_entry" ".music.ui_hero_select" //Stop the smoke music if you attack a creep.	
+		}
+		"import_stack" "dota_start_music_type_tracker"
+						
+		"set_music_type_opvar" //set the current music opvar
+		{
+			"input" "65536" //Hero Picker - doing this like this so we have a good baseline.
+		}	
+	}
 
 // 	"start_test_random"
 // 	{
@@ -434,7 +495,7 @@
 			"syncpoint_list" "syncpoints_1"
 			"input_min_time_to_next_sync" 	"@this_entry_syncpoints.output_first_syncpoint"
 			"input_max_time_to_next_sync" 	"1000"
-			"match_entry" "valve_dota_001.music.battle"
+			"match_entry" "DOTAMusic.Battle"
 		}
 		
 		// output our resulting delay value
@@ -473,7 +534,7 @@
 			"input_float" "1"
 			"output" "block_start"
 		}
-		"delay_output"
+		"delay_output" //NOTE - doesn't work on MP3 files!!!
 		{
 			"operator" "sys_output"
 			"input_float" "0.0"
@@ -882,7 +943,7 @@
 		
 		"play_variation_1"
 		{
-			"operator" "sys_start_entry"
+			"operator" "sys_start_entry_DOTAECON"
 			"execute_once" "true"
 			"input_execute"	"@compare_1.output"
 			"input_start" "1"
@@ -891,7 +952,7 @@
 		
 		"play_variation_2"
 		{
-			"operator" "sys_start_entry"
+			"operator" "sys_start_entry_DOTAECON"
 			"execute_once" "true"
 			"input_execute"	"@compare_2.output"
 			"input_start" "1"
@@ -900,7 +961,7 @@
 		
 		"play_variation_3"
 		{
-			"operator" "sys_start_entry"
+			"operator" "sys_start_entry_DOTAECON"
 			"execute_once" "true"
 			"input_execute"	"@compare_3.output"
 			"input_start" "1"
@@ -5462,7 +5523,7 @@
 		"layer1"
 		{
 			"execute_once" "true"
-			"operator" "sys_start_entry"
+			"operator" "sys_start_entry_DOTAECON"
 			"input_start" "1"	
 			"input_execute" "@time_elapsed_trigger.output"	
 			"entry_name" "Default.Null"
@@ -5471,7 +5532,7 @@
 		"layer2"
 		{
 			"execute_once" "true"
-			"operator" "sys_start_entry"
+			"operator" "sys_start_entry_DOTAECON"
 			"input_start" "1"	
 			"input_execute" "@time_elapsed_trigger.output"	
 			"entry_name" "Default.Null"
@@ -5480,7 +5541,7 @@
 		"layer3"
 		{
 			"execute_once" "true"
-			"operator" "sys_start_entry"
+			"operator" "sys_start_entry_DOTAECON"
 			"input_start" "1"	
 			"input_execute" "@time_elapsed_trigger.output"	
 			"entry_name" "Default.Null"
@@ -8091,17 +8152,96 @@
 			"input1" "@get_worldmap_flag.output"
 			"input2" "0.0"	
 		}
+		"get_restart_flag"
+		{
+			"operator" "get_opvar_float"
+			"execute_once" "true"
+			"opvar" "dota_not_restart_flag"
+		}
+		"not_restart_not_worldmap"
+		{
+			"operator" "math_float"
+			"apply" "min"
+			"input1" "@not_worldmap.output"
+			"input2" "@get_restart_flag.output"	
+		}
+
 		"repeat_secondary_ui_entry"
 		{
-			"input_execute" "@not_worldmap.output"
-			"operator" "sys_start_entry"
+			"input_execute" "@not_restart_not_worldmap.output"
+			"operator" "sys_start_entry_DOTAECON"
 			"execute_once" "false"
 			"input_start" "1"
 			"entry_name" "valve_dota_001.music.ui_main" //Replace with the sound you want to play.
 		}
+		"set_restart_flag"
+		{
+			"operator" "set_opvar_float"
+			"execute_once" "true"
+			"opvar" "dota_not_restart_flag"
+			"input" "1.0"
+		}
 	}
+	"dota_stop_hero_select"
+	{
+		"get_not_restart_flag"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "dota_hero_select_not_restart"
+		}
 
-
+		"import_stack" "dota_stop_music_type_tracker"
+		
+		"remove_music_value"
+		{
+			"input2" "65536" //Hero Picker
+		}
+		"set_music_type_opvar" //set the current music opvar
+		{
+			"input_execute" "@get_not_restart_flag.output"
+		}
+		
+		"get_spectator_music_convar"
+		{
+			"operator" 	"get_convar"
+			"convar"	"dota_music_enable_spectator_mode"
+		}
+		
+		"get_current_spectator_status"
+		{
+			"operator" "get_opvar_float"
+			"opvar" "music_is_spectator"
+		}	
+			
+		"check_play_spectator_music"  //Make sure the convar is set, AND we're in spectator mode
+		{
+			"operator" "math_float"
+			"apply" "min"	
+			"input1" "@get_spectator_music_convar.output"
+			"input2" "@get_current_spectator_status.output"
+		}
+		"not_restart_and_spectator"  //Make sure the convar is set, AND we're in spectator mode
+		{
+			"operator" "math_float"
+			"apply" "min"	
+			"input1" "@check_play_spectator_music.output"
+			"input2" "@get_not_restart_flag.output"
+		}		
+		"start_music_prehorn"
+		{
+			"operator" "sys_start_entry_DOTAECON"
+			"execute_once" "true"
+			"input_execute"	"@not_restart_and_spectator.output"
+			"input_start" "1"
+			"entry_name" "valve_dota_001.music.countdown" //Replace with the sound you want to play.
+		}
+		"set_not_restart_flag"
+		{
+			"operator" "set_opvar_float"
+			"opvar" "dota_hero_select_not_restart"
+			"input" "1.0"
+		}
+	}
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 //

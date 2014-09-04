@@ -542,7 +542,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-A path forseen.
+A path foreseen.
 }
 WORDS
 {
@@ -556,12 +556,13 @@ WORD path 0.224 0.560
 230 ae 0.304 0.544 1
 952 th 0.544 0.560 1
 }
-WORD forseen 0.560 1.584
+WORD foreseen 0.560 1.584
 {
 102 f 0.560 0.720 1
 596 ao 0.720 0.832 1
-602 er 0.832 0.848 1
-122 z 0.848 1.008 1
+633 r 0.832 0.848 1
+105 iy 0.848 0.880 1
+122 z 0.880 1.008 1
 105 iy 1.008 1.424 1
 110 n 1.424 1.584 1
 }
@@ -2085,7 +2086,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Time stops!  Eh, for no one.
+Time stops! Eh, for no one.
 }
 WORDS
 {
@@ -2140,7 +2141,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Eh, that’s a mixed bag.
+Eh, that's a mixed bag.
 }
 WORDS
 {
@@ -2149,15 +2150,11 @@ WORD Eh 0.080 0.112
 618 ih 0.080 0.096 1
 104 hh 0.096 0.112 1
 }
-WORD that 0.112 0.336
+WORD that's 0.112 0.464
 {
 240 dh 0.112 0.128 1
-230 ae 0.128 0.320 1
-116 t 0.320 0.336 1
-}
-WORD s 0.336 0.464
-{
-603 eh 0.336 0.352 1
+230 ae 0.128 0.336 1
+116 t 0.336 0.352 1
 115 s 0.352 0.464 1
 }
 WORD a 0.464 0.544
@@ -3042,7 +3039,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-We all owe a life.  I take yours.
+We all owe a life. I take yours.
 }
 WORDS
 {
@@ -3103,17 +3100,14 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-You’ve been voided.
+You've been voided.
 }
 WORDS
 {
-WORD You 0.048 0.320
+WORD You've 0.048 0.432
 {
 106 y 0.048 0.144 1
 117 uw 0.144 0.320 1
-}
-WORD ve 0.320 0.432
-{
 118 v 0.320 0.432 1
 }
 WORD been 0.432 0.736
@@ -3687,7 +3681,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-My debt to life…is paid.
+My debt to life...is paid.
 }
 WORDS
 {
@@ -3739,7 +3733,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I foresaw this end…ehhhh.
+I foresaw this end...ehhhh.
 }
 WORDS
 {
@@ -3890,7 +3884,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-An end…of an age.
+An end...of an age.
 }
 WORDS
 {
@@ -3935,7 +3929,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Fate…finds me.
+Fate...finds me.
 }
 WORDS
 {
@@ -3973,7 +3967,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I've seen this…in my dreams.
+I've seen this...in my dreams.
 }
 WORDS
 {
@@ -4027,7 +4021,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I face…the darkness.
+I face...the darkness.
 }
 WORDS
 {
@@ -4071,7 +4065,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Commend me…to the void.
+Commend me...to the void.
 }
 WORDS
 {
@@ -4181,7 +4175,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Unkind…rewind.
+Unkind...rewind.
 }
 WORDS
 {
@@ -4420,11 +4414,11 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-so begins…the final epoch.
+So begins...the final epoch.
 }
 WORDS
 {
-WORD so 0.064 0.464
+WORD So 0.064 0.464
 {
 115 s 0.064 0.304 1
 111 ow 0.304 0.464 1
@@ -4896,7 +4890,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Time is a river with many eddies.  I have see its head waters, and I have seen its currents reach the sea.
+Time is a river with many eddies. I have see its head waters, and I have seen its currents reach the sea.
 }
 WORDS
 {
@@ -7830,19 +7824,15 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag!
+It's in the bag!
 }
 WORDS
 {
-WORD It 0.112 0.416
+WORD It's 0.112 0.576
 {
-618 ih 0.112 0.400 1
-116 t 0.400 0.416 1
-}
-WORD s 0.416 0.576
-{
-603 eh 0.416 0.432 1
-115 s 0.432 0.576 1
+618 ih 0.112 0.432 1
+116 t 0.432 0.448 1
+115 s 0.448 0.576 1
 }
 WORD in 0.576 0.816
 {

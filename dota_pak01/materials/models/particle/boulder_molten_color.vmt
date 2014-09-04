@@ -1,0 +1,30 @@
+"CustomHero"
+{
+	"$baseTexture" "particle/beam_fire_02"
+	"$normalmap" "models/particle/boulder_normal"
+	"$maskmap1" "models/particle/boulder_molten_mask1"
+//	"$maskmap2" "models/particle/boulder_molten_mask2"
+	
+
+
+	$SPECULAREXPONENT 10
+	$SPECULARBLENDTOFULL 1
+	$SPECULARCOLOR "[1 0.8 0.7]"
+	$SPECULARSCALE 1
+	
+	$RIMLIGHTCOLOR "[1 .01 0]"
+	$RIMLIGHTSCALE 2
+
+	"Proxies"
+	{
+		//"invis_proxy"
+		//{
+		//}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

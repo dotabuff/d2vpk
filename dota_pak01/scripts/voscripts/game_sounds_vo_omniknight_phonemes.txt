@@ -1743,17 +1743,17 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Judgement comes!
+Judgment comes!
 }
 WORDS
 {
-WORD Judgement 0.048 0.816
+WORD Judgment 0.048 0.816
 {
 676 jh 0.048 0.160 1
 652 ah 0.160 0.336 1
 676 jh 0.336 0.480 1
 109 m 0.480 0.544 1
-601 ax 0.544 0.640 1
+603 eh 0.544 0.640 1
 110 n 0.640 0.752 1
 116 t 0.752 0.816 1
 }
@@ -4290,7 +4290,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I stand enobled.
+I stand ennobled.
 }
 WORDS
 {
@@ -4298,22 +4298,22 @@ WORD I 0.192 0.416
 {
 593 ay 0.192 0.416 1
 }
-WORD stand 0.416 1.072
+WORD stand 0.416 0.944
 {
 115 s 0.416 0.624 1
 116 t 0.624 0.704 1
 230 ae 0.704 0.880 1
-110 n 0.880 1.056 1
-100 d 1.056 1.072 1
+110 n 0.880 0.928 1
+100 d 0.928 0.944 1
 }
-WORD enobled 1.072 1.728
+WORD ennobled 0.944 1.728
 {
-603 eh 1.072 1.120 1
-110 n 1.120 1.168 1
-111 ow 1.168 1.344 1
-98 b 1.344 1.376 1
-108 l 1.376 1.392 1
-108 l 1.392 1.616 1
+618 ih 0.944 0.960 1
+110 n 0.960 1.056 1
+601 ax 1.056 1.104 1
+98 b 1.104 1.120 1
+108 l 1.120 1.136 1
+108 l 1.136 1.616 1
 100 d 1.616 1.728 1
 }
 }
@@ -5664,7 +5664,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-The Omniscience would like a word with you, Zues.
+The Omniscience would like a word with you, Zeus.
 }
 WORDS
 {
@@ -5712,15 +5712,16 @@ WORD with 1.632 1.824
 618 ih 1.712 1.776 1
 240 dh 1.776 1.824 1
 }
-WORD you 1.824 2.480
+WORD you 1.824 2.080
 {
 106 y 1.824 1.904 1
-117 uw 1.904 2.480 1
+117 uw 1.904 2.080 1
 }
-WORD Zues 2.480 2.768
+WORD Zeus 2.080 2.768
 {
-122 z 2.480 2.496 1
-122 z 2.496 2.768 1
+122 z 2.080 2.272 1
+601 ax 2.272 2.480 1
+115 s 2.480 2.768 1
 }
 }
 EMPHASIS
@@ -7481,7 +7482,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-I gave a solumn vow to never die for long.
+I gave a solemn vow to never die for long.
 }
 WORDS
 {
@@ -7499,12 +7500,12 @@ WORD a 0.656 0.752
 {
 652 ah 0.656 0.752 1
 }
-WORD solumn 0.752 1.328
+WORD solemn 0.752 1.328
 {
 115 s 0.752 0.960 1
-601 ax 0.960 0.976 1
-108 l 0.976 1.040 1
-601 ax 1.040 1.280 1
+593 aa 0.960 1.072 1
+108 l 1.072 1.104 1
+601 ax 1.104 1.280 1
 109 m 1.280 1.328 1
 }
 WORD vow 1.328 1.392
@@ -9359,22 +9360,22 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Unwarrented.
+Unwarranted.
 }
 WORDS
 {
-WORD Unwarrented 0.128 0.944
+WORD Unwarranted 0.128 0.928
 {
 601 ax 0.128 0.208 1
 110 n 0.208 0.352 1
 119 w 0.352 0.464 1
-596 ao 0.464 0.560 1
-633 r 0.560 0.624 1
-601 ax 0.624 0.672 1
+596 ao 0.464 0.576 1
+602 er 0.576 0.640 1
+101 ey 0.640 0.672 1
 110 n 0.672 0.752 1
 116 t 0.752 0.800 1
-601 ax 0.800 0.928 1
-100 d 0.928 0.944 1
+618 ih 0.800 0.912 1
+100 d 0.912 0.928 1
 }
 }
 EMPHASIS
@@ -11304,7 +11305,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-This one, my bretheren, is in the bag!
+This one, my brethren, is in the bag!
 }
 WORDS
 {
@@ -11325,14 +11326,13 @@ WORD my 0.640 0.848
 109 m 0.640 0.688 1
 593 ay 0.688 0.848 1
 }
-WORD bretheren 0.912 1.488
+WORD brethren 0.912 1.488
 {
 98 b 0.912 0.944 1
 633 r 0.944 1.056 1
 105 iy 1.056 1.088 1
-952 th 1.088 1.104 1
-240 dh 1.104 1.168 1
-633 r 1.168 1.264 1
+952 th 1.088 1.184 1
+633 r 1.184 1.264 1
 601 ax 1.264 1.328 1
 110 n 1.328 1.488 1
 }

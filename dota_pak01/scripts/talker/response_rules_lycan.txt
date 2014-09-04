@@ -179,15 +179,15 @@ Rule lycan_KillIsEnemyNight_StalkerChance_25%_Rule
 	response lycan_KillIsEnemyNight_StalkerChance_25%
 }
 
-Response lycan_KillIsEnemyCrystalMaidenChance_25%
+Response lycan_KillIsEnemyCrystalMaidenChance_5%
 {
 	scene "scenes/lycan/lycan_lycan_rival_18.vcd" nodelay noscene 
 }
 
-Rule lycan_KillIsEnemyCrystalMaidenChance_25%_Rule
+Rule lycan_KillIsEnemyCrystalMaidenChance_5%_Rule
 {
-	criteria Kill Islycan IsEnemyCrystalMaiden Chance_25%
-	response lycan_KillIsEnemyCrystalMaidenChance_25%
+	criteria Kill Islycan IsEnemyCrystalMaiden Chance_5%
+	response lycan_KillIsEnemyCrystalMaidenChance_5%
 }
 
 Response lycan_KillIsEnemyClinkzChance_25%

@@ -1368,7 +1368,7 @@
           "arrow_max_stun": 5.0
         },
         {
-          "arrow_bonus_damage": 140.0
+          "arrow_bonus_damage": 140
         },
         {
           "arrow_vision": 650
@@ -1494,19 +1494,11 @@
       "AbilityModifierSupportValue": "0.3",
       "AbilitySpecial": [
         {
-          "stun_min": [
-            0.25,
-            0.25,
-            0.25,
-            0.25
-          ]
-        },
-        {
-          "stun_max": [
-            0.75,
-            1.5,
-            2.25,
-            3.0
+          "damage_base": [
+            20.0,
+            40.0,
+            60.0,
+            80.0
           ]
         },
         {
@@ -1526,18 +1518,26 @@
           ]
         },
         {
+          "stun_min": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        {
+          "stun_max": [
+            0.75,
+            1.5,
+            2.25,
+            3.0
+          ]
+        },
+        {
           "knockback_min": 100
         },
         {
           "knockback_max": 300
-        },
-        {
-          "damage_base": [
-            20.0,
-            40.0,
-            60.0,
-            80.0
-          ]
         },
         {
           "range_tooltip": [
@@ -4096,15 +4096,15 @@
       "AbilityCastRange": "900",
       "AbilitySpecial": [
         {
-          "aura_radius": 900
-        },
-        {
           "bonus_damage_pct": [
             12,
             20,
             28,
             36
           ]
+        },
+        {
+          "aura_radius": 900
         }
       ]
     },
@@ -4134,6 +4134,14 @@
           ]
         },
         {
+          "tooltip_duration": [
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ]
+        },
+        {
           "vision_aoe": [
             500.0,
             500.0,
@@ -4147,14 +4155,6 @@
             3.0,
             3.0,
             3.0
-          ]
-        },
-        {
-          "tooltip_duration": [
-            20.0,
-            20.0,
-            20.0,
-            20.0
           ]
         }
       ]
@@ -5547,7 +5547,7 @@
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitDamageType": "DAMAGE_TYPE_HP_REMOVAL",
-      "AbilityCastRange": "1000",
+      "AbilityCastRange": "1200",
       "AbilitySpecial": [
         {
           "aura_radius": 1200
@@ -6640,19 +6640,19 @@
           "radius": 1600
         },
         {
-          "mana_regen": [
-            1.5,
-            3.0,
-            4.5,
-            6.0
-          ]
-        },
-        {
           "mana_multiplier": [
             1.0,
             1.25,
             1.5,
             1.75
+          ]
+        },
+        {
+          "mana_regen": [
+            1.5,
+            3.0,
+            4.5,
+            6.0
           ]
         }
       ]
@@ -6681,6 +6681,12 @@
           ]
         },
         {
+          "cast_range_tooltip": 850
+        },
+        {
+          "duration_tooltip": 10
+        },
+        {
           "health_drain_scepter": [
             180,
             240,
@@ -6703,6 +6709,9 @@
         },
         {
           "bonus_range_scepter": 50
+        },
+        {
+          "cast_range_scepter_tooltip": 900
         }
       ]
     },
@@ -6929,6 +6938,15 @@
             2.0,
             2.0
           ]
+        },
+        {
+          "movement_speed_min_tooltip": 30
+        },
+        {
+          "movement_speed_max_tooltip": 50
+        },
+        {
+          "trap_duration_tooltip": 5
         }
       ]
     },
@@ -11294,7 +11312,7 @@
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
       "AbilitySpecial": [
         {
-          "duration": 25.0
+          "duration": 25
         },
         {
           "bonus_gold": [
@@ -14189,14 +14207,6 @@
       "AbilityCastRange": "550 575 600 625",
       "AbilitySpecial": [
         {
-          "radius": [
-            325,
-            325,
-            325,
-            325
-          ]
-        },
-        {
           "lift_duration": [
             1.5,
             1.75,
@@ -14210,6 +14220,14 @@
             1.25,
             1.5,
             1.75
+          ]
+        },
+        {
+          "radius": [
+            325,
+            325,
+            325,
+            325
           ]
         },
         {
@@ -14267,25 +14285,6 @@
       "AbilityModifierSupportValue": "0.35",
       "AbilitySpecial": [
         {
-          "radius": 440
-        },
-        {
-          "duration": [
-            10.0,
-            10.0,
-            10.0,
-            10.0
-          ]
-        },
-        {
-          "jump_delay": [
-            0.25,
-            0.25,
-            0.25,
-            0.25
-          ]
-        },
-        {
           "damage": [
             70,
             140,
@@ -14315,6 +14314,25 @@
             10,
             13,
             16
+          ]
+        },
+        {
+          "duration": [
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ]
+        },
+        {
+          "radius": 440
+        },
+        {
+          "jump_delay": [
+            0.25,
+            0.25,
+            0.25,
+            0.25
           ]
         }
       ]
@@ -18800,6 +18818,19 @@
       ],
       "MaxLevel": "1"
     },
+    "courier_morph": {
+      "ID": "5642",
+      "AbilityType": "DOTA_ABILITY_TYPE_BASIC",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilityCooldown": "5.0",
+      "AbilityCastRange": "99999",
+      "AbilitySpecial": [
+
+      ],
+      "MaxLevel": "1"
+    },
     "roshan_spell_block": {
       "ID": "5213",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
@@ -20723,7 +20754,7 @@
     },
     "throw_snowball": {
       "ID": "5577",
-      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
@@ -20740,7 +20771,7 @@
     },
     "throw_coal": {
       "ID": "5578",
-      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
@@ -20757,7 +20788,7 @@
     },
     "healing_campfire": {
       "ID": "5579",
-      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
       "AbilityCastRange": "350",
       "AbilityCastPoint": "0.3 0.3 0.3 0.3",
       "AbilityCooldown": "10.0",
@@ -20774,22 +20805,13 @@
     },
     "techies_land_mines": {
       "ID": "5599",
-      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
       "AbilityUnitDamageType": "DAMAGE_TYPE_COMPOSITE",
       "AbilityCastRange": "100",
       "AbilityCastPoint": "0.0 0.0 0.0 0.0",
       "AbilityCooldown": "25.0 20.0 15.0 10.0",
       "AbilityManaCost": "125 150 175 205",
       "AbilitySpecial": [
-        {
-          "max_mines": 20
-        },
-        {
-          "small_radius": 200
-        },
-        {
-          "big_radius": 500
-        },
         {
           "damage": [
             300,
@@ -20799,29 +20821,41 @@
           ]
         },
         {
+          "small_radius": 200
+        },
+        {
+          "big_radius": 500
+        },
+        {
           "activation_time": 1.75
+        },
+        {
+          "fade_time": 2.0
         },
         {
           "explode_delay": 0.3
         },
         {
-          "fade_time": 2.0
+          "max_mines": 20
         }
       ]
     },
     "techies_stasis_trap": {
       "ID": "5600",
-      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN | DOTA_ABILITY_BEHAVIOR_AOE",
       "AbilityCastRange": "150",
       "AbilityCastPoint": "1.0",
       "AbilityCooldown": "20.0 16.0 13.0 10.0",
       "AbilityManaCost": "80 110 140 160",
       "AbilitySpecial": [
         {
-          "activation_time": 2.0
+          "activation_radius": 200
         },
         {
-          "activation_delay": 2.0
+          "explode_delay": 2.0
+        },
+        {
+          "stun_radius": 450
         },
         {
           "stun_duration": [
@@ -20832,10 +20866,10 @@
           ]
         },
         {
-          "activation_radius": 200
+          "activation_time": 2.0
         },
         {
-          "stun_radius": 450
+          "fade_time": 2.0
         },
         {
           "duration": [
@@ -20849,7 +20883,7 @@
     },
     "techies_suicide": {
       "ID": "5601",
-      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ATTACK | DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL",
       "AbilityUnitDamageType": "DAMAGE_TYPE_COMPOSITE",
@@ -20860,18 +20894,15 @@
       "AbilityManaCost": "100 125 150 175",
       "AbilitySpecial": [
         {
-          "small_radius": 200
-        },
-        {
-          "big_radius": 500
-        },
-        {
           "damage": [
             650,
             850,
             1150,
             1550
           ]
+        },
+        {
+          "small_radius": 200
         },
         {
           "partial_damage": [
@@ -20882,13 +20913,19 @@
           ]
         },
         {
+          "big_radius": 500
+        },
+        {
           "respawn_time_percentage": 0.5
+        },
+        {
+          "respawn_time_percentage_tooltip": 50
         }
       ]
     },
     "techies_remote_mines": {
       "ID": "5602",
-      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
       "AbilityCastRange": "500",
@@ -20920,14 +20957,7 @@
           "duration": 480.0
         },
         {
-          "cast_range_scepter": 700
-        },
-        {
-          "radius_scepter": [
-            410,
-            425,
-            425
-          ]
+          "cast_range_tooltip": 500
         },
         {
           "damage_scepter": [
@@ -20937,10 +20967,27 @@
           ]
         },
         {
+          "radius_scepter": [
+            410,
+            425,
+            425
+          ]
+        },
+        {
+          "cast_range_scepter": 700
+        },
+        {
           "vision_radius": 500
         },
         {
           "vision_duration": 3.0
+        },
+        {
+          "model_scale": [
+            0,
+            10,
+            20
+          ]
         }
       ]
     },
@@ -20971,6 +21018,19 @@
             425
           ]
         }
+      ]
+    },
+    "techies_minefield_sign": {
+      "ID": "5644",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_NONE",
+      "MaxLevel": "1",
+      "AbilityCastRange": "500",
+      "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+      "AbilityCooldown": "120.0",
+      "AbilityManaCost": "0",
+      "AbilitySpecial": [
+
       ]
     }
   }

@@ -133,6 +133,10 @@
 		"timestampraw"		"float"
 		"attackerhero"		"bool"
 		"targethero"		"bool"
+		"ability_toggle_on" "bool"
+		"ability_toggle_off" "bool"
+		"ability_level"		"short"
+		"gold_reason"		"short"
 	}
 
 	"dota_game_state_change"

@@ -330,6 +330,67 @@
 	"soundentry_version" "2"
 	"operator_stacks"
 	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "5.0"
+			"match_substring" "false"
+			"match_entry" "DOTAMusic_Hero.Reincarnate"
+			"match_channel" "false"
+			"match_entity" "true"
+			}
+			
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+
+			"elapsed_time"
+			{
+				"operator" "get_entry_time"
+			}
+
+			"reincarnate_elapsed_trigger"
+			{
+				"operator" "math_float"
+				"apply" "greater_than"	
+				"input1" "@elapsed_time.output_entry_elapsed"
+				"input2" "3.0" 
+			}
+
+			"play_stinger_delayed"
+			{
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_execute"	"@reincarnate_elapsed_trigger.output"
+			"input_start" "1"
+			"entry_name" "Hero_SkeletonKing.Reincarnate.Stinger"
+			}
+		}
+	}
+}
+
+"Hero_SkeletonKing.Reincarnate.Stinger"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			")music/stingers/reincarnate_03.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"

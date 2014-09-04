@@ -268,7 +268,7 @@
 
 "General.PingDefense"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.3"
 	"soundlevel"	"SNDLVL_NONE"
 
@@ -277,7 +277,7 @@
 
 "General.PingAttack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.3"
 	"soundlevel"	"SNDLVL_NONE"
 
@@ -286,7 +286,7 @@
 
 "General.PingWarning"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.3"
 	"soundlevel"	"SNDLVL_NONE"
 
@@ -295,7 +295,7 @@
 
 "General.PingRune"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.3"
 	"soundlevel"	"SNDLVL_NONE"
 
@@ -2065,6 +2065,82 @@
 }
 
 
+
+
+
+
+
+
+"ui.herochallenge_complete"
+{
+	"volume"		"0.45"
+	"wave"  "ui/menu/herochallenge_complete.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.45"	
+			}
+		}
+	}
+}
+"ui.herochallenge_swap"
+{
+	"volume"		"0.45"
+	"wave"  "ui/menu/herochallenge_swap.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.45"	
+			}
+		}
+	}
+}
+"ui.trophy_new"
+{
+	"volume"		"0.45"
+	"wave"  "ui/menu/trophy_new.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.45"	
+			}
+		}
+	}
+}
+"ui.trophy_levelup"
+{
+	"volume"		"0.45"
+	"wave"  "ui/menu/trophy_levelup.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_ui"
+			"level_apply_mixer_ui"
+			{
+				"input2" "0.45"	
+			}
+		}
+	}
+}
+
+
 // Settings ======================================
 "ui.settings_open"
 {
@@ -2677,9 +2753,9 @@
 "HeroPicker.Selected"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.4"
+	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			")ui/hero_picked.wav" 
+	"wave"			")ui/hero_picked.wav"
 }
 
 "ui.pick_play"

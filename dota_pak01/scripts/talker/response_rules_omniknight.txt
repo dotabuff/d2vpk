@@ -43,10 +43,30 @@ Rule omniknight_KillIsFirstBlood_Rule
 	response omniknight_KillIsFirstBlood
 }
 
-Response omniknight_Kill
+Response omniknight_KillIsEnemyTerrorbladeChance_50%
 {
 	scene "scenes/omniknight/omniknight_omni_ability_degaura_03.vcd" nodelay noscene 
+}
+
+Rule omniknight_KillIsEnemyTerrorbladeChance_50%_Rule
+{
+	criteria Kill Isomniknight IsEnemyTerrorblade Chance_50%
+	response omniknight_KillIsEnemyTerrorbladeChance_50%
+}
+
+Response omniknight_KillIsEnemyTechiesChance_50%
+{
 	scene "scenes/omniknight/omniknight_omni_ability_degaura_08.vcd" nodelay noscene 
+}
+
+Rule omniknight_KillIsEnemyTechiesChance_50%_Rule
+{
+	criteria Kill Isomniknight IsEnemyTechies Chance_50%
+	response omniknight_KillIsEnemyTechiesChance_50%
+}
+
+Response omniknight_Kill
+{
 	scene "scenes/omniknight/omniknight_omni_ability_degaura_10.vcd" nodelay noscene 
 	scene "scenes/omniknight/omniknight_omni_kill_01.vcd" nodelay noscene 
 	scene "scenes/omniknight/omniknight_omni_kill_02.vcd" nodelay noscene 
@@ -344,6 +364,21 @@ Rule omniknight_CastExecuteIsAbilityPurificationChance_5%_Rule
 	response omniknight_CastExecuteIsAbilityPurificationChance_5%
 }
 
+Response omniknight_CastExecuteIsAbilityPurificationIsEnemyOmniknightChance_50%
+{
+	scene "scenes/omniknight/omniknight_omni_ability_purif_01.vcd" nodelay noscene 
+	scene "scenes/omniknight/omniknight_omni_ability_purif_05.vcd" nodelay noscene 
+	scene "scenes/omniknight/omniknight_omni_ability_purif_06.vcd" nodelay noscene 
+	scene "scenes/omniknight/omniknight_omni_ability_purif_07.vcd" nodelay noscene 
+	scene "scenes/omniknight/omniknight_omni_ability_purif_08.vcd" nodelay noscene 
+}
+
+Rule omniknight_CastExecuteIsAbilityPurificationIsEnemyOmniknightChance_50%_Rule
+{
+	criteria CastExecute Isomniknight IsAbilityPurification IsEnemyOmniknight Chance_50%
+	response omniknight_CastExecuteIsAbilityPurificationIsEnemyOmniknightChance_50%
+}
+
 Response omniknight_CastExecuteIsAbilityRepel
 {
 	scene "scenes/omniknight/omniknight_omni_ability_repel_01.vcd" nodelay noscene 
@@ -358,6 +393,19 @@ Rule omniknight_CastExecuteIsAbilityRepel_Rule
 {
 	criteria CastExecute Isomniknight IsAbilityRepel
 	response omniknight_CastExecuteIsAbilityRepel
+}
+
+Response omniknight_CastExecuteIsAbilityRepelIsEnemyOmniknight
+{
+	scene "scenes/omniknight/omniknight_omni_ability_repel_01.vcd" nodelay noscene 
+	scene "scenes/omniknight/omniknight_omni_ability_repel_05.vcd" nodelay noscene 
+	scene "scenes/omniknight/omniknight_omni_ability_repel_06.vcd" nodelay noscene 
+}
+
+Rule omniknight_CastExecuteIsAbilityRepelIsEnemyOmniknight_Rule
+{
+	criteria CastExecute Isomniknight IsAbilityRepel IsEnemyOmniknight
+	response omniknight_CastExecuteIsAbilityRepelIsEnemyOmniknight
 }
 
 Response omniknight_CastExecuteIsAbilityGuardianAngel

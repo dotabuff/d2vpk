@@ -3872,7 +3872,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Knives--sharp! 
+Knives--sharp!
 }
 WORDS
 {
@@ -4025,7 +4025,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Knives--sharp! 
+Knives--sharp!
 }
 WORDS
 {
@@ -10757,6 +10757,42 @@ voice_duck 0
 }
 }
 
+*vo\pudge\pud_deny_12.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Couldn't resist.
+}
+WORDS
+{
+WORD Couldn't 0.000 0.384
+{
+107 k 0.000 0.144 1
+650 uh 0.144 0.160 1
+100 d 0.160 0.176 1
+601 ax 0.176 0.240 1
+110 n 0.240 0.384 1
+}
+WORD resist 0.384 1.056
+{
+633 r 0.384 0.480 1
+603 eh 0.480 0.496 1
+122 z 0.496 0.592 1
+618 ih 0.592 0.768 1
+115 s 0.768 0.960 1
+116 t 0.960 1.056 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
 *vo\pudge\pud_deny_11.mp3
 {
 VERSION 1.0
@@ -10789,42 +10825,6 @@ WORD me 1.168 1.552
 {
 109 m 1.168 1.264 1
 105 iy 1.264 1.552 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\pudge\pud_deny_12.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Couldn't resist.
-}
-WORDS
-{
-WORD Couldn't 0.000 0.384
-{
-107 k 0.000 0.144 1
-650 uh 0.144 0.160 1
-100 d 0.160 0.176 1
-601 ax 0.176 0.240 1
-110 n 0.240 0.384 1
-}
-WORD resist 0.384 1.056
-{
-633 r 0.384 0.480 1
-603 eh 0.480 0.496 1
-122 z 0.496 0.592 1
-618 ih 0.592 0.768 1
-115 s 0.768 0.960 1
-116 t 0.960 1.056 1
 }
 }
 EMPHASIS

@@ -42,6 +42,16 @@
 				"input_start" "1"
 				"entry_name" "DOTAMusic.StopPrehorn" //Replace with the sound you want to play.
 			}
+			"select_music_stop"
+  			{
+  			    "execute_once" "true"
+  			    "input_execute"   "1.0" 
+  			    "operator" "sys_stop_entries"
+  			    "input_max_entries" "0.000000"
+  			    "match_entity" "false"  
+  			    "match_substring" "true"
+  			    "match_entry" ".music.ui_hero_select"  
+  			}	
 		}
 	
 		"update_stack"

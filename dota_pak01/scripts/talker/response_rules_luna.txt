@@ -259,7 +259,6 @@ Response luna_Move
 	scene "scenes/luna/luna_luna_move_08.vcd" nodelay noscene 
 	scene "scenes/luna/luna_luna_move_09.vcd" nodelay noscene 
 	scene "scenes/luna/luna_luna_move_10.vcd" nodelay noscene 
-	scene "scenes/luna/luna_luna_move_11.vcd" nodelay noscene 
 	scene "scenes/luna/luna_luna_move_12.vcd" nodelay noscene 
 	scene "scenes/luna/luna_luna_move_13.vcd" nodelay noscene 
 	scene "scenes/luna/luna_luna_move_14.vcd" nodelay noscene 
@@ -274,6 +273,17 @@ Rule luna_Move_Rule
 {
 	criteria Move Isluna 
 	response luna_Move
+}
+
+Response luna_MoveChance_1%
+{
+	scene "scenes/luna/luna_luna_move_11.vcd" nodelay noscene 
+}
+
+Rule luna_MoveChance_1%_Rule
+{
+	criteria Move Isluna Chance_1%
+	response luna_MoveChance_1%
 }
 
 Response luna_MoveChance_3%
@@ -398,15 +408,15 @@ Rule luna_AllyNearIsAllyVengefulSpiritEarlyGame_Rule
 	response luna_AllyNearIsAllyVengefulSpiritEarlyGame
 }
 
-Response luna_AllyNearIsEnemyCrystalMaidenEarlyGame
+Response luna_AllyNearIsAllyCrystalMaidenEarlyGame
 {
 	scene "scenes/luna/luna_luna_ally_02.vcd" nodelay noscene speakonce
 }
 
-Rule luna_AllyNearIsEnemyCrystalMaidenEarlyGame_Rule
+Rule luna_AllyNearIsAllyCrystalMaidenEarlyGame_Rule
 {
-	criteria AllyNear Isluna IsEnemyCrystalMaiden EarlyGame
-	response luna_AllyNearIsEnemyCrystalMaidenEarlyGame
+	criteria AllyNear Isluna IsAllyCrystalMaiden EarlyGame
+	response luna_AllyNearIsAllyCrystalMaidenEarlyGame
 }
 
 Response luna_AllyNearIsAllyLinaEarlyGame
@@ -420,15 +430,15 @@ Rule luna_AllyNearIsAllyLinaEarlyGame_Rule
 	response luna_AllyNearIsAllyLinaEarlyGame
 }
 
-Response luna_AllyNearIsEnemyMiranaEarlyGame
+Response luna_AllyNearIsAllyMiranaEarlyGame
 {
 	scene "scenes/luna/luna_luna_ally_04.vcd" nodelay noscene speakonce
 }
 
-Rule luna_AllyNearIsEnemyMiranaEarlyGame_Rule
+Rule luna_AllyNearIsAllyMiranaEarlyGame_Rule
 {
-	criteria AllyNear Isluna IsEnemyMirana EarlyGame
-	response luna_AllyNearIsEnemyMiranaEarlyGame
+	criteria AllyNear Isluna IsAllyMirana EarlyGame
+	response luna_AllyNearIsAllyMiranaEarlyGame
 }
 
 Response luna_AllyNearIsAllyZuusEarlyGame
