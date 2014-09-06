@@ -1,9 +1,17 @@
-"GlobalLitSimple"
+"CustomHero"
 {
 	"$basetexture" "models\heroes\techies\techies_projectile_color"
-	$additive 1
-	$nocull 1
 	"$normalmap" "models/development/flatnormal"
-    $ALLOWDIFFUSEMODULATION 1
+	"$maskmap1" "models\heroes\techies\techies_projectile_mask1"
+	"$maskmap2" "models\heroes\techies\techies_projectile_mask2"
+
+	$ignorebudgetcheck 1
+	$alphatest 1
+	//$SpecularBlendtoFull 1
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 12
+	//$SPECULARCOLOR "[1 .45 0]"
+	$RIMLIGHTCOLOR "1 1 1"
+	$RIMLIGHTSCALE 2	
     "$fow"                          "_rt_fog_of_war"
 }
