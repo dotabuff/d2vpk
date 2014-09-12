@@ -474,6 +474,7 @@
       "ItemStockTime": "600.0",
       "ItemSupport": "1",
       "ItemKillable": "0",
+      "ItemContributesToNetWorthWhenDropped": "0",
       "UIPickupSound": "Item.PickUpGemShop",
       "UIDropSound": "Item.DropGemShop",
       "WorldDropSound": "Item.DropGemWorld",
@@ -529,6 +530,7 @@
       "ItemPermanent": "0",
       "ItemInitialCharges": "1",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
+      "ItemContributesToNetWorthWhenDropped": "0",
       "AbilitySpecial": [
         {
           "health_restore": 2500
@@ -2672,6 +2674,7 @@
       "ItemDroppable": "0",
       "ItemSellable": "0",
       "ItemKillable": "1",
+      "ItemContributesToNetWorthWhenDropped": "0",
       "AbilitySpecial": [
         {
           "reincarnate_time": 5.0
@@ -3001,6 +3004,7 @@
       "ItemSellable": "0",
       "ItemKillable": "0",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS | DECLARE_PURCHASES_IN_SPEECH",
+      "ItemContributesToNetWorthWhenDropped": "0",
       "AbilitySpecial": [
         {
           "bonus_damage": 300
