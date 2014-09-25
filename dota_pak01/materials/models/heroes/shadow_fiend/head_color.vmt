@@ -1,40 +1,43 @@
 "CustomHero"
 {
-	"$baseTexture" "models/heroes/shadow_fiend/head_color"
-	"$normalmap" "models/heroes/shadow_fiend/head_normal"
-	"$maskmap1" "models\development\blankmasks1"
-	"$maskmap2" "models\development\blankmasks2"
-//	"$diffusewarp" "models/heroes/nevermore/nevermore_lightwarp"
-
-	$SPECULAR_BLOOM_SCALE      0
-	$IgnoreBudgetCheck 1
-	$SPECULAREXPONENT 20
-	$SPECULARSCALE 3
-//	$alphatest	1
-
-//	$SPECULARBLENDTOFULL 1
-//	$DIFFUSEWARPBLENDTOFUL .5
-
+	"$baseTexture"	"models/heroes/shadow_fiend/head_color"
+	"$normalmap"	"models/heroes/shadow_fiend/head_normal"
+	"$maskmap1"		"models/heroes/shadow_fiend/head_masks1"
+	"$maskmap2"		"models/heroes/shadow_fiend/head_masks2"
+	
+	"$detail1"		"models\heroes\shadow_fiend\shadow_fiend_detail"
 	$DETAIL1BLENDMODE 2
-	$DETAIL1SCALE 1
-	$RIMLIGHTSCALE	.2
-//	$RIMLIGHTCOLOR "[.3 .8 .8]"
-	//$RIMLIGHTBLENDTOFULL 1
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR .1
+		
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[.75 .05 .05]"
+	$alphatest	1
+
+	$IgnoreBudgetCheck 1
+
+	$RIMLIGHTSCALE	.25
+	$RIMLIGHTCOLOR "[.2 .6 .8]"
 	$rimambience .5
-
-//	$FRESNELWARP "models/heroes/nevermore/nevermore_fresnelwarp"	
-//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
-
-	$VERTEXALPHA 1
-	$VERTEXCOLOR 1
 
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	-.1
+			"texturescrollangle"	10
+		}	
 		"invis_proxy"
 		{
 		}
 		"status_proxy"
+		{
+		}
+		"hero_proxy"
 		{
 		}
 	}

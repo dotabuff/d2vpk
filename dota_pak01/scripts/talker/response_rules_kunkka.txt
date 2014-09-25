@@ -14,6 +14,7 @@ Response kunkka_Spawn
 	scene "scenes/kunkka/kunkka_kunk_spawn_04.vcd" nodelay noscene 
 	scene "scenes/kunkka/kunkka_kunk_spawn_05.vcd" nodelay noscene 
 	scene "scenes/kunkka/kunkka_kunk_spawn_06.vcd" nodelay noscene 
+	scene "scenes/kunkka/kunkka_kunk_spawn_07.vcd" nodelay noscene 
 	scene "scenes/kunkka/kunkka_kunk_spawn_11.vcd" nodelay noscene 
 	scene "scenes/kunkka/kunkka_kunk_spawn_12.vcd" nodelay noscene 
 }
@@ -259,6 +260,7 @@ Rule kunkka_Attack_Rule
 Response kunkka_CastOrder
 {
 	scene "scenes/kunkka/kunkka_kunk_cast_01.vcd" nodelay noscene 
+	scene "scenes/kunkka/kunkka_kunk_cast_03.vcd" nodelay noscene 
 }
 
 Rule kunkka_CastOrder_Rule
@@ -781,6 +783,17 @@ Rule kunkka_PowerupIsPowerupDoubleDamageChance_25%_Rule
 {
 	criteria Powerup Iskunkka IsPowerupDoubleDamage Chance_25%
 	response kunkka_PowerupIsPowerupDoubleDamageChance_25%
+}
+
+Response kunkka_PowerupIsPowerupBounty
+{
+	scene "scenes/kunkka/kunkka_kunk_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule kunkka_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iskunkka IsPowerupBounty
+	response kunkka_PowerupIsPowerupBounty
 }
 
 Response kunkka_PowerupIsPowerupRegeneration

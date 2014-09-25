@@ -912,5 +912,12 @@
 	{
 		"account_id"	"uint64"
 	}
+	"team_showcase_ui_update"
+	{
+		"show"					"bool"
+		"account_id"			"uint64"
+		"hero_entindex"			"short"
+		"display_ui_on_left"	"bool"
+	}
 }
 

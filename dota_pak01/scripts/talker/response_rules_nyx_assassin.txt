@@ -617,6 +617,138 @@ Rule nyx_assassin_Select_Rule
 	response nyx_assassin_Select
 }
 
+Response nyx_assassin_PowerupIsPowerupBounty
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupBounty
+	response nyx_assassin_PowerupIsPowerupBounty
+}
+
+Response nyx_assassin_PowerupIsPowerupHaste
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_haste_01.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupHaste_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupHaste
+	response nyx_assassin_PowerupIsPowerupHaste
+}
+
+Response nyx_assassin_PowerupIsPowerupHasteChance_25%
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_haste_02.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupHasteChance_25%_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupHaste Chance_25%
+	response nyx_assassin_PowerupIsPowerupHasteChance_25%
+}
+
+Response nyx_assassin_PowerupIsPowerupDoubleDamage
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_doubdam_01.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupDoubleDamage
+	response nyx_assassin_PowerupIsPowerupDoubleDamage
+}
+
+Response nyx_assassin_PowerupIsPowerupDoubleDamageChance_25%
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupDoubleDamageChance_25%_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupDoubleDamage Chance_25%
+	response nyx_assassin_PowerupIsPowerupDoubleDamageChance_25%
+}
+
+Response nyx_assassin_PowerupIsPowerupDoubleDamageChance_5%
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_doubdam_03.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupDoubleDamageChance_5%_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupDoubleDamage Chance_5%
+	response nyx_assassin_PowerupIsPowerupDoubleDamageChance_5%
+}
+
+Response nyx_assassin_PowerupIsPowerupRegeneration
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_regen_01.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupRegeneration_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupRegeneration
+	response nyx_assassin_PowerupIsPowerupRegeneration
+}
+
+Response nyx_assassin_PowerupIsPowerupRegenerationChance_25%
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_regen_02.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupRegenerationChance_25%_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupRegeneration Chance_25%
+	response nyx_assassin_PowerupIsPowerupRegenerationChance_25%
+}
+
+Response nyx_assassin_PowerupIsPowerupIllusion
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_illus_01.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupIllusion_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupIllusion
+	response nyx_assassin_PowerupIsPowerupIllusion
+}
+
+Response nyx_assassin_PowerupIsPowerupIllusionChance_25%
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_illus_02.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupIllusionChance_25%_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupIllusion Chance_25%
+	response nyx_assassin_PowerupIsPowerupIllusionChance_25%
+}
+
+Response nyx_assassin_PowerupIsPowerupInvisibility
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_invis_01.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupInvisibility_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupInvisibility
+	response nyx_assassin_PowerupIsPowerupInvisibility
+}
+
+Response nyx_assassin_PowerupIsPowerupInvisibilityChance_25%
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_invis_02.vcd" nodelay noscene 
+}
+
+Rule nyx_assassin_PowerupIsPowerupInvisibilityChance_25%_Rule
+{
+	criteria Powerup Isnyx_assassin IsPowerupInvisibility Chance_25%
+	response nyx_assassin_PowerupIsPowerupInvisibilityChance_25%
+}
+
 Response nyx_assassin_PurchaseIsExpensiveItem
 {
 	scene "scenes/nyx_assassin/nyx_assassin_nyx_purch_01.vcd" nodelay noscene speakonce
@@ -844,127 +976,6 @@ Rule nyx_assassin_Immortality_Rule
 {
 	criteria Immortality Isnyx_assassin 
 	response nyx_assassin_Immortality
-}
-
-Response nyx_assassin_PowerupIsPowerupHaste
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_haste_01.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupHaste_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupHaste
-	response nyx_assassin_PowerupIsPowerupHaste
-}
-
-Response nyx_assassin_PowerupIsPowerupHasteChance_25%
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_haste_02.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupHasteChance_25%_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupHaste Chance_25%
-	response nyx_assassin_PowerupIsPowerupHasteChance_25%
-}
-
-Response nyx_assassin_PowerupIsPowerupDoubleDamage
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_doubdam_01.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupDoubleDamage_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupDoubleDamage
-	response nyx_assassin_PowerupIsPowerupDoubleDamage
-}
-
-Response nyx_assassin_PowerupIsPowerupDoubleDamageChance_25%
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_doubdam_02.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupDoubleDamageChance_25%_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupDoubleDamage Chance_25%
-	response nyx_assassin_PowerupIsPowerupDoubleDamageChance_25%
-}
-
-Response nyx_assassin_PowerupIsPowerupDoubleDamageChance_5%
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_doubdam_03.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupDoubleDamageChance_5%_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupDoubleDamage Chance_5%
-	response nyx_assassin_PowerupIsPowerupDoubleDamageChance_5%
-}
-
-Response nyx_assassin_PowerupIsPowerupRegeneration
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_regen_01.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupRegeneration_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupRegeneration
-	response nyx_assassin_PowerupIsPowerupRegeneration
-}
-
-Response nyx_assassin_PowerupIsPowerupRegenerationChance_25%
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_regen_02.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupRegenerationChance_25%_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupRegeneration Chance_25%
-	response nyx_assassin_PowerupIsPowerupRegenerationChance_25%
-}
-
-Response nyx_assassin_PowerupIsPowerupIllusion
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_illus_01.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupIllusion_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupIllusion
-	response nyx_assassin_PowerupIsPowerupIllusion
-}
-
-Response nyx_assassin_PowerupIsPowerupIllusionChance_25%
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_illus_02.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupIllusionChance_25%_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupIllusion Chance_25%
-	response nyx_assassin_PowerupIsPowerupIllusionChance_25%
-}
-
-Response nyx_assassin_PowerupIsPowerupInvisibility
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_invis_01.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupInvisibility_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupInvisibility
-	response nyx_assassin_PowerupIsPowerupInvisibility
-}
-
-Response nyx_assassin_PowerupIsPowerupInvisibilityChance_25%
-{
-	scene "scenes/nyx_assassin/nyx_assassin_nyx_invis_02.vcd" nodelay noscene 
-}
-
-Rule nyx_assassin_PowerupIsPowerupInvisibilityChance_25%_Rule
-{
-	criteria Powerup Isnyx_assassin IsPowerupInvisibility Chance_25%
-	response nyx_assassin_PowerupIsPowerupInvisibilityChance_25%
 }
 
 Response nyx_assassin_CooldownLittleNag

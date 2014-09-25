@@ -44,7 +44,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"2150"
+		"ItemCost"						"2250"
 		"ItemShopTags"					"teleport"
 		"ItemQuality"					"component"
 		"ItemAliases"					"blink dagger"
@@ -418,10 +418,11 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"175"
+		"ItemCost"						"200"
 		"ItemShopTags"					"armor"
 		"ItemQuality"					"component"
 		"ItemAliases"					"rop;ring of protection"
+		"SideShop"						"0"
 		
 		// Sound
 		//-------------------------------------------------------------------------------------------------------------			
@@ -436,7 +437,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"2"
+				"bonus_armor"			"3"
 			}
 		}
 	}
@@ -1349,6 +1350,7 @@
 		"ItemStackable"					"1"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"1"
+		"SideShop"						"0"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -1487,7 +1489,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"650"
+		"ItemCost"						"700"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemAliases"					"bottle"
@@ -1635,7 +1637,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"true_sight_range"		"800"
+				"true_sight_range"		"850"
 			}
 			"04"
 			{
@@ -1673,6 +1675,7 @@
 		"ItemStackable"					"1"
 		"ItemPermanent"					"0"
 		"ItemInitialCharges"			"4"
+		"SideShop"						"0"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -1788,7 +1791,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"75"
-		"ItemCost"						"135"
+		"ItemCost"						"100"
 		"ItemShopTags"					"consumable;tutorial"
 		"ItemQuality"					"consumable"
 		"ItemAliases"					"tp;town portal scroll"
@@ -1860,7 +1863,7 @@
 
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"60.0"
+		"AbilityCooldown"				"50.0"
 		"AbilitySharedCooldown"			"teleport"
 		"AbilityChannelTime"			"3.0"
 		
@@ -2905,7 +2908,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"150"
+		"AbilityManaCost"				"225"
 		"ItemCost"						"2300"
 		"ItemShopTags"					"agi;int;str;armor;boost_health"
 		"ItemQuality"					"rare"
@@ -2997,7 +3000,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"2050"
+		"ItemCost"						"2075"
 		"ItemShopTags"					"lifesteal;damage;armor;regen_mana"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"vladmir's offering;vlads"
@@ -3192,7 +3195,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"500"
+		"ItemCost"						"525"
 		"ItemShopTags"					"damage;regen_mana;armor"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"rob;ring of basilius"
@@ -3294,7 +3297,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"health_regen"			"8"
+				"health_regen"			"9"
 			}
 			"02"
 			{
@@ -3726,7 +3729,7 @@
 		"ItemResult"					"item_cyclone"
 		"ItemRequirements"
 		{
-			"01"						"item_staff_of_wizardry;item_sobi_mask;item_void_stone"
+			"01"						"item_sobi_mask;item_staff_of_wizardry;item_void_stone"
 		}
 	}
 	
@@ -4001,7 +4004,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"180 160 140 120 100"
+		"AbilityManaCost"				"180"
 		"ItemCost"						"2800"
 		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
 		"ItemQuality"					"rare"	
@@ -4017,7 +4020,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"13 15 17 19 21"
+				"bonus_intellect"		"13 16 19 22 25"
 			}
 			"02"
 			{
@@ -4064,7 +4067,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"180 160 140 120 100"
+		"AbilityManaCost"				"180"
 		"ItemCost"						"2850"
 		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
 		"ItemQuality"					"rare"	
@@ -4080,7 +4083,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"13 15 17 19 21"
+				"bonus_intellect"		"13 16 19 22 25"
 			}
 			"02"
 			{
@@ -4127,7 +4130,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"180 160 140 120 100"
+		"AbilityManaCost"				"180"
 		"ItemCost"						"2850"
 		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
 		"ItemQuality"					"rare"
@@ -4143,7 +4146,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"13 15 17 19 21"
+				"bonus_intellect"		"13 16 19 22 25"
 			}
 			"02"
 			{
@@ -4190,7 +4193,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"180 160 140 120 100"
+		"AbilityManaCost"				"180"
 		"ItemCost"						"2850"
 		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
 		"ItemQuality"					"rare"
@@ -4206,7 +4209,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"13 15 17 19 21"
+				"bonus_intellect"		"13 16 19 22 25"
 			}
 			"02"
 			{
@@ -4253,7 +4256,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"180 160 140 120 100"
+		"AbilityManaCost"				"180"
 		"ItemCost"						"2850"
 		"ItemShopTags"					"damage;int;str;agi;hard_to_tag"
 		"ItemQuality"					"rare"
@@ -4266,7 +4269,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_intellect"		"13 15 17 19 21"
+				"bonus_intellect"		"13 16 19 22 25"
 			}
 			"02"
 			{
@@ -4689,7 +4692,7 @@
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"160.0"
+		"AbilityCooldown"				"185.0"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4925,7 +4928,7 @@
 
 		// Stats		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"80 75 70 65 60 55 50"
+		"AbilityCooldown"				"80 75 70 65 60 55"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4953,7 +4956,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"duration"				"10.0 9.0 8.0 7.0 6.0 5.0 4.0"
+				"duration"				"10.0 9.0 8.0 7.0 6.0 5.0"
 			}
 			"04"
 			{
@@ -4993,8 +4996,6 @@
 		"ItemSellable"					"0"
 		"ItemKillable"					"1"
 		"ItemContributesToNetWorthWhenDropped"	"0"
-		
-		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
 		{
@@ -5006,7 +5007,12 @@
 			"02"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"disappear_time"		"360.0"
+				"disappear_time"		"300.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"disappear_time_minutes_tooltip"		"5"
 			}
 		}
 	}
@@ -5125,7 +5131,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"0"	
+		"ItemCost"						"800"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -5134,7 +5140,7 @@
 		"ItemResult"					"item_bloodstone"
 		"ItemRequirements"
 		{
-			"01"						"item_pers;item_soul_booster"
+			"01"						"item_soul_ring;item_soul_booster"
 		}
 	}
 	
@@ -5157,7 +5163,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"5050"
+		"ItemCost"						"4900"
 		"ItemShopTags"					"regen_health;regen_mana;mana_pool;health_pool"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"bs;bloodstone"
@@ -5232,7 +5238,7 @@
 			"13"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_damage"		"10"
+				"bonus_damage"		"0"
 			}
 		}
 	}
@@ -5384,13 +5390,132 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"block_damage_ranged"	"20"
+				"block_damage_melee"	"40"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
+				"block_damage_ranged"	"20"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Recipe: Crimson Guard
+	//=================================================================================================================
+	"item_recipe_crimson_guard"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"243"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"Model"							"models/props_gameplay/recipe.mdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"825"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_crimson_guard"
+		"ItemRequirements"
+		{
+			"01"						"item_vanguard;item_buckler"
+		}
+	}
+	
+	//=================================================================================================================
+	// Crimson Guard
+	//=================================================================================================================
+	"item_crimson_guard"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"242"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"70.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3850"
+		"ItemShopTags"					"armor;boost_armor;regen_health;block;health_pool"
+		"ItemQuality"					"epic"
+		"ItemAlertable"					"1"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"250"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health_regen"	"6"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"		"2"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_armor"			"5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_chance"			"80"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
 				"block_damage_melee"	"40"
 			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_ranged"	"20"
+			}			
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_aoe_armor"		"2"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"	"9"
+			}		
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_aoe_radius"		"750"
+			}		
+			"11"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_melee_active"	"50"
+			}
+			"12"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_ranged_active"	"50"
+			}		
+			"13"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_chance_active"			"100"
+			}	
 		}
 	}
 
@@ -5592,7 +5717,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_health_regen"	"8"
+				"bonus_health_regen"	"9"
 			}
 			
 			"03"
@@ -5834,7 +5959,12 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"139"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		//"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"35.0"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -5867,6 +5997,16 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_attack_speed"	"30"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"8"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_move_speed"	"20"
 			}
 		}
 	}
@@ -6092,6 +6232,26 @@
 				"var_type"				"FIELD_INTEGER"
 				"cleave_radius"			"250"
 			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_health"			"0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_chance"			"0"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_ranged"	"0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"block_damage_melee"	"0"
+			}
 		}
 	}
 	
@@ -6108,7 +6268,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"900"	
+		"ItemCost"						"800"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -6139,7 +6299,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"165"
-		"ItemCost"						"5050"
+		"ItemCost"						"4950"
 		"ItemShopTags"					"agi;str;int;attack_speed;move_speed;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"manta style"
@@ -6208,24 +6368,19 @@
 			"12"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"cooldown_melee"		"50.0"
-			}
-			"13"
-			{
-				"var_type"				"FIELD_FLOAT"
 				"invuln_duration"		"0.1"
 			}
-			"14"
+			"13"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"vision_radius"			"1000"
 			}
-			"15"
+			"14"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"tooltip_outgoing_melee"			"33"
 			}
-			"16"
+			"15"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"tooltip_outgoing_range"			"28"
@@ -6309,7 +6464,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"700"	
+		"ItemCost"						"600"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -6338,7 +6493,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"2600"
+		"ItemCost"						"2500"
 		"ItemShopTags"					"damage;attack_speed;armor;regen_health;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"armlet of mordiggian"
@@ -6476,7 +6631,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"windwalk_bonus_damage"	"150"
+				"windwalk_bonus_damage"	"175"
 			}
 		}
 	}
@@ -6865,7 +7020,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cold_attack_speed"		"-35"
+				"cold_attack_speed"		"-45"
 			}
 			"06"
 			{
@@ -7028,12 +7183,22 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"lifesteal_percent"		"15"
+				"bonus_regen"			"3"
 			}
 			"04"
 			{
+				"var_type"				"FIELD_INTEGER"
+				"lifesteal_percent"		"15"
+			}
+			"05"
+			{
 				"var_type"				"FIELD_FLOAT"
 				"dominate_duration"		"1200.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_bonus"			"250"
 			}
 		}
 	}
@@ -7050,7 +7215,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"600"	
+		"ItemCost"						"700"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -7075,7 +7240,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"2700"
+		"ItemCost"						"2800"
 		"ItemShopTags"					"damage;attack_speed;unique"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"maelstrom"
@@ -7263,7 +7428,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1000"	
+		"ItemCost"						"900"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -7294,7 +7459,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"25"
-		"ItemCost"						"1900"
+		"ItemCost"						"1800"
 		"ItemShopTags"					"unique;hard_to_tag"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"mom;mask of madness"
@@ -7344,7 +7509,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"850"	
+		"ItemCost"						"700"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -7403,7 +7568,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"0"
-		"ItemCost"						"3300"
+		"ItemCost"						"3150"
 		"ItemShopTags"					"agi;int;unique;hard_to_tag"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"diffusal blade 1"
@@ -7426,7 +7591,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"25 30"
+				"bonus_agility"			"20 35"
 			}
 			"02"
 			{
@@ -7441,27 +7606,37 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"feedback_mana_burn"	"20 36"
+				"feedback_mana_burn"	"25"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"purge_summoned_damage"	"99999"
+				"feedback_mana_burn_ranged"	"25"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"purge_rate"			"5"
+				"purge_summoned_damage"	"99999"
 			}
 			"07"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"purge_root_duration"	"3.0"
+				"var_type"				"FIELD_INTEGER"
+				"purge_rate"			"5"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
+				"purge_root_duration"	"3.0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
 				"purge_slow_duration"	"4.0"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_per_burn"		"1.0"
 			}
 		}
 	}
@@ -7488,7 +7663,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"0"
-		"ItemCost"						"3300"
+		"ItemCost"						"3150"
 		"ItemShopTags"					"agi;int;unique;hard_to_tag"
 		"ItemQuality"					"artifact"
 		"ItemAliases"					"diffusal blade 2"
@@ -7507,7 +7682,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_agility"			"25 30"
+				"bonus_agility"			"20 35"
 			}
 			"02"
 			{
@@ -7522,27 +7697,37 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"feedback_mana_burn"	"20 36"
+				"feedback_mana_burn"	"25"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"purge_summoned_damage"	"99999"
+				"feedback_mana_burn_ranged"	"25"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"purge_rate"			"5"
+				"purge_summoned_damage"	"99999"
 			}
 			"07"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"purge_root_duration"	"3.0"
+				"var_type"				"FIELD_INTEGER"
+				"purge_rate"			"5"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
+				"purge_root_duration"	"3.0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_FLOAT"
 				"purge_slow_duration"	"4.0"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_per_burn"		"1.0"
 			}
 		}
 	}
@@ -7649,6 +7834,11 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"ethereal_damage_bonus"	"-40"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"	"1100"
 			}
 		}
 	}
@@ -8521,7 +8711,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"985"
+		"ItemCost"						"1010"
 		"ItemShopTags"					""
 		"ItemQuality"					"rare"
 		"ItemAliases"					"roa;ring of aquila"
@@ -8622,7 +8812,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"975"
+		"ItemCost"						"1000"
 		"ItemShopTags"					"move_speed;regen_health;armor"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"tranquil boots"
@@ -9869,6 +10059,6 @@
 		}
 	}
 	
-	// next free ID: 242
+	// next free ID: 244
 }
 

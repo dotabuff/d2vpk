@@ -649,6 +649,17 @@ Rule sandking_PowerupIsPowerupHaste_Rule
 	response sandking_PowerupIsPowerupHaste
 }
 
+Response sandking_PowerupIsPowerupBounty
+{
+	scene "scenes/sandking/sandking_skg_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule sandking_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Issandking IsPowerupBounty
+	response sandking_PowerupIsPowerupBounty
+}
+
 Response sandking_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/sandking/sandking_skg_doubdam_01.vcd" nodelay noscene 

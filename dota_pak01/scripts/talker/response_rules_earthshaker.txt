@@ -606,6 +606,17 @@ Rule earthshaker_LastHit_Rule
 	response earthshaker_LastHit
 }
 
+Response earthshaker_LastHit
+{
+	scene "scenes/earthshaker/earthshaker_erth_purch_03.vcd" nodelay noscene 
+}
+
+Rule earthshaker_LastHit_Rule
+{
+	criteria LastHit Isearthshaker  
+	response earthshaker_LastHit
+}
+
 Response earthshaker_Defeat
 {
 	scene "scenes/earthshaker/earthshaker_erth_lose_01.vcd" nodelay noscene 
@@ -695,6 +706,17 @@ Rule earthshaker_PowerupIsPowerupHaste_Rule
 	response earthshaker_PowerupIsPowerupHaste
 }
 
+Response earthshaker_PowerupIsPowerupBounty
+{
+	scene "scenes/earthshaker/earthshaker_erth_win_04.vcd" nodelay noscene 
+}
+
+Rule earthshaker_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isearthshaker IsPowerupBounty
+	response earthshaker_PowerupIsPowerupBounty
+}
+
 Response earthshaker_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/earthshaker/earthshaker_erth_doubdam_01.vcd" nodelay noscene 
@@ -776,6 +798,7 @@ Rule earthshaker_PowerupIsPowerupInvisibility_Rule
 
 Response earthshaker_LevelUp
 {
+	scene "scenes/earthshaker/earthshaker_erth_invis_02.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_level_01.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_level_02.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_level_03.vcd" nodelay noscene 

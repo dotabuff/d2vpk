@@ -718,6 +718,17 @@ Rule templar_assassin_PowerupIsPowerupRegeneration_Rule
 	response templar_assassin_PowerupIsPowerupRegeneration
 }
 
+Response templar_assassin_PowerupIsPowerupBounty
+{
+	scene "scenes/templar_assassin/templar_assassin_temp_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule templar_assassin_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Istemplar_assassin IsPowerupBounty
+	response templar_assassin_PowerupIsPowerupBounty
+}
+
 Response templar_assassin_PowerupIsPowerupIllusion
 {
 	scene "scenes/templar_assassin/templar_assassin_temp_illus_01.vcd" nodelay noscene 

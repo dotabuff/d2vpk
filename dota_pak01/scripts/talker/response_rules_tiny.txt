@@ -649,6 +649,28 @@ Rule tiny_PowerupIsPowerupDoubleDamageChance_25%_Rule
 	response tiny_PowerupIsPowerupDoubleDamageChance_25%
 }
 
+Response tiny_PowerupIsPowerupBounty
+{
+	scene "scenes/tiny/tiny_tiny_purch_04.vcd" nodelay noscene  
+}
+
+Rule tiny_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Istiny IsPowerupBounty
+	response tiny_PowerupIsPowerupBounty
+}
+
+Response tiny_PowerupIsPowerupBountyChance_30%
+{
+	scene "scenes/tiny/tiny_tiny_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule tiny_PowerupIsPowerupBountyChance_30%_Rule
+{
+	criteria Powerup Istiny IsPowerupBounty Chance_30%
+	response tiny_PowerupIsPowerupBountyChance_30%
+}
+
 Response tiny_PowerupIsPowerupRegeneration
 {
 	scene "scenes/tiny/tiny_tiny_regen_01.vcd" nodelay noscene 

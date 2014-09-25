@@ -3447,6 +3447,17 @@ Rule rubick_PowerupIsPowerupRegeneration_Rule
 	response rubick_PowerupIsPowerupRegeneration
 }
 
+Response rubick_PowerupIsPowerupBounty
+{
+	scene "scenes/rubick/rubick_rubick_nullfield_02.vcd" nodelay noscene 
+}
+
+Rule rubick_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isrubick IsPowerupBounty
+	response rubick_PowerupIsPowerupBounty
+}
+
 Response rubick_PowerupIsPowerupIllusion
 {
 	scene "scenes/rubick/rubick_rubick_illus_01.vcd" nodelay noscene 

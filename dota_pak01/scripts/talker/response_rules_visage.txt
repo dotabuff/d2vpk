@@ -37,19 +37,6 @@ Rule visage_CustomIsGameStart_Rule
 	response visage_CustomIsGameStart
 }
 
-Response visage_Custom
-{
-	scene "scenes/visage/visage_visa_failure_01.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_failure_02.vcd" nodelay noscene 
-	scene "scenes/visage/visage_visa_failure_03.vcd" nodelay noscene 
-}
-
-Rule visage_Custom_Rule
-{
-	criteria Custom Isvisage 
-	response visage_Custom
-}
-
 Response visage_KillIsFirstBlood
 {
 	scene "scenes/visage/visage_visa_firstblood_01.vcd" nodelay noscene 
@@ -991,6 +978,17 @@ Rule visage_PowerupIsPowerupRegenerationChance_25%_Rule
 {
 	criteria Powerup Isvisage IsPowerupRegeneration Chance_25%
 	response visage_PowerupIsPowerupRegenerationChance_25%
+}
+
+Response visage_PowerupIsPowerupBounty
+{
+	scene "scenes/visage/visage_visa_deny_10.vcd" nodelay noscene 
+}
+
+Rule visage_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isvisage IsPowerupBounty
+	response visage_PowerupIsPowerupBounty
 }
 
 Response visage_PowerupIsPowerupIllusion

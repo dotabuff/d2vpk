@@ -22,15 +22,19 @@
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_75dB"
+	"soundlevel"  	"SNDLVL_78dB"
 	"pitch"			"95, 105"
-	"wave"			"weapons/hero/spectre/attack.wav"	
-	"soundentry_version" "2"
+	"wave"			")weapons/hero/spectre/attack.wav"	
 	"operator_stacks"
 	{
 		"start_stack"
 		{
 			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
 		}
 	}
 }
@@ -65,11 +69,43 @@
 "Hero_Spectre.DaggerImpact"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.6, 0.8"
+	"volume"		"0.7"
 	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"95,105"
 	"wave"			")weapons/hero/spectre/dagger_impact.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+		}
+	}
 }
+
+"Hero_Spectre.Desolate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"90, 110"
+	"wave"			")weapons/hero/spectre/desolate.wav"	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
 
 "Hero_Spectre.HauntCast"
 {

@@ -368,11 +368,11 @@ Rule shredder_CastExecuteIsTimbWhirlingChance_15%_Rule
 
 Response shredder_CastExecuteIsTimbChakramChance_50%
 {
-	scene "scenes/shredder/shredder_timb_chakram_02.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_chakram_03.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_chakram_06.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_chakram_07.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_chakram_08.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_chakram_02.vcd" nodelay noscene weapondelay 5
+	scene "scenes/shredder/shredder_timb_chakram_03.vcd" nodelay noscene weapondelay 5
+	scene "scenes/shredder/shredder_timb_chakram_06.vcd" nodelay noscene weapondelay 5
+	scene "scenes/shredder/shredder_timb_chakram_07.vcd" nodelay noscene weapondelay 5
+	scene "scenes/shredder/shredder_timb_chakram_08.vcd" nodelay noscene weapondelay 5
 }
 
 Rule shredder_CastExecuteIsTimbChakramChance_50%_Rule
@@ -383,9 +383,9 @@ Rule shredder_CastExecuteIsTimbChakramChance_50%_Rule
 
 Response shredder_CastExecuteIsTimbChackramReturnChance_5%
 {
-	scene "scenes/shredder/shredder_timb_chakramreturn_01.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_chakramreturn_08.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_chakramreturn_09.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_chakramreturn_01.vcd" nodelay noscene weapondelay 5
+	scene "scenes/shredder/shredder_timb_chakramreturn_08.vcd" nodelay noscene weapondelay 5
+	scene "scenes/shredder/shredder_timb_chakramreturn_09.vcd" nodelay noscene weapondelay 5
 }
 
 Rule shredder_CastExecuteIsTimbChackramReturnChance_5%_Rule
@@ -396,9 +396,9 @@ Rule shredder_CastExecuteIsTimbChackramReturnChance_5%_Rule
 
 Response shredder_CastExecuteIsTimbChackramReturn
 {
-	scene "scenes/shredder/shredder_timb_chakramreturn_03.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_chakramreturn_04.vcd" nodelay noscene 
-	scene "scenes/shredder/shredder_timb_chakramreturn_05.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_chakramreturn_03.vcd" nodelay noscene weapondelay 5
+	scene "scenes/shredder/shredder_timb_chakramreturn_04.vcd" nodelay noscene weapondelay 5
+	scene "scenes/shredder/shredder_timb_chakramreturn_05.vcd" nodelay noscene weapondelay 5
 }
 
 Rule shredder_CastExecuteIsTimbChackramReturn_Rule
@@ -993,6 +993,17 @@ Rule shredder_PowerupIsPowerupHasteChance_25%_Rule
 {
 	criteria Powerup Isshredder IsPowerupHaste Chance_25%
 	response shredder_PowerupIsPowerupHasteChance_25%
+}
+
+Response shredder_PowerupIsPowerupBounty
+{
+	scene "scenes/shredder/shredder_timb_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule shredder_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isshredder IsPowerupBounty
+	response shredder_PowerupIsPowerupBounty
 }
 
 Response shredder_PowerupIsPowerupDoubleDamage

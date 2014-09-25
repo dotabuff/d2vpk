@@ -816,6 +816,17 @@ Rule magnataur_PowerupIsPowerupRegeneration_Rule
 	response magnataur_PowerupIsPowerupRegeneration
 }
 
+Response magnataur_PowerupIsPowerupBounty
+{
+	scene "scenes/magnataur/magnataur_magn_item_moderate_01.vcd" nodelay noscene 
+}
+
+Rule magnataur_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Ismagnataur IsPowerupBounty
+	response magnataur_PowerupIsPowerupBounty
+}
+
 Response magnataur_PowerupIsPowerupIllusion
 {
 	scene "scenes/magnataur/magnataur_magn_illus_01.vcd" nodelay noscene 

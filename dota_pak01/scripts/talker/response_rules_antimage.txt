@@ -517,6 +517,17 @@ Rule antimage_ImmortalityChance_25%_Rule
 	response antimage_ImmortalityChance_25%
 }
 
+Response antimage_PowerupIsPowerupBounty
+{
+	scene "scenes/antimage/antimage_anti_deny_09.vcd" nodelay noscene 
+}
+
+Rule antimage_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isantimage IsPowerupBounty
+	response antimage_PowerupIsPowerupBounty
+}
+
 Response antimage_PowerupIsPowerupHaste
 {
 	scene "scenes/antimage/antimage_anti_haste_01.vcd" nodelay noscene 

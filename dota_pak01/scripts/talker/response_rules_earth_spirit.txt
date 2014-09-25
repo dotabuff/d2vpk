@@ -7,6 +7,7 @@ criterion "IsEarthSpiRollingBoulder" "abilityname" "earth_spirit_rolling_boulder
 criterion "IsEarthSpiGeoGrip" "abilityname" "earth_spirit_geomagnetic_grip" weight 5 required
 criterion "IsEarthSpiMagnetize" "abilityname" "earth_spirit_magnetize" weight 5 required
 criterion "IsEaSpRock" "targetclassname" "npc_dota_earth_spirit_stone" weight 5 required
+criterion "IsEarthSpiritEnchRemnant" "abilityname" "earth_spirit_petrify" weight 5 required
 
 Response earth_spirit_Spawn
 {
@@ -40,10 +41,10 @@ Rule earth_spirit_CustomIsGameStart_Rule
 Response earth_spirit_CustomIsEarthSpiStoneRemnant
 {
 	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_05.vcd" nodelay noscene weapondelay 5
-	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_07.vcd" nodelay noscene weapondelay 5
 	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_10.vcd" nodelay noscene weapondelay 5
 	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_11.vcd" nodelay noscene weapondelay 5
 	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_12.vcd" nodelay noscene weapondelay 5
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_07.vcd" nodelay noscene weapondelay 5
 	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_14.vcd" nodelay noscene weapondelay 5
 	scene "scenes/earth_spirit/earth_spirit_earthspi_happy_03.vcd" nodelay noscene weapondelay 5
 	scene "scenes/earth_spirit/earth_spirit_earthspi_happy_04.vcd" nodelay noscene weapondelay 5
@@ -119,6 +120,7 @@ Response earth_spirit_Kill
 {
 	scene "scenes/earth_spirit/earth_spirit_earthspi_magnetize_01.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_magnetize_03.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_magnetize_06.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_kill_01.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_kill_03.vcd" nodelay noscene 
 	scene "scenes/earth_spirit/earth_spirit_earthspi_kill_04.vcd" nodelay noscene 
@@ -563,6 +565,18 @@ Rule earth_spirit_CastExecuteIsEarthSpiGeoGripIsEaSpRockChance_75%_Rule
 {
 	criteria CastExecute Isearth_spirit IsEarthSpiGeoGrip IsEaSpRock Chance_75%
 	response earth_spirit_CastExecuteIsEarthSpiGeoGripIsEaSpRockChance_75%
+}
+
+Response earth_spirit_CastExecuteIsEarthSpiritEnchRemnantChance_75%
+{
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_07.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_stonecaller_14.vcd" nodelay noscene 
+}
+
+Rule earth_spirit_CastExecuteIsEarthSpiritEnchRemnantChance_75%_Rule
+{
+	criteria CastExecute Isearth_spirit IsEarthSpiritEnchRemnant Chance_75%
+	response earth_spirit_CastExecuteIsEarthSpiritEnchRemnantChance_75%
 }
 
 Response earth_spirit_LevelUp
@@ -1205,6 +1219,17 @@ Rule earth_spirit_PowerupIsPowerupHasteChance_25%_Rule
 {
 	criteria Powerup Isearth_spirit IsPowerupHaste Chance_25%
 	response earth_spirit_PowerupIsPowerupHasteChance_25%
+}
+
+Response earth_spirit_PowerupIsPowerupBounty
+{
+	scene "scenes/earth_spirit/earth_spirit_earthspi_itemmoderate_01.vcd" nodelay noscene 
+}
+
+Rule earth_spirit_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isearth_spirit IsPowerupBounty
+	response earth_spirit_PowerupIsPowerupBounty
 }
 
 Response earth_spirit_PowerupIsPowerupDoubleDamage

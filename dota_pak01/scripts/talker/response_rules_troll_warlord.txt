@@ -827,6 +827,17 @@ Rule troll_warlord_ImmortalityChance_25%_Rule
 	response troll_warlord_ImmortalityChance_25%
 }
 
+Response troll_warlord_PowerupIsPowerupBounty
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_lasthit_01.vcd" nodelay noscene 
+}
+
+Rule troll_warlord_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Istroll_warlord IsPowerupBounty
+	response troll_warlord_PowerupIsPowerupBounty
+}
+
 Response troll_warlord_PowerupIsPowerupHaste
 {
 	scene "scenes/troll_warlord/troll_warlord_troll_haste_01.vcd" nodelay noscene 

@@ -18,6 +18,30 @@ Rule crystalmaiden_Spawn_Rule
 	response crystalmaiden_Spawn
 }
 
+Response crystalmaiden_LastHit
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_spawn_03.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_08.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_10.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_11.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_12.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_13.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_LastHit_Rule
+{
+	criteria LastHit Iscrystalmaiden 
+	response crystalmaiden_LastHit
+}
+
 Response crystalmaiden_Move
 {
 	scene "scenes/crystalmaiden/crystalmaiden_cm_move_01.vcd" nodelay noscene 
@@ -118,6 +142,17 @@ Rule crystalmaiden_PowerupIsPowerupIllusionChance_5%_Rule
 {
 	criteria Powerup Iscrystalmaiden IsPowerupIllusion Chance_5%
 	response crystalmaiden_PowerupIsPowerupIllusionChance_5%
+}
+
+Response crystalmaiden_PowerupIsPowerupBounty
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_bottle_03.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupBounty
+	response crystalmaiden_PowerupIsPowerupBounty
 }
 
 Response crystalmaiden_PowerupIsPowerupInvisibility
@@ -632,29 +667,6 @@ Rule crystalmaiden_Deny_Rule
 {
 	criteria Deny Iscrystalmaiden 
 	response crystalmaiden_Deny
-}
-
-Response crystalmaiden_LastHit
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_01.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_02.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_04.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_05.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_06.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_07.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_08.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_09.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_10.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_11.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_12.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_lasthit_13.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_LastHit_Rule
-{
-	criteria LastHit Iscrystalmaiden 
-	response crystalmaiden_LastHit
 }
 
 Response crystalmaiden_Defeat

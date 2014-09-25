@@ -381,6 +381,17 @@ Rule lion_Immortality_Rule
 	response lion_Immortality
 }
 
+Response lion_PowerupIsPowerupBounty
+{
+	scene "scenes/lion/lion_lion_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule lion_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Islion IsPowerupBounty
+	response lion_PowerupIsPowerupBounty
+}
+
 Response lion_PowerupIsPowerupHaste
 {
 	scene "scenes/lion/lion_lion_haste_01.vcd" nodelay noscene 

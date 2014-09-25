@@ -739,6 +739,17 @@ Rule tinker_PowerupIsPowerupRegenerationChance_25%_Rule
 	response tinker_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response tinker_PowerupIsPowerupBounty
+{
+	scene "scenes/tinker/tinker_tink_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule tinker_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Istinker IsPowerupBounty
+	response tinker_PowerupIsPowerupBounty
+}
+
 Response tinker_PowerupIsPowerupIllusion
 {
 	scene "scenes/tinker/tinker_tink_illus_01.vcd" nodelay noscene 

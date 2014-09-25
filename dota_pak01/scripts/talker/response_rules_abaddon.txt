@@ -857,6 +857,17 @@ Rule abaddon_ImmortalityChance_25%_Rule
 	response abaddon_ImmortalityChance_25%
 }
 
+Response abaddon_PowerupIsPowerupBounty
+{
+	scene "scenes/abaddon/abaddon_abad_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule abaddon_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isabaddon IsPowerupBounty
+	response abaddon_PowerupIsPowerupBounty
+}
+
 Response abaddon_PowerupIsPowerupHaste
 {
 	scene "scenes/abaddon/abaddon_abad_haste_01.vcd" nodelay noscene 

@@ -511,6 +511,28 @@ Rule venomancer_PowerupIsPowerupRegeneration_Rule
 	response venomancer_PowerupIsPowerupRegeneration
 }
 
+Response venomancer_PowerupIsPowerupBounty
+{
+	scene "scenes/venomancer/venomancer_venm_lasthit_02.vcd" nodelay noscene 
+}
+
+Rule venomancer_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isvenomancer IsPowerupBounty
+	response venomancer_PowerupIsPowerupBounty
+}
+
+Response venomancer_PowerupIsPowerupBountyChance_30%
+{
+	scene "scenes/venomancer/venomancer_venm_rosh_05.vcd" nodelay noscene 
+}
+
+Rule venomancer_PowerupIsPowerupBountyChance_30%_Rule
+{
+	criteria Powerup Isvenomancer IsPowerupBounty Chance_30%
+	response venomancer_PowerupIsPowerupBountyChance_30%
+}
+
 Response venomancer_PowerupIsPowerupIllusion
 {
 	scene "scenes/venomancer/venomancer_venm_illus_01.vcd" nodelay noscene 

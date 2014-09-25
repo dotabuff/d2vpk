@@ -33,22 +33,6 @@ Rule centaur_CustomIsGameStart_Rule
 	response centaur_CustomIsGameStart
 }
 
-Response centaur_Custom
-{
-	scene "scenes/centaur/centaur_cent_failure_01.vcd" nodelay noscene 
-	scene "scenes/centaur/centaur_cent_failure_02.vcd" nodelay noscene 
-	scene "scenes/centaur/centaur_cent_failure_03.vcd" nodelay noscene 
-	scene "scenes/centaur/centaur_cent_failure_04.vcd" nodelay noscene 
-	scene "scenes/centaur/centaur_cent_failure_05.vcd" nodelay noscene 
-	scene "scenes/centaur/centaur_cent_failure_06.vcd" nodelay noscene 
-}
-
-Rule centaur_Custom_Rule
-{
-	criteria Custom Iscentaur 
-	response centaur_Custom
-}
-
 Response centaur_KillIsFirstBlood
 {
 	scene "scenes/centaur/centaur_cent_firstblood_01.vcd" nodelay noscene 
@@ -973,6 +957,17 @@ Rule centaur_ImmortalityChance_25%_Rule
 {
 	criteria Immortality Iscentaur Chance_25%
 	response centaur_ImmortalityChance_25%
+}
+
+Response centaur_PowerupIsPowerupBounty
+{
+	scene "scenes/centaur/centaur_cent_drop_medium_01.vcd" nodelay noscene 
+}
+
+Rule centaur_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iscentaur IsPowerupBounty
+	response centaur_PowerupIsPowerupBounty
 }
 
 Response centaur_PowerupIsPowerupHaste

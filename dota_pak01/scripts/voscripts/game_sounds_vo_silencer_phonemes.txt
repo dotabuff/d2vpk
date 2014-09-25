@@ -2074,7 +2074,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Can you feel your grasp slipping.
+Can you feel your grasp slipping?
 }
 WORDS
 {
@@ -4800,7 +4800,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Always pleased to ally myself with the Antimage.
+Always pleased to ally myself with the Anti-Mage.
 }
 WORDS
 {
@@ -4851,12 +4851,15 @@ WORD the 2.400 2.640
 240 dh 2.400 2.480 1
 105 iy 2.480 2.640 1
 }
-WORD Antimage 2.640 3.664
+WORD Anti 2.640 2.976
 {
 230 ae 2.640 2.784 1
 110 n 2.784 2.816 1
 116 t 2.816 2.912 1
-601 ax 2.912 2.976 1
+105 iy 2.912 2.976 1
+}
+WORD Mage 2.976 3.664
+{
 109 m 2.976 3.120 1
 230 ae 3.120 3.408 1
 676 jh 3.408 3.664 1
@@ -9029,7 +9032,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It goes without saying, this one is in the bag!
+It goes without saying: this one is in the bag!
 }
 WORDS
 {
@@ -9854,7 +9857,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Ah. 
+Ah.
 }
 WORDS
 {

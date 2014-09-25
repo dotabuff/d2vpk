@@ -29,17 +29,6 @@ Rule clinkz_CustomIsGameStart_Rule
 	response clinkz_CustomIsGameStart
 }
 
-Response clinkz_Custom
-{
-	scene "scenes/clinkz/clinkz_clinkz_failure_01.vcd" nodelay noscene 
-}
-
-Rule clinkz_Custom_Rule
-{
-	criteria Custom Isclinkz 
-	response clinkz_Custom
-}
-
 Response clinkz_KillIsFirstBlood
 {
 	scene "scenes/clinkz/clinkz_clinkz_first_01.vcd" nodelay noscene 
@@ -339,6 +328,9 @@ Response clinkz_LastHit
 	scene "scenes/clinkz/clinkz_clinkz_lasthit_05.vcd" nodelay noscene 
 	scene "scenes/clinkz/clinkz_clinkz_lasthit_06.vcd" nodelay noscene 
 	scene "scenes/clinkz/clinkz_clinkz_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/clinkz/clinkz_clinkz_immort_03.vcd" nodelay noscene 
+	scene "scenes/clinkz/clinkz_clinkz_doubdam_02.vcd" nodelay noscene 
+	scene "scenes/clinkz/clinkz_clinkz_illus_02.vcd" nodelay noscene 
 }
 
 Rule clinkz_LastHit_Rule
@@ -676,6 +668,17 @@ Rule clinkz_PowerupIsPowerupIllusionChance_25%_Rule
 {
 	criteria Powerup Isclinkz IsPowerupIllusion Chance_25%
 	response clinkz_PowerupIsPowerupIllusionChance_25%
+}
+
+Response clinkz_PowerupIsPowerupBounty
+{
+	scene "scenes/clinkz/clinkz_clinkz_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule clinkz_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isclinkz IsPowerupBounty
+	response clinkz_PowerupIsPowerupBounty
 }
 
 Response clinkz_PowerupIsPowerupInvisibility

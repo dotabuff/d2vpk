@@ -29,20 +29,6 @@ Rule silencer_CustomIsGameStart_Rule
 	response silencer_CustomIsGameStart
 }
 
-Response silencer_Custom
-{
-	scene "scenes/silencer/silencer_silen_ability_failure_01.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_failure_02.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_failure_03.vcd" nodelay noscene 
-	scene "scenes/silencer/silencer_silen_ability_failure_04.vcd" nodelay noscene 
-}
-
-Rule silencer_Custom_Rule
-{
-	criteria Custom Issilencer 
-	response silencer_Custom
-}
-
 Response silencer_KillIsFirstBlood
 {
 	scene "scenes/silencer/silencer_silen_first_01.vcd" nodelay noscene 
@@ -685,6 +671,17 @@ Rule silencer_PowerupIsPowerupRegeneration_Rule
 {
 	criteria Powerup Issilencer IsPowerupRegeneration
 	response silencer_PowerupIsPowerupRegeneration
+}
+
+Response silencer_PowerupIsPowerupBounty
+{
+	scene "scenes/silencer/silencer_silen_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule silencer_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Issilencer IsPowerupBounty
+	response silencer_PowerupIsPowerupBounty
 }
 
 Response silencer_PowerupIsPowerupIllusion

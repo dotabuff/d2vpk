@@ -33,20 +33,6 @@ Rule naga_siren_CustomIsGameStart_Rule
 	response naga_siren_CustomIsGameStart
 }
 
-Response naga_siren_Custom
-{
-	scene "scenes/naga_siren/naga_siren_naga_failure_01.vcd" nodelay noscene 
-	scene "scenes/naga_siren/naga_siren_naga_failure_02.vcd" nodelay noscene 
-	scene "scenes/naga_siren/naga_siren_naga_failure_03.vcd" nodelay noscene 
-	scene "scenes/naga_siren/naga_siren_naga_failure_04.vcd" nodelay noscene 
-}
-
-Rule naga_siren_Custom_Rule
-{
-	criteria Custom Isnaga_siren 
-	response naga_siren_Custom
-}
-
 Response naga_siren_KillIsFirstBlood
 {
 	scene "scenes/naga_siren/naga_siren_naga_firstblood_01.vcd" nodelay noscene 
@@ -980,6 +966,17 @@ Rule naga_siren_PowerupIsPowerupRegenerationChance_10%_Rule
 {
 	criteria Powerup Isnaga_siren IsPowerupRegeneration Chance_10%
 	response naga_siren_PowerupIsPowerupRegenerationChance_10%
+}
+
+Response naga_siren_PowerupIsPowerupBounty
+{
+	scene "scenes/naga_siren/naga_siren_naga_levelup_03.vcd" nodelay noscene 
+}
+
+Rule naga_siren_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isnaga_siren IsPowerupBounty
+	response naga_siren_PowerupIsPowerupBounty
 }
 
 Response naga_siren_PowerupIsPowerupIllusion

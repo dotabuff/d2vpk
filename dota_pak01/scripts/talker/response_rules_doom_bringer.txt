@@ -661,6 +661,28 @@ Rule doom_bringer_PowerupIsPowerupIllusion_Rule
 	response doom_bringer_PowerupIsPowerupIllusion
 }
 
+Response doom_bringer_PowerupIsPowerupIllusionChance_25%
+{
+	scene "scenes/doom_bringer/doom_bringer_doom_illus_02.vcd" nodelay noscene 
+}
+
+Rule doom_bringer_PowerupIsPowerupIllusionChance_25%_Rule
+{
+	criteria Powerup Isdoom_bringer IsPowerupIllusion Chance_25%
+	response doom_bringer_PowerupIsPowerupIllusionChance_25%
+}
+
+Response doom_bringer_PowerupIsPowerupBounty
+{
+	scene "scenes/doom_bringer/doom_bringer_doom_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule doom_bringer_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isdoom_bringer IsPowerupBounty
+	response doom_bringer_PowerupIsPowerupBounty
+}
+
 Response doom_bringer_PowerupIsPowerupInvisibility
 {
 	scene "scenes/doom_bringer/doom_bringer_doom_invis_01.vcd" nodelay noscene 

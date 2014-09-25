@@ -756,26 +756,15 @@ Rule lycan_Victory_Rule
 	response lycan_Victory
 }
 
-Response lycan_Immortality
+Response lycan_PowerupIsPowerupBounty
 {
-	scene "scenes/lycan/lycan_lycan_immort_01.vcd" nodelay noscene 
+	scene "scenes/lycan/lycan_lycan_lasthit_06.vcd" nodelay noscene 
 }
 
-Rule lycan_Immortality_Rule
+Rule lycan_PowerupIsPowerupBounty_Rule
 {
-	criteria Immortality Islycan 
-	response lycan_Immortality
-}
-
-Response lycan_ImmortalityChance_25%
-{
-	scene "scenes/lycan/lycan_lycan_immort_02.vcd" nodelay noscene 
-}
-
-Rule lycan_ImmortalityChance_25%_Rule
-{
-	criteria Immortality Islycan Chance_25%
-	response lycan_ImmortalityChance_25%
+	criteria Powerup Islycan IsPowerupBounty
+	response lycan_PowerupIsPowerupBounty
 }
 
 Response lycan_PowerupIsPowerupHaste
@@ -887,6 +876,28 @@ Rule lycan_PowerupIsPowerupInvisibilityChance_25%_Rule
 {
 	criteria Powerup Islycan IsPowerupInvisibility Chance_25%
 	response lycan_PowerupIsPowerupInvisibilityChance_25%
+}
+
+Response lycan_Immortality
+{
+	scene "scenes/lycan/lycan_lycan_immort_01.vcd" nodelay noscene 
+}
+
+Rule lycan_Immortality_Rule
+{
+	criteria Immortality Islycan 
+	response lycan_Immortality
+}
+
+Response lycan_ImmortalityChance_25%
+{
+	scene "scenes/lycan/lycan_lycan_immort_02.vcd" nodelay noscene 
+}
+
+Rule lycan_ImmortalityChance_25%_Rule
+{
+	criteria Immortality Islycan Chance_25%
+	response lycan_ImmortalityChance_25%
 }
 
 Response lycan_CooldownLittleNag

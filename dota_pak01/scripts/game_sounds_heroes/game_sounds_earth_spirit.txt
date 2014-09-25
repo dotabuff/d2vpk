@@ -455,6 +455,54 @@
 	}
 }
 
+"Hero_EarthSpirit.StoneRemnant.Destroy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/earth_spirit/stone_remnant_destroy.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+   		}
+	}
+}
+
+"Hero_EarthSpirit.Petrify"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/earth_spirit/petrify.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+   		}
+	}
+}
+
 "Hero_EarthSpirit.Magnetize.Cast"
 {
 	"channel"		"CHAN_STATIC"

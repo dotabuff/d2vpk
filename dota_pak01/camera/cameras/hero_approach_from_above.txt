@@ -1,0 +1,33 @@
+"hero_approach"
+{
+	"version"		"1"
+	"fow_amount"		"0"
+	"timescale"		"1.0"
+	"easing"		"ease-out"
+
+	"keyframes"
+	{
+		"0.000"
+		{
+			"tx"		"700"
+			"ty"		"-100"
+			"tz"		"300"
+			"rx"		"0"
+			"ry"		"15"
+			"rz"		"180"
+			"fov"		"80.000"
+			"fog_start"	"1000.000"
+			"fog_end"	"5000.000"
+			"zfar"		"8000.000"
+		}
+		"3.50"
+		{
+			"tx"		"400"
+			"tz"		"100"
+			"ry"		"0"
+			"fov"		"75"
+		}
+	}
+}
+
+

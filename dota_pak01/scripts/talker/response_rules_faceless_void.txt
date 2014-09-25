@@ -494,6 +494,17 @@ Rule faceless_void_PowerupIsPowerupRegenerationChance_25%_Rule
 	response faceless_void_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response faceless_void_PowerupIsPowerhupBounty
+{
+	scene "scenes/faceless_void/faceless_void_face_lasthit_08.vcd" nodelay noscene 
+}
+
+Rule faceless_void_PowerupIsPowerhupBounty_Rule
+{
+	criteria Powerup Isfaceless_void IsPowerhupBounty
+	response faceless_void_PowerupIsPowerhupBounty
+}
+
 Response faceless_void_PowerupIsPowerupIllusion
 {
 	scene "scenes/faceless_void/faceless_void_face_illus_01.vcd" nodelay noscene 

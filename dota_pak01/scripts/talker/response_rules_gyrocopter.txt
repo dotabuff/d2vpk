@@ -925,6 +925,17 @@ Rule gyrocopter_PowerupIsPowerupRegenerationChance_25%_Rule
 	response gyrocopter_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response gyrocopter_PowerupIsPowerupBounty
+{
+	scene "scenes/gyrocopter/gyrocopter_gyro_lasthit_09.vcd" nodelay noscene 
+}
+
+Rule gyrocopter_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isgyrocopter IsPowerupBounty
+	response gyrocopter_PowerupIsPowerupBounty
+}
+
 Response gyrocopter_PowerupIsPowerupIllusion
 {
 	scene "scenes/gyrocopter/gyrocopter_gyro_illus_01.vcd" nodelay noscene 

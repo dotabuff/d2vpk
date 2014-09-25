@@ -722,6 +722,17 @@ Rule leshrac_PowerupIsPowerupRegeneration_Rule
 	response leshrac_PowerupIsPowerupRegeneration
 }
 
+Response leshrac_PowerupIsPowerupBounty
+{
+	scene "scenes/leshrac/leshrac_lesh_lasthit_02.vcd" nodelay noscene 
+}
+
+Rule leshrac_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isleshrac IsPowerupBounty
+	response leshrac_PowerupIsPowerupBounty
+}
+
 Response leshrac_PowerupIsPowerupIllusion
 {
 	scene "scenes/leshrac/leshrac_lesh_illus_01.vcd" nodelay noscene 

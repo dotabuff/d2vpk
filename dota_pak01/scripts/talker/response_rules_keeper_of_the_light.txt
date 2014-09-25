@@ -866,6 +866,17 @@ Rule keeper_of_the_light_PowerupIsPowerupHasteChance_25%_Rule
 	response keeper_of_the_light_PowerupIsPowerupHasteChance_25%
 }
 
+Response keeper_of_the_light_PowerupIsPowerupBounty
+{
+	scene "scenes/keeper_of_the_light/keeper_of_the_light_keep_lasthit_10.vcd" nodelay noscene 
+}
+
+Rule keeper_of_the_light_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iskeeper_of_the_light IsPowerupBounty
+	response keeper_of_the_light_PowerupIsPowerupBounty
+}
+
 Response keeper_of_the_light_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/keeper_of_the_light/keeper_of_the_light_keep_doubdam_01.vcd" nodelay noscene 

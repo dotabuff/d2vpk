@@ -845,6 +845,7 @@ Rule brewmaster_Immortality_Rule
 
 Response brewmaster_PowerupIsPowerupHaste
 {
+	scene "scenes/brewmaster/brewmaster_brew_level_01.vcd" nodelay noscene 
 	scene "scenes/brewmaster/brewmaster_brew_haste_01.vcd" nodelay noscene 
 }
 

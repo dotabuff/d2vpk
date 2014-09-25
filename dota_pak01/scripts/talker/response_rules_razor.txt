@@ -684,6 +684,17 @@ Rule razor_PowerupIsPowerupRegeneration_Rule
 	response razor_PowerupIsPowerupRegeneration
 }
 
+Response razor_PowerupIsPowerupBounty
+{
+	scene "scenes/razor/razor_raz_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule razor_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Israzor IsPowerupBounty
+	response razor_PowerupIsPowerupBounty
+}
+
 Response razor_PowerupIsPowerupIllusion
 {
 	scene "scenes/razor/razor_raz_illus_01.vcd" nodelay noscene 

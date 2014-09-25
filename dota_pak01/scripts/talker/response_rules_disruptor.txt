@@ -32,24 +32,6 @@ Rule disruptor_CustomIsGameStart_Rule
 	response disruptor_CustomIsGameStart
 }
 
-Response disruptor_Custom
-{
-	scene "scenes/disruptor/disruptor_dis_failure_01.vcd" nodelay noscene 
-	scene "scenes/disruptor/disruptor_dis_failure_02.vcd" nodelay noscene 
-	scene "scenes/disruptor/disruptor_dis_failure_03.vcd" nodelay noscene 
-	scene "scenes/disruptor/disruptor_dis_failure_04.vcd" nodelay noscene 
-	scene "scenes/disruptor/disruptor_dis_failure_05.vcd" nodelay noscene 
-	scene "scenes/disruptor/disruptor_dis_failure_06.vcd" nodelay noscene 
-	scene "scenes/disruptor/disruptor_dis_failure_07.vcd" nodelay noscene 
-	scene "scenes/disruptor/disruptor_dis_failure_08.vcd" nodelay noscene 
-}
-
-Rule disruptor_Custom_Rule
-{
-	criteria Custom Isdisruptor 
-	response disruptor_Custom
-}
-
 Response disruptor_KillIsFirstBlood
 {
 	scene "scenes/disruptor/disruptor_dis_first_01.vcd" nodelay noscene 
@@ -910,6 +892,17 @@ Rule disruptor_PowerupIsPowerupRegeneration_Rule
 {
 	criteria Powerup Isdisruptor IsPowerupRegeneration
 	response disruptor_PowerupIsPowerupRegeneration
+}
+
+Response disruptor_PowerupIsPowerupBounty
+{
+	scene "scenes/disruptor/disruptor_dis_itemmoderate_01.vcd" nodelay noscene 
+}
+
+Rule disruptor_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isdisruptor IsPowerupBounty
+	response disruptor_PowerupIsPowerupBounty
 }
 
 Response disruptor_PowerupIsPowerupIllusion

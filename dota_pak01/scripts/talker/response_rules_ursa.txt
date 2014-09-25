@@ -551,13 +551,23 @@ Response ursa_Death
 	scene "scenes/ursa/ursa_ursa_death_18.vcd" nodelay noscene 
 	scene "scenes/ursa/ursa_ursa_death_20.vcd" nodelay noscene 
 	scene "scenes/ursa/ursa_ursa_death_22.vcd" nodelay noscene 
-	scene "scenes/ursa/ursa_ursa_death_25.vcd" nodelay noscene 
 }
 
 Rule ursa_Death_Rule
 {
 	criteria Death Isursa 
 	response ursa_Death
+}
+
+Response ursa_DeathChance_1%
+{
+	scene "scenes/ursa/ursa_ursa_death_25.vcd" nodelay noscene 
+}
+
+Rule ursa_DeathChance_1%_Rule
+{
+	criteria Death Isursa Chance_1%
+	response ursa_DeathChance_1%
 }
 
 Response ursa_DeathIsReincarnating
@@ -823,6 +833,17 @@ Rule ursa_PowerupIsPowerupRegeneration_Rule
 {
 	criteria Powerup Isursa IsPowerupRegeneration
 	response ursa_PowerupIsPowerupRegeneration
+}
+
+Response ursa_PowerupIsPowerupBounty
+{
+	scene "scenes/ursa/ursa_ursa_lasthit_01.vcd" nodelay noscene 
+}
+
+Rule ursa_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isursa IsPowerupBounty
+	response ursa_PowerupIsPowerupBounty
 }
 
 Response ursa_PowerupIsPowerupIllusion

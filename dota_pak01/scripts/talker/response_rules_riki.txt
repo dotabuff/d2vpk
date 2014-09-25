@@ -94,17 +94,17 @@ Rule riki_CastOrder_Rule
 	response riki_CastOrder
 }
 
-Response riki_CastExecuteIsSmokeScreen
+Response riki_CastExecuteIsSmokeScreenChance_75%
 {
 	scene "scenes/riki/riki_riki_ability_smokescreen_01.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_ability_smokescreen_02.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_ability_smokescreen_04.vcd" nodelay noscene 
 }
 
-Rule riki_CastExecuteIsSmokeScreen_Rule
+Rule riki_CastExecuteIsSmokeScreenChance_75%_Rule
 {
-	criteria CastExecute Isriki IsSmokeScreen
-	response riki_CastExecuteIsSmokeScreen
+	criteria CastExecute Isriki IsSmokeScreen Chance_75%
+	response riki_CastExecuteIsSmokeScreenChance_75%
 }
 
 Response riki_CastExecuteIsSmokeScreenChance_15%
@@ -434,6 +434,17 @@ Rule riki_ImmortalityChance_25%_Rule
 {
 	criteria Immortality Isriki Chance_25%
 	response riki_ImmortalityChance_25%
+}
+
+Response riki_PowerupIsPowerupBounty
+{
+	scene "scenes/riki/riki_riki_lasthit_09.vcd" nodelay noscene 
+}
+
+Rule riki_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isriki IsPowerupBounty
+	response riki_PowerupIsPowerupBounty
 }
 
 Response riki_PowerupIsPowerupHaste

@@ -1845,6 +1845,17 @@ Rule undying_ImmortalityIsGolem_Rule
 	response undying_ImmortalityIsGolem
 }
 
+Response undying_PowerupIsPowerupBounty
+{
+	scene "scenes/undying/undying_undying_lasthit_08.vcd" nodelay noscene 
+}
+
+Rule undying_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isundying IsPowerupBounty
+	response undying_PowerupIsPowerupBounty
+}
+
 Response undying_PowerupIsPowerupHaste
 {
 	scene "scenes/undying/undying_undying_haste_01.vcd" nodelay noscene 

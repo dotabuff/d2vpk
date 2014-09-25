@@ -525,6 +525,17 @@ Rule beastmaster_PowerupIsPowerupHaste_Rule
 	response beastmaster_PowerupIsPowerupHaste
 }
 
+Response beastmaster_PowerupIsPowerupBounty
+{
+	scene "scenes/beastmaster/beastmaster_beas_ability_animalsound_05.vcd" nodelay noscene 
+}
+
+Rule beastmaster_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isbeastmaster IsPowerupBounty
+	response beastmaster_PowerupIsPowerupBounty
+}
+
 Response beastmaster_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/beastmaster/beastmaster_beas_doubdam_01.vcd" nodelay noscene 

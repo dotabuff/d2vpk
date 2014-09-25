@@ -50,30 +50,6 @@ Rule lone_druid_CustomIsGameStart_Rule
 	response lone_druid_CustomIsGameStart
 }
 
-Response lone_druid_Custom
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_ability_failure_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_ability_failure_02.vcd" nodelay noscene 
-}
-
-Rule lone_druid_Custom_Rule
-{
-	criteria Custom Islone_druid 
-	response lone_druid_Custom
-}
-
-Response lone_druid_CustomIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_ability_failure_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_ability_failure_02.vcd" nodelay noscene 
-}
-
-Rule lone_druid_CustomIsBearForm_Rule
-{
-	criteria Custom Islone_druid IsBearForm
-	response lone_druid_CustomIsBearForm
-}
-
 Response lone_druid_KillIsFirstBlood
 {
 	scene "scenes/lone_druid/lone_druid_lone_druid_firstblood_01.vcd" nodelay noscene 
@@ -1374,225 +1350,15 @@ Rule lone_druid_PurchaseIsBearFormIsMaskOfMadness_Rule
 	response lone_druid_PurchaseIsBearFormIsMaskOfMadness
 }
 
-Response lone_druid_Bottling
+Response lone_druid_PowerupIsPowerupBounty
 {
-	scene "scenes/lone_druid/lone_druid_lone_druid_bottle_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bottle_02.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bottle_03.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_lasthit_06.vcd" nodelay noscene 
 }
 
-Rule lone_druid_Bottling_Rule
+Rule lone_druid_PowerupIsPowerupBounty_Rule
 {
-	criteria Bottling Islone_druid 
-	response lone_druid_Bottling
-}
-
-Response lone_druid_BottlingIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_bottle_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_bottle_02.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_bottle_03.vcd" nodelay noscene 
-}
-
-Rule lone_druid_BottlingIsBearForm_Rule
-{
-	criteria Bottling Islone_druid IsBearForm
-	response lone_druid_BottlingIsBearForm
-}
-
-Response lone_druid_Deny
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_02.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_03.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_04.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_05.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_06.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_07.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_08.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_09.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_10.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_11.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_deny_12.vcd" nodelay noscene 
-}
-
-Rule lone_druid_Deny_Rule
-{
-	criteria Deny Islone_druid 
-	response lone_druid_Deny
-}
-
-Response lone_druid_DenyIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_02.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_03.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_04.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_05.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_06.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_07.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_08.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_09.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_10.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_11.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_12.vcd" nodelay noscene 
-}
-
-Rule lone_druid_DenyIsBearForm_Rule
-{
-	criteria Deny Islone_druid IsBearForm
-	response lone_druid_DenyIsBearForm
-}
-
-Response lone_druid_Defeat
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_lose_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_lose_02.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_lose_03.vcd" nodelay noscene 
-}
-
-Rule lone_druid_Defeat_Rule
-{
-	criteria Defeat Islone_druid 
-	response lone_druid_Defeat
-}
-
-Response lone_druid_DefeatIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_lose_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_lose_02.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_lose_03.vcd" nodelay noscene 
-}
-
-Rule lone_druid_DefeatIsBearForm_Rule
-{
-	criteria Defeat Islone_druid IsBearForm
-	response lone_druid_DefeatIsBearForm
-}
-
-Response lone_druid_Victory
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_win_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_win_02.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_win_03.vcd" nodelay noscene 
-}
-
-Rule lone_druid_Victory_Rule
-{
-	criteria Victory Islone_druid 
-	response lone_druid_Victory
-}
-
-Response lone_druid_VictoryIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_win_01.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_win_02.vcd" nodelay noscene 
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_win_03.vcd" nodelay noscene 
-}
-
-Rule lone_druid_VictoryIsBearForm_Rule
-{
-	criteria Victory Islone_druid IsBearForm
-	response lone_druid_VictoryIsBearForm
-}
-
-Response lone_druid_MissingIsLaneTop
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_missing_lane_01.vcd" nodelay noscene 
-}
-
-Rule lone_druid_MissingIsLaneTop_Rule
-{
-	criteria Missing Islone_druid IsLaneTop
-	response lone_druid_MissingIsLaneTop
-}
-
-Response lone_druid_MissingIsLaneMid
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_missing_lane_03.vcd" nodelay noscene 
-}
-
-Rule lone_druid_MissingIsLaneMid_Rule
-{
-	criteria Missing Islone_druid IsLaneMid
-	response lone_druid_MissingIsLaneMid
-}
-
-Response lone_druid_MissingIsLaneBot
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_missing_lane_05.vcd" nodelay noscene 
-}
-
-Rule lone_druid_MissingIsLaneBot_Rule
-{
-	criteria Missing Islone_druid IsLaneBot
-	response lone_druid_MissingIsLaneBot
-}
-
-Response lone_druid_MissingIsLaneTopIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_missing_lane_01.vcd" nodelay noscene 
-}
-
-Rule lone_druid_MissingIsLaneTopIsBearForm_Rule
-{
-	criteria Missing Islone_druid IsLaneTop IsBearForm
-	response lone_druid_MissingIsLaneTopIsBearForm
-}
-
-Response lone_druid_MissingIsLaneMidIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_missing_lane_03.vcd" nodelay noscene 
-}
-
-Rule lone_druid_MissingIsLaneMidIsBearForm_Rule
-{
-	criteria Missing Islone_druid IsLaneMid IsBearForm
-	response lone_druid_MissingIsLaneMidIsBearForm
-}
-
-Response lone_druid_MissingIsLaneBotIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_missing_lane_05.vcd" nodelay noscene 
-}
-
-Rule lone_druid_MissingIsLaneBotIsBearForm_Rule
-{
-	criteria Missing Islone_druid IsLaneBot IsBearForm
-	response lone_druid_MissingIsLaneBotIsBearForm
-}
-
-Response lone_druid_Immortality
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_immort_01.vcd" nodelay noscene 
-}
-
-Rule lone_druid_Immortality_Rule
-{
-	criteria Immortality Islone_druid 
-	response lone_druid_Immortality
-}
-
-Response lone_druid_ImmortalityIsBearForm
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_immort_01.vcd" nodelay noscene 
-}
-
-Rule lone_druid_ImmortalityIsBearForm_Rule
-{
-	criteria Immortality Islone_druid IsBearForm
-	response lone_druid_ImmortalityIsBearForm
-}
-
-Response lone_druid_ImmortalityIsBearFormChance_25%
-{
-	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_immort_02.vcd" nodelay noscene 
-}
-
-Rule lone_druid_ImmortalityIsBearFormChance_25%_Rule
-{
-	criteria Immortality Islone_druid IsBearForm Chance_25%
-	response lone_druid_ImmortalityIsBearFormChance_25%
+	criteria Powerup Islone_druid IsPowerupBounty
+	response lone_druid_PowerupIsPowerupBounty
 }
 
 Response lone_druid_PowerupIsPowerupHaste
@@ -1813,6 +1579,227 @@ Rule lone_druid_PowerupIsBearFormIsPowerupInvisibilityChance_25%_Rule
 {
 	criteria Powerup Islone_druid IsBearForm IsPowerupInvisibility Chance_25%
 	response lone_druid_PowerupIsBearFormIsPowerupInvisibilityChance_25%
+}
+
+Response lone_druid_Bottling
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bottle_01.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bottle_02.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bottle_03.vcd" nodelay noscene 
+}
+
+Rule lone_druid_Bottling_Rule
+{
+	criteria Bottling Islone_druid 
+	response lone_druid_Bottling
+}
+
+Response lone_druid_BottlingIsBearForm
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_bottle_01.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_bottle_02.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_bottle_03.vcd" nodelay noscene 
+}
+
+Rule lone_druid_BottlingIsBearForm_Rule
+{
+	criteria Bottling Islone_druid IsBearForm
+	response lone_druid_BottlingIsBearForm
+}
+
+Response lone_druid_Deny
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_01.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_02.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_03.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_04.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_05.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_06.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_07.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_08.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_09.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_10.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_11.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_deny_12.vcd" nodelay noscene 
+}
+
+Rule lone_druid_Deny_Rule
+{
+	criteria Deny Islone_druid 
+	response lone_druid_Deny
+}
+
+Response lone_druid_DenyIsBearForm
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_01.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_02.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_03.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_04.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_05.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_06.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_07.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_08.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_09.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_10.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_11.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_deny_12.vcd" nodelay noscene 
+}
+
+Rule lone_druid_DenyIsBearForm_Rule
+{
+	criteria Deny Islone_druid IsBearForm
+	response lone_druid_DenyIsBearForm
+}
+
+Response lone_druid_Defeat
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_lose_01.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_lose_02.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_lose_03.vcd" nodelay noscene 
+}
+
+Rule lone_druid_Defeat_Rule
+{
+	criteria Defeat Islone_druid 
+	response lone_druid_Defeat
+}
+
+Response lone_druid_DefeatIsBearForm
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_lose_01.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_lose_02.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_lose_03.vcd" nodelay noscene 
+}
+
+Rule lone_druid_DefeatIsBearForm_Rule
+{
+	criteria Defeat Islone_druid IsBearForm
+	response lone_druid_DefeatIsBearForm
+}
+
+Response lone_druid_Victory
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_win_01.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_win_02.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_win_03.vcd" nodelay noscene 
+}
+
+Rule lone_druid_Victory_Rule
+{
+	criteria Victory Islone_druid 
+	response lone_druid_Victory
+}
+
+Response lone_druid_VictoryIsBearForm
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_win_01.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_win_02.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_win_03.vcd" nodelay noscene 
+}
+
+Rule lone_druid_VictoryIsBearForm_Rule
+{
+	criteria Victory Islone_druid IsBearForm
+	response lone_druid_VictoryIsBearForm
+}
+
+Response lone_druid_MissingIsLaneTop
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_missing_lane_01.vcd" nodelay noscene 
+}
+
+Rule lone_druid_MissingIsLaneTop_Rule
+{
+	criteria Missing Islone_druid IsLaneTop
+	response lone_druid_MissingIsLaneTop
+}
+
+Response lone_druid_MissingIsLaneMid
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_missing_lane_03.vcd" nodelay noscene 
+}
+
+Rule lone_druid_MissingIsLaneMid_Rule
+{
+	criteria Missing Islone_druid IsLaneMid
+	response lone_druid_MissingIsLaneMid
+}
+
+Response lone_druid_MissingIsLaneBot
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_missing_lane_05.vcd" nodelay noscene 
+}
+
+Rule lone_druid_MissingIsLaneBot_Rule
+{
+	criteria Missing Islone_druid IsLaneBot
+	response lone_druid_MissingIsLaneBot
+}
+
+Response lone_druid_MissingIsLaneTopIsBearForm
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_missing_lane_01.vcd" nodelay noscene 
+}
+
+Rule lone_druid_MissingIsLaneTopIsBearForm_Rule
+{
+	criteria Missing Islone_druid IsLaneTop IsBearForm
+	response lone_druid_MissingIsLaneTopIsBearForm
+}
+
+Response lone_druid_MissingIsLaneMidIsBearForm
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_missing_lane_03.vcd" nodelay noscene 
+}
+
+Rule lone_druid_MissingIsLaneMidIsBearForm_Rule
+{
+	criteria Missing Islone_druid IsLaneMid IsBearForm
+	response lone_druid_MissingIsLaneMidIsBearForm
+}
+
+Response lone_druid_MissingIsLaneBotIsBearForm
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_missing_lane_05.vcd" nodelay noscene 
+}
+
+Rule lone_druid_MissingIsLaneBotIsBearForm_Rule
+{
+	criteria Missing Islone_druid IsLaneBot IsBearForm
+	response lone_druid_MissingIsLaneBotIsBearForm
+}
+
+Response lone_druid_Immortality
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_immort_01.vcd" nodelay noscene 
+}
+
+Rule lone_druid_Immortality_Rule
+{
+	criteria Immortality Islone_druid 
+	response lone_druid_Immortality
+}
+
+Response lone_druid_ImmortalityIsBearForm
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_immort_01.vcd" nodelay noscene 
+}
+
+Rule lone_druid_ImmortalityIsBearForm_Rule
+{
+	criteria Immortality Islone_druid IsBearForm
+	response lone_druid_ImmortalityIsBearForm
+}
+
+Response lone_druid_ImmortalityIsBearFormChance_25%
+{
+	scene "scenes/lone_druid/lone_druid_lone_druid_bearform_immort_02.vcd" nodelay noscene 
+}
+
+Rule lone_druid_ImmortalityIsBearFormChance_25%_Rule
+{
+	criteria Immortality Islone_druid IsBearForm Chance_25%
+	response lone_druid_ImmortalityIsBearFormChance_25%
 }
 
 Response lone_druid_CooldownLittleNag

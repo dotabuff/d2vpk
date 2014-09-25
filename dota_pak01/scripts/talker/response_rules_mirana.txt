@@ -668,6 +668,116 @@ Rule mirana_ImmortalityChance_25%_Rule
 	response mirana_ImmortalityChance_25%
 }
 
+Response mirana_PowerupIsPowerupBounty
+{
+	scene "scenes/mirana/mirana_mir_lasthit_02.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Ismirana IsPowerupBounty
+	response mirana_PowerupIsPowerupBounty
+}
+
+Response mirana_PowerupIsPowerupHaste
+{
+	scene "scenes/mirana/mirana_mir_haste_01.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupHaste_Rule
+{
+	criteria Powerup Ismirana IsPowerupHaste
+	response mirana_PowerupIsPowerupHaste
+}
+
+Response mirana_PowerupIsPowerupHasteChance_25%
+{
+	scene "scenes/mirana/mirana_mir_haste_02.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupHasteChance_25%_Rule
+{
+	criteria Powerup Ismirana IsPowerupHaste Chance_25%
+	response mirana_PowerupIsPowerupHasteChance_25%
+}
+
+Response mirana_PowerupIsPowerupDoubleDamage
+{
+	scene "scenes/mirana/mirana_mir_doubdam_01.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Ismirana IsPowerupDoubleDamage
+	response mirana_PowerupIsPowerupDoubleDamage
+}
+
+Response mirana_PowerupIsPowerupRegeneration
+{
+	scene "scenes/mirana/mirana_mir_regen_01.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupRegeneration_Rule
+{
+	criteria Powerup Ismirana IsPowerupRegeneration
+	response mirana_PowerupIsPowerupRegeneration
+}
+
+Response mirana_PowerupIsPowerupRegenerationChance_25%
+{
+	scene "scenes/mirana/mirana_mir_regen_02.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupRegenerationChance_25%_Rule
+{
+	criteria Powerup Ismirana IsPowerupRegeneration Chance_25%
+	response mirana_PowerupIsPowerupRegenerationChance_25%
+}
+
+Response mirana_PowerupIsPowerupIllusion
+{
+	scene "scenes/mirana/mirana_mir_illus_01.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupIllusion_Rule
+{
+	criteria Powerup Ismirana IsPowerupIllusion
+	response mirana_PowerupIsPowerupIllusion
+}
+
+Response mirana_PowerupIsPowerupIllusionChance_25%
+{
+	scene "scenes/mirana/mirana_mir_illus_03.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupIllusionChance_25%_Rule
+{
+	criteria Powerup Ismirana IsPowerupIllusion Chance_25%
+	response mirana_PowerupIsPowerupIllusionChance_25%
+}
+
+Response mirana_PowerupIsPowerupInvisibility
+{
+	scene "scenes/mirana/mirana_mir_invis_01.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupInvisibility_Rule
+{
+	criteria Powerup Ismirana IsPowerupInvisibility
+	response mirana_PowerupIsPowerupInvisibility
+}
+
+Response mirana_PowerupIsPowerupInvisibilityChance_25%
+{
+	scene "scenes/mirana/mirana_mir_invis_02.vcd" nodelay noscene 
+}
+
+Rule mirana_PowerupIsPowerupInvisibilityChance_25%_Rule
+{
+	criteria Powerup Ismirana IsPowerupInvisibility Chance_25%
+	response mirana_PowerupIsPowerupInvisibilityChance_25%
+}
+
 Response mirana_Deny
 {
 	scene "scenes/mirana/mirana_mir_deny_01.vcd" nodelay noscene 
@@ -774,105 +884,6 @@ Rule mirana_Bottling_Rule
 {
 	criteria Bottling Ismirana 
 	response mirana_Bottling
-}
-
-Response mirana_PowerupIsPowerupHaste
-{
-	scene "scenes/mirana/mirana_mir_haste_01.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupHaste_Rule
-{
-	criteria Powerup Ismirana IsPowerupHaste
-	response mirana_PowerupIsPowerupHaste
-}
-
-Response mirana_PowerupIsPowerupHasteChance_25%
-{
-	scene "scenes/mirana/mirana_mir_haste_02.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupHasteChance_25%_Rule
-{
-	criteria Powerup Ismirana IsPowerupHaste Chance_25%
-	response mirana_PowerupIsPowerupHasteChance_25%
-}
-
-Response mirana_PowerupIsPowerupDoubleDamage
-{
-	scene "scenes/mirana/mirana_mir_doubdam_01.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupDoubleDamage_Rule
-{
-	criteria Powerup Ismirana IsPowerupDoubleDamage
-	response mirana_PowerupIsPowerupDoubleDamage
-}
-
-Response mirana_PowerupIsPowerupRegeneration
-{
-	scene "scenes/mirana/mirana_mir_regen_01.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupRegeneration_Rule
-{
-	criteria Powerup Ismirana IsPowerupRegeneration
-	response mirana_PowerupIsPowerupRegeneration
-}
-
-Response mirana_PowerupIsPowerupRegenerationChance_25%
-{
-	scene "scenes/mirana/mirana_mir_regen_02.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupRegenerationChance_25%_Rule
-{
-	criteria Powerup Ismirana IsPowerupRegeneration Chance_25%
-	response mirana_PowerupIsPowerupRegenerationChance_25%
-}
-
-Response mirana_PowerupIsPowerupIllusion
-{
-	scene "scenes/mirana/mirana_mir_illus_01.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupIllusion_Rule
-{
-	criteria Powerup Ismirana IsPowerupIllusion
-	response mirana_PowerupIsPowerupIllusion
-}
-
-Response mirana_PowerupIsPowerupIllusionChance_25%
-{
-	scene "scenes/mirana/mirana_mir_illus_03.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupIllusionChance_25%_Rule
-{
-	criteria Powerup Ismirana IsPowerupIllusion Chance_25%
-	response mirana_PowerupIsPowerupIllusionChance_25%
-}
-
-Response mirana_PowerupIsPowerupInvisibility
-{
-	scene "scenes/mirana/mirana_mir_invis_01.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupInvisibility_Rule
-{
-	criteria Powerup Ismirana IsPowerupInvisibility
-	response mirana_PowerupIsPowerupInvisibility
-}
-
-Response mirana_PowerupIsPowerupInvisibilityChance_25%
-{
-	scene "scenes/mirana/mirana_mir_invis_02.vcd" nodelay noscene 
-}
-
-Rule mirana_PowerupIsPowerupInvisibilityChance_25%_Rule
-{
-	criteria Powerup Ismirana IsPowerupInvisibility Chance_25%
-	response mirana_PowerupIsPowerupInvisibilityChance_25%
 }
 
 Response mirana_Pain

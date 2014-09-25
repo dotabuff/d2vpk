@@ -530,6 +530,17 @@ Rule enchantress_PowerupIsPowerupDoubleDamageChance_25%_Rule
 	response enchantress_PowerupIsPowerupDoubleDamageChance_25%
 }
 
+Response enchantress_PowerupIsPowerupBounty
+{
+	scene "scenes/enchantress/enchantress_ench_deny_11.vcd" nodelay noscene 
+}
+
+Rule enchantress_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isenchantress IsPowerupBounty
+	response enchantress_PowerupIsPowerupBounty
+}
+
 Response enchantress_PowerupIsPowerupRegeneration
 {
 	scene "scenes/enchantress/enchantress_ench_regen_01.vcd" nodelay noscene 

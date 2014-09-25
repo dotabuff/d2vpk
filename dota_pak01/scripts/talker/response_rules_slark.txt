@@ -813,6 +813,17 @@ Rule slark_Immortality_Rule
 	response slark_Immortality
 }
 
+Response slark_PowerupIsPowerupBounty
+{
+	scene "scenes/slark/slark_slark_lasthit_09.vcd" nodelay noscene 
+}
+
+Rule slark_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isslark IsPowerupBounty
+	response slark_PowerupIsPowerupBounty
+}
+
 Response slark_PowerupIsPowerupHaste
 {
 	scene "scenes/slark/slark_slark_haste_01.vcd" nodelay noscene 

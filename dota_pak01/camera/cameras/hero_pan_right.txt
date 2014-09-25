@@ -1,0 +1,34 @@
+"hero_approach"
+{
+	"version"		"1"
+	"fow_amount"		"0"
+	"timescale"		"1.0"
+	"easing"		"ease-in-ease-out"
+
+	"hints"
+	{
+		"framing"	"right"	// The camera will end up on the right
+	}
+
+	"keyframes"
+	{
+		"0.000"
+		{
+			"tx"		"600"
+			"ty"		"-200"
+			"tz"		"125"
+			"fog_start"	"1000.000"
+			"fog_end"	"5000.000"
+			"zfar"		"8000.000"
+			"rz"		"180"
+			"ry"		"5"
+			"fov"		"55"
+		}
+		"3.50"
+		{
+			"ty"		"115"
+		}
+	}
+}
+
+

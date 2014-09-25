@@ -510,6 +510,17 @@ Rule lich_ImmortalityChance_25%_Rule
 	response lich_ImmortalityChance_25%
 }
 
+Response lich_PowerupIsPowerupBounty
+{
+	scene "scenes/lich/lich_lich_lasthit_10.vcd" nodelay noscene 
+}
+
+Rule lich_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Islich IsPowerupBounty
+	response lich_PowerupIsPowerupBounty
+}
+
 Response lich_PowerupIsPowerupHaste
 {
 	scene "scenes/lich/lich_lich_haste_01.vcd" nodelay noscene 

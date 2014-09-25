@@ -1224,6 +1224,17 @@ Rule ember_spirit_PowerupIsPowerupIllusionChance_25%_Rule
 	response ember_spirit_PowerupIsPowerupIllusionChance_25%
 }
 
+Response ember_spirit_PowerupIsPowerupBounty
+{
+	scene "scenes/ember_spirit/ember_spirit_embr_lasthit_06.vcd" nodelay noscene 
+}
+
+Rule ember_spirit_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isember_spirit IsPowerupBounty
+	response ember_spirit_PowerupIsPowerupBounty
+}
+
 Response ember_spirit_PowerupIsPowerupInvisibility
 {
 	scene "scenes/ember_spirit/ember_spirit_embr_invis_02.vcd" nodelay noscene 

@@ -1120,6 +1120,17 @@ Rule tusk_ImmortalityChance_25%_Rule
 	response tusk_ImmortalityChance_25%
 }
 
+Response tusk_PowerupIsPowerupBounty
+{
+	scene "scenes/tusk/tusk_tusk_move_17.vcd" nodelay noscene 
+}
+
+Rule tusk_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Istusk IsPowerupBounty
+	response tusk_PowerupIsPowerupBounty
+}
+
 Response tusk_PowerupIsPowerupHaste
 {
 	scene "scenes/tusk/tusk_tusk_haste_01.vcd" nodelay noscene 

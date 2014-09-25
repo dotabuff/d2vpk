@@ -2630,7 +2630,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Oh, yes, fear my hoofbeats.
+Oh, yes, fear my hoof beats.
 }
 WORDS
 {
@@ -2655,11 +2655,14 @@ WORD my 1.664 2.000
 109 m 1.664 1.744 1
 593 ay 1.744 2.000 1
 }
-WORD hoofbeats 2.000 3.120
+WORD hoof 2.000 2.288
 {
 104 hh 2.000 2.112 1
 117 uw 2.112 2.256 1
 102 f 2.256 2.288 1
+}
+WORD beats 2.288 3.120
+{
 98 b 2.288 2.432 1
 105 iy 2.432 2.672 1
 116 t 2.672 2.704 1
@@ -2969,7 +2972,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-The hoofbeats of your heart beat no more.
+The hoof beats of your heart beat no more.
 }
 WORDS
 {
@@ -2978,12 +2981,15 @@ WORD The 0.032 0.160
 240 dh 0.032 0.112 1
 105 iy 0.112 0.160 1
 }
-WORD hoofbeats 0.160 0.848
+WORD hoof 0.160 0.480
 {
 104 hh 0.160 0.352 1
 117 uw 0.352 0.416 1
 102 f 0.416 0.480 1
-98 b 0.480 0.608 1
+}
+WORD beats 0.576 0.848
+{
+98 b 0.576 0.608 1
 105 iy 0.608 0.720 1
 116 t 0.720 0.832 1
 115 s 0.832 0.848 1
@@ -5447,16 +5453,19 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Antimage, our blades shall cut them down.
+Anti-Mage, our blades shall cut them down.
 }
 WORDS
 {
-WORD Antimage 0.240 0.960
+WORD Anti 0.240 0.768
 {
 230 ae 0.240 0.272 1
 110 n 0.272 0.304 1
 116 t 0.304 0.352 1
-601 ax 0.352 0.768 1
+105 iy 0.352 0.768 1
+}
+WORD Mage 0.768 0.960
+{
 109 m 0.768 0.816 1
 230 ae 0.816 0.848 1
 676 jh 0.848 0.960 1
@@ -8405,7 +8414,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Ah, sceptor.
+Ah, scepter.
 }
 WORDS
 {
@@ -8413,7 +8422,7 @@ WORD Ah 0.160 0.624
 {
 601 ax 0.160 0.624 1
 }
-WORD sceptor 1.072 1.856
+WORD scepter 1.072 1.856
 {
 115 s 1.072 1.296 1
 603 eh 1.296 1.392 1
@@ -8996,7 +9005,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Ethereal…blade?
+Ethereal...blade?
 }
 WORDS
 {
@@ -11409,7 +11418,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-This one is in the bag, and I don't mean saddlebag.  Who said anything about saddlebags.
+This one is in the bag, and I don't mean saddlebag. Who said anything about saddlebags.
 }
 WORDS
 {
@@ -11851,7 +11860,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Victory!  Of course.
+Victory! Of course.
 }
 WORDS
 {

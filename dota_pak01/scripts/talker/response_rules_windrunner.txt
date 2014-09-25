@@ -800,6 +800,17 @@ Rule windrunner_PowerupIsPowerupDoubleDamage_Rule
 	response windrunner_PowerupIsPowerupDoubleDamage
 }
 
+Response windrunner_PowerupIsPowerupBounty
+{
+	scene "scenes/windrunner/windrunner_wind_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule windrunner_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iswindrunner IsPowerupBounty
+	response windrunner_PowerupIsPowerupBounty
+}
+
 Response windrunner_PowerupIsPowerupRegeneration
 {
 	scene "scenes/windrunner/windrunner_wind_regen_01.vcd" nodelay noscene 

@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/lycan/ultimate/hunter_kings_trueform/hunter_kings_trueform_color"
+	"$normalmap"		"models/items/lycan/ultimate/hunter_kings_trueform/hunter_kings_trueform_normal"
+	"$detail1"		"models/heroes/lycan/lycan_glow_pulse"
+	"$maskmap1"		"models/items/lycan/ultimate/hunter_kings_trueform/hunter_kings_trueform_mask1"
+	"$maskmap2"		"models/items/lycan/ultimate/hunter_kings_trueform/hunter_kings_trueform_mask2"
+	"$diffusewarp"		"models/heroes/lycan/lycan_lightwarp"
+	"$envmap"		"models/cubemaps/glossy"
+	"$envmapintensity"		"0.500000"
+	"$SPECULAREXPONENT"		"25"
+	"$SPECULAR_BLOOM_SCALE"		"0.250000"
+	"$SPECULARSCALE"		"10"
+	"$SPECULARCOLOR"		"[1 1 1]"
+	"$NOCULL"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$RIMLIGHTSCALE"		"0.500000"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$IgnoreBudgetCheck"		"1"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"0.500000"
+	"$DETAIL1BLENDFACTOR"		"4"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.300000"
+			"texturescrollangle"		"25"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

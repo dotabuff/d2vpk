@@ -51,19 +51,6 @@ Rule elder_titan_CustomIsElderTitanRejoined_Rule
 	response elder_titan_CustomIsElderTitanRejoined
 }
 
-Response elder_titan_Custom
-{
-	scene "scenes/elder_titan/elder_titan_elder_failure_01.vcd" nodelay noscene 
-	scene "scenes/elder_titan/elder_titan_elder_failure_02.vcd" nodelay noscene 
-	scene "scenes/elder_titan/elder_titan_elder_failure_03.vcd" nodelay noscene 
-}
-
-Rule elder_titan_Custom_Rule
-{
-	criteria Custom Iselder_titan 
-	response elder_titan_Custom
-}
-
 Response elder_titan_KillIsFirstBlood
 {
 	scene "scenes/elder_titan/elder_titan_elder_firstblood_01.vcd" nodelay noscene 
@@ -882,6 +869,17 @@ Rule elder_titan_PowerupIsPowerupIllusion_Rule
 {
 	criteria Powerup Iselder_titan IsPowerupIllusion
 	response elder_titan_PowerupIsPowerupIllusion
+}
+
+Response elder_titan_PowerupIsPowerupBounty
+{
+	scene "scenes/elder_titan/elder_titan_elder_lasthit_09.vcd" nodelay noscene 
+}
+
+Rule elder_titan_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iselder_titan IsPowerupBounty
+	response elder_titan_PowerupIsPowerupBounty
 }
 
 Response elder_titan_PowerupIsPowerupInvisibility

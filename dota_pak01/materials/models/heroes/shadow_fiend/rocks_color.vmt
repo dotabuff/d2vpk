@@ -1,0 +1,44 @@
+"CustomHero"
+{
+	"$baseTexture" 	"models/heroes/shadow_fiend/rocks_color"
+	"$normalmap" 	"models/heroes/shadow_fiend/rocks_normal"
+	"$maskmap1" 	"models/heroes/shadow_fiend/rocks_masks1"
+	"$maskmap2" 	"models/heroes/shadow_fiend/rocks_masks2"
+	
+	"$detail1"		"models\heroes\shadow_fiend\shadow_fiend_detail"
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR .1
+		
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[.75 .05 .05]"
+	$alphatest	1
+
+	$IgnoreBudgetCheck 1
+
+	$RIMLIGHTSCALE	.25
+	$RIMLIGHTCOLOR "[.2 .6 .8]"
+	$rimambience .5
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	-.1
+			"texturescrollangle"	10
+		}	
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

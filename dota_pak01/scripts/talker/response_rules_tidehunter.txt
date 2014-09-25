@@ -909,6 +909,17 @@ Rule tidehunter_PowerupIsPowerupRegeneration_Rule
 	response tidehunter_PowerupIsPowerupRegeneration
 }
 
+Response tidehunter_PowerupIsPowerupBounty
+{
+	scene "scenes/tidehunter/tidehunter_tide_lasthit_04.vcd" nodelay noscene 
+}
+
+Rule tidehunter_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Istidehunter IsPowerupBounty
+	response tidehunter_PowerupIsPowerupBounty
+}
+
 Response tidehunter_PowerupIsPowerupIllusion
 {
 	scene "scenes/tidehunter/tidehunter_tide_illus_01.vcd" nodelay noscene 

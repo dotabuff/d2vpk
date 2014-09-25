@@ -567,6 +567,17 @@ Rule warlock_ImmortalityChance_5%_Rule
 	response warlock_ImmortalityChance_5%
 }
 
+Response warlock_PowerupIsPowerupBounty
+{
+	scene "scenes/warlock/warlock_warl_lasthit_06.vcd" nodelay noscene 
+}
+
+Rule warlock_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iswarlock IsPowerupBounty
+	response warlock_PowerupIsPowerupBounty
+}
+
 Response warlock_PowerupIsPowerupHaste
 {
 	scene "scenes/warlock/warlock_warl_haste_01.vcd" nodelay noscene 

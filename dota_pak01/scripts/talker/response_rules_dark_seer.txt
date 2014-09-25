@@ -513,6 +513,17 @@ Rule dark_seer_PowerupIsPowerupHaste_Rule
 	response dark_seer_PowerupIsPowerupHaste
 }
 
+Response dark_seer_PowerupIsPowerupBounty
+{
+	scene "scenes/dark_seer/dark_seer_dkseer_haste_02.vcd" nodelay noscene 
+}
+
+Rule dark_seer_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isdark_seer IsPowerupBounty
+	response dark_seer_PowerupIsPowerupBounty
+}
+
 Response dark_seer_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/dark_seer/dark_seer_dkseer_doubdam_01.vcd" nodelay noscene 

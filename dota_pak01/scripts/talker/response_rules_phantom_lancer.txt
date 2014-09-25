@@ -2,7 +2,7 @@ criterion "Isphantom_lancer" "classname" "npc_dota_hero_phantom_lancer" weight 5
 criterion "IsEnemyphantom_lancer" "targetclassname" "npc_dota_hero_phantom_lancer" weight 5 required
 criterion "IsAllyphantom_lancer" "nearby_ally" "npc_dota_hero_phantom_lancer" weight 5 required
 criterion "IsPhantomLancerLance" "abilityname" "phantom_lancer_spirit_lance" weight 5 required
-criterion "IsPhantomLancerDoppelwalk" "abilityname" "phantom_lancer_doppelwalk" weight 5 required
+criterion "IsPhantomLancerDoppelganger" "abilityname" "phantom_lancer_doppelwalk" weight 5 required
 criterion "IsPhantomLancerJux" "abilityname" "phantom_lancer_juxtapose" weight 5 required
 criterion "IsPhantomLancerEdge" "abilityname" "phantom_lancer_phantom_edge" weight 5 required
 
@@ -30,19 +30,6 @@ Rule phantom_lancer_CustomIsGameStart_Rule
 {
 	criteria Custom Isphantom_lancer IsGameStart
 	response phantom_lancer_CustomIsGameStart
-}
-
-Response phantom_lancer_Custom
-{
-	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_failure_01.vcd" nodelay noscene 
-	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_failure_02.vcd" nodelay noscene 
-	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_failure_03.vcd" nodelay noscene 
-}
-
-Rule phantom_lancer_Custom_Rule
-{
-	criteria Custom Isphantom_lancer 
-	response phantom_lancer_Custom
 }
 
 Response phantom_lancer_KillIsFirstBlood
@@ -281,29 +268,30 @@ Rule phantom_lancer_CastExecuteIsPhantomLancerLance_Rule
 	response phantom_lancer_CastExecuteIsPhantomLancerLance
 }
 
-Response phantom_lancer_CastExecuteIsPhantomLancerDoppelwalk
+Response phantom_lancer_CastExecuteIsPhantomLancerDoppelgangerChance_5%
 {
-	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_02.vcd" nodelay noscene 
-	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_03.vcd" nodelay noscene 
-	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_04.vcd" nodelay noscene 
-	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_05.vcd" nodelay noscene 
-}
-
-Rule phantom_lancer_CastExecuteIsPhantomLancerDoppelwalk_Rule
-{
-	criteria CastExecute Isphantom_lancer IsPhantomLancerDoppelwalk
-	response phantom_lancer_CastExecuteIsPhantomLancerDoppelwalk
-}
-
-Response phantom_lancer_CastExecuteIsPhantomLancerDoppelwalkChance_5%
-{
+	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_01.vcd" nodelay noscene 
 	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_06.vcd" nodelay noscene 
 }
 
-Rule phantom_lancer_CastExecuteIsPhantomLancerDoppelwalkChance_5%_Rule
+Rule phantom_lancer_CastExecuteIsPhantomLancerDoppelgangerChance_5%_Rule
 {
-	criteria CastExecute Isphantom_lancer IsPhantomLancerDoppelwalk Chance_5%
-	response phantom_lancer_CastExecuteIsPhantomLancerDoppelwalkChance_5%
+	criteria CastExecute Isphantom_lancer IsPhantomLancerDoppelganger Chance_5%
+	response phantom_lancer_CastExecuteIsPhantomLancerDoppelgangerChance_5%
+}
+
+Response phantom_lancer_CastExecuteIsPhantomLancerDoppelganger
+{
+	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_02.vcd" nodelay noscene 
+	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_04.vcd" nodelay noscene 
+	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_doppelwalk_05.vcd" nodelay noscene 
+	scene "scenes/phantom_lancer/phantom_lancer_plance_ability_juxtapose_02.vcd" nodelay noscene 
+}
+
+Rule phantom_lancer_CastExecuteIsPhantomLancerDoppelganger_Rule
+{
+	criteria CastExecute Isphantom_lancer IsPhantomLancerDoppelganger
+	response phantom_lancer_CastExecuteIsPhantomLancerDoppelganger
 }
 
 Response phantom_lancer_LevelUp
@@ -737,6 +725,17 @@ Rule phantom_lancer_PowerupIsPowerupHaste_Rule
 {
 	criteria Powerup Isphantom_lancer IsPowerupHaste
 	response phantom_lancer_PowerupIsPowerupHaste
+}
+
+Response phantom_lancer_PowerupIsPowerupBounty
+{
+	scene "scenes/phantom_lancer/phantom_lancer_plance_lasthit_04.vcd" nodelay noscene 
+}
+
+Rule phantom_lancer_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isphantom_lancer IsPowerupBounty
+	response phantom_lancer_PowerupIsPowerupBounty
 }
 
 Response phantom_lancer_PowerupIsPowerupDoubleDamage

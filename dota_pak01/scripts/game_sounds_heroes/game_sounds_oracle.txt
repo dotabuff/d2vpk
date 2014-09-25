@@ -16,8 +16,8 @@
 "Hero_Oracle.Attack"
 {
 	"channel"		"CHAN_WEAPON"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_75dB"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95, 105"
 	"rndwave"
 	{
@@ -38,7 +38,7 @@
 "Hero_Oracle.ProjectileImpact"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_65dB"
 	"pitch"			"95, 105"
 	"rndwave"
@@ -57,14 +57,157 @@
 	}
 }
 
-"Hero_Oracle.DeathPulse"
+"Hero_Oracle.FortunesEnd.Channel"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.8"
+    "volume"		"0.5"
+    "soundlevel"	"SNDLVL_81dB"
+    "pitch"			"90, 100"
+    "wave"			"weapons/hero/keeper/illuminate_charge.wav"
+    "soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_Oracle.FortunesEnd.Attack"
+{
+    "channel"		"CHAN_STATIC"
+    "volume"		"0.5"
+    "soundlevel"	"SNDLVL_81dB"
+    "pitch"			"95, 105"
+    "wave"			")weapons/hero/keeper/illuminate_discharge.wav"
+    "soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Oracle.FortunesEnd.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/keeper/illuminate_target.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Oracle.FatesEdict"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90"
+	"wave"	")weapons\hero\huskar\inner_vitality.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "0.5"
+			}
+		}
+	}
+}
+
+"Hero_Oracle.PurifyingFlames"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")weapons/hero/ember_spirit/flame_guard_loop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"usat_stop_time"
+			{
+				"input2" "10.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.5"
+			}
+		}
+	}
+}
+
+"Hero_Oracle.FalsePromise"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
-	"wave"			")weapons/hero/necrolyte/death_pulse.wav"
-	"soundentry_version" "2"
+	"wave"			")weapons/hero/obsidian_destroyer/astral_imprison_stop.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -82,13 +225,13 @@
 	}
 }
 
-"Hero_Oracle.ReapersScythe.Cast"
+"Hero_Oracle.FalsePromise.End"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
-	"wave"  		")weapons/hero/necrolyte/reapers_scythe.wav"
+	"wave"			")weapons/hero/obsidian_destroyer/astral_imprison_cast.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -96,35 +239,11 @@
 			"import_stack" "dota_update_default"
 			"mixer"
 			{
-				"mixgroup" "Ultimates"
+				"mixgroup" "Weapons"
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "600"
-			}
-		}
-	}
-}
-
-"Hero_Oracle.ReapersScythe.Target"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_81dB"
-	"pitch"			"95, 105"
-	"wave"  		")weapons/hero/necrolyte/scythe_target.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Ultimates"
-			}
-			"speakers_spatialize"
-			{
-				"input_radius"  "300"
+				"input_radius"  "150"
 			}
 		}
 	}
@@ -133,7 +252,7 @@
 "Hero_Oracle.IdleLoop"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.5"
+	"volume"		"0.2"
 	"soundlevel"  	"SNDLVL_69dB"
 	"wave"			"physics/movement/hero/necrolyte/idle_loop.wav"
 	"soundentry_version" "2"
@@ -160,36 +279,6 @@
 			{
 				"input_max_velocity" "1.0"
 			}
-		}
-	}
-}
-
-"Oracle.Staff"
-{
-	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_66dB"
-	"pitch"			"95,105"
-	"volume"		"0.5"
-	"rndwave"
-	{
-		"wave"		"physics\footsteps\hero\necrolyte\staff01.wav"
-		"wave"		"physics\footsteps\hero\necrolyte\staff02.wav"
-		"wave"		"physics\footsteps\hero\shared\general01.wav"
-		"wave"		"physics\footsteps\hero\shared\general02.wav"
-		"wave"		"physics\footsteps\hero\shared\general04.wav"
-	}
-
- 	"soundentry_version" "2"
-	"operator_stacks"
-	{
-		"start_stack"
-		{
-			"import_stack" "start_block_at_distance"
-			"block_dist"
-			{
-				"input2" "1000"
-			}
-			"import_stack" "dota_water_footsteps_start"
 		}
 	}
 }

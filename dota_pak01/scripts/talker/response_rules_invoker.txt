@@ -743,6 +743,28 @@ Rule invoker_PowerupIsPowerupHaste_Rule
 	response invoker_PowerupIsPowerupHaste
 }
 
+Response invoker_PowerupIsPowerupHasteChance_10%
+{
+	scene "scenes/invoker/invoker_invo_haste_02.vcd" nodelay noscene 
+}
+
+Rule invoker_PowerupIsPowerupHasteChance_10%_Rule
+{
+	criteria Powerup Isinvoker IsPowerupHaste Chance_10%
+	response invoker_PowerupIsPowerupHasteChance_10%
+}
+
+Response invoker_PowerupIsPowerupBounty
+{
+	scene "scenes/invoker/invoker_invo_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule invoker_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isinvoker IsPowerupBounty
+	response invoker_PowerupIsPowerupBounty
+}
+
 Response invoker_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/invoker/invoker_invo_doubdam_01.vcd" nodelay noscene 

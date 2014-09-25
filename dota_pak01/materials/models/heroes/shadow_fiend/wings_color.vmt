@@ -1,0 +1,44 @@
+"CustomHero"
+{
+	"$baseTexture" 	"models/heroes/shadow_fiend/wings_color"
+	"$normalmap" 	"models/heroes/shadow_fiend/wings_normal"
+	"$maskmap1" 	"models/heroes/shadow_fiend/wings_masks1"
+	"$maskmap2" 	"models/heroes/shadow_fiend/wings_masks2"
+	
+	"$detail1"		"models\heroes\shadow_fiend\shadow_fiend_detail"
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR .25
+		
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 9
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[.5 .125 .125]"
+	$alphatest	1
+
+	$IgnoreBudgetCheck 1
+
+	$RIMLIGHTSCALE	.25
+	$RIMLIGHTCOLOR "[.1 .3 .4]"
+	$rimambience .5
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	0.1
+			"texturescrollangle"	10
+		}	
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

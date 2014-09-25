@@ -1107,6 +1107,18 @@ Rule skeleton_king_PowerupIsPowerupDoubleDamageChance_25%_Rule
 	response skeleton_king_PowerupIsPowerupDoubleDamageChance_25%
 }
 
+Response skeleton_king_PowerupIsPowerupBounty
+{
+	scene "scenes/skeleton_king/skeleton_king_wraith_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/skeleton_king/skeleton_king_wraith_deny_12.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isskeleton_king IsPowerupBounty
+	response skeleton_king_PowerupIsPowerupBounty
+}
+
 Response skeleton_king_PowerupIsPowerupRegeneration
 {
 	scene "scenes/skeleton_king/skeleton_king_wraith_regen_01.vcd" nodelay noscene 

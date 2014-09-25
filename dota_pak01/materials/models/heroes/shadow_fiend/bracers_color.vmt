@@ -1,41 +1,5 @@
-"CustomHero"
+// ### This basic VMT was written based on the D:\dev\tools\python\templateStrings.py script ###
+"VertexLitGeneric"
 {
-	"$baseTexture" "models/heroes/shadow_fiend/bracers_color"
-	"$normalmap" "models/heroes/shadow_fiend/bracers_normal"
-	"$maskmap1" "models\development\blankmasks1"
-	"$maskmap2" "models\development\blankmasks2"
-//	"$diffusewarp" "models/heroes/nevermore/nevermore_lightwarp"
-
-	$SPECULAR_BLOOM_SCALE      0
-	$IgnoreBudgetCheck 1
-	$SPECULAREXPONENT 20
-	$SPECULARSCALE 3
-//	$alphatest	1
-
-//	$SPECULARBLENDTOFULL 1
-//	$DIFFUSEWARPBLENDTOFUL .5
-
-	$DETAIL1BLENDMODE 2
-	$DETAIL1SCALE 1
-	$RIMLIGHTSCALE	.2
-//	$RIMLIGHTCOLOR "[.3 .8 .8]"
-	//$RIMLIGHTBLENDTOFULL 1
-	$rimambience .5
-
-//	$FRESNELWARP "models/heroes/nevermore/nevermore_fresnelwarp"	
-//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
-
-	$VERTEXALPHA 1
-	$VERTEXCOLOR 1
-
-	"$cloakPassEnabled" "1"
-	"Proxies"
-	{
-		"invis_proxy"
-		{
-		}
-		"status_proxy"
-		{
-		}
-	}
+	$baseTexture "models/heroes/shadow_fiend/bracers_color"
 }

@@ -804,6 +804,17 @@ Rule sven_PowerupIsPowerupHasteChance_25%_Rule
 	response sven_PowerupIsPowerupHasteChance_25%
 }
 
+Response sven_PowerupIsPowerupBounty
+{
+	scene "scenes/sven/sven_sven_lasthit_05.vcd" nodelay noscene 
+}
+
+Rule sven_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Issven IsPowerupBounty
+	response sven_PowerupIsPowerupBounty
+}
+
 Response sven_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/sven/sven_sven_doubdam_01.vcd" nodelay noscene 

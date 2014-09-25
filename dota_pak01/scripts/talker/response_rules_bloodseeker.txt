@@ -660,6 +660,17 @@ Rule bloodseeker_PowerupIsPowerupHasteChance_5%_Rule
 	response bloodseeker_PowerupIsPowerupHasteChance_5%
 }
 
+Response bloodseeker_PowerupIsPowerupBounty
+{
+	scene "scenes/bloodseeker/bloodseeker_blod_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule bloodseeker_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isbloodseeker IsPowerupBounty
+	response bloodseeker_PowerupIsPowerupBounty
+}
+
 Response bloodseeker_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/bloodseeker/bloodseeker_blod_doubdam_01.vcd" nodelay noscene 

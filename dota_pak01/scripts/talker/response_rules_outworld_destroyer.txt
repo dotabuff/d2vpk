@@ -653,6 +653,17 @@ Rule outworld_destroyer_PowerupIsPowerupHasteChance_25%_Rule
 	response outworld_destroyer_PowerupIsPowerupHasteChance_25%
 }
 
+Response outworld_destroyer_PowerupIsPowerupBounty
+{
+	scene "scenes/outworld_destroyer/outworld_destroyer_odest_purch_03.vcd" nodelay noscene speakonce
+}
+
+Rule outworld_destroyer_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isoutworld_destroyer IsPowerupBounty
+	response outworld_destroyer_PowerupIsPowerupBounty
+}
+
 Response outworld_destroyer_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/outworld_destroyer/outworld_destroyer_odest_doubdam_01.vcd" nodelay noscene 

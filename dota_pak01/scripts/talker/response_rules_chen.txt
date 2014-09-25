@@ -584,6 +584,17 @@ Rule chen_PowerupIsPowerupIllusionChance_25%_Rule
 	response chen_PowerupIsPowerupIllusionChance_25%
 }
 
+Response chen_PowerupIsPowerupBounty
+{
+	scene "scenes/chen/chen_chen_purch_01.vcd" nodelay noscene  
+}
+
+Rule chen_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Ischen IsPowerupBounty
+	response chen_PowerupIsPowerupBounty
+}
+
 Response chen_PowerupIsPowerupInvisibility
 {
 	scene "scenes/chen/chen_chen_invis_01.vcd" nodelay noscene 

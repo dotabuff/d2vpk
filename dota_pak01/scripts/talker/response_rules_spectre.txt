@@ -347,6 +347,17 @@ Rule spectre_ImmortalityChance_25%_Rule
 	response spectre_ImmortalityChance_25%
 }
 
+Response spectre_PowerupIsPowerupBounty
+{
+	scene "scenes/spectre/spectre_spec_purch_01.vcd" nodelay noscene  
+}
+
+Rule spectre_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isspectre IsPowerupBounty
+	response spectre_PowerupIsPowerupBounty
+}
+
 Response spectre_PowerupIsPowerupHaste
 {
 	scene "scenes/spectre/spectre_spec_haste_01.vcd" nodelay noscene 

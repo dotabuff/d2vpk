@@ -82,9 +82,21 @@
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"  		")weapons/hero/nevermore/requiem_cast.wav"
-	"soundentry_version" "2"
 	"operator_stacks"
 	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "1.0"
+			"match_substring" "false"
+			"match_entry" "Hero_Nevermore.RequiemOfSoulsCast"
+			"match_channel" "false"
+			"match_entity" "true"
+			}
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -109,8 +121,8 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
 	"wave"  		")weapons/hero/nevermore/requiem_of_souls.wav"
-	"soundentry_version" "2"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -197,6 +209,205 @@
 			"block_dist"
 			{
 				"input2" "2000"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////
+
+"Hero_Nevermore.Shadowraze.Arcana"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6, 0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/nevermore/shadowraze.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack" //for arcana
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "4500"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Nevermore.Raze_Flames"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Nevermore.Raze_Flames"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"  		")weapons/hero/nevermore/raze_flames.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Hero_Nevermore.ROS.Arcana.Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/nevermore/requiem_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "1.0"
+			"match_substring" "false"
+			"match_entry" "Hero_Nevermore.ROS.Arcana.Cast"
+			"match_channel" "false"
+			"match_entity" "true"
+			}
+			"import_stack" "dota_attack_block_dist" //arcana only
+			"block_dist"
+			{
+				"input2" "4500"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Nevermore.ROS_Cast_Flames"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons" //arcana
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}
+
+"Hero_Nevermore.ROS.Arcana"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"  		")weapons/hero/nevermore/requiem_of_souls.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack" //for arcana
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "4500"
+			}
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Nevermore.ROS_Flames"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons" //arcana
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"Hero_Nevermore.ROS_Cast_Flames"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/nevermore/ros_cast_flames.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Nevermore.ROS_Flames"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"  		")weapons/hero/nevermore/ros_flames.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
 			}
 		}
 	}

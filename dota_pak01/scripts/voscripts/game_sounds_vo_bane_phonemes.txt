@@ -1926,7 +1926,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Knock, knees, and blood run cold!  
+Knock, knees, and blood run cold! 
 }
 WORDS
 {
@@ -2504,7 +2504,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Fool's  error!
+Fool's error!
 }
 WORDS
 {
@@ -8778,7 +8778,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Ye he he he he he 
+Ye he he he he he
 }
 WORDS
 {
@@ -8927,7 +8927,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Ye he he he he he 
+Ye he he he he he
 }
 WORDS
 {
@@ -9025,7 +9025,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Ah ha ha ha 
+Ah ha ha ha
 }
 WORDS
 {
@@ -9131,6 +9131,38 @@ WORD ha 1.376 1.552
 {
 104 hh 1.376 1.520 1
 593 aa 1.520 1.552 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
+*vo\bane\bane_laugh_09.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+Ahahahahaahah!
+}
+WORDS
+{
+WORD Ahahahahaahah 0.176 2.336
+{
+593 aa 0.176 0.192 1
+104 hh 0.192 0.336 1
+593 aa 0.336 0.352 1
+104 hh 0.352 2.032 1
+593 aa 2.032 2.048 1
+104 hh 2.048 2.064 1
+593 aa 2.064 2.096 1
+104 hh 2.096 2.304 1
+593 aa 2.304 2.320 1
+593 aa 2.320 2.336 1
 }
 }
 EMPHASIS
@@ -9384,19 +9416,15 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag!
+It's in the bag!
 }
 WORDS
 {
-WORD It 0.176 0.288
+WORD It's 0.176 0.384
 {
 618 ih 0.176 0.272 1
 116 t 0.272 0.288 1
-}
-WORD s 0.288 0.384
-{
-603 eh 0.288 0.304 1
-115 s 0.304 0.384 1
+115 s 0.288 0.384 1
 }
 WORD in 0.384 0.592
 {
@@ -9429,18 +9457,14 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-It’s in the bag!
+It's in the bag!
 }
 WORDS
 {
-WORD It 0.368 0.496
+WORD It's 0.368 0.592
 {
-618 ih 0.368 0.480 1
-116 t 0.480 0.496 1
-}
-WORD s 0.496 0.592
-{
-603 eh 0.496 0.512 1
+618 ih 0.368 0.496 1
+116 t 0.496 0.512 1
 115 s 0.512 0.592 1
 }
 WORD in 0.656 0.880
@@ -9617,7 +9641,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Blink dagger!  Yaaaaaaaaaaaaa!
+Blink dagger! Yaaaaaaaaaaaaa!
 }
 WORDS
 {
@@ -11296,38 +11320,6 @@ WORD true 1.584 2.080
 116 t 1.584 1.632 1
 633 r 1.632 1.840 1
 117 uw 1.840 2.080 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\bane\bane_laugh_09.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-Ahahahahaahah!
-}
-WORDS
-{
-WORD Ahahahahaahah 0.176 2.336
-{
-593 aa 0.176 0.192 1
-104 hh 0.192 0.336 1
-593 aa 0.336 0.352 1
-104 hh 0.352 2.032 1
-593 aa 2.032 2.048 1
-104 hh 2.048 2.064 1
-593 aa 2.064 2.096 1
-104 hh 2.096 2.304 1
-593 aa 2.304 2.320 1
-593 aa 2.320 2.336 1
 }
 }
 EMPHASIS

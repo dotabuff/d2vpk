@@ -823,6 +823,17 @@ Rule dragon_knight_ImmortalityIsInDragonForm_Rule
 	response dragon_knight_ImmortalityIsInDragonForm
 }
 
+Response dragon_knight_PowerupIsPowerupBounty
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_lasthit_09.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isdragon_knight IsPowerupBounty
+	response dragon_knight_PowerupIsPowerupBounty
+}
+
 Response dragon_knight_PowerupIsPowerupHaste
 {
 	scene "scenes/dragon_knight/dragon_knight_drag_haste_01.vcd" nodelay noscene 
@@ -832,6 +843,17 @@ Rule dragon_knight_PowerupIsPowerupHaste_Rule
 {
 	criteria Powerup Isdragon_knight IsPowerupHaste
 	response dragon_knight_PowerupIsPowerupHaste
+}
+
+Response dragon_knight_PowerupIsPowerupHasteChance_20%
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_haste_02.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_PowerupIsPowerupHasteChance_20%_Rule
+{
+	criteria Powerup Isdragon_knight IsPowerupHaste Chance_20%
+	response dragon_knight_PowerupIsPowerupHasteChance_20%
 }
 
 Response dragon_knight_PowerupIsPowerupDoubleDamage
@@ -887,6 +909,17 @@ Rule dragon_knight_PowerupIsPowerupInvisibility_Rule
 {
 	criteria Powerup Isdragon_knight IsPowerupInvisibility
 	response dragon_knight_PowerupIsPowerupInvisibility
+}
+
+Response dragon_knight_PowerupIsInDragonFormIsPowerupBounty
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_lasthit_09.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_PowerupIsInDragonFormIsPowerupBounty_Rule
+{
+	criteria Powerup Isdragon_knight IsInDragonForm IsPowerupBounty
+	response dragon_knight_PowerupIsInDragonFormIsPowerupBounty
 }
 
 Response dragon_knight_PowerupIsInDragonFormIsPowerupHaste

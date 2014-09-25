@@ -2,6 +2,7 @@ criterion "Isspirit_breaker" "classname" "npc_dota_hero_spirit_breaker" weight 5
 criterion "IsEnemyspirit_breaker" "targetclassname" "npc_dota_hero_spirit_breaker" weight 5 required
 criterion "IsAllyspirit_breaker" "nearby_ally" "npc_dota_hero_spirit_breaker" weight 5 required
 criterion "IsSpiritBreakerCharge" "abilityname" "spirit_breaker_charge_of_darkness" weight 5 required
+criterion "IsSpiritBreakerEmpHaste" "abilityname" "spirit_breaker_empowering_haste" weight 5 required
 
 Response spirit_breaker_Spawn
 {
@@ -28,21 +29,6 @@ Rule spirit_breaker_CustomIsGameStart_Rule
 	response spirit_breaker_CustomIsGameStart
 }
 
-Response spirit_breaker_Custom
-{
-	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_failure_01.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_failure_02.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_failure_03.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_failure_04.vcd" nodelay noscene 
-	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_failure_05.vcd" nodelay noscene 
-}
-
-Rule spirit_breaker_Custom_Rule
-{
-	criteria Custom Isspirit_breaker 
-	response spirit_breaker_Custom
-}
-
 Response spirit_breaker_KillIsFirstBlood
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_firstblood_01.vcd" nodelay noscene 
@@ -57,6 +43,7 @@ Rule spirit_breaker_KillIsFirstBlood_Rule
 
 Response spirit_breaker_Kill
 {
+	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_04.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_07.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_11.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_kill_01.vcd" nodelay noscene 
@@ -298,17 +285,29 @@ Rule spirit_breaker_CastOrder_Rule
 	response spirit_breaker_CastOrder
 }
 
-Response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_25%
+Response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_10%
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_02.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_14.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_19.vcd" nodelay noscene 
 }
 
-Rule spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_25%_Rule
+Rule spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_10%_Rule
 {
-	criteria CastExecute Isspirit_breaker IsSpiritBreakerCharge Chance_25%
-	response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_25%
+	criteria CastExecute Isspirit_breaker IsSpiritBreakerCharge Chance_10%
+	response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_10%
+}
+
+Response spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_25%
+{
+	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_03.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_05.vcd" nodelay noscene 
+}
+
+Rule spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_25%_Rule
+{
+	criteria CastExecute Isspirit_breaker IsSpiritBreakerEmpHaste Chance_25%
+	response spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_25%
 }
 
 Response spirit_breaker_AllyNearIsAllyEarthshakerEarlyGame
@@ -650,6 +649,17 @@ Rule spirit_breaker_Immortality_Rule
 	response spirit_breaker_Immortality
 }
 
+Response spirit_breaker_PowerupIsPowerupBounty
+{
+	scene "scenes/spirit_breaker/spirit_breaker_spir_lasthit_02.vcd" nodelay noscene 
+}
+
+Rule spirit_breaker_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isspirit_breaker IsPowerupBounty
+	response spirit_breaker_PowerupIsPowerupBounty
+}
+
 Response spirit_breaker_PowerupIsPowerupHaste
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_haste_01.vcd" nodelay noscene 
@@ -682,6 +692,17 @@ Rule spirit_breaker_PowerupIsPowerupDoubleDamage_Rule
 {
 	criteria Powerup Isspirit_breaker IsPowerupDoubleDamage
 	response spirit_breaker_PowerupIsPowerupDoubleDamage
+}
+
+Response spirit_breaker_PowerupIsPowerupDoubleDamageChance_5%
+{
+	scene "scenes/spirit_breaker/spirit_breaker_spir_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule spirit_breaker_PowerupIsPowerupDoubleDamageChance_5%_Rule
+{
+	criteria Powerup Isspirit_breaker IsPowerupDoubleDamage Chance_5%
+	response spirit_breaker_PowerupIsPowerupDoubleDamageChance_5%
 }
 
 Response spirit_breaker_PowerupIsPowerupRegeneration

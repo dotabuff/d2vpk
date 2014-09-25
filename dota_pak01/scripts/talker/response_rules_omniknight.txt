@@ -864,6 +864,17 @@ Rule omniknight_PowerupIsPowerupDoubleDamage_Rule
 	response omniknight_PowerupIsPowerupDoubleDamage
 }
 
+Response omniknight_PowerupIsPowerupBounty
+{
+	scene "scenes/omniknight/omniknight_omni_lasthit_02.vcd" nodelay noscene 
+}
+
+Rule omniknight_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isomniknight IsPowerupBounty
+	response omniknight_PowerupIsPowerupBounty
+}
+
 Response omniknight_PowerupIsPowerupRegeneration
 {
 	scene "scenes/omniknight/omniknight_omni_regen_01.vcd" nodelay noscene 

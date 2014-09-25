@@ -475,6 +475,17 @@ Rule phantom_assassin_PowerupIsPowerupHasteChance_25%_Rule
 	response phantom_assassin_PowerupIsPowerupHasteChance_25%
 }
 
+Response phantom_assassin_PowerupIsPowerupBounty
+{
+	scene "scenes/phantom_assassin/phantom_assassin_phass_purch_01.vcd" nodelay noscene  
+}
+
+Rule phantom_assassin_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isphantom_assassin IsPowerupBounty
+	response phantom_assassin_PowerupIsPowerupBounty
+}
+
 Response phantom_assassin_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/phantom_assassin/phantom_assassin_phass_doubdam_01.vcd" nodelay noscene 

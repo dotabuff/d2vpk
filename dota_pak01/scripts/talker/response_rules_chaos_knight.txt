@@ -30,19 +30,6 @@ Rule chaos_knight_CustomIsGameStart_Rule
 	response chaos_knight_CustomIsGameStart
 }
 
-Response chaos_knight_Custom
-{
-	scene "scenes/chaos_knight/chaos_knight_chaknight_ability_failure_01.vcd" nodelay noscene 
-	scene "scenes/chaos_knight/chaos_knight_chaknight_ability_failure_02.vcd" nodelay noscene 
-	scene "scenes/chaos_knight/chaos_knight_chaknight_ability_failure_03.vcd" nodelay noscene 
-}
-
-Rule chaos_knight_Custom_Rule
-{
-	criteria Custom Ischaos_knight 
-	response chaos_knight_Custom
-}
-
 Response chaos_knight_KillIsFirstBlood
 {
 	scene "scenes/chaos_knight/chaos_knight_chaknight_firstblood_01.vcd" nodelay noscene 
@@ -904,6 +891,17 @@ Rule chaos_knight_PowerupIsPowerupIllusionChance_25%_Rule
 {
 	criteria Powerup Ischaos_knight IsPowerupIllusion Chance_25%
 	response chaos_knight_PowerupIsPowerupIllusionChance_25%
+}
+
+Response chaos_knight_PowerupIsPowerupBounty
+{
+	scene "scenes/chaos_knight/chaos_knight_chaknight_purch_02.vcd" nodelay noscene speakonce
+}
+
+Rule chaos_knight_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Ischaos_knight IsPowerupBounty
+	response chaos_knight_PowerupIsPowerupBounty
 }
 
 Response chaos_knight_PowerupIsPowerupInvisibility

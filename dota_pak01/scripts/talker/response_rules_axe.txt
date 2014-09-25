@@ -421,12 +421,25 @@ Response axe_KillIsEnemyAlchemistChance_25%
 {
 	scene "scenes/axe/axe_axe_rival_25.vcd" nodelay noscene 
 	scene "scenes/axe/axe_axe_rival_26.vcd" nodelay noscene 
+	scene "scenes/axe/axe_axe_rival_29.vcd" nodelay noscene 
 }
 
 Rule axe_KillIsEnemyAlchemistChance_25%_Rule
 {
 	criteria Kill Isaxe IsEnemyAlchemist Chance_25%
 	response axe_KillIsEnemyAlchemistChance_25%
+}
+
+Response axe_KillIsEnemySniperChance_25%
+{
+	scene "scenes/axe/axe_axe_rival_27.vcd" nodelay noscene 
+	scene "scenes/axe/axe_axe_rival_28.vcd" nodelay noscene 
+}
+
+Rule axe_KillIsEnemySniperChance_25%_Rule
+{
+	criteria Kill Isaxe IsEnemySniper Chance_25%
+	response axe_KillIsEnemySniperChance_25%
 }
 
 Response axe_Death
@@ -836,6 +849,17 @@ Rule axe_PowerupIsPowerupInvisibilityChance_25%_Rule
 {
 	criteria Powerup Isaxe IsPowerupInvisibility Chance_25%
 	response axe_PowerupIsPowerupInvisibilityChance_25%
+}
+
+Response axe_PowerupIsPowerupBounty
+{
+	scene "scenes/axe/axe_axe_happy_01.vcd" nodelay noscene 
+}
+
+Rule axe_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isaxe IsPowerupBounty
+	response axe_PowerupIsPowerupBounty
 }
 
 Response axe_LevelUp

@@ -496,6 +496,28 @@ Rule necrolyte_PowerupIsPowerupIllusion_Rule
 	response necrolyte_PowerupIsPowerupIllusion
 }
 
+Response necrolyte_PowerupIsPowerupIllusionChance_25%
+{
+	scene "scenes/necrolyte/necrolyte_necr_illus_02.vcd" nodelay noscene 
+}
+
+Rule necrolyte_PowerupIsPowerupIllusionChance_25%_Rule
+{
+	criteria Powerup Isnecrolyte IsPowerupIllusion Chance_25%
+	response necrolyte_PowerupIsPowerupIllusionChance_25%
+}
+
+Response necrolyte_PowerupIsPowerupBounty
+{
+	scene "scenes/necrolyte/necrolyte_necr_lasthit_04.vcd" nodelay noscene 
+}
+
+Rule necrolyte_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isnecrolyte IsPowerupBounty
+	response necrolyte_PowerupIsPowerupBounty
+}
+
 Response necrolyte_PowerupIsPowerupInvisibility
 {
 	scene "scenes/necrolyte/necrolyte_necr_invis_01.vcd" nodelay noscene 

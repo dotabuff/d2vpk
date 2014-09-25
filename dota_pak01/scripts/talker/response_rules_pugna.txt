@@ -482,6 +482,17 @@ Rule pugna_ImmortalityChance_25%_Rule
 	response pugna_ImmortalityChance_25%
 }
 
+Response pugna_PowerupIsPowerupBounty
+{
+	scene "scenes/pugna/pugna_pugna_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule pugna_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Ispugna IsPowerupBounty
+	response pugna_PowerupIsPowerupBounty
+}
+
 Response pugna_PowerupIsPowerupHaste
 {
 	scene "scenes/pugna/pugna_pugna_haste_01.vcd" nodelay noscene 

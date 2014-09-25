@@ -1,17 +1,17 @@
 "CustomHero"
 {
 	"$basetexture" "models\heroes\pedestal\pedestal_spotlight_color"
-	"$normalmap" "models/heroes/beastmaster/beastmaster_arms_normal"
-	"$maskmap1" "models/heroes/beastmaster/beastmaster_arms_masks1"
-	"$maskmap2" "models/heroes/beastmaster/beastmaster_arms_masks2"
+	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/development/blankmasks1.vtf"
+	"$maskmap2" "models/development/blankmasks2.vtf"
 
 
-	$SPECULAREXPONENT 30
-	$SPECULARSCALE 1
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE .25
 //	$SPECULARBLENDTOFULL 1
 //	$SPECULARCOLOR "[1 .8 .8]"
 
-	$RIMLIGHTSCALE .2
+	$RIMLIGHTSCALE .0
 	$AMBIENTSCALE 1
 
 

@@ -769,6 +769,17 @@ Rule luna_Immortality_Rule
 	response luna_Immortality
 }
 
+Response luna_PowerupIsPowerupBounty
+{
+	scene "scenes/luna/luna_luna_levelup_03.vcd" nodelay noscene 
+}
+
+Rule luna_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isluna IsPowerupBounty
+	response luna_PowerupIsPowerupBounty
+}
+
 Response luna_PowerupIsPowerupHaste
 {
 	scene "scenes/luna/luna_luna_haste_01.vcd" nodelay noscene 

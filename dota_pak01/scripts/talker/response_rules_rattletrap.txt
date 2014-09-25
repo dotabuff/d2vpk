@@ -711,6 +711,17 @@ Rule rattletrap_PowerupIsPowerupRegenerationChance_25%_Rule
 	response rattletrap_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response rattletrap_PowerupIsPowerupBounty
+{
+	scene "scenes/rattletrap/rattletrap_ratt_lasthit_09.vcd" nodelay noscene 
+}
+
+Rule rattletrap_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Israttletrap IsPowerupBounty
+	response rattletrap_PowerupIsPowerupBounty
+}
+
 Response rattletrap_PowerupIsPowerupIllusion
 {
 	scene "scenes/rattletrap/rattletrap_ratt_illus_01.vcd" nodelay noscene 

@@ -68,16 +68,87 @@
 	}
 }
 
-"hero_bloodseeker.bloodbath"
+"Hero_Bloodseeker.BloodRite.Cast"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
-	"soundlevel"  	"SNDLVL_72dB"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
-	"rndwave"
+	"wave"			"weapons\hero\bloodseeker\blood_rite_cast.wav"
+	"operator_stacks"
 	{
-		"wave"			"weapons\hero\bloodseeker\bloodbath01.wav"
-		"wave"			"weapons\hero\bloodseeker\bloodbath02.wav"
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"hero_bloodseeker.bloodRite"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"105"
+	"wave"			")weapons\hero\bloodseeker\blood_rite.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"hero_bloodseeker.bloodRite.silence"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons\hero\bloodseeker\blood_rite_silence.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "hero_bloodseeker.bloodRite.silence"
+				"match_channel" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
 	}
 }
 

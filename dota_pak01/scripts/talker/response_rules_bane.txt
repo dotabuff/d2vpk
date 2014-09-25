@@ -655,6 +655,17 @@ Rule bane_PowerupIsPowerupHasteChance_25%_Rule
 	response bane_PowerupIsPowerupHasteChance_25%
 }
 
+Response bane_PowerupIsPowerupBounty
+{
+	scene "scenes/bane/bane_bane_lasthit_12.vcd" nodelay noscene 
+}
+
+Rule bane_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isbane IsPowerupBounty
+	response bane_PowerupIsPowerupBounty
+}
+
 Response bane_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/bane/bane_bane_doubdam_01.vcd" nodelay noscene 

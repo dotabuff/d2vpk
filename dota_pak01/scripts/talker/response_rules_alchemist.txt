@@ -839,6 +839,17 @@ Rule alchemist_PowerupIsPowerupDoubleDamage_Rule
 	response alchemist_PowerupIsPowerupDoubleDamage
 }
 
+Response alchemist_PowerupIsPowerupBounty
+{
+	scene "scenes/alchemist/alchemist_alch_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule alchemist_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isalchemist IsPowerupBounty
+	response alchemist_PowerupIsPowerupBounty
+}
+
 Response alchemist_PowerupIsPowerupRegeneration
 {
 	scene "scenes/alchemist/alchemist_alch_regen_01.vcd" nodelay noscene 

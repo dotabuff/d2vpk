@@ -445,6 +445,17 @@ Rule morphling_PowerupIsPowerupHaste_Rule
 	response morphling_PowerupIsPowerupHaste
 }
 
+Response morphling_PowerupIsPowerupBounty
+{
+	scene "scenes/morphling/morphling_mrph_spawn_04.vcd" nodelay noscene 
+}
+
+Rule morphling_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Ismorphling IsPowerupBounty
+	response morphling_PowerupIsPowerupBounty
+}
+
 Response morphling_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/morphling/morphling_mrph_doubdam_01.vcd" nodelay noscene 

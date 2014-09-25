@@ -30,10 +30,6 @@
 			{
 			"input_float" "0.2"
 			}
-			"mixer"
-			{
-				"mixgroup" "BaseAttacks"
-			}
 		}
 	}
 }
@@ -68,10 +64,6 @@
 			{
 			"input_execute"	"1"
 			"entry_name" "Damage_Melee.Gore"
-			}
-			"mixer"
-			{
-				"mixgroup" "BaseAttacks"
 			}
 		}
 	}
@@ -182,6 +174,72 @@
 			{
 				"input_radius"  "300"
 			}
+		}
+	}
+}
+
+"Hero_PhantomLancer.Doppelganger.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/phantom_lancer/doppel_cast.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"Hero_PhantomLancer.Doppelganger.Appear"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/phantom_lancer/doppel_appear.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "3.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "PhantomLancer.Doppelganger.Appear"
+				"match_channel" "false"
+			}
+		}
+	}
+}
+
+"Hero_PhantomLancer.PhantomEdge"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/phantom_lancer/phantom_edge.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
 		}
 	}
 }

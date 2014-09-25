@@ -34,22 +34,6 @@ Rule medusa_CustomIsGameStart_Rule
 	response medusa_CustomIsGameStart
 }
 
-Response medusa_Custom
-{
-	scene "scenes/medusa/medusa_medus_failure_01.vcd" nodelay noscene 
-	scene "scenes/medusa/medusa_medus_failure_02.vcd" nodelay noscene 
-	scene "scenes/medusa/medusa_medus_failure_03.vcd" nodelay noscene 
-	scene "scenes/medusa/medusa_medus_failure_04.vcd" nodelay noscene 
-	scene "scenes/medusa/medusa_medus_failure_05.vcd" nodelay noscene 
-	scene "scenes/medusa/medusa_medus_failure_06.vcd" nodelay noscene 
-}
-
-Rule medusa_Custom_Rule
-{
-	criteria Custom Ismedusa 
-	response medusa_Custom
-}
-
 Response medusa_KillIsFirstBlood
 {
 	scene "scenes/medusa/medusa_medus_firstblood_01.vcd" nodelay noscene 
@@ -910,6 +894,17 @@ Rule medusa_PowerupIsPowerupHasteChance_25%_Rule
 {
 	criteria Powerup Ismedusa IsPowerupHaste Chance_25%
 	response medusa_PowerupIsPowerupHasteChance_25%
+}
+
+Response medusa_PowerupIsPowerupBounty
+{
+	scene "scenes/medusa/medusa_medus_purch_01.vcd" nodelay noscene  
+}
+
+Rule medusa_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Ismedusa IsPowerupBounty
+	response medusa_PowerupIsPowerupBounty
 }
 
 Response medusa_PowerupIsPowerupDoubleDamage

@@ -622,6 +622,17 @@ Rule huskar_PowerupIsPowerupDoubleDamage_Rule
 	response huskar_PowerupIsPowerupDoubleDamage
 }
 
+Response huskar_PowerupIsPowerupBounty
+{
+	scene "scenes/huskar/huskar_husk_lasthit_08.vcd" nodelay noscene 
+}
+
+Rule huskar_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Ishuskar IsPowerupBounty
+	response huskar_PowerupIsPowerupBounty
+}
+
 Response huskar_PowerupIsPowerupRegeneration
 {
 	scene "scenes/huskar/huskar_husk_regen_01.vcd" nodelay noscene 

@@ -638,6 +638,17 @@ Rule night_stalker_PowerupIsPowerupRegeneration_Rule
 	response night_stalker_PowerupIsPowerupRegeneration
 }
 
+Response night_stalker_PowerupIsPowerupBounty
+{
+	scene "scenes/night_stalker/night_stalker_nstalk_lasthit_04.vcd" nodelay noscene 
+}
+
+Rule night_stalker_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isnight_stalker IsPowerupBounty
+	response night_stalker_PowerupIsPowerupBounty
+}
+
 Response night_stalker_PowerupIsPowerupIllusion
 {
 	scene "scenes/night_stalker/night_stalker_nstalk_illus_01.vcd" nodelay noscene 

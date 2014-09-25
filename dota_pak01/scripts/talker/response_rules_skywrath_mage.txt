@@ -32,19 +32,6 @@ Rule skywrath_mage_CustomIsGameStart_Rule
 	response skywrath_mage_CustomIsGameStart
 }
 
-Response skywrath_mage_Custom
-{
-	scene "scenes/skywrath_mage/skywrath_mage_drag_failure_01.vcd" nodelay noscene 
-	scene "scenes/skywrath_mage/skywrath_mage_drag_failure_02.vcd" nodelay noscene 
-	scene "scenes/skywrath_mage/skywrath_mage_drag_failure_03.vcd" nodelay noscene 
-}
-
-Rule skywrath_mage_Custom_Rule
-{
-	criteria Custom Isskywrath_mage 
-	response skywrath_mage_Custom
-}
-
 Response skywrath_mage_KillIsFirstBloodChance_10%
 {
 	scene "scenes/skywrath_mage/skywrath_mage_drag_firstblood_01.vcd" nodelay noscene 
@@ -820,6 +807,17 @@ Rule skywrath_mage_ImmortalityChance_25%_Rule
 {
 	criteria Immortality Isskywrath_mage Chance_25%
 	response skywrath_mage_ImmortalityChance_25%
+}
+
+Response skywrath_mage_PowerupIsPowerupBounty
+{
+	scene "scenes/skywrath_mage/skywrath_mage_drag_lasthit_11.vcd" nodelay noscene 
+}
+
+Rule skywrath_mage_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isskywrath_mage IsPowerupBounty
+	response skywrath_mage_PowerupIsPowerupBounty
 }
 
 Response skywrath_mage_PowerupIsPowerupHaste

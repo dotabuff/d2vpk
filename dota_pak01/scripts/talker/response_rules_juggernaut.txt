@@ -734,6 +734,17 @@ Rule juggernaut_PowerupIsPowerupRegenerationChance_25%_Rule
 	response juggernaut_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response juggernaut_PowerupIsPowerupBounty
+{
+	scene "scenes/juggernaut/juggernaut_jug_lasthit_05.vcd" nodelay noscene 
+}
+
+Rule juggernaut_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isjuggernaut IsPowerupBounty
+	response juggernaut_PowerupIsPowerupBounty
+}
+
 Response juggernaut_PowerupIsPowerupIllusion
 {
 	scene "scenes/juggernaut/juggernaut_jug_illus_01.vcd" nodelay noscene 

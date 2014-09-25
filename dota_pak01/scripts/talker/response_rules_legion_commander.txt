@@ -562,6 +562,17 @@ Rule legion_commander_KillChance_3%IsEnemyInvoker_Rule
 	response legion_commander_KillChance_3%IsEnemyInvoker
 }
 
+Response legion_commander_KillChance_3%IsEnemyOracle
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsEnemyOracle_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsEnemyOracle
+	response legion_commander_KillChance_3%IsEnemyOracle
+}
+
 Response legion_commander_KillChance_3%IsEnemyPuck
 {
 	scene "scenes/legion_commander/legion_commander_legcom_rival_26.vcd" nodelay noscene 
@@ -648,6 +659,17 @@ Rule legion_commander_KillChance_3%IsEnemyMedusa_Rule
 {
 	criteria Kill Islegion_commander Chance_3% IsEnemyMedusa
 	response legion_commander_KillChance_3%IsEnemyMedusa
+}
+
+Response legion_commander_KillChance_3%IsEnemyVenomancer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsEnemyVenomancer_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsEnemyVenomancer
+	response legion_commander_KillChance_3%IsEnemyVenomancer
 }
 
 Response legion_commander_KillChance_3%IsEnemySlardar
@@ -1354,6 +1376,17 @@ Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyInvoker_Rule
 	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyInvoker
 }
 
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyOracle
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_25.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyOracle_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyOracle
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyOracle
+}
+
 Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyPuck
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_26.vcd" nodelay noscene 
@@ -1396,6 +1429,17 @@ Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyMedusa_Rule
 {
 	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyMedusa
 	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyMedusa
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyVenomancer
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_28.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyVenomancer_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyVenomancer
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyVenomancer
 }
 
 Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemySlardar
@@ -2047,6 +2091,17 @@ Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyOutworld_Destroyer
 {
 	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsEnemyOutworld_Destroyer
 	response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyOutworld_Destroyer
+}
+
+Response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyOracle
+{
+	scene "scenes/legion_commander/legion_commander_legcom_duelhero_21.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyOracle_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel Chance_15% IsEnemyOracle
+	response legion_commander_CastExecuteIsLegionDuelChance_15%IsEnemyOracle
 }
 
 Response legion_commander_CastExecuteIsLegionDuelChance_5%IsEnemyAxe
@@ -2965,6 +3020,17 @@ Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyO
 {
 	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyOutworld_Destroyer
 	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOutworld_Destroyer
+}
+
+Response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOracle
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_duelhero_21.vcd" nodelay noscene 
+}
+
+Rule legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOracle_Rule
+{
+	criteria CastExecute Islegion_commander IsLegionDuel IsLegionEconDemon Chance_15% IsEnemyOracle
+	response legion_commander_CastExecuteIsLegionDuelIsLegionEconDemonChance_15%IsEnemyOracle
 }
 
 Response legion_commander_CastExecuteIsLegionDuelChance_5%IsLegionEconDemonIsEnemyAxe
@@ -5361,6 +5427,17 @@ Rule legion_commander_PowerupIsPowerupIllusionChance_25%_Rule
 	response legion_commander_PowerupIsPowerupIllusionChance_25%
 }
 
+Response legion_commander_PowerupIsPowerupBounty
+{
+	scene "scenes/legion_commander/legion_commander_legcom_itemcommon_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupBounty
+	response legion_commander_PowerupIsPowerupBounty
+}
+
 Response legion_commander_PowerupIsPowerupInvisibility
 {
 	scene "scenes/legion_commander/legion_commander_legcom_invis_01.vcd" nodelay noscene 
@@ -5382,6 +5459,17 @@ Rule legion_commander_PowerupIsPowerupInvisibilityChance_25%_Rule
 {
 	criteria Powerup Islegion_commander IsPowerupInvisibility Chance_25%
 	response legion_commander_PowerupIsPowerupInvisibilityChance_25%
+}
+
+Response legion_commander_PowerupIsPowerupIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_itemcommon_01.vcd" nodelay noscene 
+}
+
+Rule legion_commander_PowerupIsPowerupIsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerup IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupIsLegionEconDemon
 }
 
 Response legion_commander_PowerupIsPowerupHasteIsLegionEconDemon

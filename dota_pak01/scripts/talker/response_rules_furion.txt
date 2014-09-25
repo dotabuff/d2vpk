@@ -576,6 +576,17 @@ Rule furion_PowerupIsPowerupDoubleDamageChance_25%_Rule
 	response furion_PowerupIsPowerupDoubleDamageChance_25%
 }
 
+Response furion_PowerupIsPowerupBounty
+{
+	scene "scenes/furion/furion_furi_lasthit_01.vcd" nodelay noscene 
+}
+
+Rule furion_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isfurion IsPowerupBounty
+	response furion_PowerupIsPowerupBounty
+}
+
 Response furion_PowerupIsPowerupRegeneration
 {
 	scene "scenes/furion/furion_furi_regen_01.vcd" nodelay noscene 

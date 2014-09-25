@@ -706,10 +706,10 @@
 "DOTA_Item.EtherealBlade.Activate"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.5"
+	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
-	"wave"			")items/item_ghost_etherealblade.wav"
+	"wave"			")items/ethereal_blade_cast.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -730,20 +730,12 @@
 "DOTA_Item.EtherealBlade.Target"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.5"
+	"volume"		"0.8"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"wave"			")items/item_ghost_etherealblade.wav"
 	"operator_stacks"
 	{
-		"start_stack"
-		{
-			"import_stack" "dota_attack_block_dist"
-			"delay_output"
-			{
-			"input_float" "0.15"
-			}
-		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -909,4 +901,33 @@
 			}
 		}
 	}
+}
+
+"DOTA_Item.Butterfly"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items/butterfly.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Item.CrimsonGuard.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items/crimson_guard.mp3"
 }

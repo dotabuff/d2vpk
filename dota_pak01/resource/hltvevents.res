@@ -137,6 +137,7 @@
 		"ability_toggle_off" "bool"
 		"ability_level"		"short"
 		"gold_reason"		"short"
+		"xp_reason"			"short"
 	}
 
 	"dota_game_state_change"

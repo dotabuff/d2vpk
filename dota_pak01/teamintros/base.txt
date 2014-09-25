@@ -48,103 +48,93 @@
 	{
 		"0"
 		{
-			"disabled"	"1"
-			"event_type"	"camera_transition"
-			"transition_duration"	"0"	// Treated as a cut
-			"camera_type"	"camera_data_driven"
-			"camera_file"	"rise"
-			"attach_pos"	"0 0 256"
-			"attach_angles"	"0 0 0"
+			"event_type"		"hero_showcase"
+			"transition_duration"	"0"
+			"camera_type"		"camera_data_driven"
+			"camera_file"		"hero_approach_from_above"
+			"attach_entity_alias"	"radiant0"
 		}
 
 		"0"
 		{
-			"event_type"		"camera_transition"
+			"event_type"		"hero_showcase"
+			"transition_duration"	"0"
+			"camera_type"		"camera_data_driven"
+			"camera_file"		"hero_pan_right"
+			"attach_entity_alias"	"radiant1"
+			"show_ui_right"		"1"	// Show the UI on the right-hand side
+		}
+
+		"0"
+		{
+			"event_type"		"hero_showcase"
 			"transition_duration"	".4"
 			"camera_type"		"camera_data_driven"
 			"camera_file"		"hero_approach"
-			"attach_entity"		"radiant0"
+			"attach_entity_alias"	"radiant2"
 		}
 
 		"0"
 		{
-			"event_type"		"camera_transition"
+			"event_type"		"hero_showcase"
+			"transition_duration"	".4"
+			"camera_type"		"camera_data_driven"
+			"camera_file"		"hero_approach_from_above"
+			"attach_entity_alias"	"radiant3"
+		}
+
+		"0"
+		{
+			"event_type"		"hero_showcase"
+			"transition_duration"	"0"
+			"camera_type"		"camera_data_driven"
+			"camera_file"		"hero_approach_from_above"
+			"attach_entity_alias"	"radiant4"
+		}
+
+		"0"
+		{
+			"event_type"		"hero_showcase"
+			"transition_duration"	"0"
+			"camera_type"		"camera_data_driven"
+			"camera_file"		"hero_approach"
+			"attach_entity_alias"	"dire0"
+		}
+
+		"0"
+		{
+			"event_type"		"hero_showcase"
 			"transition_duration"	".4"
 			"camera_type"		"camera_data_driven"
 			"camera_file"		"hero_approach"
-			"attach_entity"		"radiant1"
+			"attach_entity_alias"	"dire1"
 		}
 
 		"0"
 		{
-			"event_type"		"camera_transition"
+			"event_type"		"hero_showcase"
+			"transition_duration"	".4"
+			"camera_type"		"camera_data_driven"
+			"camera_file"		"hero_pan_right"
+			"attach_entity_alias"	"dire2"
+		}
+
+		"0"
+		{
+			"event_type"		"hero_showcase"
 			"transition_duration"	".4"
 			"camera_type"		"camera_data_driven"
 			"camera_file"		"hero_approach"
-			"attach_entity"		"radiant2"
+			"attach_entity_alias"	"dire3"
 		}
 
 		"0"
 		{
-			"event_type"		"camera_transition"
+			"event_type"		"hero_showcase"
 			"transition_duration"	".4"
 			"camera_type"		"camera_data_driven"
 			"camera_file"		"hero_approach"
-			"attach_entity"		"radiant3"
-		}
-
-		"0"
-		{
-			"event_type"		"camera_transition"
-			"transition_duration"	".4"
-			"camera_type"		"camera_data_driven"
-			"camera_file"		"hero_approach"
-			"attach_entity"		"radiant4"
-		}
-
-		"0"
-		{
-			"event_type"		"camera_transition"
-			"transition_duration"	"1"
-			"camera_type"		"camera_data_driven"
-			"camera_file"		"hero_approach"
-			"attach_entity"		"dire0"
-		}
-
-		"0"
-		{
-			"event_type"		"camera_transition"
-			"transition_duration"	".4"
-			"camera_type"		"camera_data_driven"
-			"camera_file"		"hero_approach"
-			"attach_entity"		"dire1"
-		}
-
-		"0"
-		{
-			"event_type"		"camera_transition"
-			"transition_duration"	".4"
-			"camera_type"		"camera_data_driven"
-			"camera_file"		"hero_approach"
-			"attach_entity"		"dire2"
-		}
-
-		"0"
-		{
-			"event_type"		"camera_transition"
-			"transition_duration"	".4"
-			"camera_type"		"camera_data_driven"
-			"camera_file"		"hero_approach"
-			"attach_entity"		"dire3"
-		}
-
-		"0"
-		{
-			"event_type"		"camera_transition"
-			"transition_duration"	".4"
-			"camera_type"		"camera_data_driven"
-			"camera_file"		"hero_approach"
-			"attach_entity"		"dire4"
+			"attach_entity_alias"	"dire4"
 		}
 	}
 }

@@ -138,6 +138,17 @@ Rule slardar_PowerupIsPowerupRegeneration_Rule
 	response slardar_PowerupIsPowerupRegeneration
 }
 
+Response slardar_PowerupIsPowerupBounty
+{
+	scene "scenes/slardar/slardar_slar_lasthit_01.vcd" nodelay noscene 
+}
+
+Rule slardar_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isslardar IsPowerupBounty
+	response slardar_PowerupIsPowerupBounty
+}
+
 Response slardar_PowerupIsPowerupIllusion
 {
 	scene "scenes/slardar/slardar_slar_illus_01.vcd" nodelay noscene 

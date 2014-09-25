@@ -142,6 +142,94 @@ Rule death_prophet_CastExecuteIsDeathProphetExorcism_Rule
 	response death_prophet_CastExecuteIsDeathProphetExorcism
 }
 
+Response death_prophet_PowerupIsPowerupBounty
+{
+	scene "scenes/death_prophet/death_prophet_dpro_exorcism_07.vcd" nodelay noscene 
+}
+
+Rule death_prophet_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isdeath_prophet IsPowerupBounty
+	response death_prophet_PowerupIsPowerupBounty
+}
+
+Response death_prophet_PowerupIsPowerupHaste
+{
+	scene "scenes/death_prophet/death_prophet_dpro_haste_01.vcd" nodelay noscene 
+}
+
+Rule death_prophet_PowerupIsPowerupHaste_Rule
+{
+	criteria Powerup Isdeath_prophet IsPowerupHaste
+	response death_prophet_PowerupIsPowerupHaste
+}
+
+Response death_prophet_PowerupIsPowerupHasteChance_25%
+{
+	scene "scenes/death_prophet/death_prophet_dpro_haste_02.vcd" nodelay noscene 
+}
+
+Rule death_prophet_PowerupIsPowerupHasteChance_25%_Rule
+{
+	criteria Powerup Isdeath_prophet IsPowerupHaste Chance_25%
+	response death_prophet_PowerupIsPowerupHasteChance_25%
+}
+
+Response death_prophet_PowerupIsPowerupDoubleDamage
+{
+	scene "scenes/death_prophet/death_prophet_dpro_doubledam_01.vcd" nodelay noscene 
+}
+
+Rule death_prophet_PowerupIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Isdeath_prophet IsPowerupDoubleDamage
+	response death_prophet_PowerupIsPowerupDoubleDamage
+}
+
+Response death_prophet_PowerupIsPowerupRegeneration
+{
+	scene "scenes/death_prophet/death_prophet_dpro_regen_01.vcd" nodelay noscene 
+}
+
+Rule death_prophet_PowerupIsPowerupRegeneration_Rule
+{
+	criteria Powerup Isdeath_prophet IsPowerupRegeneration
+	response death_prophet_PowerupIsPowerupRegeneration
+}
+
+Response death_prophet_PowerupIsPowerupRegenerationChance_25%
+{
+	scene "scenes/death_prophet/death_prophet_dpro_regen_02.vcd" nodelay noscene 
+}
+
+Rule death_prophet_PowerupIsPowerupRegenerationChance_25%_Rule
+{
+	criteria Powerup Isdeath_prophet IsPowerupRegeneration Chance_25%
+	response death_prophet_PowerupIsPowerupRegenerationChance_25%
+}
+
+Response death_prophet_PowerupIsPowerupIllusion
+{
+	scene "scenes/death_prophet/death_prophet_dpro_illus_01.vcd" nodelay noscene 
+}
+
+Rule death_prophet_PowerupIsPowerupIllusion_Rule
+{
+	criteria Powerup Isdeath_prophet IsPowerupIllusion
+	response death_prophet_PowerupIsPowerupIllusion
+}
+
+Response death_prophet_PowerupIsPowerupInvisibility
+{
+	scene "scenes/death_prophet/death_prophet_dpro_invis_01.vcd" nodelay noscene 
+}
+
+Rule death_prophet_PowerupIsPowerupInvisibility_Rule
+{
+	criteria Powerup Isdeath_prophet IsPowerupInvisibility
+	response death_prophet_PowerupIsPowerupInvisibility
+}
+
 Response death_prophet_ItemDropIsUltraRareDrop
 {
 	scene "scenes/death_prophet/death_prophet_dpro_exorcism_10.vcd" nodelay noscene 
@@ -608,83 +696,6 @@ Rule death_prophet_Immortality_Rule
 {
 	criteria Immortality Isdeath_prophet 
 	response death_prophet_Immortality
-}
-
-Response death_prophet_PowerupIsPowerupHaste
-{
-	scene "scenes/death_prophet/death_prophet_dpro_haste_01.vcd" nodelay noscene 
-}
-
-Rule death_prophet_PowerupIsPowerupHaste_Rule
-{
-	criteria Powerup Isdeath_prophet IsPowerupHaste
-	response death_prophet_PowerupIsPowerupHaste
-}
-
-Response death_prophet_PowerupIsPowerupHasteChance_25%
-{
-	scene "scenes/death_prophet/death_prophet_dpro_haste_02.vcd" nodelay noscene 
-}
-
-Rule death_prophet_PowerupIsPowerupHasteChance_25%_Rule
-{
-	criteria Powerup Isdeath_prophet IsPowerupHaste Chance_25%
-	response death_prophet_PowerupIsPowerupHasteChance_25%
-}
-
-Response death_prophet_PowerupIsPowerupDoubleDamage
-{
-	scene "scenes/death_prophet/death_prophet_dpro_doubledam_01.vcd" nodelay noscene 
-}
-
-Rule death_prophet_PowerupIsPowerupDoubleDamage_Rule
-{
-	criteria Powerup Isdeath_prophet IsPowerupDoubleDamage
-	response death_prophet_PowerupIsPowerupDoubleDamage
-}
-
-Response death_prophet_PowerupIsPowerupRegeneration
-{
-	scene "scenes/death_prophet/death_prophet_dpro_regen_01.vcd" nodelay noscene 
-}
-
-Rule death_prophet_PowerupIsPowerupRegeneration_Rule
-{
-	criteria Powerup Isdeath_prophet IsPowerupRegeneration
-	response death_prophet_PowerupIsPowerupRegeneration
-}
-
-Response death_prophet_PowerupIsPowerupRegenerationChance_25%
-{
-	scene "scenes/death_prophet/death_prophet_dpro_regen_02.vcd" nodelay noscene 
-}
-
-Rule death_prophet_PowerupIsPowerupRegenerationChance_25%_Rule
-{
-	criteria Powerup Isdeath_prophet IsPowerupRegeneration Chance_25%
-	response death_prophet_PowerupIsPowerupRegenerationChance_25%
-}
-
-Response death_prophet_PowerupIsPowerupIllusion
-{
-	scene "scenes/death_prophet/death_prophet_dpro_illus_01.vcd" nodelay noscene 
-}
-
-Rule death_prophet_PowerupIsPowerupIllusion_Rule
-{
-	criteria Powerup Isdeath_prophet IsPowerupIllusion
-	response death_prophet_PowerupIsPowerupIllusion
-}
-
-Response death_prophet_PowerupIsPowerupInvisibility
-{
-	scene "scenes/death_prophet/death_prophet_dpro_invis_01.vcd" nodelay noscene 
-}
-
-Rule death_prophet_PowerupIsPowerupInvisibility_Rule
-{
-	criteria Powerup Isdeath_prophet IsPowerupInvisibility
-	response death_prophet_PowerupIsPowerupInvisibility
 }
 
 Response death_prophet_Cooldown

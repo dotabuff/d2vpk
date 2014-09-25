@@ -2,15 +2,15 @@
 "Hero_DarkSeer.PreAttack"
 {
 	"channel"		"CHAN_WEAPON"
-	"volume"		"0.3"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95,105"
 	"rndwave"
 	{
-		"wave"	"weapons\hero\dark_seer\dota_dark_seer_pre_attack_01.wav"
-		"wave"	"weapons\hero\dark_seer\dota_dark_seer_pre_attack_02.wav"
-		"wave"	"weapons\hero\dark_seer\dota_dark_seer_pre_attack_03.wav"
-		"wave"	"weapons\hero\dark_seer\dota_dark_seer_pre_attack_04.wav"
+		"wave"	"weapons\hero\dark_seer\preattack01.wav"
+		"wave"	"weapons\hero\dark_seer\preattack02.wav"
+		"wave"	"weapons\hero\dark_seer\preattack03.wav"
+		"wave"	"weapons\hero\dark_seer\preattack04.wav"
 	}
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -25,15 +25,15 @@
 "Hero_DarkSeer.Attack"
 {
 	"channel"		"CHAN_WEAPON"
-	"volume"		"0.7"
-	"soundlevel"  	"SNDLVL_75dB"
-	"pitch"			"100,110"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
 	"rndwave"
 	{
-		"wave"	"weapons\hero\dark_seer\dota_dark_seer_attack_impact_01.wav"
-		"wave"	"weapons\hero\dark_seer\dota_dark_seer_attack_impact_02.wav"
-		"wave"	"weapons\hero\dark_seer\dota_dark_seer_attack_impact_03.wav"
-		"wave"	"weapons\hero\dark_seer\dota_dark_seer_attack_impact_04.wav"
+		"wave"	"weapons\hero\dark_seer\attack01.wav"
+		"wave"	"weapons\hero\dark_seer\attack02.wav"
+		"wave"	"weapons\hero\dark_seer\attack03.wav"
+		"wave"	"weapons\hero\dark_seer\attack04.wav"
 	}
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -41,6 +41,11 @@
 		"start_stack"
 		{
 			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Damage_Melee.Gore"
+			}
 		}
 	}
 }

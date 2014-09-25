@@ -553,6 +553,17 @@ Rule zuus_PowerupIsPowerupHaste_Rule
 	response zuus_PowerupIsPowerupHaste
 }
 
+Response zuus_PowerupIsPowerupBounty
+{
+	scene "scenes/zuus/zuus_zuus_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule zuus_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iszuus IsPowerupBounty
+	response zuus_PowerupIsPowerupBounty
+}
+
 Response zuus_PowerupIsPowerupDoubleDamage
 {
 	scene "scenes/zuus/zuus_zuus_doubdam_01.vcd" nodelay noscene 

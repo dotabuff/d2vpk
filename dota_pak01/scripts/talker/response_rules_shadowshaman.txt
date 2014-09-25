@@ -488,6 +488,17 @@ Rule shadowshaman_PowerupIsPowerupRegenerationChance_25%_Rule
 	response shadowshaman_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response shadowshaman_PowerupIsPowerupBounty
+{
+	scene "scenes/shadowshaman/shadowshaman_shad_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule shadowshaman_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isshadowshaman IsPowerupBounty
+	response shadowshaman_PowerupIsPowerupBounty
+}
+
 Response shadowshaman_PowerupIsPowerupIllusion
 {
 	scene "scenes/shadowshaman/shadowshaman_shad_illus_01.vcd" nodelay noscene 

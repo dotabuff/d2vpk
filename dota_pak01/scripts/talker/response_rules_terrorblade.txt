@@ -4868,6 +4868,17 @@ Rule terrorblade_PowerupIsPowerupRegenerationChance_25%_Rule
 	response terrorblade_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response terrorblade_PowerupIsPowerupBounty
+{
+	scene "scenes/terrorblade/terrorblade_terr_lasthit_06.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isterrorblade IsPowerupBounty
+	response terrorblade_PowerupIsPowerupBounty
+}
+
 Response terrorblade_PowerupIsPowerupIllusion
 {
 	scene "scenes/terrorblade/terrorblade_terr_illus_01.vcd" nodelay noscene 
@@ -5002,6 +5013,17 @@ Rule terrorblade_PowerupIsTerrorDemonFormIsPowerupIllusionChance_25%_Rule
 	response terrorblade_PowerupIsTerrorDemonFormIsPowerupIllusionChance_25%
 }
 
+Response terrorblade_PowerupIsTerrorDemonFormIsPowerupBounty
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_06.vcd" nodelay noscene  
+}
+
+Rule terrorblade_PowerupIsTerrorDemonFormIsPowerupBounty_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorDemonForm IsPowerupBounty
+	response terrorblade_PowerupIsTerrorDemonFormIsPowerupBounty
+}
+
 Response terrorblade_PowerupIsTerrorDemonFormIsPowerupInvisibility
 {
 	scene "scenes/terrorblade/terrorblade_terr_morph_iinvis_01.vcd" nodelay noscene 
@@ -5090,6 +5112,17 @@ Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupRegenerationChance_25%_Rule
 {
 	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupRegeneration Chance_25%
 	response terrorblade_PowerupIsTerrorEconShardsIsPowerupRegenerationChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsPowerupBounty
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_06.vcd" nodelay noscene 
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupBounty_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsPowerupBounty
+	response terrorblade_PowerupIsTerrorEconShardsIsPowerupBounty
 }
 
 Response terrorblade_PowerupIsTerrorEconShardsIsPowerupIllusion
@@ -5202,6 +5235,17 @@ Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupRegeneration
 {
 	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupRegeneration Chance_25%
 	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupRegenerationChance_25%
+}
+
+Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupBounty
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_lasthit_06.vcd" nodelay noscene  
+}
+
+Rule terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupBounty_Rule
+{
+	criteria Powerup Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsPowerupBounty
+	response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupBounty
 }
 
 Response terrorblade_PowerupIsTerrorEconShardsIsTerrorDemonFormIsPowerupIllusion

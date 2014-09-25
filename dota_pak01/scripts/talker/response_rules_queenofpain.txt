@@ -789,6 +789,17 @@ Rule queenofpain_PowerupIsPowerupRegenerationChance_25%_Rule
 	response queenofpain_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response queenofpain_PowerupIsPowerupBounty
+{
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_03.vcd" nodelay noscene 
+}
+
+Rule queenofpain_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isqueenofpain IsPowerupBounty
+	response queenofpain_PowerupIsPowerupBounty
+}
+
 Response queenofpain_PowerupIsPowerupIllusion
 {
 	scene "scenes/queenofpain/queenofpain_pain_illus_01.vcd" nodelay noscene 

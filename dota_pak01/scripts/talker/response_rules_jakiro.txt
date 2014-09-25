@@ -553,6 +553,17 @@ Rule jakiro_PowerupIsPowerupDoubleDamage_Rule
 	response jakiro_PowerupIsPowerupDoubleDamage
 }
 
+Response jakiro_PowerupIsPowerupBounty
+{
+	scene "scenes/jakiro/jakiro_jak_lasthit_05.vcd" nodelay noscene 
+}
+
+Rule jakiro_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isjakiro IsPowerupBounty
+	response jakiro_PowerupIsPowerupBounty
+}
+
 Response jakiro_PowerupIsPowerupRegeneration
 {
 	scene "scenes/jakiro/jakiro_jak_regen_01.vcd" nodelay noscene 

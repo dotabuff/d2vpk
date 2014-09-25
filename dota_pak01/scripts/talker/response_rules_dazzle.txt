@@ -239,6 +239,83 @@ Rule dazzle_CastExecuteIsDazzleShadowWave_Rule
 	response dazzle_CastExecuteIsDazzleShadowWave
 }
 
+Response dazzle_PowerupIsPowerupBounty
+{
+	scene "scenes/dazzle/dazzle_dazz_ability_sfx_08.vcd" nodelay noscene 
+}
+
+Rule dazzle_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isdazzle IsPowerupBounty
+	response dazzle_PowerupIsPowerupBounty
+}
+
+Response dazzle_PowerupIsPowerupHaste
+{
+	scene "scenes/dazzle/dazzle_dazz_haste_01.vcd" nodelay noscene 
+}
+
+Rule dazzle_PowerupIsPowerupHaste_Rule
+{
+	criteria Powerup Isdazzle IsPowerupHaste
+	response dazzle_PowerupIsPowerupHaste
+}
+
+Response dazzle_PowerupIsPowerupDoubleDamage
+{
+	scene "scenes/dazzle/dazzle_dazz_doubdam_01.vcd" nodelay noscene 
+}
+
+Rule dazzle_PowerupIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Isdazzle IsPowerupDoubleDamage
+	response dazzle_PowerupIsPowerupDoubleDamage
+}
+
+Response dazzle_PowerupIsPowerupDoubleDamageChance_25%
+{
+	scene "scenes/dazzle/dazzle_dazz_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule dazzle_PowerupIsPowerupDoubleDamageChance_25%_Rule
+{
+	criteria Powerup Isdazzle IsPowerupDoubleDamage Chance_25%
+	response dazzle_PowerupIsPowerupDoubleDamageChance_25%
+}
+
+Response dazzle_PowerupIsPowerupRegeneration
+{
+	scene "scenes/dazzle/dazzle_dazz_regen_01.vcd" nodelay noscene 
+}
+
+Rule dazzle_PowerupIsPowerupRegeneration_Rule
+{
+	criteria Powerup Isdazzle IsPowerupRegeneration
+	response dazzle_PowerupIsPowerupRegeneration
+}
+
+Response dazzle_PowerupIsPowerupIllusion
+{
+	scene "scenes/dazzle/dazzle_dazz_illus_01.vcd" nodelay noscene 
+}
+
+Rule dazzle_PowerupIsPowerupIllusion_Rule
+{
+	criteria Powerup Isdazzle IsPowerupIllusion
+	response dazzle_PowerupIsPowerupIllusion
+}
+
+Response dazzle_PowerupIsPowerupInvisibility
+{
+	scene "scenes/dazzle/dazzle_dazz_invis_01.vcd" nodelay noscene 
+}
+
+Rule dazzle_PowerupIsPowerupInvisibility_Rule
+{
+	criteria Powerup Isdazzle IsPowerupInvisibility
+	response dazzle_PowerupIsPowerupInvisibility
+}
+
 Response dazzle_LevelUp
 {
 	scene "scenes/dazzle/dazzle_dazz_ability_shadowave_12.vcd" nodelay noscene 
@@ -523,72 +600,6 @@ Rule dazzle_ImmortalityChance_25%_Rule
 {
 	criteria Immortality Isdazzle Chance_25%
 	response dazzle_ImmortalityChance_25%
-}
-
-Response dazzle_PowerupIsPowerupHaste
-{
-	scene "scenes/dazzle/dazzle_dazz_haste_01.vcd" nodelay noscene 
-}
-
-Rule dazzle_PowerupIsPowerupHaste_Rule
-{
-	criteria Powerup Isdazzle IsPowerupHaste
-	response dazzle_PowerupIsPowerupHaste
-}
-
-Response dazzle_PowerupIsPowerupDoubleDamage
-{
-	scene "scenes/dazzle/dazzle_dazz_doubdam_01.vcd" nodelay noscene 
-}
-
-Rule dazzle_PowerupIsPowerupDoubleDamage_Rule
-{
-	criteria Powerup Isdazzle IsPowerupDoubleDamage
-	response dazzle_PowerupIsPowerupDoubleDamage
-}
-
-Response dazzle_PowerupIsPowerupDoubleDamageChance_25%
-{
-	scene "scenes/dazzle/dazzle_dazz_doubdam_02.vcd" nodelay noscene 
-}
-
-Rule dazzle_PowerupIsPowerupDoubleDamageChance_25%_Rule
-{
-	criteria Powerup Isdazzle IsPowerupDoubleDamage Chance_25%
-	response dazzle_PowerupIsPowerupDoubleDamageChance_25%
-}
-
-Response dazzle_PowerupIsPowerupRegeneration
-{
-	scene "scenes/dazzle/dazzle_dazz_regen_01.vcd" nodelay noscene 
-}
-
-Rule dazzle_PowerupIsPowerupRegeneration_Rule
-{
-	criteria Powerup Isdazzle IsPowerupRegeneration
-	response dazzle_PowerupIsPowerupRegeneration
-}
-
-Response dazzle_PowerupIsPowerupIllusion
-{
-	scene "scenes/dazzle/dazzle_dazz_illus_01.vcd" nodelay noscene 
-}
-
-Rule dazzle_PowerupIsPowerupIllusion_Rule
-{
-	criteria Powerup Isdazzle IsPowerupIllusion
-	response dazzle_PowerupIsPowerupIllusion
-}
-
-Response dazzle_PowerupIsPowerupInvisibility
-{
-	scene "scenes/dazzle/dazzle_dazz_invis_01.vcd" nodelay noscene 
-}
-
-Rule dazzle_PowerupIsPowerupInvisibility_Rule
-{
-	criteria Powerup Isdazzle IsPowerupInvisibility
-	response dazzle_PowerupIsPowerupInvisibility
 }
 
 Response dazzle_CooldownLittleNag

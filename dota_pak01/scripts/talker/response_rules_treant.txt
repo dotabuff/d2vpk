@@ -897,6 +897,28 @@ Rule treant_ImmortalityChance_25%_Rule
 	response treant_ImmortalityChance_25%
 }
 
+Response treant_PowerupIsPowerupBounty
+{
+	scene "scenes/treant/treant_treant_purch_01.vcd" nodelay noscene speakonce
+}
+
+Rule treant_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Istreant IsPowerupBounty
+	response treant_PowerupIsPowerupBounty
+}
+
+Response treant_PowerupIsPowerupBountyChance_20%
+{
+	scene "scenes/treant/treant_treant_levelup_02.vcd" nodelay noscene 
+}
+
+Rule treant_PowerupIsPowerupBountyChance_20%_Rule
+{
+	criteria Powerup Istreant IsPowerupBounty Chance_20%
+	response treant_PowerupIsPowerupBountyChance_20%
+}
+
 Response treant_PowerupIsPowerupHaste
 {
 	scene "scenes/treant/treant_treant_haste_01.vcd" nodelay noscene 

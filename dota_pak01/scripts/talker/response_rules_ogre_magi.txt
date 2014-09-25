@@ -806,6 +806,17 @@ Rule ogre_magi_PowerupIsPowerupRegenerationChance_25%_Rule
 	response ogre_magi_PowerupIsPowerupRegenerationChance_25%
 }
 
+Response ogre_magi_PowerupIsPowerupBounty
+{
+	scene "scenes/ogre_magi/ogre_magi_ogmag_lasthit_01.vcd" nodelay noscene 
+}
+
+Rule ogre_magi_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isogre_magi IsPowerupBounty
+	response ogre_magi_PowerupIsPowerupBounty
+}
+
 Response ogre_magi_PowerupIsPowerupIllusion
 {
 	scene "scenes/ogre_magi/ogre_magi_ogmag_illus_01.vcd" nodelay noscene 

@@ -610,6 +610,17 @@ Rule viper_PowerupIsPowerupRegeneration_Rule
 	response viper_PowerupIsPowerupRegeneration
 }
 
+Response viper_PowerupIsPowerupBounty
+{
+	scene "scenes/viper/viper_vipe_lasthit_01.vcd" nodelay noscene 
+}
+
+Rule viper_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isviper IsPowerupBounty
+	response viper_PowerupIsPowerupBounty
+}
+
 Response viper_PowerupIsPowerupIllusion
 {
 	scene "scenes/viper/viper_vipe_illus_01.vcd" nodelay noscene 

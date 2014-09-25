@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/obsidian_destroyer/obsidianguard_back/obsidianguard_back_color"
+	"$normalmap"		"models/items/obsidian_destroyer/obsidianguard_back/obsidianguard_back_normal"
+	"$maskmap1"		"models/items/obsidian_destroyer/obsidianguard_back/obsidianguard_back_mask1"
+	"$maskmap2"		"models/items/obsidian_destroyer/obsidianguard_back/obsidianguard_back_mask2"
+	"$detail1"		"models/heroes/obsidian_destroyer/obsidian_destroyer_motion2"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"15"
+	"$SPECULARSCALE"		"0.800000"
+	"$SPECULARCOLOR"		"[1 .8 1]"
+	"$DIFFUSEWARPBLENDTOFUL"		"0.500000"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.200000"
+			"texturescrollangle"		"270"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
