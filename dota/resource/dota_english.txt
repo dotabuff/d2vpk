@@ -4834,7 +4834,7 @@ Raised with other young mages in a hidden cantonment among the hills of the Hazh
 		"DOTA_Tooltip_ability_lycan_feral_impulse_bonus_damage"						"%BONUS DAMAGE:"
 		"DOTA_Tooltip_ability_lycan_shapeshift"										"Shapeshift"
 		"DOTA_Tooltip_ability_lycan_shapeshift_Lore"								"Forever a slave to his lycanthropy, Banehallow has come to accept his curse, and embrace his own savagery."
-		"DOTA_Tooltip_ability_lycan_shapeshift_Description"							"Lycan assumes his true form, granting him critical strikes and added vision at night.  During Shapeshift, Lycan and all units under his control move at increased speed and cannot be slowed."
+		"DOTA_Tooltip_ability_lycan_shapeshift_Description"							"Lycan assumes his lupine form, granting him critical strikes and added vision at night.  During Shapeshift, Lycan and all units under his control move at increased speed and cannot be slowed."
 		"DOTA_Tooltip_ability_lycan_shapeshift_Note0"								"Hex doesn't remove Lycan's movement speed."
 		"DOTA_Tooltip_ability_lycan_shapeshift_Note1"								"Lycan has a smaller collision size in this state."
 		"DOTA_Tooltip_ability_lycan_shapeshift_duration"							"DURATION:"
@@ -4842,6 +4842,7 @@ Raised with other young mages in a hidden cantonment among the hills of the Hazh
 		"DOTA_Tooltip_ability_lycan_shapeshift_bonus_night_vision"					"BONUS NIGHT VISION:"
 		"DOTA_Tooltip_ability_lycan_shapeshift_crit_chance"							"%CRITICAL CHANCE:"
 		"DOTA_Tooltip_ability_lycan_shapeshift_crit_damage"							"%CRITICAL DAMAGE:"
+		"DOTA_Tooltip_ability_lycan_shapeshift_transformation_time"							"TRANSFORM TIME:"		
 		"DOTA_Tooltip_ability_lycan_summon_wolves_critical_strike"					"Critical Strike"
 		"DOTA_Tooltip_ability_lycan_summon_wolves_critical_strike_Description"		"Gives a chance to deal bonus damage."
 		"DOTA_Tooltip_ability_lycan_summon_wolves_critical_strike_crit_chance"		"%CRITICAL CHANCE:"
@@ -4896,6 +4897,7 @@ Raised with other young mages in a hidden cantonment among the hills of the Hazh
 		"DOTA_Tooltip_ability_lone_druid_true_form_bonus_armor"						"BONUS ARMOR:"
 		"DOTA_Tooltip_ability_lone_druid_true_form_bonus_hp"						"BONUS HP:"
 		"DOTA_Tooltip_ability_lone_druid_true_form_speed_loss"						"BASE SPEED LOSS:"
+		"DOTA_Tooltip_ability_lone_druid_true_form_transformation_time"						"TRANSFORM TIME:"		
 		"DOTA_Tooltip_ability_lone_druid_true_form_druid"							"Druid Form"
 		"DOTA_Tooltip_ability_lone_druid_true_form_druid_Description"				"Return to Druid form."
 		"DOTA_Tooltip_ability_lone_druid_true_form_battle_cry"						"Battle Cry"
@@ -5596,7 +5598,7 @@ Like the great twin riders Dark and Light, and yet another ancient traveler whos
 		"DOTA_Tooltip_ability_medusa_split_shot_total_arrow_count"				"TOTAL TARGETS:"
 		"DOTA_Tooltip_ability_medusa_split_shot_range"							"RANGE:"
 		"DOTA_Tooltip_ability_medusa_mystic_snake"								"Mystic Snake"
-		"DOTA_Tooltip_ability_medusa_mystic_snake_Description"					"A mystic snake made of energy jumps from target to target dealing damage and stealing mana. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake deals more damage and steals more mana per jump."
+		"DOTA_Tooltip_ability_medusa_mystic_snake_Description"					"A mystic snake made of energy jumps from target to target dealing damage and stealing mana. After it reaches its last target, it returns to Medusa to replenish her with mana. The snake deals more damage and steals more mana per jump. Deals Pure damage to units petrified by Stone Gaze."
 		"DOTA_Tooltip_ability_medusa_mystic_snake_Lore"							"The Gorgon's curse is her greatest strength."
 		"DOTA_Tooltip_ability_medusa_mystic_snake_Note0"						"Only units with mana will steal and increment the mana steal."
 		"DOTA_Tooltip_ability_medusa_mystic_snake_Note1"						"Mystic Snake cannot be disjointed."
@@ -5954,7 +5956,7 @@ No sooner had the defeated regained consciousness than the cries for double-or-n
 
 		//ELDER TITAN
 		"DOTA_Tooltip_ability_elder_titan_echo_stomp"							"Echo Stomp"
-		"DOTA_Tooltip_ability_elder_titan_echo_stomp_Description"				"Elder Titan and his Astral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations.  The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage.  Unconscious enemies will wake if they take more than 20 damage."
+		"DOTA_Tooltip_ability_elder_titan_echo_stomp_Description"				"Elder Titan and his Astral Spirit both stomp the ground, damaging and knocking nearby enemy units unconscious around their locations.  The Elder Titan stomp deals physical damage, while the Spirit stomp deals magical damage."
 		"DOTA_Tooltip_ability_elder_titan_echo_stomp_Lore"						"The force of creation still echoes in the stomp of the Titan."
 		"DOTA_Tooltip_ability_elder_titan_echo_stomp_cast_time"					"CAST TIME:"
 		"DOTA_Tooltip_ability_elder_titan_echo_stomp_radius"					"RADIUS:"
@@ -8652,7 +8654,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Tooltip_modifier_item_urn_heal"					"Soul Release"
 		"DOTA_Tooltip_modifier_item_urn_heal_Description"		"Regenerating %0fMODIFIER_PROPERTY_TOOLTIP% HP per second"
 		"DOTA_Tooltip_modifier_item_urn_damage"					"Soul Release"
-		"DOTA_Tooltip_modifier_item_urn_damage_Description"		"Taking 25 damage per second."
+		"DOTA_Tooltip_modifier_item_urn_damage_Description"		"Taking 18.75 damage per second."
 		
 		"DOTA_Tooltip_modifier_item_vladmir_aura"				"Vladmir's Aura"
 		"DOTA_Tooltip_modifier_item_vladmir_aura_Description"	"Under the effects of Vladmir's Aura"
@@ -10584,7 +10586,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		
 		
 		
-		"DOTA_Tooltip_ability_item_abyssal_blade_Description"							"Active: Stun a target enemy unit for %stun_duration% seconds. Goes through Magic Immunity. Passive: Bash - Gives a chance to stun for 1.4 seconds."
+		"DOTA_Tooltip_ability_item_abyssal_blade_Description"							"Active: Stun a target enemy unit for %stun_duration% seconds. Goes through Spell Immunity. Passive: Bash - Gives a chance to stun for 1.4 seconds."
 		"DOTA_Tooltip_ability_item_abyssal_blade_Lore"									"The lost blade of the Commander of the Abyss, this edge cuts into an enemy's soul."
 		"DOTA_Tooltip_ability_item_abyssal_blade_Note0"									"The stun is melee range."
 		"DOTA_Tooltip_ability_item_abyssal_blade_Note1"									"Doesn't stack with other bashes."
@@ -10804,7 +10806,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Tooltip_ability_item_desolator_corruption_armor"					"ARMOR REDUCTION:"
 		"DOTA_Tooltip_ability_item_desolator_bonus_damage"						"+$damage"		
 		
-		"DOTA_Tooltip_ability_item_diffusal_blade_Description"					"Active: Purge - Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.\nPassive: Feedback - Your attacks burn %feedback_mana_burn% mana from melee heroes, and %feedback_mana_burn_ranged% from ranged heroes, while dealing the same amount in physical damage. Upgradable.\n\nDiffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
+		"DOTA_Tooltip_ability_item_diffusal_blade_Description"				"Active: Purge - Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.\nPassive: Feedback - Your attacks burn %feedback_mana_burn% mana and deal the same amount in physical damage. Upgradable.\n\nDiffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 		"DOTA_Tooltip_ability_item_diffusal_blade_Lore"							"An enchanted blade that allows the user to cut straight into the enemy's soul."
 		"DOTA_Tooltip_ability_item_diffusal_blade_Note0"						"Instantly kills summoned units."
 		"DOTA_Tooltip_ability_item_diffusal_blade_Note1"						"Slow lasts 4 seconds."
@@ -11521,6 +11523,9 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Gold_Graph_Total"				"TOTAL GOLD EARNED"
 		"DOTA_Gold_Graph_Total_Net_Worth"	"TOTAL NET WORTH"
 		"DOTA_XP_Graph_Total"				"TOTAL XP EARNED"
+
+		"DOTA_GraphType_GoldEarned"			"Show Gold Earned"
+		"DOTA_GraphType_NetWorth"			"Show Net Worth"
 
 		"DOTA_Fantasy_Points"				"FANTASY POINTS"
 		"fantasy_score"						"FANTASY"
