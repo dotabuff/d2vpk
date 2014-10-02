@@ -2179,7 +2179,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_life_stealer_open_wounds_tooltip_range"					"RANGE:"
 		"DOTA_Tooltip_ability_life_stealer_infest"										"Infest"
 		"DOTA_Tooltip_ability_life_stealer_infest_Lore"									"With this infestation, N'aix consumes the life blood of the host, restoring him back to full unholy power."
-		"DOTA_Tooltip_ability_life_stealer_infest_Description"							"Lifestealer will infest the body of the target unit, lying dormant and undetectable inside. When he reveals himself, he deals damage to all nearby enemy units. If the unit is a creep, he will devour it first, gaining health equal to the unit's current HP.  Does not work on enemy Heroes."
+		"DOTA_Tooltip_ability_life_stealer_infest_Description"							"Lifestealer infests the body of a target unit, lying dormant and undetectable inside. He can then explode from the host body, dealing damage to all nearby enemy units. If the infested unit is an enemy or neutral creep, he will consume it and gain health equal to the unit's current health.  Does not work on enemy Heroes."
 		"DOTA_Tooltip_ability_life_stealer_infest_Note0"								"If the infested unit dies before Lifestealer consumes it, no health is gained."
 		"DOTA_Tooltip_ability_life_stealer_infest_Note1"								"Lifestealer gains experience while under the effects of Infest."
 		"DOTA_Tooltip_ability_life_stealer_infest_damage"								"DAMAGE:"
@@ -2648,7 +2648,7 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_phantom_assassin_phantom_strike_bonus_attack_speed"		"BONUS ATTACK SPEED:"
 		"DOTA_Tooltip_ability_phantom_assassin_phantom_strike_tooltip_range"			"RANGE:"
 		"DOTA_Tooltip_ability_phantom_assassin_blur"									"Blur"
-		"DOTA_Tooltip_ability_phantom_assassin_blur_Description"						"The Phantom Assassin blurs her body, causing some enemy attacks to miss and allowing her to disappear from the enemy minimap when far from enemy heroes."
+		"DOTA_Tooltip_ability_phantom_assassin_blur_Description"						"The Phantom Assassin blurs her body, causing some enemy attacks to miss and allowing her to disappear from the enemy minimap when far from enemy heroes.\n\nStacks diminishingly with other sources of Evasion."
 		"DOTA_Tooltip_ability_phantom_assassin_blur_Lore"								"Meditation allows a Veiled Sister to carefully anticipate her opponents in combat."
 		"DOTA_Tooltip_ability_phantom_assassin_blur_bonus_evasion"						"%EVASION:"
 		"DOTA_Tooltip_ability_phantom_assassin_blur_radius"								"MAP VANISH RADIUS:"
@@ -2862,9 +2862,8 @@ As each stone's cultural influence spread, it eventually came in conflict with t
 		"DOTA_Tooltip_ability_phantom_lancer_phantom_edge_Lore"							"Azwraith knows that on the field of battle, speed can mean everything."
 		"DOTA_Tooltip_ability_phantom_lancer_phantom_edge_min_distance"			"MIN RUSH DISTANCE:"
 		"DOTA_Tooltip_ability_phantom_lancer_phantom_edge_max_distance"	    "MAX RUSH DISTANCE:"
-		"DOTA_Tooltip_ability_phantom_lancer_phantom_edge_Note0"				"Phantom Lancer's illusions also have this ability."
-		"DOTA_Tooltip_ability_phantom_lancer_phantom_edge_Note1"				"If the attack order is cancelled, the movement speed bonus is lost."
-		"DOTA_Tooltip_ability_phantom_lancer_phantom_edge_Note2"				"Rush movement speed is 800."
+		"DOTA_Tooltip_ability_phantom_lancer_phantom_edge_Note0"				"If the attack order is cancelled, the movement speed bonus is lost."
+		"DOTA_Tooltip_ability_phantom_lancer_phantom_edge_Note1"				"Rush movement speed is 800."
 		"DOTA_Tooltip_ability_phantom_lancer_juxtapose"									"Juxtapose"
 		"DOTA_Tooltip_ability_phantom_lancer_juxtapose_Description"						"Phantom Lancer has a chance to fracture his presence, creating an illusion of himself. Illusions also have a chance to fracture further. Illusions created from Phantom Lancer last for %illusion_duration% seconds, while illusions created from other illusions last %illusion_from_illusion_duration% seconds."
 		"DOTA_Tooltip_ability_phantom_lancer_juxtapose_Lore"							"Each of Azwraith's lance attacks feels like two from a normal warrior; or three; or four..."
@@ -3434,8 +3433,7 @@ There are stories that say he was once a great alchemist who tried to unlock the
 		"DOTA_Tooltip_ability_tinker_march_of_the_machines"								"March of the Machines"
 		"DOTA_Tooltip_ability_tinker_march_of_the_machines_Description"					"Enlists an army of robotic minions to destroy enemy units in an area around Tinker."
 		"DOTA_Tooltip_ability_tinker_march_of_the_machines_Lore"						"Even though the laboratory has since been sealed off, the ability to radio in robotic drones is still in working order."
-		"DOTA_Tooltip_ability_tinker_march_of_the_machines_Note0"						"March of the Machines deals damage through spell immunity and hits mechanical units."
-		"DOTA_Tooltip_ability_tinker_march_of_the_machines_Note1"						"Robots spawn at a rate of 24 per second."
+		"DOTA_Tooltip_ability_tinker_march_of_the_machines_Note0"						"Robots spawn at a rate of 24 per second."
 		"DOTA_Tooltip_ability_tinker_march_of_the_machines_radius"						"RADIUS:"
 		"DOTA_Tooltip_ability_tinker_march_of_the_machines_duration"					"DURATION:"
 		"DOTA_Tooltip_ability_tinker_rearm"												"Rearm"
@@ -3648,10 +3646,9 @@ Over the coming months, the boy Karroch sneaked food and medicinal draughts to t
 		"DOTA_Tooltip_ability_faceless_void_time_walk_movement_speed_pct"				"%MOVEMENT SLOW:"
 		"DOTA_Tooltip_ability_faceless_void_time_walk_attack_speed_pct"					"ATTACK SLOW:"
 		"DOTA_Tooltip_ability_faceless_void_backtrack"									"Backtrack"
-		"DOTA_Tooltip_ability_faceless_void_backtrack_Description"						"Faceless Void dodges damage by jumping backward in time, eluding both physical and magical attacks."
+		"DOTA_Tooltip_ability_faceless_void_backtrack_Description"						"Faceless Void dodges damage by jumping backward in time, eluding both physical and magical attacks.\n\nStacks diminishingly with other sources of Evasion."
 		"DOTA_Tooltip_ability_faceless_void_backtrack_Lore"								"Darkterror sees what has yet to be seen."
-		"DOTA_Tooltip_ability_faceless_void_backtrack_Note0"							"Stacks with evasion."
-		"DOTA_Tooltip_ability_faceless_void_backtrack_Note1"							"Abilities that grant True Strike don't work against Backtrack."
+		"DOTA_Tooltip_ability_faceless_void_backtrack_Note0"							"Abilities that grant True Strike don't work against Backtrack."
 		"DOTA_Tooltip_ability_faceless_void_backtrack_dodge_chance_pct"					"%DODGE CHANCE:"
 		"DOTA_Tooltip_ability_faceless_void_time_lock"									"Time Lock"
 		"DOTA_Tooltip_ability_faceless_void_time_lock_Description"						"Adds the chance for an attack to lock an enemy unit in time, stunning it and dealing bonus damage."
@@ -4115,7 +4112,7 @@ It is said that on the dawn of the First Day, all the night creatures perished. 
 		"DOTA_Tooltip_ability_broodmother_spawn_spiderlings_damage"						"DAMAGE:"
 		"DOTA_Tooltip_ability_broodmother_spawn_spiderlings_count"						"COUNT:"
 		"DOTA_Tooltip_ability_broodmother_spin_web"										"Spin Web"
-		"DOTA_Tooltip_ability_broodmother_spin_web_Description"							"Spins a large web that renders Broodmother invisible, grants a passive movement speed increase, gives free movement, and boosts regeneration while in its vicinity. When invisible in a web, the movement speed bonus doubles. Spin Web charges restore every %charge_restore_time% seconds. Free movement is disabled for %damage_time% seconds if damage is taken. Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears."
+		"DOTA_Tooltip_ability_broodmother_spin_web_Description"							"Spins a large web that renders Broodmother invisible, grants a passive movement speed increase, gives free movement, and boosts regeneration while in its vicinity. Spin Web charges restore every %charge_restore_time% seconds. If damage is taken, free movement is disabled and the movement speed increase is halved for %damage_time% seconds. Spin Web can be cast from anywhere as long as the new web touches an existing web. Webs never expire, and can be manually destroyed. When the maximum limit of webs is exceeded, the oldest web disappears."
 		"DOTA_Tooltip_ability_broodmother_spin_web_Lore"								"Weaving a bed of silken fibers, Arachnia's web both protects her and her offspring, as well as giving advancing opponents a sense of forboding."
 		"DOTA_Tooltip_ability_broodmother_spin_web_Note0"								"Has a fade time of 2 seconds."
 		"DOTA_Tooltip_ability_broodmother_spin_web_Note1"								"Also affects Spiderling and Spiderites."
@@ -4123,7 +4120,6 @@ It is said that on the dawn of the First Day, all the night creatures perished. 
 		"DOTA_Tooltip_ability_broodmother_spin_web_count"								"MAX WEBS:"
 		"DOTA_Tooltip_ability_broodmother_spin_web_heath_regen"							"HEALTH REGEN:"
 		"DOTA_Tooltip_ability_broodmother_spin_web_bonus_movespeed"						"%MOVE INCREASE:"
-		"DOTA_Tooltip_ability_broodmother_spin_web_invis_movespeed_tooltip"						"%INVIS MOVE INCREASE:"		
 		"DOTA_Tooltip_ability_broodmother_spin_web_max_charges"						"MAX WEB CHARGES:"
 		"DOTA_Tooltip_ability_broodmother_spin_web_charge_restore_time"						"CHARGE RESTORE TIME:"		
 		"DOTA_Tooltip_ability_broodmother_spin_web_destroy"								"Destroy Spin Web"
@@ -4929,9 +4925,8 @@ Raised with other young mages in a hidden cantonment among the hills of the Hazh
 		"DOTA_Tooltip_ability_brewmaster_drunken_haze_radius"						"RADIUS:"
 		"DOTA_Tooltip_ability_brewmaster_drunken_brawler"							"Drunken Brawler"
 		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_Lore"						"When Mangix won his title as the Brewmaster of the Order of Oyo, he also claimed his place in the mastery of inebriation."
-		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_Description"				"Gives a chance to avoid attacks and to deal critical damage. Drunken Brawler will always trigger if you have not attacked, or have not been attacked, in the last several seconds."
-		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_Note0"						"Does not stack with evasion from other sources."
-		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_Note1"						"The guaranteed critical attack and guaranteed dodge chance are on separate timers."
+		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_Description"				"Gives a chance to avoid attacks and to deal critical damage. Drunken Brawler will always trigger if you have not attacked, or have not been attacked, in the last several seconds.\n\nStacks diminishingly with other sources of Evasion."
+		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_Note0"						"The guaranteed critical attack and guaranteed dodge chance are on separate timers."
 		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_dodge_chance"				"%DODGE CHANCE:"
 		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_crit_chance"				"%CRIT CHANCE:"
 		"DOTA_Tooltip_ability_brewmaster_drunken_brawler_crit_multiplier"			"%CRIT DAMAGE:"
@@ -5265,7 +5260,7 @@ Upon his steed Armageddon he rides, wading into battle with maniacal frenzy, dra
 		"DOTA_Tooltip_ability_undying_tombstone_zombie_deathstrike_slow"				"%MOVEMENT SLOW:"
 		"DOTA_Tooltip_ability_undying_tombstone_zombie_deathstrike_bonus_speed"			"%BONUS SPEED:"
 		"DOTA_Tooltip_ability_undying_flesh_golem"						"Flesh Golem"
-		"DOTA_Tooltip_ability_undying_flesh_golem_Description"			"Undying transforms into a horrifying flesh golem that possesses a Plague Aura.  This aura slows all enemy units within 750 range and amplifies the damage they take; the closer to Undying, the more damage and slow.  When a plagued unit dies, Undying is healed equal to a percentage of that unit's maximum health.\n\nUpgradable by Aghanim's Scepter."
+		"DOTA_Tooltip_ability_undying_flesh_golem_Description"			"Undying transforms into a horrifying flesh golem that possesses a Plague Aura.  This aura slows all enemy units within 750 range and amplifies the damage they take; the closer to Undying, the more damage and slow.  When a plagued unit dies, Undying is healed equal to a percentage of his own maximum health.\n\nUpgradable by Aghanim's Scepter."
 		"DOTA_Tooltip_ability_undying_flesh_golem_Lore"					"The flesh of the recently dead add to the power of Dirge's plague."
 		"DOTA_Tooltip_ability_undying_flesh_golem_Note0"				"Undying is healed when affected units die in range, regardless of who killed it."
 		"DOTA_Tooltip_ability_undying_flesh_golem_Note1"				"Dying illusions don't trigger the heal."
@@ -6133,7 +6128,7 @@ Though victorious, the survivors saw little to celebrate: the city lay in ruins,
 		"DOTA_Tooltip_ability_earth_spirit_magnetize_rock_search_radius"	"REMNANT REFRESH RADIUS:"
 		"DOTA_Tooltip_ability_earth_spirit_magnetize_rock_explosion_radius"	"REMNANT EXPLOSION RADIUS:"						
 		"DOTA_Tooltip_ability_earth_spirit_magnetize_Lore"					"At the Earth Spirit's call, the minerals in the blood and bones of his enemies rebel against the bodies they find themselves in."
-		"DOTA_Tooltip_ability_earth_spirit_magnetize_aghanim_description"	"Grants the Enchant Remnant ability, which allows Earth Spirit to temporarily transfrom an allied hero into an exploding Stone Remnant."
+		"DOTA_Tooltip_ability_earth_spirit_magnetize_aghanim_description"	"Grants the Enchant Remnant ability, which allows Earth Spirit to temporarily transform an allied or enemy hero into a Stone Remnant that explodes after a short duration."
 		"DOTA_Tooltip_ability_earth_spirit_petrify"						"Enchant Remnant"
 		"DOTA_Tooltip_ability_earth_spirit_petrify_Description"						"Earth Spirit temporarily enchants a hero, granting them the properties of a Stone Remnant. After %duration% seconds the remnant shatters, releasing the hero and damaging nearby enemies."
 		"DOTA_Tooltip_ability_earth_spirit_petrify_duration"		"REMNANT DURATION:"
@@ -10701,9 +10696,8 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Tooltip_ability_item_buckler_bonus_armor"							"+$armor"
 		"DOTA_Tooltip_ability_item_buckler_bonus_all_stats"						"+$all"
 		
-		"DOTA_Tooltip_ability_item_butterfly_Description"								"Active: Flutter - Trade evasion for %bonus_move_speed%%% additional movement speed for %duration% seconds."
+		"DOTA_Tooltip_ability_item_butterfly_Description"								"Active: Flutter - Trade evasion for %bonus_move_speed%%% additional movement speed for %duration% seconds.\n\nStacks diminishingly with other sources of Evasion."
 		"DOTA_Tooltip_ability_item_butterfly_Lore"								"Only the mightiest and most experienced of warriors can wield the Butterfly, but it provides incredible dexterity in combat."
-		"DOTA_Tooltip_ability_item_butterfly_Note0"								"Doesn't stack with other sources of Evasion."
 		"DOTA_Tooltip_ability_item_butterfly_bonus_agility"						"+$agi"
 		"DOTA_Tooltip_ability_item_butterfly_bonus_damage"						"+$damage"
 		"DOTA_Tooltip_ability_item_butterfly_bonus_evasion"						"%+$evasion"
@@ -10744,7 +10738,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Tooltip_ability_item_cyclone_Lore"								"A mysterious scepter passed down through the ages, its disruptive winds can be used for good or evil."
 		"DOTA_Tooltip_ability_item_cyclone_Note0"								"You cannot cyclone allies."
 		"DOTA_Tooltip_ability_item_cyclone_Note1"								"Cyclones cast on yourself go through spell immunity."
-		"DOTA_Tooltip_ability_item_cyclone_Note2"								"Cyclone can purge some debuffs."
+		"DOTA_Tooltip_ability_item_cyclone_Note2"								"Cyclone can purge some buffs and debuffs."
 		"DOTA_Tooltip_ability_item_cyclone_bonus_intellect"						"+$int"
 		"DOTA_Tooltip_ability_item_cyclone_bonus_mana_regen"					"%+$mana_regen"
 		"DOTA_Tooltip_ability_item_cyclone_bonus_movement_speed"				"+$move_speed"		
@@ -10813,7 +10807,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Tooltip_ability_item_diffusal_blade_bonus_agility"				"+$agi"
 		"DOTA_Tooltip_ability_item_diffusal_blade_bonus_intellect"				"+$int"
 
-		"DOTA_Tooltip_ability_item_diffusal_blade_2_Description"				"Active: Purge - Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.\nPassive: Feedback - Your attacks burn %feedback_mana_burn% mana and deal the same amount in physical damage. Upgradable.\n\nDiffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
+		"DOTA_Tooltip_ability_item_diffusal_blade_2_Description"				"Active: Purge - Purges a target unit, removing buffs, slowing, and dealing damage if it is a summoned unit.\nPassive: Feedback - Your attacks burn %feedback_mana_burn% mana and deal the same amount in physical damage.\n\nDiffusal Blade is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers."
 		"DOTA_Tooltip_ability_item_diffusal_blade_2_Lore"						"An enchanted blade that allows the user to cut straight into the enemy's soul."
 		"DOTA_Tooltip_ability_item_diffusal_blade_2_Note0"						"Instantly kills summoned units."
 		"DOTA_Tooltip_ability_item_diffusal_blade_2_Note1"						"Slow lasts 4 seconds."
@@ -11173,7 +11167,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Tooltip_ability_item_sange_bonus_damage"							"+$damage"
 		"DOTA_Tooltip_ability_item_sange_bonus_strength"						"+$str"
 		
-		"DOTA_Tooltip_ability_item_heavens_halberd_Description"							"Active: Disarms the target for %disarm_range% seconds. Lasts %disarm_melee% on Melee targets. \nPassive: Lesser Maim - Gives a chance on attack to slow movement speed for %maim_duration% seconds."
+		"DOTA_Tooltip_ability_item_heavens_halberd_Description"							"Active: Disarms the target for %disarm_range% seconds. Lasts %disarm_melee% on Melee targets. \nPassive: Lesser Maim - Gives a chance on attack to slow movement speed for %maim_duration% seconds.\n\nStacks diminishingly with other sources of Evasion."
 		"DOTA_Tooltip_ability_item_heavens_halberd_Lore"								"This halberd moves with the speed of a smaller weapon, allowing the bearer to win duels that a heavy edge would not."
 		"DOTA_Tooltip_ability_item_heavens_halberd_Note0"								"The disarm effect cannot be purged."
 		"DOTA_Tooltip_ability_item_heavens_halberd_bonus_evasion"						"%+$evasion"
@@ -11260,8 +11254,9 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Tooltip_ability_item_stout_shield_damage_block_melee"				"MELEE BLOCK:"
 		"DOTA_Tooltip_ability_item_stout_shield_damage_block_ranged"			"RANGED BLOCK:"
 		
+		"DOTA_Tooltip_ability_item_talisman_of_evasion_Description"			"Stacks diminishingly with other sources of Evasion."
 		"DOTA_Tooltip_ability_item_talisman_of_evasion_Lore"					"A necklace that allows you to anticipate enemy attacks."
-		"DOTA_Tooltip_ability_item_talisman_of_evasion_bonus_evasion"			"%+$evasion"
+		"DOTA_Tooltip_ability_item_talisman_of_evasion_bonus_evasion"			"%+$evasion"		
 		
 		"DOTA_Tooltip_ability_item_tango_Description"							"Use: Eat Tree - Consume a tree to restore HP over time. Comes with 4 charges."
 		"DOTA_Tooltip_ability_item_tango_Lore"								"Forage to survive on the battlefield."
@@ -17211,7 +17206,9 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Premium_League_Description_ChampionsLeague2" "Champions League Season 2 will feature 10 top teams from Europe and North America fighting for $50,000! Includes the Gladiator's Revenge set plus every ticket purchased increases the prize pool by $2.50!"
 		"DOTA_Premium_League_Description_DotaCinema" "DotaCinema presents the XMG Captains Draft Invitational! This is the first major competitive Dota 2 tournament being played in Captains Draft mode! Teams included are Alliance, Na`Vi, Fnatic, RoX.KIS, Sigma.int and Team Liquid. The teams battle for $20,000! Each ticket purchase includes JanJou courier and addes $1.25 to the total prize pool!"
 		
-//INTRODUCTORY LOADSCREEN TIPS
+		
+		
+//INTRODUCTORY LOADSCREEN TIPS		(1 to 25 games played)
 		"dota_tip_introduction_1"		"Try to fight creeps and enemy Heroes within the attack range of your team's Towers."
 		"dota_tip_introduction_2"		"Be careful when crossing the river into enemy territory."
 		"dota_tip_introduction_3"		"Remember to purchase items to restore your health and mana at the start of the game."
@@ -17223,7 +17220,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"dota_tip_introduction_9"		"Make sure your team has a Courier to bring items to them while they are in the lanes."
 		"dota_tip_introduction_10"		"Items purchased while you are away from a shop will be placed in your Stash to be retrieved later, or delivered by your team’s courier."
 		
-//UNIVERSAL LOADSCREEN TIPS		
+//UNIVERSAL LOADSCREEN TIPS		(25+ games played)
 		"dota_tip_universal_1"				"Announcers and HUD Skins are shared between all players in a match. You can choose among them by pressing the Shared Content button on the left side of the Top Bar."
 		"dota_tip_universal_2"				"Remain calm. Remember: it's only a game."
 		"dota_tip_universal_3"				"You can mute rude players by going to the Scoreboard, accessed using the buttons on the left side of the Top Bar."
@@ -17252,9 +17249,10 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"dota_tip_universal_26"				"Accidentally canceled your Town Portal Scroll? The settings menu has an option to make a Stop command required in order to cancel a Teleport."
 		"dota_tip_universal_27"				"Holding Alt and clicking on an item in an enemy hero's inventory will alert your team that the enemy has that item."
 		"dota_tip_universal_28"				"Holding Alt and clicking on your Buyback button, or on your gold, will alert your team of your Buyback status."
-		"dota_tip_universal_29"				"In All Pick, if you have not chosen a Hero before the timer runs out, you will begin to lose your starting gold."
+		"dota_tip_universal_29"				"In All Pick, players who have not chosen a Hero before the timer expires will begin to lose their starting gold."
+		"dota_tip_universal_30"				"Dota 2 is always evolving. New features are added, new Heroes are introduced, and existing Heroes and mechanics may see adjustments. Be sure to keep up with the latest changes at the Dota 2 blog!"
 		
-//BEGINNER LOADSCREEN TIPS
+//BEGINNER LOADSCREEN TIPS		(25 - 150 games played)
 		"dota_tip_beginner_1"					"If you notice an enemy Hero missing from your lane, tell your teammates by saying \"Missing Top/Middle/Bottom\". You may save a teammate's life!"
 		"dota_tip_beginner_2"					"You can level up your abilities by holding Control and pressing that ability's shortcut key."
 		"dota_tip_beginner_3"					"Use Wards to reveal parts of the map and increase your awareness of the enemy team's movements."
@@ -17299,7 +17297,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"dota_tip_beginner_54"				"Unclaimed Runes will be replaced every two minutes."
 		
 		
-//INTERMEDIATE LOADSCREEN TIPS		
+//INTERMEDIATE LOADSCREEN TIPS		(75+ games played)	
 		"dota_tip_intermediate_3"			"After Roshan has been killed, he will respawn at a random time between 8 and 11 minutes."
 		"dota_tip_intermediate_4"			"Neutral creeps spawn at the 30 second mark, and then at every minute mark thereafter."
 		"dota_tip_intermediate_5"			"Shift-clicking actions or abilities allows you to queue them."
@@ -17312,9 +17310,9 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"dota_tip_intermediate_13"			"Monkey King Bar will grant you true strike, which prevents enemy Heroes from evading your attacks, even when attacking uphill. True strike does not work on enemy structures."
 		"dota_tip_intermediate_14"			"Double-clicking your Blink Dagger will cause you to automatically blink toward your team's fountain."
 		"dota_tip_intermediate_15"			"You can attack allied creeps that are near death. Use this to deny your enemy the gold gained from last hits."
-		"dota_tip_intermediate_16"			"Magic damage can be reduced by items that grant Magic Damage Resistance."
+		"dota_tip_intermediate_16"			"Magic damage can be reduced by items that grant Magical Damage Resistance."
 		"dota_tip_intermediate_17"			"Physical damage can be reduced by items that grant Armor."
-		"dota_tip_intermediate_18"			"Pure damage is not reduced by Armor or Magic Damage Resistance."
+		"dota_tip_intermediate_18"			"Pure damage is not reduced by Armor or Magical Damage Resistance."
 		"dota_tip_intermediate_20"			"Changing the primary stat on Power Treads can break invisibility, as well as interrupt channeled spells such as using a Town Portal Scroll."
 		"dota_tip_intermediate_21"			"Pulling all neutral creeps out of a camp near the minute mark will allow that camp to respawn. Use this to maximize the number of creeps you kill."
 		"dota_tip_intermediate_22"			"Holding Control allows you to use your Bottle regen on an allied Hero." 
@@ -17344,10 +17342,10 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"dota_tip_intermediate_47"			"You can use a Quelling Blade to damage enemy observer and sentry wards."
 		"dota_tip_intermediate_48"			"Always be nice to those who buy Wards and Couriers."
 		"dota_tip_intermediate_49"			"Physical Damage, dealt by all regular attacks, some hero abilities, and some items, can be reduced with Armor or blocked by becoming Ethereal."
-		"dota_tip_intermediate_50"			"Magical Damage, dealt by most hero abilities and items, can be reduced with Magic Damage Resistance or blocked by Spell Immunity."
+		"dota_tip_intermediate_50"			"Magical Damage, dealt by most hero abilities and items, can be reduced with Magical Damage Resistance or blocked by Spell Immunity."
 		"dota_tip_intermediate_51"			"Activating Manta Style will move you from your original position when the illusions appear. Use this to confuse enemies!"
 		
-//ADVANCED LOADSCREEN TIPS
+//ADVANCED LOADSCREEN TIPS		(150+ games played)
 		"dota_tip_advanced_1"				"Reliable Gold is earned from killing Heroes, Roshan, and Couriers, from the destruction of enemy Towers, or from using Hand of Midas. All other earnings are Unreliable Gold, which can be lost upon death."
 		"dota_tip_advanced_2"				"You can pull the creatures in the neutral creep camp that is nearest to your team's Safe Lane into your lane creeps."
 		"dota_tip_advanced_3"				"Several items can be broken down into the component parts by right-clicking them in your inventory and choosing \"Disassemble\". Re-use those components to create new items."

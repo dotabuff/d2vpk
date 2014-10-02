@@ -9530,6 +9530,7 @@
     "bounty_hunter_wind_walk": {
       "ID": "5287",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
       "AbilityCooldown": "15.0 15.0 15.0 15.0",
       "AbilityCastPoint": "0.0 0.0 0.0 0.0",
@@ -15795,6 +15796,7 @@
     "wisp_spirits": {
       "ID": "5486",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "AbilityCastPoint": "0",
       "AbilityCooldown": "20.0 18.0 16.0 14.0",
@@ -16543,6 +16545,7 @@
     "centaur_return": {
       "ID": "5516",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
       "AbilitySpecial": [
         {
