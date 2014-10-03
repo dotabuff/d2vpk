@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/gyrocopter/rainmaker_head/rainmaker_head_color"
+	"$normalmap"		"models/items/gyrocopter/rainmaker_head/rainmaker_head_normal"
+	"$maskmap1"		"models/items/gyrocopter/rainmaker_head/rainmaker_head_mask1"
+	"$maskmap2"		"models/items/gyrocopter/rainmaker_head/rainmaker_head_mask2"
+	"$diffusewarp"		"models/heroes/sven/sven_diffusewarp"
+	"$alphatest"		"1"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$ENVMAPINTENSITY"		"1"
+	"$MASKENVBYMETALNESS"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"10"
+	"$SPECULAREXPONENT"		"33"
+	"$SPECULARSCALE"		"7"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$AMBIENTSCALE"		"2"
+	"$RIMLIGHTSCALE"		"6"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$DETAIL1BLENDTOFULL"		"0"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

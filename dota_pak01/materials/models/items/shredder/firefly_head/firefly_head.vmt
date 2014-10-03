@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/shredder/firefly_head/firefly_head_color"
+	"$normalmap"		"models/items/shredder/firefly_head/firefly_head_normal"
+	"$maskmap1"		"models/items/shredder/firefly_head/firefly_head_mask1"
+	"$maskmap2"		"models/items/shredder/firefly_head/firefly_head_mask2"
+	"$detail1"		"models\heroes\shredder\shredder_motion"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"8"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$envmapintensity"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$DETAIL1BLENDMODE"		"1"
+	"$DETAIL1SCALE"		"1"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.200000"
+			"texturescrollangle"		"270"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
