@@ -39,7 +39,7 @@
 "[english]GameUI_JoystickMoveLookSticks"	"Thumbsticks"
 "GameUI_JoystickSouthpaw"	"Zaměnit páčky na dvoupáčkových ovladačích"	[$WIN32]
 "[english]GameUI_JoystickSouthpaw"	"Swap sticks on dual-stick controllers"
-"GameUI_JoystickSouthpaw"	"Levák"	[$X360]
+"GameUI_JoystickSouthpaw"	"Pro leváky"	[$X360]
 "[english]GameUI_JoystickSouthpaw"	"Southpaw"
 "GameUI_JoystickLookSpeedPitch"	"Vertikální citlivost"
 "[english]GameUI_JoystickLookSpeedPitch"	"Vertical sensitivity"
@@ -245,7 +245,7 @@
 "[english]GameUI_Delete"	"Delete"
 "GameUI_Quit"	"Ukončit hru"
 "[english]GameUI_Quit"	"Quit game"
-"GameUI_SteamPassword"	"Steam heslo"
+"GameUI_SteamPassword"	"Heslo služby Steam"
 "[english]GameUI_SteamPassword"	"Steam Password"
 "GameUI_CreateServer"	"VYTVOŘIT SERVER"
 "[english]GameUI_CreateServer"	"CREATE SERVER"
@@ -1393,7 +1393,7 @@
 "[english]GameUI_MouseRaw_Hint"	"Raw input reads mouse movement directly from the device, bypassing control panel mouse settings, and providing more reliable mouse movement."
 "GameUI_MouseAcceleration"	"Zrychlení myši"
 "[english]GameUI_MouseAcceleration"	"Mouse acceleration"
-"GameUI_MouseAcceleration_Hint"	"Zapnout akceleraci myši (doporučeno při použití přímého vstupu)"
+"GameUI_MouseAcceleration_Hint"	"Zapnout zrychlení myši (doporučeno při použití přímého vstupu)"
 "[english]GameUI_MouseAcceleration_Hint"	"Enable mouse acceleration (recommended when using raw input)"
 "GameUI_MouseAccelerationAmount_Hint"	"Velikost zrychlení. Hodnota 1.0 je nezrychlená; vyšší hodnoty dodávají větší zrychlení."
 "[english]GameUI_MouseAccelerationAmount_Hint"	"Amount of acceleration. A value of 1.0 is unaccelerated; higher values will provide additional acceleration."
@@ -1491,7 +1491,7 @@
 "[english]GameUI_vote_passed"	"Vote Passed!"
 "GameUI_vote_failed"	"Hlasování bylo neúspěšné."
 "[english]GameUI_vote_failed"	"Vote Failed."
-"GameUI_vote_failed_quorum"	"Nevolil dostatečný počet hráčů."
+"GameUI_vote_failed_quorum"	"Nehlasoval dostatečný počet hráčů."
 "[english]GameUI_vote_failed_quorum"	"Not enough players voted."
 "GameUI_vote_failed_yesno"	"Počet zvolení ANO musí být vyšší než počet zvolení NE."
 "[english]GameUI_vote_failed_yesno"	"Yes votes must exceed No votes."
@@ -1575,5 +1575,15 @@
 "[english]GameUI_Icons_BACK"	"4"
 "GameUI_vote_failed_nextlevel_set"	"Následující úroveň byla již nastavena."
 "[english]GameUI_vote_failed_nextlevel_set"	"The next level has already been set."
+"GameUI_Language_Czech"	"Čeština"
+"[english]GameUI_Language_Czech"	"Czech"
+"GameUI_Language_Brazilian"	"Brazilská portugalština"
+"[english]GameUI_Language_Brazilian"	"Portuguese-Brazil"
+"GameUI_Language_Bulgarian"	"Bulharština"
+"[english]GameUI_Language_Bulgarian"	"Bulgarian"
+"GameUI_Language_Greek"	"Řečtina"
+"[english]GameUI_Language_Greek"	"Greek"
+"GameUI_Language_Ukrainian"	"Ukrajinština"
+"[english]GameUI_Language_Ukrainian"	"Ukrainian"
 }
 }
