@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/tuskarr/sigil/boreal_sigil/boreal_sigil_color"
+	"$normalmap"		"models/items/tuskarr/sigil/boreal_sigil/boreal_sigil_normal"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARBLENDTOFULL"		"1"
+	"$SPECULARCOLOR"		"[.8 .8 1]"
+	"$SPECULARSCALE"		"2"
+	"$RIMLIGHTCOLOR"		"[.5 .5 1]"
+	"$RIMLIGHTSCALE"		"5"
+	"$SPECULAR_BLOOM_SCALE"		"0.100000"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$cloakPassEnabled"		"1"
+	"$CLOAK_BLUR_AMOUNT"		"0.001000"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+	"$maskmap1"		"models/items/tuskarr/sigil/boreal_sigil/boreal_sigil_mask1"
+	"$maskmap2"		"models/items/tuskarr/sigil/boreal_sigil/boreal_sigil_mask2"
+}

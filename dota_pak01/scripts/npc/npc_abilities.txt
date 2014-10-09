@@ -8675,7 +8675,7 @@
 	}
 	
 	//=================================================================================================================
-	// Ability: Warlock's Rain of Chaos
+	// Ability: Warlock's Rain of Chaos / Chaotic Offering
 	//=================================================================================================================
 	"warlock_rain_of_chaos"
 	{
@@ -8730,7 +8730,7 @@
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"golem_hp_tooltip"			"1000 1500 2000"
+				"golem_hp_tooltip"			"900 1200 1500"
 			}
 			"05"
 			{
@@ -8750,9 +8750,19 @@
 			"08"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"hp_dmg_reduction_scepter"	"25"
+				"golem_hp_tooltip_scepter"			"675 900 1125"
 			}
 			"09"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"golem_dmg_tooltip_scepter"	"56 75 94"
+			}
+			"10"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"hp_dmg_reduction_scepter"	"25"
+			}
+			"11"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"bounty_reduction_scepter"	"50"

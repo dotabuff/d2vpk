@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/invoker/forge_spirit/infernus/infernus_color"
+	"$normalmap"		"models/items/invoker/forge_spirit/infernus/infernus_normal"
+	"$maskmap1"		"models/items/invoker/forge_spirit/infernus/infernus_mask1"
+	"$maskmap2"		"models/items/invoker/forge_spirit/infernus/infernus_mask2"
+	"$detail1"		"models/heroes/invoker/forge_spirit_motion"
+	"$SPECULAREXPONENT"		"25"
+	"$SPECULARSCALE"		"10"
+	"$SPECULARCOLOR"		"[1 0 0]"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$RIMLIGHTSCALE"		"2"
+	"$RIMAMBIENTS"		"1"
+	"$RIMLIGHTCOLOR"		"[1 0 0]"
+	"$DETAIL1BLENDMODE"		"4"
+	"$DETAIL1SCALE"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"87"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

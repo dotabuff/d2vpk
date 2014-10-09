@@ -1022,18 +1022,36 @@
         "213"
       ]
     },
-    "Japan": {
+    "Chile": {
       "region": "14",
-      "latitude": "35.412222",
-      "longitude": "139.413012",
-      "display_name": "#dota_region_japan",
-      "division": "se_asia",
+      "matchgroup": "14",
+      "latitude": "-33.6682982",
+      "longitude": "-70.363372",
+      "display_name": "#dota_region_chile",
+      "division": "americas",
       "alert_at_capacity": "0",
       "ip_range": [
-        "59.128.93.0/27"
+        "181.119.0.192/26",
+        "200.73.67.0/26"
       ],
       "clusters": [
-        "161"
+        "241",
+        "242"
+      ]
+    },
+    "Peru": {
+      "region": "15",
+      "matchgroup": "15",
+      "latitude": "-12.0553442",
+      "longitude": "-77.0451853",
+      "display_name": "#dota_region_peru",
+      "division": "americas",
+      "alert_at_capacity": "0",
+      "ip_range": [
+        "190.12.73.128/28"
+      ],
+      "clusters": [
+        "251"
       ]
     }
   }
