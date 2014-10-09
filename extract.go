@@ -93,7 +93,7 @@ func getVersion() {
 	doc, err := gokogiri.ParseHtml(body)
 	eh(err)
 
-	node, err := doc.Root().Search(`//a[contains(@href,"/changelist/")]`)
+	node, err := doc.Root().Search(`//div[@class="wrapper-info"]//a[contains(@href,"/changelist/")]`)
 	eh(err)
 	change, err := strconv.Atoi(node[0].Content())
 	eh(err)
