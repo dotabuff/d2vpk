@@ -746,7 +746,7 @@
       "Team": "Good",
       "HeroID": "5",
       "BotImplemented": "1",
-      "ModelScale": ".95",
+      "ModelScale": ".81",
       "LoadoutScale": "1.05",
       "HeroGlowColor": "82 236 255",
       "CMEnabled": "1",
@@ -4413,8 +4413,12 @@
         },
         {
           "SlotIndex": "4",
-          "SlotName": "taunt",
-          "SlotText": "#LoadoutSlot_Taunt"
+          "SlotName": "head",
+          "SlotText": "#LoadoutSlot_Head",
+          "TextureWidth": "256",
+          "TextureHeight": "256",
+          "MaxPolygonsLOD0": "400",
+          "MaxPolygonsLOD1": "300"
         },
         {
           "SlotIndex": "5",
@@ -15659,7 +15663,7 @@
           "SlotName": "weapon",
           "SlotText": "#LoadoutSlot_Weapon",
           "TextureWidth": "256",
-          "TextureHeight": "128",
+          "TextureHeight": "256",
           "MaxPolygonsLOD0": "500",
           "MaxPolygonsLOD1": "350"
         },

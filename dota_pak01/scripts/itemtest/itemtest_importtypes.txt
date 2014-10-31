@@ -51,6 +51,10 @@
 		{
 			"tusk_sigil"	"1"
 		}
+		"venomancer"	
+		{
+			"veno_ward"	"1"
+		}
 		"warlock"	
 		{
 			"warlock_golem"	"1"
@@ -2755,6 +2759,187 @@
 						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
 						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
 						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+				}
+			}
+		}
+	}
+	"veno_ward"
+	{
+		"name"			"#DOTA_Import_Veno_Ward"
+		"description"	"#DOTA_Import_Veno_Ward_Desc"
+		"directory"		"ward"
+		"vmt"			"materials/models/heroes/venomancer/venomancerward.vmt"
+		"unit"			"npc_dota_venomancer_plague_ward_1"
+		"loadout_slot"	"ability3"
+
+		"models"
+		{
+			"0"
+			{
+				"name"		"#DOTA_Import_Veno_Ward"
+				"qc_template"	"scripts/itemtest/itemtest_qc_template_veno_ward.txt"
+				"preview_reference"	"models/heroes/venomancer/venomancer_ward.mdl"
+
+				"materials"
+				{
+					"0"
+					{
+						"name"				"#DOTA_Import_Mat0Title_Generic"
+						"description"		"#DOTA_Import_Mat0Desc_Generic"
+						"TextureWidth"		"256"
+						"TextureHeight"		"256"
+					}
+				}
+
+				"geometry"
+				{
+					// If you have no high-res LOD, you're only using LOD1, so you don't want a "0" entry
+					"1"
+					{
+						"name"			"#DOTA_Import_LOD1Title_Generic"
+						"description"	"#DOTA_Import_LOD1Desc_Generic"
+						"max_polygons"	"1500"
+					}
+				}
+// There is a limit to 5 animations per page, 4 pages total
+				"animations"
+				{
+					"Spawn"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_spawn.dmx"
+					}
+					"Die"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die"
+						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_die.dmx"
+					}
+					"Die2"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Die2"
+						"optional"	"1"
+						"ui_block"	"0"
+					}
+					"PortraitIdle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"optional"	"1"
+						"ui_block"	"0"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_portrait.dmx"
+					}
+					"Stun"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Disabled"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_stun.dmx"
+						"ui_block"	"0"
+					}
+
+//				Page 2
+					"Idle"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"description"	"#DOTA_ItemTest_Animation_Center_Desc"
+						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_idle.dmx"
+					}
+					"BackLeftIdle"
+					{
+						"name"			"#DOTA_ItemTest_Animation_BackLeftIdle"
+						"description"	"#DOTA_ItemTest_Animation_BackLeft_Desc"
+						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_idle180.dmx"
+					}
+					"LeftIdle"
+					{
+						"name"			"#DOTA_ItemTest_Animation_LeftIdle"
+						"description"	"#DOTA_ItemTest_Animation_Left_Desc"
+						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_idle90.dmx"
+					}
+					"RightIdle"
+					{
+						"name"			"#DOTA_ItemTest_Animation_RightIdle"
+						"description"	"#DOTA_ItemTest_Animation_Right_Desc"
+						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_idle_minus90.dmx"
+					}
+					"BackRightIdle"
+					{
+						"name"			"#DOTA_ItemTest_Animation_BackRightIdle"
+						"description"	"#DOTA_ItemTest_Animation_BackRight_Desc"
+						"ui_block"	"1"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_idle_minus180.dmx"
+					}
+	
+	
+	//			Page 3
+					"Attack"
+					{
+						"name"		"#DOTA_ItemTest_Animation_Attack"
+						"description"	"#DOTA_ItemTest_Animation_attack_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_attack.dmx"
+					}
+					"BackLeftAttack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_BackLeftAttack"
+						"description"	"#DOTA_ItemTest_Animation_BackLeft_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_attack180.dmx"
+					}
+					"LeftAttack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_LeftAttack"
+						"description"	"#DOTA_ItemTest_Animation_Left_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_attack90.dmx"
+					}
+					"RightAttack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_RightAttack"
+						"description"	"#DOTA_ItemTest_Animation_Right_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_attack_minus90.dmx"
+					}
+					"BackRightAttack"
+					{
+						"name"			"#DOTA_ItemTest_Animation_BackRightAttack"
+						"description"	"#DOTA_ItemTest_Animation_BackRight_Desc"
+						"desc_attack_point" "1"
+						"anim_length"	".83"
+						"ui_block"	"2"
+						"default"		"scripts/itemtest/default_content/venomancer/ward/ward_attack_minus180.dmx"
+					}
+
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+				}
+
+				"attachments"
+				{
+					"HitLocation"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_HitLocation"
+						"description"	"#DOTA_ItemTest_Attachment_HitLocation_Desc"
+						"internal_name"	"attach_hitloc"
+						"ui_block"		"0"
+					}
+					"AttackPoint"
+					{
+						"name"			"#DOTA_ItemTest_Attachment_AttackPoint"
+						"description"	"#DOTA_ItemTest_Attachment_AttackPoint_Desc"
+						"internal_name"	"attach_attack1"
 						"ui_block"		"0"
 					}
 				}

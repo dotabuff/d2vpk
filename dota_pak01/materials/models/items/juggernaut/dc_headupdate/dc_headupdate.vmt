@@ -1,0 +1,24 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/juggernaut/dc_headupdate/dc_headupdate_color"
+	"$normalmap"		"models/items/juggernaut/dc_headupdate/dc_headupdate_normal"
+	"$maskmap1"		"models/items/juggernaut/dc_headupdate/dc_headupdate_mask1"
+	"$maskmap2"		"models/items/juggernaut/dc_headupdate/dc_headupdate_mask2"
+	"$diffusewarp"		"models/heroes/juggernaut/juggernaut_lightwarp"
+	"$SPECULAREXPONENT"		"3"
+	"$SPECULARSCALE"		"2"
+	"$DIFFUSEWARPBLENDTOFULL"		"0.520000"
+	"$RIMLIGHTSCALE"		"1.350000"
+	"$alphatest"		"1"
+	"$FRESNELWARP"		"models/heroes/juggernaut/juggernaut_fresnelranges"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

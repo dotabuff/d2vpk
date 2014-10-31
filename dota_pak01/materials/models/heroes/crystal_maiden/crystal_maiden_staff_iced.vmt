@@ -1,37 +1,27 @@
-
 "CustomHero"
 {
-	"$baseTexture" "models\heroes\crystal_maiden\crystal_maiden_staff_color"
+	"$baseTexture" "models/heroes/crystal_maiden/crystal_maiden_staff_color"
 	"$normalmap" "models/development/flatnormal"
-	//"$diffusewarp" "models/heroes/drow/diffusewarp"
 	"$maskmap1" "models/heroes/crystal_maiden/crystal_maiden_staff_masks1"
 	"$maskmap2" "models/heroes/crystal_maiden/crystal_maiden_staff_masks2"
-$alphatest 1
-	$SPECULAREXPONENT 195
-	$SPECULARSCALE 270
-	//$SPECULARCOLOR "[1 3 7]"
-	$AMBIENTSCALE 2
-
+	$alphatest 1
+	
 	$SPECULARBLENDTOFULL 1
 	$SPECULAREXPONENTBLENDTOFULL 1
-//	$DIFFUSEWARPBLENDTOFULL 1
+	$SPECULAR_BLOOM_SCALE 4
+	$SPECULAREXPONENT 3
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[0 .5 1]"
 
+	$COLORWARP "models/heroes/statusEffects/colorwarp_frost"
+	$COLORWARPINTENSITY .05
 
-	$RIMLIGHTSCALE	1400
-//	$RIMLIGHTCOLOR [1 1 1]
-	
-//	$FRESNELWARP "models/heroes/drow/drow_fresnelwarp"	
+	$RIMLIGHTSCALE	1
 
-
-	$COLORWARPINTENSITY .6
 	$Detail2 "models/heroes/statuseffects/frozen"
-	$DETAIL2BLENDFACTOR 0.75
-	$DETAIL2SCALE 3
 	$DETAIL2BLENDMODE 1
-	$REFLECTIONSTINTBYBASEBLENDTONONE .5
-	$METALNESSBLENDTOFULL .25
+	$DETAIL2SCALE 3
+	$DETAIL2BLENDFACTOR 0.75
+	$DETAIL2BLENDTOFULL .125
 
-	$nocull 1
-       	//$translucent 1
-       //$ALLOWDIFFUSEMODULATION 1
 }

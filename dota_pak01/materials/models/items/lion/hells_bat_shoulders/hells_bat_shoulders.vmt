@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/lion/hells_bat_shoulders/hells_bat_shoulders_color"
+	"$normalmap"		"models/items/lion/hells_bat_shoulders/hells_bat_shoulders_normal"
+	"$detail1"		"models/heroes/doom/doom_burninating"
+	"$MASKMAP1"		"models/items/lion/hells_bat_shoulders/hells_bat_shoulders_mask1"
+	"$MASKMAP2"		"models/items/lion/hells_bat_shoulders/hells_bat_shoulders_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"15"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.8]"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTSCALE"		"10"
+	"$AMBIENTSCALE"		"1"
+	"$ALPHATEST"		"1"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"3"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.400000"
+			"texturescrollangle"		"55"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

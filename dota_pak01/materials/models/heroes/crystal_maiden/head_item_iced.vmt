@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/crystal_maiden/head_item_color"
+	"$normalmap" "models/heroes/crystal_maiden/head_item_normal"
+	"$maskmap1" "models/heroes/crystal_maiden/head_item_mask1"
+	"$maskmap2" "models/heroes/crystal_maiden/head_item_mask2"
+	$alphatest 1
+	$SPECULAREXPONENT 35
+	$SPECULARSCALE 2
+
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE	1
+
+	$COLORWARP "models/heroes/statusEffects/colorwarp_frost"
+	$COLORWARPINTENSITY .05
+	
+	$Detail2 "models/heroes/statuseffects/frozen"
+	$DETAIL2BLENDFACTOR 0.75
+	$DETAIL2SCALE 3
+	$DETAIL2BLENDMODE 1
+	$REFLECTIONSTINTBYBASEBLENDTONONE .5
+	$METALNESSBLENDTOFULL .25
+
+}

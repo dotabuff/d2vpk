@@ -12372,6 +12372,8 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Import_Serpent_Ward_Desc"			"Shadow Shaman's Serpent Wards requires a single model."
 		"DOTA_Import_Trueform"				"True Form"
 		"DOTA_Import_Trueform_Desc"			"Lone Druid's True Form requires a single model."
+		"DOTA_Import_Veno_Ward"				"Plague Ward"
+		"DOTA_Import_Veno_Ward_Desc"			"Venomancer's Plague Ward requires a single model."
 
 		"DOTA_Workshop_AddWearable"			"ADD / REMOVE WEARABLES"
 		"DOTA_Workshop_Add"					"ADD"
@@ -12667,6 +12669,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_PlayerName_Dendi"	"Danil 'Dendi' Ishutin"
 		"DOTA_PlayerName_Fear"	"Clinton 'Fear' Loomis"
 		"DOTA_PlayerName_HyHy"	"Benedict 'HyHy' Lim"
+		"DOTA_PlayerName_Versuta"	"Aren 'VeRsuta' Zurabyan"
 		
 		"DOTA_LocalReconnect_Title"				"Attempt Reconnect"
 		"DOTA_LocalReconnect_Body"				"The Dota 2 Network is slow to respond. Do you want to try reconnecting to your previous game?"
@@ -12946,7 +12949,7 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"Attrib_Renamed"		"This item has been renamed.\nOriginal name: \"%s1\""
 		"Attrib_CustomDesc"		"This item has a user written description."
 		"Attrib_TradableAfter"	"This item can be traded after %s1"
-		"Attrib_TradableAfterDate" "\nTradable After: %s1"
+		"Attrib_TradableAfterDate" "\nTradable & Marketable After: %s1"
 		"Attrib_NotMarketable"	"This item cannot be listed on the Steam Community Market."
 		
 		"DOTA_GiftedItems"				"%s1 has given a gift to %s2!"
@@ -13065,6 +13068,8 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"taunt"							"Taunt"
 		"dynamic_recipe"				"Recipe"
 		"socket_gem"					"Gem / Rune"
+		"music"							"Music"
+		"retired_chest"					"Retired Chest"
 				
 		// Tool Types
 		"tool_type_none"					"None"
@@ -13838,7 +13843,16 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 
 		"StoreBanner_Header_ESLOneSummons"						"ESL One New York Summons Bundle"
 		"StoreBanner_Text_ESLOneSummons"						"Muster your monsters!"
+
+		"StoreBanner_Header_DCCaptainsDraft2"				"The XMG Captain's Draft 2.0"
+		"StoreBanner_Text_DCCaptainsDraft2"					"Eight top western teams battle in the unique Captain's Draft Mode!"
+
+		"StoreBanner_Header_TreasureOfRottedGallows"			"Treasure of the Rotted Gallows"
+		"StoreBanner_Test_TreasureOfRottedGallows"			"Seize hallowed treasures!"
 		
+		"StoreBanner_Header_BalanceOfTheBladekeeper"			"Balance of the Bladekeeper"
+		"StoreBanner_Text_BalanceOfTheBladekeeper"			"New legendary set for Juggernaut! 10% of purchase goes to support the XMG Captain's Draft 2.0 prizepool."
+
 		"Playtab_Quiz_Title"				"The Shopkeeper's Quiz"
 		"Playtab_Quiz_Subtitle"				"Test your Dota 2 item knowledge!"
 		// Pennants
@@ -16362,6 +16376,11 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 			
 		"Econ_MarketTooltipFormat"			"%s1 available on the Steam Community Market starting at %s2."
 		
+	//DOTA ASSET MODIFIERS
+	//asset_mod asset modifiers
+	//anim_mod
+	//ability_mod
+		
 		"Invalid_AssetMod"	"Invalid"
 		"DOTA_Anim_Mod_Silent_Ripper"	"Pounce of the Silent Ripper"
 		"DOTA_Anim_Mod_Pyre"	"Flames of the Pyre"
@@ -16418,6 +16437,13 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Ability_Mod_Reminiscence_Rift"	"Rift of Reminiscence"
 		"DOTA_Ability_Mod_Reminiscence_Dreamcoil"	"Dreamcoil of Reminiscence"
 		
+		"DOTA_Asset_Mod_DC_Bladekeeper_Healing_Ward"	"Bladekeeper's Healing Ward"
+		"DOTA_Asset_Mod_DC_Bladekeeper_Bladefury"		"Bladekeeper's Bladefury"
+		"DOTA_Asset_Mod_DC_Bladekeeper_Omnislash"		"Bladekeeper's Omnislash"
+		"DOTA_Asset_Mod_DC_Bladekeeper_Crit"			"Bladekeeper's Blade Dance"
+		
+		"DOTA_Asset_Mod_Double_Edge_of_the_Berserker"	"Berserker's Double Edge"
+		
 		"DOTA_Asset_Mod_Harlequin_Weapon"		"Harlequin Particles and Fade Bolt Icon"
 		"DOTA_Asset_Mod_Harlequin_Head"			"Harlequin Null Field Icon"
 		"DOTA_Asset_Mod_Harlequin_Cape"			"Harlequin Telekinesis Icons"
@@ -16436,6 +16462,26 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Asset_Mod_Scavenger_Rot_Icon"		"Scavenger of Dragons Rot Icon"
 		"DOTA_Asset_Mod_Scavenger_Flesh_Heap_Icon"		"Scavenger of Dragons Flesh Heap Icon"
 		"DOTA_Asset_Mod_Scavenger_Dismember_Icon"		"Scavenger of Dragons Dismember Icon"
+
+		"DOTA_Asset_Mod_Monstrous_Reprisal_Back_Stab"			"Monstrous Reprisal Back Stab Icon"
+		"DOTA_Asset_Mod_Monstrous_Reprisal_Blink_Strike"		"Monstrous Reprisal Blink Strike Icon"
+		"DOTA_Asset_Mod_Monstrous_Reprisal_Permanent_Invisibility"	"Monstrous Reprisal Permanent Invisibility Icon"
+		"DOTA_Asset_Mod_Monstrous_Reprisal_Smoke_Screen"		"Monstrous Reprisal Smoke Screen Icon"
+		
+		"DOTA_Asset_Mod_Agaric_Flourish_Eyes_Guise_Icons"	"Agaric Flourish Eyes and Guise Icons"
+		"DOTA_Asset_Mod_Agaric_Flourish_Overgrowth_Icon"	"Agaric Flourish Overgrowth Icon"
+		"DOTA_Asset_Mod_Agaric_Flourish_Armor_Icon"		"Agaric Flourish Living Armor Icon"
+		"DOTA_Asset_Mod_Agaric_Flourish_Leech_Seed_Icon"	"Agaric Flourish Leech Seed Icon"
+		
+		"DOTA_Asset_Mod_Fiend_Cleaver_Great_Cleave_Icon"	"Fiend Cleaver Great Cleave Icon"
+		"DOTA_Asset_Mod_Fiend_Cleaver_Warcry_Icon"		"Fiend Cleaver Warcry Icon"
+		"DOTA_Asset_Mod_Fiend_Cleaver_Gods_Strength_Icon"	"Fiend Cleaver God's Strength Icon"
+		"DOTA_Asset_Mod_Fiend_Cleaver_Storm_Bolt_Icon"		"Fiend Cleaver Storm Bolt Icon"
+		
+		"DOTA_Asset_Mod_Eldwurms_Touch_Bow_Icons"		"Eldwurm's Touch Bow Icons"
+		"DOTA_Asset_Mod_Eldwurms_Touch_Wave_of_Silence_Icon"	"Eldwurm's Touch Wave of Silence Icon"
+		
+		"DOTA_Asset_Mod_Ghastly_Matriarch_Exorcism_Icon"	"Ghastly Matriarch Exorcism Icon"
 
 		"Invalid_Soul"	"Invalid"
 		"DOTA_Soul_Gem_Raving_Aristocrat"	"Raving Aristocrat"
@@ -16502,6 +16548,8 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Item_Stonehall_Royal_Guard_Helmet_Style1" "Open Helmet"
 		"DOTA_Item_Jolly_Roger_Style0"			"Davy Jones"
 		"DOTA_Item_Jolly_Roger_Style1"			"Landlubber"
+		"DOTA_Item_DotaCinema_Hud_Style0"		"Dark"
+		"DOTA_Item_DotaCinema_Hud_Style1"		"Bright"
 		"DOTA_Item_Cape_of_the_Arsenal_Magus_Style0"	"White"
 		"DOTA_Item_Cape_of_the_Arsenal_Magus_Style1"	"Exort"
 		"DOTA_Item_Cape_of_the_Arsenal_Magus_Style2"	"Quas"
@@ -16646,8 +16694,6 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Item_Worldforger_Head_Style1"				"Worldforger Horns"
 		"DOTA_Item_Sempiternal_Head_Style0"				"Plain Trinity Hat"
 		"DOTA_Item_Sempiternal_Head_Style1"				"Trinity Hat"
-		"DOTA_Item_Axe_of_the_Savage_God_Style0"			"Axe"
-		"DOTA_Item_Axe_of_the_Savage_God_Style1"			"Sword"
 		"DOTA_Item_Acolyte_of_Vengeance_Mask_Style0"			"Mask"
 		"DOTA_Item_Acolyte_of_Vengeance_Mask_Style1"			"Hood"
 		"DOTA_Item_Acolyte_of_Vengeance_Mask_Style2"			"Hooded Mask"
@@ -16707,6 +16753,12 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"DOTA_Item_Rage_Three_Leg_Style2"	"Kumo"
 		"DOTA_Item_Forge_Warrior_Claw_Style0"	"Claw"
 		"DOTA_Item_Forge_Warrior_Claw_Style1"	"Pincer"
+
+		"DOTA_Item_Fiend_Cleaver_Axe_Style0"			"Style One"
+		"DOTA_Item_Fiend_Cleaver_Axe_Style1"			"Style Two"
+	
+		"DOTA_Item_Warmachine_Metal_Mask_Style0"		"Steel Breather"
+		"DOTA_Item_Warmachine_Metal_Mask_Style1"		"Steel Cigar"
 		
 		"TeamCup_Description"	"Earned by fans during The International Weekly Team Cup"
 
@@ -17013,8 +17065,9 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"CompendiumPageError_ImageDLErr" "Failed to download compendium image '%s' (%s2)"
 		"CompendiumPageError_BtnNoElem" "No 'selection_elements' block found for button '%s1' in compendium page '%s2'"
 		"CompendiumPageError_BtnBadVal" "Selection value '%s1' in button '%s2' isn't in the choices list for that selection index"
-		"CompendiumPageError_BtnBadSel" "'selection_force_to' setting in button '%s1' isn't in the choices list for selection '%s2'"
+		"CompendiumPageError_BtnBadSel" "'selection_force_to' setting in element '%s1' isn't in the choices list for selection '%s2'"
 		"CompendiumPageError_BtnSelIdx"	"Button '%s1' in compendium page '%s2' has missing or invalid 'selection_index'" 
+		"CompendiumPageError_CmdSelIdx"	"Element '%s1' in compendium page '%s2' has missing or invalid command 'selection_index' or 'force_selection_index'" 
 		"CompendiumPageError_ImgSelIdx"	"Invalid 'selection_index' of '%s1' in image '%s2'."
 		"CompendiumPageError_ImgShowSelIdx"	"Invalid 'show_selection_index' of '%s1' in image '%s2'."
 		"CompendiumPageError_ImgSelVal"	"Invalid selection choice '%s1' in 'show_selection_images' section of image '%s2'."
@@ -17059,6 +17112,8 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 		"CompendiumError_DataProviderFilterUnknown" "data provider '%s1' either does not define its 'filter' operation or the operation is unknown"
 		"CompendiumError_DataProviderFilterAlreadyExist" "data provider '%s1' already exists."
 		"CompendiumError_BadEscSeq"		"Text field '%s1' has an escape sequence with a missing closing '%%'"
+		"CompendiumError_BadCmdVar"		"set_local_variable command in element '%s1' has an invalid local variable named '%s2'"
+		"CompendiumError_BadVisVar"		"Could not find a local variable named '%s1' specified in element '%s2'."
 		
 		"DOTA_AbilityDraft_Round" "Round %s1"
 		"DOTA_AbilityDraft_Start_Timer" "Ability Draft %s1 Starts In:"
