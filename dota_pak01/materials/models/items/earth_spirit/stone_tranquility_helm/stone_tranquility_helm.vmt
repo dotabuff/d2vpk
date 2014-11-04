@@ -1,0 +1,42 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/earth_spirit/stone_tranquility_helm/stone_tranquility_helm_color"
+	"$normalmap"		"models/items/earth_spirit/stone_tranquility_helm/stone_tranquility_helm_normal"
+	"$detail1"		"models/heroes/earth_spirit/earth_spirit_energy"
+	"$diffusewarp"		"models/heroes/earth_spirit/earth_spirit_lightwarp"
+	"$maskmap1"		"models/items/earth_spirit/stone_tranquility_helm/stone_tranquility_helm_mask1"
+	"$maskmap2"		"models/items/earth_spirit/stone_tranquility_helm/stone_tranquility_helm_mask2"
+	"$fresnelwarp"		"models/heroes/earth_spirit/earth_spirit_fresnelranges"
+	"$ENVMAPINTENSITY"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"0.100000"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"10"
+	"$SPECULARCOLOR"		"[0.7 1 0.8]"
+	"$RIMLIGHTCOLOR"		"[0.7 1 0.8]"
+	"$ignorebudgetcheck"		"1"
+	"$RIMLIGHTSCALE"		"6"
+	"$AMBIENTSCALE"		"2"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"10"
+	"$DETAIL1BLENDFACTOR"		"3"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.040000"
+			"texturescrollangle"		"12"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}
