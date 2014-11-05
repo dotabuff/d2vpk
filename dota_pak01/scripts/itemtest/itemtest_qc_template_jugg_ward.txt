@@ -15,8 +15,8 @@ $bodygroup "default"
 <ITEMTEST_REPLACE_LOD1_OPTIONALBLOCK>
 
 $sequence ref "<ITEMTEST_REPLACE_LOD0>"
-$sequence spawn "<ITEMTEST_REPLACE_ANIM_Spawn>" loop ACT_DOTA_SPAWN -1
+$sequence spawn "<ITEMTEST_REPLACE_ANIM_Spawn>" ACT_DOTA_SPAWN -1
 $sequence idle "<ITEMTEST_REPLACE_ANIM_Idle>" loop ACT_DOTA_IDLE -1
-$sequence die "<ITEMTEST_REPLACE_ANIM_Die>" loop ACT_DOTA_DIE -1
+$sequence die "<ITEMTEST_REPLACE_ANIM_Die>" ACT_DOTA_DIE -1
 
 $skinnedlods
