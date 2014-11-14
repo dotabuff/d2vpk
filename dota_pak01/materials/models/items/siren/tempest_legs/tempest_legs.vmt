@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/siren/tempest_legs/tempest_legs_color"
+	"$normalmap"		"models/items/siren/tempest_legs/tempest_legs_normal"
+	"$diffusewarp"		"models/heroes/drow/diffusewarp"
+	"$maskmap1"		"models/items/siren/tempest_legs/tempest_legs_mask1"
+	"$maskmap2"		"models/items/siren/tempest_legs/tempest_legs_mask2"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"5"
+	"$SPECULARCOLOR"		"[.7 .9 1]"
+	"$envmap"		"models/cubemaps/glossy"
+	"$envmapintensity"		"0.600000"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[.25 .75 1]"
+	"$AMBIENTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
