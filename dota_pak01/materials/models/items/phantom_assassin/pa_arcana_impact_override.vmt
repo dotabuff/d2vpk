@@ -1,9 +1,9 @@
 "CustomHero"
 {
-	//"$basetexture" "models\items\phantom_assassin\pa_arcana_color"
-	//"$normalmap" "models\heroes\ember_spirit\ember_spirit_normal"
-	//"$maskmap1" "models\heroes\ember_spirit\ember_spirit_masks1"
-	//"$maskmap2" "models\heroes\ember_spirit\ember_spirit_masks2"
+	$baseTexture 	"models/heroes/phantom_assassin/pa_arcana_color"
+	$normalmap	"models/heroes/phantom_assassin/pa_arcana_normal"
+ 	"$maskmap1" 	"models/heroes/phantom_assassin/pa_arcana_masks1"
+	"$maskmap2" 	"models/heroes/phantom_assassin/pa_arcana_masks2"
 	//"$detail1"  "models\heroes\ember_spirit\ember_spirit_detail"
  
 	"$DETAILFX" "50"
@@ -13,7 +13,7 @@
  
 	$SPECULAREXPONENT 32
 	$SPECULARSCALE 10
-	$SPECULARCOLOR "[0.5 4.8 3.4]"
+	$SPECULARCOLOR "[0.0 3.8 2.4]"
 	
 	$RIMLIGHTSCALE 50
 	$RIMLIGHTCOLOR "[0 1.2 0.8]"
@@ -22,7 +22,7 @@
 	$IgnoreBudgetCheck 1
 	$alphatest 0
 
-	$DETAIL1BLENDMODE 1
+	$DETAIL1BLENDMODE 2
 	$DETAIL1SCALE 1
 	$DETAIL1BLENDFACTOR 1.45
 
@@ -32,15 +32,15 @@
 	
 
 	"$colorwarp" "models/heroes/statusEffects/colorwarp_morphling1"
-	"$colorwarpintensity" "1"
+	"$colorwarpintensity" "0.5"
 
 	"$detail2"  "models\heroes\StatusEffects\frozen"
 	$DETAIL2BLENDMODE 2
 	$DETAIL2SCALE 3.25
-	$DETAIL2BLENDFACTOR 1.5
+	$DETAIL2BLENDFACTOR 1
 
-	$translucent 0
-	$additive 1
+	$translucent 1
+	$additive 0
 
         //$ALLOWDIFFUSEMODULATION 1
 

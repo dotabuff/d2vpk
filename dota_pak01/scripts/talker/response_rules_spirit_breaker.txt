@@ -298,16 +298,16 @@ Rule spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_10%_Rule
 	response spirit_breaker_CastExecuteIsSpiritBreakerChargeChance_10%
 }
 
-Response spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_25%
+Response spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_50%
 {
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_03.vcd" nodelay noscene 
 	scene "scenes/spirit_breaker/spirit_breaker_spir_ability_charge_05.vcd" nodelay noscene 
 }
 
-Rule spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_25%_Rule
+Rule spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_50%_Rule
 {
-	criteria CastExecute Isspirit_breaker IsSpiritBreakerEmpHaste Chance_25%
-	response spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_25%
+	criteria CastExecute Isspirit_breaker IsSpiritBreakerEmpHaste Chance_50%
+	response spirit_breaker_CastExecuteIsSpiritBreakerEmpHasteChance_50%
 }
 
 Response spirit_breaker_AllyNearIsAllyEarthshakerEarlyGame
@@ -651,7 +651,7 @@ Rule spirit_breaker_Immortality_Rule
 
 Response spirit_breaker_PowerupIsPowerupBounty
 {
-	scene "scenes/spirit_breaker/spirit_breaker_spir_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/spirit_breaker/spirit_breaker_spir_lasthit_02.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule spirit_breaker_PowerupIsPowerupBounty_Rule

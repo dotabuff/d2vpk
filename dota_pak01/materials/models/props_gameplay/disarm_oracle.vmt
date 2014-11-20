@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	$baseTexture 	"models/props_gameplay/disarm_oracle_color"
+	$normalmap	"models/development/flatnormal"
+ 	"$maskmap1" 	"models/props_gameplay/disarm_oracle_masks1"
+	"$maskmap2" 	"models/props_gameplay/disarm_oracle_masks2"
+	
+//	"$diffusewarp" "models/heroes/oracle/oracle_diffusewarp"
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 100
+	$RIMLIGHTCOLOR "[0.4 0.65 1]"	
+	$SPECULARCOLOR "[1 .5 .3]"
+	
+	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+//	"$envmap" "models/cubemaps/cube_metal_grey"
+	$ENVMAPINTENSITY 10
+	$MASKENVBYMETALNESS 1
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+//	$SPECULAR_BLOOM_SCALE      .05
+//	$SPECULAR_BLOOM_COLOR "[.1 .2 .4]"
+//	$SPECULAR_BLOOM_SHIFT 0
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

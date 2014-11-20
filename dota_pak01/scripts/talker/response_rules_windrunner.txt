@@ -802,7 +802,7 @@ Rule windrunner_PowerupIsPowerupDoubleDamage_Rule
 
 Response windrunner_PowerupIsPowerupBounty
 {
-	scene "scenes/windrunner/windrunner_wind_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule windrunner_PowerupIsPowerupBounty_Rule

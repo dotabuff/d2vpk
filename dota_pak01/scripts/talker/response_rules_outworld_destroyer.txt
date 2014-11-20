@@ -655,7 +655,7 @@ Rule outworld_destroyer_PowerupIsPowerupHasteChance_25%_Rule
 
 Response outworld_destroyer_PowerupIsPowerupBounty
 {
-	scene "scenes/outworld_destroyer/outworld_destroyer_odest_purch_03.vcd" nodelay noscene speakonce
+	scene "scenes/outworld_destroyer/outworld_destroyer_odest_purch_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule outworld_destroyer_PowerupIsPowerupBounty_Rule

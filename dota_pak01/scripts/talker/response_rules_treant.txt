@@ -910,7 +910,7 @@ Rule treant_PowerupIsPowerupBounty_Rule
 
 Response treant_PowerupIsPowerupBountyChance_20%
 {
-	scene "scenes/treant/treant_treant_levelup_02.vcd" nodelay noscene 
+	scene "scenes/treant/treant_treant_levelup_02.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule treant_PowerupIsPowerupBountyChance_20%_Rule

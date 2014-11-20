@@ -241,7 +241,7 @@ Rule dazzle_CastExecuteIsDazzleShadowWave_Rule
 
 Response dazzle_PowerupIsPowerupBounty
 {
-	scene "scenes/dazzle/dazzle_dazz_ability_sfx_08.vcd" nodelay noscene 
+	scene "scenes/dazzle/dazzle_dazz_ability_sfx_08.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule dazzle_PowerupIsPowerupBounty_Rule

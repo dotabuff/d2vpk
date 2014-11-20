@@ -982,7 +982,7 @@ Rule visage_PowerupIsPowerupRegenerationChance_25%_Rule
 
 Response visage_PowerupIsPowerupBounty
 {
-	scene "scenes/visage/visage_visa_deny_10.vcd" nodelay noscene 
+	scene "scenes/visage/visage_visa_deny_10.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule visage_PowerupIsPowerupBounty_Rule

@@ -1,45 +1,13 @@
+// playgamesound "DOTAMusic_Hero.Reincarnate"; 
+
 "DOTAMusic_Hero.Reincarnate" // plays spatialized when hero reincarnates - SK's ulti or Aegis holder
 {
 	"channel"		"CHAN_AUTO"
 	"volume"		"0.7"
 	"soundlevel"  "SNDLVL_81dB"
 	"wave"			")music/stingers/reincarnate.wav"
-	"soundentry_version" "2"
 	"operator_stacks"
-	{	
-		"soundentry_operator_data"
-		{
-			"track_data"
-			{
-				"start_point" "0.00"
-				"track_name" "stinger_low_priority"
-				"track_priority" "1"	
-			}
-		}
-	
-		"start_stack"
-		{
-			"delay_output"
-            {
-             "operator" "sys_output"
-             "input_float" "1.5"
-             "output" "delay"
-            }
-			
-            "get_debug_printing_opvar" 
-            {
-				"operator" "get_opvar_float"
-				"opvar" "debug_print_music"
-			}
-			
-			"**************REINCARNATE MUSIC STARTED**************" 
-			{
-				"execute_once" "false"
-				"input_execute"	"@get_debug_printing_opvar.output"
-				"operator" "util_print_float"
-				"input" "1.0"
-			}
-		}
+	{
 		
 		"update_stack"
 		{
@@ -50,12 +18,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "600"
-			}
-			"update_track"
-			{
-				"operator" "track_update"
-				"stop_channel_on_track" "true"
+				"input_radius"  "300"
 			}
 		}
 	}
@@ -68,7 +31,7 @@
 
 "DOTAMusic_Stinger.003"
 {
-	"channel"		"CHAN_AUTO"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.6"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
@@ -78,7 +41,7 @@
 
 "DOTAMusic_Stinger.004"
 {
-	"channel"		"CHAN_AUTO"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.6"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
@@ -87,7 +50,7 @@
 }
 "DOTAMusic_Stinger.005"
 {
-	"channel"		"CHAN_AUTO"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.6"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
@@ -96,7 +59,7 @@
 }
 "DOTAMusic_Stinger.006"
 {
-	"channel"		"CHAN_AUTO"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.6"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
@@ -106,7 +69,7 @@
 
 "DOTAMusic_Stinger.007"
 {
-	"channel"		"CHAN_AUTO"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.4"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
@@ -116,7 +79,7 @@
 
 "DOTAMusic_Stinger.008"
 {
-	"channel"		"CHAN_AUTO"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.6"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
@@ -126,7 +89,7 @@
 
 "DOTAMusic_Stinger.009"
 {
-	"channel"		"CHAN_AUTO"
+	"channel"		"CHAN_ITEM"
 	"volume"		"0.6"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"

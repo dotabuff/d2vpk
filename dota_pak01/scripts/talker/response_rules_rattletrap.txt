@@ -713,7 +713,7 @@ Rule rattletrap_PowerupIsPowerupRegenerationChance_25%_Rule
 
 Response rattletrap_PowerupIsPowerupBounty
 {
-	scene "scenes/rattletrap/rattletrap_ratt_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/rattletrap/rattletrap_ratt_lasthit_09.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule rattletrap_PowerupIsPowerupBounty_Rule

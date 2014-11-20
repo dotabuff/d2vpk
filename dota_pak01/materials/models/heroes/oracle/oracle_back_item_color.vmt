@@ -5,16 +5,17 @@
 	"$maskmap1" "models/heroes/oracle/oracle_back_item_masks1"
 	"$maskmap2" "models/heroes/oracle/oracle_back_item_masks2"
 
+//	"$diffusewarp" "models/heroes/oracle/oracle_diffusewarp"
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" "1"
 
-//	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
-//	"$envmap" "env_cubemap"
 
 
 	$SPECULAREXPONENT 20
 	$SPECULARSCALE 10
 	$AMBIENTSCALE 1
 	$SPECULARCOLOR "[1 1 1]"
-	$RIMLIGHTSCALE 1
+	$RIMLIGHTSCALE 2
 	$RIMLIGHTCOLOR "[1 2 3]"
 	$alphatest 1
 	

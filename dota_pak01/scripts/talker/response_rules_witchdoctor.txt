@@ -409,7 +409,7 @@ Rule witchdoctor_Immortality_Rule
 Response witchdoctor_PowerupIsPowerupBounty
 {
 	scene "scenes/witchdoctor/witchdoctor_wdoc_purch_03.vcd" nodelay noscene speakonce
-	scene "scenes/witchdoctor/witchdoctor_wdoc_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/witchdoctor/witchdoctor_wdoc_lasthit_04.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule witchdoctor_PowerupIsPowerupBounty_Rule

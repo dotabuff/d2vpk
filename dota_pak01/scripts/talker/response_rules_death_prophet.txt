@@ -144,7 +144,7 @@ Rule death_prophet_CastExecuteIsDeathProphetExorcism_Rule
 
 Response death_prophet_PowerupIsPowerupBounty
 {
-	scene "scenes/death_prophet/death_prophet_dpro_exorcism_07.vcd" nodelay noscene 
+	scene "scenes/death_prophet/death_prophet_dpro_exorcism_07.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule death_prophet_PowerupIsPowerupBounty_Rule

@@ -582,6 +582,11 @@
 		
 		"AbilitySpecial"
 		{
+		"01"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"tooltip_brain_sap_heal_amt"		"90 160 230 300"
+			}
 		}
 	}
 	
@@ -2796,15 +2801,20 @@
 			}
 			"03"
 			{
-				"var_type"						"FIELD_INTEGER"
-				"illusion_incoming_dmg_pct_tooltip"		"100 100 100"
+				"var_type"						"FIELD_FLOAT"
+				"tooltip_illusion_damage_out_pct"		"50 50 50"
 			}
 			"04"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"illusion_damage_in_pct"		"0 0 0"
+				"illusion_incoming_dmg_pct_tooltip"		"100 100 100"
 			}
 			"05"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"illusion_damage_in_pct"		"0 0 0"
+			}
+			"06"
 			{
 				"var_type"						"FIELD_INTEGER"
 				"tooltip_cast_range"			"700 1100 1500"
@@ -3223,14 +3233,19 @@
 			"06"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"illusion_damage_in_pct"	"300 300 300 300"
+				"tooltip_illusion_damage"	"20 20 20 20"
 			}
 			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"tooltip_illusion_damage"	"20 20 20 20"
+				"illusion_damage_in_pct"	"300 300 300 300"
 			}
 			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"tooltip_illusion_total_damage_in_pct"	"400 400 400 400"
+			}			
+			"09"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"fake_lance_distance"		"675"
@@ -3327,18 +3342,18 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"proc_chance_pct"		"40 45 50"
+				"max_illusions"			"5 7 9"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"illusion_proc_chance_pct"		"8"
+				"proc_chance_pct"		"40 45 50"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_illusions"			"5 7 9"
-			}
+				"illusion_proc_chance_pct"		"8"
+			}			
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
@@ -3352,14 +3367,19 @@
 			"06"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"illusion_damage_in_pct"	"400"
+				"tooltip_illusion_damage"	"16"
 			}
 			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"tooltip_illusion_damage"	"16"
+				"illusion_damage_in_pct"	"400"
 			}
 			"08"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"tooltip_total_illusion_damage_in_pct"	"500"
+			}
+			"09"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"illusion_from_illusion_duration"	"4"
@@ -6570,6 +6590,11 @@
 			}
 			"05"
 			{
+				"var_type"			"FIELD_INTEGER"
+				"creep_damage_tooltip"	"1000"
+			}
+			"06"
+			{
 				"var_type"			"FIELD_FLOAT"
 				"damage"			"100"
 			}
@@ -7372,28 +7397,28 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_damage"				"16 24 32 40"
+				"radius"					"180"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_damage_threshold"	"100"
+				"duration_tooltip"			"12"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"180"
+				"bonus_damage"				"16 24 32 40"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"ticks"						"3"
-			}
+				"bonus_damage_threshold"	"100"
+			}			
 			"05"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"duration_tooltip"			"12"
-			}
+				"ticks"						"3"
+			}			
 		}
 	}
 	
@@ -11374,6 +11399,11 @@
 				"max_targets"		"3 4 5 6"
 			}
 			"04"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"tooltip_max_targets_inc_dazzle"		"4 5 6 7"
+			}
+			"05"
 			{
 				"var_type"			"FIELD_INTEGER"
 				"damage"			"80 100 120 140"
@@ -11803,7 +11833,7 @@
 			}
 			"03"
 			{
-				"var_type"				"FIELD_FLOAT"
+				"var_type"				"FIELD_INTEGER"
 				"tower_bonus"			"40"
 			}
 		}
@@ -12466,39 +12496,39 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"15.0 30.0 45.0"
-			}
-			"02"
-			{
 				"var_type"				"FIELD_INTEGER"
 				"damage"				"150 150 150"
 			}	
-			"03"
+			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"replica_damage_incoming"	"300 300 300"
-			}
-			"04"
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"15.0 30.0 45.0"
+			}			
+			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"replica_damage_outgoing"	"-30 -20 -10"
 			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"width"					"1000 1000 1000"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"replica_damage_outgoing_scepter"	"0 20 40"
-			}
-			"07"
+			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"tooltip_outgoing"	"70 80 90"
 			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replica_damage_incoming"	"300 300 300"
+			}	
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_replica_total_damage_incoming"	"400 400 400"
+			}				
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"width"					"1000 1000 1000"
+			}			
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
@@ -12510,6 +12540,11 @@
 				"range_tooltip"			"500 900 1300"
 			}
 			"10"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replica_damage_outgoing_scepter"	"0 20 40"
+			}
+			"11"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"tooltip_outgoing_scepter"	"100 120 140"
@@ -15035,23 +15070,28 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"illusion_damage_incoming"	"100 100 100"
+				"illusion_damage_outgoing"	"-70"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"illusion_damage_outgoing"	"-70"
+				"tooltip_outgoing"	"30"
 			}
 			"04"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"attack_delay"				"1.0 1.0 1.0"
+				"var_type"					"FIELD_INTEGER"
+				"illusion_damage_incoming"	"100 100 100"
 			}
 			"05"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"tooltip_outgoing"	"30"
-			}
+				"tooltip_illusion_total_damage_incoming"	"200 200 200"
+			}			
+			"06"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"attack_delay"				"1.0 1.0 1.0"
+			}			
 		}
 	}
 
@@ -17756,7 +17796,7 @@
 		"AbilityCastRange"				"600 650 700"
 		"AbilityCastPoint"				"0.25 0.25 0.25"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"FightRecapLevel"				"2"
 		
 		// Time		
@@ -17773,34 +17813,34 @@
 		{
 			"01"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"radius"					"375 475 575"
-			}
-			"02"
-			{
-				"var_type"					"FIELD_INTEGER"
-				"cast_range"					"600 650 700"
-			}
-			"03"
-			{
 				"var_type"						"FIELD_INTEGER"
 				"damage_multiplier"				"8 9 10"
-			}	
-			"04"
+			}
+			"02"
 			{
 				"var_type"						"FIELD_INTEGER"
 				"int_threshold"				"10 30 50"
 			}
-			"05"
+			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"cast_range_scepter"				"700 750 800"
+				"radius"					"375 475 575"
 			}
-			"06"
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cast_range"					"600 650 700"
+			}
+			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
 				"damage_multiplier_scepter"		"9 10 11"
-			}
+			}			
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"cast_range_scepter"				"700 750 800"
+			}			
 		}
 	}
 	
@@ -18929,17 +18969,17 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"illusion_duration"			"5.0 6.0 7.0 8.0"
+				"disruption_duration"		"2.5 2.5 2.5 2.5"
 			}
 			"02"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"illusion_outgoing_damage"	"-70.0 -60.0 -50.0 -40.0"
+				"illusion_duration"			"5.0 6.0 7.0 8.0"
 			}
 			"03"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"illusion_incoming_damage"	"50.0 50.0 50.0 50.0"
+				"var_type"					"FIELD_FLOAT"
+				"illusion_outgoing_damage"	"-70.0 -60.0 -50.0 -40.0"
 			}
 			"04"
 			{
@@ -18948,9 +18988,14 @@
 			}
 			"05"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"disruption_duration"		"2.5 2.5 2.5 2.5"
+				"var_type"				"FIELD_FLOAT"
+				"illusion_incoming_damage"	"50.0 50.0 50.0 50.0"
 			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tooltip_total_illusion_incoming_damage"	"150.0 150.0 150.0 150.0"
+			}			
 		}
 	}
 
@@ -19333,34 +19378,49 @@
 		{
 			"01"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"illusion_duration"			"34"
+				"var_type"					"FIELD_INTEGER"
+				"images_count"				"1 2 3"
 			}
 			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"extra_phantasm_chance_pct_tooltip"			"50"
+			}
+			"03"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"illusion_duration"			"34"
+			}	
+			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"outgoing_damage"			"0 0 0"
 			}
-			"03"
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"outgoing_damage_tooltip"			"100 100 100"
+			}	
+			"06"
 			{
 				"var_type"					"FIELD_INTEGER"
 				"incoming_damage"			"100 100 100"
 			}
-			"04"
+			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"images_count"				"1 2 3"
-			}
-			"05"
+				"incoming_damage_tooltip"			"200 200 200"
+			}			
+			"08"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"invuln_duration"		"0.5"
 			}
-			"06"
+			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"vision_radius"			"400"
-			}
+			}			
 		}
 	}
 
@@ -19758,6 +19818,12 @@
 			{
 				"var_type"						"FIELD_INTEGER"
 				"radius"						"675"
+			}	
+			
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"eyes_radius"					"800"
 			}				
 		}
 	}
@@ -20272,23 +20338,33 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"15.0 20.0 25.0 30.0"
+				"var_type"				"FIELD_INTEGER"
+				"tooltip_tombstone_health"				"200 400 600 800"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"600 800 1000 1200"
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"15.0 20.0 25.0 30.0"
 			}
 			"03"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"zombie_interval"		"3.0"
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"600 800 1000 1200"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"health_threshold"		"100 200 300 400"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health_threshold_pct_tooltip"		"20 25 30 35"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"zombie_interval"		"3.0"
 			}
 		}
 	}
@@ -21264,23 +21340,28 @@
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"incoming_damage"			"500 400 300 200"
+				"outgoing_damage_tooltip"	"20 25 30 35"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"images_count"				"3 3 3 3"
+				"incoming_damage"			"500 400 300 200"
 			}
 			"05"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"invuln_duration"			"0.3"
+				"var_type"					"FIELD_INTEGER"
+				"tooltip_incoming_damage_total_pct"			"600 500 400 300"
 			}
 			"06"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"outgoing_damage_tooltip"	"20 25 30 35"
+				"images_count"				"3 3 3 3"
 			}
+			"07"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"invuln_duration"			"0.3"
+			}			
 		}
 	}
 
@@ -26638,29 +26719,28 @@
 			"01"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"illusion_outgoing_damage"			"-70.0 -60.0 -50.0 -40.0"		
+				"illusion_duration"					"32.0"
 			}
 			"02"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"illusion_incoming_damage"			"325.0"
+				"illusion_outgoing_damage"			"-70.0 -60.0 -50.0 -40.0"		
 			}
 			"03"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"illusion_incoming_damage_total_tooltip"			"425.0"
+				"illusion_outgoing_tooltip"			"30.0 40.0 50.0 60.0"
 			}
 			"04"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"illusion_outgoing_tooltip"			"30.0 40.0 50.0 60.0"
+				"illusion_incoming_damage"			"325.0"
 			}
 			"05"
 			{
 				"var_type"							"FIELD_FLOAT"
-				"illusion_duration"					"32.0"
-			}
-	
+				"illusion_incoming_damage_total_tooltip"			"425.0"
+			}			
 		}
 	}
 
@@ -27223,10 +27303,12 @@
 		// General
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5637"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"				"1"
 
 		// Casting
@@ -27249,33 +27331,33 @@
 		{
 			"01"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"75 150 225 300"
+				"var_type"					"FIELD_INTEGER"
+				"damage"					"75 150 225 300"
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"215"
+				"var_type"					"FIELD_INTEGER"
+				"bolt_speed"				"1200"
 			}
 			"03"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"bolt_speed"			"1200"
+				"var_type"					"FIELD_FLOAT"
+				"minimum_purge_duration"	"0.5"
 			}
 			"04"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"minimum_purge_duration"			"0.3"
+				"var_type"					"FIELD_FLOAT"
+				"maximum_purge_duration"	"2.5"
 			}
 			"05"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"maximum_purge_duration"			"2.5"
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"215"
 			}
 			"06"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"purge_rate"			"5"
+				"var_type"					"FIELD_FLOAT"
+				"max_channel_time_tooltip"	"2.5"
 			}
 		}
 	}
@@ -27290,7 +27372,9 @@
 		"ID"							"5638"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"	
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_NO"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -27319,6 +27403,11 @@
 				"var_type"				"FIELD_FLOAT"
 				"duration"				"3.0 4.0 5.0 6.0"
 			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"magic_damage_resistance_pct_tooltip"				"100"
+			}
 		}
 	}
 
@@ -27333,6 +27422,9 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"	
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"FightRecapLevel"				"1"
 
 		// Casting
@@ -27356,18 +27448,23 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"damage"				"90 180 270 360"
-			}
+			}			
 			"02"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"duration"				"9.0"
-			}
-			"03"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"heal_per_second"		"11.0 22.0 33.0 44.0"
 			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"total_heal_tooltip"	"99 198 297 396"
+			}
 			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"9.0"
+			}
+			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"tick_rate"				"1.0"
@@ -27386,7 +27483,7 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"	
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"	
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -31737,6 +31834,22 @@
 	}
 
 	//=================================================================================================================
+	// Ability: Shoot Firework
+	//=================================================================================================================
+	"shoot_firework"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5650"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	
+		"AbilityCastRange"				"1800"
+		"AbilityCastPoint"				"0.5"
+
+	}
+	
+
+	//=================================================================================================================
 	// Techies: Land Mines
 	//=================================================================================================================
 	"techies_land_mines"
@@ -32122,6 +32235,6 @@
 
 ////////////////////////
 ////////////////////////
-// Next Ability ID: 5650
+// Next Ability ID: 5651
 ////////////////////////
 ////////////////////////

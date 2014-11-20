@@ -518,7 +518,7 @@ Rule ancient_apparition_ImmortalityChance_25%_Rule
 
 Response ancient_apparition_PowerupIsPowerupBounty
 {
-	scene "scenes/ancient_apparition/ancient_apparition_appa_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/ancient_apparition/ancient_apparition_appa_lasthit_07.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule ancient_apparition_PowerupIsPowerupBounty_Rule

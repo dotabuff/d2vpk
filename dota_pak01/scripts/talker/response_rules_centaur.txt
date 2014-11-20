@@ -961,7 +961,7 @@ Rule centaur_ImmortalityChance_25%_Rule
 
 Response centaur_PowerupIsPowerupBounty
 {
-	scene "scenes/centaur/centaur_cent_drop_medium_01.vcd" nodelay noscene 
+	scene "scenes/centaur/centaur_cent_drop_medium_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule centaur_PowerupIsPowerupBounty_Rule

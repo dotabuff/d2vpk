@@ -756,7 +756,7 @@ Rule invoker_PowerupIsPowerupHasteChance_10%_Rule
 
 Response invoker_PowerupIsPowerupBounty
 {
-	scene "scenes/invoker/invoker_invo_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/invoker/invoker_invo_lasthit_07.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule invoker_PowerupIsPowerupBounty_Rule

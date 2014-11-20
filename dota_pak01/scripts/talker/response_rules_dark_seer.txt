@@ -515,7 +515,7 @@ Rule dark_seer_PowerupIsPowerupHaste_Rule
 
 Response dark_seer_PowerupIsPowerupBounty
 {
-	scene "scenes/dark_seer/dark_seer_dkseer_haste_02.vcd" nodelay noscene 
+	scene "scenes/dark_seer/dark_seer_dkseer_haste_02.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule dark_seer_PowerupIsPowerupBounty_Rule

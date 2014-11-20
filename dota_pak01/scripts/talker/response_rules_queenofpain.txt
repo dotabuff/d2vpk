@@ -791,7 +791,7 @@ Rule queenofpain_PowerupIsPowerupRegenerationChance_25%_Rule
 
 Response queenofpain_PowerupIsPowerupBounty
 {
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule queenofpain_PowerupIsPowerupBounty_Rule

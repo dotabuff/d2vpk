@@ -773,7 +773,7 @@ Rule lina_PowerupIsPowerupIllusionChance_25%_Rule
 
 Response lina_PowerupIsPowerupBounty
 {
-	scene "scenes/lina/lina_lina_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/lina/lina_lina_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule lina_PowerupIsPowerupBounty_Rule

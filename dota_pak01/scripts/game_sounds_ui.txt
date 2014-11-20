@@ -1247,7 +1247,7 @@
 "Loot_Drop_Stinger_Common"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0.8"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_01.wav"
 }
@@ -1255,7 +1255,7 @@
 "Loot_Drop_Stinger_Uncommon"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.7"
+	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_02.wav"
 }
@@ -1263,7 +1263,7 @@
 "Loot_Drop_Stinger_Rare"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.7"
+	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_03.wav"
 }
@@ -1271,7 +1271,7 @@
 "Loot_Drop_Stinger_Mythical"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"0.7"
+	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_04.wav"
 	"operator_stacks"
@@ -1392,7 +1392,7 @@
 "Loot_Drop_Stinger_Short"
 {
 	"channel"		"CHAN_ITEM"
-	"volume"		"1"
+	"volume"		"0.8"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_short.wav"
 }
@@ -1646,6 +1646,132 @@
 				"match_entity" "false"             
 				"match_substring" "false"
 				"match_entry" "ui.spect_message_in"                         
+			}                  
+			"popup_num_compare"
+			{
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"       
+				"input1" "@limit_popup_sound.output_entries_matching" // This is the percentage chance to play a null
+				"input2" "2" //match the max number of played sounds ( = input_max_entries + 1 )
+			}
+			"popup_block_me"
+			{
+				"input_execute" "@popup_num_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_spectui"
+		}
+	}
+}
+
+
+// In Game Spectator ======================================
+
+"ui.contract_assign"
+{
+	"volume"		"0.1"
+	"pitch"			"99, 101"
+	"wave"  "ui/contracts/contract_assign.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"start_stack"
+		{
+			"limit_pickup_sound"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "1.00000"
+				"match_entity" "false"             
+				"match_substring" "false"
+				"match_entry" "ui.contract_assign"                         
+			}                  
+			"pickup_num_compare"
+			{
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"       
+				"input1" "@limit_pickup_sound.output_entries_matching" // This is the percentage chance to play a null
+				"input2" "2" //match the max number of played sounds ( = input_max_entries + 1 )
+			}
+			"pickup_block_me"
+			{
+				"input_execute" "@pickup_num_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_spectui"
+		}
+	}
+}
+
+"ui.contract_complete"
+{
+	"volume"		"0.1"
+	"pitch"			"99, 101"
+	"wave"  "ui/contracts/contract_complete.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"start_stack"
+		{
+			"limit_popup_sound"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "1.00000"
+				"match_entity" "false"             
+				"match_substring" "false"
+				"match_entry" "ui.contract_complete"                         
+			}                  
+			"popup_num_compare"
+			{
+				"operator" "math_float"
+				"apply" "greater_than_or_equal"       
+				"input1" "@limit_popup_sound.output_entries_matching" // This is the percentage chance to play a null
+				"input2" "2" //match the max number of played sounds ( = input_max_entries + 1 )
+			}
+			"popup_block_me"
+			{
+				"input_execute" "@popup_num_compare.output"
+				"operator" "sys_output"
+				"input_float" "1"
+				"output" "block_start"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack"	"dota_limit_speakers_spectui"
+		}
+	}
+}
+
+"ui.contract_fail"
+{
+	"volume"		"0.1"
+	"pitch"			"99, 101"
+	"wave"  "ui/contracts/contract_fail.wav"
+	"soundentry_version" "2"
+	"operator_stacks" 
+	{
+		"start_stack"
+		{
+			"limit_popup_sound"
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "1.00000"
+				"match_entity" "false"             
+				"match_substring" "false"
+				"match_entry" "ui.contract_fail"                         
 			}                  
 			"popup_num_compare"
 			{
@@ -4225,7 +4351,7 @@
 	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/1.wav"
+	"wave"			"*vo/tut_npxdem/1.mp3"
 }
 "Tutorial.NPXDEM_2"
 {
@@ -4233,7 +4359,7 @@
 	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/2.wav"
+	"wave"			"*vo/tut_npxdem/2.mp3"
 }
 "Tutorial.NPXDEM_3"
 {
@@ -4241,7 +4367,7 @@
 	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/3.wav"
+	"wave"			"*vo/tut_npxdem/3.mp3"
 }
 "Tutorial.NPXDEM_4"
 {
@@ -4249,7 +4375,7 @@
 	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/4.wav"
+	"wave"			"*vo/tut_npxdem/4.mp3"
 }
 "Tutorial.NPXDEM_5"
 {
@@ -4257,7 +4383,7 @@
 	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/5.wav"
+	"wave"			"*vo/tut_npxdem/5.mp3"
 }
 "Tutorial.NPXDEM_6"
 {
@@ -4265,7 +4391,7 @@
 	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/6.wav"
+	"wave"			"*vo/tut_npxdem/6.mp3"
 }
 "Tutorial.NPXDEM_7"
 {
@@ -4273,7 +4399,7 @@
 	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/7.wav"
+	"wave"			"*vo/tut_npxdem/7.mp3"
 }
 "Tutorial.NPXDEM_8"
 {
@@ -4281,7 +4407,7 @@
 	"volume"		"0.8"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/8.wav"
+	"wave"			"*vo/tut_npxdem/8.mp3"
 }
 "Tutorial.NPXDEM_9"
 {
@@ -4289,7 +4415,7 @@
 	"volume"		"0.8"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/9.wav"
+	"wave"			"*vo/tut_npxdem/9.mp3"
 }
 "Tutorial.NPXDEM_10"
 {
@@ -4297,7 +4423,7 @@
 	"volume"		"1.0"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/10.wav"
+	"wave"			"*vo/tut_npxdem/10.mp3"
 }
 "Tutorial.NPXDEM_11"
 {
@@ -4305,7 +4431,7 @@
 	"volume"		"1.0"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"			"*vo/tut_npxdem/11.wav"
+	"wave"			"*vo/tut_npxdem/11.mp3"
 }
 
 "Tutorial.Notice.Speech"
@@ -4486,4 +4612,13 @@
 			}
 		}
 	} 
+}
+
+"ui.courier_in_use"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui/yoink.wav" 
 }

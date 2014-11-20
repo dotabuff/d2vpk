@@ -651,7 +651,7 @@ Rule tiny_PowerupIsPowerupDoubleDamageChance_25%_Rule
 
 Response tiny_PowerupIsPowerupBounty
 {
-	scene "scenes/tiny/tiny_tiny_purch_04.vcd" nodelay noscene  
+	scene "scenes/tiny/tiny_tiny_purch_04.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule tiny_PowerupIsPowerupBounty_Rule
@@ -662,7 +662,7 @@ Rule tiny_PowerupIsPowerupBounty_Rule
 
 Response tiny_PowerupIsPowerupBountyChance_30%
 {
-	scene "scenes/tiny/tiny_tiny_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/tiny/tiny_tiny_lasthit_07.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule tiny_PowerupIsPowerupBountyChance_30%_Rule

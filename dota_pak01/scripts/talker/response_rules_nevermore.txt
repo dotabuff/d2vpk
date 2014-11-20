@@ -1397,7 +1397,7 @@ Rule nevermore_PowerupIsPowerupRegeneration_Rule
 
 Response nevermore_PowerupIsPowerupBounty
 {
-	scene "scenes/nevermore/nevermore_nev_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule nevermore_PowerupIsPowerupBounty_Rule
@@ -1441,7 +1441,7 @@ Rule nevermore_PowerupIsPowerupInvisibilityChance_25%_Rule
 
 Response nevermore_PowerupIsShadowFiendEconArcanaIsPowerupBounty
 {
-	scene "scenes/nevermore/nevermore_nev_arc_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule nevermore_PowerupIsShadowFiendEconArcanaIsPowerupBounty_Rule

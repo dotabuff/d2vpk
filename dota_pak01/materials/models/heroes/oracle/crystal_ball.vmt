@@ -1,0 +1,48 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/oracle/crystal_ball_color"
+	"$normalmap" "models/development/flatnormal"
+	"$detail1"	"models/heroes/oracle/crystal_ball_detail"
+	"$maskmap1" "models/heroes/oracle/crystal_ball_masks1"
+	"$maskmap2" "models/heroes/oracle/crystal_ball_masks2"
+
+//	"$diffusewarp" "models/heroes/oracle/oracle_diffusewarp"
+//	"$envmap" "models/cubemaps/glossy"
+//	"$envmap" "models/cubemaps/cube_metal_grey"
+//	"$envmapintensity" "1"
+//	"$maskenvbymetalness" "1"
+
+	$SPECULAREXPONENT 150
+	$SPECULARSCALE 300
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 0.5 20]"
+//	$alphatest 1
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 1.8
+	$DETAIL1BLENDTOFULL 0
+	
+	$ignorebudgetcheck 1
+//	$nocull 1
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.15"
+			"texturescrollangle"	"-60"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

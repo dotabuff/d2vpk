@@ -724,7 +724,7 @@ Rule leshrac_PowerupIsPowerupRegeneration_Rule
 
 Response leshrac_PowerupIsPowerupBounty
 {
-	scene "scenes/leshrac/leshrac_lesh_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/leshrac/leshrac_lesh_lasthit_02.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule leshrac_PowerupIsPowerupBounty_Rule

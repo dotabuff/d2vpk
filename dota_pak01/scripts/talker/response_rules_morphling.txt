@@ -447,7 +447,7 @@ Rule morphling_PowerupIsPowerupHaste_Rule
 
 Response morphling_PowerupIsPowerupBounty
 {
-	scene "scenes/morphling/morphling_mrph_spawn_04.vcd" nodelay noscene 
+	scene "scenes/morphling/morphling_mrph_spawn_04.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule morphling_PowerupIsPowerupBounty_Rule

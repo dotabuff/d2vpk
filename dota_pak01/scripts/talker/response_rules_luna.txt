@@ -771,7 +771,7 @@ Rule luna_Immortality_Rule
 
 Response luna_PowerupIsPowerupBounty
 {
-	scene "scenes/luna/luna_luna_levelup_03.vcd" nodelay noscene 
+	scene "scenes/luna/luna_luna_levelup_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule luna_PowerupIsPowerupBounty_Rule

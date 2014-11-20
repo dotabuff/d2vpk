@@ -555,7 +555,7 @@ Rule zuus_PowerupIsPowerupHaste_Rule
 
 Response zuus_PowerupIsPowerupBounty
 {
-	scene "scenes/zuus/zuus_zuus_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/zuus/zuus_zuus_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule zuus_PowerupIsPowerupBounty_Rule

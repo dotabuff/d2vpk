@@ -855,7 +855,7 @@ Rule bounty_hunter_PowerupIsPowerupHaste_Rule
 
 Response bounty_hunter_PowerupIsPowerupBounty
 {
-	scene "scenes/bounty_hunter/bounty_hunter_bount_level_08.vcd" nodelay noscene 
+	scene "scenes/bounty_hunter/bounty_hunter_bount_level_08.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule bounty_hunter_PowerupIsPowerupBounty_Rule

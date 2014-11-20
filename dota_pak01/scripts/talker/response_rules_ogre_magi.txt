@@ -808,7 +808,7 @@ Rule ogre_magi_PowerupIsPowerupRegenerationChance_25%_Rule
 
 Response ogre_magi_PowerupIsPowerupBounty
 {
-	scene "scenes/ogre_magi/ogre_magi_ogmag_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/ogre_magi/ogre_magi_ogmag_lasthit_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule ogre_magi_PowerupIsPowerupBounty_Rule

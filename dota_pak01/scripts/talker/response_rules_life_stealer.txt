@@ -741,15 +741,15 @@ Rule life_stealer_PowerupIsPowerupDoubleDamage_Rule
 	response life_stealer_PowerupIsPowerupDoubleDamage
 }
 
-Response life_stealer_PowerupIsPowerBounty
+Response life_stealer_PowerupIsPowerupBounty
 {
-	scene "scenes/life_stealer/life_stealer_lifest_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/life_stealer/life_stealer_lifest_lasthit_02.vcd" nodelay noscene respeakdelay 300
 }
 
-Rule life_stealer_PowerupIsPowerBounty_Rule
+Rule life_stealer_PowerupIsPowerupBounty_Rule
 {
-	criteria Powerup Islife_stealer IsPowerBounty
-	response life_stealer_PowerupIsPowerBounty
+	criteria Powerup Islife_stealer IsPowerupBounty
+	response life_stealer_PowerupIsPowerupBounty
 }
 
 Response life_stealer_PowerupIsPowerupRegeneration

@@ -670,7 +670,7 @@ Rule mirana_ImmortalityChance_25%_Rule
 
 Response mirana_PowerupIsPowerupBounty
 {
-	scene "scenes/mirana/mirana_mir_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/mirana/mirana_mir_lasthit_02.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule mirana_PowerupIsPowerupBounty_Rule

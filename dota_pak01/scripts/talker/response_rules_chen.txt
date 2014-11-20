@@ -586,7 +586,7 @@ Rule chen_PowerupIsPowerupIllusionChance_25%_Rule
 
 Response chen_PowerupIsPowerupBounty
 {
-	scene "scenes/chen/chen_chen_purch_01.vcd" nodelay noscene  
+	scene "scenes/chen/chen_chen_purch_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule chen_PowerupIsPowerupBounty_Rule

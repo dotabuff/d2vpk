@@ -65,7 +65,7 @@
 	"4"
 	{
 		// teammate evaluation
-		"enabled"		"1"
+		"enabled"		"0"
 		"surveytype"		"long"		// 3 questions with no icon
 		"questions"
 		{
@@ -88,6 +88,21 @@
 				"responsestyle"	"lowhigh"
 			}
 			// Question 43 is whether or not the add friend button is hit
+		}
+	}
+	"5"
+	{
+		// teammate evaluation -- 1 question
+		"enabled"		"1"
+		"surveytype"	"long"	// hack to work with existing code
+		"questions"
+		{
+			"0"
+			{
+				// desire to play again
+				"questionid" "5"
+				"responsestyle" "lowhigh"
+			}
 		}
 	}
 	// Each survey is composed of 1 or more questions.  Different questions can be used in multiple surveys

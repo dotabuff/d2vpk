@@ -1,21 +1,21 @@
 "CustomHero"
 {
-	$baseTexture "models/heroes/oracle/oracle_body_color"
-	"$normalmap" "models/development/flatnormal"
+	"$baseTexture" "models/heroes/oracle/oracle_body_color"
+	"$normalmap" "models/heroes/oracle/oracle_body_normal"
 	"$maskmap1" "models/heroes/oracle/oracle_body_masks1"
 	"$maskmap2" "models/heroes/oracle/oracle_body_masks2"
 
-
-//	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
-//	"$envmap" "env_cubemap"
+	"$diffusewarp" "models/heroes/oracle/oracle_diffusewarp"
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" "1"
 
 
 	$SPECULAREXPONENT 20
 	$SPECULARSCALE 10
 	$AMBIENTSCALE 1
 	$SPECULARCOLOR "[1 1 1]"
-	$RIMLIGHTSCALE 1
-	$RIMLIGHTCOLOR "[1 2 3]"
+	$RIMLIGHTSCALE .5
+	$RIMLIGHTCOLOR "[1 10 20]"
 	$alphatest 1
 	
 	$ignorebudgetcheck 1

@@ -806,7 +806,7 @@ Rule sven_PowerupIsPowerupHasteChance_25%_Rule
 
 Response sven_PowerupIsPowerupBounty
 {
-	scene "scenes/sven/sven_sven_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/sven/sven_sven_lasthit_05.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule sven_PowerupIsPowerupBounty_Rule

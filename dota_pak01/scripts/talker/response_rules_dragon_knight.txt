@@ -825,7 +825,7 @@ Rule dragon_knight_ImmortalityIsInDragonForm_Rule
 
 Response dragon_knight_PowerupIsPowerupBounty
 {
-	scene "scenes/dragon_knight/dragon_knight_drag_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_lasthit_09.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule dragon_knight_PowerupIsPowerupBounty_Rule
@@ -913,7 +913,7 @@ Rule dragon_knight_PowerupIsPowerupInvisibility_Rule
 
 Response dragon_knight_PowerupIsInDragonFormIsPowerupBounty
 {
-	scene "scenes/dragon_knight/dragon_knight_dragon_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_lasthit_09.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule dragon_knight_PowerupIsInDragonFormIsPowerupBounty_Rule

@@ -47,7 +47,7 @@
 "Ability.SandKing_Epicenter.spell"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"volume"		"0.7"
 	"soundlevel"  	"SNDLVL_75dB"
 	"wave"			")weapons/hero/sand_king/sand_king_epicenter_spell.wav"
 	"operator_stacks"
@@ -62,6 +62,10 @@
 			"speakers_spatialize"
 			{
 				"input_radius"  "600"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "0.5"
 			}
 		}
 	}
@@ -89,7 +93,7 @@
 			}
 			"volume_fade_out"
 			{
-				"input_max" "1.0"
+				"input_max" "0.75"
 			}
 		}
 	}

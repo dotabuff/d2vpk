@@ -555,7 +555,7 @@ Rule jakiro_PowerupIsPowerupDoubleDamage_Rule
 
 Response jakiro_PowerupIsPowerupBounty
 {
-	scene "scenes/jakiro/jakiro_jak_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/jakiro/jakiro_jak_lasthit_05.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule jakiro_PowerupIsPowerupBounty_Rule

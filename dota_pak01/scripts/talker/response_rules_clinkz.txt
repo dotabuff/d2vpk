@@ -672,7 +672,7 @@ Rule clinkz_PowerupIsPowerupIllusionChance_25%_Rule
 
 Response clinkz_PowerupIsPowerupBounty
 {
-	scene "scenes/clinkz/clinkz_clinkz_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/clinkz/clinkz_clinkz_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule clinkz_PowerupIsPowerupBounty_Rule

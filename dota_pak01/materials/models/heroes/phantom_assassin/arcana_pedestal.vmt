@@ -1,0 +1,44 @@
+"CustomHero"
+{
+	$baseTexture 	"models/heroes/phantom_assassin/arcana_pedestal_color"
+	$normalmap	"models/heroes/phantom_assassin/arcana_pedestal_normal"
+ 	"$maskmap1" 	"models/heroes/phantom_assassin/arcana_pedestal_masks1"
+	"$maskmap2" 	"models/heroes/phantom_assassin/arcana_pedestal_masks2"
+	
+	"$diffusewarp" "models/heroes/oracle/oracle_diffusewarp"
+
+	$SPECULAREXPONENT 35
+	$SPECULARSCALE 5
+	$RIMLIGHTCOLOR "[0.4 0.65 1]"	
+	$SPECULARCOLOR "[.2 .75 1.25]"
+
+	$RIMLIGHTSCALE 0
+	$AMBIENTSCALE 1
+	
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 3
+	$DETAIL1BLENDFACTOR 5
+	"$detail1"  "models/heroes/phantom_assassin/pa_arcana_detail"
+
+//	$SPECULAR_BLOOM_SCALE      .05
+//	$SPECULAR_BLOOM_COLOR "[.1 .2 .4]"
+//	$SPECULAR_BLOOM_SHIFT 0
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.05
+			"texturescrollangle"	180
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

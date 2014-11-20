@@ -841,7 +841,7 @@ Rule alchemist_PowerupIsPowerupDoubleDamage_Rule
 
 Response alchemist_PowerupIsPowerupBounty
 {
-	scene "scenes/alchemist/alchemist_alch_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/alchemist/alchemist_alch_lasthit_07.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule alchemist_PowerupIsPowerupBounty_Rule

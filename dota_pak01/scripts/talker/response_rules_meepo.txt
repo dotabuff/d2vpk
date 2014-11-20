@@ -874,7 +874,7 @@ Rule meepo_ImmortalityChance_25%_Rule
 
 Response meepo_PowerupIsPowerupBounty
 {
-	scene "scenes/meepo/meepo_meepo_levelup_01.vcd" nodelay noscene 
+	scene "scenes/meepo/meepo_meepo_levelup_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule meepo_PowerupIsPowerupBounty_Rule

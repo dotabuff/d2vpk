@@ -4,7 +4,7 @@
 
 "Creep_Good_Range.PreAttack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_NORM"
 	"wave"			"null.wav"
 	"operator_stacks"
@@ -18,7 +18,7 @@
 
 "Creep_Good_Range.Attack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
 	"soundlevel"	"SNDLVL_72dB"
 	"pitch"			"95, 105"
@@ -38,6 +38,19 @@
 			"block_dist"
 			{
 				"input2" "1000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
 			}
 		}
 	}
@@ -65,6 +78,19 @@
 			"block_dist"
 			{
 				"input2" "1000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
 			}
 		}
 	}
@@ -97,52 +123,13 @@
 			{
 				"input2" "1000"
 			}
-			"play_second_layer"
-			{
-			"input_execute"	"0"
-			"entry_name" "Creep_Good_Melee.Vocal"
-			}
-		}
-	}
-}
-
-"Creep_Good_Melee.Vocal"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.5, 1.0"
-	"soundlevel"  	"SNDLVL_72dB"
-	"pitch"			"110, 120"
-	"rndwave"
-	{
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"weapons/creep/greevil/preattack01.wav"
-		"wave"	"weapons/creep/greevil/preattack02.wav"
-		"wave"	"weapons/creep/greevil/preattack03.wav"
-	}
-	"soundentry_version" "2"
-	"operator_stacks"
-	{
-		"start_stack"
-		{
-			"import_stack" "start_block_at_distance"
-			"block_dist"
-			{
-				"input2" "1000"
-			}
 		}
 	}
 }
 
 "Creep_Good_Melee.Attack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95, 105"
@@ -180,7 +167,7 @@
 	"channel"		"CHAN_BODY"
 	"soundlevel"	"SNDLVL_63dB"
 	"pitch"			"95,105"
-	"volume"		"1"
+	"volume"		"0.6, 1.0"
 	"rndwave"
 	{
 		"wave"	"physics\footsteps\creeps\good\01.wav"
@@ -237,7 +224,7 @@
 
 "Creep_Good_Engine.Attack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_WEAPON"
 	"volume"		"0.6"
 	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"100"
@@ -256,6 +243,19 @@
 			"block_dist"
 			{
 				"input2" "1500"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
 			}
 		}
 	}
@@ -315,7 +315,7 @@
 
 "Creep_Siege_Radiant.Destruction"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_BODY"
 	"volume"		"1"
 	"soundlevel"  		"SNDLVL_78dB"
 	"pitch"			"95,100"
@@ -340,7 +340,7 @@
 
 "Creep_Bad_Range.PreAttack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_WEAPON"
 	"soundlevel"	"SNDLVL_NORM"
 	"wave"			"null.wav"
 	"operator_stacks"
@@ -354,7 +354,7 @@
 
 "Creep_Bad_Range.Attack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
 	"soundlevel"	"SNDLVL_72dB"
 	"pitch"			"95, 105"
@@ -374,6 +374,19 @@
 			"block_dist"
 			{
 				"input2" "1000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
 			}
 		}
 	}
@@ -402,6 +415,19 @@
 			"block_dist"
 			{
 				"input2" "1000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
 			}
 		}
 	}
@@ -433,52 +459,13 @@
 			{
 				"input2" "1000"
 			}
-			"play_second_layer"
-			{
-			"input_execute"	"0"
-			"entry_name" "Creep_Bad_Melee.Vocal"
-			}
-		}
-	}
-}
-
-"Creep_Bad_Melee.Vocal"
-{
-	"channel"		"CHAN_WEAPON"
-	"volume"		"0.5, 1.0"
-	"soundlevel"  	"SNDLVL_72dB"
-	"pitch"			"90, 100"
-	"rndwave"
-	{
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"null.wav"
-		"wave"	"weapons/creep/greevil/preattack04.wav"
-		"wave"	"weapons/creep/greevil/preattack05.wav"
-		"wave"	"weapons/creep/greevil/preattack06.wav"
-		"wave"	"weapons/creep/greevil/preattack07.wav"
-	}
-	"operator_stacks"
-	{
-		"start_stack"
-		{
-			"import_stack" "start_block_at_distance"
-			"block_dist"
-			{
-				"input2" "1000"
-			}
 		}
 	}
 }
 
 "Creep_Bad_Melee.Attack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95, 105"
@@ -516,7 +503,7 @@
 	"channel"		"CHAN_BODY"
 	"soundlevel"	"SNDLVL_63dB"
 	"pitch"			"95,105"
-	"volume"		"1"
+	"volume"		"0.6, 1.0"
 	"rndwave"
 	{
 		"wave"	"physics\footsteps\creeps\bad\01.wav"
@@ -573,7 +560,7 @@
 
 "Creep_Bad_Engine.Attack"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"95, 105"
@@ -587,6 +574,19 @@
 			"block_dist"
 			{
 				"input2" "1500"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
 			}
 		}
 	}
@@ -646,7 +646,7 @@
 
 "Creep_Siege_Dire.Destruction"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_BODY"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_78dB"
 	"pitch"			"95,100"
@@ -2386,3 +2386,129 @@
 	}
 }
 
+//megas
+
+"Creep_Good_Melee_Mega.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/whoosh01.wav"
+		"wave"	"weapons/creep/shared/whoosh02.wav"
+		"wave"	"weapons/creep/shared/whoosh03.wav"
+		"wave"	"weapons/creep/shared/whoosh04.wav"
+		"wave"	"weapons/creep/shared/whoosh05.wav"
+		"wave"	"weapons/creep/shared/whoosh06.wav"
+		"wave"	"weapons/creep/shared/whoosh07.wav"
+		"wave"	"weapons/creep/shared/whoosh08.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Good_Melee_Mega.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/melee_hit01.wav"
+		"wave"	"weapons/creep/shared/melee_hit02.wav"
+		"wave"	"weapons/creep/shared/melee_hit03.wav"
+		"wave"	"weapons/creep/shared/melee_hit04.wav"
+		"wave"	"weapons/creep/shared/melee_hit05.wav"
+		"wave"	"weapons/creep/shared/melee_hit06.wav"
+		"wave"	"weapons/creep/shared/melee_hit07.wav"
+		"wave"	"weapons/creep/shared/melee_hit08.wav"
+		"wave"	"weapons/creep/shared/melee_hit09.wav"
+		"wave"	"weapons/creep/shared/melee_hit10.wav"
+		"wave"	"weapons/creep/shared/melee_hit11.wav"
+		"wave"	"weapons/creep/shared/melee_hit12.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+		}
+	}
+}
+
+"Creep_Bad_Melee_Mega.PreAttack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"90, 100"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/shared/whoosh01.wav"
+		"wave"	"weapons/creep/shared/whoosh02.wav"
+		"wave"	"weapons/creep/shared/whoosh03.wav"
+		"wave"	"weapons/creep/shared/whoosh04.wav"
+		"wave"	"weapons/creep/shared/whoosh05.wav"
+		"wave"	"weapons/creep/shared/whoosh06.wav"
+		"wave"	"weapons/creep/shared/whoosh07.wav"
+		"wave"	"weapons/creep/shared/whoosh08.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"block_dist"
+			{
+				"input2" "1000"
+			}
+		}
+	}
+}
+
+"Creep_Bad_Melee_Mega.Attack"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/good/melee_attack_impact1.wav"
+		"wave"	"weapons/creep/good/melee_attack_impact2.wav"
+		"wave"	"weapons/creep/good/melee_attack_impact3.wav"
+		"wave"	"weapons/creep/bad/melee_attack_impact1.wav"
+		"wave"	"weapons/creep/bad/melee_attack_impact2.wav"
+		"wave"	"weapons/creep/bad/melee_attack_impact3.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+		}
+	}
+}

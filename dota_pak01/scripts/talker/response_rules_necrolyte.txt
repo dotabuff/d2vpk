@@ -509,7 +509,7 @@ Rule necrolyte_PowerupIsPowerupIllusionChance_25%_Rule
 
 Response necrolyte_PowerupIsPowerupBounty
 {
-	scene "scenes/necrolyte/necrolyte_necr_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/necrolyte/necrolyte_necr_lasthit_04.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule necrolyte_PowerupIsPowerupBounty_Rule

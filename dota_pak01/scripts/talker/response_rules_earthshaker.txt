@@ -594,6 +594,7 @@ Response earthshaker_LastHit
 	scene "scenes/earthshaker/earthshaker_erth_lasthit_01.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_lasthit_02.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_purch_03.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_lasthit_04.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_lasthit_05.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_lasthit_06.vcd" nodelay noscene 
@@ -603,17 +604,6 @@ Response earthshaker_LastHit
 Rule earthshaker_LastHit_Rule
 {
 	criteria LastHit Isearthshaker 
-	response earthshaker_LastHit
-}
-
-Response earthshaker_LastHit
-{
-	scene "scenes/earthshaker/earthshaker_erth_purch_03.vcd" nodelay noscene 
-}
-
-Rule earthshaker_LastHit_Rule
-{
-	criteria LastHit Isearthshaker  
 	response earthshaker_LastHit
 }
 
@@ -708,7 +698,7 @@ Rule earthshaker_PowerupIsPowerupHaste_Rule
 
 Response earthshaker_PowerupIsPowerupBounty
 {
-	scene "scenes/earthshaker/earthshaker_erth_win_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_win_04.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule earthshaker_PowerupIsPowerupBounty_Rule

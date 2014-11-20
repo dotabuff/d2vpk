@@ -837,7 +837,7 @@ Rule ursa_PowerupIsPowerupRegeneration_Rule
 
 Response ursa_PowerupIsPowerupBounty
 {
-	scene "scenes/ursa/ursa_ursa_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/ursa/ursa_ursa_lasthit_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule ursa_PowerupIsPowerupBounty_Rule

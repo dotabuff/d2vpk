@@ -758,7 +758,7 @@ Rule lycan_Victory_Rule
 
 Response lycan_PowerupIsPowerupBounty
 {
-	scene "scenes/lycan/lycan_lycan_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/lycan/lycan_lycan_lasthit_06.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule lycan_PowerupIsPowerupBounty_Rule

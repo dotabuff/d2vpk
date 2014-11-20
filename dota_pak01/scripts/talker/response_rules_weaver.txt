@@ -530,7 +530,7 @@ Rule weaver_PowerupIsPowerupDoubleDamageChance_25%_Rule
 
 Response weaver_PowerupIsPowerupBounty
 {
-	scene "scenes/weaver/weaver_weav_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/weaver/weaver_weav_lasthit_06.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule weaver_PowerupIsPowerupBounty_Rule

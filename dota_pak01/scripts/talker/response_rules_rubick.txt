@@ -111,6 +111,7 @@ criterion "IsRubickMulti_1" "multicastcount" "1" weight 5 required
 criterion "IsRubickMulti_2" "multicastcount" "2" weight 5 required
 criterion "IsRubickMulti_3" "multicastcount" "3" weight 5 required
 criterion "RubickSanitysEclipse" "abilityname" "obsidian_destroyer_sanity_eclipse" weight 5 required
+criterion "IsRubickFalsePromise" "abilityname" "oracle_false_promise" weight 5 required
 criterion "RubickSupernova" "abilityname" "phoenix_supernova" weight 5 required
 criterion "IsRubickRot" "abilityname" "pudge_rot" weight 5 required
 criterion "IsRubickMeatHook" "abilityname" "pudge_meat_hook" weight 5 required
@@ -854,6 +855,31 @@ Rule rubick_CustomIsRubickIsRubickMaledictFailToKillIsRubickMaledictFinalTick_Ru
 {
 	criteria Custom Isrubick IsRubick IsRubickMaledictFailToKill IsRubickMaledictFinalTick
 	response rubick_CustomIsRubickIsRubickMaledictFailToKillIsRubickMaledictFinalTick
+}
+
+Response rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickFalsePromise IsFPSurvived
+	response rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived
+}
+
+Response rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%
+{
+	scene "scenes/rubick/rubick_rubick_failure_01.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_failure_02.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_failure_03.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_failure_04.vcd" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickFalsePromise IsFPDied Chance_50%
+	response rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%
 }
 
 Response rubick_Custom
@@ -3449,7 +3475,7 @@ Rule rubick_PowerupIsPowerupRegeneration_Rule
 
 Response rubick_PowerupIsPowerupBounty
 {
-	scene "scenes/rubick/rubick_rubick_nullfield_02.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_nullfield_02.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule rubick_PowerupIsPowerupBounty_Rule

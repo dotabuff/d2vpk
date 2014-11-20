@@ -739,7 +739,7 @@ Rule batrider_PowerupIsPowerupHasteChance_25%_Rule
 
 Response batrider_PowerupIsPowerupBounty
 {
-	scene "scenes/batrider/batrider_bat_lasthit_14.vcd" nodelay noscene 
+	scene "scenes/batrider/batrider_bat_lasthit_14.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule batrider_PowerupIsPowerupBounty_Rule

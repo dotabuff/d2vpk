@@ -873,7 +873,7 @@ Rule elder_titan_PowerupIsPowerupIllusion_Rule
 
 Response elder_titan_PowerupIsPowerupBounty
 {
-	scene "scenes/elder_titan/elder_titan_elder_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/elder_titan/elder_titan_elder_lasthit_09.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule elder_titan_PowerupIsPowerupBounty_Rule

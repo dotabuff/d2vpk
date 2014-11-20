@@ -66,6 +66,11 @@
 		"gold"			"short"
 	}
 
+	"dota_effigy_kill"
+	{
+		"owner_userid"	"short"
+	}
+
 	"dota_roshan_kill"
 	{
 		"teamnumber"	"short"
@@ -184,6 +189,27 @@
 		"gold"				"short"
 		"killer_id"			"short"
 		"victim_id"			"short"
+	}
+
+	"dota_chat_assassin_announce"
+	{
+		"assassin_id"		"short"
+		"target_id"			"short"
+		"message"		"short"
+	}
+
+	"dota_chat_assassin_denied"
+	{
+		"assassin_id"		"short"
+		"target_id"			"short"
+		"message"		"short"
+	}
+
+	"dota_chat_assassin_success"
+	{
+		"assassin_id"		"short"
+		"target_id"			"short"
+		"message"		"short"
 	}
 
 	"dota_player_update_hero_selection"
@@ -918,6 +944,10 @@
 		"account_id"			"uint64"
 		"hero_entindex"			"short"
 		"display_ui_on_left"	"bool"
+	}
+
+	"ingame_events_changed"
+	{
 	}
 }
 

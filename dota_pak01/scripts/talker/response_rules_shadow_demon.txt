@@ -716,7 +716,7 @@ Rule shadow_demon_Immortality_Rule
 
 Response shadow_demon_PowerupIsPowerupBountyChance_30%
 {
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_lasthit_06.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule shadow_demon_PowerupIsPowerupBountyChance_30%_Rule
@@ -727,7 +727,7 @@ Rule shadow_demon_PowerupIsPowerupBountyChance_30%_Rule
 
 Response shadow_demon_PowerupIsPowerupBounty
 {
-	scene "scenes/shadow_demon/shadow_demon_shadow_demon_rival_14.vcd" nodelay noscene 
+	scene "scenes/shadow_demon/shadow_demon_shadow_demon_rival_14.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule shadow_demon_PowerupIsPowerupBounty_Rule

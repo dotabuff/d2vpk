@@ -651,7 +651,7 @@ Rule sandking_PowerupIsPowerupHaste_Rule
 
 Response sandking_PowerupIsPowerupBounty
 {
-	scene "scenes/sandking/sandking_skg_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/sandking/sandking_skg_lasthit_07.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule sandking_PowerupIsPowerupBounty_Rule

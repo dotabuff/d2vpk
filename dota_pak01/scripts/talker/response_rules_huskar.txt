@@ -624,7 +624,7 @@ Rule huskar_PowerupIsPowerupDoubleDamage_Rule
 
 Response huskar_PowerupIsPowerupBounty
 {
-	scene "scenes/huskar/huskar_husk_lasthit_08.vcd" nodelay noscene 
+	scene "scenes/huskar/huskar_husk_lasthit_08.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule huskar_PowerupIsPowerupBounty_Rule

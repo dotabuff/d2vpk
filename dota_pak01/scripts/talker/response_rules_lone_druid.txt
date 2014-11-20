@@ -1352,7 +1352,7 @@ Rule lone_druid_PurchaseIsBearFormIsMaskOfMadness_Rule
 
 Response lone_druid_PowerupIsPowerupBounty
 {
-	scene "scenes/lone_druid/lone_druid_lone_druid_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/lone_druid/lone_druid_lone_druid_lasthit_06.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule lone_druid_PowerupIsPowerupBounty_Rule
@@ -1579,6 +1579,16 @@ Rule lone_druid_PowerupIsBearFormIsPowerupInvisibilityChance_25%_Rule
 {
 	criteria Powerup Islone_druid IsBearForm IsPowerupInvisibility Chance_25%
 	response lone_druid_PowerupIsBearFormIsPowerupInvisibilityChance_25%
+}
+
+Response lone_druid_PowerupIsBearFormIsPowerupBounty
+{
+}
+
+Rule lone_druid_PowerupIsBearFormIsPowerupBounty_Rule
+{
+	criteria Powerup Islone_druid IsBearForm IsPowerupBounty
+	response lone_druid_PowerupIsBearFormIsPowerupBounty
 }
 
 Response lone_druid_Bottling

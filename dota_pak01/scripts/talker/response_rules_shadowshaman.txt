@@ -490,7 +490,7 @@ Rule shadowshaman_PowerupIsPowerupRegenerationChance_25%_Rule
 
 Response shadowshaman_PowerupIsPowerupBounty
 {
-	scene "scenes/shadowshaman/shadowshaman_shad_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule shadowshaman_PowerupIsPowerupBounty_Rule

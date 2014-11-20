@@ -911,7 +911,7 @@ Rule tidehunter_PowerupIsPowerupRegeneration_Rule
 
 Response tidehunter_PowerupIsPowerupBounty
 {
-	scene "scenes/tidehunter/tidehunter_tide_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/tidehunter/tidehunter_tide_lasthit_04.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule tidehunter_PowerupIsPowerupBounty_Rule

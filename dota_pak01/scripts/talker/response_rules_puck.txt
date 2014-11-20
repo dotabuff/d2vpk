@@ -706,7 +706,7 @@ Rule puck_PowerupIsPowerupRegeneration_Rule
 
 Response puck_PowerupIsPowerupBounty
 {
-	scene "scenes/puck/puck_puck_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/puck/puck_puck_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule puck_PowerupIsPowerupBounty_Rule

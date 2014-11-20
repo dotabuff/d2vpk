@@ -686,7 +686,7 @@ Rule razor_PowerupIsPowerupRegeneration_Rule
 
 Response razor_PowerupIsPowerupBounty
 {
-	scene "scenes/razor/razor_raz_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/razor/razor_raz_lasthit_07.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule razor_PowerupIsPowerupBounty_Rule

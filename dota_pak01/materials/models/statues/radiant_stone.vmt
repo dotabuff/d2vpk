@@ -1,0 +1,21 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/axe/axe_body_color"
+	"$normalmap" "models/heroes/axe/axe_body_normal"
+	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+	//"$maskmap1" "models/heroes/axe/axe_body_masks1"
+	//"$maskmap2" "models/heroes/axe/axe_body_masks2"
+	"$FRESNELWARP" "models/heroes/axe/axe_fresnelranges"
+	
+	$SPECULAREXPONENT 7
+	$SPECULARSCALE 22.5
+	$SPECULARCOLOR "[1 .1 .1]"
+	$RIMLIGHTSCALE 11
+	$RIMLIGHTCOLOR "[0 1 0]"
+	$alphatest 1
+
+	"$detail1" "models/heroes/earthshaker/totem_glow"
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 2.5
+	$DETAIL1BLENDFACTOR 1
+}

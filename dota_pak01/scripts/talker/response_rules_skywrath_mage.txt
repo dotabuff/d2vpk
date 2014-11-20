@@ -489,7 +489,6 @@ Response skywrath_mage_Respawn
 	scene "scenes/skywrath_mage/skywrath_mage_drag_respawn_03.vcd" nodelay noscene 
 	scene "scenes/skywrath_mage/skywrath_mage_drag_respawn_04.vcd" nodelay noscene 
 	scene "scenes/skywrath_mage/skywrath_mage_drag_respawn_05.vcd" nodelay noscene 
-	scene "scenes/skywrath_mage/skywrath_mage_drag_respawn_06.vcd" nodelay noscene 
 	scene "scenes/skywrath_mage/skywrath_mage_drag_respawn_07.vcd" nodelay noscene 
 	scene "scenes/skywrath_mage/skywrath_mage_drag_respawn_08.vcd" nodelay noscene 
 	scene "scenes/skywrath_mage/skywrath_mage_drag_respawn_09.vcd" nodelay noscene 
@@ -500,6 +499,17 @@ Rule skywrath_mage_Respawn_Rule
 {
 	criteria Respawn Isskywrath_mage 
 	response skywrath_mage_Respawn
+}
+
+Response skywrath_mage_RespawnChance_5%
+{
+	scene "scenes/skywrath_mage/skywrath_mage_drag_respawn_06.vcd" nodelay noscene 
+}
+
+Rule skywrath_mage_RespawnChance_5%_Rule
+{
+	criteria Respawn Isskywrath_mage Chance_5%
+	response skywrath_mage_RespawnChance_5%
 }
 
 Response skywrath_mage_PurchaseIsExpensiveItem
@@ -811,7 +821,7 @@ Rule skywrath_mage_ImmortalityChance_25%_Rule
 
 Response skywrath_mage_PowerupIsPowerupBounty
 {
-	scene "scenes/skywrath_mage/skywrath_mage_drag_lasthit_11.vcd" nodelay noscene 
+	scene "scenes/skywrath_mage/skywrath_mage_drag_lasthit_11.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule skywrath_mage_PowerupIsPowerupBounty_Rule

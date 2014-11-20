@@ -741,7 +741,7 @@ Rule drowranger_PowerupIsPowerupRegeneration_Rule
 
 Response drowranger_PowerupIsPowerupBounty
 {
-	scene "scenes/drowranger/drowranger_drow_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/drowranger/drowranger_drow_lasthit_09.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule drowranger_PowerupIsPowerupBounty_Rule

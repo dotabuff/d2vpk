@@ -1223,7 +1223,7 @@ Rule earth_spirit_PowerupIsPowerupHasteChance_25%_Rule
 
 Response earth_spirit_PowerupIsPowerupBounty
 {
-	scene "scenes/earth_spirit/earth_spirit_earthspi_itemmoderate_01.vcd" nodelay noscene 
+	scene "scenes/earth_spirit/earth_spirit_earthspi_itemmoderate_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule earth_spirit_PowerupIsPowerupBounty_Rule

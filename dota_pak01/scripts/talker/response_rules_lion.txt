@@ -383,7 +383,7 @@ Rule lion_Immortality_Rule
 
 Response lion_PowerupIsPowerupBounty
 {
-	scene "scenes/lion/lion_lion_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/lion/lion_lion_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule lion_PowerupIsPowerupBounty_Rule

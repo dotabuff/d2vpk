@@ -476,7 +476,7 @@
 	{
 		"update_stack"
 		{
-			"import_stack" "dota_update_vo_clamped"
+			"import_stack" "dota_update_vo_clamped_panning"
 		}		
 	}
 }
@@ -3138,4 +3138,138 @@
 			"import_stack" "dota_attack_block_dist"
 		}
 	}
+}
+
+"Rune.DD"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"	
+	"wave"			")items/rune_dd.wav"
+	//"operator_stacks"
+	//{
+	//	"update_stack"
+	//	{
+	//		"import_stack" "dota_update_vo_clamped_panning"
+	//	}		
+	//}
+}
+
+"Rune.Haste"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"	
+	"wave"			")items/rune_haste.wav"
+	//"operator_stacks"
+	//{
+	//	"update_stack"
+	//	{
+	//		"import_stack" "dota_update_vo_clamped_panning"
+	//	}		
+	//}
+}
+
+"Rune.Illusion"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"	
+	"wave"			")items/rune_illusion.wav"
+	//"operator_stacks"
+	//{
+	//	"update_stack"
+	//	{
+	//		"import_stack" "dota_update_vo_clamped_panning"
+	//	}		
+	//}
+}
+
+"Rune.Invis"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"	
+	"wave"			")items/rune_invis.wav"
+	//"operator_stacks"
+	//{
+	//	"update_stack"
+	//	{
+	//		"import_stack" "dota_update_vo_clamped_panning"
+	//	}		
+	//}
+}
+
+"Rune.Regen"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"	
+	"wave"			")items/rune_regen.wav"
+	//"operator_stacks"
+	//{
+	//	"update_stack"
+	//	{
+	//		"import_stack" "dota_update_vo_clamped_panning"
+	//	}		
+	//}
+}
+
+"Rune.Bounty"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_120dB"	
+	"wave"			")items/rune_bounty.wav"
+	//"operator_stacks"
+	//{
+	//	"update_stack"
+	//	{
+	//		"import_stack" "dota_update_vo_clamped_panning"
+	//	}		
+	//}
+}
+
+"Evade_Melee.Player"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+}
+
+"Evade_Projectile.Player"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+}
+
+"Evade_Tower.Player"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+}
+
+"Hero_Melee.Miss"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+}
+
+"Hero_Range.Miss"
+{
+	"channel"		"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_NORM"
+	"wave"			"null.wav"
+}
+
+"Charming_Consumable.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"items\charming_consolation.wav"
 }

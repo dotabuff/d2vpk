@@ -815,7 +815,7 @@ Rule slark_Immortality_Rule
 
 Response slark_PowerupIsPowerupBounty
 {
-	scene "scenes/slark/slark_slark_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/slark/slark_slark_lasthit_09.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule slark_PowerupIsPowerupBounty_Rule

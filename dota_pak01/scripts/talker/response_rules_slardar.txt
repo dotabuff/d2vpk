@@ -140,7 +140,7 @@ Rule slardar_PowerupIsPowerupRegeneration_Rule
 
 Response slardar_PowerupIsPowerupBounty
 {
-	scene "scenes/slardar/slardar_slar_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/slardar/slardar_slar_lasthit_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule slardar_PowerupIsPowerupBounty_Rule

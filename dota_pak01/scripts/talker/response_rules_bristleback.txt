@@ -617,7 +617,7 @@ Rule bristleback_PowerupIsPowerupIllusionChance_20%_Rule
 
 Response bristleback_PowerupIsPowerupBounty
 {
-	scene "scenes/bristleback/bristleback_bristle_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/bristleback/bristleback_bristle_lasthit_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule bristleback_PowerupIsPowerupBounty_Rule

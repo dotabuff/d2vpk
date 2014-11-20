@@ -640,7 +640,7 @@ Rule night_stalker_PowerupIsPowerupRegeneration_Rule
 
 Response night_stalker_PowerupIsPowerupBounty
 {
-	scene "scenes/night_stalker/night_stalker_nstalk_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/night_stalker/night_stalker_nstalk_lasthit_04.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule night_stalker_PowerupIsPowerupBounty_Rule

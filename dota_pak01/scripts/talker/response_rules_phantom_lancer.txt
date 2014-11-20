@@ -729,7 +729,7 @@ Rule phantom_lancer_PowerupIsPowerupHaste_Rule
 
 Response phantom_lancer_PowerupIsPowerupBounty
 {
-	scene "scenes/phantom_lancer/phantom_lancer_plance_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/phantom_lancer/phantom_lancer_plance_lasthit_04.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule phantom_lancer_PowerupIsPowerupBounty_Rule

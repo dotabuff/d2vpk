@@ -625,7 +625,7 @@ Rule broodmother_ImmortalityChance_25%_Rule
 
 Response broodmother_PowerupIsPowerupBounty
 {
-	scene "scenes/broodmother/broodmother_broo_deny_11.vcd" nodelay noscene 
+	scene "scenes/broodmother/broodmother_broo_deny_11.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule broodmother_PowerupIsPowerupBounty_Rule

@@ -844,7 +844,7 @@ Rule pudge_PowerupIsPowerupDoubleDamageChance_25%_Rule
 
 Response pudge_PowerupIsPowerupBounty
 {
-	scene "scenes/pudge/pudge_pud_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lasthit_06.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule pudge_PowerupIsPowerupBounty_Rule

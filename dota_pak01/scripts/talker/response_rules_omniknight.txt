@@ -866,7 +866,7 @@ Rule omniknight_PowerupIsPowerupDoubleDamage_Rule
 
 Response omniknight_PowerupIsPowerupBounty
 {
-	scene "scenes/omniknight/omniknight_omni_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/omniknight/omniknight_omni_lasthit_02.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule omniknight_PowerupIsPowerupBounty_Rule

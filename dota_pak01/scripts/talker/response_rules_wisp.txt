@@ -235,59 +235,26 @@ Rule wisp_Immortality_Rule
 	response wisp_Immortality
 }
 
-Response wisp_PowerupIsPowerupHaste
+Response wisp_Powerup
 {
 	scene "scenes/wisp/wisp_all_runes_pickup.vcd" nodelay noscene 
 }
 
-Rule wisp_PowerupIsPowerupHaste_Rule
+Rule wisp_Powerup_Rule
 {
-	criteria Powerup Iswisp IsPowerupHaste
-	response wisp_PowerupIsPowerupHaste
+	criteria Powerup Iswisp 
+	response wisp_Powerup
 }
 
-Response wisp_PowerupIsPowerupDoubleDamage
+Response wisp_PowerupIsPowerupBounty
 {
-	scene "scenes/wisp/wisp_all_runes_pickup.vcd" nodelay noscene 
+	scene "scenes/wisp/wisp_all_runes_pickup.vcd" nodelay noscene respeakdelay 180
 }
 
-Rule wisp_PowerupIsPowerupDoubleDamage_Rule
+Rule wisp_PowerupIsPowerupBounty_Rule
 {
-	criteria Powerup Iswisp IsPowerupDoubleDamage
-	response wisp_PowerupIsPowerupDoubleDamage
-}
-
-Response wisp_PowerupIsPowerupRegeneration
-{
-	scene "scenes/wisp/wisp_all_runes_pickup.vcd" nodelay noscene 
-}
-
-Rule wisp_PowerupIsPowerupRegeneration_Rule
-{
-	criteria Powerup Iswisp IsPowerupRegeneration
-	response wisp_PowerupIsPowerupRegeneration
-}
-
-Response wisp_PowerupIsPowerupIllusion
-{
-	scene "scenes/wisp/wisp_all_runes_pickup.vcd" nodelay noscene 
-}
-
-Rule wisp_PowerupIsPowerupIllusion_Rule
-{
-	criteria Powerup Iswisp IsPowerupIllusion
-	response wisp_PowerupIsPowerupIllusion
-}
-
-Response wisp_PowerupIsPowerupInvisibility
-{
-	scene "scenes/wisp/wisp_all_runes_pickup.vcd" nodelay noscene 
-}
-
-Rule wisp_PowerupIsPowerupInvisibility_Rule
-{
-	criteria Powerup Iswisp IsPowerupInvisibility
-	response wisp_PowerupIsPowerupInvisibility
+	criteria Powerup Iswisp IsPowerupBounty
+	response wisp_PowerupIsPowerupBounty
 }
 
 Response wisp_CooldownLittleNag

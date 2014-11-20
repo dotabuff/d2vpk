@@ -997,7 +997,7 @@ Rule shredder_PowerupIsPowerupHasteChance_25%_Rule
 
 Response shredder_PowerupIsPowerupBounty
 {
-	scene "scenes/shredder/shredder_timb_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/shredder/shredder_timb_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule shredder_PowerupIsPowerupBounty_Rule

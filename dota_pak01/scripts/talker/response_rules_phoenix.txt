@@ -260,6 +260,17 @@ Rule phoenix_Powerup_Rule
 	response phoenix_Powerup
 }
 
+Response phoenix_PowerupIsPowerupBounty
+{
+	scene "scenes/phoenix/phoenix_phoenix_bird_rune.vcd" nodelay noscene respeakdelay 180
+}
+
+Rule phoenix_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isphoenix IsPowerupBounty
+	response phoenix_PowerupIsPowerupBounty
+}
+
 Response phoenix_CooldownLittleNag
 {
 	scene "scenes/phoenix/phoenix_phoenix_bird_no01.vcd" nodelay noscene 

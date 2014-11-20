@@ -2,10 +2,11 @@
 {
 	$baseTexture "models/heroes/oracle/oracle_shoulders_color"
 	"$normalmap" "models/development/flatnormal"
+	"$detail1"	"models/heroes/oracle/oracle_shoulders_detail"
 	"$maskmap1" "models/heroes/oracle/oracle_shoulders_masks1"
 	"$maskmap2" "models/heroes/oracle/oracle_shoulders_masks2"
 
-
+//	"$diffusewarp" "models/heroes/oracle/oracle_diffusewarp"
 	"$envmap" "models/cubemaps/glossy"
 	"$envmapintensity" "1"
 
@@ -14,9 +15,14 @@
 	$SPECULARSCALE 10
 	$AMBIENTSCALE 1
 	$SPECULARCOLOR "[1 1 1]"
-	$RIMLIGHTSCALE .1
-	$RIMLIGHTCOLOR "[1 2 3]"
+	$RIMLIGHTSCALE 0
+	$RIMLIGHTCOLOR "[1 15 20]"
 	$alphatest 1
+	
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR .5
+	$DETAIL1BLENDTOFULL 0
 	
 	$ignorebudgetcheck 1
 	$nocull 1
@@ -24,6 +30,12 @@
 	"$cloakPassEnabled" "1"
 	"Proxies"
 	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.075"
+			"texturescrollangle"	"-90"
+		}
 		"invis_proxy"
 		{
 		}

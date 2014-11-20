@@ -146,7 +146,7 @@ Rule crystalmaiden_PowerupIsPowerupIllusionChance_5%_Rule
 
 Response crystalmaiden_PowerupIsPowerupBounty
 {
-	scene "scenes/crystalmaiden/crystalmaiden_cm_bottle_03.vcd" nodelay noscene 
+	scene "scenes/crystalmaiden/crystalmaiden_cm_bottle_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule crystalmaiden_PowerupIsPowerupBounty_Rule

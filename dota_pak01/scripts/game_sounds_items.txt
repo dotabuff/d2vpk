@@ -360,10 +360,10 @@
 "DOTA_Item.HotD.Activate"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0"
-	"soundlevel"  	"SNDLVL_75dB"
-	"pitch"			"100"
-	"wave"			"null.wav"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")items\hotd.wav"
 }
 
 
@@ -443,6 +443,15 @@
 			}
 		}
 	}
+}
+
+"DOTA_Item.LinkensSphere.Target"
+{
+	"channel"		"CHAN_STATIC"
+ 	"volume"			"1"
+ 	"soundlevel"  	 "SNDLVL_81dB"
+ 	"pitch"			"95,105" 
+ 	"wave"			")items/linkens_target.wav"
 }
 
 "DOTA_Item.VeilofDiscord.Activate"
@@ -930,4 +939,21 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"wave"			")items/crimson_guard.mp3"
+}
+
+"Item_Desolator.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 0.7"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")items/deso_target.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
 }

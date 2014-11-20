@@ -743,7 +743,7 @@ Rule enigma_PowerupIsPowerupHasteChance_25%_Rule
 
 Response enigma_PowerupIsPowerupBounty
 {
-	scene "scenes/enigma/enigma_enig_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/enigma/enigma_enig_lasthit_05.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule enigma_PowerupIsPowerupBounty_Rule

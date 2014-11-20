@@ -675,7 +675,7 @@ Rule silencer_PowerupIsPowerupRegeneration_Rule
 
 Response silencer_PowerupIsPowerupBounty
 {
-	scene "scenes/silencer/silencer_silen_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/silencer/silencer_silen_lasthit_07.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule silencer_PowerupIsPowerupBounty_Rule

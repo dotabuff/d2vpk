@@ -4870,7 +4870,7 @@ Rule terrorblade_PowerupIsPowerupRegenerationChance_25%_Rule
 
 Response terrorblade_PowerupIsPowerupBounty
 {
-	scene "scenes/terrorblade/terrorblade_terr_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_lasthit_06.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule terrorblade_PowerupIsPowerupBounty_Rule
@@ -5116,7 +5116,7 @@ Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupRegenerationChance_25%_Rule
 
 Response terrorblade_PowerupIsTerrorEconShardsIsPowerupBounty
 {
-	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/terrorblade/terrorblade_terr_shards_lasthit_06.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule terrorblade_PowerupIsTerrorEconShardsIsPowerupBounty_Rule

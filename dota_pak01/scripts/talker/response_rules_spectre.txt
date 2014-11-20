@@ -349,7 +349,7 @@ Rule spectre_ImmortalityChance_25%_Rule
 
 Response spectre_PowerupIsPowerupBounty
 {
-	scene "scenes/spectre/spectre_spec_purch_01.vcd" nodelay noscene  
+	scene "scenes/spectre/spectre_spec_purch_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule spectre_PowerupIsPowerupBounty_Rule

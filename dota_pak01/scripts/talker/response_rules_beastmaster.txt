@@ -527,7 +527,7 @@ Rule beastmaster_PowerupIsPowerupHaste_Rule
 
 Response beastmaster_PowerupIsPowerupBounty
 {
-	scene "scenes/beastmaster/beastmaster_beas_ability_animalsound_05.vcd" nodelay noscene 
+	scene "scenes/beastmaster/beastmaster_beas_ability_animalsound_05.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule beastmaster_PowerupIsPowerupBounty_Rule

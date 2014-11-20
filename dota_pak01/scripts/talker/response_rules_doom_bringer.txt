@@ -674,7 +674,7 @@ Rule doom_bringer_PowerupIsPowerupIllusionChance_25%_Rule
 
 Response doom_bringer_PowerupIsPowerupBounty
 {
-	scene "scenes/doom_bringer/doom_bringer_doom_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/doom_bringer/doom_bringer_doom_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule doom_bringer_PowerupIsPowerupBounty_Rule

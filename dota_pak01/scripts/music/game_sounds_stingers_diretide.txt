@@ -1,3 +1,9 @@
+// playgamesound "diretide_eventstart_Stinger"; playgamesound "diretide_select_target_Stinger"; playgamesound "diretide_sugarrush_Stinger";
+// playgamesound "diretide_roshdeath_Stinger"; playgamesound "DOTAMusic_Diretide_Finale";
+
+
+
+
 
 "diretide_eventstart_Stinger"
 {
@@ -23,93 +29,17 @@
 		
 		"start_stack"
 		{
-			"delay_output"
-            {
-             "operator" "sys_output"
-             "input_float" "1.0"
-             "output" "delay"
-            }
-			
-			"import_stack" "dota_start_music_type_tracker"
-			
-			"stop_death_track"
-			{
-				"operator" "track_stop"
-				"track_name" "dead"
-			}
-			
-			"stop_stinger_track"
-			{
-				"operator" "track_stop"
-				"track_name" "stinger_high_priority"
-			}
-				
-			"add_music_value"
-			{
-				"input2" "32" //Respawn Value
-			}
-			
-            "get_debug_printing_opvar" 
-            {
-				"operator" "get_opvar_float"
-				"opvar" "debug_print_music"
-			}
-			
-			"**************RESPAWN MUSIC STARTED**************" 
-			{
-				"execute_once" "false"
-				"input_execute"	"@get_debug_printing_opvar.output"
-				"operator" "util_print_float"
-				"input" "1.0"
-			}
+			"import_stack" "dota_start_respawn_music"
 		}
 		
 		"update_stack"
 		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Ultimates"
-			}
-// 			"speakers_spatialize"
-// 			{
-// 				"input_radius"  "1000"
-// 			}
-			"update_track"
-			{
-				"operator" "track_update"
-				"stop_channel_on_track" "true"	
-			}
-			
-			"stop_death_track"
-			{
-				"operator" "track_stop"
-				"track_name" "dead"
-			}
+			"import_stack" "dota_update_default_diretide_eventstart"
 		}
 		
 		"stop_stack"
 		{	
-			"import_stack" "dota_stop_music_type_tracker"
-			
-			"remove_music_value"
-			{
-				"input2" "32" //Respawn
-			}	
-			
-            "get_debug_printing_opvar" 
-            {
-				"operator" "get_opvar_float"
-				"opvar" "debug_print_music"
-			}
-			
-			"**************RESPAWN MUSIC KILLED**************" 
-			{
-				"execute_once" "false"
-				"input_execute"	"@get_debug_printing_opvar.output"
-				"operator" "util_print_float"
-				"input" "1.0"
-			}
+			"import_stack" "dota_stop_respawn_music"
 		}
 	}
 }
@@ -138,38 +68,12 @@
 	
 		"start_stack"
 		{
-			"delay_output"
-            {
-             "operator" "sys_output"
-             "input_float" "1.0"
-             "output" "delay"
-            }
-			
-			"**************REINCARNATE MUSIC STARTED**************" 
-			{
-				"execute_once" "false"
-				"input_execute"	"@get_debug_printing_opvar.output"
-				"operator" "util_print_float"
-				"input" "1.0"
-			}
+			"import_stack" "dota_start_diretide_stinger"
 		}
 		
 		"update_stack"
 		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
-			"speakers_spatialize"
-			{
-				"input_radius"  "1000"
-			}
-			"update_track"
-			{
-				"operator" "track_update"
-				"stop_channel_on_track" "true"
-			}
+			"import_stack" "dota_update_diretide_select_target"
 		}
 	}
 }
@@ -198,38 +102,12 @@
 	
 		"start_stack"
 		{
-			"delay_output"
-            {
-             "operator" "sys_output"
-             "input_float" "1.0"
-             "output" "delay"
-            }
-			
-			"**************REINCARNATE MUSIC STARTED**************" 
-			{
-				"execute_once" "false"
-				"input_execute"	"@get_debug_printing_opvar.output"
-				"operator" "util_print_float"
-				"input" "1.0"
-			}
+			"import_stack" "dota_start_diretide_stinger"
 		}
 		
 		"update_stack"
 		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Ultimates"
-			}
-// 			"speakers_spatialize"
-// 			{
-// 				"input_radius"  "1000"
-// 			}
-			"update_track"
-			{
-				"operator" "track_update"
-				"stop_channel_on_track" "true"
-			}
+			"import_stack" "dota_update_diretide_sugarrush"
 		}
 	}
 }
@@ -258,38 +136,12 @@
 	
 		"start_stack"
 		{
-			"delay_output"
-            {
-             "operator" "sys_output"
-             "input_float" "1.0"
-             "output" "delay"
-            }
-			
-			"**************REINCARNATE MUSIC STARTED**************" 
-			{
-				"execute_once" "false"
-				"input_execute"	"@get_debug_printing_opvar.output"
-				"operator" "util_print_float"
-				"input" "1.0"
-			}
+			"import_stack" "dota_start_diretide_stinger"
 		}
 		
 		"update_stack"
 		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Weapons"
-			}
-// 			"speakers_spatialize"
-// 			{
-// 				"input_radius"  "1000"
-// 			}
-			"update_track"
-			{
-				"operator" "track_update"
-				"stop_channel_on_track" "true"
-			}
+			"import_stack" "dota_update_diretide_roshandeath"
 		}
 	}
 }
@@ -310,29 +162,15 @@
 	{
 		"start_stack"
 		{
-			"import_stack" "dota_start_music_type_tracker"
-				
-			"add_music_value"
-			{
-				"input2" "2048" //Lose
-			}
+			"import_stack" "dota_start_diretide_finale"
 		}
 		"update_stack"
 		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Stingers"
-			}
+			"import_stack" "dota_update_default_stinger"
 		}
 		"stop_stack"
 		{	
-			"import_stack" "dota_stop_music_type_tracker"
-			
-			"remove_music_value"
-			{
-				"input2" "2048" //Lose
-			}	
+			"import_stack" "dota_stop_lose_music"
 		}
 	}
 }

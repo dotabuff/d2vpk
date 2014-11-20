@@ -970,7 +970,7 @@ Rule naga_siren_PowerupIsPowerupRegenerationChance_10%_Rule
 
 Response naga_siren_PowerupIsPowerupBounty
 {
-	scene "scenes/naga_siren/naga_siren_naga_levelup_03.vcd" nodelay noscene 
+	scene "scenes/naga_siren/naga_siren_naga_levelup_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule naga_siren_PowerupIsPowerupBounty_Rule

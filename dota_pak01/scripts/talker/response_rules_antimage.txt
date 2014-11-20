@@ -519,7 +519,7 @@ Rule antimage_ImmortalityChance_25%_Rule
 
 Response antimage_PowerupIsPowerupBounty
 {
-	scene "scenes/antimage/antimage_anti_deny_09.vcd" nodelay noscene 
+	scene "scenes/antimage/antimage_anti_deny_09.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule antimage_PowerupIsPowerupBounty_Rule

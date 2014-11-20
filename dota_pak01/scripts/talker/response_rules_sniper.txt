@@ -652,7 +652,7 @@ Rule sniper_PowerupIsPowerupDoubleDamageChance_25%_Rule
 
 Response sniper_PowerupIsPowerupBounty
 {
-	scene "scenes/sniper/sniper_snip_purch_03.vcd" nodelay noscene  
+	scene "scenes/sniper/sniper_snip_purch_03.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule sniper_PowerupIsPowerupBounty_Rule

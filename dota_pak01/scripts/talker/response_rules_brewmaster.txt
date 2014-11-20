@@ -954,6 +954,17 @@ Rule brewmaster_PowerupIsPowerupInvisibilityChance_25%_Rule
 	response brewmaster_PowerupIsPowerupInvisibilityChance_25%
 }
 
+Response brewmaster_PowerupIsPowerupBounty
+{
+	scene "scenes/brewmaster/brewmaster_brew_lasthit_01.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule brewmaster_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isbrewmaster IsPowerupBounty
+	response brewmaster_PowerupIsPowerupBounty
+}
+
 Response brewmaster_CooldownLittleNag
 {
 	scene "scenes/brewmaster/brewmaster_brew_notyet_01.vcd" nodelay noscene 

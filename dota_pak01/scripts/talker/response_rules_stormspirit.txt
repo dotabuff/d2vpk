@@ -741,7 +741,7 @@ Rule stormspirit_PowerupIsPowerupRegenerationChance_25%_Rule
 
 Response stormspirit_PowerupIsPowerupBounty
 {
-	scene "scenes/stormspirit/stormspirit_ss_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/stormspirit/stormspirit_ss_lasthit_05.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule stormspirit_PowerupIsPowerupBounty_Rule

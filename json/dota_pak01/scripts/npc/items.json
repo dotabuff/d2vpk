@@ -469,7 +469,7 @@
       "ItemQuality": "component",
       "ItemAliases": "gem of true sight",
       "ItemSellable": "0",
-      "ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
+      "ItemShareability": "ITEM_FULLY_SHAREABLE",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
       "ItemStockMax": "1",
       "ItemStockTime": "600.0",
@@ -719,7 +719,7 @@
       "ItemQuality": "consumable",
       "ItemAliases": "bottle",
       "ItemStackable": "0",
-      "ItemShareability": "ITEM_FULLY_SHAREABLE",
+      "ItemShareability": "ITEM_PARTIALLY_SHAREABLE",
       "ItemPermanent": "1",
       "ItemInitialCharges": "3",
       "ItemDisplayCharges": "1",
@@ -1694,19 +1694,19 @@
           "soul_additional_charges": 1
         },
         {
-          "soul_heal_amount": 400
+          "soul_heal_interval": 0.25
         },
         {
-          "soul_heal_duration": 8.0
+          "soul_heal_amount": 400
         },
         {
           "soul_damage_amount": 150
         },
         {
-          "soul_damage_duration": 8.0
+          "soul_heal_duration": 8.0
         },
         {
-          "soul_heal_interval": 0.25
+          "soul_damage_duration": 8.0
         }
       ]
     },
@@ -3350,16 +3350,31 @@
           "images_count": 2
         },
         {
+          "tooltip_illusion_duration": 20
+        },
+        {
           "images_do_damage_percent_melee": -67
+        },
+        {
+          "tooltip_damage_outgoing_melee": 33
         },
         {
           "images_take_damage_percent_melee": 250
         },
         {
+          "tooltip_damage_incoming_melee_total_pct": 350
+        },
+        {
           "images_do_damage_percent_ranged": -72
         },
         {
+          "tooltip_damage_outgoing_ranged": 28
+        },
+        {
           "images_take_damage_percent_ranged": 300
+        },
+        {
+          "tooltip_damage_incoming_ranged_total_pct": 400
         },
         {
           "cooldown_melee": 35.0
@@ -3369,12 +3384,6 @@
         },
         {
           "vision_radius": 1000
-        },
-        {
-          "tooltip_outgoing_melee": 33
-        },
-        {
-          "tooltip_outgoing_range": 28
         }
       ]
     },

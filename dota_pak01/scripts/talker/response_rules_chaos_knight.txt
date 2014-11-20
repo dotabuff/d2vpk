@@ -895,7 +895,7 @@ Rule chaos_knight_PowerupIsPowerupIllusionChance_25%_Rule
 
 Response chaos_knight_PowerupIsPowerupBounty
 {
-	scene "scenes/chaos_knight/chaos_knight_chaknight_purch_02.vcd" nodelay noscene speakonce
+	scene "scenes/chaos_knight/chaos_knight_chaknight_purch_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule chaos_knight_PowerupIsPowerupBounty_Rule

@@ -896,7 +896,7 @@ Rule disruptor_PowerupIsPowerupRegeneration_Rule
 
 Response disruptor_PowerupIsPowerupBounty
 {
-	scene "scenes/disruptor/disruptor_dis_itemmoderate_01.vcd" nodelay noscene 
+	scene "scenes/disruptor/disruptor_dis_itemmoderate_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule disruptor_PowerupIsPowerupBounty_Rule

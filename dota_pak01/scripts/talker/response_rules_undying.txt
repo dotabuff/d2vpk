@@ -1847,7 +1847,7 @@ Rule undying_ImmortalityIsGolem_Rule
 
 Response undying_PowerupIsPowerupBounty
 {
-	scene "scenes/undying/undying_undying_lasthit_08.vcd" nodelay noscene 
+	scene "scenes/undying/undying_undying_lasthit_08.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule undying_PowerupIsPowerupBounty_Rule

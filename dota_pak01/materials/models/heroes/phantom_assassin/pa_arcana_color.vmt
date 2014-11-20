@@ -1,0 +1,50 @@
+"CustomHero"
+{
+	$baseTexture 	"models/heroes/phantom_assassin/pa_arcana_color"
+	$normalmap	"models/heroes/phantom_assassin/pa_arcana_normal"
+ 	"$maskmap1" 	"models/heroes/phantom_assassin/pa_arcana_masks1"
+	"$maskmap2" 	"models/heroes/phantom_assassin/pa_arcana_masks2"
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 1
+	$RIMLIGHTCOLOR "[0.5 0.6 0.4]"	
+	$SPECULARCOLOR "[0.7 0.9 1]"
+	
+	"$envmap" "models/cubemaps/glossy"
+	"$envmapintensity" ".25"
+	$MASKENVBYMETALNESS 1	
+	
+	"$nocull" "0"
+
+	$RIMLIGHTSCALE 5
+	$AMBIENTSCALE 1
+	$IgnoreBudgetCheck 1
+	$alphatest 1
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 3
+	$DETAIL1BLENDFACTOR 10
+	"$detail1"  "models/heroes/phantom_assassin/pa_arcana_detail"
+	
+ 	$SPECULAR_BLOOM_SCALE      .05
+	$SPECULAR_BLOOM_COLOR "[.1 .2 .4]"
+	$SPECULAR_BLOOM_SHIFT 0
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.05
+			"texturescrollangle"	0
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

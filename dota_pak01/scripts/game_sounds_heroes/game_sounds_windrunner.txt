@@ -191,14 +191,13 @@
 	}
 }
 
-"Ability.Windrunner"
+"Ability.Windrun"
 {
-	"channel"		"CHAN_WEAPON"
-	"volume"		"1"
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
 	"soundlevel"  	"SNDLVL_81dB"
-	"pitch"			"90, 110"
-	"wave"			")weapons/hero/weaver/shukuchi.wav"
-	"soundentry_version" "2"
+	"pitch"			"95, 105"
+	"wave"			"weapons/hero/windrunner/windrun.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -210,7 +209,11 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "300"
+				"input_radius"  "150"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "0.75"
 			}
 		}
 	}

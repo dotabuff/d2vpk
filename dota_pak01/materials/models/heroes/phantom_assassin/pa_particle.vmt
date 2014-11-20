@@ -1,0 +1,21 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/phantom_assassin/pa_color"
+	"$normalmap" "models/development/flatnormal"
+
+//	$diffusewarp "models/heroes/storm_spirit/storm_spirit_staticremnant_diffusewarp"
+//	$FRESNELWARP "models/heroes/storm_spirit/storm_spirit_staticremnant_fresnelranges"
+
+	$SPECULAREXPONENT 50
+
+	$SPECULARSCALE 50
+
+//	$SPECULARBLENDTOFULL 1
+//	$DIFFUSEWARPBLENDTOFUL 1
+	$alphatest 0
+	$RIMLIGHTSCALE 20
+	$additive 1
+  $ALLOWDIFFUSEMODULATION 1
+	$rimlightcolor "[.3 .4 4]"
+
+}

@@ -759,24 +759,13 @@ Rule vengefulspirit_PowerupIsPowerupRegeneration_Rule
 
 Response vengefulspirit_PowerupIsPowerupBounty
 {
-	scene "scenes/vengefulspirit/vengefulspirit_vng_drop_common_01.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_drop_common_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule vengefulspirit_PowerupIsPowerupBounty_Rule
 {
 	criteria Powerup Isvengefulspirit IsPowerupBounty
 	response vengefulspirit_PowerupIsPowerupBounty
-}
-
-Response vengefulspirit_PowerupIsPowerupBountyChance_30%
-{
-	scene "scenes/vengefulspirit/vengefulspirit_vng_purch_02.vcd" nodelay noscene speakonce
-}
-
-Rule vengefulspirit_PowerupIsPowerupBountyChance_30%_Rule
-{
-	criteria Powerup Isvengefulspirit IsPowerupBounty Chance_30%
-	response vengefulspirit_PowerupIsPowerupBountyChance_30%
 }
 
 Response vengefulspirit_PowerupIsPowerupIllusion

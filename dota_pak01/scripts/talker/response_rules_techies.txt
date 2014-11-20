@@ -1116,7 +1116,7 @@ Rule techies_ImmortalityChance_25%_Rule
 
 Response techies_PowerupIsPowerupBountyChance_30%
 {
-	scene "scenes/techies/techies_tech_itemmoderate_02.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_itemmoderate_02.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule techies_PowerupIsPowerupBountyChance_30%_Rule
@@ -1127,7 +1127,7 @@ Rule techies_PowerupIsPowerupBountyChance_30%_Rule
 
 Response techies_PowerupIsPowerupBounty
 {
-	scene "scenes/techies/techies_tech_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/techies/techies_tech_lasthit_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule techies_PowerupIsPowerupBounty_Rule

@@ -612,7 +612,7 @@ Rule viper_PowerupIsPowerupRegeneration_Rule
 
 Response viper_PowerupIsPowerupBounty
 {
-	scene "scenes/viper/viper_vipe_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/viper/viper_vipe_lasthit_01.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule viper_PowerupIsPowerupBounty_Rule

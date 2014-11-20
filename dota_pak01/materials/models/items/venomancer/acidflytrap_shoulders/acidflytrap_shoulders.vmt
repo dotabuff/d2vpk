@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/venomancer/acidflytrap_shoulders/acidflytrap_shoulders_color"
+	"$normalmap"		"models/items/venomancer/acidflytrap_shoulders/acidflytrap_shoulders_normal"
+	"$maskmap1"		"models/items/venomancer/acidflytrap_shoulders/acidflytrap_shoulders_mask1"
+	"$maskmap2"		"models/items/venomancer/acidflytrap_shoulders/acidflytrap_shoulders_mask2"
+	"$detail1"		"models/heroes/venomancer/venomancer_motion"
+	"$alphatest"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"8"
+	"$RIMLIGHTCOLOR"		"[0.9 0.9 0.2]"
+	"$RIMLIGHTSCALE"		"2"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"2"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.060000"
+			"texturescrollangle"		"83"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.100000"
+			"texturescrollangle"		"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
