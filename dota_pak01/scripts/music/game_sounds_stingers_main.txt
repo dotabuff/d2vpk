@@ -8,7 +8,15 @@
 	"wave"			")music/stingers/reincarnate.wav"
 	"operator_stacks"
 	{
-		
+		"start_stack"
+		{
+			"delay_output"
+            {
+             "operator" "sys_output"
+             "input_float" "1.2"
+             "output" "delay"
+            }
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
