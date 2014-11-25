@@ -1757,7 +1757,7 @@
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_84dB"
+	"soundlevel"  	"SNDLVL_78dB"
 	"rndwave"
 	{
 		"wave" 	"weapons/creep/neutral/centaur_khan_stomp_01.wav"
@@ -1850,7 +1850,7 @@
 "n_creep_OgreMagi.FrostArmor"
 {
 	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_81dB"
+	"soundlevel"	"SNDLVL_78dB"
 	"wave"			"weapons\creep\neutral\orgremagi_iceboost.wav"
 	"operator_stacks"
 	{
@@ -1983,7 +1983,7 @@
 "n_creep_Thunderlizard_Big.Stomp"
 {
 	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_85dB"
+	"soundlevel"	"SNDLVL_78dB"
 	"wave"			"weapons\creep\neutral\thunderlizard_stomp.wav"
 	"operator_stacks"
 	{
@@ -2000,7 +2000,7 @@
 "n_creep_Thunderlizard_Big.Roar"
 {
 	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_85dB"
+	"soundlevel"	"SNDLVL_78dB"
 	"wave"			"weapons\creep\neutral\thunderlizard_roar.wav"
 	"operator_stacks"
 	{
@@ -2019,6 +2019,7 @@
 "n_creep_ForestTrollHighPriest.Heal"
 {
 	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_75dB"
 	"wave"			"weapons\creep\neutral\troll_priest_heal.wav"
 	"operator_stacks"
@@ -2037,7 +2038,7 @@
 "n_creep_TrollWarlord.Ensnare"
 {
 	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_84dB"
+	"soundlevel"	"SNDLVL_78dB"
 	"wave"			"weapons\creep\neutral\troll_cast_net.wav"
 	"operator_stacks"
 	{
@@ -2075,7 +2076,7 @@
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_84dB"
+	"soundlevel"  	"SNDLVL_78dB"
 	"rndwave"
 	{
 		"wave" 	"weapons/creep/neutral/ursa_thunder_clap_01.wav"
