@@ -131,12 +131,10 @@ Response legion_commander_Kill
 	scene "scenes/legion_commander/legion_commander_legcom_kill_05.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_kill_06.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_kill_07.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_kill_08.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_kill_09.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_kill_10.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_kill_12.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_kill_13.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_kill_14.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_kill_15.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_kill_19.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_laugh_01.vcd" nodelay noscene 
@@ -153,6 +151,28 @@ Rule legion_commander_Kill_Rule
 {
 	criteria Kill Islegion_commander 
 	response legion_commander_Kill
+}
+
+Response legion_commander_KillChance_3%
+{
+	scene "scenes/legion_commander/legion_commander_legcom_kill_08.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%_Rule
+{
+	criteria Kill Islegion_commander Chance_3%
+	response legion_commander_KillChance_3%
+}
+
+Response legion_commander_KillChance_1%
+{
+	scene "scenes/legion_commander/legion_commander_legcom_kill_14.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_1%_Rule
+{
+	criteria Kill Islegion_commander Chance_1%
+	response legion_commander_KillChance_1%
 }
 
 Response legion_commander_KillIsLegionOddsChance_10%
@@ -5069,7 +5089,6 @@ Rule legion_commander_PurchaseIsVanguardIsLegionEconDemon_Rule
 Response legion_commander_Select
 {
 	scene "scenes/legion_commander/legion_commander_legcom_rare_01.vcd" nodelay noscene 
-	scene "scenes/legion_commander/legion_commander_legcom_rare_02.vcd" nodelay noscene 
 	scene "scenes/legion_commander/legion_commander_legcom_rare_03.vcd" nodelay noscene 
 }
 
@@ -5077,6 +5096,17 @@ Rule legion_commander_Select_Rule
 {
 	criteria Select Islegion_commander 
 	response legion_commander_Select
+}
+
+Response legion_commander_SelectChance_1%
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rare_02.vcd" nodelay noscene 
+}
+
+Rule legion_commander_SelectChance_1%_Rule
+{
+	criteria Select Islegion_commander Chance_1%
+	response legion_commander_SelectChance_1%
 }
 
 Response legion_commander_SelectIsLegionEconDemon
