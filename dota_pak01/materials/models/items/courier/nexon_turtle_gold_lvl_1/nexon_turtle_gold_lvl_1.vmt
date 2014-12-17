@@ -5,11 +5,18 @@
 	"$maskmap1"		"models/items/courier/nexon_turtle_gold_lvl_1/nexon_turtle_gold_lvl_1_mask1"
 	"$maskmap2"		"models/items/courier/nexon_turtle_gold_lvl_1/nexon_turtle_gold_lvl_1_mask2"
 	"$ALPHATEST"		"1"
-	"$SPECULAREXPONENT"		"16"
-	"$SPECULARSCALE"		"1"
-	"$RIMLIGHTSCALE"		"1"
+	"$SPECULAREXPONENT" 	"22"
+	"$SPECULARSCALE" 	"12"
+	"$SPECULARCOLOR" 	"[1 1 1]"
+
+	"$RIMLIGHTSCALE"		"2"
 	"$RIMLIGHTCOLOR"		"[1 1 1]"
 	"$cloakPassEnabled"		"1"
+	
+	"$ENVMAP" "models\items\undying\idol_of_ruination\cube_idol_gold"
+	"$ENVMAPINTENSITY" 	"4"
+	"$MASKENVBYMETALNESS" 	"1"
+
 	"Proxies"
 	{
 		"invis_proxy"

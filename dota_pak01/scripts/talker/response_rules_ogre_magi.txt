@@ -4,6 +4,7 @@ criterion "IsAllyogre_magi" "nearby_ally" "npc_dota_hero_ogre_magi" weight 5 req
 criterion "IsOgreMagiFireblast" "abilityname" "ogre_magi_fireblast" weight 5 required
 criterion "IsOgreMagiScepterFireblast" "abilityname" "ogre_magi_unrefined_fireblast" weight 5 required
 criterion "IsOgreMagiBloodlust" "abilityname" "ogre_magi_bloodlust" weight 5 required
+criterion "IsOgreMagiBloodlustLevel" "skill3_level" ">0" weight 5 required
 criterion "IsOgreMagiIgnite" "abilityname" "ogre_magi_ignite" weight 5 required
 criterion "IsOgreMagiMulti" "multicastcount" ">=1" weight 5 required
 criterion "IsOgreMagiNotMulticast" "multicastcount" "0" weight 5 required
@@ -436,18 +437,18 @@ Rule ogre_magi_CastExecuteIsOgreMagiIgniteChance_50%_Rule
 	response ogre_magi_CastExecuteIsOgreMagiIgniteChance_50%
 }
 
-Response ogre_magi_CastExecuteIsOgreMagiBloodlustChance_30%
+Response ogre_magi_CastExecuteIsOgreMagiBloodlustIsOgreMagiBloodlustLevelChance_30%
 {
-	scene "scenes/ogre_magi/ogre_magi_ogmag_ability_bloodlust_01.vcd" nodelay noscene respeakdelay 120
-	scene "scenes/ogre_magi/ogre_magi_ogmag_ability_bloodlust_02.vcd" nodelay noscene respeakdelay 120
-	scene "scenes/ogre_magi/ogre_magi_ogmag_ability_bloodlust_03.vcd" nodelay noscene respeakdelay 120
-	scene "scenes/ogre_magi/ogre_magi_ogmag_ability_bloodlust_04.vcd" nodelay noscene respeakdelay 120
+	scene "scenes/ogre_magi/ogre_magi_ogmag_ability_bloodlust_01.vcd" nodelay noscene respeakdelay 100
+	scene "scenes/ogre_magi/ogre_magi_ogmag_ability_bloodlust_02.vcd" nodelay noscene respeakdelay 100
+	scene "scenes/ogre_magi/ogre_magi_ogmag_ability_bloodlust_03.vcd" nodelay noscene respeakdelay 100
+	scene "scenes/ogre_magi/ogre_magi_ogmag_ability_bloodlust_04.vcd" nodelay noscene respeakdelay 100
 }
 
-Rule ogre_magi_CastExecuteIsOgreMagiBloodlustChance_30%_Rule
+Rule ogre_magi_CastExecuteIsOgreMagiBloodlustIsOgreMagiBloodlustLevelChance_30%_Rule
 {
-	criteria CastExecute Isogre_magi IsOgreMagiBloodlust Chance_30%
-	response ogre_magi_CastExecuteIsOgreMagiBloodlustChance_30%
+	criteria CastExecute Isogre_magi IsOgreMagiBloodlust IsOgreMagiBloodlustLevel Chance_30%
+	response ogre_magi_CastExecuteIsOgreMagiBloodlustIsOgreMagiBloodlustLevelChance_30%
 }
 
 Response ogre_magi_LevelUp

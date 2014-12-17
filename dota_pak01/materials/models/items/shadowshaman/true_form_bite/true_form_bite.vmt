@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/shadowshaman/true_form_bite/true_form_bite_color"
+	"$normalmap"		"models/items/shadowshaman/true_form_bite/true_form_bite_normal"
+	"$maskmap1"		"models/items/shadowshaman/true_form_bite/true_form_bite_mask1"
+	"$maskmap2"		"models/items/shadowshaman/true_form_bite/true_form_bite_mask2"
+	"$diffusewarp"		"models/heroes/lich/lich_lightwarp"
+	"$FRESNELWARP"		"models/heroes/lich/lich_fresnelranges"
+	"$SPECULAREXPONENT"		"7"
+	"$SPECULARSCALE"		"8"
+	"$AMBIENTSCALE"		"1"
+	"$SPECULARCOLOR"		"[.1 1 1]"
+	"$RIMLIGHTSCALE"		"0.500000"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

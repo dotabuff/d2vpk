@@ -5,7 +5,8 @@ criterion "IsTuskIceShards" "abilityname" "tusk_ice_shards" weight 5 required
 criterion "IsTuskSnowball" "abilityname" "tusk_snowball" weight 5 required
 criterion "IsTuskSnowballLaunch" "abilityname" "tusk_launch_snowball" weight 5 required
 criterion "IsTuskFrozenSigil" "abilityname" "tusk_frozen_sigil" weight 5 required
-criterion "IsTuskReadyPunch" "abilityname" "tusk_walrus_punch" weight 5 required
+criterion "IsTuskWalrusPunch" "abilityname" "tusk_walrus_punch" weight 5 required
+criterion "IsTuskWalrusPunchLevel" "skill4_level" ">0" weight 5 required
 criterion "IsTuskPunch" "punch_hero" "yes" weight 5 required
 criterion "IsTuskPunchFail" "punch_fail" "yes" weight 5 required
 
@@ -36,119 +37,6 @@ Rule tusk_CustomIsGameStart_Rule
 {
 	criteria Custom Istusk IsGameStart
 	response tusk_CustomIsGameStart
-}
-
-Response tusk_CustomIsTuskPunch
-{
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_01.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_02.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_03.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_04.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_05.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_06.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_07.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_08.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_09.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_10.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_11.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_12.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_13.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_14.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_15.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_16.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_17.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_18.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_19.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_20.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_21.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_22.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_23.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_24.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_25.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_26.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_27.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_28.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_29.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_30.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_31.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_32.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_33.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_34.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_35.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_36.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_37.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_38.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_39.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_40.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_41.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_42.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_43.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_44.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_45.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_46.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_47.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_48.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_50.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_51.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_52.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_53.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_54.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_55.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_56.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_57.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_58.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_59.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_60.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_61.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_64.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_65.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_66.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_67.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_68.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_69.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_70.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_71.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_73.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_75.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_76.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_77.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_78.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_79.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_80.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_83.vcd" nodelay noscene 
-}
-
-Rule tusk_CustomIsTuskPunch_Rule
-{
-	criteria Custom Istusk IsTuskPunch
-	response tusk_CustomIsTuskPunch
-}
-
-Response tusk_CustomIsTuskPunchFailChance_50%
-{
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_49.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_62.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_63.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_74.vcd" nodelay noscene 
-}
-
-Rule tusk_CustomIsTuskPunchFailChance_50%_Rule
-{
-	criteria Custom Istusk IsTuskPunchFail Chance_50%
-	response tusk_CustomIsTuskPunchFailChance_50%
-}
-
-Response tusk_CustomIsTuskPunchFail
-{
-	scene "scenes/tusk/tusk_tusk_superpunch_attack_72.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_failure_01.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_failure_02.vcd" nodelay noscene 
-}
-
-Rule tusk_CustomIsTuskPunchFail_Rule
-{
-	criteria Custom Istusk IsTuskPunchFail
-	response tusk_CustomIsTuskPunchFail
 }
 
 Response tusk_KillIsFirstBlood
@@ -571,19 +459,94 @@ Rule tusk_CastExecuteIsTuskFrozenSigil_Rule
 	response tusk_CastExecuteIsTuskFrozenSigil
 }
 
-Response tusk_CastExecuteIsTuskReadyPunch
+Response tusk_CastExecuteIsTuskWalrusPunchIsTuskWalrusPunchLevel
 {
-	scene "scenes/tusk/tusk_tusk_superpunch_ready_01.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_ready_02.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_ready_03.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_ready_04.vcd" nodelay noscene 
-	scene "scenes/tusk/tusk_tusk_superpunch_ready_05.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_01.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_02.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_03.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_04.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_05.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_06.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_07.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_08.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_09.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_10.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_11.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_12.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_13.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_14.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_15.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_16.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_17.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_18.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_19.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_20.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_21.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_22.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_23.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_24.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_25.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_26.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_27.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_28.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_29.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_30.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_31.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_32.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_33.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_34.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_35.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_36.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_37.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_38.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_39.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_40.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_41.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_42.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_43.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_44.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_45.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_46.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_47.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_48.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_49.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_50.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_51.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_52.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_53.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_54.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_55.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_56.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_57.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_58.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_59.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_60.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_61.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_62.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_64.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_65.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_66.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_67.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_68.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_69.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_70.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_71.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_72.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_73.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_74.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_75.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_76.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_77.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_78.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_79.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_80.vcd" nodelay noscene 
+	scene "scenes/tusk/tusk_tusk_superpunch_attack_83.vcd" nodelay noscene 
 }
 
-Rule tusk_CastExecuteIsTuskReadyPunch_Rule
+Rule tusk_CastExecuteIsTuskWalrusPunchIsTuskWalrusPunchLevel_Rule
 {
-	criteria CastExecute Istusk IsTuskReadyPunch
-	response tusk_CastExecuteIsTuskReadyPunch
+	criteria CastExecute Istusk IsTuskWalrusPunch IsTuskWalrusPunchLevel
+	response tusk_CastExecuteIsTuskWalrusPunchIsTuskWalrusPunchLevel
 }
 
 Response tusk_LevelUp

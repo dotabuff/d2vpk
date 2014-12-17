@@ -47,6 +47,7 @@
       "ItemShopTags": "damage",
       "ItemQuality": "component",
       "ItemAliases": "broadsword",
+      "SideShop": "1",
       "AbilitySpecial": [
         {
           "bonus_damage": 18
@@ -217,7 +218,7 @@
           "damage_block_ranged": 10
         },
         {
-          "block_chance": 60
+          "block_chance": 53
         }
       ]
     },
@@ -320,7 +321,7 @@
     "item_circlet": {
       "ID": "20",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
-      "ItemCost": "185",
+      "ItemCost": "165",
       "ItemShopTags": "agi;int;str",
       "ItemQuality": "component",
       "ItemAliases": "circlet",
@@ -509,7 +510,6 @@
       "ItemShopTags": "evasion",
       "ItemQuality": "component",
       "ItemAliases": "talisman of evasion",
-      "SideShop": "1",
       "AbilitySpecial": [
         {
           "bonus_evasion": 25
@@ -591,7 +591,7 @@
       "ItemDisplayCharges": "1",
       "AbilitySpecial": [
         {
-          "max_charges": 15
+          "max_charges": 17
         },
         {
           "charge_radius": 1200
@@ -647,7 +647,7 @@
           "buff_duration": 40
         },
         {
-          "total_mana": 135
+          "total_mana": 150
         }
       ]
     },
@@ -659,7 +659,7 @@
       "Model": "models/props_gameplay/salve.mdl",
       "AbilityCastRange": "100",
       "AbilityCastPoint": "0.0",
-      "ItemCost": "115",
+      "ItemCost": "110",
       "ItemShopTags": "consumable",
       "ItemQuality": "consumable",
       "ItemAliases": "healing salve",
@@ -865,7 +865,7 @@
       "ID": "45",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES",
-      "ItemCost": "150",
+      "ItemCost": "120",
       "ItemShopTags": "consumable",
       "ItemQuality": "consumable",
       "ItemAliases": "donkey;chicken;animal courier",
@@ -1302,7 +1302,7 @@
           "damage_block_ranged": 10
         },
         {
-          "block_chance": 60
+          "block_chance": 53
         },
         {
           "block_chance_hero": 100
@@ -1314,7 +1314,7 @@
     },
     "item_recipe_bracer": {
       "ID": "72",
-      "ItemCost": "190",
+      "ItemCost": "210",
       "ItemShopTags": "",
       "ItemRecipe": "1",
       "ItemResult": "item_bracer",
@@ -1346,7 +1346,7 @@
     },
     "item_recipe_wraith_band": {
       "ID": "74",
-      "ItemCost": "150",
+      "ItemCost": "170",
       "ItemShopTags": "",
       "ItemRecipe": "1",
       "ItemResult": "item_wraith_band",
@@ -1378,7 +1378,7 @@
     },
     "item_recipe_null_talisman": {
       "ID": "76",
-      "ItemCost": "135",
+      "ItemCost": "155",
       "ItemShopTags": "",
       "ItemRecipe": "1",
       "ItemResult": "item_null_talisman",
@@ -1598,7 +1598,7 @@
     "item_recipe_pipe": {
       "ID": "89",
       "Model": "models/props_gameplay/recipe.mdl",
-      "ItemCost": "900",
+      "ItemCost": "800",
       "ItemShopTags": "",
       "ItemRecipe": "1",
       "ItemResult": "item_pipe",
@@ -1612,7 +1612,7 @@
       "FightRecapLevel": "2",
       "AbilityCooldown": "60.0",
       "AbilityManaCost": "100",
-      "ItemCost": "3625",
+      "ItemCost": "3525",
       "ItemShopTags": "regen_health;boost_magic_resist",
       "ItemQuality": "rare",
       "ItemAliases": "pipe of insight",
@@ -1626,15 +1626,6 @@
           "magic_resistance": 30
         },
         {
-          "barrier_radius": 900
-        },
-        {
-          "barrier_block": 400
-        },
-        {
-          "barrier_duration": 10.0
-        },
-        {
           "barrier_debuff_duration": 50.0
         },
         {
@@ -1645,6 +1636,15 @@
         },
         {
           "aura_health_regen": 4
+        },
+        {
+          "barrier_radius": 900
+        },
+        {
+          "barrier_block": 400
+        },
+        {
+          "barrier_duration": 12
         }
       ]
     },
@@ -1837,7 +1837,7 @@
     "item_recipe_cyclone": {
       "ID": "99",
       "Model": "models/props_gameplay/recipe.mdl",
-      "ItemCost": "500",
+      "ItemCost": "650",
       "ItemShopTags": "",
       "ItemRecipe": "1",
       "ItemResult": "item_cyclone",
@@ -1855,7 +1855,7 @@
       "AbilityCastPoint": "0.0",
       "AbilityCooldown": "23.0",
       "AbilityManaCost": "75",
-      "ItemCost": "2700",
+      "ItemCost": "2850",
       "ItemShopTags": "int;regen_mana;move_speed;hard_to_tag",
       "ItemQuality": "rare",
       "ItemAliases": "cyclone euls;eul's scepter of divinity",
@@ -1889,8 +1889,8 @@
     "item_force_staff": {
       "ID": "102",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
-      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
-      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_CUSTOM",
       "FightRecapLevel": "1",
       "AbilityCastRange": "800",
       "AbilityCastPoint": "0.0",
@@ -2515,7 +2515,7 @@
       "ID": "110",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "AbilityCastPoint": "0.0",
-      "AbilityCooldown": "185.0",
+      "AbilityCooldown": "195.0",
       "AbilityManaCost": "375",
       "ItemCost": "5225",
       "ItemShopTags": "regen_health;regen_mana;damage;hard_to_tag",
@@ -2567,9 +2567,7 @@
           "bonus_armor": 10
         },
         {
-          "aura_radius": [
-            900
-          ]
+          "aura_radius": 900
         },
         {
           "aura_attack_speed": 20
@@ -2878,7 +2876,7 @@
           "bonus_health_regen": 6
         },
         {
-          "block_chance": 80
+          "block_chance": 67
         },
         {
           "block_damage_melee": 40
@@ -2922,7 +2920,7 @@
           "bonus_armor": 5
         },
         {
-          "block_chance": 80
+          "block_chance": 67
         },
         {
           "block_damage_melee": 40
@@ -2934,7 +2932,7 @@
           "bonus_aoe_armor": 2
         },
         {
-          "duration": 9
+          "duration": 10
         },
         {
           "bonus_aoe_radius": 750
@@ -3287,22 +3285,16 @@
           "bonus_mana_regen": 150
         },
         {
+          "quelling_bonus": 32
+        },
+        {
+          "quelling_bonus_ranged": 12
+        },
+        {
           "cleave_damage_percent": 35
         },
         {
           "cleave_radius": 250
-        },
-        {
-          "bonus_health": 0
-        },
-        {
-          "block_chance": 0
-        },
-        {
-          "block_damage_ranged": 0
-        },
-        {
-          "block_damage_melee": 0
         }
       ]
     },
@@ -3420,7 +3412,7 @@
     "item_recipe_armlet": {
       "ID": "150",
       "Model": "models/props_gameplay/recipe.mdl",
-      "ItemCost": "600",
+      "ItemCost": "500",
       "ItemShopTags": "",
       "ItemRecipe": "1",
       "ItemResult": "item_armlet",
@@ -3432,7 +3424,7 @@
       "ID": "151",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_TOGGLE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
       "AbilityCooldown": "0.0",
-      "ItemCost": "2500",
+      "ItemCost": "2400",
       "ItemShopTags": "damage;attack_speed;armor;regen_health;hard_to_tag",
       "ItemQuality": "epic",
       "ItemAliases": "armlet of mordiggian",
@@ -3483,7 +3475,7 @@
       "FightRecapLevel": "1",
       "AbilityCooldown": "28.0",
       "AbilityManaCost": "75",
-      "ItemCost": "3000",
+      "ItemCost": "2800",
       "ItemShopTags": "damage;attack_speed;movespeed;hard_to_tag",
       "ItemQuality": "epic",
       "ItemAliases": "sb;invis;shadow blade",
@@ -3797,7 +3789,7 @@
           "dominate_duration": 1200.0
         },
         {
-          "health_bonus": 250
+          "health_bonus": 500
         }
       ]
     },
@@ -4022,7 +4014,7 @@
           "purge_root_duration": 3.0
         },
         {
-          "purge_slow_duration": 4.0
+          "purge_slow_duration": 4
         },
         {
           "damage_per_burn": 1.0
@@ -4276,7 +4268,7 @@
       "ItemShopTags": "str;agi;int;damage;move_speed;attack_speed;hard_to_tag",
       "ItemQuality": "rare",
       "ItemAliases": "drum of endurance",
-      "ItemInitialCharges": "5",
+      "ItemInitialCharges": "6",
       "ItemDisplayCharges": "1",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
       "AbilitySpecial": [
@@ -4309,7 +4301,7 @@
     "item_recipe_medallion_of_courage": {
       "ID": "186",
       "Model": "models/props_gameplay/recipe.mdl",
-      "ItemCost": "200",
+      "ItemCost": "325",
       "ItemShopTags": "",
       "ItemRecipe": "1",
       "ItemResult": "item_medallion_of_courage",
@@ -4320,26 +4312,26 @@
     "item_medallion_of_courage": {
       "ID": "187",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
-      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL",
       "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
       "FightRecapLevel": "1",
       "AbilityCastRange": "1000",
       "AbilityCooldown": "7.0",
-      "ItemCost": "1075",
+      "ItemCost": "1200",
       "ItemShopTags": "armor;regen_mana;hard_to_tag",
       "ItemQuality": "rare",
       "ItemAliases": "medallion of courage",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
       "AbilitySpecial": [
         {
-          "bonus_armor": 6
+          "bonus_armor": 7
         },
         {
           "bonus_mana_regen_pct": 50
         },
         {
-          "armor_reduction": -6
+          "armor_reduction": -7
         },
         {
           "duration": 7.0
@@ -4687,7 +4679,7 @@
       "AbilityCastRange": "600",
       "AbilityCooldown": "10.0",
       "AbilityManaCost": "0",
-      "ItemCost": "1600",
+      "ItemCost": "1400",
       "ItemShopTags": "",
       "ItemAliases": "shadow amulet",
       "AbilitySpecial": [

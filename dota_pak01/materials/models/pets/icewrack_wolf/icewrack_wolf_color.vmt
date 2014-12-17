@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$baseTexture" "models/pets/icewrack_wolf/icewrack_wolf_color"
+	"$normalmap" "models/pets/icewrack_wolf/icewrack_wolf_normal"
+	"$maskmap1" "models/pets/icewrack_wolf/icewrack_wolf_masks1"
+	"$maskmap2" "models/pets/icewrack_wolf/icewrack_wolf_masks2"
+	//"$diffusewarp" "models/heroes/lycan/lycan_lightwarp"
+	//$SPECULARWARP "models/heroes/lycan/lycan_lightwarp"
+
+	//"$envmap" "models/cubemaps/glossy"
+	//"$envmapintensity" 3
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 1
+	$SPECULARCOLOR "[.5 .65 1]"
+
+	$AMBIENTSCALE 1
+
+	$RIMLIGHTSCALE	.5
+	$RIMLIGHTCOLOR "[.5 .65 1]"
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

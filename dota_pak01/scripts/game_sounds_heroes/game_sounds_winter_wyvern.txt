@@ -1,0 +1,346 @@
+
+"hero_winter_wyvern.attack"
+{
+        "channel"		"CHAN_WEAPON"
+        "volume"		"1.0"
+        "soundlevel"	"SNDLVL_75dB"
+        "pitch"			"95, 105"
+        "rndwave"
+        {
+            "wave" "weapons\hero\jakiro\attack_01.wav"
+            "wave" "weapons\hero\jakiro\attack_02.wav"
+            "wave" "weapons\hero\jakiro\attack_03.wav"
+
+        }
+        "soundentry_version" "2"
+        "operator_stacks"
+        {
+            "start_stack"
+            {
+                "import_stack" "dota_attack_block_dist"
+            }
+        }
+}
+
+"hero_winter_wyvern.projectileImpact"
+{
+        "channel"		"CHAN_STATIC"
+        "volume"		"1.0"
+        "soundlevel"	"SNDLVL_72dB"
+        "pitch"			"95,105"
+        "wave" 			"weapons\hero\jakiro\impact_01.wav"
+        "soundentry_version" "2"
+        "operator_stacks"
+        {
+            "start_stack"
+            {
+				"import_stack" "dota_projectile_impact_block_dist"
+            }
+        }
+}
+
+
+"hero_winter_wyvern.DualBreath"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/jakiro/dual_breath.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"hero_winter_wyvern.DualBreath.Burn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"wave"			")weapons\hero\huskar\burning_spear.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"start_stack"		
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+			"input2" "1000"
+			}			
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1" //A sound will not stop itself from playing.
+				"match_entity" "false"
+				"match_substring" "true"	
+				"match_entry" "hero_winter_wyvern.DualBreath.Burn"	
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"import_stack" "update_stop_at_time"
+			"usat_stop_time"
+			{
+				"input2" "4.0"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}
+
+
+"hero_winter_wyvern.IcePath.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/jakiro/ice_path_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"hero_winter_wyvern.IcePath"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/jakiro/ice_path.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"source_info"
+       		{
+				"source"   "emitter"
+            }
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"hero_winter_wyvern.LiquidFire"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/jakiro/liquid_fire.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"hero_winter_wyvern.Macropyre.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/jakiro/macropyre_cast.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"hero_winter_wyvern.macropyre"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"90"
+	"wave"			")weapons/hero/jakiro/macropyre.wav"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"hero_winter_wyvern.macropyre.scepter"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/jakiro/macropyre_aghs.mp3"
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+		}
+	}
+}
+
+"Hero_winter_wyvern.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.6, 0.8"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		"physics\footsteps\hero\chen\footstep01.wav"
+		"wave"		"physics\footsteps\hero\chen\footstep02.wav"
+		"wave"		"physics\footsteps\hero\chen\footstep03.wav"
+		"wave"		"physics\footsteps\hero\chen\footstep04.wav"
+		"wave"		"physics\footsteps\hero\chen\footstep05.wav"
+		"wave"		"physics\footsteps\hero\chen\footstep06.wav"
+		"wave"		"physics\footsteps\hero\chen\footstep07.wav"
+	}
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"hero_winter_wyvern.wing_movement"
+{
+		"channel"         "CHAN_BODY"
+		"volume"          "0.5, 0.7"
+		"soundlevel"      "SNDLVL_72dB"
+		"pitch"           "80, 90"
+		"rndwave"
+		{
+			"wave" "physics\movement\hero\dragon_knight\flap1.wav"
+			"wave" "physics\movement\hero\dragon_knight\flap2.wav"
+			"wave" "physics\movement\hero\dragon_knight\flap3.wav"
+			"wave" "physics\movement\hero\dragon_knight\flap4.wav"
+		}
+		"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.3"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+

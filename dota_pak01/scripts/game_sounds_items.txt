@@ -843,7 +843,7 @@
 "DOTA_Item.SkullBasher"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.6, 0.8"
+	"volume"		"0.6"
 	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"90, 100"
 	"wave"			"items/skull_basher.wav"
@@ -891,8 +891,8 @@
 "DOTA_Item.MKB.Minibash"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.3, 0.5"
-	"soundlevel"  	"SNDLVL_75dB"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_78dB"
 	"pitch"			"110, 120"
 	"wave"			"items/skull_basher.wav"
 	"operator_stacks"
@@ -900,14 +900,6 @@
 		"start_stack"
 		{
 			"import_stack" "dota_preattack_block_dist"
-		}
-		"update_stack"
-		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Weapons"
-			}
 		}
 	}
 }
@@ -954,6 +946,31 @@
 		"start_stack"
 		{
 			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"DOTA_Item.Maim"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			"items/maim.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_substring" "true"
+				"match_entry" "DOTA_Item.Maim"
+				"match_channel" "false"
+			}
 		}
 	}
 }

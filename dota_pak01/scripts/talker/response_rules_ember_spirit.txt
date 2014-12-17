@@ -699,6 +699,17 @@ Rule ember_spirit_AllyNearIsAllyJakiroEarlyGame_Rule
 	response ember_spirit_AllyNearIsAllyJakiroEarlyGame
 }
 
+Response ember_spirit_AllyNearIsAllyOracleEarlyGame
+{
+	scene "scenes/ember_spirit/ember_spirit_embr_ally_09.vcd" nodelay noscene speakonce
+}
+
+Rule ember_spirit_AllyNearIsAllyOracleEarlyGame_Rule
+{
+	criteria AllyNear Isember_spirit IsAllyOracle EarlyGame
+	response ember_spirit_AllyNearIsAllyOracleEarlyGame
+}
+
 Response ember_spirit_AllyNearIsAllyOgre_MagiEarlyGame
 {
 	scene "scenes/ember_spirit/ember_spirit_embr_ally_11.vcd" nodelay noscene speakonce

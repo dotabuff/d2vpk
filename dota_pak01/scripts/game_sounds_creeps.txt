@@ -1063,6 +1063,7 @@
 			{
 				"input2" "2000"
 			}
+			"import_stack" "dota_water_footsteps_start"
 		}
 	}
 }
@@ -1091,6 +1092,7 @@
 			{
 				"input2" "2000"
 			}
+			"import_stack" "dota_water_footsteps_start"
 		}
 	}
 }
@@ -1098,8 +1100,8 @@
 "n_creep_Giant.Footstep"
 {
 	"channel"		"CHAN_BODY"
-	"volume"		"0.8, 0.9"
-	"soundlevel"  	"SNDLVL_75dB"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95, 105"
 	"rndwave"
 	{
@@ -1118,6 +1120,7 @@
 			{
 				"input2" "2000"
 			}
+			"import_stack" "dota_water_footsteps_start"
 		}
 	}
 }

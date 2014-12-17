@@ -119,6 +119,7 @@
 		"ItemShopTags"					"damage"
 		"ItemQuality"					"component"
 		"ItemAliases"					"broadsword"
+		"SideShop"						"1"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -478,7 +479,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"block_chance"			"60"
+				"block_chance"			"53"
 			}
 		}
 	}
@@ -703,7 +704,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"185"
+		"ItemCost"						"165"
 		"ItemShopTags"					"agi;int;str"
 		"ItemQuality"					"component"
 		"ItemAliases"					"circlet"
@@ -1094,7 +1095,6 @@
 		"ItemShopTags"					"evasion"
 		"ItemQuality"					"component"
 		"ItemAliases"					"talisman of evasion"
-		"SideShop"						"1"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -1259,7 +1259,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"max_charges"			"15"
+				"max_charges"			"17"
 			}
 			"02"
 			{
@@ -1364,7 +1364,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"total_mana"			"135"
+				"total_mana"			"150"
 			}
 		}
 	}
@@ -1389,7 +1389,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"115"
+		"ItemCost"						"110"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemAliases"					"healing salve"
@@ -1755,7 +1755,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"150"
+		"ItemCost"						"120"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemAliases"					"donkey;chicken;animal courier"
@@ -2646,7 +2646,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"block_chance"			"60"
+				"block_chance"			"53"
 			}
 			"04"
 			{
@@ -2672,7 +2672,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"190"	
+		"ItemCost"						"210"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -2740,7 +2740,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"150"	
+		"ItemCost"						"170"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -2808,7 +2808,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"135"	
+		"ItemCost"						"155"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -3252,7 +3252,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"900"	
+		"ItemCost"						"800"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -3283,7 +3283,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"3625"
+		"ItemCost"						"3525"
 		"ItemShopTags"					"regen_health;boost_magic_resist"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"pipe of insight"
@@ -3303,41 +3303,41 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"magic_resistance"		"30"
-			}
+			}			
 			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"barrier_radius"		"900"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"barrier_block"			"400"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"barrier_duration"		"10.0"
-			}
-			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"barrier_debuff_duration"	"50.0"
 			}
-			"07"
+			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"tooltip_resist"			"30"
 			}
-			"08"
+			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"aura_radius"			"750"
 			}
-			"09"
+			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"aura_health_regen"		"4"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"barrier_radius"		"900"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"barrier_block"			"400"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"barrier_duration"		"12.0"
 			}
 		}
 	}
@@ -3721,7 +3721,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"500"	
+		"ItemCost"						"650"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -3759,7 +3759,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"75"
-		"ItemCost"						"2700"
+		"ItemCost"						"2850"
 		"ItemShopTags"					"int;regen_mana;move_speed;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"cyclone euls;eul's scepter of divinity"
@@ -3826,8 +3826,8 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"102"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH | DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_CUSTOM"
 		"FightRecapLevel"				"1"
 
 		// Stats
@@ -4693,7 +4693,7 @@
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"185.0"
+		"AbilityCooldown"				"195.0"
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
@@ -4797,7 +4797,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"aura_radius"			"900 "
+				"aura_radius"			"900"
 			}
 			"04"
 			{
@@ -4813,7 +4813,7 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"aura_negative_armor"	"-5"
-			}
+			}			
 		}
 	}
 
@@ -5386,7 +5386,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"block_chance"			"80"
+				"block_chance"			"67"
 			}
 			"04"
 			{
@@ -5475,7 +5475,7 @@
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"block_chance"			"80"
+				"block_chance"			"67"
 			}
 			"06"
 			{
@@ -5495,7 +5495,7 @@
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"duration"	"9"
+				"duration"	"10"
 			}		
 			"10"
 			{
@@ -6226,33 +6226,24 @@
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_damage_percent"	"35"
+				"quelling_bonus"			"32"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"cleave_radius"			"250"
+				"quelling_bonus_ranged"	"12"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_health"			"0"
+				"cleave_damage_percent"	"35"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"block_chance"			"0"
+				"cleave_radius"			"250"
 			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"block_damage_ranged"	"0"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"block_damage_melee"	"0"
-			}
+			
 		}
 	}
 	
@@ -6480,7 +6471,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"600"	
+		"ItemCost"						"500"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -6509,7 +6500,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"2500"
+		"ItemCost"						"2400"
 		"ItemShopTags"					"damage;attack_speed;armor;regen_health;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"armlet of mordiggian"
@@ -6609,7 +6600,7 @@
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityManaCost"				"75"
-		"ItemCost"						"3000"
+		"ItemCost"						"2800"
 		"ItemShopTags"					"damage;attack_speed;movespeed;hard_to_tag"
 		"ItemQuality"					"epic"
 		"ItemAliases"					"sb;invis;shadow blade"
@@ -7214,7 +7205,7 @@
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"health_bonus"			"250"
+				"health_bonus"			"500"
 			}
 		}
 	}
@@ -7646,7 +7637,7 @@
 			}
 			"09"
 			{
-				"var_type"				"FIELD_FLOAT"
+				"var_type"				"FIELD_INTEGER"
 				"purge_slow_duration"	"4.0"
 			}
 			"10"
@@ -8116,7 +8107,7 @@
 		"ItemShopTags"					"str;agi;int;damage;move_speed;attack_speed;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"drum of endurance"
-		"ItemInitialCharges"			"5"
+		"ItemInitialCharges"			"6"
 		"ItemDisplayCharges"			"1"
 		"ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS"
 
@@ -8179,7 +8170,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"200"	
+		"ItemCost"						"325"	
 		"ItemShopTags"					""
 		
 		// Recipe
@@ -8201,7 +8192,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"187"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"FightRecapLevel"				"1"
@@ -8213,7 +8204,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1075"
+		"ItemCost"						"1200"
 		"ItemShopTags"					"armor;regen_mana;hard_to_tag"
 		"ItemQuality"					"rare"
 		"ItemAliases"					"medallion of courage"
@@ -8226,7 +8217,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"6"
+				"bonus_armor"			"7"
 			}
 			"02"
 			{
@@ -8236,7 +8227,7 @@
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_reduction"		"-6"
+				"armor_reduction"		"-7"
 			}
 			"04"
 			{
@@ -8913,7 +8904,7 @@
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"1600"
+		"ItemCost"						"1400"
 		"ItemShopTags"					""
 		"ItemAliases"					"shadow amulet"
 		

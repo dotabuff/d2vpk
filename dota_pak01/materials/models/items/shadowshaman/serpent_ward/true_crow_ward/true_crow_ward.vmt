@@ -1,0 +1,43 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/shadowshaman/serpent_ward/true_crow_ward/true_crow_ward_color"
+	"$normalmap"		"models/items/shadowshaman/serpent_ward/true_crow_ward/true_crow_ward_normal"
+	"$detail1"		"models/heroes/shadowshaman/totem_motion"
+	"$SPECULAREXPONENTBLENDTOFULL"		"1"
+	"$SPECULAREXPONENT"		"25"
+	"$SPECULARSCALE"		"10"
+	"$AMBIENTSCALE"		"0"
+	"$SPECULARCOLOR"		"[1 0 0]"
+	"$RIMLIGHTBLENDTOFULL"		"1"
+	"$RIMLIGHTSCALE"		"2"
+	"$RIMAMBIENTS"		"1"
+	"$RIMLIGHTCOLOR"		"[1 0 0]"
+	"$additive"		"1"
+	"$DETAIL1BLENDMODE"		"4"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDTOFULL"		"1"
+	"$SPECULARBLENDTOFULL"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"90"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+	"$maskmap1"		"models/items/shadowshaman/serpent_ward/true_crow_ward/true_crow_ward_mask1"
+	"$maskmap2"		"models/items/shadowshaman/serpent_ward/true_crow_ward/true_crow_ward_mask2"
+}

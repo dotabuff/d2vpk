@@ -368,6 +368,17 @@ Rule skeleton_king_KillIsEnemyEarth_SpiritChance_25%_Rule
 	response skeleton_king_KillIsEnemyEarth_SpiritChance_25%
 }
 
+Response skeleton_king_KillIsEnemyOracleChance_25%
+{
+	scene "scenes/skeleton_king/skeleton_king_wraith_rival_23.vcd" nodelay noscene 
+}
+
+Rule skeleton_king_KillIsEnemyOracleChance_25%_Rule
+{
+	criteria Kill Isskeleton_king IsEnemyOracle Chance_25%
+	response skeleton_king_KillIsEnemyOracleChance_25%
+}
+
 Response skeleton_king_KillIsEnemyTerrorbladeChance_25%
 {
 	scene "scenes/skeleton_king/skeleton_king_wraith_rival_24.vcd" nodelay noscene 
@@ -707,6 +718,17 @@ Rule skeleton_king_AllyNearIsAllyTerrorbladeEarlyGame_Rule
 {
 	criteria AllyNear Isskeleton_king IsAllyTerrorblade EarlyGame
 	response skeleton_king_AllyNearIsAllyTerrorbladeEarlyGame
+}
+
+Response skeleton_king_AllyNearIsAllyOracleEarlyGame
+{
+	scene "scenes/skeleton_king/skeleton_king_wraith_ally_12.vcd" nodelay noscene speakonce
+}
+
+Rule skeleton_king_AllyNearIsAllyOracleEarlyGame_Rule
+{
+	criteria AllyNear Isskeleton_king IsAllyOracle EarlyGame
+	response skeleton_king_AllyNearIsAllyOracleEarlyGame
 }
 
 Response skeleton_king_AllyNearIsAllyChaos_KnightEarlyGame

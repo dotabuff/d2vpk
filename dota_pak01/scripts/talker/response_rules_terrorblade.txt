@@ -392,6 +392,17 @@ Rule terrorblade_KillIsEnemyWindrunnerChance_25%_Rule
 	response terrorblade_KillIsEnemyWindrunnerChance_25%
 }
 
+Response terrorblade_KillIsEnemyOracleChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_rival_30.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsEnemyOracleChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsEnemyOracle Chance_25%
+	response terrorblade_KillIsEnemyOracleChance_25%
+}
+
 Response terrorblade_KillIsEnemyStormSpiritChance_25%
 {
 	scene "scenes/terrorblade/terrorblade_terr_rival_31.vcd" nodelay noscene 
@@ -791,6 +802,17 @@ Rule terrorblade_KillIsTerrorDemonFormIsEnemyWindrunnerChance_25%_Rule
 {
 	criteria Kill Isterrorblade IsTerrorDemonForm IsEnemyWindrunner Chance_25%
 	response terrorblade_KillIsTerrorDemonFormIsEnemyWindrunnerChance_25%
+}
+
+Response terrorblade_KillIsTerrorDemonFormIsEnemyOracleChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_30.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorDemonFormIsEnemyOracleChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorDemonForm IsEnemyOracle Chance_25%
+	response terrorblade_KillIsTerrorDemonFormIsEnemyOracleChance_25%
 }
 
 Response terrorblade_KillIsTerrorDemonFormIsEnemyStormSpiritChance_25%
@@ -1194,6 +1216,17 @@ Rule terrorblade_KillIsTerrorEconShardsIsEnemyWindrunnerChance_25%_Rule
 	response terrorblade_KillIsTerrorEconShardsIsEnemyWindrunnerChance_25%
 }
 
+Response terrorblade_KillIsTerrorEconShardsIsEnemyOracleChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_30.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyOracleChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyOracle Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyOracleChance_25%
+}
+
 Response terrorblade_KillIsTerrorEconShardsIsEnemyStormSpiritChance_25%
 {
 	scene "scenes/terrorblade/terrorblade_terr_shards_rival_31.vcd" nodelay noscene 
@@ -1593,6 +1626,17 @@ Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWindrunnerChance_
 {
 	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyWindrunner Chance_25%
 	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWindrunnerChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyOracleChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_30.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyOracleChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyOracle Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyOracleChance_25%
 }
 
 Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyStormSpiritChance_25%

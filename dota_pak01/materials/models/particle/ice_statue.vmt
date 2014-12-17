@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	"$basetexture" "models\particle\ice_shards"
+  "$normalmap" "models\development\flatnormal"
+	"$maskmap2" "models/particle/ice_shards_mask"
+
+	$diffusewarp "models/projectiles/icy_diffusewarp"
+	$FRESNELWARP "models/projectiles/icy_fresnelranges"
+
+	
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$SPECULARBLENDTOFULL 0.13
+	$SPECULARCOLOR "[1 0.6 .6]"
+	$SPECULARSCALE 100
+	$SPECULAREXPONENT 3
+
+	$ENVMAPINTENSITY .5
+	"$ENVMAP" "particle\ice_surface_envmap"
+	
+	$REFLECTIONSTINTBYBASEBLENDTONONE .2
+	$FRESNELCOLORWARPBLENDTOFULL 0
+	$DIFFUSEWARPBLENDTOFULL  1
+	
+	$RIMLIGHTSCALE	10
+	$RIMLIGHTCOLOR "[1 0.6 0.6]"
+//	$TRANSLUCENT	1
+	$REFRACTAMOUNT 1
+}

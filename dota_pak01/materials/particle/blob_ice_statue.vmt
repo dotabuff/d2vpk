@@ -1,0 +1,60 @@
+"IceSurface"
+{
+	//GLOBAL
+	"$uvscale" "0.00345"	// scale world-axis uv projection coords
+
+	//BASE TEXTURE
+	"$baseTexture"    "particle\ice_surface"
+	"$baseColorTint" "[.3 .3 .6]" //tints base color, uses alpha channel of base texture as a mask
+	"$opacityTexture" "particle\ice_surface_opacity" //transparency mask, independent of fresnel term 
+
+	//NORMAL MAP
+	"$normalMap"	"particle\ice_surface_normal"
+	"$bumpstrength" "8.5"
+
+	//DIFFUSE
+	"$diffuseScale" "4.3"
+
+	//SPECULAR
+	//"$specMaskTexture"	"particle\ice_surface_specmask"
+	//"$phongexponent"	"100"			// specular exponent of first phong highlight (on the interior layer)
+	//"$phongboost"		"3"				// specular boost of first phong highlight
+	//"$phongexponent2"	"88"			// specular exponent of second phong highlight (on the outer layer)
+	//"$phongboost2"		"14"				// specular boost of second phong highlight
+
+	//RIM
+	"$rimlightexponent" "3"
+	"$rimlightboost" "1.5"
+
+	//ENVIRONMENT MAP
+	"$envMap"		"particle\ice_surface_envmap.vtf"
+	"$envMapTint"	"[.11 .14 .352]"
+
+	//FRESNEL
+	//"$fresnelBumpStrength" "0"
+	//"$fresnelWarpTexture" "Models/blob/blob_fresnel_warp"
+	//"$translucentFresnelMinMaxExp" "[0 0.5 22]"
+
+	//INTERIOR
+	"$interior" 1					// toggle this to hide the gooey interior, useful when working on the surface material
+	"$interiorFogStrength" "0.006325"	// strength of the fog (based on the thickness of the interior volume)
+	"$interiorFogLimit" "0.16"			// how opaque the fog is beyond the range of dest alpha depth
+	"$interiorFogNormalBoost" "3.5"		// degree to boost interior thickness/fog by 'side-on'ness of vertex normals to the camera
+	"$interiorBackgroundBoost" "2"		// strength of boost applied to bright background pixels
+	"$interiorAmbientScale" ".151"			// strength of interior volume ambient lighting, .3 default
+	"$interiorBacklightScale" ".4"		// strength of interior volume backlighing, .3 is default
+	"$interiorColor" "[0.1 0.3 0.9]"	// tints the interior volume lighting
+	"$interiorRefractStrength" "4.8"	// strength of bumped refract of the background seen through the interior
+	"$interiorRefractBlur" "3"		// strength of blur applied to the background seen through the interior
+
+	//LIGHTWARP	
+	//"$lightwarptexture" "Models/blob/blob_lightwarp"	// this needs a color ramp texture
+
+	$NOVIEWPORTFIXUP        1
+	
+	$additive 1
+	
+	"Proxies"
+	{
+	}
+}

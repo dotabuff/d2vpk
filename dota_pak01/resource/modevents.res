@@ -949,5 +949,10 @@
 	"ingame_events_changed"
 	{
 	}
+
+	"dota_match_signout"
+	{
+	}
+
 }
 

@@ -1757,7 +1757,7 @@
 		"AttributeStrengthGain"		"1.9"									// Strength bonus per level.
 		"AttributeBaseIntelligence"	"14"									// Base intelligence
 		"AttributeIntelligenceGain"	"1.4"									// Intelligence bonus per level.
-		"AttributeBaseAgility"		"20"									// Base agility
+		"AttributeBaseAgility"		"26"									// Base agility
 		"AttributeAgilityGain"		"2.85"									// Agility bonus per level.
 
 		// Status
@@ -3967,7 +3967,7 @@
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
 		"MovementSpeed"				"290"									// Speed.
-		"MovementTurnRate"			"0.6"									// Turning rate.
+		"MovementTurnRate"			"0.8"									// Turning rate.
 		
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
@@ -5587,7 +5587,7 @@
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
 		"AttackRange"				"670"									// Range within a target can be attacked.
 		"ProjectileModel"			"lina_base_attack"						// Particle system model for projectile.
-		"ProjectileSpeed"			"900"									// Speed of projectile.
+		"ProjectileSpeed"			"1000"									// Speed of projectile.
 
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
@@ -6062,8 +6062,8 @@
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
-		"AttackDamageMin"			"20"									// Damage range min.
-		"AttackDamageMax"			"26"									// Damage range max.
+		"AttackDamageMin"			"27"									// Damage range min.
+		"AttackDamageMax"			"33"									// Damage range max.
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.43"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
@@ -6808,7 +6808,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"310"									// Speed.
+		"MovementSpeed"				"305"									// Speed.
 		"MovementTurnRate"			"0.4"									// Turning rate.
 		
 		// Bounds
@@ -9960,7 +9960,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"19"									// Base strength
-		"AttributeStrengthGain"		"2.2"									// Strength bonus per level.
+		"AttributeStrengthGain"		"1.9"									// Strength bonus per level.
 		"AttributeBaseAgility"		"14"									// Base agility
 		"AttributeAgilityGain"		"1.4"									// Agility bonus per level.
 		"AttributeBaseIntelligence"	"20"									// Base intelligence
@@ -11544,7 +11544,7 @@
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.3"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
-		"AttackRange"				"500"									// Range within a target can be attacked.
+		"AttackRange"				"550"									// Range within a target can be attacked.
 		"ProjectileModel"			"dazzle_base_attack"						// Particle system model for projectile.
 		"ProjectileSpeed"			"1200"									// Speed of projectile.
 
@@ -12325,7 +12325,7 @@
 		"HeroID"		"54"												// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
 		"ModelScale"					".81"
 		"HeroGlowColor" 			"209 4 1"	
-		"CMEnabled"					"1"
+		"CMEnabled"					"0"
 		"PickSound"					"life_stealer_lifest_spawn_01"
 		"BanSound"					"life_stealer_lifest_anger_05"
 		"url"					"Lifestealer"
@@ -12339,7 +12339,12 @@
 		"Ability2"				"life_stealer_feast"			// Ability 2
 		"Ability3"				"life_stealer_open_wounds"			// Ability 3
 		"Ability4"				"life_stealer_infest"				// Ability 4
-		"Ability6"				"life_stealer_consume"				// Ability 6
+		"Ability6"				"life_stealer_empty_1"				// Ability 7
+		"Ability7"				"life_stealer_empty_2"				// Ability 8
+		"Ability8"				"life_stealer_empty_3"				// Ability 9
+		"Ability9"				"life_stealer_empty_4"				// Ability 9
+		"Ability10"				"life_stealer_control"				// Ability 10
+		"Ability11"				"life_stealer_consume"				// Ability 11
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -12543,7 +12548,7 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"			"4"										// Physical protection.
+		"ArmorPhysical"			"5"										// Physical protection.
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -12730,7 +12735,7 @@
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.7"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
-		"AttackRange"				"600"									// Range within a target can be attacked.
+		"AttackRange"				"630"									// Range within a target can be attacked.
 		"ProjectileModel"			"clinkz_base_attack"					// Particle system model for projectile.
 		"ProjectileSpeed"			"900"									// Speed of projectile.
 
@@ -13197,7 +13202,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"315"									// Speed.
+		"MovementSpeed"				"335"									// Speed.
 		"MovementTurnRate"			"0.4"									// Turning rate.
 		
 		// Vision
@@ -13565,8 +13570,8 @@
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"34"									// Damage range min.
-		"AttackDamageMax"			"38"									// Damage range max.
+		"AttackDamageMin"			"38"									// Damage range min.
+		"AttackDamageMax"			"42"									// Damage range max.
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.55"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
@@ -17523,7 +17528,7 @@
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"1.0"								// Physical protection.
+		"ArmorPhysical"				"-1.0"								// Physical protection.
 									//0.954285714
 
 		// Attack
@@ -21787,7 +21792,7 @@
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
 		"AttributeBaseStrength"		"19"									// Base strength
 		"AttributeStrengthGain"		"1.5"									// Strength bonus per level.
-		"AttributeBaseAgility"		"18"									// Base agility
+		"AttributeBaseAgility"		"13"									// Base agility
 		"AttributeAgilityGain"		"0.8"									// Agility bonus per level.
 		"AttributeBaseIntelligence"	"27"									// Base intelligence
 		"AttributeIntelligenceGain"	"3.6"									// Intelligence bonus per level.
@@ -23495,12 +23500,6 @@
 		"AttributeBaseAgility"		"14"										// Base agility
 		"AttributeAgilityGain"		"1.3"										// Agility bonus per level.
 
-		// Bounty
-		//-------------------------------------------------------------------------------------------------------------
-		"BountyXP"					"62"									// Experience earn.
-		"BountyGoldMin"				"0"										// Gold earned min.
-		"BountyGoldMax"				"0"										// Gold earned max.
-
 		// Bounds
 		//-------------------------------------------------------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
@@ -23551,10 +23550,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"VisionDaytimeRange"		"1800"									// Range of vision during day light.
 		"VisionNighttimeRange"		"800"									// Range of vision at night time.
-		
-		//Inventory
-		"HasInventory"				"1"
-	
+			
 		// Items
 		//------------------------------------------------------------------------------------------------------------- 
 		"ItemSlots"
@@ -23635,6 +23631,119 @@
 				"SlotName"	"taunt"
 				"SlotText"	"#LoadoutSlot_Taunt"
 			}
+		}
+	}
+		
+	//=================================================================================================================
+	// HERO: Winter Wyvern
+	//=================================================================================================================
+	"npc_dota_hero_winter_wyvern"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"BaseClass"					"npc_dota_hero_winter_wyvern"					// Class of entity of link to.
+		"Model"						"models/heroes/winterwyvern/winterwyvern.mdl"	// Model.
+//		"IdleExpression"			"scenes/winterwyvern/winterwyvern_exp_idle_01.vcd"		// custom facial animation idle
+		"ModelScale" 				"1.0"
+		"LoadoutScale"				"1.0"
+		"SoundSet"					"Hero_Winter_Wyvern"										// Name of sound set.
+		"Enabled"					"0"
+		"url"						"Winter_Wyvern"
+		"BotImplemented"			"0"
+		"Team"						"Bad"
+		"NewHero"					"0"
+		"HeroPool1"					"0"
+		"HeroUnlockOrder"			"1"										// The higher the number the later these heros will unlock for new players.
+		"CMEnabled"					"0"
+		"CMTournamentIgnore"		"0"
+		"new_player_enable"			"0"
+		"HeroID"					"112"			// unique ID number for this hero.  Do not change this once established or it will invalidate collected stats.
+		"VoiceFile"					"scripts/voscripts/game_sounds_vo_winter_wyvern.txt"
+//		"PickSound"					"winter_wyvern_spawn_01"
+//		"BanSound"					"winter_wyvern_anger_01"
+		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_winter_wyvern.txt"
+		"IdleSoundLoop"				"Hero_Winter_Wyvern.IdleLoop"
+		"HeroSelectSoundEffect"		"Hero_Winter_Wyvern.Pick"
+
+		// Abilities
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityLayout"				"4"
+		"Ability1"					"winter_wyvern_arctic_burn"									
+		"Ability2"					"winter_wyvern_splinter_blast"									
+		"Ability3"					"winter_wyvern_cold_embrace"								
+		"Ability4"					"winter_wyvern_winters_curse"
+		"Ability5"					"attribute_bonus"
+
+		// Armor
+		//-------------------------------------------------------------------------------------------------------------
+		"ArmorPhysical"				"-1"								// Physical protection.
+		"MagicalResistance"			"25"								// Magical protection (percentage).
+
+		// Attack
+		//-------------------------------------------------------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"13"									// Damage range min.
+		"AttackDamageMax"			"20"									// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"				// Type of damage dealt. 
+		"AttackRate"				"1.7"									// Speed of attack.
+		"AttackAnimationPoint"		"0.25"									// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"									// Range within a target can be acquired.
+		"AttackRange"				"425"									// Range within a target can be attacked.
+		"ProjectileModel"			"winter_wyvern_base_attack"				// Particle system model for projectile.
+		"ProjectileSpeed"			"700"									// Speed of projectile.
+
+		// Attributes
+		//-------------------------------------------------------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
+		"AttributeBaseStrength"		"24"										// Base strength
+		"AttributeStrengthGain"		"2.1"										// Strength bonus per level.
+		"AttributeBaseIntelligence"	"25"										// Base intelligence
+		"AttributeIntelligenceGain"	"3.1"										// Intelligence bonus per level.
+		"AttributeBaseAgility"		"16"										// Base agility
+		"AttributeAgilityGain"		"1.9"										// Agility bonus per level.
+
+		// Bounds
+		//-------------------------------------------------------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_HERO"
+		
+		//Particles
+		//-------------------------------------------------------------------------------------------------------------
+		"ParticleFile"				"particles/units/heroes/hero_winter_wyvern.pcf"
+
+		// Additional data needed to render the out of game portrait
+		"RenderablePortrait"
+		{
+			"Particles"
+			{
+			}
+		}
+		
+		// Movement
+		//-------------------------------------------------------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"285"									// Speed.
+		"MovementTurnRate"			"0.4"									// Turning rate.
+		"HasAggressiveStance"		"0"										// Plays alternate idle/run animation when near enemies
+		"HealthBarOffset"			"150"
+		
+		"ParticleFile"				"particles/units/heroes/hero_winter_wyvern.pcf"
+
+		// Team
+		//-------------------------------------------------------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_BADGUYS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_HERO"
+		
+		// Vision
+		//-------------------------------------------------------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"									// Range of vision during day light.
+		"VisionNighttimeRange"		"800"									// Range of vision at night time.
+			
+		// Items
+		//------------------------------------------------------------------------------------------------------------- 
+		"ItemSlots"
+		{
 		}
 	}	
 }

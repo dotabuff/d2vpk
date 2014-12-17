@@ -1,11 +1,5 @@
 "Water"
 {
-
-	<dx90
-	{
-		 	"$fallbackmaterial" "water/water_2fort_dx80"
-	}
-
 	"%keywords" "tf"
 	//$forcecheap 1
 	//$nofresnel 1
@@ -47,11 +41,6 @@
 	 "$temp" "[0 0]"
 	 "$curr" 0.0
 	 "$curr2" 0.0
-
-	"Water_DX60"
-	{
-		"$fallbackmaterial" "nature/water_dx70"
-	}
 
 	"Proxies"
 	{

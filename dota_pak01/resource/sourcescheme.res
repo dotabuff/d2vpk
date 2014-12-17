@@ -449,7 +449,8 @@ Scheme
 			"1"
 			{
 				"name"		"Lucida Console"
-				"tall"		"10"
+				"tall"		"10" [!$HIGHDPI]
+				"tall"		"20" [$HIGHDPI]
 				"weight"	"500"
 			}
 		}
