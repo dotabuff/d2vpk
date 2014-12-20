@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/slark/hookblade_skadi/hookblade_skadi_color"
+	"$normalmap"		"models/items/slark/hookblade_skadi/hookblade_skadi_normal"
+	"$maskmap1"		"models/items/slark/hookblade_skadi/hookblade_skadi_mask1"
+	"$maskmap2"		"models/items/slark/hookblade_skadi/hookblade_skadi_mask2"
+	"$FRESNELWARP"		"models/heroes/sven/sven_fresnelranges"
+	"$alphatest"		"1"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$ENVMAPINTENSITY"		"3"
+	"$SPECULAREXPONENT"		"30"
+	"$SPECULARSCALE"		"15"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
