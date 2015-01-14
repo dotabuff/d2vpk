@@ -883,7 +883,7 @@
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
       "FightRecapLevel": "2",
-      "AbilityCastRange": "450",
+      "AbilityCastRange": "350",
       "AbilityCastPoint": "0.3 0.3 0.3",
       "AbilityCooldown": "130.0 120.0 110.0",
       "AbilityManaCost": "200 275 350",
@@ -4094,7 +4094,7 @@
       "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "FightRecapLevel": "1",
-      "AbilityCastRange": "400",
+      "AbilityCastRange": "375",
       "AbilityCastPoint": "0.5 0.5 0.5 0.5",
       "AbilityCooldown": "7.0 6.0 5.0 4.0",
       "AbilityDamage": "75 125 175 225",
@@ -4117,12 +4117,7 @@
           ]
         },
         {
-          "radius": [
-            400,
-            400,
-            400,
-            400
-          ]
+          "radius": 375
         }
       ]
     },
@@ -4164,7 +4159,7 @@
       "FightRecapLevel": "1",
       "AbilityCastRange": "500",
       "AbilityCastPoint": "0.3 0.3 0.3 0.3",
-      "AbilityCooldown": "10.0 10.0 10.0 10.0",
+      "AbilityCooldown": "13 12 11 10",
       "AbilityDamage": "100 175 250 325",
       "AbilityManaCost": "110 120 130 140",
       "AbilitySpecial": [
@@ -5648,6 +5643,9 @@
             2500,
             3000
           ]
+        },
+        {
+          "total_cast_time_tooltip": 2
         }
       ]
     },
@@ -6737,7 +6735,7 @@
       "AbilityCastRange": "600",
       "AbilityCastPoint": "0.35 0.35 0.35",
       "AbilityCooldown": "130.0 115.0 100.0",
-      "AbilityManaCost": "150 175 200",
+      "AbilityManaCost": "150 225 300",
       "AbilityModifierSupportBonus": "50",
       "AbilitySpecial": [
         {
@@ -13356,12 +13354,7 @@
       "AbilityManaCost": "0",
       "AbilitySpecial": [
         {
-          "damage": [
-            100,
-            100,
-            100,
-            100
-          ]
+          "damage": 50
         },
         {
           "duration": [
@@ -16187,10 +16180,10 @@
         },
         {
           "pounce_damage": [
-            55,
-            110,
-            165,
-            220
+            50,
+            100,
+            150,
+            200
           ]
         },
         {
