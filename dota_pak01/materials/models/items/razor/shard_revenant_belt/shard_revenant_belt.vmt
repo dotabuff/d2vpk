@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/razor/shard_revenant_belt/shard_revenant_belt_color"
+	"$normalmap"		"models/items/razor/shard_revenant_belt/shard_revenant_belt_normal"
+	"$detail1"		"models/heroes/razor/razor_electric.vtf"
+	"$maskmap1"		"models/items/razor/shard_revenant_belt/shard_revenant_belt_mask1"
+	"$maskmap2"		"models/items/razor/shard_revenant_belt/shard_revenant_belt_mask2"
+	"$diffusewarp"		"models/heroes/razor/razor_lightwarp"
+	"$SPECULAREXPONENT"		"15"
+	"$SPECULARSCALE"		"1.500000"
+	"$DETAIL1BLENDMODE"		"1"
+	"$DETAIL1SCALE"		"6"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$alphatest"		"1"
+	"$FRESNELWARP"		"models/heroes/juggernaut/juggernaut_fresnelranges"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.400000"
+			"texturescrollangle"		"32"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
