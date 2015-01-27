@@ -1,0 +1,49 @@
+"CustomHero"
+{
+	"$basetexture"		"models/items/ember_spirit/rapier_burning_god_offhand/rapier_burning_god_offhand_color"
+	"$normalmap"		"models/items/ember_spirit/rapier_burning_god_offhand/rapier_burning_god_offhand_normal"
+	"$maskmap1"		"models/items/ember_spirit/rapier_burning_god_offhand/rapier_burning_god_offhand_mask1"
+	"$maskmap2"		"models/items/ember_spirit/rapier_burning_god_offhand/rapier_burning_god_offhand_mask2"
+	"$detail1"		"models\heroes\ember_spirit\ember_spirit_detail"
+	"$DETAILFX"		"50"
+	"$SPECULAR_BLOOM_SCALE"		"0.500000"
+	"$DETAILSCALEVAR"		"1"
+	"$SPECULAREXPONENT"		"32"
+	"$SPECULARSCALE"		"1"
+	"$SPECULARCOLOR"		"[2.5 6.8 15.4]"
+	"$RIMLIGHTSCALE"		"5"
+	"$RIMLIGHTCOLOR"		"[1 .2 0]"
+	"$AMBIENTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$ENVMAP"		"models/cubemaps/glossy_orange"
+	"$ENVMAPINTENSITY"		"1"
+	"$MASKENVBYMETALNESS"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar"		"$DETAILFX"
+			"sineperiod"		"4"
+			"sinemin"		"-0.100000"
+			"sinemax"		"0.100000"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.100000"
+			"texturescrollangle"		"$DETAILFX"
+			"texturescale"		"0.750000"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

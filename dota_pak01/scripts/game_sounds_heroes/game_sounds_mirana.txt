@@ -310,3 +310,27 @@
 		}
 	}
 }
+
+"Hero_Mirana.Leap.MoonGriffon"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"pitch"			"95,105"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/mirana/leap4.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}

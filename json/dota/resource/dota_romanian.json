@@ -3504,7 +3504,7 @@
       "[english]DOTA_Tooltip_ability_sniper_take_aim_bonus_attack_range": "BONUS RANGE:",
       "DOTA_Tooltip_ability_sniper_assassinate": "Assassinate",
       "[english]DOTA_Tooltip_ability_sniper_assassinate": "Assassinate",
-      "DOTA_Tooltip_ability_sniper_assassinate_Description": "Sniper ţinteşte o unitate inamică aleasă, şi după 1.7 secunde, lansează un glonţ devastator ce cauzează damage la distanţă mare, și mini-năucește ținta.",
+      "DOTA_Tooltip_ability_sniper_assassinate_Description": "Sniper ţinteşte o unitate inamică aleasă, iar după %total_cast_time_tooltip% secunde lansează un glonţ devastator ce provoacă damage la distanţă mare și mini-năucește ținta.",
       "[english]DOTA_Tooltip_ability_sniper_assassinate_Description": "Sniper locks onto a target enemy unit and, after %total_cast_time_tooltip% seconds, fires a devastating shot that deals damage at long range, and mini-stuns the target.",
       "DOTA_Tooltip_ability_sniper_assassinate_tooltip_range": "DISTANŢĂ:",
       "[english]DOTA_Tooltip_ability_sniper_assassinate_tooltip_range": "RANGE:",
@@ -7030,7 +7030,7 @@
       "[english]DOTA_Tooltip_ability_item_belt_of_strength_Lore": "A valued accessory for improving vitality.",
       "DOTA_Tooltip_ability_item_belt_of_strength_bonus_strength": "+$str",
       "[english]DOTA_Tooltip_ability_item_belt_of_strength_bonus_strength": "+$str",
-      "DOTA_Tooltip_ability_item_bfury_Description": "Pasiv: Cleave - Cauzează un procent din damage într-o zonă de efect de 250 în jurul unității atacate. Unitățile ranged nu pot face Cleave.",
+      "DOTA_Tooltip_ability_item_bfury_Description": "Pasiv: Cleave - Cauzează un procent din damage într-o zonă de efect de %cleave_radius% în jurul țintei. Unitățile ranged nu pot face Cleave.",
       "[english]DOTA_Tooltip_ability_item_bfury_Description": "Passive: Cleave - Deals a percent of attack damage in a %cleave_radius% area around the target. Ranged units cannot Cleave.",
       "DOTA_Tooltip_ability_item_bfury_Lore": "Purtătorul acestui topor puternic dobândeşte abilitatea de a secera brazde de inamici simultan.",
       "[english]DOTA_Tooltip_ability_item_bfury_Lore": "The bearer of this mighty axe gains the ability to cut down swaths of enemies at once.",
@@ -36489,7 +36489,7 @@
       "StoreBanner_Header_DACCompendium2015": "Dota 2 Asia Championship 2015 Compendium",
       "[english]StoreBanner_Header_DACCompendium2015": "Dota 2 Asia Championship 2015 Compendium",
       "StoreBanner_Text_DACCompendium2015": "Mărește nivelul și câștigă recompense interesante!",
-      "[english]StoreBanner_Text_DACCompendium2015": "Level up and earn exciting rewards!",
+      "[english]StoreBanner_Text_DACCompendium2015": "Now with an additional treasure containing new, exciting items!",
       "Comp_2339_TMPL_tooltip_team_c9_tooltip_title": "C9",
       "[english]Comp_2339_TMPL_tooltip_team_c9_tooltip_title": "C9",
       "Comp_2339_PG_page_teams1elementlistteam_c9_defines_1": "Cloud 9",
@@ -36515,7 +36515,9 @@
       "Comp_2339_PG_page_teamprofile_raveelementlistteaminfo_defines_1": "Filipine",
       "[english]Comp_2339_PG_page_teamprofile_raveelementlistteaminfo_defines_1": "Philippines",
       "DOTA_Hero_Selection_AllDraft_TeammateRandomed": "%s1 a ales aleator și se decide acum dacă continuă așa sau alege din nou.",
-      "[english]DOTA_Hero_Selection_AllDraft_TeammateRandomed": "%s1 has randomed and is deciding to keep or reroll."
+      "[english]DOTA_Hero_Selection_AllDraft_TeammateRandomed": "%s1 has randomed and is deciding to keep or reroll.",
+      "StoreBanner_Header_HallowedLands": "Treasure of the Hallowed Lands",
+      "[english]StoreBanner_Header_HallowedLands": "Treasure of the Hallowed Lands"
     }
   }
 }

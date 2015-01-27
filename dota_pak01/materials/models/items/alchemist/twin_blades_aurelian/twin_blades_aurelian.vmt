@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/alchemist/twin_blades_aurelian/twin_blades_aurelian_color"
+	"$normalmap"		"models/items/alchemist/twin_blades_aurelian/twin_blades_aurelian_normal"
+	"$diffusewarp"		"models/heroes/sven/sven_diffusewarp"
+	"$maskmap1"		"models/items/alchemist/twin_blades_aurelian/twin_blades_aurelian_mask1"
+	"$maskmap2"		"models/items/alchemist/twin_blades_aurelian/twin_blades_aurelian_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"0.100000"
+	"$SPECULAREXPONENT"		"22"
+	"$SPECULARSCALE"		"15"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$RIMLIGHTSCALE"		"10"
+	"$DETAIL1"		"models/heroes/alchemist/alchemist_rage_detail"
+	"$DETAIL1BLENDMODE"		"1"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$alphatest"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.200000"
+			"texturescrollangle"		"55"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,25 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/weaver/skittering_desolation_arms/skittering_desolation_arms_color"
+	"$normalmap"		"models/items/weaver/skittering_desolation_arms/skittering_desolation_arms_normal"
+	"$maskmap1"		"models/items/weaver/skittering_desolation_arms/skittering_desolation_arms_mask1"
+	"$maskmap2"		"models/items/weaver/skittering_desolation_arms/skittering_desolation_arms_mask2"
+	"$SPECULAREXPONENT"		"50"
+	"$SPECULARSCALE"		"6"
+	"$SPECULAREXPONENTBLENDTOFULL"		"1"
+	"$RIMLIGHTCOLOR"		"[1 .8 .9]"
+	"$RIMLIGHTSCALE"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$alphatest"		"1"
+	"$FRESNELWARP"		"models/heroes/bane/bane_fresnelranges"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
