@@ -1,0 +1,64 @@
+"CustomHero"
+{
+	$baseTexture "models/particle/jade_shards_color.vtf"
+	"$normalmap" "models/particle/jade_rock_normal"
+
+	"$maskmap1" "models/particle/jade_rock_mask1"
+	"$maskmap2" "models/particle/jade_rock_mask2"
+
+
+	//"$alphatest" "1"
+
+
+	
+	//$ENVMAP "models/cubemaps/glossy"
+	//$ENVMAPINTENSITY 1
+	//$ENVMAPBLENTOFULL 1
+	//$MASKENVBYMETALNESS 1
+
+
+	//$SPECULAR_BLOOM_SCALE 20
+	$SPECULAREXPONENT 40
+  $SPECULARSCALE 5
+  $RIMLIGHTSCALE 2
+	
+	
+  $SPECULARCOLOR "[0.6 0.6 0]"	
+	$RIMLIGHTCOLOR "[0.2 0.6 0]"	
+	//$AMBIENTSCALE 1
+	
+
+
+	
+
+	
+
+
+
+  $IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	130
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	0
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

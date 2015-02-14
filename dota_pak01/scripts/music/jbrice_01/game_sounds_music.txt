@@ -1,0 +1,2648 @@
+// playgamesound shop_jbrice_01.music.ui_startup; playgamesound shop_jbrice_01.music.ui_main; playgamesound shop_jbrice_01.music.ui_world_map; playgamesound shop_jbrice_01.music.ui_hero_select; playgamesound shop_jbrice_01.music.countdown
+// playgamesound shop_jbrice_01.music.battle_01;  playgamesound shop_jbrice_01.music.battle_01_end; playgamesound shop_jbrice_01.music.battle_02; playgamesound shop_jbrice_01.music.battle_02_end
+// playgamesound shop_jbrice_01.music.battle_03;  playgamesound shop_jbrice_01.music.battle_03_end;  playgamesound shop_jbrice_01.music.battle_end_countdown
+// playgamesound shop_jbrice_01.music.roshan; playgamesound shop_jbrice_01.music.roshan_end;  playgamesound shop_jbrice_01.music.smoke;  playgamesound shop_jbrice_01.music.smoke_end_hero;
+// playgamesound shop_jbrice_01.music.smoke_end_tower;  playgamesound shop_jbrice_01.music.smoke_end_creep;  playgamesound shop_jbrice_01.music.laning_01_layer_01
+// playgamesound shop_jbrice_01.music.laning_01_layer_02;  playgamesound shop_jbrice_01.music.laning_01_layer_03;  playgamesound shop_jbrice_01.music.laning_02_layer_01
+// playgamesound shop_jbrice_01.music.laning_02_layer_02;  playgamesound shop_jbrice_01.music.laning_03_layer_01;  playgamesound shop_jbrice_01.music.laning_03_layer_02
+// playgamesound shop_jbrice_01.music.laning_03_layer_03;  playgamesound shop_jbrice_01.music.killed;  playgamesound shop_jbrice_01.music.dead;  playgamesound shop_jbrice_01.music.ganked_sml
+// playgamesound shop_jbrice_01.music.ganked_med;  playgamesound shop_jbrice_01.music.ganked_lg
+
+"shop_jbrice_01.music.ui_startup"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"		"#music\jbrice_01\music\ui_startup_01.mp3"
+	"operator_stacks"
+	{
+		"update_stack"
+		{			
+			"import_stack" "dota_update_music_stereo_worldmap_fadeout"
+		}
+		"start_stack"
+		{
+			"set_worldmap_flag"
+			{
+				"operator" "set_opvar_float"
+				"execute_once" "true"
+				"opvar" "dota_worldmap_flag"
+				"input" "0.0"	
+			}
+			"startup_music_stop" 
+			{
+				"execute_once" "true"
+				"input_execute"	"1.0"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" ".music." //Stop the smoke music if you attack a creep.	
+			}
+		}
+		
+		"stop_stack"
+		{
+			"import_stack" "dota_stop_not_worldmap"
+		}
+	}
+}
+
+"shop_jbrice_01.music.ui_main"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"#music\jbrice_01\music\ui_main_01.mp3"
+		//"wave"			"#music\jbrice_01\music\ui_main_02.mp3"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{			
+			"import_stack" "dota_update_music_stereo_worldmap_fadeout"
+
+		}
+		
+		"stop_stack"
+		{
+			"import_stack" "dota_stop_not_worldmap"
+			"repeat_secondary_ui_entry"
+			{
+				"entry_name" "shop_jbrice_01.music.ui_main"
+			}
+
+		}
+	}
+}
+
+// used code
+// moved
+"shop_jbrice_01.music.ui_hero_select"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.7"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"	"*#music\jbrice_01\music\ui_hero_select.wav"  
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "17.18"
+				"end_point" "97.971859"
+				"track_name" "main"
+				"track_priority" "1"	
+			}
+		}
+		
+		"start_stack"
+		{		
+			"import_stack" "dota_start_hero_select"
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+				
+			"block_hero_picker_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "0.5"
+				"match_substring" "false"
+				"match_entry" "shop_jbrice_01.music.ui_hero_select"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+
+			"volume_fade_out"
+			{
+				"input_max" "3"
+ 			}
+
+			//"update_track"
+			//{
+			//	"autoqueue_entry_at_end_point" "shop_jbrice_01.music.ui_hero_select"
+			//}
+		}
+		
+		"stop_stack"
+		{
+			"import_stack" "dota_stop_hero_select"
+		}
+	}
+}
+// used code
+// moved
+"shop_jbrice_01.music.countdown"
+{
+	"channel"	"CHAN_AUTO"
+	"volume"	"0.8"
+	"soundlevel"  "SNDLVL_NONE"
+	"wave"	"*#music\jbrice_01\music\countdown.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+				"track_name" "main"
+				"track_priority" "1"	
+				"priority_override" "true"
+			}
+		}
+		
+		"start_stack"
+		{
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "4096" //Prehorn music
+			}
+			
+			"set_prehorn_opvar"
+			{
+				"operator"	"set_opvar_float"
+				"opvar"		"music_prehorn_playing"
+				"input"		"1.0"
+			}			
+			"select_music_stop"
+			{
+				"execute_once" "true"
+				"input_execute"	"1.0"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" ".music.ui_hero_select" //Stop the smoke music if you attack a creep.	
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+
+			"volume_fade_in"
+			{
+				"input_max" "5.0"
+			}
+
+			"volume_fade_out"
+			{
+				"input_max" "3.0"
+			}
+			
+			
+			"block_prehorn_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "0.5"
+				"match_substring" "false"
+				"match_entry" "shop_jbrice_01.music.countdown"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		
+		"stop_stack"
+		{
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "4096" //Prehorn
+			}
+			
+			"set_prehorn_opvar"
+			{
+				"operator"	"set_opvar_float"
+				"opvar"		"music_prehorn_playing"
+				"input"		"0.0"
+			}
+		}
+	}
+}
+
+// no code, called battle music picker
+"shop_jbrice_01.music.battle_01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"*#music\jbrice_01\music\battle_01_1.mp3"
+		"wave"		"*#music\jbrice_01\music\battle_01_2.mp3"
+	}
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.0"
+				"end_point" "39.99"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "45"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.0"
+						"2"	"6.66"
+						"3"	"9.99"
+						"4"	"13.32"
+						"5" "16.65"
+						"6"	"19.98"
+						"7"	"23.31"
+						"8"	"26.64"
+						"9"	"29.97"
+						"10" "33.33"
+						"11" "36.66"
+						"12" "39.99"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BATTLE MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+			
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "4" //Battle
+			}
+			
+			"import_stack"	"dota_spectator_flag_set"
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+
+			"volume_fade_out"
+			{
+				"input_max" "2.0"
+			}
+			
+			"update_track"
+			{
+				"autoqueue_entry_at_end_point" "shop_jbrice_01.music.battle_01"
+			}
+		}
+		
+		"stop_stack" //have to do this in the syop stack, because _End doesnt get called in some cases (like death)
+		{
+			
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "4" //Battle
+			}
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BATTLE MUSIC KILLED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+// no code, called if matches "epic"
+"shop_jbrice_01.music.battle_01_end"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\battle_01_end.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.0"
+				"end_point" "5.0"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "47"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.0"
+						"2"	"5.0"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"import_stack"	"dota_spectator_flag_set"
+			
+			"set_spectator_flag_opar"
+			{
+				"input"		"0.0"				
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+			
+			"battle_music_stop" //brute forcing this shit cuz we can still get two effing battle musics WTF?!
+			{
+				"execute_once" "true"
+				"input_execute"	"1.0"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" ".music.battle_0" //Stop the smoke music if you attack a creep.	
+			}
+		}
+	}
+}
+
+"shop_jbrice_01.music.battle_02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"*#music\jbrice_01\music\battle_02_1.mp3"
+		"wave"		"*#music\jbrice_01\music\battle_02_2.mp3"
+	}
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "2.79"
+				"end_point" "53.029"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "45"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "2.891"
+						"2"	"8.473"
+						"3" "14.055"
+						"4"	"19.637"
+						"5" "25.219"
+						"6" "30.801"
+						"7" "36.383"
+						"8" "41.965"
+						"9" "47.547"
+						"10" "53.129"
+
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BATTLE MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+			
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "4" //Battle
+			}
+			
+			"import_stack"	"dota_spectator_flag_set"
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+
+			"volume_fade_out"
+			{
+				"input_max" "2.0"
+			}		
+			
+			"speakers_output"
+			{
+				"input_speakers" "0.0"
+			}
+			
+			"speakers_output_fix"
+			{
+				"operator" "sys_output"
+				"input_speakers" "@speakers_limit.output" 
+				"output" "speakers"
+			}
+			
+			"update_track"
+			{
+				"autoqueue_entry_at_end_point" "shop_jbrice_01.music.battle_02"	
+			}
+		}
+		
+		"stop_stack" //have to do this in the syop stack, because _End doesnt get called in some cases (like death)
+		{
+			
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "4" //Battle
+			}
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BATTLE MUSIC KILLED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+
+"shop_jbrice_01.music.battle_02_end"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\battle_02_end.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.02"
+				"end_point" "5.0"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "47"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.02"
+						"2"	"5.0"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"import_stack"	"dota_spectator_flag_set"
+			
+			"set_spectator_flag_opar"
+			{
+				"input"		"0.0"				
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				// "autoqueue_entry_at_end_point" "DOTAMusic.StateLaningMusic"
+// 				"stop_channel_on_track" "true"	
+// 			}
+			
+			"battle_music_stop" //brute forcing this shit cuz we can still get two effing battle musics WTF?!
+			{
+				"execute_once" "true"
+				"input_execute"	"1.0"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" ".music.battle_0" //Stop the smoke music if you attack a creep.	
+			}
+		}
+	}
+}
+// no code, called local
+"shop_jbrice_01.music.battle_03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"		"*#music\jbrice_01\music\battle_03_1.mp3"
+		"wave"		"*#music\jbrice_01\music\battle_03_2.mp3"
+	}
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.0"
+				"end_point" "49.0"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "45"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "4.9"
+						"2"	"9.8"
+						"3"	"14.7"
+						"4"	"19.6"
+						"5" "24.5"
+						"6"	"29.4"
+						"7"	"34.3"
+						"8"	"39.2"
+						"9" "44.1"
+						"10" "49.0"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BATTLE MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}	
+			
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "4" //Battle
+			}
+			
+			"import_stack"	"dota_spectator_flag_set"
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+
+			"volume_fade_out"
+			{
+				"input_max" "2.0"
+			}
+			
+			"update_track"
+			{
+				"autoqueue_entry_at_end_point" "shop_jbrice_01.music.battle_03"	
+			}
+		}
+		
+		"stop_stack" //have to do this in the syop stack, because _End doesnt get called in some cases (like death)
+		{
+			
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "4" //Battle
+			}
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************BATTLE MUSIC KILLED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+	}
+}
+// no code, called local
+"shop_jbrice_01.music.battle_03_end"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\battle_03_end.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.0"
+				"end_point" "9.0"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "47"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "1.56"
+						"2"	"7.0"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"import_stack"	"dota_spectator_flag_set"
+			
+			"set_spectator_flag_opar"
+			{
+				"input"		"0.0"				
+			}
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+
+			
+			"battle_music_stop" //brute forcing this shit cuz we can still get two effing battle musics WTF?!
+			{
+				"execute_once" "true"
+				"input_execute"	"1.0"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" ".music.battle_0" //Stop the smoke music if you attack a creep.	
+			}
+		}
+	}
+}
+"shop_jbrice_01.music.battle_end_countdown"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\battle_01_end.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "1.118"
+				"end_point" "5.59"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "47"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "1.118"
+						"2"	"5.59"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+		}
+	}
+}
+// no code, call local
+"shop_jbrice_01.music.roshan"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\roshan.mp3"
+	
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.0"
+				"end_point" "40"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "40"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.0"
+						"2"	"5.33"
+						"3"	"8.0"
+						"4"	"13.33"
+						"5" "16.67"
+						"6"	"22.67"
+						"7"	"26"
+						"8"	"29.67"
+						"9" "35"
+						"10" "40"					
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "128" //Roshan
+			}	
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_opvar_smoothing_update"
+			
+			"get_live_value_opvar" //Get the current from-the-game battle score
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_roshan_health_state" //replace me
+			}
+			
+			"get_smooth_value_opvar" //get our smoothed version of the battle score
+			{
+				"operator" "get_opvar_float"
+				"opvar" "music_roshan_health_state_smooth" //replace me
+			}	
+			
+			"get_attack_value_opvar"
+			{	
+				"operator" 	"get_opvar_float"
+				"opvar" 	"music_roshan_attack_state"			
+			}
+			
+			"remap_travel_distance_to_time"
+			{
+				"input_X1" "0.1"	
+				"input_Y1" "0.1"	
+				"input_X2" "5.0"	
+				"input_Y2" "2.0"	
+				"input_X3" "8.0"	
+				"input_Y3" "2.0"	
+				"input_X4" "10.0"	
+				"input_Y4" "4.0"	
+			}
+			
+			"remap_travel_distance_to_time_falling"
+			{
+				"input_X1" "0.1"	
+				"input_Y1" "0.1"	
+				"input_X2" "5.0"	
+				"input_Y2" "2.0"	
+				"input_X3" "8.0"	
+				"input_Y3" "2.0"	
+				"input_X4" "10.0"	
+				"input_Y4" "4.0"	
+			}	
+			
+			"set_opvar"
+			{
+				"opvar" "music_roshan_health_state_smooth"
+			}
+		
+			"remap_health_to_vol" //health is 0-100
+			{
+				"operator" "math_curve_2d_4knot"
+				"curve_type" "linear"	
+				"input" "@opvar_value_ramp.output"
+				"input_X1" "15.0"	
+				"input_Y1" "1.0"	
+				"input_X2" "25.0"	
+				"input_Y2" "0.9"	
+				"input_X3" "95.0"	
+				"input_Y3" "0.35"	
+				"input_X4" "100.0"	
+				"input_Y4" "0.1"	
+			}
+			
+			"fadetime_compare" //use shorter fadetime if Roshan is dead
+			{
+				"operator" "math_float"
+				"apply" "equals"	
+				"input1" "@get_attack_value_opvar.output"
+				"input2" "2.0" 
+			}
+			
+			"fadetime_short"
+			{
+				"operator" "math_float"
+				"apply" "mult"	
+				"input1" "1.0"
+				"input2" "0.5" 
+			}
+			
+			"fadetime_long"
+			{
+				"operator" "math_float"
+				"apply" "mult"	
+				"input1" "3.0"
+				"input2" "1.0" 
+			}
+		
+			"fadetime_logic_switch"
+			{
+				"operator" "math_logic_switch" 
+				"input1" "@fadetime_long.output"
+				"input2" "@fadetime_short.output"
+				"input_switch" "@opvar_smoothing_difference_compare.output"
+			}
+			
+			"import_stack" "dota_update_music_stereo_track_update"
+			
+			"volume_fade_out"
+			{
+				"input_max" "@fadetime_logic_switch.output"
+ 			}
+			
+			"external_scaler"
+			{
+				"operator" "math_float"
+				"apply" "mult"	
+				"input2" "@remap_health_to_vol.output"
+			}
+
+			"speakers_limit"
+			{
+				"input2[*]" "@external_scaler.output"
+			}
+			
+			// "speakers_output"
+			// {
+				// "input_speakers" "0.5"
+			// }
+				
+			"speakers_output"
+			{
+				"input_speakers" "0.0"
+			}
+			
+			"speakers_output_fix"
+			{
+				"operator" "sys_output"
+				"input_speakers" "@speakers_limit.output" 
+				"output" "speakers"
+			}
+			
+			"speakers_output_fix"
+			{
+				"operator" "sys_output"
+				"input_speakers" "@speakers_limit.output" 
+				"output" "speakers"
+			}
+			
+			"update_track"
+			{
+				"autoqueue_entry_at_end_point" "shop_jbrice_01.music.roshan"	
+			}
+			
+		}
+		
+		"stop_stack"
+		{
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "128" //Roshan
+			}	
+		}
+	}
+}
+
+// no code, called above
+"shop_jbrice_01.music.roshan_end"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\roshan_end.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.0"
+				"end_point" "5.33"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "42"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.0"
+						"2"	"5.33"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_music_stereo_track_update"
+
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "true"	
+// 			}			
+		}
+	}
+}
+
+"shop_jbrice_01.music.smoke"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\smoke.mp3" 
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.5"
+				"end_point" "2.5"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "5"	
+				// "syncpoints"
+				// {
+					// "syncpoints_1"
+					// {
+						// "1" "0.5"
+						// "2"	"2.5"
+					// }	
+				// }
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			// "sync_track_syncpoints"
+ 			// {
+ 				// "operator" "track_queue"
+ 				// "syncpoint_list" "syncpoints_1"
+ 			// }
+ 		}
+		
+		"start_stack"
+		{			
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "8192" //Roshan
+			}	
+		}
+		
+		"update_stack"
+		{	
+			"import_stack" "dota_update_music_stereo_track_update"
+			
+			"volume_fade_out"
+			{
+				"input_max" "3.0"
+			}				
+			
+			"speakers_output"
+			{
+				"input_speakers" "0.0"
+			}
+			
+			"speakers_output_fix"
+			{
+				"operator" "sys_output"
+				"input_speakers" "@speakers_limit.output" 
+				"output" "speakers"
+			}
+			
+		}
+		
+		"stop_stack"
+		{
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "8192" //Roshan
+			}	
+		}
+	}
+}
+// no code, called above
+"shop_jbrice_01.music.smoke_end_hero"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\smoke_end_hero.mp3" 
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.5"
+				"end_point" "2.5"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "10"	
+				// "syncpoints"
+				// {
+					// "syncpoints_1"
+					// {
+						// "1" "0.5"
+						// "2"	"2.5"
+					// }	
+				// }
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			// "sync_track_syncpoints"
+ 			// {
+ 				// "operator" "track_queue"
+ 				// "syncpoint_list" "syncpoints_1"
+ 			// }
+ 		}
+		
+		"update_stack"
+		{	
+			"import_stack" "dota_update_music_stereo_track_update"
+			
+			"speakers_output"
+			{
+				"input_speakers" "0.0"
+			}
+			
+			"speakers_output_fix"
+			{
+				"operator" "sys_output"
+				"input_speakers" "@speakers_limit.output" 
+				"output" "speakers"
+			}
+		}
+	}
+}
+// called above
+"shop_jbrice_01.music.smoke_end_tower"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\smoke_end.mp3" 
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "2.0"
+				"end_point" "9.66"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "10"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "2.0"
+						"2"	"9.66"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			// "sync_track_syncpoints"
+ 			// {
+ 				// "operator" "track_queue"
+ 				// "syncpoint_list" "syncpoints_1"
+ 			// }
+ 		}
+		
+		"update_stack"
+		{	
+			"import_stack" "dota_update_music_stereo_track_update"
+			
+			"speakers_output"
+			{
+				"input_speakers" "0.0"
+			}
+			
+			"speakers_output_fix"
+			{
+				"operator" "sys_output"
+				"input_speakers" "@speakers_limit.output" 
+				"output" "speakers"
+			}
+		}
+	}
+}
+// called above
+"shop_jbrice_01.music.smoke_end_creep"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\smoke_end.mp3" 
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "2.0"
+				"end_point" "9.66"
+				"track_name" "main"
+				"sync_track_name" "main"
+				"track_priority" "10"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "2.0"
+						"2"	"9.66"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			// "sync_track_syncpoints"
+ 			// {
+ 				// "operator" "track_queue"
+ 				// "syncpoint_list" "syncpoints_1"
+ 			// }
+ 		}
+		
+		"update_stack"
+		{	
+			"import_stack" "dota_update_music_stereo_track_update"
+
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "true"	
+// 			}
+			
+			"speakers_output"
+			{
+				"input_speakers" "0.0"
+			}
+			
+			"speakers_output_fix"
+			{
+				"operator" "sys_output"
+				"input_speakers" "@speakers_limit.output" 
+				"output" "speakers"
+			}
+		}
+	}
+}
+"shop_jbrice_01.music.laning_01_layer_01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_01_layer_01.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore1"
+				"sync_track_name" "explore1"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"laning_01_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+			
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.5"	
+				"input_X2" "0.5"	
+				"input_Y2" "0.5"	
+				"input_X3" "0.75"	
+				"input_Y3" "0.75"	
+				"input_X4" "1.0"	
+				"input_Y4" "1.0"	
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+			
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "false"	
+// 			}
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_01"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}	
+	}
+}
+
+"shop_jbrice_01.music.laning_01_layer_02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_01_layer_02.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore2"
+				"sync_track_name" "explore2"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"laning_01_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.5"	
+				"input_X2" "0.25"	
+				"input_Y2" "0.5"	
+				"input_X3" "0.5"	
+				"input_Y3" "0.75"	
+				"input_X4" "0.75"	
+				"input_Y4" "1.0"	
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+			
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "false"	
+// 			}
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_01"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}	
+	}
+}
+
+"shop_jbrice_01.music.laning_01_layer_03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_01_layer_03.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore3"
+				"sync_track_name" "explore3"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"laning_01_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.1"	
+				"input_X2" "0.5"	
+				"input_Y2" "0.5"	
+				"input_X3" "0.75"	
+				"input_Y3" "0.5"	
+				"input_X4" "1.0"	
+				"input_Y4" "1.0"				
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+			
+// 			"update_track"
+// 			{
+// 				"operator" "track_update"
+// 				"stop_channel_on_track" "false"	
+// 			}
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_01"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}	
+	}
+}
+
+"shop_jbrice_01.music.laning_02_layer_01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_02_layer_01.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore1"
+				"sync_track_name" "explore1"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"laning_02_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+						
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "1.0"	
+				"input_X2" "0.5"	
+				"input_Y2" "1.0"	
+				"input_X3" "0.5"	
+				"input_Y3" "1.0"	
+				"input_X4" "1.0"	
+				"input_Y4" "1.0"	
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_02"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}	
+	}
+}
+
+"shop_jbrice_01.music.laning_02_layer_02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_02_layer_02.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore2"
+				"sync_track_name" "explore2"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"laning_02_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.25"	
+				"input_X2" "0.25"	
+				"input_Y2" "0.5"	
+				"input_X3" "0.5"	
+				"input_Y3" "0.75"	
+				"input_X4" "0.75"	
+				"input_Y4" "1.0"	
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+			
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_02"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}	
+	}
+}
+
+"shop_jbrice_01.music.laning_02_layer_03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_02_layer_03.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore2"
+				"sync_track_name" "explore2"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"laning_02_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.1"	
+				"input_X2" "0.25"	
+				"input_Y2" "0.25"	
+				"input_X3" "0.5"	
+				"input_Y3" "0.75"
+				"input_X4" "1.0"	
+				"input_Y4" "1.0"	
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+			
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_02"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}	
+	}
+}
+
+//BLOCKEND
+
+"shop_jbrice_01.music.laning_03_layer_01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_03_layer_01.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore1"
+				"sync_track_name" "explore1"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"explore_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+			
+            "get_debug_printing_opvar" //set the opvar to 0.0, do this once only.  //this is for debugging
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************LANING_MUSIC_STARTED**************" 
+			{
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.66"	
+				"input_X2" "0.5"	
+				"input_Y2" "1.0"	
+				"input_X3" "0.5"	
+				"input_Y3" "1.0"	
+				"input_X4" "1.0"	
+				"input_Y4" "1.0"	
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_03"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}
+	}
+}
+
+"shop_jbrice_01.music.laning_03_layer_02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_03_layer_02.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore2"
+				"sync_track_name" "explore2"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"explore_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.25"	
+				"input_X2" "0.25"	
+				"input_Y2" "0.5"	
+				"input_X3" "0.5"	
+				"input_Y3" "0.75"	
+				"input_X4" "0.75"	
+				"input_Y4" "1.0"	
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_03"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}
+	}
+}
+
+"shop_jbrice_01.music.laning_03_layer_03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"*#music\jbrice_01\music\laning_03_layer_03.mp3"
+	"operator_stacks"
+	{
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0"
+				"end_point" "161.802"
+				"track_name" "explore3"
+				"sync_track_name" "explore3"
+				"track_priority" "1"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.000"
+						"2" "161.802"
+					}	
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_random_delay_opvar"
+			{
+				"operator" "get_opvar_float"
+				"opvar" 	"explore_random_delay_opvar"
+			}
+		
+			"explore_music_delay_output"
+			{
+				"operator" "sys_output"
+				"input_float" "@get_random_delay_opvar.output" //delays the start of a sound by a random amount
+				"output" "delay"
+			}
+		}
+		
+		"update_stack"
+		{
+			
+			"import_stack" "dota_update_music_4layer_track_update"
+			
+			"intensity_to_vol_remap"
+			{
+				"input_X1" "0.0"	
+				"input_Y1" "0.25"	
+				"input_X2" "0.25"	
+				"input_Y2" "0.5"	
+				"input_X3" "0.75"	
+				"input_Y3" "0.75"	
+				"input_X4" "1.0"	
+				"input_Y4" "1.0"				
+			}
+			
+			"speakers_limit"	
+			{
+				"input2[*]" "@speaker_volume.output"		
+			}
+		}
+		
+		"stop_stack"
+		{
+			"4layer_stop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" ".music.laning"
+				"match_entity" "false"	
+				"match_substring" "true"
+			}
+			
+			"4layer_stop_loop" 
+			{
+				"operator" "sys_stop_entries"
+				"input_execute" "1.0"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entry" "DOTAMusic.Laning_03"
+				"match_entity" "false"	
+				"match_substring" "false"
+			}
+		}
+	}
+}
+
+//BLOCKEND
+
+"shop_jbrice_01.music.killed"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"	"#music\jbrice_01\music\killed.mp3"
+
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.00"
+//				"end_point" "9.61"
+//				"track_name" "stinger_high_priority"
+				"track_name" "dead"
+				//"sync_track_name" "main"
+//				"track_priority" "50"	
+				"track_priority" "55"	
+				"syncpoints"
+				{
+					"syncpoints_1"
+					{
+						"1" "0.0"
+					}
+				}
+				"override_priority" "false"	
+			}
+		}
+		
+		"prestart_stack" //replaces null.wav
+ 		{
+ 			"sync_track_syncpoints"
+ 			{
+ 				"operator" "track_queue"
+ 				"syncpoint_list" "syncpoints_1"
+ 			}
+ 		}
+		
+		"start_stack"
+		{
+			"get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************TRANSITION TO DEATH MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+			
+			"limit_sound_laning"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" ".music.laning"
+			}
+			
+			"limit_sound_battle"
+			{
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" ".music.battle" //We allow no instances of battle when the death stinger knells		
+			}
+			
+			"stop_main_track"
+			{
+				"operator" "track_stop"
+				"track_name" "main"
+			}
+
+			// from .dead
+			"import_stack" "dota_start_music_type_tracker"
+			
+			"add_music_value"
+			{
+				"input2" "16" //Dead
+			}
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************DEATH MUSIC STARTED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+
+		}
+			
+		"update_stack"
+		{
+			"import_stack" "dota_update_death_music_track_update"
+			"update_track"
+			{
+				"stop_channel_on_track" "true"	
+			}
+			"volume_fade_out"
+			{
+				"input_max" "4"
+ 			}
+						
+			"block_entry_time_calc"
+			{
+				"operator" "math_float"
+				"apply"	"add"
+				"input1" "0.2"
+				"input2" "@elapsed_time.output_sound_elapsed"
+			}
+			
+			"block_entries"
+			{
+				"operator" "sys_block_entries"
+				// "execute_once" "true"
+				"input_active" "1.0"	
+				"input_duration" "@block_entry_time_calc.output" //in seconds, you can use "@get_random.output" for a random blocking period
+				"match_substring" "true"
+				"match_entry" ".music.killed" //The sound entry to use
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+		}
+		"stop_stack"
+		{
+			"import_stack" "dota_stop_music_type_tracker"
+			
+			"remove_music_value"
+			{
+				"input2" "16" //Dead, this values is pushed with the death stinger.
+			}	
+			
+            "get_debug_printing_opvar" 
+            {
+				"operator" "get_opvar_float"
+				"opvar" "debug_print_music"
+			}
+			
+			"**************DEATH MUSIC KILLED**************" 
+			{
+				"execute_once" "false"
+				"input_execute"	"@get_debug_printing_opvar.output"
+				"operator" "util_print_float"
+				"input" "1.0"
+			}
+		}
+
+	}
+}
+
+
+"shop_jbrice_01.music.ganked_sml"
+{
+	"channel"		"CHAN_STATIC"
+	// "volume"		"0.0"
+	"volume"		"0.75"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"music\jbrice_01\music\ganked_sml_01.mp3"
+		"wave"			"music\jbrice_01\music\ganked_sml_02.mp3"
+	}
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{	
+// 			"gank_music_request_opvar" 
+// 			{
+// 				"operator" "get_opvar_float"
+// 				"opvar" "music_probability_gank"	
+// 			}		
+		
+			"import_stack" "dota_update_default_ganked_music"
+
+			"remap_gank_opvar_value"
+			{
+// 				"operator" "math_curve_2d_4knot"
+// 				"curve_type" "linear"	
+// 				"input" "@gank_music_request_opvar.output"
+				"input_X1" "0.0"	
+				"input_Y1" "0.0"	
+				"input_X2" "0.30"	
+				"input_Y2" "0.25"	
+				"input_X3" "0.4"	
+				"input_Y3" "0.6"	
+				"input_X4" "0.55"	
+				"input_Y4" "1.0"	
+			}	
+
+// 			"volume_accumulate"
+// 			{
+// 				"input12" "@remap_gank_opvar_value.output"
+// 			}			
+		}
+	}
+}
+
+"shop_jbrice_01.music.ganked_med"
+{
+	"channel"		"CHAN_STATIC"
+	// "volume"		"0.0"
+	"volume"		"0.75"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"music\jbrice_01\music\ganked_med_01.mp3"
+		"wave"			"music\jbrice_01\music\ganked_med_02.mp3"
+	}
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{	
+// 			"gank_music_request_opvar" 
+// 			{
+// 				"operator" "get_opvar_float"
+// 				"opvar" "music_probability_gank"	
+// 			}		
+		
+			"import_stack" "dota_update_default_ganked_music"
+
+			"remap_gank_opvar_value"
+			{
+// 				"operator" "math_curve_2d_4knot"
+// 				"curve_type" "linear"	
+// 				"input" "@gank_music_request_opvar.output"
+				"input_X1" "0.55"	
+				"input_Y1" "0.25"	
+				"input_X2" "0.65"	
+				"input_Y2" "0.5"	
+				"input_X3" "0.7"	
+				"input_Y3" "0.7"	
+				"input_X4" "0.8"	
+				"input_Y4" "1.0"	
+			}	
+
+// 			"volume_accumulate"
+// 			{
+// 				"input12" "@remap_gank_opvar_value.output"
+// 			}	
+		}
+	}
+}
+
+"shop_jbrice_01.music.ganked_lg"
+{
+	"channel"		"CHAN_STATIC"
+	// "volume"		"0.0"
+	"volume"		"0.75"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"			"music\jbrice_01\music\ganked_lg_01.mp3"
+		"wave"			"music\jbrice_01\music\ganked_lg_02.mp3"
+	}
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{		
+			"import_stack" "dota_update_default_ganked_music"
+			"remap_gank_opvar_value"
+			{
+//				"operator" "math_curve_2d_4knot"
+//				"curve_type" "linear"	
+//				"input" "@gank_music_request_opvar.output"
+				"input_X1" "0.8"	
+				"input_Y1" "0.25"	
+				"input_X2" "0.9"	
+				"input_Y2" "0.5"	
+				"input_X3" "1.0"	
+				"input_Y3" "1.0"	
+				"input_X4" "1.0"	
+				"input_Y4" "1.0"	
+			}	
+
+// 			"volume_accumulate"
+// 			{
+// 				"input12" "@remap_gank_opvar_value.output"
+// 			}	
+		}
+	}
+}

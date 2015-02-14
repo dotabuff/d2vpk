@@ -1,0 +1,201 @@
+// file    : nian.cloth
+// author  : jameso
+// date    : 24 Jan 2014, 03:32PM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.15"
+        AnimationVertexAttraction        "0.1"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        columns                          "1"
+        Damping                          "0.3"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity_scale                    "9.8"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            LeftWhiskerB0_JNT            "R0C0"
+            LeftWhiskerB1_JNT            "R1C0"
+            LeftWhiskerB2_JNT            "R2C0"
+            LeftWhiskerB3_JNT            "R3C0"
+            LeftWhiskerB4_JNT            "R4C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        R2C0                             "0.75"
+        R3C0                             "0.5"
+        R4C0                             "0.25"
+        rows                             "5"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.15"
+        AnimationVertexAttraction        "0.1"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        columns                          "1"
+        Damping                          "0.3"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity_scale                    "9.8"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            RightWhiskerB0_JNT           "R0C0"
+            RightWhiskerB1_JNT           "R1C0"
+            RightWhiskerB2_JNT           "R2C0"
+            RightWhiskerB3_JNT           "R3C0"
+            RightWhiskerB4_JNT           "R4C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        R2C0                             "0.75"
+        R3C0                             "0.5"
+        R4C0                             "0.25"
+        rows                             "5"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.4"
+        AnimationVertexAttraction        "0.25"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        columns                          "1"
+        Damping                          "2.5"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.8"
+        gravity_scale                    "-9.8"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            UpperMane0_JNT               "R0C0"
+            UpperMane1_JNT               "R1C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        rows                             "2"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.35"
+        AnimationVertexAttraction        "0.15"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        columns                          "1"
+        Damping                          "5.5"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.6"
+        gravity_scale                    "-9.8"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            LowerMane0_JNT               "R0C0"
+            LowerMane1_JNT               "R1C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        rows                             "2"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.4"
+        AnimationVertexAttraction        "0.25"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        columns                          "1"
+        Damping                          "0.3"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity_scale                    "9.8"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            LowerTailEnd0_JNT            "R0C0"
+            LowerTailEnd1_JNT            "R1C0"
+            LowerTailEnd2_JNT            "R2C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        R2C0                             "0.75"
+        rows                             "3"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.4"
+        AnimationVertexAttraction        "0.25"
+        BendSpringConstraint             "2.4"
+        BendSpringDamping                "0.8"
+        columns                          "1"
+        Damping                          "0.3"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity_scale                    "9.8"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            UpperTailEnd0_JNT            "R0C0"
+            UpperTailEnd1_JNT            "R1C0"
+            UpperTailEnd2_JNT            "R2C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        R2C0                             "0.75"
+        rows                             "3"
+        ShearSpringConstraint            "4.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+}
+
+// eof

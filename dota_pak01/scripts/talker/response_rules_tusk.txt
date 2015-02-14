@@ -210,6 +210,17 @@ Rule tusk_KillIsEnemyBrewmasterChance_25%_Rule
 	response tusk_KillIsEnemyBrewmasterChance_25%
 }
 
+Response tusk_KillIsEnemyWinter_WyvernChance_25%
+{
+	scene "scenes/tusk/tusk_tusk_rival_06.vcd" nodelay noscene 
+}
+
+Rule tusk_KillIsEnemyWinter_WyvernChance_25%_Rule
+{
+	criteria Kill Istusk IsEnemyWinter_Wyvern Chance_25%
+	response tusk_KillIsEnemyWinter_WyvernChance_25%
+}
+
 Response tusk_KillIsEnemyAncient_ApparitionChance_25%
 {
 	scene "scenes/tusk/tusk_tusk_rival_07.vcd" nodelay noscene 
@@ -628,6 +639,17 @@ Rule tusk_AllyNearIsAllyAncient_ApparitionEarlyGame_Rule
 {
 	criteria AllyNear Istusk IsAllyAncient_Apparition EarlyGame
 	response tusk_AllyNearIsAllyAncient_ApparitionEarlyGame
+}
+
+Response tusk_AllyNearIsAllyWinter_WyvernEarlyGame
+{
+	scene "scenes/tusk/tusk_tusk_ally_06.vcd" nodelay noscene speakonce
+}
+
+Rule tusk_AllyNearIsAllyWinter_WyvernEarlyGame_Rule
+{
+	criteria AllyNear Istusk IsAllyWinter_Wyvern EarlyGame
+	response tusk_AllyNearIsAllyWinter_WyvernEarlyGame
 }
 
 Response tusk_AllyNearIsAllyStormSpiritEarlyGame

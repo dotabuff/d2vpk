@@ -156,6 +156,17 @@ Rule ember_spirit_KillIsEmberRemnantRunChance_15%_Rule
 	response ember_spirit_KillIsEmberRemnantRunChance_15%
 }
 
+Response ember_spirit_KillIsEnemyWinter_WyvernChance_25%
+{
+	scene "scenes/ember_spirit/ember_spirit_embr_rival_01.vcd" nodelay noscene 
+}
+
+Rule ember_spirit_KillIsEnemyWinter_WyvernChance_25%_Rule
+{
+	criteria Kill Isember_spirit IsEnemyWinter_Wyvern Chance_25%
+	response ember_spirit_KillIsEnemyWinter_WyvernChance_25%
+}
+
 Response ember_spirit_KillIsEnemyPhoenixChance_25%
 {
 	scene "scenes/ember_spirit/ember_spirit_embr_rival_02.vcd" nodelay noscene 

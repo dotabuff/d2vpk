@@ -2528,7 +2528,7 @@ voice_duck 0
 VERSION 1.0
 PLAINTEXT
 {
-Again... 
+Again...
 }
 WORDS
 {
@@ -4584,6 +4584,55 @@ voice_duck 0
 }
 }
 
+*vo\vengefulspirit\vng_drop_common_01.mp3
+{
+VERSION 1.0
+PLAINTEXT
+{
+A gift from the goddess!
+}
+WORDS
+{
+WORD A 0.384 0.624
+{
+652 ah 0.384 0.624 1
+}
+WORD gift 0.624 1.376
+{
+103 g 0.624 0.704 1
+618 ih 0.704 1.040 1
+102 f 1.040 1.168 1
+116 t 1.168 1.376 1
+}
+WORD from 1.376 1.616
+{
+102 f 1.376 1.392 1
+602 er 1.392 1.408 1
+109 m 1.408 1.616 1
+}
+WORD the 1.616 1.696
+{
+240 dh 1.616 1.648 1
+652 ah 1.648 1.696 1
+}
+WORD goddess 1.696 2.544
+{
+103 g 1.696 1.760 1
+111 ow 1.760 1.984 1
+100 d 1.984 2.000 1
+601 ax 2.000 2.240 1
+115 s 2.240 2.544 1
+}
+}
+EMPHASIS
+{
+}
+OPTIONS
+{
+voice_duck 0
+}
+}
+
 *vo\vengefulspirit\vng_illus_01.mp3
 {
 VERSION 1.0
@@ -6544,55 +6593,6 @@ WORD Denied 0.000 1.008
 110 n 0.032 0.400 1
 106 y 0.400 0.960 1
 100 d 0.960 1.008 1
-}
-}
-EMPHASIS
-{
-}
-OPTIONS
-{
-voice_duck 0
-}
-}
-
-*vo\vengefulspirit\vng_drop_common_01.mp3
-{
-VERSION 1.0
-PLAINTEXT
-{
-A gift from the goddess!
-}
-WORDS
-{
-WORD A 0.384 0.624
-{
-652 ah 0.384 0.624 1
-}
-WORD gift 0.624 1.376
-{
-103 g 0.624 0.704 1
-618 ih 0.704 1.040 1
-102 f 1.040 1.168 1
-116 t 1.168 1.376 1
-}
-WORD from 1.376 1.616
-{
-102 f 1.376 1.392 1
-602 er 1.392 1.408 1
-109 m 1.408 1.616 1
-}
-WORD the 1.616 1.696
-{
-240 dh 1.616 1.648 1
-652 ah 1.648 1.696 1
-}
-WORD goddess 1.696 2.544
-{
-103 g 1.696 1.760 1
-111 ow 1.760 1.984 1
-100 d 1.984 2.000 1
-601 ax 2.000 2.240 1
-115 s 2.240 2.544 1
 }
 }
 EMPHASIS

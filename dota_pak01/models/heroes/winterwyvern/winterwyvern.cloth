@@ -1,0 +1,43 @@
+// file    : winterwyvern.cloth
+// author  : alexanderm
+// date    : 30 Apr 2014, 09:32AM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.593"
+        AnimationVertexAttraction        "3.72"
+        BendSpringConstant               "20.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "tail_"
+        columns                          "1"
+        damping                          "3.85"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.1"
+        gravity                          "0 0 -1"
+        gravity_scale                    "650.0"
+        LocalForce                       "1.0"
+        LocalRotation                    "1.0"
+        R0                               "fixed"
+        R1                               "mass  .25"
+        R2                               "mass  .25"
+        R3                               "mass  .35"
+        R4                               "mass  .55"
+        R5                               "mass  .95"
+	R6				 "mass  1"
+	R7				 "mass  1.2"
+	R8				 "mass  1.5"
+        rows                             "9"
+        ShearSpringConstant              "20.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "20.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+}
+// eof

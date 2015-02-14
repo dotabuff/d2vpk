@@ -260,3 +260,388 @@
 		}
 	}
 }
+
+"Hero_Crystal.FreezingField.Arcana"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 100"
+	"wave"			")weapons\hero\crystal_maiden\freezing_field.mp3"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Crystal.ChoirOfIcewrack"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+
+			"volume_fade_out"
+			{
+				"input_max" "1.5"
+			}
+		}
+	}
+}
+
+"Hero_Crystal.ChoirOfIcewrack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\crystal_maiden\arcana_ult_layer.mp3"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+
+			"volume_fade_out"
+			{
+				"input_max" "1.5"
+			}
+		}
+	}
+}
+
+"Hero_CrystalMaiden.Movement"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95,105"
+	
+	"rndwave"
+	{
+		"wave"		")physics\movement\hero\crystal_maiden\move01.wav"
+		"wave"		")physics\movement\hero\crystal_maiden\move02.wav"
+		"wave"		")physics\movement\hero\crystal_maiden\move03.wav"
+	}
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+ 			"volume_move"
+			{
+				"input_max" "300.0"
+				"input_map_min" "0.01"
+			}
+			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
+			}
+			"volume_move_filter"
+			{
+				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+///////////////////////////////////////////////////////////////////////////
+
+"Icewrack_Pup.Footsteps"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.5, 0.6"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\crystal_maiden\paws01.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\paws02.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\paws03.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\paws04.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\paws05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "1500"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}
+
+"Icewrack_Pup.Pant"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\crystal_maiden\pant01.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\pant02.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\pant03.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\pant04.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.Breath"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.6, 0.8"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\crystal_maiden\breath01.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\breath02.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\breath03.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\breath04.wav"
+		"wave"		"null.wav"
+		"wave"		"null.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.Happy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.7, 0.9"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\crystal_maiden\happy01.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\happy02.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\happy03.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\happy04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.idle_alt_shake"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"100"
+	"wave"			"physics\movement\hero\crystal_maiden\idle_alt_shake.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.idle_alt_bark"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			"physics\movement\hero\crystal_maiden\idle_alt_bark.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.Ult.Howl"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			"physics\movement\hero\crystal_maiden\idle_alt_howl.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+
+			"volume_fade_out"
+			{
+				"input_max" "1.5"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.Flee"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			"physics\movement\hero\crystal_maiden\flee.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.Alert"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\crystal_maiden\alert01.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\alert02.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\alert03.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\alert04.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\alert05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "3000"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.Yawn"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"95, 105"
+	"wave"			"physics\movement\hero\crystal_maiden\yawn.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Icewrack_Pup.Scritch"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.7, 0.9"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\crystal_maiden\scritch01.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\scritch02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}

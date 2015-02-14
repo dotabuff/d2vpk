@@ -615,6 +615,17 @@ Rule legion_commander_KillChance_3%IsEnemyJakiro_Rule
 	response legion_commander_KillChance_3%IsEnemyJakiro
 }
 
+Response legion_commander_KillChance_3%IsEnemyWinter_Wyvern
+{
+	scene "scenes/legion_commander/legion_commander_legcom_rival_26.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsEnemyWinter_Wyvern_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsEnemyWinter_Wyvern
+	response legion_commander_KillChance_3%IsEnemyWinter_Wyvern
+}
+
 Response legion_commander_KillChance_3%IsEnemyDragon_Knight
 {
 	scene "scenes/legion_commander/legion_commander_legcom_rival_26.vcd" nodelay noscene 
@@ -1438,6 +1449,17 @@ Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDragon_Knight_Rule
 {
 	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyDragon_Knight
 	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyDragon_Knight
+}
+
+Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWinter_Wyvern
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_rival_26.vcd" nodelay noscene 
+}
+
+Rule legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWinter_Wyvern_Rule
+{
+	criteria Kill Islegion_commander Chance_3% IsLegionEconDemon IsEnemyWinter_Wyvern
+	response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyWinter_Wyvern
 }
 
 Response legion_commander_KillChance_3%IsLegionEconDemonIsEnemyMedusa
@@ -4138,6 +4160,17 @@ Rule legion_commander_AllyNearEarlyGameIsAllyTusk_Rule
 	response legion_commander_AllyNearEarlyGameIsAllyTusk
 }
 
+Response legion_commander_AllyNearEarlyGameIsAllyWinter_Wyvern
+{
+	scene "scenes/legion_commander/legion_commander_legcom_ally_19.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsAllyWinter_Wyvern_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsAllyWinter_Wyvern
+	response legion_commander_AllyNearEarlyGameIsAllyWinter_Wyvern
+}
+
 Response legion_commander_AllyNearEarlyGameIsAllyShredder
 {
 	scene "scenes/legion_commander/legion_commander_legcom_ally_20.vcd" nodelay noscene speakonce
@@ -4455,6 +4488,17 @@ Rule legion_commander_AllyNearEarlyGameIsAllyTuskIsLegionEconDemon_Rule
 {
 	criteria AllyNear Islegion_commander EarlyGame IsAllyTusk IsLegionEconDemon
 	response legion_commander_AllyNearEarlyGameIsAllyTuskIsLegionEconDemon
+}
+
+Response legion_commander_AllyNearEarlyGameIsAllyWinter_WyvernIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_ally_19.vcd" nodelay noscene speakonce
+}
+
+Rule legion_commander_AllyNearEarlyGameIsAllyWinter_WyvernIsLegionEconDemon_Rule
+{
+	criteria AllyNear Islegion_commander EarlyGame IsAllyWinter_Wyvern IsLegionEconDemon
+	response legion_commander_AllyNearEarlyGameIsAllyWinter_WyvernIsLegionEconDemon
 }
 
 Response legion_commander_AllyNearEarlyGameIsAllyShredderIsLegionEconDemon

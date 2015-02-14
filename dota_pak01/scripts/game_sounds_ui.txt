@@ -1244,12 +1244,20 @@
 
 // Loot drop stingers for local player (played alongside the Sfx below) =======================================
 
-"Loot_Drop_Stinger_Common"
+"Loot_Drop_Sfx"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.8"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			")ui/stingers/stinger_loot_01.wav"
+}
+
+"Loot_Drop_Stinger_Uncommon" //no longer used
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"null.wav"
 }
 
 "Loot_Drop_Stinger_Uncommon"
@@ -4638,4 +4646,13 @@
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"ui/yoink.wav" 
+}
+
+"ui.newbloomXP"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui/coins.wav" 
 }

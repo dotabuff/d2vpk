@@ -1,0 +1,48 @@
+"CustomHero"
+{
+	"$baseTexture" "models/creeps/nian/nian_creep_body_color"
+	"$normalmap" "models/creeps/nian/nian_creep_body_normal"
+	"$detail1" "models/creeps/nian/nian_detail_fx1"
+	"$maskmap1" "models/creeps/nian/nian_creep_body_masks1"
+	"$maskmap2" "models/creeps/nian/nian_creep_body_masks2"
+    "$FRESNELWARP" "models/heroes/axe/axe_fresnelranges"
+
+//	"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+//	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+
+	"$envmap" "models/cubemaps/glossy_broad"
+	"$envmapintensity" "0"
+
+
+	$SPECULAREXPONENT 25
+	$SPECULARSCALE 10
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[1 1 1]"
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[1 2 3]"
+	$alphatest 1
+	
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 5
+	$DETAIL1BLENDFACTOR 1
+	$DETAIL1BLENDTOFULL 0
+	
+	$ignorebudgetcheck 1
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	".2"
+			"texturescrollangle"	"135"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

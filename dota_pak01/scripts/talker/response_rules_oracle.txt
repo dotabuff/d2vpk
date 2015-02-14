@@ -2339,6 +2339,17 @@ Rule oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWindrunner_Rule
 	response oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWindrunner
 }
 
+Response oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWinter_Wyvern
+{
+	scene "scenes/oracle/oracle_orac_prophecies_109.vcd" nodelay noscene speakonce
+}
+
+Rule oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWinter_Wyvern_Rule
+{
+	criteria AllyNear Isoracle IsProphecyTime Chance_75% IsEnemyWinter_Wyvern
+	response oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWinter_Wyvern
+}
+
 Response oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWitchDoctor
 {
 	scene "scenes/oracle/oracle_orac_prophecies_111.vcd" nodelay noscene speakonce

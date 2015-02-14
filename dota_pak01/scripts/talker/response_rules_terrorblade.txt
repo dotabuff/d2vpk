@@ -437,6 +437,17 @@ Rule terrorblade_KillIsEnemyEarth_SpiritChance_25%_Rule
 	response terrorblade_KillIsEnemyEarth_SpiritChance_25%
 }
 
+Response terrorblade_KillIsEnemyWinter_WyvernChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_rival_35.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsEnemyWinter_WyvernChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsEnemyWinter_Wyvern Chance_25%
+	response terrorblade_KillIsEnemyWinter_WyvernChance_25%
+}
+
 Response terrorblade_KillIsEnemyLionChance_5%
 {
 	scene "scenes/terrorblade/terrorblade_terr_rival_36.vcd" nodelay noscene 
@@ -847,6 +858,17 @@ Rule terrorblade_KillIsTerrorDemonFormIsEnemyEarth_SpiritChance_25%_Rule
 {
 	criteria Kill Isterrorblade IsTerrorDemonForm IsEnemyEarth_Spirit Chance_25%
 	response terrorblade_KillIsTerrorDemonFormIsEnemyEarth_SpiritChance_25%
+}
+
+Response terrorblade_KillIsTerrorDemonFormIsEnemyWinter_WyvernChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_35.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorDemonFormIsEnemyWinter_WyvernChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorDemonForm IsEnemyWinter_Wyvern Chance_25%
+	response terrorblade_KillIsTerrorDemonFormIsEnemyWinter_WyvernChance_25%
 }
 
 Response terrorblade_KillIsTerrorDemonFormIsEnemyLionChance_5%
@@ -1261,6 +1283,17 @@ Rule terrorblade_KillIsTerrorEconShardsIsEnemyEarth_SpiritChance_25%_Rule
 	response terrorblade_KillIsTerrorEconShardsIsEnemyEarth_SpiritChance_25%
 }
 
+Response terrorblade_KillIsTerrorEconShardsIsEnemyWinter_WyvernChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_rival_35.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsEnemyWinter_WyvernChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsEnemyWinter_Wyvern Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsEnemyWinter_WyvernChance_25%
+}
+
 Response terrorblade_KillIsTerrorEconShardsIsEnemyLionChance_5%
 {
 	scene "scenes/terrorblade/terrorblade_terr_shards_rival_36.vcd" nodelay noscene 
@@ -1671,6 +1704,17 @@ Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyEarth_SpiritChanc
 {
 	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyEarth_Spirit Chance_25%
 	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyEarth_SpiritChance_25%
+}
+
+Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWinter_WyvernChance_25%
+{
+	scene "scenes/terrorblade/terrorblade_terr_morph_rival_35.vcd" nodelay noscene 
+}
+
+Rule terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWinter_WyvernChance_25%_Rule
+{
+	criteria Kill Isterrorblade IsTerrorEconShards IsTerrorDemonForm IsEnemyWinter_Wyvern Chance_25%
+	response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyWinter_WyvernChance_25%
 }
 
 Response terrorblade_KillIsTerrorEconShardsIsTerrorDemonFormIsEnemyLionChance_5%
@@ -2662,26 +2706,37 @@ Rule terrorblade_AllyNearIsAllyShredderChance_5%EarlyGame_Rule
 	response terrorblade_AllyNearIsAllyShredderChance_5%EarlyGame
 }
 
-Response terrorblade_AllyNearIsAllyDragon_KnightChance_50%EarlyGame
+Response terrorblade_AllyNearIsAllyDragon_KnightChance_30%EarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_ally_03.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsAllyDragon_KnightChance_50%EarlyGame_Rule
+Rule terrorblade_AllyNearIsAllyDragon_KnightChance_30%EarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsAllyDragon_Knight Chance_50% EarlyGame
-	response terrorblade_AllyNearIsAllyDragon_KnightChance_50%EarlyGame
+	criteria AllyNear Isterrorblade IsAllyDragon_Knight Chance_30% EarlyGame
+	response terrorblade_AllyNearIsAllyDragon_KnightChance_30%EarlyGame
 }
 
-Response terrorblade_AllyNearIsAllyJakiroChance_50%EarlyGame
+Response terrorblade_AllyNearIsAllyJakiroChance_30%EarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_ally_03.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsAllyJakiroChance_50%EarlyGame_Rule
+Rule terrorblade_AllyNearIsAllyJakiroChance_30%EarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsAllyJakiro Chance_50% EarlyGame
-	response terrorblade_AllyNearIsAllyJakiroChance_50%EarlyGame
+	criteria AllyNear Isterrorblade IsAllyJakiro Chance_30% EarlyGame
+	response terrorblade_AllyNearIsAllyJakiroChance_30%EarlyGame
+}
+
+Response terrorblade_AllyNearIsAllyWinter_WyvernChance_30%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_ally_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsAllyWinter_WyvernChance_30%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsAllyWinter_Wyvern Chance_30% EarlyGame
+	response terrorblade_AllyNearIsAllyWinter_WyvernChance_30%EarlyGame
 }
 
 Response terrorblade_AllyNearIsAllyShredderEarlyGame
@@ -2729,15 +2784,15 @@ Rule terrorblade_AllyNearIsAllySkywrath_MageEarlyGame_Rule
 	response terrorblade_AllyNearIsAllySkywrath_MageEarlyGame
 }
 
-Response terrorblade_AllyNearIsAllyDoom_BringerChance_20%EarlyGame
+Response terrorblade_AllyNearIsAllyDoom_BringerEarlyGame
 {
-	scene "scenes/terrorblade/terrorblade_terr_ally_10.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_ally_09.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsAllyDoom_BringerChance_20%EarlyGame_Rule
+Rule terrorblade_AllyNearIsAllyDoom_BringerEarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsAllyDoom_Bringer Chance_20% EarlyGame
-	response terrorblade_AllyNearIsAllyDoom_BringerChance_20%EarlyGame
+	criteria AllyNear Isterrorblade IsAllyDoom_Bringer EarlyGame
+	response terrorblade_AllyNearIsAllyDoom_BringerEarlyGame
 }
 
 Response terrorblade_AllyNearIsAllyShadow_DemonEarlyGame
@@ -2873,26 +2928,37 @@ Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderChance_5%EarlyGame_Rule
 	response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderChance_5%EarlyGame
 }
 
-Response terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_50%EarlyGame
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_30%EarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_shards_ally_03.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_50%EarlyGame_Rule
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_30%EarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyDragon_Knight Chance_50% EarlyGame
-	response terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_50%EarlyGame
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyDragon_Knight Chance_30% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyDragon_KnightChance_30%EarlyGame
 }
 
-Response terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_50%EarlyGame
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_30%EarlyGame
 {
 	scene "scenes/terrorblade/terrorblade_terr_shards_ally_03.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_50%EarlyGame_Rule
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_30%EarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyJakiro Chance_50% EarlyGame
-	response terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_50%EarlyGame
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyJakiro Chance_30% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyJakiroChance_30%EarlyGame
+}
+
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyWinter_WyvernChance_30%EarlyGame
+{
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_03.vcd" nodelay noscene speakonce
+}
+
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyWinter_WyvernChance_30%EarlyGame_Rule
+{
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyWinter_Wyvern Chance_30% EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyWinter_WyvernChance_30%EarlyGame
 }
 
 Response terrorblade_AllyNearIsTerrorEconShardsIsAllyShredderEarlyGame
@@ -2940,15 +3006,15 @@ Rule terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageEarlyGame_Rule
 	response terrorblade_AllyNearIsTerrorEconShardsIsAllySkywrath_MageEarlyGame
 }
 
-Response terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerChance_20%EarlyGame
+Response terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerEarlyGame
 {
-	scene "scenes/terrorblade/terrorblade_terr_shards_ally_10.vcd" nodelay noscene speakonce
+	scene "scenes/terrorblade/terrorblade_terr_shards_ally_09.vcd" nodelay noscene speakonce
 }
 
-Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerChance_20%EarlyGame_Rule
+Rule terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerEarlyGame_Rule
 {
-	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyDoom_Bringer Chance_20% EarlyGame
-	response terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerChance_20%EarlyGame
+	criteria AllyNear Isterrorblade IsTerrorEconShards IsAllyDoom_Bringer EarlyGame
+	response terrorblade_AllyNearIsTerrorEconShardsIsAllyDoom_BringerEarlyGame
 }
 
 Response terrorblade_AllyNearIsTerrorEconShardsIsAllyShadow_DemonEarlyGame

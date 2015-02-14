@@ -467,7 +467,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"kill_threshold"			"250 350 450"
+				"kill_threshold"			"250 325 400"
 			}
 			"02"
 			{
@@ -497,7 +497,7 @@
 			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"kill_threshold_scepter"	"300 450 625"
+				"kill_threshold_scepter"	"300 425 550"
 			}
 			"08"
 			{
@@ -1456,7 +1456,7 @@
 
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCooldown"				"30.0 26.0 22.0 18.0"
+		"AbilityCooldown"				"30 26 22 18"
 		"AbilityDuration"				"5.0 5.0 5.0 5.0"
 
 		// Damage.
@@ -1465,7 +1465,7 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"110 110 110 110"		
+		"AbilityManaCost"				"120 110 100 90"		
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -1506,7 +1506,7 @@
 	
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"80 100 120 140"
+		"AbilityManaCost"				"120 125 130 135"
 
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -2168,7 +2168,7 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"movespeed"					"100"
+				"movespeed"					"140"
 			}
 		}
 	}
@@ -4397,27 +4397,29 @@
 			
 			"03"
 			{
+				"var_type"				"FIELD_FLOAT"
+				"tooltip_slow_duration"	"2"
+			}
+			
+			"04"
+			{
 				"var_type"				"FIELD_INTEGER"
 				"blast_slow"			"-20"
 			}
 			
-			"04"
+			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"blast_dot_duration"	"4"
 			}
 			
-			"05"
+			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"blast_dot_damage"		"15 30 40 50"
 			}
 			
-			"06"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"tooltip_slow_duration"	"2"
-			}
+			
 		}
 	}
 	
@@ -6388,7 +6390,7 @@
 		// Time		
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilityCooldown"				"20"
-		"AbilityDuration"				"20.0 20.0 20.0 20.0"
+		"AbilityDuration"				"15"
 
 		// Damage.
 		//-------------------------------------------------------------------------------------------------------------
@@ -6420,7 +6422,7 @@
 			"04"
 			{
 				"var_type"			"FIELD_FLOAT"
-				"tooltip_duration"	"20.0 20.0 20.0 20.0"
+				"tooltip_duration"	"15"
 			}
 			"05"
 			{
@@ -9354,12 +9356,17 @@
 			{
 				"var_type"				"FIELD_INTEGER"
 				"projectile_speed"		"900"
-			}
+			}			
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"cast_range_tooltip"		"450 475 500 525"
-			}
+			}	
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration_tooltip"		"15"
+			}			
 		}
 	}
 	
@@ -32396,6 +32403,527 @@
 		{
 		}
 	}
+
+	//=================================================================================================================
+	// Ability: CNY Beast Force Attack
+	//=================================================================================================================
+	"cny_beast_force_attack"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5661"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BUILDING"
+
+
+		"MaxLevel"						"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"10000"
+		"AbilityCastPoint"				"0.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"20.0"
+		
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"0"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"					"FIELD_FLOAT"
+				"duration"					"5.0"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// CNY2015 Beast Sonic Wave
+	//=================================================================================================================
+	"cny2015_sonic_wave"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5662"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT"				   
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"	
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"10"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"700"
+		"AbilityCastPoint"				"0.452"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"135"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"250"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"starting_aoe"		"100"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"distance"			"900"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"final_aoe"			"450"
+			}
+			"04"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"speed"				"1100"
+			}
+			"05"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"damage"			"290 390 490 590 690 790 890 990 1090 1190"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// CNY 2015: Black Hole
+	//=================================================================================================================
+	"cny2015_black_hole"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5663"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"10"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"275"
+		"AbilityCastPoint"				"0.3"
+		"AbilityChannelTime"			"4.0"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"200.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"275"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pull_radius"			"400 425 450 475 500 525 550 575 600 625"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pull_speed"			"40 50 60 70 80 90 100 110 120 130"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"far_radius"			"400 425 450 475 500 525 550 575 600 625"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"near_radius"			"200 225 250 275 300 325 350 375 400 425"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"far_damage"			"25 50 75"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"near_damage"			"50 100 150"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_rate"				"0.1 0.1 0.1"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0 4.0 4.0"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_radius"			"800 800 800"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// CNY2015: Chronosphere
+	//=================================================================================================================
+	"cny2015_chronosphere"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5664"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"				"2"
+		"MaxLevel"						"10"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"600"
+		"AbilityCastPoint"				"0.35"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"130.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"150"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportBonus"		"50"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"radius"				"425 450 475 500 525 550 575 600 625 650 675"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0 4.5 5.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"vision_radius"			"475"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Winter Wyvern: Arctic Burn
+	//=================================================================================================================
+	"winter_wyvern_arctic_burn"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5651"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"		
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.0 0.0 0.0 0.0"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50.0 40.0 30.0 20.0"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"120 110 100 90"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"6.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"attack_range_bonus"	"275 375 475 575"
+			}			
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"percent_damage"		"6.0"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"tick_rate"				"1.0"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"damage_duration"		"5.0"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"-25 -30 -35 -40"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"night_vision_bonus"	"400"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed_bonus"	"500"
+			}
+			"09"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tree_destruction_radius"	"250"
+			}
+			"10"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"attack_point"			"0.1"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Winter Wyvern: Splinter Blast
+	//=================================================================================================================
+	"winter_wyvern_splinter_blast"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5652"	// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"FightRecapLevel"				"1"
+		
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1200"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"7.0"
+
+		// Damage.
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityDamage"					"100 180 260 340"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"120 130 140 150"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"projectile_speed"		"500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"projectile_max_time"	"1.35"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"split_radius"			"500"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movespeed"		"-25"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movespeed_slow_tooltip"		"25"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"duration"				"4.0"
+			}
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"secondary_projectile_speed"		"600"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Winter Wyvern: Cold Embrace
+	//=================================================================================================================
+	"winter_wyvern_cold_embrace"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5653"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ALLIES_YES"
+		"FightRecapLevel"				"1"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"17 16 15 14"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"75 75 75 75"
+				
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"4.0"
+			}
+			"02"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"heal_additive"		"20"
+			}
+			"03"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"heal_percentage"	"3.0 4.0 5.0 6.0"
+			}
+			"04"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"tick_rate"			"0.1"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// Winter Wyvern: Winter's Curse
+	//=================================================================================================================
+	"winter_wyvern_winters_curse"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5654"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE"		
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"FightRecapLevel"				"2"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"800"
+		"AbilityCastPoint"				"0.3 0.3 0.3 0.3"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"90 80 70"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"250"
+				
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{	
+				"var_type"			"FIELD_FLOAT"
+				"duration"			"2.5 2.75 3.0"
+			}
+			"02"
+			{	
+				"var_type"			"FIELD_INTEGER"
+				"radius"			"350"
+			}
+		}
+	}
+
+	//=================================================================================================================
+	// CNY Beast Teleport
+	//=================================================================================================================
+	"cny_beast_teleport"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"							"5665"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_BUILDING"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_INVULNERABLE"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"60.0"
+		"AbilitySharedCooldown"			"teleport"
+		"AbilityChannelTime"			"3.0"
+		"AbilityManaCost"				"75"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"100"
+			}
+		}
+	}
 }
 
 
@@ -32403,6 +32931,6 @@
 
 ////////////////////////
 ////////////////////////
-// Next Ability ID: 5661
+// Next Ability ID: 5666
 ////////////////////////
 ////////////////////////

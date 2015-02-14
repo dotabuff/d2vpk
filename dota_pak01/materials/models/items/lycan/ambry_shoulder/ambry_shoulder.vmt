@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/lycan/ambry_shoulder/ambry_shoulder_color"
+	"$normalmap"		"models/items/lycan/ambry_shoulder/ambry_shoulder_normal"
+	"$maskmap1"		"models/items/lycan/ambry_shoulder/ambry_shoulder_mask1"
+	"$maskmap2"		"models/items/lycan/ambry_shoulder/ambry_shoulder_mask2"
+	"$diffusewarp"		"models/heroes/lycan/lycan_lightwarp"
+	"$envmap"		"models/cubemaps/glossy"
+	"$envmapintensity"		"3"
+	"$SPECULAREXPONENT"		"25"
+	"$SPECULARSCALE"		"10"
+	"$SPECULAR_BLOOM_SCALE"		"2"
+	"$SPECULARCOLOR"		"[1 1 1]"
+	"$AMBIENTSCALE"		"0.500000"
+	"$RIMLIGHTSCALE"		"0.500000"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

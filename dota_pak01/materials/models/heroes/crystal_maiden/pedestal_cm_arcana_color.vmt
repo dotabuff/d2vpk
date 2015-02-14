@@ -1,0 +1,51 @@
+"CustomHero"
+{
+	"$baseTexture" "models\heroes\crystal_maiden\pedestal_cm_arcana_color"
+	"$normalmap" "models\heroes\crystal_maiden\pedestal_cm_arcana_normal"
+	"$maskmap1" "models\heroes\crystal_maiden\pedestal_cm_arcana_mask1"
+	"$maskmap2" "models\heroes\crystal_maiden\pedestal_cm_arcana_mask2"
+
+	"$diffusewarp" "models\heroes\crystal_maiden\crystalmaiden_lightwarp"
+
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 5
+	//$SPECULARCOLOR "[1 1 1]"
+	//$RIMLIGHTCOLOR "[1 1 1]"
+	//$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 1
+	
+	//$ENVMAP		"models/heroes/crystal_maiden/cube_pedestal_cm_arcana"
+	//$ENVMAPINTENSITY		2
+	//"$ENVMAPCOLOR"		"[0 .5 1]"
+	//"$MASKENVBYMETALNESS"		"1"	
+	
+	//$FRESNELWARP "models/heroes/pudge/pudge_fresnelranges"
+
+
+	
+	//$DETAIL1BLENDMODE 2
+	//$DETAIL1SCALE 2
+	//$DETAIL1BLENDFACTOR 8
+//	$DETAIL1BLENDTOFULL 1
+	$alphatest 1                             
+	
+	//"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		//"TextureScroll"
+		//{
+		//	"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+		//	"texturescrollrate"		"0.10000"
+		//	"texturescrollangle"		"45"
+		//}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -133,12 +133,16 @@ criterion "RubickDemonicPurge" "abilityname" "shadow_demon_demonic_purge" weight
 criterion "RubickRequiemofSouls" "abilityname" "nevermore_requiem" weight 5 required
 criterion "RubickMysticFlare" "abilityname" "skywrath_mage_mystic_flare" weight 5 required
 criterion "IsRubickAmpDamage" "IsAmpDamage" "1" weight 5 required
+criterion "IsRubickRealitySuccess" "realityreplace" "1" weight 5 required
+criterion "IsRubickReality" "abilityname" "spectre_reality" weight 5 required
 criterion "RubickAssassinate" "abilityname" "sniper_assassinate" weight 5 required
 criterion "IsRubickShrapnel" "abilityname" "sniper_shrapnel" weight 5 required
 criterion "RubickBallLightning" "abilityname" "storm_spirit_ball_lightning" weight 5 required
 criterion "IsRubickStaticRemnant" "abilityname" "storm_spirit_static_remnant" weight 5 required
 criterion "IsRubickBallLightningStart" "balllightning" "start" weight 5 required
 criterion "IsRubickBallLightningEnd" "balllightning" "end" weight 5 required
+criterion "IsRubickTechiesTauntJustInCase" "istechiesminitaunt" "yes" weight 5 required
+criterion "RubickRemoteMines" "abilityname" "techies_remote_mines" weight 5 required
 criterion "RubickSunder" "abilityname" "terrorblade_sunder" weight 5 required
 criterion "RubickRavage" "abilityname" "tidehunter_ravage" weight 5 required
 criterion "RubickChakram" "abilityname" "shredder_chakram" weight 5 required
@@ -152,6 +156,8 @@ criterion "IsRubickTuskPunchHero" "punch_hero" "yes" weight 5 required
 criterion "IsRubickReadyPunch" "abilityname" "tusk_walrus_punch" weight 5 required
 criterion "RubickViperStrike" "abilityname" "viper_viper_strike" weight 5 required
 criterion "RubickChaoticOffering" "abilityname" "warlock_rain_of_chaos" weight 5 required
+criterion "IsRubickHeroShackled" "shackled" "1" weight 5 required
+criterion "RubickWintersCurse" "abilityname" "winter_wyvern_winters_curse" weight 5 required
 criterion "IsRubickVoodooRestoration" "abilityname" "witch_doctor_voodoo_restoration" weight 5 required
 criterion "IsRubickMaledictHighDamage" "maledictunit_fraction" ">=0.1" weight 5 required
 criterion "IsRubickMaledictPenultimateTick" "maledictunit_currenttick" "2" weight 5 required
@@ -337,7 +343,7 @@ Rule rubick_CustomIsRubickIsRubickFailEchoSlam_Rule
 	response rubick_CustomIsRubickIsRubickFailEchoSlam
 }
 
-Response rubick_CustomIsRubickChainsGood
+Response rubick_CustomIsRubickIsRubickChainsGood
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene 
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene 
@@ -347,13 +353,13 @@ Response rubick_CustomIsRubickChainsGood
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene 
 }
 
-Rule rubick_CustomIsRubickChainsGood_Rule
+Rule rubick_CustomIsRubickIsRubickChainsGood_Rule
 {
-	criteria Custom Isrubick IsRubickChainsGood
-	response rubick_CustomIsRubickChainsGood
+	criteria Custom Isrubick IsRubick IsRubickChainsGood
+	response rubick_CustomIsRubickIsRubickChainsGood
 }
 
-Response rubick_CustomIsRubickFirstGood
+Response rubick_CustomIsRubickIsRubickFirstGood
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene 
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene 
@@ -363,10 +369,10 @@ Response rubick_CustomIsRubickFirstGood
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene 
 }
 
-Rule rubick_CustomIsRubickFirstGood_Rule
+Rule rubick_CustomIsRubickIsRubickFirstGood_Rule
 {
-	criteria Custom Isrubick IsRubickFirstGood
-	response rubick_CustomIsRubickFirstGood
+	criteria Custom Isrubick IsRubick IsRubickFirstGood
+	response rubick_CustomIsRubickIsRubickFirstGood
 }
 
 Response rubick_CustomIsRubickIsRubickEidolonsCreated
@@ -563,6 +569,31 @@ Rule rubick_CustomIsRubickIsRubickMulti_3_Rule
 	response rubick_CustomIsRubickIsRubickMulti_3
 }
 
+Response rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickFalsePromise IsFPSurvived
+	response rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived
+}
+
+Response rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%
+{
+	scene "scenes/rubick/rubick_rubick_failure_01.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_failure_02.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_failure_03.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_failure_04.vcd" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickFalsePromise IsFPDied Chance_50%
+	response rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%
+}
+
 Response rubick_CustomIsRubickIsRubickHookCatchHero
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene 
@@ -671,6 +702,22 @@ Rule rubick_CustomIsRubickIsRubickAmpDamage_Rule
 	response rubick_CustomIsRubickIsRubickAmpDamage
 }
 
+Response rubick_CustomIsRubickIsRubickRealitySuccess
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_39.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_40.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_45.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_46.vcd" nodelay noscene 
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_47.vcd" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickRealitySuccess_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickRealitySuccess
+	response rubick_CustomIsRubickIsRubickRealitySuccess
+}
+
 Response rubick_CustomIsRubickIsRubickShrapnel
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_03.vcd" nodelay noscene 
@@ -739,6 +786,17 @@ Rule rubick_CustomIsRubickIsInterruptedTeleport_Rule
 {
 	criteria Custom Isrubick IsRubick IsInterruptedTeleport
 	response rubick_CustomIsRubickIsInterruptedTeleport
+}
+
+Response rubick_CustomIsRubickIsRubickTechiesTauntJustInCase
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickTechiesTauntJustInCase_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickTechiesTauntJustInCase
+	response rubick_CustomIsRubickIsRubickTechiesTauntJustInCase
 }
 
 Response rubick_CustomIsRubickIsRubickToss
@@ -832,6 +890,17 @@ Rule rubick_CustomIsRubickIsRubickVoodooRestoration_Rule
 	response rubick_CustomIsRubickIsRubickVoodooRestoration
 }
 
+Response rubick_CustomIsRubickIsRubickHeroShackledChance_25%
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CustomIsRubickIsRubickHeroShackledChance_25%_Rule
+{
+	criteria Custom Isrubick IsRubick IsRubickHeroShackled Chance_25%
+	response rubick_CustomIsRubickIsRubickHeroShackledChance_25%
+}
+
 Response rubick_CustomIsRubickIsRubickMaledictHighDamageIsMaledictPenultimateTick
 {
 	scene "" nodelay noscene 
@@ -855,31 +924,6 @@ Rule rubick_CustomIsRubickIsRubickMaledictFailToKillIsRubickMaledictFinalTick_Ru
 {
 	criteria Custom Isrubick IsRubick IsRubickMaledictFailToKill IsRubickMaledictFinalTick
 	response rubick_CustomIsRubickIsRubickMaledictFailToKillIsRubickMaledictFinalTick
-}
-
-Response rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived
-{
-	scene "" nodelay noscene 
-}
-
-Rule rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived_Rule
-{
-	criteria Custom Isrubick IsRubick IsRubickFalsePromise IsFPSurvived
-	response rubick_CustomIsRubickIsRubickFalsePromiseIsFPSurvived
-}
-
-Response rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%
-{
-	scene "scenes/rubick/rubick_rubick_failure_01.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_failure_02.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_failure_03.vcd" nodelay noscene 
-	scene "scenes/rubick/rubick_rubick_failure_04.vcd" nodelay noscene 
-}
-
-Rule rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%_Rule
-{
-	criteria Custom Isrubick IsRubick IsRubickFalsePromise IsFPDied Chance_50%
-	response rubick_CustomIsRubickIsRubickFalsePromiseIsFPDiedChance_50%
 }
 
 Response rubick_Custom
@@ -1449,6 +1493,17 @@ Rule rubick_KillIsRubickIsEnemyStormSpiritChance_30%RubickBallLightning_Rule
 	response rubick_KillIsRubickIsEnemyStormSpiritChance_30%RubickBallLightning
 }
 
+Response rubick_KillIsRubickIsEnemyTechiesChance_30%RubickRemoteMines
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyTechiesChance_30%RubickRemoteMines_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyTechies Chance_30% RubickRemoteMines
+	response rubick_KillIsRubickIsEnemyTechiesChance_30%RubickRemoteMines
+}
+
 Response rubick_KillIsRubickIsEnemyTidehunterChance_30%RubickRavage
 {
 	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
@@ -1491,6 +1546,17 @@ Rule rubick_KillIsRubickIsEnemyWarlockChance_30%RubickChaoticOffering_Rule
 {
 	criteria Kill Isrubick IsRubick IsEnemyWarlock Chance_30% RubickChaoticOffering
 	response rubick_KillIsRubickIsEnemyWarlockChance_30%RubickChaoticOffering
+}
+
+Response rubick_KillIsRubickIsEnemyWarlockChance_30%RubickWintersCurse
+{
+	scene "scenes/rubick/rubick_rubick_castsstolenspell_48.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickIsEnemyWarlockChance_30%RubickWintersCurse_Rule
+{
+	criteria Kill Isrubick IsRubick IsEnemyWarlock Chance_30% RubickWintersCurse
+	response rubick_KillIsRubickIsEnemyWarlockChance_30%RubickWintersCurse
 }
 
 Response rubick_KillIsRubickIsEnemyZuusChance_30%RubickThunderGodsWrath
@@ -2010,6 +2076,17 @@ Rule rubick_KillIsRubickChance_3%RubickBallLightning_Rule
 	response rubick_KillIsRubickChance_3%RubickBallLightning
 }
 
+Response rubick_KillIsRubickChance_3%RubickRemoteMines
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickRemoteMines_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickRemoteMines
+	response rubick_KillIsRubickChance_3%RubickRemoteMines
+}
+
 Response rubick_KillIsRubickChance_3%RubickRavage
 {
 	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
@@ -2052,6 +2129,17 @@ Rule rubick_KillIsRubickChance_3%RubickChaoticOffering_Rule
 {
 	criteria Kill Isrubick IsRubick Chance_3% RubickChaoticOffering
 	response rubick_KillIsRubickChance_3%RubickChaoticOffering
+}
+
+Response rubick_KillIsRubickChance_3%RubickWintersCurse
+{
+	scene "scenes/rubick/rubick_rubick_spellsteal_15.vcd" nodelay noscene 
+}
+
+Rule rubick_KillIsRubickChance_3%RubickWintersCurse_Rule
+{
+	criteria Kill Isrubick IsRubick Chance_3% RubickWintersCurse
+	response rubick_KillIsRubickChance_3%RubickWintersCurse
 }
 
 Response rubick_KillIsRubickChance_3%RubickThunderGodsWrath
@@ -2851,26 +2939,26 @@ Rule rubick_CastExecuteIsRubickIsRubickItem_Rule
 	response rubick_CastExecuteIsRubickIsRubickItem
 }
 
-Response rubick_CastExecuteIsRubickChains
+Response rubick_CastExecuteIsRubickIsRubickChains
 {
 	scene "" nodelay noscene 
 }
 
-Rule rubick_CastExecuteIsRubickChains_Rule
+Rule rubick_CastExecuteIsRubickIsRubickChains_Rule
 {
-	criteria CastExecute Isrubick IsRubickChains
-	response rubick_CastExecuteIsRubickChains
+	criteria CastExecute Isrubick IsRubick IsRubickChains
+	response rubick_CastExecuteIsRubickIsRubickChains
 }
 
-Response rubick_CastExecuteIsRubickFist
+Response rubick_CastExecuteIsRubickIsRubickFist
 {
 	scene "" nodelay noscene 
 }
 
-Rule rubick_CastExecuteIsRubickFist_Rule
+Rule rubick_CastExecuteIsRubickIsRubickFist_Rule
 {
-	criteria CastExecute Isrubick IsRubickFist
-	response rubick_CastExecuteIsRubickFist
+	criteria CastExecute Isrubick IsRubick IsRubickFist
+	response rubick_CastExecuteIsRubickIsRubickFist
 }
 
 Response rubick_CastExecuteIsRubickIsRubickSplitShot
@@ -2936,6 +3024,17 @@ Rule rubick_CastExecuteIsRubickIsRubickRot_Rule
 {
 	criteria CastExecute Isrubick IsRubick IsRubickRot
 	response rubick_CastExecuteIsRubickIsRubickRot
+}
+
+Response rubick_CastExecuteIsRubickIsRubickReality
+{
+	scene "" nodelay noscene 
+}
+
+Rule rubick_CastExecuteIsRubickIsRubickReality_Rule
+{
+	criteria CastExecute Isrubick IsRubick IsRubickReality
+	response rubick_CastExecuteIsRubickIsRubickReality
 }
 
 Response rubick_CastExecuteIsRubickIsRubickBerserker

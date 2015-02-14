@@ -18033,5 +18033,282 @@
 		"HasInventory"				"0"
 	}
 
+//=================================================================================
+// 2015 CNY Ram
+//=================================================================================
+	"npc_dota_goodguys_cny_beast"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_cny_beast"	// Class of entity of link to.
+		"Model"						"models/creeps/nian/nian_creep.mdl"	// Model.
+		"SoundSet"					"cny_beast"
+		"MinimapIcon"				"minimap_nian"
+		"MinimapIconSize"			"500"
+		"ModelScale" 				"0.4"
+		"Level"						"1"
+		"IsAncient"					"1"
+		"ConsideredHero"			"1"
+		"RunAIWhenControllableByPlayer" "1"
+	
+		
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"cny_beast_force_attack"			// Ability 1
+		"Ability2"					"cny_beast_teleport"			// Ability 2
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"4"			// Physical protection.
+		"MagicalResistance"				"0"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"85"		// Damage range min.
+		"AttackDamageMax"			"85"		// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"120"		// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"			// Base strength
+		"AttributeStrengthGain"		"0"			// Strength bonus per level.
+		"AttributeBaseIntelligence"	"0"			// Base intelligence
+		"AttributeIntelligenceGain"	"0"			// Intelligence bonus per level.
+		"AttributeBaseAgility"		"0"			// Base agility
+		"AttributeAgilityGain"		"0"			// Agility bonus per level.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"1789"		// Experience earn.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"500"		// Gold earned max.
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"80"
+		"HealthBarOffset"			"160"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"250"		// Speed
+		"MovementTurnRate"			"0.5"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"2000"		// Base health.
+		"StatusHealthRegen"			"5.0"			// Health regeneration rate.
+		"StatusMana"				"500"		// Base mana.
+		"StatusManaRegen"			"1.0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_GOODGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"50"		// Range of vision during day light.
+		"VisionNighttimeRange"		"50"		// Range of vision at night time.
+
+		//----------------------------------------------------------------
+		"ParticleFile"				"particles/units/heroes/hero_chen.pcf"
+
+		// Inventory
+		//----------------------------------------------------------------
+		"HasInventory"				"1"
+		
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+
+			//Basic AI State
+			//------------------------------------------------------------
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			"CanRespawn"				"1"
+
+			//Level Up Parameters
+			//------------------------------------------------------------
+			"HPGain"					"350"
+			"DamageGain"				"35"
+			"ArmorGain"					"1"
+			"MagicResistGain"			"5"
+			"MoveSpeedGain"				"5"
+			"BountyGain"				"50"
+			"XPGain"					"50"
+			
+			"DefaultState"				"Invade"
+		}
+	}	
+	
+//=================================================================================
+// 2015 CNY Beast
+//=================================================================================
+	"npc_dota_badguys_cny_beast"
+	{
+		// General
+		//
+		"BaseClass"					"npc_dota_cny_beast"	// Class of entity of link to.
+		"Model"						"models/creeps/nian/nian_creep.mdl"	// Model.
+		"SoundSet"					"cny_beast"					// Name of sound set.
+		"MinimapIcon"					"minimap_nian_dire"
+		"MinimapIconSize"				"500"
+		"ModelScale" 					"0.4"
+		"Level"						"1"
+		"IsAncient"					"1"
+		"ConsideredHero"			"1"
+		"RunAIWhenControllableByPlayer" "1"
+	
+		
+		// Abilities
+		//----------------------------------------------------------------
+		
+		"Ability1"					"cny_beast_force_attack"			// Ability 1
+		"Ability2"					"cny_beast_teleport"			// Ability 2
+		"Ability3"					""			// Ability 3.
+		"Ability4"					""			// Ability 4.
+		"Ability5"					""			// Ability 5.
+		"Ability6"					""			// Ability 6 - Extra.
+		"Ability7"					""			// Ability 7 - Extra.
+		"Ability8"					""			// Ability 8 - Extra.
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"4"			// Physical protection.
+		"MagicalResistance"				"0"			// Magical protection.
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"85"		// Damage range min.
+		"AttackDamageMax"			"85"		// Damage range max.	
+		"AttackRate"				"1.0"		// Speed of attack.
+		"AttackAnimationPoint"		"0.3"		// Normalized time in animation cycle to attack.
+		"AttackAcquisitionRange"	"800"		// Range within a target can be acquired.
+		"AttackRange"				"120"		// Range within a target can be attacked.
+		"ProjectileModel"			""			// Particle system model for projectile.
+		"ProjectileSpeed"			"0"			// Speed of projectile.		   
+
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"			// Base strength
+		"AttributeStrengthGain"		"0"			// Strength bonus per level.
+		"AttributeBaseIntelligence"	"0"			// Base intelligence
+		"AttributeIntelligenceGain"	"0"			// Intelligence bonus per level.
+		"AttributeBaseAgility"		"0"			// Base agility
+		"AttributeAgilityGain"		"0"			// Agility bonus per level.
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"1789"		// Experience earn.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"500"		// Gold earned max.
+
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"			// Hull type used for navigation/locomotion.
+		"RingRadius"				"80"
+		"HealthBarOffset"			"160"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"			// Type of locomotion - ground, air
+		"MovementSpeed"				"250"		// Speed
+		"MovementTurnRate"			"0.5"		// Turning rate.
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"2000"		// Base health.
+		"StatusHealthRegen"			"5.0"			// Health regeneration rate.
+		"StatusMana"				"500"		// Base mana.
+		"StatusManaRegen"			"1.0"			// Mana regeneration rate.
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_BADGUYS"			// Team name.
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
+
+		//----------------------------------------------------------------
+		"ParticleFile"				"particles/units/heroes/hero_chen.pcf"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"50"		// Range of vision during day light.
+		"VisionNighttimeRange"		"50"		// Range of vision at night time.
+
+		// Inventory
+		//----------------------------------------------------------------
+		"HasInventory"				"1"
+		
+
+		// Creature Data
+		//----------------------------------------------------------------
+		"Creature"
+		{
+			//Basic AI State
+			//------------------------------------------------------------
+			"DefaultState"				"Invade"
+			"States"
+			{
+				"Invade"
+				{
+					"Name"				"Invade"
+					"Aggression"		"100.0"
+					"Avoidance"			"0.0"
+					"Support"			"0.0"
+				}
+			}
+
+			//Level Up Parameters
+			//------------------------------------------------------------
+			"HPGain"					"350"
+			"DamageGain"				"35"
+			"ArmorGain"					"1"
+			"MagicResistGain"			"5"
+			"MoveSpeedGain"				"5"
+			"BountyGain"				"50"
+			"XPGain"					"50"
+			
+			"DefaultState"				"Invade"
+
+			"CanRespawn"				"1"
+			
+		}
+	}	
 }
 		

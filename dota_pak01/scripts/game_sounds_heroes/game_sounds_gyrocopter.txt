@@ -289,6 +289,34 @@
 	}
 }
 
+"Hero_Gyrocopter.CallDown.Fire.Self"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/gyrocopter/call_down_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "25000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
 "Hero_Gyrocopter.CallDown.Damage"
 {
 	"channel"		"CHAN_STATIC"
@@ -309,6 +337,10 @@
 			"speakers_spatialize"
 			{
 				"input_radius"  "900"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "3.0"
 			}
 		}
 	}

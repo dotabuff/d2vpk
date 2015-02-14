@@ -289,6 +289,18 @@ Rule vengefulspirit_KillIsEnemyPhoenixChance_15%_Rule
 	response vengefulspirit_KillIsEnemyPhoenixChance_15%
 }
 
+Response vengefulspirit_KillIsEnemyWinter_WyvernChance_15%
+{
+	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_01.vcd" nodelay noscene 
+	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_05.vcd" nodelay noscene 
+}
+
+Rule vengefulspirit_KillIsEnemyWinter_WyvernChance_15%_Rule
+{
+	criteria Kill Isvengefulspirit IsEnemyWinter_Wyvern Chance_15%
+	response vengefulspirit_KillIsEnemyWinter_WyvernChance_15%
+}
+
 Response vengefulspirit_KillIsEnemySkywrath_MageChance_15%
 {
 	scene "scenes/vengefulspirit/vengefulspirit_vng_rival_01.vcd" nodelay noscene 

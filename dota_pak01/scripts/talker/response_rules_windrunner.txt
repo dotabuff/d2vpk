@@ -4,6 +4,7 @@ criterion "IsAllywindrunner" "nearby_ally" "npc_dota_hero_windrunner" weight 5 r
 criterion "IsFocusFire" "abilityname" "windrunner_focusfire" weight 5 required
 criterion "IsWindrun" "abilityname" "windrunner_windrun" weight 5 required
 criterion "IsPowershot" "abilityname" "windrunner_powershot" weight 5 required
+criterion "IsHeroShackled" "shackled" "1" weight 5 required
 
 Response windrunner_Spawn
 {
@@ -30,6 +31,30 @@ Rule windrunner_CustomIsGameStart_Rule
 {
 	criteria Custom Iswindrunner IsGameStart
 	response windrunner_CustomIsGameStart
+}
+
+Response windrunner_CustomIsHeroShackledChance_5%
+{
+	scene "scenes/windrunner/windrunner_wind_ability_shackleshot_01.vcd" nodelay noscene 
+}
+
+Rule windrunner_CustomIsHeroShackledChance_5%_Rule
+{
+	criteria Custom Iswindrunner IsHeroShackled Chance_5%
+	response windrunner_CustomIsHeroShackledChance_5%
+}
+
+Response windrunner_CustomIsHeroShackledChance_35%
+{
+	scene "scenes/windrunner/windrunner_wind_ability_shackleshot_05.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_ability_shackleshot_06.vcd" nodelay noscene 
+	scene "scenes/windrunner/windrunner_wind_ability_shackleshot_07.vcd" nodelay noscene 
+}
+
+Rule windrunner_CustomIsHeroShackledChance_35%_Rule
+{
+	criteria Custom Iswindrunner IsHeroShackled Chance_35%
+	response windrunner_CustomIsHeroShackledChance_35%
 }
 
 Response windrunner_CastExecuteIsWindrunChance_75%

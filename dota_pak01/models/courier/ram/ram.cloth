@@ -1,0 +1,131 @@
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.25"
+        AnimationVertexAttraction        "0.15"
+        BendSpringConstant               "0.0"
+        BendSpringDamping                "0.4"
+        damping                          "0.5"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.35"
+        gravity                          "0 0 -1"
+        gravity_scale                    "98"
+        LocalForce                       "1"
+        LocalRotation                    "1.0"
+        columns                          "1"
+        rows                             "3"
+        mapping
+        {
+            ChestFur0_JNT                    "R0C0"
+            ChestFur1_JNT                    "R1C0"
+            ChestFur2_JNT                    "R2C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "2.0"
+        R2C0                             "1.0"
+        ShearSpringConstant              "0.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.01"
+        StretchForce                     "1.0"
+        StructSpringConstant             "1.0"
+        StructSpringDamping              "1.0"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.5"
+        AnimationVertexAttraction        "0.35"
+        BendSpringConstant               "0.0"
+        BendSpringDamping                "0.4"
+        damping                          "0.75"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.35"
+        gravity                          "0 0 -1"
+        gravity_scale                    "25"
+        LocalForce                       "0.6"
+        LocalRotation                    "1.0"
+        columns                          "1"
+        rows                             "2"
+        mapping
+        {
+            NeckFur0_JNT                    "R0C0"
+            NeckFur1_JNT                    "R1C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1.0"
+        ShearSpringConstant              "0.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.01"
+        StretchForce                     "1.0"
+        StructSpringConstant             "1.0"
+        StructSpringDamping              "1.0"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.75"
+        AnimationVertexAttraction        "0.45"
+        BendSpringConstant               "0.0"
+        BendSpringDamping                "0.4"
+        columns                          "1"
+        damping                          "10"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.8"
+        gravity                          "0 0 -1"
+        gravity_scale                    "250"
+        LocalForce                       "0.15"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            RtSaddleBag0_JNT                    "R0C0"
+            RtSaddleBag1_JNT                    "R1C0"
+            RtSaddleBag2_JNT                    "R2C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "0.5"
+        R2C0                             "0.5"
+        rows                             "3"
+        ShearSpringConstant              "0.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.1"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.75"
+        AnimationVertexAttraction        "0.45"
+        BendSpringConstant               "0.0"
+        BendSpringDamping                "0.4"
+        columns                          "1"
+        damping                          "10"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.8"
+        gravity                          "0 0 -1"
+        gravity_scale                    "250"
+        LocalForce                       "0.15"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            LfSaddleBag0_JNT                    "R0C0"
+            LfSaddleBag1_JNT                    "R1C0"
+            LfSaddleBag2_JNT                    "R2C0"
+        }
+        R0C0                             "fixed"
+        R1C0                             "1"
+        R2C0                             "1"
+        rows                             "3"
+        ShearSpringConstant              "0.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.1"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+}
+
+// eof

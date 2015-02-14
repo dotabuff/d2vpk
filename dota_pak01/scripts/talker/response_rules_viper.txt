@@ -225,6 +225,17 @@ Rule viper_KillIsEnemySkywrath_MageChance_10%_Rule
 	response viper_KillIsEnemySkywrath_MageChance_10%
 }
 
+Response viper_KillIsEnemyWinter_WyvernChance_10%
+{
+	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 
+}
+
+Rule viper_KillIsEnemyWinter_WyvernChance_10%_Rule
+{
+	criteria Kill Isviper IsEnemyWinter_Wyvern Chance_10%
+	response viper_KillIsEnemyWinter_WyvernChance_10%
+}
+
 Response viper_KillIsEnemyPhoenixChance_10%
 {
 	scene "scenes/viper/viper_vipe_killspecial_batrider_02.vcd" nodelay noscene 

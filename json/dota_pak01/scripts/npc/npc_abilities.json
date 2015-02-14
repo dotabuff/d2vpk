@@ -233,8 +233,8 @@
         {
           "kill_threshold": [
             250,
-            350,
-            450
+            325,
+            400
           ]
         },
         {
@@ -263,8 +263,8 @@
         {
           "kill_threshold_scepter": [
             300,
-            450,
-            625
+            425,
+            550
           ]
         },
         {
@@ -838,10 +838,10 @@
       "FightRecapLevel": "1",
       "AbilityCastRange": "0",
       "AbilityCastPoint": "0 0 0 0",
-      "AbilityCooldown": "30.0 26.0 22.0 18.0",
+      "AbilityCooldown": "30 26 22 18",
       "AbilityDuration": "5.0 5.0 5.0 5.0",
       "AbilityDamage": "80 100 120 140",
-      "AbilityManaCost": "110 110 110 110",
+      "AbilityManaCost": "120 110 100 90",
       "AbilitySpecial": [
         {
           "blade_fury_damage_tick": 0.2
@@ -858,7 +858,7 @@
       "AbilityCastPoint": "0.3 0.3 0.3 0.3",
       "AbilityCooldown": "60.0 60.0 60.0 60.0",
       "AbilityDuration": "25.0 25.0 25.0 25.0",
-      "AbilityManaCost": "80 100 120 140",
+      "AbilityManaCost": "120 125 130 135",
       "AbilitySpecial": [
         {
           "healing_ward_heal_amount": [
@@ -1277,7 +1277,7 @@
           ]
         },
         {
-          "movespeed": 100
+          "movespeed": 140
         }
       ]
     },
@@ -2830,6 +2830,9 @@
           "blast_stun_duration": 2.0
         },
         {
+          "tooltip_slow_duration": 2.0
+        },
+        {
           "blast_slow": -20
         },
         {
@@ -2842,9 +2845,6 @@
             40,
             50
           ]
-        },
-        {
-          "tooltip_slow_duration": 2.0
         }
       ]
     },
@@ -4203,7 +4203,7 @@
       "AbilityCastRange": "1400",
       "AbilityCastPoint": "0.3 0.3 0.3 0.3",
       "AbilityCooldown": "20",
-      "AbilityDuration": "20.0 20.0 20.0 20.0",
+      "AbilityDuration": "15",
       "AbilityDamage": "30 50 70 90",
       "AbilityManaCost": "40 40 40 40",
       "AbilitySpecial": [
@@ -4222,12 +4222,7 @@
           ]
         },
         {
-          "tooltip_duration": [
-            20.0,
-            20.0,
-            20.0,
-            20.0
-          ]
+          "tooltip_duration": 15.0
         },
         {
           "vision_aoe": [
@@ -6361,6 +6356,9 @@
             500,
             525
           ]
+        },
+        {
+          "duration_tooltip": 15
         }
       ]
     },
@@ -21718,6 +21716,371 @@
       "AbilityManaCost": "0",
       "AbilitySpecial": [
 
+      ]
+    },
+    "cny_beast_force_attack": {
+      "ID": "5661",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_BUILDING",
+      "MaxLevel": "1",
+      "AbilityCastRange": "10000",
+      "AbilityCastPoint": "0.0",
+      "AbilityCooldown": "20.0",
+      "AbilityManaCost": "0",
+      "AbilitySpecial": [
+        {
+          "duration": 5.0
+        }
+      ]
+    },
+    "cny2015_sonic_wave": {
+      "ID": "5662",
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "FightRecapLevel": "2",
+      "MaxLevel": "10",
+      "AbilityCastRange": "700",
+      "AbilityCastPoint": "0.452",
+      "AbilityCooldown": "135",
+      "AbilityManaCost": "250",
+      "AbilitySpecial": [
+        {
+          "starting_aoe": 100
+        },
+        {
+          "distance": 900
+        },
+        {
+          "final_aoe": 450
+        },
+        {
+          "speed": 1100
+        },
+        {
+          "damage": [
+            290,
+            390,
+            490,
+            590,
+            690,
+            790,
+            890,
+            990,
+            1090,
+            1190
+          ]
+        }
+      ]
+    },
+    "cny2015_black_hole": {
+      "ID": "5663",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "FightRecapLevel": "2",
+      "MaxLevel": "10",
+      "AbilityCastRange": "275",
+      "AbilityCastPoint": "0.3",
+      "AbilityChannelTime": "4.0",
+      "AbilityCooldown": "200.0",
+      "AbilityManaCost": "275",
+      "AbilitySpecial": [
+        {
+          "pull_radius": [
+            400,
+            425,
+            450,
+            475,
+            500,
+            525,
+            550,
+            575,
+            600,
+            625
+          ]
+        },
+        {
+          "pull_speed": [
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            100,
+            110,
+            120,
+            130
+          ]
+        },
+        {
+          "far_radius": [
+            400,
+            425,
+            450,
+            475,
+            500,
+            525,
+            550,
+            575,
+            600,
+            625
+          ]
+        },
+        {
+          "near_radius": [
+            200,
+            225,
+            250,
+            275,
+            300,
+            325,
+            350,
+            375,
+            400,
+            425
+          ]
+        },
+        {
+          "far_damage": [
+            25,
+            50,
+            75
+          ]
+        },
+        {
+          "near_damage": [
+            50,
+            100,
+            150
+          ]
+        },
+        {
+          "tick_rate": [
+            0.1,
+            0.1,
+            0.1
+          ]
+        },
+        {
+          "duration": [
+            4.0,
+            4.0,
+            4.0
+          ]
+        },
+        {
+          "vision_radius": [
+            800,
+            800,
+            800
+          ]
+        }
+      ]
+    },
+    "cny2015_chronosphere": {
+      "ID": "5664",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT",
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "FightRecapLevel": "2",
+      "MaxLevel": "10",
+      "AbilityCastRange": "600",
+      "AbilityCastPoint": "0.35",
+      "AbilityCooldown": "130.0",
+      "AbilityManaCost": "150",
+      "AbilityModifierSupportBonus": "50",
+      "AbilitySpecial": [
+        {
+          "radius": [
+            425,
+            450,
+            475,
+            500,
+            525,
+            550,
+            575,
+            600,
+            625,
+            650,
+            675
+          ]
+        },
+        {
+          "duration": [
+            4.0,
+            4.5,
+            5.0
+          ]
+        },
+        {
+          "vision_radius": 475
+        }
+      ]
+    },
+    "winter_wyvern_arctic_burn": {
+      "ID": "5651",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "AbilityCastPoint": "0.0 0.0 0.0 0.0",
+      "AbilityCooldown": "50.0 40.0 30.0 20.0",
+      "AbilityManaCost": "120 110 100 90",
+      "AbilitySpecial": [
+        {
+          "duration": 6.0
+        },
+        {
+          "attack_range_bonus": [
+            275,
+            375,
+            475,
+            575
+          ]
+        },
+        {
+          "percent_damage": 6.0
+        },
+        {
+          "tick_rate": 1.0
+        },
+        {
+          "damage_duration": 5.0
+        },
+        {
+          "bonus_movespeed": [
+            -25,
+            -30,
+            -35,
+            -40
+          ]
+        },
+        {
+          "night_vision_bonus": 400
+        },
+        {
+          "projectile_speed_bonus": 500
+        },
+        {
+          "tree_destruction_radius": 250
+        },
+        {
+          "attack_point": 0.1
+        }
+      ]
+    },
+    "winter_wyvern_splinter_blast": {
+      "ID": "5652",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "FightRecapLevel": "1",
+      "AbilityCastRange": "1200",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCooldown": "7.0",
+      "AbilityDamage": "100 180 260 340",
+      "AbilityManaCost": "120 130 140 150",
+      "AbilitySpecial": [
+        {
+          "projectile_speed": 500
+        },
+        {
+          "projectile_max_time": 1.35
+        },
+        {
+          "split_radius": 500
+        },
+        {
+          "bonus_movespeed": -25
+        },
+        {
+          "movespeed_slow_tooltip": 25
+        },
+        {
+          "duration": 4.0
+        },
+        {
+          "secondary_projectile_speed": 600
+        }
+      ]
+    },
+    "winter_wyvern_cold_embrace": {
+      "ID": "5653",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_YES",
+      "FightRecapLevel": "1",
+      "AbilityCastRange": "1000",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCooldown": "17 16 15 14",
+      "AbilityManaCost": "75 75 75 75",
+      "AbilitySpecial": [
+        {
+          "duration": 4.0
+        },
+        {
+          "heal_additive": 20
+        },
+        {
+          "heal_percentage": [
+            3.0,
+            4.0,
+            5.0,
+            6.0
+          ]
+        },
+        {
+          "tick_rate": 0.1
+        }
+      ]
+    },
+    "winter_wyvern_winters_curse": {
+      "ID": "5654",
+      "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "FightRecapLevel": "2",
+      "AbilityCastRange": "800",
+      "AbilityCastPoint": "0.3 0.3 0.3 0.3",
+      "AbilityCooldown": "90 80 70",
+      "AbilityManaCost": "250",
+      "AbilitySpecial": [
+        {
+          "duration": [
+            2.5,
+            2.75,
+            3.0
+          ]
+        },
+        {
+          "radius": 350
+        }
+      ]
+    },
+    "cny_beast_teleport": {
+      "ID": "5665",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_UNRESTRICTED",
+      "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_BUILDING",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
+      "AbilityCooldown": "60.0",
+      "AbilitySharedCooldown": "teleport",
+      "AbilityChannelTime": "3.0",
+      "AbilityManaCost": "75",
+      "AbilitySpecial": [
+        {
+          "bonus_movement_speed": 100
+        }
       ]
     }
   }

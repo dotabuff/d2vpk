@@ -66,115 +66,15 @@ Rule crystalmaiden_Move_Rule
 	response crystalmaiden_Move
 }
 
-Response crystalmaiden_PowerupIsPowerupHasteChance_25%
+Response crystalmaiden_MoveChance_1%
 {
 	scene "scenes/crystalmaiden/crystalmaiden_cm_move_11.vcd" nodelay noscene 
-	scene "scenes/crystalmaiden/crystalmaiden_cm_haste_02.vcd" nodelay noscene 
 }
 
-Rule crystalmaiden_PowerupIsPowerupHasteChance_25%_Rule
+Rule crystalmaiden_MoveChance_1%_Rule
 {
-	criteria Powerup Iscrystalmaiden IsPowerupHaste Chance_25%
-	response crystalmaiden_PowerupIsPowerupHasteChance_25%
-}
-
-Response crystalmaiden_PowerupIsPowerupHaste
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_haste_01.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_PowerupIsPowerupHaste_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupHaste
-	response crystalmaiden_PowerupIsPowerupHaste
-}
-
-Response crystalmaiden_PowerupIsPowerupDoubleDamage
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_doubdam_01.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_PowerupIsPowerupDoubleDamage_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupDoubleDamage
-	response crystalmaiden_PowerupIsPowerupDoubleDamage
-}
-
-Response crystalmaiden_PowerupIsPowerupDoubleDamageChance_25%
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_doubdam_02.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_PowerupIsPowerupDoubleDamageChance_25%_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupDoubleDamage Chance_25%
-	response crystalmaiden_PowerupIsPowerupDoubleDamageChance_25%
-}
-
-Response crystalmaiden_PowerupIsPowerupRegeneration
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_regen_01.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_PowerupIsPowerupRegeneration_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupRegeneration
-	response crystalmaiden_PowerupIsPowerupRegeneration
-}
-
-Response crystalmaiden_PowerupIsPowerupIllusion
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_illus_01.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_PowerupIsPowerupIllusion_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupIllusion
-	response crystalmaiden_PowerupIsPowerupIllusion
-}
-
-Response crystalmaiden_PowerupIsPowerupIllusionChance_5%
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_illus_02.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_PowerupIsPowerupIllusionChance_5%_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupIllusion Chance_5%
-	response crystalmaiden_PowerupIsPowerupIllusionChance_5%
-}
-
-Response crystalmaiden_PowerupIsPowerupBounty
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_bottle_03.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule crystalmaiden_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupBounty
-	response crystalmaiden_PowerupIsPowerupBounty
-}
-
-Response crystalmaiden_PowerupIsPowerupInvisibility
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_invis_01.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_PowerupIsPowerupInvisibility_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupInvisibility
-	response crystalmaiden_PowerupIsPowerupInvisibility
-}
-
-Response crystalmaiden_PowerupIsPowerupInvisibilityChance_25%
-{
-	scene "scenes/crystalmaiden/crystalmaiden_cm_invis_03.vcd" nodelay noscene 
-}
-
-Rule crystalmaiden_PowerupIsPowerupInvisibilityChance_25%_Rule
-{
-	criteria Powerup Iscrystalmaiden IsPowerupInvisibility Chance_25%
-	response crystalmaiden_PowerupIsPowerupInvisibilityChance_25%
+	criteria Move Iscrystalmaiden Chance_1%
+	response crystalmaiden_MoveChance_1%
 }
 
 Response crystalmaiden_Attack
@@ -710,6 +610,116 @@ Rule crystalmaiden_Bottling_Rule
 {
 	criteria Bottling Iscrystalmaiden 
 	response crystalmaiden_Bottling
+}
+
+Response crystalmaiden_PowerupIsPowerupHaste
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_haste_01.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupHaste_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupHaste
+	response crystalmaiden_PowerupIsPowerupHaste
+}
+
+Response crystalmaiden_PowerupIsPowerupHasteChance_25%
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_haste_02.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupHasteChance_25%_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupHaste Chance_25%
+	response crystalmaiden_PowerupIsPowerupHasteChance_25%
+}
+
+Response crystalmaiden_PowerupIsPowerupDoubleDamage
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_doubdam_01.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupDoubleDamage_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupDoubleDamage
+	response crystalmaiden_PowerupIsPowerupDoubleDamage
+}
+
+Response crystalmaiden_PowerupIsPowerupDoubleDamageChance_25%
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_doubdam_02.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupDoubleDamageChance_25%_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupDoubleDamage Chance_25%
+	response crystalmaiden_PowerupIsPowerupDoubleDamageChance_25%
+}
+
+Response crystalmaiden_PowerupIsPowerupRegeneration
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_regen_01.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupRegeneration_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupRegeneration
+	response crystalmaiden_PowerupIsPowerupRegeneration
+}
+
+Response crystalmaiden_PowerupIsPowerupIllusion
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_illus_01.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupIllusion_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupIllusion
+	response crystalmaiden_PowerupIsPowerupIllusion
+}
+
+Response crystalmaiden_PowerupIsPowerupIllusionChance_5%
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_illus_02.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupIllusionChance_5%_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupIllusion Chance_5%
+	response crystalmaiden_PowerupIsPowerupIllusionChance_5%
+}
+
+Response crystalmaiden_PowerupIsPowerupBounty
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_bottle_03.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule crystalmaiden_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupBounty
+	response crystalmaiden_PowerupIsPowerupBounty
+}
+
+Response crystalmaiden_PowerupIsPowerupInvisibility
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_invis_01.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupInvisibility_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupInvisibility
+	response crystalmaiden_PowerupIsPowerupInvisibility
+}
+
+Response crystalmaiden_PowerupIsPowerupInvisibilityChance_25%
+{
+	scene "scenes/crystalmaiden/crystalmaiden_cm_invis_03.vcd" nodelay noscene 
+}
+
+Rule crystalmaiden_PowerupIsPowerupInvisibilityChance_25%_Rule
+{
+	criteria Powerup Iscrystalmaiden IsPowerupInvisibility Chance_25%
+	response crystalmaiden_PowerupIsPowerupInvisibilityChance_25%
 }
 
 Response crystalmaiden_Pain

@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	"$baseTexture" 	"models/heroes/winterwyvern/ww_color"
+	"$normalmap" 	"models/heroes/winterwyvern/ww_normal"
+	"$maskmap1" 	"models/heroes/winterwyvern/ww_masks1"
+	"$maskmap2" 	"models/heroes/winterwyvern/ww_masks2"
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+//	"$ENVMAP"		"models/cubemaps/glossy_broad"
+//	"$ENVMAPINTENSITY"		"5"
+	
+
+ 	$SPECULAR_BLOOM_SCALE     1
+
+
+	$SPECULAREXPONENT 16
+	$SPECULARSCALE 5
+	//$SPECULARCOLOR "[.5 .75 .75]"
+	$alphatest	1
+
+	$IgnoreBudgetCheck 1
+
+	$RIMLIGHTSCALE	1
+//	$RIMLIGHTCOLOR "[.2 .6 .8]"
+//	$rimambience .5
+
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 0
+	"$detail1"  "models/heroes/winterwyvern/ww_backitem_detail"
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	-.05
+			"texturescrollangle"	0
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

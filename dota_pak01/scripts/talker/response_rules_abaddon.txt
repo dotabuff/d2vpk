@@ -131,6 +131,17 @@ Rule abaddon_KillIsEnemyPhoenixChance_35%_Rule
 	response abaddon_KillIsEnemyPhoenixChance_35%
 }
 
+Response abaddon_KillIsEnemyWinter_WyvernChance_35%
+{
+	scene "scenes/abaddon/abaddon_abad_rival_06.vcd" nodelay noscene 
+}
+
+Rule abaddon_KillIsEnemyWinter_WyvernChance_35%_Rule
+{
+	criteria Kill Isabaddon IsEnemyWinter_Wyvern Chance_35%
+	response abaddon_KillIsEnemyWinter_WyvernChance_35%
+}
+
 Response abaddon_KillIsEnemyEmber_SpiritChance_35%
 {
 	scene "scenes/abaddon/abaddon_abad_rival_07.vcd" nodelay noscene 

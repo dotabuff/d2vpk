@@ -280,7 +280,7 @@ Rule warlock_golem_DeathIsWarGolAg3_Rule
 	response warlock_golem_DeathIsWarGolAg3
 }
 
-Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%
+Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimer
 {
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_01.vcd" nodelay noscene 
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_02.vcd" nodelay noscene 
@@ -288,13 +288,13 @@ Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_06.vcd" nodelay noscene 
 }
 
-Rule warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%_Rule
+Rule warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimer_Rule
 {
-	criteria Death Iswarlock_golem IsWarGolTimeOut IsWarGolSelfTimer Chance_25%
-	response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%
+	criteria Death Iswarlock_golem IsWarGolTimeOut IsWarGolSelfTimer
+	response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimer
 }
 
-Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%IsWarGolAg1
+Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg1
 {
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_05.vcd" nodelay noscene 
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_07.vcd" nodelay noscene 
@@ -302,13 +302,13 @@ Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%IsWarGolAg
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_04.vcd" nodelay noscene 
 }
 
-Rule warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%IsWarGolAg1_Rule
+Rule warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg1_Rule
 {
-	criteria Death Iswarlock_golem IsWarGolTimeOut IsWarGolSelfTimer Chance_25% IsWarGolAg1
-	response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%IsWarGolAg1
+	criteria Death Iswarlock_golem IsWarGolTimeOut IsWarGolSelfTimer IsWarGolAg1
+	response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg1
 }
 
-Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%IsWarGolAg2
+Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg2
 {
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_05.vcd" nodelay noscene 
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_07.vcd" nodelay noscene 
@@ -316,13 +316,13 @@ Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%IsWarGolAg
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_04.vcd" nodelay noscene 
 }
 
-Rule warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%IsWarGolAg2_Rule
+Rule warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg2_Rule
 {
-	criteria Death Iswarlock_golem IsWarGolTimeOut IsWarGolSelfTimer Chance_25% IsWarGolAg2
-	response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_25%IsWarGolAg2
+	criteria Death Iswarlock_golem IsWarGolTimeOut IsWarGolSelfTimer IsWarGolAg2
+	response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg2
 }
 
-Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_35%IsWarGolAg3
+Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg3
 {
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_05.vcd" nodelay noscene 
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_07.vcd" nodelay noscene 
@@ -330,10 +330,10 @@ Response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_35%IsWarGolAg
 	scene "scenes/warlock_golem/warlock_golem_wargol_timeout_04.vcd" nodelay noscene 
 }
 
-Rule warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_35%IsWarGolAg3_Rule
+Rule warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg3_Rule
 {
-	criteria Death Iswarlock_golem IsWarGolTimeOut IsWarGolSelfTimer Chance_35% IsWarGolAg3
-	response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerChance_35%IsWarGolAg3
+	criteria Death Iswarlock_golem IsWarGolTimeOut IsWarGolSelfTimer IsWarGolAg3
+	response warlock_golem_DeathIsWarGolTimeOutIsWarGolSelfTimerIsWarGolAg3
 }
 
 Response warlock_golem_Pain

@@ -954,5 +954,16 @@
 	{
 	}
 
+	"dota_illusions_created"
+	{
+		"original_entindex"		"short"
+	}
+	
+	"dota_year_beast_killed"
+	{
+		"killer_player_id"		"short"
+		"message"				"short"
+		"beast_id"				"uint64"
+	}
 }
 

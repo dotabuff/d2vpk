@@ -1,0 +1,580 @@
+
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////CNY 2015 BEAST MODE/////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+
+
+"CNY_Beast.Spawn.Stinger"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"			"*)misc/spawn_dire_2015.wav"
+		"wave"			"*)misc/spawn_radiant_2015.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "5.0"
+			"match_substring" "false"
+			"match_entry" "CNY_Beast.Spawn.Stinger"
+			"match_channel" "false"
+			"match_entity" "false"
+			}	
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+	}
+}
+
+"CNY_Beast.DD"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")items/rune_dd.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "CNY_Beast.Ability.Cast"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"CNY_Beast.Haste"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_84dB"
+	"wave"			")items/rune_haste.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "CNY_Beast.Ability.Cast"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"CNY_Beast.PreAttack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5, 1.0"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+		"wave"	"weapons/hero/shared/large_blade/whoosh01.wav"
+		"wave"	"weapons/hero/shared/large_blade/whoosh02.wav"
+		"wave"	"weapons/hero/shared/large_blade/whoosh03.wav"
+	}
+}
+
+"CNY_Beast.Attack"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"105, 115"
+	"rndwave"
+	{
+		"wave"	"weapons/creep/roshan/attack01.wav"
+		"wave"	"weapons/creep/roshan/attack02.wav"
+		"wave"	"weapons/creep/roshan/attack03.wav"
+	}
+}
+
+"CNY_Beast.Bash"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"110, 120"
+	"wave"			"weapons/creep/roshan/bash.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"CNY_Beast.Black_Hole"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/enigma/black_hole_loop.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "CNY_Beast.Ability.Cast"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "3000"
+			}
+		}
+	}
+}
+
+"CNY_Beast.Black_Hole.Stop"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/enigma/black_hole_stop.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1500"
+			}
+		}
+	}
+}
+
+"CNY_Beast.Chronosphere"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"  		")weapons/hero/faceless_void/chronosphere.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "CNY_Beast.Ability.Cast"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"CNY_Beast.SonicWave"  
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/queenofpain/queenofpain_sonicWave.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "CNY_Beast.Ability.Cast"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "400"
+			}
+		}
+	}
+}
+
+"CNY_Beast.Ability.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")npc/cny_beast/cast_ability01.wav"
+		"wave"	")npc/cny_beast/cast_ability02.wav"
+		"wave"	")npc/cny_beast/cast_ability03.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "400"
+			}
+		}
+	}
+}
+
+"CNY_Beast.GodsWrath"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/zuus/gods_wrath_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "CNY_Beast.GlobalAbility.Cast"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "30000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "3000"
+			}
+		}
+	}
+}
+
+"CNY_Beast.GodsWrath.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_120dB"
+	"pitch"			"90, 110"
+	"wave"			"weapons/hero/zuus/gods_wrath_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "6000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+
+"CNY_Beast.GlobalSilence.Cast" 
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_120dB"
+	"wave"  		")npc/cny_beast/cny_silence.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"volume_accumulate"
+			{
+				"input4" "1.0"
+				"input7" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"CNY_Beast.GlobalSilence.Effect"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			")npc/cny_beast/cny_silence.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Silencer"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "1.0"
+			}
+			"volume_accumulate"
+			{
+				"input4" "1.0"
+				"input7" "1.0"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1200"
+			}
+		}
+	}
+}
+
+"CNY_Beast.HandOfGodHealHero"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/chen/hog_hero01.wav"
+		"wave"			")weapons/hero/chen/hog_hero02.wav"
+		"wave"			")weapons/hero/chen/hog_hero03.wav"
+		"wave"			")weapons/hero/chen/hog_hero04.wav"
+		"wave"			")weapons/hero/chen/hog_hero05.wav"
+		"wave"			")weapons/hero/chen/hog_hero06.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_fade_in"
+			{
+			"input_max" "0.1"
+			}
+			"volume_falloff_linear"
+			{
+			"input_max" "12000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"CNY_Beast.Stampede.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/centaur/stampede_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "CNY_Beast.GlobalAbility.Cast"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "20000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+
+"CNY_Beast.GlobalAbility.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"	")npc/cny_beast/cast_global01.wav"
+		"wave"	")npc/cny_beast/cast_global02.wav"
+		"wave"	")npc/cny_beast/cast_global03.wav"
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"volume_falloff_linear"
+			{
+			"input_max" "20000.0"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "400"
+			}
+		}
+	}
+}
+
+"CNY_Beast.Death"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")npc/cny_beast/death.wav"
+}
+
+"Nian.Footstep"
+{
+	"channel"		"CHAN_BODY"
+	"volume"		"0.3, 0.5"
+	"soundlevel"  	"SNDLVL_72dB"
+	"pitch"			"90,100"
+	"rndwave"
+	{
+		"wave"		"physics/footsteps/hero/mirana/01.wav"
+		"wave"		"physics/footsteps/hero/mirana/02.wav"
+		"wave"		"physics/footsteps/hero/mirana/03.wav"
+		"wave"		"physics/footsteps/hero/mirana/04.wav"
+		"wave"		"physics/footsteps/hero/mirana/05.wav"
+		"wave"		"physics/footsteps/hero/mirana/05.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+			
+			"import_stack" "dota_water_footsteps_start"
+		}
+	}
+}

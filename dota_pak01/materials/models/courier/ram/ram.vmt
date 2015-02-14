@@ -1,0 +1,47 @@
+"CustomHero"
+{
+	"$baseTexture" "models/courier/ram/ram_color"
+	"$normalmap" "models/courier/ram/ram_normal"
+	//"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+	//$FRESNELWARP "models/heroes/dragon_knight/dragon_knight_fresnelranges"
+	"$maskmap1" "models/courier/ram/ram_masks1"
+	"$maskmap2" "models/courier/ram/ram_masks2"
+	
+	$SPECULAR_BLOOM_SCALE      0.1
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 10
+	//$SPECULARCOLOR "[0.7 0.9 1]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	$SPECULARBLENDTOFULL 1
+
+	$RIMLIGHTSCALE 5
+
+	$alphatest 1
+
+	//$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	//$ENVMAP "models\courier\ram\cube_ram_red"
+	//$ENVMAPINTENSITY 1
+	//$MASKENVBYMETALNESS 1
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"55"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

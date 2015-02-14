@@ -224,6 +224,17 @@ Rule centaur_KillIsEnemyEmber_SpiritChance_25%_Rule
 	response centaur_KillIsEnemyEmber_SpiritChance_25%
 }
 
+Response centaur_KillIsEnemyWinter_WyvernChance_25%
+{
+	scene "scenes/centaur/centaur_cent_rival_23.vcd" nodelay noscene 
+}
+
+Rule centaur_KillIsEnemyWinter_WyvernChance_25%_Rule
+{
+	criteria Kill Iscentaur IsEnemyWinter_Wyvern Chance_25%
+	response centaur_KillIsEnemyWinter_WyvernChance_25%
+}
+
 Response centaur_KillIsEnemyPhoenixChance_25%
 {
 	scene "scenes/centaur/centaur_cent_rival_24.vcd" nodelay noscene 

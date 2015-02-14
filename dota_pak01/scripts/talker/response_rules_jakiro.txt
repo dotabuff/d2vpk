@@ -168,6 +168,17 @@ Rule jakiro_KillIsEnemyPuckChance_50%_Rule
 	response jakiro_KillIsEnemyPuckChance_50%
 }
 
+Response jakiro_KillIsEnemyWinter_WyvernChance_50%
+{
+	scene "scenes/jakiro/jakiro_jak_rival_15.vcd" nodelay noscene 
+}
+
+Rule jakiro_KillIsEnemyWinter_WyvernChance_50%_Rule
+{
+	criteria Kill Isjakiro IsEnemyWinter_Wyvern Chance_50%
+	response jakiro_KillIsEnemyWinter_WyvernChance_50%
+}
+
 Response jakiro_Move
 {
 	scene "scenes/jakiro/jakiro_jak_move_01.vcd" nodelay noscene 

@@ -84,6 +84,7 @@
         "npc_dota_hero_crystal_maiden"
         {
             "models/heroes/crystal_maiden/crystal_maiden.mdl"   "#DOTA_STATUE_name_model_crystal_maiden"
+            "models/heroes/crystal_maiden/crystal_maiden_arcana.mdl"   "#DOTA_STATUE_name_model_crystal_maiden_arcana"
         }
         "npc_dota_hero_dark_seer"
         {
@@ -445,6 +446,10 @@
         "npc_dota_hero_windrunner"
         {
             "models/heroes/windrunner/windrunner.mdl"   "#DOTA_STATUE_name_model_windrunner"
+        }
+        "npc_dota_hero_winter_wyvern"
+        {
+            "models/heroes/winterwyvern/winterwyvern.mdl"   "#DOTA_STATUE_name_model_winter_wyvern"
         }
         "npc_dota_hero_witch_doctor"
         {
@@ -840,6 +845,31 @@
 			"ward_frostbite"			"wardstaff"
 			"ward_run"				"wardstaff"			
 		}
+        "models/heroes/crystal_maiden/crystal_maiden_arcana.mdl"
+		{
+            "arcana_idle"               "1"
+            "run_arcana"                "1"
+            "arcana_agg_run"            "1"
+            "arcana_agg_idle"           "1"
+            "arcana_attack1"            "1"
+            "arcana_attack2"            "1"
+            "arcana_nova"               "1"
+            "arcana_frostbite"          "1"
+            "arcana_freezing_field"     "1"
+            "arcana_flail"              "1"
+            "arcana_stun"               "1"
+            "wardstaff_arcana_idle"         "wardstaff"
+            "wardstaff_run_arcana"          "wardstaff"
+            "wardstaff_arcana_agg_run"      "wardstaff"
+            "wardstaff_arcana_agg_idle"     "wardstaff"
+            "wardstaff_arcana_attack1"      "wardstaff"
+            "wardstaff_arcana_attack2"      "wardstaff"
+            "wardstaff_arcana_nova"         "wardstaff"
+            "wardstaff_arcana_frostbite"    "wardstaff"
+            "wardstaff_arcana_freezing_field"   "wardstaff"
+            "wardstaff_arcana_flail"            "wardstaff"
+            "wardstaff_arcana_stun"             "wardstaff"
+        }
 		"models/heroes/dark_seer/dark_seer.mdl"
 		{
 			"idle_alt1"		"1"
@@ -1236,7 +1266,6 @@
 			"attack_crit"		"1"
 			"run_reverse"		"1"
 			"Healing_ward"		"1"
-			"attack_spin"		"1"
 			"stun"				"1"
 			"omni"				"1"
 			"flail"				"1"
@@ -1284,7 +1313,6 @@
 			"teleport"		"1"
 			"loadout_bladebiter"		"bladebiter"
 			"teleport_admirals_prow"		"admirals_prow"
-			"armament_leviathan_loadout"		"armaments_set"
 			"armament_leviathan_idle_alt"		"armaments_set"
 			"idle_rare_gunsword"		"1"
 		}
@@ -1325,6 +1353,7 @@
 			"dualwield_legion_commander_duel"		"dualwield"
 			"dualwield_legion_commander_duel_kill"		"dualwield"
 			"dualwield_legion_commander_flail"		"dualwield"
+            "dualwield_legion_commander_forcestaff_friendly"        "dualwield"
 			"dualwield_legion_commander_stun"		"dualwield"
 			"legion_commander_loadout_spawn"		"1"
 			"legion_commander_spawn"			"1"
@@ -1484,7 +1513,6 @@
 			"luna_force_staff_start"			"1"
 			"teleport_in"		"1"
 			"luna_eclipse"		"1"
-			"luna_eclipse"		"1"
 			"luna_attackb"		"1"
 			"luna_attack_alta"		"1"
 			"luna_attackb"			"1"
@@ -1529,10 +1557,10 @@
 		{
 			"idle"		"1"
 			"run"		"1"
-			"run_injured"          "1"
-			"idle_injured"          "1"
+			"injured_run"          "1"
+			"injured_idle"          "1"
 			"attack1"		"1"
-			"attack02"          "1"
+			"attack2"          "1"
 			"attack3"          "1"
 			"empower"		"1"
 			"polarity"		"1"
@@ -1756,7 +1784,7 @@
 			"arcana_idle"          "arcana"
 			"arcana_forcestaff"		"arcana"
 			"arcana_attack4"          "arcana"
-			"phantom_assassin_spawn"		"arcana"
+			"arcana_spawn"		"arcana"
             "arcana_attack_crit_v2"     "arcana"
 			"arcana_attack2_fast"		"arcana"
 			"arcana_run_haste"		"arcana"
@@ -1873,7 +1901,6 @@
             "ftp_dendi_hook_start"          "ftp_dendi_back"
             "ftp_dendi_hook_end"          "ftp_dendi_back"
             "ftp_dendi_idle_stomp"          "ftp_dendi_back"
-            "ftp_dendi_victory"          "ftp_dendi_back"
 		}
 		"models/heroes/pugna/pugna.mdl"
 		{
@@ -1914,7 +1941,7 @@
             "hookshot_start"          "1"
             "hookshot_loop"          "1"
 			"run"		"1"
-                        "idle"          "1"
+            "idle"          "1"
 			"idle_alt"		"1"
 			"attack"		"1"
 			"attack_alt"		"1"
@@ -2069,9 +2096,9 @@
             "idle"          "1"
             "idle_rare"          "1"
             "idle_injured"          "1"
-			"cast1_shadowraze_A"		"1"
-			"cast1_shadowraze_B"		"1"
-			"cast1_shadowraze_C"		"1"
+			"cast1_shadowraze_a"		"1"
+			"cast1_shadowraze_b"		"1"
+			"cast1_shadowraze_c"		"1"
             "cast6_requiem"          "1"
 			"attack01"		"1"
 			"attack02"		"1"
@@ -2091,9 +2118,9 @@
             "idle_rare"          "1"
             "idle_rare_alt"          "1"
             "idle_injured"          "1"
-			"cast1_shadowraze_A"		"1"
-			"cast1_shadowraze_B"		"1"
-			"cast1_shadowraze_C"		"1"
+			"cast1_shadowraze_a"		"1"
+			"cast1_shadowraze_b"		"1"
+			"cast1_shadowraze_c"		"1"
             "cast6_requiem_arcana"          "1"
 			"attack01"		"1"
 			"attack02"		"1"
@@ -2125,7 +2152,6 @@
             "injured"          "1"
             "injured_idle"          "1"
             "idle_chakram"          "1"
-            "run_chakram"          "1"
             "stun"          "1"
             "flail"          "1"
 		}
@@ -2147,7 +2173,6 @@
 		}
 		"models/heroes/siren/siren.mdl"
 		{
-			"Siren Song"		"1"
 			"Victory"		"1"
 			"Attack"		"1"
 			"Attack Alternate"		"1"
@@ -2158,7 +2183,6 @@
             "run_injured"          "1"
             "run_haste"          "1"
             "Attack2"          "1"
-            "Attack Alternate"          "1"
             "cast1_mirrorImage"          "1"
             "cast2_ensnare"          "1"
             "cast3_ripTide"          "1"
@@ -2208,7 +2232,6 @@
 		}
 		"models/heroes/slark/slark.mdl"
 		{
-			"pounce_ripper"		"silent_ripper"
 			"loadout_rare2"		"1"
 			"run"		"1"
             "idle"          "1"
@@ -2258,12 +2281,12 @@
 		{
 			"cast_dagger"		"1"
 			"cast_haunt"		"1"
-                        "idle"          "1"
+            "idle"          "1"
 			"run"		"1"
 			"attack1"		"1"
 			"attack"		"1"
-                        "disabled"          "1"
-                        "flail"          "1"
+            "disabled"          "1"
+            "flail"          "1"
 		}
 		"models/heroes/spirit_breaker/spirit_breaker.mdl"
 		{
@@ -2312,12 +2335,11 @@
             "fortune_remnant_05"          "ss_fortune"
             "fortune_remnant_06"          "ss_fortune"
             "fortune_remnant_07"          "ss_fortune"
-                        "vortex"          "1"
+            "vortex"          "1"
 			"teleport"		"1"
 		}
 		"models/heroes/sven/sven.mdl"
 		{
-			"attack02"		"1"
 			"storm_bolt"		"1"
 			"runN"		"1"
             "idle"          "1"
@@ -2367,7 +2389,6 @@
             "arcana_idle_alt_a"          "techies_arcana"
             "arcana_idle_injured"          "techies_arcana"
             "taunt_squint_and_laugh"          "taunt_fullbody"
-
 		}
 		"models/heroes/terrorblade/demon.mdl"
 		{
@@ -2413,13 +2434,11 @@
 		}
 		"models/heroes/tidehunter/tidehunter.mdl"
 		{
-			"attack1"		"1"
 			"fish_attack"		"fish_slap"
             "attack1_boat"          "tidehunter_boat"
             "attack_alt_boat"          "tidehunter_boat"
             "attack1"          "1"
 			"attack_alt"		"1"
-            "fish_attack"          "fish_slap"
 			"gush"		"1"
 			"anchor_smash"		"1"
 			"ravage"		"1"
@@ -2510,7 +2529,6 @@
 		}
 		"models/heroes/troll_warlord/troll_warlord.mdl"
 		{
-			"tw_attack_melee"		"1"
             "tw_spawn"          "1"
             "tw_spawn_flip"          "1"
             "tw_run_melee"          "1"
@@ -2549,7 +2567,6 @@
             "idle"          "1"
 			"idle2"				"1"
 			"idle_punch"		"1"
-            "run_punch"          "1"
 			"walrus_punch"		"1"
 			"walrus_dizzying_punch"		"dizzying_punch"
 			"run_punch"			"1"
@@ -2759,6 +2776,28 @@
             "flail"          "1"
             "spawn"          "1"
 		}
+        "models/heroes/winterwyvern/winterwyvern.mdl"
+		{
+            "idle_injured"                  "1"
+            "run_injured"                   "1"
+            "attack01_injured"              "1"
+            "cast01_arctic_burn_statue"            "1"
+            "cast01_arctic_burn_injured"            "1"
+            "cast02_splinter_blast_injured"     "1"
+            "cast03_cold_embrace_injured"       "1"
+            "cast04_winters_curse_injured"      "1"
+            "stun_injured"                  "1"
+            "idle_flying_low"               "1"
+            "run_flying_low"                "1"
+            "run_flying_alt_low"            "1"
+            "run_flying_right_alt_low"      "1"
+            "attack_flying_low"             "1"
+            "cast02_splinter_blast_flying_low"      "1"
+            "cast03_cold_embrace_flying_low"        "1"
+            "cast04_winters_curse_flying_low"       "1"
+            "flail_flying_low"              "1"
+            "stun_flying_statue"               "1"
+        }
 		"models/heroes/wisp/wisp_effigy.mdl"
 		{
 			"idle"		"1"
