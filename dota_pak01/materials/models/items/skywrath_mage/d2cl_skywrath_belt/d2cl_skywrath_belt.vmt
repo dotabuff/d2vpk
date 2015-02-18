@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$basetexture"		"models/items/skywrath_mage/d2cl_skywrath_belt/d2cl_skywrath_belt_color"
+	"$normalmap"		"models/items/skywrath_mage/d2cl_skywrath_belt/d2cl_skywrath_belt_normal"
+	"$maskmap1"		"models/items/skywrath_mage/d2cl_skywrath_belt/d2cl_skywrath_belt_mask1"
+	"$maskmap2"		"models/items/skywrath_mage/d2cl_skywrath_belt/d2cl_skywrath_belt_mask2"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"32"
+	"$SPECULARSCALE"		"5"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"90"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
