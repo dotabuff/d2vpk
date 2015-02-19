@@ -1,0 +1,22 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/keeper_of_the_light/cradle_of_lights_spirit_stag/spirit_color"
+	"$normalmap"		"models/items/keeper_of_the_light/cradle_of_lights_spirit_stag/spirit_normal"
+	"$maskmap2"		"models/items/keeper_of_the_light/cradle_of_lights_spirit_stag/spirit_mask2"
+	"$SPECULAREXPONENT"		"2"
+	"$SPECULARSCALE"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+	"$maskmap1"		"models/items/keeper_of_the_light/cradle_of_lights_spirit_stag/spirit_mask1"
+}
+//this file currently points to the 256x256 file. The ghoststag file is 512x256 if needed

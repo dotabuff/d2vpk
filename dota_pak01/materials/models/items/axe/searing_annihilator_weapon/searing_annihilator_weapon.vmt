@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/axe/searing_annihilator_weapon/searing_annihilator_weapon_color"
+	"$normalmap"		"models/items/axe/searing_annihilator_weapon/searing_annihilator_weapon_normal"
+	"$diffusewarp"		"models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$maskmap1"		"models/items/axe/searing_annihilator_weapon/searing_annihilator_weapon_mask1"
+	"$maskmap2"		"models/items/axe/searing_annihilator_weapon/searing_annihilator_weapon_mask2"
+	"$FRESNELWARP"		"models/heroes/axe/axe_fresnelranges"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"2.500000"
+	"$SPECULARCOLOR"		"[.9 .8 1]"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$alphatest"		"1"
+	"$detail1"		"models/heroes/earthshaker/totem_glow"
+	"$DETAIL1BLENDMODE"		"1"
+	"$DETAIL1SCALE"		"2.500000"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0"
+			"texturescrollangle"		"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

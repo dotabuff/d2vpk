@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$basetexture"		"models/items/nerubian_assassin/emperor_of_nyx_dynasty_head/emperor_of_nyx_dynasty_head_color"
+	"$normalmap"		"models/items/nerubian_assassin/emperor_of_nyx_dynasty_head/emperor_of_nyx_dynasty_head_normal"
+	"$maskmap1"		"models/items/nerubian_assassin/emperor_of_nyx_dynasty_head/emperor_of_nyx_dynasty_head_mask1"
+	"$maskmap2"		"models/items/nerubian_assassin/emperor_of_nyx_dynasty_head/emperor_of_nyx_dynasty_head_mask2"
+	"$specularwarp"		"models/heroes/nyx/nyx_lightwarp"
+	"$SPECULAREXPONENT"		"64"
+	"$SPECULARSCALE"		"4"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.500000"
+			"texturescrollangle"		"83"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

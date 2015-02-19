@@ -245,7 +245,8 @@ Scheme
 			"1"
 			{
 				"name"		"Courier New"
-				"tall"		"10"
+				"tall"		"10" [!$HIGHDPI]
+				"tall"		"20" [$HIGHDPI]
 				"weight"	"500"
 				"antialias" "1"
 			}
@@ -266,7 +267,8 @@ Scheme
 			"1"
 			{
 				"name"		 "Lucida Console"
-				"tall"		 "10"
+				"tall"		 "10" [!$HIGHDPI]
+				"tall"		"20" [$HIGHDPI]
 				"tall_lodef" "15"
 				"tall_hidef" "20"
 				"weight"	 "0"
@@ -278,7 +280,8 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"16"
+				"tall"		"16" [!$HIGHDPI]
+				"tall"		"32" [$HIGHDPI]
 				"weight"	"500"
 			}
 		}
@@ -287,7 +290,8 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"16"
+				"tall"		"16" [!$HIGHDPI]
+				"tall"		"32" [$HIGHDPI]
 				"weight"	"1000"
 			}
 		}
@@ -296,7 +300,8 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"16"
+				"tall"		"16" [!$HIGHDPI]
+				"tall"		"32" [$HIGHDPI]
 				"weight"	"500"
 				"underline" "1"
 			}
@@ -306,7 +311,8 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"12"
+				"tall"		"12" [!$HIGHDPI]
+				"tall"		"24" [$HIGHDPI]
 				"weight"	"0"
 			}
 		}
@@ -315,7 +321,8 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"13"
+				"tall"		"13" [!$HIGHDPI]
+				"tall"		"26" [$HIGHDPI]
 				"weight"	"0"
 				"dropshadow" "1"
 			}
@@ -335,7 +342,8 @@ Scheme
 			"1"
 			{
 				"name"		"Tahoma"
-				"tall"		"18"
+				"tall"		"18" [!$HIGHDPI]
+				"tall"		"36" [$HIGHDPI]
 				"weight"	"0"
 			}
 		}
@@ -344,7 +352,8 @@ Scheme
 			"1"	[$WIN32]
 			{
 				"name"		"Tahoma"
-				"tall"		"12"
+				"tall"		"12" [!$HIGHDPI]
+				"tall"		"24" [$HIGHDPI]
 				"weight"	"1000"
 			}
 			"1"	[$X360]
@@ -383,7 +392,8 @@ Scheme
 			"1"	[$WIN32]
 			{
 				"name"		"Verdana"
-				"tall"		"16"
+				"tall"		"16" [!$HIGHDPI]
+				"tall"		"32" [$HIGHDPI]
 				"weight"	"600"
 				"antialias" "1"
 			}
@@ -558,7 +568,8 @@ Scheme
 			"1"
 			{
 				"name"		"Lucida Console"
-				"tall"		"10"
+				"tall"		"10" [!$HIGHDPI]
+				"tall"		"20" [$HIGHDPI]
 				"weight"	"0"
 			}
 //			"1"

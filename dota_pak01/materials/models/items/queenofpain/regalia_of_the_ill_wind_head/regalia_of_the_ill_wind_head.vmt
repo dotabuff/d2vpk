@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/queenofpain/regalia_of_the_ill_wind_head/regalia_of_the_ill_wind_head_color"
+	"$normalmap"		"models/items/queenofpain/regalia_of_the_ill_wind_head/regalia_of_the_ill_wind_head_normal"
+	"$maskmap1"		"models/items/queenofpain/regalia_of_the_ill_wind_head/regalia_of_the_ill_wind_head_mask1"
+	"$maskmap2"		"models/items/queenofpain/regalia_of_the_ill_wind_head/regalia_of_the_ill_wind_head_mask2"
+	"$FRESNELWARP"		"models/heroes/QueenOfPain/QueenOfPain_fresnelranges"
+	"$detail1"		"models/heroes/QueenOfPain/QueenOfPain_motion_fire"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"8"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$alphatest"		"1"
+	"$DETAIL1BLENDMODE"		"4"
+	"$DETAIL1SCALE"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.300000"
+			"texturescrollangle"		"90"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

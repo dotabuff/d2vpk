@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/keeper_of_the_light/cradle_of_lights_weapon/cradle_of_lights_weapon_color"
+	"$normalmap"		"models/items/keeper_of_the_light/cradle_of_lights_weapon/cradle_of_lights_weapon_normal"
+	"$maskmap1"		"models/items/keeper_of_the_light/cradle_of_lights_weapon/cradle_of_lights_weapon_mask1"
+	"$maskmap2"		"models/items/keeper_of_the_light/cradle_of_lights_weapon/cradle_of_lights_weapon_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$SPECULAREXPONENT"		"10"
+	"$SPECULARSCALE"		"4"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$RIMLIGHTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

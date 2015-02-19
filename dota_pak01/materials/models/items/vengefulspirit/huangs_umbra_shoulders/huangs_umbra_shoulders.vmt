@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/vengefulspirit/huangs_umbra_shoulders/huangs_umbra_shoulders_color"
+	"$normalmap"		"models/items/vengefulspirit/huangs_umbra_shoulders/huangs_umbra_shoulders_normal"
+	"$diffusewarp"		"models/heroes/sven/sven_diffusewarp"
+	"$maskmap1"		"models/items/vengefulspirit/huangs_umbra_shoulders/huangs_umbra_shoulders_mask1"
+	"$maskmap2"		"models/items/vengefulspirit/huangs_umbra_shoulders/huangs_umbra_shoulders_mask2"
+	"$detail1"		"models/heroes/vengeful/vengeful_glow"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAREXPONENT"		"13"
+	"$SPECULARSCALE"		"60"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$alphatest"		"1"
+	"$RIMLIGHTSCALE"		"10"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"2"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.100000"
+			"texturescrollangle"		"90"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}
