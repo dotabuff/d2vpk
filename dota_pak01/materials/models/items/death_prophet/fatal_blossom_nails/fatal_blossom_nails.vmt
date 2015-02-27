@@ -1,0 +1,43 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/death_prophet/fatal_blossom_nails/fatal_blossom_nails_color"
+	"$normalmap"		"models/items/death_prophet/fatal_blossom_nails/fatal_blossom_nails_normal"
+	"$diffusewarp"		"models/heroes/sven/sven_diffusewarp"
+	"$maskmap1"		"models/items/death_prophet/fatal_blossom_nails/fatal_blossom_nails_mask1"
+	"$maskmap2"		"models/items/death_prophet/fatal_blossom_nails/fatal_blossom_nails_mask2"
+	$alphatest 1
+	$SPECULAREXPONENT 22
+	$SPECULARSCALE 12
+	$SPECULARCOLOR "[1 1 1]"
+
+	$RIMLIGHTSCALE	2
+	
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+
+
+	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	$ENVMAPINTENSITY 4
+	$MASKENVBYMETALNESS 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/courier/nexon_turtle_17_gold/nexon_turtle_17_gold_color"
+	"$normalmap"		"models/items/courier/nexon_turtle_17_gold/nexon_turtle_17_gold_normal"
+	"$maskmap1"		"models/items/courier/nexon_turtle_17_gold/nexon_turtle_17_gold_mask1"
+	"$maskmap2"		"models/items/courier/nexon_turtle_17_gold/nexon_turtle_17_gold_mask2"
+	"$ALPHATEST"		"1"
+	"$SPECULAREXPONENT" 	"10"
+	"$SPECULARSCALE" 	"3"
+	"$SPECULARCOLOR" 	"[1 1 1]"
+
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$cloakPassEnabled"		"1"
+	
+	"$ENVMAP" "models\items\undying\idol_of_ruination\cube_idol_gold"
+	"$ENVMAPINTENSITY" 	"1"
+	"$MASKENVBYMETALNESS" 	"1"
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

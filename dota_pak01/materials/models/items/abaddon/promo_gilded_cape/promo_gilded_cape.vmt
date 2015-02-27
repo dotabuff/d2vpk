@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/abaddon/promo_gilded_cape/promo_gilded_cape_color"
+	"$normalmap"		"models/items/abaddon/promo_gilded_cape/promo_gilded_cape_normal"
+	"$maskmap1"		"models/items/abaddon/promo_gilded_cape/promo_gilded_cape_mask1"
+	"$maskmap2"		"models/items/abaddon/promo_gilded_cape/promo_gilded_cape_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"0.850000"
+	"$SPECULAREXPONENT"		"32"
+	"$SPECULARSCALE"		"80"
+	"$RIMLIGHTSCALE"		"3"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$detail1"		"models/heroes/abaddon/abaddon_detail"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"5"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$DETAIL1BLENDTOFULL"		"0"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.150000"
+			"texturescrollangle"		"50"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

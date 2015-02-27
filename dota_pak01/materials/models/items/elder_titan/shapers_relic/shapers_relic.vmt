@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/elder_titan/shapers_relic/shapers_relic_color"
+	"$normalmap"		"models/items/elder_titan/shapers_relic/shapers_relic_normal"
+	"$maskmap1"		"models/items/elder_titan/shapers_relic/shapers_relic_mask1"
+	"$maskmap2"		"models/items/elder_titan/shapers_relic/shapers_relic_mask2"
+	"$alphatest"		"1"
+	"$detail1"		"models/heroes/elder_titan/elder_titan_motion"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"10"
+	"$RIMLIGHTSCALE"		"1"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"2"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"130"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/sven/shattered_greatsword/shattered_greatsword_color"
+	"$normalmap"		"models/items/sven/shattered_greatsword/shattered_greatsword_normal"
+	"$detail1"		"models/heroes/sven/sven_glow"
+	"$maskmap1"		"models/items/sven/shattered_greatsword/shattered_greatsword_mask1"
+	"$maskmap2"		"models/items/sven/shattered_greatsword/shattered_greatsword_mask2"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"12"
+	"$SPECULARCOLOR"		"[.8 1 1]"
+	"$RIMLIGHTCOLOR"		"[.8 1 1]"
+	"$alphatest"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$MASKENVBYMETALNESS"		"0"
+	"$ENVMAPINTENSITY"		"3"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"5"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.500000"
+			"texturescrollangle"		"83"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,44 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/chaos_knight/diabolic_aspect/diabolic_aspect_color"
+	"$normalmap"		"models/items/chaos_knight/diabolic_aspect/diabolic_aspect_normal"
+	"$maskmap1"		"models/items/chaos_knight/diabolic_aspect/diabolic_aspect_mask1"
+	"$maskmap2"		"models/items/chaos_knight/diabolic_aspect/diabolic_aspect_mask2"
+	"$alphatest"		"1"
+	"$detail1"		"models/heroes/chaos_knight/chaos_knight_motion_fire_2"
+	"$FRESNELWARP"		"models/heroes/chaos_knight/ck_fresnelranges"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$ENVMAPINTENSITY"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"5"
+	"$AMBIENTSCALE"		"1"
+	"$SPECULARCOLOR"		"[1 .8  .3]"
+	"$RIMLIGHTCOLOR"		"[.4 .62 .7]"
+	"$RIMAMBIENCE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$DETAIL1BLENDMODE"		"1"
+	"$DETAIL1SCALE"		"1.500000"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.300000"
+			"texturescrollangle"		"270"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,41 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/morphling/renewed_jade_comet_back/renewed_jade_comet_back_color"
+	"$detail1"		"models/heroes/morphling/morphling_motion_water"
+	"$maskmap1"		"models/items/morphling/renewed_jade_comet_back/renewed_jade_comet_back_mask1"
+	"$maskmap2"		"models/items/morphling/renewed_jade_comet_back/renewed_jade_comet_back_mask2"
+	"$normalmap"		"models/items/morphling/renewed_jade_comet_back/renewed_jade_comet_back_normal"
+	"$FRESNELWARP"		"models/heroes/morphling/morphling_fresnelranges"
+	"$FRESNELCOLORWARP"		"models/heroes/morphling/morphling_colorwarp"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$ENVMAPINTENSITY"		"2"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"50"
+	"$SPECULARSCALE"		"15"
+	"$RIMLIGHTSCALE"		"0.500000"
+	"$DETAIL1BLENDMODE"		"4"
+	"$DETAIL1SCALE"		"1"
+	"$rimlightcolor"		"[.2 .8 .7]"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.300000"
+			"texturescrollangle"		"90"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

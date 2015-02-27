@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/death_prophet/fatal_blossom_head/fatal_blossom_head_color"
+	"$normalmap"		"models/items/death_prophet/fatal_blossom_head/fatal_blossom_head_normal"
+	"$diffusewarp"		"models/heroes/sven/sven_diffusewarp"
+	"$maskmap1"		"models/items/death_prophet/fatal_blossom_head/fatal_blossom_head_mask1"
+	"$maskmap2"		"models/items/death_prophet/fatal_blossom_head/fatal_blossom_head_mask2"
+	"$alphatest"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"0.300000"
+	"$SPECULAREXPONENT"		"23"
+	"$SPECULARSCALE"		"42"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$RIMLIGHTSCALE"		"10"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"3"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$basetexturetransform"
+			"texturescrollrate"		"0"
+			"texturescrollangle"		"93"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

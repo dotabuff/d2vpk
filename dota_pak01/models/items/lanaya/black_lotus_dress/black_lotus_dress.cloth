@@ -1,0 +1,65 @@
+"ClothSystem"
+{
+	
+	"Cloth"
+	{
+		"columns"		"1"
+		"rows"		"5"
+		"damping"		"0.5"
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"100"
+		"WorldFriction"		"0.350000"
+		"LocalForce"		".5"
+		"LocalRotation"		"1.000000"
+		"FixedPointDamping"		"0.100000"
+		"StretchForce"		"1.000000"
+		"SpringStretchiness"		"0.000000"
+		"AnimationForceAttraction"		"0.08"		// 0.0500
+		"AnimationVertexAttraction"		"0.8"		// 0.0000
+		"ExternalForceScale"		".5"
+		"StructSpringConstant"		"40.000000"
+		"StructSpringDamping"		"0.500000"
+		"ShearSpringConstant"		"40.000000"
+		"ShearSpringDamping"		"0.500000"
+		"BendSpringConstant"		"20.400000"
+		"BendSpringDamping"		"0.500000"
+		"R0"		"fixed"
+		"R1"		"mass 0.1"
+		"R2"		"mass 0.25"
+		"R3"		"mass .5"
+		"R4"		"mass 1"
+		"BonePrefix"		"dress_NB_"
+	}
+	
+	"Cloth"
+	{
+		"columns"		"1"
+		"rows"		"4"
+		"damping"		"0.75"
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"400"
+		"WorldFriction"		"0.350000"
+		"LocalForce"		".5"
+		"LocalRotation"		"1.000000"
+		"FixedPointDamping"		"0.100000"
+		"StretchForce"		"1.000000"
+		"SpringStretchiness"		"0.000000"
+		"AnimationForceAttraction"		"0.08"		// 0.0500
+		"AnimationVertexAttraction"		"0.8"		// 0.0000
+		"ExternalForceScale"		".5"
+		"StructSpringConstant"		"40.000000"
+		"StructSpringDamping"		"0.500000"
+		"ShearSpringConstant"		"40.000000"
+		"ShearSpringDamping"		"0.500000"
+		"BendSpringConstant"		"20.400000"
+		"BendSpringDamping"		"0.500000"
+		"R0"		"fixed"
+		"R1"		"mass 0.1"
+		"R2"		"mass 0.25"
+		"R3"		"mass 1"
+		"BonePrefix"		"dress_NB_b_"
+	}
+	
+
+	
+}

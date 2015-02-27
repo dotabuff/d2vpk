@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/legion_commander/promo_arms_of_the_onyx_crucible_back/promo_arms_of_the_onyx_crucible_back_color"
+	"$normalmap"		"models/items/legion_commander/promo_arms_of_the_onyx_crucible_back/promo_arms_of_the_onyx_crucible_back_normal"
+	"$maskmap1"		"models/items/legion_commander/promo_arms_of_the_onyx_crucible_back/promo_arms_of_the_onyx_crucible_back_mask1"
+	"$maskmap2"		"models/items/legion_commander/promo_arms_of_the_onyx_crucible_back/promo_arms_of_the_onyx_crucible_back_mask2"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"32"
+	"$SPECULARSCALE"		"5"
+	"$SPECULARCOLOR"		"[1 .6 .3]"
+	"$RIMLIGHTSCALE"		"5"
+	"$IgnoreBudgetCheck"		"1"
+	"$ENVMAP"		"models/cubemaps/cube_legion_commander"
+	"$ENVMAPINTENSITY"		"1"
+	"$MASKENVBYMETALNESS"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"90"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/phantom_lancer/vagabond_arms/vagabond_arms_color"
+	"$normalmap"		"models/items/phantom_lancer/vagabond_arms/vagabond_arms_normal"
+	"$diffusewarp"		"models/heroes/sven/sven_diffusewarp"
+	"$maskmap1"		"models/items/phantom_lancer/vagabond_arms/vagabond_arms_mask1"
+	"$maskmap2"		"models/items/phantom_lancer/vagabond_arms/vagabond_arms_mask2"
+	"$alphatest"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"0.100000"
+	"$SPECULAREXPONENT"		"53"
+	"$SPECULARSCALE"		"50"
+	"$SPECULARCOLOR"		"[0.9 0.7 0.1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$RIMLIGHTSCALE"		"10"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"3"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.200000"
+			"texturescrollangle"		"55"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

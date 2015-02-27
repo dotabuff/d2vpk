@@ -1,0 +1,25 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/dazzle/pipe_of_dezun/pipe_of_dezun_color"
+	"$normalmap"		"models/items/dazzle/pipe_of_dezun/pipe_of_dezun_normal"
+	"$alphatest"		"1"
+	"$maskmap1"		"models/items/dazzle/pipe_of_dezun/pipe_of_dezun_mask1"
+	"$maskmap2"		"models/items/dazzle/pipe_of_dezun/pipe_of_dezun_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAR_BLOOM_COLOR"		"[1 0 .3]"
+	"$SPECULAR_BLOOM_SHIFT"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$SPECULAREXPONENT"		"10"
+	"$SPECULARSCALE"		"3"
+	"$RIMLIGHTSCALE"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

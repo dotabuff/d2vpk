@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/pudge/promo_trapper_shoulder/promo_trapper_shoulder_color"
+	"$normalmap"		"models/items/pudge/promo_trapper_shoulder/promo_trapper_shoulder_normal"
+	"$maskmap1"		"models/items/pudge/promo_trapper_shoulder/promo_trapper_shoulder_mask1"
+	"$maskmap2"		"models/items/pudge/promo_trapper_shoulder/promo_trapper_shoulder_mask2"
+	"$alphatest"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAREXPONENT"		"13"
+	"$SPECULARSCALE"		"42"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$RIMLIGHTCOLOR"		"[0.5 0.8 0.9]"
+	"$RIMLIGHTSCALE"		"10"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.100000"
+			"texturescrollangle"		"320"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}
