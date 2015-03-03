@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture" "models\heroes\crystal_maiden\cm_arcana_makeup_color"
+	"$normalmap" "models\heroes\crystal_maiden\cm_arcana_normal"
+	"$diffusewarp" "models/heroes/crystal_maiden/crystalmaiden_lightwarp"
+	"$maskmap1" "models/heroes/crystal_maiden/cm_arcana_masks1"
+	"$maskmap2" "models/heroes/crystal_maiden/cm_arcana_masks2"
+	$alphatest 1
+
+	$ENVMAP		"models/heroes/crystal_maiden/cube_cm_arcana"
+	$ENVMAPINTENSITY		.5
+	//"$ENVMAPCOLOR"		"[0 .5 1]"
+	"$MASKENVBYMETALNESS"		"1"	
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 10
+	$SPECULARCOLOR "[1 2 3]"
+
+	$RIMLIGHTSCALE	2
+	$RIMLIGHTCOLOR "[1 1 1]"
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

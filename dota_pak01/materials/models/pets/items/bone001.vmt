@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$baseTexture"	"models/props_debris/skeleton001"
+	"$normalmap"	"models/development/flatnormal"
+	"$maskmap1"	"models/development/blankmasks1.vtf"
+	"$maskmap2"	"models/development/blankmasks2.vtf"
+	
+	$SPECULAREXPONENT 16
+	$SPECULARBLENDTOFULL 1
+	$SPECULAREXPONENTBLENDTOFULL 1
+	$SPECULARSCALE 11
+	$SPECULARCOLOR "[.9 .8 1]"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[1 1 1]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
