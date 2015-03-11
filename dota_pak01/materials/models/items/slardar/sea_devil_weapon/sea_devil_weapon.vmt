@@ -1,0 +1,26 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/slardar/sea_devil_weapon/sea_devil_weapon_color"
+	"$normalmap"		"models/items/slardar/sea_devil_weapon/sea_devil_weapon_normal"
+	"$diffusewarp"		"models/heroes/drow/diffusewarp"
+	"$FRESNELWARP"		"models/heroes/slardar/slardar_fresnelranges"
+	"$maskmap1"		"models/items/slardar/sea_devil_weapon/sea_devil_weapon_mask1"
+	"$maskmap2"		"models/items/slardar/sea_devil_weapon/sea_devil_weapon_mask2"
+	"$SPECULAR_BLOOM_SCALE"		"0.300000"
+	"$IgnoreBudgetCheck"		"1"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"1"
+	"$RIMLIGHTSCALE"		"1"
+	"$specularcolor"		"[1 1 2]"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -6978,23 +6978,28 @@
 			"01"
 			{
 				"var_type"						"FIELD_INTEGER"
-				"focusfire_damage_reduction"	"-50 -40 -30"
+				"bonus_attack_speed"			"500"
 			}
 			"02"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"focusfire_damage_reduction"	"-50 -40 -30"
+			}						
+			"03"
+			{
+				"var_type"						"FIELD_INTEGER"
+				"focusfire_duration_tooltip"	"20"
+			}
+			"04"
 			{
 				"var_type"						"FIELD_FLOAT"
 				"cooldown_scepter"				"15.0 15.0 15.0"
 			}
-			"03"
-			{
-				"var_type"						"FIELD_INTEGER"
-				"bonus_attack_speed"			"500"
-			}
-			"04"
+			"05"
 			{
 				"var_type"						"FIELD_INTEGER"
 				"focusfire_damage_reduction_scepter"	"-30 -15 0"
-			}
+			}			
 		}
 	}
 	

@@ -4601,6 +4601,9 @@
       "AbilityManaCost": "75 100 125",
       "AbilitySpecial": [
         {
+          "bonus_attack_speed": 500
+        },
+        {
           "focusfire_damage_reduction": [
             -50,
             -40,
@@ -4608,14 +4611,14 @@
           ]
         },
         {
+          "focusfire_duration_tooltip": 20
+        },
+        {
           "cooldown_scepter": [
             15.0,
             15.0,
             15.0
           ]
-        },
-        {
-          "bonus_attack_speed": 500
         },
         {
           "focusfire_damage_reduction_scepter": [

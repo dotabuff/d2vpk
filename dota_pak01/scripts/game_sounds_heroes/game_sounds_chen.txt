@@ -123,6 +123,31 @@
 	}
 }
 
+"Hero_Chen.TestOfFaith.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/chen/test_of_faith.wav"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
 "Hero_Chen.HolyPersuasionCast"
 {
 	"channel"		"CHAN_WEAPON"
