@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/warlock/golem/tevent_2_gatekeeper_golem/tevent_2_gatekeeper_golem_color"
+	"$normalmap"		"models/items/warlock/golem/tevent_2_gatekeeper_golem/tevent_2_gatekeeper_golem_normal"
+	"$maskmap1"		"models/items/warlock/golem/tevent_2_gatekeeper_golem/tevent_2_gatekeeper_golem_mask1"
+	"$maskmap2"		"models/items/warlock/golem/tevent_2_gatekeeper_golem/tevent_2_gatekeeper_golem_mask2"
+	"$diffusewarp"		"models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$detail1"		"models/heroes/invoker/forge_spirit_motion"
+	"$DETAIL1BLENDMODE"		"4"
+	"$DETAIL1SCALE"		"5"
+	"$SPECULAREXPONENT"		"15"
+	"$SPECULARSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 .6]"
+	"$RIMLIGHTSCALE"		"0.800000"
+	"$AMBIENTSCALE"		"1.200000"
+	"$SPECULAR_BLOOM_SCALE"		"0.300000"
+	"$SPECULAR_BLOOM_COLOR"		"[1 0 0]"
+	"$SPECULAR_BLOOM_SHIFT"		"1"
+	"$FRESNELWARP"		"models/heroes/bane/bane_fresnelranges"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.250000"
+			"texturescrollangle"		"87"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
