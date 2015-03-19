@@ -1,0 +1,25 @@
+"CustomHero"
+{
+	$baseTexture	"models/heroes/faceless_void/head_color"
+	"$normalmap"	"models/heroes/faceless_void/head_normal"
+	"$maskmap1"	"models/heroes/faceless_void/head_mask1"
+	"$maskmap2"	"models/heroes/faceless_void/head_mask2"
+
+	$alphatest 1	
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[1 .8 .8]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

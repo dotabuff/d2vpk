@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/spirit_breaker/thundering_flail_silver/thundering_flail_silver_color"
+	"$normalmap"		"models/items/spirit_breaker/thundering_flail_silver/thundering_flail_silver_normal"
+	"$maskmap1"		"models/items/spirit_breaker/thundering_flail_silver/thundering_flail_silver_mask1"
+	"$maskmap2"		"models/items/spirit_breaker/thundering_flail_silver/thundering_flail_silver_mask2"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"15"
+	"$SPECULARSCALE"		"15"
+	"$SPECULARCOLOR"		"[.75 .8 1]"
+	"$AMBIENTSCALE"		"0.300000"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[.75 .75 1]"
+	"$IgnoreBudgetCheck"		"1"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"5"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$detail1"		"models/heroes/spirit_breaker/spiritbreaker_glow"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"0.500000"
+			"texturescrollangle"		"83"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}
