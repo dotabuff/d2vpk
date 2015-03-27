@@ -1,0 +1,38 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/lina/migrant_blaze_head/migrant_blaze_head_color"
+	"$normalmap"		"models/items/lina/migrant_blaze_head/migrant_blaze_head_normal"
+	"$maskmap1"		"models/items/lina/migrant_blaze_head/migrant_blaze_head_mask1"
+	"$maskmap2"		"models/items/lina/migrant_blaze_head/migrant_blaze_head_mask2"
+	"$alphatest"		"1"
+	"$detail1"		"models/heroes/lina/lina_fire_motion"
+	"$FRESNELWARP"		"models/heroes/dragon_knight/knight_fresnelranges"
+	"$SPECULAREXPONENT"		"30"
+	"$SPECULARSCALE"		"3"
+	"$RIMLIGHTSCALE"		"1"
+	"$RIMLIGHTCOLOR"		"[1 1 .75]"
+	"$DETAIL1BLENDMODE"		"2"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.150000"
+			"texturescrollangle"		"45"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

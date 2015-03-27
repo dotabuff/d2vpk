@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$basetexture"		"models/items/terrorblade/bts_corrupted_lord_back/bts_corrupted_lord_back_color"
+	"$normalmap"		"models/items/terrorblade/bts_corrupted_lord_back/bts_corrupted_lord_back_normal"
+	"$maskmap1"		"models/items/terrorblade/bts_corrupted_lord_back/bts_corrupted_lord_back_mask1"
+	"$maskmap2"		"models/items/terrorblade/bts_corrupted_lord_back/bts_corrupted_lord_back_mask2"
+	"$detail1"		"models/heroes/terrorblade/terrorblade_detail"
+	"$detail1tint"		"[.1 1 .8]"
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"18"
+	"$SPECULARSCALE"		"8"
+	"$SPECULARCOLOR"		"[1 .5 .1]"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"7"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$RIMLIGHTSCALE"		"2"
+	"$RIMLIGHTCOLOR"		"[0 1 1]"
+	"$AMBIENTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"-0.050000"
+			"texturescrollangle"		"83"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
