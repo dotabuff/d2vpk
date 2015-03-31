@@ -1,0 +1,24 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/medusa/blueice_head/blueice_head_color"
+	"$normalmap"		"models/items/medusa/blueice_head/blueice_head_normal"
+	"$maskmap1"		"models/items/medusa/blueice_head/blueice_head_mask1"
+	"$maskmap2"		"models/items/medusa/blueice_head/blueice_head_mask2"
+	"$SPECULAREXPONENT"		"22"
+	"$SPECULARSCALE"		"15"
+	"$alphatest"		"1"
+	"$ENVMAP"		"models/cubemaps/glossy"
+	"$RIMLIGHTSCALE"		"4"
+	"$AMBIENTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
