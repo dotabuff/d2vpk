@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/omniknight/grey_night_weapon/grey_night_weapon_color"
+	"$normalmap"		"models/items/omniknight/grey_night_weapon/grey_night_weapon_normal"
+	"$maskmap1"		"models/items/omniknight/grey_night_weapon/grey_night_weapon_mask1"
+	"$maskmap2"		"models/items/omniknight/grey_night_weapon/grey_night_weapon_mask2"
+	"$alphatest"		"1"
+	"$SPECULARWARP"		"models/courier/greevil/greevil_iridescence"
+	"$SPECULAREXPONENT"		"32"
+	"$SPECULARSCALE"		"1"
+	"$SPECULARCOLOR"		"[1 .7 .2]"
+	"$RIMLIGHTSCALE"		"1"
+	"$DETAIL1BLENDMODE"		"3"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"0"
+	"$DETAIL1BLENDTOFULL"		"0"
+	"$FRESNELWARP"		"models/heroes/dragon_knight/knight_fresnelranges"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$detail1texturetransform"
+			"texturescrollrate"		"5.500000"
+			"texturescrollangle"		"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

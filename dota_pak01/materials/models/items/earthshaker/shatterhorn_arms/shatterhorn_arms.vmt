@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/earthshaker/shatterhorn_arms/shatterhorn_arms_color"
+	"$normalmap"		"models/items/earthshaker/shatterhorn_arms/shatterhorn_arms_normal"
+	"$maskmap1"		"models/items/earthshaker/shatterhorn_arms/shatterhorn_arms_mask1"
+	"$maskmap2"		"models/items/earthshaker/shatterhorn_arms/shatterhorn_arms_mask2"
+	"$diffusewarp"		"models/heroes/earthshaker/earthshaker_lightwarp"
+	"$alphatest"		"1"
+	"$detail1"		"models/heroes/earthshaker/totem_glow"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"1"
+	"$DETAIL1BLENDFACTOR"		"0.500000"
+	"$SPECULAREXPONENT"		"30"
+	"$SPECULARSCALE"		"4"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$RIMLIGHTSCALE"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"-0.200000"
+			"texturescrollangle"		"10"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

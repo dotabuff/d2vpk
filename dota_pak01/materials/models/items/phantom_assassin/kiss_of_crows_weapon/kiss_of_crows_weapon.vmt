@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/phantom_assassin/kiss_of_crows_weapon/kiss_of_crows_weapon_color"
+	"$normalmap"		"models/items/phantom_assassin/kiss_of_crows_weapon/kiss_of_crows_weapon_normal"
+	"$diffusewarp"		"models/heroes/drow/diffusewarp"
+	"$maskmap1"		"models/items/phantom_assassin/kiss_of_crows_weapon/kiss_of_crows_weapon_mask1"
+	"$maskmap2"		"models/items/phantom_assassin/kiss_of_crows_weapon/kiss_of_crows_weapon_mask2"
+	"$SPECULAREXPONENT"		"15"
+	"$SPECULARSCALE"		"10"
+	"$RIMLIGHTCOLOR"		"[0.5 0.6 0.4]"
+	"$SPECULARCOLOR"		"[0.7 0.9 1]"
+	"$envmap"		"models/cubemaps/glossy"
+	"$envmapintensity"		"0.250000"
+	"$nocull"		"0"
+	"$RIMLIGHTSCALE"		"5"
+	"$AMBIENTSCALE"		"1"
+	"$IgnoreBudgetCheck"		"1"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
