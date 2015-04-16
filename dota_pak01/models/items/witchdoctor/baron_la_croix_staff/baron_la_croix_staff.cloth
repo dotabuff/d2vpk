@@ -1,0 +1,32 @@
+ClothSystem
+{
+        Cloth
+	{
+		"name"		"snake"
+		"columns"		"1"
+		"rows"			"4"
+		"damping"		"0.751000"
+		"gravity"		"0 0 -1"
+		"gravity_scale"		"284.000000"
+		"WorldFriction"		"0.300000"
+		"LocalForce"		"1.000000"
+		"LocalRotation"		"1.000000"
+		"FixedPointDamping"		"0.100000"
+		"StretchForce"		"1.000000"
+		"SpringStretchiness"		"0.000000"
+		"AnimationForceAttraction"		"0.200000"
+		"AnimationVertexAttraction"		"0.800000"
+		"ExternalForceScale"		"1.000000"
+		"StructSpringConstant"		"10.000000"
+		"StructSpringDamping"		"0.500000"
+		"ShearSpringConstant"		"10.000000"
+		"ShearSpringDamping"		"0.500000"
+		"BendSpringConstant"		"10.000000"
+		"BendSpringDamping"		"0.000000"
+		"R0"		"fixed"
+		"R1"		"mass 2"
+		"R2"		"mass 2"
+		"R3"		"mass 2"
+		"BonePrefix"		"JNT_snake_"
+	}
+}
