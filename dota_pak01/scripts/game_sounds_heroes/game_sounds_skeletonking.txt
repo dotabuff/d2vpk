@@ -21,10 +21,6 @@
 			{
 			"input_float" "0.15"
 			}
-			"mixer"
-			{
-				"mixgroup" "BaseAttacks"
-			}
 		}
 	}
 }
@@ -211,90 +207,6 @@
 	}
 }
 
-"Hero_SkeletonKing.MortalStrike.Cast"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_81dB"
-	"pitch"			"95,105"
-	"wave"			")weapons/hero/skeleton_king/mortal_strike_cast.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Weapons"
-			}
-			"speakers_spatialize"
-			{
-				"input_radius"  "300"
-			}
-		}
-	}
-}
-
-"Hero_SkeletonKing.MortalStrike.Target"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_78dB"
-	"pitch"			"95,105"
-	"wave"			")weapons/hero/skeleton_king/mortal_strike_target.wav"
-	"operator_stacks"
-	{
-		"update_stack"
-		{
-			"import_stack" "dota_update_default"
-			"mixer"
-			{
-				"mixgroup" "Weapons"
-			}
-			"speakers_spatialize"
-			{
-				"input_radius"  "300"
-			}
-		}
-	}
-}
-
-"Hero_SkeletonKing.MortalStrike.Destroy.Caster"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_78dB"
-	"pitch"			"150"
-	"wave"			")weapons/hero/skeleton_king/mortal_strike_target.wav"
-	"operator_stacks"
-	{
-		"start_stack"
-		{
-			"import_stack" "dota_attack_block_dist"
-		}
-	}
-}
-
-"Hero_SkeletonKing.MortalStrike.Destroy.Target"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_78dB"
-	"pitch"			"150"
-	"wave"			")weapons/hero/skeleton_king/mortal_strike_cast.wav"
-	"operator_stacks"
-	{
-		"start_stack"
-		{
-			"import_stack" "dota_attack_block_dist"
-			"delay_output"
-			{
-			"input_float" "0.15"
-			}
-		}
-	}
-}
-
 "Hero_SkeletonKing.CriticalStrike"
 {
 	"channel"		"CHAN_STATIC"
@@ -405,6 +317,30 @@
 		}
 	}
 }
+
+"Hero_SkeletonKing.Reincarnate.Ghost"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/skeleton_king/scepter_target.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
 
 "Hero_SkeletonKing.Footsteps"
 {

@@ -130,9 +130,8 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
 	"wave"			")weapons/hero/sniper/shrapnel_fire.wav"
-	
-	"soundentry_version" "2"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -144,7 +143,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "100"
+				"input_radius"  "300"
 			}
 		}
 	}
@@ -156,10 +155,16 @@
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"weapons/hero/sniper/shrapnel_shatter.wav"
-	
-	"soundentry_version" "1"
 	"operator_stacks"
 	{
+		"start_stack"
+		{
+			"import_stack" "dota_preattack_block_dist"
+			"delay_output"
+			{
+			"input_float" "1.2"
+			}
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"

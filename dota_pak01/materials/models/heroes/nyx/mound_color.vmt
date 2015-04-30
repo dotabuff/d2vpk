@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$basetexture" "models/heroes/nyx/mound_color"
+	"$normalmap" "models/heroes/nyx/mound_normal"
+
+//	"$specularwarp" "models/heroes/nyx/nyx_lightwarp"
+	$SPECULAREXPONENT 14
+	$SPECULARSCALE 4
+	
+	$IgnoreBudgetCheck 1
+	$alphatest 1	
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.5"
+			"texturescrollangle"	 "83"
+		}
+
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

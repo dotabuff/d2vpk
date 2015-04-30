@@ -447,6 +447,31 @@
 	}
 }
 
+"Hero_Tusk.WalrusKick.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"85"
+	"wave"			")weapons/hero/tusk/punch_target.wav"
+
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
 "Hero_Tusk.Footsteps"
 {
 	"channel"		"CHAN_BODY"

@@ -492,10 +492,9 @@
 				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_ring_of_health"			"ITEM_CORE"
 				"item_vitality_booster"			"ITEM_CORE"
@@ -923,8 +922,7 @@
 				"item_poor_mans_shield"			"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_gloves"					"ITEM_EXTENSION"
 				"item_boots_of_elves"			"ITEM_EXTENSION"
@@ -1893,6 +1891,7 @@
 				"item_tango"							"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_clarity"							"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_clarity"							"ITEM_CONSUMABLE | ITEM_SELLABLE"
+				"item_quelling_blade"					"ITEM_CORE"
 				"item_boots"							"ITEM_CORE"
 				"item_ring_of_health"					"ITEM_CORE"
 				"item_lifesteal"						"ITEM_CORE"
@@ -2149,14 +2148,13 @@
 				"item_tango"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_EXTENSION"
 				"item_boots"					"ITEM_CORE"
 				"item_bottle"					"ITEM_CORE | ITEM_SELLABLE"
 				"item_boots_of_elves"			"ITEM_EXTENSION"
 				"item_gloves"					"ITEM_EXTENSION"
 				"item_treads"					"ITEM_DERIVED"
-				"item_recipe_magic_wand"		"ITEM_EXTENSION"
+				"item_circlet"					"ITEM_EXTENSION"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_blade_of_alacrity"		"ITEM_EXTENSION"
 				"item_blade_of_alacrity"		"ITEM_EXTENSION"
@@ -2389,11 +2387,10 @@
 				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_bottle"					"ITEM_CORE | ITEM_SELLABLE"
 				"item_boots"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_gloves"					"ITEM_CORE"
 				"item_boots_of_elves"			"ITEM_CORE"
@@ -2504,10 +2501,11 @@
 		"Ability2"					"morphling_adaptive_strike"				// Ability 2
 		"Ability3"					"morphling_morph_agi"					// Ability 3
 		"Ability4"					"morphling_morph_str"					// Ability 4
-		"Ability5"					"morphling_replicate"					// Ability 5
-		"Ability6"					"morphling_morph"					// Ability 6
-		"Ability7"					"morphling_morph_replicate"				// Ability 7
-		"Ability8"					"attribute_bonus"					// Ability 8
+		"Ability5"					"morphling_hybrid"				// Ability 5 
+		"Ability6"					"morphling_replicate"					// Ability 6
+		"Ability7"					"morphling_morph"					// Ability 7
+		"Ability8"					"morphling_morph_replicate"				// Ability 8
+		"Ability9"					"attribute_bonus"					// Ability 9
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -3322,8 +3320,7 @@
 				"item_magic_stick"				"ITEM_CORE"
 				"item_branches"					"ITEM_EXTENSION"
 				"item_branches"					"ITEM_EXTENSION"
-				"item_branches"					"ITEM_EXTENSION"
-				"item_recipe_magic_wand"		"ITEM_EXTENSION"
+				"item_circlet"					"ITEM_EXTENSION"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 
 				"item_ring_of_regen"			"ITEM_EXTENSION"
@@ -3589,8 +3586,7 @@
 				"item_branches"						"ITEM_CORE"
 				"item_branches"						"ITEM_CORE"
 				"item_magic_stick"					"ITEM_CORE"
-				"item_branches"						"ITEM_CORE"
-				"item_recipe_magic_wand"			"ITEM_CORE"
+				"item_circlet"						"ITEM_CORE"
 				"item_magic_wand"					"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"						"ITEM_CORE"
 				"item_stout_shield"					"ITEM_CORE"
@@ -3966,7 +3962,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"290"									// Speed.
+		"MovementSpeed"				"285"									// Speed.
 		"MovementTurnRate"			"0.8"									// Turning rate.
 		
 		// Bounds
@@ -4080,7 +4076,7 @@
 				"item_branches"					"ITEM_CORE"
 				"item_bottle"					"ITEM_CORE | ITEM_SELLABLE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED"
 				"item_boots"					"ITEM_CORE"
 				"item_robe"						"ITEM_EXTENSION"
@@ -4327,10 +4323,9 @@
 				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_belt_of_strength"			"ITEM_CORE"
 				"item_gloves"					"ITEM_CORE"
@@ -4566,10 +4561,9 @@
 				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_bottle"					"ITEM_CORE | ITEM_SELLABLE"
 				"item_energy_booster"			"ITEM_CORE"
@@ -4786,9 +4780,8 @@
 				"item_clarity"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"						"ITEM_CORE"
 				"item_branches"						"ITEM_CORE"
-				"item_branches"						"ITEM_CORE"
 				"item_magic_stick"					"ITEM_CORE"
-				"item_recipe_magic_wand"			"ITEM_CORE"
+				"item_circlet"						"ITEM_CORE"
 				"item_magic_wand"					"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_gauntlets"					"ITEM_CORE"
 				"item_circlet"						"ITEM_CORE"
@@ -5217,10 +5210,9 @@
 				"item_void_stone"					"ITEM_EXTENSION"
 				"item_ring_of_health"				"ITEM_EXTENSION"
 				"item_pers"							"ITEM_DERIVED"
-				"item_sobi_mask"					"ITEM_EXTENSION"
-				"item_robe"							"ITEM_EXTENSION"
-				"item_quarterstaff"					"ITEM_EXTENSION"
-				"item_oblivion_staff"				"ITEM_DERIVED"
+				"item_void_stone"					"ITEM_EXTENSION"
+				"item_ring_of_health"				"ITEM_EXTENSION"
+				"item_pers"							"ITEM_DERIVED"
 				"item_recipe_refresher"				"ITEM_EXTENSION"
 				"item_refresher"					"ITEM_DERIVED"
 				"item_void_stone"					"ITEM_LUXURY"
@@ -5467,9 +5459,8 @@
 				"item_clarity"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"						"ITEM_CORE"
 				"item_branches"						"ITEM_CORE"
-				"item_branches"						"ITEM_CORE"
 				"item_magic_stick"					"ITEM_CORE"
-				"item_recipe_magic_wand"			"ITEM_CORE"
+				"item_circlet"						"ITEM_CORE"
 				"item_magic_wand"					"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_gauntlets"					"ITEM_EXTENSION"
 				"item_circlet"						"ITEM_EXTENSION"
@@ -5709,9 +5700,8 @@
 				"item_clarity"						"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"						"ITEM_CORE"
 				"item_branches"						"ITEM_CORE"
-				"item_branches"						"ITEM_CORE"
 				"item_magic_stick"					"ITEM_CORE"
-				"item_recipe_magic_wand"			"ITEM_CORE"
+				"item_circlet"						"ITEM_CORE"
 				"item_magic_wand"					"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"						"ITEM_CORE"
 				"item_energy_booster"				"ITEM_CORE"
@@ -5942,9 +5932,8 @@
 				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"					"ITEM_CORE"
 				"item_ring_of_regen"			"ITEM_EXTENSION"
@@ -6319,8 +6308,8 @@
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"			"DOTA_ATTRIBUTE_INTELLECT"
-		"AttributeBaseStrength"		"19"									// Base strength
-		"AttributeStrengthGain"		"1.6"									// Strength bonus per level.
+		"AttributeBaseStrength"		"21"									// Base strength
+		"AttributeStrengthGain"		"1.8"									// Strength bonus per level.
 		"AttributeBaseIntelligence"	"21"									// Base intelligence
 		"AttributeIntelligenceGain"	"3.0"									// Intelligence bonus per level.
 		"AttributeBaseAgility"		"16"									// Base agility
@@ -6460,8 +6449,7 @@
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"					"ITEM_CORE"
 				"item_void_stone"				"ITEM_CORE"
@@ -7173,9 +7161,8 @@
 				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_blades_of_attack"			"ITEM_CORE"
 				"item_blades_of_attack"			"ITEM_CORE"
@@ -7421,8 +7408,7 @@
 				"item_boots_of_elves"			"ITEM_CORE"
 				"item_gloves"					"ITEM_CORE"
 				"item_treads"					"ITEM_DERIVED"
-				"item_branches"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_slippers"					"ITEM_CORE"
 				"item_stout_shield"				"ITEM_CORE"
@@ -7649,9 +7635,8 @@
 				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"					"ITEM_CORE"
 				"item_ring_of_health"			"ITEM_EXTENSION"
@@ -8016,7 +8001,7 @@
 		"AttributeBaseIntelligence"		"15"									// Base intelligence
 		"AttributeIntelligenceGain"		"2.6"									// Intelligence bonus per level.
 		"AttributeBaseAgility"			"21"									// Base agility
-		"AttributeAgilityGain"			"2.9"										// Agility bonus per level.
+		"AttributeAgilityGain"			"2.5"										// Agility bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
@@ -8676,10 +8661,9 @@
 				"item_void_stone"				"ITEM_LUXURY"
 				"item_ring_of_health"			"ITEM_LUXURY"
 				"item_pers"						"ITEM_DERIVED"
-				"item_sobi_mask"				"ITEM_LUXURY"
-				"item_robe"						"ITEM_LUXURY"
-				"item_quarterstaff"				"ITEM_LUXURY"
-				"item_oblivion_staff"			"ITEM_DERIVED"
+				"item_void_stone"				"ITEM_LUXURY"
+				"item_ring_of_health"			"ITEM_LUXURY"
+				"item_pers"						"ITEM_DERIVED"
 				"item_recipe_refresher"			"ITEM_LUXURY"
 				"item_refresher"				"ITEM_DERIVED"
 				"item_ultimate_orb"				"ITEM_LUXURY"
@@ -8775,8 +8759,8 @@
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"37"									// Damage range min.
-		"AttackDamageMax"			"41"									// Damage range max.
+		"AttackDamageMin"			"41"									// Damage range min.
+		"AttackDamageMax"			"45"									// Damage range max.
 		"AttackRate"				"1.7"									// Speed of attack.
 		"AttackAnimationPoint"		"0.3"									// Normalized time in animation cycle to attack.
 		"AttackAcquisitionRange"	"600"									// Range within a target can be acquired.
@@ -9330,10 +9314,9 @@
 				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_point_booster"			"ITEM_EXTENSION"
 				"item_staff_of_wizardry"		"ITEM_EXTENSION"
@@ -9563,13 +9546,12 @@
 				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_quelling_blade"			"ITEM_CORE | ITEM_SELLABLE"
 				"item_magic_stick"				"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 				"item_boots_of_elves"			"ITEM_CORE"
 				"item_gloves"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"		
+				"item_circlet"					"ITEM_CORE"		
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"		
 				"item_javelin"					"ITEM_EXTENSION"		
 				"item_javelin"					"ITEM_EXTENSION"
@@ -9826,8 +9808,7 @@
 				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"		
+				"item_circlet"					"ITEM_CORE"		
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"		
 				"item_belt_of_strength"			"ITEM_CORE"
 				"item_gloves"					"ITEM_CORE"
@@ -10349,8 +10330,7 @@
 				"item_slippers"					"ITEM_CORE"
 				"item_slippers"					"ITEM_CORE"
 				"item_poor_mans_shield"			"ITEM_DERIVED | ITEM_SELLABLE"
-				"item_branches"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_gloves"					"ITEM_CORE"
 				"item_boots_of_elves"			"ITEM_CORE"
@@ -11021,7 +11001,7 @@
 	
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
-		"ArmorPhysical"				"0"									// Physical protection.
+		"ArmorPhysical"				"1"									// Physical protection.
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -11153,9 +11133,8 @@
 				"item_ring_of_protection"		"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_sobi_mask"				"ITEM_CORE"
 				"item_ring_of_basilius"			"ITEM_DERIVED"
@@ -11659,9 +11638,8 @@
 				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"					"ITEM_CORE"
 				"item_sobi_mask"				"ITEM_CORE"
@@ -11970,7 +11948,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"315"									// Speed.
+		"MovementSpeed"				"320"									// Speed.
 		"MovementTurnRate"			"0.5"									// Turning rate.
 		
 		// Vision
@@ -12065,9 +12043,8 @@
 				"item_clarity"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"					"ITEM_CORE"
 				"item_staff_of_wizardry"		"ITEM_EXTENSION"
@@ -12337,14 +12314,13 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"Ability1"				"life_stealer_rage"				// Ability 1
 		"Ability2"				"life_stealer_feast"			// Ability 2
-		"Ability3"				"life_stealer_open_wounds"			// Ability 3
-		"Ability4"				"life_stealer_infest"				// Ability 4
-		"Ability6"				"life_stealer_empty_1"				// Ability 7
-		"Ability7"				"life_stealer_empty_2"				// Ability 8
-		"Ability8"				"life_stealer_empty_3"				// Ability 9
-		"Ability9"				"life_stealer_empty_4"				// Ability 9
-		"Ability10"				"life_stealer_control"				// Ability 10
-		"Ability11"				"life_stealer_consume"				// Ability 11
+		"Ability3"				"life_stealer_open_wounds"		// Ability 3
+		"Ability4"				"life_stealer_assimilate"		// Ability 4
+		"Ability5"				"life_stealer_assimilate_eject"	// Ability 5
+		"Ability6"				"life_stealer_infest"			// Ability 6
+		"Ability7"				"life_stealer_control"			// Ability 7
+		"Ability8"				"life_stealer_consume"			// Ability 8
+		"Ability9"				"attribute_bonus"				// Ability 9 - Bonuses.
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -13955,7 +13931,7 @@
 		"AttributeBaseAgility"		"21"									// Base agility
 		"AttributeAgilityGain"		"3.0"									// Agility bonus per level.
 		"AttributeBaseIntelligence"	"19"									// Base intelligence
-		"AttributeIntelligenceGain"	"1.4"									// Intelligence bonus per level.
+		"AttributeIntelligenceGain"	"2.0"									// Intelligence bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
@@ -14389,7 +14365,7 @@
 		// Attributes
 		//-------------------------------------------------------------------------------------------------------------
 		"AttributePrimary"				"DOTA_ATTRIBUTE_INTELLECT"
-		"AttributeBaseStrength"			"24"									// Base strength
+		"AttributeBaseStrength"			"25"									// Base strength
 		"AttributeStrengthGain"			"2.3"									// Strength bonus per level.
 		"AttributeBaseIntelligence"		"28"									// Base intelligence
 		"AttributeIntelligenceGain"		"2.8"									// Intelligence bonus per level.
@@ -14459,9 +14435,8 @@
 				"item_branches"					"ITEM_CORE"
 				"item_sobi_mask"				"ITEM_CORE"
 				"item_ring_of_basilius"			"ITEM_DERIVED"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_boots"					"ITEM_CORE"
 				"item_energy_booster"			"ITEM_CORE"
@@ -14681,10 +14656,9 @@
 				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_sobi_mask"				"ITEM_CORE"
 				"item_gauntlets"				"ITEM_CORE"
@@ -15438,9 +15412,8 @@
 				"item_magic_stick"				"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_point_booster"			"ITEM_CORE"
 				"item_ogre_axe"					"ITEM_CORE"
@@ -15843,9 +15816,8 @@
 				"item_magic_stick"				"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 			}
 			"Build"
@@ -16079,14 +16051,13 @@
 				"item_quelling_blade"			"ITEM_CORE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 				"item_gauntlets"				"ITEM_CORE"
 				"item_circlet"					"ITEM_CORE"
 				"item_recipe_bracer"			"ITEM_CORE"
 				"item_bracer"					"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_sobi_mask"				"ITEM_CORE"
 				"item_gauntlets"				"ITEM_CORE"
@@ -16355,9 +16326,8 @@
 				"item_magic_stick"				"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 			}
 			"Build"
@@ -16587,6 +16557,9 @@
 				"item_lifesteal"				"ITEM_EXTENSION"
 				"item_ring_of_basilius"			"ITEM_EXTENSION"
 				"item_ring_of_regen"			"ITEM_EXTENSION"
+				"item_branches"					"ITEM_EXTENSION"
+				"item_recipe_headdress"			"ITEM_EXTENSION"
+				"item_headdress"				"ITEM_DERIVED"
 				"item_recipe_vladmir"			"ITEM_EXTENSION"
 				"item_vladmir"					"ITEM_DERIVED"
 
@@ -16716,7 +16689,7 @@
 		"AttributeBaseAgility"			"20"									// Base agility
 		"AttributeAgilityGain"			"1.9"									// Agility bonus per level.
 		"AttributeBaseIntelligence"		"22"									// Base intelligence
-		"AttributeIntelligenceGain"		"2.5"									// Intelligence bonus per level.
+		"AttributeIntelligenceGain"		"3.2"									// Intelligence bonus per level.
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
@@ -16885,7 +16858,7 @@
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
 		"ArmorPhysical"				"-1"								// Physical protection.
-									//-1.045714286
+		"MagicalResistance"				"25"									// Magical protection (percentage).
 
 		// Attack
 		//-------------------------------------------------------------------------------------------------------------
@@ -16911,7 +16884,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"300"									// Speed.
+		"MovementSpeed"				"295"									// Speed.
 		"MovementTurnRate"			"0.6"									// Turning rate.
 		
 		"HealthBarOffset"			"130"
@@ -17018,11 +16991,10 @@
 				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 
 				"item_belt_of_strength"			"ITEM_CORE"
@@ -17239,11 +17211,10 @@
 				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 
 				"item_belt_of_strength"			"ITEM_CORE"
@@ -17666,11 +17637,10 @@
 				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 
 				"item_belt_of_strength"			"ITEM_CORE"
@@ -17874,11 +17844,10 @@
 				"item_flask"					"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 
 				"item_ring_of_protection"		"ITEM_CORE"
@@ -18278,12 +18247,11 @@
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_EXTENSION"
 				"item_circlet"					"ITEM_EXTENSION"
 				"item_recipe_bracer"			"ITEM_EXTENSION"
 				"item_bracer"					"ITEM_DERIVED | ITEM_SELLABLE"
-				"item_recipe_magic_wand"		"ITEM_EXTENSION"
+				"item_circlet"					"ITEM_EXTENSION"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_belt_of_strength"			"ITEM_EXTENSION"
 				"item_gloves"					"ITEM_EXTENSION"
@@ -19440,8 +19408,10 @@
 		"Ability1"					"nyx_assassin_impale"
 		"Ability2"					"nyx_assassin_mana_burn"
 		"Ability3"					"nyx_assassin_spiked_carapace"
-		"Ability4"					"nyx_assassin_vendetta"
-		"Ability5"					"attribute_bonus"
+		"Ability4"					"nyx_assassin_burrow"
+		"Ability5"					"nyx_assassin_unburrow"
+		"Ability6"					"nyx_assassin_vendetta"
+		"Ability7"					"attribute_bonus"
 
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
@@ -19482,7 +19452,12 @@
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_nyx_assassin.txt"
 		"VoiceFile"					"scripts/voscripts/game_sounds_vo_nyx_assassin.txt"
 		
-			// Additional data needed to render the out of game portrait
+		"precache"
+		{
+			"model"			"models/heroes/nerubian_assassin/mound.mdl"
+		}
+
+		// Additional data needed to render the out of game portrait
 		
 		"RenderablePortrait"
 		{
@@ -19923,11 +19898,10 @@
 				"item_flask"					"ITEM_CORE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
 				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
-				"item_branches"					"ITEM_CORE | ITEM_SELLABLE"
 				"item_boots"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
 				"item_bracer"					"ITEM_DERIVED | ITEM_SELLABLE"
-				"item_recipe_magic_wand"		"ITEM_EXTENSION"
+				"item_circlet"					"ITEM_EXTENSION"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_ring_of_regen"			"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
@@ -21382,7 +21356,7 @@
 
 		// Movement
 		//-------------------------------------------------------------------------------------------------------------
-		"MovementSpeed"				"295"									// Speed.
+		"MovementSpeed"				"290"									// Speed.
 		"MovementTurnRate"			"1.0"									// Turning rate.
 		
 		"HealthBarOffset"			"200"
@@ -21485,8 +21459,7 @@
 				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"		
+				"item_circlet"					"ITEM_CORE"		
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"		
 				"item_ring_of_protection"		"ITEM_CORE"
 				"item_sobi_mask"				"ITEM_CORE"
@@ -21589,13 +21562,15 @@
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
+		"AbilityLayout"			"5"
 		"Ability1"					"tusk_ice_shards"
 		"Ability2"					"tusk_snowball"
 		"Ability3"					"tusk_frozen_sigil"
-		"Ability4"					"tusk_walrus_punch"
-		"Ability5"					"attribute_bonus"
-		"Ability6"					"tusk_launch_snowball"
-
+		"Ability4"					"tusk_launch_snowball"
+		"Ability5"					"tusk_walrus_kick"
+		"Ability6"					"tusk_walrus_punch"
+		"Ability7"					"attribute_bonus"
+	
 		// Armor
 		//-------------------------------------------------------------------------------------------------------------
 		"ArmorPhysical"				"0.0"								// Physical protection.
@@ -21919,9 +21894,8 @@
 				"item_branches"					"ITEM_CORE"
 				"item_branches"					"ITEM_CORE"
 				"item_boots"					"ITEM_CORE"
-				"item_branches"					"ITEM_CORE"
 				"item_magic_stick"				"ITEM_CORE"
-				"item_recipe_magic_wand"		"ITEM_CORE"
+				"item_circlet"					"ITEM_CORE"
 				"item_magic_wand"				"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_circlet"					"ITEM_CORE"
 				"item_recipe_null_talisman"		"ITEM_CORE"
@@ -23343,10 +23317,9 @@
 				"item_clarity"				"ITEM_CONSUMABLE | ITEM_SELLABLE"
 				"item_branches"				"ITEM_CORE"
 				"item_branches"				"ITEM_CORE"
-				"item_branches"				"ITEM_CORE"
 				"item_boots"				"ITEM_CORE"
 				"item_magic_stick"			"ITEM_CORE"
-				"item_recipe_magic_wand"	"ITEM_CORE"
+				"item_circlet"				"ITEM_CORE"
 				"item_magic_wand"			"ITEM_DERIVED | ITEM_SELLABLE"
 				"item_energy_booster"		"ITEM_CORE"
 				"item_arcane_boots"			"ITEM_DERIVED"
@@ -23661,7 +23634,7 @@
 		"NewHero"					"0"
 		"HeroPool1"					"0"
 		"HeroUnlockOrder"			"1"										// The higher the number the later these heros will unlock for new players.
-		"CMEnabled"					"0"
+		"CMEnabled"					"1"
 		"CMTournamentIgnore"		"0"
 		"new_player_enable"			"0"
 		"NoCombine"					"0"

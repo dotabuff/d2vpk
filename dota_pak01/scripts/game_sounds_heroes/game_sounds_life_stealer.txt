@@ -168,6 +168,54 @@
 	}
 }
 
+"Hero_LifeStealer.Assimilate.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"85"
+	"wave"			")weapons\hero\lifestealer\infest.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_LifeStealer.Assimilate.Destroy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\lifestealer\consume.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "450"
+			}
+		}
+	}
+}
+
 "Hero_LifeStealer.Footsteps"
 {
 	"channel"		"CHAN_BODY"

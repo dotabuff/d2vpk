@@ -974,3 +974,158 @@
 		}
 	}
 }
+
+"DOTA_Item.Mango.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")items/mango.wav"
+}
+
+"Item.LotusOrb.Target"
+{
+	"channel"		"CHAN_STATIC"
+ 	"volume"		"1.0"
+ 	"soundlevel"  	"SNDLVL_84dB"
+ 	"pitch"			"95, 105" 
+ 	"wave"			")items/lotus_cast.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Item.LotusOrb.Activate"
+{
+	"channel"		"CHAN_STATIC"
+ 	"volume"		"1.0"
+ 	"soundlevel"  	"SNDLVL_84dB"
+ 	"pitch"			"95, 105" 
+ 	"wave"			")items/lotus_activate.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Item.LotusOrb.Destroy"
+{
+	"channel"		"CHAN_STATIC"
+ 	"volume"		"1.0"
+ 	"soundlevel"  	"SNDLVL_84dB"
+ 	"pitch"			"95, 105" 
+ 	"wave"			")items/lotus_end.wav"
+}
+
+"Item.GlimmerCape.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/glimmer_cape.wav"
+}
+
+"Item.StarEmblem.Friendly"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"			"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/star_emblem_ally.wav"
+}
+
+"Item.StarEmblem.Enemy"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"			"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")items/star_emblem_enemy.wav"
+}
+
+"Item.GuardianGreaves.Activate"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1.0"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"100"
+	"wave"			")items/guardian_greaves.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+		}
+	}
+}
+
+"Item.GuardianGreaves.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"80"
+	"rndwave"
+	{
+		"wave"			"items/mek_target01.wav"
+		"wave"			"items/mek_target02.wav"
+		"wave"			"items/mek_target03.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "4.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Item.GuardianGreaves.Target"
+				"match_channel" "false"
+			}
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
+"Item.MoonShard.Consume"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			")items/moon_shard.wav"
+}

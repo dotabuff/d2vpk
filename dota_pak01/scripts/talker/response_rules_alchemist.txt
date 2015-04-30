@@ -8,6 +8,7 @@ criterion "IsAbilityConcoctionThrow" "abilityname" "alchemist_unstable_concoctio
 criterion "ItBlewUp" "cookstate" "2" weight 5 required
 criterion "IsAbilityChemicalRage" "abilityname" "alchemist_chemical_rage" weight 5 required
 criterion "IsAbilityAcidSpray" "abilityname" "alchemist_acid_spray" weight 5 required
+criterion "IsAlchScepterUse" "abilityname" "item_ultimate_scepter" weight 5 required
 
 Response alchemist_Spawn
 {

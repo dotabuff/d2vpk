@@ -3,6 +3,8 @@ criterion "IsEnemynyx_assassin" "targetclassname" "npc_dota_hero_nyx_assassin" w
 criterion "IsAllynyx_assassin" "nearby_ally" "npc_dota_hero_nyx_assassin" weight 5 required
 criterion "IsNyxSpikedCarapace" "abilityname" "nyx_assassin_spiked_carapace" weight 5 required
 criterion "IsNyxVendetta" "abilityname" "nyx_assassin_vendetta" weight 5 required
+criterion "IsNyxBurrow" "abilityname" "nyx_assassin_burrow" weight 5 required
+criterion "IsNyxUnborrow" "abilityname" "nyx_assassin_unburrow" weight 5 required
 
 Response nyx_assassin_Spawn
 {
@@ -342,6 +344,21 @@ Rule nyx_assassin_CastOrder_Rule
 {
 	criteria CastOrder Isnyx_assassin 
 	response nyx_assassin_CastOrder
+}
+
+Response nyx_assassin_CastExecuteIsNyxBurrowChance_50%
+{
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_impale_02.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_impale_04.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_chitter_01.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_chitter_03.vcd" nodelay noscene respeakdelay 30
+	scene "scenes/nyx_assassin/nyx_assassin_nyx_chitter_04.vcd" nodelay noscene respeakdelay 30
+}
+
+Rule nyx_assassin_CastExecuteIsNyxBurrowChance_50%_Rule
+{
+	criteria CastExecute Isnyx_assassin IsNyxBurrow Chance_50%
+	response nyx_assassin_CastExecuteIsNyxBurrowChance_50%
 }
 
 Response nyx_assassin_CastExecuteIsNyxSpikedCarapaceChance_25%

@@ -2396,7 +2396,7 @@
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_75dB"
+	"soundlevel"  	"SNDLVL_78dB"
 	"pitch"			"90, 100"
 	"rndwave"
 	{
@@ -2452,7 +2452,7 @@
 			"import_stack" "start_block_at_distance"
 			"block_dist"
 			{
-				"input2" "1500"
+				"input2" "1200"
 			}
 		}
 	}
@@ -2462,7 +2462,7 @@
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_75dB"
+	"soundlevel"  	"SNDLVL_78dB"
 	"pitch"			"90, 100"
 	"rndwave"
 	{
@@ -2491,8 +2491,8 @@
 "Creep_Bad_Melee_Mega.Attack"
 {
 	"channel"		"CHAN_WEAPON"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_78dB"
+	"volume"		"0.7, 1.0"
+	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"95, 105"
 	"rndwave"
 	{
@@ -2502,6 +2502,10 @@
 		"wave"	"weapons/creep/bad/melee_attack_impact1.wav"
 		"wave"	"weapons/creep/bad/melee_attack_impact2.wav"
 		"wave"	"weapons/creep/bad/melee_attack_impact3.wav"
+		"wave"	"weapons/creep/shared/melee_hit09.wav"
+		"wave"	"weapons/creep/shared/melee_hit10.wav"
+		"wave"	"weapons/creep/shared/melee_hit11.wav"
+		"wave"	"weapons/creep/shared/melee_hit12.wav"
 	}
 	"soundentry_version" "2"
 	"operator_stacks"
@@ -2511,8 +2515,38 @@
 			"import_stack" "start_block_at_distance"
 			"block_dist"
 			{
-				"input2" "1500"
+				"input2" "1200"
 			}
+		}
+	}
+}
+
+"n_mud_golem.Boulder.Cast"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/tiny/tiny_toss_throw.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"n_mud_golem.Boulder.Target"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/tiny/tiny_toss_impact.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
 		}
 	}
 }
