@@ -1,0 +1,40 @@
+"CustomHero"
+{
+	"$baseTexture"		"models\heroes\pedestal\effigy_pedestal_ti5_dire_color"
+	"$normalmap"		"models\heroes\pedestal\effigy_pedestal_ti5_normal"
+//	"$diffusewarp"		"models/heroes/drow/diffusewarp"
+	"$maskmap1"		"models\heroes\pedestal\effigy_pedestal_ti5_masks1"
+	"$maskmap2"		"models\heroes\pedestal\effigy_pedestal_ti5_masks2"
+ 
+	$SPECULAR_BLOOM_SCALE      0
+	$AMBIENTSCALE 1
+	$SPECULAREXPONENT 50
+	$SPECULARSCALE 2
+	//$SPECULARBLENDTOFULL .04
+  $SPECULARCOLOR "[2 1 .1]"
+
+
+  $ENVMAP "models/cubemaps/cube_metal_grey"
+	$ENVMAPINTENSITY 1
+
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[3 1 .1]"
+	$alphatest 1
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

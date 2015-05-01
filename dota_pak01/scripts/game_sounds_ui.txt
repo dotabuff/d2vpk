@@ -4656,3 +4656,29 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"ui/coins.wav" 
 }
+
+"ui.comp_coins_tick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.66"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui\comp_coin.wav"
+}
+
+"General.CompendiumLevelUpMinor"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		".4"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui\comp_lvl_up_minor.wav"
+}
+
+"General.CompendiumLevelUp"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"ui\comp_lvl_up.wav"
+}

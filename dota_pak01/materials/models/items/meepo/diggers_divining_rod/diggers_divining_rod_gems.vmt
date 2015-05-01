@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/meepo/diggers_divining_Rod/diggers_divining_Rod_gems_color"
+	"$normalmap"		"models/items/meepo/diggers_divining_Rod/diggers_divining_Rod_gems_normal"
+	"$maskmap1"		"models/items/meepo/diggers_divining_Rod/diggers_divining_Rod_gems_mask1"
+	"$maskmap2"		"models/items/meepo/diggers_divining_Rod/diggers_divining_Rod_gems_mask2"
+
+	$alphatest 1
+	$SPECULAREXPONENT 22
+	$SPECULARSCALE 42
+	$SPECULARCOLOR "[0.4 0.4 1]"
+
+	$RIMLIGHTSCALE	22
+	
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 1
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"5.5"
+			"texturescrollangle"	"0"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

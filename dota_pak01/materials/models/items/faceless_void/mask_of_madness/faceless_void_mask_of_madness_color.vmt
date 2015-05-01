@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/faceless_void/mask_of_madness/faceless_void_mask_of_madness_color"
+	"$normalmap"		"models/items/faceless_void/mask_of_madness/faceless_void_mask_of_madness_normal"
+
+
+//      "$normalmap" "models/development/flatnormal"
+
+	"$maskmap1"		"models/items/faceless_void/mask_of_madness/faceless_void_mask_of_madness_masks1"
+	"$maskmap2"		"models/items/faceless_void/mask_of_madness/faceless_void_mask_of_madness_masks2"
+	"$detail1"              "models/items/faceless_void/mask_of_madness/faceless_void_mask_of_madness_motion"
+
+
+
+
+	$alphatest 1
+
+
+	$SPECULAR_BLOOM_SCALE 0
+	$SPECULAREXPONENT 20	
+	$SPECULARSCALE 8
+	$RIMLIGHTCOLOR "[0.5 0.2 1]"
+
+	$RIMLIGHTSCALE 2
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR 1
+
+	
+
+
+
+  	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.4"
+			"texturescrollangle"	"90"
+		}
+
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -62,7 +62,7 @@
 		"hoty"		"14"
 	}
 
-	cursor_learnability
+	cursor_learn_ability
 	{
 		"hotx"		"0"
 		"hoty"		"0"

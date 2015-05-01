@@ -1,0 +1,805 @@
+"templatefile loaded by GC & Server"
+{
+	"buy_item"
+	{
+		"challengetype"	"1"
+		"name"			"#DOTA_ChallengeName_BuyItem"
+		"desc"			"#DOTA_ChallengeDesc_BuyItem"
+		"image"			"images/challenges/icon_challenges_buy.png"
+
+		"events"
+		{
+			"fail_gametime"		"<game_time>"
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"detect_purchase"
+				{
+					"event"			"purchase"
+					"target"		"!hero"
+					"itemid"		"<item_id>"
+					"gametime"		"<game_time>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<item_id>"
+			{
+				"format"	"itemid"
+				"index"		"0"
+			}
+			"<game_time>"
+			{
+				"format"	"gametime"
+				"index"		"1"
+			}
+		}
+	}
+
+	"earn_GPM"
+	{    
+		"challengetype"	"2"
+		"name"			"#DOTA_ChallengeName_EarnGPM"
+		"desc"			"#DOTA_ChallengeDesc_EarnGPM"
+		"image"			""
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"detect_stats"
+				{
+					"event"			"playerstats"
+					"playerid"		"!playerid"
+					"storage"
+					{
+						"1"			"gpm"
+					}
+				}
+			}
+
+			"post_tests"
+			{
+				"test_gpm"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<target_gpm>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<target_gpm>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+
+	"earn_XPM"
+	{    
+		"challengetype"	"3"
+		"name"			"#DOTA_ChallengeName_EarnXPM"
+		"desc"			"#DOTA_ChallengeDesc_EarnXPM"
+		"image"			""
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"detect_stats"
+				{
+					"event"			"playerstats"
+					"playerid"		"!playerid"
+					"storage"
+					{
+						"1"			"xpm"
+					}
+				}
+			}
+
+			"post_tests"
+			{
+				"test_xpm"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<target_xpm>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<target_xpm>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+
+	"last_hits"
+	{
+		"challengetype"	"4"
+		"name"			"#DOTA_ChallengeName_LastHits"
+		"desc"			"#DOTA_ChallengeDesc_LastHits"
+		"image"			"images/challenges/icon_challenges_xlasthits.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"detect_stats"
+				{
+					"event"			"death"
+					"attacker"		"!hero"
+					"storage"
+					{
+						"1"
+						{
+							"key"			"last_hits"
+							"aggregator"	"count"	
+						}
+					}
+				}
+			}
+			"clear_storage_per_query"	"1"
+			"post_tests"
+			{
+				"test_last_hits"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<target_last_hits>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<target_last_hits>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+
+	"accumulate_damage"
+	{
+		"challengetype"		"5"
+		"name"				"#DOTA_ChallengeName_AccumDamage"
+		"desc"				"#DOTA_ChallengeDesc_AccumDamage"
+		"image"				"images/challenges/icon_challenges_xdamage.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"find_damage"
+				{
+					"event"			"damage"
+					"attacker"		"!hero"
+					"storage"
+					{
+						"1"
+						{
+							"key"			"value"
+							"aggregator"	"sum"	
+						}
+					}
+				}
+			}
+
+			"clear_storage_per_query"	"0"
+			"post_tests"
+			{
+				"test_value"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<accum_damage>"
+				}
+			}
+		}
+		
+		"variables"
+		{
+			"<accum_damage>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+
+	"kill_streak"
+	{
+		"challengetype"		"6"
+		"name"				"#DOTA_ChallengeName_KillStreak"
+		"desc"				"#DOTA_ChallengeDesc_KillStreak"
+		"image"				"images/challenges/icon_challenges_streak.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"find_streak"
+				{			
+					"event"			"killstreak"
+					"playerid"		"!playerid"
+					"storage"
+					{
+						"1"			"value"
+					}
+				}
+			}
+
+			"clear_storage_per_query"	"1"
+			"post_tests"
+			{
+				"test_value"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<killstreak>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<killstreak>"
+			{
+				"format"	"killstreak"
+				"index"		"0"
+			}
+		}
+	}
+
+	"multi_kill"
+	{
+		"challengetype"		"7"
+		"name"				"#DOTA_ChallengeName_MultiKill"
+		"desc"				"#DOTA_ChallengeDesc_MultiKill"
+		"image"				"images/challenges/icon_challenges_multikill.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"find_multi_kill"
+				{			
+					"event"			"multikill"
+					"playerid"		"!playerid"
+					"storage"
+					{
+						"1"			"value"
+					}
+				}
+			}
+
+			"clear_storage_per_query"	"1"
+			"post_tests"
+			{
+				"test_value"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<multi_kill>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<multi_kill>"
+			{
+				"format"	"multikill"
+				"index"		"0"
+			}
+		}
+	}
+
+	"kill_a_tier_one_tower"
+	{
+		"challengetype"		"8"
+		"name"				"#DOTA_ChallengeName_SingleTierOne"
+		"desc"				"#DOTA_ChallengeDesc_SingleTierOne"
+		"image"				"images/challenges/icon_challenges_tower.png"
+
+		"events"
+		{
+			"fail_gametime"		"<game_time>"
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"find_tower_kill"
+				{
+					"event"			"team_building_kill"
+					"team"			"!team"
+					"enemyteam"		"!enemyteam"
+					"building_type"		"tower"
+					"gametime"		"<game_time>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<game_time>"
+			{
+				"format"	"gametime"
+				"index"		"0"
+			}
+		}
+	}
+
+	"kill_count"
+	{
+		"challengetype"		"9"
+		"name"				"#DOTA_ChallengeName_Kills"
+		"desc"				"#DOTA_ChallengeDesc_Kills"
+		"image"				"images/challenges/icon_challenges_xkills.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"find_kill"
+				{
+					"event"			"playerstats"
+					"playerid"		"!playerid"
+					"storage"
+					{
+						"1"			"kills"
+					}
+				}
+			}
+
+			"clear_storage_per_query"	"1"
+			"post_tests"
+			{
+				"test_kill_count"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<kill_count>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<kill_count>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+
+	"deward"
+	{
+		"challengetype"		"10"
+		"name"				"#DOTA_ChallengeName_Deward"
+		"desc"				"#DOTA_ChallengeDesc_Deward"
+		"image"				"images/challenges/icon_challenges_deward.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"ward_kill"
+				{
+					"event"			"death"
+					"attacker"		"!hero"
+					"target"		"npc_dota_observer_wards"
+					"storage"
+					{
+						"1"
+						{
+							"aggregator"	"increment"
+						}
+					}	
+				}
+			}
+
+			"clear_storage_per_query"	"0"
+			"post_tests"
+			{
+				"test_kill_count"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<dewards>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<dewards>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+
+	"kill_a_barracks"
+	{
+		"challengetype"		"11"
+		"name"				"#DOTA_ChallengeName_Barracks"
+		"desc"				"#DOTA_ChallengeDesc_Barracks"
+		"image"				"images/challenges/icon_challenges_building.png"
+
+		"events"
+		{
+			"fail_gametime"		"<game_time>"
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"find_tower_kill"
+				{
+					"event"			"team_building_kill"
+					"team"			"!team"
+					"enemyteam"		"!enemyteam"
+					"building_type"	"barracks"
+					"gametime"		"<game_time>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<game_time>"
+			{
+				"format"	"gametime"
+				"index"		"0"
+			}
+		}
+	}
+	"kill_roshan"
+	{
+		"challengetype"	"12"
+		"name"			"#DOTA_ChallengeName_KillRoshan"
+		"desc"			"#DOTA_ChallengeDesc_KillRoshan"
+		"image"			"images/challenges/icon_challenges_rosh.png"
+
+		"events"
+		{
+			"fail_gametime"		"<game_time>"
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"kill_roshan"
+				{
+					"event"			"death"
+					"attacker_team"	"!team"
+					"target"		"npc_dota_roshan"
+					"gametime"		"<game_time>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<game_time>"
+			{
+				"format"	"gametime"
+				"index"		"0"
+			}
+		}
+	}
+
+	"place_wards"
+	{
+		"challengetype"	"13"
+		"name"			"#DOTA_ChallengeName_PlaceWards"
+		"desc"			"#DOTA_ChallengeDesc_PlaceWards"
+		"image"			"images/challenges/icon_challenges_ward.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"place_ward"
+				{
+					"event"					"item"
+					"caster"				"!hero"
+					"item"					"item_ward_observer"
+					"cast_on_location"		"1"
+					"storage"
+					{
+						"1"
+						{
+							"aggregator"	"increment"
+						}
+					}	
+				}
+			}
+
+			"clear_storage_per_query"	"0"
+			"post_tests"
+			{
+				"test_kill_count"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<wards>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<wards>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+	"burst_damage"
+	{    
+		"challengetype"	"14"
+		"name"			"#DOTA_ChallengeName_BurstDamage"
+		"desc"			"#DOTA_ChallengeDesc_BurstDamage"
+		"image"				"images/challenges/icon_challenges_xdamage_time.png"
+
+		"events"
+		{
+			"matching_type"		"timeblock_accumulate"
+			"query"
+			{
+				"time_block"		"1.0"
+
+				"accumulate_event"
+				{
+					"event"			"damage"
+					"attacker"		"!hero"
+					"target_must_be_hero" "1"
+					"storage"
+					{
+						"1"
+						{
+							"key"			"value"
+							"aggregator"	"sum"	
+						}
+					}
+				}          
+			}
+
+			"post_tests"
+			{
+				"test_total_damage"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<total_damage>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<total_damage>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+			
+		}
+	}
+	"assist_count"
+	{
+		"challengetype"		"15"
+		"name"				"#DOTA_ChallengeName_Assists"
+		"desc"				"#DOTA_ChallengeDesc_Assists"
+		"image"				"images/challenges/icon_challenges_xassists.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"find_kill"
+				{
+					"event"			"playerstats"
+					"playerid"		"!playerid"
+					"storage"
+					{
+						"1"			"assists"
+					}
+				}
+			}
+
+			"clear_storage_per_query"	"1"
+			"post_tests"
+			{
+				"test_assist"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<assist_count>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<assist_count>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+
+	"deny_a_tower"
+	{
+		"challengetype"		"16"
+		"name"				"#DOTA_ChallengeName_DenyTower"
+		"desc"				"#DOTA_ChallengeDesc_DenyTower"
+		"image"				"images/challenges/icon_challenge_tower_deny.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"find_tower_kill"
+				{
+					"event"			"team_building_kill"
+					"team"			"!team"
+					"enemyteam"		"!team"
+					"building_type"		"tower"
+					"storage"
+					{
+						"1"
+						{
+							"aggregator"	"increment"
+						}
+					}	
+				}
+			}
+			"clear_storage_per_query"	"0"
+			"post_tests"
+			{
+				"deny_count"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<deny_count>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<deny_count>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+	"total_damage"
+	{    
+		"challengetype"	"17"
+		"name"			"#DOTA_ChallengeName_TotalDamage"
+		"desc"			"#DOTA_ChallengeDesc_TotalDamage"
+		"image"			"images/challenges/icon_challenges_xdamage.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"accumulate_event"
+				{
+					"event"			"damage"
+					"attacker"		"!hero"
+					"target_must_be_hero" "1"
+					"storage"
+					{
+						"1"
+						{
+							"key"			"value"
+							"aggregator"	"sum"	
+						}
+					}
+				}          
+			}
+
+			"progress_stored_in"		"1"
+			"post_tests"
+			{
+				"test_total_damage"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<total_damage>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<total_damage>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+	"total_healing"
+	{    
+		"challengetype"	"18"
+		"name"			"#DOTA_ChallengeName_TotalHealing"
+		"desc"			"#DOTA_ChallengeDesc_TotalHealing"
+		"image"			"images/challenges/icon_challenges_xheals.png"
+
+		"events"
+		{
+			"matching_type"		"linear_series"
+			"query"
+			{
+				"accumulate_event"
+				{
+					"event"			"heal"
+					"healer"		"!hero"
+					"target_must_be_hero" "1"
+					"storage"
+					{
+						"1"
+						{
+							"key"			"value"
+							"aggregator"	"sum"	
+						}
+					}
+				}          
+			}
+
+			"progress_stored_in"		"1"
+			"post_tests"
+			{
+				"test_total_healing"
+				{
+					"storage"		"1"
+					"compare"		">="
+					"amount"		"<total_healing>"
+				}
+			}
+		}
+
+		"variables"
+		{
+			"<total_healing>"
+			{
+				"format"	"int"
+				"index"		"0"
+			}
+		}
+	}
+}
+
+
+
+

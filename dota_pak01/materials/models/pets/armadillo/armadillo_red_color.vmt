@@ -1,0 +1,35 @@
+CustomHero
+{
+	$baseTexture "models/pets/armadillo/armadillo_red_color"
+$normalmap "models/pets/armadillo/armadillo_normal"
+$maskmap1 "models/pets/armadillo/armadillo_red_masks1"
+$maskmap2 "models/pets/armadillo/armadillo_red_masks2"
+
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 10
+	$SPECULARCOLOR "[.7 .7 1]"
+
+	$RIMLIGHTSCALE 1
+	//$RIMLIGHTCOLOR "[1 1 1]"
+	//$RIMLIGHTCOLOR "[1 1 1]"
+
+
+	$alphatest 1
+
+	$IgnoreBudgetCheck 1	
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+	
+}

@@ -3,6 +3,7 @@ criterion "IsEnemyluna" "targetclassname" "npc_dota_hero_luna" weight 5 required
 criterion "IsAllyluna" "nearby_ally" "npc_dota_hero_luna" weight 5 required
 criterion "IsLunaLucentBeam" "abilityname" "luna_lucent_beam" weight 5 required
 criterion "IsLunaEclipse" "abilityname" "luna_eclipse" weight 5 required
+criterion "IsLunaTauntCatDance" "taunt_type" "cat_dancer_gesture" weight 5 required
 
 Response luna_Spawn
 {
@@ -236,15 +237,15 @@ Rule luna_KillIsEnemyChaos_KnightChance_20%_Rule
 	response luna_KillIsEnemyChaos_KnightChance_20%
 }
 
-Response luna_KillIsEnemyKunkkaChance_1%
+Response luna_KillIsEnemyKunkkaChance_3%
 {
 	scene "scenes/luna/luna_luna_laugh_06.vcd" nodelay noscene 
 }
 
-Rule luna_KillIsEnemyKunkkaChance_1%_Rule
+Rule luna_KillIsEnemyKunkkaChance_3%_Rule
 {
-	criteria Kill Isluna IsEnemyKunkka Chance_1%
-	response luna_KillIsEnemyKunkkaChance_1%
+	criteria Kill Isluna IsEnemyKunkka Chance_3%
+	response luna_KillIsEnemyKunkkaChance_3%
 }
 
 Response luna_Move
@@ -1040,5 +1041,19 @@ Rule luna_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isluna IsEmoteLaugh
 	response luna_EmoteIsEmoteLaugh
+}
+
+Response luna_TauntIsLunaTauntCatDance
+{
+	scene "scenes/luna/luna_luna_laugh_03.vcd" nodelay noscene 
+	scene "scenes/luna/luna_luna_laugh_07.vcd" nodelay noscene 
+	scene "scenes/luna/luna_luna_laugh_14.vcd" nodelay noscene 
+	scene "scenes/luna/luna_luna_laugh_17.vcd" nodelay noscene 
+}
+
+Rule luna_TauntIsLunaTauntCatDance_Rule
+{
+	criteria Taunt Isluna IsLunaTauntCatDance
+	response luna_TauntIsLunaTauntCatDance
 }
 

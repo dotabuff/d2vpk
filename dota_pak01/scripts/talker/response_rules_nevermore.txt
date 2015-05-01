@@ -11,6 +11,7 @@ criterion "IsRequiem" "abilityname" "nevermore_requiem" weight 5 required
 criterion "IsShadowFiendEconArcana" "customresponse" "arcana" weight 5 required
 criterion "IsShadowFiendEconTripleraze" "tripleraze" "1" weight 5 required
 criterion "IsShadowFiendArcanaIdle" "taunt_type" "sf_arcana_idle_rare" weight 5 required
+criterion "IsShadowFiendTauntSwagger" "taunt_type" "swag_gesture" weight 5 required
 
 Response nevermore_Spawn
 {
@@ -1802,6 +1803,19 @@ Rule nevermore_EmoteIsShadowFiendEconArcanaIsEmoteLaugh_Rule
 	response nevermore_EmoteIsShadowFiendEconArcanaIsEmoteLaugh
 }
 
+Response nevermore_TauntIsShadowFiendTauntSwagger
+{
+	scene "scenes/nevermore/nevermore_nev_laugh_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_TauntIsShadowFiendTauntSwagger_Rule
+{
+	criteria Taunt Isnevermore IsShadowFiendTauntSwagger
+	response nevermore_TauntIsShadowFiendTauntSwagger
+}
+
 Response nevermore_TauntIsShadowFiendEconArcanaIsShadowFiendArcanaIdle
 {
 	scene "scenes/nevermore/nevermore_nev_arc_laugh_03.vcd" nodelay noscene weapondelay 300
@@ -1811,5 +1825,18 @@ Rule nevermore_TauntIsShadowFiendEconArcanaIsShadowFiendArcanaIdle_Rule
 {
 	criteria Taunt Isnevermore IsShadowFiendEconArcana IsShadowFiendArcanaIdle
 	response nevermore_TauntIsShadowFiendEconArcanaIsShadowFiendArcanaIdle
+}
+
+Response nevermore_TauntIsShadowFiendEconArcanaIsShadowFiendTauntSwagger
+{
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_TauntIsShadowFiendEconArcanaIsShadowFiendTauntSwagger_Rule
+{
+	criteria Taunt Isnevermore IsShadowFiendEconArcana IsShadowFiendTauntSwagger
+	response nevermore_TauntIsShadowFiendEconArcanaIsShadowFiendTauntSwagger
 }
 

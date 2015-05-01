@@ -1,0 +1,25 @@
+"customhero"
+{
+	"$basetexture" "models\heroes\io\io"
+	"$normalmap" "models/development/flatnormal"
+	"$maskmap1" "models/heroes/io/io_masks"
+	"$maskmap2" "models/heroes/io/io_masks"
+	
+	//$translucent 1
+	//$additive 1
+
+	$selfillumblendtofull .5
+	//$nodraw 1
+
+	$CLOAKFACTOR 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"status_proxy"
+		{
+		}
+	}
+
+}
+

@@ -178,10 +178,10 @@
       "SideShop": "1",
       "AbilitySpecial": [
         {
-          "damage_bonus": 40
+          "damage_bonus": 140
         },
         {
-          "damage_bonus_ranged": 15
+          "damage_bonus_ranged": 115
         },
         {
           "quelling_range_tooltip": 350
@@ -244,7 +244,7 @@
       "ID": "247",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
-      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CUSTOM",
       "ItemCost": "4300",
       "ItemShopTags": "attack_speed",
       "ItemQuality": "common",
@@ -3704,10 +3704,10 @@
           "cleave_damage_percent": 35
         },
         {
-          "quelling_bonus": 60
+          "quelling_bonus": 160
         },
         {
-          "quelling_bonus_ranged": 25
+          "quelling_bonus_ranged": 125
         },
         {
           "cleave_radius": 280

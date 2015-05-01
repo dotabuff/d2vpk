@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	"$baseTexture" "models/courier/baby_winter_wyvern/baby_winter_wyvern_fire_color"
+	"$normalmap" "models/courier/baby_winter_wyvern/baby_winter_wyvern_normal"
+	"$maskmap1"		"models/courier/baby_winter_wyvern/baby_winter_wyvern_fire_masks1"
+	"$maskmap2"		"models/courier/baby_winter_wyvern/baby_winter_wyvern_masks2"
+	
+	$SPECULAR_BLOOM_SCALE      .5
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 10
+	$SPECULARCOLOR "[2 .5 .3]"
+	$RIMLIGHTCOLOR "[1 1 1]"
+	//$SPECULARBLENDTOFULL .1
+  //$AMBIENTSCALE .5
+	
+	$RIMLIGHTSCALE 0
+
+	$alphatest 1
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

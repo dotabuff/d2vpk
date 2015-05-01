@@ -2,11 +2,12 @@
 {
 	"$baseTexture" "models/heroes/nightstalker/nightstalker_base_color"
 	"$normalmap" "models/heroes/nightstalker/nightstalker_base_normal"
-   	"$diffusewarp" "models/heroes/sven/sven_diffusewarp"
+  "$diffusewarp" "models/heroes/sven/sven_diffusewarp"
 	"$alphatest" "1"
 	"$maskmap1" "models/heroes/nightstalker/nightstalker_base_mask1"
 	"$maskmap2" "models/heroes/nightstalker/nightstalker_base_mask2"
-
+	"$detail1"  "models/heroes/nightstalker/nightstalker_base_detail"
+	
 	$SPECULAREXPONENT 33	
 	$SPECULARSCALE 11
 	$SPECULARCOLOR "[0.7 0.9 1]"
@@ -15,13 +16,13 @@
 
 	$RIMLIGHTSCALE 4
 
-	$DETAIL1BLENDMODE 3
-	$DETAIL1SCALE 1
+	$DETAIL1BLENDMODE 1
+	$DETAIL1SCALE 4
 	$DETAIL1BLENDFACTOR 0
-	$DETAIL1BLENDTOFULL 0
-	$SPECULAR_BLOOM_SCALE      .5
-	
 
+	$DETAIL1BLENDTOFULL 0
+	
+	$SPECULAR_BLOOM_SCALE      .5
 
 	"$cloakPassEnabled" "1"
 	"Proxies"
@@ -29,9 +30,10 @@
 		"TextureScroll"		
 		{
 			"texturescrollvar"	"$detail1texturetransform"
-			"texturescrollrate"	"5.5"
-			"texturescrollangle"	"0"
+			"texturescrollrate"	 ".035"
+			"texturescrollangle"	 "-45"
 		}
+
 		"invis_proxy"
 		{
 		}
@@ -42,5 +44,4 @@
 		{
 		}
 	}
-
 }

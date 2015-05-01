@@ -461,6 +461,12 @@
 				"MaxPolygonsLOD0"	"500"
 				"MaxPolygonsLOD1"	"300"
 			}
+			"6"
+			{
+				"SlotIndex"	"6"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
+			}
 		}
 
 		"ParticleFile"				"particles/units/heroes/hero_axe.pcf"
@@ -1626,6 +1632,12 @@
 				"MaxPolygonsLOD0"	"450"
 				"MaxPolygonsLOD1"	"300"
 			}
+			"4"
+			{
+				"SlotIndex"	"4"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
+			}
 		}
 		
 		"Bot"
@@ -1865,6 +1877,12 @@
 				"SlotName"	"ability2"
 				"SlotText"	"#LoadoutSlot_Juggernaut_HealingWard"	
 				"no_import"	"1"
+			}
+			"7"
+			{
+				"SlotIndex"	"7"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
 			}
 		}
 
@@ -2369,14 +2387,20 @@
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1500"
 				"MaxPolygonsLOD1"	"1500"
-			}		
-			"5"
+			}
+		    "5"
 			{
 				"SlotIndex"	"5"
+				"SlotName"	"taunt"
+				"SlotText"	"#LoadoutSlot_Taunt"
+			}
+			"6"
+			{
+				"SlotIndex"	"6"
 				"SlotName"	"ambient_effects"
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"
-			}	
+			}
 		}
 		
 		"Bot"
@@ -4307,6 +4331,12 @@
 				"MaxPolygonsLOD0"	"300"
 				"MaxPolygonsLOD1"	"200"
 			}
+			"7"
+			{
+				"SlotIndex"	"7"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
+			}
 		}
 
 
@@ -5184,6 +5214,18 @@
 				}	
 			}
 		}				
+		
+		// Items
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemSlots"
+		{
+				"1"
+				{
+					"SlotIndex"	"1"
+					"SlotName"	"taunt"
+					"SlotText"	"#LoadoutSlot_Taunt"
+				}
+		}
 		
 
 		"Bot"
@@ -7388,6 +7430,12 @@
 				"SlotName"	"taunt"
 				"SlotText"	"#LoadoutSlot_Taunt"	
 			}
+			"7"
+			{
+				"SlotIndex"	"7"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
+			}
 		}
 
 		"ParticleFile"				"particles/units/heroes/hero_riki.pcf"
@@ -7605,6 +7653,10 @@
 				"SlotIndex"	"2"
 				"SlotName" 	"arms"
 				"SlotText"	"#LoadoutSlot_Arms"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"500"
+				"MaxPolygonsLOD1"	"300"
 			}
 			"3"
 			{
@@ -8095,6 +8147,7 @@
 				"SlotName"	"taunt"
 				"SlotText"	"#LoadoutSlot_Taunt"
 			}
+			
 		}
 		
 		"ParticleFile"				"particles/units/heroes/hero_sniper.pcf"
@@ -11869,6 +11922,12 @@
 					"MaxPolygonsLOD0"	"800"
 					"MaxPolygonsLOD1"	"500"					
 				}
+				"5"
+				{
+					"SlotIndex"	"5"
+					"SlotName"	"taunt"
+					"SlotText"	"#LoadoutSlot_Taunt"
+				}
 			}			
 
 		"Bot"
@@ -14624,6 +14683,12 @@
 				"MaxPolygonsLOD0"	"2500"
 				"MaxPolygonsLOD1"	"1500"				
 			}
+		    "5"
+			{
+				"SlotIndex"	"5"
+				"SlotName"	"taunt"
+				"SlotText"	"#LoadoutSlot_Taunt"
+			}
 		}
 
 		"HealthBarOffset"			"240"
@@ -16275,10 +16340,16 @@
 				"SlotIndex"	"6"
 				"SlotName"	"body_head"
 				"SlotText"	"#LoadoutSlot_Head"
-			}		
-			"7"
+			}
+		    "7"
 			{
 				"SlotIndex"	"7"
+				"SlotName"	"taunt"
+				"SlotText"	"#LoadoutSlot_Taunt"
+			}
+			"8"
+			{
+				"SlotIndex"	"8"
 				"SlotName"	"ambient_effects"
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"
@@ -19162,10 +19233,16 @@
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1200"
 				"MaxPolygonsLOD1"	"600"
-			}			
-			"4"
+			}
+		    "4"
 			{
 				"SlotIndex"	"4"
+				"SlotName"	"taunt"
+				"SlotText"	"#LoadoutSlot_Taunt"
+			}
+			"5"
+			{
+				"SlotIndex"	"5"
 				"SlotName"	"ambient_effects"
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"
@@ -20370,6 +20447,12 @@
 			"5"
 			{
 				"SlotIndex"	"5"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
+			}
+			"6"
+			{
+				"SlotIndex"	"6"
 				"SlotName"	"ambient_effects"
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"
@@ -20685,7 +20768,7 @@
 			{
 				"SlotIndex"	"1"
 				"SlotName"	"weapon2"
-				"SlotText"	"#LoadoutSlot_Weapon_Melee"	
+				"SlotText"	"#LoadoutSlot_TrollWarlord_Weapon_Melee"	
 				"TextureWidth"		"128"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -20705,7 +20788,7 @@
 			{
 				"SlotIndex"	"3"
 				"SlotName"	"offhand_weapon"
-				"SlotText"	"#LoadoutSlot_OffHand"
+				"SlotText"	"#LoadoutSlot_OffHand_Weapon"
 				"TextureWidth"		"128"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -20715,7 +20798,7 @@
 			{
 				"SlotIndex"	"4"
 				"SlotName"	"offhand_weapon2"
-				"SlotText"	"#LoadoutSlot_OffHand_Melee"
+				"SlotText"	"#LoadoutSlot_TrollWarlord_OffHand_Weapon_Melee"
 				"TextureWidth"		"128"
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"400"
@@ -20740,6 +20823,12 @@
 				"TextureHeight"		"256"
 				"MaxPolygonsLOD0"	"1150"
 				"MaxPolygonsLOD1"	"650"
+			}
+			"7"
+			{
+				"SlotIndex"	"7"
+				"SlotName"	"taunt"
+				"SlotText"	"#LoadoutSlot_Taunt"
 			}
 
 		}	
@@ -20946,6 +21035,12 @@
 				"MaxPolygonsLOD0"	"300"
 				"MaxPolygonsLOD1"	"200"
 			}	
+			"7"
+			{
+				"SlotIndex"	"7"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
+			}	
 		}
 	}	
 	
@@ -21103,7 +21198,12 @@
 				"MaxPolygonsLOD0"	"400"
 				"MaxPolygonsLOD1"	"300"
 			}
-
+		    "5"
+			{
+				"SlotIndex"	"5"
+				"SlotName"	"taunt"
+				"SlotText"	"#LoadoutSlot_Taunt"
+			}
 		}
 
 		"Bot"
@@ -21442,6 +21542,12 @@
 			"5"
 			{
 				"SlotIndex"	"5"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
+			}
+			"6"
+			{
+				"SlotIndex"	"6"
 				"SlotName"	"ambient_effects"
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"
@@ -22435,6 +22541,12 @@
 				"SlotName"	"taunt"
 				"SlotText"	"#LoadoutSlot_Taunt"
 			}
+			"6"
+			{
+				"SlotIndex"	"6"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Pet"
+			}
 
 		}
 		
@@ -23047,10 +23159,16 @@
 			"5"
 			{
 				"SlotIndex"	"5"
+				"SlotName"	"taunt"
+				"SlotText"	"#LoadoutSlot_Taunt"
+			}
+			"6"
+			{
+				"SlotIndex"	"6"
 				"SlotName"	"ambient_effects"
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"
-			}			
+			}
 		}		
 	}	
 

@@ -412,3 +412,18 @@
 		}
 	}
 }
+
+"Hero_Nevermore.Taunt.Swagger"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/nevermore/taunt_swagger.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}

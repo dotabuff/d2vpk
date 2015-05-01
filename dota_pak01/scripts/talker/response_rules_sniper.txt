@@ -7,6 +7,7 @@ criterion "IsAssassinateKill" "abilityname" "sniper_assassinate" weight 5 requir
 criterion "IsAssassinateFail" "assassinatefail_healthfraction" "<=0.1" weight 5 required
 criterion "IsSniperAssassinate" "abilityname" "sniper_assassinate" weight 5 required
 criterion "IsSniperTauntSalute" "taunt_type" "sniper_here_salute" weight 5 required
+criterion "IsSniperTauntQuickDraw" "taunt_type" "quick_draw" weight 5 required
 criterion "IsTutMap2" "map" "tutorial_m2" weight 5 required
 
 Response sniper_Spawn
@@ -864,6 +865,17 @@ Rule sniper_Taunt_Rule
 {
 	criteria Taunt Issniper 
 	response sniper_Taunt
+}
+
+Response sniper_TauntIsSniperTauntQuickDraw
+{
+	scene "scenes/sniper/sniper_snip_attack_04.vcd" nodelay noscene 
+}
+
+Rule sniper_TauntIsSniperTauntQuickDraw_Rule
+{
+	criteria Taunt Issniper IsSniperTauntQuickDraw
+	response sniper_TauntIsSniperTauntQuickDraw
 }
 
 Response sniper_EmoteIsEmoteLaugh

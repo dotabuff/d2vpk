@@ -1,12 +1,11 @@
 // \src\game\client\dota\scaleform\dota_sf_hud_heroselection.cpp
 // src\game\client\dota\scaleform\dota_sf_hud_spectate_heroselection.cpp
-"DOTAMusic.HeroPicker.INTERNATIONAL"
+"valve_international.music.ui_hero_select"
 {
 	"channel"	"CHAN_AUTO"
 	"volume"	"0.8"
 	"soundlevel"  "SNDLVL_NONE"
-	"wave"	"*#music/ui_hero_select_intl.wav"
-
+	"wave"	"*#music/ui_hero_select_intl.wav"  
 	"operator_stacks"
 	{
 		"soundentry_operator_data"
@@ -20,19 +19,34 @@
 		}
 		
 		"start_stack"
-		{
-			"import_stack" "dota_start_international_hero_pick"
+		{		
+			"import_stack" "dota_start_hero_select"	
 		}
 		
 		"update_stack"
 		{
-			"import_stack" "dota_update_internation_heropicker"
+			"import_stack" "dota_update_music_stereo_track_update"
+			
+			"block_hero_picker_entries"
+			{
+				"operator" "sys_block_entries"
+				"input_active" "1.0"	
+				"input_duration" "0.5"
+				"match_substring" "false"
+				"match_entry" "valve_international.music.ui_hero_select"
+				"match_channel" "false"
+				"match_entity" "false"
+			}
+
+			"volume_fade_out"
+			{
+				"input_max" "2"
+			}
 		}
 		
 		"stop_stack"
 		{
-			"import_stack" "dota_stop_international_heropicker"
+			"import_stack" "dota_stop_hero_select"
 		}
 	}
 }
-

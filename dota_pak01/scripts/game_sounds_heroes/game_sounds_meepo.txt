@@ -236,3 +236,28 @@
 		}
 	}
 }
+
+/////////////////////////////////////////////////////////////////////////
+
+"Hero_Meepo.Poof.Channel.Divining"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/meepo/poof_channel_divining.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "0.5"
+			}
+		}
+	}
+}

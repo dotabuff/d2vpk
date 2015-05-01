@@ -173,3 +173,23 @@
 		}
 	}
 }
+
+"shop_jbrice_01.stinger.store_preview"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"#music/jbrice_01/stingers/store_preview.mp3"
+	"operator_stacks"
+	{		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+	}
+}

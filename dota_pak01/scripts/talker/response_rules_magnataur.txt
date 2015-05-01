@@ -5,6 +5,7 @@ criterion "MagShockwave" "abilityname" "magnataur_shockwave" weight 5 required
 criterion "MagEmpower" "abilityname" "magnataur_empower" weight 5 required
 criterion "MagSkewer" "abilityname" "magnataur_skewer" weight 5 required
 criterion "MagPolarity" "abilityname" "magnataur_reverse_polarity" weight 5 required
+criterion "MagnusTauntMagPower" "taunt_type" "mag_power_gesture" weight 5 required
 
 Response magnataur_Spawn
 {
@@ -1030,5 +1031,18 @@ Rule magnataur_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Ismagnataur IsEmoteLaugh
 	response magnataur_EmoteIsEmoteLaugh
+}
+
+Response magnataur_TauntMagnusTauntMagPower
+{
+	scene "scenes/magnataur/magnataur_magn_happy_01.vcd" nodelay noscene 
+	scene "scenes/magnataur/magnataur_magn_happy_03.vcd" nodelay noscene 
+	scene "scenes/magnataur/magnataur_magn_happy_05.vcd" nodelay noscene 
+}
+
+Rule magnataur_TauntMagnusTauntMagPower_Rule
+{
+	criteria Taunt Ismagnataur MagnusTauntMagPower
+	response magnataur_TauntMagnusTauntMagPower
 }
 

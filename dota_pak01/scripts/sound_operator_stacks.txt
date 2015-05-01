@@ -170,14 +170,14 @@
 			"operator" "get_opvar_float"
 			"opvar" "music_is_spectator"
 		}	
-           
-        "get_current_spectator_status_invert"
-        {
-            "operator" "math_float"
-             "apply" "sub"   
-             "input1" "1.0"
-             "input2" "@get_current_spectator_status.output"
-        }
+		
+		"get_current_spectator_status_invert"
+		{
+			"operator" "math_float"
+			 "apply" "sub"   
+			 "input1" "1.0"
+			 "input2" "@get_current_spectator_status.output"
+		}
 			
 		"check_play_spectator_music"  //Make sure the convar is set, AND we're in spectator mode
 		{
@@ -1119,25 +1119,6 @@
 		// }
 	// }
 
-	"dota_start_international_hero_pick"
-	{
-		"start_music_mainloop"
-		{
-			"operator" "sys_start_entry"
-			"execute_once" "true"
-			"input_execute"	"1.0"
-			"input_start" "1"
-			"entry_name" "DOTAMusic.MainLoop" //Replace with the sound you want to play.
-		}
-		
-		"import_stack" "dota_start_music_type_tracker"
-						
-		"set_music_type_opvar" //set the current music opvar
-		{
-			"input" "65536" //Hero Picker - doing this like this so we have a good baseline.
-		}
-
-	}
 	"dota_start_diretide_stinger"
 	{
 		"delay_output"
@@ -3480,6 +3461,33 @@
 			"operator" "track_update"
 			"stop_channel_on_track" "true"	
 		}
+	}
+	
+	"dota_update_music_battle_usat"
+	{
+		"import_stack" "dota_update_music_stereo"
+		
+		"usat_elapsed_time"
+		{
+			"operator" "get_entry_time"
+		}
+		
+		"usat_stop_time"
+		{
+			"operator" "math_float"
+			"apply" "greater_than"	
+			"input1" "@usat_elapsed_time.output_sound_elapsed"
+			"input2" "60.0"
+		}
+		
+		"play_battle_end" //play end if this goes on for too long
+		{
+			"input_execute"	"@usat_stop_time.output"
+			"operator" "sys_start_entry"
+			"execute_once" "true"
+			"input_start" "1"
+			"entry_name" "DOTAMusic.BattleEnd" //Replace with the sound you want to play.
+		}	
 	}
 	
 // 	"update_music_stereo"
@@ -11398,25 +11406,7 @@
 			"input2[*]" "0.01"		
 		}
 	}
-	"dota_update_internation_heropicker"
-	{
-		"import_stack" "dota_update_music_stereo"
-		"mixer"
-		{
-			"mixgroup" "Music"
-		}
-		
-		"update_track"
-		{
-			"operator" "track_update"
-			"stop_channel_on_track" "true"	
-		}
 
-		"volume_fade_out"
-		{
-			"input_max" "2"
-		}
-	}
 	"dota_update_start_tutorial"
 	{	
 		
@@ -12130,15 +12120,7 @@
 			"input2" "131072" //Explore Picker
 		}
 	}
-	"dota_stop_international_heropicker"
-	{
-		"import_stack" "dota_stop_music_type_tracker"
-		
-		"remove_music_value"
-		{
-			"input2" "65536" //Hero Picker
-		}	
-	}
+
 	"dota_stop_tutorial_ducker" //have to do this in the syop stack, because _End doesnt get called in some cases (like death)
 	{
 		

@@ -272,7 +272,32 @@
 	{
 		"start_stack"
 		{
-			"import_stack" "dota_attack_block_dist"
+			"block_entries"
+			{
+			"operator" "sys_block_entries"
+			"input_active" "1.0"	
+			"input_duration" "3.0"
+			"match_substring" "false"
+			"match_entry" "Hero_NyxAssassin.Burrow.In"
+			"match_channel" "false"
+			"match_entity" "false"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Physics"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "100"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.75"
+			}
 		}
 	}
 }

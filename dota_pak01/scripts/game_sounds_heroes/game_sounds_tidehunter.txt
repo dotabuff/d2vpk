@@ -304,6 +304,24 @@
 	}
 }
 
+"Hero_Tidehunter.Taunt.BackStroke"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/tidehunter/taunt_backstroke.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
 "Tutorial_Sniper.tidehunter_intro"
 {
 	"channel"		"CHAN_STATIC"

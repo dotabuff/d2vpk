@@ -116,7 +116,7 @@
 "Hero_Nightstalker.Void"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.5"
+	"volume"		"0.6"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
 	"wave"	")weapons\hero\nightstalker\dota_nightstalker_void.wav"
@@ -341,3 +341,33 @@
 // 		}
 // 	}
 // }
+
+/////////////////////////////////////////////////////////////////////
+
+"Hero_Nightstalker.Void.Nihility"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons\hero\nightstalker\void_nihility.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+			"volume_fade_out"
+			{
+				"input_Max" "0.5"
+			}
+		}
+	}
+}

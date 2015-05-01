@@ -1,0 +1,32 @@
+"CustomHero"
+{
+	$baseTexture "models/items/wards/watcher_below/watcher_below_color"
+	"$normalmap" "models/items/wards/watcher_below/watcher_below_normal"
+
+	"$maskmap1" "models/items/wards/watcher_below/watcher_below_masks1"
+	"$maskmap2" "models/items/wards/watcher_below/watcher_below_masks2"
+
+	$SPECULAR_BLOOM_SCALE      0
+	$AMBIENTSCALE 1
+	$SPECULAREXPONENT 50
+	$SPECULARSCALE 25
+	$SPECULARBLENDTOFULL .04
+	$SPECULARCOLOR "[1 .8 .4]"
+
+	//$SPECULARBLENDTOFULL 1
+	//$SPECULAREXPONENTBLENDTOFULL 1
+	//$RIMLIGHTBLENDTOFULL 1
+
+	$RIMLIGHTSCALE	1
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -336,3 +336,18 @@
 		}
 	}
 }
+
+"Hero_TrollWarlord.Taunt.TrollGroove"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"wave"			")weapons/hero/troll_warlord/taunt_trollgroove.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}

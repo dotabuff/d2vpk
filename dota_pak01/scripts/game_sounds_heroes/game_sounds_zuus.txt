@@ -308,3 +308,18 @@
 		}
 	}
 }
+
+"Hero_Zuus.Taunt.Jump"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"wave"			")weapons/hero/zuus/taunt_jump.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}

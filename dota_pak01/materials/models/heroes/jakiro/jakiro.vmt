@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/jakiro/jakiro_color"
+	"$normalmap" "models/heroes/jakiro/jakiro_normals"
+	"$maskmap1" "models/heroes/jakiro/jakiro_masks1"
+	"$maskmap2" "models/heroes/jakiro/jakiro_masks2"
+	$IgnoreBudgetCheck 1  
+	$SPECULAR_BLOOM_SCALE 0.1
+	
+	$SPECULAREXPONENT 89
+	$SPECULARSCALE 15
+	$SPECULARCOLOR "1 1 1"
+	$RIMLIGHTCOLOR "1 1 1"
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTEXPONENT 70	
+
+	$ambientscale 0.3
+
+	$DETAIL1BLENDMODE 2
+	//$SELFILLUMBLENDTOFULL 0.1
+	$DETAIL1SCALE 1
+	$alphatest 1
+
+	
+	$cloakintensity 0.65
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

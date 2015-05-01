@@ -6,6 +6,7 @@ criterion "IsTrollAxesRanged" "abilityname" "troll_warlord_whirling_axes_ranged"
 criterion "IsTrollAxesMelee" "abilityname" "troll_warlord_whirling_axes_melee" weight 5 required
 criterion "IsTrollFervor" "abilityname" "troll_warlord_fervor" weight 5 required
 criterion "IsTrollTrance" "abilityname" "troll_warlord_battle_trance" weight 5 required
+criterion "IsTrollTauntGroove" "taunt_type" "groove_gesture" weight 5 required
 
 Response troll_warlord_Spawn
 {
@@ -1194,5 +1195,18 @@ Rule troll_warlord_ItemDropIsUltraRareDrop_Rule
 {
 	criteria ItemDrop Istroll_warlord IsUltraRareDrop
 	response troll_warlord_ItemDropIsUltraRareDrop
+}
+
+Response troll_warlord_TauntIsTrollTauntGroove
+{
+	scene "scenes/troll_warlord/troll_warlord_troll_laugh_04.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_laugh_06.vcd" nodelay noscene 
+	scene "scenes/troll_warlord/troll_warlord_troll_laugh_07.vcd" nodelay noscene 
+}
+
+Rule troll_warlord_TauntIsTrollTauntGroove_Rule
+{
+	criteria Taunt Istroll_warlord IsTrollTauntGroove
+	response troll_warlord_TauntIsTrollTauntGroove
 }
 

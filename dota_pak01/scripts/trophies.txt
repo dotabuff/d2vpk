@@ -419,7 +419,7 @@
 	"21"
 	{
 		"name"				"CNY2015 Year Beast Wins"
-		"obtainable"		"1"
+		"obtainable"		"0"
 		"category"			"#DOTA_TrophyCategory_CNY2015_YearBeast"
 		"loc_name"			"#DOTA_TrophyName_CNY2015_YearBeast_Wins"
 		"loc_desc"			"#DOTA_TrophyDesc_CNY2015_YearBeast_Wins"
@@ -452,7 +452,7 @@
 	"22"
 	{
 		"name"				"CNY2015 Year Beast Level"
-		"obtainable"		"1"
+		"obtainable"		"0"
 		"category"			"#DOTA_TrophyCategory_CNY2015_YearBeast"
 		"loc_name"			"#DOTA_TrophyName_CNY2015_YearBeast_Level"
 		"loc_desc"			"#DOTA_TrophyDesc_CNY2015_YearBeast_Level"
@@ -476,6 +476,116 @@
 			"150"
 			{
 				"img"		"images/trophies/nb15_8.png"
+			}
+		}
+	}
+	"23"
+	{
+		"name"				"TI5 Compendium Level"
+		"obtainable"		"1"
+		"category"			"#DOTA_TrophyCategory_TI5"
+		"loc_name"			"#DOTA_TrophyName_TI5_CompendiumLevel"
+		"loc_desc"			"#DOTA_TrophyDesc_TI5_CompendiumLevel"
+		"loc_units_singular"			"#DOTA_TrophyUnits_Level"
+		"loc_units_plural"			"#DOTA_TrophyUnits_Level"
+
+		"levels"
+		{
+			"1"
+			{
+				"img"		"images/trophies/ti5_comp_1.png"
+			}
+			"20"
+			{
+				"img"		"images/trophies/ti5_comp_2.png"
+			}
+			"50"
+			{
+				"img"		"images/trophies/ti5_comp_3.png"
+			}
+			"85"
+			{
+				"img"		"images/trophies/ti5_comp_4.png"
+			}
+			"150"
+			{
+				"img"		"images/trophies/ti5_comp_5.png"
+			}
+			"500"
+			{
+				"img"		"images/trophies/ti5_comp_6.png"
+			}
+			"2000"
+			{
+				"img"		"images/trophies/ti5_comp_7.png"
+			}
+			"10000"
+			{
+				"img"		"images/trophies/ti5_comp_8.png"
+			}
+		}
+	}
+	"24"
+	{
+		"name"				"TI5 Compendium Challenges"
+		"obtainable"		"1"
+		"category"			"#DOTA_TrophyCategory_TI5"
+		"loc_name"			"#DOTA_TrophyName_TI5_CompendiumChallenges"
+		"loc_desc"			"#DOTA_TrophyDesc_TI5_CompendiumChallenges"
+		"loc_units_singular"			"#DOTA_TrophyUnits_Challenges_Singular"
+		"loc_units_plural"			"#DOTA_TrophyUnits_Challenges_Plural"
+
+		"levels"
+		{
+			"1"
+			{
+				"img"		"images/trophies/ti5_comp_complete_1.png"
+			}
+			"5"
+			{
+				"img"		"images/trophies/ti5_comp_complete_2.png"
+			}
+			"15"
+			{
+				"img"		"images/trophies/ti5_comp_complete_3.png"
+			}
+			"25"
+			{
+				"img"		"images/trophies/ti5_comp_complete_4.png"
+			}
+			"40"
+			{
+				"img"		"images/trophies/ti5_comp_complete_5.png"
+			}
+		}
+	}
+	"25"
+	{
+		"name"				"TI5 Team Compendium Level"
+		"obtainable"		"1"
+		"category"			"#DOTA_TrophyCategory_TI5"
+		"loc_name"			"#DOTA_TrophyName_TI5_TeamCompendiumLevel"
+		"loc_desc"			"#DOTA_TrophyDesc_TI5_TeamCompendiumLevel"
+		"loc_units_singular"			"#DOTA_TrophyUnits_Level"
+		"loc_units_plural"			"#DOTA_TrophyUnits_Level"
+
+		"levels"
+		{
+			"100"
+			{
+				"img"		"images/trophies/ti5_comp_group_1.png"
+			}
+			"250"
+			{
+				"img"		"images/trophies/ti5_comp_group_2.png"
+			}
+			"1000"
+			{
+				"img"		"images/trophies/ti5_comp_group_3.png"
+			}
+			"2000"
+			{
+				"img"		"images/trophies/ti5_comp_group_4.png"
 			}
 		}
 	}

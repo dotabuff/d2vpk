@@ -400,3 +400,19 @@
 		}
 	}
 }
+
+"Hero_Gyrocopter.Taunt.BarrelRoll"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/gyrocopter/taunt_barrel_roll.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}

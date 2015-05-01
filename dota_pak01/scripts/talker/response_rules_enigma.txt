@@ -460,6 +460,17 @@ Rule enigma_KillIsEnemySkywrath_MageChance_15%_Rule
 	response enigma_KillIsEnemySkywrath_MageChance_15%
 }
 
+Response enigma_KillIsEnemyWinter_WyvernChance_15%
+{
+	scene "scenes/enigma/enigma_enig_rival_26.vcd" nodelay noscene 
+}
+
+Rule enigma_KillIsEnemyWinter_WyvernChance_15%_Rule
+{
+	criteria Kill Isenigma IsEnemyWinter_Wyvern Chance_15%
+	response enigma_KillIsEnemyWinter_WyvernChance_15%
+}
+
 Response enigma_Respawn
 {
 	scene "scenes/enigma/enigma_enig_respawn_01.vcd" nodelay noscene 

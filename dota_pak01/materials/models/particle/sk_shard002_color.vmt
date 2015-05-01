@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	$baseTexture "models/particle/sk_shard002_color"
+	"$normalmap" "models/particle/sk_shard002_normal"
+	"$maskmap1" "models/particle/sk_shard002_masks1"
+	"$maskmap2" "models/particle/sk_shard002_masks2"
+	//"$specularwarp" "models/particle/sk_shard001_lightwarp"
+	//"$specularwarp" "models/heroes/nyx/nyx_lightwarp"
+	$SPECULAREXPONENT 64
+	$SPECULARSCALE 20
+	
+	$IgnoreBudgetCheck 1
+	$alphatest 1	
+	//$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	//$ENVMAPINTENSITY 4
+	//$MASKENVBYMETALNESS 1
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.5"
+			"texturescrollangle"	 "83"
+		}
+
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}

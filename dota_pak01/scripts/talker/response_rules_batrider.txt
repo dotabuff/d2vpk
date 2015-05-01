@@ -4,6 +4,7 @@ criterion "IsAllybatrider" "nearby_ally" "npc_dota_hero_batrider" weight 5 requi
 criterion "IsAbilityFlameBreak" "abilityname" "batrider_flamebreak" weight 5 required
 criterion "IsAbilityFirefly" "abilityname" "batrider_firefly" weight 5 required
 criterion "IsAbilityLasso" "abilityname" "batrider_flaming_lasso" weight 5 required
+criterion "IsBatriderTauntHangLoose" "taunt_type" "hang_loose_gesture" weight 5 required
 
 Response batrider_Spawn
 {
@@ -1013,5 +1014,16 @@ Rule batrider_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isbatrider IsEmoteLaugh
 	response batrider_EmoteIsEmoteLaugh
+}
+
+Response batrider_TauntIsBatriderTauntHangLoose
+{
+	scene "scenes/batrider/batrider_bat_level_11.vcd" nodelay noscene 
+}
+
+Rule batrider_TauntIsBatriderTauntHangLoose_Rule
+{
+	criteria Taunt Isbatrider IsBatriderTauntHangLoose
+	response batrider_TauntIsBatriderTauntHangLoose
 }
 

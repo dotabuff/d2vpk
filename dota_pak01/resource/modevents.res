@@ -655,6 +655,10 @@
 	{
 	}
 
+	"live_leagues_updated"
+	{
+	}
+
 	"dota_hero_random"
 	{
 		"userid"		"short"
@@ -845,6 +849,7 @@
 		"event_id"			"short"
 		"points"			"short"
 		"premium_points"	"short"
+		"owned"				"bool"
 	}
 
 	"local_player_event_points"
@@ -912,6 +917,12 @@
 		"league_id"   "uint64"
 		"local_test"  "bool"
 	}
+	"compendium_trophies_loaded"
+	{
+		"account_id"       "uint64"
+		"league_id"        "uint64"
+		"local_test"       "bool"
+	}
 
 	"community_cached_names_updated"
 	{
@@ -933,7 +944,6 @@
 	{
 		"account_id"	"uint64"
 	}
-
 	"account_all_hero_challenge_changed"
 	{
 		"account_id"	"uint64"
@@ -964,6 +974,15 @@
 		"killer_player_id"		"short"
 		"message"				"short"
 		"beast_id"				"uint64"
+	}
+
+	"dota_hero_undoselection"
+	{
+		"playerid1"		"byte"
+	}
+
+	"dota_challenge_socache_updated"
+	{
 	}
 }
 
