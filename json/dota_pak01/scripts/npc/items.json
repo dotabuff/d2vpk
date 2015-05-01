@@ -697,7 +697,7 @@
       ]
     },
     "item_enchanted_mango": {
-      "ID": "274",
+      "ID": "216",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -885,7 +885,7 @@
       ]
     },
     "item_recipe_ward_dispenser": {
-      "ID": "282",
+      "ID": "217",
       "Model": "models/props_gameplay/recipe.mdl",
       "ItemCost": "0",
       "ItemShopTags": "",
@@ -900,7 +900,7 @@
       ]
     },
     "item_ward_dispenser": {
-      "ID": "266",
+      "ID": "218",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_OPTIONAL_UNIT_TARGET",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -1072,7 +1072,7 @@
       ]
     },
     "item_recipe_travel_boots_2": {
-      "ID": "280",
+      "ID": "219",
       "Model": "models/props_gameplay/recipe.mdl",
       "ItemCost": "0",
       "ItemShopTags": "",
@@ -1097,6 +1097,8 @@
       "ItemQuality": "common",
       "ItemAliases": "bot;boots of travel",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
+      "MaxUpgradeLevel": "2",
+      "ItemBaseLevel": "1",
       "AbilitySpecial": [
         {
           "bonus_movement_speed": 100
@@ -1104,7 +1106,7 @@
       ]
     },
     "item_travel_boots_2": {
-      "ID": "281",
+      "ID": "220",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_CREEP | DOTA_UNIT_TARGET_MECHANICAL | DOTA_UNIT_TARGET_BUILDING",
@@ -1118,6 +1120,8 @@
       "ItemQuality": "common",
       "ItemAliases": "bot;boots of travel",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
+      "MaxUpgradeLevel": "2",
+      "ItemBaseLevel": "2",
       "AbilitySpecial": [
         {
           "bonus_movement_speed": 100
@@ -3205,7 +3209,7 @@
       ]
     },
     "item_recipe_lotus_orb": {
-      "ID": "275",
+      "ID": "221",
       "Model": "models/props_gameplay/recipe.mdl",
       "ItemCost": "900",
       "ItemShopTags": "",
@@ -3216,7 +3220,7 @@
       ]
     },
     "item_lotus_orb": {
-      "ID": "276",
+      "ID": "226",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -4727,7 +4731,7 @@
       ]
     },
     "item_recipe_octarine_core": {
-      "ID": "277",
+      "ID": "228",
       "ItemCost": "0",
       "ItemShopTags": "",
       "ItemRecipe": "1",
@@ -4737,7 +4741,7 @@
       ]
     },
     "item_octarine_core": {
-      "ID": "278",
+      "ID": "235",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
       "ItemCost": "5900",
       "ItemShopTags": "move_speed;boost_mana;mana_pool",
@@ -4895,7 +4899,7 @@
       ]
     },
     "item_recipe_solar_crest": {
-      "ID": "262",
+      "ID": "227",
       "Model": "models/props_gameplay/recipe.mdl",
       "ItemCost": "0",
       "ItemShopTags": "",
@@ -4906,7 +4910,7 @@
       ]
     },
     "item_solar_crest": {
-      "ID": "263",
+      "ID": "229",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_BOTH",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL",
@@ -5038,7 +5042,7 @@
       ]
     },
     "item_recipe_guardian_greaves": {
-      "ID": "270",
+      "ID": "230",
       "Model": "models/props_gameplay/recipe.mdl",
       "ItemCost": "1650",
       "ItemShopTags": "",
@@ -5049,7 +5053,7 @@
       ]
     },
     "item_guardian_greaves": {
-      "ID": "271",
+      "ID": "231",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "FightRecapLevel": "1",
       "AbilityCooldown": "45",
@@ -5430,7 +5434,7 @@
       ]
     },
     "item_halloween_candy_corn": {
-      "ID": "216",
+      "ID": "1000",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_BUILDING",
@@ -5458,7 +5462,7 @@
       ]
     },
     "item_mystery_hook": {
-      "ID": "217",
+      "ID": "1001",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
       "AbilityCastRange": "1300",
@@ -5494,7 +5498,7 @@
       ]
     },
     "item_mystery_arrow": {
-      "ID": "218",
+      "ID": "1002",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "AbilityCastRange": "3000",
@@ -5534,7 +5538,7 @@
       ]
     },
     "item_mystery_missile": {
-      "ID": "219",
+      "ID": "1003",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
@@ -5584,7 +5588,7 @@
       ]
     },
     "item_mystery_toss": {
-      "ID": "220",
+      "ID": "1004",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_CUSTOM",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_CUSTOM",
@@ -5629,7 +5633,7 @@
       ]
     },
     "item_mystery_vacuum": {
-      "ID": "221",
+      "ID": "1005",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "AbilityCastRange": "500",
@@ -5661,7 +5665,7 @@
       ]
     },
     "item_halloween_rapier": {
-      "ID": "226",
+      "ID": "1006",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
       "ItemCost": "6200",
       "ItemShopTags": "damage",
@@ -5680,7 +5684,7 @@
       ]
     },
     "item_greevil_whistle": {
-      "ID": "228",
+      "ID": "1007",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
       "UIPickupSound": "Item.PickUpGemShop",
       "UIDropSound": "Item.DropGemShop",
@@ -5709,7 +5713,7 @@
       ]
     },
     "item_greevil_whistle_toggle": {
-      "ID": "235",
+      "ID": "1008",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
       "UIPickupSound": "Item.PickUpGemShop",
       "UIDropSound": "Item.DropGemShop",
@@ -5739,7 +5743,7 @@
       ]
     },
     "item_present": {
-      "ID": "227",
+      "ID": "1009",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "Model": "models/props_winter/present.mdl",
       "UIPickupSound": "Item.PickUpGemShop",
@@ -5765,7 +5769,7 @@
       ]
     },
     "item_winter_stocking": {
-      "ID": "229",
+      "ID": "1010",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "UIPickupSound": "Item.PickUpGemShop",
       "UIDropSound": "Item.DropGemShop",
@@ -5789,7 +5793,7 @@
       ]
     },
     "item_winter_skates": {
-      "ID": "230",
+      "ID": "1011",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
       "ItemCost": "0",
       "ItemShopTags": "move_speed",
@@ -5802,7 +5806,7 @@
       ]
     },
     "item_winter_cake": {
-      "ID": "231",
+      "ID": "1012",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -5829,7 +5833,7 @@
       ]
     },
     "item_winter_cookie": {
-      "ID": "232",
+      "ID": "1013",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -5856,7 +5860,7 @@
       ]
     },
     "item_winter_coco": {
-      "ID": "233",
+      "ID": "1014",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -5883,7 +5887,7 @@
       ]
     },
     "item_winter_ham": {
-      "ID": "234",
+      "ID": "1015",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -5910,7 +5914,7 @@
       ]
     },
     "item_winter_kringle": {
-      "ID": "236",
+      "ID": "1016",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
@@ -5937,7 +5941,7 @@
       ]
     },
     "item_winter_mushroom": {
-      "ID": "237",
+      "ID": "1017",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "AbilityCastRange": "150",
       "AbilityCastPoint": "0.0",
@@ -5957,7 +5961,7 @@
       ]
     },
     "item_winter_greevil_treat": {
-      "ID": "238",
+      "ID": "1018",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "AbilityCastRange": "150",
       "AbilityCastPoint": "0.0",
@@ -5979,7 +5983,7 @@
       ]
     },
     "item_winter_greevil_garbage": {
-      "ID": "239",
+      "ID": "1019",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "AbilityCastRange": "150",
       "AbilityCastPoint": "0.0",
@@ -6007,7 +6011,7 @@
       ]
     },
     "item_winter_greevil_chewy": {
-      "ID": "240",
+      "ID": "1020",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_ROOT_DISABLES | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
       "AbilityCastRange": "400",
       "AbilityCastPoint": "0.0",
