@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/items/magnataur/shock_of_the_anvil/shock_of_the_anvil_color"
+	"$normalmap" "models/items/magnataur/shock_of_the_anvil/shock_of_the_anvil_normal"
+	"$maskmap1" "models/items/magnataur/shock_of_the_anvil/shock_of_the_anvil_masks1"
+	"$maskmap2" "models/items/magnataur/shock_of_the_anvil/shock_of_the_anvil_masks2"
+
+
+	
+//	"$diffusewarp" "models/heroes/pudge/pudge_lightwarp"
+//	"$envmap" "env_cubemap"
+
+
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 10
+	$AMBIENTSCALE 1
+	$SPECULARCOLOR "[.5 1 2]"
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[1 4 5]"
+	$alphatest 1
+	
+
+
+	
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

@@ -574,6 +574,8 @@
 				{
 					"event"			"damage"
 					"attacker"		"!hero"
+					"attacker_team"		"!team"
+					"target_team"		"!enemyteam"
 					"target_must_be_hero" "1"
 					"storage"
 					{
@@ -716,7 +718,9 @@
 				{
 					"event"			"damage"
 					"attacker"		"!hero"
-					"target_must_be_hero" "1"
+					"attacker_team"		"!team"
+					"target_team"		"!enemyteam"
+					"target_must_be_hero" 	"1"
 					"storage"
 					{
 						"1"

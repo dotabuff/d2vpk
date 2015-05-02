@@ -1,0 +1,43 @@
+"CustomHero"
+{
+	"$basetexture" "models\items\huskar\searing_dominator\searing_dominator_color"
+	"$normalmap" "models\items\huskar\searing_dominator\searing_dominator_normal"
+//	"$normalmap" "models/development/flatnormal"
+  
+
+        "$maskmap1"  "models\items\huskar\searing_dominator\searing_dominator_masks1"
+        "$maskmap2"  "models\items\huskar\searing_dominator\searing_dominator_masks2"
+
+
+	
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+
+	"$alphatest" "1"
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 3
+	$RIMLIGHTSCALE 2
+	$specularcolor "[2 .8 .7]"
+	$RIMLIGHTCOLOR "[1 1 .75]"
+
+	
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/items/spirit_breaker/iron_surge/iron_surge_color"
+	"$normalmap" "models/items/spirit_breaker/iron_surge/iron_surge_normal"
+	"$maskmap1" "models/items/spirit_breaker/iron_surge/iron_surge_mask1"
+	"$maskmap2" "models/items/spirit_breaker/iron_surge/iron_surge_mask2"
+	$alphatest 1
+
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" 1
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 15
+	$SPECULARCOLOR "[.75 .8 1]"
+
+	$AMBIENTSCALE 0.3
+
+	$RIMLIGHTSCALE	1
+	$RIMLIGHTCOLOR "[.75 .75 1]"
+	$IgnoreBudgetCheck 1	
+
+	//$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
