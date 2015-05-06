@@ -1,0 +1,42 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/enigma/world_chasm/world_chasm_color"
+	"$normalmap"		"models/items/enigma/world_chasm/world_chasm_normal"
+	//"$diffusewarp"		"models/heroes/drow/diffusewarp"
+	"$maskmap1"		"models/items/enigma/world_chasm/world_chasm_masks1"
+	"$maskmap2"		"models/items/enigma/world_chasm/world_chasm_masks2"
+ 
+	$SPECULAR_BLOOM_SCALE      0
+	//$AMBIENTSCALE 1
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 15
+	//$SPECULARBLENDTOFULL .04
+	$SPECULARCOLOR "[2 1 .1]"
+
+	$RIMLIGHTSCALE 1
+	$RIMLIGHTCOLOR "[3 1 .1]"
+
+	$ENVMAP "models/courier/baby_winter_wyvern/cube_baby_winter_wyvern_gold"
+	//$ENVMAP "models/cubemaps/cube_metal_grey"
+	$ENVMAPINTENSITY 5
+	
+
+
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 0
+	
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

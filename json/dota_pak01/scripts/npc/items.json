@@ -1097,6 +1097,8 @@
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
       "MaxUpgradeLevel": "2",
       "ItemBaseLevel": "1",
+      "UpgradesItems": "item_travel_boots",
+      "UpgradeRecipe": "item_recipe_travel_boots",
       "AbilitySpecial": [
         {
           "bonus_movement_speed": 100
@@ -1667,25 +1669,25 @@
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
       "AbilitySpecial": [
         {
+          "bonus_all_stats": 2
+        },
+        {
           "hp_regen": 3
         },
         {
-          "bonus_all_stats": 2
+          "mana_regen_aura": 0.8
+        },
+        {
+          "armor_aura": 5
+        },
+        {
+          "damage_aura": 15
         },
         {
           "vampiric_aura": 15
         },
         {
           "vampiric_aura_ranged": 10
-        },
-        {
-          "damage_aura": 15
-        },
-        {
-          "armor_aura": 5
-        },
-        {
-          "mana_regen_aura": 0.8
         },
         {
           "aura_radius": 900

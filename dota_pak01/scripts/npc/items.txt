@@ -2178,6 +2178,10 @@
 		"MaxUpgradeLevel"				"2"
 		"ItemBaseLevel"					"1"
 		
+		"UpgradesItems"					"item_travel_boots"
+		"UpgradeRecipe"					"item_recipe_travel_boots"
+
+
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
@@ -3357,42 +3361,42 @@
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
-		{			
+		{
 			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"hp_regen"				"3"
-			}
-			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"bonus_all_stats"		"2"
 			}	
-			"03"
+			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"vampiric_aura"			"15"
+				"hp_regen"				"3"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"mana_regen_aura"		"0.8"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"vampiric_aura_ranged"			"10"
-			}	
+				"armor_aura"			"5"
+			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"damage_aura"			"15"
-			}
+			}			
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"armor_aura"			"5"
+				"vampiric_aura"			"15"
 			}
 			"07"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"mana_regen_aura"		"0.8"
-			}				
+				"var_type"				"FIELD_INTEGER"
+				"vampiric_aura_ranged"			"10"
+			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"

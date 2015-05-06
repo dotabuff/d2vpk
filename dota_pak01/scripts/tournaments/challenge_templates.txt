@@ -521,24 +521,19 @@
 			{
 				"place_ward"
 				{
-					"event"					"item"
-					"caster"				"!hero"
-					"item"					"item_ward_observer"
-					"cast_on_location"		"1"
+					"event"			"playerstats"
+					"playerid"		"!playerid"
 					"storage"
 					{
-						"1"
-						{
-							"aggregator"	"increment"
-						}
-					}	
+						"1"			"obs_wards_placed"
+					}
 				}
 			}
 
-			"clear_storage_per_query"	"0"
+			"clear_storage_per_query"	"1"
 			"post_tests"
 			{
-				"test_kill_count"
+				"test_wards_count"
 				{
 					"storage"		"1"
 					"compare"		">="

@@ -154,6 +154,18 @@
 	"soundentry_version" "2"
 	"operator_stacks"
 	{
+		"start_stack"
+		{
+			"speed_stop_entry"
+			{
+				"input_execute" "1"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "Hero_Enigma.BlackHole.Cast"
+			}
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -167,6 +179,14 @@
 			}
 		}
 	}
+}
+
+"Hero_Enigma.BlackHole.Cast"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"null.wav"
 }
 
 "Hero_Enigma.Death"
@@ -218,6 +238,37 @@
 			"volume_move_filter"
 			{
 				"input_max_velocity" "1.0"
+			}
+		}
+	}
+}
+
+//////////////////////////////////////////////////////////
+
+"Hero_Enigma.BlackHole.Cast.Chasm"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/enigma/black_hole_chasm.wav"
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Ultimates"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "1500"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
 			}
 		}
 	}

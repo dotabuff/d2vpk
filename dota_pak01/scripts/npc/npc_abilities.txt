@@ -22266,24 +22266,24 @@
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"350 350 350 350"
+				"var_type"				"FIELD_FLOAT"
+				"max_channel_time"		"2.0 3.0 4.0 5.0"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"range"					"1550"
+				"radius"				"350 350 350 350"
 			}
 			"04"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"speed"					"1050.0"
+				"var_type"				"FIELD_INTEGER"
+				"range"					"1550"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"max_channel_time"		"2.0 3.0 4.0 5.0"
-			}
+				"speed"					"1050.0"
+			}			
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
@@ -22643,24 +22643,24 @@
 			}
 			"02"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"radius"				"350 350 350 350"
+				"var_type"				"FIELD_FLOAT"
+				"max_channel_time"		"2.0 3.0 4.0 5.0"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"range"					"1550"
+				"radius"				"350 350 350 350"
 			}
 			"04"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"speed"					"1050.0"
+				"var_type"				"FIELD_INTEGER"
+				"range"					"1550"
 			}
 			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"max_channel_time"		"2.0 3.0 4.0 5.0"
-			}
+				"speed"					"1050.0"
+			}			
 			"06"
 			{
 				"var_type"				"FIELD_INTEGER"
@@ -29261,6 +29261,21 @@
 			{
 				"var_type"					"FIELD_INTEGER"
 				"movespeed"				"-25"
+			}
+			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"shard_health_tooltip"				"240"
+			}
+			"05"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"shard_damage_tooltip"				"9"
+			}
+			"06"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"shard_duration_tooltip"				"60"
 			}
 		}
 	}

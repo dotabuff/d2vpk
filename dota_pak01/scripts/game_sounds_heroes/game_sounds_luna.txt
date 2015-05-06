@@ -256,13 +256,28 @@
 	}
 }
 
-"Hero_Luna.Taunt.CatDance"
+"Hero_Luna.Taunt.Leap"
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_78dB"
 	"pitch"			"95, 105"
-	"wave"			")weapons\hero\luna\taunt_catdance.wav"
+	"wave"			"weapons\hero\luna\taunt_leap.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+"Hero_Luna.Taunt.Land"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			"weapons\hero\luna\taunt_land.wav"
 	"operator_stacks"
 	{
 		"start_stack"
