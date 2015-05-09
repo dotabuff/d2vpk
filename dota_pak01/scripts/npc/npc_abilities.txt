@@ -16557,7 +16557,7 @@
 			"01"
 			{
 				"var_type"					"FIELD_FLOAT"
-				"enrage_multiplier"			"2 2.5 3"
+				"enrage_multiplier"			"1.5 2 2.5"
 			}
 			"02"
 			{
@@ -20830,7 +20830,7 @@
 
 		// Cost
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"50 75 100 125"		
+		"AbilityManaCost"				"100 110 120 130"		
 		
 		// Cast Range
 		//-------------------------------------------------------------------------------------------------------------
@@ -21058,7 +21058,7 @@
 			"05"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"min_damage_amp"			"5 10 15"
+				"min_damage_amp"			"1"
 			}			
 			"06"
 			{
@@ -21068,7 +21068,7 @@
 			"07"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"min_speed_slow"				"5"
+				"min_speed_slow"				"1"
 			}
 			"08"
 			{
@@ -21088,7 +21088,7 @@
 			"11"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"min_damage_amp_scepter"	"15 20 25"
+				"min_damage_amp_scepter"	"1"
 			}
 			"12"
 			{
@@ -24253,12 +24253,12 @@
 			"08"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage_reduction"	"70"
+				"damage_reduction"	"60"
 			}
 			"09"
 			{
 				"var_type"			"FIELD_INTEGER"
-				"damage_reduction_tooltip_scepter"	"70"
+				"damage_reduction_tooltip_scepter"	"60"
 			}
 		}
 	}

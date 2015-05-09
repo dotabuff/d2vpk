@@ -3932,7 +3932,7 @@
     },
     "item_recipe_silver_edge": {
       "ID": "248",
-      "ItemCost": "350",
+      "ItemCost": "600",
       "ItemShopTags": "",
       "ItemRecipe": "1",
       "ItemResult": "item_silver_edge",
@@ -3947,7 +3947,7 @@
       "AbilityCooldown": "24.0",
       "AbilitySharedCooldown": "shadow_blade",
       "AbilityManaCost": "75",
-      "ItemCost": "5200",
+      "ItemCost": "5450",
       "ItemShopTags": "damage;attack_speed;movespeed;hard_to_tag",
       "ItemQuality": "epic",
       "ItemAliases": "sb;invis;shadow blade",
@@ -5384,7 +5384,7 @@
       "ItemAliases": "shadow amulet",
       "AbilitySpecial": [
         {
-          "bonus_attack_speed": 30
+          "bonus_attack_speed": 20
         },
         {
           "fade_time": 1.5
@@ -5417,7 +5417,7 @@
       "ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
       "AbilitySpecial": [
         {
-          "bonus_attack_speed": 30
+          "bonus_attack_speed": 20
         },
         {
           "bonus_magical_armor": 20
@@ -5426,7 +5426,7 @@
           "fade_delay": 0.4
         },
         {
-          "active_magical_armor": 66
+          "active_magical_armor": 55
         },
         {
           "duration": 5.0

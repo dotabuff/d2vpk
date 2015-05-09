@@ -11570,9 +11570,9 @@
       "AbilitySpecial": [
         {
           "enrage_multiplier": [
+            1.5,
             2.0,
-            2.5,
-            3.0
+            2.5
           ]
         },
         {
@@ -14659,7 +14659,7 @@
       "FightRecapLevel": "1",
       "AbilityCastPoint": "0.45 0.45 0.45 0.45",
       "AbilityCooldown": "24.0 18.0 12.0 6.0",
-      "AbilityManaCost": "50 75 100 125",
+      "AbilityManaCost": "100 110 120 130",
       "AbilityCastRange": "750",
       "AbilityModifierSupportValue": "0.0",
       "AbilitySpecial": [
@@ -14828,17 +14828,13 @@
           ]
         },
         {
-          "min_damage_amp": [
-            5,
-            10,
-            15
-          ]
+          "min_damage_amp": 1
         },
         {
           "max_speed_slow": 20
         },
         {
-          "min_speed_slow": 5
+          "min_speed_slow": 1
         },
         {
           "death_heal": 6
@@ -14854,11 +14850,7 @@
           ]
         },
         {
-          "min_damage_amp_scepter": [
-            15,
-            20,
-            25
-          ]
+          "min_damage_amp_scepter": 1
         },
         {
           "death_heal_scepter": 10
@@ -17033,10 +17025,10 @@
           ]
         },
         {
-          "damage_reduction": 70
+          "damage_reduction": 60
         },
         {
-          "damage_reduction_tooltip_scepter": 70
+          "damage_reduction_tooltip_scepter": 60
         }
       ]
     },
