@@ -1091,7 +1091,7 @@
 	}
 	"Chile"
 	{
-		// Argentina/Chile (eze-1.srcds.valve.net/scl-1.srcds.valve.net)
+		// Chile (scl-1.srcds.valve.net)
 		"region" "14"
 		"matchgroup" "14"
 		"latitude" "-33.6682982"
@@ -1101,8 +1101,8 @@
 		"alert_at_capacity"	"0"
 		"ip_range" 
 		{
-			"0" "181.119.0.192/26"
-			"1" "200.73.67.0/26"
+			"0" "200.73.65.42/32"
+			"1" "200.73.67.0/25"
 
 		}
 		"clusters"
