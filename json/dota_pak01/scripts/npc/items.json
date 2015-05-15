@@ -705,11 +705,12 @@
       "ItemCost": "150",
       "ItemShopTags": "consumable",
       "ItemQuality": "consumable",
-      "ItemAliases": "mango",
+      "ItemAliases": "enchanted mango",
       "ItemStackable": "0",
       "ItemPermanent": "0",
       "ItemInitialCharges": "1",
       "SideShop": "0",
+      "ItemHideCharges": "1",
       "AbilitySpecial": [
         {
           "hp_regen": 1.0
@@ -2535,7 +2536,7 @@
           ]
         },
         {
-          "summon_duration": 40.0
+          "summon_duration": 40
         },
         {
           "warrior_health_tooltip": [
@@ -2644,7 +2645,7 @@
           ]
         },
         {
-          "summon_duration": 40.0
+          "summon_duration": 40
         },
         {
           "warrior_health_tooltip": [
@@ -2751,7 +2752,7 @@
           ]
         },
         {
-          "summon_duration": 40.0
+          "summon_duration": 40
         },
         {
           "warrior_health_tooltip": [
@@ -3231,7 +3232,7 @@
       "ItemCost": "4050",
       "ItemShopTags": "regen_health;regen_mana;str;agi;int;hard_to_tag",
       "ItemQuality": "epic",
-      "ItemAliases": "ls;lotus",
+      "ItemAliases": "ls;lotus orb",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
       "ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
       "AbilitySpecial": [
@@ -3907,7 +3908,7 @@
       "ItemCost": "2800",
       "ItemShopTags": "damage;attack_speed;movespeed;hard_to_tag",
       "ItemQuality": "epic",
-      "ItemAliases": "sb;invis;shadow blade",
+      "ItemAliases": "sb;invis;shadow blade;silver edge",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
       "AbilitySpecial": [
         {
@@ -4746,7 +4747,7 @@
       "ItemCost": "5900",
       "ItemShopTags": "move_speed;boost_mana;mana_pool",
       "ItemQuality": "rare",
-      "ItemAliases": "mana;mb;core",
+      "ItemAliases": "mana;mb;octarine core",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_TO_SPECTATORS",
       "ItemDisassembleRule": "DOTA_ITEM_DISASSEMBLE_ALWAYS",
       "AbilitySpecial": [
@@ -5061,7 +5062,7 @@
       "ItemCost": "5300",
       "ItemShopTags": "int;armor;regen_health;hard_to_tag",
       "ItemQuality": "rare",
-      "ItemAliases": "guardian",
+      "ItemAliases": "guardian greaves",
       "ItemDeclarations": "DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS",
       "ItemAlertable": "1",
       "AbilitySpecial": [

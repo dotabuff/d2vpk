@@ -4668,7 +4668,7 @@
 
 "General.CompendiumLevelUpMinor"
 {
-	"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_ITEM"
 	"volume"		".4"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"ui\comp_lvl_up_minor.wav"
@@ -4676,8 +4676,8 @@
 
 "General.CompendiumLevelUp"
 {
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
+	"channel"		"CHAN_ITEM"
+	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"wave"			"ui\comp_lvl_up.wav"

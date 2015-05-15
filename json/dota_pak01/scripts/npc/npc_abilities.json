@@ -14636,13 +14636,13 @@
           ]
         },
         {
-          "radius": 325
+          "str_steal": 4
         },
         {
           "decay_duration": 40.0
         },
         {
-          "str_steal": 4
+          "radius": 325
         },
         {
           "str_scale_up": 2
@@ -14672,15 +14672,15 @@
           ]
         },
         {
-          "radius": 1300
-        },
-        {
           "max_units": [
             10,
             12,
             14,
             16
           ]
+        },
+        {
+          "radius": 1300
         }
       ]
     },
@@ -16000,9 +16000,6 @@
           "soul_charge_damage": 65
         },
         {
-          "damage_limit": 110
-        },
-        {
           "stack_limit": [
             3,
             4,
@@ -16012,6 +16009,9 @@
         },
         {
           "stack_duration": 6.0
+        },
+        {
+          "damage_limit": 110
         },
         {
           "radius": 1375
