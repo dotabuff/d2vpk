@@ -10,6 +10,7 @@ criterion "IsWarlockGolemLvl3" "creaturename" "npc_dota_warlock_golem_3" weight 
 criterion "IsWarlockScepterGolemLvl1" "creaturename" "npc_dota_warlock_golem_scepter_1" weight 5 required
 criterion "IsWarlockScepterGolemLvl2" "creaturename" "npc_dota_warlock_golem_scepter_2" weight 5 required
 criterion "IsWarlockScepterGolemLvl3" "creaturename" "npc_dota_warlock_golem_scepter_3" weight 5 required
+criterion "IsUseEnchantedMango" "abilityname" "item_enchanted_mango" weight 5 required
 
 Response warlock_Spawn
 {
@@ -179,6 +180,17 @@ Rule warlock_CastExecuteIsAbilityRainOfChaosHasScepterChance_30%_Rule
 {
 	criteria CastExecute Iswarlock IsAbilityRainOfChaos HasScepter Chance_30%
 	response warlock_CastExecuteIsAbilityRainOfChaosHasScepterChance_30%
+}
+
+Response warlock_CastExecuteIsUseEnchantedMangoIsEnemyWarlockChance_10%
+{
+	scene "scenes/warlock/warlock_warl_happy_02.vcd" nodelay noscene 
+}
+
+Rule warlock_CastExecuteIsUseEnchantedMangoIsEnemyWarlockChance_10%_Rule
+{
+	criteria CastExecute Iswarlock IsUseEnchantedMango IsEnemyWarlock Chance_10%
+	response warlock_CastExecuteIsUseEnchantedMangoIsEnemyWarlockChance_10%
 }
 
 Response warlock_LevelUp
