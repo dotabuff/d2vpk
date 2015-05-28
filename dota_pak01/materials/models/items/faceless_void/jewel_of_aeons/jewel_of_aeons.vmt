@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture" "models\items\faceless_void\jewel_of_aeons\jewel_of_aeons_color"
+	"$normalmap" "models\items\faceless_void\jewel_of_aeons\jewel_of_aeons_normal"
+	"$maskmap1" "models\items\faceless_void\jewel_of_aeons\jewel_of_aeons_masks1"
+	"$maskmap2" "models\items\faceless_void\jewel_of_aeons\jewel_of_aeons_masks2"
+
+	$SPECULAR_BLOOM_SCALE      0
+
+
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 5
+//	$SPECULARCOLOR "[1 .8 .8]"
+
+
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

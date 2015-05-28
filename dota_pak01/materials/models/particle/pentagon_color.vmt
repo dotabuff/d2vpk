@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	$baseTexture "models\particle\pentagon_color"
+	"$normalmap" "models\development\flatnormal"
+	"$maskmap1" "models\particle\pentagon_mask1"
+	"$maskmap2" "models\particle\pentagon_mask2"
+
+//	$SPECULAREXPONENT 20
+//	$SPECULARSCALE 40
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[.7 .7 .9]"
+	$SPECULAR_BLOOM_SCALE  .75
+	$SPECULAR_BLOOM_COLOR "[0.2 0 1]"
+
+
+	$RIMLIGHTSCALE 50
+	$rimlightcolor "[0.2 0 1]"
+
+	$AMBIENTSCALE 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

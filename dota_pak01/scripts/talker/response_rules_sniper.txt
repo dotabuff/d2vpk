@@ -274,6 +274,17 @@ Rule sniper_KillIsEnemyLinaChance_20%_Rule
 	response sniper_KillIsEnemyLinaChance_20%
 }
 
+Response sniper_KillIsEnemyJuggernautChance_20%
+{
+	scene "scenes/sniper/sniper_snip_kill_blade_01.vcd" nodelay noscene 
+}
+
+Rule sniper_KillIsEnemyJuggernautChance_20%_Rule
+{
+	criteria Kill Issniper IsEnemyJuggernaut Chance_20%
+	response sniper_KillIsEnemyJuggernautChance_20%
+}
+
 Response sniper_KillIsEnemyRikiChance_20%
 {
 	scene "scenes/sniper/sniper_snip_kill_blade_02.vcd" nodelay noscene 

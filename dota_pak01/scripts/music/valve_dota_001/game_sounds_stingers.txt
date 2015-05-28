@@ -41,7 +41,7 @@
 	}
 }
 
-"valve_dota_001.stinger.buy_back" //player buys back
+"valve_dota_001.stinger.buy_back" //other player buys back
 {
 	"channel"		"CHAN_AUTO"
 	"volume"		"0.8"
@@ -54,6 +54,27 @@
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+	}
+}
+
+"valve_dota_001.stinger.buy_back_player" //player buys back
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/valve_dota_001/stingers/buy_back.mp3"
+	"operator_stacks"
+	{		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger_stoptracks"
 			"mixer"
 			{
 				"mixgroup" "Stingers"

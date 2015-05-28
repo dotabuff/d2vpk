@@ -259,6 +259,18 @@
 	"wave"			")weapons/hero/disruptor/kinetic_field_end.wav"
 	"operator_stacks"
 	{
+		"start_stack"
+		{
+			"speed_stop_entry"
+			{
+				"input_execute" "1"	
+				"operator" "sys_stop_entries"
+				"input_max_entries" "0.000000"
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "Hero_Disruptor.KineticField"
+			}
+		}
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -393,6 +405,35 @@
 		"start_stack"
 		{
 			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+//////////////////////////////////////////////////////////////////
+
+"Hero_Disruptor.KineticField.Pinfold"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/disruptor/kinetic_field_pinfold.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
+			"volume_fade_out"
+			{
+				"input_max" "1.0"
+			}
 		}
 	}
 }

@@ -1,0 +1,52 @@
+"CustomHero"
+{
+	"$basetexture"		"models/items/antimage/skullbasher/skullbasher_color"
+	"$normalmap"		"models/items/antimage/skullbasher/skullbasher_normal"
+	"$maskmap1"		"models/items/antimage/skullbasher/skullbasher_masks1"
+	"$maskmap2"		"models/items/antimage/skullbasher/skullbasher_masks2"
+
+	//"$detail1"  		"models/items/antimage/skullbasher/skullbasher_detail"
+
+	"$alphatest" "1"
+	
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 7
+
+	$RIMLIGHTSCALE .5
+	$AMBIENTSCALE 1
+
+//	$DETAIL1BLENDMODE 1
+//	$DETAIL1SCALE 2
+
+//	$DETAIL1BLENDFACTOR 1 
+
+//	$ENVMAP "models/cubemaps/default_gray"
+//	$ENVMAPINTENSITY 11
+//	$ENVMAPBLENTOFULL 1
+
+	$ENVMAP "models\cubemaps\glossy_broad.vtf"
+	$ENVMAPINTENSITY 1
+	$MASKENVBYMETALNESS 1
+
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	 "0.4"
+			"texturescrollangle"	 "32"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

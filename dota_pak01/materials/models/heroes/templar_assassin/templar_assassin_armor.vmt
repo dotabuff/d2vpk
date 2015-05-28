@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	$baseTexture "models/heroes/templar_assassin/templar_assassin_armor_color"
+	"$normalmap" "models/heroes/templar_assassin/templar_assassin_armor_normal"
+
+	"$maskmap1" "models/heroes/templar_assassin/templar_assassin_armor_masks1"
+	"$maskmap2" "models/heroes/templar_assassin/templar_assassin_armor_masks2"
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$nocull" "1"
+	$alphatest 1
+
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 7
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+//	$RIMLIGHTCOLOR "[1 .5 1]"
+
+	$RIMLIGHTSCALE 2
+	$AMBIENTSCALE 1
+
+	$SPECULAR_BLOOM_SCALE 0
+
+	"$FRESNELWARP" "models/heroes/templar_assassin/templar_assassin_fresnelranges"
+
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

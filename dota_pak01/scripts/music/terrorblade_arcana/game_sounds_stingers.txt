@@ -61,7 +61,7 @@
 		
 		"start_stack"
 		{
-			"import_stack" "dota_start_buy_back_music"
+			"import_stack" "dota_start_buyback_music"
 		}
 		"update_stack"
 		{
@@ -73,5 +73,26 @@
 			"import_stack" "dota_stop_buy_back_music"
 		}
 	}
-}		
+}	
+
+"terrorblade_arcana.stinger.buy_back_player" //player buys back
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.8"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/terrorblade_arcana/stingers/buy_back.mp3"
+	"operator_stacks"
+	{		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger_stoptracks"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+	}
+}	
 		

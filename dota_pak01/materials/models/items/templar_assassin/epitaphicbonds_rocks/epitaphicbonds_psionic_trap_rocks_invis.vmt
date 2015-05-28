@@ -1,0 +1,20 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/lanaya/epitaphicbonds_rocks/epitaphicbonds_psionic_trap_rocks"
+	"$specTexture" "models/items/lanaya/epitaphicbonds_rocks/epitaphicbonds_psionic_trap_rocks_spec"
+	"$normalmap" "models/items/lanaya/epitaphicbonds_rocks/epitaphicbonds_psionic_trap_rocks_normal"
+
+	"$maskmap1" "models/heroes/lanaya/lanaya_mask1"
+	"$maskmap2" "models/heroes/lanaya/lanaya_mask2"
+	$translucent 1
+	
+		$CLOAKFACTOR 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,170 @@
+
+
+"yaskar_01.stinger.respawn"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"#music/yaskar_01/stingers/respawn.mp3"
+
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.397"
+				"track_name" "main"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			"import_stack" "dota_start_respawn_music"
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger_stoptracks"
+		}
+		
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_respawn_music"			
+		}
+	}
+}
+
+"yaskar_01.stinger.radiant_win"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/yaskar_01/stingers/radiant_win.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_win_music"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger"
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_win_music"
+		}
+	}
+}
+
+"yaskar_01.stinger.dire_win"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/yaskar_01/stingers/dire_win.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_win_music"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger"
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_win_music"
+		}
+	}
+}
+
+"yaskar_01.stinger.dire_lose"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/yaskar_01/stingers/dire_lose.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_lose_music"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger"
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_lose_music"
+		}
+	}
+}
+
+"yaskar_01.stinger.radiant_lose"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.6"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/yaskar_01/stingers/radiant_lose.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_lose_music"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger"
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_lose_music"
+		}
+	}
+}
+
+"yaskar_01.stinger.store_preview"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+	"wave"			"#music/yaskar_01/stingers/store_preview.mp3"
+	"operator_stacks"
+	{		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Stingers"
+			}
+		}
+	}
+}

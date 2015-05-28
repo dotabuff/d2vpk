@@ -1,0 +1,33 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/leshrac/tormented_staff/tormented_staff_color"
+	"$normalmap"		"models/items/leshrac/tormented_staff/tormented_staff_normal"
+	"$maskmap1"		"models/items/leshrac/tormented_staff/tormented_staff_masks1"
+	"$maskmap2"		"models/items/leshrac/tormented_staff/tormented_staff_masks2"
+//	"$specularwarp"	"models/items/leshrac/tormented_staff/tormented_staff_specwarp"
+//	"$maskenvbymetalness" 1
+	"$ENVMAP" "models\heroes\techies\techies_metal"
+	"$ENVMAPINTENSITY" 1
+	
+	"$SPECULAREXPONENT"		"10"
+	"$SPECULARSCALE"		"5"
+	"$SPECULARCOLOR"		"[.5 .9 2]"
+	"$RIMLIGHTCOLOR"		"1 1 1"
+	"$RIMLIGHTSCALE"		"1"
+	"$AMBIENTSCALE"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAR_BLOOM_COLOR"		"[0 0 .6]"
+	"$SPECULAR_BLOOM_SHIFT"		"1"
+	"$ALPHATEST"		"1"
+	
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -386,6 +386,8 @@
 	}
 }
 
+///////////////////////////////////////////////////////////////////////////
+
 "Hero_Sven.IronWill"
 {
 	"channel"		"CHAN_WEAPON"
@@ -423,6 +425,61 @@
 			"speakers_spatialize"
 			{
 				"input_radius"  "150"
+			}
+		}
+	}
+}
+
+"Hero_Sven.WarCry.Signet"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			")weapons/hero/sven/warcry.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Sven.SignetLayer"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "900"
+			}
+		}
+	}
+}
+"Hero_Sven.SignetLayer"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/sven/warcry_signet.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
 			}
 		}
 	}

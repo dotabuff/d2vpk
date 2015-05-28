@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$basetexture"		"models/items/antimage/skullbasher/skullbasher_gold_color"
+	"$normalmap"		"models/items/antimage/skullbasher/skullbasher_normal"
+	"$maskmap1"		"models/items/antimage/skullbasher/skullbasher_gold_masks1"
+	"$maskmap2"		"models/items/antimage/skullbasher/skullbasher_gold_masks2"
+	
+	
+	$SPECULAREXPONENT 15
+	$SPECULARSCALE 15
+	$SPECULARCOLOR "[2 1 .1]"
+
+	$RIMLIGHTSCALE 1
+
+	$ENVMAP "models/cubemaps/cube_metal_grey"
+	$ENVMAPINTENSITY 5
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
