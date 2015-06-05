@@ -694,32 +694,6 @@ Rule invoker_Deny_Rule
 	response invoker_Deny
 }
 
-Response invoker_Defeat
-{
-	scene "scenes/invoker/invoker_invo_lose_01.vcd" nodelay noscene 
-	scene "scenes/invoker/invoker_invo_lose_02.vcd" nodelay noscene 
-	scene "scenes/invoker/invoker_invo_lose_03.vcd" nodelay noscene 
-}
-
-Rule invoker_Defeat_Rule
-{
-	criteria Defeat Isinvoker 
-	response invoker_Defeat
-}
-
-Response invoker_Victory
-{
-	scene "scenes/invoker/invoker_invo_win_01.vcd" nodelay noscene 
-	scene "scenes/invoker/invoker_invo_win_02.vcd" nodelay noscene 
-	scene "scenes/invoker/invoker_invo_win_03.vcd" nodelay noscene 
-}
-
-Rule invoker_Victory_Rule
-{
-	criteria Victory Isinvoker 
-	response invoker_Victory
-}
-
 Response invoker_Immortality
 {
 	scene "scenes/invoker/invoker_invo_immort_01.vcd" nodelay noscene 
@@ -752,17 +726,6 @@ Rule invoker_PowerupIsPowerupHasteChance_10%_Rule
 {
 	criteria Powerup Isinvoker IsPowerupHaste Chance_10%
 	response invoker_PowerupIsPowerupHasteChance_10%
-}
-
-Response invoker_PowerupIsPowerupBounty
-{
-	scene "scenes/invoker/invoker_invo_lasthit_07.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule invoker_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Isinvoker IsPowerupBounty
-	response invoker_PowerupIsPowerupBounty
 }
 
 Response invoker_PowerupIsPowerupDoubleDamage
@@ -830,6 +793,17 @@ Rule invoker_PowerupIsPowerupInvisibilityChance_5%_Rule
 {
 	criteria Powerup Isinvoker IsPowerupInvisibility Chance_5%
 	response invoker_PowerupIsPowerupInvisibilityChance_5%
+}
+
+Response invoker_PowerupIsPowerupBounty
+{
+	scene "scenes/invoker/invoker_invo_lasthit_07.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule invoker_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isinvoker IsPowerupBounty
+	response invoker_PowerupIsPowerupBounty
 }
 
 Response invoker_CooldownLittleNag
@@ -975,6 +949,32 @@ Rule invoker_InTheBag_Rule
 {
 	criteria InTheBag Isinvoker 
 	response invoker_InTheBag
+}
+
+Response invoker_Defeat
+{
+	scene "scenes/invoker/invoker_invo_lose_01.vcd" nodelay noscene 
+	scene "scenes/invoker/invoker_invo_lose_02.vcd" nodelay noscene 
+	scene "scenes/invoker/invoker_invo_lose_03.vcd" nodelay noscene 
+}
+
+Rule invoker_Defeat_Rule
+{
+	criteria Defeat Isinvoker 
+	response invoker_Defeat
+}
+
+Response invoker_Victory
+{
+	scene "scenes/invoker/invoker_invo_win_01.vcd" nodelay noscene 
+	scene "scenes/invoker/invoker_invo_win_02.vcd" nodelay noscene 
+	scene "scenes/invoker/invoker_invo_win_03.vcd" nodelay noscene 
+}
+
+Rule invoker_Victory_Rule
+{
+	criteria Victory Isinvoker 
+	response invoker_Victory
 }
 
 Response invoker_ItemDropIsUltraRareDrop

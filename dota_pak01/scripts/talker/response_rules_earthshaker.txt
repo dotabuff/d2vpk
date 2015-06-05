@@ -22,61 +22,10 @@ Rule earthshaker_Spawn_Rule
 	response earthshaker_Spawn
 }
 
-Response earthshaker_Move
-{
-	scene "scenes/earthshaker/earthshaker_erth_move_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_07.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_09.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_10.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_11.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_12.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_13.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_14.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_15.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_16.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_move_17.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_acknow_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_acknow_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_acknow_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_acknow_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_acknow_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_acknow_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_acknow_07.vcd" nodelay noscene 
-}
-
-Rule earthshaker_Move_Rule
-{
-	criteria Move Isearthshaker 
-	response earthshaker_Move
-}
-
-Response earthshaker_Attack
-{
-	scene "scenes/earthshaker/earthshaker_erth_attack_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_attack_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_attack_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_attack_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_attack_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_attack_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_attack_07.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_attack_08.vcd" nodelay noscene 
-}
-
-Rule earthshaker_Attack_Rule
-{
-	criteria Attack Isearthshaker 
-	response earthshaker_Attack
-}
-
 Response earthshaker_CustomIsGameStart
 {
-	scene "scenes/earthshaker/earthshaker_erth_cast_01.vcd" nodelay noscene 
 	scene "scenes/earthshaker/earthshaker_erth_battlebegins_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_cast_01.vcd" nodelay noscene 
 }
 
 Rule earthshaker_CustomIsGameStart_Rule
@@ -122,81 +71,15 @@ Rule earthshaker_CustomIsFailEchoSlam_Rule
 	response earthshaker_CustomIsFailEchoSlam
 }
 
-Response earthshaker_CastOrder
+Response earthshaker_KillIsFirstBlood
 {
-	scene "scenes/earthshaker/earthshaker_erth_cast_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_cast_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_cast_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_cast_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_firstblood_01.vcd" nodelay noscene 
 }
 
-Rule earthshaker_CastOrder_Rule
+Rule earthshaker_KillIsFirstBlood_Rule
 {
-	criteria CastOrder Isearthshaker 
-	response earthshaker_CastOrder
-}
-
-Response earthshaker_CastExecuteIsFissure
-{
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_07.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_08.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_09.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_10.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_11.vcd" nodelay noscene 
-}
-
-Rule earthshaker_CastExecuteIsFissure_Rule
-{
-	criteria CastExecute Isearthshaker IsFissure
-	response earthshaker_CastExecuteIsFissure
-}
-
-Response earthshaker_CastExecuteIsEnchantTotemChance_25%
-{
-	scene "scenes/earthshaker/earthshaker_erth_ability_enchant_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_ability_enchant_02.vcd" nodelay noscene 
-}
-
-Rule earthshaker_CastExecuteIsEnchantTotemChance_25%_Rule
-{
-	criteria CastExecute Isearthshaker IsEnchantTotem Chance_25%
-	response earthshaker_CastExecuteIsEnchantTotemChance_25%
-}
-
-Response earthshaker_Death
-{
-	scene "scenes/earthshaker/earthshaker_erth_death_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_death_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_death_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_death_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_death_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_death_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_death_07.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_death_08.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_death_09.vcd" nodelay noscene 
-}
-
-Rule earthshaker_Death_Rule
-{
-	criteria Death Isearthshaker 
-	response earthshaker_Death
-}
-
-Response earthshaker_DeathIsReincarnating
-{
-	scene "scenes/earthshaker/earthshaker_erth_laugh_08.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_fastres_01.vcd" nodelay noscene 
-}
-
-Rule earthshaker_DeathIsReincarnating_Rule
-{
-	criteria Death Isearthshaker IsReincarnating
-	response earthshaker_DeathIsReincarnating
+	criteria Kill Isearthshaker IsFirstBlood
+	response earthshaker_KillIsFirstBlood
 }
 
 Response earthshaker_Kill
@@ -372,15 +255,152 @@ Rule earthshaker_KillIsEnemyDark_SeerChance_50%_Rule
 	response earthshaker_KillIsEnemyDark_SeerChance_50%
 }
 
-Response earthshaker_KillIsFirstBlood
+Response earthshaker_Move
 {
-	scene "scenes/earthshaker/earthshaker_erth_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_07.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_09.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_10.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_11.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_12.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_13.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_14.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_15.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_16.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_move_17.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_acknow_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_acknow_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_acknow_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_acknow_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_acknow_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_acknow_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_acknow_07.vcd" nodelay noscene 
 }
 
-Rule earthshaker_KillIsFirstBlood_Rule
+Rule earthshaker_Move_Rule
 {
-	criteria Kill Isearthshaker IsFirstBlood
-	response earthshaker_KillIsFirstBlood
+	criteria Move Isearthshaker 
+	response earthshaker_Move
+}
+
+Response earthshaker_Attack
+{
+	scene "scenes/earthshaker/earthshaker_erth_attack_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_attack_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_attack_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_attack_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_attack_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_attack_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_attack_07.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_attack_08.vcd" nodelay noscene 
+}
+
+Rule earthshaker_Attack_Rule
+{
+	criteria Attack Isearthshaker 
+	response earthshaker_Attack
+}
+
+Response earthshaker_CastOrder
+{
+	scene "scenes/earthshaker/earthshaker_erth_cast_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_cast_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_cast_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_cast_05.vcd" nodelay noscene 
+}
+
+Rule earthshaker_CastOrder_Rule
+{
+	criteria CastOrder Isearthshaker 
+	response earthshaker_CastOrder
+}
+
+Response earthshaker_CastExecuteIsFissure
+{
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_07.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_08.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_09.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_10.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_fissure_11.vcd" nodelay noscene 
+}
+
+Rule earthshaker_CastExecuteIsFissure_Rule
+{
+	criteria CastExecute Isearthshaker IsFissure
+	response earthshaker_CastExecuteIsFissure
+}
+
+Response earthshaker_CastExecuteIsEnchantTotemChance_25%
+{
+	scene "scenes/earthshaker/earthshaker_erth_ability_enchant_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_ability_enchant_02.vcd" nodelay noscene 
+}
+
+Rule earthshaker_CastExecuteIsEnchantTotemChance_25%_Rule
+{
+	criteria CastExecute Isearthshaker IsEnchantTotem Chance_25%
+	response earthshaker_CastExecuteIsEnchantTotemChance_25%
+}
+
+Response earthshaker_LevelUp
+{
+	scene "scenes/earthshaker/earthshaker_erth_level_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_level_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_level_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_level_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_level_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_level_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_level_07.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_level_08.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_level_09.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_invis_02.vcd" nodelay noscene 
+}
+
+Rule earthshaker_LevelUp_Rule
+{
+	criteria LevelUp Isearthshaker 
+	response earthshaker_LevelUp
+}
+
+Response earthshaker_Death
+{
+	scene "scenes/earthshaker/earthshaker_erth_death_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_death_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_death_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_death_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_death_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_death_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_death_07.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_death_08.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_death_09.vcd" nodelay noscene 
+}
+
+Rule earthshaker_Death_Rule
+{
+	criteria Death Isearthshaker 
+	response earthshaker_Death
+}
+
+Response earthshaker_DeathIsReincarnating
+{
+	scene "scenes/earthshaker/earthshaker_erth_fastres_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_laugh_08.vcd" nodelay noscene 
+}
+
+Rule earthshaker_DeathIsReincarnating_Rule
+{
+	criteria Death Isearthshaker IsReincarnating
+	response earthshaker_DeathIsReincarnating
 }
 
 Response earthshaker_Respawn
@@ -400,6 +420,38 @@ Rule earthshaker_Respawn_Rule
 {
 	criteria Respawn Isearthshaker 
 	response earthshaker_Respawn
+}
+
+Response earthshaker_LastHit
+{
+	scene "scenes/earthshaker/earthshaker_erth_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lasthit_07.vcd" nodelay noscene 
+}
+
+Rule earthshaker_LastHit_Rule
+{
+	criteria LastHit Isearthshaker 
+	response earthshaker_LastHit
+}
+
+Response earthshaker_Deny
+{
+	scene "scenes/earthshaker/earthshaker_erth_deny_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_deny_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_deny_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_deny_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_deny_05.vcd" nodelay noscene 
+}
+
+Rule earthshaker_Deny_Rule
+{
+	criteria Deny Isearthshaker 
+	response earthshaker_Deny
 }
 
 Response earthshaker_Select
@@ -427,6 +479,18 @@ Rule earthshaker_PurchaseIsExpensiveItem_Rule
 {
 	criteria Purchase Isearthshaker IsExpensiveItem
 	response earthshaker_PurchaseIsExpensiveItem
+}
+
+Response earthshaker_PurchaseIsUltimateScepter
+{
+	scene "scenes/earthshaker/earthshaker_erth_scepter_01.vcd" nodelay noscene speakonce
+	scene "scenes/earthshaker/earthshaker_erth_scepter_02.vcd" nodelay noscene speakonce
+}
+
+Rule earthshaker_PurchaseIsUltimateScepter_Rule
+{
+	criteria Purchase Isearthshaker IsUltimateScepter
+	response earthshaker_PurchaseIsUltimateScepter
 }
 
 Response earthshaker_PurchaseIsBlinkDagger
@@ -507,40 +571,6 @@ Rule earthshaker_PurchaseIsSphere_Rule
 	response earthshaker_PurchaseIsSphere
 }
 
-Response earthshaker_PurchaseIsUltimateScepter
-{
-	scene "scenes/earthshaker/earthshaker_erth_scepter_01.vcd" nodelay noscene speakonce
-	scene "scenes/earthshaker/earthshaker_erth_scepter_02.vcd" nodelay noscene speakonce
-}
-
-Rule earthshaker_PurchaseIsUltimateScepter_Rule
-{
-	criteria Purchase Isearthshaker IsUltimateScepter
-	response earthshaker_PurchaseIsUltimateScepter
-}
-
-Response earthshaker_Immortality
-{
-	scene "scenes/earthshaker/earthshaker_erth_immort_01.vcd" nodelay noscene 
-}
-
-Rule earthshaker_Immortality_Rule
-{
-	criteria Immortality Isearthshaker 
-	response earthshaker_Immortality
-}
-
-Response earthshaker_ImmortalityChance_25%
-{
-	scene "scenes/earthshaker/earthshaker_erth_immort_02.vcd" nodelay noscene 
-}
-
-Rule earthshaker_ImmortalityChance_25%_Rule
-{
-	criteria Immortality Isearthshaker Chance_25%
-	response earthshaker_ImmortalityChance_25%
-}
-
 Response earthshaker_MissingIsLaneTop
 {
 	scene "scenes/earthshaker/earthshaker_erth_lane_missing_01.vcd" nodelay noscene 
@@ -574,115 +604,26 @@ Rule earthshaker_MissingIsLaneBot_Rule
 	response earthshaker_MissingIsLaneBot
 }
 
-Response earthshaker_Deny
+Response earthshaker_Immortality
 {
-	scene "scenes/earthshaker/earthshaker_erth_deny_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_deny_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_deny_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_deny_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_deny_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_immort_01.vcd" nodelay noscene 
 }
 
-Rule earthshaker_Deny_Rule
+Rule earthshaker_Immortality_Rule
 {
-	criteria Deny Isearthshaker 
-	response earthshaker_Deny
+	criteria Immortality Isearthshaker 
+	response earthshaker_Immortality
 }
 
-Response earthshaker_LastHit
+Response earthshaker_ImmortalityChance_25%
 {
-	scene "scenes/earthshaker/earthshaker_erth_lasthit_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lasthit_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_purch_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lasthit_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lasthit_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lasthit_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_immort_02.vcd" nodelay noscene 
 }
 
-Rule earthshaker_LastHit_Rule
+Rule earthshaker_ImmortalityChance_25%_Rule
 {
-	criteria LastHit Isearthshaker 
-	response earthshaker_LastHit
-}
-
-Response earthshaker_Defeat
-{
-	scene "scenes/earthshaker/earthshaker_erth_lose_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lose_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lose_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lose_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lose_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lose_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_lose_07.vcd" nodelay noscene 
-}
-
-Rule earthshaker_Defeat_Rule
-{
-	criteria Defeat Isearthshaker 
-	response earthshaker_Defeat
-}
-
-Response earthshaker_ItemDropIsUltraRareDrop
-{
-	scene "scenes/earthshaker/earthshaker_erth_win_01.vcd" nodelay noscene 
-}
-
-Rule earthshaker_ItemDropIsUltraRareDrop_Rule
-{
-	criteria ItemDrop Isearthshaker IsUltraRareDrop
-	response earthshaker_ItemDropIsUltraRareDrop
-}
-
-Response earthshaker_ItemDropIsRareDrop
-{
-	scene "scenes/earthshaker/earthshaker_erth_happy_01.vcd" nodelay noscene 
-}
-
-Rule earthshaker_ItemDropIsRareDrop_Rule
-{
-	criteria ItemDrop Isearthshaker IsRareDrop
-	response earthshaker_ItemDropIsRareDrop
-}
-
-Response earthshaker_ItemDropIsCommonDrop
-{
-	scene "scenes/earthshaker/earthshaker_erth_happy_02.vcd" nodelay noscene 
-}
-
-Rule earthshaker_ItemDropIsCommonDrop_Rule
-{
-	criteria ItemDrop Isearthshaker IsCommonDrop
-	response earthshaker_ItemDropIsCommonDrop
-}
-
-Response earthshaker_Victory
-{
-	scene "scenes/earthshaker/earthshaker_erth_win_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_win_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_win_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_win_06.vcd" nodelay noscene 
-}
-
-Rule earthshaker_Victory_Rule
-{
-	criteria Victory Isearthshaker 
-	response earthshaker_Victory
-}
-
-Response earthshaker_Bottling
-{
-	scene "scenes/earthshaker/earthshaker_erth_bottle_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_bottle_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_bottle_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_bottle_04.vcd" nodelay noscene 
-}
-
-Rule earthshaker_Bottling_Rule
-{
-	criteria Bottling Isearthshaker 
-	response earthshaker_Bottling
+	criteria Immortality Isearthshaker Chance_25%
+	response earthshaker_ImmortalityChance_25%
 }
 
 Response earthshaker_PowerupIsPowerupHaste
@@ -694,17 +635,6 @@ Rule earthshaker_PowerupIsPowerupHaste_Rule
 {
 	criteria Powerup Isearthshaker IsPowerupHaste
 	response earthshaker_PowerupIsPowerupHaste
-}
-
-Response earthshaker_PowerupIsPowerupBounty
-{
-	scene "scenes/earthshaker/earthshaker_erth_win_04.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule earthshaker_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Isearthshaker IsPowerupBounty
-	response earthshaker_PowerupIsPowerupBounty
 }
 
 Response earthshaker_PowerupIsPowerupDoubleDamage
@@ -786,55 +716,29 @@ Rule earthshaker_PowerupIsPowerupInvisibility_Rule
 	response earthshaker_PowerupIsPowerupInvisibility
 }
 
-Response earthshaker_LevelUp
+Response earthshaker_PowerupIsPowerupBounty
 {
-	scene "scenes/earthshaker/earthshaker_erth_invis_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_07.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_08.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_level_09.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_win_04.vcd" nodelay noscene respeakdelay 300
 }
 
-Rule earthshaker_LevelUp_Rule
+Rule earthshaker_PowerupIsPowerupBounty_Rule
 {
-	criteria LevelUp Isearthshaker 
-	response earthshaker_LevelUp
+	criteria Powerup Isearthshaker IsPowerupBounty
+	response earthshaker_PowerupIsPowerupBounty
 }
 
-Response earthshaker_Pain
+Response earthshaker_Bottling
 {
-	scene "scenes/earthshaker/earthshaker_erth_pain_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_03.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_04.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_05.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_06.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_07.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_08.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_09.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_pain_10.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_bottle_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_bottle_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_bottle_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_bottle_04.vcd" nodelay noscene 
 }
 
-Rule earthshaker_Pain_Rule
+Rule earthshaker_Bottling_Rule
 {
-	criteria Pain Isearthshaker 
-	response earthshaker_Pain
-}
-
-Response earthshaker_PainChance_25%
-{
-	scene "scenes/earthshaker/earthshaker_erth_underattack_01.vcd" nodelay noscene respeakdelay 120
-}
-
-Rule earthshaker_PainChance_25%_Rule
-{
-	criteria Pain Isearthshaker Chance_25%
-	response earthshaker_PainChance_25%
+	criteria Bottling Isearthshaker 
+	response earthshaker_Bottling
 }
 
 Response earthshaker_CooldownSuperNag
@@ -909,6 +813,50 @@ Rule earthshaker_NoManaSuperNag_Rule
 	response earthshaker_NoManaSuperNag
 }
 
+Response earthshaker_PainChance_25%
+{
+	scene "scenes/earthshaker/earthshaker_erth_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule earthshaker_PainChance_25%_Rule
+{
+	criteria Pain Isearthshaker Chance_25%
+	response earthshaker_PainChance_25%
+}
+
+Response earthshaker_Pain
+{
+	scene "scenes/earthshaker/earthshaker_erth_pain_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_07.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_08.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_09.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_pain_10.vcd" nodelay noscene 
+}
+
+Rule earthshaker_Pain_Rule
+{
+	criteria Pain Isearthshaker 
+	response earthshaker_Pain
+}
+
+Response earthshaker_Thanks
+{
+	scene "scenes/earthshaker/earthshaker_erth_thanks_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_thanks_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_thanks_03.vcd" nodelay noscene 
+}
+
+Rule earthshaker_Thanks_Rule
+{
+	criteria Thanks Isearthshaker 
+	response earthshaker_Thanks
+}
+
 Response earthshaker_InTheBag
 {
 	scene "scenes/earthshaker/earthshaker_erth_inthebag_01.vcd" nodelay noscene 
@@ -920,6 +868,70 @@ Rule earthshaker_InTheBag_Rule
 {
 	criteria InTheBag Isearthshaker 
 	response earthshaker_InTheBag
+}
+
+Response earthshaker_Defeat
+{
+	scene "scenes/earthshaker/earthshaker_erth_lose_01.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lose_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lose_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lose_04.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lose_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lose_06.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_lose_07.vcd" nodelay noscene 
+}
+
+Rule earthshaker_Defeat_Rule
+{
+	criteria Defeat Isearthshaker 
+	response earthshaker_Defeat
+}
+
+Response earthshaker_ItemDropIsUltraRareDrop
+{
+	scene "scenes/earthshaker/earthshaker_erth_win_01.vcd" nodelay noscene 
+}
+
+Rule earthshaker_ItemDropIsUltraRareDrop_Rule
+{
+	criteria ItemDrop Isearthshaker IsUltraRareDrop
+	response earthshaker_ItemDropIsUltraRareDrop
+}
+
+Response earthshaker_ItemDropIsRareDrop
+{
+	scene "scenes/earthshaker/earthshaker_erth_happy_01.vcd" nodelay noscene 
+}
+
+Rule earthshaker_ItemDropIsRareDrop_Rule
+{
+	criteria ItemDrop Isearthshaker IsRareDrop
+	response earthshaker_ItemDropIsRareDrop
+}
+
+Response earthshaker_ItemDropIsCommonDrop
+{
+	scene "scenes/earthshaker/earthshaker_erth_happy_02.vcd" nodelay noscene 
+}
+
+Rule earthshaker_ItemDropIsCommonDrop_Rule
+{
+	criteria ItemDrop Isearthshaker IsCommonDrop
+	response earthshaker_ItemDropIsCommonDrop
+}
+
+Response earthshaker_Victory
+{
+	scene "scenes/earthshaker/earthshaker_erth_win_02.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_win_03.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_win_05.vcd" nodelay noscene 
+	scene "scenes/earthshaker/earthshaker_erth_win_06.vcd" nodelay noscene 
+}
+
+Rule earthshaker_Victory_Rule
+{
+	criteria Victory Isearthshaker 
+	response earthshaker_Victory
 }
 
 Response earthshaker_EmoteIsEmoteLaugh
@@ -940,18 +952,5 @@ Rule earthshaker_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isearthshaker IsEmoteLaugh
 	response earthshaker_EmoteIsEmoteLaugh
-}
-
-Response earthshaker_Thanks
-{
-	scene "scenes/earthshaker/earthshaker_erth_thanks_01.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_thanks_02.vcd" nodelay noscene 
-	scene "scenes/earthshaker/earthshaker_erth_thanks_03.vcd" nodelay noscene 
-}
-
-Rule earthshaker_Thanks_Rule
-{
-	criteria Thanks Isearthshaker 
-	response earthshaker_Thanks
 }
 

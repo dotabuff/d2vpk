@@ -693,32 +693,6 @@ Rule ogre_magi_Deny_Rule
 	response ogre_magi_Deny
 }
 
-Response ogre_magi_Defeat
-{
-	scene "scenes/ogre_magi/ogre_magi_ogmag_lose_01.vcd" nodelay noscene 
-	scene "scenes/ogre_magi/ogre_magi_ogmag_lose_02.vcd" nodelay noscene 
-	scene "scenes/ogre_magi/ogre_magi_ogmag_lose_03.vcd" nodelay noscene 
-}
-
-Rule ogre_magi_Defeat_Rule
-{
-	criteria Defeat Isogre_magi 
-	response ogre_magi_Defeat
-}
-
-Response ogre_magi_Victory
-{
-	scene "scenes/ogre_magi/ogre_magi_ogmag_win_01.vcd" nodelay noscene 
-	scene "scenes/ogre_magi/ogre_magi_ogmag_win_02.vcd" nodelay noscene 
-	scene "scenes/ogre_magi/ogre_magi_ogmag_win_03.vcd" nodelay noscene 
-}
-
-Rule ogre_magi_Victory_Rule
-{
-	criteria Victory Isogre_magi 
-	response ogre_magi_Victory
-}
-
 Response ogre_magi_Immortality
 {
 	scene "scenes/ogre_magi/ogre_magi_ogmag_immort_01.vcd" nodelay noscene 
@@ -807,17 +781,6 @@ Rule ogre_magi_PowerupIsPowerupRegenerationChance_25%_Rule
 	response ogre_magi_PowerupIsPowerupRegenerationChance_25%
 }
 
-Response ogre_magi_PowerupIsPowerupBounty
-{
-	scene "scenes/ogre_magi/ogre_magi_ogmag_lasthit_01.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule ogre_magi_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Isogre_magi IsPowerupBounty
-	response ogre_magi_PowerupIsPowerupBounty
-}
-
 Response ogre_magi_PowerupIsPowerupIllusion
 {
 	scene "scenes/ogre_magi/ogre_magi_ogmag_illus_01.vcd" nodelay noscene 
@@ -862,6 +825,17 @@ Rule ogre_magi_PowerupIsPowerupInvisibilityChance_25%_Rule
 {
 	criteria Powerup Isogre_magi IsPowerupInvisibility Chance_25%
 	response ogre_magi_PowerupIsPowerupInvisibilityChance_25%
+}
+
+Response ogre_magi_PowerupIsPowerupBounty
+{
+	scene "scenes/ogre_magi/ogre_magi_ogmag_lasthit_01.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule ogre_magi_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isogre_magi IsPowerupBounty
+	response ogre_magi_PowerupIsPowerupBounty
 }
 
 Response ogre_magi_CooldownLittleNag
@@ -993,6 +967,32 @@ Rule ogre_magi_InTheBag_Rule
 {
 	criteria InTheBag Isogre_magi 
 	response ogre_magi_InTheBag
+}
+
+Response ogre_magi_Defeat
+{
+	scene "scenes/ogre_magi/ogre_magi_ogmag_lose_01.vcd" nodelay noscene 
+	scene "scenes/ogre_magi/ogre_magi_ogmag_lose_02.vcd" nodelay noscene 
+	scene "scenes/ogre_magi/ogre_magi_ogmag_lose_03.vcd" nodelay noscene 
+}
+
+Rule ogre_magi_Defeat_Rule
+{
+	criteria Defeat Isogre_magi 
+	response ogre_magi_Defeat
+}
+
+Response ogre_magi_Victory
+{
+	scene "scenes/ogre_magi/ogre_magi_ogmag_win_01.vcd" nodelay noscene 
+	scene "scenes/ogre_magi/ogre_magi_ogmag_win_02.vcd" nodelay noscene 
+	scene "scenes/ogre_magi/ogre_magi_ogmag_win_03.vcd" nodelay noscene 
+}
+
+Rule ogre_magi_Victory_Rule
+{
+	criteria Victory Isogre_magi 
+	response ogre_magi_Victory
 }
 
 Response ogre_magi_ItemDropIsCommonDrop

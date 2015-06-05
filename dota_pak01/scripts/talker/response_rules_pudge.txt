@@ -90,168 +90,28 @@ Rule pudge_CustomHookCatchNothing_Rule
 	response pudge_CustomHookCatchNothing
 }
 
-Response pudge_Move
+Response pudge_KillIsFirstBlood
 {
-	scene "scenes/pudge/pudge_pud_move_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_05.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_06.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_09.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_10.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_11.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_12.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_13.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_15.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_16.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_17.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_05.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_06.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_08.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_acknow_09.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_firstblood_01.vcd" nodelay noscene 
 }
 
-Rule pudge_Move_Rule
+Rule pudge_KillIsFirstBlood_Rule
 {
-	criteria Move Ispudge 
-	response pudge_Move
+	criteria Kill Ispudge IsFirstBlood
+	response pudge_KillIsFirstBlood
 }
 
-Response pudge_Attack
+Response pudge_KillIsDismemberChance_10%
 {
-	scene "scenes/pudge/pudge_pud_attack_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_05.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_06.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_08.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_09.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_10.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_11.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_13.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_14.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_15.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_attack_16.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_move_14.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_08.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_09.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_14.vcd" nodelay noscene 
 }
 
-Rule pudge_Attack_Rule
+Rule pudge_KillIsDismemberChance_10%_Rule
 {
-	criteria Attack Ispudge 
-	response pudge_Attack
-}
-
-Response pudge_CastOrder
-{
-	scene "scenes/pudge/pudge_pud_cast_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_cast_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_cast_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_cast_04.vcd" nodelay noscene 
-}
-
-Rule pudge_CastOrder_Rule
-{
-	criteria CastOrder Ispudge 
-	response pudge_CastOrder
-}
-
-Response pudge_CastExecuteIsRot
-{
-	scene "scenes/pudge/pudge_pud_ability_rot_02.vcd" nodelay noscene weapondelay 10
-	scene "scenes/pudge/pudge_pud_ability_rot_07.vcd" nodelay noscene weapondelay 10
-	scene "scenes/pudge/pudge_pud_ability_rot_08.vcd" nodelay noscene weapondelay 10
-	scene "scenes/pudge/pudge_pud_ability_rot_09.vcd" nodelay noscene weapondelay 10
-	scene "scenes/pudge/pudge_pud_ability_rot_10.vcd" nodelay noscene weapondelay 10
-	scene "scenes/pudge/pudge_pud_ability_rot_11.vcd" nodelay noscene weapondelay 10
-	scene "scenes/pudge/pudge_pud_ability_rot_12.vcd" nodelay noscene weapondelay 10
-	scene "scenes/pudge/pudge_pud_ability_rot_13.vcd" nodelay noscene weapondelay 10
-}
-
-Rule pudge_CastExecuteIsRot_Rule
-{
-	criteria CastExecute Ispudge IsRot
-	response pudge_CastExecuteIsRot
-}
-
-Response pudge_CastExecuteIsDismember
-{
-	scene "scenes/pudge/pudge_pud_ability_devour_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_ability_devour_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_ability_devour_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_ability_devour_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_ability_devour_12.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_ability_devour_15.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_ability_devour_16.vcd" nodelay noscene 
-}
-
-Rule pudge_CastExecuteIsDismember_Rule
-{
-	criteria CastExecute Ispudge IsDismember
-	response pudge_CastExecuteIsDismember
-}
-
-Response pudge_LearnIsFleshHeap
-{
-	scene "scenes/pudge/pudge_pud_ability_heap_01.vcd" nodelay noscene speakonce
-	scene "scenes/pudge/pudge_pud_ability_heap_02.vcd" nodelay noscene speakonce
-}
-
-Rule pudge_LearnIsFleshHeap_Rule
-{
-	criteria Learn Ispudge IsFleshHeap
-	response pudge_LearnIsFleshHeap
-}
-
-Response pudge_Death
-{
-	scene "scenes/pudge/pudge_pud_death_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_05.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_06.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_08.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_09.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_10.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_death_11.vcd" nodelay noscene 
-}
-
-Rule pudge_Death_Rule
-{
-	criteria Death Ispudge 
-	response pudge_Death
-}
-
-Response pudge_DeathIsReincarnating
-{
-	scene "scenes/pudge/pudge_pud_laugh_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_rival_20.vcd" nodelay noscene 
-}
-
-Rule pudge_DeathIsReincarnating_Rule
-{
-	criteria Death Ispudge IsReincarnating
-	response pudge_DeathIsReincarnating
-}
-
-Response pudge_DeathIsEnemyPudgeIsRot
-{
-	scene "scenes/pudge/pudge_pud_deny_05.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_11.vcd" nodelay noscene 
-}
-
-Rule pudge_DeathIsEnemyPudgeIsRot_Rule
-{
-	criteria Death Ispudge IsEnemyPudge IsRot
-	response pudge_DeathIsEnemyPudgeIsRot
+	criteria Kill Ispudge IsDismember Chance_10%
+	response pudge_KillIsDismemberChance_10%
 }
 
 Response pudge_Kill
@@ -469,28 +329,191 @@ Rule pudge_KillIsEnemyEnchantressChance_20%_Rule
 	response pudge_KillIsEnemyEnchantressChance_20%
 }
 
-Response pudge_KillIsFirstBlood
+Response pudge_Move
 {
-	scene "scenes/pudge/pudge_pud_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_05.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_07.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_09.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_10.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_11.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_12.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_13.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_15.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_16.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_17.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_05.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_07.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_08.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_acknow_09.vcd" nodelay noscene 
 }
 
-Rule pudge_KillIsFirstBlood_Rule
+Rule pudge_Move_Rule
 {
-	criteria Kill Ispudge IsFirstBlood
-	response pudge_KillIsFirstBlood
+	criteria Move Ispudge 
+	response pudge_Move
 }
 
-Response pudge_KillIsDismemberChance_10%
+Response pudge_Attack
 {
-	scene "scenes/pudge/pudge_pud_ability_devour_08.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_ability_devour_09.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_ability_devour_14.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_05.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_08.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_09.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_10.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_11.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_13.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_14.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_15.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_attack_16.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_move_14.vcd" nodelay noscene 
 }
 
-Rule pudge_KillIsDismemberChance_10%_Rule
+Rule pudge_Attack_Rule
 {
-	criteria Kill Ispudge IsDismember Chance_10%
-	response pudge_KillIsDismemberChance_10%
+	criteria Attack Ispudge 
+	response pudge_Attack
+}
+
+Response pudge_CastOrder
+{
+	scene "scenes/pudge/pudge_pud_cast_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_cast_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_cast_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_cast_04.vcd" nodelay noscene 
+}
+
+Rule pudge_CastOrder_Rule
+{
+	criteria CastOrder Ispudge 
+	response pudge_CastOrder
+}
+
+Response pudge_CastExecuteIsRot
+{
+	scene "scenes/pudge/pudge_pud_ability_rot_02.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_07.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_08.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_09.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_10.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_11.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_12.vcd" nodelay noscene weapondelay 10
+	scene "scenes/pudge/pudge_pud_ability_rot_13.vcd" nodelay noscene weapondelay 10
+}
+
+Rule pudge_CastExecuteIsRot_Rule
+{
+	criteria CastExecute Ispudge IsRot
+	response pudge_CastExecuteIsRot
+}
+
+Response pudge_CastExecuteIsDismember
+{
+	scene "scenes/pudge/pudge_pud_ability_devour_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_07.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_12.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_15.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_ability_devour_16.vcd" nodelay noscene 
+}
+
+Rule pudge_CastExecuteIsDismember_Rule
+{
+	criteria CastExecute Ispudge IsDismember
+	response pudge_CastExecuteIsDismember
+}
+
+Response pudge_LearnIsFleshHeap
+{
+	scene "scenes/pudge/pudge_pud_ability_heap_01.vcd" nodelay noscene speakonce
+	scene "scenes/pudge/pudge_pud_ability_heap_02.vcd" nodelay noscene speakonce
+}
+
+Rule pudge_LearnIsFleshHeap_Rule
+{
+	criteria Learn Ispudge IsFleshHeap
+	response pudge_LearnIsFleshHeap
+}
+
+Response pudge_LevelUp
+{
+	scene "scenes/pudge/pudge_pud_level_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_05.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_07.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_08.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_09.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_10.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_level_11.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_nomnom_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_laugh_07.vcd" nodelay noscene 
+}
+
+Rule pudge_LevelUp_Rule
+{
+	criteria LevelUp Ispudge 
+	response pudge_LevelUp
+}
+
+Response pudge_Death
+{
+	scene "scenes/pudge/pudge_pud_death_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_05.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_07.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_08.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_09.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_10.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_death_11.vcd" nodelay noscene 
+}
+
+Rule pudge_Death_Rule
+{
+	criteria Death Ispudge 
+	response pudge_Death
+}
+
+Response pudge_DeathIsReincarnating
+{
+	scene "scenes/pudge/pudge_pud_rival_20.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_laugh_04.vcd" nodelay noscene 
+}
+
+Rule pudge_DeathIsReincarnating_Rule
+{
+	criteria Death Ispudge IsReincarnating
+	response pudge_DeathIsReincarnating
+}
+
+Response pudge_DeathIsEnemyPudgeIsRot
+{
+	scene "scenes/pudge/pudge_pud_deny_05.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_11.vcd" nodelay noscene 
+}
+
+Rule pudge_DeathIsEnemyPudgeIsRot_Rule
+{
+	criteria Death Ispudge IsEnemyPudge IsRot
+	response pudge_DeathIsEnemyPudgeIsRot
 }
 
 Response pudge_Respawn
@@ -511,6 +534,56 @@ Rule pudge_Respawn_Rule
 {
 	criteria Respawn Ispudge 
 	response pudge_Respawn
+}
+
+Response pudge_LastHit
+{
+	scene "scenes/pudge/pudge_pud_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lasthit_08.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lasthit_09.vcd" nodelay noscene 
+}
+
+Rule pudge_LastHit_Rule
+{
+	criteria LastHit Ispudge 
+	response pudge_LastHit
+}
+
+Response pudge_LastHitButchersDozen
+{
+	scene "scenes/pudge/pudge_pud_lasthit_05.vcd" nodelay noscene 
+}
+
+Rule pudge_LastHitButchersDozen_Rule
+{
+	criteria LastHit Ispudge ButchersDozen
+	response pudge_LastHitButchersDozen
+}
+
+Response pudge_Deny
+{
+	scene "scenes/pudge/pudge_pud_deny_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_05.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_07.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_08.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_09.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_10.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_deny_12.vcd" nodelay noscene 
+}
+
+Rule pudge_Deny_Rule
+{
+	criteria Deny Ispudge 
+	response pudge_Deny
 }
 
 Response pudge_Select
@@ -548,15 +621,27 @@ Rule pudge_PurchaseIsExpensiveItem_Rule
 
 Response pudge_PurchaseIsUltimateScepter
 {
-	scene "scenes/pudge/pudge_pud_happy_01.vcd" nodelay noscene 
 	scene "scenes/pudge/pudge_pud_scepter_01.vcd" nodelay noscene speakonce
 	scene "scenes/pudge/pudge_pud_scepter_02.vcd" nodelay noscene speakonce
+	scene "scenes/pudge/pudge_pud_happy_01.vcd" nodelay noscene 
 }
 
 Rule pudge_PurchaseIsUltimateScepter_Rule
 {
 	criteria Purchase Ispudge IsUltimateScepter
 	response pudge_PurchaseIsUltimateScepter
+}
+
+Response pudge_PurchaseIsBlinkDagger
+{
+	scene "scenes/pudge/pudge_pud_blink_01.vcd" nodelay noscene speakonce
+	scene "scenes/pudge/pudge_pud_blink_02.vcd" nodelay noscene speakonce
+}
+
+Rule pudge_PurchaseIsBlinkDagger_Rule
+{
+	criteria Purchase Ispudge IsBlinkDagger
+	response pudge_PurchaseIsBlinkDagger
 }
 
 Response pudge_PurchaseIsHoodOfDefiance
@@ -636,41 +721,6 @@ Rule pudge_PurchaseIsPipe_Rule
 	response pudge_PurchaseIsPipe
 }
 
-Response pudge_PurchaseIsBlinkDagger
-{
-	scene "scenes/pudge/pudge_pud_blink_01.vcd" nodelay noscene speakonce
-	scene "scenes/pudge/pudge_pud_blink_02.vcd" nodelay noscene speakonce
-}
-
-Rule pudge_PurchaseIsBlinkDagger_Rule
-{
-	criteria Purchase Ispudge IsBlinkDagger
-	response pudge_PurchaseIsBlinkDagger
-}
-
-Response pudge_Immortality
-{
-	scene "scenes/pudge/pudge_pud_immort_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_immort_03.vcd" nodelay noscene 
-}
-
-Rule pudge_Immortality_Rule
-{
-	criteria Immortality Ispudge 
-	response pudge_Immortality
-}
-
-Response pudge_ImmortalityChance_25%
-{
-	scene "scenes/pudge/pudge_pud_immort_02.vcd" nodelay noscene 
-}
-
-Rule pudge_ImmortalityChance_25%_Rule
-{
-	criteria Immortality Ispudge Chance_25%
-	response pudge_ImmortalityChance_25%
-}
-
 Response pudge_MissingIsLaneTop
 {
 	scene "scenes/pudge/pudge_pud_lane_missing_01.vcd" nodelay noscene 
@@ -704,87 +754,6 @@ Rule pudge_MissingIsLaneBot_Rule
 	response pudge_MissingIsLaneBot
 }
 
-Response pudge_Deny
-{
-	scene "scenes/pudge/pudge_pud_deny_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_05.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_06.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_08.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_09.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_10.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_deny_12.vcd" nodelay noscene 
-}
-
-Rule pudge_Deny_Rule
-{
-	criteria Deny Ispudge 
-	response pudge_Deny
-}
-
-Response pudge_LastHit
-{
-	scene "scenes/pudge/pudge_pud_lasthit_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lasthit_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lasthit_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lasthit_06.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lasthit_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lasthit_08.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lasthit_09.vcd" nodelay noscene 
-}
-
-Rule pudge_LastHit_Rule
-{
-	criteria LastHit Ispudge 
-	response pudge_LastHit
-}
-
-Response pudge_LastHitButchersDozen
-{
-	scene "scenes/pudge/pudge_pud_lasthit_05.vcd" nodelay noscene 
-}
-
-Rule pudge_LastHitButchersDozen_Rule
-{
-	criteria LastHit Ispudge ButchersDozen
-	response pudge_LastHitButchersDozen
-}
-
-Response pudge_Defeat
-{
-	scene "scenes/pudge/pudge_pud_lose_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lose_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lose_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lose_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lose_06.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lose_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_lose_08.vcd" nodelay noscene 
-}
-
-Rule pudge_Defeat_Rule
-{
-	criteria Defeat Ispudge 
-	response pudge_Defeat
-}
-
-Response pudge_Victory
-{
-	scene "scenes/pudge/pudge_pud_win_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_win_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_win_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_win_05.vcd" nodelay noscene 
-}
-
-Rule pudge_Victory_Rule
-{
-	criteria Victory Ispudge 
-	response pudge_Victory
-}
-
 Response pudge_Bottling
 {
 	scene "scenes/pudge/pudge_pud_bottle_01.vcd" nodelay noscene 
@@ -796,6 +765,29 @@ Rule pudge_Bottling_Rule
 {
 	criteria Bottling Ispudge 
 	response pudge_Bottling
+}
+
+Response pudge_Immortality
+{
+	scene "scenes/pudge/pudge_pud_immort_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_immort_03.vcd" nodelay noscene 
+}
+
+Rule pudge_Immortality_Rule
+{
+	criteria Immortality Ispudge 
+	response pudge_Immortality
+}
+
+Response pudge_ImmortalityChance_25%
+{
+	scene "scenes/pudge/pudge_pud_immort_02.vcd" nodelay noscene 
+}
+
+Rule pudge_ImmortalityChance_25%_Rule
+{
+	criteria Immortality Ispudge Chance_25%
+	response pudge_ImmortalityChance_25%
 }
 
 Response pudge_PowerupIsPowerupHaste
@@ -908,27 +900,28 @@ Rule pudge_PowerupIsPowerupInvisibilityChance_5%_Rule
 	response pudge_PowerupIsPowerupInvisibilityChance_5%
 }
 
-Response pudge_LevelUp
+Response pudge_Thanks
 {
-	scene "scenes/pudge/pudge_pud_level_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_03.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_04.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_05.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_nomnom_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_laugh_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_06.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_07.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_08.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_09.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_10.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_level_11.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_thanks_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_thanks_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_thanks_03.vcd" nodelay noscene 
 }
 
-Rule pudge_LevelUp_Rule
+Rule pudge_Thanks_Rule
 {
-	criteria LevelUp Ispudge 
-	response pudge_LevelUp
+	criteria Thanks Ispudge 
+	response pudge_Thanks
+}
+
+Response pudge_PainChance_25%
+{
+	scene "scenes/pudge/pudge_pud_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule pudge_PainChance_25%_Rule
+{
+	criteria Pain Ispudge Chance_25%
+	response pudge_PainChance_25%
 }
 
 Response pudge_Pain
@@ -948,15 +941,47 @@ Rule pudge_Pain_Rule
 	response pudge_Pain
 }
 
-Response pudge_PainChance_25%
+Response pudge_InTheBag
 {
-	scene "scenes/pudge/pudge_pud_underattack_01.vcd" nodelay noscene respeakdelay 120
+	scene "scenes/pudge/pudge_pud_inthebag_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_inthebag_02.vcd" nodelay noscene 
 }
 
-Rule pudge_PainChance_25%_Rule
+Rule pudge_InTheBag_Rule
 {
-	criteria Pain Ispudge Chance_25%
-	response pudge_PainChance_25%
+	criteria InTheBag Ispudge 
+	response pudge_InTheBag
+}
+
+Response pudge_Defeat
+{
+	scene "scenes/pudge/pudge_pud_lose_01.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lose_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lose_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lose_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lose_06.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lose_07.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_lose_08.vcd" nodelay noscene 
+}
+
+Rule pudge_Defeat_Rule
+{
+	criteria Defeat Ispudge 
+	response pudge_Defeat
+}
+
+Response pudge_Victory
+{
+	scene "scenes/pudge/pudge_pud_win_02.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_win_03.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_win_04.vcd" nodelay noscene 
+	scene "scenes/pudge/pudge_pud_win_05.vcd" nodelay noscene 
+}
+
+Rule pudge_Victory_Rule
+{
+	criteria Victory Ispudge 
+	response pudge_Victory
 }
 
 Response pudge_CooldownMediumNag
@@ -1058,18 +1083,6 @@ Rule pudge_ItemDropIsUltraRareDrop_Rule
 	response pudge_ItemDropIsUltraRareDrop
 }
 
-Response pudge_InTheBag
-{
-	scene "scenes/pudge/pudge_pud_inthebag_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_inthebag_02.vcd" nodelay noscene 
-}
-
-Rule pudge_InTheBag_Rule
-{
-	criteria InTheBag Ispudge 
-	response pudge_InTheBag
-}
-
 Response pudge_EmoteIsEmoteLaugh
 {
 	scene "scenes/pudge/pudge_pud_laugh_01.vcd" nodelay noscene 
@@ -1085,18 +1098,5 @@ Rule pudge_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Ispudge IsEmoteLaugh
 	response pudge_EmoteIsEmoteLaugh
-}
-
-Response pudge_Thanks
-{
-	scene "scenes/pudge/pudge_pud_thanks_01.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_thanks_02.vcd" nodelay noscene 
-	scene "scenes/pudge/pudge_pud_thanks_03.vcd" nodelay noscene 
-}
-
-Rule pudge_Thanks_Rule
-{
-	criteria Thanks Ispudge 
-	response pudge_Thanks
 }
 

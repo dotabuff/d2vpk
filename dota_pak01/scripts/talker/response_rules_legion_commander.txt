@@ -5501,17 +5501,6 @@ Rule legion_commander_PowerupIsPowerupIllusionChance_25%_Rule
 	response legion_commander_PowerupIsPowerupIllusionChance_25%
 }
 
-Response legion_commander_PowerupIsPowerupBounty
-{
-	scene "scenes/legion_commander/legion_commander_legcom_itemcommon_01.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule legion_commander_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Islegion_commander IsPowerupBounty
-	response legion_commander_PowerupIsPowerupBounty
-}
-
 Response legion_commander_PowerupIsPowerupInvisibility
 {
 	scene "scenes/legion_commander/legion_commander_legcom_invis_01.vcd" nodelay noscene 
@@ -5533,6 +5522,17 @@ Rule legion_commander_PowerupIsPowerupInvisibilityChance_25%_Rule
 {
 	criteria Powerup Islegion_commander IsPowerupInvisibility Chance_25%
 	response legion_commander_PowerupIsPowerupInvisibilityChance_25%
+}
+
+Response legion_commander_PowerupIsPowerupBounty
+{
+	scene "scenes/legion_commander/legion_commander_legcom_itemcommon_01.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule legion_commander_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupBounty
+	response legion_commander_PowerupIsPowerupBounty
 }
 
 Response legion_commander_PowerupIsPowerupHasteIsLegionEconDemon
@@ -5623,17 +5623,6 @@ Rule legion_commander_PowerupIsPowerupIllusionChance_25%IsLegionEconDemon_Rule
 	response legion_commander_PowerupIsPowerupIllusionChance_25%IsLegionEconDemon
 }
 
-Response legion_commander_PowerupIsPowerupBountyIsLegionEconDemon
-{
-	scene "scenes/legion_commander/legion_commander_legcom_dem_itemcommon_01.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule legion_commander_PowerupIsPowerupBountyIsLegionEconDemon_Rule
-{
-	criteria Powerup Islegion_commander IsPowerupBounty IsLegionEconDemon
-	response legion_commander_PowerupIsPowerupBountyIsLegionEconDemon
-}
-
 Response legion_commander_PowerupIsPowerupInvisibilityIsLegionEconDemon
 {
 	scene "scenes/legion_commander/legion_commander_legcom_dem_invis_01.vcd" nodelay noscene 
@@ -5655,6 +5644,17 @@ Rule legion_commander_PowerupIsPowerupInvisibilityChance_25%IsLegionEconDemon_Ru
 {
 	criteria Powerup Islegion_commander IsPowerupInvisibility Chance_25% IsLegionEconDemon
 	response legion_commander_PowerupIsPowerupInvisibilityChance_25%IsLegionEconDemon
+}
+
+Response legion_commander_PowerupIsPowerupBountyIsLegionEconDemon
+{
+	scene "scenes/legion_commander/legion_commander_legcom_dem_itemcommon_01.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule legion_commander_PowerupIsPowerupBountyIsLegionEconDemon_Rule
+{
+	criteria Powerup Islegion_commander IsPowerupBounty IsLegionEconDemon
+	response legion_commander_PowerupIsPowerupBountyIsLegionEconDemon
 }
 
 Response legion_commander_CooldownLittleNag

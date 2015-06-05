@@ -293,6 +293,23 @@ Rule shadowshaman_Respawn_Rule
 	response shadowshaman_Respawn
 }
 
+Response shadowshaman_Deny
+{
+	scene "scenes/shadowshaman/shadowshaman_shad_deny_01.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_deny_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_deny_03.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_deny_04.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_deny_05.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_deny_06.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_deny_07.vcd" nodelay noscene 
+}
+
+Rule shadowshaman_Deny_Rule
+{
+	criteria Deny Isshadowshaman 
+	response shadowshaman_Deny
+}
+
 Response shadowshaman_Select
 {
 	scene "scenes/shadowshaman/shadowshaman_shad_rare_01.vcd" nodelay noscene 
@@ -353,62 +370,6 @@ Rule shadowshaman_PurchaseIsRefresher_Rule
 {
 	criteria Purchase Isshadowshaman IsRefresher
 	response shadowshaman_PurchaseIsRefresher
-}
-
-Response shadowshaman_Bottling
-{
-	scene "scenes/shadowshaman/shadowshaman_shad_bottle_01.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_bottle_02.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_bottle_03.vcd" nodelay noscene 
-}
-
-Rule shadowshaman_Bottling_Rule
-{
-	criteria Bottling Isshadowshaman 
-	response shadowshaman_Bottling
-}
-
-Response shadowshaman_Deny
-{
-	scene "scenes/shadowshaman/shadowshaman_shad_deny_01.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_deny_02.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_deny_03.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_deny_04.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_deny_05.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_deny_06.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_deny_07.vcd" nodelay noscene 
-}
-
-Rule shadowshaman_Deny_Rule
-{
-	criteria Deny Isshadowshaman 
-	response shadowshaman_Deny
-}
-
-Response shadowshaman_Defeat
-{
-	scene "scenes/shadowshaman/shadowshaman_shad_lose_01.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_lose_02.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_lose_03.vcd" nodelay noscene 
-}
-
-Rule shadowshaman_Defeat_Rule
-{
-	criteria Defeat Isshadowshaman 
-	response shadowshaman_Defeat
-}
-
-Response shadowshaman_Victory
-{
-	scene "scenes/shadowshaman/shadowshaman_shad_win_01.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_win_02.vcd" nodelay noscene 
-	scene "scenes/shadowshaman/shadowshaman_shad_win_03.vcd" nodelay noscene 
-}
-
-Rule shadowshaman_Victory_Rule
-{
-	criteria Victory Isshadowshaman 
-	response shadowshaman_Victory
 }
 
 Response shadowshaman_Immortality
@@ -488,17 +449,6 @@ Rule shadowshaman_PowerupIsPowerupRegenerationChance_25%_Rule
 	response shadowshaman_PowerupIsPowerupRegenerationChance_25%
 }
 
-Response shadowshaman_PowerupIsPowerupBounty
-{
-	scene "scenes/shadowshaman/shadowshaman_shad_lasthit_03.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule shadowshaman_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Isshadowshaman IsPowerupBounty
-	response shadowshaman_PowerupIsPowerupBounty
-}
-
 Response shadowshaman_PowerupIsPowerupIllusion
 {
 	scene "scenes/shadowshaman/shadowshaman_shad_illus_01.vcd" nodelay noscene 
@@ -530,6 +480,30 @@ Rule shadowshaman_PowerupIsPowerupInvisibility_Rule
 {
 	criteria Powerup Isshadowshaman IsPowerupInvisibility
 	response shadowshaman_PowerupIsPowerupInvisibility
+}
+
+Response shadowshaman_PowerupIsPowerupBounty
+{
+	scene "scenes/shadowshaman/shadowshaman_shad_lasthit_03.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule shadowshaman_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isshadowshaman IsPowerupBounty
+	response shadowshaman_PowerupIsPowerupBounty
+}
+
+Response shadowshaman_Bottling
+{
+	scene "scenes/shadowshaman/shadowshaman_shad_bottle_01.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_bottle_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_bottle_03.vcd" nodelay noscene 
+}
+
+Rule shadowshaman_Bottling_Rule
+{
+	criteria Bottling Isshadowshaman 
+	response shadowshaman_Bottling
 }
 
 Response shadowshaman_CooldownLittleNag
@@ -661,6 +635,32 @@ Rule shadowshaman_InTheBag_Rule
 {
 	criteria InTheBag Isshadowshaman 
 	response shadowshaman_InTheBag
+}
+
+Response shadowshaman_Defeat
+{
+	scene "scenes/shadowshaman/shadowshaman_shad_lose_01.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_lose_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_lose_03.vcd" nodelay noscene 
+}
+
+Rule shadowshaman_Defeat_Rule
+{
+	criteria Defeat Isshadowshaman 
+	response shadowshaman_Defeat
+}
+
+Response shadowshaman_Victory
+{
+	scene "scenes/shadowshaman/shadowshaman_shad_win_01.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_win_02.vcd" nodelay noscene 
+	scene "scenes/shadowshaman/shadowshaman_shad_win_03.vcd" nodelay noscene 
+}
+
+Rule shadowshaman_Victory_Rule
+{
+	criteria Victory Isshadowshaman 
+	response shadowshaman_Victory
 }
 
 Response shadowshaman_ItemDropIsCommonDrop

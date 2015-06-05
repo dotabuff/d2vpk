@@ -69,6 +69,156 @@ Rule dragon_knight_CustomIsGameStartTutMap_Rule
 	response dragon_knight_CustomIsGameStartTutMap
 }
 
+Response dragon_knight_KillIsFirstBlood
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_firstblood_02.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsFirstBlood_Rule
+{
+	criteria Kill Isdragon_knight IsFirstBlood
+	response dragon_knight_KillIsFirstBlood
+}
+
+Response dragon_knight_Kill
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_03.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_04.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_05.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_06.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_07.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_08.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_09.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_10.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_11.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_12.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_kill_13.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_laugh_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_laugh_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_laugh_09.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_laugh_10.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_Kill_Rule
+{
+	criteria Kill Isdragon_knight 
+	response dragon_knight_Kill
+}
+
+Response dragon_knight_KillIsEnemyJakiroChance_35%
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_jakiro_01.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsEnemyJakiroChance_35%_Rule
+{
+	criteria Kill Isdragon_knight IsEnemyJakiro Chance_35%
+	response dragon_knight_KillIsEnemyJakiroChance_35%
+}
+
+Response dragon_knight_KillIsEnemyLinaChance_35%
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_lina_03.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_lina_02.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsEnemyLinaChance_35%_Rule
+{
+	criteria Kill Isdragon_knight IsEnemyLina Chance_35%
+	response dragon_knight_KillIsEnemyLinaChance_35%
+}
+
+Response dragon_knight_KillIsEnemySvenChance_35%
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_sven_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_sven_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_sven_03.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsEnemySvenChance_35%_Rule
+{
+	criteria Kill Isdragon_knight IsEnemySven Chance_35%
+	response dragon_knight_KillIsEnemySvenChance_35%
+}
+
+Response dragon_knight_KillIsInDragonFormIsFirstBlood
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_firstblood_02.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsInDragonFormIsFirstBlood_Rule
+{
+	criteria Kill Isdragon_knight IsInDragonForm IsFirstBlood
+	response dragon_knight_KillIsInDragonFormIsFirstBlood
+}
+
+Response dragon_knight_KillIsInDragonForm
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_ability_eldrag_03.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_03.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_04.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_05.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_06.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_07.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_08.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_09.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_10.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_11.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_kill_13.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_09.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_10.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsInDragonForm_Rule
+{
+	criteria Kill Isdragon_knight IsInDragonForm
+	response dragon_knight_KillIsInDragonForm
+}
+
+Response dragon_knight_KillIsInDragonFormIsEnemyJakiroChance_35%
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_jakiro_01.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsInDragonFormIsEnemyJakiroChance_35%_Rule
+{
+	criteria Kill Isdragon_knight IsInDragonForm IsEnemyJakiro Chance_35%
+	response dragon_knight_KillIsInDragonFormIsEnemyJakiroChance_35%
+}
+
+Response dragon_knight_KillIsInDragonFormIsEnemyLinaChance_35%
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_lina_03.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_lina_02.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsInDragonFormIsEnemyLinaChance_35%_Rule
+{
+	criteria Kill Isdragon_knight IsInDragonForm IsEnemyLina Chance_35%
+	response dragon_knight_KillIsInDragonFormIsEnemyLinaChance_35%
+}
+
+Response dragon_knight_KillIsInDragonFormIsEnemySvenChance_35%
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_sven_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_sven_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_sven_03.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_KillIsInDragonFormIsEnemySvenChance_35%_Rule
+{
+	criteria Kill Isdragon_knight IsInDragonForm IsEnemySven Chance_35%
+	response dragon_knight_KillIsInDragonFormIsEnemySvenChance_35%
+}
+
 Response dragon_knight_Move
 {
 	scene "scenes/dragon_knight/dragon_knight_drag_move_01.vcd" nodelay noscene 
@@ -208,156 +358,6 @@ Rule dragon_knight_LevelUpIsInDragonForm_Rule
 {
 	criteria LevelUp Isdragon_knight IsInDragonForm
 	response dragon_knight_LevelUpIsInDragonForm
-}
-
-Response dragon_knight_Kill
-{
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_03.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_04.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_05.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_06.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_07.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_08.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_09.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_10.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_11.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_12.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_kill_13.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_laugh_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_laugh_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_laugh_09.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_laugh_10.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_Kill_Rule
-{
-	criteria Kill Isdragon_knight 
-	response dragon_knight_Kill
-}
-
-Response dragon_knight_KillIsEnemyJakiroChance_35%
-{
-	scene "scenes/dragon_knight/dragon_knight_drag_jakiro_01.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsEnemyJakiroChance_35%_Rule
-{
-	criteria Kill Isdragon_knight IsEnemyJakiro Chance_35%
-	response dragon_knight_KillIsEnemyJakiroChance_35%
-}
-
-Response dragon_knight_KillIsEnemyLinaChance_35%
-{
-	scene "scenes/dragon_knight/dragon_knight_drag_lina_03.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_lina_02.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsEnemyLinaChance_35%_Rule
-{
-	criteria Kill Isdragon_knight IsEnemyLina Chance_35%
-	response dragon_knight_KillIsEnemyLinaChance_35%
-}
-
-Response dragon_knight_KillIsEnemySvenChance_35%
-{
-	scene "scenes/dragon_knight/dragon_knight_drag_sven_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_sven_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_sven_03.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsEnemySvenChance_35%_Rule
-{
-	criteria Kill Isdragon_knight IsEnemySven Chance_35%
-	response dragon_knight_KillIsEnemySvenChance_35%
-}
-
-Response dragon_knight_KillIsFirstBlood
-{
-	scene "scenes/dragon_knight/dragon_knight_drag_firstblood_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_firstblood_02.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsFirstBlood_Rule
-{
-	criteria Kill Isdragon_knight IsFirstBlood
-	response dragon_knight_KillIsFirstBlood
-}
-
-Response dragon_knight_KillIsInDragonForm
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_ability_eldrag_03.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_03.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_04.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_05.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_06.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_07.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_08.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_09.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_10.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_11.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_kill_13.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_09.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_10.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsInDragonForm_Rule
-{
-	criteria Kill Isdragon_knight IsInDragonForm
-	response dragon_knight_KillIsInDragonForm
-}
-
-Response dragon_knight_KillIsInDragonFormIsEnemyJakiroChance_35%
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_jakiro_01.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsInDragonFormIsEnemyJakiroChance_35%_Rule
-{
-	criteria Kill Isdragon_knight IsInDragonForm IsEnemyJakiro Chance_35%
-	response dragon_knight_KillIsInDragonFormIsEnemyJakiroChance_35%
-}
-
-Response dragon_knight_KillIsInDragonFormIsEnemyLinaChance_35%
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_lina_03.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_lina_02.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsInDragonFormIsEnemyLinaChance_35%_Rule
-{
-	criteria Kill Isdragon_knight IsInDragonForm IsEnemyLina Chance_35%
-	response dragon_knight_KillIsInDragonFormIsEnemyLinaChance_35%
-}
-
-Response dragon_knight_KillIsInDragonFormIsEnemySvenChance_35%
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_sven_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_sven_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_sven_03.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsInDragonFormIsEnemySvenChance_35%_Rule
-{
-	criteria Kill Isdragon_knight IsInDragonForm IsEnemySven Chance_35%
-	response dragon_knight_KillIsInDragonFormIsEnemySvenChance_35%
-}
-
-Response dragon_knight_KillIsInDragonFormIsFirstBlood
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_firstblood_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_firstblood_02.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_KillIsInDragonFormIsFirstBlood_Rule
-{
-	criteria Kill Isdragon_knight IsInDragonForm IsFirstBlood
-	response dragon_knight_KillIsInDragonFormIsFirstBlood
 }
 
 Response dragon_knight_DeathIsEnemyJakiroChance_50%
@@ -738,58 +738,6 @@ Rule dragon_knight_DenyIsInDragonForm_Rule
 	response dragon_knight_DenyIsInDragonForm
 }
 
-Response dragon_knight_Defeat
-{
-	scene "scenes/dragon_knight/dragon_knight_drag_lose_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_lose_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_lose_03.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_Defeat_Rule
-{
-	criteria Defeat Isdragon_knight 
-	response dragon_knight_Defeat
-}
-
-Response dragon_knight_DefeatIsInDragonForm
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_lose_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_lose_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_lose_03.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_DefeatIsInDragonForm_Rule
-{
-	criteria Defeat Isdragon_knight IsInDragonForm
-	response dragon_knight_DefeatIsInDragonForm
-}
-
-Response dragon_knight_Victory
-{
-	scene "scenes/dragon_knight/dragon_knight_drag_win_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_win_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_drag_win_03.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_Victory_Rule
-{
-	criteria Victory Isdragon_knight 
-	response dragon_knight_Victory
-}
-
-Response dragon_knight_VictoryIsInDragonForm
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_win_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_win_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_win_03.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_VictoryIsInDragonForm_Rule
-{
-	criteria Victory Isdragon_knight IsInDragonForm
-	response dragon_knight_VictoryIsInDragonForm
-}
-
 Response dragon_knight_Immortality
 {
 	scene "scenes/dragon_knight/dragon_knight_drag_immort_01.vcd" nodelay noscene 
@@ -821,17 +769,6 @@ Rule dragon_knight_ImmortalityIsInDragonForm_Rule
 {
 	criteria Immortality Isdragon_knight IsInDragonForm
 	response dragon_knight_ImmortalityIsInDragonForm
-}
-
-Response dragon_knight_PowerupIsPowerupBounty
-{
-	scene "scenes/dragon_knight/dragon_knight_drag_lasthit_09.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule dragon_knight_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Isdragon_knight IsPowerupBounty
-	response dragon_knight_PowerupIsPowerupBounty
 }
 
 Response dragon_knight_PowerupIsPowerupHaste
@@ -911,15 +848,15 @@ Rule dragon_knight_PowerupIsPowerupInvisibility_Rule
 	response dragon_knight_PowerupIsPowerupInvisibility
 }
 
-Response dragon_knight_PowerupIsInDragonFormIsPowerupBounty
+Response dragon_knight_PowerupIsPowerupBounty
 {
-	scene "scenes/dragon_knight/dragon_knight_dragon_lasthit_09.vcd" nodelay noscene respeakdelay 300
+	scene "scenes/dragon_knight/dragon_knight_drag_lasthit_09.vcd" nodelay noscene respeakdelay 300
 }
 
-Rule dragon_knight_PowerupIsInDragonFormIsPowerupBounty_Rule
+Rule dragon_knight_PowerupIsPowerupBounty_Rule
 {
-	criteria Powerup Isdragon_knight IsInDragonForm IsPowerupBounty
-	response dragon_knight_PowerupIsInDragonFormIsPowerupBounty
+	criteria Powerup Isdragon_knight IsPowerupBounty
+	response dragon_knight_PowerupIsPowerupBounty
 }
 
 Response dragon_knight_PowerupIsInDragonFormIsPowerupHaste
@@ -975,6 +912,17 @@ Rule dragon_knight_PowerupIsInDragonFormIsPowerupInvisibility_Rule
 {
 	criteria Powerup Isdragon_knight IsInDragonForm IsPowerupInvisibility
 	response dragon_knight_PowerupIsInDragonFormIsPowerupInvisibility
+}
+
+Response dragon_knight_PowerupIsInDragonFormIsPowerupBounty
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_lasthit_09.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule dragon_knight_PowerupIsInDragonFormIsPowerupBounty_Rule
+{
+	criteria Powerup Isdragon_knight IsInDragonForm IsPowerupBounty
+	response dragon_knight_PowerupIsInDragonFormIsPowerupBounty
 }
 
 Response dragon_knight_CooldownLittleNag
@@ -1235,6 +1183,58 @@ Rule dragon_knight_InTheBagIsInDragonForm_Rule
 	response dragon_knight_InTheBagIsInDragonForm
 }
 
+Response dragon_knight_Defeat
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_lose_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_lose_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_lose_03.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_Defeat_Rule
+{
+	criteria Defeat Isdragon_knight 
+	response dragon_knight_Defeat
+}
+
+Response dragon_knight_DefeatIsInDragonForm
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_lose_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_lose_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_lose_03.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_DefeatIsInDragonForm_Rule
+{
+	criteria Defeat Isdragon_knight IsInDragonForm
+	response dragon_knight_DefeatIsInDragonForm
+}
+
+Response dragon_knight_Victory
+{
+	scene "scenes/dragon_knight/dragon_knight_drag_win_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_win_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_drag_win_03.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_Victory_Rule
+{
+	criteria Victory Isdragon_knight 
+	response dragon_knight_Victory
+}
+
+Response dragon_knight_VictoryIsInDragonForm
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_win_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_win_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_win_03.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_VictoryIsInDragonForm_Rule
+{
+	criteria Victory Isdragon_knight IsInDragonForm
+	response dragon_knight_VictoryIsInDragonForm
+}
+
 Response dragon_knight_ItemDropIsCommonDrop
 {
 	scene "scenes/dragon_knight/dragon_knight_drag_happy_05.vcd" nodelay noscene 
@@ -1302,26 +1302,6 @@ Rule dragon_knight_ItemDropIsRAreDropIsInDragonForm_Rule
 	response dragon_knight_ItemDropIsRAreDropIsInDragonForm
 }
 
-Response dragon_knight_EmoteIsEmoteLaughIsInDragonForm
-{
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_01.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_02.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_03.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_04.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_05.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_06.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_07.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_08.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_09.vcd" nodelay noscene 
-	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_10.vcd" nodelay noscene 
-}
-
-Rule dragon_knight_EmoteIsEmoteLaughIsInDragonForm_Rule
-{
-	criteria Emote Isdragon_knight IsEmoteLaugh IsInDragonForm
-	response dragon_knight_EmoteIsEmoteLaughIsInDragonForm
-}
-
 Response dragon_knight_EmoteIsEmoteLaugh
 {
 	scene "scenes/dragon_knight/dragon_knight_drag_laugh_01.vcd" nodelay noscene 
@@ -1340,5 +1320,25 @@ Rule dragon_knight_EmoteIsEmoteLaugh_Rule
 {
 	criteria Emote Isdragon_knight IsEmoteLaugh
 	response dragon_knight_EmoteIsEmoteLaugh
+}
+
+Response dragon_knight_EmoteIsEmoteLaughIsInDragonForm
+{
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_01.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_02.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_03.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_04.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_05.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_06.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_07.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_08.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_09.vcd" nodelay noscene 
+	scene "scenes/dragon_knight/dragon_knight_dragon_laugh_10.vcd" nodelay noscene 
+}
+
+Rule dragon_knight_EmoteIsEmoteLaughIsInDragonForm_Rule
+{
+	criteria Emote Isdragon_knight IsEmoteLaugh IsInDragonForm
+	response dragon_knight_EmoteIsEmoteLaughIsInDragonForm
 }
 

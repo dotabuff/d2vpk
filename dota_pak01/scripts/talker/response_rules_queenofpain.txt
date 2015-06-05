@@ -465,24 +465,6 @@ Rule queenofpain_LevelUp_Rule
 	response queenofpain_LevelUp
 }
 
-Response queenofpain_LastHit
-{
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_01.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_02.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_04.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_05.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_06.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_07.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_08.vcd" nodelay noscene 
-}
-
-Rule queenofpain_LastHit_Rule
-{
-	criteria LastHit Isqueenofpain 
-	response queenofpain_LastHit
-}
-
 Response queenofpain_Death
 {
 	scene "scenes/queenofpain/queenofpain_pain_death_01.vcd" nodelay noscene 
@@ -536,6 +518,49 @@ Rule queenofpain_Respawn_Rule
 {
 	criteria Respawn Isqueenofpain 
 	response queenofpain_Respawn
+}
+
+Response queenofpain_LastHit
+{
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_08.vcd" nodelay noscene 
+}
+
+Rule queenofpain_LastHit_Rule
+{
+	criteria LastHit Isqueenofpain 
+	response queenofpain_LastHit
+}
+
+Response queenofpain_Deny
+{
+	scene "scenes/queenofpain/queenofpain_pain_deny_01.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_02.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_03.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_04.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_05.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_06.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_07.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_08.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_09.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_10.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_11.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_12.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_13.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_14.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_deny_15.vcd" nodelay noscene 
+}
+
+Rule queenofpain_Deny_Rule
+{
+	criteria Deny Isqueenofpain 
+	response queenofpain_Deny
 }
 
 Response queenofpain_Select
@@ -682,58 +707,6 @@ Rule queenofpain_MissingIsLaneBot_Rule
 	response queenofpain_MissingIsLaneBot
 }
 
-Response queenofpain_Deny
-{
-	scene "scenes/queenofpain/queenofpain_pain_deny_01.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_02.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_03.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_04.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_05.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_06.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_07.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_08.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_09.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_10.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_11.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_12.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_13.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_14.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_deny_15.vcd" nodelay noscene 
-}
-
-Rule queenofpain_Deny_Rule
-{
-	criteria Deny Isqueenofpain 
-	response queenofpain_Deny
-}
-
-Response queenofpain_Defeat
-{
-	scene "scenes/queenofpain/queenofpain_pain_lose_01.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lose_02.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lose_03.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_lose_04.vcd" nodelay noscene 
-}
-
-Rule queenofpain_Defeat_Rule
-{
-	criteria Defeat Isqueenofpain 
-	response queenofpain_Defeat
-}
-
-Response queenofpain_Victory
-{
-	scene "scenes/queenofpain/queenofpain_pain_win_01.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_win_02.vcd" nodelay noscene 
-	scene "scenes/queenofpain/queenofpain_pain_win_03.vcd" nodelay noscene 
-}
-
-Rule queenofpain_Victory_Rule
-{
-	criteria Victory Isqueenofpain 
-	response queenofpain_Victory
-}
-
 Response queenofpain_Immortality
 {
 	scene "scenes/queenofpain/queenofpain_pain_immort_01.vcd" nodelay noscene 
@@ -789,17 +762,6 @@ Rule queenofpain_PowerupIsPowerupRegenerationChance_25%_Rule
 	response queenofpain_PowerupIsPowerupRegenerationChance_25%
 }
 
-Response queenofpain_PowerupIsPowerupBounty
-{
-	scene "scenes/queenofpain/queenofpain_pain_lasthit_03.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule queenofpain_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Isqueenofpain IsPowerupBounty
-	response queenofpain_PowerupIsPowerupBounty
-}
-
 Response queenofpain_PowerupIsPowerupIllusion
 {
 	scene "scenes/queenofpain/queenofpain_pain_illus_01.vcd" nodelay noscene 
@@ -831,6 +793,17 @@ Rule queenofpain_PowerupIsPowerupInvisibility_Rule
 {
 	criteria Powerup Isqueenofpain IsPowerupInvisibility
 	response queenofpain_PowerupIsPowerupInvisibility
+}
+
+Response queenofpain_PowerupIsPowerupBounty
+{
+	scene "scenes/queenofpain/queenofpain_pain_lasthit_03.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule queenofpain_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isqueenofpain IsPowerupBounty
+	response queenofpain_PowerupIsPowerupBounty
 }
 
 Response queenofpain_CooldownLittleNag
@@ -964,6 +937,33 @@ Rule queenofpain_InTheBag_Rule
 {
 	criteria InTheBag Isqueenofpain 
 	response queenofpain_InTheBag
+}
+
+Response queenofpain_Defeat
+{
+	scene "scenes/queenofpain/queenofpain_pain_lose_01.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lose_02.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lose_03.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_lose_04.vcd" nodelay noscene 
+}
+
+Rule queenofpain_Defeat_Rule
+{
+	criteria Defeat Isqueenofpain 
+	response queenofpain_Defeat
+}
+
+Response queenofpain_Victory
+{
+	scene "scenes/queenofpain/queenofpain_pain_win_01.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_win_02.vcd" nodelay noscene 
+	scene "scenes/queenofpain/queenofpain_pain_win_03.vcd" nodelay noscene 
+}
+
+Rule queenofpain_Victory_Rule
+{
+	criteria Victory Isqueenofpain 
+	response queenofpain_Victory
 }
 
 Response queenofpain_EmoteIsEmoteLaugh

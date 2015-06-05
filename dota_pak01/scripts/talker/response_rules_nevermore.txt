@@ -97,6 +97,188 @@ Rule nevermore_CustomIsShadowFiendEconArcanaIsShadowFiendEconTripleraze_Rule
 	response nevermore_CustomIsShadowFiendEconArcanaIsShadowFiendEconTripleraze
 }
 
+Response nevermore_KillIsFirstBlood
+{
+	scene "scenes/nevermore/nevermore_nev_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_firstblood_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_firstblood_03.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsFirstBlood_Rule
+{
+	criteria Kill Isnevermore IsFirstBlood
+	response nevermore_KillIsFirstBlood
+}
+
+Response nevermore_Kill
+{
+	scene "scenes/nevermore/nevermore_nev_kill_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_kill_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_laugh_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_Kill_Rule
+{
+	criteria Kill Isnevermore 
+	response nevermore_Kill
+}
+
+Response nevermore_KillIsEnemyLeshracChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_rival_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsEnemyLeshracChance_20%_Rule
+{
+	criteria Kill Isnevermore IsEnemyLeshrac Chance_20%
+	response nevermore_KillIsEnemyLeshracChance_20%
+}
+
+Response nevermore_KillIsEnemyDoom_BringerChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_rival_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_07.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsEnemyDoom_BringerChance_20%_Rule
+{
+	criteria Kill Isnevermore IsEnemyDoom_Bringer Chance_20%
+	response nevermore_KillIsEnemyDoom_BringerChance_20%
+}
+
+Response nevermore_KillIsEnemyShadow_DemonChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_rival_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_rival_10.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsEnemyShadow_DemonChance_20%_Rule
+{
+	criteria Kill Isnevermore IsEnemyShadow_Demon Chance_20%
+	response nevermore_KillIsEnemyShadow_DemonChance_20%
+}
+
+Response nevermore_KillIsEnemyWindrunnerChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_rival_13.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsEnemyWindrunnerChance_20%_Rule
+{
+	criteria Kill Isnevermore IsEnemyWindrunner Chance_20%
+	response nevermore_KillIsEnemyWindrunnerChance_20%
+}
+
+Response nevermore_KillIsShadowFiendEconArcanaIsFirstBlood
+{
+	scene "scenes/nevermore/nevermore_nev_arc_firstblood_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_firstblood_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_firstblood_03.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsShadowFiendEconArcanaIsFirstBlood_Rule
+{
+	criteria Kill Isnevermore IsShadowFiendEconArcana IsFirstBlood
+	response nevermore_KillIsShadowFiendEconArcanaIsFirstBlood
+}
+
+Response nevermore_KillIsShadowFiendEconArcana
+{
+	scene "scenes/nevermore/nevermore_nev_arc_kill_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_kill_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsShadowFiendEconArcana_Rule
+{
+	criteria Kill Isnevermore IsShadowFiendEconArcana
+	response nevermore_KillIsShadowFiendEconArcana
+}
+
+Response nevermore_KillIsShadowFiendEconArcanaIsEnemyLeshracChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_arc_rival_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsShadowFiendEconArcanaIsEnemyLeshracChance_20%_Rule
+{
+	criteria Kill Isnevermore IsShadowFiendEconArcana IsEnemyLeshrac Chance_20%
+	response nevermore_KillIsShadowFiendEconArcanaIsEnemyLeshracChance_20%
+}
+
+Response nevermore_KillIsShadowFiendEconArcanaIsEnemyDoom_BringerChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_arc_rival_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_rival_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_rival_07.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsShadowFiendEconArcanaIsEnemyDoom_BringerChance_20%_Rule
+{
+	criteria Kill Isnevermore IsShadowFiendEconArcana IsEnemyDoom_Bringer Chance_20%
+	response nevermore_KillIsShadowFiendEconArcanaIsEnemyDoom_BringerChance_20%
+}
+
+Response nevermore_KillIsShadowFiendEconArcanaIsEnemyShadow_DemonChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_arc_rival_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_rival_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_rival_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_rival_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_rival_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_rival_10.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsShadowFiendEconArcanaIsEnemyShadow_DemonChance_20%_Rule
+{
+	criteria Kill Isnevermore IsShadowFiendEconArcana IsEnemyShadow_Demon Chance_20%
+	response nevermore_KillIsShadowFiendEconArcanaIsEnemyShadow_DemonChance_20%
+}
+
+Response nevermore_KillIsShadowFiendEconArcanaIsEnemyWindrunnerChance_20%
+{
+	scene "scenes/nevermore/nevermore_nev_arc_rival_13.vcd" nodelay noscene 
+}
+
+Rule nevermore_KillIsShadowFiendEconArcanaIsEnemyWindrunnerChance_20%_Rule
+{
+	criteria Kill Isnevermore IsShadowFiendEconArcana IsEnemyWindrunner Chance_20%
+	response nevermore_KillIsShadowFiendEconArcanaIsEnemyWindrunnerChance_20%
+}
+
 Response nevermore_Move
 {
 	scene "scenes/nevermore/nevermore_nev_move_01.vcd" nodelay noscene 
@@ -289,28 +471,6 @@ Rule nevermore_LearnIsShadowFiendEconArcanaIsNecromastery_Rule
 	response nevermore_LearnIsShadowFiendEconArcanaIsNecromastery
 }
 
-Response nevermore_CastExecuteIsRequiem
-{
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_11.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_12.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_13.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_ability_requiem_14.vcd" nodelay noscene 
-}
-
-Rule nevermore_CastExecuteIsRequiem_Rule
-{
-	criteria CastExecute Isnevermore IsRequiem
-	response nevermore_CastExecuteIsRequiem
-}
-
 Response nevermore_CastExecuteIsShadowRazeIsShortShadowRaze
 {
 	scene "scenes/nevermore/nevermore_nev_ability_shadow_07.vcd" nodelay noscene 
@@ -350,26 +510,26 @@ Rule nevermore_CastExecuteIsShadowRazeIsLongShadowRaze_Rule
 	response nevermore_CastExecuteIsShadowRazeIsLongShadowRaze
 }
 
-Response nevermore_CastExecuteIsShadowFiendEconArcanaIsRequiem
+Response nevermore_CastExecuteIsRequiem
 {
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_11.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_12.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_13.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_14.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_ability_requiem_14.vcd" nodelay noscene 
 }
 
-Rule nevermore_CastExecuteIsShadowFiendEconArcanaIsRequiem_Rule
+Rule nevermore_CastExecuteIsRequiem_Rule
 {
-	criteria CastExecute Isnevermore IsShadowFiendEconArcana IsRequiem
-	response nevermore_CastExecuteIsShadowFiendEconArcanaIsRequiem
+	criteria CastExecute Isnevermore IsRequiem
+	response nevermore_CastExecuteIsRequiem
 }
 
 Response nevermore_CastExecuteIsShadowFiendEconArcanaIsShadowRazeIsShortShadowRaze
@@ -411,186 +571,26 @@ Rule nevermore_CastExecuteIsShadowFiendEconArcanaIsShadowRazeIsLongShadowRaze_Ru
 	response nevermore_CastExecuteIsShadowFiendEconArcanaIsShadowRazeIsLongShadowRaze
 }
 
-Response nevermore_KillIsFirstBlood
+Response nevermore_CastExecuteIsShadowFiendEconArcanaIsRequiem
 {
-	scene "scenes/nevermore/nevermore_nev_firstblood_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_firstblood_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_firstblood_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_12.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_13.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_ability_requiem_14.vcd" nodelay noscene 
 }
 
-Rule nevermore_KillIsFirstBlood_Rule
+Rule nevermore_CastExecuteIsShadowFiendEconArcanaIsRequiem_Rule
 {
-	criteria Kill Isnevermore IsFirstBlood
-	response nevermore_KillIsFirstBlood
-}
-
-Response nevermore_Kill
-{
-	scene "scenes/nevermore/nevermore_nev_kill_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_09.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_10.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_11.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_12.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_kill_13.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_laugh_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_laugh_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_laugh_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_laugh_08.vcd" nodelay noscene 
-}
-
-Rule nevermore_Kill_Rule
-{
-	criteria Kill Isnevermore 
-	response nevermore_Kill
-}
-
-Response nevermore_KillIsEnemyLeshracChance_20%
-{
-	scene "scenes/nevermore/nevermore_nev_rival_01.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsEnemyLeshracChance_20%_Rule
-{
-	criteria Kill Isnevermore IsEnemyLeshrac Chance_20%
-	response nevermore_KillIsEnemyLeshracChance_20%
-}
-
-Response nevermore_KillIsEnemyDoom_BringerChance_20%
-{
-	scene "scenes/nevermore/nevermore_nev_rival_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_rival_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_rival_07.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsEnemyDoom_BringerChance_20%_Rule
-{
-	criteria Kill Isnevermore IsEnemyDoom_Bringer Chance_20%
-	response nevermore_KillIsEnemyDoom_BringerChance_20%
-}
-
-Response nevermore_KillIsEnemyShadow_DemonChance_20%
-{
-	scene "scenes/nevermore/nevermore_nev_rival_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_rival_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_rival_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_rival_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_rival_09.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_rival_10.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsEnemyShadow_DemonChance_20%_Rule
-{
-	criteria Kill Isnevermore IsEnemyShadow_Demon Chance_20%
-	response nevermore_KillIsEnemyShadow_DemonChance_20%
-}
-
-Response nevermore_KillIsEnemyWindrunnerChance_20%
-{
-	scene "scenes/nevermore/nevermore_nev_rival_13.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsEnemyWindrunnerChance_20%_Rule
-{
-	criteria Kill Isnevermore IsEnemyWindrunner Chance_20%
-	response nevermore_KillIsEnemyWindrunnerChance_20%
-}
-
-Response nevermore_KillIsShadowFiendEconArcanaIsFirstBlood
-{
-	scene "scenes/nevermore/nevermore_nev_arc_firstblood_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_firstblood_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_firstblood_03.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsShadowFiendEconArcanaIsFirstBlood_Rule
-{
-	criteria Kill Isnevermore IsShadowFiendEconArcana IsFirstBlood
-	response nevermore_KillIsShadowFiendEconArcanaIsFirstBlood
-}
-
-Response nevermore_KillIsShadowFiendEconArcana
-{
-	scene "scenes/nevermore/nevermore_nev_arc_kill_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_09.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_10.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_11.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_12.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_kill_13.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_laugh_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_laugh_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_laugh_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_laugh_08.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsShadowFiendEconArcana_Rule
-{
-	criteria Kill Isnevermore IsShadowFiendEconArcana
-	response nevermore_KillIsShadowFiendEconArcana
-}
-
-Response nevermore_KillIsShadowFiendEconArcanaIsEnemyLeshracChance_20%
-{
-	scene "scenes/nevermore/nevermore_nev_arc_rival_01.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsShadowFiendEconArcanaIsEnemyLeshracChance_20%_Rule
-{
-	criteria Kill Isnevermore IsShadowFiendEconArcana IsEnemyLeshrac Chance_20%
-	response nevermore_KillIsShadowFiendEconArcanaIsEnemyLeshracChance_20%
-}
-
-Response nevermore_KillIsShadowFiendEconArcanaIsEnemyDoom_BringerChance_20%
-{
-	scene "scenes/nevermore/nevermore_nev_arc_rival_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_rival_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_rival_07.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsShadowFiendEconArcanaIsEnemyDoom_BringerChance_20%_Rule
-{
-	criteria Kill Isnevermore IsShadowFiendEconArcana IsEnemyDoom_Bringer Chance_20%
-	response nevermore_KillIsShadowFiendEconArcanaIsEnemyDoom_BringerChance_20%
-}
-
-Response nevermore_KillIsShadowFiendEconArcanaIsEnemyShadow_DemonChance_20%
-{
-	scene "scenes/nevermore/nevermore_nev_arc_rival_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_rival_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_rival_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_rival_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_rival_09.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_rival_10.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsShadowFiendEconArcanaIsEnemyShadow_DemonChance_20%_Rule
-{
-	criteria Kill Isnevermore IsShadowFiendEconArcana IsEnemyShadow_Demon Chance_20%
-	response nevermore_KillIsShadowFiendEconArcanaIsEnemyShadow_DemonChance_20%
-}
-
-Response nevermore_KillIsShadowFiendEconArcanaIsEnemyWindrunnerChance_20%
-{
-	scene "scenes/nevermore/nevermore_nev_arc_rival_13.vcd" nodelay noscene 
-}
-
-Rule nevermore_KillIsShadowFiendEconArcanaIsEnemyWindrunnerChance_20%_Rule
-{
-	criteria Kill Isnevermore IsShadowFiendEconArcana IsEnemyWindrunner Chance_20%
-	response nevermore_KillIsShadowFiendEconArcanaIsEnemyWindrunnerChance_20%
+	criteria CastExecute Isnevermore IsShadowFiendEconArcana IsRequiem
+	response nevermore_CastExecuteIsShadowFiendEconArcanaIsRequiem
 }
 
 Response nevermore_Death
@@ -745,6 +745,160 @@ Rule nevermore_LevelUpIsShadowFiendEconArcana_Rule
 {
 	criteria LevelUp Isnevermore IsShadowFiendEconArcana
 	response nevermore_LevelUpIsShadowFiendEconArcana
+}
+
+Response nevermore_LastHit
+{
+	scene "scenes/nevermore/nevermore_nev_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_happy_12.vcd" nodelay noscene 
+}
+
+Rule nevermore_LastHit_Rule
+{
+	criteria LastHit Isnevermore 
+	response nevermore_LastHit
+}
+
+Response nevermore_LastHitIsShadowFiendEconArcana
+{
+	scene "scenes/nevermore/nevermore_nev_arc_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lasthit_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lasthit_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_09.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_10.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_11.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_happy_12.vcd" nodelay noscene 
+}
+
+Rule nevermore_LastHitIsShadowFiendEconArcana_Rule
+{
+	criteria LastHit Isnevermore IsShadowFiendEconArcana
+	response nevermore_LastHitIsShadowFiendEconArcana
+}
+
+Response nevermore_ItemDropIsUltraRareDrop
+{
+	scene "scenes/nevermore/nevermore_nev_lasthit_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsUltraRareDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsUltraRareDrop
+	response nevermore_ItemDropIsUltraRareDrop
+}
+
+Response nevermore_ItemDropIsRareDrop
+{
+	scene "scenes/nevermore/nevermore_nev_laugh_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsRareDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsRareDrop
+	response nevermore_ItemDropIsRareDrop
+}
+
+Response nevermore_ItemDropIsCommonDrop
+{
+	scene "scenes/nevermore/nevermore_nev_laugh_06.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsCommonDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsCommonDrop
+	response nevermore_ItemDropIsCommonDrop
+}
+
+Response nevermore_ItemDropIsShadowFiendEconArcanaIsUltraRareDrop
+{
+	scene "scenes/nevermore/nevermore_nev_arc_lasthit_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsShadowFiendEconArcanaIsUltraRareDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsShadowFiendEconArcana IsUltraRareDrop
+	response nevermore_ItemDropIsShadowFiendEconArcanaIsUltraRareDrop
+}
+
+Response nevermore_ItemDropIsShadowFiendEconArcanaIsRareDrop
+{
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsShadowFiendEconArcanaIsRareDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsShadowFiendEconArcana IsRareDrop
+	response nevermore_ItemDropIsShadowFiendEconArcanaIsRareDrop
+}
+
+Response nevermore_ItemDropIsShadowFiendEconArcanaIsCommonDrop
+{
+	scene "scenes/nevermore/nevermore_nev_arc_laugh_06.vcd" nodelay noscene 
+}
+
+Rule nevermore_ItemDropIsShadowFiendEconArcanaIsCommonDrop_Rule
+{
+	criteria ItemDrop Isnevermore IsShadowFiendEconArcana IsCommonDrop
+	response nevermore_ItemDropIsShadowFiendEconArcanaIsCommonDrop
+}
+
+Response nevermore_Deny
+{
+	scene "scenes/nevermore/nevermore_nev_deny_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_deny_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_Deny_Rule
+{
+	criteria Deny Isnevermore 
+	response nevermore_Deny
+}
+
+Response nevermore_DenyIsShadowFiendEconArcana
+{
+	scene "scenes/nevermore/nevermore_nev_arc_deny_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_deny_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_deny_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_deny_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_deny_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_deny_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_deny_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_DenyIsShadowFiendEconArcana_Rule
+{
+	criteria Deny Isnevermore IsShadowFiendEconArcana
+	response nevermore_DenyIsShadowFiendEconArcana
 }
 
 Response nevermore_Select
@@ -1029,30 +1183,6 @@ Rule nevermore_PurchaseIsShadowFiendEconArcanaIsAssaultCuirass_Rule
 	response nevermore_PurchaseIsShadowFiendEconArcanaIsAssaultCuirass
 }
 
-Response nevermore_Immortality
-{
-	scene "scenes/nevermore/nevermore_nev_immort_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_immort_03.vcd" nodelay noscene 
-}
-
-Rule nevermore_Immortality_Rule
-{
-	criteria Immortality Isnevermore 
-	response nevermore_Immortality
-}
-
-Response nevermore_ImmortalityIsShadowFiendEconArcana
-{
-	scene "scenes/nevermore/nevermore_nev_arc_immort_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_immort_03.vcd" nodelay noscene 
-}
-
-Rule nevermore_ImmortalityIsShadowFiendEconArcana_Rule
-{
-	criteria Immortality Isnevermore IsShadowFiendEconArcana
-	response nevermore_ImmortalityIsShadowFiendEconArcana
-}
-
 Response nevermore_MissingIsLaneTop
 {
 	scene "scenes/nevermore/nevermore_nev_lane_missing_01.vcd" nodelay noscene 
@@ -1119,248 +1249,28 @@ Rule nevermore_MissingIsShadowFiendEconArcanaIsLaneBot_Rule
 	response nevermore_MissingIsShadowFiendEconArcanaIsLaneBot
 }
 
-Response nevermore_Deny
+Response nevermore_Immortality
 {
-	scene "scenes/nevermore/nevermore_nev_deny_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_deny_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_deny_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_deny_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_deny_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_deny_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_deny_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_immort_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_immort_03.vcd" nodelay noscene 
 }
 
-Rule nevermore_Deny_Rule
+Rule nevermore_Immortality_Rule
 {
-	criteria Deny Isnevermore 
-	response nevermore_Deny
+	criteria Immortality Isnevermore 
+	response nevermore_Immortality
 }
 
-Response nevermore_DenyIsShadowFiendEconArcana
+Response nevermore_ImmortalityIsShadowFiendEconArcana
 {
-	scene "scenes/nevermore/nevermore_nev_arc_deny_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_deny_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_deny_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_deny_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_deny_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_deny_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_deny_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_immort_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_immort_03.vcd" nodelay noscene 
 }
 
-Rule nevermore_DenyIsShadowFiendEconArcana_Rule
+Rule nevermore_ImmortalityIsShadowFiendEconArcana_Rule
 {
-	criteria Deny Isnevermore IsShadowFiendEconArcana
-	response nevermore_DenyIsShadowFiendEconArcana
-}
-
-Response nevermore_LastHit
-{
-	scene "scenes/nevermore/nevermore_nev_lasthit_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lasthit_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lasthit_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lasthit_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_09.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_10.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_11.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_happy_12.vcd" nodelay noscene 
-}
-
-Rule nevermore_LastHit_Rule
-{
-	criteria LastHit Isnevermore 
-	response nevermore_LastHit
-}
-
-Response nevermore_LastHitIsShadowFiendEconArcana
-{
-	scene "scenes/nevermore/nevermore_nev_arc_lasthit_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lasthit_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lasthit_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lasthit_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_09.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_10.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_11.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_happy_12.vcd" nodelay noscene 
-}
-
-Rule nevermore_LastHitIsShadowFiendEconArcana_Rule
-{
-	criteria LastHit Isnevermore IsShadowFiendEconArcana
-	response nevermore_LastHitIsShadowFiendEconArcana
-}
-
-Response nevermore_ItemDropIsUltraRareDrop
-{
-	scene "scenes/nevermore/nevermore_nev_lasthit_02.vcd" nodelay noscene 
-}
-
-Rule nevermore_ItemDropIsUltraRareDrop_Rule
-{
-	criteria ItemDrop Isnevermore IsUltraRareDrop
-	response nevermore_ItemDropIsUltraRareDrop
-}
-
-Response nevermore_ItemDropIsRareDrop
-{
-	scene "scenes/nevermore/nevermore_nev_laugh_01.vcd" nodelay noscene 
-}
-
-Rule nevermore_ItemDropIsRareDrop_Rule
-{
-	criteria ItemDrop Isnevermore IsRareDrop
-	response nevermore_ItemDropIsRareDrop
-}
-
-Response nevermore_ItemDropIsCommonDrop
-{
-	scene "scenes/nevermore/nevermore_nev_laugh_06.vcd" nodelay noscene 
-}
-
-Rule nevermore_ItemDropIsCommonDrop_Rule
-{
-	criteria ItemDrop Isnevermore IsCommonDrop
-	response nevermore_ItemDropIsCommonDrop
-}
-
-Response nevermore_ItemDropIsShadowFiendEconArcanaIsUltraRareDrop
-{
-	scene "scenes/nevermore/nevermore_nev_arc_lasthit_02.vcd" nodelay noscene 
-}
-
-Rule nevermore_ItemDropIsShadowFiendEconArcanaIsUltraRareDrop_Rule
-{
-	criteria ItemDrop Isnevermore IsShadowFiendEconArcana IsUltraRareDrop
-	response nevermore_ItemDropIsShadowFiendEconArcanaIsUltraRareDrop
-}
-
-Response nevermore_ItemDropIsShadowFiendEconArcanaIsRareDrop
-{
-	scene "scenes/nevermore/nevermore_nev_arc_laugh_01.vcd" nodelay noscene 
-}
-
-Rule nevermore_ItemDropIsShadowFiendEconArcanaIsRareDrop_Rule
-{
-	criteria ItemDrop Isnevermore IsShadowFiendEconArcana IsRareDrop
-	response nevermore_ItemDropIsShadowFiendEconArcanaIsRareDrop
-}
-
-Response nevermore_ItemDropIsShadowFiendEconArcanaIsCommonDrop
-{
-	scene "scenes/nevermore/nevermore_nev_arc_laugh_06.vcd" nodelay noscene 
-}
-
-Rule nevermore_ItemDropIsShadowFiendEconArcanaIsCommonDrop_Rule
-{
-	criteria ItemDrop Isnevermore IsShadowFiendEconArcana IsCommonDrop
-	response nevermore_ItemDropIsShadowFiendEconArcanaIsCommonDrop
-}
-
-Response nevermore_Defeat
-{
-	scene "scenes/nevermore/nevermore_nev_lose_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lose_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lose_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lose_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lose_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lose_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lose_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_lose_08.vcd" nodelay noscene 
-}
-
-Rule nevermore_Defeat_Rule
-{
-	criteria Defeat Isnevermore 
-	response nevermore_Defeat
-}
-
-Response nevermore_DefeatIsShadowFiendEconArcana
-{
-	scene "scenes/nevermore/nevermore_nev_arc_lose_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lose_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lose_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lose_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lose_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lose_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lose_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_lose_08.vcd" nodelay noscene 
-}
-
-Rule nevermore_DefeatIsShadowFiendEconArcana_Rule
-{
-	criteria Defeat Isnevermore IsShadowFiendEconArcana
-	response nevermore_DefeatIsShadowFiendEconArcana
-}
-
-Response nevermore_Victory
-{
-	scene "scenes/nevermore/nevermore_nev_win_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_win_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_win_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_win_07.vcd" nodelay noscene 
-}
-
-Rule nevermore_Victory_Rule
-{
-	criteria Victory Isnevermore 
-	response nevermore_Victory
-}
-
-Response nevermore_VictoryIsShadowFiendEconArcana
-{
-	scene "scenes/nevermore/nevermore_nev_arc_win_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_win_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_win_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_win_07.vcd" nodelay noscene 
-}
-
-Rule nevermore_VictoryIsShadowFiendEconArcana_Rule
-{
-	criteria Victory Isnevermore IsShadowFiendEconArcana
-	response nevermore_VictoryIsShadowFiendEconArcana
-}
-
-Response nevermore_Bottling
-{
-	scene "scenes/nevermore/nevermore_nev_bottle_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_bottle_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_bottle_03.vcd" nodelay noscene 
-}
-
-Rule nevermore_Bottling_Rule
-{
-	criteria Bottling Isnevermore 
-	response nevermore_Bottling
-}
-
-Response nevermore_BottlingIsShadowFiendEconArcana
-{
-	scene "scenes/nevermore/nevermore_nev_arc_bottle_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_bottle_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_bottle_03.vcd" nodelay noscene 
-}
-
-Rule nevermore_BottlingIsShadowFiendEconArcana_Rule
-{
-	criteria Bottling Isnevermore IsShadowFiendEconArcana
-	response nevermore_BottlingIsShadowFiendEconArcana
+	criteria Immortality Isnevermore IsShadowFiendEconArcana
+	response nevermore_ImmortalityIsShadowFiendEconArcana
 }
 
 Response nevermore_PowerupIsPowerupHaste
@@ -1396,17 +1306,6 @@ Rule nevermore_PowerupIsPowerupRegeneration_Rule
 	response nevermore_PowerupIsPowerupRegeneration
 }
 
-Response nevermore_PowerupIsPowerupBounty
-{
-	scene "scenes/nevermore/nevermore_nev_lasthit_03.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule nevermore_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Isnevermore IsPowerupBounty
-	response nevermore_PowerupIsPowerupBounty
-}
-
 Response nevermore_PowerupIsPowerupIllusion
 {
 	scene "scenes/nevermore/nevermore_nev_illus_01.vcd" nodelay noscene 
@@ -1440,15 +1339,15 @@ Rule nevermore_PowerupIsPowerupInvisibilityChance_25%_Rule
 	response nevermore_PowerupIsPowerupInvisibilityChance_25%
 }
 
-Response nevermore_PowerupIsShadowFiendEconArcanaIsPowerupBounty
+Response nevermore_PowerupIsPowerupBounty
 {
-	scene "scenes/nevermore/nevermore_nev_arc_lasthit_03.vcd" nodelay noscene respeakdelay 300
+	scene "scenes/nevermore/nevermore_nev_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
-Rule nevermore_PowerupIsShadowFiendEconArcanaIsPowerupBounty_Rule
+Rule nevermore_PowerupIsPowerupBounty_Rule
 {
-	criteria Powerup Isnevermore IsShadowFiendEconArcana IsPowerupBounty
-	response nevermore_PowerupIsShadowFiendEconArcanaIsPowerupBounty
+	criteria Powerup Isnevermore IsPowerupBounty
+	response nevermore_PowerupIsPowerupBounty
 }
 
 Response nevermore_PowerupIsShadowFiendEconArcanaIsPowerupHaste
@@ -1517,110 +1416,41 @@ Rule nevermore_PowerupIsShadowFiendEconArcanaIsPowerupInvisibilityChance_25%_Rul
 	response nevermore_PowerupIsShadowFiendEconArcanaIsPowerupInvisibilityChance_25%
 }
 
-Response nevermore_InTheBag
+Response nevermore_PowerupIsShadowFiendEconArcanaIsPowerupBounty
 {
-	scene "scenes/nevermore/nevermore_nev_inthebag_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lasthit_03.vcd" nodelay noscene respeakdelay 300
 }
 
-Rule nevermore_InTheBag_Rule
+Rule nevermore_PowerupIsShadowFiendEconArcanaIsPowerupBounty_Rule
 {
-	criteria InTheBag Isnevermore 
-	response nevermore_InTheBag
+	criteria Powerup Isnevermore IsShadowFiendEconArcana IsPowerupBounty
+	response nevermore_PowerupIsShadowFiendEconArcanaIsPowerupBounty
 }
 
-Response nevermore_InTheBagIsShadowFiendEconArcana
+Response nevermore_Bottling
 {
-	scene "scenes/nevermore/nevermore_nev_arc_inthebag_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_bottle_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_bottle_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_bottle_03.vcd" nodelay noscene 
 }
 
-Rule nevermore_InTheBagIsShadowFiendEconArcana_Rule
+Rule nevermore_Bottling_Rule
 {
-	criteria InTheBag Isnevermore IsShadowFiendEconArcana
-	response nevermore_InTheBagIsShadowFiendEconArcana
+	criteria Bottling Isnevermore 
+	response nevermore_Bottling
 }
 
-Response nevermore_Thanks
+Response nevermore_BottlingIsShadowFiendEconArcana
 {
-	scene "scenes/nevermore/nevermore_nev_thanks_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_thanks_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_bottle_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_bottle_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_bottle_03.vcd" nodelay noscene 
 }
 
-Rule nevermore_Thanks_Rule
+Rule nevermore_BottlingIsShadowFiendEconArcana_Rule
 {
-	criteria Thanks Isnevermore 
-	response nevermore_Thanks
-}
-
-Response nevermore_ThanksIsShadowFiendEconArcana
-{
-	scene "scenes/nevermore/nevermore_nev_arc_thanks_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_thanks_02.vcd" nodelay noscene 
-}
-
-Rule nevermore_ThanksIsShadowFiendEconArcana_Rule
-{
-	criteria Thanks Isnevermore IsShadowFiendEconArcana
-	response nevermore_ThanksIsShadowFiendEconArcana
-}
-
-Response nevermore_Pain
-{
-	scene "scenes/nevermore/nevermore_nev_pain_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_pain_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_pain_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_pain_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_pain_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_pain_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_pain_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_pain_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_pain_09.vcd" nodelay noscene 
-}
-
-Rule nevermore_Pain_Rule
-{
-	criteria Pain Isnevermore 
-	response nevermore_Pain
-}
-
-Response nevermore_PainChance_25%
-{
-	scene "scenes/nevermore/nevermore_nev_underattack_01.vcd" nodelay noscene respeakdelay 120
-}
-
-Rule nevermore_PainChance_25%_Rule
-{
-	criteria Pain Isnevermore Chance_25%
-	response nevermore_PainChance_25%
-}
-
-Response nevermore_PainIsShadowFiendEconArcana
-{
-	scene "scenes/nevermore/nevermore_nev_arc_pain_01.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_pain_02.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_pain_03.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_pain_04.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_pain_05.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_pain_06.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_pain_07.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_pain_08.vcd" nodelay noscene 
-	scene "scenes/nevermore/nevermore_nev_arc_pain_09.vcd" nodelay noscene 
-}
-
-Rule nevermore_PainIsShadowFiendEconArcana_Rule
-{
-	criteria Pain Isnevermore IsShadowFiendEconArcana
-	response nevermore_PainIsShadowFiendEconArcana
-}
-
-Response nevermore_PainIsShadowFiendEconArcanaChance_25%
-{
-	scene "scenes/nevermore/nevermore_nev_arc_underattack_01.vcd" nodelay noscene respeakdelay 120
-}
-
-Rule nevermore_PainIsShadowFiendEconArcanaChance_25%_Rule
-{
-	criteria Pain Isnevermore IsShadowFiendEconArcana Chance_25%
-	response nevermore_PainIsShadowFiendEconArcanaChance_25%
+	criteria Bottling Isnevermore IsShadowFiendEconArcana
+	response nevermore_BottlingIsShadowFiendEconArcana
 }
 
 Response nevermore_CooldownLittleNag
@@ -1765,6 +1595,176 @@ Rule nevermore_NoManaIsShadowFiendEconArcanaSuperNag_Rule
 {
 	criteria NoMana Isnevermore IsShadowFiendEconArcana SuperNag
 	response nevermore_NoManaIsShadowFiendEconArcanaSuperNag
+}
+
+Response nevermore_PainChance_25%
+{
+	scene "scenes/nevermore/nevermore_nev_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule nevermore_PainChance_25%_Rule
+{
+	criteria Pain Isnevermore Chance_25%
+	response nevermore_PainChance_25%
+}
+
+Response nevermore_Pain
+{
+	scene "scenes/nevermore/nevermore_nev_pain_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_pain_09.vcd" nodelay noscene 
+}
+
+Rule nevermore_Pain_Rule
+{
+	criteria Pain Isnevermore 
+	response nevermore_Pain
+}
+
+Response nevermore_PainIsShadowFiendEconArcanaChance_25%
+{
+	scene "scenes/nevermore/nevermore_nev_arc_underattack_01.vcd" nodelay noscene respeakdelay 120
+}
+
+Rule nevermore_PainIsShadowFiendEconArcanaChance_25%_Rule
+{
+	criteria Pain Isnevermore IsShadowFiendEconArcana Chance_25%
+	response nevermore_PainIsShadowFiendEconArcanaChance_25%
+}
+
+Response nevermore_PainIsShadowFiendEconArcana
+{
+	scene "scenes/nevermore/nevermore_nev_arc_pain_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_pain_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_pain_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_pain_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_pain_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_pain_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_pain_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_pain_08.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_pain_09.vcd" nodelay noscene 
+}
+
+Rule nevermore_PainIsShadowFiendEconArcana_Rule
+{
+	criteria Pain Isnevermore IsShadowFiendEconArcana
+	response nevermore_PainIsShadowFiendEconArcana
+}
+
+Response nevermore_InTheBag
+{
+	scene "scenes/nevermore/nevermore_nev_inthebag_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_InTheBag_Rule
+{
+	criteria InTheBag Isnevermore 
+	response nevermore_InTheBag
+}
+
+Response nevermore_InTheBagIsShadowFiendEconArcana
+{
+	scene "scenes/nevermore/nevermore_nev_arc_inthebag_01.vcd" nodelay noscene 
+}
+
+Rule nevermore_InTheBagIsShadowFiendEconArcana_Rule
+{
+	criteria InTheBag Isnevermore IsShadowFiendEconArcana
+	response nevermore_InTheBagIsShadowFiendEconArcana
+}
+
+Response nevermore_Thanks
+{
+	scene "scenes/nevermore/nevermore_nev_thanks_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_thanks_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_Thanks_Rule
+{
+	criteria Thanks Isnevermore 
+	response nevermore_Thanks
+}
+
+Response nevermore_ThanksIsShadowFiendEconArcana
+{
+	scene "scenes/nevermore/nevermore_nev_arc_thanks_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_thanks_02.vcd" nodelay noscene 
+}
+
+Rule nevermore_ThanksIsShadowFiendEconArcana_Rule
+{
+	criteria Thanks Isnevermore IsShadowFiendEconArcana
+	response nevermore_ThanksIsShadowFiendEconArcana
+}
+
+Response nevermore_Defeat
+{
+	scene "scenes/nevermore/nevermore_nev_lose_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_lose_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_Defeat_Rule
+{
+	criteria Defeat Isnevermore 
+	response nevermore_Defeat
+}
+
+Response nevermore_DefeatIsShadowFiendEconArcana
+{
+	scene "scenes/nevermore/nevermore_nev_arc_lose_01.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lose_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lose_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lose_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lose_05.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lose_06.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lose_07.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_lose_08.vcd" nodelay noscene 
+}
+
+Rule nevermore_DefeatIsShadowFiendEconArcana_Rule
+{
+	criteria Defeat Isnevermore IsShadowFiendEconArcana
+	response nevermore_DefeatIsShadowFiendEconArcana
+}
+
+Response nevermore_Victory
+{
+	scene "scenes/nevermore/nevermore_nev_win_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_win_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_win_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_win_07.vcd" nodelay noscene 
+}
+
+Rule nevermore_Victory_Rule
+{
+	criteria Victory Isnevermore 
+	response nevermore_Victory
+}
+
+Response nevermore_VictoryIsShadowFiendEconArcana
+{
+	scene "scenes/nevermore/nevermore_nev_arc_win_02.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_win_03.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_win_04.vcd" nodelay noscene 
+	scene "scenes/nevermore/nevermore_nev_arc_win_07.vcd" nodelay noscene 
+}
+
+Rule nevermore_VictoryIsShadowFiendEconArcana_Rule
+{
+	criteria Victory Isnevermore IsShadowFiendEconArcana
+	response nevermore_VictoryIsShadowFiendEconArcana
 }
 
 Response nevermore_EmoteIsEmoteLaugh

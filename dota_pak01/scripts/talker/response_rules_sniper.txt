@@ -151,10 +151,10 @@ Response sniper_Attack
 	scene "scenes/sniper/sniper_snip_attack_10.vcd" nodelay noscene 
 	scene "scenes/sniper/sniper_snip_attack_11.vcd" nodelay noscene 
 	scene "scenes/sniper/sniper_snip_attack_12.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_tf2_05.vcd" nodelay noscene 
 	scene "scenes/sniper/sniper_snip_lasthit_04.vcd" nodelay noscene 
 	scene "scenes/sniper/sniper_snip_lasthit_06.vcd" nodelay noscene 
 	scene "scenes/sniper/sniper_snip_lasthit_10.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_tf2_05.vcd" nodelay noscene 
 }
 
 Rule sniper_Attack_Rule
@@ -419,21 +419,20 @@ Rule sniper_DeathIsReincarnating_Rule
 	response sniper_DeathIsReincarnating
 }
 
-Response sniper_LastHit
+Response sniper_Select
 {
-	scene "scenes/sniper/sniper_snip_lasthit_01.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_lasthit_02.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_lasthit_03.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_lasthit_05.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_lasthit_07.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_lasthit_08.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_tf2_06.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_tf2_08.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_rare_01.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_rare_02.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_rare_03.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_rare_04.vcd" nodelay noscene 
 }
 
-Rule sniper_LastHit_Rule
+Rule sniper_Select_Rule
 {
-	criteria LastHit Issniper 
-	response sniper_LastHit
+	criteria Select Issniper 
+	response sniper_Select
 }
 
 Response sniper_Respawn
@@ -457,20 +456,21 @@ Rule sniper_Respawn_Rule
 	response sniper_Respawn
 }
 
-Response sniper_Select
+Response sniper_LastHit
 {
-	scene "scenes/sniper/sniper_snip_rare_01.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_rare_02.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_rare_03.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_rare_04.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_tf2_06.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_tf2_08.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lasthit_01.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lasthit_02.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lasthit_03.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lasthit_05.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lasthit_07.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lasthit_08.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lasthit_09.vcd" nodelay noscene 
 }
 
-Rule sniper_Select_Rule
+Rule sniper_LastHit_Rule
 {
-	criteria Select Issniper 
-	response sniper_Select
+	criteria LastHit Issniper 
+	response sniper_LastHit
 }
 
 Response sniper_PurchaseIsExpensiveItem
@@ -484,17 +484,6 @@ Rule sniper_PurchaseIsExpensiveItem_Rule
 {
 	criteria Purchase Issniper IsExpensiveItem
 	response sniper_PurchaseIsExpensiveItem
-}
-
-Response sniper_PurchaseIsAssaultCuirass
-{
-	scene "scenes/sniper/sniper_snip_purch_armor_01.vcd" nodelay noscene speakonce
-}
-
-Rule sniper_PurchaseIsAssaultCuirass_Rule
-{
-	criteria Purchase Issniper IsAssaultCuirass
-	response sniper_PurchaseIsAssaultCuirass
 }
 
 Response sniper_PurchaseIsBlinkDagger
@@ -546,54 +535,15 @@ Rule sniper_PurchaseIsDesolator_Rule
 	response sniper_PurchaseIsDesolator
 }
 
-Response sniper_Bottling
+Response sniper_PurchaseIsAssaultCuirass
 {
-	scene "scenes/sniper/sniper_snip_bottle_01.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_bottle_02.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_bottle_03.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_purch_armor_01.vcd" nodelay noscene speakonce
 }
 
-Rule sniper_Bottling_Rule
+Rule sniper_PurchaseIsAssaultCuirass_Rule
 {
-	criteria Bottling Issniper 
-	response sniper_Bottling
-}
-
-Response sniper_BottlingChance_5%
-{
-	scene "scenes/sniper/sniper_snip_bottle_04.vcd" nodelay noscene 
-}
-
-Rule sniper_BottlingChance_5%_Rule
-{
-	criteria Bottling Issniper Chance_5%
-	response sniper_BottlingChance_5%
-}
-
-Response sniper_Defeat
-{
-	scene "scenes/sniper/sniper_snip_lose_01.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_lose_02.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_lose_03.vcd" nodelay noscene 
-}
-
-Rule sniper_Defeat_Rule
-{
-	criteria Defeat Issniper 
-	response sniper_Defeat
-}
-
-Response sniper_Victory
-{
-	scene "scenes/sniper/sniper_snip_win_01.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_win_02.vcd" nodelay noscene 
-	scene "scenes/sniper/sniper_snip_win_03.vcd" nodelay noscene 
-}
-
-Rule sniper_Victory_Rule
-{
-	criteria Victory Issniper 
-	response sniper_Victory
+	criteria Purchase Issniper IsAssaultCuirass
+	response sniper_PurchaseIsAssaultCuirass
 }
 
 Response sniper_Immortality
@@ -662,17 +612,6 @@ Rule sniper_PowerupIsPowerupDoubleDamageChance_25%_Rule
 	response sniper_PowerupIsPowerupDoubleDamageChance_25%
 }
 
-Response sniper_PowerupIsPowerupBounty
-{
-	scene "scenes/sniper/sniper_snip_purch_03.vcd" nodelay noscene respeakdelay 300
-}
-
-Rule sniper_PowerupIsPowerupBounty_Rule
-{
-	criteria Powerup Issniper IsPowerupBounty
-	response sniper_PowerupIsPowerupBounty
-}
-
 Response sniper_PowerupIsPowerupRegeneration
 {
 	scene "scenes/sniper/sniper_snip_regen_01.vcd" nodelay noscene 
@@ -726,6 +665,41 @@ Rule sniper_PowerupIsPowerupInvisibility_Rule
 {
 	criteria Powerup Issniper IsPowerupInvisibility
 	response sniper_PowerupIsPowerupInvisibility
+}
+
+Response sniper_PowerupIsPowerupBounty
+{
+	scene "scenes/sniper/sniper_snip_purch_03.vcd" nodelay noscene respeakdelay 300
+}
+
+Rule sniper_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Issniper IsPowerupBounty
+	response sniper_PowerupIsPowerupBounty
+}
+
+Response sniper_Bottling
+{
+	scene "scenes/sniper/sniper_snip_bottle_01.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_bottle_02.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_bottle_03.vcd" nodelay noscene 
+}
+
+Rule sniper_Bottling_Rule
+{
+	criteria Bottling Issniper 
+	response sniper_Bottling
+}
+
+Response sniper_BottlingChance_5%
+{
+	scene "scenes/sniper/sniper_snip_bottle_04.vcd" nodelay noscene 
+}
+
+Rule sniper_BottlingChance_5%_Rule
+{
+	criteria Bottling Issniper Chance_5%
+	response sniper_BottlingChance_5%
 }
 
 Response sniper_CooldownLittleNag
@@ -865,6 +839,32 @@ Rule sniper_InTheBag_Rule
 {
 	criteria InTheBag Issniper 
 	response sniper_InTheBag
+}
+
+Response sniper_Defeat
+{
+	scene "scenes/sniper/sniper_snip_lose_01.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lose_02.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_lose_03.vcd" nodelay noscene 
+}
+
+Rule sniper_Defeat_Rule
+{
+	criteria Defeat Issniper 
+	response sniper_Defeat
+}
+
+Response sniper_Victory
+{
+	scene "scenes/sniper/sniper_snip_win_01.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_win_02.vcd" nodelay noscene 
+	scene "scenes/sniper/sniper_snip_win_03.vcd" nodelay noscene 
+}
+
+Rule sniper_Victory_Rule
+{
+	criteria Victory Issniper 
+	response sniper_Victory
 }
 
 Response sniper_Taunt
