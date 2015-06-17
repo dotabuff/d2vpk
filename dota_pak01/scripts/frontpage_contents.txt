@@ -1,0 +1,124 @@
+"frontpage_contents"
+{
+	// "layout_pos"			- which layout position the cell will appear under. multiple cells with the same layout position are put into a carousel
+	// "image_url"			- Local path to the image, under <todo: path> . Image will be uploaded to the CDN and actual page will return the CDN url.
+	// "header_text"		- appears at the top of the Cell. used for category like "NEW HERO", "SALE", "CUSTOM GAME"
+	// "title_text"			- appears at the bottom of the cell on the information panel. The name or title of the item that is featured in the cell. Eg, "Pudge Wars", "Blades of Voth Domosh"
+	// "description_text"	- details string that appears below the title_text
+	// "click_url"			- panorama event that will fire when the user clicks the cell
+	// "price_def_index"	- if set to non-zero, price string will be added with the current store price of the item
+	// "sale_item"			- if true, all other block content will be replaced with the current store sale item
+
+	// Blog / generic post
+	"0"
+	{
+		"layout_pos"			"0"
+		"image_url"				"http://cdn.dota2.com/apps/dota2/images/frontpage/reborn.png"
+		"header_text"			"#dota_today_today_in_dota2"
+		"title_text"			"#dota_today_dota_2_reborn"
+		"description_text"		"#dota_today_dota_2_reborn_descrip"
+		"click_url"				"BrowserGoToURL( http://www.dota2.com/reborn/ )"
+		"item_def_index"		""
+		"sale_item"				"0"
+	}
+
+	"1"
+	{
+		"layout_pos"			"0"
+		"image_url"				"http://cdn.dota2.com/apps/dota2/images/frontpage/ti5_compendium_01.jpg"
+		"header_text"			"#dota_today_compendium_2015_header"
+		"title_text"			"#dota_today_compendium_2015_title"
+		"description_text"		"#dota_today_compendium_2015_descrip"
+		"click_url"				"BrowserGoToURL( http://www.dota2.com/international/compendium/ )"
+		"item_def_index"		""
+		"sale_item"				"0"
+	}
+
+	"2"
+	{
+		"layout_pos"			"0"
+		"image_url"				"http://cdn.dota2.com/apps/dota2/images/store/banners/ti5_2400_compendium_points.jpg"
+		"header_text"			"#dota_today_compendium_24_levels_header"
+		"title_text"			"#dota_today_compendium_24_levels_title"
+		"description_text"		"#dota_today_compendium_24_levels_descrip"
+		"click_url"				"BrowserGoToURL( http://www.dota2.com/store/itemdetails/16410/ )"		
+		//"click_url_pw"		"BrowserGoToURL( http://store.dota2.com.cn/itemdetails/16410/ )"		// turn this into a custom event that opens the correct store Url	
+		"item_def_index"		"16410"
+		"sale_item"				"0"
+	}
+
+	"3"
+	{
+		"layout_pos"			"0"
+		"image_url"				"http://cdn.dota2.com/apps/570/icons/econ/loading_screens/emberbark_loadingscreen_large.e105d6e31e219f3c1f677a48097db01f913c521f.png"
+		"header_text"			"#dota_frontpage_updates_new"
+		"title_text"			"#dota_today_grimsneer_title"
+		"description_text"		"#dota_today_grimsneer_descrip"
+		"click_url"				"DOTAShowItemDefPage( 11364 )"		// http://www.dota2.com/store/itemdetails/11364 
+		"item_def_index"		"11364"
+		"sale_item"				"0"
+	}
+
+	// Custom game
+	"4"
+	{
+		"layout_pos"			"1"
+		"image_url"				"http://cloud-4.steamusercontent.com/ugc/534016167117098266/A3BB9F17B0F884E9B1C51097F12296BAB24DBE1A/"
+		"header_text"			"#DOTA_Play_Tab_Custom"
+		"title_text"			"#dota_today_battleships_title"
+		"description_text"		"#dota_today_battleships_descrip"
+		"click_url"				"DOTAShowCustomGamePage( 302491959 )"
+		"item_def_index"		""
+		"sale_item"				"0"
+	}
+
+	// Custom game
+	"5"
+	{
+		"layout_pos"			"2"
+		"image_url"				"http://cdn.dota2.com/apps/dota2/images/frontpage/overthrow.jpg"
+		"header_text"			"#DOTA_Play_Tab_Custom"
+		"title_text"			"#dota_today_overthrow_title"
+		"description_text"		"#dota_today_overthrow_descrip"
+		"click_url"				"DOTAShowCustomGamePage( 16227 )"
+		"item_def_index"		""
+		"sale_item"				"0"
+	}
+
+	// Sale Item
+	"6"
+	{
+		"layout_pos"			"3"
+		"image_url"				""
+		"header_text"			""
+		"title_text"			""
+		"description_text"		""
+		"click_url"				""
+		"item_def_index"		""
+		"sale_item"				"1"
+	}
+
+	"7"
+	{
+		"layout_pos"			"4"
+		"image_url"				"http://cdn.dota2.com/apps/dota2/images/frontpage/ti5_heroes.jpg"
+		"header_text"			""
+		"title_text"			"#dota_today_international_title"
+		"description_text"		"#dota_today_international_descrip"
+		"click_url"				"BrowserGoToURL( http://www.dota2.com/international/announcement )"
+		"item_def_index"		""
+		"sale_item"				"0"
+	}
+
+	"8"
+	{
+		"layout_pos"			"5"
+		"image_url"				"file://{images}/challenges/challengeimage_tutorial_psd.vtex"
+		"header_text"			"#dota_today_tutorial_header"
+		"title_text"			"#dota_today_tutorial_title"
+		"description_text"		"#dota_today_tutorial_descrip"
+		"click_url"				"DOTAShowLearnGuidedBotMatchesPage()"
+		"item_def_index"		""
+		"sale_item"				"0"
+	}
+}
