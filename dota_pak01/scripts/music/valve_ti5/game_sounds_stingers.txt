@@ -1,0 +1,154 @@
+// playgamesound valve_ti5.stinger.respawn; playgamesound valve_ti5.stinger.buy_back; playgamesound DOTAMusic_Hero.Reincarnate; playgamesound DOTAMusic_Stinger.003;
+// playgamesound DOTAMusic_Stinger.004; playgamesound DOTAMusic_Stinger.005; playgamesound DOTAMusic_Stinger.006; playgamesound DOTAMusic_Stinger.007;
+// playgamesound DOTAMusic_Stinger.008; playgamesound DOTAMusic_Stinger.009; playgamesound valve_ti5.stinger.radiant_win; playgamesound valve_ti5.stinger.dire_win;
+// playgamesound valve_ti5.stinger.dire_lose; playgamesound valve_ti5.stinger.radiant_lose;
+
+"valve_ti5.stinger.respawn"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"0.9"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/valve_ti5/stingers/respawn.mp3"
+	"soundentry_version" "2"
+	"operator_stacks"
+	{	
+		"soundentry_operator_data"
+		{
+			"track_data"
+			{
+				"start_point" "0.0"
+				"track_name" "main"
+				"track_priority" "60"	
+			}
+		}
+		
+		"start_stack"
+		{
+			"import_stack" "dota_start_respawn_music"
+		}
+		
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger_stoptracks"
+		}
+		
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_respawn_music"			
+		}
+	}
+}
+
+"valve_ti5.stinger.radiant_win"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/valve_ti5/stingers/radiant_win.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_win_music"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger"
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_win_music"
+		}
+	}
+}
+
+"valve_ti5.stinger.dire_win"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/valve_ti5/stingers/dire_win.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_win_music"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger"
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_win_music"
+		}
+	}
+}
+
+"valve_ti5.stinger.dire_lose"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/valve_ti5/stingers/dire_lose.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_lose_music"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger"
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_lose_music"
+		}
+	}
+}
+
+"valve_ti5.stinger.radiant_lose"
+{
+	"channel"		"CHAN_AUTO"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"			"PITCH_NORM"
+
+	"wave"			"#music/valve_ti5/stingers/radiant_lose.mp3"
+	
+	"soundentry_version" "2"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_start_lose_music"
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default_stinger"
+		}
+		"stop_stack"
+		{	
+			"import_stack" "dota_stop_lose_music"
+		}
+	}
+}

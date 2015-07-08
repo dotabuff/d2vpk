@@ -1,0 +1,23 @@
+"Sample Gamestate Integration Script"
+{
+ "uri" "http://127.0.0.1:3002"
+ "timeout" "5.0"
+ "buffer"  "0.1"
+ "throttle" "0.5"
+ "heartbeat" "10.0"
+ "auth"
+ {
+   "key1" "rx54AtFVYw2bXmCCWJu6"
+   "key2" "6HMGuv2F8m5grBFy292d"
+ }
+ "data"
+ {
+   "provider"            "1"
+   "map"                 "1"
+   //"round"               "1"
+   //"player_id"           "1"
+   //"player_state"        "1"
+   //"player_weapons"      "1"
+   //"player_match_stats"  "1"
+ }
+}
