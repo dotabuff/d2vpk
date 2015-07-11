@@ -124,13 +124,113 @@
 	}
 }
 
-"Hero_Meepo.Poof.End"
+"Hero_Meepo.Poof.End00"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/meepo/poof_appear.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/meepo/poof_appear.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/meepo/poof_appear.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/meepo/poof_appear.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End04"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95, 105"
 	"wave"			"weapons/hero/meepo/poof_appear.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End05"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/meepo/poof_appear.wav"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -244,9 +344,25 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
-	"wave"			")weapons/hero/meepo/poof_channel_divining.wav"
+	"wave"			")weapons/hero/meepo/poof_channel.wav"
 	"operator_stacks"
 	{
+		
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.CrystalTap"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.Poof.Channel.Crystal"
+			}
+		}
+		
 		"update_stack"
 		{
 			"import_stack" "dota_update_default"
@@ -257,6 +373,267 @@
 			"volume_fade_out"
 			{
 				"input_max" "0.5"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.Channel.Crystal"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_78dB"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/meepo/poof_chan_crystal01.wav"
+		"wave"			")weapons/hero/meepo/poof_chan_crystal02.wav"
+		"wave"			")weapons/hero/meepo/poof_chan_crystal03.wav"
+		"wave"			")weapons/hero/meepo/poof_chan_crystal04.wav"
+		"wave"			")weapons/hero/meepo/poof_chan_crystal05.wav"
+		"wave"			")weapons/hero/meepo/poof_chan_crystal06.wav"
+		"wave"			")weapons/hero/meepo/poof_chan_crystal07.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+
+//		"update_stack"
+//		{
+//			"import_stack" "dota_update_default"
+//			"mixer"
+//			{
+//				"mixgroup" "Weapons"
+//			}
+//			"volume_fade_out"
+//			{
+//				"input_max" "0.5"
+//			}
+//		}
+
+	}
+}
+
+"Hero_Meepo.CrystalTap"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/meepo/channel_tap.wav"
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+
+"Hero_Meepo.Poof.End.Crystal00"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"		"weapons/hero/meepo/poof_appear.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.CrystalsLayer01"
+			}
+			"play_third_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.CrystalsLayer02"
+			}
+
+		}
+	}
+}
+
+"Hero_Meepo.CrystalsLayer01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/meepo/chorus/crystal01.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal02.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal03.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal04.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal05.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal06.mp3"
+	}
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Meepo.CrystalsLayer02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.9"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"100"
+	"rndwave"
+	{
+		"wave"	")weapons/hero/meepo/chorus/crystal11.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal12.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal13.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal14.mp3"
+		"wave"	")weapons/hero/meepo/chorus/crystal15.mp3"
+	}
+
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+"Hero_Meepo.Poof.End.Crystal01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/meepo/poof_tone_01.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.Poof"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End.Crystal02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/meepo/poof_tone_02.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.Poof"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End.Crystal03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/meepo/poof_tone_03.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.Poof"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End.Crystal04"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/meepo/poof_tone_04.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.Poof"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof.End.Crystal05"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"100"
+	"wave"			")weapons/hero/meepo/poof_tone_05.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Meepo.Poof"
+			}
+		}
+	}
+}
+
+"Hero_Meepo.Poof"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/meepo/poof_appear.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
 			}
 		}
 	}

@@ -28646,6 +28646,36 @@
 	}
 
 	//=================================================================================================================
+	// Ability: Courier's shortcut ability to take stash items if there are any, then transfer all to the hero
+	//=================================================================================================================
+	"courier_take_stash_and_transfer_items"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5676"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stash_pickup_distance"		"250"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"handoff_distance"		"400"
+			}
+		}
+		
+		"MaxLevel"		"1"
+	}
+
+	//=================================================================================================================
 	// Ability: Courier Shield
 	//=================================================================================================================
 	"courier_shield"
@@ -33685,6 +33715,6 @@
 
 ////////////////////////
 ////////////////////////
-// Next Ability ID: 5676
+// Next Ability ID: 5677
 ////////////////////////
 ////////////////////////

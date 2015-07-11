@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/zuus/lightning_weapon/lightning_weapon_color"
+	"$normalmap"		"models/items/wraith_king/deadreborn_cape/deadreborn_cape_normal"
+	"$maskmap1"		"models/items/wraith_king/deadreborn_cape/deadreborn_cape_mask1"
+	"$maskmap2"		"models/items/wraith_king/deadreborn_cape/deadreborn_cape_mask2"
+	"$detail1"		"models\heroes\wraith_king\wraith_king_detail"
+	"$SPECULAREXPONENT"		"20"
+	"$SPECULARSCALE"		"40"
+	
+	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAR_BLOOM_COLOR"		"[0 .50 1]"
+	"$SPECULAR_BLOOM_SHIFT"		"0"
+	
+	"$SELFILLUMBLENDTOFULL" "1"
+		
+	//"$RIMLIGHTSCALE"		"6"
+	//"$rimlightcolor"		"[1 4 1]"
+	//"$AMBIENTSCALE"		"1"
+	//"$IgnoreBudgetCheck"		"1"
+	//"$alphatest"		"1"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"3"
+	"$DETAIL1FACTOR"		"0"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -37,11 +37,11 @@
 	{
 		"ControlName"		"CDOTA_MinimapPanel"
 		"bgcolor_override"	"0 0 0 0"
-		"xpos"				"5"
-		"ypos"				"25"
+		"xpos"				"397"
+		"ypos"				"0"
 		"zpos"				"3"
-		"wide"				"440"		// account for inset
-		"tall"				"415"
+		"wide"				"436"		// account for inset
+		"tall"				"410"
 
 		"enabled"			"0"
 		"visible"			"1"

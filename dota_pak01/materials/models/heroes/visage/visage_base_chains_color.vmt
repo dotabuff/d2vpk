@@ -1,0 +1,42 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/visage/visage_base_chains_color"
+	"$normalmap" "models/heroes/visage/visage_base_chains_normal"
+	"$diffusewarp" "models/heroes/visage/visage_diffusewarp"
+	"$maskmap1" "models/heroes/visage/visage_base_chains_masks1"
+	"$maskmap2" "models/heroes/visage/visage_base_chains_masks2"
+
+	$nocull 0
+	$additive 0
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAREXPONENT 1	
+	$SPECULARSCALE 30		
+	$SPECULARCOLOR "[0.3 0.7 0.5]"
+	$RIMLIGHTCOLOR "[0.2 0.8 0.6]"
+	$RIMLIGHTSCALE 20
+
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"310"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

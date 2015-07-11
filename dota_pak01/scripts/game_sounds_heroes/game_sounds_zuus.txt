@@ -37,7 +37,7 @@
 
 "Hero_Zuus.ProjectileImpact"
 {
-"channel"		"CHAN_STATIC"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95,105"
@@ -125,9 +125,9 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"soundlevel"  	"SNDLVL_81dB"
-	"wave"	")weapons/hero/zuus/lightning_bolt.wav"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/zuus/lightning_bolt.wav"
 	
-	"soundentry_version" "2"
 	"operator_stacks"
 	{
 		"update_stack"
@@ -139,7 +139,7 @@
 			}
 			"speakers_spatialize"
 			{
-				"input_radius"  "600"
+				"input_radius"  "300"
 			}
 		}
 	}
@@ -320,6 +320,91 @@
 		"start_stack"
 		{
 			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+////////////////////
+
+"Hero_Zuus.LightningBolt.Cast.Righteous"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_84dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/zuus/righteous_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}
+
+"Hero_Zuus.LightningBolt.Righteous"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/zuus/lightning_bolt.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name"  "Hero_Zuus.Righteous.Layer"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Zuus.Righteous.Layer"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/zuus/righteous_target.wav"
+	
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"delay_output"
+			{
+			"input_float" "0.10"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
 		}
 	}
 }

@@ -10942,6 +10942,16 @@
 			"0"
 			{
 				"SlotIndex"	"0"
+				"SlotName" 	"head"
+				"SlotText"	"#LoadoutSlot_Head_Accessory"
+				"TextureWidth"		"256"
+				"TextureHeight"		"256"
+				"MaxPolygonsLOD0"	"500"
+				"MaxPolygonsLOD1"	"300"				
+			}
+			"1"
+			{
+				"SlotIndex"	"1"
 				"SlotName"	"ambient_effects"
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"
@@ -18488,7 +18498,7 @@
 		"MovementSpeed"				"315"									// Speed.
 		"MovementTurnRate"			"0.65"									// Turning rate.
 		
-		"HealthBarOffset"			"100"
+		"HealthBarOffset"			"125"
 		
 		"ParticleFile"				"particles/units/heroes/hero_meepo.pcf"
 		"GameSoundsFile"			"scripts/game_sounds_heroes/game_sounds_meepo.txt"
@@ -21425,6 +21435,7 @@
 		"Model"						"models/heroes/bristleback/bristleback.mdl"		// Model.
 		"Portrait"					"vgui/hud/heroportraits/portrait_bristleback"						// Small image for hero selection
 		"SoundSet"					"Hero_Bristleback"													// Name of sound set.
+		"IdleSoundLoop"				"Hero_Bristleback.IdleLoop"
 		"Enabled"					"1"
 		"Role"						"Durable,Initiator,Disabler"
 		"Rolelevels"				"3,1,1"

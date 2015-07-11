@@ -17,8 +17,9 @@
 
 	"USWest"
 	{
-		// Tukwila (sea-1.srcds.valve.net)
+		// Quincy (eat-1.srcds.valve.net)
 		"region" "1"
+		"code"	"eat"
 		"matchgroup" "0"
 		"latitude" "47.6052"
 		"longitude" "-122.1700"
@@ -40,6 +41,7 @@
 	"USEast"
 	{
 		// Sterling (iad-1.srcds.valve.net)
+		"code"	"iad"
 		"region" "2"
 		"matchgroup" "1"
 		"latitude" "39.00622"
@@ -58,6 +60,7 @@
 	"Europe"
 	{
 		// Luxembourg, Europe (lux-1.srcds.valve.net)
+		"code"	"lux"
 		"region" "3"
 		"matchgroup" "2"
 		"latitude" "52.523405"
@@ -84,6 +87,7 @@
 	"Korea"
 	{
 		// South Korea (icn-1.srcds.valve.net)
+		"code" "icn"
 		"region" "4"
 		"matchgroup" "6"
 		"latitude" "37.566536"
@@ -106,6 +110,7 @@
 	"Singapore"
 	{
 		// Singapore (sgp-1.srcds.valve.net)
+		"code"	"sgp"
 		"region" "5"
 		"matchgroup" "3"
 		"latitude" "1.283333"
@@ -128,6 +133,7 @@
 	"Dubai"
 	{
 		// Dubai (dxb-1.srcds.valve.net)
+		"code"	"dxb"
 		"region" "6"
 		"matchgroup" "13"
 		"latitude" "25.25"
@@ -148,6 +154,7 @@
 	"PerfectWorldTelecom"
 	{
 		// PerfectWorld Telecom
+		"code"	"pwt"
 		"matchgroup" "11"
 		"region" "12"
 		"latitude" "31.2" 
@@ -651,6 +658,7 @@
 	"PerfectWorldUnicom"
 	{
 		// PerfectWorld
+		"code"	"pwu"
 		"matchgroup" "12"
 		"region" "13"
 		"latitude" "39.913889"
@@ -981,6 +989,7 @@
 	"Stockholm"
 	{
 		// Stockholm (sto-1.srcds.valve.net)
+		"code" "sto"
 		"region" "8"
 		"matchgroup" "7"
 		"latitude" "55.75"
@@ -1006,6 +1015,7 @@
 	"Brazil"
 	{
 		// Brazil (gru-1.srcds.valve.ent)
+		"code" "gru"
 		"region" "10"
 		"matchgroup" "5"
 		"latitude" "-23.532891"
@@ -1029,6 +1039,7 @@
 	"Austria"
 	{
 		// Austria (vie-1.srcds.valve.ent)
+		"code" "vie"
 		"region" "9"
 		"matchgroup" "8"
 		"latitude" "48.1200"
@@ -1050,6 +1061,7 @@
 	"Australia"
 	{
 		// Australia (syd-1.srcds.valve.ent)
+		"code" "syd"
 		"region" "7"
 		"matchgroup" "9"
 		"latitude" "-33.859972"
@@ -1067,6 +1079,7 @@
 	"SouthAfrica"
 	{
 		// South Africa (cpt-1.srcds.valve.net)
+		"code" "cpt"
 		"region" "11"
 		"matchgroup" "10"
 		"latitude" "-33.925278"
@@ -1099,6 +1112,7 @@
 	"Chile"
 	{
 		// Chile (scl-1.srcds.valve.net)
+		"code" "scl"
 		"region" "14"
 		"matchgroup" "14"
 		"latitude" "-33.6682982"
@@ -1122,6 +1136,7 @@
 	"Peru"
 	{
 		// Peru (lim-1.srcds.valve.net)
+		"code" "lim"
 		"region" "15"
 		"matchgroup" "15"
 		"latitude" "-12.0553442"
@@ -1144,6 +1159,7 @@
 	"India"
 	{
 		// India (del-1.valve.net.261.36)
+		"code" "del"
 		"region" "16"
 		"matchgroup" "16"
 		"latitude" "25.16517"

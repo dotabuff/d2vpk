@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$basetexture"		"models/items/bristleback/spikey_spray/spike_color"
+//	"$normalmap" "models/development/flatnormal"
+	"$normalmap"		"models/items/bristleback/spikey_spray/spike_normal"
+	"$maskmap1"		"models/items/bristleback/spikey_spray/spike_masks1"
+	"$maskmap2"		"models/items/bristleback/spikey_spray/spike_masks2"
+
+
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"10"
+	"$SPECULARSCALE"		"5"
+	"$AMBIENTSCALE"		"1"
+
+
+//	$ENVMAP "models/cubemaps/cube_metal_grey"
+//	$ENVMAPINTENSITY 5
+
+
+//        $ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+//	$ENVMAPINTENSITY 2
+//	$MASKENVBYMETALNESS 1
+
+//	$ENVMAP "models/cubemaps/cube_metal_grey"
+//	$ENVMAPINTENSITY 5
+
+//	$SPECULARCOLOR "[.5 1 2]"
+	$RIMLIGHTSCALE 2
+	$RIMLIGHTCOLOR "[2 3 2]"
+
+
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -1,0 +1,97 @@
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.5"
+        AnimationVertexAttraction        "0.15"
+        BendSpringConstant               "0.0"
+        BendSpringDamping                "0.4"
+        columns                          "2"
+        damping                          "1.5"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.3"
+        gravity                          "0 0 -1"
+        gravity_scale                    "9.8"
+        LocalForce                       "0.75"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            PalmA0_JNT                    "R0C0"
+            PalmA1_JNT                    "R0C1"
+        }
+        R0C0                             "fixed"
+        R0C1                             "1.0"
+        rows                             "1"
+        ShearSpringConstant              "0.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.1"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.6"
+        AnimationVertexAttraction        ".1"
+        BendSpringConstant               "0.0"
+        BendSpringDamping                "0.4"
+        columns                          "2"
+        damping                          "1.25"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.3"
+        gravity                          "0 0 -1"
+        gravity_scale                    "9.8"
+        LocalForce                       "0.75"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            PalmB0_JNT                    "R0C0"
+            PalmB1_JNT                    "R0C1"
+        }
+        R0C0                             "fixed"
+        R0C1                             "1.0"
+        rows                             "1"
+        ShearSpringConstant              "0.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.1"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "0.4"
+        AnimationVertexAttraction        "0.2"
+        BendSpringConstant               "0.0"
+        BendSpringDamping                "0.4"
+        columns                          "3"
+        damping                          "0.85"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.3"
+        gravity                          "0 0 -1"
+        gravity_scale                    "9.8"
+        LocalForce                       "0.75"
+        LocalRotation                    "1.0"
+        mapping
+        {
+            PalmC0_JNT                    "R0C0"
+            PalmC1_JNT                    "R0C1"
+            PalmC2_JNT                    "R0C2"
+        }
+        R0C0                             "fixed"
+        R0C1                             "1"
+        R0C2                             "1.0"
+        rows                             "1"
+        ShearSpringConstant              "0.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.1"
+        StretchForce                     "1.0"
+        StructSpringConstant             "4.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.35"
+    }
+}
+
+// eof

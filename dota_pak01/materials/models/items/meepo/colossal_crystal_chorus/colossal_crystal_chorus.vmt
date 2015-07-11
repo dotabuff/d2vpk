@@ -1,0 +1,35 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/meepo/colossal_crystal_chorus/colossal_crystal_chorus_color"
+	"$normalmap" "models/items/meepo/colossal_crystal_chorus/colossal_crystal_chorus_normal"
+//	"$diffusewarp" "models/items/sven/sven_diffusewarp"
+	"$maskmap1" "models/items/meepo/colossal_crystal_chorus/colossal_crystal_chorus_masks1"
+	"$maskmap2" "models/items/meepo/colossal_crystal_chorus/colossal_crystal_chorus_masks2"
+
+	$SPECULAR_BLOOM_SCALE    .6
+	$SPECULAR_BLOOM_COLOR "[.5 .7 1]"
+	$SPECULAR_BLOOM_SHIFT 1
+	
+	
+	$SPECULAREXPONENT 5	
+	$SPECULARSCALE 10	
+	$SPECULARCOLOR "[.5 1 1.5]"
+	$RIMLIGHTCOLOR "[0.25 0.48 0.9]"
+	//$SPECULARBLENDTOFULL .1
+	$alphatest 1
+
+	$AMBIENTSCALE 1
+
+	$RIMLIGHTSCALE 12
+    $IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -19814,6 +19814,20 @@
       ],
       "MaxLevel": "1"
     },
+    "courier_take_stash_and_transfer_items": {
+      "ID": "5676",
+      "AbilityType": "DOTA_ABILITY_TYPE_BASIC",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_HIDDEN | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING",
+      "AbilitySpecial": [
+        {
+          "stash_pickup_distance": 250
+        },
+        {
+          "handoff_distance": 400
+        }
+      ],
+      "MaxLevel": "1"
+    },
     "courier_shield": {
       "ID": "5209",
       "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",

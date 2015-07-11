@@ -1,0 +1,24 @@
+"CustomHero"
+{
+	"$basetexture"	"models/items/witchdoctor/bonkers_the_mad/bonkers_the_mad_tree_color"
+	"$normalmap" "models/items/witchdoctor/bonkers_the_mad/bonkers_the_mad_tree_normal"
+	"$maskmap1" "models/items/witchdoctor/bonkers_the_mad/bonkers_the_mad_tree_mask1"
+	"$maskmap2" "models/items/witchdoctor/bonkers_the_mad/bonkers_the_mad_tree_mask2"
+
+	"$alphatest"		"1"
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 2
+	$SPECULARCOLOR "[1 .7 .3]"
+
+	$RIMLIGHTSCALE	5
+	$RIMLIGHTCOLOR	"[1 .5 .3]"
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}
+

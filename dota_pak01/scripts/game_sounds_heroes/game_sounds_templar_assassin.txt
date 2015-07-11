@@ -168,15 +168,30 @@
 "Hero_TemplarAssassin.PsiBlade"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7, 0.8"
-	"soundlevel"  	"SNDLVL_78dB"
+	"volume"		"0.6, 0.9"
+	"soundlevel"  	"SNDLVL_81dB"
 	"pitch"			"95,105"
-	"wave"			")weapons/hero/templar_assassin/psi_blade.wav"
+	"rndwave"
+	{
+		"wave"		")weapons/hero/templar_assassin/psi_blade01.wav"
+		"wave"		")weapons/hero/templar_assassin/psi_blade02.wav"
+		"wave"		")weapons/hero/templar_assassin/psi_blade03.wav"
+		"wave"		")weapons/hero/templar_assassin/psi_blade04.wav"
+	}
 	"operator_stacks"
 	{
 		"start_stack"
 		{
 			"import_stack" "dota_projectile_impact_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "4.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "false"
+				"match_entry" "Hero_TemplarAssassin.PsiBlade"
+				"match_channel" "false"
+			}			
 		}
 	}
 }
@@ -310,3 +325,27 @@
 	}
 }
 
+"Hero_TemplarAssassin.PsiBlade.Resonance"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7, 0.9"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/templar_assassin/psi_blade_resonance.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_projectile_impact_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "1.000000" //A sound will not stop itself from playing.
+				"match_entity" "false"	
+				"match_substring" "true"
+				"match_entry" "Hero_TemplarAssassin.PsiBlade.Resonance"
+				"match_channel" "false"
+			}			
+		}
+	}
+}

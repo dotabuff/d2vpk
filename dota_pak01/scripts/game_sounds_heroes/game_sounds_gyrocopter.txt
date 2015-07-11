@@ -416,3 +416,38 @@
 		}
 	}
 }
+
+// Atomic Ray Thrusters Immortal
+"Hero_Gyrocopter.ART_Barrage.Launch"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.9"
+	"soundlevel"  	"SNDLVL_78dB"
+	"pitch"			"95,105"
+	"wave"			"weapons/hero/gyrocopter/art_barrage_fire.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"import_stack" "dota_poly_limiting_start"
+			"limit_sound"
+			{
+				"input_max_entries" "2.000000" //A sound will not stop itself from playing.
+				"match_entity" "true"	
+				"match_substring" "true"
+				"match_entry" "Hero_Gyrocopter.ART_Barrage.Launch"
+				"match_channel" "false"
+			}
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+
+
+
+

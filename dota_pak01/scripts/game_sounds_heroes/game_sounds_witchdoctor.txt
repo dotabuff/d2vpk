@@ -421,3 +421,79 @@
 		}
 	}
 }
+
+// Bonkers item
+
+"Hero_WitchDoctor.Paralyzing_Cask_Cast.Bonkers"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.5"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"			")weapons/hero/witch_doctor/cask_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_WitchDoctor.Bonkers.Call"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_WitchDoctor.Bonkers.Call"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/witch_doctor/bonkers_call_01.wav"
+		"wave"			")weapons/hero/witch_doctor/bonkers_call_02.wav"
+		"wave"			")weapons/hero/witch_doctor/bonkers_call_03.wav"		
+	}
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+		}
+	}
+}
+
+"Hero_WitchDoctor.Paralyzing_Cask_Bounce.Bonkers"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/witch_doctor/bonkers_cask_bounce_01.wav"
+		"wave"			")weapons/hero/witch_doctor/bonkers_cask_bounce_02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}

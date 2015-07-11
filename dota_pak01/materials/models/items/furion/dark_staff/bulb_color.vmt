@@ -1,0 +1,27 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/furion/dark_staff/bulb_color"
+	"$normalmap"		"models/items/furion/dark_staff/bulb_normal"
+	"$maskmap1"		"models/items/furion/dark_staff/bulb_mask1"
+	"$maskmap2"		"models/items/furion/dark_staff/bulb_mask2"
+
+	"$diffusewarp"		"models/heroes/witchdoctor/witchdoctor_lightwarp"
+	"$FRESNELWARP"		"models/heroes/lich/lich_fresnelranges"
+
+	"$IgnoreBudgetCheck"		"1"
+	"$SPECULAREXPONENT"		"30"
+	"$SPECULARSCALE"		"2"
+	"$RIMLIGHTCOLOR"		"[0.2 1 1]"
+	"$RIMLIGHTSCALE"		"1.600000"
+	"$alphatest"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

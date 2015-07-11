@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$basetexture" "models\items\templar_assassin\psi_blades\blade_color"
+//	"$normalmap" "models\items\templar_assassin\psi_blades\blade_normal"
+
+
+	"$normalmap" "models/development/flatnormal"
+
+
+	"$maskmap1"	"models\items\templar_assassin\psi_blades\blade_masks1"
+	"$maskmap2"	"models\items\templar_assassin\psi_blades\blade_masks2"
+
+	"$SPECULAREXPONENT"		"15"
+	"$SPECULARSCALE"		"7"
+	"$RIMLIGHTSCALE"		"2"
+	"$AMBIENTSCALE"		"1"
+	"$SPECULAR_BLOOM_SCALE"		"0"
+	"$FRESNELWARP"		"models/heroes/dragon_knight/knight_fresnelranges"
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"$alphatest"			"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

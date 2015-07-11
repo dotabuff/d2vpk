@@ -8237,6 +8237,15 @@
       "ItemSlots": [
         {
           "SlotIndex": "0",
+          "SlotName": "head",
+          "SlotText": "#LoadoutSlot_Head_Accessory",
+          "TextureWidth": "256",
+          "TextureHeight": "256",
+          "MaxPolygonsLOD0": "500",
+          "MaxPolygonsLOD1": "300"
+        },
+        {
+          "SlotIndex": "1",
           "SlotName": "ambient_effects",
           "SlotText": "#LoadoutSlot_Ambient_Effects",
           "DisplayInLoadout": "0"
@@ -13881,7 +13890,7 @@
       "VisionNighttimeRange": "800",
       "MovementSpeed": "315",
       "MovementTurnRate": "0.65",
-      "HealthBarOffset": "100",
+      "HealthBarOffset": "125",
       "ParticleFile": "particles/units/heroes/hero_meepo.pcf",
       "GameSoundsFile": "scripts/game_sounds_heroes/game_sounds_meepo.txt",
       "VoiceFile": "scripts/voscripts/game_sounds_vo_meepo.txt",
@@ -16014,6 +16023,7 @@
       "Model": "models/heroes/bristleback/bristleback.mdl",
       "Portrait": "vgui/hud/heroportraits/portrait_bristleback",
       "SoundSet": "Hero_Bristleback",
+      "IdleSoundLoop": "Hero_Bristleback.IdleLoop",
       "Enabled": "1",
       "Role": "Durable,Initiator,Disabler",
       "Rolelevels": "3,1,1",

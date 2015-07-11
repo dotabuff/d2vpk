@@ -1,0 +1,28 @@
+"CustomHero"
+{
+	"$basetexture"	"models/particle/bonkers_the_mad_coconuts_color"
+	"$normalmap" "models/particle/bonkers_the_mad_coconuts_normal"
+	//"$maskmap1" "models/items/witchdoctor/bonkers_the_mad/bonkers_the_mad_tree_mask1"
+	"$maskmap2" "models/particle/bonkers_the_mad_coconuts_mask2"
+
+	"$alphatest"		"1"
+	$SPECULAREXPONENT 30
+	$SPECULARSCALE 20
+	$SPECULARCOLOR "[4 2.7 1.3]"
+
+	$RIMLIGHTSCALE	3
+	$RIMLIGHTCOLOR	"[1 .5 .3]"
+
+	$ambientscale 2
+
+	$bumpscale 10
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+	}
+}
+

@@ -1,0 +1,44 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/visage/visage_base_shroud_color"
+	"$normalmap" "models/heroes/visage/visage_base_shroud_normal"
+	"$maskmap1" "models/heroes/visage/visage_base_shroud_masks1"
+	"$maskmap2" "models/heroes/visage/visage_base_shroud_masks2"
+
+	$SPECULAR_BLOOM_SCALE      3
+	$SPECULAREXPONENT 24	
+	$SPECULARSCALE 62		
+	$SPECULARCOLOR "[0.8 1 0.9]"
+	$RIMLIGHTCOLOR "[0.8 1 0.9]"
+	$SPECULARBLENDTOFULL .1
+	$RIMLIGHTSCALE 1	
+
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR 1
+	$DETAIL1BLENDTOFULL 0
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"310"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

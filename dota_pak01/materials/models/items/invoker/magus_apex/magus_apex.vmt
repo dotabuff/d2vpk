@@ -1,0 +1,29 @@
+"CustomHero"
+{
+	"$basetexture"		"models/items/invoker/magus_apex/magus_apex_color"
+	"$normalmap"		"models/items/invoker/magus_apex/magus_apex_normal"
+	"$maskmap1"		"models/items/invoker/magus_apex/magus_apex_mask1"
+	"$maskmap2"		"models/items/invoker/magus_apex/magus_apex_mask2"
+
+	$SPECULAREXPONENT 1
+	$SPECULARSCALE 5
+	$RIMLIGHTSCALE 5
+	$specularcolor "[.5 .7 1]"
+	//$RIMLIGHTCOLOR "[.8 .7 .3]"
+
+
+	"$IgnoreBudgetCheck"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+}
