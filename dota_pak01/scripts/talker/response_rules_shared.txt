@@ -393,10 +393,13 @@ criterion "IsOneVsOne" "announce_gamemode" "21" weight 5 required
 criterion "IsDraftBegin" "line" "announcer_announcer_type_capt_mode" weight 5 required
 
 
+//TI TEAM HOOKS
 
 criterion "IsDireTeamAbsoluteLegends" "dire_team_id" "6" weight 5 required
 criterion "IsDireTeamAlliance" "dire_team_id" "111474" weight 5 required
+criterion "IsDireTeamArchon" "dire_team_id" "2244697" weight 5 required
 criterion "IsDireTeamArrow" "dire_team_id" "1277104" weight 5 required
+criterion "IsDireTeamCDEC" "dire_team_id" "1520578" weight 5 required
 criterion "IsDireTeamCIS" "dire_team_id" "1312775" weight 5 required
 criterion "IsDireTeamCLG" "dire_team_id" "22" weight 5 required
 criterion "IsDireTeamCloud9" "dire_team_id" "1333179" weight 5 required
@@ -404,10 +407,11 @@ criterion "IsDireTeamComplexity" "dire_team_id" "3" weight 5 required
 criterion "IsDireTeamDarer" "dire_team_id" "31" weight 5 required
 criterion "IsDireTeamDignitas" "dire_team_id" "142" weight 5 required
 criterion "IsDireTeamDK" "dire_team_id" "7" weight 5 required
-criterion "IsDireTeamEG" "dire_team_id" "39" weight 5 required
 criterion "IsDireTeamEHome" "dire_team_id" "4" weight 5 required
 criterion "IsDireTeamEmpire" "dire_team_id" "46" weight 5 required
+criterion "IsDireTeamEvilGeniuses" "dire_team_id" "39" weight 5 required
 criterion "IsDireTeamFnatic" "dire_team_id" "350190" weight 5 required
+criterion "IsDireTeamHot6ix" "dire_team_id" "2201839" weight 5 required
 criterion "IsDireTeamInvasionMUFC" "dire_team_id" "497529" weight 5 required
 criterion "IsDireTeamInvictusGaming" "dire_team_id" "5" weight 5 required
 criterion "IsDireTeamLGDcn" "dire_team_id" "15" weight 5 required
@@ -417,15 +421,17 @@ criterion "IsDireTeamMoscowFive" "dire_team_id" "33" weight 5 required
 criterion "IsDireTeamMousesports" "dire_team_id" "26" weight 5 required
 criterion "IsDireTeamMTW" "dire_team_id" "30" weight 5 required
 criterion "IsDireTeamMUFC" "dire_team_id" "66" weight 5 required
-criterion "IsDireTeamMVPPhoenix" "dire_team_id" "1148284" weight 5 required
 criterion "IsDireTeamNavi" "dire_team_id" "36" weight 5 required
 criterion "IsDireTeamNaviUS" "dire_team_id" "1642908" weight 5 required
 criterion "IsDireTeamNewBee" "dire_team_id" "1375614" weight 5 required
 criterion "IsDireTeamOrange" "dire_team_id" "416900" weight 5 required
+criterion "IsDireTeamPhoenix" "dire_team_id" "1148284" weight 5 required
 criterion "IsDireTeamQuantic" "dire_team_id" "680683" weight 5 required
 criterion "IsDireTeamRattlesnake" "dire_team_id" "496774" weight 5 required
+criterion "IsDireTeamSecret" "dire_team_id" "1838315" weight 5 required
 criterion "IsDireTeamTitan" "dire_team_id" "999689" weight 5 required
 criterion "IsDireTeamTongFu" "dire_team_id" "20" weight 5 required
+criterion "IsDireTeamVegaSquadron" "dire_team_id" "2006913" weight 5 required
 criterion "IsDireTeamViciGaming" "dire_team_id" "726228" weight 5 required
 criterion "IsDireTeamVirtusPro" "dire_team_id" "1883502" weight 5 required
 criterion "IsDireTeamWorldElite" "dire_team_id" "17" weight 5 required
@@ -433,7 +439,9 @@ criterion "IsDireTeamZenith" "dire_team_id" "2" weight 5 required
 
 criterion "IsRadiantTeamAbsoluteLegends" "radiant_team_id" "6" weight 5 required
 criterion "IsRadiantTeamAlliance" "radiant_team_id" "111474" weight 5 required
+criterion "IsRadiantTeamArchon" "radiant_team_id" "2244697" weight 5 required
 criterion "IsRadiantTeamArrow" "radiant_team_id" "1277104" weight 5 required
+criterion "IsRadiantTeamCDEC" "radiant_team_id" "1520578" weight 5 required
 criterion "IsRadiantTeamCIS" "radiant_team_id" "1312775" weight 5 required
 criterion "IsRadiantTeamCLG" "radiant_team_id" "22" weight 5 required
 criterion "IsRadiantTeamCloud9" "radiant_team_id" "1333179" weight 5 required
@@ -441,10 +449,11 @@ criterion "IsRadiantTeamComplexity" "radiant_team_id" "3" weight 5 required
 criterion "IsRadiantTeamDarer" "radiant_team_id" "31" weight 5 required
 criterion "IsRadiantTeamDignitas" "radiant_team_id" "142" weight 5 required
 criterion "IsRadiantTeamDK" "radiant_team_id" "7" weight 5 required
-criterion "IsRadiantTeamEG" "radiant_team_id" "39" weight 5 required
 criterion "IsRadiantTeamEHome" "radiant_team_id" "4" weight 5 required
 criterion "IsRadiantTeamEmpire" "radiant_team_id" "46" weight 5 required
+criterion "IsRadiantTeamEvilGeniuses" "radiant_team_id" "39" weight 5 required
 criterion "IsRadiantTeamFnatic" "radiant_team_id" "350190" weight 5 required
+criterion "IsRadiantTeamHot6ix" "radiant_team_id" "2201839" weight 5 required
 criterion "IsRadiantTeamInvasionMUFC" "radiant_team_id" "497529" weight 5 required
 criterion "IsRadiantTeamInvictusGaming" "radiant_team_id" "5" weight 5 required
 criterion "IsRadiantTeamLGDcn" "radiant_team_id" "15" weight 5 required
@@ -454,19 +463,22 @@ criterion "IsRadiantTeamMoscowFive" "radiant_team_id" "33" weight 5 required
 criterion "IsRadiantTeamMousesports" "radiant_team_id" "26" weight 5 required
 criterion "IsRadiantTeamMTW" "radiant_team_id" "30" weight 5 required
 criterion "IsRadiantTeamMUFC" "radiant_team_id" "66" weight 5 required
-criterion "IsRadiantTeamMVPPhoenix" "radiant_team_id" "1148284" weight 5 required
 criterion "IsRadiantTeamNavi" "radiant_team_id" "36" weight 5 required
 criterion "IsRadiantTeamNaviUS" "radiant_team_id" "1642908" weight 5 required
 criterion "IsRadiantTeamNewBee" "radiant_team_id" "1375614" weight 5 required
 criterion "IsRadiantTeamOrange" "radiant_team_id" "416900" weight 5 required
+criterion "IsRadiantTeamPhoenix" "radiant_team_id" "1148284" weight 5 required
 criterion "IsRadiantTeamQuantic" "radiant_team_id" "680683" weight 5 required
 criterion "IsRadiantTeamRattleSnake" "radiant_team_id" "496774" weight 5 required
+criterion "IsRadiantTeamSecret" "radiant_team_id" "1838315" weight 5 required
 criterion "IsRadiantTeamTitan" "radiant_team_id" "999689" weight 5 required
 criterion "IsRadiantTeamTongFu" "radiant_team_id" "20" weight 5 required
+criterion "IsRadiantTeamVegaSquadron" "radiant_team_id" "2006913" weight 5 required
 criterion "IsRadiantTeamViciGaming" "radiant_team_id" "726228" weight 5 required
-criterion "IsRadiantTeamVirtusPro" "radiant_team_id" "40" weight 5 required
+criterion "IsRadiantTeamVirtusPro" "radiant_team_id" "1883502" weight 5 required
 criterion "IsRadiantTeamWorldElite" "radiant_team_id" "17" weight 5 required
 criterion "IsRadiantTeamZenith" "radiant_team_id" "2" weight 5 required
+
 
 
 

@@ -8119,6 +8119,11 @@
       "ItemSlots": [
         {
           "SlotIndex": "0",
+          "SlotName": "weapon",
+          "SlotText": "#LoadoutSlot_Weapon"
+        },
+        {
+          "SlotIndex": "1",
           "SlotName": "head",
           "SlotText": "#LoadoutSlot_Head_Accessory",
           "TextureWidth": "256",
@@ -8127,7 +8132,7 @@
           "MaxPolygonsLOD1": "500"
         },
         {
-          "SlotIndex": "1",
+          "SlotIndex": "2",
           "SlotName": "shoulder",
           "SlotText": "#LoadoutSlot_Shoulder",
           "TextureWidth": "512",
@@ -8136,7 +8141,7 @@
           "MaxPolygonsLOD1": "600"
         },
         {
-          "SlotIndex": "2",
+          "SlotIndex": "3",
           "SlotName": "armor",
           "SlotText": "#LoadoutSlot_Armor",
           "TextureWidth": "256",
@@ -8145,12 +8150,12 @@
           "MaxPolygonsLOD1": "500"
         },
         {
-          "SlotIndex": "3",
+          "SlotIndex": "4",
           "SlotName": "taunt",
           "SlotText": "#LoadoutSlot_Taunt"
         },
         {
-          "SlotIndex": "4",
+          "SlotIndex": "5",
           "SlotName": "ambient_effects",
           "SlotText": "#LoadoutSlot_Ambient_Effects",
           "DisplayInLoadout": "0"

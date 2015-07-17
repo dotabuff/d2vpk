@@ -1,0 +1,31 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/blood_seeker/thirst_of_eztzhok/thirst_of_eztzhok_color"
+	"$normalmap" "models/items/blood_seeker/thirst_of_eztzhok/thirst_of_eztzhok_normal"
+	"$maskmap1" "models/items/blood_seeker/thirst_of_eztzhok/thirst_of_eztzhok_masks1"
+	"$maskmap2" "models/items/blood_seeker/thirst_of_eztzhok/thirst_of_eztzhok_masks2"
+	//"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 20
+	$SPECULARCOLOR "[1 .8 .8]"
+	//$RIMLIGHTSCALE 1
+	//$AMBIENTSCALE 1
+
+//	$SPECULAR_BLOOM_SCALE      0
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

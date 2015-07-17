@@ -1,0 +1,53 @@
+"CustomHero"
+{
+	"$basetexture" "models\items\tidehunter\diving_helmet\diving_helmet_gold_color"
+//	"$normalmap" "models/development/flatnormal"
+       "$normalmap" "models\items\tidehunter\diving_helmet\diving_helmet_normal"
+
+
+	"$maskmap1"	"models\items\tidehunter\diving_helmet\diving_helmet_gold_masks1"
+	"$maskmap2"	"models\items\tidehunter\diving_helmet\diving_helmet_gold_masks2"
+
+
+//	"$diffusewarp" "models/heroes/drow/diffusewarp"
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+
+//	$ENVMAP "models/cubemaps/cube_metal_grey"
+//      $ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+//	$ENVMAPINTENSITY 0.2
+//	$MASKENVBYMETALNESS 1
+	
+	
+	"$alphatest" "1"
+
+	$SPECULAREXPONENT 5
+	$SPECULARSCALE 3
+	$RIMLIGHTSCALE 5
+	$specularcolor "[2 .8 .7]"
+	$RIMLIGHTCOLOR "[1 1 .75]"
+
+	
+	$DETAIL1BLENDMODE 3
+	$DETAIL1SCALE 2
+	$DETAIL1BLENDFACTOR 1	
+	
+	
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

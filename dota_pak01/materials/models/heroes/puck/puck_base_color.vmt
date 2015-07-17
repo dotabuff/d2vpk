@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture" "models/heroes/puck/puck_base_color"
+	"$normalmap" "models/heroes/puck/puck_base_normal"
+	"$FRESNELWARP" "models/heroes/puck/puck_fresnelranges"
+	"$FRESNELCOLORWARP" "models/heroes/puck/puck_colorwarp"
+
+	"$maskmap1" "models/heroes/puck/puck_base_masks1"
+	"$maskmap2" "models/heroes/puck/puck_base_masks2"
+
+	$SPECULAR_BLOOM_SCALE      0
+	
+
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 25
+	//$SPECULARCOLOR "[1 .50 0]"
+	$AMBIENTSCALE 1
+	$alphatest 1
+
+	
+	
+	$RIMLIGHTSCALE	2
+	$RIMLIGHTCOLOR	"[.5 1 .5]"
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}
