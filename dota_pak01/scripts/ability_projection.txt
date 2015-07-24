@@ -4,7 +4,7 @@
 	{
 		"notevalue"	"16"
 		"priority"	"90"
-		"sound"		"sounds/enigma.asdf"
+		"picksound"		"Hero_Enigma.Pick"
 	}
 
 	"witch_doctor_death_ward"
@@ -38,7 +38,7 @@
 		"notevalue_home_to_away"	"22"
 		"notevalue_away_to_home"	"23"
 		"priority"	"81"
-		"min_duration"	"4.0"
+		"min_duration"	"2.5"
 		"display_in_top_layer"	"1"
 	}
 	
@@ -47,7 +47,7 @@
 		"notevalue"	"17"
 		"priority"	"80"	
 
-		"min_duration"	"1.0"
+		"min_duration"	"2.0"
 
 		// todo
 		"omni"		"1"	// ignore on-screen
@@ -88,7 +88,7 @@
 		"notevalue_home_to_away"	"28"
 		"notevalue_away_to_home"	"29"
 		"priority"	"78"
-		"min_duration"	"4.0"
+		"min_duration"	"2.0"
 		"display_in_top_layer"	"1"
 	}
 
@@ -98,6 +98,7 @@
 		"priority"	"70"
 		"min_duration"	"4.0"
 		"display_in_top_layer"	"1"
+		"picksound"		"Hero_Tusk.Pick"
 	}
 
 	"lion_finger_of_death"
@@ -108,4 +109,294 @@
 		"min_duration"	"3.0"
 		"display_in_top_layer"	"1"
 	}
+
+	"abaddon_borrowed_time"
+	{
+		"notevalue"	"33"
+		"priority"	"50"
+	}
+
+	"alchemist_chemical_rage"
+	{
+		"notevalue"	"34"
+		"priority"	"51"
+		"min_duration"	"2.0"
+	}
+
+	"ancient_apparition_ice_blast"
+	{
+		"notevalue"	"35"
+		"priority"	"80"
+		"min_duration"	"2.0"
+	}
+
+	"batrider_flaming_lasso"
+	{
+		"notevalue"	"36"
+		"priority"	"80"
+		"display_in_top_layer"	"1"
+	}
+
+	"bloodseeker_rupture"
+	{
+		"notevalue"	"37"
+		"priority"	"81"
+		"display_in_top_layer"	"1"
+		"min_duration"	"3.0"
+	}
+
+	"centaur_stampede"
+	{
+		"notevalue"	"38"
+		"priority"	"80"
+		"display_in_top_layer"	"1"
+		"min_duration"	"3.0"
+	}
+
+	"chen_hand_of_god"
+	{
+		"notevalue"	"39"
+		"priority"	"60"
+		"min_duration"	"2.5"
+	} 
+
+	"dark_seer_wall_of_replica"
+	{
+		"notevalue"	"40"
+		"priority"	"50"
+		"min_duration"	"3.0"
+	}
+
+	"dazzle_weave"
+	{
+		"notevalue"	"41"
+		"priority"	"60"
+		"min_duration"	"2.5"
+	}
+
+	"death_prophet_exorcism"
+	{
+		"notevalue"	"42"
+		"priority"	"60"
+	}
+
+	"disruptor_static_storm"
+	{
+		"notevalue"	"43"
+		"priority"	"75"
+	}
+
+	"doom_bringer_doom"
+	{
+		"notevalue"	"44"
+		"priority"	"81"
+		"min_duration"	"2.0"
+	}
+
+	"dragon_knight_elder_dragon_form"
+	{
+		"notevalue"	"45"
+		"priority"	"50"
+		"min_duration"	"3.0"
+	}
+
+	"earthshaker_echo_slam"
+	{
+		"notevalue"	"46"
+		"priority"	"90"
+		"min_duration"	"3.0"
+	}
+
+	"elder_titan_earth_splitter"
+	{
+		"notevalue"	"47"
+		"priority"	"90"
+	}
+
+	"gyrocopter_call_down"
+	{
+		"notevalue"	"48"
+		"priority"	"80"
+		"min_duration"	"3.0"
+	}
+
+	"jakiro_macropyre"
+	{
+		"notevalue"	"49"
+		"priority"	"70"	
+	}
+
+	"juggernaut_omni_slash"
+	{
+		"notevalue"	"50"
+		"priority"	"60"
+	}
+
+	"keeper_of_the_light_illuminate"
+	{
+		"notevalue_home_to_away"	"51"
+		"notevalue_away_to_home"	"52"
+		"priority"	"40"
+		"min_duration"	"2.0"
+	}
+
+	"kunkka_ghostship"
+	{
+		"notevalue"	"53"
+		"priority"	"80"
+		"display_in_top_layer"	"1"
+		"min_duration"	"2.0"
+	}
+
+	"legion_commander_duel"
+	{
+		"notevalue"	"54"
+		"priority"	"85"
+
+		// 5.5 max
+	}
+
+	"warlock_rain_of_chaos"
+	{
+		"notevalue"	"99"
+		"priority"	"80"
+		"display_in_top_layer"	"1"
+		"min_duration"	"2.5"
+	}
+
+	"weaver_time_lapse"
+	{
+		"notevalue"	"98"
+		"priority"	"60"
+		"min_duration"	"2.5"
+	}
+
+	"leshrac_split_earth"
+	{
+		"notevalue"	"55"
+		"priority"	"70"
+		"min_duration"	"2.0"
+	}
+
+	"lich_chain_frost"
+	{
+		"notevalue"	"56"
+		"priority"	"80"
+		"min_duration"	"3.0"
+	}
+
+	"luna_eclipse"
+	{
+		"notevalue"	"57"
+		"priority"	"80"
+	}
+
+	"magnataur_reverse_polarity"
+	{
+		"notevalue"	"58"
+		"priority"	"80"
+		"display_in_top_layer"	"1"
+		"min_duration"	"2.0"
+	}
+
+	"medusa_stone_gaze"
+	{
+		"notevalue"	"59"
+		"priority"	"70"
+	}
+
+	"naga_siren_song_of_the_siren"
+	{
+		"notevalue"	"60"
+		"priority"	"70"
+	}
+
+	"necrolyte_reapers_scythe"
+	{
+		"notevalue"	"61"
+		"priority"	"80"
+		"display_in_top_layer"	"1"
+		"min_duration"	"2.5"
+	}
+
+	"venomancer_poison_nova"
+	{
+		"notevalue"	"97"
+		"priority"	"70"
+		"min_duration"	"2.5"
+	}
+
+	"undying_tombstone"
+	{
+		"notevalue"	"96"
+		"priority"	"70"
+		"min_duration"	"2.5"
+	}
+
+	"omniknight_guardian_angel"
+	{
+		"notevalue"	"62"
+		"priority"	"70"
+	}
+
+	"winter_wyvern_winters_curse"
+	{
+		"notevalue"	"95"
+		"priority"	"80"
+	}
+
+	"skeleton_king_reincarnation"
+	{
+		"notevalue"	"94"
+		"priority"	"70"
+	}
+
+	"treant_overgrowth"
+	{
+		"notevalue"	"93"
+		"priority"	"80"
+	}
+
+	"tidehunter_ravage"
+	{
+		"notevalue"	"92"
+		"priority"	"85"
+		"min_duration"	"2.5"
+	}
+
+	"spectre_haunt"
+	{
+		"notevalue"	"91"
+		"priority"	"80"
+		"min_duration"	"2.5"
+	}
+
+	"sniper_assassinate"
+	{
+		"notevalue_home_to_away"	"89"
+		"notevalue_away_to_home"	"90"
+		"priority"	"81"
+		"min_duration"	"4.0"
+		"display_in_top_layer"	"1"
+	}
+
+	"skywrath_mage_mystic_flare"
+	{
+		"notevalue"	"88"
+		"priority"	"80"
+	}
+
+	"silencer_global_silence"
+	{
+		"notevalue"	"87"
+		"priority"	"65"
+	}
+
+	"nevermore_requiem"
+	{
+		"notevalue"	"86"
+		"priority"	"80"
+		"min_duration" "2.5"
+	}
+
 }
