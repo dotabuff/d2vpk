@@ -1228,3 +1228,67 @@
 		}
 	}
 }
+
+"weather_radiant_pestilence"
+{
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"ambient/soundscapes/light_rain_lp.wav"
+	}
+	"playlooping"
+	{
+		"volume"	".1"
+		"pitch"		"100"
+		"wave"		"ambient/soundscapes/dire_base_loop_01.wav"
+	}
+}
+
+"weather_dire_pestilence"
+{
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"wave"		"ambient/soundscapes/light_rain_lp.wav"
+	}
+}
+
+"weather_radiant_sirocco"
+{
+	"playlooping"
+	{
+		"volume"	".1"
+		"pitch"		"100"
+		"wave"		"ambient/soundscapes/dire_base_loop_01.wav"
+	}
+	"playrandom"
+	{
+		"volume"	"0.5, 1.0"
+		"pitch"		"95, 105"
+		"time"		"10, 20"
+		"rndwave"
+		{
+			"wave" "ambient/soundscapes/snowy_gust01.wav"
+			"wave" "ambient/soundscapes/snowy_gust02.wav"
+			"wave" "ambient/soundscapes/snowy_gust03.wav"
+		}
+	}
+}
+
+"weather_dire_sirocco"
+{
+	"playrandom"
+	{
+		"volume"	"0.5, 1.0"
+		"pitch"		"95, 105"
+		"time"		"10, 20"
+		"rndwave"
+		{
+			"wave" "ambient/soundscapes/snowy_gust01.wav"
+			"wave" "ambient/soundscapes/snowy_gust02.wav"
+			"wave" "ambient/soundscapes/snowy_gust03.wav"
+		}
+	}
+}

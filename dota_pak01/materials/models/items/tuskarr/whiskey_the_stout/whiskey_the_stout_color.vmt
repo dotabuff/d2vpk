@@ -1,0 +1,37 @@
+"CustomHero"
+{
+	$baseTexture "models/items/tuskarr/whiskey_the_stout/whiskey_the_stout_color"
+	"$normalmap" "models/items/tuskarr/whiskey_the_stout/whiskey_the_stout_normal"
+
+	"$maskmap1" "models/items/tuskarr/whiskey_the_stout/whiskey_the_stout_masks1"
+	"$maskmap2" "models/items/tuskarr/whiskey_the_stout/whiskey_the_stout_masks2"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+//	"$alphatest"	"1"
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 10
+
+//	$SPECULARBLENDTOFULL 1
+//	$SPECULARCOLOR "[1 .8 .8]"
+//	$RIMLIGHTCOLOR "[1 .5 1]"
+
+	$RIMLIGHTSCALE 1
+	$AMBIENTSCALE 1
+
+
+//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+
+	$IgnoreBudgetCheck 1
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

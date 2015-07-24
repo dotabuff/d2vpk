@@ -368,6 +368,9 @@
 	"fantasy_score_info_changed"
 	{
 	}
+	"league_series_info_updated"
+	{
+	}
 	"player_info_updated"
 	{
 	}

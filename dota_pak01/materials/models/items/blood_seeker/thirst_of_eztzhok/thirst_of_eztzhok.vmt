@@ -6,14 +6,17 @@
 	"$maskmap2" "models/items/blood_seeker/thirst_of_eztzhok/thirst_of_eztzhok_masks2"
 	//"$diffusewarp" "models/heroes/witchdoctor/witchdoctor_lightwarp"
 
-	$SPECULAREXPONENT 20
-	$SPECULARSCALE 20
-	$SPECULARCOLOR "[1 .8 .8]"
+  //$ENVMAP "models/cubemaps/cube_metal_grey"
+	//$ENVMAPINTENSITY 5
+			
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 15
+	$SPECULARCOLOR "[.3 .9 .8]"
 	//$RIMLIGHTSCALE 1
 	//$AMBIENTSCALE 1
 
-//	$SPECULAR_BLOOM_SCALE      0
-//	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+	$SPECULAR_BLOOM_SCALE      .1
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
 
 
 

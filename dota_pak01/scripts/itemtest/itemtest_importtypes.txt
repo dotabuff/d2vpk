@@ -142,48 +142,28 @@
 	// The files used by a cursor_pack import.
 	"cursor_pack_files"
 	{
-		"icon.png"							"1"
-		"cursor.res"						"1"
-		"cursor_attack_default.ani"			"1"
+		"icon.png"					"1"
+		"cursor.res"					"1"
 		"cursor_attack_default.bmp"			"1"
-		"cursor_attack_enemy.ani"			"1"
 		"cursor_attack_enemy.bmp"			"1"
-		"cursor_attack_illegal.ani"			"1"
 		"cursor_attack_illegal.bmp"			"1"
-		"cursor_attack_team.ani"			"1"
 		"cursor_attack_team.bmp"			"1"
-		"cursor_buy.ani"					"1"
-		"cursor_buy.bmp"					"1"
-		"cursor_cannot_buy.ani"				"1"
+		"cursor_buy.bmp"				"1"
 		"cursor_cannot_buy.bmp"				"1"
-		"cursor_coach.ani"					"1"
-		"cursor_coach.bmp"					"1"
-		"cursor_default.ani"				"1"
+		"cursor_coach.bmp"				"1"
 		"cursor_default.bmp"				"1"
-		"cursor_default_enemy.ani"			"1"
 		"cursor_default_enemy.bmp"			"1"
-		"cursor_default_team.ani"			"1"
 		"cursor_default_team.bmp"			"1"
-		"cursor_invisible.ani"				"1"
 		"cursor_invisible.bmp"				"1"
-		"cursor_item_drop.ani"				"1"
 		"cursor_item_drop.bmp"				"1"
-		"cursor_learn_ability.ani"			"1"
 		"cursor_learn_ability.bmp"			"1"
-		"cursor_move.ani"					"1"
-		"cursor_move.bmp"					"1"
-		"cursor_spell_default.ani"			"1"
+		"cursor_move.bmp"				"1"
 		"cursor_spell_default.bmp"			"1"
-		"cursor_spell_enemy.ani"			"1"
 		"cursor_spell_enemy.bmp"			"1"
-		"cursor_spell_illegal.ani"			"1"
 		"cursor_spell_illegal.bmp"			"1"
-		"cursor_spell_team.ani"				"1"
 		"cursor_spell_team.bmp"				"1"
-		"cursor_spell_walkto.ani"			"1"
 		"cursor_spell_walkto.bmp"			"1"
-		"cursor_test.ani"					"1"
-		"cursor_test.bmp"					"1"
+		"cursor_test.bmp"				"1"
 	}
 
 	"wearable"
@@ -276,73 +256,93 @@
 
 				"animations"
 				{
-					"Spawn"
+					"Spawn"			//ANIM0
 					{
 						"name"		"#DOTA_ItemTest_Animation_Spawn"
+						"description"	"#DOTA_ItemTest_Animation_Spawn_Desc"
 						"ui_block"	"0"
 					}
-					"Idle"
+					"Idle"			//ANIM1
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"description"	"#DOTA_ItemTest_Animation_Idle_Desc"
 						"ui_block"	"0"
 					}
-					"Run"
+					"Run"			//ANIM2
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
+						"description"	"#DOTA_ItemTest_Animation_Run_Desc"
 						"ui_block"	"0"
 					}
-					"Die"
+					"Die"			//ANIM3
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
 					}
-					"IdleRare"
+					"IdleRare"		//ANIM4
 					{
 						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"description"	"#DOTA_ItemTest_Animation_IdleRare_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-					"RunRare"
+					"RunRare"		//ANIM5
 					{
 						"name"		"#DOTA_ItemTest_Animation_RunRare"
+						"description"	"#DOTA_ItemTest_Animation_RunRare_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-					"PortraitIdle"
+					"PortraitIdle"		//ANIM6
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"description"	"#DOTA_ItemTest_Animation_PortraitIdle_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-					"PortraitIdleRare"
+					"PortraitRare"		//ANIM7
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"description"	"#DOTA_ItemTest_Animation_PortraitRare_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-					"TurnPoseCenter"
+					"TurnPoseCenter"	//ANIM8
 					{
 						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
 					}
-					"TurnPoseLeft"
+					"TurnPoseLeft"		//ANIM9
 					{
 						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
 					}
-					"TurnPoseRight"
+					"TurnPoseRight"		//ANIM10
 					{
 						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
 					}
-
-					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+					"LoadoutIdle"		//ANIM11
+					{
+						"name"			"#DOTA_ItemTest_Animation_LoadoutIdle"
+						"description"	"#DOTA_ItemTest_Animation_LoadoutIdle_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"LoadoutRare"		//ANIM12
+					{
+						"name"			"#DOTA_ItemTest_Animation_LoadoutRare"
+						"description"	"#DOTA_ItemTest_Animation_LoadoutRare_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END. The ANIM numbers in this list need to be entered in the itemtest_qc_template for this asset and the asset names and descriptions need to be added to dota_english.txt.
 				}
 
 				"attachments"
@@ -405,74 +405,94 @@
 
 				"animations"
 				{
-					"Idle"
+					"Idle"			//ANIM0
 					{
 						"name"		"#DOTA_ItemTest_Animation_Idle"
+						"description"	"#DOTA_ItemTest_Animation_Idle_Desc"
 						"ui_block"	"0"
 					}
-					"Run"
+					"Run"			//ANIM1
 					{
 						"name"		"#DOTA_ItemTest_Animation_Run"
+						"description"	"#DOTA_ItemTest_Animation_Run_Desc"
 						"ui_block"	"0"
 					}
-					"Die"
+					"Die"			//ANIM2
 					{
 						"name"		"#DOTA_ItemTest_Animation_Die"
 						"ui_block"	"0"
 					}
-					"IdleRare"
+					"IdleRare"		//ANIM3
 					{
 						"name"		"#DOTA_ItemTest_Animation_IdleRare"
+						"description"	"#DOTA_ItemTest_Animation_IdleRare_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-					"RunRare"
+					"RunRare"		//ANIM4
 					{
 						"name"		"#DOTA_ItemTest_Animation_RunRare"
+						"description"	"#DOTA_ItemTest_Animation_RunRare_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-					"PortraitIdle"
+					"PortraitIdle"		//ANIM5
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitIdle"
+						"description"	"#DOTA_ItemTest_Animation_PortraitIdle_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-					"PortraitIdleRare"
+					"PortraitRare"		//ANIM6
 					{
 						"name"		"#DOTA_ItemTest_Animation_PortraitRare"
+						"description"	"#DOTA_ItemTest_Animation_PortraitRare_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-					"TurnPoseCenter"
+					"TurnPoseCenter"	//ANIM7
 					{
 						"name"			"#DOTA_ItemTest_Animation_TurnPoseCenter"
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseCenter_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
 					}
-					"TurnPoseLeft"
+					"TurnPoseLeft"		//ANIM8
 					{
 						"name"			"#DOTA_ItemTest_Animation_TurnPoseLeft"
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseLeft_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
 					}
-					"TurnPoseRight"
+					"TurnPoseRight"		//ANIM9
 					{
 						"name"			"#DOTA_ItemTest_Animation_TurnPoseRight"
 						"description"	"#DOTA_ItemTest_Animation_TurnPoseRight_Desc"
 						"optional"	"1"
 						"ui_block"	"2"
 					}
-					"RunHaste"
+					"RunHaste"		//ANIM10
 					{
 						"name"			"#DOTA_ItemTest_Animation_RunHaste"
+						"description"	"#DOTA_ItemTest_Animation_RunHaste_Desc"
 						"optional"	"1"
 						"ui_block"	"1"
 					}
-
-					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END.
+					"LoadoutIdle"		//ANIM11
+					{
+						"name"			"#DOTA_ItemTest_Animation_LoadoutIdle"
+						"description"	"#DOTA_ItemTest_Animation_LoadoutIdle_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					"LoadoutRare"		//ANIM12
+					{
+						"name"			"#DOTA_ItemTest_Animation_LoadoutRare"
+						"description"	"#DOTA_ItemTest_Animation_LoadoutRare_Desc"
+						"optional"	"1"
+						"ui_block"	"2"
+					}
+					// If you want to add new animations for an import type that's already shipped, they MUST BE ADDED TO THE END. The ANIM numbers in this list need to be entered in the itemtest_qc_template for this asset and the asset names and descriptions need to be added to dota_english.txt.
 				}
 
 				"attachments"

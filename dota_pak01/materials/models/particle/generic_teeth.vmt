@@ -1,0 +1,18 @@
+"CustomHero"
+{
+	$baseTexture "models\particle\generic_teeth"
+	"$normalmap" "models\particle\generic_teeth_normal"
+	"$maskmap1" "models\particle\generic_teeth_masks1"
+	"$maskmap2" "models\particle\generic_teeth_masks2"
+
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 1
+//	$SPECULARCOLOR "[.2 1 2]"
+	$RIMLIGHTCOLOR "1 1 1"
+
+	$RIMLIGHTSCALE 5
+	$AMBIENTSCALE 1
+
+	$FRESNELWARP "models/heroes/bane/bane_fresnelranges"
+
+}

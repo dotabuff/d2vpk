@@ -1,0 +1,70 @@
+
+"CustomHero"
+//"IceSurface"
+//"Blob"
+//"manifoldsurface"
+//"flesh"
+//"globallitsimple"
+{
+	"$basetexture" "particle\flat_aqua"
+//	"$basetexture" "models/heroes/storm_spirit/storm_spirit_base_color"
+	"$normalmap" "models/development/flatnormal"
+//"models/heroes/storm_spirit/storm_spirit_base_normal"
+	//"$maskmap1" "models/heroes/storm_spirit/storm_spirit_base_masks1"
+	//"$maskmap2" "models/heroes/storm_spirit/storm_spirit_base_masks2"
+
+	
+	"$colorwarp" "models/heroes/statusEffects/colorwarp_staticremnant"
+	"$colorwarpintensity" ".4"
+
+	"$detail1"  "models/heroes/statuseffects/electric"
+	$DETAIL1BLENDMODE 1	
+	$DETAIL1SCALE .051
+	$DETAIL1BLENDFACTOR 0 //8 
+
+	"$detail2"  "models/heroes/statuseffects/electric"
+	$DETAIL2BLENDMODE 1
+	$DETAIL2SCALE .01
+	$DETAIL2BLENDFACTOR 0 // 1.1
+	$DETAIL2BLENDTOFULL 1
+
+	$RIMLIGHTSCALE 31
+	$RIMLIGHTBLENDTOFULL 0
+	$RIMLIGHTCOLOR "[1 1 1]"
+	
+	//"$additive" "1"
+	//$mod2x 1
+
+	"$cloakPassEnabled" "1"
+	$cloakfactor .3655
+	//$REFRACTAMOUNT 10
+
+	$SELFILLUMBLENDTOFULL 1
+	$REFLECTIONSTINTBYBASEBLENDTONONE 1
+
+	//$METALNESSBLENDTOFULL 1
+
+	//$AMBIENTSCALE 100
+
+	//"$uvscale" "0.03"
+	//"$opacityTexture" "paintblobs\blob_surface_opacity_erase" //transparency mask, independent of fresnel term 
+	
+	"$translucent" "1"
+	//"$nocull" "1"
+	"$additive" "1"
+	//"$SCROLL_UV_DIRECTION"    "[ -1.35 .0 ]"
+	//"$SCROLL_UV_SCALE"        ".35"
+	//"$ALPHA_ANGLE_POWER"	".5"
+	
+
+	"Proxies"
+	{
+		"Sine"
+		{
+			"resultVar" "$RIMLIGHTSCALE"
+			"sineperiod" "3"
+			"sinemin" "2"
+			"sinemax" "31"
+		}
+	}
+}

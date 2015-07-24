@@ -15682,6 +15682,12 @@
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"
 			}
+			"1"
+			{
+				"SlotIndex"	"1"
+				"SlotName" 	"head"
+				"SlotText"	"#LoadoutSlot_Head"
+			}
 		}
 
 		"Bot"
@@ -20301,9 +20307,20 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemSlots"
 		{
-			"0"
+		    "0"
 			{
 				"SlotIndex"	"0"
+				"SlotName"	"summon"
+				"SlotText"	"#LoadoutSlot_Visage_Familiar"
+				"TextureWidth"		"512"
+				"TextureHeight"		"512"
+				"MaxPolygonsLOD0"	"1800"
+				"MaxPolygonsLOD1"	"1800"
+				"no_import"	"1"
+			}
+			"1"
+			{
+				"SlotIndex"	"1"
 				"SlotName"	"ambient_effects"
 				"SlotText"	"#LoadoutSlot_Ambient_Effects"
 				"DisplayInLoadout"	"0"

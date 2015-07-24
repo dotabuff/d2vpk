@@ -4,17 +4,7 @@
 	{
 		"notevalue"	"16"
 		"priority"	"90"
-	}
-	
-	"zuus_thundergods_wrath"
-	{
-		"notevalue"	"17"
-		"priority"	"80"	
-
-		"min_duration"	"1.0"
-
-		// todo
-		"omni"		"1"	// ignore on-screen
+		"sound"		"sounds/enigma.asdf"
 	}
 
 	"witch_doctor_death_ward"
@@ -41,11 +31,81 @@
 		"priority"	"100"
 	}
 
+	// "display_in_top_layer" abilities have their own queue and play 1 movie only.
+	// Medium channel can steal this slot for a third movie if needed
 	"lina_laguna_blade"
 	{
-		"notevalue_radiant"	"22"
-		"notevalue_dire"	"23"
+		"notevalue_home_to_away"	"22"
+		"notevalue_away_to_home"	"23"
 		"priority"	"81"
-		"min_duration"	"2.0"
+		"min_duration"	"4.0"
+		"display_in_top_layer"	"1"
+	}
+	
+	"zuus_thundergods_wrath"
+	{
+		"notevalue"	"17"
+		"priority"	"80"	
+
+		"min_duration"	"1.0"
+
+		// todo
+		"omni"		"1"	// ignore on-screen
+		
+		"display_in_top_layer"	"1"
+	}
+
+	"obsidian_destroyer_sanity_eclipse"
+	{
+		"notevalue"	"24"
+		"priority"	"82"
+		"min_duration"	"4.0"
+		"display_in_top_layer"	"1"
+	}
+
+	"antimage_mana_void"
+	{
+		"notevalue"	"25"
+		"priority"	"75"
+		"min_duration"	"4.0"
+	}
+
+	"axe_culling_blade"
+	{
+		"notevalue"	"26"
+		"priority"	"83"
+		"min_duration"	"4.0"
+	}
+
+	"bane_fiends_grip"
+	{
+		"notevalue"	"27"
+		"priority"	"80"		
+	}	
+
+	"beastmaster_primal_roar"
+	{
+		"notevalue_home_to_away"	"28"
+		"notevalue_away_to_home"	"29"
+		"priority"	"78"
+		"min_duration"	"4.0"
+		"display_in_top_layer"	"1"
+	}
+
+	"tusk_walrus_punch"
+	{
+		"notevalue"	"30"
+		"priority"	"70"
+		"min_duration"	"4.0"
+		"display_in_top_layer"	"1"
+	}
+
+	"lion_finger_of_death"
+	{
+		"notevalue_home_to_away"	"31"
+		"notevalue_away_to_home"	"32"
+		"priority"	"83"
+		"min_duration"	"3.0"
+		"display_in_top_layer"	"1"
 	}
 }

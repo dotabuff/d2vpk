@@ -1,0 +1,100 @@
+// file    : venomancer.cloth
+// author  : alexanderm  adapted by TVidotto
+// date    : 17 Sep 2013, 03:49PM
+// 
+// cloth data generated via TweakCloth (0.5.0) -- edit at your own risk!
+
+ClothSystem
+{
+//    Cloth
+//    {
+//        AnimationForceAttraction         "1.5"
+//        AnimationVertexAttraction        "1.0"
+//        BendSpringConstant               "2.4"
+//        BendSpringDamping                "0.8"
+//        BonePrefix                       "bn_tail_"
+//        columns                          "1"
+//        damping                          "15.0"
+//        ExternalForceScale               "1.0"
+//        FixedPointDamping                "0.0"
+//        gravity                          "0 0 0"
+//        gravity_scale                    "155.0"
+//        LocalForce                       "1.0"
+//        LocalRotation                    "1.0"
+//        R0                               "fixed"
+//        R1                               "mass 3"
+//        R2                               "mass 3"
+//        R3                               "mass 3"
+//        R4                               "mass 2"
+//        rows                             "5"
+//        ShearSpringConstant              "20.0"
+//        ShearSpringDamping               "0.6"
+//        SpringStretchiness               "0.0"
+//        StretchForce                     "1.0"
+//        StructSpringConstant             "20.0"
+//        StructSpringDamping              "0.6"
+//        WorldFriction                    "0.1"
+//    }
+    
+    Cloth
+    {
+        AnimationForceAttraction         "2.5"
+        AnimationVertexAttraction        "0.5"
+        BendSpringConstant               "2.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "bn_L_arm_"
+        columns                          "1"
+        damping                          "15.0"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "1.0"
+        gravity                          "0 0 -1"
+        gravity_scale                    "155.0"
+        LocalForce                       "0.3"
+        LocalRotation                    "1.0"
+        R0                               "fixed"
+        R1                               "mass 1"
+        R2                               "mass 1"
+        R3                               "mass 1"
+        R4                               "mass 1"
+        rows                             "5"
+        ShearSpringConstant              "20.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "20.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.1"
+    }
+    Cloth
+    {
+        AnimationForceAttraction         "2.5"
+        AnimationVertexAttraction        "0.5"
+        BendSpringConstant               "2.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "bn_R_arm_"
+        columns                          "1"
+        damping                          "15.0"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "1.0"
+        gravity                          "0 0 -1"
+        gravity_scale                    "155.0"
+        LocalForce                       "0.3"
+        LocalRotation                    "1.0"
+        R0                               "fixed"
+        R1                               "mass 1"
+        R2                               "mass 1"
+        R3                               "mass 1"
+        R4                               "mass 1"
+        rows                             "5"
+        ShearSpringConstant              "20.0"
+        ShearSpringDamping               "0.6"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "20.0"
+        StructSpringDamping              "0.6"
+        WorldFriction                    "0.1"
+    }
+    
+}
+
+// eof
