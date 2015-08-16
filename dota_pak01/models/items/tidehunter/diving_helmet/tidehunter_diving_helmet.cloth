@@ -1,0 +1,35 @@
+
+ClothSystem
+{
+    Cloth
+    {
+        AnimationForceAttraction         "0.593"
+        AnimationVertexAttraction        "1.72"
+        BendSpringConstant               "20.4"
+        BendSpringDamping                "0.8"
+        BonePrefix                       "hose_"
+        columns                          "2"
+        damping                          "0.85"
+        ExternalForceScale               "1.0"
+        FixedPointDamping                "0.0"
+        gravity                          "0 0 -1"
+        gravity_scale                    "10.0"
+        LocalForce                       "0.5"
+        LocalRotation                    "0.5"
+        R0                               "fixed"
+        R1                               "mass  1.5"
+        R2                               "mass  2.5"
+        R3                               "mass  3.5"
+        R4                               "mass  3.5"
+		R5								 "mass 3.5"
+		R6								 "world | mass 3.5"
+        rows                             "7"
+        ShearSpringConstant              "20.0"
+        ShearSpringDamping               "0.9"
+        SpringStretchiness               "0.0"
+        StretchForce                     "1.0"
+        StructSpringConstant             "20.0"
+        StructSpringDamping              "0.9"
+        WorldFriction                    "0.35"
+    }
+}

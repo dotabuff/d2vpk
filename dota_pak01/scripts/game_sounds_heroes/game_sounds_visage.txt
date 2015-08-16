@@ -395,3 +395,56 @@
    		}
 	}
 }
+
+"Visage_Familar.StoneForm.Cast.Tolling"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 110"
+	"rndwave"
+	{
+		"wave"			")weapons/hero/visage/stone_form01.wav"
+		"wave"			")weapons/hero/visage/stone_form02.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Visage_Familar.BellToll"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "150"
+			}
+   		}
+	}
+}
+
+"Visage_Familar.BellToll"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_75dB"
+	"pitch"			"100"
+	"wave"			"weapons/hero/visage/stone_bell.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+		}
+	}
+}

@@ -1,0 +1,45 @@
+"CustomHero"
+{
+	"$baseTexture" 	"models/items/visage/immortal_familiar/immortal_familiar_color"
+	"$normalmap" 	"models/items/visage/immortal_familiar/immortal_familiar_normal"
+	"$maskmap1" 	"models/items/visage/immortal_familiar/immortal_familiar_mask1"
+	"$maskmap2" 	"models/items/visage/immortal_familiar/immortal_familiar_mask2"
+	"$detail1" 	"models/heroes/visage/visage_familiar_glow"
+	"$diffusewarp" 	"models/heroes/visage/visage_diffusewarp"
+
+	$nocull 0
+	$additive 0
+	$SPECULAR_BLOOM_SCALE      0.5
+	$SPECULAR_BLOOM_COLOR "[0 1 .8]"
+	$SPECULAR_BLOOM_SHIFT 1
+
+	$SPECULAREXPONENT 24	
+	$SPECULARSCALE 21		
+	$SPECULARCOLOR "[.7 .3 1]"
+	$RIMLIGHTSCALE 2
+
+	$DETAIL1BLENDMODE 2
+	$DETAIL1SCALE 1
+	$DETAIL1BLENDFACTOR 2
+	$DETAIL1BLENDTOFULL 0
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"TextureScroll"		
+		{
+			"texturescrollvar"	"$detail1texturetransform"
+			"texturescrollrate"	"0.2"
+			"texturescrollangle"	"310"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

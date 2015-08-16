@@ -547,3 +547,68 @@
 		}
 	}
 }
+
+////////////////////////////////////////////////////////////////////////
+
+"Hero_Tusk.IceShards.Cast.Penguin"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"wave"			")weapons/hero/tusk/ice_shards_cast.wav"
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "dota_attack_block_dist"
+			"play_second_layer"
+			{
+			"input_execute"	"1"
+			"entry_name" "Hero_Tusk.IceShards.Penguin"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}
+
+"Hero_Tusk.IceShards.Penguin"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+ 		"wave"	"weapons/hero/tusk/penguin01.wav"
+		"wave"	"weapons/hero/tusk/penguin02.wav"
+		"wave"	"weapons/hero/tusk/penguin03.wav"
+	}
+	
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "300"
+			}
+		}
+	}
+}

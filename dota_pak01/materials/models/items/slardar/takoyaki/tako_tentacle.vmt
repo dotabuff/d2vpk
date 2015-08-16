@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/slardar/takoyaki/tako_tentacle_color"
+	"$normalmap" "models/items/slardar/takoyaki/tako_tentacle_normal"
+	"$diffusewarp" "models/heroes/drow/diffusewarp"
+	"$FRESNELWARP" "models/heroes/slardar/slardar_fresnelranges"
+	
+
+	"$maskmap1" "models/items/slardar/takoyaki/tako_tentacle_masks1"
+	"$maskmap2" "models/items/slardar/takoyaki/tako_tentacle_masks2"
+	//$SPECULAR_BLOOM_SCALE      .3
+	
+	//"$envmap" "env_cubemap"
+	//"$envmapintensity" "15"
+	$IgnoreBudgetCheck 1
+
+	$SPECULAREXPONENT 20
+	$SPECULARSCALE 10
+	
+	$RIMLIGHTSCALE	1
+	$specularcolor "[1 1 2]"
+	//$RIMLIGHTCOLOR "[1 1 .75]"
+	//$alphatest 1
+	
+
+
+
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

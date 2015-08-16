@@ -1,0 +1,46 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/items/obsidian_destroyer/immortal_weapon_1/shards_prison_golden_color"
+	"$normalmap"		"models/items/obsidian_destroyer/immortal_weapon_1/shards_prison_normal"
+	"$maskmap1"		"models/items/obsidian_destroyer/immortal_weapon_1/shards_prison_golden_masks1"
+	"$maskmap2"		"models/items/obsidian_destroyer/immortal_weapon_1/shards_prison_masks2"
+	"$detail1"		"models/heroes/obsidian_destroyer/obsidian_destroyer_motion2"
+
+
+	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	$ENVMAPINTENSITY 7
+	$MASKENVBYMETALNESS 1
+
+
+	"$alphatest"		"1"
+	"$SPECULAREXPONENT"		"32"
+	"$SPECULARSCALE"		"5"
+	"$SPECULARCOLOR"		"[.7 .8 1]"
+
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"1"
+	"$RIMLIGHTSCALE"		"1"
+
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.200000"
+			"texturescrollangle"		"270"
+		}
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$BUMPTRANSFORM"
+			"texturescrollrate"		"0.450000"
+			"texturescrollangle"		"85"
+		}
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

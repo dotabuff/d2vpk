@@ -1,0 +1,25 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/wards/megagreevil_ward/megagreevilward_color.vtf"
+	"$normalmap" "models/items/wards/megagreevil_ward/megagreevilward_normal.vtf"
+	"$maskmap1"	"models/items/wards/megagreevil_ward/megagreevilward_masks1.vtf"
+	"$maskmap2"	"models/items/wards/megagreevil_ward/megagreevilward_masks2.vtf"
+
+
+	$SPECULAREXPONENT 8
+	$SPECULARSCALE 8
+	$SPECULARCOLOR "[1 0.8 .7]s"
+
+	$RIMLIGHTSCALE	1
+
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}

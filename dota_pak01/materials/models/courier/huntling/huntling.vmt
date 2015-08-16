@@ -1,0 +1,44 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/courier/huntling/huntling_color"
+	"$normalmap"		"models/courier/huntling/huntling_normal"
+	"$maskmap1"		"models/courier/huntling/huntling_mask1"
+	"$maskmap2"		"models/courier/huntling/huntling_mask2"
+	"$RIMLIGHTSCALE"		"4"
+	"$RIMLIGHTCOLOR"		"[0.5 0.5 1]"
+
+
+	$SPECULAR_BLOOM_SCALE 1
+	$SPECULAREXPONENT 60	
+	$SPECULARSCALE 20
+
+
+//	$DETAIL1BLENDMODE 2
+//	$DETAIL1SCALE 2
+//	$DETAIL1BLENDFACTOR 1
+
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"	.10
+			"texturescrollangle"	90
+		}
+
+		"TextureScroll"	
+		{
+			"texturescrollvar"	"$BUMPTRANSFORM"
+			"texturescrollrate"	.45
+			"texturescrollangle"	0
+		}
+		
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

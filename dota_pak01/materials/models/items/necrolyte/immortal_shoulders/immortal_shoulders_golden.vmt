@@ -1,0 +1,36 @@
+"CustomHero"
+{
+	$baseTexture 	"models/items/necrolyte/immortal_shoulders\immortal_shoulders_golden_color"
+	"$normalmap" 	"models/items/necrolyte/immortal_shoulders\immortal_shoulders_normal"
+	$MASKMAP2 	"models/items/necrolyte/immortal_shoulders\immortal_shoulders_golden_mask2"
+	$MASKMAP1 	"models/items/necrolyte/immortal_shoulders\immortal_shoulders_golden_mask1"
+
+	"$alphatest" "1"
+
+	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	$ENVMAPINTENSITY 5
+	$MASKENVBYMETALNESS 1
+
+	$SPECULAR_BLOOM_SCALE      0
+	$SPECULAR_BLOOM_COLOR "[0 1 .3]"
+	$SPECULAR_BLOOM_SHIFT 0
+
+	$SPECULAREXPONENT 30
+
+	$SPECULARSCALE 5
+	$RIMLIGHTSCALE 2
+	$AMBIENTSCALE 1
+
+	$IgnoreBudgetCheck 1
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

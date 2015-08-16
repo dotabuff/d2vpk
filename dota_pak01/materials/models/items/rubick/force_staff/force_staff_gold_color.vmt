@@ -1,0 +1,61 @@
+"CustomHero"
+
+{
+	"$basetexture" "models\items\rubick\force_staff\force_staff_gold_color"
+	"$normalmap"   "models/items/rubick/force_staff/force_staff_gold_normal"
+	"$maskmap1"		"models/items/rubick/force_staff/force_staff_gold_masks1"
+	"$maskmap2"		"models/items/rubick/force_staff/force_staff_gold_masks2"
+
+
+
+        $FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+        "$detail1"		"models/items/rubick/force_staff/rubick_immortal_gold_motion"
+	
+//	"$SPECULAR_BLOOM_SCALE"		"1"
+	"$SPECULAREXPONENT"		"30"
+	"$SPECULARSCALE"		"5"
+	"$SPECULARCOLOR"		"[0.4 0.9 .2]"
+	"$RIMLIGHTCOLOR"		"[0.5 1 0.9]"
+
+
+
+
+//	$ENVMAP "models/cubemaps/glossy"
+//	$ENVMAP "models/cubemaps/cube_metal_grey"
+
+
+        $ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	$ENVMAPINTENSITY 3
+	$MASKENVBYMETALNESS 1
+
+
+
+//      $ENVMAP "models\items\rubick\force_staff\cube_staff"
+//	$ENVMAPINTENSITY 4
+//	$MASKENVBYMETALNESS 1
+
+
+	"$alphatest"		"1"
+	"$RIMLIGHTSCALE"		"1.6"
+	"$IgnoreBudgetCheck"		"1"
+	"$DETAIL1BLENDMODE"		"2"
+	"$DETAIL1SCALE"		"6"
+	"$DETAIL1BLENDFACTOR"		"1"
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"TextureScroll"
+		{
+			"texturescrollvar"		"$DETAIL1TEXTURETRANSFORM"
+			"texturescrollrate"		"0.130000"
+			"texturescrollangle"		"90"
+		}
+
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

@@ -19,7 +19,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/abaddon/borrowed_time.wav"
 }
-
+"Hero_Abaddon.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"			"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/abaddon/borrowed_time.wav"
+}
 
 
 "alchemist_alch_spawn_01"
@@ -37,6 +43,13 @@
 	"wave" 		"*\vo\alchemist\alch_anger_05.mp3"
 }
 "Hero_Alchemist.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/alchemist/chemical_rage_cast.wav"
+}
+"Hero_Alchemist.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -67,6 +80,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/ancient_apparition/ice_vortex_cast.wav"
 }
+"Hero_Ancient_Apparition.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/ancient_apparition/iceblast_explode.wav"
+}
 
 
 "antimage_anti_spawn_01"
@@ -89,6 +109,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/antimage/blink_out.wav"
+}
+"Hero_Antimage.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/antimage/mana_void.wav"
 }
 
 
@@ -113,6 +140,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/axe/berserkers_call.wav"
 }
+"Hero_Axe.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/axe/culling_blade_success.wav"
+}
 
 
 "bane_bane_spawn_01"
@@ -135,6 +169,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons/hero/bane/nightmare_end.wav"
+}
+"Hero_Bane.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*weapons/hero/bane/fiends_grip_cast.wav"
 }
 
 
@@ -159,6 +200,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons/hero/batrider/batrider_flamebreak_cast.wav"
 }
+"Hero_Batrider.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*weapons/hero/batrider/batrider_flaming_lasso_start.wav"
+}
 
 
 "beastmaster_beas_spawn_01"
@@ -182,7 +230,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/beastmaster/call_of_the_wild_boar.wav"
 }
-
+"Hero_Beastmaster.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/beastmaster/primal_roar.wav"
+}
 
 "bloodseeker_blod_spawn_01"
 {
@@ -205,7 +259,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons\hero\bloodseeker\rupture_cast.wav"
 }
-
+"Hero_Bloodseeker.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons\hero\bloodseeker\rupture_cast.wav"
+}
 
 "bounty_hunter_bount_spawn_01"
 {
@@ -319,7 +379,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/centaur/stampede_cast.wav"
 }
-
+"Hero_Centaur.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/centaur/stampede_cast.wav"
+}
 
 "chaos_knight_chaknight_spawn_02"
 {
@@ -364,6 +430,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/chen/penitence_impact.wav"
+}
+"Hero_Chen.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui\projection\chen_pick.wav"
 }
 
 
@@ -411,6 +484,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons\hero\crystal_maiden\crystal_nova.wav"
 }
+"Hero_CrystalMaiden.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui\projection\crystal_maiden_pick.wav"
+}
 
 
 "dark_seer_dkseer_spawn_01"
@@ -433,6 +513,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons\hero\dark_seer\dota_dark_seer_surge.wav"
+}
+"Hero_DarkSeer.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui\projection\dark_seer_pick.wav"
 }
 
 
@@ -457,6 +544,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/dazzle/shadow_wave.wav"
 }
+"Hero_Dazzle.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/dazzle/weave.wav"
+}
 
 
 "death_prophet_dpro_spawn_01"
@@ -474,6 +568,13 @@
 	"wave" 		"*vo\death_prophet\dpro_anger_01.mp3"
 }
 "Hero_DeathProphet.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/death_prophet/exorcism_cast.wav"
+}
+"Hero_DeathProphet.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -503,6 +604,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/disruptor/glimpse_end.wav"
 }
+"Hero_Disruptor.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/disruptor_pick.wav"
+}
 
 
 "doom_bringer_doom_spawn_01"
@@ -526,7 +634,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/doom_bringer/devour.wav"
 }
-
+"Hero_DoomBringer.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*ui/projection/doom_pick.wav"
+}
 
 "dragon_knight_drag_spawn_01"
 {
@@ -543,6 +657,13 @@
 	"wave" 		"*vo\dragon_knight\drag_anger_06.mp3"
 }
 "Hero_DragonKnight.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/dragon_knight/dragonknight_elderdragon_form.wav"
+}
+"Hero_DragonKnight.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -618,6 +739,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/earthshaker/echo_slam.wav"
 }
+"Hero_Earthshaker.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/earthshaker/echo_slam.wav"
+}
 
 
 "elder_titan_elder_spawn_01"
@@ -641,7 +769,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/elder_titan/echo_stomp_cast.wav"
 }
-
+"Hero_ElderTitan.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/elder_titan/earth_split_cast.wav"
+}
 
 "ember_spirit_embr_spawn_01"
 {
@@ -710,7 +844,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/enigma/malefice.wav"
 }
-
+"Hero_Enigma.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/enigma_pick.wav"
+}
 
 "faceless_void_face_spawn_01"
 {
@@ -727,6 +867,13 @@
 	"wave" 		"*vo\faceless_void\face_anger_02.mp3"
 }
 "Hero_FacelessVoid.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/faceless_void/chronosphere.wav"
+}
+"Hero_FacelessVoid.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -773,6 +920,13 @@
 	"wave" 		"*vo\gyrocopter\gyro_anger_08.mp3"
 }
 "Hero_Gyrocopter.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/gyrocopter/call_down_cast.wav"
+}
+"Hero_Gyrocopter.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -848,6 +1002,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/jakiro/macropyre_cast.wav"
 }
+"Hero_Jakiro.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/jakiro/macropyre_cast.wav"
+}
 
 
 "juggernaut_jug_spawn_03"
@@ -870,6 +1031,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/juggernaut/healing_ward_cast.wav"
+}
+"Hero_Juggernaut.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/juggernaut_pick.wav"
 }
 
 
@@ -894,6 +1062,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/keeper/spirit_form.wav"
 }
+"Hero_KeeperOfTheLight.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/kotl_pick.wav"
+}
 
 
 "kunkka_kunk_spawn_11"
@@ -917,7 +1092,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons/hero/kunkka/ability_ghost_ship_bell.wav"
 }
-
+"Hero_Kunkka.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*weapons/hero/kunkka/ability_ghost_ship.wav"
+}
 
 "legion_commander_legcom_spawn_01"
 {
@@ -939,6 +1120,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/legion_commander/duel_victory.wav"
+}
+"Hero_LegionCommander.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/legion_commander_pick.wav"
 }
 
 
@@ -963,6 +1151,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/leshrac/split_earth.wav"
 }
+"Hero_Leshrac.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/leshrac/split_earth.wav"
+}
 
 
 "lich_lich_spawn_01"
@@ -980,6 +1175,13 @@
 	"wave" 		"*vo\lich\lich_anger_03.mp3"
 }
 "Hero_Lich.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/lich/chain_frost_cast.wav"
+}
+"Hero_Lich.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -1032,6 +1234,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/lina/dragonslave01.wav"
 }
+"Hero_Lina.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/lina_pick.wav"
+}
 
 
 "lion_lion_spawn_01"
@@ -1054,6 +1263,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/lion/finger_of_death_impact.wav"
+}
+"Hero_Lion.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/lion/finger_of_death.wav"
 }
 
 
@@ -1101,6 +1317,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/luna/luna_lucentbeam_impact.wav"
 }
+"Hero_Luna.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/luna/luna_eclipse_cast.wav"
+}
 
 
 "lycan_lycan_spawn_01"
@@ -1147,7 +1370,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/magnataur/empower_cast.wav"
 }
-
+"Hero_Magnataur.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/magnataur_pick.wav"
+}
 
 "medusa_medus_spawn_01"
 {
@@ -1170,7 +1399,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons/hero/medusa/snake_shoot.wav"
 }
-
+"Hero_Medusa.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*weapons/hero/medusa/stonegaze.wav"
+}
 
 "meepo_meepo_spawn_01"
 {
@@ -1262,6 +1497,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/naga_siren/riptide03.wav"
 }
+"Hero_NagaSiren.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/naga_siren_pick.wav"
+}
 
 
 "necrolyte_necr_spawn_01"
@@ -1284,6 +1526,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/necrolyte/reapers_scythe.wav"
+}
+"Hero_Necrolyte.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/necrolyte_pick.wav"
 }
 
 
@@ -1308,6 +1557,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/nevermore/shadowraze.wav"
 }
+"Hero_Nevermore.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/nevermore/requiem_of_souls.wav"
+}
 
 
 "night_stalker_nstalk_spawn_01"
@@ -1331,7 +1587,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons\hero\nightstalker\dota_nightstalker_void.wav"
 }
-
+"Hero_NightStalker.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons\hero\nightstalker\darkness.wav"
+}
 
 "nyx_assassin_nyx_spawn_01"
 {
@@ -1400,6 +1662,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/omniknight/guardian_cast.wav"
 }
+"Hero_Omniknight.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/omniknight/guardian_cast.wav"
+}
 
 
 "oracle_orac_spawn_01"
@@ -1440,6 +1709,13 @@
 	"wave" 		"*vo\outworld_destroyer\odest_anger_02.mp3"
 }
 "Hero_OD.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/obsidian_destroyer/sanity_eclipse.wav"
+}
+"Hero_OD.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.8"
@@ -1515,6 +1791,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/phoenix/icarus_dive.wav"
 }
+"Hero_Phoenix.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/phoenix/super_nova_explode.wav"
+}
 
 
 "puck_puck_spawn_01"
@@ -1538,6 +1821,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons/hero/puck/waning_rift.wav"
 }
+"Hero_Puck.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*weapons/hero/puck/dream_coil.wav"
+}
 
 
 "pudge_pud_spawn_10"
@@ -1560,6 +1850,13 @@
 	"volume"		"0.8"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/pudge/dismember_swing2.wav"
+}
+"Hero_Pudge.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/pudge_pick.wav"
 }
 
 
@@ -1607,6 +1904,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/queenofpain/blink_in.wav"
 }
+"Hero_QueenOfPain.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/queenofpain/queenofpain_sonicwave.wav"
+}
 
 
 "rattletrap_ratt_spawn_05"
@@ -1647,6 +1951,13 @@
 	"wave" 		"*vo\razor\raz_anger_04.mp3"
 }
 "Hero_Razor.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/razor/storm_cast.wav"
+}
+"Hero_Razor.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -1722,6 +2033,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/sand_king/sand_king_epicenter_spell.wav"
 }
+"Hero_Sandking.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.6"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/sand_king/sand_king_epicenter.wav"
+}
 
 
 "shadow_demon_shadow_demon_spawn_01"
@@ -1791,6 +2109,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/silencer/global_silence_cast.wav"
 }
+"Hero_Silencer.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/silencer/global_silence_cast.wav"
+}
 
 
 "skeleton_king_wraith_spawn_01"
@@ -1836,6 +2161,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons\hero\skywrath\mystic_flare_cast.wav"
+}
+"Hero_SkywrathMage.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons\hero\skywrath\mystic_flare.wav"
 }
 
 
@@ -1906,6 +2238,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons/hero/sniper/sniper_assassinate_load.wav"
 }
+"Hero_Sniper.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*weapons/hero/sniper/sniper_assassinate.wav"
+}
 
 
 "spectre_spec_spawn_01"
@@ -1923,6 +2262,13 @@
 	"wave" 		"*vo\spectre\spec_anger_02.mp3"
 }
 "Hero_Spectre.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/spectre/haunt.wav"
+}
+"Hero_Spectre.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"0.8"
@@ -2021,6 +2367,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/techies/suicide.wav"
 }
+"Hero_Techies.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/techies/suicide.wav"
+}
 
 
 "templar_assassin_temp_spawn_02"
@@ -2067,6 +2420,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons\hero\terrorblade\sunder_target.wav"
 }
+"Hero_Terrorblade.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons\hero\terrorblade\sunder_target.wav"
+}
 
 
 "tidehunter_tide_spawn_09"
@@ -2089,6 +2449,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons/hero/tidehunter/kraken_shell.wav"
+}
+"Hero_Tidehunter.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.7"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/tidehunter/tidehunter_ravage.wav"
 }
 
 
@@ -2136,6 +2503,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/tinker/rearm_anim.wav"
 }
+"Hero_Tinker.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/tinker_pick.wav"
+}
 
 
 "tiny_tiny_spawn_09"
@@ -2181,6 +2555,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/treant/living_armor.wav"
+}
+"Hero_Treant.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/treant/overgrowth_cast.wav"
 }
 
 
@@ -2228,6 +2609,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/tusk/punch_target.wav"
 }
+"Hero_Tusk.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/tusk/punch_target.wav"
+}
 
 
 "undying_undying_spawn_01"
@@ -2245,6 +2633,13 @@
 	"wave" 		"*vo\undying\undying_anger_02.mp3"
 }
 "Hero_Undying.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/undying/flesh_golem_cast.wav"
+}
+"Hero_Undying.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -2313,6 +2708,13 @@
 	"wave" 		"*vo\venomancer\venm_anger_01.mp3"
 }
 "Hero_Venomancer.Pick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/venomancer/venomancer_poison_nova.wav"
+}
+"Hero_Venomancer.Projection"
 {
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.0"
@@ -2388,6 +2790,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/warlock/rain_of_chaos_buildup.wav"
 }
+"Hero_Warlock.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/warlock/rain_of_chaos_buildup.wav"
+}
 
 
 "weaver_weav_spawn_01"
@@ -2410,6 +2819,13 @@
 	"volume"		"1.0"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/weaver/swarm_cast.wav"
+}
+"Hero_Weaver.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/weaver/time_lapse.wav"
 }
 
 
@@ -2434,6 +2850,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/windrunner/focus_fire.wav"
 }
+"Hero_Windrunner.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*weapons/hero/windrunner/windrun.wav"
+}
 
 "winter_wyvern_winwyv_spawn_01"
 {
@@ -2455,6 +2878,13 @@
 	"volume"		"0.8"
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/winter_wyvern/arctic_burn.wav"
+}
+"Hero_Winter_Wyvern.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.8"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*)weapons/hero/winter_wyvern/winters_curse_target.wav"
 }
 
 "wisp_move03"
@@ -2500,6 +2930,13 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*)weapons/hero/witch_doctor/cask_cast.wav"
 }
+"Hero_Witchdoctor.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"			"*)ui/projection/witch_doctor_pick.wav"
+}
 
 
 "zuus_zuus_spawn_01"
@@ -2523,4 +2960,10 @@
 	"soundlevel"  	"SNDLVL_81dB"
 	"wave"			"*weapons/hero/zuus/gods_wrath_target.wav"
 }
-
+"Hero_Zuus.Projection"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"soundlevel"  	"SNDLVL_81dB"
+	"wave"			"*weapons/hero/zuus/gods_wrath_cast.wav"
+}

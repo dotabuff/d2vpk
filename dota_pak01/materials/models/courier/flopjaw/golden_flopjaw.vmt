@@ -1,0 +1,34 @@
+"CustomHero"
+{
+	"$baseTexture"		"models/courier/flopjaw/golden_flopjaw_color"
+	"$normalmap"		"models/courier/flopjaw/flopjaw_normal"
+	"$maskmap1"		"models/courier/flopjaw/golden_flopjaw_mask1"
+	"$maskmap2"		"models/courier/flopjaw/golden_flopjaw_mask2"
+	"$RIMLIGHTSCALE"		"1"
+//	"$RIMLIGHTCOLOR"		"[1 1 1]"
+	"$ALPHATEST"		"1"	
+
+
+
+	//GOLDEN
+	$ENVMAP "models\items\undying\idol_of_ruination\cube_idol_gold"
+	$ENVMAPINTENSITY 3
+	$MASKENVBYMETALNESS 1
+
+
+	//$SPECULAR_BLOOM_SCALE 1
+	$SPECULAREXPONENT 20	
+	$SPECULARSCALE 20
+
+
+	"$cloakPassEnabled"		"1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+}

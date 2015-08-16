@@ -3,15 +3,9 @@
 "CustomHero"
 {
 	$baseTexture "models\creeps\neutral_creeps\neutral_black_dragon_color"
-	$normalmap   "models\creeps\neutral_creeps\neutral_black_dragon_normal"
-	$maskmap1    "models\creeps\neutral_creeps\neutral_black_dragon_masks1"
-  $maskmap2    "models\creeps\neutral_creeps\neutral_black_dragon_masks2"
-  
-	$alphatest   1
-	$SPECULAREXPONENT 25
-	$SPECULARSCALE 5
-	$RIMLIGHTSCALE 1
-	
+	"$normalmap" "models\creeps\neutral_creeps\neutral_drake_normal"
+	"$maskmap2" "models\creeps\neutral_creeps\neutral_drake_mask2"
+
 // Status Effects
 	"$cloakPassEnabled" "1"
 	"Proxies"

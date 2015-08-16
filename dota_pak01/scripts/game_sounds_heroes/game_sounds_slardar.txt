@@ -189,6 +189,7 @@
 	}
 }
 
+
 "Hero_Slardar.Bash"
 {
 	"channel"		"CHAN_STATIC"
@@ -286,6 +287,30 @@
 		"start_stack"
 		{
 			"import_stack" "dota_null_start"
+		}
+	}
+}
+
+"Hero_Slardar.Slithereen_Crush_Tako"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_81dB"
+	"pitch"			"95,105"
+	"wave"	")weapons/hero/slardar/slithereen_crush_takoyaki.wav"
+	"operator_stacks"
+	{
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Weapons"
+			}
+			"speakers_spatialize"
+			{
+				"input_radius"  "600"
+			}
 		}
 	}
 }

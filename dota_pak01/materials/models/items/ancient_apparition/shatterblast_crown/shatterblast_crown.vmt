@@ -1,0 +1,39 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/ancient_apparition/shatterblast_crown/shatterblast_crown_color"
+	"$normalmap" "models/items/ancient_apparition/shatterblast_crown/shatterblast_crown_normal"
+	"$maskmap1" "models/items/ancient_apparition/shatterblast_crown/shatterblast_crown_masks1"
+	"$maskmap2" "models/items/ancient_apparition/shatterblast_crown/shatterblast_crown_masks2"
+	
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 25
+	$SPECULARCOLOR "[0 .3 1]"
+	$RIMLIGHTCOLOR "[0 1 .85]"
+	$IGNOREBUDGETCHECK 1
+
+	$ENVMAP "models/cubemaps/glossy"
+	$ENVMAPINTENSITY 10
+
+	$RIMLIGHTSCALE 1
+
+//	$DETAIL1BLENDMODE 3
+//	$DETAIL1SCALE 1
+//	$DETAIL1BLENDFACTOR 0
+//	$DETAIL1BLENDTOFULL 0
+	$AMBIENTSCALE .5
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+		"hero_proxy"
+		{
+		}
+	}
+
+}

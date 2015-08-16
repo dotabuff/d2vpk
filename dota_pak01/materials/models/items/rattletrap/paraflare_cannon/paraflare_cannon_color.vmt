@@ -1,0 +1,42 @@
+"CustomHero"
+{
+	"$baseTexture" "models/items/rattletrap/paraflare_cannon/paraflare_cannon_color"
+	"$normalmap" "models/items/rattletrap/paraflare_cannon/paraflare_cannon_normal"
+	"$maskmap1" "models/items/rattletrap/paraflare_cannon/paraflare_cannon_masks1"
+	"$maskmap2" "models/items/rattletrap/paraflare_cannon/paraflare_cannon_masks2"
+	//"$diffusewarp" "models/heroes/drow/diffusewarp"
+
+	
+//	$FRESNELWARP "models/heroes/dragon_knight/knight_fresnelranges"
+
+	$ENVMAP "models/cubemaps/cube_metal_grey"
+	$ENVMAPINTENSITY 2
+//	$MASKENVBYMETALNESS 0
+//	$METALNESSBLENDTOFULL 0.1
+
+	//$SpecularBlendtoFull 1
+	$SPECULAREXPONENT 10
+	$SPECULARSCALE 5
+	$SPECULARCOLOR "[.3 .3 .1]"
+	//$RIMLIGHTCOLOR ".8 1 1"
+	//$RIMLIGHTSCALE 1	
+
+
+//	$SPECULAR_BLOOM_SCALE      0
+
+
+
+//
+
+	"$cloakPassEnabled" "1"
+	"Proxies"
+	{
+		"invis_proxy"
+		{
+		}
+		"status_proxy"
+		{
+		}
+	}
+
+}
