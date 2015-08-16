@@ -5,18 +5,16 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
-	"net/http"
 	"os"
 	"path"
-	"strconv"
+	"regexp"
 	"strings"
 
 	"github.com/Nightgunner5/vpk"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/moovweb/gokogiri"
 )
 
-var versionFlag = flag.Bool("v", false, "get version from steamdb")
+var versionFlag = flag.Bool("v", false, "get version from ~/Steam")
 
 func main() {
 	flag.Parse()
@@ -83,25 +81,19 @@ func eh(err error) {
 	}
 }
 
+var infMatch = regexp.MustCompile(`(?m)^([^=]+)=(\S+)\s*`)
+
 func getVersion() {
-	response, err := http.Get("http://steamdb.info/app/570/history/")
-	eh(err)
+	home := os.Getenv("HOME")
+	inf, err := ioutil.ReadFile(home + "/Steam/steamapps/common/dota 2 beta/dota/steam.inf")
+	if err != nil {
+		panic(err)
+	}
 
-	body, err := ioutil.ReadAll(response.Body)
-	eh(err)
+	steamInf := map[string]string{}
+	for _, match := range infMatch.FindAllStringSubmatch(string(inf), -1) {
+		steamInf[match[1]] = match[2]
+	}
 
-	doc, err := gokogiri.ParseHtml(body)
-	eh(err)
-
-	node, err := doc.Root().Search(`//div[@class="wrapper-info"]//a[contains(@href,"/changelist/")]`)
-	eh(err)
-	change, err := strconv.Atoi(node[0].Content())
-	eh(err)
-
-	node, err = doc.Root().Search(`//i[contains(.,"branches/public/buildid")]//following-sibling::ins`)
-	eh(err)
-	build, err := strconv.Atoi(node[0].Content())
-	eh(err)
-
-	spew.Printf("Change #%d Build #%d\n", change, build)
+	spew.Printf("Client %s Patch %s\n", steamInf["ClientVersion"], steamInf["PatchVersion"])
 }
