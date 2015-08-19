@@ -990,5 +990,9 @@
 	"dota_challenge_socache_updated"
 	{
 	}
+
+	"dota_player_team_changed"
+	{	
+	}
 }
 
