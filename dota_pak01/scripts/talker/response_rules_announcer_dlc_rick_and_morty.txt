@@ -909,6 +909,7 @@ Rule announcer_dlc_rick_and_morty_CustomIsGoodBarracksKilledIsSpectatorIsBotLane
 Response announcer_dlc_rick_and_morty_CustomIsBadBarracksKilledIsSpectatorIsTopLaneIsAnnouncerVoice_RickMorty
 {
 	scene "scenes/announcer_dlc_rick_and_morty/announcer_dlc_rick_and_morty_dire_top_rax_fallen_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
+	scene "scenes/announcer_dlc_rick_and_morty/announcer_dlc_rick_and_morty_dire_bottom_rax_fallen_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
 }
 
 Rule announcer_dlc_rick_and_morty_CustomIsBadBarracksKilledIsSpectatorIsTopLaneIsAnnouncerVoice_RickMorty_Rule
@@ -932,7 +933,6 @@ Rule announcer_dlc_rick_and_morty_CustomIsBadBarracksKilledIsSpectatorIsMidLaneI
 Response announcer_dlc_rick_and_morty_CustomIsBadBarracksKilledIsSpectatorIsBotLaneIsAnnouncerVoice_RickMorty
 {
 	scene "scenes/announcer_dlc_rick_and_morty/announcer_dlc_rick_and_morty_dire_bottom_rax_fallen_01.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
-	scene "scenes/announcer_dlc_rick_and_morty/announcer_dlc_rick_and_morty_dire_bottom_rax_fallen_02.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
 	scene "scenes/announcer_dlc_rick_and_morty/announcer_dlc_rick_and_morty_dire_bottom_rax_fallen_03.vcd" nodelay noscene respeakdelay 10 then self TLK_DOTA_FOLLOWUP_GENERIC foo:0 0.5
 }
 
