@@ -1,3 +1,16 @@
+# This repository is deprecated!
+
+Due to changes in the Dota 2 Reborn client, we took the opportunity to improve aspects of d2vpk.
+As a result, a new repository has been created over at [dotabuff/d2vpkr](https://github.com/dotabuff/d2vpkr).
+
+Please note that the new respository has a different folder structure and many files that aren't
+being referenced in our projects are no longer available to reduce the size of the new repository.
+
+This repository will remain live for the time being and we encourage all users to move to d2vpkr. 
+If there is something missing in d2vpkr, please file an issue on the d2vpkr project and let us know.
+
+**This repository will no longer be updated.** d2vpk remains so that existing projects will not break.
+
 # Dota 2 VPK History
 
 In this repository, we extract the contents of [Valve Pak](https://developer.valvesoftware.com/wiki/VPK) archives found in the Dota 2 client.
